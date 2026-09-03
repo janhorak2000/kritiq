@@ -1,0 +1,33 @@
+name: Fetch new titles
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # runs every day at 06:00 UTC — edit this to change the time
+  workflow_dispatch:        # adds a "Run workflow" button so you can trigger it manually too
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run fetch script
+        env:
+          TMDB_KEY: ${{ secrets.TMDB_KEY }}
+          RAWG_KEY: ${{ secrets.RAWG_KEY }}
+        run: python fetch_data_daily.py --tmdb-key "$TMDB_KEY" --rawg-key "$RAWG_KEY"
+
+      - name: Commit updated data
+        run: |
+          git config user.name "kritiq-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data.json fetch_state.json
+          git diff --staged --quiet || git commit -m "Daily title fetch $(date -u +%Y-%m-%d)"
+          git push
