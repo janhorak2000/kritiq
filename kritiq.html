@@ -1,0 +1,2050 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kritiq</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#150a22;
+  --bg-1:#1c0f2c;
+  --bg-2:#251638;
+  --bg-3:#2f1c46;
+  --line:#3a2454;
+  --line-soft:#2a1840;
+  --text:#f1ecfa;
+  --text-dim:#b6a8cf;
+  --text-faint:#8577a3;
+  --violet:#9b5cf6;
+  --violet-2:#c084fc;
+  --magenta:#e264b8;
+  --s-black-bg:#0a0810; --s-black-fg:#f1ecfa;
+  --s-grey-bg:#585068;  --s-grey-fg:#f1ecfa;
+  --s-blue-bg:#3f6fdb;  --s-blue-fg:#ffffff;
+  --s-purple-bg:#9b3ff0; --s-purple-fg:#ffffff;
+  --s-gold-bg:#e8b13a;  --s-gold-fg:#1c1204;
+  --radius-s:8px;
+  --radius-m:14px;
+  --radius-l:22px;
+  --font-display:'Unbounded', 'Manrope', sans-serif;
+  --font-body:'Manrope', sans-serif;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:
+    radial-gradient(1100px 620px at 12% -8%, #341f52 0%, transparent 60%),
+    radial-gradient(900px 700px at 105% 15%, #2a1440 0%, transparent 55%),
+    var(--bg);
+  color:var(--text);
+  font-family:var(--font-body);
+  min-height:100vh;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--violet); color:#fff;}
+a{color:inherit; text-decoration:none;}
+button{font-family:inherit;}
+::-webkit-scrollbar{height:10px; width:10px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--line); border-radius:10px;}
+:focus-visible{outline:2px solid var(--violet-2); outline-offset:2px; border-radius:4px;}
+
+.wrap{max-width:1240px; margin:0 auto; padding:0 28px;}
+@media(max-width:720px){.wrap{padding:0 16px;}}
+
+/* ---------- HEADER ---------- */
+header.site{
+  position:sticky; top:0; z-index:50;
+  background:rgba(21,10,34,.86);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line-soft);
+}
+.header-row{
+  max-width:1240px; margin:0 auto; padding:12px 28px;
+  display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:22px;
+}
+@media(max-width:720px){.header-row{padding:10px 16px; gap:12px;}}
+.brand-col{position:relative; display:inline-flex; align-items:center; justify-self:start;}
+.brand{
+  display:flex; align-items:center; gap:4.5px;
+  font-family:var(--font-display); font-weight:800; font-size:20px;
+  letter-spacing:.02em; text-transform:uppercase; white-space:nowrap;
+}
+.brand .dot{width:9px; height:9px; border-radius:3px; background:linear-gradient(135deg,var(--violet-2),var(--magenta)); box-shadow:0 0 14px rgba(192,132,252,.7);}
+.brand-marks{display:flex; flex-direction:column; gap:2px; justify-content:center; flex:0 0 auto;}
+.brand-marks .mark{width:4px; height:4px; border-radius:1px;}
+.brand-marks .mark-gold{background:var(--s-gold-bg); box-shadow:0 0 8px rgba(232,177,58,.65);}
+.brand-marks .mark-purple{background:var(--violet-2); box-shadow:0 0 8px rgba(192,132,252,.65);}
+.brand-marks .mark-blue{background:var(--s-blue-bg); box-shadow:0 0 8px rgba(63,111,219,.65);}
+
+/* auth badge floats below the logo, overlapping the header's bottom border — not part of
+   the header's own box, same peek-out trick as the Top 10 rank numbers on the cards. */
+#authBadgeWrap{position:absolute; top:100%; left:0; z-index:5; margin-top:2px;}
+
+.auth-badge-login{
+  font-family:var(--font-body); font-size:10.5px; font-weight:800; letter-spacing:.04em;
+  padding:4px 11px; border-radius:999px; border:1px solid rgba(192,132,252,.42);
+  background:var(--bg-1); color:#c9aef2; cursor:pointer; text-transform:uppercase;
+  min-width:85px; text-align:center; box-sizing:border-box;
+  box-shadow:0 4px 10px rgba(0,0,0,.35);
+  transition:color .15s, border-color .15s, background .15s;
+}
+.auth-badge-login:hover{color:#fff; border-color:var(--violet);}
+.auth-badge-user{display:flex; align-items:center; gap:5px;}
+.auth-badge-name{
+  font-family:var(--font-body); font-size:12px; font-weight:700; max-width:115px; min-width:85px;
+  padding:4px 11px; border-radius:999px; border:1px solid rgba(192,132,252,.42);
+  background:var(--bg-1); color:#c9aef2; cursor:pointer; text-align:center; box-sizing:border-box;
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+  box-shadow:0 4px 10px rgba(0,0,0,.35);
+  transition:color .15s, border-color .15s;
+}
+.auth-badge-name:hover{color:#fff; border-color:var(--violet);}
+.auth-badge-logout{
+  width:18px; height:18px; border-radius:50%; flex:0 0 auto; padding:0;
+  border:1px solid rgba(239,68,68,.35); background:rgba(239,68,68,.16); color:#f16060;
+  display:flex; align-items:center; justify-content:center; cursor:pointer;
+  box-shadow:0 4px 10px rgba(0,0,0,.35);
+  transition:background .15s, border-color .15s;
+}
+.auth-badge-logout svg{width:9px; height:9px;}
+.auth-badge-logout:hover{background:rgba(239,68,68,.3); border-color:#f16060;}
+
+nav.main-nav{
+  justify-self:center; display:flex; gap:6px;
+}
+nav.main-nav a{
+  padding:9px 18px; border-radius:999px; font-size:12px; font-weight:700;
+  font-family:var(--font-display); letter-spacing:.02em;
+  color:var(--text-dim); transition:color .15s, background .15s;
+}
+nav.main-nav a:hover{color:var(--text); background:var(--bg-2);}
+nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet),var(--magenta)); box-shadow:0 4px 18px rgba(155,92,246,.35);}
+.search-toggle{
+  justify-self:end; width:38px; height:38px; border-radius:999px;
+  display:flex; align-items:center; justify-content:center;
+  background:var(--bg-2); border:1px solid var(--line-soft); color:var(--text-dim);
+  cursor:pointer; transition:color .15s, border-color .15s, background .15s;
+}
+.search-toggle svg{width:17px; height:17px;}
+.search-toggle:hover{color:#fff; border-color:var(--violet);}
+.search-toggle.active{color:#fff; border-color:var(--violet); background:rgba(155,92,246,.18);}
+
+.search-panel{max-height:0; overflow:hidden; transition:max-height .22s ease;}
+.search-panel.open{max-height:440px; border-top:1px solid var(--line-soft);}
+.search-panel-inner{max-width:1240px; margin:0 auto; padding:16px 28px 20px;}
+.search-panel-box{
+  display:flex; align-items:center; gap:10px;
+  background:var(--bg-2); border:1px solid var(--line-soft); border-radius:999px; padding:10px 16px;
+}
+.search-panel-box svg{flex:0 0 auto; opacity:.6;}
+.search-panel-box input{
+  flex:1; background:none; border:none; outline:none; color:var(--text);
+  font-family:inherit; font-size:14.5px;
+}
+.search-panel-box input::placeholder{color:var(--text-faint);}
+.search-panel-results{margin-top:12px; display:flex; flex-direction:column; gap:3px; max-height:320px; overflow-y:auto;}
+.search-result-row{
+  display:flex; align-items:center; gap:12px; padding:9px 10px; border-radius:10px;
+  transition:background .12s;
+}
+.search-result-row:hover{background:var(--bg-2);}
+.srr-title{flex:1; min-width:0; font-size:14px; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.srr-meta{flex:0 0 auto; font-size:11.5px; color:var(--text-faint);}
+.srr-score{
+  flex:0 0 auto; min-width:32px; height:26px; padding:0 7px; border-radius:8px;
+  display:flex; align-items:center; justify-content:center;
+  font-family:var(--font-display); font-weight:700; font-size:12.5px;
+}
+.search-empty-note{color:var(--text-faint); font-size:13.5px; padding:14px 4px;}
+@media(max-width:900px){
+  nav.main-nav a{padding:9px 12px; font-size:11.5px;}
+}
+@media(max-width:640px){
+  .header-row{gap:8px;}
+  .brand{font-size:17px;}
+  .auth-badge-name{max-width:80px; font-size:11px;}
+  nav.main-nav{gap:2px;}
+  nav.main-nav a{padding:8px 10px; font-size:11px;}
+  .search-panel-inner{padding:14px 16px 18px;}
+}
+
+/* ---------- MAIN ---------- */
+#app{padding-top:13px; padding-bottom:80px;}
+.page-title{
+  font-family:var(--font-display); font-weight:800; font-size:30px;
+  margin:0 0 4px;
+}
+.page-sub{color:var(--text-faint); font-size:14.5px; margin:0 0 26px;}
+
+/* ---------- HOME ROWS ---------- */
+.hot-section{margin-bottom:38px;}
+.hot-head{display:flex; align-items:baseline; justify-content:space-between; margin-bottom:14px; gap:12px;}
+.hot-head h2{font-family:var(--font-display); font-weight:600; font-size:15px; margin:0; color:#b3a0d9;}
+.hot-head .hot-sub{color:var(--text-faint); font-size:13px; margin-top:2px;}
+.hot-head .see-all{font-size:13px; font-weight:700; color:var(--violet-2); white-space:nowrap; flex:0 0 auto;}
+.hot-row{
+  display:flex; gap:10px; overflow-x:auto; padding:6px 2px 14px;
+  scroll-snap-type:x proximity; -webkit-overflow-scrolling:touch;
+}
+.hot-card{
+  position:relative; flex:0 0 auto; width:150px; scroll-snap-align:start;
+}
+.hot-card .card{position:relative; z-index:1; margin-right:26px;}
+.hot-rank{
+  position:absolute; right:14px; bottom:-6px; z-index:2;
+  font-family:var(--font-display); font-weight:800; font-size:48px;
+  color:var(--bg); -webkit-text-stroke:1.5px var(--line);
+  line-height:1; pointer-events:none; opacity:.9;
+}
+@media(max-width:520px){
+  .hot-section{margin-bottom:26px;}
+  .hot-head h2{font-size:14px;}
+  .hot-head .hot-sub{font-size:10.5px;}
+  .hot-row{gap:7px;}
+  .hot-card{width:96px;}
+  .hot-card .card{margin-right:12px;}
+  .hot-rank{font-size:26px; right:9px; bottom:-3px;}
+  .poster .letter{font-size:36px;}
+  .card-title{font-size:11px;}
+  .card-meta{font-size:10px;}
+  .score-chip{height:20px; min-width:26px; font-size:10.5px;}
+}
+
+/* ---------- CARDS ---------- */
+.card{
+  display:block; border-radius:var(--radius-m); overflow:hidden;
+  background:var(--bg-2); border:1px solid var(--line-soft);
+  transition:transform .18s ease, border-color .18s ease;
+}
+.card:hover{transform:translateY(-4px); border-color:var(--line);}
+.poster{
+  position:relative; aspect-ratio:2/3; width:100%; overflow:hidden;
+}
+.poster .letter{
+  position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+  font-family:var(--font-display); font-weight:800; font-size:64px; color:rgba(255,255,255,.22);
+}
+.poster-img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover;}
+.poster .scrim{
+  position:absolute; left:0; right:0; bottom:0; height:56%;
+  background:linear-gradient(to top, rgba(10,6,18,.92), transparent);
+}
+.score-chip{
+  position:absolute; top:8px; right:8px; z-index:3;
+  min-width:34px; height:26px; padding:0 7px; border-radius:8px;
+  display:flex; align-items:center; justify-content:center;
+  font-family:var(--font-display); font-weight:700; font-size:13px;
+  box-shadow:0 3px 10px rgba(0,0,0,.4);
+}
+.new-badge{
+  position:absolute; top:8px; left:8px; z-index:3;
+  background:var(--magenta); color:#fff; font-size:10px; font-weight:800;
+  padding:3px 7px; border-radius:6px; letter-spacing:.03em;
+}
+.card-body{position:absolute; left:0; right:0; bottom:0; padding:9px 10px 10px;}
+.card-title{font-size:13.5px; font-weight:700; line-height:1.2; margin:0; color:#fff; text-shadow:0 1px 3px rgba(0,0,0,.85), 0 1px 8px rgba(0,0,0,.5);}
+.card-meta{font-size:11.5px; color:var(--text-dim); margin-top:1px; text-shadow:0 1px 3px rgba(0,0,0,.85), 0 1px 8px rgba(0,0,0,.5);}
+
+/* score color classes */
+.s-black{background:var(--s-black-bg); color:var(--s-black-fg); border:1px solid #2a2236;}
+.s-grey{background:var(--s-grey-bg); color:var(--s-grey-fg);}
+.s-blue{background:var(--s-blue-bg); color:var(--s-blue-fg);}
+.s-purple{background:var(--s-purple-bg); color:var(--s-purple-fg);}
+.s-gold{background:var(--s-gold-bg); color:var(--s-gold-fg); box-shadow:0 0 16px rgba(232,177,58,.55), 0 3px 10px rgba(0,0,0,.4);}
+
+/* ---------- FILTER BAR ---------- */
+.filterbar{
+  display:flex; align-items:center; gap:18px; flex-wrap:wrap;
+  background:var(--bg-1); border:1px solid var(--line-soft); border-radius:var(--radius-m);
+  padding:16px 20px; margin-bottom:26px;
+}
+.filterbar .label{font-size:12.5px; color:var(--text-faint); font-weight:700; text-transform:uppercase; letter-spacing:.06em;}
+.range-field{display:flex; align-items:center; gap:12px; flex:1 1 260px; min-width:220px;}
+.range-track{position:relative; flex:1; height:4px; background:var(--line); border-radius:4px;}
+.range-track .fill{position:absolute; height:100%; background:linear-gradient(90deg,var(--violet),var(--magenta)); border-radius:4px;}
+.range-field input[type=range]{
+  position:absolute; left:0; top:-9px; width:100%; margin:0;
+  -webkit-appearance:none; appearance:none; background:none; pointer-events:none; height:22px;
+}
+.range-field input[type=range]::-webkit-slider-thumb{
+  -webkit-appearance:none; pointer-events:all;
+  width:18px; height:18px; border-radius:50%;
+  background:#fff; border:3px solid var(--violet);
+  cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.4);
+}
+.range-field input[type=range]::-moz-range-thumb{
+  pointer-events:all; width:12px; height:12px; border-radius:50%;
+  background:#fff; border:3px solid var(--violet); cursor:pointer;
+}
+.range-wrap{position:relative; flex:1; height:4px;}
+.year-readout{font-family:var(--font-display); font-weight:700; font-size:14.5px; white-space:nowrap; color:var(--text);}
+.sortsel{
+  margin-left:auto; background:var(--bg-2); color:var(--text); border:1px solid var(--line-soft);
+  border-radius:999px; padding:8px 14px; font-size:13px; font-weight:600; font-family:inherit;
+}
+
+/* ---------- GRID ---------- */
+.grid{
+  display:grid; grid-template-columns:repeat(auto-fill, minmax(158px,1fr)); gap:18px;
+}
+.empty-note{color:var(--text-faint); padding:40px 0; text-align:center; font-size:14px;}
+.load-more-wrap{display:flex; justify-content:center; padding:30px 0 10px;}
+.load-more-btn{
+  padding:11px 26px; border-radius:999px; cursor:pointer;
+  background:var(--bg-2); border:1px solid var(--line-soft); color:var(--text);
+  font-weight:700; font-size:13.5px; transition:border-color .15s, background .15s;
+}
+.load-more-btn:hover{background:var(--bg-3); border-color:var(--violet);}
+
+/* ---------- DETAIL ---------- */
+.detail-top{margin-bottom:38px;}
+.detail-header{margin-bottom:22px;}
+.detail-header h1{font-family:var(--font-display); font-weight:800; font-size:clamp(26px,4vw,40px); margin:0 0 8px; line-height:1.05;}
+.detail-meta-line{color:var(--text-dim); font-size:14.5px; margin-bottom:0; display:flex; gap:10px; flex-wrap:wrap; align-items:center;}
+.detail-meta-line .sep{opacity:.4;}
+
+.detail-row{display:flex; align-items:flex-start; gap:20px; margin-bottom:22px;}
+.credits{display:flex; flex-direction:column; gap:10px; flex:1 1 auto; min-width:0;}
+.credit-row{display:flex; gap:10px; font-size:14px; align-items:baseline; flex-wrap:wrap;}
+.credit-row .ck-label{color:var(--text-faint); min-width:96px; font-weight:600; font-size:12.5px; text-transform:uppercase; letter-spacing:.05em; padding-top:3px;}
+.credit-row .ck-values{display:flex; gap:6px; flex-wrap:wrap;}
+.person-link{
+  color:var(--violet-2); font-weight:600; padding:3px 10px; border-radius:999px;
+  background:rgba(155,92,246,.12); border:1px solid rgba(155,92,246,.28);
+  transition:background .15s, color .15s;
+}
+.person-link:hover{background:rgba(155,92,246,.28); color:#fff;}
+
+.detail-poster-small{flex:0 0 108px; width:108px; align-self:flex-start; margin-left:auto; cursor:pointer;}
+.detail-poster-small:hover .frame{transform:rotate(-2deg) scale(1.03);}
+@media(max-width:480px){.detail-poster-small{flex-basis:76px; width:76px;}}
+.detail-poster-small .frame{
+  aspect-ratio:2/3; border-radius:var(--radius-m); overflow:hidden; width:100%;
+  position:relative; transform:rotate(-2deg); box-shadow:0 14px 30px -10px rgba(0,0,0,.6), 0 0 0 1px var(--line-soft);
+  transition:transform .15s ease;
+}
+.detail-poster-small .frame::after{content:''; position:absolute; inset:0; box-shadow:inset 0 0 30px rgba(0,0,0,.35);}
+.detail-poster-small .frame .letter{font-size:40px;}
+@media(max-width:480px){.detail-poster-small .frame .letter{font-size:28px;}}
+
+.summary-box{
+  position:relative; font-size:13px; color:var(--text-dim); line-height:1.55;
+  height:4.65em; overflow:hidden; cursor:pointer;
+  background:var(--bg-1); border:1px solid var(--line-soft); border-radius:var(--radius-m);
+  padding:12px 16px; margin-top:16px; transition:border-color .15s, background .15s;
+}
+.summary-box::after{
+  content:''; position:absolute; left:0; right:0; bottom:0; height:1.8em;
+  background:linear-gradient(to top, var(--bg-1), transparent);
+  border-radius:0 0 var(--radius-m) var(--radius-m);
+}
+.summary-box:hover{border-color:var(--violet); background:var(--bg-2);}
+.summary-box:hover::after{background:linear-gradient(to top, var(--bg-2), transparent);}
+
+.score-bar{
+  display:flex; align-items:center; gap:16px; flex-wrap:wrap;
+  padding:18px 26px; border-radius:var(--radius-l); margin-bottom:10px;
+}
+.score-bar .num{font-family:var(--font-display); font-weight:800; font-size:42px; line-height:1;}
+.score-bar .lbl{font-size:11.5px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; opacity:.85;}
+.score-bar .votes{font-size:12.5px; opacity:.8; margin-left:auto;}
+.score-na-note{font-size:12.5px; color:var(--text-faint); margin:0 0 22px; font-style:italic;}
+@media(max-width:520px){.score-bar{padding:14px 18px;} .score-bar .num{font-size:34px;}}
+
+.section-title{font-family:var(--font-display); font-weight:700; font-size:17px; margin:0 0 14px;}
+.block{margin-bottom:36px;}
+.synopsis{color:var(--text-dim); font-size:15px; line-height:1.65; max-width:74ch;}
+
+/* rate widget: slider with colored readout */
+.rate-slider-row{display:flex; align-items:center; gap:18px; margin-bottom:18px;}
+.rate-num{
+  flex:0 0 auto; min-width:58px; height:44px; padding:0 10px; border-radius:12px;
+  display:flex; align-items:center; justify-content:center;
+  font-family:var(--font-display); font-weight:800; font-size:19px;
+  transition:background .12s, color .12s;
+}
+.rate-track-wrap{flex:1; min-width:0; display:flex; align-items:center; height:26px;}
+.rate-track-wrap input[type=range]{
+  -webkit-appearance:none; appearance:none; width:100%; height:8px; border-radius:999px; margin:0; cursor:pointer;
+  background:linear-gradient(to right,
+    var(--s-black-bg) 0%, var(--s-black-bg) 1%,
+    var(--s-grey-bg) 1%, var(--s-grey-bg) 49%,
+    var(--s-blue-bg) 49%, var(--s-blue-bg) 69%,
+    var(--s-purple-bg) 69%, var(--s-purple-bg) 89%,
+    var(--s-gold-bg) 89%, var(--s-gold-bg) 100%);
+}
+.rate-track-wrap input[type=range]::-webkit-slider-thumb{
+  -webkit-appearance:none; appearance:none;
+  width:24px; height:24px; border-radius:50%;
+  background:var(--thumb-color, #fff); border:3px solid #fff;
+  box-shadow:0 2px 10px rgba(0,0,0,.5); cursor:pointer;
+}
+.rate-track-wrap input[type=range]::-moz-range-track{
+  height:8px; border-radius:999px;
+  background:linear-gradient(to right,
+    var(--s-black-bg) 0%, var(--s-black-bg) 1%,
+    var(--s-grey-bg) 1%, var(--s-grey-bg) 49%,
+    var(--s-blue-bg) 49%, var(--s-blue-bg) 69%,
+    var(--s-purple-bg) 69%, var(--s-purple-bg) 89%,
+    var(--s-gold-bg) 89%, var(--s-gold-bg) 100%);
+}
+.rate-track-wrap input[type=range]::-moz-range-thumb{
+  width:20px; height:20px; border-radius:50%; border:3px solid #fff;
+  background:var(--thumb-color, #fff); box-shadow:0 2px 10px rgba(0,0,0,.5); cursor:pointer;
+}
+.review-form textarea{
+  width:100%; min-height:96px; resize:none; overflow:hidden; box-sizing:border-box; border-radius:var(--radius-m);
+  background:var(--bg-2); border:1px solid var(--line-soft); color:var(--text);
+  padding:14px 16px; font-family:inherit; font-size:14.5px; line-height:1.5; outline:none;
+}
+.review-form textarea:focus{border-color:var(--violet);}
+.review-form{background:var(--bg-1); border:1px solid var(--line-soft); border-radius:var(--radius-l); padding:22px;}
+.review-submit{
+  margin-top:12px; padding:10px 22px; border:none; border-radius:999px; cursor:pointer;
+  background:linear-gradient(135deg,var(--violet),var(--magenta)); color:#fff; font-weight:700; font-size:14px;
+}
+.review-submit:disabled{opacity:.4; cursor:not-allowed;}
+.form-note{font-size:12.5px; color:var(--text-faint); margin-top:8px;}
+
+.reviews-list{display:flex; flex-direction:column; gap:12px; margin-top:20px;}
+.review-item{
+  display:flex; gap:14px; padding:16px 18px; border-radius:var(--radius-m);
+  background:var(--bg-1); border:1px solid var(--line-soft);
+  cursor:pointer; transition:border-color .15s, background .15s;
+}
+.review-item:hover{border-color:var(--violet); background:var(--bg-2);}
+.review-score{
+  flex:0 0 auto; width:44px; height:44px; border-radius:10px; display:flex; align-items:center; justify-content:center;
+  font-family:var(--font-display); font-weight:800; font-size:15px;
+}
+.review-body{min-width:0; flex:1 1 auto;}
+.review-author-row{display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:5px; flex-wrap:wrap;}
+.review-author-link, .review-context-link{font-weight:700; font-size:13.5px; color:var(--text); text-decoration:none;}
+.review-author-link:hover, .review-context-link:hover{color:var(--violet-2); text-decoration:underline;}
+.review-context-link{color:var(--text-dim); font-weight:600;}
+.review-reactions-mini{display:flex; align-items:center; gap:12px; flex:0 0 auto;}
+.mini-react{display:flex; align-items:center; gap:4px; font-size:12px; color:var(--text-faint); font-weight:600;}
+.mini-react svg{width:13px; height:13px;}
+.review-text{
+  color:var(--text-dim); font-size:14px; line-height:1.5;
+  display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden;
+}
+
+/* review modal */
+.modal-overlay{
+  position:fixed; inset:0; z-index:200; display:none; align-items:center; justify-content:center;
+  background:rgba(8,4,14,.7); backdrop-filter:blur(6px); padding:20px;
+}
+.modal-overlay.open{display:flex;}
+.modal-card{
+  width:100%; max-width:540px; max-height:86vh; overflow-y:auto;
+  background:var(--bg-1); border:1px solid var(--line-soft); border-radius:var(--radius-l);
+  padding:26px 26px 22px; position:relative;
+  box-shadow:0 30px 70px -20px rgba(0,0,0,.7);
+}
+.modal-close{
+  position:absolute; top:16px; right:16px; width:32px; height:32px; border-radius:50%;
+  background:var(--bg-2); border:1px solid var(--line-soft); color:var(--text-dim);
+  display:flex; align-items:center; justify-content:center; cursor:pointer; font-size:16px; line-height:1;
+}
+.modal-close:hover{color:#fff; border-color:var(--violet);}
+.modal-review-head{display:flex; align-items:center; gap:14px; margin-bottom:16px; padding-right:36px;}
+.modal-review-score{
+  flex:0 0 auto; width:52px; height:52px; border-radius:12px; display:flex; align-items:center; justify-content:center;
+  font-family:var(--font-display); font-weight:800; font-size:18px;
+}
+.modal-review-author{font-weight:700; font-size:15px; color:var(--text); text-decoration:none;}
+.modal-review-author:hover{color:var(--violet-2); text-decoration:underline;}
+.modal-review-text{color:var(--text-dim); font-size:15px; line-height:1.65; margin-bottom:22px; white-space:pre-wrap;}
+.modal-react-row{display:flex; gap:8px; flex-wrap:nowrap;}
+.react-btn{
+  display:flex; align-items:center; justify-content:center; gap:6px; padding:10px 12px; border-radius:999px; cursor:pointer;
+  background:var(--bg-2); border:1px solid var(--line-soft); color:var(--text-dim);
+  font-family:inherit; font-weight:700; font-size:13px; white-space:nowrap;
+  flex:1 1 0; min-width:0; transition:background .12s, color .12s, border-color .12s;
+}
+.react-btn svg{flex:0 0 auto; width:16px; height:16px;}
+.react-btn span{overflow:hidden; text-overflow:ellipsis;}
+.react-btn:hover{color:#fff; border-color:var(--line);}
+.react-btn.active-like{background:rgba(63,111,219,.22); border-color:var(--s-blue-bg); color:#bcd0ff;}
+.react-btn.active-dislike{background:rgba(88,80,104,.3); border-color:var(--s-grey-bg); color:#e7e2f0;}
+.react-btn.active-funny{background:rgba(232,177,58,.2); border-color:var(--s-gold-bg); color:#ffdd8a;}
+@media(max-width:480px){
+  .modal-react-row{gap:6px;}
+  .react-btn{padding:9px 6px; font-size:11px; gap:4px;}
+  .react-btn svg{width:13px; height:13px;}
+  .modal-card{padding:20px 18px 18px;}
+}
+@media(max-width:360px){
+  .react-btn{font-size:0;}
+  .react-btn span{font-size:11px;}
+}
+.modal-card.wide{max-width:680px;}
+
+/* auth (login/register) */
+.auth-form{display:flex; flex-direction:column; gap:12px;}
+.auth-field{display:flex; flex-direction:column; gap:5px;}
+.auth-field label{font-size:11px; font-weight:700; color:var(--text-faint); text-transform:uppercase; letter-spacing:.04em;}
+.auth-field input{
+  background:var(--bg-2); border:1px solid var(--line-soft); border-radius:10px; color:var(--text);
+  padding:10px 14px; font-family:inherit; font-size:14px; outline:none; width:100%; box-sizing:border-box;
+}
+.auth-field input:focus{border-color:var(--violet);}
+.auth-row-2{display:grid; grid-template-columns:1fr 1fr; gap:10px;}
+.auth-submit{
+  margin-top:2px; padding:11px; border:none; border-radius:999px; cursor:pointer;
+  background:linear-gradient(135deg,var(--violet),var(--magenta)); color:#fff; font-weight:700; font-size:14px;
+}
+.auth-google-btn{
+  display:flex; align-items:center; justify-content:center; gap:10px;
+  padding:11px; border-radius:999px; border:1px solid var(--line-soft); background:var(--bg-2);
+  color:var(--text); font-weight:700; font-size:14px; cursor:pointer; width:100%;
+}
+.auth-google-btn:hover{border-color:var(--violet);}
+.google-g{width:18px; height:18px; border-radius:50%; background:#fff; color:#4285F4; font-weight:800; font-size:12px; display:flex; align-items:center; justify-content:center; font-family:var(--font-display); flex:0 0 auto;}
+.auth-divider{display:flex; align-items:center; gap:10px; color:var(--text-faint); font-size:12px; margin:2px 0;}
+.auth-divider::before, .auth-divider::after{content:''; flex:1; height:1px; background:var(--line-soft);}
+.auth-switch{text-align:center; font-size:13px; color:var(--text-dim); margin-top:4px;}
+.auth-switch button{background:none; border:none; color:var(--violet-2); font-weight:700; cursor:pointer; font-family:inherit; font-size:13px; padding:0;}
+.auth-switch button:hover{text-decoration:underline;}
+.auth-error{color:#ff8a8a; font-size:12.5px; background:rgba(239,68,68,.1); border:1px solid rgba(239,68,68,.3); padding:9px 12px; border-radius:9px; margin-bottom:2px;}
+.auth-hint{font-size:11px; color:var(--text-faint); margin-top:-4px;}
+.avatar-photo{width:100%; height:100%; border-radius:50%; object-fit:cover;}
+.modal-head-row{position:absolute; top:16px; right:16px; display:flex; gap:8px; z-index:2;}
+.modal-icon-btn{
+  width:32px; height:32px; border-radius:50%; padding:0;
+  display:flex; align-items:center; justify-content:center;
+  background:var(--bg-2); border:1px solid var(--line-soft); color:var(--text-dim); cursor:pointer;
+  transition:background .12s, color .12s, border-color .12s;
+}
+.modal-icon-btn svg{width:15px; height:15px;}
+.modal-icon-btn:hover{color:#fff; border-color:var(--violet);}
+.modal-icon-btn.copied{background:rgba(34,197,94,.2); border-color:#22c55e; color:#8ff0b0;}
+.profile-card-modal{margin-top:6px;}
+
+/* gallery popup */
+.gallery-scroll{display:flex; gap:12px; overflow-x:auto; padding:4px 2px 6px; scroll-snap-type:x proximity;}
+.gallery-photo{
+  position:relative; flex:0 0 auto; width:220px; aspect-ratio:16/10; border-radius:var(--radius-m);
+  overflow:hidden; scroll-snap-align:start; box-shadow:0 12px 26px -12px rgba(0,0,0,.55);
+}
+.gallery-photo-label{
+  position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+  font-family:var(--font-display); font-weight:800; font-size:32px; color:rgba(255,255,255,.25);
+}
+@media(max-width:480px){.gallery-photo{width:160px;}}
+
+/* favorites popup */
+.fav-list{display:flex; flex-direction:column; gap:6px; max-height:60vh; overflow-y:auto;}
+.fav-row{
+  display:flex; align-items:center; gap:12px; padding:9px 8px; border-radius:10px; text-decoration:none; color:var(--text);
+  transition:background .12s;
+}
+.fav-row:hover{background:var(--bg-2);}
+.fav-rank{flex:0 0 auto; width:20px; text-align:center; font-family:var(--font-display); font-weight:800; font-size:13px; color:var(--text-faint);}
+.fav-avatar{
+  flex:0 0 auto; width:34px; height:34px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+  font-family:var(--font-display); font-weight:800; font-size:14px; color:#fff;
+}
+.fav-name{flex:1; min-width:0; font-weight:700; font-size:13.5px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.fav-mini{flex:0 0 auto; display:flex; align-items:center; gap:10px; font-size:12px; color:var(--text-faint); font-weight:600;}
+.fav-mini svg{width:13px; height:13px; margin-right:3px; vertical-align:-2px;}
+
+/* user profile page */
+.profile-card{
+  background:var(--bg-1); border:1px solid var(--line-soft); border-radius:var(--radius-l);
+  padding:30px 26px 24px; display:flex; flex-direction:column; align-items:center; gap:6px;
+  max-width:480px; margin:0 auto 30px;
+}
+.profile-top-combo{display:flex; align-items:center; gap:18px; margin-bottom:8px;}
+.profile-avatar-btn{
+  width:82px; height:82px; border-radius:50%; border:none; cursor:pointer; padding:0;
+  display:flex; align-items:center; justify-content:center;
+  font-family:var(--font-display); font-weight:800; font-size:30px; color:#fff;
+  transition:filter .12s, transform .12s;
+}
+.profile-avatar-btn:hover{filter:brightness(1.15); transform:scale(1.04);}
+.profile-avg-box{
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  width:74px; height:74px; border-radius:18px;
+}
+.profile-avg-box .num{font-family:var(--font-display); font-weight:800; font-size:25px; line-height:1;}
+.profile-avg-box .lbl{font-size:9.5px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; opacity:.85; margin-top:3px;}
+.profile-username{font-family:var(--font-display); font-weight:700; font-size:20px; margin:2px 0 0; text-align:center;}
+.fav-users-btn{
+  font-family:var(--font-body); font-size:11px; font-weight:800; letter-spacing:.03em;
+  padding:6px 18px; border-radius:999px; border:1px solid rgba(192,132,252,.42);
+  background:var(--bg-2); color:#c9aef2; cursor:pointer; text-transform:uppercase;
+  margin-top:12px; transition:color .15s, border-color .15s, background .15s;
+}
+.fav-users-btn:hover{color:#fff; border-color:var(--violet);}
+.profile-stats-row{
+  display:flex; align-items:center; gap:16px; width:100%; flex-wrap:wrap;
+  margin-top:16px; padding-top:16px; border-top:1px solid var(--line-soft);
+}
+.profile-stat{display:flex; align-items:center; gap:6px; font-size:13px; color:var(--text-dim); font-weight:700;}
+.profile-stat svg{width:16px; height:16px;}
+.profile-fav-btn{
+  margin-left:auto; width:36px; height:36px; border-radius:50%; flex:0 0 auto;
+  display:flex; align-items:center; justify-content:center;
+  background:var(--bg-2); border:1px solid var(--line-soft); color:var(--text-dim); cursor:pointer;
+  transition:background .12s, border-color .12s, color .12s;
+}
+.profile-fav-btn svg{width:16px; height:16px;}
+.profile-fav-btn:hover{color:#fff; border-color:var(--violet);}
+.profile-fav-btn.active{background:rgba(232,177,58,.22); border-color:var(--s-gold-bg); color:#ffdd8a;}
+@media(max-width:480px){
+  .profile-stats-row{gap:12px;}
+  .profile-stat{font-size:12px;}
+}
+
+/* filmography list on person page */
+.filmo-list{display:flex; flex-direction:column; gap:10px;}
+.filmo-item{
+  display:flex; align-items:center; gap:14px; padding:12px 16px; border-radius:var(--radius-m);
+  border:1px solid var(--line-soft); transition:transform .15s;
+}
+.filmo-item:hover{transform:translateX(4px);}
+.filmo-item .fi-title{font-weight:700; font-size:14.5px; flex:1;}
+.filmo-item .fi-meta{color:var(--text-faint); font-size:12.5px; flex:0 0 auto;}
+.filmo-item .fi-score{
+  flex:0 0 auto; min-width:40px; height:30px; padding:0 8px; border-radius:8px;
+  display:flex; align-items:center; justify-content:center; font-family:var(--font-display); font-weight:700; font-size:13px;
+}
+
+.person-head{display:flex; align-items:center; gap:18px; margin-bottom:34px;}
+.person-avatar{
+  width:78px; height:78px; border-radius:50%; flex:0 0 auto;
+  display:flex; align-items:center; justify-content:center;
+  font-family:var(--font-display); font-weight:800; font-size:28px; color:#fff;
+}
+.person-role{color:var(--text-faint); font-size:13.5px; margin-top:3px;}
+.person-bio-line{color:var(--text-faint); font-size:12.5px; margin-top:4px;}
+
+footer.site{border-top:1px solid var(--line-soft); padding:26px 0 50px; margin-top:20px;}
+footer.site .wrap{display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; color:var(--text-faint); font-size:12.5px;}
+footer.site .brand{font-size:15px;}
+
+.type-tag{
+  display:inline-block; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.05em;
+  color:var(--text-faint); border:1px solid var(--line-soft); padding:3px 9px; border-radius:999px; margin-bottom:14px;
+}
+.crumb{font-size:13px; color:var(--text-faint); margin-bottom:18px;}
+.crumb a{color:var(--violet-2); font-weight:600;}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="header-row">
+    <div class="brand-col">
+      <a href="#/" class="brand"><span class="brand-marks"><span class="mark mark-gold"></span><span class="mark mark-purple"></span><span class="mark mark-blue"></span></span>Kritiq</a>
+      <div id="authBadgeWrap"></div>
+    </div>
+    <nav class="main-nav" id="mainNav">
+      <a href="#/movies" data-r="movies">Filmy</a>
+      <a href="#/shows" data-r="shows">Seriály</a>
+      <a href="#/games" data-r="games">Hry</a>
+    </nav>
+    <button class="search-toggle" id="searchToggle" aria-label="Hledat" type="button">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    </button>
+  </div>
+  <div class="search-panel" id="searchPanel">
+    <div class="search-panel-inner">
+      <div class="search-panel-box">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input id="searchPanelInput" type="text" placeholder="Hledat filmy, seriály, hry...">
+      </div>
+      <div class="search-panel-results" id="searchPanelResults"></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="app"></main>
+
+<div class="modal-overlay" id="reviewModalOverlay">
+  <div class="modal-card" id="reviewModalCard"></div>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <span class="brand"><span class="brand-marks"><span class="mark mark-gold"></span><span class="mark mark-purple"></span><span class="mark mark-blue"></span></span>Kritiq</span>
+    <span>Nový obsah se automaticky doplňuje každý den ve 20:00 (EST) · skóre se přepočítává podle recenzí uživatelů</span>
+  </div>
+</footer>
+
+<script>
+/* ======================= DATA POOLS ======================= */
+const DIRECTORS=["Jonas Kessler","Milena Vránová","Adrian Voss","Klara Bergman","Tomáš Doležal","Rhea Solano","Otto Marek","Lucia Ferreira"];
+const COMPOSERS=["Ellis Cho","Petr Nováček","Sofia Lindqvist","Marcus Webb","Iveta Kolářová","Dario Nassar"];
+const WRITERS=["Dana Whitfield","Radek Beneš","Yara Osei","Milan Turek","Camille Fontaine","Ondřej Hasal"];
+const ACTORS=["Elena Marlowe","Hugo Steiner","Petra Zemanová","Adam Riggs","Nora Vachal","Karel Bureš","Sasha Wren","Ivan Kraus","Lena Ostrowski","Matyáš Holub","Jana Součková","Felix Draper"];
+const DEVS=["Nightforge Studios","Halcyon Interactive","Pixel Foundry","Obsidian Loop Games","Vertex Games","Quiet Storm Studio","Copper Sky Games","Emberlight","Northbound Digital","Fable & Forge"];
+const GENRES_MG=["Sci-fi","Thriller","Drama","Akční","Horor","Romantický","Fantasy","Historický","Krimi","Komedie"];
+const GENRES_GAME=["Akční RPG","Strategie","Adventura","Střílečka","Simulace","Plošinovka","Survival horor","Sci-fi"];
+const REVIEW_SNIPPETS=["Skvělý zážitek, vřele doporučuji.","Trochu nevyrovnané, ale pořád to baví.","Nejlepší kousek roku!","Čekal jsem víc, mírné zklamání.","Vizuálně famózní, příběh spíš průměrný.","Ve druhé polovině to ztrácí tempo.","Naprostá bomba od začátku do konce.","Slušné zpracování, nic převratného.","Překvapivě emotivní a promyšlené.","Technicky skvělé, ale chybí duše.","Vrací mi víru v žánr.","Dobré na jedno zhlédnutí, nic víc."];
+const REVIEW_AUTHORS=["kinofanatik","MiladaK","Petr_Recenzent","noční_sova","GamerTom","criticZone","Bara.Nova","VeronikaR","StreamMaster","DoupeFilmu","PixelHunter","AnnaVlkova"];
+const ICON_LIKE='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14z"></path><path d="M7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>';
+const ICON_DISLIKE='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3H10z"></path><path d="M17 2h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-3"></path></svg>';
+const ICON_FUNNY='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>';
+const ICON_STAR='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>';
+const ICON_PLUS='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>';
+const ICON_LINK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>';
+const ICON_CHECK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>';
+const ICON_POWER='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path><line x1="12" y1="2" x2="12" y2="12"></line></svg>';
+
+/* ======================= RAW TITLES ======================= */
+const MOVIES_RAW=[
+["Ashen Horizon",2026,"07-14",412,91],["Nightglass",2026,"05-02",268,78],["Zlatý Poledník",2026,"03-20",34,84],
+["Ferrous Heart",2026,"08-01",356,65],["The Long Static",2026,"04-11",89,88],["Vlci z Karlína",2026,"06-09",52,72],
+["Hollow Crown Rising",2026,"02-15",301,58],["Salt & Ember",2026,"05-28",121,69],["Vantablack",2026,"07-30",145,76],
+["Ozvěny Prahy",2026,"01-18",41,95],["Redline Protocol",2026,"08-20",389,55],["Paper Moths",2026,"03-05",12,90],
+["The Cartographer's Wife",2025,"11-02",66,81],["Iron Meridian",2025,"06-14",298,60],["Glass Orchard",2025,"09-09",154,47],
+["Krvavá Neděle",2025,"02-21",28,86],["The Last Cartel",2024,"10-11",210,73],["Antares Drift",2024,"04-19",245,68],
+["Marigold Station",2024,"01-30",33,92],["Copperline",2023,"07-07",88,79],["The Quiet Fracture",2023,"03-15",58,63],
+["Noční Vlak do Brna",2023,"11-24",19,71],["Vermillion Dusk",2022,"06-02",176,84],["Salt Flats",2021,"09-18",22,89],
+["Hollow Season",2019,"12-13",142,79],["Driftlight",2017,"06-04",188,73],["The Long Ferry",2013,"10-19",97,85],
+["Ashwood Manor",2009,"02-27",58,67],["Copper Requiem",2005,"07-08",134,81],["Static Horizon",2001,"11-23",76,74],
+["The Gilded Frame",1998,"03-14",112,88],["Wintermoor",1994,"09-02",48,69],["Harbor Light",1990,"05-11",64,82]
+];
+const SHOWS_RAW=[
+["Fractured Light",2026,"07-01",88],["Saltwire",2026,"04-22",74],["Praha Noir",2026,"06-15",92],
+["The Departure Board",2026,"02-10",65],["Ashfall: Řada 2",2026,"08-05",81],["Glass Kingdom",2026,"03-18",58],
+["Rooftop Dominion",2026,"05-09",96],["Lowlands",2026,"07-25",69],["The Ninth Floor",2026,"08-28",77],
+["Copper & Rust",2026,"01-14",63],["Vestibule",2026,"06-30",85],["Signal Lost",2026,"04-02",55],
+["Marlin Street",2025,"10-12",90],["The Understudy",2025,"05-19",71],["Hollow Bay",2025,"02-08",84],
+["Dešťové Město",2025,"09-01",79],["Bone Orchard",2024,"11-20",67],["Static Age",2024,"06-06",93],
+["The Cartel Wives",2024,"02-14",60],["Northgate",2023,"08-08",82],["Amber Protocol",2023,"01-25",75],
+["Vellum",2022,"05-30",88],["Nightgarden",2018,"07-14",88],["Salt House",2015,"03-27",71],
+["Rustbelt",2011,"11-02",84],["The Cold Ledger",2008,"05-15",76],["Marrow & Bone",2004,"09-30",91],
+["Lower Frequency",2000,"01-22",69],["The Wire Room",1996,"08-09",83],["Cathedral Static",1992,"04-18",78]
+];
+const GAMES_RAW=[
+["Ember Protocol",2026,"07-10",90],["Driftwood Vale",2026,"04-15",76],["Neon Sepulchre",2026,"06-01",95],
+["Ashbound",2026,"02-20",68],["Kingdom of Static",2026,"08-12",83],["Salt & Circuit",2026,"03-08",71],
+["Hollow Meridian",2026,"05-22",88],["Vantage Point Zero",2026,"07-19",62],["The Cartographer",2026,"08-30",79],
+["Rustlight",2026,"01-05",85],["Wireframe Requiem",2026,"06-18",92],["Copperfall",2026,"04-28",57],
+["Glasswing Tactics",2025,"11-11",81],["Driftgate",2025,"06-25",74],["Static Hollow",2025,"03-02",89],
+["Noční Signál",2025,"09-14",66],["Ferrous Dawn",2024,"10-05",78],["Obsidian Requiem",2024,"05-17",91],
+["Bramblewire",2024,"01-09",63],["Northlight",2023,"07-21",84],["Vertex Zero",2023,"02-11",70],
+["Emberdrift",2022,"06-14",87],["Marrow Circuit",2019,"09-09",74],["Driftstone",2014,"04-23",86],
+["Hollow Signal",2010,"12-01",79],["Copperlace",2006,"08-05",83],["Static Meadow",2001,"02-19",68],
+["Ironroot",1997,"10-12",76],["Pixel Ferry",1993,"06-01",71]
+];
+
+/* daily-drop queues (simulated automatic content, one used per category per day at 20:00 ET) */
+const QUEUE={
+  movie:[["Solstice Drift",412,86],["Cinder Row",198,73],["Marrow Line",95,80],["Quietus",301,64]],
+  show:[["Afterglow District",89],["The Rookery",77],["Salt Bloom",95],["Undertow",68]],
+  game:[["Voidmarch",93],["Lanternfall",79],["Static Choir",86],["Driftlight",70]]
+};
+
+/* ======================= HELPERS ======================= */
+function hashStr(s){let h=0; for(let i=0;i<s.length;i++){h=(h*31+s.charCodeAt(i))>>>0;} return h;}
+function posterStyle(seed){
+  const h=hashStr(seed);
+  const h1=h%360, h2=(h1+55)%360;
+  return `background:linear-gradient(150deg, hsl(${h1} 62% 38%), hsl(${h2} 70% 16%));`;
+}
+/* Real poster image when the item has one (from a fetched data.json), else the generated
+   gradient+letter placeholder. containerStyleFn should be either posterStyle-shaped or ''. */
+function posterBgStyle(item){
+  return item.poster ? '' : posterStyle(item.id+item.title);
+}
+function posterInnerHTML(item, letterSize){
+  if(item.poster){
+    return `<img class="poster-img" src="${esc(item.poster)}" alt="" loading="lazy">`;
+  }
+  return `<div class="letter">${esc(item.title.charAt(0))}</div>`;
+}
+function scoreClass(score){
+  if(score===null || score===undefined) return 's-grey';
+  if(score<=0) return 's-black';
+  if(score<50) return 's-grey';
+  if(score<70) return 's-blue';
+  if(score<90) return 's-purple';
+  return 's-gold';
+}
+/* Returns {cls, text} for rendering a score chip/badge — "N" (grey) for titles that
+   aren't in Czech or English and don't have a trustworthy score yet, otherwise the
+   normal colored number. Use this (not scoreClass+raw number) anywhere a score is shown. */
+function scoreBadge(score){
+  if(score===null || score===undefined) return {cls:'s-grey', text:'N'};
+  return {cls:scoreClass(score), text:String(score)};
+}
+const SCORE_HEX={'s-black':'#0a0810','s-grey':'#585068','s-blue':'#3f6fdb','s-purple':'#9b3ff0','s-gold':'#e8b13a'};
+function scoreHex(score){ return SCORE_HEX[scoreClass(score)]; }
+function fmtBox(n, currency){
+  if(currency==='CZK') return n+' mil. Kč';
+  return '$'+n+'M';
+}
+function fmtDate(d){
+  const months=["led","úno","bře","dub","kvě","čvn","čvc","srp","zář","říj","lis","pro"];
+  const [y,m,day]=d.split('-');
+  return `${parseInt(day)}. ${months[parseInt(m)-1]} ${y}`;
+}
+function esc(s){return s.replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function slug(name){return encodeURIComponent(name);}
+function avatarStyle(name){
+  const h=hashStr(name);
+  return `background:linear-gradient(135deg, hsl(${h%360} 60% 45%), hsl(${(h+70)%360} 65% 30%));`;
+}
+/* Prefers an uploaded profile photo (see loadAvatars, defined in the AUTH section below)
+   over the generated gradient+initial placeholder. */
+function avatarButtonStyle(username){
+  const av=(typeof loadAvatars==='function' ? loadAvatars() : {})[username];
+  return av ? '' : avatarStyle(username);
+}
+function avatarButtonInner(username){
+  const av=(typeof loadAvatars==='function' ? loadAvatars() : {})[username];
+  return av ? `<img src="${av}" alt="" class="avatar-photo">` : esc(username.charAt(0));
+}
+
+/* deterministic synthetic "who favorites whom" graph among the demo reviewer pool */
+const FAVORITES_SEED={};
+REVIEW_AUTHORS.forEach(author=>{
+  const n=2+(hashStr(author+'favn')%5);
+  const list=[];
+  for(let k=0;k<n;k++){
+    const candidate=REVIEW_AUTHORS[hashStr(author+'fav'+k)%REVIEW_AUTHORS.length];
+    if(candidate!==author && !list.includes(candidate)) list.push(candidate);
+  }
+  FAVORITES_SEED[author]=list;
+});
+function favBaseCount(username){ return hashStr(username+'favcount')%45; }
+
+function seedReviews(id, base){
+  const arr=[]; const n=2+(hashStr(id)%3);
+  for(let i=0;i<n;i++){
+    const off=((hashStr(id+i)%21)-10);
+    let sc=Math.max(0,Math.min(100, base+off));
+    sc=Math.round(sc/5)*5;
+    arr.push({
+      id: id+'-seed-'+i,
+      author:REVIEW_AUTHORS[(hashStr(id)+i)%REVIEW_AUTHORS.length], score:sc, text:REVIEW_SNIPPETS[(hashStr(id)+i*3)%REVIEW_SNIPPETS.length],
+      baseLikes: hashStr(id+'like'+i)%38,
+      baseDislikes: hashStr(id+'dis'+i)%9,
+      baseFunny: hashStr(id+'fun'+i)%22
+    });
+  }
+  return arr;
+}
+
+/* ======================= BUILD DB ======================= */
+let DB={movie:[],show:[],game:[]};
+
+/* Build DB items from plain records: {title,year,date,score,box?,country?,genre?,director?,composer?,writer?,actors?,developer?}
+   Used both for the built-in sample data and for an external, real data.json (see loadRealData below).
+   actors are normalized to {name,birthday,deathday,age} objects regardless of source, so rendering
+   code never has to check whether it's dealing with the demo dataset or real fetched data. */
+function normalizeActors(list){
+  return (list||[]).map(a=>{
+    if(typeof a==='string') return {name:a, birthday:null, deathday:null, age:null};
+    return {name:a.name||'', birthday:a.birthday||null, deathday:a.deathday||null, age:(a.age!==undefined?a.age:null)};
+  });
+}
+function buildFromRecords(records, type, prefix){
+  return records.map((r,i)=>{
+    const id=prefix+i;
+    const item={
+      id, type, title:r.title, year:r.year, date:r.date, baseScore:r.score,
+      genre: r.genre || (type==='game' ? GENRES_GAME[i%GENRES_GAME.length] : GENRES_MG[i%GENRES_MG.length]),
+      country: r.country || '',
+      poster: r.poster || '', gallery: r.gallery || [], summary: r.summary || '',
+      seed: (r.reviews && r.reviews.length) ? r.reviews.map((rv,ri)=>({id:id+'-seed-'+ri, author:rv.author||REVIEW_AUTHORS[i%REVIEW_AUTHORS.length], score:rv.score, text:rv.text, baseLikes:rv.likes||0, baseDislikes:rv.dislikes||0, baseFunny:rv.funny||0})) : []
+    };
+    if(type==='movie'){ item.box=(r.box===undefined?null:r.box); item.boxCurrency=r.box_currency||'USD'; item.director=r.director; item.composer=r.composer; item.writer=r.writer; item.actors=normalizeActors(r.actors); }
+    if(type==='show'){ item.director=r.director; item.composer=r.composer; item.writer=r.writer; item.actors=normalizeActors(r.actors); }
+    if(type==='game'){ item.developer=r.developer; }
+    return item;
+  });
+}
+
+function buildMovies(){
+  return MOVIES_RAW.map((r,i)=>{
+    const [title,year,md,box,score]=r;
+    const id='m'+i;
+    const date=`${year}-${md}`;
+    return {
+      id,type:'movie',title,year,date,box,baseScore:score,
+      genre:GENRES_MG[i%GENRES_MG.length],
+      director:DIRECTORS[i%DIRECTORS.length],
+      composer:COMPOSERS[(i+2)%COMPOSERS.length],
+      writer:WRITERS[(i+1)%WRITERS.length],
+      actors:normalizeActors([ACTORS[i%ACTORS.length],ACTORS[(i+3)%ACTORS.length],ACTORS[(i+5)%ACTORS.length],ACTORS[(i+7)%ACTORS.length]]),
+      seed:seedReviews(id,score)
+    };
+  });
+}
+function buildShows(){
+  return SHOWS_RAW.map((r,i)=>{
+    const [title,year,md,score]=r;
+    const id='s'+i;
+    const date=`${year}-${md}`;
+    return {
+      id,type:'show',title,year,date,baseScore:score,
+      genre:GENRES_MG[(i+3)%GENRES_MG.length],
+      director:DIRECTORS[(i+4)%DIRECTORS.length],
+      composer:COMPOSERS[(i+1)%COMPOSERS.length],
+      writer:WRITERS[(i+3)%WRITERS.length],
+      actors:normalizeActors([ACTORS[(i+2)%ACTORS.length],ACTORS[(i+6)%ACTORS.length],ACTORS[(i+9)%ACTORS.length],ACTORS[(i+11)%ACTORS.length]]),
+      seed:seedReviews(id,score)
+    };
+  });
+}
+function buildGames(){
+  return GAMES_RAW.map((r,i)=>{
+    const [title,year,md,score]=r;
+    const id='g'+i;
+    const date=`${year}-${md}`;
+    return {
+      id,type:'game',title,year,date,baseScore:score,
+      genre:GENRES_GAME[i%GENRES_GAME.length],
+      developer:DEVS[i%DEVS.length],
+      seed:seedReviews(id,score)
+    };
+  });
+}
+
+/* ======================= LOCAL STORAGE (reviews + daily drop) ======================= */
+function loadUserReviews(){
+  try{ return JSON.parse(localStorage.getItem('kritiq_reviews')||'{}'); }catch(e){ return {}; }
+}
+function saveUserReviews(obj){
+  try{ localStorage.setItem('kritiq_reviews', JSON.stringify(obj)); }catch(e){}
+}
+let USER_REVIEWS=loadUserReviews();
+
+function loadAddedItems(){
+  try{ return JSON.parse(localStorage.getItem('kritiq_added')||'{"movie":[],"show":[],"game":[]}'); }catch(e){ return {movie:[],show:[],game:[]}; }
+}
+function saveAddedItems(obj){
+  try{ localStorage.setItem('kritiq_added', JSON.stringify(obj)); }catch(e){}
+}
+
+function loadVotes(){
+  try{ return JSON.parse(localStorage.getItem('kritiq_votes')||'{}'); }catch(e){ return {}; }
+}
+function saveVotes(obj){
+  try{ localStorage.setItem('kritiq_votes', JSON.stringify(obj)); }catch(e){}
+}
+let VOTES=loadVotes();
+function voteCounts(review){
+  const v=VOTES[review.id]||{};
+  return {
+    likes:(review.baseLikes||0)+(v.liked?1:0),
+    dislikes:(review.baseDislikes||0)+(v.disliked?1:0),
+    funny:(review.baseFunny||0)+(v.funny?1:0)
+  };
+}
+function toggleVote(reviewId, kind){
+  const v=Object.assign({liked:false,disliked:false,funny:false}, VOTES[reviewId]);
+  if(kind==='like'){ v.liked=!v.liked; if(v.liked) v.disliked=false; }
+  else if(kind==='dislike'){ v.disliked=!v.disliked; if(v.disliked) v.liked=false; }
+  else if(kind==='funny'){ v.funny=!v.funny; }
+  VOTES[reviewId]=v;
+  saveVotes(VOTES);
+}
+
+function loadMyFavorites(){
+  try{ return JSON.parse(localStorage.getItem('kritiq_my_favorites')||'[]'); }catch(e){ return []; }
+}
+function saveMyFavorites(arr){
+  try{ localStorage.setItem('kritiq_my_favorites', JSON.stringify(arr)); }catch(e){}
+}
+function isFavoritedByMe(username){ return loadMyFavorites().includes(username); }
+function toggleMyFavorite(username){
+  let list=loadMyFavorites();
+  if(list.includes(username)) list=list.filter(u=>u!==username);
+  else list.push(username);
+  saveMyFavorites(list);
+}
+function timesFavorited(username){ return favBaseCount(username)+(isFavoritedByMe(username)?1:0); }
+
+function getUserReviews(username){
+  const out=[];
+  ['movie','show','game'].forEach(type=>{
+    DB[type].forEach(item=>{
+      allReviews(item).forEach(review=>{
+        if(review.author===username) out.push({review,item,type});
+      });
+    });
+  });
+  return out.reverse();
+}
+function userAggregate(username){
+  const entries=getUserReviews(username);
+  let likes=0,dislikes=0,funny=0,scoreSum=0;
+  entries.forEach(({review})=>{
+    const c=voteCounts(review);
+    likes+=c.likes; dislikes+=c.dislikes; funny+=c.funny; scoreSum+=review.score;
+  });
+  const avg=entries.length ? Math.round(scoreSum/entries.length) : 0;
+  return {entries, likes, dislikes, funny, avg};
+}
+
+function allReviews(item){
+  const own=(USER_REVIEWS[item.id]||[]).map((r,i)=>Object.assign({id:item.id+'-user-'+i, baseLikes:0, baseDislikes:0, baseFunny:0}, r));
+  return item.seed.concat(own);
+}
+function liveScore(item){
+  const revs=allReviews(item);
+  const all=[];
+  if(item.baseScore!==null && item.baseScore!==undefined) all.push(item.baseScore);
+  revs.forEach(r=>all.push(r.score));
+  if(all.length===0) return null;
+  const avg=all.reduce((a,b)=>a+b,0)/all.length;
+  return Math.round(avg);
+}
+/* For sort comparators: unscored ("N") items sort to the bottom rather than breaking
+   the comparison (null - number is NaN in JS, which sorts unpredictably). */
+function scoreSortValue(item){
+  const s=liveScore(item);
+  return s===null ? -1 : s;
+}
+
+/* daily drop simulation: unshift one queued title per category once per ET calendar day after 20:00 */
+function etNowParts(){
+  const fmt=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',hour12:false});
+  const parts={}; fmt.formatToParts(new Date()).forEach(p=>parts[p.type]=p.value);
+  return {dateKey:`${parts.year}-${parts.month}-${parts.day}`, hour:parseInt(parts.hour)};
+}
+function runDailyDrop(){
+  const {dateKey,hour}=etNowParts();
+  const last=localStorage.getItem('kritiq_lastDrop');
+  if(hour<20 || last===dateKey) return;
+  const added=loadAddedItems();
+  ['movie','show','game'].forEach(type=>{
+    const q=QUEUE[type];
+    if(!q.length) return;
+    const picked=q.shift();
+    let item;
+    const id=type[0]+'new'+dateKey+Math.floor(Math.random()*999);
+    if(type==='movie'){
+      const [title,box,score]=picked;
+      item={id,type,title,year:parseInt(dateKey.slice(0,4)),date:dateKey,box,baseScore:score,
+        director:DIRECTORS[hashStr(title)%DIRECTORS.length],composer:COMPOSERS[hashStr(title)%COMPOSERS.length],
+        writer:WRITERS[hashStr(title)%WRITERS.length],
+        actors:normalizeActors([ACTORS[hashStr(title)%ACTORS.length],ACTORS[(hashStr(title)+3)%ACTORS.length],ACTORS[(hashStr(title)+5)%ACTORS.length],ACTORS[(hashStr(title)+7)%ACTORS.length]]),
+        seed:seedReviews(id,score), isNew:true};
+    }else if(type==='show'){
+      const [title,score]=picked;
+      item={id,type,title,year:parseInt(dateKey.slice(0,4)),date:dateKey,baseScore:score,
+        director:DIRECTORS[hashStr(title)%DIRECTORS.length],composer:COMPOSERS[hashStr(title)%COMPOSERS.length],
+        writer:WRITERS[hashStr(title)%WRITERS.length],
+        actors:normalizeActors([ACTORS[hashStr(title)%ACTORS.length],ACTORS[(hashStr(title)+3)%ACTORS.length],ACTORS[(hashStr(title)+5)%ACTORS.length],ACTORS[(hashStr(title)+7)%ACTORS.length]]),
+        seed:seedReviews(id,score), isNew:true};
+    }else{
+      const [title,score]=picked;
+      item={id,type,title,year:parseInt(dateKey.slice(0,4)),date:dateKey,baseScore:score,
+        developer:DEVS[hashStr(title)%DEVS.length], seed:seedReviews(id,score), isNew:true};
+    }
+    DB[type].unshift(item);
+    added[type].push(item);
+  });
+  localStorage.setItem('kritiq_lastDrop', dateKey);
+  saveAddedItems(added);
+}
+function restoreAddedItems(){
+  const added=loadAddedItems();
+  ['movie','show','game'].forEach(type=>{
+    added[type].forEach(it=>{ it.isNew=true; DB[type].unshift(it); });
+  });
+}
+
+/* ======================= RENDER HELPERS ======================= */
+function typeLabel(type){return type==='movie'?'Film':type==='show'?'Seriál':'Hra';}
+function typeLabelPl(type){return type==='movie'?'Filmy':type==='show'?'Seriály':'Hry';}
+
+function sortedReviews(item){
+  return allReviews(item).slice().sort((a,b)=>{
+    const ca=voteCounts(a), cb=voteCounts(b);
+    return (cb.likes+cb.funny)-(ca.likes+ca.funny);
+  });
+}
+function reviewItemHTML(review, opts){
+  opts=opts||{};
+  const c=voteCounts(review);
+  const headLeft = opts.context
+    ? `<a class="review-context-link no-modal-trigger" href="#/title/${opts.context.type}/${opts.context.item.id}">${esc(opts.context.item.title)}</a>`
+    : `<a class="review-author-link no-modal-trigger profile-link" data-username="${esc(review.author)}" href="#/user/${slug(review.author)}">${esc(review.author)}</a>`;
+  return `
+  <div class="review-item" data-review-id="${review.id}">
+    <div class="review-score ${scoreClass(review.score)}">${review.score}</div>
+    <div class="review-body">
+      <div class="review-author-row">
+        ${headLeft}
+        <span class="review-reactions-mini">
+          <span class="mini-react">${ICON_LIKE}${c.likes}</span>
+          <span class="mini-react">${ICON_DISLIKE}${c.dislikes}</span>
+          <span class="mini-react">${ICON_FUNNY}${c.funny}</span>
+        </span>
+      </div>
+      <div class="review-text">${esc(review.text)}</div>
+    </div>
+  </div>`;
+}
+function reviewsListHTML(item){
+  const revs=sortedReviews(item);
+  return revs.length ? revs.map(r=>reviewItemHTML(r)).join('') : `<p class="empty-note">Zatím žádné recenze. Buďte první!</p>`;
+}
+
+const USER_PAGE_SIZE=5;
+let userProfilePage={};
+function userReviewsBody(username, idPrefix){
+  idPrefix=idPrefix||'user';
+  const entries=getUserReviews(username);
+  const page=userProfilePage[username]||1;
+  const shown=entries.slice(0, page*USER_PAGE_SIZE);
+  const html=shown.length
+    ? shown.map(e=>reviewItemHTML(e.review,{context:{item:e.item,type:e.type}})).join('')
+    : `<p class="empty-note">Tento uživatel zatím nenapsal žádnou recenzi.</p>`;
+  const remaining=entries.length-shown.length;
+  const more=remaining>0 ? `<div class="load-more-wrap"><button class="load-more-btn" id="${idPrefix}MoreBtn">Načíst dalších ${Math.min(USER_PAGE_SIZE,remaining)} (zbývá ${remaining})</button></div>` : '';
+  return {html:html+more, total:entries.length};
+}
+
+function cardHTML(item, rank){
+  const score=liveScore(item);
+  const badge=scoreBadge(score);
+  const meta = item.year;
+  return `
+  <a class="card" href="#/title/${item.type}/${item.id}">
+    <div class="poster" style="${posterBgStyle(item)}">
+      ${posterInnerHTML(item)}
+      <div class="scrim"></div>
+      ${item.isNew?'<span class="new-badge">Nové</span>':''}
+      <span class="score-chip ${badge.cls}">${badge.text}</span>
+      <div class="card-body">
+        <p class="card-title">${esc(item.title)}</p>
+        <p class="card-meta">${meta}</p>
+      </div>
+    </div>
+  </a>`;
+}
+
+function hotRowHTML(title, sub, items, seeAllHref){
+  const cards=items.map((it,idx)=>`<div class="hot-card">${cardHTML(it)}<div class="hot-rank">${idx+1}</div></div>`).join('');
+  return `
+  <section class="hot-section">
+    <div class="hot-head">
+      <div><h2>${title}</h2><div class="hot-sub">${sub}</div></div>
+      <a class="see-all" href="${seeAllHref}">Zobrazit vše →</a>
+    </div>
+    <div class="hot-row">${cards}</div>
+  </section>`;
+}
+
+function withinLast6Months(dateStr){
+  const d=new Date(dateStr+'T00:00:00');
+  const now=new Date('2026-09-03T00:00:00');
+  const cutoff=new Date(now); cutoff.setMonth(cutoff.getMonth()-6);
+  return d>=cutoff && d<=now;
+}
+
+/* ======================= PAGES ======================= */
+function renderHome(){
+  const hotMovies=DB.movie.filter(m=>withinLast6Months(m.date)).sort((a,b)=>scoreSortValue(b)-scoreSortValue(a)).slice(0,10);
+  const hotShows=DB.show.filter(s=>withinLast6Months(s.date)).sort((a,b)=>scoreSortValue(b)-scoreSortValue(a)).slice(0,10);
+  const hotGames=DB.game.filter(g=>withinLast6Months(g.date)).sort((a,b)=>scoreSortValue(b)-scoreSortValue(a)).slice(0,10);
+  return `
+    ${hotRowHTML('Trendy filmy','Top 10 za posledních 6 měsíců', hotMovies, '#/movies')}
+    ${hotRowHTML('Trendy seriály','Top 10 za posledních 6 měsíců', hotShows, '#/shows')}
+    ${hotRowHTML('Trendy hry','Top 10 za posledních 6 měsíců', hotGames, '#/games')}
+  `;
+}
+
+const PAGE_SIZE=100;
+let listState={movies:{y0:2021,y1:2026,sort:'score',page:1}, shows:{y0:2021,y1:2026,sort:'score',page:1}, games:{y0:2021,y1:2026,sort:'score',page:1}};
+
+function sortedListFor(type){
+  const st=listState[type+'s'];
+  const items=DB[type].filter(it=>it.year>=st.y0 && it.year<=st.y1);
+  return items.slice().sort((a,b)=>{
+    if(st.sort==='score') return scoreSortValue(b)-scoreSortValue(a);
+    if(st.sort==='new') return b.date.localeCompare(a.date);
+    if(st.sort==='box' && type==='movie') return (b.box===null||b.box===undefined?-1:b.box) - (a.box===null||a.box===undefined?-1:a.box);
+    return a.title.localeCompare(b.title);
+  });
+}
+function listBodyHTML(type){
+  const st=listState[type+'s'];
+  const sorted=sortedListFor(type);
+  const shown=sorted.slice(0, st.page*PAGE_SIZE);
+  const grid=shown.length? `<div class="grid">${shown.map(it=>cardHTML(it)).join('')}</div>` : `<p class="empty-note">V tomto rozmezí let nic nemáme. Zkuste posunout filtr.</p>`;
+  const remaining=sorted.length-shown.length;
+  const more=remaining>0 ? `<div class="load-more-wrap"><button class="load-more-btn" id="loadMoreBtn">Načíst dalších ${Math.min(PAGE_SIZE,remaining)} (zbývá ${remaining})</button></div>` : '';
+  return {html:grid+more, shown:shown.length, total:sorted.length};
+}
+
+function renderList(type){
+  const key=type+'s';
+  const st=listState[key];
+  st.page=1;
+  const {min:YMIN, max:YMAX}=YEAR_BOUNDS[type];
+  const body=listBodyHTML(type);
+  const boxOpt = type==='movie' ? `<option value="box">Tržby</option>` : '';
+  return `
+    <h1 class="page-title">${typeLabelPl(type)}</h1>
+    <p class="page-sub" id="listSub">${typeLabelPl(type)} z let ${YMIN}–${YMAX}. Zobrazeno ${body.shown} z ${body.total} položek.</p>
+    <div class="filterbar">
+      <span class="label">Rok</span>
+      <div class="range-field">
+        <div class="range-wrap">
+          <div class="range-track"><div class="fill" id="rangeFill"></div></div>
+          <input type="range" id="y0" min="${YMIN}" max="${YMAX}" value="${st.y0}">
+          <input type="range" id="y1" min="${YMIN}" max="${YMAX}" value="${st.y1}">
+        </div>
+      </div>
+      <span class="year-readout" id="yearReadout">${st.y0} – ${st.y1}</span>
+      <select class="sortsel" id="sortSel">
+        <option value="score" ${st.sort==='score'?'selected':''}>Nejlepší skóre</option>
+        <option value="new" ${st.sort==='new'?'selected':''}>Nejnovější</option>
+        ${boxOpt}
+        <option value="az" ${st.sort==='az'?'selected':''}>Podle názvu</option>
+      </select>
+    </div>
+    <div id="listBody">${body.html}</div>
+  `;
+}
+
+function attachListEvents(type){
+  const key=type+'s'; const st=listState[key];
+  const y0=document.getElementById('y0'), y1=document.getElementById('y1');
+  const sortSel=document.getElementById('sortSel');
+  function updateFill(){
+    const min=parseInt(y0.min), max=parseInt(y0.max);
+    const lo=Math.min(+y0.value,+y1.value), hi=Math.max(+y0.value,+y1.value);
+    const pct0=(lo-min)/(max-min)*100, pct1=(hi-min)/(max-min)*100;
+    document.getElementById('rangeFill').style.left=pct0+'%';
+    document.getElementById('rangeFill').style.width=(pct1-pct0)+'%';
+    document.getElementById('yearReadout').textContent=lo+' – '+hi;
+  }
+  updateFill();
+  bindLoadMore(type);
+  [y0,y1].forEach(inp=>inp.addEventListener('input',()=>{
+    st.y0=Math.min(+y0.value,+y1.value); st.y1=Math.max(+y0.value,+y1.value);
+    st.page=1;
+    updateFill();
+    refreshListBody(type);
+  }));
+  sortSel.addEventListener('change',()=>{ st.sort=sortSel.value; st.page=1; refreshListBody(type); });
+}
+function refreshListBody(type){
+  const body=listBodyHTML(type);
+  document.getElementById('listBody').innerHTML=body.html;
+  const {min:YMIN, max:YMAX}=YEAR_BOUNDS[type];
+  document.getElementById('listSub').textContent=`${typeLabelPl(type)} z let ${YMIN}–${YMAX}. Zobrazeno ${body.shown} z ${body.total} položek.`;
+  bindLoadMore(type);
+}
+function bindLoadMore(type){
+  const btn=document.getElementById('loadMoreBtn');
+  if(!btn) return;
+  btn.addEventListener('click',()=>{
+    listState[type+'s'].page++;
+    refreshListBody(type);
+  });
+}
+
+
+
+function findItem(type,id){ return DB[type].find(it=>it.id===id); }
+
+function renderDetail(type,id){
+  const item=findItem(type,id);
+  if(!item) return `<p class="empty-note">Titul nenalezen.</p>`;
+  const score=liveScore(item);
+  const badge=scoreBadge(score);
+  const revs=allReviews(item);
+  const voteCount=revs.length + (item.baseScore!==null && item.baseScore!==undefined ? 1 : 0);
+
+  let metaLine, creditsHTML, castHTML='';
+  if(type==='game'){
+    metaLine=`${fmtDate(item.date)} <span class="sep">·</span> ${esc(item.genre)} <span class="sep">·</span> ${typeLabel(type)}`;
+    creditsHTML=`<div class="credit-row"><span class="ck-label">Studio</span><div class="ck-values"><a class="person-link" href="#/person/${slug(item.developer)}">${esc(item.developer)}</a></div></div>`;
+  }else{
+    const countryPart = item.country ? ` <span class="sep">·</span> ${esc(item.country)}` : '';
+    const boxPart = (type==='movie' && item.box!==null && item.box!==undefined) ? ` <span class="sep">·</span> tržby ${fmtBox(item.box, item.boxCurrency)}` : '';
+    metaLine=`${fmtDate(item.date)}${countryPart} <span class="sep">·</span> ${esc(item.genre)} <span class="sep">·</span> ${typeLabel(type)}${boxPart}`;
+    creditsHTML=`
+      <div class="credit-row"><span class="ck-label">Režie</span><div class="ck-values"><a class="person-link" href="#/person/${slug(item.director)}">${esc(item.director)}</a></div></div>
+      <div class="credit-row"><span class="ck-label">Hudba</span><div class="ck-values"><a class="person-link" href="#/person/${slug(item.composer)}">${esc(item.composer)}</a></div></div>
+      <div class="credit-row"><span class="ck-label">Scénář</span><div class="ck-values"><a class="person-link" href="#/person/${slug(item.writer)}">${esc(item.writer)}</a></div></div>
+    `;
+    castHTML=`
+      <div class="block">
+        <h3 class="section-title">Obsazení</h3>
+        <div class="credit-row"><div class="ck-values">${item.actors.map(a=>`<a class="person-link" href="#/person/${slug(a.name)}">${esc(a.name)}</a>`).join('')}</div></div>
+      </div>`;
+  }
+
+  const defaultRate=50;
+  const rateCls0=scoreClass(defaultRate);
+  const rateHex0=scoreHex(defaultRate);
+
+  const reviewsHTML = reviewsListHTML(item);
+
+  return `
+    <div class="crumb"><a href="#/${type}s">${typeLabelPl(type)}</a> / ${esc(item.title)}</div>
+    <div class="detail-top">
+      <div class="detail-header">
+        <span class="type-tag">${typeLabel(type)}</span>
+        <h1>${esc(item.title)}</h1>
+        <div class="detail-meta-line">${metaLine}</div>
+      </div>
+      <div class="score-bar ${badge.cls}">
+        <div class="num">${badge.text}</div>
+        <div class="votes">${voteCount} hodnocení</div>
+      </div>
+      ${score===null ? `<p class="score-na-note">Skóre zatím není k dispozici — buďte první, kdo ohodnotí.</p>` : ''}
+      <div class="detail-row">
+        <div class="credits">${creditsHTML}</div>
+        <div class="detail-poster-small" id="detailPosterBtn" title="Zobrazit galerii"><div class="frame" style="${posterBgStyle(item)}">${posterInnerHTML(item)}</div></div>
+      </div>
+      ${(type!=='game' && item.summary) ? `<div class="summary-box" id="summaryBox" title="Zobrazit celý popis">${esc(item.summary)}</div>` : ''}
+    </div>
+
+    ${castHTML}
+
+    <div class="block">
+      <h3 class="section-title">Ohodnoťte to</h3>
+      <div class="review-form">
+        <div class="rate-slider-row">
+          <div class="rate-num ${rateCls0}" id="rateNum">${defaultRate}</div>
+          <div class="rate-track-wrap"><input type="range" id="rateSlider" min="0" max="100" step="10" value="${defaultRate}" style="--thumb-color:${rateHex0}"></div>
+        </div>
+        <textarea id="reviewText" placeholder="Napište svou recenzi (nepovinné)..."></textarea>
+        <br>
+        <button class="review-submit" id="submitReview">Odeslat recenzi</button>
+        <div class="form-note">Vaše hodnocení okamžitě ovlivní celkové skóre.</div>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3 class="section-title">Recenze uživatelů (${revs.length})</h3>
+      <div class="reviews-list" id="reviewsList">${reviewsHTML}</div>
+    </div>
+  `;
+}
+
+function attachDetailEvents(type,id){
+  const item=findItem(type,id);
+  const slider=document.getElementById('rateSlider');
+  const numEl=document.getElementById('rateNum');
+  const submitBtn=document.getElementById('submitReview');
+  const textarea=document.getElementById('reviewText');
+  const posterBtn=document.getElementById('detailPosterBtn');
+  if(posterBtn) posterBtn.addEventListener('click', ()=> openGalleryModal(item));
+  const summaryBox=document.getElementById('summaryBox');
+  if(summaryBox) summaryBox.addEventListener('click', ()=> openSummaryModal(item));
+  slider.addEventListener('input',()=>{
+    const v=parseInt(slider.value);
+    numEl.textContent=v;
+    numEl.className='rate-num '+scoreClass(v);
+    slider.style.setProperty('--thumb-color', scoreHex(v));
+  });
+  function autoGrow(){
+    textarea.style.height='auto';
+    textarea.style.height=textarea.scrollHeight+'px';
+  }
+  textarea.addEventListener('input', autoGrow);
+  autoGrow();
+  submitBtn.addEventListener('click',()=>{
+    const selected=parseInt(slider.value);
+    const text=textarea.value.trim() || 'Bez komentáře.';
+    if(!USER_REVIEWS[item.id]) USER_REVIEWS[item.id]=[];
+    USER_REVIEWS[item.id].push({author:CURRENT_USER||'Vy', score:selected, text});
+    saveUserReviews(USER_REVIEWS);
+    route();
+  });
+}
+
+function collectFilmography(name){
+  const rows=[];
+  ['movie','show'].forEach(type=>{
+    DB[type].forEach(it=>{
+      if(it.director===name || it.composer===name || it.writer===name || (it.actors&&it.actors.some(a=>a.name===name))){
+        rows.push(it);
+      }
+    });
+  });
+  DB.game.forEach(it=>{ if(it.developer===name) rows.push(it); });
+  const seen=new Set();
+  return rows.filter(r=>{ if(seen.has(r.id))return false; seen.add(r.id); return true; })
+             .sort((a,b)=>b.date.localeCompare(a.date));
+}
+/* Finds birthday/deathday/age for a person by scanning actor credits — Kritiq's person
+   pages are keyed by name (not a stored id), so this just grabs the first match found. */
+function findPersonBio(name){
+  for(const type of ['movie','show']){
+    for(const it of DB[type]){
+      if(!it.actors) continue;
+      const match=it.actors.find(a=>a.name===name);
+      if(match && (match.birthday || match.deathday)) return match;
+    }
+  }
+  return null;
+}
+function fmtBioDate(d){
+  if(!d) return '';
+  const [y,m,day]=d.split('-');
+  const months=["ledna","února","března","dubna","května","června","července","srpna","září","října","listopadu","prosince"];
+  return `${parseInt(day)}. ${months[parseInt(m)-1]} ${y}`;
+}
+
+function renderPerson(name){
+  const filmo=collectFilmography(name);
+  const isDev=DEVS.includes(name);
+  const role=isDev?'Vývojářské studio':'Tvůrce / herec';
+  const bio=findPersonBio(name);
+  const h=hashStr(name);
+  const avatarStyle=`background:linear-gradient(135deg, hsl(${h%360} 60% 45%), hsl(${(h+70)%360} 65% 30%));`;
+  const list=filmo.map(it=>{
+    const sc=liveScore(it); const badge=scoreBadge(sc); const cls=badge.cls;
+    return `<a class="filmo-item" href="#/title/${it.type}/${it.id}" style="background:linear-gradient(90deg, color-mix(in srgb, var(--${cls==='s-black'?'s-black-bg':cls==='s-grey'?'s-grey-bg':cls==='s-blue'?'s-blue-bg':cls==='s-purple'?'s-purple-bg':'s-gold-bg'}) 16%, var(--bg-1)), var(--bg-1));">
+      <span class="fi-title">${esc(it.title)}</span>
+      <span class="fi-meta">${typeLabel(it.type)} · ${it.year}</span>
+      <span class="fi-score ${cls}">${badge.text}</span>
+    </a>`;
+  }).join('');
+  let bioLine='';
+  if(bio && bio.birthday){
+    if(bio.deathday){
+      bioLine=`<div class="person-bio-line">Narozen(a) ${fmtBioDate(bio.birthday)} · zemřel(a) ${fmtBioDate(bio.deathday)}</div>`;
+    }else if(bio.age!==null && bio.age!==undefined){
+      bioLine=`<div class="person-bio-line">Narozen(a) ${fmtBioDate(bio.birthday)} · věk ${bio.age} let</div>`;
+    }else{
+      bioLine=`<div class="person-bio-line">Narozen(a) ${fmtBioDate(bio.birthday)}</div>`;
+    }
+  }
+  return `
+    <div class="crumb"><a href="#/">Kritiq</a> / ${esc(name)}</div>
+    <div class="person-head">
+      <div class="person-avatar" style="${avatarStyle}">${esc(name.charAt(0))}</div>
+      <div><h1 class="page-title" style="margin-bottom:2px;">${esc(name)}</h1><div class="person-role">${role}</div>${bioLine}</div>
+    </div>
+    <h3 class="section-title">Filmografie (${filmo.length})</h3>
+    <div class="filmo-list">${list || '<p class="empty-note">Žádné položky.</p>'}</div>
+  `;
+}
+
+let userProfileCurrent=null;
+function renderUserProfile(username){
+  userProfileCurrent=username;
+  userProfilePage[username]=userProfilePage[username]||1;
+  const agg=userAggregate(username);
+  const cls=scoreClass(agg.avg);
+  const isFav=isFavoritedByMe(username);
+  const body=userReviewsBody(username);
+  return `
+    <div class="crumb"><a href="#/">Kritiq</a> / ${esc(username)}</div>
+    <div class="profile-card">
+      <div class="profile-top-combo">
+        <button class="profile-avatar-btn" id="profileAvatarBtn" style="${avatarButtonStyle(username)}" title="${username===CURRENT_USER?'Změnit profilovou fotku':'Zobrazit oblíbené uživatele'}" type="button">${avatarButtonInner(username)}</button>
+        <div class="profile-avg-box ${cls}"><div class="num">${agg.avg}</div><div class="lbl">Průměr</div></div>
+      </div>
+      <h1 class="profile-username">${esc(username)}</h1>
+      <button class="fav-users-btn" id="favUsersBtn" type="button">Oblíbení uživatelé</button>
+      <div class="profile-stats-row">
+        <span class="profile-stat">${ICON_LIKE}${agg.likes}</span>
+        <span class="profile-stat">${ICON_DISLIKE}${agg.dislikes}</span>
+        <span class="profile-stat">${ICON_FUNNY}${agg.funny}</span>
+        <span class="profile-stat">${ICON_STAR}${timesFavorited(username)}</span>
+        ${username!==CURRENT_USER ? `<button class="profile-fav-btn ${isFav?'active':''}" id="profileFavBtn" title="${isFav?'Odebrat z oblíbených':'Přidat mezi oblíbené'}" type="button">${ICON_PLUS}</button>` : ''}
+      </div>
+    </div>
+
+    <div class="block">
+      <h3 class="section-title">Poslední recenze (${body.total})</h3>
+      <div class="reviews-list" id="userReviewsList">${body.html}</div>
+    </div>
+  `;
+}
+function refreshUserReviews(username){
+  const body=userReviewsBody(username);
+  document.getElementById('userReviewsList').innerHTML=body.html;
+  bindUserLoadMore(username);
+}
+function bindUserLoadMore(username){
+  const btn=document.getElementById('userMoreBtn');
+  if(!btn) return;
+  btn.addEventListener('click', ()=>{
+    userProfilePage[username]=(userProfilePage[username]||1)+1;
+    refreshUserReviews(username);
+  });
+}
+function attachUserProfileEvents(username){
+  bindUserLoadMore(username);
+  document.getElementById('favUsersBtn').addEventListener('click', ()=> openFavoritesModal(username));
+  document.getElementById('profileAvatarBtn').addEventListener('click', ()=>{
+    if(username===CURRENT_USER){
+      triggerAvatarUpload(username, ()=>{ route(); });
+    }else{
+      openFavoritesModal(username);
+    }
+  });
+  document.getElementById('profileFavBtn')?.addEventListener('click', ()=>{
+    toggleMyFavorite(username);
+    const isFav=isFavoritedByMe(username);
+    const btn=document.getElementById('profileFavBtn');
+    btn.classList.toggle('active', isFav);
+    btn.title=isFav?'Odebrat z oblíbených':'Přidat mezi oblíbené';
+    const starStat=document.querySelectorAll('.profile-stat')[3];
+    if(starStat) starStat.innerHTML=ICON_STAR+timesFavorited(username);
+  });
+}
+
+function renderSearch(q){
+  const query=q.toLowerCase();
+  const results=[...DB.movie,...DB.show,...DB.game].filter(it=>it.title.toLowerCase().includes(query));
+  return `
+    <h1 class="page-title">Výsledky hledání</h1>
+    <p class="page-sub">"${esc(q)}" — nalezeno ${results.length}</p>
+    ${results.length? `<div class="grid">${results.map(it=>cardHTML(it)).join('')}</div>` : `<p class="empty-note">Nic jsme nenašli. Zkuste jiný výraz.</p>`}
+  `;
+}
+
+/* ======================= ROUTER ======================= */
+function setActiveNav(route){
+  document.querySelectorAll('#mainNav a').forEach(a=>{
+    a.classList.toggle('active', route.startsWith(a.dataset.r));
+  });
+}
+let SCROLL_POSITIONS={};
+let lastRouteHash=null;
+
+function route(){
+  if(lastRouteHash!==null){
+    SCROLL_POSITIONS[lastRouteHash]=window.scrollY;
+  }
+  const hash=location.hash || '#/';
+  const parts=hash.replace(/^#\/?/,'').split('/').filter(Boolean);
+  const app=document.getElementById('app');
+  setActiveNav(parts[0]||'');
+
+  if(parts.length===0){
+    app.innerHTML=renderHome();
+  }else if(parts[0]==='movies'){
+    app.innerHTML=renderList('movie'); attachListEvents('movie');
+  }else if(parts[0]==='shows'){
+    app.innerHTML=renderList('show'); attachListEvents('show');
+  }else if(parts[0]==='games'){
+    app.innerHTML=renderList('game'); attachListEvents('game');
+  }else if(parts[0]==='title' && parts[1] && parts[2]){
+    app.innerHTML=renderDetail(parts[1],parts[2]); attachDetailEvents(parts[1],parts[2]);
+  }else if(parts[0]==='person' && parts[1]){
+    app.innerHTML=renderPerson(decodeURIComponent(parts[1]));
+  }else if(parts[0]==='user' && parts[1]){
+    app.innerHTML=renderUserProfile(decodeURIComponent(parts[1])); attachUserProfileEvents(decodeURIComponent(parts[1]));
+  }else if(parts[0]==='search' && parts[1]){
+    app.innerHTML=renderSearch(decodeURIComponent(parts[1]));
+  }else{
+    app.innerHTML=renderHome();
+  }
+
+  const saved=SCROLL_POSITIONS[hash];
+  window.scrollTo({top: saved!==undefined ? saved : 0, behavior:'instant'in window?'instant':'auto'});
+  lastRouteHash=hash;
+}
+
+/* ======================= INIT ======================= */
+/* If a real, generated dataset (data.json) sits next to this file, it is used automatically.
+   See fetch_data.py / fetch_data_daily.py for how to generate a real, thousands-title
+   data.json from TMDb (movies/shows) and RAWG (games) — drop the file next to kritiq.html
+   and reload. poster/gallery only render when this page is opened outside the Claude-hosted
+   preview link (locally or self-hosted), since that sandbox blocks external images.
+   score can be null (title not available in Czech or English) — Kritiq shows an "N" badge
+   and lets user votes establish a real score from scratch rather than inventing one. Shape:
+   { "movies":[{title,year,date,score,box,genre,poster,gallery:[],summary,director,composer,writer,actors:[]}, ...],
+     "shows": [{title,year,date,score,genre,poster,gallery:[],summary,director,composer,writer,actors:[]}, ...],
+     "games": [{title,year,date,score,genre,poster,gallery:[],developer}, ...] }               */
+async function loadRealData(){
+  try{
+    const res=await fetch('./data.json', {cache:'no-store'});
+    if(!res.ok) return false;
+    const json=await res.json();
+    if(!json.movies || !json.shows || !json.games) return false;
+    DB.movie=buildFromRecords(json.movies,'movie','m');
+    DB.show=buildFromRecords(json.shows,'show','s');
+    DB.game=buildFromRecords(json.games,'game','g');
+    return true;
+  }catch(e){ return false; }
+}
+
+let YEAR_BOUNDS={movie:{min:2021,max:2026}, show:{min:2021,max:2026}, game:{min:2021,max:2026}};
+function computeYearBounds(){
+  ['movie','show','game'].forEach(type=>{
+    const years=DB[type].map(it=>it.year).filter(y=>Number.isFinite(y));
+    if(years.length){ YEAR_BOUNDS[type]={min:Math.min(...years), max:Math.max(...years)}; }
+  });
+  listState.movies.y0=YEAR_BOUNDS.movie.min; listState.movies.y1=YEAR_BOUNDS.movie.max;
+  listState.shows.y0=YEAR_BOUNDS.show.min; listState.shows.y1=YEAR_BOUNDS.show.max;
+  listState.games.y0=YEAR_BOUNDS.game.min; listState.games.y1=YEAR_BOUNDS.game.max;
+}
+
+/* ======================= REVIEW MODAL ======================= */
+/* ======================= AUTH (prototype only — local browser storage, no real server/OAuth) ======================= */
+function loadAccounts(){ try{ return JSON.parse(localStorage.getItem('kritiq_accounts')||'{}'); }catch(e){ return {}; } }
+function saveAccounts(o){ try{ localStorage.setItem('kritiq_accounts', JSON.stringify(o)); }catch(e){} }
+function loadCurrentUser(){ try{ return localStorage.getItem('kritiq_current_user')||null; }catch(e){ return null; } }
+function setCurrentUser(name){ try{ if(name) localStorage.setItem('kritiq_current_user', name); else localStorage.removeItem('kritiq_current_user'); }catch(e){} }
+function loadAvatars(){ try{ return JSON.parse(localStorage.getItem('kritiq_avatars')||'{}'); }catch(e){ return {}; } }
+function saveAvatars(o){ try{ localStorage.setItem('kritiq_avatars', JSON.stringify(o)); }catch(e){} }
+
+let CURRENT_USER=loadCurrentUser();
+let authMode='login';
+let authError='';
+
+function renderAuthBadge(){
+  const wrap=document.getElementById('authBadgeWrap');
+  if(!wrap) return;
+  if(CURRENT_USER){
+    wrap.innerHTML=`
+      <div class="auth-badge-user">
+        <button class="auth-badge-name profile-link" data-username="${esc(CURRENT_USER)}" type="button">${esc(CURRENT_USER)}</button>
+        <button class="auth-badge-logout" id="logoutBtn" title="Odhlásit se" type="button">${ICON_POWER}</button>
+      </div>`;
+    document.getElementById('logoutBtn').addEventListener('click', openLogoutConfirm);
+  }else{
+    wrap.innerHTML=`<button class="auth-badge-login" id="loginBadgeBtn" type="button">Login</button>`;
+    document.getElementById('loginBadgeBtn').addEventListener('click', ()=>openAuthModal('login'));
+  }
+}
+
+function openAuthModal(mode){
+  authMode=mode||'login';
+  authError='';
+  pushModal(renderAuthModal);
+}
+function loginFormHTML(){
+  return `
+    <button class="modal-close" id="authCloseBtn" aria-label="Zavřít" type="button">✕</button>
+    <h3 class="section-title" style="margin-bottom:16px;">Přihlášení</h3>
+    ${authError?`<div class="auth-error">${esc(authError)}</div>`:''}
+    <div class="auth-form">
+      <button class="auth-google-btn" id="googleLoginBtn" type="button"><span class="google-g">G</span>Pokračovat přes Google</button>
+      <div class="auth-divider">nebo</div>
+      <div class="auth-field"><label>E-mail</label><input type="email" id="loginEmail" placeholder="vas@email.cz"></div>
+      <div class="auth-field"><label>Heslo</label><input type="password" id="loginPassword" placeholder="••••••••"></div>
+      <button class="auth-submit" id="loginSubmitBtn" type="button">Přihlásit se</button>
+      <div class="auth-switch">Ještě nemáte účet? <button id="toRegisterBtn" type="button">Zaregistrujte se</button></div>
+    </div>`;
+}
+function registerFormHTML(){
+  return `
+    <button class="modal-close" id="authCloseBtn" aria-label="Zavřít" type="button">✕</button>
+    <h3 class="section-title" style="margin-bottom:16px;">Registrace</h3>
+    ${authError?`<div class="auth-error">${esc(authError)}</div>`:''}
+    <div class="auth-form">
+      <div class="auth-field"><label>Přezdívka</label><input type="text" id="regNickname" placeholder="vasenickname"></div>
+      <div class="auth-row-2">
+        <div class="auth-field"><label>Jméno</label><input type="text" id="regFirst" placeholder="Jan"></div>
+        <div class="auth-field"><label>Příjmení</label><input type="text" id="regLast" placeholder="Novák"></div>
+      </div>
+      <div class="auth-field"><label>E-mail</label><input type="email" id="regEmail" placeholder="vas@email.cz"></div>
+      <div class="auth-field"><label>Potvrďte e-mail</label><input type="email" id="regEmail2" placeholder="vas@email.cz"></div>
+      <div class="auth-field"><label>Heslo</label><input type="password" id="regPassword" placeholder="••••••••"></div>
+      <div class="auth-field"><label>Potvrďte heslo</label><input type="password" id="regPassword2" placeholder="••••••••"></div>
+      <div class="auth-hint">Heslo musí mít alespoň 8 znaků, 1 číslo a 1 speciální znak.</div>
+      <button class="auth-submit" id="registerSubmitBtn" type="button">Zaregistrovat se</button>
+      <div class="auth-switch">Už máte účet? <button id="toLoginBtn" type="button">Přihlaste se</button></div>
+    </div>`;
+}
+function renderAuthModal(){
+  const card=document.getElementById('reviewModalCard');
+  card.className='modal-card';
+  card.innerHTML = authMode==='login' ? loginFormHTML() : registerFormHTML();
+  document.getElementById('authCloseBtn').addEventListener('click', popModal);
+  document.getElementById('googleLoginBtn')?.addEventListener('click', simulateGoogleLogin);
+  if(authMode==='login'){
+    document.getElementById('loginSubmitBtn').addEventListener('click', handleLoginSubmit);
+    document.getElementById('toRegisterBtn').addEventListener('click', ()=>{ authMode='register'; authError=''; renderAuthModal(); });
+  }else{
+    document.getElementById('registerSubmitBtn').addEventListener('click', handleRegisterSubmit);
+    document.getElementById('toLoginBtn').addEventListener('click', ()=>{ authMode='login'; authError=''; renderAuthModal(); });
+  }
+}
+function logInAs(nickname){
+  CURRENT_USER=nickname;
+  setCurrentUser(nickname);
+  renderAuthBadge();
+  popModal();
+}
+function simulateGoogleLogin(){
+  /* No real backend here, so this simulates a Google sign-in rather than performing one. */
+  const accounts=loadAccounts();
+  const nickname='GoogleUser';
+  if(!accounts[nickname]){
+    accounts[nickname]={nickname, firstName:'Google', lastName:'Uživatel', email:'demo@gmail.com', password:''};
+    saveAccounts(accounts);
+  }
+  logInAs(nickname);
+}
+function handleLoginSubmit(){
+  const email=document.getElementById('loginEmail').value.trim();
+  const password=document.getElementById('loginPassword').value;
+  const accounts=loadAccounts();
+  const match=Object.values(accounts).find(a=>a.email.toLowerCase()===email.toLowerCase() && a.password===password);
+  if(!match){ authError='Nesprávný e-mail nebo heslo.'; renderAuthModal(); return; }
+  logInAs(match.nickname);
+}
+function handleRegisterSubmit(){
+  const nickname=document.getElementById('regNickname').value.trim();
+  const first=document.getElementById('regFirst').value.trim();
+  const last=document.getElementById('regLast').value.trim();
+  const email=document.getElementById('regEmail').value.trim();
+  const email2=document.getElementById('regEmail2').value.trim();
+  const pass=document.getElementById('regPassword').value;
+  const pass2=document.getElementById('regPassword2').value;
+  if(!nickname||!first||!last||!email||!email2||!pass||!pass2){ authError='Vyplňte prosím všechna pole.'; renderAuthModal(); return; }
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ authError='Zadejte platnou e-mailovou adresu.'; renderAuthModal(); return; }
+  if(email.toLowerCase()!==email2.toLowerCase()){ authError='E-mailové adresy se neshodují.'; renderAuthModal(); return; }
+  if(!/^(?=.*[0-9])(?=.*[^A-Za-z0-9]).{8,}$/.test(pass)){ authError='Heslo musí mít alespoň 8 znaků, 1 číslo a 1 speciální znak.'; renderAuthModal(); return; }
+  if(pass!==pass2){ authError='Hesla se neshodují.'; renderAuthModal(); return; }
+  const accounts=loadAccounts();
+  if(accounts[nickname]){ authError='Tato přezdívka už je obsazená.'; renderAuthModal(); return; }
+  if(Object.values(accounts).some(a=>a.email.toLowerCase()===email.toLowerCase())){ authError='Tento e-mail už je zaregistrovaný.'; renderAuthModal(); return; }
+  accounts[nickname]={nickname, firstName:first, lastName:last, email, password:pass};
+  saveAccounts(accounts);
+  logInAs(nickname);
+}
+function openLogoutConfirm(){
+  pushModal(()=>{
+    const card=document.getElementById('reviewModalCard');
+    card.className='modal-card';
+    card.innerHTML=`
+      <button class="modal-close" id="authCloseBtn" aria-label="Zavřít" type="button">✕</button>
+      <h3 class="section-title" style="margin-bottom:10px;">Odhlásit se?</h3>
+      <p class="synopsis" style="margin-bottom:20px;">Opravdu se chcete odhlásit z účtu ${esc(CURRENT_USER||'')}?</p>
+      <div class="modal-react-row">
+        <button class="react-btn" id="logoutNoBtn" type="button">Ne</button>
+        <button class="react-btn active-dislike" id="logoutYesBtn" type="button">Ano</button>
+      </div>`;
+    document.getElementById('authCloseBtn').addEventListener('click', popModal);
+    document.getElementById('logoutNoBtn').addEventListener('click', popModal);
+    document.getElementById('logoutYesBtn').addEventListener('click', ()=>{
+      CURRENT_USER=null;
+      setCurrentUser(null);
+      renderAuthBadge();
+      closeAllModals();
+    });
+  });
+}
+function triggerAvatarUpload(username, onDone){
+  const input=document.createElement('input');
+  input.type='file'; input.accept='image/*';
+  input.addEventListener('change', ()=>{
+    const file=input.files[0];
+    if(!file) return;
+    const reader=new FileReader();
+    reader.onload=()=>{
+      const avatars=loadAvatars();
+      avatars[username]=reader.result;
+      saveAvatars(avatars);
+      if(onDone) onDone();
+    };
+    reader.readAsDataURL(file);
+  });
+  input.click();
+}
+
+/* ======================= MODAL STACK ======================= */
+/* Each entry is a render function that redraws the current modal content into #reviewModalCard.
+   Opening a new modal pushes onto the stack (previous stays underneath); the X button pops one
+   level back to whatever was open before, and only empties + hides the overlay once the stack
+   is empty. Backdrop click / Escape / navigating away clear the whole stack at once. */
+let modalStack=[];
+function pushModal(renderFn){
+  modalStack.push(renderFn);
+  renderTopModal();
+}
+function renderTopModal(){
+  if(!modalStack.length) return;
+  modalStack[modalStack.length-1]();
+  document.getElementById('reviewModalOverlay').classList.add('open');
+}
+function popModal(){
+  modalStack.pop();
+  if(modalStack.length) renderTopModal();
+  else closeAllModals();
+}
+function closeAllModals(){
+  modalStack=[];
+  document.getElementById('reviewModalOverlay').classList.remove('open');
+}
+
+function openReviewModalById(reviewId){
+  const itemId=reviewId.split(/-(?:seed|user)-/)[0];
+  const type=itemId.charAt(0)==='m'?'movie':itemId.charAt(0)==='s'?'show':'game';
+  const item=findItem(type,itemId);
+  if(!item) return;
+  const review=allReviews(item).find(r=>r.id===reviewId);
+  if(!review) return;
+  pushModal(()=>renderModalCard(item, review));
+}
+function renderModalCard(item, review){
+  const card=document.getElementById('reviewModalCard');
+  const c=voteCounts(review);
+  const v=VOTES[review.id]||{};
+  card.className='modal-card';
+  card.innerHTML=`
+    <button class="modal-close" id="reviewModalCloseBtn" aria-label="Zavřít" type="button">✕</button>
+    <div class="modal-review-head">
+      <div class="modal-review-score ${scoreClass(review.score)}">${review.score}</div>
+      <a class="modal-review-author profile-link" data-username="${esc(review.author)}" href="#/user/${slug(review.author)}">${esc(review.author)}</a>
+    </div>
+    <div class="modal-review-text">${esc(review.text)}</div>
+    <div class="modal-react-row">
+      <button class="react-btn ${v.liked?'active-like':''}" data-kind="like" type="button">${ICON_LIKE}<span>Líbí (${c.likes})</span></button>
+      <button class="react-btn ${v.disliked?'active-dislike':''}" data-kind="dislike" type="button">${ICON_DISLIKE}<span>Nelíbí (${c.dislikes})</span></button>
+      <button class="react-btn ${v.funny?'active-funny':''}" data-kind="funny" type="button">${ICON_FUNNY}<span>Vtipné (${c.funny})</span></button>
+    </div>
+  `;
+  document.getElementById('reviewModalCloseBtn').addEventListener('click', popModal);
+  card.querySelectorAll('.react-btn').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      toggleVote(review.id, btn.dataset.kind);
+      renderModalCard(item, review);
+      const list=document.getElementById('reviewsList');
+      if(list) list.innerHTML=reviewsListHTML(item);
+      const userList=document.getElementById('userReviewsList');
+      if(userList && userProfileCurrent) refreshUserReviews(userProfileCurrent);
+    });
+  });
+}
+
+function openGalleryModal(item){
+  pushModal(()=>{
+    const card=document.getElementById('reviewModalCard');
+    const realPhotos=[item.poster, ...(item.gallery||[])].filter(Boolean);
+    const photosHTML = realPhotos.length
+      ? realPhotos.map(url=>`<div class="gallery-photo"><img src="${esc(url)}" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>`).join('')
+      : Array.from({length:6},(_,i)=>posterStyle(item.id+item.title+'gal'+i)).map((st,i)=>`<div class="gallery-photo" style="${st}"><span class="gallery-photo-label">${esc(item.title.charAt(0))}${i+1}</span></div>`).join('');
+    card.className='modal-card wide';
+    card.innerHTML=`
+      <button class="modal-close" id="galleryCloseBtn" aria-label="Zavřít" type="button">✕</button>
+      <h3 class="section-title" style="margin-bottom:14px;">${esc(item.title)} — galerie</h3>
+      <div class="gallery-scroll">${photosHTML}</div>
+    `;
+    document.getElementById('galleryCloseBtn').addEventListener('click', popModal);
+  });
+}
+
+function openSummaryModal(item){
+  pushModal(()=>{
+    const card=document.getElementById('reviewModalCard');
+    card.className='modal-card';
+    card.innerHTML=`
+      <button class="modal-close" id="summaryCloseBtn" aria-label="Zavřít" type="button">✕</button>
+      <h3 class="section-title" style="margin-bottom:14px;">${esc(item.title)}</h3>
+      <p class="modal-review-text">${esc(item.summary)}</p>
+    `;
+    document.getElementById('summaryCloseBtn').addEventListener('click', popModal);
+  });
+}
+
+const FAV_PAGE_SIZE=10;
+let favModalState={username:null, page:1};
+function openFavoritesModal(username){
+  favModalState={username, page:1};
+  pushModal(renderFavoritesModal);
+}
+function favoritesForUser(username){
+  const list = username===CURRENT_USER ? loadMyFavorites() : (FAVORITES_SEED[username]||[]);
+  return list.map(u=>({username:u, agg:userAggregate(u)}))
+    .sort((a,b)=>(b.agg.likes+b.agg.funny)-(a.agg.likes+a.agg.funny));
+}
+function renderFavoritesModal(){
+  const {username, page}=favModalState;
+  const card=document.getElementById('reviewModalCard');
+  const enriched=favoritesForUser(username);
+  const shown=enriched.slice(0, page*FAV_PAGE_SIZE);
+  const rows=shown.map((e,i)=>`
+    <a class="fav-row profile-link" data-username="${esc(e.username)}" href="#/user/${slug(e.username)}">
+      <span class="fav-rank">${i+1}</span>
+      <span class="fav-avatar" style="${avatarStyle(e.username)}">${esc(e.username.charAt(0))}</span>
+      <span class="fav-name">${esc(e.username)}</span>
+      <span class="fav-mini">${ICON_LIKE}${e.agg.likes}${ICON_FUNNY}${e.agg.funny}</span>
+    </a>`).join('');
+  const remaining=enriched.length-shown.length;
+  const more=remaining>0 ? `<div class="load-more-wrap"><button class="load-more-btn" id="favMoreBtn">Zobrazit dalších ${Math.min(FAV_PAGE_SIZE,remaining)}</button></div>` : '';
+  card.className='modal-card';
+  card.innerHTML=`
+    <button class="modal-close" id="favCloseBtn" aria-label="Zavřít" type="button">✕</button>
+    <h3 class="section-title" style="margin-bottom:14px;">Oblíbení uživatelé — ${esc(username)}</h3>
+    ${enriched.length ? `<div class="fav-list">${rows}</div>${more}` : `<p class="empty-note">Zatím nikoho nemá v oblíbených.</p>`}
+  `;
+  document.getElementById('favCloseBtn').addEventListener('click', popModal);
+  const moreBtn=document.getElementById('favMoreBtn');
+  if(moreBtn) moreBtn.addEventListener('click', ()=>{ favModalState.page++; renderFavoritesModal(); });
+}
+
+/* ======================= USER PROFILE POPUP ======================= */
+let userModalCurrent=null;
+function openUserModal(username){
+  userModalCurrent=username;
+  userProfilePage[username]=userProfilePage[username]||1;
+  pushModal(renderUserModal);
+}
+function renderUserModal(){
+  const username=userModalCurrent;
+  const card=document.getElementById('reviewModalCard');
+  const agg=userAggregate(username);
+  const cls=scoreClass(agg.avg);
+  const isFav=isFavoritedByMe(username);
+  const body=userReviewsBody(username,'modal');
+  card.className='modal-card';
+  card.innerHTML=`
+    <div class="modal-head-row">
+      <button class="modal-icon-btn" id="modalCopyLinkBtn" title="Kopírovat odkaz na profil" type="button">${ICON_LINK}</button>
+      <button class="modal-icon-btn" id="modalProfileCloseBtn" aria-label="Zavřít" title="Zavřít" type="button">✕</button>
+    </div>
+    <div class="profile-card profile-card-modal">
+      <div class="profile-top-combo">
+        <button class="profile-avatar-btn" id="modalAvatarBtn" style="${avatarButtonStyle(username)}" title="${username===CURRENT_USER?'Změnit profilovou fotku':'Zobrazit oblíbené uživatele'}" type="button">${avatarButtonInner(username)}</button>
+        <div class="profile-avg-box ${cls}"><div class="num">${agg.avg}</div><div class="lbl">Průměr</div></div>
+      </div>
+      <h1 class="profile-username">${esc(username)}</h1>
+      <button class="fav-users-btn" id="modalFavUsersBtn" type="button">Oblíbení uživatelé</button>
+      <div class="profile-stats-row">
+        <span class="profile-stat">${ICON_LIKE}${agg.likes}</span>
+        <span class="profile-stat">${ICON_DISLIKE}${agg.dislikes}</span>
+        <span class="profile-stat">${ICON_FUNNY}${agg.funny}</span>
+        <span class="profile-stat">${ICON_STAR}${timesFavorited(username)}</span>
+        ${username!==CURRENT_USER ? `<button class="profile-fav-btn ${isFav?'active':''}" id="modalFavBtn" title="${isFav?'Odebrat z oblíbených':'Přidat mezi oblíbené'}" type="button">${ICON_PLUS}</button>` : ''}
+      </div>
+    </div>
+    <h3 class="section-title">Poslední recenze (${body.total})</h3>
+    <div class="reviews-list" id="modalReviewsList">${body.html}</div>
+  `;
+  document.getElementById('modalProfileCloseBtn').addEventListener('click', popModal);
+  document.getElementById('modalFavUsersBtn').addEventListener('click', ()=> openFavoritesModal(username));
+  document.getElementById('modalAvatarBtn').addEventListener('click', ()=>{
+    if(username===CURRENT_USER){
+      triggerAvatarUpload(username, renderUserModal);
+    }else{
+      openFavoritesModal(username);
+    }
+  });
+  document.getElementById('modalFavBtn')?.addEventListener('click', ()=>{
+    toggleMyFavorite(username);
+    renderUserModal();
+  });
+  document.getElementById('modalCopyLinkBtn').addEventListener('click', (e)=> copyProfileLink(username, e.currentTarget));
+  bindUserModalLoadMore(username);
+}
+function refreshUserReviewsModal(username){
+  const body=userReviewsBody(username,'modal');
+  document.getElementById('modalReviewsList').innerHTML=body.html;
+  bindUserModalLoadMore(username);
+}
+function bindUserModalLoadMore(username){
+  const btn=document.getElementById('modalMoreBtn');
+  if(!btn) return;
+  btn.addEventListener('click', ()=>{
+    userProfilePage[username]=(userProfilePage[username]||1)+1;
+    refreshUserReviewsModal(username);
+  });
+}
+function copyProfileLink(username, btnEl){
+  const url=location.origin+location.pathname+'#/user/'+encodeURIComponent(username);
+  const done=()=>{
+    const original=btnEl.innerHTML;
+    btnEl.innerHTML=ICON_CHECK;
+    btnEl.classList.add('copied');
+    setTimeout(()=>{ btnEl.innerHTML=original; btnEl.classList.remove('copied'); }, 1500);
+  };
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(url).then(done).catch(()=>fallbackCopy(url,done));
+  }else{
+    fallbackCopy(url,done);
+  }
+}
+function fallbackCopy(text, cb){
+  try{
+    const ta=document.createElement('textarea');
+    ta.value=text; ta.style.position='fixed'; ta.style.opacity='0';
+    document.body.appendChild(ta); ta.select(); document.execCommand('copy'); document.body.removeChild(ta);
+    if(cb) cb();
+  }catch(e){}
+}
+
+/* ======================= SEARCH PANEL ======================= */
+function initSearchPanel(){
+  const toggleBtn=document.getElementById('searchToggle');
+  const panel=document.getElementById('searchPanel');
+  const input=document.getElementById('searchPanelInput');
+  const results=document.getElementById('searchPanelResults');
+
+  function closePanel(){ panel.classList.remove('open'); toggleBtn.classList.remove('active'); }
+  function openPanel(){
+    panel.classList.add('open'); toggleBtn.classList.add('active');
+    setTimeout(()=>input.focus(), 60);
+  }
+  function renderResults(q){
+    if(!q){ results.innerHTML=''; return; }
+    const query=q.toLowerCase();
+    const matches=[...DB.movie,...DB.show,...DB.game].filter(it=>it.title.toLowerCase().includes(query));
+    if(!matches.length){ results.innerHTML=`<div class="search-empty-note">Nic jsme nenašli pro "${esc(q)}".</div>`; return; }
+    const top=matches.slice(0,20);
+    results.innerHTML=top.map(it=>{
+      const sc=liveScore(it); const badge=scoreBadge(sc);
+      const meta=(it.type==='movie' && it.box!==null && it.box!==undefined) ? `${fmtBox(it.box, it.boxCurrency)} · ${it.year}` : `${it.year}`;
+      return `<a class="search-result-row" href="#/title/${it.type}/${it.id}"><span class="srr-title">${esc(it.title)}</span><span class="srr-meta">${typeLabel(it.type)} · ${meta}</span><span class="srr-score ${badge.cls}">${badge.text}</span></a>`;
+    }).join('');
+  }
+
+  toggleBtn.addEventListener('click', ()=>{
+    if(panel.classList.contains('open')) closePanel();
+    else { openPanel(); renderResults(input.value.trim()); }
+  });
+  input.addEventListener('input', ()=> renderResults(input.value.trim()));
+  document.addEventListener('click', e=>{
+    if(panel.classList.contains('open') && !panel.contains(e.target) && !toggleBtn.contains(e.target)) closePanel();
+  });
+  window.addEventListener('hashchange', closePanel);
+  window._closeSearchPanel=closePanel;
+}
+
+async function init(){
+  const loadedReal = await loadRealData();
+  if(!loadedReal){
+    DB.movie=buildMovies();
+    DB.show=buildShows();
+    DB.game=buildGames();
+    restoreAddedItems();
+    runDailyDrop(); // simulated placeholder content — demo dataset only, never with real fetched data
+  }
+  computeYearBounds();
+
+  initSearchPanel();
+  renderAuthBadge();
+
+  document.addEventListener('click', e=>{
+    const profileLink=e.target.closest('.profile-link');
+    if(profileLink){ e.preventDefault(); openUserModal(profileLink.dataset.username); return; }
+    if(e.target.closest('.no-modal-trigger')) return;
+    const reviewEl=e.target.closest('.review-item');
+    if(reviewEl){ openReviewModalById(reviewEl.dataset.reviewId); return; }
+  });
+  document.getElementById('reviewModalOverlay').addEventListener('click', e=>{
+    if(e.target.id==='reviewModalOverlay') closeAllModals();
+  });
+  document.addEventListener('keydown', e=>{
+    if(e.key==='Escape'){ closeAllModals(); if(window._closeSearchPanel) window._closeSearchPanel(); }
+  });
+  window.addEventListener('hashchange', closeAllModals);
+
+  window.addEventListener('hashchange', route);
+  route();
+}
+init();
+</script>
+</body>
+</html>
