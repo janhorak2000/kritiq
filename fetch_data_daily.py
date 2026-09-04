@@ -77,12 +77,21 @@ the historical backfill has gotten to. Once you've fully backfilled to
 --floor-year, add --skip-backfill so future days only run this fast pass.
 
 Output:
-  data.json         merged with everything fetched so far — drop next to kritiq.html
-  fetch_state.json  progress tracker — do NOT delete this between runs, or it
-                    will start over from the current year and re-fetch titles
-                    you already have (harmless, just wasteful of time)
+  data.json         merged with everything fetched so far — drop next to kritiq.html.
+                    Each entry stores its source id (tmdb_id or rawg_id) — every run,
+                    the script rebuilds its "already have this" tracking directly from
+                    whatever's actually in data.json (in addition to fetch_state.json's
+                    own record), so it can't silently duplicate entries even if the two
+                    files ever drift out of sync with each other.
+  fetch_state.json  progress tracker (which year each category is up to) — do NOT
+                    delete this alone between runs, or it will think years it's
+                    already scanned still need scanning, which is harmless but slow.
 
-To reset and start completely fresh, delete both data.json and fetch_state.json.
+IMPORTANT — data.json and fetch_state.json are a PAIR: delete them BOTH together for a
+genuine fresh start, or leave them BOTH alone. Deleting only one (especially data.json
+while keeping fetch_state.json) will make the script think it already has titles that
+no longer actually exist in your data file, and it'll collect nothing new for whichever
+years it believes are already done.
 
 IMPORTANT: poster/gallery images only display when kritiq.html is opened
 outside the Claude-hosted preview link (e.g. opened locally as a file, or
@@ -273,11 +282,33 @@ def required_votes(min_votes, lang_ok, strict_genre):
     return min_votes
 
 
-def passes_quality(item, media, lang_ok_fn, min_votes):
+def is_indian_movie(key, m):
+    """Only checked for English-tagged movies (m['original_language']=='en') that are
+    already in the gray zone (pass the lenient bar but not the stricter one) — TMDb
+    often tags major Indian productions as English even though they're clearly regional
+    films with a large domestic voting base, which can otherwise let them outrank titles
+    that are genuinely well-known internationally at a similar vote count. This costs one
+    extra API call, but only for that narrow gray-zone subset, not every English movie."""
+    try:
+        details = tmdb_get(f"/movie/{m['id']}", key, {"language": "en-US"})
+        countries = [c.get("iso_3166_1") for c in (details.get("production_countries") or [])]
+        return "IN" in countries
+    except Exception:
+        return False
+
+
+def passes_quality(item, media, lang_ok_fn, min_votes, key=None):
     lang_ok = lang_ok_fn(item)
     strict = is_strict_genre(item, media)
-    required = required_votes(min_votes, lang_ok, strict)
-    return (item.get("vote_count") or 0) >= required
+    vote_count = item.get("vote_count") or 0
+    lenient_required = required_votes(min_votes, lang_ok, strict)
+    if vote_count < lenient_required:
+        return False
+    if media == "movie" and key and lang_ok and not strict and item.get("original_language") == "en":
+        strict_required = required_votes(min_votes, lang_ok, True)
+        if vote_count < strict_required and is_indian_movie(key, item):
+            return False
+    return True
 
 
 def fetch_real_reviews(key, media, tmdb_id, cap=5):
@@ -332,6 +363,7 @@ def movie_record(m, key, genres, fetch_galleries, fetch_reviews, imdb_ratings, m
         score = None  # not in Czech or English — shown as an "N" badge in Kritiq, no invented score
     return {
         "title": m["title"],
+        "tmdb_id": m["id"],
         "year": int(m["release_date"][:4]),
         "date": m["release_date"],
         "score": score,
@@ -373,6 +405,7 @@ def show_record(s, key, genres, fetch_galleries, fetch_reviews, imdb_ratings, mi
         score = None  # not in Czech or English — shown as an "N" badge in Kritiq, no invented score
     return {
         "title": s["name"],
+        "tmdb_id": s["id"],
         "year": int(s["first_air_date"][:4]),
         "date": s["first_air_date"],
         "score": score,
@@ -410,6 +443,7 @@ def game_record(g):
         score = None  # title not available in Latin script (Czech/English) — "N" badge, no invented score
     return {
         "title": g["name"],
+        "rawg_id": g["id"],
         "year": int(g["released"][:4]),
         "date": g["released"],
         "score": score,
@@ -463,7 +497,7 @@ def fetch_movie_window(key, state, years_per_run, floor_year, min_votes, genres,
                 continue
             if not is_released(m["release_date"], today):
                 continue
-            if not passes_quality(m, "movie", movie_lang_ok, min_votes):
+            if not passes_quality(m, "movie", movie_lang_ok, min_votes, key):
                 continue
             seen_ids.add(m["id"])
             try:
@@ -516,7 +550,7 @@ def fetch_show_window(key, state, years_per_run, floor_year, min_votes, genres, 
                 continue
             if not is_released(s["first_air_date"], today):
                 continue
-            if not passes_quality(s, "tv", show_lang_ok, min_votes):
+            if not passes_quality(s, "tv", show_lang_ok, min_votes, key):
                 continue
             seen_ids.add(s["id"])
             try:
@@ -549,7 +583,7 @@ def fetch_game_window(key, state, years_per_run, floor_year, seen_ids, require_m
         try:
             data = rawg_get("/games", key, {
                 "dates": f"{year}-01-01,{year}-12-31",
-                "page": page, "page_size": 40, "ordering": "-added",
+                "page": page, "page_size": 40, "ordering": "-metacritic,-added",
             })
         except Exception as e:
             print(f"  games: error on year {year} page {page} ({e}) — stopping games for this run, progress so far is saved", file=sys.stderr)
@@ -563,6 +597,7 @@ def fetch_game_window(key, state, years_per_run, floor_year, seen_ids, require_m
             checkpoint(collected)
             continue
         kept = 0
+        with_mc = sum(1 for g in results if g.get("metacritic") is not None)
         for g in results:
             if g["id"] in seen_ids or not g.get("released") or not g.get("name"):
                 continue
@@ -576,7 +611,7 @@ def fetch_game_window(key, state, years_per_run, floor_year, seen_ids, require_m
                 kept += 1
             except Exception as e:
                 print(f"    warning: skipped a game due to error ({e})", file=sys.stderr)
-        print(f"  games: year {year} page {page} -> {len(collected)} collected so far ({kept} kept this page)", file=sys.stderr)
+        print(f"  games: year {year} page {page} -> {len(collected)} collected so far ({kept} kept, {with_mc}/{len(results)} on this page had Metacritic)", file=sys.stderr)
         page += 1
         state["year"] = year
         state["page"] = page
@@ -613,7 +648,7 @@ def fetch_movies_recent(key, genres, seen_ids, fetch_galleries, fetch_reviews, i
                     continue
                 if not is_released(m["release_date"], today):
                     continue
-                if not passes_quality(m, "movie", movie_lang_ok, min_votes):
+                if not passes_quality(m, "movie", movie_lang_ok, min_votes, key):
                     continue
                 seen_ids.add(m["id"])
                 try:
@@ -650,7 +685,7 @@ def fetch_shows_recent(key, genres, seen_ids, fetch_galleries, fetch_reviews, im
                     continue
                 if not is_released(s["first_air_date"], today):
                     continue
-                if not passes_quality(s, "tv", show_lang_ok, min_votes):
+                if not passes_quality(s, "tv", show_lang_ok, min_votes, key):
                     continue
                 seen_ids.add(s["id"])
                 try:
@@ -673,7 +708,7 @@ def fetch_games_recent(key, seen_ids, years, max_pages, require_metacritic, min_
             try:
                 data = rawg_get("/games", key, {
                     "dates": f"{year}-01-01,{year}-12-31",
-                    "page": page, "page_size": 40, "ordering": "-added",
+                    "page": page, "page_size": 40, "ordering": "-metacritic,-added",
                 })
             except Exception as e:
                 print(f"  games (recent): error on year {year} page {page} ({e}) — stopping recent refresh, progress so far is saved", file=sys.stderr)
@@ -734,9 +769,9 @@ def main():
         "movie_seen": [], "show_seen": [], "game_seen": [],
     })
 
-    movie_seen = set(state.get("movie_seen", []))
-    show_seen = set(state.get("show_seen", []))
-    game_seen = set(state.get("game_seen", []))
+    movie_seen = set(state.get("movie_seen", [])) | {m["tmdb_id"] for m in data["movies"] if m.get("tmdb_id")}
+    show_seen = set(state.get("show_seen", [])) | {s["tmdb_id"] for s in data["shows"] if s.get("tmdb_id")}
+    game_seen = set(state.get("game_seen", [])) | {g["rawg_id"] for g in data["games"] if g.get("rawg_id")}
 
     def make_checkpoint(category, base_list, seen_set, seen_key):
         """Returns a function that saves data.json + fetch_state.json right now,
