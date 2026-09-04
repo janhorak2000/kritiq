@@ -624,6 +624,7 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
   font-family:var(--font-display); font-weight:800; font-size:28px; color:#fff;
 }
 .person-role{color:var(--text-faint); font-size:13.5px; margin-top:3px;}
+.person-bio-line{color:var(--text-faint); font-size:12.5px; margin-top:4px;}
 
 footer.site{border-top:1px solid var(--line-soft); padding:26px 0 50px; margin-top:20px;}
 footer.site .wrap{display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; color:var(--text-faint); font-size:12.5px;}
@@ -779,7 +780,10 @@ function scoreBadge(score){
 }
 const SCORE_HEX={'s-black':'#0a0810','s-grey':'#585068','s-blue':'#3f6fdb','s-purple':'#9b3ff0','s-gold':'#e8b13a'};
 function scoreHex(score){ return SCORE_HEX[scoreClass(score)]; }
-function fmtBox(n){return '$'+n+'M';}
+function fmtBox(n, currency){
+  if(currency==='CZK') return n+' mil. Kč';
+  return '$'+n+'M';
+}
 function fmtDate(d){
   const months=["led","úno","bře","dub","kvě","čvn","čvc","srp","zář","říj","lis","pro"];
   const [y,m,day]=d.split('-');
@@ -835,19 +839,28 @@ function seedReviews(id, base){
 /* ======================= BUILD DB ======================= */
 let DB={movie:[],show:[],game:[]};
 
-/* Build DB items from plain records: {title,year,date,score,box?,genre?,director?,composer?,writer?,actors?,developer?}
-   Used both for the built-in sample data and for an external, real data.json (see loadRealData below). */
+/* Build DB items from plain records: {title,year,date,score,box?,country?,genre?,director?,composer?,writer?,actors?,developer?}
+   Used both for the built-in sample data and for an external, real data.json (see loadRealData below).
+   actors are normalized to {name,birthday,deathday,age} objects regardless of source, so rendering
+   code never has to check whether it's dealing with the demo dataset or real fetched data. */
+function normalizeActors(list){
+  return (list||[]).map(a=>{
+    if(typeof a==='string') return {name:a, birthday:null, deathday:null, age:null};
+    return {name:a.name||'', birthday:a.birthday||null, deathday:a.deathday||null, age:(a.age!==undefined?a.age:null)};
+  });
+}
 function buildFromRecords(records, type, prefix){
   return records.map((r,i)=>{
     const id=prefix+i;
     const item={
       id, type, title:r.title, year:r.year, date:r.date, baseScore:r.score,
       genre: r.genre || (type==='game' ? GENRES_GAME[i%GENRES_GAME.length] : GENRES_MG[i%GENRES_MG.length]),
+      country: r.country || '',
       poster: r.poster || '', gallery: r.gallery || [], summary: r.summary || '',
       seed: (r.reviews && r.reviews.length) ? r.reviews.map((rv,ri)=>({id:id+'-seed-'+ri, author:rv.author||REVIEW_AUTHORS[i%REVIEW_AUTHORS.length], score:rv.score, text:rv.text, baseLikes:rv.likes||0, baseDislikes:rv.dislikes||0, baseFunny:rv.funny||0})) : []
     };
-    if(type==='movie'){ item.box=r.box; item.director=r.director; item.composer=r.composer; item.writer=r.writer; item.actors=r.actors||[]; }
-    if(type==='show'){ item.director=r.director; item.composer=r.composer; item.writer=r.writer; item.actors=r.actors||[]; }
+    if(type==='movie'){ item.box=(r.box===undefined?null:r.box); item.boxCurrency=r.box_currency||'USD'; item.director=r.director; item.composer=r.composer; item.writer=r.writer; item.actors=normalizeActors(r.actors); }
+    if(type==='show'){ item.director=r.director; item.composer=r.composer; item.writer=r.writer; item.actors=normalizeActors(r.actors); }
     if(type==='game'){ item.developer=r.developer; }
     return item;
   });
@@ -864,7 +877,7 @@ function buildMovies(){
       director:DIRECTORS[i%DIRECTORS.length],
       composer:COMPOSERS[(i+2)%COMPOSERS.length],
       writer:WRITERS[(i+1)%WRITERS.length],
-      actors:[ACTORS[i%ACTORS.length],ACTORS[(i+3)%ACTORS.length],ACTORS[(i+5)%ACTORS.length],ACTORS[(i+7)%ACTORS.length]],
+      actors:normalizeActors([ACTORS[i%ACTORS.length],ACTORS[(i+3)%ACTORS.length],ACTORS[(i+5)%ACTORS.length],ACTORS[(i+7)%ACTORS.length]]),
       seed:seedReviews(id,score)
     };
   });
@@ -880,7 +893,7 @@ function buildShows(){
       director:DIRECTORS[(i+4)%DIRECTORS.length],
       composer:COMPOSERS[(i+1)%COMPOSERS.length],
       writer:WRITERS[(i+3)%WRITERS.length],
-      actors:[ACTORS[(i+2)%ACTORS.length],ACTORS[(i+6)%ACTORS.length],ACTORS[(i+9)%ACTORS.length],ACTORS[(i+11)%ACTORS.length]],
+      actors:normalizeActors([ACTORS[(i+2)%ACTORS.length],ACTORS[(i+6)%ACTORS.length],ACTORS[(i+9)%ACTORS.length],ACTORS[(i+11)%ACTORS.length]]),
       seed:seedReviews(id,score)
     };
   });
@@ -1018,14 +1031,14 @@ function runDailyDrop(){
       item={id,type,title,year:parseInt(dateKey.slice(0,4)),date:dateKey,box,baseScore:score,
         director:DIRECTORS[hashStr(title)%DIRECTORS.length],composer:COMPOSERS[hashStr(title)%COMPOSERS.length],
         writer:WRITERS[hashStr(title)%WRITERS.length],
-        actors:[ACTORS[hashStr(title)%ACTORS.length],ACTORS[(hashStr(title)+3)%ACTORS.length],ACTORS[(hashStr(title)+5)%ACTORS.length],ACTORS[(hashStr(title)+7)%ACTORS.length]],
+        actors:normalizeActors([ACTORS[hashStr(title)%ACTORS.length],ACTORS[(hashStr(title)+3)%ACTORS.length],ACTORS[(hashStr(title)+5)%ACTORS.length],ACTORS[(hashStr(title)+7)%ACTORS.length]]),
         seed:seedReviews(id,score), isNew:true};
     }else if(type==='show'){
       const [title,score]=picked;
       item={id,type,title,year:parseInt(dateKey.slice(0,4)),date:dateKey,baseScore:score,
         director:DIRECTORS[hashStr(title)%DIRECTORS.length],composer:COMPOSERS[hashStr(title)%COMPOSERS.length],
         writer:WRITERS[hashStr(title)%WRITERS.length],
-        actors:[ACTORS[hashStr(title)%ACTORS.length],ACTORS[(hashStr(title)+3)%ACTORS.length],ACTORS[(hashStr(title)+5)%ACTORS.length],ACTORS[(hashStr(title)+7)%ACTORS.length]],
+        actors:normalizeActors([ACTORS[hashStr(title)%ACTORS.length],ACTORS[(hashStr(title)+3)%ACTORS.length],ACTORS[(hashStr(title)+5)%ACTORS.length],ACTORS[(hashStr(title)+7)%ACTORS.length]]),
         seed:seedReviews(id,score), isNew:true};
     }else{
       const [title,score]=picked;
@@ -1156,7 +1169,7 @@ function sortedListFor(type){
   return items.slice().sort((a,b)=>{
     if(st.sort==='score') return scoreSortValue(b)-scoreSortValue(a);
     if(st.sort==='new') return b.date.localeCompare(a.date);
-    if(st.sort==='box' && type==='movie') return b.box-a.box;
+    if(st.sort==='box' && type==='movie') return (b.box===null||b.box===undefined?-1:b.box) - (a.box===null||a.box===undefined?-1:a.box);
     return a.title.localeCompare(b.title);
   });
 }
@@ -1256,7 +1269,9 @@ function renderDetail(type,id){
     metaLine=`${fmtDate(item.date)} <span class="sep">·</span> ${esc(item.genre)} <span class="sep">·</span> ${typeLabel(type)}`;
     creditsHTML=`<div class="credit-row"><span class="ck-label">Studio</span><div class="ck-values"><a class="person-link" href="#/person/${slug(item.developer)}">${esc(item.developer)}</a></div></div>`;
   }else{
-    metaLine=`${fmtDate(item.date)} <span class="sep">·</span> ${esc(item.genre)} <span class="sep">·</span> ${typeLabel(type)}${type==='movie'?` <span class="sep">·</span> tržby ${fmtBox(item.box)}`:''}`;
+    const countryPart = item.country ? ` <span class="sep">·</span> ${esc(item.country)}` : '';
+    const boxPart = (type==='movie' && item.box!==null && item.box!==undefined) ? ` <span class="sep">·</span> tržby ${fmtBox(item.box, item.boxCurrency)}` : '';
+    metaLine=`${fmtDate(item.date)}${countryPart} <span class="sep">·</span> ${esc(item.genre)} <span class="sep">·</span> ${typeLabel(type)}${boxPart}`;
     creditsHTML=`
       <div class="credit-row"><span class="ck-label">Režie</span><div class="ck-values"><a class="person-link" href="#/person/${slug(item.director)}">${esc(item.director)}</a></div></div>
       <div class="credit-row"><span class="ck-label">Hudba</span><div class="ck-values"><a class="person-link" href="#/person/${slug(item.composer)}">${esc(item.composer)}</a></div></div>
@@ -1265,7 +1280,7 @@ function renderDetail(type,id){
     castHTML=`
       <div class="block">
         <h3 class="section-title">Obsazení</h3>
-        <div class="credit-row"><div class="ck-values">${item.actors.map(a=>`<a class="person-link" href="#/person/${slug(a)}">${esc(a)}</a>`).join('')}</div></div>
+        <div class="credit-row"><div class="ck-values">${item.actors.map(a=>`<a class="person-link" href="#/person/${slug(a.name)}">${esc(a.name)}</a>`).join('')}</div></div>
       </div>`;
   }
 
@@ -1354,7 +1369,7 @@ function collectFilmography(name){
   const rows=[];
   ['movie','show'].forEach(type=>{
     DB[type].forEach(it=>{
-      if(it.director===name || it.composer===name || it.writer===name || (it.actors&&it.actors.includes(name))){
+      if(it.director===name || it.composer===name || it.writer===name || (it.actors&&it.actors.some(a=>a.name===name))){
         rows.push(it);
       }
     });
@@ -1364,11 +1379,30 @@ function collectFilmography(name){
   return rows.filter(r=>{ if(seen.has(r.id))return false; seen.add(r.id); return true; })
              .sort((a,b)=>b.date.localeCompare(a.date));
 }
+/* Finds birthday/deathday/age for a person by scanning actor credits — Kritiq's person
+   pages are keyed by name (not a stored id), so this just grabs the first match found. */
+function findPersonBio(name){
+  for(const type of ['movie','show']){
+    for(const it of DB[type]){
+      if(!it.actors) continue;
+      const match=it.actors.find(a=>a.name===name);
+      if(match && (match.birthday || match.deathday)) return match;
+    }
+  }
+  return null;
+}
+function fmtBioDate(d){
+  if(!d) return '';
+  const [y,m,day]=d.split('-');
+  const months=["ledna","února","března","dubna","května","června","července","srpna","září","října","listopadu","prosince"];
+  return `${parseInt(day)}. ${months[parseInt(m)-1]} ${y}`;
+}
 
 function renderPerson(name){
   const filmo=collectFilmography(name);
   const isDev=DEVS.includes(name);
   const role=isDev?'Vývojářské studio':'Tvůrce / herec';
+  const bio=findPersonBio(name);
   const h=hashStr(name);
   const avatarStyle=`background:linear-gradient(135deg, hsl(${h%360} 60% 45%), hsl(${(h+70)%360} 65% 30%));`;
   const list=filmo.map(it=>{
@@ -1379,11 +1413,21 @@ function renderPerson(name){
       <span class="fi-score ${cls}">${badge.text}</span>
     </a>`;
   }).join('');
+  let bioLine='';
+  if(bio && bio.birthday){
+    if(bio.deathday){
+      bioLine=`<div class="person-bio-line">Narozen(a) ${fmtBioDate(bio.birthday)} · zemřel(a) ${fmtBioDate(bio.deathday)}</div>`;
+    }else if(bio.age!==null && bio.age!==undefined){
+      bioLine=`<div class="person-bio-line">Narozen(a) ${fmtBioDate(bio.birthday)} · věk ${bio.age} let</div>`;
+    }else{
+      bioLine=`<div class="person-bio-line">Narozen(a) ${fmtBioDate(bio.birthday)}</div>`;
+    }
+  }
   return `
     <div class="crumb"><a href="#/">Kritiq</a> / ${esc(name)}</div>
     <div class="person-head">
       <div class="person-avatar" style="${avatarStyle}">${esc(name.charAt(0))}</div>
-      <div><h1 class="page-title" style="margin-bottom:2px;">${esc(name)}</h1><div class="person-role">${role}</div></div>
+      <div><h1 class="page-title" style="margin-bottom:2px;">${esc(name)}</h1><div class="person-role">${role}</div>${bioLine}</div>
     </div>
     <h3 class="section-title">Filmografie (${filmo.length})</h3>
     <div class="filmo-list">${list || '<p class="empty-note">Žádné položky.</p>'}</div>
@@ -1951,7 +1995,7 @@ function initSearchPanel(){
     const top=matches.slice(0,20);
     results.innerHTML=top.map(it=>{
       const sc=liveScore(it); const badge=scoreBadge(sc);
-      const meta=it.type==='movie' ? `${fmtBox(it.box)} · ${it.year}` : `${it.year}`;
+      const meta=(it.type==='movie' && it.box!==null && it.box!==undefined) ? `${fmtBox(it.box, it.boxCurrency)} · ${it.year}` : `${it.year}`;
       return `<a class="search-result-row" href="#/title/${it.type}/${it.id}"><span class="srr-title">${esc(it.title)}</span><span class="srr-meta">${typeLabel(it.type)} · ${meta}</span><span class="srr-score ${badge.cls}">${badge.text}</span></a>`;
     }).join('');
   }
@@ -1974,9 +2018,9 @@ async function init(){
     DB.movie=buildMovies();
     DB.show=buildShows();
     DB.game=buildGames();
+    restoreAddedItems();
+    runDailyDrop(); // simulated placeholder content — demo dataset only, never with real fetched data
   }
-  restoreAddedItems();
-  runDailyDrop();
   computeYearBounds();
 
   initSearchPanel();
