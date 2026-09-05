@@ -376,13 +376,19 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
   border-radius:0 0 var(--radius-m) var(--radius-m);
 }
 .summary-box:hover{border-color:var(--violet); background:var(--bg-2);}
+.cast-hidden-row{margin-top:14px; padding-top:14px; border-top:1px dashed var(--line-soft);}
+.show-all-cast-wrap{margin-top:16px;}
 .show-all-cast-btn{
-  margin-top:10px; font-family:var(--font-body); font-size:12.5px; font-weight:700;
-  padding:7px 14px; border-radius:999px; border:1px solid var(--line-soft);
-  background:var(--bg-2); color:var(--violet-2); cursor:pointer;
-  transition:border-color .15s, color .15s;
+  font-family:var(--font-body); font-size:12.5px; font-weight:800; letter-spacing:.02em;
+  padding:8px 18px; border-radius:999px; border:1px solid rgba(192,132,252,.55);
+  background:rgba(155,92,246,.16); color:#e4d4fc; cursor:pointer;
+  box-shadow:0 0 14px rgba(192,132,252,.35);
+  transition:background .15s, color .15s, box-shadow .2s, border-color .15s;
 }
-.show-all-cast-btn:hover{border-color:var(--violet); color:#fff;}
+.show-all-cast-btn:hover{
+  background:rgba(155,92,246,.28); color:#fff; border-color:var(--violet-2);
+  box-shadow:0 0 22px rgba(192,132,252,.6);
+}
 .summary-box:hover::after{background:linear-gradient(to top, var(--bg-2), transparent);}
 
 .score-bar{
@@ -463,6 +469,18 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
 }
 .review-body{min-width:0; flex:1 1 auto;}
 .review-author-row{display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:5px; flex-wrap:wrap;}
+.review-author-left{display:flex; align-items:center; gap:8px; flex-wrap:wrap;}
+.review-own-actions-row{display:flex; gap:8px; margin-bottom:8px;}
+.pill-edit-btn, .pill-delete-btn{
+  font-family:var(--font-body); font-size:10.5px; font-weight:800; letter-spacing:.03em;
+  padding:4px 12px; border-radius:999px; border:none; cursor:pointer;
+  transition:filter .15s, transform .1s;
+}
+.pill-edit-btn{background:#e8c93a; color:#231a02;}
+.pill-edit-btn:hover{filter:brightness(1.1);}
+.pill-delete-btn{background:#e2495a; color:#fff;}
+.pill-delete-btn:hover{filter:brightness(1.1);}
+.pill-edit-btn:active, .pill-delete-btn:active{transform:scale(.96);}
 .review-author-link, .review-context-link{font-weight:700; font-size:13.5px; color:var(--text); text-decoration:none;}
 .review-author-link:hover, .review-context-link:hover{color:var(--violet-2); text-decoration:underline;}
 .review-context-link{color:var(--text-dim); font-weight:600;}
@@ -643,7 +661,7 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
 }
 
 /* filmography list on person page */
-.filmo-list{display:flex; flex-direction:column; gap:10px;}
+.filmo-list{display:flex; flex-direction:column; gap:10px; margin-bottom:28px;}
 .filmo-item{
   display:flex; align-items:center; gap:14px; padding:12px 16px; border-radius:var(--radius-m);
   border:1px solid var(--line-soft); transition:transform .15s;
@@ -823,9 +841,10 @@ function fmtBox(n, currency){
   if(currency==='CZK') return n+' mil. Kč';
   return '$'+n+'M';
 }
-function fmtDate(d){
-  const months=["led","úno","bře","dub","kvě","čvn","čvc","srp","zář","říj","lis","pro"];
+function fmtDate(d, yearOnly){
   const [y,m,day]=d.split('-');
+  if(yearOnly) return y;
+  const months=["led","úno","bře","dub","kvě","čvn","čvc","srp","zář","říj","lis","pro"];
   return `${parseInt(day)}. ${months[parseInt(m)-1]} ${y}`;
 }
 function esc(s){return s.replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
@@ -898,6 +917,7 @@ function buildFromRecords(records, type, prefix){
     const id=prefix+i;
     const item={
       id, type, title:r.title, year:r.year, date:r.date, baseScore:r.score,
+      yearOnly: !!r.year_only,
       genre: r.genre || (type==='game' ? GENRES_GAME[i%GENRES_GAME.length] : GENRES_MG[i%GENRES_MG.length]),
       country: r.country || '',
       poster: r.poster || '', gallery: r.gallery || [], summary: r.summary || '',
@@ -905,7 +925,7 @@ function buildFromRecords(records, type, prefix){
     };
     if(type==='movie'){ item.box=(r.box===undefined?null:r.box); item.boxCurrency=r.box_currency||'USD'; item.runtime=(r.runtime===undefined?null:r.runtime); item.director=normalizeCrew(r.director); item.composer=normalizeCrew(r.composer); item.writer=normalizeCrew(r.writer); item.actors=normalizeActors(r.actors); }
     if(type==='show'){ item.runtimeMin=(r.runtime_min===undefined?null:r.runtime_min); item.runtimeMax=(r.runtime_max===undefined?null:r.runtime_max); item.director=normalizeCrew(r.director); item.composer=normalizeCrew(r.composer); item.writer=normalizeCrew(r.writer); item.actors=normalizeActors(r.actors); }
-    if(type==='game'){ item.developer=r.developer; item.platforms=r.platforms||[]; }
+    if(type==='game'){ item.developer=r.developer; item.platforms=r.platforms||[]; item.yearOnly=!!r.year_only; }
     return item;
   });
 }
@@ -1033,9 +1053,39 @@ function userAggregate(username){
   return {entries, likes, dislikes, funny, avg};
 }
 
+function myIdentity(){ return CURRENT_USER || 'Vy'; }
+function genReviewId(){ return 'r'+Date.now().toString(36)+Math.random().toString(36).slice(2,8); }
 function allReviews(item){
-  const own=(USER_REVIEWS[item.id]||[]).map((r,i)=>Object.assign({id:item.id+'-user-'+i, baseLikes:0, baseDislikes:0, baseFunny:0}, r));
+  // rid is a stable id generated at submit time (immune to array-index shifting when a
+  // review elsewhere gets deleted); older reviews saved before this existed fall back to
+  // the old index-based id so their vote counts aren't reset by this change.
+  const own=(USER_REVIEWS[item.id]||[]).map((r,i)=>Object.assign({id:r.rid || (item.id+'-user-'+i), baseLikes:0, baseDislikes:0, baseFunny:0, isUser:true}, r));
   return item.seed.concat(own);
+}
+function myReviewForItem(item){
+  const list=USER_REVIEWS[item.id]||[];
+  const idx=list.findIndex(r=>r.author===myIdentity());
+  return idx===-1 ? null : {index:idx, review:list[idx]};
+}
+function updateMyReview(item, newScore, newText){
+  const list=USER_REVIEWS[item.id]||[];
+  const idx=list.findIndex(r=>r.author===myIdentity());
+  if(idx===-1) return;
+  const oldId=list[idx].rid || (item.id+'-user-'+idx);
+  list[idx]=Object.assign({}, list[idx], {score:newScore, text:newText});
+  saveUserReviews(USER_REVIEWS);
+  delete VOTES[oldId];
+  saveVotes(VOTES);
+}
+function deleteMyReview(item){
+  const list=USER_REVIEWS[item.id]||[];
+  const idx=list.findIndex(r=>r.author===myIdentity());
+  if(idx===-1) return;
+  const oldId=list[idx].rid || (item.id+'-user-'+idx);
+  list.splice(idx,1);
+  saveUserReviews(USER_REVIEWS);
+  delete VOTES[oldId];
+  saveVotes(VOTES);
 }
 function liveScore(item){
   const revs=allReviews(item);
@@ -1107,7 +1157,11 @@ function typeLabel(type){return type==='movie'?'Film':type==='show'?'Seriál':'H
 function typeLabelPl(type){return type==='movie'?'Filmy':type==='show'?'Seriály':'Hry';}
 
 function sortedReviews(item){
+  const mine=myIdentity();
   return allReviews(item).slice().sort((a,b)=>{
+    const aMine=(a.isUser && a.author===mine) ? 1 : 0;
+    const bMine=(b.isUser && b.author===mine) ? 1 : 0;
+    if(aMine!==bMine) return bMine-aMine;
     const ca=voteCounts(a), cb=voteCounts(b);
     return (cb.likes+cb.funny)-(ca.likes+ca.funny);
   });
@@ -1115,28 +1169,34 @@ function sortedReviews(item){
 function reviewItemHTML(review, opts){
   opts=opts||{};
   const c=voteCounts(review);
+  const mine = !opts.context && opts.item && review.isUser && review.author===myIdentity();
   const headLeft = opts.context
     ? `<a class="review-context-link no-modal-trigger" href="#/title/${opts.context.type}/${opts.context.item.id}">${esc(opts.context.item.title)}</a>`
     : `<a class="review-author-link no-modal-trigger profile-link" data-username="${esc(review.author)}" href="#/user/${slug(review.author)}">${esc(review.author)}</a>`;
+  const ownActions = mine ? `
+    <button class="pill-edit-btn no-modal-trigger" data-review-id="${review.id}" data-item-id="${opts.item.id}" type="button">UPRAVIT</button>
+    <button class="pill-delete-btn no-modal-trigger" data-review-id="${review.id}" data-item-id="${opts.item.id}" type="button">ODSTRANIT</button>
+  ` : '';
   return `
   <div class="review-item" data-review-id="${review.id}">
     <div class="review-score ${scoreClass(review.score)}">${review.score}</div>
     <div class="review-body">
       <div class="review-author-row">
-        ${headLeft}
+        <span class="review-author-left">${headLeft}</span>
         <span class="review-reactions-mini">
           <span class="mini-react">${ICON_LIKE}${c.likes}</span>
           <span class="mini-react">${ICON_DISLIKE}${c.dislikes}</span>
           <span class="mini-react">${ICON_FUNNY}${c.funny}</span>
         </span>
       </div>
+      ${ownActions ? `<div class="review-own-actions-row">${ownActions}</div>` : ''}
       <div class="review-text">${esc(review.text)}</div>
     </div>
   </div>`;
 }
 function reviewsListHTML(item){
   const revs=sortedReviews(item);
-  return revs.length ? revs.map(r=>reviewItemHTML(r)).join('') : `<p class="empty-note">Zatím žádné recenze. Buďte první!</p>`;
+  return revs.length ? revs.map(r=>reviewItemHTML(r,{item})).join('') : `<p class="empty-note">Zatím žádné recenze. Buďte první!</p>`;
 }
 
 const USER_PAGE_SIZE=5;
@@ -1348,6 +1408,7 @@ function bindLoadMore(type){
 
 
 function findItem(type,id){ return DB[type].find(it=>it.id===id); }
+function itemTypeFromId(id){ return id.charAt(0)==='m'?'movie':id.charAt(0)==='s'?'show':'game'; }
 
 function renderDetail(type,id){
   const item=findItem(type,id);
@@ -1359,7 +1420,7 @@ function renderDetail(type,id){
 
   let metaLine, creditsHTML, castHTML='';
   if(type==='game'){
-    metaLine=`${fmtDate(item.date)} <span class="sep">·</span> ${esc(item.genre)} <span class="sep">·</span> ${typeLabel(type)}`;
+    metaLine=`${fmtDate(item.date, item.yearOnly)} <span class="sep">·</span> ${esc(item.genre)} <span class="sep">·</span> ${typeLabel(type)}`;
     creditsHTML=`<div class="credit-row"><span class="ck-label">Studio</span><div class="ck-values"><a class="person-link" href="#/person/${slug(item.developer)}">${esc(item.developer)}</a></div></div>`;
   }else{
     const countryPart = item.country ? ` <span class="sep">·</span> ${esc(item.country)}` : '';
@@ -1372,7 +1433,7 @@ function renderDetail(type,id){
         ? ` <span class="sep">·</span> ${item.runtimeMin}–${item.runtimeMax} min`
         : ` <span class="sep">·</span> ${item.runtimeMin} min`;
     }
-    metaLine=`${fmtDate(item.date)}${countryPart} <span class="sep">·</span> ${esc(item.genre)}${runtimePart} <span class="sep">·</span> ${typeLabel(type)}${boxPart}`;
+    metaLine=`${fmtDate(item.date, item.yearOnly)}${countryPart} <span class="sep">·</span> ${esc(item.genre)}${runtimePart} <span class="sep">·</span> ${typeLabel(type)}${boxPart}`;
     creditsHTML=`
       <div class="credit-row"><span class="ck-label">Režie</span><div class="ck-values"><a class="person-link" href="#/person/${slug(item.director.name)}">${esc(item.director.name)}</a></div></div>
       <div class="credit-row"><span class="ck-label">Hudba</span><div class="ck-values"><a class="person-link" href="#/person/${slug(item.composer.name)}">${esc(item.composer.name)}</a></div></div>
@@ -1386,8 +1447,8 @@ function renderDetail(type,id){
         <h3 class="section-title">Obsazení</h3>
         <div class="credit-row"><div class="ck-values" id="castVisible">${castVisible.map(castChip).join('')}</div></div>
         ${castHidden.length ? `
-          <div class="credit-row" id="castHiddenRow" style="display:none;"><div class="ck-values">${castHidden.map(castChip).join('')}</div></div>
-          <button class="show-all-cast-btn" id="showAllCastBtn" type="button">Zobrazit všechny (${item.actors.length})</button>
+          <div class="credit-row cast-hidden-row" id="castHiddenRow" style="display:none;"><div class="ck-values">${castHidden.map(castChip).join('')}</div></div>
+          <div class="show-all-cast-wrap"><button class="show-all-cast-btn" id="showAllCastBtn" type="button">Zobrazit všechny (${item.actors.length})</button></div>
         ` : ''}
       </div>`;
   }
@@ -1397,6 +1458,45 @@ function renderDetail(type,id){
   const rateHex0=scoreHex(defaultRate);
 
   const reviewsHTML = reviewsListHTML(item);
+
+  const myExisting=myReviewForItem(item);
+  let daysSinceRelease=Infinity;
+  if(item.date){
+    const diffMs=Date.now()-new Date(item.date+'T00:00:00Z').getTime();
+    daysSinceRelease=Math.floor(diffMs/86400000);
+  }
+  const gameTooNew = type==='game' && daysSinceRelease<3;
+  let composerHTML;
+  if(myExisting){
+    composerHTML=`
+    <div class="block">
+      <h3 class="section-title">Ohodnoťte to</h3>
+      <p class="form-note">Svou recenzi můžete upravit tlačítkem UPRAVIT u vaší recenze níže.</p>
+    </div>`;
+  }else if(gameTooNew){
+    const availableAt=new Date(new Date(item.date+'T00:00:00Z').getTime()+3*86400000);
+    const availableStr=fmtDate(availableAt.toISOString().slice(0,10));
+    composerHTML=`
+    <div class="block">
+      <h3 class="section-title">Ohodnoťte to</h3>
+      <p class="form-note">Recenze bude možné přidat od ${availableStr} (3 dny od vydání).</p>
+    </div>`;
+  }else{
+    composerHTML=`
+    <div class="block">
+      <h3 class="section-title">Ohodnoťte to</h3>
+      <div class="review-form">
+        <div class="rate-slider-row">
+          <div class="rate-num ${rateCls0}" id="rateNum">${defaultRate}</div>
+          <div class="rate-track-wrap"><input type="range" id="rateSlider" min="0" max="100" step="10" value="${defaultRate}" style="--thumb-color:${rateHex0}"></div>
+        </div>
+        <textarea id="reviewText" placeholder="Napište svou recenzi (nepovinné)..."></textarea>
+        <br>
+        <button class="review-submit" id="submitReview">Odeslat recenzi</button>
+        <div class="form-note">Vaše hodnocení okamžitě ovlivní celkové skóre.</div>
+      </div>
+    </div>`;
+  }
 
   return `
     <div class="crumb"><a href="#/${type}s">${typeLabelPl(type)}</a> / ${esc(item.title)}</div>
@@ -1420,19 +1520,7 @@ function renderDetail(type,id){
 
     ${castHTML}
 
-    <div class="block">
-      <h3 class="section-title">Ohodnoťte to</h3>
-      <div class="review-form">
-        <div class="rate-slider-row">
-          <div class="rate-num ${rateCls0}" id="rateNum">${defaultRate}</div>
-          <div class="rate-track-wrap"><input type="range" id="rateSlider" min="0" max="100" step="10" value="${defaultRate}" style="--thumb-color:${rateHex0}"></div>
-        </div>
-        <textarea id="reviewText" placeholder="Napište svou recenzi (nepovinné)..."></textarea>
-        <br>
-        <button class="review-submit" id="submitReview">Odeslat recenzi</button>
-        <div class="form-note">Vaše hodnocení okamžitě ovlivní celkové skóre.</div>
-      </div>
-    </div>
+    ${composerHTML}
 
     <div class="block">
       <h3 class="section-title">Recenze uživatelů (${revs.length})</h3>
@@ -1456,26 +1544,33 @@ function attachDetailEvents(type,id){
     document.getElementById('castHiddenRow').style.display='';
     showAllCastBtn.remove();
   });
-  slider.addEventListener('input',()=>{
-    const v=parseInt(slider.value);
-    numEl.textContent=v;
-    numEl.className='rate-num '+scoreClass(v);
-    slider.style.setProperty('--thumb-color', scoreHex(v));
-  });
-  function autoGrow(){
-    textarea.style.height='auto';
-    textarea.style.height=textarea.scrollHeight+'px';
+  if(slider && numEl){
+    slider.addEventListener('input',()=>{
+      const v=parseInt(slider.value);
+      numEl.textContent=v;
+      numEl.className='rate-num '+scoreClass(v);
+      slider.style.setProperty('--thumb-color', scoreHex(v));
+    });
   }
-  textarea.addEventListener('input', autoGrow);
-  autoGrow();
-  submitBtn.addEventListener('click',()=>{
-    const selected=parseInt(slider.value);
-    const text=textarea.value.trim() || 'Bez komentáře.';
-    if(!USER_REVIEWS[item.id]) USER_REVIEWS[item.id]=[];
-    USER_REVIEWS[item.id].push({author:CURRENT_USER||'Vy', score:selected, text});
-    saveUserReviews(USER_REVIEWS);
-    route();
-  });
+  if(textarea){
+    function autoGrow(){
+      textarea.style.height='auto';
+      textarea.style.height=textarea.scrollHeight+'px';
+    }
+    textarea.addEventListener('input', autoGrow);
+    autoGrow();
+  }
+  if(submitBtn && slider && textarea){
+    submitBtn.addEventListener('click',()=>{
+      if(myReviewForItem(item)) return; // already has one — composer shouldn't even be showing, but guard anyway
+      const selected=parseInt(slider.value);
+      const text=textarea.value.trim() || 'Bez komentáře.';
+      if(!USER_REVIEWS[item.id]) USER_REVIEWS[item.id]=[];
+      USER_REVIEWS[item.id].push({rid:genReviewId(), author:myIdentity(), score:selected, text});
+      saveUserReviews(USER_REVIEWS);
+      route();
+    });
+  }
 }
 
 function collectFilmography(name){
@@ -1846,6 +1941,86 @@ function handleRegisterSubmit(){
   saveAccounts(accounts);
   logInAs(nickname);
 }
+function openEditReviewModal(item, review){
+  pushModal(()=>{
+    const card=document.getElementById('reviewModalCard');
+    card.className='modal-card';
+    const cls0=scoreClass(review.score);
+    const hex0=scoreHex(review.score);
+    card.innerHTML=`
+      <button class="modal-close" id="editReviewCloseBtn" aria-label="Zavřít" type="button">✕</button>
+      <h3 class="section-title" style="margin-bottom:14px;">Upravit recenzi</h3>
+      <div class="rate-slider-row">
+        <div class="rate-num ${cls0}" id="editRateNum">${review.score}</div>
+        <div class="rate-track-wrap"><input type="range" id="editRateSlider" min="0" max="100" step="10" value="${review.score}" style="--thumb-color:${hex0}"></div>
+      </div>
+      <textarea id="editReviewText" style="margin-top:14px; min-height:160px; height:160px; resize:vertical;">${esc(review.text)}</textarea>
+      <div class="modal-react-row" style="margin-top:16px;">
+        <button class="react-btn" id="editCancelBtn" type="button">Zrušit</button>
+        <button class="react-btn active-like" id="editOkBtn" type="button">Uložit</button>
+      </div>
+    `;
+    document.getElementById('editReviewCloseBtn').addEventListener('click', popModal);
+    document.getElementById('editCancelBtn').addEventListener('click', popModal);
+    const slider=document.getElementById('editRateSlider');
+    const numEl=document.getElementById('editRateNum');
+    slider.addEventListener('input', ()=>{
+      const v=parseInt(slider.value);
+      numEl.textContent=v;
+      numEl.className='rate-num '+scoreClass(v);
+      slider.style.setProperty('--thumb-color', scoreHex(v));
+    });
+    const textarea=document.getElementById('editReviewText');
+    document.getElementById('editOkBtn').addEventListener('click', ()=>{
+      const newScore=parseInt(slider.value);
+      const newText=textarea.value.trim() || 'Bez komentáře.';
+      openEditConfirmModal(item, newScore, newText);
+    });
+  });
+}
+function openEditConfirmModal(item, newScore, newText){
+  pushModal(()=>{
+    const card=document.getElementById('reviewModalCard');
+    card.className='modal-card';
+    card.innerHTML=`
+      <button class="modal-close" id="editConfirmCloseBtn" aria-label="Zavřít" type="button">✕</button>
+      <h3 class="section-title" style="margin-bottom:10px;">Opravdu upravit?</h3>
+      <p class="synopsis" style="margin-bottom:20px;">Všechny lajky, nelajky a smajlíky u této recenze se vynulují.</p>
+      <div class="modal-react-row">
+        <button class="react-btn" id="editConfirmCancelBtn" type="button">Zrušit</button>
+        <button class="react-btn active-dislike" id="editConfirmOkBtn" type="button">Ano, upravit</button>
+      </div>`;
+    document.getElementById('editConfirmCloseBtn').addEventListener('click', popModal);
+    document.getElementById('editConfirmCancelBtn').addEventListener('click', popModal);
+    document.getElementById('editConfirmOkBtn').addEventListener('click', ()=>{
+      updateMyReview(item, newScore, newText);
+      closeAllModals();
+      route();
+    });
+  });
+}
+function openDeleteConfirmModal(item){
+  pushModal(()=>{
+    const card=document.getElementById('reviewModalCard');
+    card.className='modal-card';
+    card.innerHTML=`
+      <button class="modal-close" id="deleteConfirmCloseBtn" aria-label="Zavřít" type="button">✕</button>
+      <h3 class="section-title" style="margin-bottom:10px;">Opravdu odstranit?</h3>
+      <p class="synopsis" style="margin-bottom:20px;">Tuto akci nelze vzít zpět.</p>
+      <div class="modal-react-row">
+        <button class="react-btn" id="deleteConfirmCancelBtn" type="button">Zrušit</button>
+        <button class="react-btn active-dislike" id="deleteConfirmOkBtn" type="button">Ano, odstranit</button>
+      </div>`;
+    document.getElementById('deleteConfirmCloseBtn').addEventListener('click', popModal);
+    document.getElementById('deleteConfirmCancelBtn').addEventListener('click', popModal);
+    document.getElementById('deleteConfirmOkBtn').addEventListener('click', ()=>{
+      deleteMyReview(item);
+      closeAllModals();
+      route();
+    });
+  });
+}
+
 function openLogoutConfirm(){
   pushModal(()=>{
     const card=document.getElementById('reviewModalCard');
@@ -2161,6 +2336,19 @@ async function init(){
   document.addEventListener('click', e=>{
     const profileLink=e.target.closest('.profile-link');
     if(profileLink){ e.preventDefault(); openUserModal(profileLink.dataset.username); return; }
+    const editBtn=e.target.closest('.pill-edit-btn');
+    if(editBtn){
+      const it=findItem(itemTypeFromId(editBtn.dataset.itemId), editBtn.dataset.itemId);
+      const rev=it && allReviews(it).find(r=>r.id===editBtn.dataset.reviewId);
+      if(it && rev) openEditReviewModal(it, rev);
+      return;
+    }
+    const deleteBtn=e.target.closest('.pill-delete-btn');
+    if(deleteBtn){
+      const it=findItem(itemTypeFromId(deleteBtn.dataset.itemId), deleteBtn.dataset.itemId);
+      if(it) openDeleteConfirmModal(it);
+      return;
+    }
     if(e.target.closest('.no-modal-trigger')) return;
     const dropdown=document.getElementById('platformDropdown');
     if(dropdown && dropdown.classList.contains('open') && !e.target.closest('.platform-filter-wrap')){
