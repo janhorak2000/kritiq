@@ -259,11 +259,43 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
 
 /* ---------- FILTER BAR ---------- */
 .filterbar{
+  position:relative;
   display:flex; align-items:center; gap:18px; flex-wrap:wrap;
   background:var(--bg-1); border:1px solid var(--line-soft); border-radius:var(--radius-m);
   padding:16px 20px; margin-bottom:26px;
 }
 .filterbar .label{font-size:12.5px; color:var(--text-faint); font-weight:700; text-transform:uppercase; letter-spacing:.06em;}
+
+/* Floats above the filterbar's edge, absolutely positioned so it never affects the
+   bar's own layout/height — same visual language as the header login badge. */
+.platform-filter-wrap{position:absolute; top:-14px; right:16px; z-index:15;}
+.platform-filter-btn{
+  font-family:var(--font-body); font-size:10.5px; font-weight:800; letter-spacing:.02em;
+  padding:4px 12px; border-radius:999px; border:1px solid rgba(192,132,252,.42);
+  background:var(--bg-1); color:#c9aef2; cursor:pointer; white-space:nowrap;
+  box-shadow:0 4px 10px rgba(0,0,0,.35);
+  transition:color .15s, border-color .15s;
+}
+.platform-filter-btn:hover{color:#fff; border-color:var(--violet);}
+.platform-dropdown{
+  position:absolute; top:100%; right:0; margin-top:8px; z-index:20;
+  background:var(--bg-1); border:1px solid var(--line-soft); border-radius:var(--radius-m);
+  box-shadow:0 16px 34px -10px rgba(0,0,0,.55);
+  max-height:340px; overflow-y:auto; min-width:200px;
+  display:none;
+}
+.platform-dropdown.open{display:block;}
+.platform-option{
+  display:block; width:100%; text-align:left; padding:9px 16px; background:none; border:none;
+  color:var(--text-dim); font-size:13px; font-family:inherit; cursor:pointer;
+}
+.platform-option:hover{background:var(--bg-2); color:var(--text);}
+.platform-option.active{color:var(--violet-2); font-weight:700;}
+@media(max-width:640px){
+  .platform-filter-wrap{position:static; margin-bottom:10px; width:100%;}
+  .platform-dropdown{left:0; right:auto;}
+}
+
 .range-field{display:flex; align-items:center; gap:12px; flex:1 1 260px; min-width:220px;}
 .range-track{position:relative; flex:1; height:4px; background:var(--line); border-radius:4px;}
 .range-track .fill{position:absolute; height:100%; background:linear-gradient(90deg,var(--violet),var(--magenta)); border-radius:4px;}
@@ -841,13 +873,18 @@ let DB={movie:[],show:[],game:[]};
 
 /* Build DB items from plain records: {title,year,date,score,box?,country?,genre?,director?,composer?,writer?,actors?,developer?}
    Used both for the built-in sample data and for an external, real data.json (see loadRealData below).
-   actors are normalized to {name,birthday,deathday,age} objects regardless of source, so rendering
-   code never has to check whether it's dealing with the demo dataset or real fetched data. */
+   actors/crew are normalized to {name,...} objects regardless of source, so rendering code
+   never has to check whether it's dealing with the demo dataset or real fetched data. */
 function normalizeActors(list){
   return (list||[]).map(a=>{
-    if(typeof a==='string') return {name:a, birthday:null, deathday:null, age:null};
-    return {name:a.name||'', birthday:a.birthday||null, deathday:a.deathday||null, age:(a.age!==undefined?a.age:null)};
+    if(typeof a==='string') return {name:a, birthday:null, deathday:null, age:null, image:''};
+    return {name:a.name||'', birthday:a.birthday||null, deathday:a.deathday||null, age:(a.age!==undefined?a.age:null), image:a.image||''};
   });
+}
+function normalizeCrew(person){
+  if(!person) return {name:'', image:''};
+  if(typeof person==='string') return {name:person, image:''};
+  return {name:person.name||'', image:person.image||''};
 }
 function buildFromRecords(records, type, prefix){
   return records.map((r,i)=>{
@@ -859,9 +896,9 @@ function buildFromRecords(records, type, prefix){
       poster: r.poster || '', gallery: r.gallery || [], summary: r.summary || '',
       seed: (r.reviews && r.reviews.length) ? r.reviews.map((rv,ri)=>({id:id+'-seed-'+ri, author:rv.author||REVIEW_AUTHORS[i%REVIEW_AUTHORS.length], score:rv.score, text:rv.text, baseLikes:rv.likes||0, baseDislikes:rv.dislikes||0, baseFunny:rv.funny||0})) : []
     };
-    if(type==='movie'){ item.box=(r.box===undefined?null:r.box); item.boxCurrency=r.box_currency||'USD'; item.director=r.director; item.composer=r.composer; item.writer=r.writer; item.actors=normalizeActors(r.actors); }
-    if(type==='show'){ item.director=r.director; item.composer=r.composer; item.writer=r.writer; item.actors=normalizeActors(r.actors); }
-    if(type==='game'){ item.developer=r.developer; }
+    if(type==='movie'){ item.box=(r.box===undefined?null:r.box); item.boxCurrency=r.box_currency||'USD'; item.runtime=(r.runtime===undefined?null:r.runtime); item.director=normalizeCrew(r.director); item.composer=normalizeCrew(r.composer); item.writer=normalizeCrew(r.writer); item.actors=normalizeActors(r.actors); }
+    if(type==='show'){ item.runtimeMin=(r.runtime_min===undefined?null:r.runtime_min); item.runtimeMax=(r.runtime_max===undefined?null:r.runtime_max); item.director=normalizeCrew(r.director); item.composer=normalizeCrew(r.composer); item.writer=normalizeCrew(r.writer); item.actors=normalizeActors(r.actors); }
+    if(type==='game'){ item.developer=r.developer; item.platforms=r.platforms||[]; }
     return item;
   });
 }
@@ -874,9 +911,9 @@ function buildMovies(){
     return {
       id,type:'movie',title,year,date,box,baseScore:score,
       genre:GENRES_MG[i%GENRES_MG.length],
-      director:DIRECTORS[i%DIRECTORS.length],
-      composer:COMPOSERS[(i+2)%COMPOSERS.length],
-      writer:WRITERS[(i+1)%WRITERS.length],
+      director:normalizeCrew(DIRECTORS[i%DIRECTORS.length]),
+      composer:normalizeCrew(COMPOSERS[(i+2)%COMPOSERS.length]),
+      writer:normalizeCrew(WRITERS[(i+1)%WRITERS.length]),
       actors:normalizeActors([ACTORS[i%ACTORS.length],ACTORS[(i+3)%ACTORS.length],ACTORS[(i+5)%ACTORS.length],ACTORS[(i+7)%ACTORS.length]]),
       seed:seedReviews(id,score)
     };
@@ -890,9 +927,9 @@ function buildShows(){
     return {
       id,type:'show',title,year,date,baseScore:score,
       genre:GENRES_MG[(i+3)%GENRES_MG.length],
-      director:DIRECTORS[(i+4)%DIRECTORS.length],
-      composer:COMPOSERS[(i+1)%COMPOSERS.length],
-      writer:WRITERS[(i+3)%WRITERS.length],
+      director:normalizeCrew(DIRECTORS[(i+4)%DIRECTORS.length]),
+      composer:normalizeCrew(COMPOSERS[(i+1)%COMPOSERS.length]),
+      writer:normalizeCrew(WRITERS[(i+3)%WRITERS.length]),
       actors:normalizeActors([ACTORS[(i+2)%ACTORS.length],ACTORS[(i+6)%ACTORS.length],ACTORS[(i+9)%ACTORS.length],ACTORS[(i+11)%ACTORS.length]]),
       seed:seedReviews(id,score)
     };
@@ -1029,15 +1066,15 @@ function runDailyDrop(){
     if(type==='movie'){
       const [title,box,score]=picked;
       item={id,type,title,year:parseInt(dateKey.slice(0,4)),date:dateKey,box,baseScore:score,
-        director:DIRECTORS[hashStr(title)%DIRECTORS.length],composer:COMPOSERS[hashStr(title)%COMPOSERS.length],
-        writer:WRITERS[hashStr(title)%WRITERS.length],
+        director:normalizeCrew(DIRECTORS[hashStr(title)%DIRECTORS.length]),composer:normalizeCrew(COMPOSERS[hashStr(title)%COMPOSERS.length]),
+        writer:normalizeCrew(WRITERS[hashStr(title)%WRITERS.length]),
         actors:normalizeActors([ACTORS[hashStr(title)%ACTORS.length],ACTORS[(hashStr(title)+3)%ACTORS.length],ACTORS[(hashStr(title)+5)%ACTORS.length],ACTORS[(hashStr(title)+7)%ACTORS.length]]),
         seed:seedReviews(id,score), isNew:true};
     }else if(type==='show'){
       const [title,score]=picked;
       item={id,type,title,year:parseInt(dateKey.slice(0,4)),date:dateKey,baseScore:score,
-        director:DIRECTORS[hashStr(title)%DIRECTORS.length],composer:COMPOSERS[hashStr(title)%COMPOSERS.length],
-        writer:WRITERS[hashStr(title)%WRITERS.length],
+        director:normalizeCrew(DIRECTORS[hashStr(title)%DIRECTORS.length]),composer:normalizeCrew(COMPOSERS[hashStr(title)%COMPOSERS.length]),
+        writer:normalizeCrew(WRITERS[hashStr(title)%WRITERS.length]),
         actors:normalizeActors([ACTORS[hashStr(title)%ACTORS.length],ACTORS[(hashStr(title)+3)%ACTORS.length],ACTORS[(hashStr(title)+5)%ACTORS.length],ACTORS[(hashStr(title)+7)%ACTORS.length]]),
         seed:seedReviews(id,score), isNew:true};
     }else{
@@ -1161,11 +1198,29 @@ function renderHome(){
 }
 
 const PAGE_SIZE=100;
-let listState={movies:{y0:2021,y1:2026,sort:'score',page:1}, shows:{y0:2021,y1:2026,sort:'score',page:1}, games:{y0:2021,y1:2026,sort:'score',page:1}};
+/* Canonical display order for the platform filter — RAWG's exact platform name strings
+   are used for matching, based on their documented naming; if a filter option ever shows
+   zero results despite matching games existing, check a game's "platforms" array in
+   data.json for RAWG's exact wording and adjust this list to match. */
+const PLATFORM_ORDER=[
+  'PC',
+  'PlayStation 5','Xbox Series S/X','Nintendo Switch 2',
+  'PlayStation 4','Xbox One','Nintendo Switch',
+  'PlayStation 3','Xbox 360','Wii U','Wii',
+  'PlayStation 2','Xbox','GameCube','PlayStation','Nintendo 64',
+  'Dreamcast','SEGA Saturn','SNES','SEGA Genesis','NES',
+  'Game Boy Advance','Game Boy Color','Game Boy',
+  'Nintendo DS','Nintendo 3DS','PS Vita','PSP',
+];
+
+let listState={movies:{y0:2021,y1:2026,sort:'score',page:1}, shows:{y0:2021,y1:2026,sort:'score',page:1}, games:{y0:2021,y1:2026,sort:'score',page:1,platform:'ALL'}};
 
 function sortedListFor(type){
   const st=listState[type+'s'];
-  const items=DB[type].filter(it=>it.year>=st.y0 && it.year<=st.y1);
+  let items=DB[type].filter(it=>it.year>=st.y0 && it.year<=st.y1);
+  if(type==='game' && st.platform && st.platform!=='ALL'){
+    items=items.filter(it=>it.platforms && it.platforms.includes(st.platform));
+  }
   return items.slice().sort((a,b)=>{
     if(st.sort==='score') return scoreSortValue(b)-scoreSortValue(a);
     if(st.sort==='new') return b.date.localeCompare(a.date);
@@ -1190,10 +1245,19 @@ function renderList(type){
   const {min:YMIN, max:YMAX}=YEAR_BOUNDS[type];
   const body=listBodyHTML(type);
   const boxOpt = type==='movie' ? `<option value="box">Tržby</option>` : '';
+  const platformFilterHTML = type==='game' ? `
+    <div class="platform-filter-wrap">
+      <button class="platform-filter-btn" id="platformFilterBtn" type="button">Platforma: ${st.platform==='ALL'?'Vše':esc(st.platform)}</button>
+      <div class="platform-dropdown" id="platformDropdown">
+        <button class="platform-option ${st.platform==='ALL'?'active':''}" data-platform="ALL" type="button">Všechny platformy</button>
+        ${PLATFORM_ORDER.map(p=>`<button class="platform-option ${st.platform===p?'active':''}" data-platform="${esc(p)}" type="button">${esc(p)}</button>`).join('')}
+      </div>
+    </div>` : '';
   return `
     <h1 class="page-title">${typeLabelPl(type)}</h1>
     <p class="page-sub" id="listSub">${typeLabelPl(type)} z let ${YMIN}–${YMAX}. Zobrazeno ${body.shown} z ${body.total} položek.</p>
     <div class="filterbar">
+      ${platformFilterHTML}
       <span class="label">Rok</span>
       <div class="range-field">
         <div class="range-wrap">
@@ -1228,6 +1292,7 @@ function attachListEvents(type){
   }
   updateFill();
   bindLoadMore(type);
+  if(type==='game') bindPlatformFilter();
   [y0,y1].forEach(inp=>inp.addEventListener('input',()=>{
     st.y0=Math.min(+y0.value,+y1.value); st.y1=Math.max(+y0.value,+y1.value);
     st.page=1;
@@ -1235,6 +1300,27 @@ function attachListEvents(type){
     refreshListBody(type);
   }));
   sortSel.addEventListener('change',()=>{ st.sort=sortSel.value; st.page=1; refreshListBody(type); });
+}
+function bindPlatformFilter(){
+  const btn=document.getElementById('platformFilterBtn');
+  const dropdown=document.getElementById('platformDropdown');
+  if(!btn || !dropdown) return;
+  btn.addEventListener('click', (e)=>{
+    e.stopPropagation();
+    dropdown.classList.toggle('open');
+  });
+  dropdown.querySelectorAll('.platform-option').forEach(opt=>{
+    opt.addEventListener('click', (e)=>{
+      e.stopPropagation();
+      const val=opt.dataset.platform;
+      listState.games.platform=val;
+      listState.games.page=1;
+      btn.textContent='Platforma: '+(val==='ALL'?'Vše':val);
+      dropdown.querySelectorAll('.platform-option').forEach(o=>o.classList.toggle('active', o.dataset.platform===val));
+      dropdown.classList.remove('open');
+      refreshListBody('game');
+    });
+  });
 }
 function refreshListBody(type){
   const body=listBodyHTML(type);
@@ -1271,11 +1357,19 @@ function renderDetail(type,id){
   }else{
     const countryPart = item.country ? ` <span class="sep">·</span> ${esc(item.country)}` : '';
     const boxPart = (type==='movie' && item.box!==null && item.box!==undefined) ? ` <span class="sep">·</span> tržby ${fmtBox(item.box, item.boxCurrency)}` : '';
-    metaLine=`${fmtDate(item.date)}${countryPart} <span class="sep">·</span> ${esc(item.genre)} <span class="sep">·</span> ${typeLabel(type)}${boxPart}`;
+    let runtimePart = '';
+    if(type==='movie' && item.runtime){
+      runtimePart = ` <span class="sep">·</span> ${item.runtime} min`;
+    }else if(type==='show' && item.runtimeMin){
+      runtimePart = (item.runtimeMax && item.runtimeMax!==item.runtimeMin)
+        ? ` <span class="sep">·</span> ${item.runtimeMin}–${item.runtimeMax} min`
+        : ` <span class="sep">·</span> ${item.runtimeMin} min`;
+    }
+    metaLine=`${fmtDate(item.date)}${countryPart} <span class="sep">·</span> ${esc(item.genre)}${runtimePart} <span class="sep">·</span> ${typeLabel(type)}${boxPart}`;
     creditsHTML=`
-      <div class="credit-row"><span class="ck-label">Režie</span><div class="ck-values"><a class="person-link" href="#/person/${slug(item.director)}">${esc(item.director)}</a></div></div>
-      <div class="credit-row"><span class="ck-label">Hudba</span><div class="ck-values"><a class="person-link" href="#/person/${slug(item.composer)}">${esc(item.composer)}</a></div></div>
-      <div class="credit-row"><span class="ck-label">Scénář</span><div class="ck-values"><a class="person-link" href="#/person/${slug(item.writer)}">${esc(item.writer)}</a></div></div>
+      <div class="credit-row"><span class="ck-label">Režie</span><div class="ck-values"><a class="person-link" href="#/person/${slug(item.director.name)}">${esc(item.director.name)}</a></div></div>
+      <div class="credit-row"><span class="ck-label">Hudba</span><div class="ck-values"><a class="person-link" href="#/person/${slug(item.composer.name)}">${esc(item.composer.name)}</a></div></div>
+      <div class="credit-row"><span class="ck-label">Scénář</span><div class="ck-values"><a class="person-link" href="#/person/${slug(item.writer.name)}">${esc(item.writer.name)}</a></div></div>
     `;
     castHTML=`
       <div class="block">
@@ -1307,7 +1401,7 @@ function renderDetail(type,id){
         <div class="credits">${creditsHTML}</div>
         <div class="detail-poster-small" id="detailPosterBtn" title="Zobrazit galerii"><div class="frame" style="${posterBgStyle(item)}">${posterInnerHTML(item)}</div></div>
       </div>
-      ${(type!=='game' && item.summary) ? `<div class="summary-box" id="summaryBox" title="Zobrazit celý popis">${esc(item.summary)}</div>` : ''}
+      ${item.summary ? `<div class="summary-box" id="summaryBox" title="Zobrazit celý popis">${esc(item.summary)}</div>` : ''}
     </div>
 
     ${castHTML}
@@ -1369,7 +1463,7 @@ function collectFilmography(name){
   const rows=[];
   ['movie','show'].forEach(type=>{
     DB[type].forEach(it=>{
-      if(it.director===name || it.composer===name || it.writer===name || (it.actors&&it.actors.some(a=>a.name===name))){
+      if(it.director.name===name || it.composer.name===name || it.writer.name===name || (it.actors&&it.actors.some(a=>a.name===name))){
         rows.push(it);
       }
     });
@@ -1379,17 +1473,26 @@ function collectFilmography(name){
   return rows.filter(r=>{ if(seen.has(r.id))return false; seen.add(r.id); return true; })
              .sort((a,b)=>b.date.localeCompare(a.date));
 }
-/* Finds birthday/deathday/age for a person by scanning actor credits — Kritiq's person
-   pages are keyed by name (not a stored id), so this just grabs the first match found. */
-function findPersonBio(name){
+/* Finds birthday/deathday/age/photo for a person by scanning credits across movies and
+   shows — Kritiq's person pages are keyed by name (not a stored id), so this grabs the
+   first match found. Actors carry birthday/deathday/age; director/composer/writer only
+   carry a photo (that's all that was asked for crew), so both are checked. */
+function findPersonInfo(name){
+  let photoOnly=null;
   for(const type of ['movie','show']){
     for(const it of DB[type]){
-      if(!it.actors) continue;
-      const match=it.actors.find(a=>a.name===name);
-      if(match && (match.birthday || match.deathday)) return match;
+      if(it.actors){
+        const match=it.actors.find(a=>a.name===name);
+        if(match && (match.birthday || match.deathday || match.image)) return match;
+      }
+      for(const role of [it.director, it.composer, it.writer]){
+        if(role && role.name===name && role.image && !photoOnly){
+          photoOnly={name, birthday:null, deathday:null, age:null, image:role.image};
+        }
+      }
     }
   }
-  return null;
+  return photoOnly;
 }
 function fmtBioDate(d){
   if(!d) return '';
@@ -1402,9 +1505,10 @@ function renderPerson(name){
   const filmo=collectFilmography(name);
   const isDev=DEVS.includes(name);
   const role=isDev?'Vývojářské studio':'Tvůrce / herec';
-  const bio=findPersonBio(name);
+  const bio=findPersonInfo(name);
   const h=hashStr(name);
   const avatarStyle=`background:linear-gradient(135deg, hsl(${h%360} 60% 45%), hsl(${(h+70)%360} 65% 30%));`;
+  const avatarInner = (bio && bio.image) ? `<img src="${esc(bio.image)}" alt="" class="avatar-photo">` : esc(name.charAt(0));
   const list=filmo.map(it=>{
     const sc=liveScore(it); const badge=scoreBadge(sc); const cls=badge.cls;
     return `<a class="filmo-item" href="#/title/${it.type}/${it.id}" style="background:linear-gradient(90deg, color-mix(in srgb, var(--${cls==='s-black'?'s-black-bg':cls==='s-grey'?'s-grey-bg':cls==='s-blue'?'s-blue-bg':cls==='s-purple'?'s-purple-bg':'s-gold-bg'}) 16%, var(--bg-1)), var(--bg-1));">
@@ -1426,7 +1530,7 @@ function renderPerson(name){
   return `
     <div class="crumb"><a href="#/">Kritiq</a> / ${esc(name)}</div>
     <div class="person-head">
-      <div class="person-avatar" style="${avatarStyle}">${esc(name.charAt(0))}</div>
+      <div class="person-avatar" style="${(bio && bio.image)?'':avatarStyle}">${avatarInner}</div>
       <div><h1 class="page-title" style="margin-bottom:2px;">${esc(name)}</h1><div class="person-role">${role}</div>${bioLine}</div>
     </div>
     <h3 class="section-title">Filmografie (${filmo.length})</h3>
@@ -2030,6 +2134,10 @@ async function init(){
     const profileLink=e.target.closest('.profile-link');
     if(profileLink){ e.preventDefault(); openUserModal(profileLink.dataset.username); return; }
     if(e.target.closest('.no-modal-trigger')) return;
+    const dropdown=document.getElementById('platformDropdown');
+    if(dropdown && dropdown.classList.contains('open') && !e.target.closest('.platform-filter-wrap')){
+      dropdown.classList.remove('open');
+    }
     const reviewEl=e.target.closest('.review-item');
     if(reviewEl){ openReviewModalById(reviewEl.dataset.reviewId); return; }
   });
