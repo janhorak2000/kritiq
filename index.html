@@ -402,6 +402,7 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
 @media(max-width:520px){.score-bar{padding:14px 18px;} .score-bar .num{font-size:34px;}}
 
 .section-title{font-family:var(--font-display); font-weight:700; font-size:17px; margin:0 0 14px;}
+.section-subtitle{font-family:var(--font-body); font-weight:700; font-size:13px; color:var(--text-faint); text-transform:uppercase; letter-spacing:.05em; margin:0 0 10px;}
 .block{margin-bottom:36px;}
 .synopsis{color:var(--text-dim); font-size:15px; line-height:1.65; max-width:74ch;}
 
@@ -1574,17 +1575,25 @@ function attachDetailEvents(type,id){
 }
 
 function collectFilmography(name){
-  const cats={director:[], writer:[], composer:[], actor:[], developer:[]};
+  const cats={
+    director:{movie:[], show:[]}, writer:{movie:[], show:[]},
+    composer:{movie:[], show:[]}, actor:{movie:[], show:[]},
+    developer:[],
+  };
   ['movie','show'].forEach(type=>{
     DB[type].forEach(it=>{
-      if(it.director.name===name) cats.director.push(it);
-      if(it.composer.name===name) cats.composer.push(it);
-      if(it.writer.name===name) cats.writer.push(it);
-      if(it.actors && it.actors.some(a=>a.name===name)) cats.actor.push(it);
+      if(it.director.name===name) cats.director[type].push(it);
+      if(it.composer.name===name) cats.composer[type].push(it);
+      if(it.writer.name===name) cats.writer[type].push(it);
+      if(it.actors && it.actors.some(a=>a.name===name)) cats.actor[type].push(it);
     });
   });
   DB.game.forEach(it=>{ if(it.developer===name) cats.developer.push(it); });
-  Object.values(cats).forEach(arr=>arr.sort((a,b)=>b.date.localeCompare(a.date)));
+  ['director','writer','composer','actor'].forEach(k=>{
+    cats[k].movie.sort((a,b)=>b.date.localeCompare(a.date));
+    cats[k].show.sort((a,b)=>b.date.localeCompare(a.date));
+  });
+  cats.developer.sort((a,b)=>b.date.localeCompare(a.date));
   return cats;
 }
 /* Finds birthday/deathday/age/photo for a person by scanning credits across movies and
@@ -1619,8 +1628,8 @@ function renderPerson(name){
   const filmo=collectFilmography(name);
   const CATEGORY_LABELS={director:'Režisér', writer:'Scénárista', composer:'Hudba', actor:'Herec', developer:'Vývojář'};
   const CATEGORY_ORDER=['director','writer','composer','actor','developer'];
-  const activeCats=CATEGORY_ORDER.filter(k=>filmo[k].length>0);
-  const totalCount=activeCats.reduce((sum,k)=>sum+filmo[k].length,0);
+  const countFor=k => k==='developer' ? filmo[k].length : (filmo[k].movie.length + filmo[k].show.length);
+  const activeCats=CATEGORY_ORDER.filter(k=>countFor(k)>0);
   const isDev=DEVS.includes(name);
   const role=isDev ? 'Vývojářské studio' : (activeCats.filter(k=>k!=='developer').map(k=>CATEGORY_LABELS[k]).join(' · ') || 'Tvůrce / herec');
   const bio=findPersonInfo(name);
@@ -1637,10 +1646,20 @@ function renderPerson(name){
       </a>`;
     }).join('');
   }
-  const sections=activeCats.map(k=>`
-    <h3 class="section-title">${CATEGORY_LABELS[k]} (${filmo[k].length})</h3>
-    <div class="filmo-list">${renderItems(filmo[k])}</div>
-  `).join('');
+  const sections=activeCats.map(k=>{
+    if(k==='developer'){
+      return `
+        <h3 class="section-title">${CATEGORY_LABELS[k]} (${filmo[k].length})</h3>
+        <div class="filmo-list">${renderItems(filmo[k])}</div>
+      `;
+    }
+    const movieItems=filmo[k].movie, showItems=filmo[k].show;
+    const subs=[
+      movieItems.length ? `<h4 class="section-subtitle">Filmy (${movieItems.length})</h4><div class="filmo-list">${renderItems(movieItems)}</div>` : '',
+      showItems.length ? `<h4 class="section-subtitle">Seriály (${showItems.length})</h4><div class="filmo-list">${renderItems(showItems)}</div>` : '',
+    ].join('');
+    return `<h3 class="section-title">${CATEGORY_LABELS[k]} (${countFor(k)})</h3>${subs}`;
+  }).join('');
   let bioLine='';
   if(bio && bio.birthday){
     if(bio.deathday){
