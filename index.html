@@ -376,6 +376,13 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
   border-radius:0 0 var(--radius-m) var(--radius-m);
 }
 .summary-box:hover{border-color:var(--violet); background:var(--bg-2);}
+.show-all-cast-btn{
+  margin-top:10px; font-family:var(--font-body); font-size:12.5px; font-weight:700;
+  padding:7px 14px; border-radius:999px; border:1px solid var(--line-soft);
+  background:var(--bg-2); color:var(--violet-2); cursor:pointer;
+  transition:border-color .15s, color .15s;
+}
+.show-all-cast-btn:hover{border-color:var(--violet); color:#fff;}
 .summary-box:hover::after{background:linear-gradient(to top, var(--bg-2), transparent);}
 
 .score-bar{
@@ -1371,10 +1378,17 @@ function renderDetail(type,id){
       <div class="credit-row"><span class="ck-label">Hudba</span><div class="ck-values"><a class="person-link" href="#/person/${slug(item.composer.name)}">${esc(item.composer.name)}</a></div></div>
       <div class="credit-row"><span class="ck-label">Scénář</span><div class="ck-values"><a class="person-link" href="#/person/${slug(item.writer.name)}">${esc(item.writer.name)}</a></div></div>
     `;
+    const castVisible=item.actors.slice(0,10);
+    const castHidden=item.actors.slice(10);
+    const castChip=a=>`<a class="person-link" href="#/person/${slug(a.name)}">${esc(a.name)}</a>`;
     castHTML=`
       <div class="block">
         <h3 class="section-title">Obsazení</h3>
-        <div class="credit-row"><div class="ck-values">${item.actors.map(a=>`<a class="person-link" href="#/person/${slug(a.name)}">${esc(a.name)}</a>`).join('')}</div></div>
+        <div class="credit-row"><div class="ck-values" id="castVisible">${castVisible.map(castChip).join('')}</div></div>
+        ${castHidden.length ? `
+          <div class="credit-row" id="castHiddenRow" style="display:none;"><div class="ck-values">${castHidden.map(castChip).join('')}</div></div>
+          <button class="show-all-cast-btn" id="showAllCastBtn" type="button">Zobrazit všechny (${item.actors.length})</button>
+        ` : ''}
       </div>`;
   }
 
@@ -1437,6 +1451,11 @@ function attachDetailEvents(type,id){
   if(posterBtn) posterBtn.addEventListener('click', ()=> openGalleryModal(item));
   const summaryBox=document.getElementById('summaryBox');
   if(summaryBox) summaryBox.addEventListener('click', ()=> openSummaryModal(item));
+  const showAllCastBtn=document.getElementById('showAllCastBtn');
+  if(showAllCastBtn) showAllCastBtn.addEventListener('click', ()=>{
+    document.getElementById('castHiddenRow').style.display='';
+    showAllCastBtn.remove();
+  });
   slider.addEventListener('input',()=>{
     const v=parseInt(slider.value);
     numEl.textContent=v;
@@ -1460,18 +1479,18 @@ function attachDetailEvents(type,id){
 }
 
 function collectFilmography(name){
-  const rows=[];
+  const cats={director:[], writer:[], composer:[], actor:[], developer:[]};
   ['movie','show'].forEach(type=>{
     DB[type].forEach(it=>{
-      if(it.director.name===name || it.composer.name===name || it.writer.name===name || (it.actors&&it.actors.some(a=>a.name===name))){
-        rows.push(it);
-      }
+      if(it.director.name===name) cats.director.push(it);
+      if(it.composer.name===name) cats.composer.push(it);
+      if(it.writer.name===name) cats.writer.push(it);
+      if(it.actors && it.actors.some(a=>a.name===name)) cats.actor.push(it);
     });
   });
-  DB.game.forEach(it=>{ if(it.developer===name) rows.push(it); });
-  const seen=new Set();
-  return rows.filter(r=>{ if(seen.has(r.id))return false; seen.add(r.id); return true; })
-             .sort((a,b)=>b.date.localeCompare(a.date));
+  DB.game.forEach(it=>{ if(it.developer===name) cats.developer.push(it); });
+  Object.values(cats).forEach(arr=>arr.sort((a,b)=>b.date.localeCompare(a.date)));
+  return cats;
 }
 /* Finds birthday/deathday/age/photo for a person by scanning credits across movies and
    shows — Kritiq's person pages are keyed by name (not a stored id), so this grabs the
@@ -1503,20 +1522,30 @@ function fmtBioDate(d){
 
 function renderPerson(name){
   const filmo=collectFilmography(name);
+  const CATEGORY_LABELS={director:'Režisér', writer:'Scénárista', composer:'Hudba', actor:'Herec', developer:'Vývojář'};
+  const CATEGORY_ORDER=['director','writer','composer','actor','developer'];
+  const activeCats=CATEGORY_ORDER.filter(k=>filmo[k].length>0);
+  const totalCount=activeCats.reduce((sum,k)=>sum+filmo[k].length,0);
   const isDev=DEVS.includes(name);
-  const role=isDev?'Vývojářské studio':'Tvůrce / herec';
+  const role=isDev ? 'Vývojářské studio' : (activeCats.filter(k=>k!=='developer').map(k=>CATEGORY_LABELS[k]).join(' · ') || 'Tvůrce / herec');
   const bio=findPersonInfo(name);
   const h=hashStr(name);
   const avatarStyle=`background:linear-gradient(135deg, hsl(${h%360} 60% 45%), hsl(${(h+70)%360} 65% 30%));`;
   const avatarInner = (bio && bio.image) ? `<img src="${esc(bio.image)}" alt="" class="avatar-photo">` : esc(name.charAt(0));
-  const list=filmo.map(it=>{
-    const sc=liveScore(it); const badge=scoreBadge(sc); const cls=badge.cls;
-    return `<a class="filmo-item" href="#/title/${it.type}/${it.id}" style="background:linear-gradient(90deg, color-mix(in srgb, var(--${cls==='s-black'?'s-black-bg':cls==='s-grey'?'s-grey-bg':cls==='s-blue'?'s-blue-bg':cls==='s-purple'?'s-purple-bg':'s-gold-bg'}) 16%, var(--bg-1)), var(--bg-1));">
-      <span class="fi-title">${esc(it.title)}</span>
-      <span class="fi-meta">${typeLabel(it.type)} · ${it.year}</span>
-      <span class="fi-score ${cls}">${badge.text}</span>
-    </a>`;
-  }).join('');
+  function renderItems(items){
+    return items.map(it=>{
+      const sc=liveScore(it); const badge=scoreBadge(sc); const cls=badge.cls;
+      return `<a class="filmo-item" href="#/title/${it.type}/${it.id}" style="background:linear-gradient(90deg, color-mix(in srgb, var(--${cls==='s-black'?'s-black-bg':cls==='s-grey'?'s-grey-bg':cls==='s-blue'?'s-blue-bg':cls==='s-purple'?'s-purple-bg':'s-gold-bg'}) 16%, var(--bg-1)), var(--bg-1));">
+        <span class="fi-title">${esc(it.title)}</span>
+        <span class="fi-meta">${typeLabel(it.type)} · ${it.year}</span>
+        <span class="fi-score ${cls}">${badge.text}</span>
+      </a>`;
+    }).join('');
+  }
+  const sections=activeCats.map(k=>`
+    <h3 class="section-title">${CATEGORY_LABELS[k]} (${filmo[k].length})</h3>
+    <div class="filmo-list">${renderItems(filmo[k])}</div>
+  `).join('');
   let bioLine='';
   if(bio && bio.birthday){
     if(bio.deathday){
@@ -1533,8 +1562,7 @@ function renderPerson(name){
       <div class="person-avatar" style="${(bio && bio.image)?'':avatarStyle}">${avatarInner}</div>
       <div><h1 class="page-title" style="margin-bottom:2px;">${esc(name)}</h1><div class="person-role">${role}</div>${bioLine}</div>
     </div>
-    <h3 class="section-title">Filmografie (${filmo.length})</h3>
-    <div class="filmo-list">${list || '<p class="empty-note">Žádné položky.</p>'}</div>
+    ${sections || '<h3 class="section-title">Filmografie (0)</h3><p class="empty-note">Žádné položky.</p>'}
   `;
 }
 
