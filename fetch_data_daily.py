@@ -186,7 +186,15 @@ def is_standup_title(title):
     return any(name.lower() in t for name in STANDUP_COMEDIANS)
 
 
-def apply_title_overrides(title, vote_count, scored, standup_benchmark):
+DOCUMENTARY_GENRE_ID = 99
+DOCUMENTARY_MIN_VOTES = 50
+
+
+def is_documentary(item):
+    return DOCUMENTARY_GENRE_ID in (item.get("genre_ids") or [])
+
+
+def apply_title_overrides(title, vote_count, scored, standup_benchmark, genre_ids=None):
     """Only ever downgrades scored=True to False — never upgrades a title that other
     rules already decided shouldn't be scored."""
     if not scored:
@@ -194,6 +202,8 @@ def apply_title_overrides(title, vote_count, scored, standup_benchmark):
     if is_wrestling_title(title):
         return False
     if is_standup_title(title) and vote_count < standup_benchmark * 0.7:
+        return False
+    if genre_ids and DOCUMENTARY_GENRE_ID in genre_ids and vote_count < DOCUMENTARY_MIN_VOTES:
         return False
     return scored
 
@@ -406,19 +416,40 @@ def get_movie_details(key, movie_id):
         return {"countries": [], "revenue": None, "runtime": None}
 
 
+def fails_short_runtime(year, details):
+    """Excludes short/student films released after 1915 entirely — before that year,
+    short films were often the best/standard form cinema took, so no duration filter
+    applies to anything that old."""
+    if year <= 1915:
+        return False
+    runtime = (details or {}).get("runtime")
+    return runtime is not None and runtime <= 45
+
+
+CZSK_MIN_VOTES_FOR_SCORE = 10  # Czech/Slovak content is still never excluded below this,
+                                 # just left unscored ("N") rather than shown with a
+                                 # near-meaningless score from a handful of TMDb votes
+
+
 def evaluate_movie(key, m, min_votes, special_benchmark, standup_benchmark):
     """Returns (include, scored, details). include=False means skip entirely; scored=False
     means include it but with score=null (an "N" badge in Kritiq). details is the result of
-    get_movie_details (country + revenue), fetched at most once, only for included movies."""
+    get_movie_details (country + revenue + runtime), fetched at most once, only for
+    included movies."""
     vote_count = m.get("vote_count") or 0
+    year = int(m["release_date"][:4])
 
     if is_czech_or_slovak(m):
-        # Never filtered — always included regardless of votes, genre, or special tier.
-        # Always scored=True here too — movie_record's IMDb lookup runs regardless of
-        # TMDb's own vote_count, so a film with 0 TMDb votes but a real IMDb rating still
-        # gets a genuine score. Only ends up as "N" if NEITHER source has real data.
+        # Never filtered on popularity — but the short-film runtime rule still applies
+        # universally regardless of language/country.
         details = get_movie_details(key, m["id"])
-        scored = apply_title_overrides(m.get("title"), vote_count, True, standup_benchmark)
+        if fails_short_runtime(year, details):
+            return (False, False, None)
+        if vote_count < CZSK_MIN_VOTES_FOR_SCORE:
+            return (True, False, details)
+        scored = apply_title_overrides(m.get("title"), vote_count, True, standup_benchmark, m.get("genre_ids"))
+        if details.get("runtime") is None:
+            scored = False
         return (True, scored, details)
 
     lang_ok = movie_lang_ok(m)
@@ -426,14 +457,20 @@ def evaluate_movie(key, m, min_votes, special_benchmark, standup_benchmark):
     if not lang_ok:
         if vote_count < min_votes * UNSCORED_INCLUDE_MULT:
             return (False, False, None)
-        return (True, False, get_movie_details(key, m["id"]))
+        details = get_movie_details(key, m["id"])
+        if fails_short_runtime(year, details):
+            return (False, False, None)
+        return (True, False, details)
 
     special = is_special_tier(m, "movie")
     if special:
         if vote_count >= special_benchmark:
             pass  # popular enough — fall through to the remaining checks below
         elif vote_count >= special_benchmark / 2:
-            return (True, False, get_movie_details(key, m["id"]))
+            details = get_movie_details(key, m["id"])
+            if fails_short_runtime(year, details):
+                return (False, False, None)
+            return (True, False, details)
         else:
             return (False, False, None)
     elif is_strict_genre(m, "movie") and vote_count < min_votes * STRICT_GENRE_MULT:
@@ -443,10 +480,14 @@ def evaluate_movie(key, m, min_votes, special_benchmark, standup_benchmark):
         return (False, False, None)
 
     details = get_movie_details(key, m["id"])
+    if fails_short_runtime(year, details):
+        return (False, False, None)
     if set(details["countries"]) & COUNTRY_BLOCKLIST:
         return (True, False, details)
 
-    scored = apply_title_overrides(m.get("title"), vote_count, True, standup_benchmark)
+    scored = apply_title_overrides(m.get("title"), vote_count, True, standup_benchmark, m.get("genre_ids"))
+    if details.get("runtime") is None:
+        scored = False
     return (True, scored, details)
 
 
@@ -457,6 +498,8 @@ def evaluate_show(key, s, min_votes, special_benchmark, standup_benchmark):
     countries = s.get("origin_country") or []
 
     if is_czech_or_slovak(s):
+        if vote_count < CZSK_MIN_VOTES_FOR_SCORE:
+            return (True, False, countries)
         scored = apply_title_overrides(s.get("name"), vote_count, True, standup_benchmark)
         return (True, scored, countries)
 
@@ -599,7 +642,7 @@ def movie_record(m, key, genres, fetch_galleries, fetch_reviews, imdb_ratings, m
         if director_row: director_name, director_id = director_row["name"], director_row.get("id")
         if composer_row: composer_name, composer_id = composer_row["name"], composer_row.get("id")
         if writer_row: writer_name, writer_id = writer_row["name"], writer_row.get("id")
-        actors = build_actor_list(key, credits.get("cast", []), people_cache, today)
+        actors = build_actor_list(key, credits.get("cast", []), people_cache, today, cap=60)
     except Exception as e:
         print(f"    warning: credits fetch failed for movie {m.get('id')} ({e}) — leaving crew blank", file=sys.stderr)
     director = person_crew_obj(director_name, director_id, key, people_cache)
@@ -680,7 +723,7 @@ def show_record(s, key, genres, fetch_galleries, fetch_reviews, imdb_ratings, mi
             creators = details.get("created_by") or []
             if creators:
                 writer_name, writer_id = creators[0].get("name", ""), creators[0].get("id")
-        actors = build_actor_list(key, cast, people_cache, today)
+        actors = build_actor_list(key, cast, people_cache, today, cap=110)
     except Exception as e:
         print(f"    warning: credits fetch failed for show {s.get('id')} ({e}) — leaving crew blank", file=sys.stderr)
     director = person_crew_obj(director_name, director_id, key, people_cache)
@@ -692,6 +735,8 @@ def show_record(s, key, genres, fetch_galleries, fetch_reviews, imdb_ratings, mi
     episode_runtimes = [r for r in (details.get("episode_run_time") or []) if r]
     runtime_min = min(episode_runtimes) if episode_runtimes else None
     runtime_max = max(episode_runtimes) if episode_runtimes else None
+    if runtime_min is None:
+        scored = False
     poster = f"{TMDB_IMG_BASE}{s['poster_path']}" if s.get("poster_path") else ""
     gallery = [f"{TMDB_IMG_BASE}{s['backdrop_path']}"] if s.get("backdrop_path") else []
     if fetch_galleries:
@@ -801,8 +846,9 @@ def game_has_pc(g, details=None):
 
 def game_tier_for(g, year, details=None):
     if year >= 2010:
-        genre_names = {x["name"] for x in (g.get("genres") or (details or {}).get("genres") or [])}
-        if genre_names & GAME_TIGHT_GENRES:
+        genre_list = g.get("genres") or (details or {}).get("genres") or []
+        primary_genre = genre_list[0]["name"] if genre_list else None
+        if primary_genre in GAME_TIGHT_GENRES:
             return "modern_tight_genre"
         return "modern"
     if year >= 1995:
@@ -1125,24 +1171,24 @@ def fetch_game_window(key, state, years_per_run, floor_year, seen_ids, today, ch
                 continue
             if not is_released(g["released"], today):
                 continue
-            details = get_game_details(key, g)
-            wl = game_wishlist_count(g, details)
+            wl = game_wishlist_count(g)
             wishlist_counts.append(wl)
-            if not game_passes_quality(g, details):
+            if not game_passes_quality(g):
                 if rejected_dumped < 5:
                     # Dump enough to see WHY each rejection happened — which tier it landed
                     # in (genre tagging can push a normal game into the strict Indie/Casual/
                     # Simulation tier), the threshold that tier requires, and its actual
                     # genre list, instead of guessing at the cause.
                     year_g = int(g["released"][:4])
-                    tier_name = game_tier_for(g, year_g, details)
+                    tier_name = game_tier_for(g, year_g)
                     required = GAME_TIERS[tier_name]["wishlist"]
-                    genre_names = [x["name"] for x in (g.get("genres") or details.get("genres") or [])]
+                    genre_names = [x["name"] for x in (g.get("genres") or [])]
                     print(f"    debug: '{g.get('name')}' wishlist={wl} needed={required} (tier={tier_name}) genres={genre_names}", file=sys.stderr)
                     rejected_dumped += 1
                 continue
             seen_ids.add(g["id"])
             try:
+                details = get_game_details(key, g)  # only fetched now, for the small subset that actually passed
                 collected.append(game_record(g, key, details))
                 kept += 1
             except Exception as e:
@@ -1337,11 +1383,11 @@ def fetch_games_recent(key, seen_ids, years, max_pages, today, checkpoint):
                     continue
                 if not is_released(g["released"], today):
                     continue
-                details = get_game_details(key, g)
-                if not game_passes_quality(g, details):
+                if not game_passes_quality(g):
                     continue
                 seen_ids.add(g["id"])
                 try:
+                    details = get_game_details(key, g)
                     collected.append(game_record(g, key, details))
                 except Exception as e:
                     print(f"    warning: skipped a game due to error ({e})", file=sys.stderr)
