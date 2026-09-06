@@ -36,12 +36,20 @@ filters more seriously:
   but a reasonable proxy without extra API calls. Shows DO get a real
   origin_country check.
 
-  Games — by default, a game is only included if it has a real Metacritic
-  score attached (RAWG's own "metacritic" field). That score is then used
-  directly as Kritiq's score instead of RAWG's own small-sample user rating,
-  since Metacritic aggregation is far more trustworthy than "5.0 stars from
-  2 people". Pass --allow-no-metacritic to include Metacritic-less games
-  too, gated instead by --min-ratings-count (RAWG's own rating-sample size).
+  Games — inclusion is gated by RAWG wishlist interest (added_by_status.toplay), not
+  Metacritic presence — Metacritic coverage lags badly for very recent releases, which
+  was causing 2025-2026 games to nearly disappear entirely. Scoring still prefers
+  Metacritic when it's there (far more trustworthy than a handful of RAWG user ratings,
+  and independent of the tiering below); otherwise RAWG's own rating is used, but only
+  with a real sample behind it — below that, the game is included but unscored ("N"
+  badge in Kritiq). Both the wishlist bar and the ratings-sample bar are tiered by era
+  (and, for modern releases, by genre) — see GAME_TIERS:
+    2010-present, Indie/Casual/Simulation: wishlist >= 30, ratings >= 150
+    2010-present, everything else:         wishlist >= 7,  ratings >= 40
+    1995-2009, has a PC release:            wishlist >= 4,  ratings >= 30
+    1995-2009, console-only:                wishlist >= 3,  ratings >= 30
+    1990-1994:                              wishlist >= 2,  ratings >= 30
+    1989 and older:                         wishlist >= 1,  ratings >= 25
 
   Nothing unreleased: any movie, show, or game whose release date is in the
   future (relative to today) is skipped entirely — no scores get attached to
@@ -107,6 +115,7 @@ import json
 import os
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor
 import urllib.request
 import requests
 
@@ -152,6 +161,42 @@ IMDB_RATINGS_URL = "https://datasets.imdbws.com/title.ratings.tsv.gz"
 IMDB_CACHE_MAX_AGE_HOURS = 24
 MIN_IMDB_VOTES_DEFAULT = 100
 
+# Direct title-text overrides — genre-based filtering alone wasn't catching everything
+# (WWE events in particular don't consistently use the TV Movie genre on TMDb).
+WRESTLING_TITLE_SUBSTRING = "wrestl"
+STANDUP_BENCHMARK_VOTES_DEFAULT = 200  # rough placeholder for "Dave Chappelle: Killing Them
+                                         # Softly" — check its actual TMDb vote count and
+                                         # adjust via --standup-benchmark-votes
+STANDUP_COMEDIANS = [
+    "George Carlin", "Richard Pryor", "Dave Chappelle", "Louis C.K.", "Bill Burr",
+    "Jerry Seinfeld", "Chris Rock", "Robin Williams", "Mitch Hedberg", "John Mulaney",
+    "Bo Burnham", "Ricky Gervais", "Joan Rivers", "Eddie Murphy", "Patrice O'Neal",
+    "Norm Macdonald", "Bill Hicks", "Wanda Sykes", "Ali Wong", "Hannah Gadsby",
+    "Nate Bargatze", "Anthony Jeselnik", "Jimmy Carr", "Trevor Noah", "Gabriel Iglesias",
+    "Kevin Hart", "Jim Gaffigan", "Sarah Silverman", "Amy Schumer", "Hannibal Buress",
+]
+
+
+def is_wrestling_title(title):
+    return WRESTLING_TITLE_SUBSTRING in (title or "").lower()
+
+
+def is_standup_title(title):
+    t = (title or "").lower()
+    return any(name.lower() in t for name in STANDUP_COMEDIANS)
+
+
+def apply_title_overrides(title, vote_count, scored, standup_benchmark):
+    """Only ever downgrades scored=True to False — never upgrades a title that other
+    rules already decided shouldn't be scored."""
+    if not scored:
+        return scored
+    if is_wrestling_title(title):
+        return False
+    if is_standup_title(title) and vote_count < standup_benchmark * 0.7:
+        return False
+    return scored
+
 
 def today_str():
     return datetime.date.today().isoformat()
@@ -165,17 +210,22 @@ def tmdb_get(path, key, params=None):
     params = dict(params or {})
     params["api_key"] = key
     last_exc = None
-    for attempt in range(3):
+    for attempt in range(6):
         try:
             r = requests.get(f"{TMDB_BASE}{path}", params=params, timeout=20)
-            if r.status_code == 429:
-                time.sleep(2)
+            if r.status_code == 429 or r.status_code >= 500:
+                # 429 = rate limited, 5xx = the server itself is having a bad moment
+                # (like the RAWG 502s we've seen) — both are worth waiting out and
+                # retrying, unlike a genuine 4xx request error (bad key, bad params),
+                # which retrying would never fix.
+                last_exc = requests.exceptions.HTTPError(f"{r.status_code} server-side error", response=r)
+                time.sleep(min(2 * (2 ** attempt), 30))
                 continue
             r.raise_for_status()
             return r.json()
         except requests.RequestException as e:
             last_exc = e
-            time.sleep(2)
+            time.sleep(min(2 * (2 ** attempt), 30))
     raise last_exc
 
 
@@ -183,22 +233,23 @@ def rawg_get(path, key, params=None):
     params = dict(params or {})
     params["key"] = key
     last_exc = None
-    for attempt in range(3):
+    for attempt in range(6):
         try:
             r = requests.get(f"{RAWG_BASE}{path}", params=params, timeout=20)
-            if r.status_code == 429:
-                time.sleep(2)
-                continue
             if r.status_code == 404:
                 # RAWG returns a plain 404 once you page past its available results for a
                 # given query (unlike TMDb, which just returns an empty results list) —
                 # treat that the same way: no more results here, not a real error.
                 return {"results": []}
+            if r.status_code == 429 or r.status_code >= 500:
+                last_exc = requests.exceptions.HTTPError(f"{r.status_code} server-side error", response=r)
+                time.sleep(min(2 * (2 ** attempt), 30))
+                continue
             r.raise_for_status()
             return r.json()
         except requests.RequestException as e:
             last_exc = e
-            time.sleep(2)
+            time.sleep(min(2 * (2 ** attempt), 30))
     raise last_exc
 
 
@@ -260,14 +311,15 @@ def imdb_score_for(key, media, tmdb_id, imdb_ratings, min_imdb_votes, fallback_s
     """Returns (score, used_imdb_bool, imdb_id). imdb_id is fetched and returned even
     when IMDb score cross-referencing is off (--no-imdb-ratings) — it's also stored on
     the record so other scripts (like fetch_czech_wikidata.py) can deduplicate against
-    this title without pulling in a second copy of it."""
+    this title without pulling in a second copy of it. fallback_score may be None (no
+    reliable TMDb vote data) — IMDb is still checked regardless, and only if IMDb also
+    has nothing does this genuinely return None (unscored), rather than a fake number."""
     imdb_id = get_imdb_id(key, media, tmdb_id)
-    if not imdb_ratings or not imdb_id:
-        return fallback_score, False, imdb_id
-    match = imdb_ratings.get(imdb_id)
-    if not match or match[1] < min_imdb_votes:
-        return fallback_score, False, imdb_id
-    return round(match[0] * 10), True, imdb_id
+    if imdb_ratings and imdb_id:
+        match = imdb_ratings.get(imdb_id)
+        if match and match[1] >= min_imdb_votes:
+            return round(match[0] * 10), True, imdb_id
+    return fallback_score, False, imdb_id
 
 
 def load_json(path, default):
@@ -284,17 +336,42 @@ def save_json(path, obj):
     os.replace(tmp, path)  # atomic-ish: never leaves a half-written data.json
 
 
+def dedupe_by_title_year(new_items, existing_items):
+    """Safety net on top of the tmdb_id-based seen-set: catches titles that were added
+    from somewhere else (manually, or by fetch_czech_wikidata.py) without a tmdb_id to
+    match against, so TMDb picking up the same title later doesn't create a duplicate."""
+    known = {(it.get("title", "").strip().lower(), it.get("year")) for it in existing_items}
+    seen_now = set()
+    out = []
+    for it in new_items:
+        key = (it.get("title", "").strip().lower(), it.get("year"))
+        if key in known or key in seen_now:
+            continue
+        seen_now.add(key)
+        out.append(it)
+    return out
+
+
 def movie_lang_ok(m):
     """True if a genuine Czech translation exists (localized title differs from the
-    original) or the title is originally in English — these are eligible for a real
-    numeric score, subject to the further country/genre checks below. Everything else
-    (Korean, Chinese, Japanese, Spanish, etc. with no Czech translation) still gets
-    collected under a stricter bar, but is never given a numeric score."""
-    return m.get("title") != m.get("original_title") or m.get("original_language") in ("en", "cs")
+    original) or the title is originally in English/Czech/Slovak — these are eligible
+    for a real numeric score, subject to the further country/genre checks below (except
+    Czech/Slovak-original content, which bypasses those too — see is_czech_or_slovak).
+    Everything else (Korean, Chinese, Japanese, Spanish, etc. with no Czech translation)
+    still gets collected under a stricter bar, but is never given a numeric score."""
+    return m.get("title") != m.get("original_title") or m.get("original_language") in ("en", "cs", "sk")
 
 
 def show_lang_ok(s):
-    return s.get("name") != s.get("original_name") or s.get("original_language") in ("en", "cs")
+    return s.get("name") != s.get("original_name") or s.get("original_language") in ("en", "cs", "sk")
+
+
+def is_czech_or_slovak(item):
+    """Czech/Slovak-original content should never be filtered out — TMDb's voting base
+    skews heavily toward internationally popular titles, which would otherwise silently
+    exclude the majority of Czech and Slovak cinema regardless of how good or popular it
+    genuinely is domestically."""
+    return item.get("original_language") in ("cs", "sk")
 
 
 def is_strict_genre(item, media):
@@ -317,23 +394,34 @@ def show_is_czech(s):
 
 def get_movie_details(key, movie_id):
     """One call gives us everything extra a movie needs: production countries (for the
-    blocklist check AND the "country of production" field) and revenue (for a real
-    worldwide box-office figure instead of the old popularity-based guess)."""
+    blocklist check AND the "country of production" field), revenue (for a real
+    worldwide box-office figure instead of the old popularity-based guess), and runtime."""
     try:
         data = tmdb_get(f"/movie/{movie_id}", key, {"language": "en-US"})
         countries = [c.get("iso_3166_1") for c in (data.get("production_countries") or [])]
         revenue = data.get("revenue") or None  # TMDb uses 0 for "no data" — treat as missing
-        return {"countries": countries, "revenue": revenue}
+        runtime = data.get("runtime") or None
+        return {"countries": countries, "revenue": revenue, "runtime": runtime}
     except Exception:
-        return {"countries": [], "revenue": None}
+        return {"countries": [], "revenue": None, "runtime": None}
 
 
-def evaluate_movie(key, m, min_votes, special_benchmark):
+def evaluate_movie(key, m, min_votes, special_benchmark, standup_benchmark):
     """Returns (include, scored, details). include=False means skip entirely; scored=False
     means include it but with score=null (an "N" badge in Kritiq). details is the result of
     get_movie_details (country + revenue), fetched at most once, only for included movies."""
-    lang_ok = movie_lang_ok(m)
     vote_count = m.get("vote_count") or 0
+
+    if is_czech_or_slovak(m):
+        # Never filtered — always included regardless of votes, genre, or special tier.
+        # Always scored=True here too — movie_record's IMDb lookup runs regardless of
+        # TMDb's own vote_count, so a film with 0 TMDb votes but a real IMDb rating still
+        # gets a genuine score. Only ends up as "N" if NEITHER source has real data.
+        details = get_movie_details(key, m["id"])
+        scored = apply_title_overrides(m.get("title"), vote_count, True, standup_benchmark)
+        return (True, scored, details)
+
+    lang_ok = movie_lang_ok(m)
 
     if not lang_ok:
         if vote_count < min_votes * UNSCORED_INCLUDE_MULT:
@@ -358,16 +446,22 @@ def evaluate_movie(key, m, min_votes, special_benchmark):
     if set(details["countries"]) & COUNTRY_BLOCKLIST:
         return (True, False, details)
 
-    return (True, True, details)
+    scored = apply_title_overrides(m.get("title"), vote_count, True, standup_benchmark)
+    return (True, scored, details)
 
 
-def evaluate_show(key, s, min_votes, special_benchmark):
+def evaluate_show(key, s, min_votes, special_benchmark, standup_benchmark):
     """Returns (include, scored, countries). origin_country is free in the discover
     response for shows, so no extra API call is needed here at all."""
-    lang_ok = show_lang_ok(s)
     vote_count = s.get("vote_count") or 0
-    czech = show_is_czech(s)
     countries = s.get("origin_country") or []
+
+    if is_czech_or_slovak(s):
+        scored = apply_title_overrides(s.get("name"), vote_count, True, standup_benchmark)
+        return (True, scored, countries)
+
+    lang_ok = show_lang_ok(s)
+    czech = show_is_czech(s)
 
     if not lang_ok:
         return (vote_count >= min_votes * UNSCORED_INCLUDE_MULT, False, countries)
@@ -393,21 +487,32 @@ def evaluate_show(key, s, min_votes, special_benchmark):
     if not czech and bool(set(countries) & COUNTRY_BLOCKLIST):
         return (True, False, countries)
 
-    return (True, True, countries)
+    scored = apply_title_overrides(s.get("name"), vote_count, True, standup_benchmark)
+    return (True, scored, countries)
+
+
+TMDB_PROFILE_IMG_BASE = "https://image.tmdb.org/t/p/w300"
+PERSON_FETCH_WORKERS = 8  # concurrent /person/{id} lookups per title — TMDb's rate limit is generous (~50 req/s), so this is safely well under it
 
 
 def get_person_info(key, person_id, people_cache):
-    """Fetches an actor's birthday/deathday once per person, ever — cached in
-    people_cache (persisted to people.json) so an actor who appears in dozens of
-    titles across many runs only costs one API call, not one per appearance."""
+    """Fetches an actor's birthday/deathday/photo once per person, ever — cached in
+    people_cache (persisted to people.json) so a person who appears in dozens of
+    titles across many runs only costs one API call, not one per appearance.
+    Re-fetches if a person cached before "image" existed is missing that field."""
     pid = str(person_id)
-    if pid in people_cache:
-        return people_cache[pid]
+    cached = people_cache.get(pid)
+    if cached and "image" in cached:
+        return cached
     try:
         data = tmdb_get(f"/person/{person_id}", key, {"language": "en-US"})
-        info = {"birthday": data.get("birthday"), "deathday": data.get("deathday")}
+        info = {
+            "birthday": data.get("birthday"),
+            "deathday": data.get("deathday"),
+            "image": f"{TMDB_PROFILE_IMG_BASE}{data['profile_path']}" if data.get("profile_path") else "",
+        }
     except Exception:
-        info = {"birthday": None, "deathday": None}
+        info = {"birthday": None, "deathday": None, "image": ""}
     people_cache[pid] = info
     return info
 
@@ -423,16 +528,37 @@ def compute_age(birthday, deathday, today):
         return None
 
 
-def build_actor_list(key, cast, people_cache, today, cap=8):
+def person_crew_obj(name, person_id, key, people_cache):
+    """Same idea as build_actor_list but for a single credited person (director,
+    composer, writer) — just name + photo, since birth/death wasn't asked for crew."""
+    if not name:
+        return {"name": "", "image": ""}
+    info = get_person_info(key, person_id, people_cache) if person_id else {"image": ""}
+    return {"name": name, "image": info.get("image", "")}
+
+
+def build_actor_list(key, cast, people_cache, today, cap=None):
+    """cap=None (the default) means every credited cast member — TMDb's own full list,
+    however long that is. Each NEW (not yet cached) person's info is fetched concurrently
+    (see PERSON_FETCH_WORKERS) since these are independent HTTP calls — this is the
+    single biggest per-title cost once the actor cap was removed, especially before
+    people.json has built up across runs. Pass a number (e.g. cap=20) to trade
+    completeness for speed if it's still too slow in practice."""
+    subset = cast[:cap]
+    to_fetch = [c["id"] for c in subset if c.get("id") is not None and str(c["id"]) not in people_cache]
+    if to_fetch:
+        with ThreadPoolExecutor(max_workers=PERSON_FETCH_WORKERS) as executor:
+            list(executor.map(lambda pid: get_person_info(key, pid, people_cache), to_fetch))
     actors = []
-    for c in cast[:cap]:
+    for c in subset:
         pid = c.get("id")
-        info = get_person_info(key, pid, people_cache) if pid else {"birthday": None, "deathday": None}
+        info = people_cache.get(str(pid), {"birthday": None, "deathday": None, "image": ""}) if pid is not None else {"birthday": None, "deathday": None, "image": ""}
         actors.append({
             "name": c.get("name", ""),
             "birthday": info.get("birthday"),
             "deathday": info.get("deathday"),
             "age": compute_age(info.get("birthday"), info.get("deathday"), today),
+            "image": info.get("image", ""),
         })
     return actors
 
@@ -462,16 +588,23 @@ def fetch_real_reviews(key, media, tmdb_id, cap=5):
 
 
 def movie_record(m, key, genres, fetch_galleries, fetch_reviews, imdb_ratings, min_imdb_votes, scored, details, people_cache, today):
-    director = composer = writer = ""
+    director_name = composer_name = writer_name = ""
+    director_id = composer_id = writer_id = None
     actors = []
     try:
         credits = tmdb_get(f"/movie/{m['id']}/credits", key)
-        director = next((c["name"] for c in credits.get("crew", []) if c["job"] == "Director"), "")
-        composer = next((c["name"] for c in credits.get("crew", []) if c["job"] == "Original Music Composer"), "")
-        writer = next((c["name"] for c in credits.get("crew", []) if c["job"] in ("Screenplay", "Writer")), "")
+        director_row = next((c for c in credits.get("crew", []) if c["job"] == "Director"), None)
+        composer_row = next((c for c in credits.get("crew", []) if c["job"] == "Original Music Composer"), None)
+        writer_row = next((c for c in credits.get("crew", []) if c["job"] in ("Screenplay", "Writer")), None)
+        if director_row: director_name, director_id = director_row["name"], director_row.get("id")
+        if composer_row: composer_name, composer_id = composer_row["name"], composer_row.get("id")
+        if writer_row: writer_name, writer_id = writer_row["name"], writer_row.get("id")
         actors = build_actor_list(key, credits.get("cast", []), people_cache, today)
     except Exception as e:
         print(f"    warning: credits fetch failed for movie {m.get('id')} ({e}) — leaving crew blank", file=sys.stderr)
+    director = person_crew_obj(director_name, director_id, key, people_cache)
+    composer = person_crew_obj(composer_name, composer_id, key, people_cache)
+    writer = person_crew_obj(writer_name, writer_id, key, people_cache)
     genre = genres.get((m.get("genre_ids") or [None])[0], "")
     poster = f"{TMDB_IMG_BASE}{m['poster_path']}" if m.get("poster_path") else ""
     gallery = [f"{TMDB_IMG_BASE}{m['backdrop_path']}"] if m.get("backdrop_path") else []
@@ -484,12 +617,13 @@ def movie_record(m, key, genres, fetch_galleries, fetch_reviews, imdb_ratings, m
     reviews = fetch_real_reviews(key, "movie", m["id"]) if fetch_reviews else []
     imdb_id = None
     if scored:
-        fallback_score = round(m.get("vote_average", 0) * 10)
+        vote_count_for_fallback = m.get("vote_count") or 0
+        fallback_score = round(m.get("vote_average", 0) * 10) if vote_count_for_fallback >= 1 else None
         score, used_imdb, imdb_id = imdb_score_for(key, "movie", m["id"], imdb_ratings, min_imdb_votes, fallback_score)
     else:
         score = None  # not in Czech or English — shown as an "N" badge in Kritiq, no invented score
         imdb_id = get_imdb_id(key, "movie", m["id"])
-    details = details or {"countries": [], "revenue": None}
+    details = details or {"countries": [], "revenue": None, "runtime": None}
     country = country_name_cs(details["countries"][0]) if details["countries"] else ""
     # Real estimated worldwide gross from TMDb (revenue field), not the old popularity-based
     # guess — TMDb reports this as a single worldwide figure, not split US/international.
@@ -499,6 +633,7 @@ def movie_record(m, key, genres, fetch_galleries, fetch_reviews, imdb_ratings, m
         "title": m["title"],
         "tmdb_id": m["id"],
         "imdb_id": imdb_id,
+        "original_language": m.get("original_language"),
         "year": int(m["release_date"][:4]),
         "date": m["release_date"],
         "score": score,
@@ -506,6 +641,7 @@ def movie_record(m, key, genres, fetch_galleries, fetch_reviews, imdb_ratings, m
         "box_currency": "USD" if box is not None else None,
         "country": country,
         "genre": genre,
+        "runtime": details.get("runtime"),
         "poster": poster,
         "gallery": gallery,
         "summary": (m.get("overview") or "").strip(),
@@ -515,8 +651,10 @@ def movie_record(m, key, genres, fetch_galleries, fetch_reviews, imdb_ratings, m
 
 
 def show_record(s, key, genres, fetch_galleries, fetch_reviews, imdb_ratings, min_imdb_votes, scored, countries, people_cache, today):
-    director = composer = writer = ""
+    director_name = composer_name = writer_name = ""
+    director_id = composer_id = writer_id = None
     actors = []
+    details = {}
     try:
         # The plain /tv/{id}/credits endpoint often has no "Director"/"Writer" job at all for
         # shows (TV doesn't really have a single per-series director the way movies do) —
@@ -532,20 +670,28 @@ def show_record(s, key, genres, fetch_galleries, fetch_reviews, imdb_ratings, mi
             for c in crew:
                 jobs = {j.get("job") for j in (c.get("jobs") or [])}
                 if jobs & job_names:
-                    return c["name"]
-            return ""
+                    return c["name"], c.get("id")
+            return "", None
 
-        director = find_job({"Director", "Series Director"})
-        composer = find_job({"Original Music Composer", "Music", "Composer"})
-        writer = find_job({"Writer", "Story Editor", "Teleplay"})
-        if not writer:
+        director_name, director_id = find_job({"Director", "Series Director"})
+        composer_name, composer_id = find_job({"Original Music Composer", "Music", "Composer"})
+        writer_name, writer_id = find_job({"Writer", "Story Editor", "Teleplay"})
+        if not writer_name:
             creators = details.get("created_by") or []
             if creators:
-                writer = creators[0].get("name", "")
+                writer_name, writer_id = creators[0].get("name", ""), creators[0].get("id")
         actors = build_actor_list(key, cast, people_cache, today)
     except Exception as e:
         print(f"    warning: credits fetch failed for show {s.get('id')} ({e}) — leaving crew blank", file=sys.stderr)
+    director = person_crew_obj(director_name, director_id, key, people_cache)
+    composer = person_crew_obj(composer_name, composer_id, key, people_cache)
+    writer = person_crew_obj(writer_name, writer_id, key, people_cache)
     genre = genres.get((s.get("genre_ids") or [None])[0], "")
+    # Episode length varies (often across seasons), so this is kept as a min-max range —
+    # comes from the same TV-details call above, no extra API cost.
+    episode_runtimes = [r for r in (details.get("episode_run_time") or []) if r]
+    runtime_min = min(episode_runtimes) if episode_runtimes else None
+    runtime_max = max(episode_runtimes) if episode_runtimes else None
     poster = f"{TMDB_IMG_BASE}{s['poster_path']}" if s.get("poster_path") else ""
     gallery = [f"{TMDB_IMG_BASE}{s['backdrop_path']}"] if s.get("backdrop_path") else []
     if fetch_galleries:
@@ -557,7 +703,8 @@ def show_record(s, key, genres, fetch_galleries, fetch_reviews, imdb_ratings, mi
     reviews = fetch_real_reviews(key, "tv", s["id"]) if fetch_reviews else []
     imdb_id = None
     if scored:
-        fallback_score = round(s.get("vote_average", 0) * 10)
+        vote_count_for_fallback = s.get("vote_count") or 0
+        fallback_score = round(s.get("vote_average", 0) * 10) if vote_count_for_fallback >= 1 else None
         score, used_imdb, imdb_id = imdb_score_for(key, "tv", s["id"], imdb_ratings, min_imdb_votes, fallback_score)
     else:
         score = None  # not in Czech or English — shown as an "N" badge in Kritiq, no invented score
@@ -572,6 +719,8 @@ def show_record(s, key, genres, fetch_galleries, fetch_reviews, imdb_ratings, mi
         "date": s["first_air_date"],
         "score": score,
         "genre": genre,
+        "runtime_min": runtime_min,
+        "runtime_max": runtime_max,
         "poster": poster,
         "gallery": gallery,
         "summary": (s.get("overview") or "").strip(),
@@ -593,50 +742,134 @@ def is_mostly_latin(text):
     return (latin / len(letters)) >= 0.7
 
 
-def game_record(g, key):
+GAME_GENRE_CS = {
+    "Action": "Akční", "Indie": "Indie", "Adventure": "Adventura", "RPG": "RPG",
+    "Strategy": "Strategie", "Shooter": "Střílečka", "Casual": "Nenáročná",
+    "Simulation": "Simulace", "Puzzle": "Hádanky", "Arcade": "Arkáda",
+    "Platformer": "Plošinovka", "Racing": "Závodní", "Massively Multiplayer": "MMO",
+    "Sports": "Sportovní", "Fighting": "Bojová", "Family": "Rodinná",
+    "Board Games": "Deskové hry", "Educational": "Vzdělávací", "Card": "Karetní",
+}
+
+
+def translate_game_genre(name):
+    return GAME_GENRE_CS.get(name, name)
+
+
+def get_game_details(key, g):
     try:
-        details = rawg_get(f"/games/{g['id']}", key)
+        return rawg_get(f"/games/{g['id']}", key)
     except Exception as e:
-        print(f"    warning: detail fetch failed for game {g.get('id')} ({e}) — developer may be blank", file=sys.stderr)
-        details = {}
+        print(f"    warning: detail fetch failed for game {g.get('id')} ({e})", file=sys.stderr)
+        return {}
+
+
+def game_wishlist_count(g, details=None):
+    """Uses RAWG's total "added" count (sum across ALL user-list statuses: want-to-play,
+    owned, playing, beaten, dropped) rather than isolating just "want to play". Confirmed
+    via real data that "toplay" often isn't even present as a key (RAWG appears to omit
+    zero-valued statuses), and isolating it structurally undercounts games with an
+    established audience — e.g. a title 20 people have already BEATEN can show 0 "want
+    to play" simply because that audience already moved past that status, even though
+    the game is clearly not obscure. Checked on the detail endpoint first, since RAWG's
+    /games LIST endpoint doesn't reliably include this breakdown at all."""
+    source = (details or {}).get("added_by_status") or g.get("added_by_status")
+    if source:
+        return sum(source.values())
+    return (details or {}).get("added") or g.get("added") or 0
+
+
+# Inclusion (wishlist) and scoring (ratings_count) thresholds, tiered by era — and, for
+# modern releases, further tightened for genres that tend to be flooded with tiny/asset-
+# flip titles on RAWG.
+GAME_TIERS = {
+    "modern_tight_genre": {"wishlist": 30, "ratings": 150},  # 2010+, Indie/Casual/Simulation
+    "modern": {"wishlist": 7, "ratings": 40},                 # 2010+, everything else
+    "mid_pc": {"wishlist": 4, "ratings": 30},                 # 1995-2009, has a PC release
+    "mid_console_only": {"wishlist": 3, "ratings": 30},       # 1995-2009, console-only
+    "early90s": {"wishlist": 2, "ratings": 30},               # 1990-1994
+    "classic": {"wishlist": 1, "ratings": 25},                # 1989 and older
+}
+GAME_TIGHT_GENRES = {"Indie", "Casual", "Simulation"}
+
+
+def game_has_pc(g, details=None):
+    platform_list = g.get("platforms") or (details or {}).get("platforms") or []
+    names = {p["platform"]["name"] for p in platform_list if p.get("platform") and p["platform"].get("name")}
+    return "PC" in names
+
+
+def game_tier_for(g, year, details=None):
+    if year >= 2010:
+        genre_names = {x["name"] for x in (g.get("genres") or (details or {}).get("genres") or [])}
+        if genre_names & GAME_TIGHT_GENRES:
+            return "modern_tight_genre"
+        return "modern"
+    if year >= 1995:
+        return "mid_pc" if game_has_pc(g, details) else "mid_console_only"
+    if year >= 1990:
+        return "early90s"
+    return "classic"
+
+
+def game_score(g):
+    """Metacritic wins when present (most trustworthy, and independent of era/genre
+    tiering). Otherwise RAWG's own user rating is used, but only with a real sample size
+    behind it for that title's tier — otherwise unscored ("N")."""
+    if not is_mostly_latin(g.get("name") or ""):
+        return None
+    metacritic = g.get("metacritic")
+    if metacritic is not None:
+        return metacritic
+    if not g.get("released"):
+        return None
+    year = int(g["released"][:4])
+    tier = GAME_TIERS[game_tier_for(g, year)]
+    if (g.get("ratings_count") or 0) >= tier["ratings"]:
+        return round((g.get("rating") or 0) * 20)
+    return None
+
+
+def game_record(g, key, details=None):
+    if details is None:
+        details = get_game_details(key, g)
     devs_list = details.get("developers") or g.get("developers") or []
     pubs_list = details.get("publishers") or g.get("publishers") or []
     devs = ", ".join(d["name"] for d in devs_list[:1]) or ", ".join(p["name"] for p in pubs_list[:1]) or "Neznámý vývojář"
-    genre = ", ".join(x["name"] for x in (g.get("genres") or details.get("genres") or [])[:1])
+    genre_names = [x["name"] for x in (g.get("genres") or details.get("genres") or [])[:3]]
+    genre = ", ".join(translate_game_genre(n) for n in genre_names)
+    platform_list = g.get("platforms") or details.get("platforms") or []
+    platforms = [p["platform"]["name"] for p in platform_list if p.get("platform") and p["platform"].get("name")]
     poster = g.get("background_image") or ""
     gallery = [s["image"] for s in (g.get("short_screenshots") or []) if s.get("image") and s.get("image") != poster][:6]
-    if is_mostly_latin(g["name"]):
-        metacritic = g.get("metacritic")
-        score = metacritic if metacritic is not None else round((g.get("rating") or 0) * 20)
-    else:
-        score = None  # title not available in Latin script (Czech/English) — "N" badge, no invented score
+    summary = (details.get("description_raw") or "").strip()[:800]  # English for now — fine to translate later
     return {
         "title": g["name"],
         "rawg_id": g["id"],
         "year": int(g["released"][:4]),
         "date": g["released"],
-        "score": score,
+        "score": game_score(g),
         "genre": genre,
+        "platforms": platforms,
         "poster": poster,
         "gallery": gallery,
+        "summary": summary,
         "developer": devs,
         "reviews": [],
     }
 
 
-def game_passes_quality(g, require_metacritic, min_ratings_count):
-    lang_ok = is_mostly_latin(g.get("name") or "")
-    if not lang_ok:
-        # not scored either way, so just keep out the very obscure ones
-        return (g.get("ratings_count") or 0) >= min_ratings_count * 3
-    if g.get("metacritic") is not None:
-        return True
-    if require_metacritic:
+def game_passes_quality(g, details=None):
+    """The inclusion gate is wishlist interest (added_by_status.toplay), tiered by era
+    (and genre, for modern releases) — see GAME_TIERS above."""
+    if not g.get("released"):
         return False
-    return (g.get("ratings_count") or 0) >= min_ratings_count
+    year = int(g["released"][:4])
+    tier = GAME_TIERS[game_tier_for(g, year, details)]
+    return game_wishlist_count(g, details) >= tier["wishlist"]
 
 
-def fetch_movie_window(key, state, years_per_run, floor_year, min_votes, genres, seen_ids, fetch_galleries, fetch_reviews, imdb_ratings, min_imdb_votes, anime_benchmark, people_cache, today, checkpoint):
+def fetch_movie_window(key, state, years_per_run, floor_year, min_votes, genres, seen_ids, fetch_galleries, fetch_reviews, imdb_ratings, min_imdb_votes, anime_benchmark, standup_benchmark, people_cache, today, checkpoint):
     year_end = state.get("year", state["start_year"])
     year_start = max(floor_year, year_end - years_per_run + 1)
     collected = []
@@ -666,7 +899,7 @@ def fetch_movie_window(key, state, years_per_run, floor_year, min_votes, genres,
                 continue
             if not is_released(m["release_date"], today):
                 continue
-            include, scored, details = evaluate_movie(key, m, min_votes, anime_benchmark)
+            include, scored, details = evaluate_movie(key, m, min_votes, anime_benchmark, standup_benchmark)
             if not include:
                 continue
             seen_ids.add(m["id"])
@@ -690,7 +923,7 @@ def fetch_movie_window(key, state, years_per_run, floor_year, min_votes, genres,
     return collected
 
 
-def fetch_show_window(key, state, years_per_run, floor_year, min_votes, genres, seen_ids, fetch_galleries, fetch_reviews, imdb_ratings, min_imdb_votes, anime_benchmark, people_cache, today, checkpoint):
+def fetch_show_window(key, state, years_per_run, floor_year, min_votes, genres, seen_ids, fetch_galleries, fetch_reviews, imdb_ratings, min_imdb_votes, anime_benchmark, standup_benchmark, people_cache, today, checkpoint):
     year_end = state.get("year", state["start_year"])
     year_start = max(floor_year, year_end - years_per_run + 1)
     collected = []
@@ -720,7 +953,7 @@ def fetch_show_window(key, state, years_per_run, floor_year, min_votes, genres, 
                 continue
             if not is_released(s["first_air_date"], today):
                 continue
-            include, scored, countries = evaluate_show(key, s, min_votes, anime_benchmark)
+            include, scored, countries = evaluate_show(key, s, min_votes, anime_benchmark, standup_benchmark)
             if not include:
                 continue
             seen_ids.add(s["id"])
@@ -744,7 +977,13 @@ def fetch_show_window(key, state, years_per_run, floor_year, min_votes, genres, 
     return collected
 
 
-def fetch_game_window(key, state, years_per_run, floor_year, seen_ids, require_metacritic, min_ratings_count, today, checkpoint):
+def fetch_lang_movie_window(key, state, years_per_run, floor_year, lang_code, genres, seen_ids, fetch_galleries, fetch_reviews, imdb_ratings, min_imdb_votes, anime_benchmark, standup_benchmark, people_cache, today, checkpoint):
+    """Dedicated scan for Czech/Slovak-original movies with NO vote-count floor at all —
+    the regular fetch_movie_window's vote_count.gte filter is applied server-side by TMDb
+    itself, so it would silently exclude these candidates before they're even retrieved,
+    regardless of what evaluate_movie's own logic decides. min_votes is still passed to
+    evaluate_movie for its other checks, but is_czech_or_slovak bypasses all of them
+    anyway — this function exists purely to get TMDb to hand over the candidates at all."""
     year_end = state.get("year", state["start_year"])
     year_start = max(floor_year, year_end - years_per_run + 1)
     collected = []
@@ -752,9 +991,119 @@ def fetch_game_window(key, state, years_per_run, floor_year, seen_ids, require_m
     page = state.get("page", 1)
     while year >= year_start:
         try:
+            data = tmdb_get("/discover/movie", key, {
+                "primary_release_year": year, "page": page, "language": TMDB_LANG,
+                "sort_by": "vote_count.desc", "with_original_language": lang_code,
+            })
+        except Exception as e:
+            print(f"  movies ({lang_code}): error on year {year} page {page} ({e}) — stopping for this run, progress saved", file=sys.stderr)
+            break
+        results = data.get("results", [])
+        total_pages = min(data.get("total_pages", 1), 500)
+        if not results:
+            year -= 1
+            page = 1
+            state["year"] = year
+            state["page"] = page
+            checkpoint()
+            continue
+        kept = 0
+        for m in results:
+            if m["id"] in seen_ids or not m.get("release_date") or not m.get("title"):
+                continue
+            if not is_released(m["release_date"], today):
+                continue
+            include, scored, details = evaluate_movie(key, m, 0, anime_benchmark, standup_benchmark)
+            if not include:
+                continue
+            seen_ids.add(m["id"])
+            try:
+                collected.append(movie_record(m, key, genres, fetch_galleries, fetch_reviews, imdb_ratings, min_imdb_votes, scored, details, people_cache, today))
+                kept += 1
+            except Exception as e:
+                print(f"    warning: skipped a movie due to error ({e})", file=sys.stderr)
+        print(f"  movies ({lang_code}): year {year} page {page}/{total_pages} -> {len(collected)} collected so far ({kept} kept this page)", file=sys.stderr)
+        page += 1
+        if page > total_pages:
+            year -= 1
+            page = 1
+        state["year"] = year
+        state["page"] = page
+        checkpoint(collected)
+    else:
+        state["year"] = year_start - 1
+        state["page"] = 1
+        checkpoint(collected)
+    return collected
+
+
+def fetch_lang_show_window(key, state, years_per_run, floor_year, lang_code, genres, seen_ids, fetch_galleries, fetch_reviews, imdb_ratings, min_imdb_votes, anime_benchmark, standup_benchmark, people_cache, today, checkpoint):
+    """Show equivalent of fetch_lang_movie_window — see that function's docstring."""
+    year_end = state.get("year", state["start_year"])
+    year_start = max(floor_year, year_end - years_per_run + 1)
+    collected = []
+    year = year_end
+    page = state.get("page", 1)
+    while year >= year_start:
+        try:
+            data = tmdb_get("/discover/tv", key, {
+                "first_air_date_year": year, "page": page, "language": TMDB_LANG,
+                "sort_by": "vote_count.desc", "with_original_language": lang_code,
+            })
+        except Exception as e:
+            print(f"  shows ({lang_code}): error on year {year} page {page} ({e}) — stopping for this run, progress saved", file=sys.stderr)
+            break
+        results = data.get("results", [])
+        total_pages = min(data.get("total_pages", 1), 500)
+        if not results:
+            year -= 1
+            page = 1
+            state["year"] = year
+            state["page"] = page
+            checkpoint(collected)
+            continue
+        kept = 0
+        for s in results:
+            if s["id"] in seen_ids or not s.get("first_air_date") or not s.get("name"):
+                continue
+            if not is_released(s["first_air_date"], today):
+                continue
+            include, scored, countries = evaluate_show(key, s, 0, anime_benchmark, standup_benchmark)
+            if not include:
+                continue
+            seen_ids.add(s["id"])
+            try:
+                collected.append(show_record(s, key, genres, fetch_galleries, fetch_reviews, imdb_ratings, min_imdb_votes, scored, countries, people_cache, today))
+                kept += 1
+            except Exception as e:
+                print(f"    warning: skipped a show due to error ({e})", file=sys.stderr)
+        print(f"  shows ({lang_code}): year {year} page {page}/{total_pages} -> {len(collected)} collected so far ({kept} kept this page)", file=sys.stderr)
+        page += 1
+        if page > total_pages:
+            year -= 1
+            page = 1
+        state["year"] = year
+        state["page"] = page
+        checkpoint(collected)
+    else:
+        state["year"] = year_start - 1
+        state["page"] = 1
+        checkpoint(collected)
+    return collected
+
+
+def fetch_game_window(key, state, years_per_run, floor_year, seen_ids, today, checkpoint):
+    year_end = state.get("year", state["start_year"])
+    year_start = max(floor_year, year_end - years_per_run + 1)
+    collected = []
+    year = year_end
+    page = state.get("page", 1)
+    while year >= year_start:
+        date_end = today if year == int(today[:4]) else f"{year}-12-31"
+        try:
             data = rawg_get("/games", key, {
-                "dates": f"{year}-01-01,{year}-12-31",
-                "page": page, "page_size": 40, "ordering": "-metacritic,-added",
+                "dates": f"{year}-01-01,{date_end}",
+                "page": page, "page_size": 40, "ordering": "-added",
             })
         except Exception as e:
             print(f"  games: error on year {year} page {page} ({e}) — stopping games for this run, progress so far is saved", file=sys.stderr)
@@ -769,20 +1118,37 @@ def fetch_game_window(key, state, years_per_run, floor_year, seen_ids, require_m
             continue
         kept = 0
         with_mc = sum(1 for g in results if g.get("metacritic") is not None)
+        wishlist_counts = []
+        rejected_dumped = 0
         for g in results:
             if g["id"] in seen_ids or not g.get("released") or not g.get("name"):
                 continue
             if not is_released(g["released"], today):
                 continue
-            if not game_passes_quality(g, require_metacritic, min_ratings_count):
+            details = get_game_details(key, g)
+            wl = game_wishlist_count(g, details)
+            wishlist_counts.append(wl)
+            if not game_passes_quality(g, details):
+                if rejected_dumped < 5:
+                    # Dump enough to see WHY each rejection happened — which tier it landed
+                    # in (genre tagging can push a normal game into the strict Indie/Casual/
+                    # Simulation tier), the threshold that tier requires, and its actual
+                    # genre list, instead of guessing at the cause.
+                    year_g = int(g["released"][:4])
+                    tier_name = game_tier_for(g, year_g, details)
+                    required = GAME_TIERS[tier_name]["wishlist"]
+                    genre_names = [x["name"] for x in (g.get("genres") or details.get("genres") or [])]
+                    print(f"    debug: '{g.get('name')}' wishlist={wl} needed={required} (tier={tier_name}) genres={genre_names}", file=sys.stderr)
+                    rejected_dumped += 1
                 continue
             seen_ids.add(g["id"])
             try:
-                collected.append(game_record(g, key))
+                collected.append(game_record(g, key, details))
                 kept += 1
             except Exception as e:
                 print(f"    warning: skipped a game due to error ({e})", file=sys.stderr)
-        print(f"  games: year {year} page {page} -> {len(collected)} collected so far ({kept} kept, {with_mc}/{len(results)} on this page had Metacritic)", file=sys.stderr)
+        wl_summary = f"wishlist seen: min={min(wishlist_counts)} max={max(wishlist_counts)}" if wishlist_counts else "wishlist seen: (no candidates checked)"
+        print(f"  games: year {year} page {page} -> {len(collected)} collected so far ({kept} kept, {with_mc}/{len(results)} on this page had Metacritic, {wl_summary})", file=sys.stderr)
         page += 1
         state["year"] = year
         state["page"] = page
@@ -794,7 +1160,83 @@ def fetch_game_window(key, state, years_per_run, floor_year, seen_ids, require_m
     return collected
 
 
-def fetch_movies_recent(key, genres, seen_ids, fetch_galleries, fetch_reviews, imdb_ratings, min_imdb_votes, anime_benchmark, people_cache, years, min_votes, max_pages, today, checkpoint):
+def fetch_lang_movies_recent(key, genres, seen_ids, fetch_galleries, fetch_reviews, imdb_ratings, min_imdb_votes, anime_benchmark, standup_benchmark, people_cache, years, max_pages, today, checkpoint, lang_code):
+    collected = []
+    for year in years:
+        page = 1
+        while page <= max_pages:
+            try:
+                data = tmdb_get("/discover/movie", key, {
+                    "primary_release_year": year, "page": page, "language": TMDB_LANG,
+                    "sort_by": "popularity.desc", "with_original_language": lang_code,
+                })
+            except Exception as e:
+                print(f"  movies ({lang_code}, recent): error on year {year} page {page} ({e}) — stopping recent refresh, progress so far is saved", file=sys.stderr)
+                break
+            results = data.get("results", [])
+            total_pages = min(data.get("total_pages", 1), 500)
+            if not results:
+                break
+            for m in results:
+                if m["id"] in seen_ids or not m.get("release_date") or not m.get("title"):
+                    continue
+                if not is_released(m["release_date"], today):
+                    continue
+                include, scored, details = evaluate_movie(key, m, 0, anime_benchmark, standup_benchmark)
+                if not include:
+                    continue
+                seen_ids.add(m["id"])
+                try:
+                    collected.append(movie_record(m, key, genres, fetch_galleries, fetch_reviews, imdb_ratings, min_imdb_votes, scored, details, people_cache, today))
+                except Exception as e:
+                    print(f"    warning: skipped a movie due to error ({e})", file=sys.stderr)
+            print(f"  movies ({lang_code}, recent): year {year} page {page}/{total_pages} -> {len(collected)} new so far", file=sys.stderr)
+            checkpoint(collected)
+            page += 1
+            if page > total_pages:
+                break
+    return collected
+
+
+def fetch_lang_shows_recent(key, genres, seen_ids, fetch_galleries, fetch_reviews, imdb_ratings, min_imdb_votes, anime_benchmark, standup_benchmark, people_cache, years, max_pages, today, checkpoint, lang_code):
+    collected = []
+    for year in years:
+        page = 1
+        while page <= max_pages:
+            try:
+                data = tmdb_get("/discover/tv", key, {
+                    "first_air_date_year": year, "page": page, "language": TMDB_LANG,
+                    "sort_by": "popularity.desc", "with_original_language": lang_code,
+                })
+            except Exception as e:
+                print(f"  shows ({lang_code}, recent): error on year {year} page {page} ({e}) — stopping recent refresh, progress so far is saved", file=sys.stderr)
+                break
+            results = data.get("results", [])
+            total_pages = min(data.get("total_pages", 1), 500)
+            if not results:
+                break
+            for s in results:
+                if s["id"] in seen_ids or not s.get("first_air_date") or not s.get("name"):
+                    continue
+                if not is_released(s["first_air_date"], today):
+                    continue
+                include, scored, countries = evaluate_show(key, s, 0, anime_benchmark, standup_benchmark)
+                if not include:
+                    continue
+                seen_ids.add(s["id"])
+                try:
+                    collected.append(show_record(s, key, genres, fetch_galleries, fetch_reviews, imdb_ratings, min_imdb_votes, scored, countries, people_cache, today))
+                except Exception as e:
+                    print(f"    warning: skipped a show due to error ({e})", file=sys.stderr)
+            print(f"  shows ({lang_code}, recent): year {year} page {page}/{total_pages} -> {len(collected)} new so far", file=sys.stderr)
+            checkpoint(collected)
+            page += 1
+            if page > total_pages:
+                break
+    return collected
+
+
+def fetch_movies_recent(key, genres, seen_ids, fetch_galleries, fetch_reviews, imdb_ratings, min_imdb_votes, anime_benchmark, standup_benchmark, people_cache, years, min_votes, max_pages, today, checkpoint):
     """Runs every single time, independent of the historical backfill cursor — catches
     brand-new ALREADY-RELEASED titles TMDb added since the last run. Unreleased/future
     titles are filtered out entirely, same as the historical backfill."""
@@ -819,7 +1261,7 @@ def fetch_movies_recent(key, genres, seen_ids, fetch_galleries, fetch_reviews, i
                     continue
                 if not is_released(m["release_date"], today):
                     continue
-                include, scored, details = evaluate_movie(key, m, min_votes, anime_benchmark)
+                include, scored, details = evaluate_movie(key, m, min_votes, anime_benchmark, standup_benchmark)
                 if not include:
                     continue
                 seen_ids.add(m["id"])
@@ -835,7 +1277,7 @@ def fetch_movies_recent(key, genres, seen_ids, fetch_galleries, fetch_reviews, i
     return collected
 
 
-def fetch_shows_recent(key, genres, seen_ids, fetch_galleries, fetch_reviews, imdb_ratings, min_imdb_votes, anime_benchmark, people_cache, years, min_votes, max_pages, today, checkpoint):
+def fetch_shows_recent(key, genres, seen_ids, fetch_galleries, fetch_reviews, imdb_ratings, min_imdb_votes, anime_benchmark, standup_benchmark, people_cache, years, min_votes, max_pages, today, checkpoint):
     collected = []
     for year in years:
         page = 1
@@ -857,7 +1299,7 @@ def fetch_shows_recent(key, genres, seen_ids, fetch_galleries, fetch_reviews, im
                     continue
                 if not is_released(s["first_air_date"], today):
                     continue
-                include, scored, countries = evaluate_show(key, s, min_votes, anime_benchmark)
+                include, scored, countries = evaluate_show(key, s, min_votes, anime_benchmark, standup_benchmark)
                 if not include:
                     continue
                 seen_ids.add(s["id"])
@@ -873,15 +1315,16 @@ def fetch_shows_recent(key, genres, seen_ids, fetch_galleries, fetch_reviews, im
     return collected
 
 
-def fetch_games_recent(key, seen_ids, years, max_pages, require_metacritic, min_ratings_count, today, checkpoint):
+def fetch_games_recent(key, seen_ids, years, max_pages, today, checkpoint):
     collected = []
     for year in years:
         page = 1
         while page <= max_pages:
+            date_end = today if year == int(today[:4]) else f"{year}-12-31"
             try:
                 data = rawg_get("/games", key, {
-                    "dates": f"{year}-01-01,{year}-12-31",
-                    "page": page, "page_size": 40, "ordering": "-metacritic,-added",
+                    "dates": f"{year}-01-01,{date_end}",
+                    "page": page, "page_size": 40, "ordering": "-added",
                 })
             except Exception as e:
                 print(f"  games (recent): error on year {year} page {page} ({e}) — stopping recent refresh, progress so far is saved", file=sys.stderr)
@@ -894,11 +1337,12 @@ def fetch_games_recent(key, seen_ids, years, max_pages, require_metacritic, min_
                     continue
                 if not is_released(g["released"], today):
                     continue
-                if not game_passes_quality(g, require_metacritic, min_ratings_count):
+                details = get_game_details(key, g)
+                if not game_passes_quality(g, details):
                     continue
                 seen_ids.add(g["id"])
                 try:
-                    collected.append(game_record(g, key))
+                    collected.append(game_record(g, key, details))
                 except Exception as e:
                     print(f"    warning: skipped a game due to error ({e})", file=sys.stderr)
             print(f"  games (recent): year {year} page {page} -> {len(collected)} new so far", file=sys.stderr)
@@ -916,8 +1360,6 @@ def main():
     ap.add_argument("--floor-year", type=int, default=FLOOR_YEAR_DEFAULT, help="stop walking backwards once past this year")
     ap.add_argument("--galleries", action="store_true", help="also fetch a small photo gallery per movie/show (1 extra API call per title)")
     ap.add_argument("--fetch-reviews", action="store_true", help="also fetch a few genuine TMDb user reviews per movie/show (1 extra API call per title)")
-    ap.add_argument("--allow-no-metacritic", action="store_true", help="include games without a Metacritic score too, gated by --min-ratings-count instead")
-    ap.add_argument("--min-ratings-count", type=int, default=50, help="RAWG rating-sample floor used only when --allow-no-metacritic is set")
     ap.add_argument("--recent-pages", type=int, default=10, help="pages to scan per year in the always-on recent-titles refresh")
     ap.add_argument("--recent-min-votes", type=int, default=5, help="lower vote floor for the recent refresh, since brand-new titles have few votes yet")
     ap.add_argument("--skip-recent", action="store_true", help="skip the recent-titles refresh (only do historical backfill)")
@@ -926,9 +1368,16 @@ def main():
     ap.add_argument("--min-imdb-votes", type=int, default=MIN_IMDB_VOTES_DEFAULT, help="only trust an IMDb rating match if it has at least this many IMDb votes")
     ap.add_argument("--imdb-cache-file", default="imdb_ratings_cache.tsv.gz")
     ap.add_argument("--anime-benchmark-votes", type=int, default=ANIME_BENCHMARK_VOTES_DEFAULT, help="animated/wrestling/stand-up/concert-special movies-shows need this many votes to be scored; half this to be included at all (unranked); check a title like Blue Eyed Samurai's real TMDb vote count and adjust")
+    ap.add_argument("--standup-benchmark-votes", type=int, default=STANDUP_BENCHMARK_VOTES_DEFAULT, help="stand-up comedy specials by the tracked comedians need at least 70%% of this many votes to keep a real score; below that they're unranked. Check 'Dave Chappelle: Killing Them Softly' on TMDb and adjust")
     ap.add_argument("--people-cache-file", default="people.json", help="cache of actor birthday/deathday, so the same actor isn't re-fetched across many titles")
-    ap.add_argument("--data-file", default="data.json")
+    ap.add_argument("--movies-file", default="movies.json", help="output file for worldwide (non-Czech/Slovak) movies")
+    ap.add_argument("--movies-czsk-file", default="movies_czsk.json", help="output file for Czech/Slovak-original movies, kept separate from the worldwide file")
+    ap.add_argument("--shows-file", default="shows.json", help="output file for TV shows (Czech/Slovak shows stay mixed in here — only movies are split)")
+    ap.add_argument("--games-file", default="games.json", help="output file for games")
     ap.add_argument("--state-file", default="fetch_state.json")
+    ap.add_argument("--skip-movies", action="store_true", help="skip movies entirely (e.g. to just refresh games without re-scanning through movies first)")
+    ap.add_argument("--skip-shows", action="store_true", help="skip shows entirely")
+    ap.add_argument("--skip-games", action="store_true", help="skip games entirely")
     args = ap.parse_args()
     today = today_str()
     real_year = datetime.date.today().year
@@ -937,109 +1386,224 @@ def main():
     imdb_ratings = {} if args.no_imdb_ratings else load_imdb_ratings(args.imdb_cache_file, IMDB_CACHE_MAX_AGE_HOURS)
     people_cache = load_json(args.people_cache_file, {})
 
-    data = load_json(args.data_file, {"movies": [], "shows": [], "games": []})
+    data = {
+        "movies": load_json(args.movies_file, []),
+        "movies_czsk": load_json(args.movies_czsk_file, []),
+        "shows": load_json(args.shows_file, []),
+        "games": load_json(args.games_file, []),
+    }
+    FILE_FOR = {"shows": args.shows_file, "games": args.games_file}
+
     state = load_json(args.state_file, {
         "movie": {"start_year": CURRENT_YEAR_DEFAULT},
         "show": {"start_year": CURRENT_YEAR_DEFAULT},
         "game": {"start_year": CURRENT_YEAR_DEFAULT},
+        "movie_cs": {"start_year": CURRENT_YEAR_DEFAULT},
+        "movie_sk": {"start_year": CURRENT_YEAR_DEFAULT},
+        "show_cs": {"start_year": CURRENT_YEAR_DEFAULT},
+        "show_sk": {"start_year": CURRENT_YEAR_DEFAULT},
         "movie_seen": [], "show_seen": [], "game_seen": [],
     })
+    for key in ("movie_cs", "movie_sk", "show_cs", "show_sk"):
+        state.setdefault(key, {"start_year": CURRENT_YEAR_DEFAULT})
 
-    movie_seen = set(state.get("movie_seen", [])) | {m["tmdb_id"] for m in data["movies"] if m.get("tmdb_id")}
+    movie_seen = set(state.get("movie_seen", [])) | {m["tmdb_id"] for m in data["movies"] if m.get("tmdb_id")} | {m["tmdb_id"] for m in data["movies_czsk"] if m.get("tmdb_id")}
     show_seen = set(state.get("show_seen", [])) | {s["tmdb_id"] for s in data["shows"] if s.get("tmdb_id")}
     game_seen = set(state.get("game_seen", [])) | {g["rawg_id"] for g in data["games"] if g.get("rawg_id")}
 
-    def make_checkpoint(category, base_list, seen_set, seen_key):
-        """Returns a function that saves data.json + fetch_state.json right now,
-        combining what was already on disk with whatever this category has
-        collected so far. Called frequently (every page/year), not just at the end."""
+    def is_czsk_record(rec):
+        return rec.get("original_language") in ("cs", "sk")
+
+    def save_category(category):
+        save_json(FILE_FOR[category], data[category])
+
+    def save_movies():
+        save_json(args.movies_file, data["movies"])
+        save_json(args.movies_czsk_file, data["movies_czsk"])
+
+    def extend_movies_split(new_movies):
+        """Splits newly-collected movies by original_language before merging — worldwide
+        movies go to movies.json, Czech/Slovak-original ones go to movies_czsk.json,
+        regardless of which fetch pass (general or language-specific) found them."""
+        new_czsk = [m for m in new_movies if is_czsk_record(m)]
+        new_worldwide = [m for m in new_movies if not is_czsk_record(m)]
+        data["movies"].extend(dedupe_by_title_year(new_worldwide, data["movies"]))
+        data["movies_czsk"].extend(dedupe_by_title_year(new_czsk, data["movies_czsk"]))
+
+    def make_movie_checkpoint(seen_set, seen_key):
+        """Same idea as make_checkpoint below, but splits by language on every checkpoint
+        (not just at the end), so movies.json and movies_czsk.json both stay correct and
+        crash-resilient throughout a run, not just after it finishes cleanly."""
+        base_worldwide = list(data["movies"])
+        base_czsk = list(data["movies_czsk"])
         def checkpoint(collected_so_far=None):
-            snapshot = dict(data)
-            snapshot[category] = base_list + (collected_so_far or [])
-            save_json(args.data_file, snapshot)
+            collected_so_far = collected_so_far or []
+            new_czsk = [m for m in collected_so_far if is_czsk_record(m)]
+            new_worldwide = [m for m in collected_so_far if not is_czsk_record(m)]
+            data["movies"] = base_worldwide + new_worldwide
+            data["movies_czsk"] = base_czsk + new_czsk
+            save_movies()
             state[seen_key] = list(seen_set)
             save_json(args.state_file, state)
             save_json(args.people_cache_file, people_cache)
         return checkpoint
 
-    print("Fetching movies...", file=sys.stderr)
-    movie_genres = {}
-    try:
-        movie_genres = genre_map(args.tmdb_key, "movie")
-        if not args.skip_backfill:
-            cp = make_checkpoint("movies", data["movies"], movie_seen, "movie_seen")
-            new_movies = fetch_movie_window(args.tmdb_key, state["movie"], args.years_per_run, args.floor_year, args.min_votes, movie_genres, movie_seen, args.galleries, args.fetch_reviews, imdb_ratings, args.min_imdb_votes, args.anime_benchmark_votes, people_cache, today, cp)
-            data["movies"].extend(new_movies)
-    except Exception as e:
-        print(f"movies: unexpected error, stopping this category ({e})", file=sys.stderr)
-    save_json(args.data_file, data)
-    state["movie_seen"] = list(movie_seen)
-    save_json(args.state_file, state)
-    save_json(args.people_cache_file, people_cache)
-    if not args.skip_recent:
+    def make_checkpoint(category, base_list, seen_set, seen_key):
+        """Returns a function that saves ONLY this category's own file (shows.json or
+        games.json) plus fetch_state.json, right now — combining what was already on disk
+        with whatever this category has collected so far. Called frequently (every
+        page/year), not just at the end. Keeping each category in its own file means every
+        checkpoint only rewrites the one file actually being worked on, and each file stays
+        small enough to push to GitHub normally."""
+        def checkpoint(collected_so_far=None):
+            data[category] = base_list + (collected_so_far or [])
+            save_category(category)
+            state[seen_key] = list(seen_set)
+            save_json(args.state_file, state)
+            save_json(args.people_cache_file, people_cache)
+        return checkpoint
+
+    if args.skip_movies:
+        print("Skipping movies entirely.", file=sys.stderr)
+    else:
+        print("Fetching movies...", file=sys.stderr)
+        movie_genres = {}
         try:
-            cp = make_checkpoint("movies", data["movies"], movie_seen, "movie_seen")
-            new_recent_movies = fetch_movies_recent(args.tmdb_key, movie_genres, movie_seen, args.galleries, args.fetch_reviews, imdb_ratings, args.min_imdb_votes, args.anime_benchmark_votes, people_cache, recent_years, args.recent_min_votes, args.recent_pages, today, cp)
-            data["movies"].extend(new_recent_movies)
+            movie_genres = genre_map(args.tmdb_key, "movie")
+            if not args.skip_backfill:
+                cp = make_movie_checkpoint(movie_seen, "movie_seen")
+                new_movies = fetch_movie_window(args.tmdb_key, state["movie"], args.years_per_run, args.floor_year, args.min_votes, movie_genres, movie_seen, args.galleries, args.fetch_reviews, imdb_ratings, args.min_imdb_votes, args.anime_benchmark_votes, args.standup_benchmark_votes, people_cache, today, cp)
+                extend_movies_split(new_movies)
         except Exception as e:
-            print(f"movies (recent): unexpected error ({e})", file=sys.stderr)
-        save_json(args.data_file, data)
+            print(f"movies: unexpected error, stopping this category ({e})", file=sys.stderr)
+        save_movies()
         state["movie_seen"] = list(movie_seen)
         save_json(args.state_file, state)
         save_json(args.people_cache_file, people_cache)
-    print(f"  -> saved. movies total so far: {len(data['movies'])}", file=sys.stderr)
+        if not args.skip_recent:
+            try:
+                cp = make_movie_checkpoint(movie_seen, "movie_seen")
+                new_recent_movies = fetch_movies_recent(args.tmdb_key, movie_genres, movie_seen, args.galleries, args.fetch_reviews, imdb_ratings, args.min_imdb_votes, args.anime_benchmark_votes, args.standup_benchmark_votes, people_cache, recent_years, args.recent_min_votes, args.recent_pages, today, cp)
+                extend_movies_split(new_recent_movies)
+            except Exception as e:
+                print(f"movies (recent): unexpected error ({e})", file=sys.stderr)
+            save_movies()
+            state["movie_seen"] = list(movie_seen)
+            save_json(args.state_file, state)
+            save_json(args.people_cache_file, people_cache)
+        print(f"  -> saved. movies total so far: {len(data['movies'])} worldwide + {len(data['movies_czsk'])} Czech/Slovak", file=sys.stderr)
 
-    print("Fetching shows...", file=sys.stderr)
-    show_genres = {}
-    try:
-        show_genres = genre_map(args.tmdb_key, "tv")
-        if not args.skip_backfill:
-            cp = make_checkpoint("shows", data["shows"], show_seen, "show_seen")
-            new_shows = fetch_show_window(args.tmdb_key, state["show"], args.years_per_run, args.floor_year, args.min_votes, show_genres, show_seen, args.galleries, args.fetch_reviews, imdb_ratings, args.min_imdb_votes, args.anime_benchmark_votes, people_cache, today, cp)
-            data["shows"].extend(new_shows)
-    except Exception as e:
-        print(f"shows: unexpected error, stopping this category ({e})", file=sys.stderr)
-    save_json(args.data_file, data)
-    state["show_seen"] = list(show_seen)
-    save_json(args.state_file, state)
-    save_json(args.people_cache_file, people_cache)
-    if not args.skip_recent:
+        print("Fetching Czech/Slovak movies (no vote-count floor)...", file=sys.stderr)
+        for lang_code in ("cs", "sk"):
+            state_key = f"movie_{lang_code}"
+            try:
+                if not args.skip_backfill:
+                    cp = make_movie_checkpoint(movie_seen, "movie_seen")
+                    new_lang_movies = fetch_lang_movie_window(args.tmdb_key, state[state_key], args.years_per_run, args.floor_year, lang_code, movie_genres, movie_seen, args.galleries, args.fetch_reviews, imdb_ratings, args.min_imdb_votes, args.anime_benchmark_votes, args.standup_benchmark_votes, people_cache, today, cp)
+                    extend_movies_split(new_lang_movies)
+            except Exception as e:
+                print(f"movies ({lang_code}): unexpected error, stopping this category ({e})", file=sys.stderr)
+            save_movies()
+            state["movie_seen"] = list(movie_seen)
+            save_json(args.state_file, state)
+            save_json(args.people_cache_file, people_cache)
+            if not args.skip_recent:
+                try:
+                    cp = make_movie_checkpoint(movie_seen, "movie_seen")
+                    new_lang_recent = fetch_lang_movies_recent(args.tmdb_key, movie_genres, movie_seen, args.galleries, args.fetch_reviews, imdb_ratings, args.min_imdb_votes, args.anime_benchmark_votes, args.standup_benchmark_votes, people_cache, recent_years, args.recent_pages, today, cp, lang_code)
+                    extend_movies_split(new_lang_recent)
+                except Exception as e:
+                    print(f"movies ({lang_code}, recent): unexpected error ({e})", file=sys.stderr)
+                save_movies()
+                state["movie_seen"] = list(movie_seen)
+                save_json(args.state_file, state)
+                save_json(args.people_cache_file, people_cache)
+        print(f"  -> saved. movies total so far: {len(data['movies'])} worldwide + {len(data['movies_czsk'])} Czech/Slovak", file=sys.stderr)
+
+    if args.skip_shows:
+        print("Skipping shows entirely.", file=sys.stderr)
+    else:
+        print("Fetching shows...", file=sys.stderr)
+        show_genres = {}
         try:
-            cp = make_checkpoint("shows", data["shows"], show_seen, "show_seen")
-            new_recent_shows = fetch_shows_recent(args.tmdb_key, show_genres, show_seen, args.galleries, args.fetch_reviews, imdb_ratings, args.min_imdb_votes, args.anime_benchmark_votes, people_cache, recent_years, args.recent_min_votes, args.recent_pages, today, cp)
-            data["shows"].extend(new_recent_shows)
+            show_genres = genre_map(args.tmdb_key, "tv")
+            if not args.skip_backfill:
+                cp = make_checkpoint("shows", data["shows"], show_seen, "show_seen")
+                new_shows = fetch_show_window(args.tmdb_key, state["show"], args.years_per_run, args.floor_year, args.min_votes, show_genres, show_seen, args.galleries, args.fetch_reviews, imdb_ratings, args.min_imdb_votes, args.anime_benchmark_votes, args.standup_benchmark_votes, people_cache, today, cp)
+                data["shows"].extend(dedupe_by_title_year(new_shows, data["shows"]))
         except Exception as e:
-            print(f"shows (recent): unexpected error ({e})", file=sys.stderr)
-        save_json(args.data_file, data)
+            print(f"shows: unexpected error, stopping this category ({e})", file=sys.stderr)
+        save_category("shows")
         state["show_seen"] = list(show_seen)
         save_json(args.state_file, state)
         save_json(args.people_cache_file, people_cache)
-    print(f"  -> saved. shows total so far: {len(data['shows'])}", file=sys.stderr)
+        if not args.skip_recent:
+            try:
+                cp = make_checkpoint("shows", data["shows"], show_seen, "show_seen")
+                new_recent_shows = fetch_shows_recent(args.tmdb_key, show_genres, show_seen, args.galleries, args.fetch_reviews, imdb_ratings, args.min_imdb_votes, args.anime_benchmark_votes, args.standup_benchmark_votes, people_cache, recent_years, args.recent_min_votes, args.recent_pages, today, cp)
+                data["shows"].extend(dedupe_by_title_year(new_recent_shows, data["shows"]))
+            except Exception as e:
+                print(f"shows (recent): unexpected error ({e})", file=sys.stderr)
+            save_category("shows")
+            state["show_seen"] = list(show_seen)
+            save_json(args.state_file, state)
+            save_json(args.people_cache_file, people_cache)
+        print(f"  -> saved. shows total so far: {len(data['shows'])}", file=sys.stderr)
 
-    print("Fetching games...", file=sys.stderr)
-    try:
-        if not args.skip_backfill:
-            cp = make_checkpoint("games", data["games"], game_seen, "game_seen")
-            new_games = fetch_game_window(args.rawg_key, state["game"], args.years_per_run, args.floor_year, game_seen, not args.allow_no_metacritic, args.min_ratings_count, today, cp)
-            data["games"].extend(new_games)
-    except Exception as e:
-        print(f"games: unexpected error, stopping this category ({e})", file=sys.stderr)
-    save_json(args.data_file, data)
-    state["game_seen"] = list(game_seen)
-    save_json(args.state_file, state)
-    if not args.skip_recent:
+        print("Fetching Czech/Slovak shows (no vote-count floor)...", file=sys.stderr)
+        for lang_code in ("cs", "sk"):
+            state_key = f"show_{lang_code}"
+            try:
+                if not args.skip_backfill:
+                    cp = make_checkpoint("shows", data["shows"], show_seen, "show_seen")
+                    new_lang_shows = fetch_lang_show_window(args.tmdb_key, state[state_key], args.years_per_run, args.floor_year, lang_code, show_genres, show_seen, args.galleries, args.fetch_reviews, imdb_ratings, args.min_imdb_votes, args.anime_benchmark_votes, args.standup_benchmark_votes, people_cache, today, cp)
+                    data["shows"].extend(dedupe_by_title_year(new_lang_shows, data["shows"]))
+            except Exception as e:
+                print(f"shows ({lang_code}): unexpected error, stopping this category ({e})", file=sys.stderr)
+            save_category("shows")
+            state["show_seen"] = list(show_seen)
+            save_json(args.state_file, state)
+            save_json(args.people_cache_file, people_cache)
+            if not args.skip_recent:
+                try:
+                    cp = make_checkpoint("shows", data["shows"], show_seen, "show_seen")
+                    new_lang_recent_shows = fetch_lang_shows_recent(args.tmdb_key, show_genres, show_seen, args.galleries, args.fetch_reviews, imdb_ratings, args.min_imdb_votes, args.anime_benchmark_votes, args.standup_benchmark_votes, people_cache, recent_years, args.recent_pages, today, cp, lang_code)
+                    data["shows"].extend(dedupe_by_title_year(new_lang_recent_shows, data["shows"]))
+                except Exception as e:
+                    print(f"shows ({lang_code}, recent): unexpected error ({e})", file=sys.stderr)
+                save_category("shows")
+                state["show_seen"] = list(show_seen)
+                save_json(args.state_file, state)
+                save_json(args.people_cache_file, people_cache)
+        print(f"  -> saved. shows total so far: {len(data['shows'])}", file=sys.stderr)
+
+    if args.skip_games:
+        print("Skipping games entirely.", file=sys.stderr)
+    else:
+        print("Fetching games...", file=sys.stderr)
         try:
-            cp = make_checkpoint("games", data["games"], game_seen, "game_seen")
-            new_recent_games = fetch_games_recent(args.rawg_key, game_seen, recent_years, args.recent_pages, not args.allow_no_metacritic, args.min_ratings_count, today, cp)
-            data["games"].extend(new_recent_games)
+            if not args.skip_backfill:
+                cp = make_checkpoint("games", data["games"], game_seen, "game_seen")
+                new_games = fetch_game_window(args.rawg_key, state["game"], args.years_per_run, args.floor_year, game_seen, today, cp)
+                data["games"].extend(new_games)
         except Exception as e:
-            print(f"games (recent): unexpected error ({e})", file=sys.stderr)
-        save_json(args.data_file, data)
+            print(f"games: unexpected error, stopping this category ({e})", file=sys.stderr)
+        save_category("games")
         state["game_seen"] = list(game_seen)
         save_json(args.state_file, state)
-    print(f"  -> saved. games total so far: {len(data['games'])}", file=sys.stderr)
+        if not args.skip_recent:
+            try:
+                cp = make_checkpoint("games", data["games"], game_seen, "game_seen")
+                new_recent_games = fetch_games_recent(args.rawg_key, game_seen, recent_years, args.recent_pages, today, cp)
+                data["games"].extend(new_recent_games)
+            except Exception as e:
+                print(f"games (recent): unexpected error ({e})", file=sys.stderr)
+            save_category("games")
+            state["game_seen"] = list(game_seen)
+            save_json(args.state_file, state)
+        print(f"  -> saved. games total so far: {len(data['games'])}", file=sys.stderr)
 
-    print(f"\nRunning totals: {len(data['movies'])} movies, {len(data['shows'])} shows, {len(data['games'])} games", file=sys.stderr)
+    print(f"\nRunning totals: {len(data['movies'])} worldwide movies, {len(data['movies_czsk'])} Czech/Slovak movies, {len(data['shows'])} shows, {len(data['games'])} games", file=sys.stderr)
 
 
 if __name__ == "__main__":
