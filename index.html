@@ -1281,13 +1281,31 @@ const PLATFORM_ORDER=[
   'Nintendo DS','Nintendo 3DS','PS Vita','PSP',
 ];
 
-let listState={movies:{y0:2021,y1:2026,sort:'score',page:1}, shows:{y0:2021,y1:2026,sort:'score',page:1}, games:{y0:2021,y1:2026,sort:'score',page:1,platform:'ALL'}};
+let listState={movies:{y0:2021,y1:2026,sort:'score',page:1,filter:'ALL'}, shows:{y0:2021,y1:2026,sort:'score',page:1,filter:'ALL'}, games:{y0:2021,y1:2026,sort:'score',page:1,platform:'ALL'}};
+
+function distinctGenres(type){
+  const set=new Set();
+  DB[type].forEach(it=>{
+    (it.genre||'').split(',').forEach(g=>{
+      const trimmed=g.trim();
+      if(trimmed) set.add(trimmed);
+    });
+  });
+  return Array.from(set).sort((a,b)=>a.localeCompare(b,'cs'));
+}
 
 function sortedListFor(type){
   const st=listState[type+'s'];
   let items=DB[type].filter(it=>it.year>=st.y0 && it.year<=st.y1);
   if(type==='game' && st.platform && st.platform!=='ALL'){
     items=items.filter(it=>it.platforms && it.platforms.includes(st.platform));
+  }
+  if((type==='movie' || type==='show') && st.filter && st.filter!=='ALL'){
+    if(st.filter==='CZECH'){
+      items=items.filter(it=>it.country==='Česko');
+    }else{
+      items=items.filter(it=>(it.genre||'').split(',').map(g=>g.trim()).includes(st.filter));
+    }
   }
   return items.slice().sort((a,b)=>{
     if(st.sort==='score') return scoreSortValue(b)-scoreSortValue(a);
@@ -1321,11 +1339,27 @@ function renderList(type){
         ${PLATFORM_ORDER.map(p=>`<button class="platform-option ${st.platform===p?'active':''}" data-platform="${esc(p)}" type="button">${esc(p)}</button>`).join('')}
       </div>
     </div>` : '';
+  let genreFilterHTML = '';
+  if(type==='movie' || type==='show'){
+    const czechLabel = type==='movie' ? 'Pouze české filmy' : 'Pouze české seriály';
+    const currentLabel = st.filter==='ALL' ? 'Vše' : st.filter==='CZECH' ? czechLabel : st.filter;
+    const genres = distinctGenres(type);
+    genreFilterHTML = `
+    <div class="platform-filter-wrap">
+      <button class="platform-filter-btn" id="genreFilterBtn" type="button">Filtrovat: ${esc(currentLabel)}</button>
+      <div class="platform-dropdown" id="genreFilterDropdown">
+        <button class="platform-option ${st.filter==='ALL'?'active':''}" data-filter="ALL" type="button">Vše</button>
+        <button class="platform-option ${st.filter==='CZECH'?'active':''}" data-filter="CZECH" type="button">${esc(czechLabel)}</button>
+        ${genres.map(g=>`<button class="platform-option ${st.filter===g?'active':''}" data-filter="${esc(g)}" type="button">${esc(g)}</button>`).join('')}
+      </div>
+    </div>`;
+  }
   return `
     <h1 class="page-title">${typeLabelPl(type)}</h1>
     <p class="page-sub" id="listSub">${typeLabelPl(type)} z let ${YMIN}–${YMAX}. Zobrazeno ${body.shown} z ${body.total} položek.</p>
     <div class="filterbar">
       ${platformFilterHTML}
+      ${genreFilterHTML}
       <span class="label">Rok</span>
       <div class="range-field">
         <div class="range-wrap">
@@ -1361,6 +1395,7 @@ function attachListEvents(type){
   updateFill();
   bindLoadMore(type);
   if(type==='game') bindPlatformFilter();
+  if(type==='movie' || type==='show') bindGenreFilter(type);
   [y0,y1].forEach(inp=>inp.addEventListener('input',()=>{
     st.y0=Math.min(+y0.value,+y1.value); st.y1=Math.max(+y0.value,+y1.value);
     st.page=1;
@@ -1368,6 +1403,30 @@ function attachListEvents(type){
     refreshListBody(type);
   }));
   sortSel.addEventListener('change',()=>{ st.sort=sortSel.value; st.page=1; refreshListBody(type); });
+}
+function bindGenreFilter(type){
+  const btn=document.getElementById('genreFilterBtn');
+  const dropdown=document.getElementById('genreFilterDropdown');
+  if(!btn || !dropdown) return;
+  const czechLabel = type==='movie' ? 'Pouze české filmy' : 'Pouze české seriály';
+  btn.addEventListener('click', (e)=>{
+    e.stopPropagation();
+    dropdown.classList.toggle('open');
+  });
+  dropdown.querySelectorAll('.platform-option').forEach(opt=>{
+    opt.addEventListener('click', (e)=>{
+      e.stopPropagation();
+      const val=opt.dataset.filter;
+      const st=listState[type+'s'];
+      st.filter=val;
+      st.page=1;
+      const label = val==='ALL' ? 'Vše' : val==='CZECH' ? czechLabel : val;
+      btn.textContent='Filtrovat: '+label;
+      dropdown.querySelectorAll('.platform-option').forEach(o=>o.classList.toggle('active', o.dataset.filter===val));
+      dropdown.classList.remove('open');
+      refreshListBody(type);
+    });
+  });
 }
 function bindPlatformFilter(){
   const btn=document.getElementById('platformFilterBtn');
@@ -2376,10 +2435,12 @@ async function init(){
       return;
     }
     if(e.target.closest('.no-modal-trigger')) return;
-    const dropdown=document.getElementById('platformDropdown');
-    if(dropdown && dropdown.classList.contains('open') && !e.target.closest('.platform-filter-wrap')){
-      dropdown.classList.remove('open');
-    }
+    ['platformDropdown','genreFilterDropdown'].forEach(id=>{
+      const dropdown=document.getElementById(id);
+      if(dropdown && dropdown.classList.contains('open') && !e.target.closest('.platform-filter-wrap')){
+        dropdown.classList.remove('open');
+      }
+    });
     const reviewEl=e.target.closest('.review-item');
     if(reviewEl){ openReviewModalById(reviewEl.dataset.reviewId); return; }
   });
