@@ -1811,16 +1811,23 @@ function route(){
      "shows": [{title,year,date,score,genre,poster,gallery:[],summary,director,composer,writer,actors:[]}, ...],
      "games": [{title,year,date,score,genre,poster,gallery:[],developer}, ...] }               */
 async function loadRealData(){
-  try{
-    const res=await fetch('./data.json', {cache:'no-store'});
-    if(!res.ok) return false;
-    const json=await res.json();
-    if(!json.movies || !json.shows || !json.games) return false;
-    DB.movie=buildFromRecords(json.movies,'movie','m');
-    DB.show=buildFromRecords(json.shows,'show','s');
-    DB.game=buildFromRecords(json.games,'game','g');
-    return true;
-  }catch(e){ return false; }
+  async function loadOne(path){
+    try{
+      const res=await fetch(path, {cache:'no-store'});
+      if(!res.ok) return null;
+      const json=await res.json();
+      return Array.isArray(json) ? json : null;
+    }catch(e){ return null; }
+  }
+  const [movies, moviesCzSk, shows, games] = await Promise.all([
+    loadOne('./movies.json'), loadOne('./movies_czsk.json'), loadOne('./shows.json'), loadOne('./games.json')
+  ]);
+  if(movies===null && moviesCzSk===null && shows===null && games===null) return false; // nothing at all -> demo data fallback
+  const allMovies=(movies||[]).concat(moviesCzSk||[]);
+  DB.movie=buildFromRecords(allMovies, 'movie', 'm');
+  DB.show=buildFromRecords(shows||[], 'show', 's');
+  DB.game=buildFromRecords(games||[], 'game', 'g');
+  return true;
 }
 
 let YEAR_BOUNDS={movie:{min:2021,max:2026}, show:{min:2021,max:2026}, game:{min:2021,max:2026}};
