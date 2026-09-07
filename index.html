@@ -182,7 +182,7 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
 .page-sub{color:var(--text-faint); font-size:14.5px; margin:0 0 26px;}
 
 /* ---------- HOME ROWS ---------- */
-.comment-banner-wrap{position:relative; margin-bottom:26px;}
+.comment-banner-wrap{position:relative; margin-bottom:4px;}
 .comment-banner-slide{
   position:relative;
   background:linear-gradient(135deg, rgba(167,139,250,.14), var(--bg-1) 60%);
@@ -225,8 +225,7 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
 }
 .hot-section{margin-bottom:20px;}
 .hot-head{display:flex; align-items:baseline; justify-content:space-between; margin-bottom:14px; gap:12px;}
-.hot-head h2{font-family:var(--font-display); font-weight:600; font-size:15px; margin:0; color:#b3a0d9;}
-.hot-head .hot-sub{color:var(--text-faint); font-size:13px; margin-top:2px;}
+.hot-head h2{font-family:var(--font-display); font-weight:600; font-size:12px; margin:0; color:#b3a0d9;}
 .hot-head .see-all{font-size:13px; font-weight:700; color:var(--violet-2); white-space:nowrap; flex:0 0 auto;}
 .hot-row-wrap{position:relative;}
 .hot-row{
@@ -257,8 +256,7 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
 }
 @media(max-width:520px){
   .hot-section{margin-bottom:16px;}
-  .hot-head h2{font-size:14px;}
-  .hot-head .hot-sub{font-size:10.5px;}
+  .hot-head h2{font-size:11px;}
   .hot-row{gap:7px;}
   .hot-card{width:96px;}
   .hot-card .card{margin-right:12px;}
@@ -790,9 +788,21 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
 .person-role{color:var(--text-faint); font-size:13.5px; margin-top:3px;}
 .person-bio-line{color:var(--text-faint); font-size:12.5px; margin-top:4px;}
 
-footer.site{border-top:1px solid var(--line-soft); padding:26px 0 50px; margin-top:20px;}
-footer.site .wrap{display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; color:var(--text-faint); font-size:12.5px;}
+footer.site{border-top:1px solid var(--line-soft); padding:22px 0 40px; margin-top:20px;}
+footer.site .footer-wrap{display:flex; flex-direction:column; gap:14px; color:var(--text-faint); font-size:12.5px;}
+footer.site .footer-top{display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; align-items:center;}
 footer.site .brand{font-size:15px;}
+footer.site .footer-bottom{display:flex; flex-direction:column; gap:6px; padding-top:12px; border-top:1px solid var(--line-soft); font-size:12px;}
+footer.site .footer-bottom a{color:var(--violet-2); text-decoration:none;}
+footer.site .footer-bottom a:hover{text-decoration:underline;}
+footer.site .footer-links{display:flex; gap:16px; flex-wrap:wrap;}
+.footer-link-btn{background:none; border:none; padding:0; color:var(--violet-2); font-size:12px; cursor:pointer; font-family:inherit;}
+.footer-link-btn:hover{text-decoration:underline;}
+.policy-modal-text{font-size:13.5px; color:var(--text-dim); line-height:1.65;}
+.policy-modal-text h4{font-family:var(--font-display); font-size:14px; color:var(--text); margin:18px 0 6px;}
+.policy-modal-text h4:first-child{margin-top:0;}
+.policy-modal-text p{margin:0 0 10px;}
+.policy-modal-text a{color:var(--violet-2);}
 
 .type-tag{
   display:inline-block; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.05em;
@@ -801,6 +811,9 @@ footer.site .brand{font-size:15px;}
 .crumb{font-size:13px; color:var(--text-faint); margin-bottom:18px;}
 .crumb a{color:var(--violet-2); font-weight:600;}
 </style>
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore-compat.js"></script>
 </head>
 <body>
 
@@ -837,9 +850,19 @@ footer.site .brand{font-size:15px;}
 </div>
 
 <footer class="site">
-  <div class="wrap">
-    <span class="brand"><span class="brand-marks"><span class="mark mark-gold"></span><span class="mark mark-purple"></span><span class="mark mark-blue"></span></span>Kritiq</span>
-    <span>Nový obsah se automaticky doplňuje každý den ve 20:00 (EST) · skóre se přepočítává podle recenzí uživatelů</span>
+  <div class="wrap footer-wrap">
+    <div class="footer-top">
+      <span class="brand"><span class="brand-marks"><span class="mark mark-gold"></span><span class="mark mark-purple"></span><span class="mark mark-blue"></span></span>Kritiq</span>
+      <span>Nový obsah je automaticky přidáván každý den a později ručně kurátorován.</span>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Kritiq. Všechna práva vyhrazena.</span>
+      <span>Data o filmech a seriálech pochází z <a href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer">TMDb</a>, data o hrách z <a href="https://rawg.io/" target="_blank" rel="noopener noreferrer">RAWG</a>.</span>
+      <span class="footer-links">
+        <button class="footer-link-btn no-modal-trigger" id="footerPrivacyBtn" type="button">Zásady ochrany osobních údajů</button>
+        <button class="footer-link-btn no-modal-trigger" id="footerTermsBtn" type="button">Podmínky použití</button>
+      </span>
+    </div>
   </div>
 </footer>
 
@@ -963,6 +986,7 @@ function fmtDateTime(iso){
   return `${dt.getDate()}. ${months[dt.getMonth()]} ${dt.getFullYear()} v ${hh}:${mm}`;
 }
 const REVIEW_MIN_WORDS=10;
+const REVIEW_MAX_WORDS=1000;
 function wordCount(text){
   return ((text||'').trim().match(/\S+/g) || []).length;
 }
@@ -971,11 +995,19 @@ function wordsRemainingLabel(remaining){
   if(remaining>=2 && remaining<=4) return `Ještě ${remaining} slova`;
   return `Ještě ${remaining} slov`;
 }
+function wordsOverLabel(over){
+  if(over===1) return `O 1 slovo překračuje limit (max. ${REVIEW_MAX_WORDS})`;
+  if(over>=2 && over<=4) return `O ${over} slova překračuje limit (max. ${REVIEW_MAX_WORDS})`;
+  return `O ${over} slov překračuje limit (max. ${REVIEW_MAX_WORDS})`;
+}
 function updateReviewSubmitButton(textarea, btn, sendLabel){
   const wc=wordCount(textarea.value);
   if(wc < REVIEW_MIN_WORDS){
     btn.disabled=true;
     btn.textContent = wc===0 ? `Napište recenzi (min. ${REVIEW_MIN_WORDS} slov)` : wordsRemainingLabel(REVIEW_MIN_WORDS-wc);
+  }else if(wc > REVIEW_MAX_WORDS){
+    btn.disabled=true;
+    btn.textContent = wordsOverLabel(wc-REVIEW_MAX_WORDS);
   }else{
     btn.disabled=false;
     btn.textContent=sendLabel;
@@ -1376,7 +1408,7 @@ function userReviewsPreviewHTML(username){
     ? shown.map(e=>reviewItemHTML(e.review,{context:{item:e.item,type:e.type}})).join('')
     : `<p class="empty-note">Tento uživatel zatím nenapsal žádnou recenzi.</p>`;
   const showAllBtn=entries.length>PROFILE_PREVIEW_COUNT
-    ? `<div class="load-more-wrap"><button class="load-more-btn no-modal-trigger" id="showAllReviewsBtn" data-username="${esc(username)}">Zobrazit všechny recenze</button></div>`
+    ? `<div class="load-more-wrap"><button class="load-more-btn no-modal-trigger" id="showAllReviewsBtn" data-username="${esc(username)}">Zobrazit všechny recenze (${entries.length})</button></div>`
     : '';
   return {html:html+showAllBtn, total:entries.length};
 }
@@ -1434,12 +1466,12 @@ function cardHTML(item, rank){
   </a>`;
 }
 
-function hotRowHTML(title, sub, items, seeAllHref){
+function hotRowHTML(title, items, seeAllHref){
   const cards=items.map((it,idx)=>`<div class="hot-card">${cardHTML(it)}<div class="hot-rank">${idx+1}</div></div>`).join('');
   return `
   <section class="hot-section">
     <div class="hot-head">
-      <div><h2>${title}</h2><div class="hot-sub">${sub}</div></div>
+      <h2>${title}</h2>
       <a class="see-all" href="${seeAllHref}">Zobrazit vše →</a>
     </div>
     <div class="hot-row-wrap">
@@ -1613,9 +1645,9 @@ function renderHome(){
   const hotGames=DB.game.filter(g=>withinLast6Months(g.date)).sort((a,b)=>scoreSortValue(b)-scoreSortValue(a)).slice(0,10);
   return `
     ${commentBannerHTML()}
-    ${hotRowHTML('Trendy filmy','Top 10 za posledních 6 měsíců', hotMovies, '#/movies')}
-    ${hotRowHTML('Trendy seriály','Top 10 za posledních 6 měsíců', hotShows, '#/shows')}
-    ${hotRowHTML('Trendy hry','Top 10 za posledních 6 měsíců', hotGames, '#/games')}
+    ${hotRowHTML('Top 10 filmů z poslední doby', hotMovies, '#/movies')}
+    ${hotRowHTML('Top 10 seriálů z poslední doby', hotShows, '#/shows')}
+    ${hotRowHTML('Top 10 her z poslední doby', hotGames, '#/games')}
   `;
 }
 
@@ -1984,7 +2016,8 @@ function attachDetailEvents(type,id){
   if(submitBtn && slider && textarea){
     submitBtn.addEventListener('click',()=>{
       if(myReviewForItem(item)) return; // already has one — composer shouldn't even be showing, but guard anyway
-      if(wordCount(textarea.value) < REVIEW_MIN_WORDS) return; // guard in case the disabled state was somehow bypassed
+      const wc=wordCount(textarea.value);
+      if(wc < REVIEW_MIN_WORDS || wc > REVIEW_MAX_WORDS) return; // guard in case the disabled state was somehow bypassed
       const selected=parseInt(slider.value);
       const text=textarea.value.trim();
       if(!USER_REVIEWS[item.id]) USER_REVIEWS[item.id]=[];
@@ -2128,7 +2161,7 @@ function renderUserProfile(username){
     </div>
 
     <div class="block">
-      <h3 class="section-title">Poslední recenze (${body.total})</h3>
+      <h3 class="section-title">Poslední 3 recenze</h3>
       <div class="reviews-list" id="userReviewsList">${body.html}</div>
     </div>
   `;
@@ -2280,16 +2313,68 @@ function computeYearBounds(){
 
 /* ======================= REVIEW MODAL ======================= */
 /* ======================= AUTH (prototype only — local browser storage, no real server/OAuth) ======================= */
-function loadAccounts(){ try{ return JSON.parse(localStorage.getItem('kritiq_accounts')||'{}'); }catch(e){ return {}; } }
-function saveAccounts(o){ try{ localStorage.setItem('kritiq_accounts', JSON.stringify(o)); }catch(e){} }
-function loadCurrentUser(){ try{ return localStorage.getItem('kritiq_current_user')||null; }catch(e){ return null; } }
-function setCurrentUser(name){ try{ if(name) localStorage.setItem('kritiq_current_user', name); else localStorage.removeItem('kritiq_current_user'); }catch(e){} }
+const firebaseConfig = {
+  apiKey: "AIzaSyCW0kY10q38024CusTUMV0-wy8xT9Clmuw",
+  authDomain: "kritiq-cz.firebaseapp.com",
+  projectId: "kritiq-cz",
+  storageBucket: "kritiq-cz.firebasestorage.app",
+  messagingSenderId: "81545660011",
+  appId: "1:81545660011:web:5c23c992623de3c347d32e",
+  measurementId: "G-0551FKT3LV"
+};
+firebase.initializeApp(firebaseConfig);
+const fbAuth = firebase.auth();
+const db = firebase.firestore();
+
 function loadAvatars(){ try{ return JSON.parse(localStorage.getItem('kritiq_avatars')||'{}'); }catch(e){ return {}; } }
 function saveAvatars(o){ try{ localStorage.setItem('kritiq_avatars', JSON.stringify(o)); }catch(e){} }
 
-let CURRENT_USER=loadCurrentUser();
+let CURRENT_USER=null;       // the chosen nickname, once resolved — null while signed out or still resolving
+let CURRENT_UID=null;        // Firebase's own user id, always available immediately after sign-in
 let authMode='login';
 let authError='';
+let pendingFirebaseUser=null; // set when a signed-in Firebase user has no nickname yet
+
+function slugifyNickname(raw){
+  return (raw||'').trim().toLowerCase();
+}
+
+async function lookupNicknameForUid(uid){
+  const doc = await db.collection('users').doc(uid).get();
+  return doc.exists ? doc.data().nickname : null;
+}
+
+async function claimNickname(uid, nickname, email){
+  const key = slugifyNickname(nickname);
+  const usernameRef = db.collection('usernames').doc(key);
+  const existing = await usernameRef.get();
+  if(existing.exists) return false; // already taken
+  await usernameRef.set({uid});
+  await db.collection('users').doc(uid).set({nickname, email: email||null, createdAt: firebase.firestore.FieldValue.serverTimestamp()});
+  return true;
+}
+
+fbAuth.onAuthStateChanged(async (user)=>{
+  if(!user){
+    CURRENT_USER=null; CURRENT_UID=null; pendingFirebaseUser=null;
+    renderAuthBadge();
+    return;
+  }
+  CURRENT_UID=user.uid;
+  const nickname = await lookupNicknameForUid(user.uid);
+  if(nickname){
+    CURRENT_USER=nickname;
+    pendingFirebaseUser=null;
+    renderAuthBadge();
+    if(document.getElementById('reviewModalCard')?.innerHTML.includes('nicknameInput')) popModal();
+  }else{
+    // Signed in with Firebase, but no nickname claimed yet (brand-new account) —
+    // hold off treating them as logged in until they pick one.
+    pendingFirebaseUser=user;
+    renderAuthBadge();
+    openNicknamePickerModal();
+  }
+});
 
 function renderAuthBadge(){
   const wrap=document.getElementById('authBadgeWrap');
@@ -2332,13 +2417,9 @@ function registerFormHTML(){
     <h3 class="section-title" style="margin-bottom:16px;">Registrace</h3>
     ${authError?`<div class="auth-error">${esc(authError)}</div>`:''}
     <div class="auth-form">
-      <div class="auth-field"><label>Přezdívka</label><input type="text" id="regNickname" placeholder="vasenickname"></div>
-      <div class="auth-row-2">
-        <div class="auth-field"><label>Jméno</label><input type="text" id="regFirst" placeholder="Jan"></div>
-        <div class="auth-field"><label>Příjmení</label><input type="text" id="regLast" placeholder="Novák"></div>
-      </div>
+      <button class="auth-google-btn" id="googleLoginBtn" type="button"><span class="google-g">G</span>Pokračovat přes Google</button>
+      <div class="auth-divider">nebo</div>
       <div class="auth-field"><label>E-mail</label><input type="email" id="regEmail" placeholder="vas@email.cz"></div>
-      <div class="auth-field"><label>Potvrďte e-mail</label><input type="email" id="regEmail2" placeholder="vas@email.cz"></div>
       <div class="auth-field"><label>Heslo</label><input type="password" id="regPassword" placeholder="••••••••"></div>
       <div class="auth-field"><label>Potvrďte heslo</label><input type="password" id="regPassword2" placeholder="••••••••"></div>
       <div class="auth-hint">Heslo musí mít alespoň 8 znaků, 1 číslo a 1 speciální znak.</div>
@@ -2351,7 +2432,7 @@ function renderAuthModal(){
   card.className='modal-card';
   card.innerHTML = authMode==='login' ? loginFormHTML() : registerFormHTML();
   document.getElementById('authCloseBtn').addEventListener('click', popModal);
-  document.getElementById('googleLoginBtn')?.addEventListener('click', simulateGoogleLogin);
+  document.getElementById('googleLoginBtn')?.addEventListener('click', handleGoogleLogin);
   if(authMode==='login'){
     document.getElementById('loginSubmitBtn').addEventListener('click', handleLoginSubmit);
     document.getElementById('toRegisterBtn').addEventListener('click', ()=>{ authMode='register'; authError=''; renderAuthModal(); });
@@ -2360,49 +2441,84 @@ function renderAuthModal(){
     document.getElementById('toLoginBtn').addEventListener('click', ()=>{ authMode='login'; authError=''; renderAuthModal(); });
   }
 }
-function logInAs(nickname){
-  CURRENT_USER=nickname;
-  setCurrentUser(nickname);
-  renderAuthBadge();
-  popModal();
+function firebaseErrorMessage(err){
+  const map={
+    'auth/invalid-email':'Zadejte platnou e-mailovou adresu.',
+    'auth/user-not-found':'Nesprávný e-mail nebo heslo.',
+    'auth/wrong-password':'Nesprávný e-mail nebo heslo.',
+    'auth/invalid-credential':'Nesprávný e-mail nebo heslo.',
+    'auth/email-already-in-use':'Tento e-mail už je zaregistrovaný.',
+    'auth/weak-password':'Heslo je příliš slabé.',
+    'auth/popup-closed-by-user':'Přihlášení přes Google bylo zrušeno.',
+  };
+  return map[err.code] || 'Něco se pokazilo. Zkuste to prosím znovu.';
 }
-function simulateGoogleLogin(){
-  /* No real backend here, so this simulates a Google sign-in rather than performing one. */
-  const accounts=loadAccounts();
-  const nickname='GoogleUser';
-  if(!accounts[nickname]){
-    accounts[nickname]={nickname, firstName:'Google', lastName:'Uživatel', email:'demo@gmail.com', password:''};
-    saveAccounts(accounts);
+async function handleGoogleLogin(){
+  try{
+    await fbAuth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
+    // onAuthStateChanged handles the rest — including opening the nickname picker
+    // if this is a brand-new account.
+  }catch(err){
+    authError=firebaseErrorMessage(err);
+    renderAuthModal();
   }
-  logInAs(nickname);
 }
-function handleLoginSubmit(){
+async function handleLoginSubmit(){
   const email=document.getElementById('loginEmail').value.trim();
   const password=document.getElementById('loginPassword').value;
-  const accounts=loadAccounts();
-  const match=Object.values(accounts).find(a=>a.email.toLowerCase()===email.toLowerCase() && a.password===password);
-  if(!match){ authError='Nesprávný e-mail nebo heslo.'; renderAuthModal(); return; }
-  logInAs(match.nickname);
+  try{
+    await fbAuth.signInWithEmailAndPassword(email, password);
+  }catch(err){
+    authError=firebaseErrorMessage(err);
+    renderAuthModal();
+  }
 }
-function handleRegisterSubmit(){
-  const nickname=document.getElementById('regNickname').value.trim();
-  const first=document.getElementById('regFirst').value.trim();
-  const last=document.getElementById('regLast').value.trim();
+async function handleRegisterSubmit(){
   const email=document.getElementById('regEmail').value.trim();
-  const email2=document.getElementById('regEmail2').value.trim();
   const pass=document.getElementById('regPassword').value;
   const pass2=document.getElementById('regPassword2').value;
-  if(!nickname||!first||!last||!email||!email2||!pass||!pass2){ authError='Vyplňte prosím všechna pole.'; renderAuthModal(); return; }
+  if(!email||!pass||!pass2){ authError='Vyplňte prosím všechna pole.'; renderAuthModal(); return; }
   if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ authError='Zadejte platnou e-mailovou adresu.'; renderAuthModal(); return; }
-  if(email.toLowerCase()!==email2.toLowerCase()){ authError='E-mailové adresy se neshodují.'; renderAuthModal(); return; }
   if(!/^(?=.*[0-9])(?=.*[^A-Za-z0-9]).{8,}$/.test(pass)){ authError='Heslo musí mít alespoň 8 znaků, 1 číslo a 1 speciální znak.'; renderAuthModal(); return; }
   if(pass!==pass2){ authError='Hesla se neshodují.'; renderAuthModal(); return; }
-  const accounts=loadAccounts();
-  if(accounts[nickname]){ authError='Tato přezdívka už je obsazená.'; renderAuthModal(); return; }
-  if(Object.values(accounts).some(a=>a.email.toLowerCase()===email.toLowerCase())){ authError='Tento e-mail už je zaregistrovaný.'; renderAuthModal(); return; }
-  accounts[nickname]={nickname, firstName:first, lastName:last, email, password:pass};
-  saveAccounts(accounts);
-  logInAs(nickname);
+  try{
+    await fbAuth.createUserWithEmailAndPassword(email, pass);
+    // onAuthStateChanged fires next and opens the nickname picker automatically.
+  }catch(err){
+    authError=firebaseErrorMessage(err);
+    renderAuthModal();
+  }
+}
+let nicknameError='';
+function openNicknamePickerModal(){
+  nicknameError='';
+  pushModal(renderNicknamePickerModal);
+}
+function renderNicknamePickerModal(){
+  const card=document.getElementById('reviewModalCard');
+  card.className='modal-card';
+  card.innerHTML=`
+    <h3 class="section-title" style="margin-bottom:6px;">Vyberte si přezdívku</h3>
+    <p class="page-sub" style="margin-bottom:16px;">Pod touto přezdívkou vás uvidí ostatní uživatelé.</p>
+    ${nicknameError?`<div class="auth-error">${esc(nicknameError)}</div>`:''}
+    <div class="auth-form">
+      <div class="auth-field"><label>Přezdívka</label><input type="text" id="nicknameInput" placeholder="vasenickname"></div>
+      <button class="auth-submit" id="nicknameSubmitBtn" type="button">Pokračovat</button>
+    </div>
+  `;
+  document.getElementById('nicknameSubmitBtn').addEventListener('click', handleNicknameSubmit);
+}
+async function handleNicknameSubmit(){
+  const nickname=document.getElementById('nicknameInput').value.trim();
+  if(!nickname || nickname.length<3){ nicknameError='Přezdívka musí mít alespoň 3 znaky.'; renderNicknamePickerModal(); return; }
+  if(!/^[a-zA-Z0-9_]+$/.test(nickname)){ nicknameError='Přezdívka může obsahovat jen písmena, čísla a podtržítko.'; renderNicknamePickerModal(); return; }
+  if(!pendingFirebaseUser){ nicknameError='Něco se pokazilo, zkuste se přihlásit znovu.'; renderNicknamePickerModal(); return; }
+  const ok=await claimNickname(pendingFirebaseUser.uid, nickname, pendingFirebaseUser.email);
+  if(!ok){ nicknameError='Tato přezdívka už je obsazená.'; renderNicknamePickerModal(); return; }
+  CURRENT_USER=nickname;
+  pendingFirebaseUser=null;
+  renderAuthBadge();
+  popModal();
 }
 function top10ButtonHTML(item){
   const pos=findMyTop10Position(CURRENT_USER, item.type, item.id);
@@ -2447,6 +2563,66 @@ function renderTop10PickerModal(item){
     popModal();
     route();
   });
+}
+const POLICY_CONTENT={
+  privacy:{
+    title:'Zásady ochrany osobních údajů',
+    html:`
+      <p style="color:var(--text-faint); font-size:12px; margin-bottom:14px;">Poslední aktualizace: [DOPLŇTE DATUM]</p>
+      <h4>Jaké údaje shromažďujeme</h4>
+      <p>Pro vytvoření a provoz vašeho účtu na Kritiq shromažďujeme:</p>
+      <p><b>Při registraci přes Google:</b> vaše jméno, e-mailovou adresu a profilovou fotku, které nám s vaším souhlasem poskytne Google v rámci přihlašovacího procesu.</p>
+      <p><b>Při registraci e-mailem:</b> vaši e-mailovou adresu a heslo (ukládané v zabezpečené, zahashované podobě — nikdy jako čitelný text).</p>
+      <p><b>V rámci používání služby:</b> uživatelské jméno, recenze a hodnocení, které napíšete, vaše seznamy Top 10, oblíbené uživatele a volitelně nahranou profilovou fotku.</p>
+      <h4>Proč tyto údaje shromažďujeme</h4>
+      <p>Údaje používáme výhradně k provozu vašeho účtu — přihlašování, zobrazení vašeho profilu ostatním uživatelům, přiřazení vašich recenzí a hodnocení a k prevenci zneužití (např. duplicitní účty, spam).</p>
+      <h4>Sdílení s třetími stranami</h4>
+      <p>Pokud se přihlásíte přes Google, proběhne autentizace přímo prostřednictvím Google podle <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">zásad ochrany osobních údajů Google</a>. Vaše přihlašovací údaje (heslo) nikdy neuvidíme ani neukládáme, pokud se přihlašujete přes Google. Vaše údaje dále nesdílíme s žádnou další třetí stranou pro marketingové účely.</p>
+      <h4>Jak dlouho údaje uchováváme</h4>
+      <p>Vaše účet a související údaje uchováváme, dokud svůj účet nesmažete. Po smazání účtu jsou vaše osobní údaje trvale odstraněny z našich systémů do [DOPLŇTE LHŮTU, např. 30 dní].</p>
+      <h4>Vaše práva</h4>
+      <p>Máte právo požádat o přístup ke svým údajům, jejich opravu nebo úplné smazání. O smazání účtu a všech souvisejících dat můžete požádat na [DOPLŇTE KONTAKTNÍ E-MAIL].</p>
+      <h4>Cookies a technické údaje</h4>
+      <p>Kritiq používá pouze technické soubory cookie nebo obdobné technologie nezbytné k udržení vašeho přihlášení. Nepoužíváme reklamní ani analytické sledovací nástroje třetích stran.</p>
+      <h4>Data o filmech, seriálech a hrách</h4>
+      <p>Informace o filmech a seriálech pocházejí ze služby <a href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer">TMDb</a>, informace o hrách ze služby <a href="https://rawg.io/" target="_blank" rel="noopener noreferrer">RAWG</a>. Kritiq není těmito službami nijak certifikován ani podporován.</p>
+      <h4>Děti</h4>
+      <p>Kritiq není určen osobám mladším 16 let. Pokud zjistíme, že jsme neúmyslně shromáždili údaje dítěte mladšího 16 let, tyto údaje odstraníme.</p>
+      <h4>Změny těchto zásad</h4>
+      <p>Tyto zásady můžeme čas od času aktualizovat. O významných změnách vás budeme informovat prostřednictvím oznámení na této stránce.</p>
+      <h4>Kontakt</h4>
+      <p>V případě dotazů ohledně ochrany osobních údajů nás kontaktujte na [DOPLŇTE KONTAKTNÍ E-MAIL].</p>
+    `
+  },
+  terms:{
+    title:'Podmínky použití',
+    html:`
+      <h4>Účet</h4>
+      <p>Pro psaní recenzí a hodnocení je nutná registrace přes Google nebo e-mailem. Jste zodpovědní za zabezpečení svého účtu a za veškerou aktivitu, ke které dojde pod vaším přihlášením.</p>
+      <h4>O obsahu</h4>
+      <p>Kritiq kombinuje automaticky získaná a ručně kurátorovaná data z <a href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer">TMDb</a> a <a href="https://rawg.io/" target="_blank" rel="noopener noreferrer">RAWG</a> s recenzemi napsanými uživateli komunity.</p>
+      <h4>Vaše recenze</h4>
+      <p>Za obsah svých recenzí odpovídáte vy sami. Recenze by měly být vaším vlastním, upřímným názorem — bez spamu, nenávistného obsahu nebo materiálu porušujícího práva třetích stran. Kritiq si vyhrazuje právo takový obsah nebo účet, který jej vytvořil, odstranit.</p>
+      <h4>Bez záruky</h4>
+      <p>Kritiq je poskytován „tak jak je", bez záruky přesnosti či nepřetržité dostupnosti. Skóre a hodnocení se mohou kdykoliv změnit na základě nových recenzí nebo aktualizace dat ze zdrojových služeb.</p>
+      <h4>Kontakt</h4>
+      <p>V případě dotazů ohledně těchto podmínek nás kontaktujte na [DOPLŇTE KONTAKTNÍ E-MAIL].</p>
+    `
+  }
+};
+function openPolicyModal(kind){
+  pushModal(()=>renderPolicyModal(kind));
+}
+function renderPolicyModal(kind){
+  const card=document.getElementById('reviewModalCard');
+  const policy=POLICY_CONTENT[kind];
+  card.className='modal-card';
+  card.innerHTML=`
+    <button class="modal-close" id="policyCloseBtn" aria-label="Zavřít" type="button">✕</button>
+    <h3 class="section-title" style="margin-bottom:14px;">${esc(policy.title)}</h3>
+    <div class="policy-modal-text">${policy.html}</div>
+  `;
+  document.getElementById('policyCloseBtn').addEventListener('click', popModal);
 }
 function openTop10ViewModal(username){
   pushModal(()=>renderTop10ViewModal(username));
@@ -2507,7 +2683,8 @@ function openEditReviewModal(item, review){
     updateEditBtn();
     textarea.addEventListener('input', updateEditBtn);
     okBtn.addEventListener('click', ()=>{
-      if(wordCount(textarea.value) < REVIEW_MIN_WORDS) return; // guard in case the disabled state was somehow bypassed
+      const wc=wordCount(textarea.value);
+      if(wc < REVIEW_MIN_WORDS || wc > REVIEW_MAX_WORDS) return; // guard in case the disabled state was somehow bypassed
       const newScore=parseInt(slider.value);
       const newText=textarea.value.trim();
       openEditConfirmModal(item, newScore, newText);
@@ -2572,9 +2749,7 @@ function openLogoutConfirm(){
     document.getElementById('authCloseBtn').addEventListener('click', popModal);
     document.getElementById('logoutNoBtn').addEventListener('click', popModal);
     document.getElementById('logoutYesBtn').addEventListener('click', ()=>{
-      CURRENT_USER=null;
-      setCurrentUser(null);
-      renderAuthBadge();
+      fbAuth.signOut();
       closeAllModals();
     });
   });
@@ -2634,6 +2809,7 @@ function renderModalCard(item, review){
   const card=document.getElementById('reviewModalCard');
   const c=voteCounts(review);
   const v=VOTES[review.id]||{};
+  const isOwnReview=review.author===myIdentity();
   card.className='modal-card';
   card.innerHTML=`
     <button class="modal-close" id="reviewModalCloseBtn" aria-label="Zavřít" type="button">✕</button>
@@ -2642,11 +2818,13 @@ function renderModalCard(item, review){
       <a class="modal-review-author profile-link" data-username="${esc(review.author)}" href="#/user/${slug(review.author)}">${esc(review.author)}</a>
     </div>
     <div class="modal-review-text">${esc(review.text)}</div>
+    ${isOwnReview ? '' : `
     <div class="modal-react-row">
       <button class="react-btn ${v.liked?'active-like':''}" data-kind="like" type="button">${ICON_LIKE}<span>Líbí (${c.likes})</span></button>
       <button class="react-btn ${v.disliked?'active-dislike':''}" data-kind="dislike" type="button">${ICON_DISLIKE}<span>Nelíbí (${c.dislikes})</span></button>
       <button class="react-btn ${v.funny?'active-funny':''}" data-kind="funny" type="button">${ICON_FUNNY}<span>Vtipné (${c.funny})</span></button>
     </div>
+    `}
   `;
   document.getElementById('reviewModalCloseBtn').addEventListener('click', popModal);
   card.querySelectorAll('.react-btn').forEach(btn=>{
@@ -2762,7 +2940,7 @@ function renderUserModal(){
       <button class="fav-users-btn" id="modalTop10ViewBtn" type="button">OSOBNÍ TOP 10</button>
       <button class="fav-users-btn" id="modalFavUsersBtn" type="button">Oblíbení uživatelé</button>
     </div>
-    <h3 class="section-title">Poslední recenze (${body.total})</h3>
+    <h3 class="section-title">Poslední 3 recenze</h3>
     <div class="reviews-list" id="modalReviewsList">${body.html}</div>
   `;
   document.getElementById('modalProfileCloseBtn').addEventListener('click', popModal);
@@ -2879,6 +3057,8 @@ async function init(){
 
   initSearchPanel();
   renderAuthBadge();
+  document.getElementById('footerPrivacyBtn')?.addEventListener('click', ()=> openPolicyModal('privacy'));
+  document.getElementById('footerTermsBtn')?.addEventListener('click', ()=> openPolicyModal('terms'));
 
   document.addEventListener('click', e=>{
     const profileLink=e.target.closest('.profile-link');
