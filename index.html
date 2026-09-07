@@ -182,15 +182,28 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
 .page-sub{color:var(--text-faint); font-size:14.5px; margin:0 0 26px;}
 
 /* ---------- HOME ROWS ---------- */
-.hot-section{margin-bottom:38px;}
+.hot-section{margin-bottom:20px;}
 .hot-head{display:flex; align-items:baseline; justify-content:space-between; margin-bottom:14px; gap:12px;}
 .hot-head h2{font-family:var(--font-display); font-weight:600; font-size:15px; margin:0; color:#b3a0d9;}
 .hot-head .hot-sub{color:var(--text-faint); font-size:13px; margin-top:2px;}
 .hot-head .see-all{font-size:13px; font-weight:700; color:var(--violet-2); white-space:nowrap; flex:0 0 auto;}
+.hot-row-wrap{position:relative;}
 .hot-row{
-  display:flex; gap:10px; overflow-x:auto; padding:6px 2px 14px;
+  display:flex; gap:10px; overflow-x:auto; padding:6px 2px 6px;
   scroll-snap-type:x proximity; -webkit-overflow-scrolling:touch;
+  scrollbar-width:none; -ms-overflow-style:none;
 }
+.hot-row::-webkit-scrollbar{display:none;}
+.hot-scroll-arrow{
+  position:absolute; top:50%; transform:translateY(-50%); z-index:5;
+  width:38px; height:38px; border-radius:50%; border:none; cursor:pointer;
+  background:rgba(20,14,32,.55); backdrop-filter:blur(4px); -webkit-backdrop-filter:blur(4px);
+  color:#fff; display:flex; align-items:center; justify-content:center;
+  opacity:.7; transition:opacity .15s, background .15s;
+}
+.hot-scroll-arrow:hover{opacity:1; background:rgba(20,14,32,.85);}
+.hot-scroll-arrow.left{left:-6px;}
+.hot-scroll-arrow.right{right:-6px;}
 .hot-card{
   position:relative; flex:0 0 auto; width:150px; scroll-snap-align:start;
 }
@@ -202,13 +215,14 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
   line-height:1; pointer-events:none; opacity:.9;
 }
 @media(max-width:520px){
-  .hot-section{margin-bottom:26px;}
+  .hot-section{margin-bottom:16px;}
   .hot-head h2{font-size:14px;}
   .hot-head .hot-sub{font-size:10.5px;}
   .hot-row{gap:7px;}
   .hot-card{width:96px;}
   .hot-card .card{margin-right:12px;}
   .hot-rank{font-size:26px; right:9px; bottom:-3px;}
+  .hot-scroll-arrow{display:none;}
   .poster .letter{font-size:36px;}
   .card-title{font-size:11px;}
   .card-meta{font-size:10px;}
@@ -335,6 +349,7 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
 
 /* ---------- DETAIL ---------- */
 .detail-top{margin-bottom:38px;}
+.detail-top--notag{margin-top:4px;}
 .detail-header{margin-bottom:22px;}
 .detail-header h1{font-family:var(--font-display); font-weight:800; font-size:clamp(26px,4vw,40px); margin:0 0 8px; line-height:1.05;}
 .detail-meta-line{color:var(--text-dim); font-size:14.5px; margin-bottom:0; display:flex; gap:10px; flex-wrap:wrap; align-items:center;}
@@ -342,6 +357,27 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
 
 .detail-row{display:flex; align-items:flex-start; gap:20px; margin-bottom:22px;}
 .credits{display:flex; flex-direction:column; gap:10px; flex:1 1 auto; min-width:0;}
+.detail-poster-summary-row{display:flex; align-items:stretch; gap:20px; margin-bottom:22px;}
+.detail-poster-large{flex:0 0 180px; width:180px; cursor:pointer;}
+.detail-poster-large .frame{
+  aspect-ratio:2/3; border-radius:var(--radius-m); overflow:hidden; width:100%; height:100%;
+  position:relative; box-shadow:0 14px 30px -10px rgba(0,0,0,.6), 0 0 0 1px var(--line-soft);
+}
+.detail-poster-large .frame::after{content:''; position:absolute; inset:0; box-shadow:inset 0 0 30px rgba(0,0,0,.35);}
+.detail-poster-large .frame .letter{font-size:56px;}
+@media(max-width:480px){.detail-poster-large{flex-basis:120px; width:120px;} .detail-poster-large .frame .letter{font-size:38px;}}
+.summary-box-inline{
+  position:relative; font-size:13px; color:var(--text-dim); line-height:1.6;
+  flex:1 1 auto; min-width:0; overflow:hidden; cursor:pointer;
+  background:var(--bg-1); border:1px solid var(--line-soft); border-radius:var(--radius-m);
+  padding:14px 18px; transition:border-color .15s, background .15s;
+}
+.summary-box-inline::after{
+  content:''; position:absolute; left:0; right:0; bottom:0; height:2em;
+  background:linear-gradient(to top, var(--bg-1), transparent);
+  border-radius:0 0 var(--radius-m) var(--radius-m);
+}
+.summary-box-inline:hover{border-color:var(--violet); background:var(--bg-2);}
 .credit-row{display:flex; gap:10px; font-size:14px; align-items:baseline; flex-wrap:wrap;}
 .credit-row .ck-label{color:var(--text-faint); min-width:96px; font-weight:600; font-size:12.5px; text-transform:uppercase; letter-spacing:.05em; padding-top:3px;}
 .credit-row .ck-values{display:flex; gap:6px; flex-wrap:wrap;}
@@ -484,6 +520,8 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
 .pill-edit-btn:active, .pill-delete-btn:active{transform:scale(.96);}
 .review-author-link, .review-context-link{font-weight:700; font-size:13.5px; color:var(--text); text-decoration:none;}
 .review-author-link:hover, .review-context-link:hover{color:var(--violet-2); text-decoration:underline;}
+.review-timestamp{font-size:12px; color:var(--text-faint); font-weight:400;}
+.review-edited-note{font-style:italic;}
 .review-context-link{color:var(--text-dim); font-weight:600;}
 .review-reactions-mini{display:flex; align-items:center; gap:12px; flex:0 0 auto;}
 .mini-react{display:flex; align-items:center; gap:4px; font-size:12px; color:var(--text-faint); font-weight:600;}
@@ -642,13 +680,13 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
 }
 .fav-users-btn:hover{color:#fff; border-color:var(--violet);}
 .profile-stats-row{
-  display:flex; align-items:center; gap:16px; width:100%; flex-wrap:wrap;
+  display:flex; align-items:center; justify-content:center; gap:16px; width:100%; flex-wrap:wrap;
   margin-top:16px; padding-top:16px; border-top:1px solid var(--line-soft);
 }
 .profile-stat{display:flex; align-items:center; gap:6px; font-size:13px; color:var(--text-dim); font-weight:700;}
 .profile-stat svg{width:16px; height:16px;}
 .profile-fav-btn{
-  margin-left:auto; width:36px; height:36px; border-radius:50%; flex:0 0 auto;
+  width:36px; height:36px; border-radius:50%; flex:0 0 auto;
   display:flex; align-items:center; justify-content:center;
   background:var(--bg-2); border:1px solid var(--line-soft); color:var(--text-dim); cursor:pointer;
   transition:background .12s, border-color .12s, color .12s;
@@ -847,6 +885,33 @@ function fmtDate(d, yearOnly){
   if(yearOnly) return y;
   const months=["led","úno","bře","dub","kvě","čvn","čvc","srp","zář","říj","lis","pro"];
   return `${parseInt(day)}. ${months[parseInt(m)-1]} ${y}`;
+}
+function fmtDateTime(iso){
+  const dt=new Date(iso);
+  if(isNaN(dt.getTime())) return '';
+  const months=["led","úno","bře","dub","kvě","čvn","čvc","srp","zář","říj","lis","pro"];
+  const hh=String(dt.getHours()).padStart(2,'0');
+  const mm=String(dt.getMinutes()).padStart(2,'0');
+  return `${dt.getDate()}. ${months[dt.getMonth()]} ${dt.getFullYear()} v ${hh}:${mm}`;
+}
+const REVIEW_MIN_WORDS=10;
+function wordCount(text){
+  return ((text||'').trim().match(/\S+/g) || []).length;
+}
+function wordsRemainingLabel(remaining){
+  if(remaining===1) return `Ještě 1 slovo`;
+  if(remaining>=2 && remaining<=4) return `Ještě ${remaining} slova`;
+  return `Ještě ${remaining} slov`;
+}
+function updateReviewSubmitButton(textarea, btn, sendLabel){
+  const wc=wordCount(textarea.value);
+  if(wc < REVIEW_MIN_WORDS){
+    btn.disabled=true;
+    btn.textContent = wc===0 ? `Napište recenzi (min. ${REVIEW_MIN_WORDS} slov)` : wordsRemainingLabel(REVIEW_MIN_WORDS-wc);
+  }else{
+    btn.disabled=false;
+    btn.textContent=sendLabel;
+  }
 }
 function esc(s){return s.replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 function slug(name){return encodeURIComponent(name);}
@@ -1073,7 +1138,7 @@ function updateMyReview(item, newScore, newText){
   const idx=list.findIndex(r=>r.author===myIdentity());
   if(idx===-1) return;
   const oldId=list[idx].rid || (item.id+'-user-'+idx);
-  list[idx]=Object.assign({}, list[idx], {score:newScore, text:newText});
+  list[idx]=Object.assign({}, list[idx], {score:newScore, text:newText, editedAt:new Date().toISOString()});
   saveUserReviews(USER_REVIEWS);
   delete VOTES[oldId];
   saveVotes(VOTES);
@@ -1171,9 +1236,12 @@ function reviewItemHTML(review, opts){
   opts=opts||{};
   const c=voteCounts(review);
   const mine = !opts.context && opts.item && review.isUser && review.author===myIdentity();
+  const timestampHTML = review.createdAt
+    ? `<span class="review-timestamp">${fmtDateTime(review.createdAt)}${review.editedAt ? ` · <span class="review-edited-note">upraveno ${fmtDateTime(review.editedAt)}</span>` : ''}</span>`
+    : '';
   const headLeft = opts.context
-    ? `<a class="review-context-link no-modal-trigger" href="#/title/${opts.context.type}/${opts.context.item.id}">${esc(opts.context.item.title)}</a>`
-    : `<a class="review-author-link no-modal-trigger profile-link" data-username="${esc(review.author)}" href="#/user/${slug(review.author)}">${esc(review.author)}</a>`;
+    ? `<a class="review-context-link no-modal-trigger" href="#/title/${opts.context.type}/${opts.context.item.id}">${esc(opts.context.item.title)}</a>${timestampHTML}`
+    : `<a class="review-author-link no-modal-trigger profile-link" data-username="${esc(review.author)}" href="#/user/${slug(review.author)}">${esc(review.author)}</a>${timestampHTML}`;
   const ownActions = mine ? `
     <button class="pill-edit-btn no-modal-trigger" data-review-id="${review.id}" data-item-id="${opts.item.id}" type="button">UPRAVIT</button>
     <button class="pill-delete-btn no-modal-trigger" data-review-id="${review.id}" data-item-id="${opts.item.id}" type="button">ODSTRANIT</button>
@@ -1200,19 +1268,53 @@ function reviewsListHTML(item){
   return revs.length ? revs.map(r=>reviewItemHTML(r,{item})).join('') : `<p class="empty-note">Zatím žádné recenze. Buďte první!</p>`;
 }
 
-const USER_PAGE_SIZE=5;
-let userProfilePage={};
-function userReviewsBody(username, idPrefix){
-  idPrefix=idPrefix||'user';
+const PROFILE_PREVIEW_COUNT=3;
+const ALL_REVIEWS_PAGE_SIZE=10;
+let allReviewsModalPage={};
+function userReviewsPreviewHTML(username){
   const entries=getUserReviews(username);
-  const page=userProfilePage[username]||1;
-  const shown=entries.slice(0, page*USER_PAGE_SIZE);
+  const shown=entries.slice(0, PROFILE_PREVIEW_COUNT);
+  const html=shown.length
+    ? shown.map(e=>reviewItemHTML(e.review,{context:{item:e.item,type:e.type}})).join('')
+    : `<p class="empty-note">Tento uživatel zatím nenapsal žádnou recenzi.</p>`;
+  const showAllBtn=entries.length>PROFILE_PREVIEW_COUNT
+    ? `<div class="load-more-wrap"><button class="load-more-btn no-modal-trigger" id="showAllReviewsBtn" data-username="${esc(username)}">Zobrazit všechny recenze</button></div>`
+    : '';
+  return {html:html+showAllBtn, total:entries.length};
+}
+function bindShowAllReviews(username){
+  const btn=document.getElementById('showAllReviewsBtn');
+  if(btn) btn.addEventListener('click', ()=> openAllReviewsModal(username));
+}
+function openAllReviewsModal(username){
+  allReviewsModalPage[username]=1;
+  pushModal(()=>renderAllReviewsModal(username));
+}
+function renderAllReviewsModal(username){
+  const card=document.getElementById('reviewModalCard');
+  card.className='modal-card';
+  const entries=getUserReviews(username);
+  const page=allReviewsModalPage[username]||1;
+  const shown=entries.slice(0, page*ALL_REVIEWS_PAGE_SIZE);
   const html=shown.length
     ? shown.map(e=>reviewItemHTML(e.review,{context:{item:e.item,type:e.type}})).join('')
     : `<p class="empty-note">Tento uživatel zatím nenapsal žádnou recenzi.</p>`;
   const remaining=entries.length-shown.length;
-  const more=remaining>0 ? `<div class="load-more-wrap"><button class="load-more-btn" id="${idPrefix}MoreBtn">Načíst dalších ${Math.min(USER_PAGE_SIZE,remaining)} (zbývá ${remaining})</button></div>` : '';
-  return {html:html+more, total:entries.length};
+  const moreBtn=remaining>0
+    ? `<div class="load-more-wrap"><button class="load-more-btn" id="allReviewsMoreBtn">Načíst dalších ${Math.min(ALL_REVIEWS_PAGE_SIZE,remaining)} (zbývá ${remaining})</button></div>`
+    : '';
+  card.innerHTML=`
+    <button class="modal-close" id="allReviewsCloseBtn" aria-label="Zavřít" type="button">✕</button>
+    <h3 class="section-title" style="margin-bottom:14px;">Všechny recenze — ${esc(username)} (${entries.length})</h3>
+    <div class="reviews-list" id="allReviewsList">${html}</div>
+    ${moreBtn}
+  `;
+  document.getElementById('allReviewsCloseBtn').addEventListener('click', popModal);
+  const moreBtnEl=document.getElementById('allReviewsMoreBtn');
+  if(moreBtnEl) moreBtnEl.addEventListener('click', ()=>{
+    allReviewsModalPage[username]=(allReviewsModalPage[username]||1)+1;
+    renderAllReviewsModal(username);
+  });
 }
 
 function cardHTML(item, rank){
@@ -1242,8 +1344,25 @@ function hotRowHTML(title, sub, items, seeAllHref){
       <div><h2>${title}</h2><div class="hot-sub">${sub}</div></div>
       <a class="see-all" href="${seeAllHref}">Zobrazit vše →</a>
     </div>
-    <div class="hot-row">${cards}</div>
+    <div class="hot-row-wrap">
+      <button class="hot-scroll-arrow left no-modal-trigger" type="button" aria-label="Posunout doleva">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </button>
+      <div class="hot-row">${cards}</div>
+      <button class="hot-scroll-arrow right no-modal-trigger" type="button" aria-label="Posunout doprava">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </button>
+    </div>
   </section>`;
+}
+function attachHotRowEvents(){
+  document.querySelectorAll('.hot-row-wrap').forEach(wrap=>{
+    const row=wrap.querySelector('.hot-row');
+    if(!row) return;
+    const amount=()=> row.clientWidth*0.8;
+    wrap.querySelector('.hot-scroll-arrow.left')?.addEventListener('click', ()=> row.scrollBy({left:-amount(), behavior:'smooth'}));
+    wrap.querySelector('.hot-scroll-arrow.right')?.addEventListener('click', ()=> row.scrollBy({left:amount(), behavior:'smooth'}));
+  });
 }
 
 function withinLast6Months(dateStr){
@@ -1481,7 +1600,10 @@ function renderDetail(type,id){
   let metaLine, creditsHTML, castHTML='';
   if(type==='game'){
     metaLine=`${fmtDate(item.date, item.yearOnly)} <span class="sep">·</span> ${esc(item.genre)} <span class="sep">·</span> ${typeLabel(type)}`;
-    creditsHTML=`<div class="credit-row"><span class="ck-label">Studio</span><div class="ck-values"><a class="person-link" href="#/person/${slug(item.developer)}">${esc(item.developer)}</a></div></div>`;
+    const platformsRow = (item.platforms && item.platforms.length)
+      ? `<div class="credit-row"><span class="ck-label">Platformy</span><div class="ck-values">${esc(item.platforms.join(', '))}</div></div>`
+      : '';
+    creditsHTML=`<div class="credit-row"><span class="ck-label">Studio</span><div class="ck-values"><a class="person-link" href="#/person/${slug(item.developer)}">${esc(item.developer)}</a></div></div>${platformsRow}`;
   }else{
     const countryPart = item.country ? ` <span class="sep">·</span> ${esc(item.country)}` : '';
     const boxPart = (type==='movie' && item.box!==null && item.box!==undefined) ? ` <span class="sep">·</span> tržby ${fmtBox(item.box, item.boxCurrency)}` : '';
@@ -1496,8 +1618,8 @@ function renderDetail(type,id){
     metaLine=`${fmtDate(item.date, item.yearOnly)}${countryPart} <span class="sep">·</span> ${esc(item.genre)}${runtimePart} <span class="sep">·</span> ${typeLabel(type)}${boxPart}`;
     creditsHTML=`
       <div class="credit-row"><span class="ck-label">Režie</span><div class="ck-values"><a class="person-link" href="#/person/${slug(item.director.name)}">${esc(item.director.name)}</a></div></div>
-      <div class="credit-row"><span class="ck-label">Hudba</span><div class="ck-values"><a class="person-link" href="#/person/${slug(item.composer.name)}">${esc(item.composer.name)}</a></div></div>
       <div class="credit-row"><span class="ck-label">Scénář</span><div class="ck-values"><a class="person-link" href="#/person/${slug(item.writer.name)}">${esc(item.writer.name)}</a></div></div>
+      ${item.composer.name ? `<div class="credit-row"><span class="ck-label">Hudba</span><div class="ck-values"><a class="person-link" href="#/person/${slug(item.composer.name)}">${esc(item.composer.name)}</a></div></div>` : ''}
     `;
     const castVisible=item.actors.slice(0,10);
     const castHidden=item.actors.slice(10);
@@ -1550,19 +1672,17 @@ function renderDetail(type,id){
           <div class="rate-num ${rateCls0}" id="rateNum">${defaultRate}</div>
           <div class="rate-track-wrap"><input type="range" id="rateSlider" min="0" max="100" step="10" value="${defaultRate}" style="--thumb-color:${rateHex0}"></div>
         </div>
-        <textarea id="reviewText" placeholder="Napište svou recenzi (nepovinné)..."></textarea>
+        <textarea id="reviewText" placeholder="Napište svou recenzi (min. 10 slov)..."></textarea>
         <br>
-        <button class="review-submit" id="submitReview">Odeslat recenzi</button>
+        <button class="review-submit" id="submitReview" disabled>Napište recenzi (min. 10 slov)</button>
         <div class="form-note">Vaše hodnocení okamžitě ovlivní celkové skóre.</div>
       </div>
     </div>`;
   }
 
   return `
-    <div class="crumb"><a href="#/${type}s">${typeLabelPl(type)}</a> / ${esc(item.title)}</div>
-    <div class="detail-top">
+    <div class="detail-top detail-top--notag">
       <div class="detail-header">
-        <span class="type-tag">${typeLabel(type)}</span>
         <h1>${esc(item.title)}</h1>
         <div class="detail-meta-line">${metaLine}</div>
       </div>
@@ -1571,11 +1691,11 @@ function renderDetail(type,id){
         <div class="votes">${voteCount} hodnocení</div>
       </div>
       ${score===null ? `<p class="score-na-note">Skóre zatím není k dispozici — buďte první, kdo ohodnotí.</p>` : ''}
-      <div class="detail-row">
-        <div class="credits">${creditsHTML}</div>
-        <div class="detail-poster-small" id="detailPosterBtn" title="Zobrazit galerii"><div class="frame" style="${posterBgStyle(item)}">${posterInnerHTML(item)}</div></div>
+      <div class="detail-poster-summary-row">
+        <div class="detail-poster-large" id="detailPosterBtn" title="Zobrazit galerii"><div class="frame" style="${posterBgStyle(item)}">${posterInnerHTML(item)}</div></div>
+        ${item.summary ? `<div class="summary-box-inline" id="summaryBox" title="Zobrazit celý popis">${esc(item.summary)}</div>` : ''}
       </div>
-      ${item.summary ? `<div class="summary-box" id="summaryBox" title="Zobrazit celý popis">${esc(item.summary)}</div>` : ''}
+      <div class="credits">${creditsHTML}</div>
     </div>
 
     ${castHTML}
@@ -1619,14 +1739,19 @@ function attachDetailEvents(type,id){
     }
     textarea.addEventListener('input', autoGrow);
     autoGrow();
+    if(submitBtn){
+      updateReviewSubmitButton(textarea, submitBtn, 'Odeslat recenzi');
+      textarea.addEventListener('input', ()=> updateReviewSubmitButton(textarea, submitBtn, 'Odeslat recenzi'));
+    }
   }
   if(submitBtn && slider && textarea){
     submitBtn.addEventListener('click',()=>{
       if(myReviewForItem(item)) return; // already has one — composer shouldn't even be showing, but guard anyway
+      if(wordCount(textarea.value) < REVIEW_MIN_WORDS) return; // guard in case the disabled state was somehow bypassed
       const selected=parseInt(slider.value);
-      const text=textarea.value.trim() || 'Bez komentáře.';
+      const text=textarea.value.trim();
       if(!USER_REVIEWS[item.id]) USER_REVIEWS[item.id]=[];
-      USER_REVIEWS[item.id].push({rid:genReviewId(), author:myIdentity(), score:selected, text});
+      USER_REVIEWS[item.id].push({rid:genReviewId(), author:myIdentity(), score:selected, text, createdAt:new Date().toISOString()});
       saveUserReviews(USER_REVIEWS);
       route();
     });
@@ -1742,11 +1867,10 @@ function renderPerson(name){
 let userProfileCurrent=null;
 function renderUserProfile(username){
   userProfileCurrent=username;
-  userProfilePage[username]=userProfilePage[username]||1;
   const agg=userAggregate(username);
   const cls=scoreClass(agg.avg);
   const isFav=isFavoritedByMe(username);
-  const body=userReviewsBody(username);
+  const body=userReviewsPreviewHTML(username);
   return `
     <div class="crumb"><a href="#/">Kritiq</a> / ${esc(username)}</div>
     <div class="profile-card">
@@ -1755,7 +1879,6 @@ function renderUserProfile(username){
         <div class="profile-avg-box ${cls}"><div class="num">${agg.avg}</div><div class="lbl">Průměr</div></div>
       </div>
       <h1 class="profile-username">${esc(username)}</h1>
-      <button class="fav-users-btn" id="favUsersBtn" type="button">Oblíbení uživatelé</button>
       <div class="profile-stats-row">
         <span class="profile-stat">${ICON_LIKE}${agg.likes}</span>
         <span class="profile-stat">${ICON_DISLIKE}${agg.dislikes}</span>
@@ -1763,6 +1886,7 @@ function renderUserProfile(username){
         <span class="profile-stat">${ICON_STAR}${timesFavorited(username)}</span>
         ${username!==CURRENT_USER ? `<button class="profile-fav-btn ${isFav?'active':''}" id="profileFavBtn" title="${isFav?'Odebrat z oblíbených':'Přidat mezi oblíbené'}" type="button">${ICON_PLUS}</button>` : ''}
       </div>
+      <button class="fav-users-btn" id="favUsersBtn" type="button">Oblíbení uživatelé</button>
     </div>
 
     <div class="block">
@@ -1772,20 +1896,12 @@ function renderUserProfile(username){
   `;
 }
 function refreshUserReviews(username){
-  const body=userReviewsBody(username);
+  const body=userReviewsPreviewHTML(username);
   document.getElementById('userReviewsList').innerHTML=body.html;
-  bindUserLoadMore(username);
-}
-function bindUserLoadMore(username){
-  const btn=document.getElementById('userMoreBtn');
-  if(!btn) return;
-  btn.addEventListener('click', ()=>{
-    userProfilePage[username]=(userProfilePage[username]||1)+1;
-    refreshUserReviews(username);
-  });
+  bindShowAllReviews(username);
 }
 function attachUserProfileEvents(username){
-  bindUserLoadMore(username);
+  bindShowAllReviews(username);
   document.getElementById('favUsersBtn').addEventListener('click', ()=> openFavoritesModal(username));
   document.getElementById('profileAvatarBtn').addEventListener('click', ()=>{
     if(username===CURRENT_USER){
@@ -1834,7 +1950,7 @@ function route(){
   setActiveNav(parts[0]||'');
 
   if(parts.length===0){
-    app.innerHTML=renderHome();
+    app.innerHTML=renderHome(); attachHotRowEvents();
   }else if(parts[0]==='movies'){
     app.innerHTML=renderList('movie'); attachListEvents('movie');
   }else if(parts[0]==='shows'){
@@ -1850,7 +1966,7 @@ function route(){
   }else if(parts[0]==='search' && parts[1]){
     app.innerHTML=renderSearch(decodeURIComponent(parts[1]));
   }else{
-    app.innerHTML=renderHome();
+    app.innerHTML=renderHome(); attachHotRowEvents();
   }
 
   const saved=SCROLL_POSITIONS[hash];
@@ -1878,6 +1994,24 @@ async function loadRealData(){
       return Array.isArray(json) ? json : null;
     }catch(e){ return null; }
   }
+  const manifest = await loadOne('./manifest.json');
+  if(manifest && manifest.length){
+    const results = await Promise.all(manifest.map(f=>loadOne('./'+f)));
+    const movies=[], moviesCzSk=[], shows=[], games=[];
+    manifest.forEach((filename, i)=>{
+      const records = results[i] || [];
+      if(filename.startsWith('movies_czsk')) moviesCzSk.push(...records);
+      else if(filename.startsWith('movies')) movies.push(...records);
+      else if(filename.startsWith('shows')) shows.push(...records);
+      else if(filename.startsWith('games')) games.push(...records);
+    });
+    DB.movie=buildFromRecords(movies.concat(moviesCzSk), 'movie', 'm');
+    DB.show=buildFromRecords(shows, 'show', 's');
+    DB.game=buildFromRecords(games, 'game', 'g');
+    return true;
+  }
+  // No manifest found — fall back to the older single-file-per-category scheme, for
+  // deployments that haven't migrated to year-bucketed files yet.
   const [movies, moviesCzSk, shows, games] = await Promise.all([
     loadOne('./movies.json'), loadOne('./movies_czsk.json'), loadOne('./shows.json'), loadOne('./games.json')
   ]);
@@ -2056,9 +2190,14 @@ function openEditReviewModal(item, review){
       slider.style.setProperty('--thumb-color', scoreHex(v));
     });
     const textarea=document.getElementById('editReviewText');
-    document.getElementById('editOkBtn').addEventListener('click', ()=>{
+    const okBtn=document.getElementById('editOkBtn');
+    function updateEditBtn(){ updateReviewSubmitButton(textarea, okBtn, 'Uložit'); }
+    updateEditBtn();
+    textarea.addEventListener('input', updateEditBtn);
+    okBtn.addEventListener('click', ()=>{
+      if(wordCount(textarea.value) < REVIEW_MIN_WORDS) return; // guard in case the disabled state was somehow bypassed
       const newScore=parseInt(slider.value);
-      const newText=textarea.value.trim() || 'Bez komentáře.';
+      const newText=textarea.value.trim();
       openEditConfirmModal(item, newScore, newText);
     });
   });
@@ -2281,7 +2420,6 @@ function renderFavoritesModal(){
 let userModalCurrent=null;
 function openUserModal(username){
   userModalCurrent=username;
-  userProfilePage[username]=userProfilePage[username]||1;
   pushModal(renderUserModal);
 }
 function renderUserModal(){
@@ -2290,7 +2428,7 @@ function renderUserModal(){
   const agg=userAggregate(username);
   const cls=scoreClass(agg.avg);
   const isFav=isFavoritedByMe(username);
-  const body=userReviewsBody(username,'modal');
+  const body=userReviewsPreviewHTML(username);
   card.className='modal-card';
   card.innerHTML=`
     <div class="modal-head-row">
@@ -2303,7 +2441,6 @@ function renderUserModal(){
         <div class="profile-avg-box ${cls}"><div class="num">${agg.avg}</div><div class="lbl">Průměr</div></div>
       </div>
       <h1 class="profile-username">${esc(username)}</h1>
-      <button class="fav-users-btn" id="modalFavUsersBtn" type="button">Oblíbení uživatelé</button>
       <div class="profile-stats-row">
         <span class="profile-stat">${ICON_LIKE}${agg.likes}</span>
         <span class="profile-stat">${ICON_DISLIKE}${agg.dislikes}</span>
@@ -2311,6 +2448,7 @@ function renderUserModal(){
         <span class="profile-stat">${ICON_STAR}${timesFavorited(username)}</span>
         ${username!==CURRENT_USER ? `<button class="profile-fav-btn ${isFav?'active':''}" id="modalFavBtn" title="${isFav?'Odebrat z oblíbených':'Přidat mezi oblíbené'}" type="button">${ICON_PLUS}</button>` : ''}
       </div>
+      <button class="fav-users-btn" id="modalFavUsersBtn" type="button">Oblíbení uživatelé</button>
     </div>
     <h3 class="section-title">Poslední recenze (${body.total})</h3>
     <div class="reviews-list" id="modalReviewsList">${body.html}</div>
@@ -2329,20 +2467,7 @@ function renderUserModal(){
     renderUserModal();
   });
   document.getElementById('modalCopyLinkBtn').addEventListener('click', (e)=> copyProfileLink(username, e.currentTarget));
-  bindUserModalLoadMore(username);
-}
-function refreshUserReviewsModal(username){
-  const body=userReviewsBody(username,'modal');
-  document.getElementById('modalReviewsList').innerHTML=body.html;
-  bindUserModalLoadMore(username);
-}
-function bindUserModalLoadMore(username){
-  const btn=document.getElementById('modalMoreBtn');
-  if(!btn) return;
-  btn.addEventListener('click', ()=>{
-    userProfilePage[username]=(userProfilePage[username]||1)+1;
-    refreshUserReviewsModal(username);
-  });
+  bindShowAllReviews(username);
 }
 function copyProfileLink(username, btnEl){
   const url=location.origin+location.pathname+'#/user/'+encodeURIComponent(username);
