@@ -182,6 +182,47 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
 .page-sub{color:var(--text-faint); font-size:14.5px; margin:0 0 26px;}
 
 /* ---------- HOME ROWS ---------- */
+.comment-banner-wrap{position:relative; margin-bottom:26px;}
+.comment-banner-slide{
+  position:relative;
+  background:linear-gradient(135deg, rgba(167,139,250,.14), var(--bg-1) 60%);
+  border:1px solid var(--line-soft); border-radius:var(--radius-l);
+  padding:12px 16px 12px 34px; cursor:pointer; transition:border-color .15s, background .15s;
+  animation:bannerFadeIn .4s ease; touch-action:pan-y; overflow:hidden;
+}
+.comment-banner-slide:hover{border-color:var(--violet); background:linear-gradient(135deg, rgba(167,139,250,.22), var(--bg-2) 60%);}
+@keyframes bannerFadeIn{from{opacity:0; transform:translateY(4px);} to{opacity:1; transform:translateY(0);}}
+.comment-banner-label{font-size:11px; color:var(--text-faint); margin-bottom:2px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.comment-banner-label b{font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:var(--violet-2);}
+.comment-banner-target{font-weight:700; font-size:13.5px; color:var(--text); margin-bottom:2px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.comment-banner-score{
+  float:right; margin:0 0 8px 10px;
+  min-width:34px; height:26px; padding:0 7px; border-radius:8px;
+  display:flex; align-items:center; justify-content:center;
+  font-family:var(--font-display); font-weight:700; font-size:13px;
+  box-shadow:0 3px 10px rgba(0,0,0,.4);
+}
+.comment-banner-text{
+  font-size:12.5px; color:var(--text-dim); line-height:1.45;
+  display:-webkit-box; -webkit-line-clamp:3; line-clamp:3; -webkit-box-orient:vertical; overflow:hidden;
+}
+.banner-arrow{
+  position:absolute; top:50%; transform:translateY(-50%); z-index:5;
+  width:30px; height:30px; border-radius:50%; border:none; cursor:pointer;
+  background:rgba(20,14,32,.55); backdrop-filter:blur(4px); -webkit-backdrop-filter:blur(4px);
+  color:#fff; display:flex; align-items:center; justify-content:center;
+  opacity:.7; transition:opacity .15s, background .15s;
+}
+.banner-arrow:hover{opacity:1; background:rgba(20,14,32,.85);}
+.banner-arrow.left{left:-4px;}
+.banner-arrow.right{right:-4px;}
+.comment-banner-dots{display:flex; justify-content:center; gap:6px; margin-top:6px;}
+.banner-dot{width:6px; height:6px; border-radius:50%; border:none; padding:0; background:var(--line); cursor:pointer; transition:background .15s, transform .15s;}
+.banner-dot.active{background:var(--violet-2); transform:scale(1.3);}
+@media(max-width:520px){
+  .comment-banner-slide{padding:10px 14px;}
+  .banner-arrow, .comment-banner-dots{display:none;}
+}
 .hot-section{margin-bottom:20px;}
 .hot-head{display:flex; align-items:baseline; justify-content:space-between; margin-bottom:14px; gap:12px;}
 .hot-head h2{font-family:var(--font-display); font-weight:600; font-size:15px; margin:0; color:#b3a0d9;}
@@ -353,22 +394,49 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
 .detail-header{margin-bottom:22px;}
 .detail-header h1{font-family:var(--font-display); font-weight:800; font-size:clamp(26px,4vw,40px); margin:0 0 8px; line-height:1.05;}
 .detail-meta-line{color:var(--text-dim); font-size:14.5px; margin-bottom:0; display:flex; gap:10px; flex-wrap:wrap; align-items:center;}
+.top10-add-btn{
+  display:inline-flex; align-items:center; font-size:inherit; font-weight:700; line-height:1;
+  padding:5px 14px; border-radius:999px; border:1px solid rgba(167,139,250,.55);
+  background:rgba(167,139,250,.16); color:#c9b6fb; cursor:pointer; white-space:nowrap;
+  box-shadow:0 0 12px rgba(167,139,250,.45);
+  transition:background .15s, box-shadow .15s, border-color .15s;
+}
+.top10-add-btn:hover{background:rgba(167,139,250,.28); box-shadow:0 0 18px rgba(167,139,250,.65);}
+.top10-add-btn.in-list{background:rgba(167,139,250,.32); border-color:rgba(167,139,250,.8);}
+.top10-slots{display:flex; flex-direction:column; gap:6px; max-height:50vh; overflow-y:auto;}
+.top10-slot-btn{
+  display:flex; align-items:center; gap:10px; width:100%; text-align:left;
+  padding:9px 14px; border-radius:var(--radius-m); border:1px solid var(--line-soft);
+  background:var(--bg-1); color:var(--text); cursor:pointer; font-size:13.5px;
+  transition:background .12s, border-color .12s;
+}
+.top10-slot-btn:hover{background:var(--bg-2); border-color:var(--violet);}
+.top10-slot-btn.active{border-color:var(--violet); background:rgba(167,139,250,.18);}
+.top10-slot-num{font-weight:800; color:var(--violet-2); flex:0 0 22px;}
+.top10-slot-title{color:var(--text-dim); overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.top10-view-list{display:flex; flex-direction:column; gap:4px; margin-bottom:8px;}
+.top10-view-item{display:block; padding:8px 4px; color:var(--text); text-decoration:none; font-size:13.5px; border-bottom:1px solid var(--line-soft);}
+.top10-view-item:hover{color:var(--violet-2);}
 .detail-meta-line .sep{opacity:.4;}
 
 .detail-row{display:flex; align-items:flex-start; gap:20px; margin-bottom:22px;}
 .credits{display:flex; flex-direction:column; gap:10px; flex:1 1 auto; min-width:0;}
-.detail-poster-summary-row{display:flex; align-items:stretch; gap:20px; margin-bottom:22px;}
-.detail-poster-large{flex:0 0 180px; width:180px; cursor:pointer;}
+.detail-poster-summary-row{display:flex; align-items:stretch; gap:20px; margin-bottom:22px; height:270px;}
+.detail-poster-large{flex:0 0 180px; width:180px; height:100%; cursor:pointer;}
 .detail-poster-large .frame{
-  aspect-ratio:2/3; border-radius:var(--radius-m); overflow:hidden; width:100%; height:100%;
+  border-radius:var(--radius-m); overflow:hidden; width:100%; height:100%;
   position:relative; box-shadow:0 14px 30px -10px rgba(0,0,0,.6), 0 0 0 1px var(--line-soft);
 }
 .detail-poster-large .frame::after{content:''; position:absolute; inset:0; box-shadow:inset 0 0 30px rgba(0,0,0,.35);}
 .detail-poster-large .frame .letter{font-size:56px;}
-@media(max-width:480px){.detail-poster-large{flex-basis:120px; width:120px;} .detail-poster-large .frame .letter{font-size:38px;}}
+@media(max-width:480px){
+  .detail-poster-summary-row{height:180px;}
+  .detail-poster-large{flex-basis:120px; width:120px;}
+  .detail-poster-large .frame .letter{font-size:38px;}
+}
 .summary-box-inline{
   position:relative; font-size:13px; color:var(--text-dim); line-height:1.6;
-  flex:1 1 auto; min-width:0; overflow:hidden; cursor:pointer;
+  flex:1 1 auto; min-width:0; height:100%; overflow:hidden; cursor:pointer;
   background:var(--bg-1); border:1px solid var(--line-soft); border-radius:var(--radius-m);
   padding:14px 18px; transition:border-color .15s, background .15s;
 }
@@ -1051,6 +1119,36 @@ function saveUserReviews(obj){
 }
 let USER_REVIEWS=loadUserReviews();
 
+function loadTop10(){
+  try{ return JSON.parse(localStorage.getItem('kritiq_top10')||'{}'); }catch(e){ return {}; }
+}
+function saveTop10(obj){
+  try{ localStorage.setItem('kritiq_top10', JSON.stringify(obj)); }catch(e){}
+}
+let TOP10=loadTop10();
+function getTop10For(username, type){
+  return (TOP10[username] && TOP10[username][type]) || {};
+}
+function findMyTop10Position(username, type, itemId){
+  const list=getTop10For(username, type);
+  const found=Object.entries(list).find(([pos,id])=>id===itemId);
+  return found ? parseInt(found[0]) : null;
+}
+function setTop10Slot(username, type, position, itemId){
+  if(!TOP10[username]) TOP10[username]={};
+  if(!TOP10[username][type]) TOP10[username][type]={};
+  const list=TOP10[username][type];
+  Object.keys(list).forEach(pos=>{ if(list[pos]===itemId) delete list[pos]; }); // a title only ever occupies one slot
+  list[position]=itemId;
+  saveTop10(TOP10);
+}
+function removeFromTop10(username, type, itemId){
+  const list=TOP10[username] && TOP10[username][type];
+  if(!list) return;
+  Object.keys(list).forEach(pos=>{ if(list[pos]===itemId) delete list[pos]; });
+  saveTop10(TOP10);
+}
+
 function loadAddedItems(){
   try{ return JSON.parse(localStorage.getItem('kritiq_added')||'{"movie":[],"show":[],"game":[]}'); }catch(e){ return {movie:[],show:[],game:[]}; }
 }
@@ -1247,7 +1345,7 @@ function reviewItemHTML(review, opts){
     <button class="pill-delete-btn no-modal-trigger" data-review-id="${review.id}" data-item-id="${opts.item.id}" type="button">ODSTRANIT</button>
   ` : '';
   return `
-  <div class="review-item" data-review-id="${review.id}">
+  <div class="review-item" data-review-id="${review.id}" data-item-id="${opts.item ? opts.item.id : (opts.context ? opts.context.item.id : '')}">
     <div class="review-score ${scoreClass(review.score)}">${review.score}</div>
     <div class="review-body">
       <div class="review-author-row">
@@ -1373,11 +1471,148 @@ function withinLast6Months(dateStr){
 }
 
 /* ======================= PAGES ======================= */
+function allTimestampedReviews(){
+  const out=[];
+  ['movie','show','game'].forEach(type=>{
+    DB[type].forEach(item=>{
+      allReviews(item).forEach(review=>{
+        if(review.createdAt) out.push({review, item, type});
+      });
+    });
+  });
+  return out;
+}
+function mostRecentFeatured(){
+  const all=allTimestampedReviews();
+  if(!all.length) return null;
+  all.sort((a,b)=> new Date(b.review.createdAt) - new Date(a.review.createdAt));
+  return Object.assign({label:'Nejnovější recenze'}, all[0]);
+}
+function mostFunnyFeatured(days){
+  const cutoff=Date.now() - days*24*60*60*1000;
+  const all=allTimestampedReviews().filter(e=> new Date(e.review.createdAt).getTime() >= cutoff);
+  if(!all.length) return null;
+  all.sort((a,b)=> voteCounts(b.review).funny - voteCounts(a.review).funny);
+  if(voteCounts(all[0].review).funny <= 0) return null;
+  return Object.assign({label:`Nejvtipnější recenze (${days} dní)`}, all[0]);
+}
+function mostLikedFeatured(days){
+  const cutoff=Date.now() - days*24*60*60*1000;
+  const all=allTimestampedReviews().filter(e=> new Date(e.review.createdAt).getTime() >= cutoff);
+  if(!all.length) return null;
+  all.sort((a,b)=> voteCounts(b.review).likes - voteCounts(a.review).likes);
+  if(voteCounts(all[0].review).likes <= 0) return null;
+  return Object.assign({label:`Nejoblíbenější recenze (${days} dní)`}, all[0]);
+}
+let bannerSlides=[];
+let bannerIndex=0;
+let bannerTimer=null;
+function buildBannerSlides(){
+  const slides=[];
+  const recent=mostRecentFeatured();
+  if(recent) slides.push(recent);
+  const funny=mostFunnyFeatured(7);
+  if(funny) slides.push(funny);
+  const liked=mostLikedFeatured(7);
+  if(liked) slides.push(liked);
+  return slides;
+}
+function renderBannerSlideContent(idx){
+  const slide=bannerSlides[idx];
+  const {review, item, type, label}=slide;
+  return `
+    <div class="comment-banner-slide no-modal-trigger" data-review-id="${esc(review.id)}" data-type="${type}" data-item-id="${item.id}">
+      <span class="comment-banner-score ${scoreClass(review.score)}">${review.score}</span>
+      <div class="comment-banner-label"><b>${label}</b> - ${esc(review.author)}</div>
+      <div class="comment-banner-target">${esc(item.title)}</div>
+      <div class="comment-banner-text">${esc(review.text)}</div>
+    </div>
+  `;
+}
+function commentBannerHTML(){
+  bannerSlides=buildBannerSlides();
+  if(!bannerSlides.length) return '';
+  bannerIndex=0;
+  const multi=bannerSlides.length>1;
+  return `
+    <div class="comment-banner-wrap" id="commentBannerWrap">
+      ${multi?`<button class="banner-arrow left no-modal-trigger" id="bannerPrevBtn" type="button" aria-label="Předchozí"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></button>`:''}
+      <div id="commentBannerSlideHolder">${renderBannerSlideContent(0)}</div>
+      ${multi?`<button class="banner-arrow right no-modal-trigger" id="bannerNextBtn" type="button" aria-label="Další"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button>`:''}
+      ${multi?`<div class="comment-banner-dots" id="commentBannerDots">${bannerSlides.map((_,i)=>`<button class="banner-dot ${i===0?'active':''}" data-idx="${i}" type="button" aria-label="Přejít na ${i+1}. recenzi"></button>`).join('')}</div>`:''}
+    </div>
+  `;
+}
+function goToBannerSlide(idx){
+  if(!bannerSlides.length) return;
+  bannerIndex=((idx % bannerSlides.length) + bannerSlides.length) % bannerSlides.length;
+  const holder=document.getElementById('commentBannerSlideHolder');
+  if(holder) holder.innerHTML=renderBannerSlideContent(bannerIndex);
+  document.querySelectorAll('.banner-dot').forEach((d,i)=> d.classList.toggle('active', i===bannerIndex));
+  bindBannerSlideClick();
+}
+let bannerSwipedRecently=false;
+function bindBannerSlideClick(){
+  const slide=document.querySelector('.comment-banner-slide');
+  if(!slide) return;
+  slide.addEventListener('click', ()=>{
+    if(bannerSwipedRecently) return; // swipe just fired a navigation — don't also treat it as a tap-to-open
+    PENDING_REVIEW_TO_OPEN=slide.dataset.reviewId;
+    stopBannerAutoAdvance();
+    location.hash=`#/title/${slide.dataset.type}/${slide.dataset.itemId}`;
+  });
+}
+function bindBannerSwipe(){
+  const wrap=document.getElementById('commentBannerWrap');
+  if(!wrap) return;
+  let startX=0, startY=0, dragging=false;
+  wrap.addEventListener('touchstart', (e)=>{
+    startX=e.touches[0].clientX;
+    startY=e.touches[0].clientY;
+    dragging=true;
+  }, {passive:true});
+  wrap.addEventListener('touchend', (e)=>{
+    if(!dragging) return;
+    dragging=false;
+    const dx=e.changedTouches[0].clientX-startX;
+    const dy=e.changedTouches[0].clientY-startY;
+    if(Math.abs(dx)>40 && Math.abs(dx)>Math.abs(dy)){
+      bannerSwipedRecently=true;
+      setTimeout(()=>{ bannerSwipedRecently=false; }, 300);
+      goToBannerSlide(dx<0 ? bannerIndex+1 : bannerIndex-1);
+      startBannerAutoAdvance();
+    }
+  }, {passive:true});
+}
+function startBannerAutoAdvance(){
+  stopBannerAutoAdvance();
+  if(bannerSlides.length<2) return;
+  bannerTimer=setInterval(()=> goToBannerSlide(bannerIndex+1), 10000);
+}
+function stopBannerAutoAdvance(){
+  if(bannerTimer){ clearInterval(bannerTimer); bannerTimer=null; }
+}
+function attachCommentBannerEvents(){
+  if(!bannerSlides.length) return;
+  bindBannerSlideClick();
+  bindBannerSwipe();
+  document.getElementById('bannerPrevBtn')?.addEventListener('click', (e)=>{ e.stopPropagation(); goToBannerSlide(bannerIndex-1); startBannerAutoAdvance(); });
+  document.getElementById('bannerNextBtn')?.addEventListener('click', (e)=>{ e.stopPropagation(); goToBannerSlide(bannerIndex+1); startBannerAutoAdvance(); });
+  document.querySelectorAll('.banner-dot').forEach(dot=>{
+    dot.addEventListener('click', (e)=>{ e.stopPropagation(); goToBannerSlide(parseInt(dot.dataset.idx)); startBannerAutoAdvance(); });
+  });
+  const wrap=document.getElementById('commentBannerWrap');
+  wrap?.addEventListener('mouseenter', stopBannerAutoAdvance);
+  wrap?.addEventListener('mouseleave', startBannerAutoAdvance);
+  startBannerAutoAdvance();
+}
+let PENDING_REVIEW_TO_OPEN=null;
 function renderHome(){
   const hotMovies=DB.movie.filter(m=>withinLast6Months(m.date)).sort((a,b)=>scoreSortValue(b)-scoreSortValue(a)).slice(0,10);
   const hotShows=DB.show.filter(s=>withinLast6Months(s.date)).sort((a,b)=>scoreSortValue(b)-scoreSortValue(a)).slice(0,10);
   const hotGames=DB.game.filter(g=>withinLast6Months(g.date)).sort((a,b)=>scoreSortValue(b)-scoreSortValue(a)).slice(0,10);
   return `
+    ${commentBannerHTML()}
     ${hotRowHTML('Trendy filmy','Top 10 za posledních 6 měsíců', hotMovies, '#/movies')}
     ${hotRowHTML('Trendy seriály','Top 10 za posledních 6 měsíců', hotShows, '#/shows')}
     ${hotRowHTML('Trendy hry','Top 10 za posledních 6 měsíců', hotGames, '#/games')}
@@ -1599,7 +1834,7 @@ function renderDetail(type,id){
 
   let metaLine, creditsHTML, castHTML='';
   if(type==='game'){
-    metaLine=`${fmtDate(item.date, item.yearOnly)} <span class="sep">·</span> ${esc(item.genre)} <span class="sep">·</span> ${typeLabel(type)}`;
+    metaLine=`${fmtDate(item.date, item.yearOnly)} <span class="sep">·</span> ${esc(item.genre)} <span class="sep">·</span> ${typeLabel(type)} ${top10ButtonHTML(item)}`;
     const platformsRow = (item.platforms && item.platforms.length)
       ? `<div class="credit-row"><span class="ck-label">Platformy</span><div class="ck-values">${esc(item.platforms.join(', '))}</div></div>`
       : '';
@@ -1615,7 +1850,7 @@ function renderDetail(type,id){
         ? ` <span class="sep">·</span> ${item.runtimeMin}–${item.runtimeMax} min`
         : ` <span class="sep">·</span> ${item.runtimeMin} min`;
     }
-    metaLine=`${fmtDate(item.date, item.yearOnly)}${countryPart} <span class="sep">·</span> ${esc(item.genre)}${runtimePart} <span class="sep">·</span> ${typeLabel(type)}${boxPart}`;
+    metaLine=`${fmtDate(item.date, item.yearOnly)}${countryPart} <span class="sep">·</span> ${esc(item.genre)}${runtimePart} <span class="sep">·</span> ${typeLabel(type)}${boxPart} ${top10ButtonHTML(item)}`;
     creditsHTML=`
       <div class="credit-row"><span class="ck-label">Režie</span><div class="ck-values"><a class="person-link" href="#/person/${slug(item.director.name)}">${esc(item.director.name)}</a></div></div>
       <div class="credit-row"><span class="ck-label">Scénář</span><div class="ck-values"><a class="person-link" href="#/person/${slug(item.writer.name)}">${esc(item.writer.name)}</a></div></div>
@@ -1719,6 +1954,8 @@ function attachDetailEvents(type,id){
   if(posterBtn) posterBtn.addEventListener('click', ()=> openGalleryModal(item));
   const summaryBox=document.getElementById('summaryBox');
   if(summaryBox) summaryBox.addEventListener('click', ()=> openSummaryModal(item));
+  const top10Btn=document.getElementById('top10AddBtn');
+  if(top10Btn) top10Btn.addEventListener('click', ()=> openTop10PickerModal(item));
   const showAllCastBtn=document.getElementById('showAllCastBtn');
   if(showAllCastBtn) showAllCastBtn.addEventListener('click', ()=>{
     document.getElementById('castHiddenRow').style.display='';
@@ -1886,6 +2123,7 @@ function renderUserProfile(username){
         <span class="profile-stat">${ICON_STAR}${timesFavorited(username)}</span>
         ${username!==CURRENT_USER ? `<button class="profile-fav-btn ${isFav?'active':''}" id="profileFavBtn" title="${isFav?'Odebrat z oblíbených':'Přidat mezi oblíbené'}" type="button">${ICON_PLUS}</button>` : ''}
       </div>
+      <button class="fav-users-btn" id="top10ViewBtn" type="button">OSOBNÍ TOP 10</button>
       <button class="fav-users-btn" id="favUsersBtn" type="button">Oblíbení uživatelé</button>
     </div>
 
@@ -1902,6 +2140,7 @@ function refreshUserReviews(username){
 }
 function attachUserProfileEvents(username){
   bindShowAllReviews(username);
+  document.getElementById('top10ViewBtn').addEventListener('click', ()=> openTop10ViewModal(username));
   document.getElementById('favUsersBtn').addEventListener('click', ()=> openFavoritesModal(username));
   document.getElementById('profileAvatarBtn').addEventListener('click', ()=>{
     if(username===CURRENT_USER){
@@ -1950,7 +2189,7 @@ function route(){
   setActiveNav(parts[0]||'');
 
   if(parts.length===0){
-    app.innerHTML=renderHome(); attachHotRowEvents();
+    app.innerHTML=renderHome(); attachHotRowEvents(); attachCommentBannerEvents();
   }else if(parts[0]==='movies'){
     app.innerHTML=renderList('movie'); attachListEvents('movie');
   }else if(parts[0]==='shows'){
@@ -1959,6 +2198,11 @@ function route(){
     app.innerHTML=renderList('game'); attachListEvents('game');
   }else if(parts[0]==='title' && parts[1] && parts[2]){
     app.innerHTML=renderDetail(parts[1],parts[2]); attachDetailEvents(parts[1],parts[2]);
+    if(PENDING_REVIEW_TO_OPEN){
+      const rid=PENDING_REVIEW_TO_OPEN;
+      PENDING_REVIEW_TO_OPEN=null;
+      openReviewModalById(parts[2], rid);
+    }
   }else if(parts[0]==='person' && parts[1]){
     app.innerHTML=renderPerson(decodeURIComponent(parts[1]));
   }else if(parts[0]==='user' && parts[1]){
@@ -1966,7 +2210,7 @@ function route(){
   }else if(parts[0]==='search' && parts[1]){
     app.innerHTML=renderSearch(decodeURIComponent(parts[1]));
   }else{
-    app.innerHTML=renderHome(); attachHotRowEvents();
+    app.innerHTML=renderHome(); attachHotRowEvents(); attachCommentBannerEvents();
   }
 
   const saved=SCROLL_POSITIONS[hash];
@@ -2160,6 +2404,74 @@ function handleRegisterSubmit(){
   saveAccounts(accounts);
   logInAs(nickname);
 }
+function top10ButtonHTML(item){
+  const pos=findMyTop10Position(CURRENT_USER, item.type, item.id);
+  const label = pos ? `V Top 10 (#${pos})` : 'Přidat do Top 10';
+  return `<button class="top10-add-btn no-modal-trigger ${pos?'in-list':''}" id="top10AddBtn" type="button">${label}</button>`;
+}
+function openTop10PickerModal(item){
+  pushModal(()=>renderTop10PickerModal(item));
+}
+function renderTop10PickerModal(item){
+  const card=document.getElementById('reviewModalCard');
+  card.className='modal-card';
+  const list=getTop10For(CURRENT_USER, item.type);
+  const currentPos=findMyTop10Position(CURRENT_USER, item.type, item.id);
+  const typeLabelGen = item.type==='movie' ? 'filmů' : item.type==='show' ? 'seriálů' : 'her';
+  const slotsHTML=Array.from({length:10},(_,i)=>i+1).map(pos=>{
+    const occupiedId=list[pos];
+    const occupiedItem = (occupiedId && occupiedId!==item.id) ? findItem(item.type, occupiedId) : null;
+    const label = pos===currentPos ? esc(item.title) : (occupiedItem ? esc(occupiedItem.title) : 'Prázdné');
+    return `<button class="top10-slot-btn ${pos===currentPos?'active':''}" data-pos="${pos}" type="button">
+      <span class="top10-slot-num">${pos}.</span>
+      <span class="top10-slot-title">${label}</span>
+    </button>`;
+  }).join('');
+  card.innerHTML=`
+    <button class="modal-close" id="top10CloseBtn" aria-label="Zavřít" type="button">✕</button>
+    <h3 class="section-title" style="margin-bottom:4px;">Přidat do Top 10 ${typeLabelGen}</h3>
+    <p class="page-sub" style="margin-bottom:14px;">${esc(item.title)}</p>
+    <div class="top10-slots">${slotsHTML}</div>
+    ${currentPos ? `<button class="react-btn" id="top10RemoveBtn" style="margin-top:14px; width:100%; justify-content:center;" type="button">Odebrat z Top 10</button>` : ''}
+  `;
+  document.getElementById('top10CloseBtn').addEventListener('click', popModal);
+  card.querySelectorAll('.top10-slot-btn').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      setTop10Slot(CURRENT_USER, item.type, parseInt(btn.dataset.pos), item.id);
+      popModal();
+      route();
+    });
+  });
+  document.getElementById('top10RemoveBtn')?.addEventListener('click', ()=>{
+    removeFromTop10(CURRENT_USER, item.type, item.id);
+    popModal();
+    route();
+  });
+}
+function openTop10ViewModal(username){
+  pushModal(()=>renderTop10ViewModal(username));
+}
+function renderTop10ViewModal(username){
+  const card=document.getElementById('reviewModalCard');
+  card.className='modal-card';
+  const sections=[['movie','Filmy'],['show','Seriály'],['game','Hry']].map(([type,label])=>{
+    const list=getTop10For(username, type);
+    const entries=Object.entries(list)
+      .map(([pos,id])=>({pos:parseInt(pos), item:findItem(type,id)}))
+      .filter(e=>e.item)
+      .sort((a,b)=>a.pos-b.pos);
+    const body=entries.length
+      ? `<div class="top10-view-list">${entries.map(e=>`<a class="top10-view-item no-modal-trigger" href="#/title/${type}/${e.item.id}">${e.pos}. ${esc(e.item.title)}</a>`).join('')}</div>`
+      : `<p class="empty-note">Uživatel zatím nepřidal žádný titul do svého Top 10 ${label.toLowerCase()}.</p>`;
+    return `<h3 class="section-title" style="margin-top:18px;">${label}</h3>${body}`;
+  }).join('');
+  card.innerHTML=`
+    <button class="modal-close" id="top10ViewCloseBtn" aria-label="Zavřít" type="button">✕</button>
+    <h3 class="section-title" style="margin-bottom:0;">Osobní Top 10 — ${esc(username)}</h3>
+    ${sections}
+  `;
+  document.getElementById('top10ViewCloseBtn').addEventListener('click', popModal);
+}
 function openEditReviewModal(item, review){
   pushModal(()=>{
     const card=document.getElementById('reviewModalCard');
@@ -2310,9 +2622,8 @@ function closeAllModals(){
   document.getElementById('reviewModalOverlay').classList.remove('open');
 }
 
-function openReviewModalById(reviewId){
-  const itemId=reviewId.split(/-(?:seed|user)-/)[0];
-  const type=itemId.charAt(0)==='m'?'movie':itemId.charAt(0)==='s'?'show':'game';
+function openReviewModalById(itemId, reviewId){
+  const type=itemTypeFromId(itemId);
   const item=findItem(type,itemId);
   if(!item) return;
   const review=allReviews(item).find(r=>r.id===reviewId);
@@ -2448,12 +2759,14 @@ function renderUserModal(){
         <span class="profile-stat">${ICON_STAR}${timesFavorited(username)}</span>
         ${username!==CURRENT_USER ? `<button class="profile-fav-btn ${isFav?'active':''}" id="modalFavBtn" title="${isFav?'Odebrat z oblíbených':'Přidat mezi oblíbené'}" type="button">${ICON_PLUS}</button>` : ''}
       </div>
+      <button class="fav-users-btn" id="modalTop10ViewBtn" type="button">OSOBNÍ TOP 10</button>
       <button class="fav-users-btn" id="modalFavUsersBtn" type="button">Oblíbení uživatelé</button>
     </div>
     <h3 class="section-title">Poslední recenze (${body.total})</h3>
     <div class="reviews-list" id="modalReviewsList">${body.html}</div>
   `;
   document.getElementById('modalProfileCloseBtn').addEventListener('click', popModal);
+  document.getElementById('modalTop10ViewBtn').addEventListener('click', ()=> openTop10ViewModal(username));
   document.getElementById('modalFavUsersBtn').addEventListener('click', ()=> openFavoritesModal(username));
   document.getElementById('modalAvatarBtn').addEventListener('click', ()=>{
     if(username===CURRENT_USER){
@@ -2529,6 +2842,29 @@ function initSearchPanel(){
   window._closeSearchPanel=closePanel;
 }
 
+function seedBannerTestReviews(){
+  // TEMP, demo-preview only: gives the comment banner real data to display — a recent
+  // review, one with funny votes, one with likes, all within the last 7 days. Never runs
+  // once real fetched data loads (guarded by the !loadedReal check in init()), so this
+  // has zero effect on the live deployed site.
+  const now=new Date();
+  const daysAgo=(n,h)=> new Date(now.getTime() - n*24*60*60*1000 - (h||0)*60*60*1000).toISOString();
+  function addTestReview(itemId, rid, author, score, text, createdAt){
+    if(!USER_REVIEWS[itemId]) USER_REVIEWS[itemId]=[];
+    if(USER_REVIEWS[itemId].some(r=>r.rid===rid)) return; // already seeded on a previous load — don't duplicate
+    USER_REVIEWS[itemId].push({rid, author, score, text, createdAt});
+  }
+  if(DB.movie[0]) addTestReview(DB.movie[0].id, 'demo-recent', 'FilmovyFanousek', 88,
+    'Naprosto strhující zážitek od začátku do konce, kamera i herecké výkony byly famózní.', daysAgo(0, 1));
+  if(DB.movie[1]) addTestReview(DB.movie[1].id, 'demo-funny', 'KritikSGustem', 62,
+    'Scénárista musel psát tohle po tři panácích, jinak si to fakt neumím vysvětlit.', daysAgo(2));
+  if(DB.show[0]) addTestReview(DB.show[0].id, 'demo-liked', 'SeriálovýMaraton', 91,
+    'Každá epizoda lepší než ta předchozí, konečně seriál co ví, kam směřuje svůj příběh.', daysAgo(4));
+  VOTES['demo-funny']=Object.assign({}, VOTES['demo-funny'], {funny:true});
+  VOTES['demo-liked']=Object.assign({}, VOTES['demo-liked'], {liked:true});
+  saveUserReviews(USER_REVIEWS);
+  saveVotes(VOTES);
+}
 async function init(){
   const loadedReal = await loadRealData();
   if(!loadedReal){
@@ -2537,6 +2873,7 @@ async function init(){
     DB.game=buildGames();
     restoreAddedItems();
     runDailyDrop(); // simulated placeholder content — demo dataset only, never with real fetched data
+    seedBannerTestReviews(); // TEMP: demo-only test reviews so the comment banner has something to show in preview
   }
   computeYearBounds();
 
@@ -2567,7 +2904,7 @@ async function init(){
       }
     });
     const reviewEl=e.target.closest('.review-item');
-    if(reviewEl){ openReviewModalById(reviewEl.dataset.reviewId); return; }
+    if(reviewEl){ openReviewModalById(reviewEl.dataset.itemId, reviewEl.dataset.reviewId); return; }
   });
   document.getElementById('reviewModalOverlay').addEventListener('click', e=>{
     if(e.target.id==='reviewModalOverlay') closeAllModals();
