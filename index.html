@@ -1143,13 +1143,39 @@ function buildGames(){
 }
 
 /* ======================= LOCAL STORAGE (reviews + daily drop) ======================= */
-function loadUserReviews(){
-  try{ return JSON.parse(localStorage.getItem('kritiq_reviews')||'{}'); }catch(e){ return {}; }
+// USER_REVIEWS is now purely an in-memory cache, populated per-item from Firestore via
+// loadReviewsForItem() and per-author via getUserReviewsAsync() — never persisted locally.
+let USER_REVIEWS={};
+function reviewDocToLocal(doc){
+  const d=doc.data();
+  const toIso=(ts)=> (ts && typeof ts.toDate==='function') ? ts.toDate().toISOString() : (ts||null);
+  return {rid:doc.id, author:d.author, score:d.score, text:d.text, createdAt:toIso(d.createdAt), editedAt:toIso(d.editedAt)};
 }
-function saveUserReviews(obj){
-  try{ localStorage.setItem('kritiq_reviews', JSON.stringify(obj)); }catch(e){}
+async function loadReviewsForItem(item){
+  try{
+    const snap=await db.collection('reviews').where('itemId','==',item.id).get();
+    USER_REVIEWS[item.id]=snap.docs.map(reviewDocToLocal);
+  }catch(e){
+    console.error('Nepodařilo se načíst recenze pro', item.id, e);
+    USER_REVIEWS[item.id]=USER_REVIEWS[item.id]||[];
+  }
 }
-let USER_REVIEWS=loadUserReviews();
+async function getUserReviewsAsync(username){
+  const out=[];
+  try{
+    const snap=await db.collection('reviews').where('author','==',username).get();
+    snap.docs.forEach(doc=>{
+      const d=doc.data();
+      const item=findItem(d.itemType, d.itemId);
+      if(!item) return;
+      const review=Object.assign(reviewDocToLocal(doc), {baseLikes:0, baseDislikes:0, baseFunny:0, isUser:true});
+      out.push({review, item, type:d.itemType});
+    });
+  }catch(e){
+    console.error('Nepodařilo se načíst recenze uživatele', username, e);
+  }
+  return out.reverse();
+}
 
 function loadTop10(){
   try{ return JSON.parse(localStorage.getItem('kritiq_top10')||'{}'); }catch(e){ return {}; }
@@ -1227,19 +1253,7 @@ function toggleMyFavorite(username){
 }
 function timesFavorited(username){ return favBaseCount(username)+(isFavoritedByMe(username)?1:0); }
 
-function getUserReviews(username){
-  const out=[];
-  ['movie','show','game'].forEach(type=>{
-    DB[type].forEach(item=>{
-      allReviews(item).forEach(review=>{
-        if(review.author===username) out.push({review,item,type});
-      });
-    });
-  });
-  return out.reverse();
-}
-function userAggregate(username){
-  const entries=getUserReviews(username);
+function userAggregate(entries){
   let likes=0,dislikes=0,funny=0,scoreSum=0;
   entries.forEach(({review})=>{
     const c=voteCounts(review);
@@ -1250,7 +1264,6 @@ function userAggregate(username){
 }
 
 function myIdentity(){ return CURRENT_USER || 'Vy'; }
-function genReviewId(){ return 'r'+Date.now().toString(36)+Math.random().toString(36).slice(2,8); }
 function allReviews(item){
   // rid is a stable id generated at submit time (immune to array-index shifting when a
   // review elsewhere gets deleted); older reviews saved before this existed fall back to
@@ -1263,24 +1276,24 @@ function myReviewForItem(item){
   const idx=list.findIndex(r=>r.author===myIdentity());
   return idx===-1 ? null : {index:idx, review:list[idx]};
 }
-function updateMyReview(item, newScore, newText){
+async function updateMyReview(item, newScore, newText){
   const list=USER_REVIEWS[item.id]||[];
   const idx=list.findIndex(r=>r.author===myIdentity());
   if(idx===-1) return;
-  const oldId=list[idx].rid || (item.id+'-user-'+idx);
-  list[idx]=Object.assign({}, list[idx], {score:newScore, text:newText, editedAt:new Date().toISOString()});
-  saveUserReviews(USER_REVIEWS);
-  delete VOTES[oldId];
+  const rid=list[idx].rid;
+  await db.collection('reviews').doc(rid).update({score:newScore, text:newText, editedAt:firebase.firestore.FieldValue.serverTimestamp()});
+  await loadReviewsForItem(item);
+  delete VOTES[rid];
   saveVotes(VOTES);
 }
-function deleteMyReview(item){
+async function deleteMyReview(item){
   const list=USER_REVIEWS[item.id]||[];
   const idx=list.findIndex(r=>r.author===myIdentity());
   if(idx===-1) return;
-  const oldId=list[idx].rid || (item.id+'-user-'+idx);
-  list.splice(idx,1);
-  saveUserReviews(USER_REVIEWS);
-  delete VOTES[oldId];
+  const rid=list[idx].rid;
+  await db.collection('reviews').doc(rid).delete();
+  await loadReviewsForItem(item);
+  delete VOTES[rid];
   saveVotes(VOTES);
 }
 function liveScore(item){
@@ -1401,8 +1414,7 @@ function reviewsListHTML(item){
 const PROFILE_PREVIEW_COUNT=3;
 const ALL_REVIEWS_PAGE_SIZE=10;
 let allReviewsModalPage={};
-function userReviewsPreviewHTML(username){
-  const entries=getUserReviews(username);
+function userReviewsPreviewHTML(username, entries){
   const shown=entries.slice(0, PROFILE_PREVIEW_COUNT);
   const html=shown.length
     ? shown.map(e=>reviewItemHTML(e.review,{context:{item:e.item,type:e.type}})).join('')
@@ -1420,10 +1432,10 @@ function openAllReviewsModal(username){
   allReviewsModalPage[username]=1;
   pushModal(()=>renderAllReviewsModal(username));
 }
-function renderAllReviewsModal(username){
+async function renderAllReviewsModal(username){
   const card=document.getElementById('reviewModalCard');
   card.className='modal-card';
-  const entries=getUserReviews(username);
+  const entries=await getUserReviewsAsync(username);
   const page=allReviewsModalPage[username]||1;
   const shown=entries.slice(0, page*ALL_REVIEWS_PAGE_SIZE);
   const html=shown.length
@@ -1514,11 +1526,20 @@ function allTimestampedReviews(){
   });
   return out;
 }
-function mostRecentFeatured(){
-  const all=allTimestampedReviews();
-  if(!all.length) return null;
-  all.sort((a,b)=> new Date(b.review.createdAt) - new Date(a.review.createdAt));
-  return Object.assign({label:'Nejnovější recenze'}, all[0]);
+async function mostRecentFeaturedAsync(){
+  try{
+    const snap=await db.collection('reviews').orderBy('createdAt','desc').limit(1).get();
+    if(snap.empty) return null;
+    const doc=snap.docs[0];
+    const d=doc.data();
+    const item=findItem(d.itemType, d.itemId);
+    if(!item) return null;
+    const review=Object.assign(reviewDocToLocal(doc), {baseLikes:0, baseDislikes:0, baseFunny:0, isUser:true});
+    return {label:'Nejnovější recenze', review, item, type:d.itemType};
+  }catch(e){
+    console.error('Nepodařilo se načíst nejnovější recenzi', e);
+    return null;
+  }
 }
 function mostFunnyFeatured(days){
   const cutoff=Date.now() - days*24*60*60*1000;
@@ -1539,9 +1560,9 @@ function mostLikedFeatured(days){
 let bannerSlides=[];
 let bannerIndex=0;
 let bannerTimer=null;
-function buildBannerSlides(){
+async function buildBannerSlides(){
   const slides=[];
-  const recent=mostRecentFeatured();
+  const recent=await mostRecentFeaturedAsync();
   if(recent) slides.push(recent);
   const funny=mostFunnyFeatured(7);
   if(funny) slides.push(funny);
@@ -1561,12 +1582,14 @@ function renderBannerSlideContent(idx){
     </div>
   `;
 }
-function commentBannerHTML(){
-  bannerSlides=buildBannerSlides();
-  if(!bannerSlides.length) return '';
+async function loadAndRenderCommentBanner(){
+  const container=document.getElementById('commentBannerContainer');
+  if(!container) return; // navigated away before this resolved
+  bannerSlides=await buildBannerSlides();
+  if(!bannerSlides.length){ container.innerHTML=''; return; }
   bannerIndex=0;
   const multi=bannerSlides.length>1;
-  return `
+  container.innerHTML=`
     <div class="comment-banner-wrap" id="commentBannerWrap">
       ${multi?`<button class="banner-arrow left no-modal-trigger" id="bannerPrevBtn" type="button" aria-label="Předchozí"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></button>`:''}
       <div id="commentBannerSlideHolder">${renderBannerSlideContent(0)}</div>
@@ -1574,6 +1597,7 @@ function commentBannerHTML(){
       ${multi?`<div class="comment-banner-dots" id="commentBannerDots">${bannerSlides.map((_,i)=>`<button class="banner-dot ${i===0?'active':''}" data-idx="${i}" type="button" aria-label="Přejít na ${i+1}. recenzi"></button>`).join('')}</div>`:''}
     </div>
   `;
+  attachCommentBannerEvents();
 }
 function goToBannerSlide(idx){
   if(!bannerSlides.length) return;
@@ -1644,7 +1668,7 @@ function renderHome(){
   const hotShows=DB.show.filter(s=>withinLast6Months(s.date)).sort((a,b)=>scoreSortValue(b)-scoreSortValue(a)).slice(0,10);
   const hotGames=DB.game.filter(g=>withinLast6Months(g.date)).sort((a,b)=>scoreSortValue(b)-scoreSortValue(a)).slice(0,10);
   return `
-    ${commentBannerHTML()}
+    <div id="commentBannerContainer"></div>
     ${hotRowHTML('Top 10 filmů z poslední doby', hotMovies, '#/movies')}
     ${hotRowHTML('Top 10 seriálů z poslední doby', hotShows, '#/shows')}
     ${hotRowHTML('Top 10 her z poslední doby', hotGames, '#/games')}
@@ -2014,16 +2038,25 @@ function attachDetailEvents(type,id){
     }
   }
   if(submitBtn && slider && textarea){
-    submitBtn.addEventListener('click',()=>{
+    submitBtn.addEventListener('click', async ()=>{
       if(myReviewForItem(item)) return; // already has one — composer shouldn't even be showing, but guard anyway
       const wc=wordCount(textarea.value);
       if(wc < REVIEW_MIN_WORDS || wc > REVIEW_MAX_WORDS) return; // guard in case the disabled state was somehow bypassed
+      if(!CURRENT_USER){ openAuthModal('login'); return; }
       const selected=parseInt(slider.value);
       const text=textarea.value.trim();
-      if(!USER_REVIEWS[item.id]) USER_REVIEWS[item.id]=[];
-      USER_REVIEWS[item.id].push({rid:genReviewId(), author:myIdentity(), score:selected, text, createdAt:new Date().toISOString()});
-      saveUserReviews(USER_REVIEWS);
-      route();
+      submitBtn.disabled=true;
+      try{
+        await db.collection('reviews').add({
+          itemId:item.id, itemType:item.type, uid:CURRENT_UID, author:CURRENT_USER,
+          score:selected, text, createdAt:firebase.firestore.FieldValue.serverTimestamp(), editedAt:null,
+        });
+        await loadReviewsForItem(item);
+        route();
+      }catch(e){
+        console.error('Nepodařilo se odeslat recenzi', e);
+        submitBtn.disabled=false;
+      }
     });
   }
 }
@@ -2135,12 +2168,13 @@ function renderPerson(name){
 }
 
 let userProfileCurrent=null;
-function renderUserProfile(username){
+async function renderUserProfile(username){
   userProfileCurrent=username;
-  const agg=userAggregate(username);
+  const entries=await getUserReviewsAsync(username);
+  const agg=userAggregate(entries);
   const cls=scoreClass(agg.avg);
   const isFav=isFavoritedByMe(username);
-  const body=userReviewsPreviewHTML(username);
+  const body=userReviewsPreviewHTML(username, entries);
   return `
     <div class="crumb"><a href="#/">Kritiq</a> / ${esc(username)}</div>
     <div class="profile-card">
@@ -2166,8 +2200,9 @@ function renderUserProfile(username){
     </div>
   `;
 }
-function refreshUserReviews(username){
-  const body=userReviewsPreviewHTML(username);
+async function refreshUserReviews(username){
+  const entries=await getUserReviewsAsync(username);
+  const body=userReviewsPreviewHTML(username, entries);
   document.getElementById('userReviewsList').innerHTML=body.html;
   bindShowAllReviews(username);
 }
@@ -2212,7 +2247,7 @@ function setActiveNav(route){
 let SCROLL_POSITIONS={};
 let lastRouteHash=null;
 
-function route(){
+async function route(){
   if(lastRouteHash!==null){
     SCROLL_POSITIONS[lastRouteHash]=window.scrollY;
   }
@@ -2222,7 +2257,8 @@ function route(){
   setActiveNav(parts[0]||'');
 
   if(parts.length===0){
-    app.innerHTML=renderHome(); attachHotRowEvents(); attachCommentBannerEvents();
+    app.innerHTML=renderHome(); attachHotRowEvents();
+    loadAndRenderCommentBanner(); // fire-and-forget — trending rows shouldn't wait on this
   }else if(parts[0]==='movies'){
     app.innerHTML=renderList('movie'); attachListEvents('movie');
   }else if(parts[0]==='shows'){
@@ -2230,6 +2266,8 @@ function route(){
   }else if(parts[0]==='games'){
     app.innerHTML=renderList('game'); attachListEvents('game');
   }else if(parts[0]==='title' && parts[1] && parts[2]){
+    const item=findItem(parts[1], parts[2]);
+    if(item) await loadReviewsForItem(item);
     app.innerHTML=renderDetail(parts[1],parts[2]); attachDetailEvents(parts[1],parts[2]);
     if(PENDING_REVIEW_TO_OPEN){
       const rid=PENDING_REVIEW_TO_OPEN;
@@ -2239,11 +2277,12 @@ function route(){
   }else if(parts[0]==='person' && parts[1]){
     app.innerHTML=renderPerson(decodeURIComponent(parts[1]));
   }else if(parts[0]==='user' && parts[1]){
-    app.innerHTML=renderUserProfile(decodeURIComponent(parts[1])); attachUserProfileEvents(decodeURIComponent(parts[1]));
+    app.innerHTML=await renderUserProfile(decodeURIComponent(parts[1])); attachUserProfileEvents(decodeURIComponent(parts[1]));
   }else if(parts[0]==='search' && parts[1]){
     app.innerHTML=renderSearch(decodeURIComponent(parts[1]));
   }else{
-    app.innerHTML=renderHome(); attachHotRowEvents(); attachCommentBannerEvents();
+    app.innerHTML=renderHome(); attachHotRowEvents();
+    loadAndRenderCommentBanner();
   }
 
   const saved=SCROLL_POSITIONS[hash];
@@ -2366,7 +2405,7 @@ fbAuth.onAuthStateChanged(async (user)=>{
     CURRENT_USER=nickname;
     pendingFirebaseUser=null;
     renderAuthBadge();
-    if(document.getElementById('reviewModalCard')?.innerHTML.includes('nicknameInput')) popModal();
+    closeAllModals(); // done — whether they came from the login modal, register modal, or nickname picker
   }else{
     // Signed in with Firebase, but no nickname claimed yet (brand-new account) —
     // hold off treating them as logged in until they pick one.
@@ -2492,6 +2531,7 @@ async function handleRegisterSubmit(){
 let nicknameError='';
 function openNicknamePickerModal(){
   nicknameError='';
+  modalStack=[]; // replace whatever auth modal is currently open, don't stack on top of it
   pushModal(renderNicknamePickerModal);
 }
 function renderNicknamePickerModal(){
@@ -2705,8 +2745,8 @@ function openEditConfirmModal(item, newScore, newText){
       </div>`;
     document.getElementById('editConfirmCloseBtn').addEventListener('click', popModal);
     document.getElementById('editConfirmCancelBtn').addEventListener('click', popModal);
-    document.getElementById('editConfirmOkBtn').addEventListener('click', ()=>{
-      updateMyReview(item, newScore, newText);
+    document.getElementById('editConfirmOkBtn').addEventListener('click', async ()=>{
+      await updateMyReview(item, newScore, newText);
       closeAllModals();
       route();
     });
@@ -2726,8 +2766,8 @@ function openDeleteConfirmModal(item){
       </div>`;
     document.getElementById('deleteConfirmCloseBtn').addEventListener('click', popModal);
     document.getElementById('deleteConfirmCancelBtn').addEventListener('click', popModal);
-    document.getElementById('deleteConfirmOkBtn').addEventListener('click', ()=>{
-      deleteMyReview(item);
+    document.getElementById('deleteConfirmOkBtn').addEventListener('click', async ()=>{
+      await deleteMyReview(item);
       closeAllModals();
       route();
     });
@@ -2872,18 +2912,22 @@ function openSummaryModal(item){
 const FAV_PAGE_SIZE=10;
 let favModalState={username:null, page:1};
 function openFavoritesModal(username){
-  favModalState={username, page:1};
+  favModalState={username, page:1, cachedEnriched:null, cachedUsername:null};
   pushModal(renderFavoritesModal);
 }
-function favoritesForUser(username){
+async function favoritesForUser(username){
   const list = username===CURRENT_USER ? loadMyFavorites() : (FAVORITES_SEED[username]||[]);
-  return list.map(u=>({username:u, agg:userAggregate(u)}))
-    .sort((a,b)=>(b.agg.likes+b.agg.funny)-(a.agg.likes+a.agg.funny));
+  const enriched = await Promise.all(list.map(async (u)=>({username:u, agg:userAggregate(await getUserReviewsAsync(u))})));
+  return enriched.sort((a,b)=>(b.agg.likes+b.agg.funny)-(a.agg.likes+a.agg.funny));
 }
-function renderFavoritesModal(){
+async function renderFavoritesModal(){
   const {username, page}=favModalState;
   const card=document.getElementById('reviewModalCard');
-  const enriched=favoritesForUser(username);
+  if(!favModalState.cachedEnriched || favModalState.cachedUsername!==username){
+    favModalState.cachedEnriched=await favoritesForUser(username);
+    favModalState.cachedUsername=username;
+  }
+  const enriched=favModalState.cachedEnriched;
   const shown=enriched.slice(0, page*FAV_PAGE_SIZE);
   const rows=shown.map((e,i)=>`
     <a class="fav-row profile-link" data-username="${esc(e.username)}" href="#/user/${slug(e.username)}">
@@ -2911,13 +2955,14 @@ function openUserModal(username){
   userModalCurrent=username;
   pushModal(renderUserModal);
 }
-function renderUserModal(){
+async function renderUserModal(){
   const username=userModalCurrent;
   const card=document.getElementById('reviewModalCard');
-  const agg=userAggregate(username);
+  const entries=await getUserReviewsAsync(username);
+  const agg=userAggregate(entries);
   const cls=scoreClass(agg.avg);
   const isFav=isFavoritedByMe(username);
-  const body=userReviewsPreviewHTML(username);
+  const body=userReviewsPreviewHTML(username, entries);
   card.className='modal-card';
   card.innerHTML=`
     <div class="modal-head-row">
@@ -3020,29 +3065,6 @@ function initSearchPanel(){
   window._closeSearchPanel=closePanel;
 }
 
-function seedBannerTestReviews(){
-  // TEMP, demo-preview only: gives the comment banner real data to display — a recent
-  // review, one with funny votes, one with likes, all within the last 7 days. Never runs
-  // once real fetched data loads (guarded by the !loadedReal check in init()), so this
-  // has zero effect on the live deployed site.
-  const now=new Date();
-  const daysAgo=(n,h)=> new Date(now.getTime() - n*24*60*60*1000 - (h||0)*60*60*1000).toISOString();
-  function addTestReview(itemId, rid, author, score, text, createdAt){
-    if(!USER_REVIEWS[itemId]) USER_REVIEWS[itemId]=[];
-    if(USER_REVIEWS[itemId].some(r=>r.rid===rid)) return; // already seeded on a previous load — don't duplicate
-    USER_REVIEWS[itemId].push({rid, author, score, text, createdAt});
-  }
-  if(DB.movie[0]) addTestReview(DB.movie[0].id, 'demo-recent', 'FilmovyFanousek', 88,
-    'Naprosto strhující zážitek od začátku do konce, kamera i herecké výkony byly famózní.', daysAgo(0, 1));
-  if(DB.movie[1]) addTestReview(DB.movie[1].id, 'demo-funny', 'KritikSGustem', 62,
-    'Scénárista musel psát tohle po tři panácích, jinak si to fakt neumím vysvětlit.', daysAgo(2));
-  if(DB.show[0]) addTestReview(DB.show[0].id, 'demo-liked', 'SeriálovýMaraton', 91,
-    'Každá epizoda lepší než ta předchozí, konečně seriál co ví, kam směřuje svůj příběh.', daysAgo(4));
-  VOTES['demo-funny']=Object.assign({}, VOTES['demo-funny'], {funny:true});
-  VOTES['demo-liked']=Object.assign({}, VOTES['demo-liked'], {liked:true});
-  saveUserReviews(USER_REVIEWS);
-  saveVotes(VOTES);
-}
 async function init(){
   const loadedReal = await loadRealData();
   if(!loadedReal){
@@ -3051,7 +3073,6 @@ async function init(){
     DB.game=buildGames();
     restoreAddedItems();
     runDailyDrop(); // simulated placeholder content — demo dataset only, never with real fetched data
-    seedBannerTestReviews(); // TEMP: demo-only test reviews so the comment banner has something to show in preview
   }
   computeYearBounds();
 
