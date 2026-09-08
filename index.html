@@ -1149,12 +1149,16 @@ let USER_REVIEWS={};
 function reviewDocToLocal(doc){
   const d=doc.data();
   const toIso=(ts)=> (ts && typeof ts.toDate==='function') ? ts.toDate().toISOString() : (ts||null);
-  return {rid:doc.id, author:d.author, score:d.score, text:d.text, createdAt:toIso(d.createdAt), editedAt:toIso(d.editedAt)};
+  return {
+    rid:doc.id, author:d.author, score:d.score, text:d.text, createdAt:toIso(d.createdAt), editedAt:toIso(d.editedAt),
+    baseLikes:d.likesCount||0, baseDislikes:d.dislikesCount||0, baseFunny:d.funnyCount||0,
+  };
 }
 async function loadReviewsForItem(item){
   try{
     const snap=await db.collection('reviews').where('itemId','==',item.id).get();
     USER_REVIEWS[item.id]=snap.docs.map(reviewDocToLocal);
+    await loadMyVotesForReviews(USER_REVIEWS[item.id].map(r=>r.rid));
   }catch(e){
     console.error('Nepodařilo se načíst recenze pro', item.id, e);
     USER_REVIEWS[item.id]=USER_REVIEWS[item.id]||[];
@@ -1214,28 +1218,58 @@ function saveAddedItems(obj){
   try{ localStorage.setItem('kritiq_added', JSON.stringify(obj)); }catch(e){}
 }
 
-function loadVotes(){
-  try{ return JSON.parse(localStorage.getItem('kritiq_votes')||'{}'); }catch(e){ return {}; }
-}
-function saveVotes(obj){
-  try{ localStorage.setItem('kritiq_votes', JSON.stringify(obj)); }catch(e){}
-}
-let VOTES=loadVotes();
+// Global vote counts now live directly on each review document (likesCount/dislikesCount/
+// funnyCount), kept accurate via a transaction every time someone votes — see toggleVote().
+// MY_VOTES is a separate, much smaller cache: just the CURRENT USER's own vote state per
+// review, fetched alongside whichever reviews are currently on screen (loadReviewsForItem),
+// so the vote buttons can show as already-active correctly.
+let MY_VOTES={};
 function voteCounts(review){
-  const v=VOTES[review.id]||{};
-  return {
-    likes:(review.baseLikes||0)+(v.liked?1:0),
-    dislikes:(review.baseDislikes||0)+(v.disliked?1:0),
-    funny:(review.baseFunny||0)+(v.funny?1:0)
-  };
+  return {likes:review.baseLikes||0, dislikes:review.baseDislikes||0, funny:review.baseFunny||0};
 }
-function toggleVote(reviewId, kind){
-  const v=Object.assign({liked:false,disliked:false,funny:false}, VOTES[reviewId]);
-  if(kind==='like'){ v.liked=!v.liked; if(v.liked) v.disliked=false; }
-  else if(kind==='dislike'){ v.disliked=!v.disliked; if(v.disliked) v.liked=false; }
-  else if(kind==='funny'){ v.funny=!v.funny; }
-  VOTES[reviewId]=v;
-  saveVotes(VOTES);
+async function loadMyVotesForReviews(reviewIds){
+  if(!CURRENT_UID || !reviewIds.length) return;
+  for(let i=0;i<reviewIds.length;i+=30){ // Firestore 'in' queries cap at 30 values
+    const chunk=reviewIds.slice(i,i+30);
+    try{
+      const snap=await db.collection('votes').where('uid','==',CURRENT_UID).where('reviewId','in',chunk).get();
+      snap.docs.forEach(doc=>{ const d=doc.data(); MY_VOTES[d.reviewId]=d; });
+    }catch(e){
+      console.error('Nepodařilo se načíst moje hlasy', e);
+    }
+  }
+}
+async function toggleVote(reviewId, kind){
+  if(!CURRENT_UID){ openAuthModal('login'); return; }
+  const voteRef=db.collection('votes').doc(reviewId+'_'+CURRENT_UID);
+  const reviewRef=db.collection('reviews').doc(reviewId);
+  try{
+    await db.runTransaction(async (tx)=>{
+      const [voteSnap, reviewSnap]=await Promise.all([tx.get(voteRef), tx.get(reviewRef)]);
+      if(!reviewSnap.exists) return; // demo/seed review with no real Firestore doc — nothing to persist
+      const old=voteSnap.exists ? voteSnap.data() : {liked:false, disliked:false, funny:false};
+      const next={liked:old.liked, disliked:old.disliked, funny:old.funny};
+      if(kind==='like'){ next.liked=!next.liked; if(next.liked) next.disliked=false; }
+      else if(kind==='dislike'){ next.disliked=!next.disliked; if(next.disliked) next.liked=false; }
+      else if(kind==='funny'){ next.funny=!next.funny; }
+      tx.set(voteRef, {reviewId, uid:CURRENT_UID, liked:next.liked, disliked:next.disliked, funny:next.funny});
+      tx.update(reviewRef, {
+        likesCount: firebase.firestore.FieldValue.increment((next.liked?1:0)-(old.liked?1:0)),
+        dislikesCount: firebase.firestore.FieldValue.increment((next.disliked?1:0)-(old.disliked?1:0)),
+        funnyCount: firebase.firestore.FieldValue.increment((next.funny?1:0)-(old.funny?1:0)),
+      });
+    });
+  }catch(e){
+    console.error('Nepodařilo se zaznamenat hlas', e);
+  }
+}
+async function clearVotesForReview(rid){
+  try{
+    const snap=await db.collection('votes').where('reviewId','==',rid).get();
+    await Promise.all(snap.docs.map(doc=>doc.ref.delete()));
+  }catch(e){
+    console.error('Nepodařilo se vyčistit hlasy recenze', e);
+  }
 }
 
 function loadMyFavorites(){
@@ -1281,20 +1315,23 @@ async function updateMyReview(item, newScore, newText){
   const idx=list.findIndex(r=>r.author===myIdentity());
   if(idx===-1) return;
   const rid=list[idx].rid;
-  await db.collection('reviews').doc(rid).update({score:newScore, text:newText, editedAt:firebase.firestore.FieldValue.serverTimestamp()});
+  await clearVotesForReview(rid);
+  await db.collection('reviews').doc(rid).update({
+    score:newScore, text:newText, editedAt:firebase.firestore.FieldValue.serverTimestamp(),
+    likesCount:0, dislikesCount:0, funnyCount:0,
+  });
+  delete MY_VOTES[rid];
   await loadReviewsForItem(item);
-  delete VOTES[rid];
-  saveVotes(VOTES);
 }
 async function deleteMyReview(item){
   const list=USER_REVIEWS[item.id]||[];
   const idx=list.findIndex(r=>r.author===myIdentity());
   if(idx===-1) return;
   const rid=list[idx].rid;
+  await clearVotesForReview(rid);
   await db.collection('reviews').doc(rid).delete();
+  delete MY_VOTES[rid];
   await loadReviewsForItem(item);
-  delete VOTES[rid];
-  saveVotes(VOTES);
 }
 function liveScore(item){
   const revs=allReviews(item);
@@ -2050,6 +2087,7 @@ function attachDetailEvents(type,id){
         await db.collection('reviews').add({
           itemId:item.id, itemType:item.type, uid:CURRENT_UID, author:CURRENT_USER,
           score:selected, text, createdAt:firebase.firestore.FieldValue.serverTimestamp(), editedAt:null,
+          likesCount:0, dislikesCount:0, funnyCount:0,
         });
         await loadReviewsForItem(item);
         route();
@@ -2848,7 +2886,7 @@ function openReviewModalById(itemId, reviewId){
 function renderModalCard(item, review){
   const card=document.getElementById('reviewModalCard');
   const c=voteCounts(review);
-  const v=VOTES[review.id]||{};
+  const v=MY_VOTES[review.id]||{};
   const isOwnReview=review.author===myIdentity();
   card.className='modal-card';
   card.innerHTML=`
@@ -2868,9 +2906,12 @@ function renderModalCard(item, review){
   `;
   document.getElementById('reviewModalCloseBtn').addEventListener('click', popModal);
   card.querySelectorAll('.react-btn').forEach(btn=>{
-    btn.addEventListener('click', ()=>{
-      toggleVote(review.id, btn.dataset.kind);
-      renderModalCard(item, review);
+    btn.addEventListener('click', async ()=>{
+      btn.disabled=true;
+      await toggleVote(review.id, btn.dataset.kind);
+      await loadReviewsForItem(item);
+      const freshReview=allReviews(item).find(r=>r.id===review.id) || review;
+      renderModalCard(item, freshReview);
       const list=document.getElementById('reviewsList');
       if(list) list.innerHTML=reviewsListHTML(item);
       const userList=document.getElementById('userReviewsList');
