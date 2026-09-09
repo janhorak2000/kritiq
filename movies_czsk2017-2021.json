@@ -1,5 +1,207 @@
 [
   {
+    "title": "Zpráva",
+    "tmdb_id": 717694,
+    "imdb_id": "tt9415108",
+    "original_language": "sk",
+    "year": 2021,
+    "date": "2021-03-18",
+    "score": 66,
+    "box": 0,
+    "box_currency": "USD",
+    "country": "Česko",
+    "genre": "Drama",
+    "runtime": 95,
+    "poster": "https://image.tmdb.org/t/p/w500/1CvZdyuNJY3nd4h2c98xZpsixmF.jpg",
+    "gallery": [
+      "https://image.tmdb.org/t/p/w500/wklo05ydCD2ZQ8J9o7qcwrFGsLA.jpg"
+    ],
+    "summary": "Příběh dvou mladých slovenských Židů, Alfréda Wetzlera a Rudolfa Vrby, kterým se podařilo utéct z koncentračního tábora Osvětim a sepsat podrobnou zprávu o tom, jak tábor smrti fungoval. Příběh o pekle, které sa tam dělo. Příběh o zprávě, jejíž zveřejnění pomohlo zachránit životy statisíců lidí.",
+    "director": {
+      "name": "Peter Bebjak",
+      "image": "https://image.tmdb.org/t/p/w300/me2NfIz0tcgIA10ydwqrm84t3SL.jpg"
+    },
+    "composer": {
+      "name": "",
+      "image": ""
+    },
+    "writer": {
+      "name": "Josef Pešťák",
+      "image": ""
+    },
+    "actors": [
+      {
+        "name": "Noël Czuczor",
+        "birthday": "1989-03-25",
+        "deathday": null,
+        "age": 37,
+        "image": "https://image.tmdb.org/t/p/w300/oJwaNWq6EJT88rZeos6XXY2L1Lk.jpg"
+      },
+      {
+        "name": "Peter Ondrejička",
+        "birthday": "1994-04-25",
+        "deathday": null,
+        "age": 32,
+        "image": "https://image.tmdb.org/t/p/w300/sPSzIY1HzkqXJSvlaQrLBKesIUs.jpg"
+      },
+      {
+        "name": "John Hannah",
+        "birthday": "1962-04-23",
+        "deathday": null,
+        "age": 64,
+        "image": "https://image.tmdb.org/t/p/w300/8GzJhaZrChZpv84SU4vAsvsR3cl.jpg"
+      },
+      {
+        "name": "Wojciech Mecwaldowski",
+        "birthday": "1980-04-05",
+        "deathday": null,
+        "age": 46,
+        "image": "https://image.tmdb.org/t/p/w300/xJwxAP7z3rtU2BVhjRt3aHpKuyC.jpg"
+      },
+      {
+        "name": "Jacek Beler",
+        "birthday": "1983-01-01",
+        "deathday": null,
+        "age": 43,
+        "image": "https://image.tmdb.org/t/p/w300/rKGVdNT83XNUNg4r28AMFnk5H4k.jpg"
+      },
+      {
+        "name": "Jan Nedbal",
+        "birthday": "1990-09-26",
+        "deathday": null,
+        "age": 35,
+        "image": "https://image.tmdb.org/t/p/w300/zgKwHRXhGbyuOiM8CAgyzowdHSP.jpg"
+      },
+      {
+        "name": "Michal Režný",
+        "birthday": "1985-06-20",
+        "deathday": null,
+        "age": 41,
+        "image": "https://image.tmdb.org/t/p/w300/7UDYjJMtw1hYzgqGH9SRwD15A1B.jpg"
+      },
+      {
+        "name": "Kamil Nożyński",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/i4UgQmwPuqeA02om21Lp4LpcgY4.jpg"
+      },
+      {
+        "name": "Aleksander Mincer",
+        "birthday": "1957-06-04",
+        "deathday": null,
+        "age": 69,
+        "image": "https://image.tmdb.org/t/p/w300/8mYowzMiu7PqE6QiXX0iSFn1RnL.jpg"
+      },
+      {
+        "name": "Ksawery Szlenkier",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/dKhu4JQTyDu51aaOTEOeDdBn1lD.jpg"
+      },
+      {
+        "name": "Christoph Bach",
+        "birthday": "1975-01-01",
+        "deathday": null,
+        "age": 51,
+        "image": "https://image.tmdb.org/t/p/w300/DjyM6g981W3qiHQZl4PUvjM2OJ.jpg"
+      },
+      {
+        "name": "Florian Panzner",
+        "birthday": "1976-07-20",
+        "deathday": null,
+        "age": 50,
+        "image": "https://image.tmdb.org/t/p/w300/6hltmMrlXbAvcIgtirg1VNqnmzJ.jpg"
+      },
+      {
+        "name": "Lars Rudolph",
+        "birthday": "1966-08-18",
+        "deathday": null,
+        "age": 60,
+        "image": "https://image.tmdb.org/t/p/w300/1C1tHlJpvWmyfnfqjpi5tHDs4jn.jpg"
+      },
+      {
+        "name": "Justyna Wasilewska",
+        "birthday": "1985-11-28",
+        "deathday": null,
+        "age": 40,
+        "image": "https://image.tmdb.org/t/p/w300/ctQfREYuA2NHiiFfxI8NjNm8Afj.jpg"
+      },
+      {
+        "name": "Łukasz Garlicki",
+        "birthday": "1977-08-05",
+        "deathday": null,
+        "age": 49,
+        "image": "https://image.tmdb.org/t/p/w300/hAHcxmsWcchv966ZqgE3HpEiyPN.jpg"
+      },
+      {
+        "name": "Lucia Jašková",
+        "birthday": "1978-05-17",
+        "deathday": null,
+        "age": 48,
+        "image": "https://image.tmdb.org/t/p/w300/1DaEWshnKY0B0nkj0DLYXSTsvf0.jpg"
+      },
+      {
+        "name": "Ondřej Malý",
+        "birthday": "1966-01-19",
+        "deathday": null,
+        "age": 60,
+        "image": "https://image.tmdb.org/t/p/w300/3da0gaKcJhxVf05Lc6bRjnXvvaT.jpg"
+      },
+      {
+        "name": "Martin Nahálka",
+        "birthday": "1980-05-19",
+        "deathday": null,
+        "age": 46,
+        "image": "https://image.tmdb.org/t/p/w300/jymTrLuNRuRVAYn67lRA2BMDU4f.jpg"
+      },
+      {
+        "name": "Tomáš Mischura",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/y3tOMdlv3MY89rYWhlWlZT1bGtt.jpg"
+      },
+      {
+        "name": "Anton Šulík ml.",
+        "birthday": "1964-07-12",
+        "deathday": null,
+        "age": 62,
+        "image": "https://image.tmdb.org/t/p/w300/1k4TIghSECcrvcO96vQsKMvIEJC.jpg"
+      },
+      {
+        "name": "Rebeka Poláková",
+        "birthday": "1986-01-10",
+        "deathday": null,
+        "age": 40,
+        "image": "https://image.tmdb.org/t/p/w300/o25QzJePNQ8LbrJe9ETbKIp93r1.jpg"
+      },
+      {
+        "name": "Kamil Polnisiak",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "name": "Sergej Sanža",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/t4fHed1pRUAnU8wCLDgEuMSVCg4.jpg"
+      },
+      {
+        "name": "David Zimmerschied",
+        "birthday": "1983-11-15",
+        "deathday": null,
+        "age": 42,
+        "image": "https://image.tmdb.org/t/p/w300/zvNZBqjhsO5GtSI03qiM88FCTJO.jpg"
+      }
+    ],
+    "reviews": []
+  },
+  {
     "title": "Známí neznámí",
     "tmdb_id": 727182,
     "imdb_id": "tt12852078",
@@ -210,7 +412,7 @@
       "image": ""
     },
     "writer": {
-      "name": "Miro Remo",
+      "name": "Juraj Šlauka",
       "image": ""
     },
     "actors": [],
@@ -1347,7 +1549,7 @@
     "gallery": [],
     "summary": "",
     "director": {
-      "name": "Peter Kováč",
+      "name": "Marek Janičík",
       "image": ""
     },
     "composer": {
@@ -1449,7 +1651,7 @@
       "image": ""
     },
     "writer": {
-      "name": "Vladimír Sendrei",
+      "name": "Michal Romeo Dvořák",
       "image": ""
     },
     "actors": [
@@ -2932,16 +3134,16 @@
     ],
     "summary": "Zemičku kdesi pod horami ovládají vysoce postavení zločinci, lidé propojení s politikou, mafií, ale i s policií, soudy a velkými kšefty. Závislá teenagerka zmizí z resocializačního centra, nikomu ale nechybí. O nuceném sexu a drogách chce vypovídat na policii, ale pošlou ji pryč. Vyhledá novináře, který se pustí do rozplétání neuvěřitelné chobotnice zločinu, mafie, vydírání. Jenže může pravda přežít mezi lidmi, kterým jde o prachy a moc? Nebo se Bůh peněz neštítí ani vraždit?",
     "director": {
-      "name": "Mariana Čengel Solčanská",
-      "image": ""
+      "name": "Rudolf Biermann",
+      "image": "https://image.tmdb.org/t/p/w300/ptAsm4SO6HaKgogJ2sL5KiCGTPJ.jpg"
     },
     "composer": {
       "name": "",
       "image": ""
     },
     "writer": {
-      "name": "Rudolf Biermann",
-      "image": "https://image.tmdb.org/t/p/w300/ptAsm4SO6HaKgogJ2sL5KiCGTPJ.jpg"
+      "name": "Mariana Čengel Solčanská",
+      "image": ""
     },
     "actors": [
       {
@@ -3142,7 +3344,7 @@
       "image": ""
     },
     "writer": {
-      "name": "Eva Urbaníková",
+      "name": "Marta Ferencová",
       "image": ""
     },
     "actors": [
@@ -3281,7 +3483,7 @@
       "image": ""
     },
     "writer": {
-      "name": "Honza Vedral",
+      "name": "Šimon Šafránek",
       "image": ""
     },
     "actors": [
@@ -3705,7 +3907,7 @@
       "image": ""
     },
     "writer": {
-      "name": "Michal Pusztay",
+      "name": "Ján Sebechlebský",
       "image": ""
     },
     "actors": [
@@ -4782,7 +4984,7 @@
     "gallery": [],
     "summary": "",
     "director": {
-      "name": "Michal Procházka",
+      "name": "Peter Vereš",
       "image": ""
     },
     "composer": {
@@ -4821,7 +5023,7 @@
     "gallery": [],
     "summary": "",
     "director": {
-      "name": "Tomáš Davidov",
+      "name": "Dušan Davidov",
       "image": ""
     },
     "composer": {
@@ -4976,7 +5178,7 @@
     "gallery": [],
     "summary": "",
     "director": {
-      "name": "Jozef Banyák",
+      "name": "Ondrej Šoth",
       "image": ""
     },
     "composer": {
@@ -4984,7 +5186,7 @@
       "image": ""
     },
     "writer": {
-      "name": "Ondrej Šoth",
+      "name": "Zuzana Mistríková",
       "image": ""
     },
     "actors": [
@@ -5248,7 +5450,7 @@
       "image": ""
     },
     "writer": {
-      "name": "Pavel Smejkal",
+      "name": "Jakub Julény",
       "image": ""
     },
     "actors": [
@@ -5996,7 +6198,7 @@
     ],
     "summary": "Během prací na posledním celovečerním filmu surrealistického tvůrce Jana Švankmajera Hmyz, na němž se Jan Daňhel podílel jako střihač a Adam Oľha jako kameraman, byli osloveni filmovým producentem Jaromírem Kallistou a režisérem Janem Švankmajerem, aby se skrze dokumentární film pokusili odhalit a zakonzervovat tvořivé procesy, kvasící v útrobách jejich filmové společnosti Athanor.\r V Athanoru – středověké alchymické peci – však spolu soupeří tři principy: Rtuť, Síra a Sůl. Tím třetím je v tomto případě Švankmajerova osudová žena a mimořádná spolupracovnice Eva Švankmajerová, s níž prožil 45 let společného života, bytost, která, ačkoli zemřela v roce 2005, působí dodnes jako trvalé a vše prostupující hermeticky neoddělitelné agens. Bez její kritické intuice a k permanentnímu osvobozování neustále vybízejícího ducha by Švankmajerova tvorba nebyla kompletní a byla by zcela nepochybně jiná.",
     "director": {
-      "name": "Jan Daňhel",
+      "name": "Adam Oľha",
       "image": ""
     },
     "composer": {
@@ -6609,7 +6811,7 @@
       "image": "https://image.tmdb.org/t/p/w300/cHu2UwEIysP2Y6aguZSZsa13dD4.jpg"
     },
     "writer": {
-      "name": "Teodor Kuhn",
+      "name": "Jakub Medvecký",
       "image": ""
     },
     "actors": [
@@ -7096,11 +7298,11 @@
       "image": "https://image.tmdb.org/t/p/w300/tG2bnKqdWSJHbLNFNo8B7NULkCQ.jpg"
     },
     "composer": {
-      "name": "Jozef Lupták",
+      "name": "Matúš Široký",
       "image": ""
     },
     "writer": {
-      "name": "Maroš Hečko",
+      "name": "Marek Janičík",
       "image": ""
     },
     "actors": [
@@ -7689,7 +7891,7 @@
       "image": ""
     },
     "writer": {
-      "name": "Peter Himič",
+      "name": "Ján S. Sabol",
       "image": ""
     },
     "actors": [
@@ -8186,7 +8388,7 @@
       "image": ""
     },
     "writer": {
-      "name": "Elena Dzurňáková",
+      "name": "Martin Dzurňák",
       "image": ""
     },
     "actors": [],
@@ -9221,8 +9423,8 @@
       "image": ""
     },
     "writer": {
-      "name": "Anna Fifiková",
-      "image": ""
+      "name": "Andrej Kolenčík",
+      "image": "https://image.tmdb.org/t/p/w300/3l1OjRrO561nmqedWG4w2sN8m5h.jpg"
     },
     "actors": [
       {
@@ -9390,8 +9592,8 @@
       "image": ""
     },
     "writer": {
-      "name": "Katarína Moláková",
-      "image": ""
+      "name": "Joanna Kozuch",
+      "image": "https://image.tmdb.org/t/p/w300/zRiQWa3FWzMbuExElqw6Cjl2WRe.jpg"
     },
     "actors": [],
     "reviews": []
@@ -10318,7 +10520,7 @@
       "image": ""
     },
     "writer": {
-      "name": "Marian Puobiš",
+      "name": "Richard Pupala",
       "image": ""
     },
     "actors": [
@@ -11514,7 +11716,7 @@
       "image": "https://image.tmdb.org/t/p/w300/aPLBmaLbA3fHBgPTqLXycRr9Qp2.jpg"
     },
     "writer": {
-      "name": "Patrik Lančarič",
+      "name": "Maroš Šlapeta",
       "image": ""
     },
     "actors": [
@@ -12085,7 +12287,7 @@
     "gallery": [],
     "summary": "",
     "director": {
-      "name": "Peter Hudák",
+      "name": "Vladimír Kyseľ",
       "image": ""
     },
     "composer": {
@@ -13079,7 +13281,7 @@
       "image": ""
     },
     "writer": {
-      "name": "Braňo Molnár",
+      "name": "Tomáš Pašteka",
       "image": ""
     },
     "actors": [
@@ -13186,7 +13388,7 @@
     "gallery": [],
     "summary": "",
     "director": {
-      "name": "Vladimír Kriško",
+      "name": "Matyas Brych",
       "image": ""
     },
     "composer": {
@@ -13217,7 +13419,7 @@
     "gallery": [],
     "summary": "",
     "director": {
-      "name": "Palo Kadlečík",
+      "name": "Martin Šenc",
       "image": ""
     },
     "composer": {
@@ -13477,6 +13679,389 @@
       "image": ""
     },
     "actors": [],
+    "reviews": []
+  },
+  {
+    "title": "Špína",
+    "tmdb_id": 434847,
+    "imdb_id": "tt6417014",
+    "original_language": "sk",
+    "year": 2017,
+    "date": "2017-04-20",
+    "score": 65,
+    "box": null,
+    "box_currency": null,
+    "country": "Česko",
+    "genre": "Drama",
+    "runtime": 87,
+    "poster": "https://image.tmdb.org/t/p/w500/7kAKvbCRlYVtwmP7FDoj6FDoMvp.jpg",
+    "gallery": [
+      "https://image.tmdb.org/t/p/w500/mjXeEofKhZOKyYw24js9jq0umi0.jpg"
+    ],
+    "summary": "Lena je sedmnáctiletá holka z obyčejné rodiny. První zamilování, tajné noční dobrodružství, magická rána nad Dunajem... Její svět plný snů a touhy rozbije znásilnění. Je to jako špína, která se nedá smýt. Lena si musí projít cestou, která už není jenom obyčejným dospíváním, ale spíš bojem se sebe samou. Okolí ji nechápe a už nikdy úplně nepochopí. Je to Lena, kdo se musí změnit, dospět a pochopit, že není obětí a trest si nezaslouží ona, ale ten, kdo jí to udělal.",
+    "director": {
+      "name": "Tereza Nvotová",
+      "image": "https://image.tmdb.org/t/p/w300/wOJqmomuyc3IYfZ5XO1DfHJhCzV.jpg"
+    },
+    "composer": {
+      "name": "Pjoni",
+      "image": ""
+    },
+    "writer": {
+      "name": "Barbora Námerová",
+      "image": ""
+    },
+    "actors": [
+      {
+        "name": "Dominika Morávková-Zeleníková",
+        "birthday": "1990-07-04",
+        "deathday": null,
+        "age": 36,
+        "image": "https://image.tmdb.org/t/p/w300/7JQVJBfY2X8pOqgZebpna1CTnaf.jpg"
+      },
+      {
+        "name": "Anna Jakab Rakovská",
+        "birthday": "1993-06-04",
+        "deathday": null,
+        "age": 33,
+        "image": "https://image.tmdb.org/t/p/w300/6Zzt4hqrhcBArkrCYHvowgW2wEr.jpg"
+      },
+      {
+        "name": "Róbert Jakab",
+        "birthday": "1976-07-23",
+        "deathday": null,
+        "age": 50,
+        "image": "https://image.tmdb.org/t/p/w300/kWZ61YY5YJOuDSLA1TTBDUjVluU.jpg"
+      },
+      {
+        "name": "Anna Šišková",
+        "birthday": "1960-06-30",
+        "deathday": null,
+        "age": 66,
+        "image": "https://image.tmdb.org/t/p/w300/xr1uX2tJylkogHcZPq2IPbwh9Lk.jpg"
+      },
+      {
+        "name": "Luboš Veselý",
+        "birthday": "1961-10-30",
+        "deathday": null,
+        "age": 64,
+        "image": "https://image.tmdb.org/t/p/w300/1m7LeKzTUfeihws8QaJCSqJjk9F.jpg"
+      },
+      {
+        "name": "Patrik Holubář",
+        "birthday": "1990-08-02",
+        "deathday": null,
+        "age": 36,
+        "image": "https://image.tmdb.org/t/p/w300/tU9zsL6owi2ErywnmfKNnSxi7Km.jpg"
+      },
+      {
+        "name": "Juliána Brutovská",
+        "birthday": "1991-10-19",
+        "deathday": null,
+        "age": 34,
+        "image": "https://image.tmdb.org/t/p/w300/7xxIUFlNp8ibJ7LoqErHgK3L6dG.jpg"
+      },
+      {
+        "name": "Monika Potokárová",
+        "birthday": "1992-06-30",
+        "deathday": "2019-11-25",
+        "age": 27,
+        "image": "https://image.tmdb.org/t/p/w300/lZKawkCHL6IAIeqNGxQxfsdgPHN.jpg"
+      },
+      {
+        "name": "Ela Lehotská",
+        "birthday": "1973-07-17",
+        "deathday": null,
+        "age": 53,
+        "image": "https://image.tmdb.org/t/p/w300/6ZoCVCMlqyjVtjvLldDIlIaXStW.jpg"
+      },
+      {
+        "name": "Tibor Halada",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "name": "Peter Badač",
+        "birthday": "1986-06-22",
+        "deathday": null,
+        "age": 40,
+        "image": ""
+      },
+      {
+        "name": "Katarína Čellárová",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      }
+    ],
+    "reviews": []
+  },
+  {
+    "title": "Čára",
+    "tmdb_id": 463983,
+    "imdb_id": "tt6134000",
+    "original_language": "sk",
+    "year": 2017,
+    "date": "2017-08-03",
+    "score": 66,
+    "box": null,
+    "box_currency": null,
+    "country": "Slovensko",
+    "genre": "Krimi",
+    "runtime": 108,
+    "poster": "https://image.tmdb.org/t/p/w500/iZTHWClzmoK57tmL6HIm4DscOid.jpg",
+    "gallery": [
+      "https://image.tmdb.org/t/p/w500/6qaiUSBEZTbBzJb8HUuo2BuBAAh.jpg"
+    ],
+    "summary": "Adam Krajňák je otcem rodiny a zároveň také hlavou pohraniční kriminální skupiny, která pašuje přes slovensko-ukrajinskou hranici cigarety. V tomto okruhu nejbližších zastává nenahraditelnou roli starajícího se důvěrníka, ale také zásadového a nekompromisního vůdce, jemuž v rozhodujících okamžicích nechybí sebevědomí a temperament. Klidný souběh obou prolínajících se světů se však se vzrůstající nervozitou, obklopující nejistou budoucnost s nově budovanou hranicí schengenského prostoru, začíná pomalu otřásat. A když pak jedna z pašeráckých dodávek ztroskotá, spustí se nezastavitelná lavina konsekvencí, během níž bude muset Krajňák zpochybnit své vlastní mezníky, které dosud nechtěl překročit.",
+    "director": {
+      "name": "Peter Bebjak",
+      "image": "https://image.tmdb.org/t/p/w300/me2NfIz0tcgIA10ydwqrm84t3SL.jpg"
+    },
+    "composer": {
+      "name": "Slavo Solovic",
+      "image": "https://image.tmdb.org/t/p/w300/wheW9esYMOXoBXuHpKdPkXldxge.jpg"
+    },
+    "writer": {
+      "name": "Peter Balko",
+      "image": ""
+    },
+    "actors": [
+      {
+        "name": "Tomáš Maštalír",
+        "birthday": "1977-09-04",
+        "deathday": null,
+        "age": 49,
+        "image": "https://image.tmdb.org/t/p/w300/z8OFgP2TMhEKRGyEsb10c14ZHsH.jpg"
+      },
+      {
+        "name": "Emília Vášáryová",
+        "birthday": "1942-05-18",
+        "deathday": null,
+        "age": 84,
+        "image": "https://image.tmdb.org/t/p/w300/zv04vLQM3cESlq5Se2nONycVsXa.jpg"
+      },
+      {
+        "name": "Jevgenij Libezňuk",
+        "birthday": "1961-10-31",
+        "deathday": null,
+        "age": 64,
+        "image": "https://image.tmdb.org/t/p/w300/iD52NLDIdcl24NTMYaomhSrAGmP.jpg"
+      },
+      {
+        "name": "Andrej Hryc",
+        "birthday": "1949-11-30",
+        "deathday": "2021-01-31",
+        "age": 71,
+        "image": "https://image.tmdb.org/t/p/w300/uPo0FEByqyAIoxbZ3CjTmSqrBch.jpg"
+      },
+      {
+        "name": "Zuzana Fialová",
+        "birthday": "1974-05-17",
+        "deathday": null,
+        "age": 52,
+        "image": "https://image.tmdb.org/t/p/w300/tSqCVm10CdRS7e1oZDQErlmNihc.jpg"
+      },
+      {
+        "name": "Stanislav Boklan",
+        "birthday": "1960-01-12",
+        "deathday": null,
+        "age": 66,
+        "image": "https://image.tmdb.org/t/p/w300/uQxop2Sp0V5B1i1aLFw5NTxgWWt.jpg"
+      },
+      {
+        "name": "Oleksandr Piskunov",
+        "birthday": "1991-12-31",
+        "deathday": null,
+        "age": 34,
+        "image": "https://image.tmdb.org/t/p/w300/qr5J2lgULRywsG2dgnTAJwwZFfs.jpg"
+      },
+      {
+        "name": "Rimma Zyubina",
+        "birthday": "1971-08-23",
+        "deathday": null,
+        "age": 55,
+        "image": "https://image.tmdb.org/t/p/w300/guNILmLr65ZObrkWA7Q18rAbN9U.jpg"
+      },
+      {
+        "name": "Kristína Kanátová",
+        "birthday": "1992-04-22",
+        "deathday": null,
+        "age": 34,
+        "image": "https://image.tmdb.org/t/p/w300/p1bcRTN4xUuVZgCK8Ukz91qczmR.jpg"
+      },
+      {
+        "name": "Vanessa Antovská",
+        "birthday": "2003-09-13",
+        "deathday": null,
+        "age": 22,
+        "image": "https://image.tmdb.org/t/p/w300/40twqr2QUbx6djvOgrBnjIvWsUg.jpg"
+      },
+      {
+        "name": "Nela Porkertová",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "name": "Milan Mikulčík",
+        "birthday": "1973-06-10",
+        "deathday": null,
+        "age": 53,
+        "image": "https://image.tmdb.org/t/p/w300/i5hFLkyzZ4JBIfviU26J9jzYOM5.jpg"
+      },
+      {
+        "name": "Filip Kaňkovský",
+        "birthday": "1985-05-01",
+        "deathday": null,
+        "age": 41,
+        "image": "https://image.tmdb.org/t/p/w300/4iAijM0ddvJuVoQsfo79c2U9ZHG.jpg"
+      },
+      {
+        "name": "Volodomir Helias",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "name": "Lyudmila Nikonchuk",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "name": "Erik Ollé",
+        "birthday": "1975-08-09",
+        "deathday": null,
+        "age": 51,
+        "image": "https://image.tmdb.org/t/p/w300/pd9znkSk6TKkLuubBZg6DCWfhiS.jpg"
+      },
+      {
+        "name": "Gejza Benkő",
+        "birthday": "1969-10-28",
+        "deathday": "2017-11-19",
+        "age": 48,
+        "image": "https://image.tmdb.org/t/p/w300/jzyi38h94aq34i0ONBywSKPr4tC.jpg"
+      },
+      {
+        "name": "Peter Havasi",
+        "birthday": "1987-02-12",
+        "deathday": null,
+        "age": 39,
+        "image": ""
+      },
+      {
+        "name": "Makar Tykhomyrov",
+        "birthday": "1997-01-06",
+        "deathday": null,
+        "age": 29,
+        "image": "https://image.tmdb.org/t/p/w300/2V6RnwjfQ2xlVF7CBl9QajPy7xk.jpg"
+      },
+      {
+        "name": "Veronika Strapková",
+        "birthday": "1990-06-11",
+        "deathday": null,
+        "age": 36,
+        "image": "https://image.tmdb.org/t/p/w300/iT9yz899PdSmbmxuvDobMSJkvG1.jpg"
+      },
+      {
+        "name": "Michal Kozelský",
+        "birthday": "2000-03-12",
+        "deathday": null,
+        "age": 26,
+        "image": ""
+      },
+      {
+        "name": "Martin Šalacha",
+        "birthday": "1984-11-09",
+        "deathday": null,
+        "age": 41,
+        "image": "https://image.tmdb.org/t/p/w300/gBhwVLRk4PMKV1vCimAG6Jo7X4o.jpg"
+      },
+      {
+        "name": "Tomáš Turek",
+        "birthday": "1961-08-30",
+        "deathday": null,
+        "age": 65,
+        "image": "https://image.tmdb.org/t/p/w300/u0xWWGv115X7jjoIgtPyDD5GBt9.jpg"
+      },
+      {
+        "name": "Anton Šulík ml.",
+        "birthday": "1964-07-12",
+        "deathday": null,
+        "age": 62,
+        "image": "https://image.tmdb.org/t/p/w300/1k4TIghSECcrvcO96vQsKMvIEJC.jpg"
+      },
+      {
+        "name": "Michael Vrzala",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/9FYScueWCKur1uR8nHYCFkDxr3K.jpg"
+      },
+      {
+        "name": "Juraj Vodila",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "name": "Pavel Avilov",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "name": "Vasiľ Rusiňák",
+        "birthday": "1953-08-14",
+        "deathday": null,
+        "age": 73,
+        "image": "https://image.tmdb.org/t/p/w300/eerLEBeBbXW3vAmEKsexxD3t6oS.jpg"
+      },
+      {
+        "name": "Igor Latta",
+        "birthday": "1947-03-02",
+        "deathday": null,
+        "age": 79,
+        "image": ""
+      },
+      {
+        "name": "Natalia Korbová",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "name": "Vlado Čema",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/aMQiI8SkHq09PRT9q1H7OQBFWgu.jpg"
+      },
+      {
+        "name": "Vasyl Vasylyk",
+        "birthday": "1986-10-18",
+        "deathday": null,
+        "age": 39,
+        "image": "https://image.tmdb.org/t/p/w300/w4vApe6l8ej0fsQ1sVke0P74F4U.jpg"
+      },
+      {
+        "name": "Monika Doricová",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      }
+    ],
     "reviews": []
   },
   {
@@ -13827,8 +14412,8 @@
       "image": ""
     },
     "writer": {
-      "name": "Juraj Brocko",
-      "image": ""
+      "name": "Petra Polnišová",
+      "image": "https://image.tmdb.org/t/p/w300/eCcveJ9DV7cKYN3YR913BcQDiNh.jpg"
     },
     "actors": [
       {
@@ -13938,8 +14523,8 @@
       "image": ""
     },
     "writer": {
-      "name": "Marek Leščák",
-      "image": "https://image.tmdb.org/t/p/w300/amdHqGvHDUKSsBl0rVscGR1RaHi.jpg"
+      "name": "Juraj Lehotský",
+      "image": ""
     },
     "actors": [
       {
@@ -14083,8 +14668,8 @@
       "image": ""
     },
     "writer": {
-      "name": "Tereza Nvotová",
-      "image": "https://image.tmdb.org/t/p/w300/wOJqmomuyc3IYfZ5XO1DfHJhCzV.jpg"
+      "name": "Josef Krajbich",
+      "image": ""
     },
     "actors": [
       {
@@ -14680,7 +15265,7 @@
     "gallery": [],
     "summary": "",
     "director": {
-      "name": "Silvia Košťová",
+      "name": "Milan Rezníček",
       "image": ""
     },
     "composer": {
@@ -14946,7 +15531,7 @@
     "gallery": [],
     "summary": "",
     "director": {
-      "name": "Peter Hudák",
+      "name": "Roman Kulhánek",
       "image": ""
     },
     "composer": {
@@ -14992,7 +15577,7 @@
     "gallery": [],
     "summary": "",
     "director": {
-      "name": "Mariana Luteránová",
+      "name": "Ján Luterán",
       "image": ""
     },
     "composer": {
@@ -15223,7 +15808,7 @@
       "image": ""
     },
     "writer": {
-      "name": "Lucia Škapcová",
+      "name": "Zora Hudíková",
       "image": ""
     },
     "actors": [
