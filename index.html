@@ -1571,7 +1571,7 @@ async function mostRecentFeaturedAsync(){
     const d=doc.data();
     const item=findItem(d.itemType, d.itemId);
     if(!item) return null;
-    const review=Object.assign(reviewDocToLocal(doc), {baseLikes:0, baseDislikes:0, baseFunny:0, isUser:true});
+    const review=Object.assign(reviewDocToLocal(doc), {id:doc.id, baseLikes:0, baseDislikes:0, baseFunny:0, isUser:true});
     return {label:'Nejnovější recenze', review, item, type:d.itemType};
   }catch(e){
     console.error('Nepodařilo se načíst nejnovější recenzi', e);
@@ -1622,19 +1622,24 @@ function renderBannerSlideContent(idx){
 async function loadAndRenderCommentBanner(){
   const container=document.getElementById('commentBannerContainer');
   if(!container) return; // navigated away before this resolved
-  bannerSlides=await buildBannerSlides();
-  if(!bannerSlides.length){ container.innerHTML=''; return; }
-  bannerIndex=0;
-  const multi=bannerSlides.length>1;
-  container.innerHTML=`
-    <div class="comment-banner-wrap" id="commentBannerWrap">
-      ${multi?`<button class="banner-arrow left no-modal-trigger" id="bannerPrevBtn" type="button" aria-label="Předchozí"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></button>`:''}
-      <div id="commentBannerSlideHolder">${renderBannerSlideContent(0)}</div>
-      ${multi?`<button class="banner-arrow right no-modal-trigger" id="bannerNextBtn" type="button" aria-label="Další"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button>`:''}
-      ${multi?`<div class="comment-banner-dots" id="commentBannerDots">${bannerSlides.map((_,i)=>`<button class="banner-dot ${i===0?'active':''}" data-idx="${i}" type="button" aria-label="Přejít na ${i+1}. recenzi"></button>`).join('')}</div>`:''}
-    </div>
-  `;
-  attachCommentBannerEvents();
+  try{
+    bannerSlides=await buildBannerSlides();
+    if(!bannerSlides.length){ container.innerHTML=''; return; }
+    bannerIndex=0;
+    const multi=bannerSlides.length>1;
+    container.innerHTML=`
+      <div class="comment-banner-wrap" id="commentBannerWrap">
+        ${multi?`<button class="banner-arrow left no-modal-trigger" id="bannerPrevBtn" type="button" aria-label="Předchozí"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></button>`:''}
+        <div id="commentBannerSlideHolder">${renderBannerSlideContent(0)}</div>
+        ${multi?`<button class="banner-arrow right no-modal-trigger" id="bannerNextBtn" type="button" aria-label="Další"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button>`:''}
+        ${multi?`<div class="comment-banner-dots" id="commentBannerDots">${bannerSlides.map((_,i)=>`<button class="banner-dot ${i===0?'active':''}" data-idx="${i}" type="button" aria-label="Přejít na ${i+1}. recenzi"></button>`).join('')}</div>`:''}
+      </div>
+    `;
+    attachCommentBannerEvents();
+  }catch(e){
+    console.error('Nepodařilo se zobrazit banner s recenzemi', e);
+    container.innerHTML='';
+  }
 }
 function goToBannerSlide(idx){
   if(!bannerSlides.length) return;
