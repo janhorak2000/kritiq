@@ -1019,29 +1019,6 @@ function avatarStyle(name){
   const h=hashStr(name);
   return `background:linear-gradient(135deg, hsl(${h%360} 60% 45%), hsl(${(h+70)%360} 65% 30%));`;
 }
-/* Prefers an uploaded profile photo (see loadAvatars, defined in the AUTH section below)
-   over the generated gradient+initial placeholder. */
-function avatarButtonStyle(username){
-  const av=(typeof loadAvatars==='function' ? loadAvatars() : {})[username];
-  return av ? '' : avatarStyle(username);
-}
-function avatarButtonInner(username){
-  const av=(typeof loadAvatars==='function' ? loadAvatars() : {})[username];
-  return av ? `<img src="${av}" alt="" class="avatar-photo">` : esc(username.charAt(0));
-}
-
-/* deterministic synthetic "who favorites whom" graph among the demo reviewer pool */
-const FAVORITES_SEED={};
-REVIEW_AUTHORS.forEach(author=>{
-  const n=2+(hashStr(author+'favn')%5);
-  const list=[];
-  for(let k=0;k<n;k++){
-    const candidate=REVIEW_AUTHORS[hashStr(author+'fav'+k)%REVIEW_AUTHORS.length];
-    if(candidate!==author && !list.includes(candidate)) list.push(candidate);
-  }
-  FAVORITES_SEED[author]=list;
-});
-function favBaseCount(username){ return hashStr(username+'favcount')%45; }
 
 function seedReviews(id, base){
   const arr=[]; const n=2+(hashStr(id)%3);
@@ -1181,34 +1158,31 @@ async function getUserReviewsAsync(username){
   return out.reverse();
 }
 
-function loadTop10(){
-  try{ return JSON.parse(localStorage.getItem('kritiq_top10')||'{}'); }catch(e){ return {}; }
+function top10DocId(username, type){ return username+'_'+type; }
+async function getTop10For(username, type){
+  try{
+    const doc=await db.collection('top10').doc(top10DocId(username, type)).get();
+    return doc.exists ? (doc.data().slots || {}) : {};
+  }catch(e){
+    console.error('Nepodařilo se načíst Top 10', e);
+    return {};
+  }
 }
-function saveTop10(obj){
-  try{ localStorage.setItem('kritiq_top10', JSON.stringify(obj)); }catch(e){}
-}
-let TOP10=loadTop10();
-function getTop10For(username, type){
-  return (TOP10[username] && TOP10[username][type]) || {};
-}
-function findMyTop10Position(username, type, itemId){
-  const list=getTop10For(username, type);
+async function findMyTop10Position(username, type, itemId){
+  const list=await getTop10For(username, type);
   const found=Object.entries(list).find(([pos,id])=>id===itemId);
   return found ? parseInt(found[0]) : null;
 }
-function setTop10Slot(username, type, position, itemId){
-  if(!TOP10[username]) TOP10[username]={};
-  if(!TOP10[username][type]) TOP10[username][type]={};
-  const list=TOP10[username][type];
+async function setTop10Slot(username, type, position, itemId){
+  const list=await getTop10For(username, type); // fetch fresh, so we never overwrite based on stale data
   Object.keys(list).forEach(pos=>{ if(list[pos]===itemId) delete list[pos]; }); // a title only ever occupies one slot
   list[position]=itemId;
-  saveTop10(TOP10);
+  await db.collection('top10').doc(top10DocId(username, type)).set({uid:CURRENT_UID, username, type, slots:list});
 }
-function removeFromTop10(username, type, itemId){
-  const list=TOP10[username] && TOP10[username][type];
-  if(!list) return;
+async function removeFromTop10(username, type, itemId){
+  const list=await getTop10For(username, type);
   Object.keys(list).forEach(pos=>{ if(list[pos]===itemId) delete list[pos]; });
-  saveTop10(TOP10);
+  await db.collection('top10').doc(top10DocId(username, type)).set({uid:CURRENT_UID, username, type, slots:list});
 }
 
 function loadAddedItems(){
@@ -1272,20 +1246,42 @@ async function clearVotesForReview(rid){
   }
 }
 
-function loadMyFavorites(){
-  try{ return JSON.parse(localStorage.getItem('kritiq_my_favorites')||'[]'); }catch(e){ return []; }
+let MY_FAVORITES=[]; // in-memory cache of usernames CURRENT_USER favorites, populated on login via loadMyFavorites()
+async function loadMyFavorites(){
+  if(!CURRENT_UID){ MY_FAVORITES=[]; return; }
+  try{
+    const snap=await db.collection('favorites').where('followerUid','==',CURRENT_UID).get();
+    MY_FAVORITES=snap.docs.map(doc=>doc.data().targetUsername);
+  }catch(e){
+    console.error('Nepodařilo se načíst oblíbené uživatele', e);
+    MY_FAVORITES=[];
+  }
 }
-function saveMyFavorites(arr){
-  try{ localStorage.setItem('kritiq_my_favorites', JSON.stringify(arr)); }catch(e){}
+function isFavoritedByMe(username){ return MY_FAVORITES.includes(username); }
+async function toggleMyFavorite(username){
+  if(!CURRENT_UID){ openAuthModal('login'); return; }
+  const ref=db.collection('favorites').doc(CURRENT_UID+'_'+username);
+  try{
+    if(isFavoritedByMe(username)){
+      await ref.delete();
+      MY_FAVORITES=MY_FAVORITES.filter(u=>u!==username);
+    }else{
+      await ref.set({followerUid:CURRENT_UID, followerUsername:CURRENT_USER, targetUsername:username, createdAt:firebase.firestore.FieldValue.serverTimestamp()});
+      MY_FAVORITES.push(username);
+    }
+  }catch(e){
+    console.error('Nepodařilo se změnit oblíbeného uživatele', e);
+  }
 }
-function isFavoritedByMe(username){ return loadMyFavorites().includes(username); }
-function toggleMyFavorite(username){
-  let list=loadMyFavorites();
-  if(list.includes(username)) list=list.filter(u=>u!==username);
-  else list.push(username);
-  saveMyFavorites(list);
+async function timesFavorited(username){
+  try{
+    const snap=await db.collection('favorites').where('targetUsername','==',username).count().get();
+    return snap.data().count;
+  }catch(e){
+    console.error('Nepodařilo se spočítat oblíbené', e);
+    return 0;
+  }
 }
-function timesFavorited(username){ return favBaseCount(username)+(isFavoritedByMe(username)?1:0); }
 
 function userAggregate(entries){
   let likes=0,dislikes=0,funny=0,scoreSum=0;
@@ -2054,6 +2050,7 @@ function attachDetailEvents(type,id){
   if(summaryBox) summaryBox.addEventListener('click', ()=> openSummaryModal(item));
   const top10Btn=document.getElementById('top10AddBtn');
   if(top10Btn) top10Btn.addEventListener('click', ()=> openTop10PickerModal(item));
+  refreshTop10Button(item);
   const showAllCastBtn=document.getElementById('showAllCastBtn');
   if(showAllCastBtn) showAllCastBtn.addEventListener('click', ()=>{
     document.getElementById('castHiddenRow').style.display='';
@@ -2217,12 +2214,15 @@ async function renderUserProfile(username){
   const agg=userAggregate(entries);
   const cls=scoreClass(agg.avg);
   const isFav=isFavoritedByMe(username);
+  const favCount=await timesFavorited(username);
   const body=userReviewsPreviewHTML(username, entries);
+  const avatarUrl=await getAvatarUrl(username);
+  const avatar=avatarMarkup(username, avatarUrl);
   return `
     <div class="crumb"><a href="#/">Kritiq</a> / ${esc(username)}</div>
     <div class="profile-card">
       <div class="profile-top-combo">
-        <button class="profile-avatar-btn" id="profileAvatarBtn" style="${avatarButtonStyle(username)}" title="${username===CURRENT_USER?'Změnit profilovou fotku':'Zobrazit oblíbené uživatele'}" type="button">${avatarButtonInner(username)}</button>
+        <button class="profile-avatar-btn" id="profileAvatarBtn" style="${avatar.style}" title="${username===CURRENT_USER?'Změnit profilovou fotku':'Zobrazit oblíbené uživatele'}" type="button">${avatar.inner}</button>
         <div class="profile-avg-box ${cls}"><div class="num">${agg.avg}</div><div class="lbl">Průměr</div></div>
       </div>
       <h1 class="profile-username">${esc(username)}</h1>
@@ -2230,7 +2230,7 @@ async function renderUserProfile(username){
         <span class="profile-stat">${ICON_LIKE}${agg.likes}</span>
         <span class="profile-stat">${ICON_DISLIKE}${agg.dislikes}</span>
         <span class="profile-stat">${ICON_FUNNY}${agg.funny}</span>
-        <span class="profile-stat">${ICON_STAR}${timesFavorited(username)}</span>
+        <span class="profile-stat">${ICON_STAR}${favCount}</span>
         ${username!==CURRENT_USER ? `<button class="profile-fav-btn ${isFav?'active':''}" id="profileFavBtn" title="${isFav?'Odebrat z oblíbených':'Přidat mezi oblíbené'}" type="button">${ICON_PLUS}</button>` : ''}
       </div>
       <button class="fav-users-btn" id="top10ViewBtn" type="button">OSOBNÍ TOP 10</button>
@@ -2260,14 +2260,16 @@ function attachUserProfileEvents(username){
       openFavoritesModal(username);
     }
   });
-  document.getElementById('profileFavBtn')?.addEventListener('click', ()=>{
-    toggleMyFavorite(username);
+  document.getElementById('profileFavBtn')?.addEventListener('click', async (e)=>{
+    const btn=e.currentTarget;
+    btn.disabled=true;
+    await toggleMyFavorite(username);
     const isFav=isFavoritedByMe(username);
-    const btn=document.getElementById('profileFavBtn');
     btn.classList.toggle('active', isFav);
     btn.title=isFav?'Odebrat z oblíbených':'Přidat mezi oblíbené';
+    btn.disabled=false;
     const starStat=document.querySelectorAll('.profile-stat')[3];
-    if(starStat) starStat.innerHTML=ICON_STAR+timesFavorited(username);
+    if(starStat) starStat.innerHTML=ICON_STAR+await timesFavorited(username);
   });
 }
 
@@ -2408,8 +2410,23 @@ firebase.initializeApp(firebaseConfig);
 const fbAuth = firebase.auth();
 const db = firebase.firestore();
 
-function loadAvatars(){ try{ return JSON.parse(localStorage.getItem('kritiq_avatars')||'{}'); }catch(e){ return {}; } }
-function saveAvatars(o){ try{ localStorage.setItem('kritiq_avatars', JSON.stringify(o)); }catch(e){} }
+async function getAvatarUrl(username){
+  try{
+    const unameDoc=await db.collection('usernames').doc(slugifyNickname(username)).get();
+    if(!unameDoc.exists) return null;
+    const uid=unameDoc.data().uid;
+    const userDoc=await db.collection('users').doc(uid).get();
+    return userDoc.exists ? (userDoc.data().avatarData || null) : null;
+  }catch(e){
+    return null; // most users simply haven't uploaded an avatar — not a real error
+  }
+}
+function avatarMarkup(username, url){
+  return {
+    style: url ? '' : avatarStyle(username),
+    inner: url ? `<img src="${esc(url)}" alt="" class="avatar-photo">` : esc(username.charAt(0)),
+  };
+}
 
 let CURRENT_USER=null;       // the chosen nickname, once resolved — null while signed out or still resolving
 let CURRENT_UID=null;        // Firebase's own user id, always available immediately after sign-in
@@ -2438,7 +2455,7 @@ async function claimNickname(uid, nickname, email){
 
 fbAuth.onAuthStateChanged(async (user)=>{
   if(!user){
-    CURRENT_USER=null; CURRENT_UID=null; pendingFirebaseUser=null;
+    CURRENT_USER=null; CURRENT_UID=null; pendingFirebaseUser=null; MY_FAVORITES=[];
     renderAuthBadge();
     return;
   }
@@ -2447,6 +2464,7 @@ fbAuth.onAuthStateChanged(async (user)=>{
   if(nickname){
     CURRENT_USER=nickname;
     pendingFirebaseUser=null;
+    await loadMyFavorites();
     renderAuthBadge();
     closeAllModals(); // done — whether they came from the login modal, register modal, or nickname picker
   }else{
@@ -2600,22 +2618,29 @@ async function handleNicknameSubmit(){
   if(!ok){ nicknameError='Tato přezdívka už je obsazená.'; renderNicknamePickerModal(); return; }
   CURRENT_USER=nickname;
   pendingFirebaseUser=null;
+  MY_FAVORITES=[];
   renderAuthBadge();
   popModal();
 }
 function top10ButtonHTML(item){
-  const pos=findMyTop10Position(CURRENT_USER, item.type, item.id);
-  const label = pos ? `V Top 10 (#${pos})` : 'Přidat do Top 10';
-  return `<button class="top10-add-btn no-modal-trigger ${pos?'in-list':''}" id="top10AddBtn" type="button">${label}</button>`;
+  return `<button class="top10-add-btn no-modal-trigger" id="top10AddBtn" type="button">Přidat do Top 10</button>`;
+}
+async function refreshTop10Button(item){
+  if(!CURRENT_USER) return;
+  const pos=await findMyTop10Position(CURRENT_USER, item.type, item.id);
+  const btn=document.getElementById('top10AddBtn');
+  if(!btn || !pos) return;
+  btn.textContent=`V Top 10 (#${pos})`;
+  btn.classList.add('in-list');
 }
 function openTop10PickerModal(item){
   pushModal(()=>renderTop10PickerModal(item));
 }
-function renderTop10PickerModal(item){
+async function renderTop10PickerModal(item){
   const card=document.getElementById('reviewModalCard');
   card.className='modal-card';
-  const list=getTop10For(CURRENT_USER, item.type);
-  const currentPos=findMyTop10Position(CURRENT_USER, item.type, item.id);
+  const list=await getTop10For(CURRENT_USER, item.type);
+  const currentPos=await findMyTop10Position(CURRENT_USER, item.type, item.id);
   const typeLabelGen = item.type==='movie' ? 'filmů' : item.type==='show' ? 'seriálů' : 'her';
   const slotsHTML=Array.from({length:10},(_,i)=>i+1).map(pos=>{
     const occupiedId=list[pos];
@@ -2635,14 +2660,16 @@ function renderTop10PickerModal(item){
   `;
   document.getElementById('top10CloseBtn').addEventListener('click', popModal);
   card.querySelectorAll('.top10-slot-btn').forEach(btn=>{
-    btn.addEventListener('click', ()=>{
-      setTop10Slot(CURRENT_USER, item.type, parseInt(btn.dataset.pos), item.id);
+    btn.addEventListener('click', async ()=>{
+      btn.disabled=true;
+      await setTop10Slot(CURRENT_USER, item.type, parseInt(btn.dataset.pos), item.id);
       popModal();
       route();
     });
   });
-  document.getElementById('top10RemoveBtn')?.addEventListener('click', ()=>{
-    removeFromTop10(CURRENT_USER, item.type, item.id);
+  document.getElementById('top10RemoveBtn')?.addEventListener('click', async (e)=>{
+    e.currentTarget.disabled=true;
+    await removeFromTop10(CURRENT_USER, item.type, item.id);
     popModal();
     route();
   });
@@ -2710,11 +2737,11 @@ function renderPolicyModal(kind){
 function openTop10ViewModal(username){
   pushModal(()=>renderTop10ViewModal(username));
 }
-function renderTop10ViewModal(username){
+async function renderTop10ViewModal(username){
   const card=document.getElementById('reviewModalCard');
   card.className='modal-card';
-  const sections=[['movie','Filmy'],['show','Seriály'],['game','Hry']].map(([type,label])=>{
-    const list=getTop10For(username, type);
+  const sections=(await Promise.all([['movie','Filmy'],['show','Seriály'],['game','Hry']].map(async ([type,label])=>{
+    const list=await getTop10For(username, type);
     const entries=Object.entries(list)
       .map(([pos,id])=>({pos:parseInt(pos), item:findItem(type,id)}))
       .filter(e=>e.item)
@@ -2723,7 +2750,7 @@ function renderTop10ViewModal(username){
       ? `<div class="top10-view-list">${entries.map(e=>`<a class="top10-view-item no-modal-trigger" href="#/title/${type}/${e.item.id}">${e.pos}. ${esc(e.item.title)}</a>`).join('')}</div>`
       : `<p class="empty-note">Uživatel zatím nepřidal žádný titul do svého Top 10 ${label.toLowerCase()}.</p>`;
     return `<h3 class="section-title" style="margin-top:18px;">${label}</h3>${body}`;
-  }).join('');
+  }))).join('');
   card.innerHTML=`
     <button class="modal-close" id="top10ViewCloseBtn" aria-label="Zavřít" type="button">✕</button>
     <h3 class="section-title" style="margin-bottom:0;">Osobní Top 10 — ${esc(username)}</h3>
@@ -2838,21 +2865,47 @@ function openLogoutConfirm(){
   });
 }
 function triggerAvatarUpload(username, onDone){
+  if(!CURRENT_UID){ openAuthModal('login'); return; }
   const input=document.createElement('input');
   input.type='file'; input.accept='image/*';
-  input.addEventListener('change', ()=>{
+  input.addEventListener('change', async ()=>{
     const file=input.files[0];
     if(!file) return;
-    const reader=new FileReader();
-    reader.onload=()=>{
-      const avatars=loadAvatars();
-      avatars[username]=reader.result;
-      saveAvatars(avatars);
+    if(!file.type.startsWith('image/')){ alert('Vyberte prosím obrázek.'); return; }
+    if(file.size > 10*1024*1024){ alert('Obrázek je příliš velký (max. 10 MB).'); return; }
+    try{
+      const dataUrl=await resizeImageToDataUrl(file, 200);
+      await db.collection('users').doc(CURRENT_UID).set({avatarData:dataUrl}, {merge:true});
       if(onDone) onDone();
-    };
-    reader.readAsDataURL(file);
+    }catch(e){
+      console.error('Nepodařilo se nahrát profilovou fotku', e);
+      alert('Nepodařilo se nahrát profilovou fotku. Zkuste to prosím znovu.');
+    }
   });
   input.click();
+}
+function resizeImageToDataUrl(file, targetSize){
+  return new Promise((resolve, reject)=>{
+    const reader=new FileReader();
+    reader.onload=(e)=>{
+      const img=new Image();
+      img.onload=()=>{
+        const canvas=document.createElement('canvas');
+        canvas.width=targetSize; canvas.height=targetSize;
+        const ctx=canvas.getContext('2d');
+        // Center-crop to a square first, so the avatar isn't stretched/distorted by a
+        // non-square source photo, then scale down to keep the stored size small.
+        const side=Math.min(img.width, img.height);
+        const sx=(img.width-side)/2, sy=(img.height-side)/2;
+        ctx.drawImage(img, sx, sy, side, side, 0, 0, targetSize, targetSize);
+        resolve(canvas.toDataURL('image/jpeg', 0.82));
+      };
+      img.onerror=()=>reject(new Error('Nepodařilo se načíst obrázek.'));
+      img.src=e.target.result;
+    };
+    reader.onerror=()=>reject(new Error('Nepodařilo se přečíst soubor.'));
+    reader.readAsDataURL(file);
+  });
 }
 
 /* ======================= MODAL STACK ======================= */
@@ -2962,7 +3015,13 @@ function openFavoritesModal(username){
   pushModal(renderFavoritesModal);
 }
 async function favoritesForUser(username){
-  const list = username===CURRENT_USER ? loadMyFavorites() : (FAVORITES_SEED[username]||[]);
+  let list=[];
+  try{
+    const snap=await db.collection('favorites').where('followerUsername','==',username).get();
+    list=snap.docs.map(doc=>doc.data().targetUsername);
+  }catch(e){
+    console.error('Nepodařilo se načíst oblíbené uživatele profilu', username, e);
+  }
   const enriched = await Promise.all(list.map(async (u)=>({username:u, agg:userAggregate(await getUserReviewsAsync(u))})));
   return enriched.sort((a,b)=>(b.agg.likes+b.agg.funny)-(a.agg.likes+a.agg.funny));
 }
@@ -3008,7 +3067,10 @@ async function renderUserModal(){
   const agg=userAggregate(entries);
   const cls=scoreClass(agg.avg);
   const isFav=isFavoritedByMe(username);
+  const favCount=await timesFavorited(username);
   const body=userReviewsPreviewHTML(username, entries);
+  const avatarUrl=await getAvatarUrl(username);
+  const avatar=avatarMarkup(username, avatarUrl);
   card.className='modal-card';
   card.innerHTML=`
     <div class="modal-head-row">
@@ -3017,7 +3079,7 @@ async function renderUserModal(){
     </div>
     <div class="profile-card profile-card-modal">
       <div class="profile-top-combo">
-        <button class="profile-avatar-btn" id="modalAvatarBtn" style="${avatarButtonStyle(username)}" title="${username===CURRENT_USER?'Změnit profilovou fotku':'Zobrazit oblíbené uživatele'}" type="button">${avatarButtonInner(username)}</button>
+        <button class="profile-avatar-btn" id="modalAvatarBtn" style="${avatar.style}" title="${username===CURRENT_USER?'Změnit profilovou fotku':'Zobrazit oblíbené uživatele'}" type="button">${avatar.inner}</button>
         <div class="profile-avg-box ${cls}"><div class="num">${agg.avg}</div><div class="lbl">Průměr</div></div>
       </div>
       <h1 class="profile-username">${esc(username)}</h1>
@@ -3025,7 +3087,7 @@ async function renderUserModal(){
         <span class="profile-stat">${ICON_LIKE}${agg.likes}</span>
         <span class="profile-stat">${ICON_DISLIKE}${agg.dislikes}</span>
         <span class="profile-stat">${ICON_FUNNY}${agg.funny}</span>
-        <span class="profile-stat">${ICON_STAR}${timesFavorited(username)}</span>
+        <span class="profile-stat">${ICON_STAR}${favCount}</span>
         ${username!==CURRENT_USER ? `<button class="profile-fav-btn ${isFav?'active':''}" id="modalFavBtn" title="${isFav?'Odebrat z oblíbených':'Přidat mezi oblíbené'}" type="button">${ICON_PLUS}</button>` : ''}
       </div>
       <button class="fav-users-btn" id="modalTop10ViewBtn" type="button">OSOBNÍ TOP 10</button>
@@ -3044,8 +3106,8 @@ async function renderUserModal(){
       openFavoritesModal(username);
     }
   });
-  document.getElementById('modalFavBtn')?.addEventListener('click', ()=>{
-    toggleMyFavorite(username);
+  document.getElementById('modalFavBtn')?.addEventListener('click', async ()=>{
+    await toggleMyFavorite(username);
     renderUserModal();
   });
   document.getElementById('modalCopyLinkBtn').addEventListener('click', (e)=> copyProfileLink(username, e.currentTarget));
