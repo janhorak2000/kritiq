@@ -110,6 +110,7 @@ other sites for security reasons.
 import argparse
 import csv
 import datetime
+import random
 import gzip
 import json
 import glob
@@ -1546,6 +1547,83 @@ def refresh_recent_unranked_games(key, store, today, days=7):
     print(f"  games score refresh: checked {checked} recently-added unranked games, upgraded {upgraded}", file=sys.stderr)
 
 
+def backfill_show_scores_from_imdb(store, imdb_ratings, min_imdb_votes):
+    """Some genuinely popular, well-known shows (Breaking Bad, Game of Thrones, Narcos,
+    Band of Brothers, etc.) come back permanently unscored — not because they lack votes
+    or aren't in English, but because TMDb is simply missing episode_run_time data for
+    them, a common TMDb data-completeness gap unrelated to actual popularity. That
+    forces scored=False during the original fetch, which skips the IMDb score lookup
+    entirely (imdb_score_for is never even called) — even though imdb_id still gets
+    fetched and stored on the record regardless. Since both imdb_id and the ratings
+    dataset are already sitting right here, this re-checks with zero extra API calls."""
+    checked = 0
+    upgraded = 0
+    for label, records in list(store.original.items()):
+        changed = False
+        for rec in records:
+            if rec.get("score") is not None or not rec.get("imdb_id"):
+                continue
+            checked += 1
+            match = imdb_ratings.get(rec["imdb_id"])
+            if match and match[1] >= min_imdb_votes:
+                rec["score"] = round(match[0] * 10)
+                changed = True
+                upgraded += 1
+                print(f"  upgraded: '{rec.get('title')}' now scored {rec['score']} (IMDb, {match[1]} votes)", file=sys.stderr)
+        if changed:
+            save_json(f"{store.prefix}{label}.json", records)
+            store.original[label] = records
+    print(f"  show score backfill: checked {checked} unranked shows with an imdb_id, upgraded {upgraded}", file=sys.stderr)
+
+
+def load_all_records_from_disk(prefix):
+    """Fresh read straight from disk (not the possibly-stale in-memory store cache) —
+    used at the very end of a run once everything has already been saved."""
+    out = []
+    for path in glob.glob(f"{prefix}[0-9]*.json"):
+        out.extend(load_json(path, []))
+    return out
+
+
+def compute_trending(today, movies_prefix, movies_czsk_prefix, shows_prefix, games_prefix):
+    """Builds the lightweight trending.json the homepage loads first, instead of the full
+    multi-megabyte catalog. Movies and shows: top 25 by score from the last 3 months, then
+    randomly sample 10 — so the homepage actually reshuffles once a day (this script runs
+    daily) rather than showing the exact same 10 titles every single day, while still only
+    ever surfacing genuinely well-scored titles. Games: same idea but a 6-month window,
+    since there simply aren't enough well-scored games released in any 3-month window to
+    make a meaningful pool yet."""
+    today_date = datetime.date.fromisoformat(today)
+
+    def pick_trending(records, days_window, count=10, pool_size=25):
+        cutoff = (today_date - datetime.timedelta(days=days_window)).isoformat()
+        eligible = [r for r in records if r.get("score") is not None and r.get("date") and r["date"] >= cutoff]
+        eligible.sort(key=lambda r: -r["score"])
+        pool = eligible[:pool_size]
+        chosen = pool if len(pool) <= count else random.sample(pool, count)
+        out = []
+        for r in chosen:
+            entry = {"title": r.get("title"), "year": r.get("year"), "date": r.get("date"),
+                      "score": r.get("score"), "poster": r.get("poster", "")}
+            for id_field in ("tmdb_id", "rawg_id", "imdb_id"):
+                if r.get(id_field):
+                    entry[id_field] = r[id_field]
+            out.append(entry)
+        return out
+
+    movies_all = load_all_records_from_disk(movies_prefix) + load_all_records_from_disk(movies_czsk_prefix)
+    shows_all = load_all_records_from_disk(shows_prefix)
+    games_all = load_all_records_from_disk(games_prefix)
+
+    trending = {
+        "movies": pick_trending(movies_all, 90),   # ~3 months
+        "shows": pick_trending(shows_all, 90),     # ~3 months
+        "games": pick_trending(games_all, 180),    # ~6 months — unchanged from before
+    }
+    save_json("trending.json", trending)
+    return trending
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--tmdb-key", required=True)
@@ -1575,6 +1653,7 @@ def main():
     ap.add_argument("--skip-shows", action="store_true", help="skip shows entirely")
     ap.add_argument("--skip-games", action="store_true", help="skip games entirely")
     ap.add_argument("--skip-games-backfill", action="store_true", help="skip only the games historical backfill (e.g. once you've completed it once) — movies/shows backfill are unaffected, and recent games still get scanned")
+    ap.add_argument("--backfill-show-scores-only", action="store_true", help="run just the show-score-from-IMDb backfill against your existing data and exit immediately — no fetching, no API calls beyond loading the IMDb ratings cache")
     ap.add_argument("--recent-games-min-wishlist", type=int, default=10, help="flat wishlist floor for the recent-games scan (bypasses the era/genre-tiered thresholds used during backfill, since this scan is always 'recent' anyway)")
     args = ap.parse_args()
     today = today_str()
@@ -1588,6 +1667,14 @@ def main():
     movies_czsk_store = BucketedStore(args.movies_czsk_prefix)
     shows_store = BucketedStore(args.shows_prefix)
     games_store = BucketedStore(args.games_prefix)
+
+    if args.backfill_show_scores_only:
+        print("Running show-score-from-IMDb backfill only (--backfill-show-scores-only)...", file=sys.stderr)
+        backfill_show_scores_from_imdb(shows_store, imdb_ratings, args.min_imdb_votes)
+        trending = compute_trending(today, args.movies_prefix, args.movies_czsk_prefix, args.shows_prefix, args.games_prefix)
+        print(f"trending.json refreshed: {len(trending['movies'])} movies, {len(trending['shows'])} shows, {len(trending['games'])} games", file=sys.stderr)
+        print("Done.", file=sys.stderr)
+        return
 
     state = load_json(args.state_file, {
         "movie": {"start_year": CURRENT_YEAR_DEFAULT},
@@ -1715,6 +1802,10 @@ def main():
                     fetch_lang_shows_recent(args.tmdb_key, show_genres, show_seen, args.galleries, args.fetch_reviews, imdb_ratings, args.min_imdb_votes, args.anime_benchmark_votes, args.standup_benchmark_votes, people_cache, recent_years, args.recent_pages, today, cp, lang_code)
                 except Exception as e:
                     print(f"shows ({lang_code}, recent): unexpected error ({e})", file=sys.stderr)
+        try:
+            backfill_show_scores_from_imdb(shows_store, imdb_ratings, args.min_imdb_votes)
+        except Exception as e:
+            print(f"shows (score backfill): unexpected error ({e})", file=sys.stderr)
         print(f"  -> saved. shows total so far: {shows_store.total_on_disk()}", file=sys.stderr)
 
     if args.skip_games:
@@ -1750,6 +1841,9 @@ def main():
     manifest = write_manifest()
     print(f"\nRunning totals: {movies_store.total_on_disk()} worldwide movies, {movies_czsk_store.total_on_disk()} Czech/Slovak movies, {shows_store.total_on_disk()} shows, {games_store.total_on_disk()} games", file=sys.stderr)
     print(f"manifest.json written with {len(manifest)} bucket files", file=sys.stderr)
+
+    trending = compute_trending(today, args.movies_prefix, args.movies_czsk_prefix, args.shows_prefix, args.games_prefix)
+    print(f"trending.json written: {len(trending['movies'])} movies, {len(trending['shows'])} shows, {len(trending['games'])} games", file=sys.stderr)
 
 
 if __name__ == "__main__":

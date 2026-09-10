@@ -76495,7 +76495,7 @@
     "imdb_id": "tt38786002",
     "year": 2025,
     "date": "2025-06-11",
-   "score": null,
+    "score": null,
     "box": null,
     "box_currency": null,
     "country": "Slovensko",
@@ -93982,6 +93982,45 @@
       "image": ""
     },
     "actors": [],
+    "reviews": []
+  },
+  {
+    "title": "Livia",
+    "tmdb_id": 1652138,
+    "imdb_id": null,
+    "original_language": "cs",
+    "year": 2026,
+    "date": "2026-03-12",
+    "score": null,
+    "box": null,
+    "box_currency": null,
+    "country": "Česko",
+    "genre": "Dokumentární",
+    "runtime": 76,
+    "poster": "https://image.tmdb.org/t/p/w500/p4SoO2tCrN0XTIgyOluCcrY9L24.jpg",
+    "gallery": [],
+    "summary": "První dáma, špičková ekonomka, manželka ministra v neklidné době a v neposlední řadě také starostlivá matka a babička. To jsou jen některé z mnoha životních rolí Livie Klausové. Filmový štáb zblízka zmapoval její kariérní i osobní dramata, kterými po boku svého muže procházela. Od formování československého kapitalismu u rodinného stolu, přes návštěvy světových lídrů, až po post velvyslankyně. Laskavý portrét výjimečné ženy odhaluje její pohled na svět, kterému vévodí především lidskost a smysl pro ochranu slabších.",
+    "director": {
+      "name": "Adrian Stojkov",
+      "image": ""
+    },
+    "composer": {
+      "name": "",
+      "image": ""
+    },
+    "writer": {
+      "name": "",
+      "image": ""
+    },
+    "actors": [
+      {
+        "name": "Livia Klausová",
+        "birthday": "1943-11-10",
+        "deathday": null,
+        "age": 82,
+        "image": ""
+      }
+    ],
     "reviews": []
   }
 ]
