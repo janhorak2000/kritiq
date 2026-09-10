@@ -5,6 +5,9 @@ on:
     - cron: '0 6 * * *'   # runs every day at 06:00 UTC — edit this to change the time
   workflow_dispatch:        # adds a "Run workflow" button so you can trigger it manually too
 
+permissions:
+  contents: write   # required so the final "git push" step below can actually write back to the repo
+
 jobs:
   fetch:
     runs-on: ubuntu-latest
@@ -22,7 +25,7 @@ jobs:
         env:
           TMDB_KEY: ${{ secrets.TMDB_KEY }}
           RAWG_KEY: ${{ secrets.RAWG_KEY }}
-        run: python fetch_data_daily.py --tmdb-key "$TMDB_KEY" --rawg-key "$RAWG_KEY" --skip-games-backfill --recent-games-min-wishlist 10
+        run: python fetch_data_daily.py --tmdb-key "$TMDB_KEY" --rawg-key "$RAWG_KEY"
 
       - name: Commit updated data
         run: |
