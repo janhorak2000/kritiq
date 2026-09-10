@@ -1055,9 +1055,22 @@ function normalizeCrew(person){
   if(typeof person==='string') return {name:person, image:''};
   return {name:person.name||'', image:person.image||''};
 }
+function stableId(prefix, r, index){
+  // Position-based ids (prefix+index) silently break the moment a re-fetch changes
+  // array order — a review posted against "position 37" stays pointed at position 37
+  // forever, even after a different title ends up there. TMDb's and RAWG's own ids are
+  // permanent and never change for a given title, so those are used whenever available.
+  // Wikidata-sourced Czech/Slovak content has no tmdb_id, only imdb_id — also permanent,
+  // so that's the fallback. Only truly id-less records fall back to position (rare, and
+  // no worse than the old behavior for those specific records).
+  if(r.tmdb_id) return prefix+'t'+r.tmdb_id;
+  if(r.rawg_id) return prefix+'r'+r.rawg_id;
+  if(r.imdb_id) return prefix+'i'+r.imdb_id;
+  return prefix+index;
+}
 function buildFromRecords(records, type, prefix){
   return records.map((r,i)=>{
-    const id=prefix+i;
+    const id=stableId(prefix, r, i);
     const item={
       id, type, title:r.title, year:r.year, date:r.date, baseScore:r.score,
       yearOnly: !!r.year_only,
@@ -1719,14 +1732,17 @@ const PAGE_SIZE=100;
    zero results despite matching games existing, check a game's "platforms" array in
    data.json for RAWG's exact wording and adjust this list to match. */
 const PLATFORM_ORDER=[
-  'PC',
-  'PlayStation 5','Xbox Series S/X','Nintendo Switch 2',
+  'PC','Web','Linux','macOS','iOS','Android',
+  'PlayStation 5','Xbox Series S/X',
   'PlayStation 4','Xbox One','Nintendo Switch',
   'PlayStation 3','Xbox 360','Wii U','Wii',
   'PlayStation 2','Xbox','GameCube','PlayStation','Nintendo 64',
-  'Dreamcast','SEGA Saturn','SNES','SEGA Genesis','NES',
+  'Dreamcast','SEGA Saturn','SEGA CD','SEGA 32X','SEGA Master System','SNES','SEGA Genesis','Game Gear','NES',
+  '3DO','Neo Geo','Jaguar',
   'Game Boy Advance','Game Boy Color','Game Boy',
-  'Nintendo DS','Nintendo 3DS','PS Vita','PSP',
+  'Nintendo DS','Nintendo DSi','Nintendo 3DS','PS Vita','PSP',
+  'Commodore / Amiga','Classic Macintosh','Apple II',
+  'Atari ST','Atari 2600','Atari 5200','Atari 7800','Atari 8-bit','Atari XEGS','Atari Lynx','Atari Flashback',
 ];
 
 let listState={movies:{y0:2021,y1:2026,sort:'score',page:1,filter:'ALL'}, shows:{y0:2021,y1:2026,sort:'score',page:1,filter:'ALL'}, games:{y0:2021,y1:2026,sort:'score',page:1,platform:'ALL'}};
