@@ -113,6 +113,53 @@ header.site{
 }
 .auth-badge-logout svg{width:9px; height:9px;}
 .auth-badge-logout:hover{background:rgba(239,68,68,.3); border-color:#f16060;}
+.auth-badge-achievements{
+  border-color:rgba(96,165,250,.4); background:rgba(96,165,250,.16); color:#7db4fb;
+  font-size:10px; font-weight:800; font-family:var(--font-display);
+}
+.auth-badge-achievements:hover{background:rgba(96,165,250,.3); border-color:#7db4fb;}
+.auth-badge-quests{
+  border-color:rgba(232,177,58,.45); background:rgba(232,177,58,.18); color:#e8b13a;
+  font-size:10px; font-weight:800; font-family:var(--font-display);
+}
+.auth-badge-quests:hover{background:rgba(232,177,58,.32); border-color:#e8b13a;}
+
+.ach-grid{display:grid; grid-template-columns:repeat(auto-fill, minmax(140px,1fr)); gap:12px;}
+.ach-card{
+  display:flex; flex-direction:column; align-items:center; text-align:center; gap:6px;
+  padding:14px 10px; border-radius:var(--radius-l); background:var(--bg-2);
+  border:1px solid var(--line-soft); transition:border-color .15s, background .15s;
+}
+.ach-badge{
+  width:52px; height:52px; border-radius:14px; background:var(--bg-1); border:2px solid var(--line);
+  display:flex; align-items:center; justify-content:center; font-size:24px; color:var(--text-faint);
+  filter:grayscale(1); opacity:.55; transition:filter .2s, opacity .2s, border-color .2s, box-shadow .2s;
+}
+.ach-icon-text{font-family:var(--font-display); font-weight:800; font-size:11px; line-height:1.1; color:inherit;}
+.ach-name{font-weight:700; font-size:12.5px; color:var(--text-dim);}
+.ach-desc{font-size:11px; color:var(--text-faint); line-height:1.35;}
+.ach-card.ach-done{border-color:var(--violet); background:linear-gradient(135deg, rgba(96,165,250,.1), var(--bg-2) 60%);}
+.ach-card.ach-done .ach-badge{
+  filter:none; opacity:1; border-color:#60a5fa; color:#fff;
+  box-shadow:0 0 14px rgba(96,165,250,.6), 0 3px 10px rgba(0,0,0,.4);
+}
+.ach-card.ach-done .ach-name{color:var(--text);}
+
+.quest-card{
+  padding:12px 14px; border-radius:var(--radius-l); background:var(--bg-2);
+  border:1px solid var(--line-soft); margin-bottom:10px; transition:border-color .15s, background .15s;
+}
+.quest-card:last-child{margin-bottom:0;}
+.quest-top{display:flex; justify-content:space-between; align-items:baseline; gap:10px; margin-bottom:8px;}
+.quest-label{font-size:13px; color:var(--text-dim); line-height:1.35;}
+.quest-xp{font-size:11px; font-weight:800; color:var(--text-faint); white-space:nowrap; flex:0 0 auto;}
+.quest-bar-track{height:7px; border-radius:999px; background:var(--bg-1); overflow:hidden;}
+.quest-bar-fill{height:100%; background:linear-gradient(90deg, #b98a1f, var(--s-gold-fg,#e8b13a)); border-radius:999px; transition:width .3s;}
+.quest-count{font-size:10.5px; color:var(--text-faint); margin-top:5px; text-align:right;}
+.quest-card.quest-done{border-color:#e8b13a; background:linear-gradient(135deg, rgba(232,177,58,.12), var(--bg-2) 60%);}
+.quest-card.quest-done .quest-label{color:var(--text);}
+.quest-card.quest-done .quest-xp{color:#e8b13a;}
+.quest-card.quest-done .quest-bar-fill{box-shadow:0 0 10px rgba(232,177,58,.6);}
 
 nav.main-nav{
   justify-self:center; display:flex; gap:6px;
@@ -161,6 +208,21 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
   font-family:var(--font-display); font-weight:700; font-size:12.5px;
 }
 .search-empty-note{color:var(--text-faint); font-size:13.5px; padding:14px 4px;}
+.person-search-avatar{
+  flex:0 0 auto; width:30px; height:30px; border-radius:50%; overflow:hidden;
+  display:flex; align-items:center; justify-content:center;
+  font-family:var(--font-display); font-weight:800; font-size:13px; color:#fff;
+}
+.person-search-avatar .avatar-photo{width:100%; height:100%; object-fit:cover;}
+.search-result-person .srr-title{font-weight:600;}
+.person-search-row{display:flex; flex-wrap:wrap; gap:10px; margin-bottom:6px;}
+.person-search-item{
+  display:flex; align-items:center; gap:9px; padding:7px 14px 7px 7px; border-radius:999px;
+  background:var(--bg-2); border:1px solid var(--line-soft); transition:border-color .15s, background .15s;
+}
+.person-search-item:hover{border-color:var(--violet); background:var(--bg-1);}
+.person-search-item .person-search-avatar{width:32px; height:32px; font-size:14px;}
+.person-search-name{font-size:13px; font-weight:600; color:var(--text);}
 @media(max-width:900px){
   nav.main-nav a{padding:9px 12px; font-size:11.5px;}
 }
@@ -248,6 +310,21 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
   position:relative; flex:0 0 auto; width:150px; scroll-snap-align:start;
 }
 .hot-card .card{position:relative; z-index:1; margin-right:26px;}
+
+.skeleton-home{padding-top:4px;}
+.skeleton-row-title{width:200px; height:14px; border-radius:5px; background:var(--bg-2); margin:0 0 14px; animation:skeletonPulse 1.4s ease-in-out infinite;}
+.skeleton-row{display:flex; gap:26px; overflow:hidden; margin-bottom:28px;}
+.skeleton-card{flex:0 0 auto; width:150px; height:225px; border-radius:var(--radius-m); background:var(--bg-2); animation:skeletonPulse 1.4s ease-in-out infinite;}
+.skeleton-card:nth-child(2){animation-delay:.08s;}
+.skeleton-card:nth-child(3){animation-delay:.16s;}
+.skeleton-card:nth-child(4){animation-delay:.24s;}
+.skeleton-card:nth-child(5){animation-delay:.32s;}
+.skeleton-card:nth-child(6){animation-delay:.4s;}
+@keyframes skeletonPulse{0%,100%{opacity:.5;} 50%{opacity:1;}}
+@media(max-width:640px){
+  .skeleton-card{width:110px; height:165px;}
+  .skeleton-row{gap:14px;}
+}
 .hot-rank{
   position:absolute; right:14px; bottom:-6px; z-index:2;
   font-family:var(--font-display); font-weight:800; font-size:48px;
@@ -723,7 +800,14 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
   padding:30px 26px 24px; display:flex; flex-direction:column; align-items:center; gap:6px;
   max-width:480px; margin:0 auto 30px;
 }
-.profile-top-combo{display:flex; align-items:center; gap:18px; margin-bottom:8px;}
+.profile-top-combo{display:flex; align-items:center; justify-content:center; gap:12px; margin-bottom:8px;}
+@media(max-width:480px){
+  .profile-top-combo{gap:8px;}
+  .profile-top-combo .profile-avatar-btn{width:60px; height:60px; font-size:24px;}
+  .profile-top-combo .profile-avg-box{width:60px; height:60px; border-radius:14px;}
+  .profile-top-combo .profile-avg-box .num{font-size:19px;}
+  .profile-top-combo .profile-avg-box .lbl{font-size:8px;}
+}
 .profile-avatar-btn{
   width:82px; height:82px; border-radius:50%; border:none; cursor:pointer; padding:0;
   display:flex; align-items:center; justify-content:center;
@@ -843,7 +927,18 @@ footer.site .footer-links{display:flex; gap:16px; flex-wrap:wrap;}
   </div>
 </header>
 
-<main class="wrap" id="app"></main>
+<main class="wrap" id="app"><div class="skeleton-home" id="skeletonHome">
+  <div class="skeleton-row-title"></div>
+  <div class="skeleton-row">
+    <div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div>
+    <div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div>
+  </div>
+  <div class="skeleton-row-title"></div>
+  <div class="skeleton-row">
+    <div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div>
+    <div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div>
+  </div>
+</div></main>
 
 <div class="modal-overlay" id="reviewModalOverlay">
   <div class="modal-card" id="reviewModalCard"></div>
@@ -942,7 +1037,7 @@ function posterStyle(seed){
 /* Real poster image when the item has one (from a fetched data.json), else the generated
    gradient+letter placeholder. containerStyleFn should be either posterStyle-shaped or ''. */
 function posterBgStyle(item){
-  return item.poster ? '' : posterStyle(item.id+item.title);
+  return posterStyle(item.id+item.title);
 }
 function posterInnerHTML(item, letterSize){
   if(item.poster){
@@ -1230,6 +1325,7 @@ async function toggleVote(reviewId, kind){
   if(!CURRENT_UID){ openAuthModal('login'); return; }
   const voteRef=db.collection('votes').doc(reviewId+'_'+CURRENT_UID);
   const reviewRef=db.collection('reviews').doc(reviewId);
+  const progressRef=db.collection('progress').doc(CURRENT_UID);
   try{
     await db.runTransaction(async (tx)=>{
       const [voteSnap, reviewSnap]=await Promise.all([tx.get(voteRef), tx.get(reviewRef)]);
@@ -1239,12 +1335,20 @@ async function toggleVote(reviewId, kind){
       if(kind==='like'){ next.liked=!next.liked; if(next.liked) next.disliked=false; }
       else if(kind==='dislike'){ next.disliked=!next.disliked; if(next.disliked) next.liked=false; }
       else if(kind==='funny'){ next.funny=!next.funny; }
-      tx.set(voteRef, {reviewId, uid:CURRENT_UID, liked:next.liked, disliked:next.disliked, funny:next.funny});
+      tx.set(voteRef, {reviewId, uid:CURRENT_UID, liked:next.liked, disliked:next.disliked, funny:next.funny, updatedAt:firebase.firestore.FieldValue.serverTimestamp()});
       tx.update(reviewRef, {
         likesCount: firebase.firestore.FieldValue.increment((next.liked?1:0)-(old.liked?1:0)),
         dislikesCount: firebase.firestore.FieldValue.increment((next.disliked?1:0)-(old.disliked?1:0)),
         funnyCount: firebase.firestore.FieldValue.increment((next.funny?1:0)-(old.funny?1:0)),
       });
+      // Lifetime counters for achievements — only ever increment (a like given then later
+      // un-liked still "counts" toward having given it once), never decrement.
+      const lifetimeInc={};
+      if(next.liked && !old.liked) lifetimeInc.totalLikesGiven=firebase.firestore.FieldValue.increment(1);
+      if(next.funny && !old.funny) lifetimeInc.totalFunnyGiven=firebase.firestore.FieldValue.increment(1);
+      if(Object.keys(lifetimeInc).length){
+        tx.set(progressRef, Object.assign({uid:CURRENT_UID, username:CURRENT_USER}, lifetimeInc), {merge:true});
+      }
     });
   }catch(e){
     console.error('Nepodařilo se zaznamenat hlas', e);
@@ -1294,6 +1398,297 @@ async function timesFavorited(username){
     console.error('Nepodařilo se spočítat oblíbené', e);
     return 0;
   }
+}
+
+/* ===== GAMIFICATION: XP, levels, achievements ===== */
+const XP_PER_QUEST=10;
+// index i = XP needed to REACH level i+1 (level 1 starts at 0 XP). 15 entries -> levels 1-15, level 15 shown as MAX.
+const LEVEL_THRESHOLDS=[0,30,100,200,350,550,800,1100,1500,2000,2600,3250,3950,4700,5500];
+function levelForXp(xp){
+  let level=1;
+  for(let i=1;i<LEVEL_THRESHOLDS.length;i++){ if(xp>=LEVEL_THRESHOLDS[i]) level=i+1; }
+  return level;
+}
+function isMaxLevel(level){ return level>=LEVEL_THRESHOLDS.length; }
+function levelColorClass(level){
+  if(level>=11) return 's-gold';
+  if(level>=6) return 's-purple';
+  if(level>=2) return 's-blue';
+  return 's-grey';
+}
+async function getProgress(uid){
+  const empty={xp:0, unlockedAchievements:{}, totalLikesGiven:0, totalFunnyGiven:0, weekId:null, completedQuests:{}};
+  if(!uid) return empty;
+  try{
+    const doc=await db.collection('progress').doc(uid).get();
+    return doc.exists ? Object.assign({}, empty, doc.data()) : empty;
+  }catch(e){
+    console.error('Nepodařilo se načíst postup', e);
+    return empty;
+  }
+}
+async function getMyProgress(){ return getProgress(CURRENT_UID); }
+
+const ACHIEVEMENT_ICONS={
+  text100: '<span class="ach-icon-text">100</span>',
+  top10: '<span class="ach-icon-text">TOP<br>10</span>',
+  scifi: '<span class="ach-icon-text">SCI-FI</span>',
+  xp: '<span class="ach-icon-text">XP</span>',
+  gun: '🔫',
+  clock: '⏰',
+  controller: '🎮',
+  thumbup: '👍',
+  smiley: '😄',
+  tv: '📺',
+  muscle: '💪',
+};
+const ACHIEVEMENTS=[
+  {id:'first_review', name:'Ztráta recenzentského panictví', desc:'Napiš svou první recenzi a ohodnoť první film.', icon:'text100',
+    check:(ctx)=> ctx.entries.length>=1},
+  {id:'top3_movies', name:'Top 3 filmy', desc:'Zařaď 3 filmy na první tři příčky své osobní Top 10.', icon:'top10',
+    check:(ctx)=> ['1','2','3'].every(p=>ctx.top10Movie[p])},
+  {id:'top3_shows', name:'Top 3 seriály', desc:'Zařaď 3 seriály na první tři příčky své osobní Top 10.', icon:'top10',
+    check:(ctx)=> ['1','2','3'].every(p=>ctx.top10Show[p])},
+  {id:'top3_games', name:'Top 3 hry', desc:'Zařaď 3 hry na první tři příčky své osobní Top 10.', icon:'top10',
+    check:(ctx)=> ['1','2','3'].every(p=>ctx.top10Game[p])},
+  {id:'predator', name:'Je čas vytáhnout bezbolestnou', desc:'Napiš recenzi k filmu Predátor.', icon:'gun',
+    check:(ctx)=> ctx.entries.some(e=>e.type==='movie' && /predat/i.test(e.item.title))},
+  {id:'godfather', name:'Nabídka, která se neodmítá', desc:'Napiš recenzi k filmu Kmotr, Kmotr 2, nebo Kmotr 3.', icon:'gun',
+    check:(ctx)=> ctx.entries.some(e=>e.type==='movie' && /kmotr/i.test(e.item.title))},
+  {id:'night_owl', name:'Ponocnej', desc:'Napiš 5 recenzí mezi 01:00 a 03:00 hodinou ranní.', icon:'clock',
+    check:(ctx)=> ctx.entries.filter(e=>{ if(!e.review.createdAt) return false; const h=new Date(e.review.createdAt).getHours(); return h===1||h===2; }).length>=5},
+  {id:'scifi_lover', name:'Milovník sci-fi', desc:'Ohodnoť 10 vědeckofantastických filmů.', icon:'scifi',
+    check:(ctx)=> ctx.entries.filter(e=>e.type==='movie' && (e.item.genre||'').includes('Vědeckofantastický')).length>=10},
+  {id:'boomer', name:'Boomer', desc:'Ohodnoť 5 her vydaných mezi lety 1990-1999.', icon:'controller',
+    check:(ctx)=> ctx.entries.filter(e=>e.type==='game' && e.item.year>=1990 && e.item.year<=1999).length>=5},
+  {id:'likes_100', name:'Lajkovač', desc:'Rozdej 100 lajků.', icon:'thumbup',
+    check:(ctx)=> (ctx.progress.totalLikesGiven||0)>=100},
+  {id:'funny_25', name:'Veselá kopa', desc:'Rozdej 25 smajlíků za vtipné recenze.', icon:'smiley',
+    check:(ctx)=> (ctx.progress.totalFunnyGiven||0)>=25},
+  {id:'fromsoftware', name:'Dark Souls mezi recenzenty', desc:'Napiš recenze ke třem hrám od developera From Software.', icon:'controller',
+    check:(ctx)=> ctx.entries.filter(e=>e.type==='game' && /from\s*software/i.test(e.item.developer||'')).length>=3},
+  {id:'rockstar', name:'Oh shit, a je to tu zas!', desc:'Napiš recenze ke třem hrám od developera Rockstar Games.', icon:'controller',
+    check:(ctx)=> ctx.entries.filter(e=>e.type==='game' && /rockstar/i.test(e.item.developer||'')).length>=3},
+  {id:'series_required', name:'Povinná seriálová četba', desc:'Napiš recenzi a ohodnoť seriály Perníkový táta, Hra o trůny a Stranger Things.', icon:'tv',
+    check:(ctx)=>{
+      const shows=ctx.entries.filter(e=>e.type==='show').map(e=>e.item.title.toLowerCase());
+      const hasAny=(...needles)=> shows.some(t=> needles.some(n=>t.includes(n)));
+      return hasAny('perníkový táta','breaking bad') && hasAny('hra o trůny','game of thrones') && hasAny('stranger things');
+    }},
+  {id:'action_stars', name:'Dětský vzor', desc:'Ohodnoť 5 filmů, kde účinkují Arnold Schwarzenegger, Sylvester Stallone, nebo Jean-Claude Van Damme.', icon:'muscle',
+    check:(ctx)=>{
+      const names=['Arnold Schwarzenegger','Sylvester Stallone','Jean-Claude Van Damme'];
+      return ctx.entries.filter(e=>e.type==='movie' && (e.item.actors||[]).some(a=>names.includes(a.name))).length>=5;
+    }},
+  {id:'level_grind', name:'Grindič levelů', desc:'Získej 100 XP a dosáhni 3. levelu na této stránce.', icon:'xp',
+    check:(ctx)=> (ctx.progress.xp||0)>=100},
+  {id:'jubilee', name:'Jubileum', desc:'Napiš 100 recenzí.', icon:'text100',
+    check:(ctx)=> ctx.entries.length>=100},
+];
+async function buildAchievementContext(username){
+  const [entries, top10Movie, top10Show, top10Game, progress] = await Promise.all([
+    getUserReviewsAsync(username),
+    getTop10For(username,'movie'),
+    getTop10For(username,'show'),
+    getTop10For(username,'game'),
+    getProgress(CURRENT_UID),
+  ]);
+  return {entries, top10Movie, top10Show, top10Game, progress};
+}
+async function refreshMyAchievements(){
+  // Live-checks every achievement against fresh data and persists any newly-earned ones.
+  // Achievements are permanent once unlocked, even if the underlying condition later
+  // stops being true (e.g. a review gets deleted after "Jubileum" was earned at 100).
+  if(!CURRENT_UID) return {unlocked:{}, newly:[]};
+  const ctx=await buildAchievementContext(CURRENT_USER);
+  const already=ctx.progress.unlockedAchievements||{};
+  const unlocked=Object.assign({}, already);
+  const newly=[];
+  ACHIEVEMENTS.forEach(a=>{
+    if(!unlocked[a.id] && a.check(ctx)){ unlocked[a.id]=true; newly.push(a.id); }
+  });
+  if(newly.length){
+    try{
+      await db.collection('progress').doc(CURRENT_UID).set({uid:CURRENT_UID, username:CURRENT_USER, unlockedAchievements:unlocked}, {merge:true});
+    }catch(e){
+      console.error('Nepodařilo se uložit nově získané úspěchy', e);
+    }
+  }
+  return {unlocked, newly};
+}
+
+/* ===== GAMIFICATION: weekly quests ===== */
+// All date logic here resolves against Europe/Prague wall-clock time (CET/CEST), so the
+// weekly reset always lands on Monday 00:00 local Czech time regardless of the viewer's
+// own browser timezone or of DST transitions.
+function getPragueDateComponents(date){
+  const parts=new Intl.DateTimeFormat('en-US', {
+    timeZone:'Europe/Prague', year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', hour12:false,
+  }).formatToParts(date);
+  const map={}; parts.forEach(p=>map[p.type]=p.value);
+  return {year:+map.year, month:+map.month, day:+map.day, hour:(+map.hour)%24};
+}
+function getThisWeekMondayComponents(now){
+  now=now||new Date();
+  const c=getPragueDateComponents(now);
+  // Treat the Prague calendar date as if it were UTC purely for safe date arithmetic
+  // (day-of-week, subtracting days) — never used to represent a real instant.
+  const fakeUtc=new Date(Date.UTC(c.year, c.month-1, c.day));
+  const dow=fakeUtc.getUTCDay(); // 0=Sun..6=Sat
+  const daysSinceMonday=(dow+6)%7; // Mon=0,...,Sun=6
+  fakeUtc.setUTCDate(fakeUtc.getUTCDate()-daysSinceMonday);
+  return {year:fakeUtc.getUTCFullYear(), month:fakeUtc.getUTCMonth()+1, day:fakeUtc.getUTCDate()};
+}
+function getWeekId(now){
+  const m=getThisWeekMondayComponents(now);
+  return `${m.year}-${String(m.month).padStart(2,'0')}-${String(m.day).padStart(2,'0')}`;
+}
+function pragueMidnightUtcInstant(year, month, day){
+  // Finds the real UTC instant corresponding to 00:00:00 on the given date in Prague time,
+  // correctly handling both CET (UTC+1) and CEST (UTC+2) by checking what hour midnight-UTC
+  // actually reads as in Prague, then subtracting that offset.
+  const guessUtc=new Date(Date.UTC(year, month-1, day, 0,0,0));
+  const hourInPrague=parseInt(new Intl.DateTimeFormat('en-US', {timeZone:'Europe/Prague', hour:'2-digit', hour12:false}).format(guessUtc), 10)%24;
+  return new Date(guessUtc.getTime()-hourInPrague*3600*1000);
+}
+function getWeekStartInstant(now){
+  const m=getThisWeekMondayComponents(now);
+  return pragueMidnightUtcInstant(m.year, m.month, m.day);
+}
+
+const QUEST_POOL=[
+  {id:'film_reviews', min:3, max:5, label:(n)=>`Napiš ${n} recenze filmů do konce týdne.`,
+    progress:(ctx)=> ctx.weekEntries.filter(e=>e.type==='movie').length},
+  {id:'game_reviews', min:1, max:3, label:(n)=>`Napiš ${n} recenze her do konce týdne.`,
+    progress:(ctx)=> ctx.weekEntries.filter(e=>e.type==='game').length},
+  {id:'show_reviews', min:2, max:4, label:(n)=>`Napiš ${n} recenze seriálů do konce týdne.`,
+    progress:(ctx)=> ctx.weekEntries.filter(e=>e.type==='show').length},
+  {id:'give_likes', min:10, max:20, label:(n)=>`Rozdej ${n} lajků recenzím ostatních uživatelů.`,
+    progress:(ctx)=> ctx.likesThisWeek},
+  {id:'add_favorites', min:1, max:3, label:(n)=>`Přidej ${n} uživatele mezi své oblíbené.`,
+    progress:(ctx)=> ctx.favoritesThisWeek},
+  {id:'night_review', min:1, max:1, label:()=>`Napiš recenzi mezi 01:00 a 02:00 ráno.`,
+    progress:(ctx)=> ctx.weekEntries.some(e=> e.review.createdAt && new Date(e.review.createdAt).getHours()===1) ? 1 : 0},
+  {id:'action_movie', min:1, max:1, label:()=>`Napiš recenzi na akční film.`,
+    progress:(ctx)=> ctx.weekEntries.some(e=>e.type==='movie' && (e.item.genre||'').includes('Akční')) ? 1 : 0},
+  {id:'comedy_movie', min:1, max:1, label:()=>`Napiš recenzi na komediální film.`,
+    progress:(ctx)=> ctx.weekEntries.some(e=>e.type==='movie' && (e.item.genre||'').includes('Komedie')) ? 1 : 0},
+  {id:'horror_movie', min:1, max:1, label:()=>`Napiš recenzi na horor.`,
+    progress:(ctx)=> ctx.weekEntries.some(e=>e.type==='movie' && (e.item.genre||'').includes('Horor')) ? 1 : 0},
+  {id:'games_2000_2012', min:2, max:4, label:(n)=>`Ohodnoť ${n} hry vydané mezi lety 2000-2012.`,
+    progress:(ctx)=> ctx.weekEntries.filter(e=>e.type==='game' && e.item.year>=2000 && e.item.year<=2012).length},
+  {id:'games_1985_1995', min:1, max:1, label:()=>`Ohodnoť 1 hru vydanou mezi lety 1985-1995.`,
+    progress:(ctx)=> ctx.weekEntries.filter(e=>e.type==='game' && e.item.year>=1985 && e.item.year<=1995).length},
+  {id:'games_2025_2026', min:2, max:3, label:(n)=>`Ohodnoť ${n} hry vydané mezi lety 2025-2026.`,
+    progress:(ctx)=> ctx.weekEntries.filter(e=>e.type==='game' && e.item.year>=2025 && e.item.year<=2026).length},
+  {id:'give_funny', min:5, max:10, label:(n)=>`Rozdej ostatním ${n} smajlíků za vtipné recenze.`,
+    progress:(ctx)=> ctx.funnyThisWeek},
+  {id:'shows_2020_2026', min:2, max:5, label:(n)=>`Ohodnoť ${n} seriály vydané mezi lety 2020 a 2026.`,
+    progress:(ctx)=> ctx.weekEntries.filter(e=>e.type==='show' && e.item.year>=2020 && e.item.year<=2026).length},
+  {id:'movies_pre1980', min:2, max:5, label:(n)=>`Napiš recenzi na ${n} filmy vydané v roce 1980 nebo dříve.`,
+    progress:(ctx)=> ctx.weekEntries.filter(e=>e.type==='movie' && e.item.year<=1980).length},
+];
+const QUEST_POOL_BY_ID=Object.fromEntries(QUEST_POOL.map(t=>[t.id,t]));
+
+function pickRandomQuests(){
+  const pool=QUEST_POOL.slice();
+  for(let i=pool.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [pool[i],pool[j]]=[pool[j],pool[i]]; }
+  return pool.slice(0,5).map(t=>{
+    const target=t.min+Math.floor(Math.random()*(t.max-t.min+1));
+    return {templateId:t.id, target, label:t.label(target)};
+  });
+}
+async function getThisWeeksQuests(){
+  const weekId=getWeekId();
+  const ref=db.collection('weeklyQuests').doc(weekId);
+  try{
+    const doc=await ref.get();
+    if(doc.exists) return doc.data().quests;
+  }catch(e){
+    console.error('Nepodařilo se načíst týdenní questy', e);
+    return [];
+  }
+  // Not generated yet this week — this is the first client to notice, so it generates and
+  // saves the set. Security rules only allow CREATE (not overwrite), so a race between two
+  // users doing this simultaneously can't corrupt an already-generated week.
+  const quests=pickRandomQuests();
+  try{
+    await ref.set({weekId, quests, generatedAt:firebase.firestore.FieldValue.serverTimestamp()});
+  }catch(e){
+    // Someone else generated it a moment ago — just read back what they saved.
+    try{ const doc2=await ref.get(); if(doc2.exists) return doc2.data().quests; }catch(e2){}
+  }
+  return quests;
+}
+async function countMyVotesThisWeek(kind, weekStart){
+  if(!CURRENT_UID) return 0;
+  try{
+    const snap=await db.collection('votes').where('uid','==',CURRENT_UID).where(kind,'==',true).get();
+    return snap.docs.filter(doc=>{
+      const d=doc.data().updatedAt;
+      const ts=d && d.toDate ? d.toDate() : (d ? new Date(d) : null);
+      return ts && ts>=weekStart;
+    }).length;
+  }catch(e){
+    console.error('Nepodařilo se spočítat hlasy za tento týden', e);
+    return 0;
+  }
+}
+async function countMyFavoritesThisWeek(weekStart){
+  if(!CURRENT_UID) return 0;
+  try{
+    const snap=await db.collection('favorites').where('followerUid','==',CURRENT_UID).get();
+    return snap.docs.filter(doc=>{
+      const d=doc.data().createdAt;
+      const ts=d && d.toDate ? d.toDate() : (d ? new Date(d) : null);
+      return ts && ts>=weekStart;
+    }).length;
+  }catch(e){
+    console.error('Nepodařilo se spočítat oblíbené za tento týden', e);
+    return 0;
+  }
+}
+async function buildWeeklyQuestContext(weekStart){
+  const [allEntries, likesThisWeek, funnyThisWeek, favoritesThisWeek]=await Promise.all([
+    getUserReviewsAsync(CURRENT_USER),
+    countMyVotesThisWeek('liked', weekStart),
+    countMyVotesThisWeek('funny', weekStart),
+    countMyFavoritesThisWeek(weekStart),
+  ]);
+  const weekEntries=allEntries.filter(e=> e.review.createdAt && new Date(e.review.createdAt)>=weekStart);
+  return {weekEntries, likesThisWeek, funnyThisWeek, favoritesThisWeek};
+}
+async function refreshMyQuests(){
+  if(!CURRENT_UID) return {quests:[]};
+  const weekId=getWeekId();
+  const weekStart=getWeekStartInstant();
+  const [quests, prog, ctx]=await Promise.all([
+    getThisWeeksQuests(),
+    getMyProgress(),
+    buildWeeklyQuestContext(weekStart),
+  ]);
+  const completedSoFar=(prog.questWeekId===weekId) ? (prog.completedQuests||{}) : {};
+  const updatedCompleted=Object.assign({}, completedSoFar);
+  const newlyCompleted=[];
+  const results=quests.map(q=>{
+    const template=QUEST_POOL_BY_ID[q.templateId];
+    const current=template ? Math.min(template.progress(ctx), q.target) : 0;
+    const done=!!completedSoFar[q.templateId] || current>=q.target;
+    if(done && !completedSoFar[q.templateId]){ updatedCompleted[q.templateId]=true; newlyCompleted.push(q.templateId); }
+    return Object.assign({}, q, {current, done});
+  });
+  if(newlyCompleted.length || prog.questWeekId!==weekId){
+    try{
+      await db.collection('progress').doc(CURRENT_UID).set({
+        uid:CURRENT_UID, username:CURRENT_USER,
+        questWeekId:weekId, completedQuests:updatedCompleted,
+        xp:firebase.firestore.FieldValue.increment(newlyCompleted.length*XP_PER_QUEST),
+      }, {merge:true});
+    }catch(e){
+      console.error('Nepodařilo se uložit postup questů', e);
+    }
+  }
+  return {quests:results, newlyCompleted};
 }
 
 function userAggregate(entries){
@@ -1714,6 +2109,19 @@ function attachCommentBannerEvents(){
   startBannerAutoAdvance();
 }
 let PENDING_REVIEW_TO_OPEN=null;
+const SKELETON_HOME_HTML=`<div class="skeleton-home">
+  <div class="skeleton-row-title"></div>
+  <div class="skeleton-row">
+    <div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div>
+    <div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div>
+  </div>
+  <div class="skeleton-row-title"></div>
+  <div class="skeleton-row">
+    <div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div>
+    <div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div>
+  </div>
+</div>`;
+
 function renderHome(){
   const hotMovies=DB.movie.filter(m=>withinLast6Months(m.date)).sort((a,b)=>scoreSortValue(b)-scoreSortValue(a)).slice(0,10);
   const hotShows=DB.show.filter(s=>withinLast6Months(s.date)).sort((a,b)=>scoreSortValue(b)-scoreSortValue(a)).slice(0,10);
@@ -2234,12 +2642,14 @@ async function renderUserProfile(username){
   const body=userReviewsPreviewHTML(username, entries);
   const avatarUrl=await getAvatarUrl(username);
   const avatar=avatarMarkup(username, avatarUrl);
+  const progress=await getProgressForUsername(username);
   return `
     <div class="crumb"><a href="#/">Kritiq</a> / ${esc(username)}</div>
     <div class="profile-card">
       <div class="profile-top-combo">
         <button class="profile-avatar-btn" id="profileAvatarBtn" style="${avatar.style}" title="${username===CURRENT_USER?'Změnit profilovou fotku':'Zobrazit oblíbené uživatele'}" type="button">${avatar.inner}</button>
         <div class="profile-avg-box ${cls}"><div class="num">${agg.avg}</div><div class="lbl">Průměr</div></div>
+        ${levelBadgeHTML(progress.xp||0)}
       </div>
       <h1 class="profile-username">${esc(username)}</h1>
       <div class="profile-stats-row">
@@ -2289,13 +2699,66 @@ function attachUserProfileEvents(username){
   });
 }
 
+function normalizeSearchText(s){
+  // Strips diacritics (Hvězdné války -> hvezdne valky) so search works regardless of
+  // whether the visitor types accents or not.
+  return (s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+}
+let PEOPLE_INDEX=null;
+function buildPeopleIndex(){
+  const map=new Map();
+  function addPerson(name, image){
+    if(!name) return;
+    if(!map.has(name)) map.set(name, {name, image:image||null});
+    else if(image && !map.get(name).image) map.get(name).image=image;
+  }
+  ['movie','show'].forEach(type=>{
+    DB[type].forEach(it=>{
+      if(it.director && it.director.name) addPerson(it.director.name, it.director.image);
+      if(it.writer && it.writer.name) addPerson(it.writer.name, it.writer.image);
+      if(it.composer && it.composer.name) addPerson(it.composer.name, it.composer.image);
+      (it.actors||[]).forEach(a=>addPerson(a.name, a.image));
+    });
+  });
+  DB.game.forEach(it=>{ if(it.developer) addPerson(it.developer, null); });
+  PEOPLE_INDEX=[...map.values()];
+  return PEOPLE_INDEX;
+}
+function getPeopleIndex(){
+  return PEOPLE_INDEX || buildPeopleIndex();
+}
+function searchTitles(query){
+  const nq=normalizeSearchText(query);
+  if(!nq) return [];
+  return [...DB.movie,...DB.show,...DB.game].filter(it=>normalizeSearchText(it.title).includes(nq));
+}
+function searchPeople(query){
+  const nq=normalizeSearchText(query);
+  if(!nq) return [];
+  return getPeopleIndex().filter(p=>normalizeSearchText(p.name).includes(nq));
+}
+
 function renderSearch(q){
-  const query=q.toLowerCase();
-  const results=[...DB.movie,...DB.show,...DB.game].filter(it=>it.title.toLowerCase().includes(query));
+  const titleResults=searchTitles(q);
+  const peopleResults=searchPeople(q);
+  const total=titleResults.length+peopleResults.length;
   return `
     <h1 class="page-title">Výsledky hledání</h1>
-    <p class="page-sub">"${esc(q)}" — nalezeno ${results.length}</p>
-    ${results.length? `<div class="grid">${results.map(it=>cardHTML(it)).join('')}</div>` : `<p class="empty-note">Nic jsme nenašli. Zkuste jiný výraz.</p>`}
+    <p class="page-sub">"${esc(q)}" — nalezeno ${total}</p>
+    ${peopleResults.length ? `
+      <h3 class="section-title">Osoby a studia (${peopleResults.length})</h3>
+      <div class="person-search-row">${peopleResults.map(p=>{
+        const h=hashStr(p.name);
+        const style=`background:linear-gradient(135deg, hsl(${h%360} 60% 45%), hsl(${(h+70)%360} 65% 30%));`;
+        const inner=p.image ? `<img src="${esc(p.image)}" alt="" class="avatar-photo">` : esc(p.name.charAt(0));
+        return `<a class="person-search-item" href="#/person/${encodeURIComponent(p.name)}">
+          <span class="person-search-avatar" style="${style}">${inner}</span>
+          <span class="person-search-name">${esc(p.name)}</span>
+        </a>`;
+      }).join('')}</div>
+    ` : ''}
+    ${titleResults.length ? `<h3 class="section-title" style="${peopleResults.length?'margin-top:22px;':''}">Filmy, seriály a hry (${titleResults.length})</h3><div class="grid">${titleResults.map(it=>cardHTML(it)).join('')}</div>` : ''}
+    ${!total ? `<p class="empty-note">Nic jsme nenašli. Zkuste jiný výraz.</p>` : ''}
   `;
 }
 
@@ -2316,6 +2779,12 @@ async function route(){
   const parts=hash.replace(/^#\/?/,'').split('/').filter(Boolean);
   const app=document.getElementById('app');
   setActiveNav(parts[0]||'');
+
+  const isHomepage=parts.length===0;
+  if(!isHomepage && !FULL_CATALOG_READY){
+    app.innerHTML=SKELETON_HOME_HTML;
+    await FULL_CATALOG_PROMISE;
+  }
 
   if(parts.length===0){
     app.innerHTML=renderHome(); attachHotRowEvents();
@@ -2362,6 +2831,21 @@ async function route(){
    { "movies":[{title,year,date,score,box,genre,poster,gallery:[],summary,director,composer,writer,actors:[]}, ...],
      "shows": [{title,year,date,score,genre,poster,gallery:[],summary,director,composer,writer,actors:[]}, ...],
      "games": [{title,year,date,score,genre,poster,gallery:[],developer}, ...] }               */
+let FULL_CATALOG_READY=false;
+let FULL_CATALOG_PROMISE=null;
+async function loadTrendingLight(){
+  try{
+    const res=await fetch('./trending.json', {cache:'no-store'});
+    if(!res.ok) return null;
+    const data=await res.json();
+    if(!data || (!data.movies && !data.shows && !data.games)) return null;
+    return {
+      movie: buildFromRecords(data.movies||[], 'movie', 'm'),
+      show: buildFromRecords(data.shows||[], 'show', 's'),
+      game: buildFromRecords(data.games||[], 'game', 'g'),
+    };
+  }catch(e){ return null; }
+}
 async function loadRealData(){
   async function loadOne(path){
     try{
@@ -2437,6 +2921,24 @@ async function getAvatarUrl(username){
     return null; // most users simply haven't uploaded an avatar — not a real error
   }
 }
+async function getUidForUsername(username){
+  try{
+    const unameDoc=await db.collection('usernames').doc(slugifyNickname(username)).get();
+    return unameDoc.exists ? unameDoc.data().uid : null;
+  }catch(e){
+    return null;
+  }
+}
+async function getProgressForUsername(username){
+  const uid=await getUidForUsername(username);
+  return getProgress(uid);
+}
+function levelBadgeHTML(xp){
+  const level=levelForXp(xp);
+  const cls=levelColorClass(level);
+  const label=isMaxLevel(level) ? 'MAX' : String(level);
+  return `<div class="profile-avg-box level-badge ${cls}"><div class="num">${label}${isMaxLevel(level)?'':'.'}</div><div class="lbl">LEVEL</div></div>`;
+}
 function avatarMarkup(username, url){
   return {
     style: url ? '' : avatarStyle(username),
@@ -2499,9 +3001,13 @@ function renderAuthBadge(){
     wrap.innerHTML=`
       <div class="auth-badge-user">
         <button class="auth-badge-name profile-link" data-username="${esc(CURRENT_USER)}" type="button">${esc(CURRENT_USER)}</button>
+        <button class="auth-badge-logout auth-badge-achievements" id="achievementsBtn" title="Úspěchy" type="button">A</button>
+        <button class="auth-badge-logout auth-badge-quests" id="questsBtn" title="Týdenní questy" type="button">Q</button>
         <button class="auth-badge-logout" id="logoutBtn" title="Odhlásit se" type="button">${ICON_POWER}</button>
       </div>`;
     document.getElementById('logoutBtn').addEventListener('click', openLogoutConfirm);
+    document.getElementById('achievementsBtn').addEventListener('click', openAchievementsModal);
+    document.getElementById('questsBtn').addEventListener('click', openQuestsModal);
   }else{
     wrap.innerHTML=`<button class="auth-badge-login" id="loginBadgeBtn" type="button">Login</button>`;
     document.getElementById('loginBadgeBtn').addEventListener('click', ()=>openAuthModal('login'));
@@ -2860,6 +3366,65 @@ function openDeleteConfirmModal(item){
   });
 }
 
+async function openAchievementsModal(){
+  pushModal(renderAchievementsModal);
+}
+async function renderAchievementsModal(){
+  const card=document.getElementById('reviewModalCard');
+  card.className='modal-card';
+  card.innerHTML=`
+    <button class="modal-close" id="achClose" aria-label="Zavřít" type="button">✕</button>
+    <h3 class="section-title" style="margin-bottom:14px;">Úspěchy</h3>
+    <div class="ach-grid" id="achGrid"><p class="empty-note">Načítání...</p></div>
+  `;
+  document.getElementById('achClose').addEventListener('click', popModal);
+  const {unlocked}=await refreshMyAchievements();
+  const grid=document.getElementById('achGrid');
+  if(!grid) return; // modal closed before this resolved
+  grid.innerHTML=ACHIEVEMENTS.map(a=>{
+    const done=!!unlocked[a.id];
+    return `
+      <div class="ach-card ${done?'ach-done':''}">
+        <div class="ach-badge">${ACHIEVEMENT_ICONS[a.icon]||''}</div>
+        <div class="ach-name">${esc(a.name)}</div>
+        <div class="ach-desc">${esc(a.desc)}</div>
+      </div>`;
+  }).join('');
+}
+async function openQuestsModal(){
+  pushModal(renderQuestsModal);
+}
+async function renderQuestsModal(){
+  const card=document.getElementById('reviewModalCard');
+  card.className='modal-card';
+  card.innerHTML=`
+    <button class="modal-close" id="questClose" aria-label="Zavřít" type="button">✕</button>
+    <h3 class="section-title" style="margin-bottom:4px;">Týdenní questy</h3>
+    <p class="page-sub" style="margin-bottom:14px;">Nové questy každé pondělí o půlnoci. Splněný quest = ${XP_PER_QUEST} XP.</p>
+    <div id="questList"><p class="empty-note">Načítání...</p></div>
+  `;
+  document.getElementById('questClose').addEventListener('click', popModal);
+  const {quests}=await refreshMyQuests();
+  const list=document.getElementById('questList');
+  if(!list) return; // modal closed before this resolved
+  if(!quests.length){
+    list.innerHTML=`<p class="empty-note">Questy se nepodařilo načíst. Zkuste to prosím znovu.</p>`;
+    return;
+  }
+  list.innerHTML=quests.map(q=>{
+    const pct=Math.round((q.current/q.target)*100);
+    return `
+      <div class="quest-card ${q.done?'quest-done':''}">
+        <div class="quest-top">
+          <span class="quest-label">${esc(q.label)}</span>
+          <span class="quest-xp">${q.done?'✓ ':''}+${XP_PER_QUEST} XP</span>
+        </div>
+        <div class="quest-bar-track"><div class="quest-bar-fill" style="width:${pct}%"></div></div>
+        <div class="quest-count">${q.current} / ${q.target}</div>
+      </div>`;
+  }).join('');
+}
+
 function openLogoutConfirm(){
   pushModal(()=>{
     const card=document.getElementById('reviewModalCard');
@@ -3087,6 +3652,7 @@ async function renderUserModal(){
   const body=userReviewsPreviewHTML(username, entries);
   const avatarUrl=await getAvatarUrl(username);
   const avatar=avatarMarkup(username, avatarUrl);
+  const progress=await getProgressForUsername(username);
   card.className='modal-card';
   card.innerHTML=`
     <div class="modal-head-row">
@@ -3097,6 +3663,7 @@ async function renderUserModal(){
       <div class="profile-top-combo">
         <button class="profile-avatar-btn" id="modalAvatarBtn" style="${avatar.style}" title="${username===CURRENT_USER?'Změnit profilovou fotku':'Zobrazit oblíbené uživatele'}" type="button">${avatar.inner}</button>
         <div class="profile-avg-box ${cls}"><div class="num">${agg.avg}</div><div class="lbl">Průměr</div></div>
+        ${levelBadgeHTML(progress.xp||0)}
       </div>
       <h1 class="profile-username">${esc(username)}</h1>
       <div class="profile-stats-row">
@@ -3166,15 +3733,21 @@ function initSearchPanel(){
   }
   function renderResults(q){
     if(!q){ results.innerHTML=''; return; }
-    const query=q.toLowerCase();
-    const matches=[...DB.movie,...DB.show,...DB.game].filter(it=>it.title.toLowerCase().includes(query));
-    if(!matches.length){ results.innerHTML=`<div class="search-empty-note">Nic jsme nenašli pro "${esc(q)}".</div>`; return; }
-    const top=matches.slice(0,20);
-    results.innerHTML=top.map(it=>{
+    const titleMatches=searchTitles(q);
+    const peopleMatches=searchPeople(q);
+    if(!titleMatches.length && !peopleMatches.length){ results.innerHTML=`<div class="search-empty-note">Nic jsme nenašli pro "${esc(q)}".</div>`; return; }
+    const peopleHTML=peopleMatches.slice(0,5).map(p=>{
+      const h=hashStr(p.name);
+      const style=`background:linear-gradient(135deg, hsl(${h%360} 60% 45%), hsl(${(h+70)%360} 65% 30%));`;
+      const inner=p.image ? `<img src="${esc(p.image)}" alt="" class="avatar-photo">` : esc(p.name.charAt(0));
+      return `<a class="search-result-row search-result-person" href="#/person/${encodeURIComponent(p.name)}"><span class="person-search-avatar" style="${style}">${inner}</span><span class="srr-title">${esc(p.name)}</span></a>`;
+    }).join('');
+    const titleHTML=titleMatches.slice(0,20).map(it=>{
       const sc=liveScore(it); const badge=scoreBadge(sc);
       const meta=(it.type==='movie' && it.box!==null && it.box!==undefined) ? `${fmtBox(it.box, it.boxCurrency)} · ${it.year}` : `${it.year}`;
       return `<a class="search-result-row" href="#/title/${it.type}/${it.id}"><span class="srr-title">${esc(it.title)}</span><span class="srr-meta">${typeLabel(it.type)} · ${meta}</span><span class="srr-score ${badge.cls}">${badge.text}</span></a>`;
     }).join('');
+    results.innerHTML=peopleHTML+titleHTML;
   }
 
   toggleBtn.addEventListener('click', ()=>{
@@ -3189,8 +3762,8 @@ function initSearchPanel(){
   window._closeSearchPanel=closePanel;
 }
 
-async function init(){
-  const loadedReal = await loadRealData();
+async function loadFullCatalog(){
+  const loadedReal=await loadRealData();
   if(!loadedReal){
     DB.movie=buildMovies();
     DB.show=buildShows();
@@ -3199,6 +3772,20 @@ async function init(){
     runDailyDrop(); // simulated placeholder content — demo dataset only, never with real fetched data
   }
   computeYearBounds();
+  FULL_CATALOG_READY=true;
+  return loadedReal;
+}
+async function init(){
+  FULL_CATALOG_PROMISE=loadFullCatalog(); // kicked off immediately, not awaited yet — runs in the background
+
+  const trending=await loadTrendingLight();
+  if(trending){
+    DB.movie=trending.movie; DB.show=trending.show; DB.game=trending.game;
+    // Rough placeholder bounds from the small trending subset — computeYearBounds() inside
+    // loadFullCatalog() corrects this properly once the real catalog finishes loading.
+  }else{
+    await FULL_CATALOG_PROMISE; // no lightweight file available (e.g. demo/preview) — wait for the real thing before first render
+  }
 
   initSearchPanel();
   renderAuthBadge();
