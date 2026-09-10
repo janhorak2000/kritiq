@@ -25,7 +25,7 @@ jobs:
         env:
           TMDB_KEY: ${{ secrets.TMDB_KEY }}
           RAWG_KEY: ${{ secrets.RAWG_KEY }}
-        run: python fetch_data_daily.py --tmdb-key "$TMDB_KEY" --rawg-key "$RAWG_KEY"
+        run: python fetch_data_daily.py --tmdb-key "$TMDB_KEY" --rawg-key "$RAWG_KEY" --skip-games-backfill --recent-games-min-wishlist 10
 
       - name: Commit updated data
         run: |
