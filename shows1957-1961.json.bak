@@ -17315,5 +17315,86 @@
     },
     "actors": [],
     "reviews": []
+  },
+  {
+    "title": "O krtkovi",
+    "country": "Česko",
+    "tmdb_id": 44256,
+    "imdb_id": "tt0841927",
+    "year": 1957,
+    "date": "1957-09-13",
+    "score": 79,
+    "genre": "Animovaný",
+    "runtime_min": 5,
+    "runtime_max": 5,
+    "poster": "https://image.tmdb.org/t/p/w500/9p5VL35gmEx7IAxWsGakDE0n8c6.jpg",
+    "gallery": [
+      "https://image.tmdb.org/t/p/w500/4lQuc92U8irlFtJOCXoHp8P5EA8.jpg"
+    ],
+    "summary": "První a snad nejznámější díl seriálu O Krtkovi \"Jak krtek ke kalhotkám přišel\" natočil jeho autor Zdeněk Miler již v roce 1957. V té době se vlastně ještě o seriál nejednalo, neboť další díl \"Krtek a autíčko\" se začal natáčet až v roce 1963 po velkém úspěchu dílu prvního, který jediný je mluvený. V dalších dílech jsou použity už jen smích, pláč, další citoslovce a různá gesta (což je výhoda, protože je srozumitelný pro lidi na celém světě).",
+    "director": {
+      "name": "Zdeněk Miler",
+      "image": "https://image.tmdb.org/t/p/w300/oJo2G1PAOLYAqjqRo2NUtmt9Yc8.jpg"
+    },
+    "composer": {
+      "name": "Miloš Vacek",
+      "image": ""
+    },
+    "writer": {
+      "name": "Zdeněk Miler",
+      "image": "https://image.tmdb.org/t/p/w300/oJo2G1PAOLYAqjqRo2NUtmt9Yc8.jpg"
+    },
+    "actors": [
+      {
+        "name": "Antonín Jedlička",
+        "birthday": "1923-02-18",
+        "deathday": "1993-08-28",
+        "age": 70,
+        "image": "https://image.tmdb.org/t/p/w300/aqBhEGRMZYlH2UX1aoIqNyNocqi.jpg"
+      },
+      {
+        "name": "František Filipovský",
+        "birthday": "1907-09-23",
+        "deathday": "1993-10-26",
+        "age": 86,
+        "image": "https://image.tmdb.org/t/p/w300/pDItAWdMMhTaNExwfc5efYZOtGu.jpg"
+      },
+      {
+        "name": "Josef Hlinomaz",
+        "birthday": "1914-10-09",
+        "deathday": "1978-08-08",
+        "age": 63,
+        "image": "https://image.tmdb.org/t/p/w300/gHi4WV92jM1cckm27p0k2xeC8lG.jpg"
+      },
+      {
+        "name": "Viola Zinková",
+        "birthday": "1925-06-15",
+        "deathday": "2017-10-18",
+        "age": 92,
+        "image": "https://image.tmdb.org/t/p/w300/pWWtZ1zrQg86p5sQjTqcilUKPwe.jpg"
+      },
+      {
+        "name": "Artuš Kalous",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "name": "E. Smítková",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "name": "P. Kysela",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      }
+    ],
+    "reviews": []
   }
 ]
