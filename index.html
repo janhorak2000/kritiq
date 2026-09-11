@@ -1439,6 +1439,7 @@ const ACHIEVEMENT_ICONS={
   top10: '<span class="ach-icon-text">TOP<br>10</span>',
   scifi: '<span class="ach-icon-text">SCI-FI</span>',
   xp: '<span class="ach-icon-text">XP</span>',
+  horor: '<span class="ach-icon-text">HOROR</span>',
   gun: '🔫',
   clock: '⏰',
   controller: '🎮',
@@ -1446,7 +1447,24 @@ const ACHIEVEMENT_ICONS={
   smiley: '😄',
   tv: '📺',
   muscle: '💪',
+  cucumber: '🥒',
+  clapperboard: '🎬',
+  radioactive: '☢️',
+  spider: '🕷️',
+  pen: '📝',
+  clown: '🤡',
+  videocassette: '📼',
+  karate: '🥋',
+  shush: '🤫',
+  cowboy: '🤠',
+  lunch: '🍽️',
+  trash: '🗑️',
+  calendar: '📅',
 };
+function achievementIconHTML(icon){
+  if(icon.startsWith('text:')) return `<span class="ach-icon-text">${esc(icon.slice(5))}</span>`;
+  return ACHIEVEMENT_ICONS[icon]||'';
+}
 const ACHIEVEMENTS=[
   {id:'first_review', name:'Ztráta recenzentského panictví', desc:'Napiš svou první recenzi a ohodnoť první film.', icon:'text100',
     check:(ctx)=> ctx.entries.length>=1},
@@ -1489,6 +1507,102 @@ const ACHIEVEMENTS=[
     check:(ctx)=> (ctx.progress.xp||0)>=100},
   {id:'jubilee', name:'Jubileum', desc:'Napiš 100 recenzí.', icon:'text100',
     check:(ctx)=> ctx.entries.length>=100},
+  {id:'keanu_reeves', name:'Dechberoucí Keanu', desc:'Ohodnoť 5 filmů, kde hraje Keanu Reeves.', icon:'gun',
+    check:(ctx)=> ctx.entries.filter(e=>e.type==='movie' && (e.item.actors||[]).some(a=>a.name==='Keanu Reeves')).length>=5},
+  {id:'funny_3', name:'Vtipálek', desc:'Získej 3 smajlíky za vtipné recenze.', icon:'smiley',
+    check:(ctx)=> (ctx.progress.totalFunnyGiven||0)>=3},
+  {id:'vojtech_dyk', name:'Mrkni na Pytlíka', desc:'Podívej se a ohodnoť 2 filmy, kde hraje Vojtěch Dyk.', icon:'cucumber',
+    check:(ctx)=> ctx.entries.filter(e=>e.type==='movie' && (e.item.actors||[]).some(a=>a.name==='Vojtěch Dyk')).length>=2},
+  {id:'friends_directors', name:'Kámoši jak hrom', desc:'Ohodnoť jeden film, který režíroval buď Jan Svěrák, nebo jeho kamarád Jan Hřebejk.', icon:'clapperboard',
+    check:(ctx)=> ctx.entries.some(e=>e.type==='movie' && e.item.director && ['Jan Svěrák','Jan Hřebejk'].includes(e.item.director.name))},
+  {id:'fallout_series', name:'Válka... válka se nikdy nemění', desc:'Napiš alespoň jednu recenzi k jedné z těchto her ze série Fallout: Fallout, Fallout 2, Fallout 3, Fallout 4, nebo Fallout: New Vegas.', icon:'radioactive',
+    check:(ctx)=> ctx.entries.some(e=>e.type==='game' && /^fallout(\s*(2|3|4|:\s*new vegas))?$/i.test(e.item.title.trim()))},
+  {id:'pulp_fiction', name:'Zed je mrtvej lásko...', desc:'Ohodnoť a okomentuj film Pulp Fiction.', icon:'gun',
+    check:(ctx)=> ctx.entries.some(e=>e.type==='movie' && /pulp fiction/i.test(e.item.title))},
+  {id:'spiderman_three_actors', name:'Spider-Maaaaan', desc:"Napiš 3 recenze - jednu k filmu Spider-Man, kde hraje Tobey Maguire, jednu k filmu Amazing Spider-Man, kde hraje Andrew Garfield a poslední k filmu Spider-Man: Homecoming, kde hraje Tom Holland.", icon:'spider',
+    check:(ctx)=>{
+      const hasActor=(name)=> ctx.entries.some(e=>e.type==='movie' && /spider-?man/i.test(e.item.title) && (e.item.actors||[]).some(a=>a.name===name));
+      return hasActor('Tobey Maguire') && hasActor('Andrew Garfield') && hasActor('Tom Holland');
+    }},
+  {id:'spinoff_shows', name:'Milovník vytříběných spin-offů', desc:'Napiš jednu recenzi buď k seriálu Volejte Saulovi, nebo k seriálu Rytíř Sedmi království.', icon:'tv',
+    check:(ctx)=> ctx.entries.some(e=>e.type==='show' && (/volejte saulovi|better call saul/i.test(e.item.title) || /rytíř sedmi království/i.test(e.item.title)))},
+  {id:'top10_full_movies', name:'Hotová top desítka filmů', desc:'Přiřaď na každou pozici film do tvé osobní Top 10 filmů.', icon:'top10',
+    check:(ctx)=> Array.from({length:10},(_,i)=>String(i+1)).every(p=>ctx.top10Movie[p])},
+  {id:'top10_full_shows', name:'Hotová top desítka seriálů', desc:'Přiřaď na každou pozici seriál do tvé osobní Top 10 seriálů.', icon:'top10',
+    check:(ctx)=> Array.from({length:10},(_,i)=>String(i+1)).every(p=>ctx.top10Show[p])},
+  {id:'top10_full_games', name:'Hotová top desítka her', desc:'Přiřaď na každou pozici hru do tvé osobní Top 10 her.', icon:'top10',
+    check:(ctx)=> Array.from({length:10},(_,i)=>String(i+1)).every(p=>ctx.top10Game[p])},
+  {id:'svěrák_writer', name:'Asi jinej voddíl', desc:'Ohodnoť a zrecenzuj 3 filmy, kde je jako scénárista uveden Zdeněk Svěrák.', icon:'pen',
+    check:(ctx)=> ctx.entries.filter(e=>e.type==='movie' && e.item.writer && e.item.writer.name==='Zdeněk Svěrák').length>=3},
+  {id:'horror_10', name:'Kdo se bojí, nesmí do lesa', desc:'Přidej recenzi k 10 hororům.', icon:'horor',
+    check:(ctx)=> ctx.entries.filter(e=>e.type==='movie' && (e.item.genre||'').includes('Horor')).length>=10},
+  {id:'re2_sh2_remakes', name:'Dvoje hnědý trenky', desc:'Přidej recenzi ke hře Resident Evil 2 (remake z roku 2019) a Silent Hill 2 (remake z roku 2024).', icon:'controller',
+    check:(ctx)=> ctx.entries.some(e=>e.type==='game' && /resident evil 2/i.test(e.item.title) && e.item.year===2019)
+               && ctx.entries.some(e=>e.type==='game' && /silent hill 2/i.test(e.item.title) && e.item.year===2024)},
+  {id:'mass_effect_trilogy', name:'Cestovatel vesmírem', desc:'Přidej recenzi ke hrám Mass Effect, Mass Effect 2 a Mass Effect 3.', icon:'controller',
+    check:(ctx)=>{
+      const games=ctx.entries.filter(e=>e.type==='game').map(e=>e.item.title.toLowerCase().trim());
+      return games.includes('mass effect') && games.includes('mass effect 2') && games.includes('mass effect 3');
+    }},
+  {id:'classic_fps_trilogy', name:'Milovník klasických FPSek', desc:'Přidej recenzi ke hrám Wolfenstein 3D z roku 1992, Quake z roku 1996 a Half-Life z roku 1998.', icon:'controller',
+    check:(ctx)=> ctx.entries.some(e=>e.type==='game' && /wolfenstein 3d/i.test(e.item.title) && e.item.year===1992)
+               && ctx.entries.some(e=>e.type==='game' && /^quake$/i.test(e.item.title.trim()) && e.item.year===1996)
+               && ctx.entries.some(e=>e.type==='game' && /^half-life$/i.test(e.item.title.trim()) && e.item.year===1998)},
+  {id:'batman_joker', name:'Zlej nebo hodnej?', desc:'Napiš jednu recenzi buď k filmu Batman z roku 2022, nebo k filmu Joker z roku 2019.', icon:'clown',
+    check:(ctx)=> ctx.entries.some(e=>e.type==='movie' && /^the batman$|^batman$/i.test(e.item.title.trim()) && e.item.year===2022)
+               || ctx.entries.some(e=>e.type==='movie' && /^joker$/i.test(e.item.title.trim()) && e.item.year===2019)},
+  {id:'reviews_250', name:'Recenzentský profík', desc:'Napiš celkem 250 recenzí.', icon:'text:250',
+    check:(ctx)=> ctx.entries.length>=250},
+  {id:'dudikoff_2', name:'Znalec béček', desc:'Napiš recenzi ke dvěma filmům, kde účinkuje Michael Dudikoff.', icon:'videocassette',
+    check:(ctx)=> ctx.entries.filter(e=>e.type==='movie' && (e.item.actors||[]).some(a=>a.name==='Michael Dudikoff')).length>=2},
+  {id:'karate_kid_cobra_kai', name:'Cobra Kai never dies!', desc:'Zrecenzuj film Karate Kid z roku 1984 a zároveň napiš recenzi k seriálu Cobra Kai z roku 2018.', icon:'karate',
+    check:(ctx)=> ctx.entries.some(e=>e.type==='movie' && /karate kid/i.test(e.item.title) && e.item.year===1984)
+               && ctx.entries.some(e=>e.type==='show' && /cobra kai/i.test(e.item.title) && e.item.year===2018)},
+  {id:'fight_club', name:'Pravidlo číslo jedna. Nemluvíme o něm!', desc:'Zrecenzuj film Klub rváčů.', icon:'shush',
+    check:(ctx)=> ctx.entries.some(e=>e.type==='movie' && /klub rváčů|fight club/i.test(e.item.title))},
+  {id:'dollars_trilogy', name:'Hodný, zlý a recenzující', desc:'Napiš recenzi k filmům Pro hrst dolarů, Pro pár dolarů navíc a Hodný, zlý a ošklivý.', icon:'cowboy',
+    check:(ctx)=>{
+      const movies=ctx.entries.filter(e=>e.type==='movie').map(e=>e.item.title.toLowerCase());
+      const has=(needle)=> movies.some(t=>t.includes(needle));
+      return has('pro hrst dolarů') && has('pro pár dolarů navíc') && (has('hodný, zlý a ošklivý')||has('hodný zlý a ošklivý'));
+    }},
+  {id:'early_bird', name:'Ranní ptáče', desc:'Napiš dvě recenze mezi 06:00 a 08:00 hodinou ranní.', icon:'clock',
+    check:(ctx)=> ctx.entries.filter(e=>{ if(!e.review.createdAt) return false; const h=new Date(e.review.createdAt).getHours(); return h===6||h===7; }).length>=2},
+  {id:'reviews_500', name:'Recenzentský veterán', desc:'Napiš 500 recenzí.', icon:'text:500',
+    check:(ctx)=> ctx.entries.length>=500},
+  {id:'lunch_break', name:'Obědová pauza', desc:'Napiš dvě recenze mezi 12:00 a 13:00.', icon:'lunch',
+    check:(ctx)=> ctx.entries.filter(e=>{ if(!e.review.createdAt) return false; const h=new Date(e.review.createdAt).getHours(); return h===12; }).length>=2},
+  {id:'trash_movies', name:'Milovník trashe', desc:'Ohodnoť 3 filmy, které mají v době psaní tvé recenze 49 a méně procent.', icon:'trash',
+    check:(ctx)=> ctx.entries.filter(e=>e.type==='movie' && e.item.score!==null && e.item.score!==undefined && e.item.score<=49).length>=3},
+  {id:'half_century_decades', name:'Půl století', desc:'Napiš 5 recenzí k filmům, kdy jeden film byl vydán mezi lety 1970-1979, druhý mezi 1980-1989, třetí mezi 1990-1999, čtvrtý mezi 2000-2009 a pátý mezi 2010-2019.', icon:'clapperboard',
+    check:(ctx)=>{
+      const decades=[[1970,1979],[1980,1989],[1990,1999],[2000,2009],[2010,2019]];
+      return decades.every(([lo,hi])=> ctx.entries.some(e=>e.type==='movie' && e.item.year>=lo && e.item.year<=hi));
+    }},
+  {id:'xp_1000', name:'Zkušený sběratel XPček', desc:'Nasbírej celkem 1000 XP bodů.', icon:'xp',
+    check:(ctx)=> (ctx.progress.xp||0)>=1000},
+  {id:'weekly_streak_5', name:'Rutinér', desc:'Napiš alespoň jednu recenzi každý týden po dobu pěti po sobě jdoucích týdnů.', icon:'calendar',
+    check:(ctx)=>{
+      const weekIds=new Set(ctx.entries.map(e=>e.review.createdAt).filter(Boolean).map(d=>getWeekId(new Date(d))));
+      const sorted=[...weekIds].sort();
+      let streak=1, maxStreak=sorted.length?1:0;
+      for(let i=1;i<sorted.length;i++){
+        const prev=new Date(sorted[i-1]+'T00:00:00Z');
+        const cur=new Date(sorted[i]+'T00:00:00Z');
+        const diffDays=Math.round((cur-prev)/(24*60*60*1000));
+        if(diffDays===7){ streak++; maxStreak=Math.max(maxStreak,streak); }
+        else streak=1;
+      }
+      return maxStreak>=5;
+    }},
+  {id:'hater_extremes', name:'Profesionální hater', desc:'Dej celkem deseti titulům z jakékoliv kategorie (filmy, seriály, hry) skóre 0 nebo 10.', icon:'text:0',
+    check:(ctx)=> ctx.entries.filter(e=> e.review.score===0 || e.review.score===100).length>=10},
+  {id:'different_taste', name:'Jinej vkus', desc:'Napiš recenzi a dej desítku titulu, který má průměrné skóre 70 a méně.', icon:'text100',
+    check:(ctx)=> ctx.entries.some(e=> e.review.score===100 && e.item.score!==null && e.item.score!==undefined && e.item.score<=70)},
+  {id:'games_2020_2026_15', name:'Jsem hráč bejby', desc:'Napiš 15 recenzí ke hrám vydaným mezi lety 2020 a 2026.', icon:'controller',
+    check:(ctx)=> ctx.entries.filter(e=>e.type==='game' && e.item.year>=2020 && e.item.year<=2026).length>=15},
+  {id:'reviews_1000', name:'Všechno viděl a všude byl', desc:'Napiš recenzi k 1000 titulům.', icon:'text:1000',
+    check:(ctx)=> ctx.entries.length>=1000},
 ];
 async function buildAchievementContext(username){
   const [entries, top10Movie, top10Show, top10Game, progress] = await Promise.all([
@@ -3397,7 +3511,7 @@ async function renderAchievementsModal(){
     const done=!!unlocked[a.id];
     return `
       <div class="ach-card ${done?'ach-done':''}">
-        <div class="ach-badge">${ACHIEVEMENT_ICONS[a.icon]||''}</div>
+        <div class="ach-badge">${achievementIconHTML(a.icon)}</div>
         <div class="ach-name">${esc(a.name)}</div>
         <div class="ach-desc">${esc(a.desc)}</div>
       </div>`;
@@ -3430,7 +3544,7 @@ async function renderAchievementsModalReadOnly(username){
     const done=!!unlocked[a.id];
     return `
       <div class="ach-card ${done?'ach-done':''}">
-        <div class="ach-badge">${ACHIEVEMENT_ICONS[a.icon]||''}</div>
+        <div class="ach-badge">${achievementIconHTML(a.icon)}</div>
         <div class="ach-name">${esc(a.name)}</div>
         <div class="ach-desc">${esc(a.desc)}</div>
       </div>`;
