@@ -468,6 +468,13 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
 .detail-top--notag{margin-top:4px;}
 .detail-header{margin-bottom:22px;}
 .detail-header h1{font-family:var(--font-display); font-weight:800; font-size:clamp(26px,4vw,40px); margin:0 0 8px; line-height:1.05;}
+.admin-edit-btn{
+  display:inline-flex; align-items:center; justify-content:center; vertical-align:middle;
+  width:30px; height:30px; margin-left:10px; border-radius:50%; border:1px solid var(--line-soft);
+  background:var(--bg-2); color:var(--text-faint); font-size:14px; cursor:pointer;
+  transition:color .15s, border-color .15s, background .15s;
+}
+.admin-edit-btn:hover{color:#fff; border-color:var(--violet); background:var(--bg-1);}
 .detail-meta-line{color:var(--text-dim); font-size:14.5px; margin-bottom:0; display:flex; gap:10px; flex-wrap:wrap; align-items:center;}
 .top10-add-btn{
   display:inline-flex; align-items:center; font-size:inherit; font-weight:700; line-height:1;
@@ -1573,7 +1580,7 @@ const ACHIEVEMENTS=[
   {id:'lunch_break', name:'Obědová pauza', desc:'Napiš dvě recenze mezi 12:00 a 13:00.', icon:'lunch',
     check:(ctx)=> ctx.entries.filter(e=>{ if(!e.review.createdAt) return false; const h=new Date(e.review.createdAt).getHours(); return h===12; }).length>=2},
   {id:'trash_movies', name:'Milovník trashe', desc:'Ohodnoť 3 filmy, které mají v době psaní tvé recenze 49 a méně procent.', icon:'trash',
-    check:(ctx)=> ctx.entries.filter(e=>e.type==='movie' && e.item.score!==null && e.item.score!==undefined && e.item.score<=49).length>=3},
+    check:(ctx)=> ctx.entries.filter(e=>{ if(e.type!=='movie') return false; const s=liveScore(e.item); return s!==null && s<=49; }).length>=3},
   {id:'half_century_decades', name:'Půl století', desc:'Napiš 5 recenzí k filmům, kdy jeden film byl vydán mezi lety 1970-1979, druhý mezi 1980-1989, třetí mezi 1990-1999, čtvrtý mezi 2000-2009 a pátý mezi 2010-2019.', icon:'clapperboard',
     check:(ctx)=>{
       const decades=[[1970,1979],[1980,1989],[1990,1999],[2000,2009],[2010,2019]];
@@ -1598,7 +1605,7 @@ const ACHIEVEMENTS=[
   {id:'hater_extremes', name:'Profesionální hater', desc:'Dej celkem deseti titulům z jakékoliv kategorie (filmy, seriály, hry) skóre 0 nebo 10.', icon:'text:0',
     check:(ctx)=> ctx.entries.filter(e=> e.review.score===0 || e.review.score===100).length>=10},
   {id:'different_taste', name:'Jinej vkus', desc:'Napiš recenzi a dej desítku titulu, který má průměrné skóre 70 a méně.', icon:'text100',
-    check:(ctx)=> ctx.entries.some(e=> e.review.score===100 && e.item.score!==null && e.item.score!==undefined && e.item.score<=70)},
+    check:(ctx)=> ctx.entries.some(e=>{ if(e.review.score!==100) return false; const s=liveScore(e.item); return s!==null && s<=70; })},
   {id:'games_2020_2026_15', name:'Jsem hráč bejby', desc:'Napiš 15 recenzí ke hrám vydaným mezi lety 2020 a 2026.', icon:'controller',
     check:(ctx)=> ctx.entries.filter(e=>e.type==='game' && e.item.year>=2020 && e.item.year<=2026).length>=15},
   {id:'reviews_1000', name:'Všechno viděl a všude byl', desc:'Napiš recenzi k 1000 titulům.', icon:'text:1000',
@@ -2557,7 +2564,7 @@ function renderDetail(type,id){
   return `
     <div class="detail-top detail-top--notag">
       <div class="detail-header">
-        <h1>${esc(item.title)}</h1>
+        <h1>${esc(item.title)}${isAdmin() ? `<button class="admin-edit-btn no-modal-trigger" id="adminEditBtn" title="Upravit údaje (jen pro admina)" type="button">✎</button>` : ''}</h1>
         <div class="detail-meta-line">${metaLine}</div>
       </div>
       <div class="score-bar ${badge.cls}">
@@ -2596,6 +2603,8 @@ function attachDetailEvents(type,id){
   const top10Btn=document.getElementById('top10AddBtn');
   if(top10Btn) top10Btn.addEventListener('click', ()=> openTop10PickerModal(item));
   refreshTop10Button(item);
+  const adminEditBtn=document.getElementById('adminEditBtn');
+  if(adminEditBtn) adminEditBtn.addEventListener('click', ()=> openAdminEditModal(item));
   const showAllCastBtn=document.getElementById('showAllCastBtn');
   if(showAllCastBtn) showAllCastBtn.addEventListener('click', ()=>{
     document.getElementById('castHiddenRow').style.display='';
@@ -3280,6 +3289,71 @@ async function refreshTop10Button(item){
   if(!btn || !pos) return;
   btn.textContent=`V Top 10 (#${pos})`;
   btn.classList.add('in-list');
+}
+function openAdminEditModal(item){
+  if(!isAdmin()) return;
+  pushModal(()=>renderAdminEditModal(item));
+}
+function renderAdminEditModal(item){
+  const card=document.getElementById('reviewModalCard');
+  card.className='modal-card';
+  const showCountryDuration = item.type==='movie' || item.type==='show';
+  const currentDuration = item.type==='movie' ? item.runtime : (item.type==='show' ? item.runtimeMin : null);
+  card.innerHTML=`
+    <button class="modal-close" id="adminEditClose" aria-label="Zavřít" type="button">✕</button>
+    <h3 class="section-title" style="margin-bottom:4px;">Upravit údaje (admin)</h3>
+    <p class="page-sub" style="margin-bottom:14px;">${esc(item.title)}</p>
+    <div class="auth-form">
+      <div class="auth-field"><label>Název</label><input type="text" id="adminEditTitle" value="${esc(item.title)}"></div>
+      <div class="auth-field"><label>Popis</label><textarea id="adminEditSummary" rows="5">${esc(item.summary||'')}</textarea></div>
+      <div class="auth-field"><label>Skóre (0-100, prázdné = neznámé)</label><input type="number" id="adminEditScore" min="0" max="100" value="${item.baseScore!==null && item.baseScore!==undefined ? item.baseScore : ''}"></div>
+      ${showCountryDuration ? `
+      <div class="auth-field"><label>Země</label><input type="text" id="adminEditCountry" value="${esc(item.country||'')}"></div>
+      <div class="auth-field"><label>Délka (minuty)</label><input type="number" id="adminEditDuration" min="1" value="${currentDuration!==null && currentDuration!==undefined ? currentDuration : ''}"></div>
+      ` : ''}
+      <button class="auth-submit" id="adminEditSave" type="button">Uložit změny</button>
+      <p class="form-note" id="adminEditStatus" style="margin-top:8px;"></p>
+    </div>
+  `;
+  document.getElementById('adminEditClose').addEventListener('click', popModal);
+  document.getElementById('adminEditSave').addEventListener('click', async ()=>{
+    const saveBtn=document.getElementById('adminEditSave');
+    const status=document.getElementById('adminEditStatus');
+    saveBtn.disabled=true;
+    status.textContent='Ukládání...';
+    const fields={};
+    const newTitle=document.getElementById('adminEditTitle').value.trim();
+    if(newTitle && newTitle!==item.title) fields.title=newTitle;
+    const newSummary=document.getElementById('adminEditSummary').value.trim();
+    if(newSummary!==(item.summary||'')) fields.summary=newSummary;
+    const scoreRaw=document.getElementById('adminEditScore').value;
+    if(scoreRaw!==''){
+      const scoreNum=parseInt(scoreRaw,10);
+      if(!isNaN(scoreNum) && scoreNum>=0 && scoreNum<=100) fields.score=scoreNum;
+    }
+    if(showCountryDuration){
+      const newCountry=document.getElementById('adminEditCountry').value.trim();
+      if(newCountry && newCountry!==(item.country||'')) fields.country=newCountry;
+      const durationRaw=document.getElementById('adminEditDuration').value;
+      if(durationRaw!==''){
+        const durationNum=parseInt(durationRaw,10);
+        if(!isNaN(durationNum) && durationNum>0) fields.duration=durationNum;
+      }
+    }
+    if(Object.keys(fields).length===0){
+      status.textContent='Žádné změny k uložení.';
+      saveBtn.disabled=false;
+      return;
+    }
+    const ok=await saveAdminOverride(item, fields);
+    if(ok){
+      popModal();
+      route(); // refresh the detail page to show the updated values immediately
+    }else{
+      status.textContent='Uložení se nezdařilo, zkuste to prosím znovu.';
+      saveBtn.disabled=false;
+    }
+  });
 }
 function openTop10PickerModal(item){
   pushModal(()=>renderTop10PickerModal(item));
@@ -3969,8 +4043,63 @@ function initSearchPanel(){
   window._closeSearchPanel=closePanel;
 }
 
+/* ===== ADMIN: manual data corrections layered on top of the static catalog =====
+   The catalog itself lives in static JSON files (regenerated by the fetch script), not
+   Firestore — so edits here don't touch that data directly. Instead, a small Firestore
+   collection stores just the fields that were manually overridden, keyed by item id, and
+   they're re-applied on top of the catalog every time it loads. This means edits survive
+   future re-fetches automatically, since the override layer is entirely independent of
+   the JSON files themselves. */
+const ADMIN_UID='xi7dBc7SwxZDGC3ZSjcoQnO1rzh1'; // Firebase Console -> Authentication -> your account -> User UID
+function isAdmin(){ return !!CURRENT_UID && CURRENT_UID===ADMIN_UID; }
+let ADMIN_OVERRIDES_CACHE=null;
+async function loadAdminOverrides(){
+  try{
+    const snap=await db.collection('adminOverrides').get();
+    const map={};
+    snap.docs.forEach(doc=>{ map[doc.id]=doc.data(); });
+    ADMIN_OVERRIDES_CACHE=map;
+  }catch(e){
+    console.error('Nepodařilo se načíst admin úpravy', e);
+    ADMIN_OVERRIDES_CACHE={};
+  }
+}
+function applyAdminOverridesToDB(){
+  if(!ADMIN_OVERRIDES_CACHE) return;
+  ['movie','show','game'].forEach(type=>{
+    DB[type].forEach(item=>{
+      const o=ADMIN_OVERRIDES_CACHE[item.id];
+      if(!o) return;
+      if(o.title) item.title=o.title;
+      if(o.summary) item.summary=o.summary;
+      if(o.score!==undefined && o.score!==null) item.baseScore=o.score;
+      if(o.country) item.country=o.country;
+      if(o.duration!==undefined && o.duration!==null){
+        if(item.type==='movie') item.runtime=o.duration;
+        else if(item.type==='show'){ item.runtimeMin=o.duration; item.runtimeMax=o.duration; }
+      }
+    });
+  });
+}
+async function saveAdminOverride(item, fields){
+  if(!isAdmin()) return false;
+  try{
+    await db.collection('adminOverrides').doc(item.id).set(
+      Object.assign({type:item.type}, fields, {updatedAt:firebase.firestore.FieldValue.serverTimestamp()}),
+      {merge:true}
+    );
+    if(!ADMIN_OVERRIDES_CACHE) ADMIN_OVERRIDES_CACHE={};
+    ADMIN_OVERRIDES_CACHE[item.id]=Object.assign({}, ADMIN_OVERRIDES_CACHE[item.id]||{}, fields);
+    applyAdminOverridesToDB(); // re-apply immediately so the current page reflects it without a reload
+    return true;
+  }catch(e){
+    console.error('Nepodařilo se uložit admin úpravu', e);
+    return false;
+  }
+}
+
 async function loadFullCatalog(){
-  const loadedReal=await loadRealData();
+  const [loadedReal]=await Promise.all([loadRealData(), loadAdminOverrides()]);
   if(!loadedReal){
     DB.movie=buildMovies();
     DB.show=buildShows();
@@ -3978,6 +4107,7 @@ async function loadFullCatalog(){
     restoreAddedItems();
     runDailyDrop(); // simulated placeholder content — demo dataset only, never with real fetched data
   }
+  applyAdminOverridesToDB();
   computeYearBounds();
   FULL_CATALOG_READY=true;
   return loadedReal;
