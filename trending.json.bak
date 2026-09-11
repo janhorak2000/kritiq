@@ -1,6 +1,24 @@
 {
   "movies": [
     {
+      "title": "Toy Story 5: Příběh hraček",
+      "year": 2026,
+      "date": "2026-06-17",
+      "score": 74,
+      "poster": "https://image.tmdb.org/t/p/w500/8sVAmyPUAmswCajqyBBLWaDBCcC.jpg",
+      "tmdb_id": 1084244,
+      "imdb_id": "tt29355505"
+    },
+    {
+      "title": "Protivníci pod ochranou",
+      "year": 2026,
+      "date": "2026-09-09",
+      "score": 72,
+      "poster": "https://image.tmdb.org/t/p/w500/umlft1ztFbUcnHf960pXJocjpdv.jpg",
+      "tmdb_id": 1440098,
+      "imdb_id": "tt36073210"
+    },
+    {
       "title": "Hope",
       "year": 2026,
       "date": "2026-07-15",
@@ -8,6 +26,33 @@
       "poster": "https://image.tmdb.org/t/p/w500/aPizhuUJFa20289H6pSrvi1p04g.jpg",
       "tmdb_id": 1058424,
       "imdb_id": "tt27369017"
+    },
+    {
+      "title": "Legenda o Aangovi: Poslední vládce větru",
+      "year": 2026,
+      "date": "2026-07-24",
+      "score": 77,
+      "poster": "https://image.tmdb.org/t/p/w500/3sgnSfNT27Bx5O5ukr7B26mhEQq.jpg",
+      "tmdb_id": 980431,
+      "imdb_id": "tt18259538"
+    },
+    {
+      "title": "Pozvání",
+      "year": 2026,
+      "date": "2026-06-25",
+      "score": 75,
+      "poster": "https://image.tmdb.org/t/p/w500/fepkD6dlAeTk1u3YASMrcb26tR4.jpg",
+      "tmdb_id": 950028,
+      "imdb_id": "tt14173636"
+    },
+    {
+      "title": "Hlasovky pro Isabelle",
+      "year": 2026,
+      "date": "2026-06-20",
+      "score": 73,
+      "poster": "https://image.tmdb.org/t/p/w500/td3lG3vZ30J5r7E4A5Fl1Jf1YR0.jpg",
+      "tmdb_id": 614945,
+      "imdb_id": "tt10375624"
     },
     {
       "title": "Konec Oak Street",
@@ -19,22 +64,22 @@
       "imdb_id": "tt27165187"
     },
     {
-      "title": "Neříkej hodně štěstí",
+      "title": "Buddy",
       "year": 2026,
-      "date": "2026-08-13",
-      "score": 68,
-      "poster": "https://image.tmdb.org/t/p/w500/x25OThoY6GmxlDpCQtEBAFSbZ6l.jpg",
-      "tmdb_id": 1504358,
-      "imdb_id": "tt36590417"
+      "date": "2026-08-27",
+      "score": 71,
+      "poster": "https://image.tmdb.org/t/p/w500/6Lh4ZlsAISFQFVfLZ90sE9ycVnN.jpg",
+      "tmdb_id": 1514026,
+      "imdb_id": "tt37281055"
     },
     {
-      "title": "Spider-Man: Zbrusu nový den",
+      "title": "Tony",
       "year": 2026,
-      "date": "2026-07-29",
-      "score": 80,
-      "poster": "https://image.tmdb.org/t/p/w500/27AISM4WhMtJO8jXm3DrzBvwzAd.jpg",
-      "tmdb_id": 969681,
-      "imdb_id": "tt22084616"
+      "date": "2026-08-07",
+      "score": 76,
+      "poster": "https://image.tmdb.org/t/p/w500/gkcJYUSaJPYzAN7f5NsxcLmi95S.jpg",
+      "tmdb_id": 1329016,
+      "imdb_id": "tt33095251"
     },
     {
       "title": "The Rivals of Amziah King",
@@ -44,70 +89,53 @@
       "poster": "https://image.tmdb.org/t/p/w500/3iVDCDS1VwHIm95PjWEPwsfdhaf.jpg",
       "tmdb_id": 1124142,
       "imdb_id": "tt27706593"
-    },
-    {
-      "title": "Kojot vrací úder",
-      "year": 2026,
-      "date": "2026-08-20",
-      "score": 76,
-      "poster": "https://image.tmdb.org/t/p/w500/fFjf76Ngjf8BXCDsGPhIqpZUAkY.jpg",
-      "tmdb_id": 1204680,
-      "imdb_id": "tt1756855"
-    },
-    {
-      "title": "Proč jsem se to vlastně ženil?",
-      "year": 2026,
-      "date": "2026-09-08",
-      "score": 71,
-      "poster": "https://image.tmdb.org/t/p/w500/bgZN3gniRohjfKdsw1Q7EGBAyqz.jpg",
-      "tmdb_id": 1522689,
-      "imdb_id": "tt38061210"
-    },
-    {
-      "title": "Runner",
-      "year": 2026,
-      "date": "2026-09-07",
-      "score": 84,
-      "poster": "https://image.tmdb.org/t/p/w500/yBKMAIj7clP42UkFejhGDBBoTpb.jpg",
-      "tmdb_id": 1377237,
-      "imdb_id": "tt31349844"
-    },
-    {
-      "title": "6 gramů",
-      "year": 2026,
-      "date": "2026-08-06",
-      "score": 80,
-      "poster": "https://image.tmdb.org/t/p/w500/d0NYw1eIG1KEXrM7qWpP2r0WJPP.jpg",
-      "tmdb_id": 1671297
-    },
-    {
-      "title": "Legenda o Aangovi: Poslední vládce větru",
-      "year": 2026,
-      "date": "2026-07-24",
-      "score": 77,
-      "poster": "https://image.tmdb.org/t/p/w500/3sgnSfNT27Bx5O5ukr7B26mhEQq.jpg",
-      "tmdb_id": 980431,
-      "imdb_id": "tt18259538"
     }
   ],
   "shows": [
     {
-      "title": "Kluk z poslední lavice",
+      "title": "Najdu si tě",
       "year": 2026,
-      "date": "2026-06-26",
-      "score": 73,
-      "poster": "https://image.tmdb.org/t/p/w500/xSSp3JHoZFxc69aeFtc9JTgVMeu.jpg",
-      "tmdb_id": 286360,
-      "imdb_id": "tt36270432"
+      "date": "2026-06-18",
+      "score": 71,
+      "poster": "https://image.tmdb.org/t/p/w500/4xFfnDzmzhRp0iDaNpr3JMQXwCL.jpg",
+      "tmdb_id": 278178,
+      "imdb_id": "tt34771210"
     },
     {
-      "title": "Lucky",
+      "title": "Karameláska",
       "year": 2026,
-      "date": "2026-07-14",
-      "score": 67,
-      "poster": "https://image.tmdb.org/t/p/w500/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
-      "tmdb_id": 278624,
-      "imdb_id": "tt34866681"
+      "date": "2026-08-07",
+      "score": 75,
+      "poster": "https://image.tmdb.org/t/p/w500/ny8zYj40mWGTgKJi1a8hjNFUj9n.jpg",
+      "tmdb_id": 291496,
+      "imdb_id": "tt36955608"
+    },
+    {
+      "title": "Jak Stuart nezachránil vesmír",
+      "year": 2026,
+      "date": "2026-07-23",
+      "score": 71,
+      "poster": "https://image.tmdb.org/t/p/w500/3Djz7brd4WcLM3fXHx2JHFqNDp2.jpg",
+      "tmdb_id": 287620,
+      "imdb_id": "tt27497393"
+    },
+    {
+      "title": "Domek v prérii",
+      "year": 2026,
+      "date": "2026-07-09",
+      "score": 73,
+      "poster": "https://image.tmdb.org/t/p/w500/oWUGSadxC9vQPOCeHDDVfDezmQC.jpg",
+      "tmdb_id": 283304,
+      "imdb_id": "tt2431250"
+    },
+    {
+      "title": "Reaktivace agenta Kima",
+      "year": 2026,
+      "date": "2026-06-26",
+      "score": 76,
+      "poster": "https://image.tmdb.org/t/p/w500/7gY2f5Nejxycq2aVhLGn8XjLTei.jpg",
+      "tmdb_id": 296206,
+      "imdb_id": "tt42127457"
     },
     {
       "title": "Sterling Point",
@@ -128,84 +156,41 @@
       "imdb_id": "tt40247521"
     },
     {
-      "title": "Karameláska",
+      "title": "攻殻機動隊 THE GHOST IN THE SHELL",
       "year": 2026,
-      "date": "2026-08-07",
-      "score": 75,
-      "poster": "https://image.tmdb.org/t/p/w500/ny8zYj40mWGTgKJi1a8hjNFUj9n.jpg",
-      "tmdb_id": 291496,
-      "imdb_id": "tt36955608"
+      "date": "2026-07-07",
+      "score": 74,
+      "poster": "https://image.tmdb.org/t/p/w500/v6D7aBJynhY6opGugGJkofzknw6.jpg",
+      "tmdb_id": 255358,
+      "imdb_id": "tt36517689"
     },
     {
-      "title": "Východní palác",
+      "title": "Lucky",
       "year": 2026,
-      "date": "2026-07-17",
-      "score": 73,
-      "poster": "https://image.tmdb.org/t/p/w500/sTUpZnEwkujFuQPAPiydtrulx5h.jpg",
-      "tmdb_id": 279323,
-      "imdb_id": "tt35051401"
-    },
-    {
-      "title": "Lanterns",
-      "year": 2026,
-      "date": "2026-08-16",
-      "score": 78,
-      "poster": "https://image.tmdb.org/t/p/w500/gpC7h43xPMEV3goYMQShfJbTtLq.jpg",
-      "tmdb_id": 95350,
-      "imdb_id": "tt26545992"
-    },
-    {
-      "title": "A Tale of Two Cities",
-      "year": 2026,
-      "date": "2026-09-06",
+      "date": "2026-07-14",
       "score": 67,
-      "poster": "https://image.tmdb.org/t/p/w500/ht3OVVRBTrTeVtUVQiKSekjIFVH.jpg",
-      "tmdb_id": 301626,
-      "imdb_id": "tt38128417"
+      "poster": "https://image.tmdb.org/t/p/w500/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
+      "tmdb_id": 278624,
+      "imdb_id": "tt34866681"
     },
     {
-      "title": "Živá pára",
+      "title": "Jízda o život",
       "year": 2026,
-      "date": "2026-07-02",
-      "score": 66,
-      "poster": "https://image.tmdb.org/t/p/w500/NXwPnMvjqTWtO9XIW5wthT8eO0.jpg",
-      "tmdb_id": 253960,
-      "imdb_id": "tt33083249"
-    },
-    {
-      "title": "S&X",
-      "year": 2026,
-      "date": "2026-08-20",
-      "score": 71,
-      "poster": "https://image.tmdb.org/t/p/w500/vHp5N6Tq2fzEVp7eZ7vK04SRmzM.jpg",
-      "tmdb_id": 312523,
-      "imdb_id": "tt39365311"
+      "date": "2026-07-15",
+      "score": 75,
+      "poster": "https://image.tmdb.org/t/p/w500/yhqJJG7AhhjWLbnF3XywLf5Ub4m.jpg",
+      "tmdb_id": 241882,
+      "imdb_id": "tt30494226"
     }
   ],
   "games": [
     {
-      "title": "Mortal Shell II",
+      "title": "Resonance: A Plague Tale Legacy",
       "year": 2026,
-      "date": "2026-08-20",
-      "score": 84,
-      "poster": "https://media.rawg.io/media/games/c86/c8696c763ec825c6e4d49efbf2635a26.jpg",
-      "rawg_id": 1004515
-    },
-    {
-      "title": "The Sinking City 2",
-      "year": 2026,
-      "date": "2026-08-18",
-      "score": 79,
-      "poster": "https://media.rawg.io/media/games/5d3/5d3bf8f5f7f769d2a85d1a9de159a645.jpg",
-      "rawg_id": 979038
-    },
-    {
-      "title": "007 First Light",
-      "year": 2026,
-      "date": "2026-05-27",
-      "score": 88,
-      "poster": "https://media.rawg.io/media/games/86f/86f2dc1b9671f25a13ff92e069b51786.jpg",
-      "rawg_id": 1004298
+      "date": "2026-08-27",
+      "score": 80,
+      "poster": "https://media.rawg.io/media/games/c55/c55cc53bdf3cc4ee6f0a39f3c8b1dca7.jpg",
+      "rawg_id": 1004520
     },
     {
       "title": "Duskfade",
@@ -216,12 +201,12 @@
       "rawg_id": 1001012
     },
     {
-      "title": "Star Wars Zero Company",
+      "title": "The Sinking City 2",
       "year": 2026,
-      "date": "2026-08-27",
-      "score": 86,
-      "poster": "https://media.rawg.io/media/games/dae/dae6fd03dd5edbf15b193f20bec3cd58.jpg",
-      "rawg_id": 1002691
+      "date": "2026-08-18",
+      "score": 79,
+      "poster": "https://media.rawg.io/media/games/5d3/5d3bf8f5f7f769d2a85d1a9de159a645.jpg",
+      "rawg_id": 979038
     },
     {
       "title": "The Blood Of Dawnwalker",
@@ -232,28 +217,28 @@
       "rawg_id": 996046
     },
     {
-      "title": "Forza Horizon 6",
+      "title": "Onimusha: Way Of The Sword",
       "year": 2026,
-      "date": "2026-05-19",
-      "score": 87,
-      "poster": "https://media.rawg.io/media/games/d74/d744a3b0f6f0f0bc63f5ceb9b5e63230.jpeg",
-      "rawg_id": 1010949
+      "date": "2026-09-04",
+      "score": 86,
+      "poster": "https://media.rawg.io/media/games/48e/48ea2f7adb60615d658887899ffe4d1f.jpg",
+      "rawg_id": 994600
     },
     {
-      "title": "Pragmata",
+      "title": "Replaced",
       "year": 2026,
-      "date": "2026-04-17",
-      "score": 88,
-      "poster": "https://media.rawg.io/media/games/9b2/9b20adbf00491d56ad6793654067f2fd.jpg",
-      "rawg_id": 452650
+      "date": "2026-04-14",
+      "score": 75,
+      "poster": "https://media.rawg.io/media/games/041/041e04184322bc859d617b790d8bfab9.jpg",
+      "rawg_id": 616693
     },
     {
-      "title": "Resonance: A Plague Tale Legacy",
+      "title": "Star Wars Zero Company",
       "year": 2026,
       "date": "2026-08-27",
-      "score": 80,
-      "poster": "https://media.rawg.io/media/games/c55/c55cc53bdf3cc4ee6f0a39f3c8b1dca7.jpg",
-      "rawg_id": 1004520
+      "score": 86,
+      "poster": "https://media.rawg.io/media/games/dae/dae6fd03dd5edbf15b193f20bec3cd58.jpg",
+      "rawg_id": 1002691
     },
     {
       "title": "S.T.A.L.K.E.R. 2: Cost of Hope",
@@ -262,6 +247,22 @@
       "score": 85,
       "poster": "https://media.rawg.io/media/screenshots/dfd/dfd84af21deeef2b53d2781023e484bc.jpg",
       "rawg_id": 1018108
+    },
+    {
+      "title": "Forza Horizon 6",
+      "year": 2026,
+      "date": "2026-05-19",
+      "score": 87,
+      "poster": "https://media.rawg.io/media/games/d74/d744a3b0f6f0f0bc63f5ceb9b5e63230.jpeg",
+      "rawg_id": 1010949
+    },
+    {
+      "title": "Sinking City 2",
+      "year": 2026,
+      "date": "2026-08-18",
+      "score": 79,
+      "poster": "https://media.rawg.io/media/screenshots/8f5/8f55c6c590a4eb8d97facbadfd8f605e.jpg",
+      "rawg_id": 1018100
     }
   ]
 }
