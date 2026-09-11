@@ -540,7 +540,7 @@ CZSK_MIN_VOTES_FOR_SCORE = 10  # Czech/Slovak content is still never excluded be
                                  # near-meaningless score from a handful of TMDb votes
 
 
-def evaluate_movie(key, m, min_votes, special_benchmark, standup_benchmark):
+def evaluate_movie(key, m, min_votes, special_benchmark, standup_benchmark, debug_reject=False):
     """Returns (include, scored, details). include=False means skip entirely; scored=False
     means include it but with score=null (an "N" badge in Kritiq). details is the result of
     get_movie_details (country + revenue + runtime), fetched at most once, only for
@@ -553,8 +553,12 @@ def evaluate_movie(key, m, min_votes, special_benchmark, standup_benchmark):
         # universally regardless of language/country.
         details = get_movie_details(key, m["id"])
         if fails_short_runtime(year, details):
+            if debug_reject:
+                print(f"    [reject] '{m.get('title')}' ({year}): short runtime ({details.get('runtime')} min)", file=sys.stderr)
             return (False, False, None)
         if not has_czsk_production_country(details):
+            if debug_reject:
+                print(f"    [reject] '{m.get('title')}' ({year}): original_language={m.get('original_language')} but production_countries={details.get('countries')} (need one of {sorted(CZSK_COUNTRY_CODES)})", file=sys.stderr)
             return (False, False, None)  # original_language says cs/sk, but no CZ/SK production country — likely bad TMDb metadata
         if vote_count < CZSK_MIN_VOTES_FOR_SCORE:
             return (True, False, details)
@@ -1160,6 +1164,7 @@ def fetch_lang_movie_window(key, state, years_per_run, floor_year, lang_code, ge
         results = data.get("results", [])
         total_pages = min(data.get("total_pages", 1), 500)
         if not results:
+            print(f"  movies ({lang_code}): year {year} page {page} -> TMDb returned 0 raw results for this year/language combination", file=sys.stderr)
             year -= 1
             page = 1
             state["year"] = year
@@ -1167,13 +1172,16 @@ def fetch_lang_movie_window(key, state, years_per_run, floor_year, lang_code, ge
             checkpoint()
             continue
         kept = 0
+        rejected_debug_shown = 0
         for m in results:
             if m["id"] in seen_ids or not m.get("release_date") or not m.get("title"):
                 continue
             if not is_released(m["release_date"], today):
                 continue
-            include, scored, details = evaluate_movie(key, m, 0, anime_benchmark, standup_benchmark)
+            include, scored, details = evaluate_movie(key, m, 0, anime_benchmark, standup_benchmark, debug_reject=(rejected_debug_shown < 5))
             if not include:
+                if rejected_debug_shown < 5:
+                    rejected_debug_shown += 1
                 continue
             seen_ids.add(m["id"])
             try:
