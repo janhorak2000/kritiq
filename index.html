@@ -829,6 +829,11 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
   margin-top:12px; transition:color .15s, border-color .15s, background .15s;
 }
 .fav-users-btn:hover{color:#fff; border-color:var(--violet);}
+.fav-users-btn-blue{border-color:rgba(96,165,250,.42); color:#7db4fb;}
+.fav-users-btn-blue:hover{border-color:#60a5fa;}
+.fav-users-btn-gold{border-color:rgba(232,177,58,.45); color:#e8b13a;}
+.fav-users-btn-gold:hover{border-color:#e8b13a;}
+.profile-xp-total{font-size:12px; color:var(--text-faint); text-align:center; margin:2px 0 0; font-weight:600;}
 .profile-stats-row{
   display:flex; align-items:center; justify-content:center; gap:16px; width:100%; flex-wrap:wrap;
   margin-top:16px; padding-top:16px; border-top:1px solid var(--line-soft);
@@ -2026,6 +2031,8 @@ function renderBannerSlideContent(idx){
 async function loadAndRenderCommentBanner(){
   const container=document.getElementById('commentBannerContainer');
   if(!container) return; // navigated away before this resolved
+  if(!FULL_CATALOG_READY) await FULL_CATALOG_PROMISE;
+  if(!document.getElementById('commentBannerContainer')) return; // navigated away while waiting
   try{
     bannerSlides=await buildBannerSlides();
     if(!bannerSlides.length){ container.innerHTML=''; return; }
@@ -2123,9 +2130,9 @@ const SKELETON_HOME_HTML=`<div class="skeleton-home">
 </div>`;
 
 function renderHome(){
-  const hotMovies=DB.movie.filter(m=>withinLast6Months(m.date)).sort((a,b)=>scoreSortValue(b)-scoreSortValue(a)).slice(0,10);
-  const hotShows=DB.show.filter(s=>withinLast6Months(s.date)).sort((a,b)=>scoreSortValue(b)-scoreSortValue(a)).slice(0,10);
-  const hotGames=DB.game.filter(g=>withinLast6Months(g.date)).sort((a,b)=>scoreSortValue(b)-scoreSortValue(a)).slice(0,10);
+  const hotMovies=TRENDING_HOME_DATA ? TRENDING_HOME_DATA.movie : DB.movie.filter(m=>withinLast6Months(m.date)).sort((a,b)=>scoreSortValue(b)-scoreSortValue(a)).slice(0,10);
+  const hotShows=TRENDING_HOME_DATA ? TRENDING_HOME_DATA.show : DB.show.filter(s=>withinLast6Months(s.date)).sort((a,b)=>scoreSortValue(b)-scoreSortValue(a)).slice(0,10);
+  const hotGames=TRENDING_HOME_DATA ? TRENDING_HOME_DATA.game : DB.game.filter(g=>withinLast6Months(g.date)).sort((a,b)=>scoreSortValue(b)-scoreSortValue(a)).slice(0,10);
   return `
     <div id="commentBannerContainer"></div>
     ${hotRowHTML('Top 10 filmů z poslední doby', hotMovies, '#/movies')}
@@ -2652,6 +2659,7 @@ async function renderUserProfile(username){
         ${levelBadgeHTML(progress.xp||0)}
       </div>
       <h1 class="profile-username">${esc(username)}</h1>
+      <p class="profile-xp-total">${progress.xp||0} XP</p>
       <div class="profile-stats-row">
         <span class="profile-stat">${ICON_LIKE}${agg.likes}</span>
         <span class="profile-stat">${ICON_DISLIKE}${agg.dislikes}</span>
@@ -2661,6 +2669,8 @@ async function renderUserProfile(username){
       </div>
       <button class="fav-users-btn" id="top10ViewBtn" type="button">OSOBNÍ TOP 10</button>
       <button class="fav-users-btn" id="favUsersBtn" type="button">Oblíbení uživatelé</button>
+      <button class="fav-users-btn fav-users-btn-blue" id="achievementsViewBtn" type="button">Achievmenty</button>
+      <button class="fav-users-btn fav-users-btn-gold" id="questsViewBtn" type="button">Týdenní questy</button>
     </div>
 
     <div class="block">
@@ -2679,6 +2689,8 @@ function attachUserProfileEvents(username){
   bindShowAllReviews(username);
   document.getElementById('top10ViewBtn').addEventListener('click', ()=> openTop10ViewModal(username));
   document.getElementById('favUsersBtn').addEventListener('click', ()=> openFavoritesModal(username));
+  document.getElementById('achievementsViewBtn').addEventListener('click', ()=> openAchievementsModalFor(username));
+  document.getElementById('questsViewBtn').addEventListener('click', ()=> openQuestsModalFor(username));
   document.getElementById('profileAvatarBtn').addEventListener('click', ()=>{
     if(username===CURRENT_USER){
       triggerAvatarUpload(username, ()=>{ route(); });
@@ -3391,6 +3403,39 @@ async function renderAchievementsModal(){
       </div>`;
   }).join('');
 }
+function openAchievementsModalFor(username){
+  if(username===CURRENT_USER){
+    openAchievementsModal(); // your own profile — full live-check against current data
+  }else{
+    pushModal(()=>renderAchievementsModalReadOnly(username));
+  }
+}
+async function renderAchievementsModalReadOnly(username){
+  // Someone else's profile — shows whatever THEY currently have unlocked (their progress
+  // doc is publicly readable), but never tries to check/award new ones on their behalf,
+  // since only the account owner's own browser can do that.
+  const card=document.getElementById('reviewModalCard');
+  card.className='modal-card';
+  card.innerHTML=`
+    <button class="modal-close" id="achClose" aria-label="Zavřít" type="button">✕</button>
+    <h3 class="section-title" style="margin-bottom:14px;">Úspěchy — ${esc(username)}</h3>
+    <div class="ach-grid" id="achGrid"><p class="empty-note">Načítání...</p></div>
+  `;
+  document.getElementById('achClose').addEventListener('click', popModal);
+  const progress=await getProgressForUsername(username);
+  const unlocked=progress.unlockedAchievements||{};
+  const grid=document.getElementById('achGrid');
+  if(!grid) return;
+  grid.innerHTML=ACHIEVEMENTS.map(a=>{
+    const done=!!unlocked[a.id];
+    return `
+      <div class="ach-card ${done?'ach-done':''}">
+        <div class="ach-badge">${ACHIEVEMENT_ICONS[a.icon]||''}</div>
+        <div class="ach-name">${esc(a.name)}</div>
+        <div class="ach-desc">${esc(a.desc)}</div>
+      </div>`;
+  }).join('');
+}
 async function openQuestsModal(){
   pushModal(renderQuestsModal);
 }
@@ -3421,6 +3466,43 @@ async function renderQuestsModal(){
         </div>
         <div class="quest-bar-track"><div class="quest-bar-fill" style="width:${pct}%"></div></div>
         <div class="quest-count">${q.current} / ${q.target}</div>
+      </div>`;
+  }).join('');
+}
+function openQuestsModalFor(username){
+  if(username===CURRENT_USER){
+    openQuestsModal(); // your own profile — full live progress against current activity
+  }else{
+    pushModal(()=>renderQuestsModalReadOnly(username));
+  }
+}
+async function renderQuestsModalReadOnly(username){
+  // Someone else's profile — shows which of THIS week's quests they've already completed,
+  // based on their own progress doc (publicly readable). No live progress bars here, since
+  // computing "how close are they" requires reading and cross-referencing their reviews/
+  // votes/favorites in real time — only their OWN browser does that, for their own quests.
+  const card=document.getElementById('reviewModalCard');
+  card.className='modal-card';
+  card.innerHTML=`
+    <button class="modal-close" id="questClose" aria-label="Zavřít" type="button">✕</button>
+    <h3 class="section-title" style="margin-bottom:4px;">Týdenní questy — ${esc(username)}</h3>
+    <p class="page-sub" style="margin-bottom:14px;">Stav podle posledního uživatelova ověření.</p>
+    <div id="questList"><p class="empty-note">Načítání...</p></div>
+  `;
+  document.getElementById('questClose').addEventListener('click', popModal);
+  const weekId=getWeekId();
+  const [quests, progress]=await Promise.all([getThisWeeksQuests(), getProgressForUsername(username)]);
+  const list=document.getElementById('questList');
+  if(!list) return;
+  const completedSoFar=(progress.questWeekId===weekId) ? (progress.completedQuests||{}) : {};
+  list.innerHTML=quests.map(q=>{
+    const done=!!completedSoFar[q.templateId];
+    return `
+      <div class="quest-card ${done?'quest-done':''}">
+        <div class="quest-top">
+          <span class="quest-label">${esc(q.label)}</span>
+          <span class="quest-xp">${done?'✓ splněno':'nesplněno'}</span>
+        </div>
       </div>`;
   }).join('');
 }
@@ -3499,10 +3581,16 @@ function pushModal(renderFn){
   modalStack.push(renderFn);
   renderTopModal();
 }
-function renderTopModal(){
+async function renderTopModal(){
   if(!modalStack.length) return;
-  modalStack[modalStack.length-1]();
   document.getElementById('reviewModalOverlay').classList.add('open');
+  if(!FULL_CATALOG_READY){
+    const card=document.getElementById('reviewModalCard');
+    if(card){ card.className='modal-card'; card.innerHTML=`<p class="empty-note" style="padding:20px 0;">Načítání...</p>`; }
+    await FULL_CATALOG_PROMISE;
+    if(!modalStack.length) return; // stack could've been cleared while we were waiting
+  }
+  modalStack[modalStack.length-1]();
 }
 function popModal(){
   modalStack.pop();
@@ -3666,6 +3754,7 @@ async function renderUserModal(){
         ${levelBadgeHTML(progress.xp||0)}
       </div>
       <h1 class="profile-username">${esc(username)}</h1>
+      <p class="profile-xp-total">${progress.xp||0} XP</p>
       <div class="profile-stats-row">
         <span class="profile-stat">${ICON_LIKE}${agg.likes}</span>
         <span class="profile-stat">${ICON_DISLIKE}${agg.dislikes}</span>
@@ -3675,6 +3764,8 @@ async function renderUserModal(){
       </div>
       <button class="fav-users-btn" id="modalTop10ViewBtn" type="button">OSOBNÍ TOP 10</button>
       <button class="fav-users-btn" id="modalFavUsersBtn" type="button">Oblíbení uživatelé</button>
+      <button class="fav-users-btn fav-users-btn-blue" id="modalAchievementsViewBtn" type="button">Achievmenty</button>
+      <button class="fav-users-btn fav-users-btn-gold" id="modalQuestsViewBtn" type="button">Týdenní questy</button>
     </div>
     <h3 class="section-title">Poslední 3 recenze</h3>
     <div class="reviews-list" id="modalReviewsList">${body.html}</div>
@@ -3682,6 +3773,8 @@ async function renderUserModal(){
   document.getElementById('modalProfileCloseBtn').addEventListener('click', popModal);
   document.getElementById('modalTop10ViewBtn').addEventListener('click', ()=> openTop10ViewModal(username));
   document.getElementById('modalFavUsersBtn').addEventListener('click', ()=> openFavoritesModal(username));
+  document.getElementById('modalAchievementsViewBtn').addEventListener('click', ()=> openAchievementsModalFor(username));
+  document.getElementById('modalQuestsViewBtn').addEventListener('click', ()=> openQuestsModalFor(username));
   document.getElementById('modalAvatarBtn').addEventListener('click', ()=>{
     if(username===CURRENT_USER){
       triggerAvatarUpload(username, renderUserModal);
@@ -3775,17 +3868,22 @@ async function loadFullCatalog(){
   FULL_CATALOG_READY=true;
   return loadedReal;
 }
+let TRENDING_HOME_DATA=null; // cached separately from DB — keeps the homepage showing the SAME server-chosen selection even after DB gets replaced by the full catalog, instead of re-deriving a different set client-side
 async function init(){
   FULL_CATALOG_PROMISE=loadFullCatalog(); // kicked off immediately, not awaited yet — runs in the background
 
   const trending=await loadTrendingLight();
-  if(trending){
+  if(trending && !FULL_CATALOG_READY){
     DB.movie=trending.movie; DB.show=trending.show; DB.game=trending.game;
+    TRENDING_HOME_DATA=trending;
     // Rough placeholder bounds from the small trending subset — computeYearBounds() inside
     // loadFullCatalog() corrects this properly once the real catalog finishes loading.
-  }else{
+  }else if(!trending){
     await FULL_CATALOG_PROMISE; // no lightweight file available (e.g. demo/preview) — wait for the real thing before first render
   }
+  // else: trending.json loaded, but the full catalog RACE-WON and finished first — DB
+  // already correctly holds the full catalog with matching YEAR_BOUNDS, so trending data
+  // is deliberately discarded here rather than overwriting it.
 
   initSearchPanel();
   renderAuthBadge();

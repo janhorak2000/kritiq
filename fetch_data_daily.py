@@ -153,6 +153,11 @@ COUNTRY_NAMES_CS = {
     "NL": "Nizozemsko", "IE": "Irsko", "NZ": "Nový Zéland", "SK": "Slovensko", "HU": "Maďarsko",
     "PT": "Portugalsko", "GR": "Řecko", "TR": "Turecko", "ZA": "Jihoafrická republika",
     "AR": "Argentina", "IL": "Izrael", "TH": "Thajsko", "HK": "Hongkong", "TW": "Tchaj-wan",
+    "CS": "Česko", "XC": "Česko",  # Czechoslovakia's historical ISO code (CS, retired 1993)
+                                     # and TMDb's own unofficial code for it (XC) — mapped to
+                                     # "Česko" so pre-1993 titles match the website's existing
+                                     # "Pouze české filmy/seriály" filter, matching how they're
+                                     # already correctly included in the catalog itself.
 }
 
 
@@ -479,16 +484,17 @@ def is_czech_or_slovak(item):
     return item.get("original_language") in ("cs", "sk")
 
 
-CZSK_COUNTRY_CODES = {"CZ", "SK"}
+CZSK_COUNTRY_CODES = {"CZ", "SK", "CS", "XC"}  # CS = Czechoslovakia's historical ISO code (retired after the 1993 split); XC = TMDb's own unofficial code for Czechoslovakia, used to avoid colliding with ISO's later reassignment of "CS" to Serbia and Montenegro (2003-2006) — without both, pre-1993 Czech/Slovak classics get wrongly rejected
 
 
 def has_czsk_production_country(details):
     """Cross-check for the original_language=cs/sk classification: a genuinely Czech or
-    Slovak film should almost always list Czech Republic or Slovakia as an actual
-    production country on TMDb. If original_language claims cs/sk but neither country
-    appears anywhere in production_countries, that's a strong signal of bad/inconsistent
-    TMDb metadata rather than a real Czech/Slovak film — this has been directly observed
-    (American and Danish films incorrectly tagged with original_language=cs on TMDb)."""
+    Slovak film should almost always list Czech Republic, Slovakia, or (for pre-1993
+    titles) Czechoslovakia as an actual production country on TMDb. If original_language
+    claims cs/sk but none of those appear anywhere in production_countries, that's a
+    strong signal of bad/inconsistent TMDb metadata rather than a real Czech/Slovak film —
+    this has been directly observed (American and Danish films incorrectly tagged with
+    original_language=cs on TMDb)."""
     return bool(set((details or {}).get("countries") or []) & CZSK_COUNTRY_CODES)
 
 
@@ -539,7 +545,7 @@ CZSK_MIN_VOTES_FOR_SCORE = 10  # Czech/Slovak content is still never excluded be
                                  # near-meaningless score from a handful of TMDb votes
 
 
-def evaluate_movie(key, m, min_votes, special_benchmark, standup_benchmark):
+def evaluate_movie(key, m, min_votes, special_benchmark, standup_benchmark, debug_reject=False):
     """Returns (include, scored, details). include=False means skip entirely; scored=False
     means include it but with score=null (an "N" badge in Kritiq). details is the result of
     get_movie_details (country + revenue + runtime), fetched at most once, only for
@@ -552,8 +558,12 @@ def evaluate_movie(key, m, min_votes, special_benchmark, standup_benchmark):
         # universally regardless of language/country.
         details = get_movie_details(key, m["id"])
         if fails_short_runtime(year, details):
+            if debug_reject:
+                print(f"    [reject] '{m.get('title')}' ({year}): short runtime ({details.get('runtime')} min)", file=sys.stderr)
             return (False, False, None)
         if not has_czsk_production_country(details):
+            if debug_reject:
+                print(f"    [reject] '{m.get('title')}' ({year}): original_language={m.get('original_language')} but production_countries={details.get('countries')} (need one of {sorted(CZSK_COUNTRY_CODES)})", file=sys.stderr)
             return (False, False, None)  # original_language says cs/sk, but no CZ/SK production country — likely bad TMDb metadata
         if vote_count < CZSK_MIN_VOTES_FOR_SCORE:
             return (True, False, details)
@@ -1159,6 +1169,7 @@ def fetch_lang_movie_window(key, state, years_per_run, floor_year, lang_code, ge
         results = data.get("results", [])
         total_pages = min(data.get("total_pages", 1), 500)
         if not results:
+            print(f"  movies ({lang_code}): year {year} page {page} -> TMDb returned 0 raw results for this year/language combination", file=sys.stderr)
             year -= 1
             page = 1
             state["year"] = year
@@ -1166,13 +1177,16 @@ def fetch_lang_movie_window(key, state, years_per_run, floor_year, lang_code, ge
             checkpoint()
             continue
         kept = 0
+        rejected_debug_shown = 0
         for m in results:
             if m["id"] in seen_ids or not m.get("release_date") or not m.get("title"):
                 continue
             if not is_released(m["release_date"], today):
                 continue
-            include, scored, details = evaluate_movie(key, m, 0, anime_benchmark, standup_benchmark)
+            include, scored, details = evaluate_movie(key, m, 0, anime_benchmark, standup_benchmark, debug_reject=(rejected_debug_shown < 5))
             if not include:
+                if rejected_debug_shown < 5:
+                    rejected_debug_shown += 1
                 continue
             seen_ids.add(m["id"])
             try:
@@ -1547,6 +1561,27 @@ def refresh_recent_unranked_games(key, store, today, days=7):
     print(f"  games score refresh: checked {checked} recently-added unranked games, upgraded {upgraded}", file=sys.stderr)
 
 
+def fix_stale_czsk_country_labels(movies_czsk_store, shows_store):
+    """One-time fix for Czech/Slovak movies and shows fetched before the CS/XC -> Česko
+    mapping existed — their country field was saved as the raw, untranslated ISO code
+    ('CS' or 'XC') instead of the proper display label. Purely a local string correction
+    on data already on disk — no TMDb calls needed, since the classification itself was
+    already correct, only the label was stale."""
+    fixed = 0
+    for store in (movies_czsk_store, shows_store):
+        for label, records in list(store.original.items()):
+            changed = False
+            for r in records:
+                if r.get("country") in ("CS", "XC"):
+                    r["country"] = "Česko"
+                    changed = True
+                    fixed += 1
+            if changed:
+                save_json(f"{store.prefix}{label}.json", records)
+                store.original[label] = records
+    return fixed
+
+
 def backfill_show_scores_from_imdb(store, imdb_ratings, min_imdb_votes):
     """Some genuinely popular, well-known shows (Breaking Bad, Game of Thrones, Narcos,
     Band of Brothers, etc.) come back permanently unscored — not because they lack votes
@@ -1595,12 +1630,23 @@ def compute_trending(today, movies_prefix, movies_czsk_prefix, shows_prefix, gam
     make a meaningful pool yet."""
     today_date = datetime.date.fromisoformat(today)
 
-    def pick_trending(records, days_window, count=10, pool_size=25):
-        cutoff = (today_date - datetime.timedelta(days=days_window)).isoformat()
-        eligible = [r for r in records if r.get("score") is not None and r.get("date") and r["date"] >= cutoff]
+    def pick_trending(records, days_window, count=10, pool_size=25, fallback_days_window=365):
+        def eligible_within(days):
+            cutoff = (today_date - datetime.timedelta(days=days)).isoformat()
+            return [r for r in records if r.get("score") is not None and r.get("date") and r["date"] >= cutoff]
+
+        eligible = eligible_within(days_window)
+        if len(eligible) < count:
+            # Not enough well-scored titles in the narrow window yet (e.g. a catalog still
+            # being built up) — widen the search so the homepage can still show a full row
+            # instead of looking sparse. Once the catalog has enough recent, well-scored
+            # titles, this fallback naturally stops being needed.
+            eligible = eligible_within(fallback_days_window)
+
         eligible.sort(key=lambda r: -r["score"])
         pool = eligible[:pool_size]
         chosen = pool if len(pool) <= count else random.sample(pool, count)
+        chosen.sort(key=lambda r: -r["score"])  # selection is random, but display order should still be highest score first
         out = []
         for r in chosen:
             entry = {"title": r.get("title"), "year": r.get("year"), "date": r.get("date"),
@@ -1654,6 +1700,8 @@ def main():
     ap.add_argument("--skip-games", action="store_true", help="skip games entirely")
     ap.add_argument("--skip-games-backfill", action="store_true", help="skip only the games historical backfill (e.g. once you've completed it once) — movies/shows backfill are unaffected, and recent games still get scanned")
     ap.add_argument("--backfill-show-scores-only", action="store_true", help="run just the show-score-from-IMDb backfill against your existing data and exit immediately — no fetching, no API calls beyond loading the IMDb ratings cache")
+    ap.add_argument("--reset-czsk-cursor", action="store_true", help="reset only the Czech/Slovak movie and show year cursors back to the top (use after fixing a classification bug that caused certain years to be silently skipped, e.g. the CS/XC pre-1993 country code fix) — the seen-set and every other category's progress stays untouched, so nothing gets re-added as a duplicate")
+    ap.add_argument("--fix-czsk-country-labels-only", action="store_true", help="patch the country field on existing Czech/Slovak movies/shows whose label was saved as the raw 'CS'/'XC' code before the Česko mapping existed, then exit immediately — no TMDb calls, purely a local fix for data already on disk")
     ap.add_argument("--recent-games-min-wishlist", type=int, default=10, help="flat wishlist floor for the recent-games scan (bypasses the era/genre-tiered thresholds used during backfill, since this scan is always 'recent' anyway)")
     args = ap.parse_args()
     today = today_str()
@@ -1667,6 +1715,13 @@ def main():
     movies_czsk_store = BucketedStore(args.movies_czsk_prefix)
     shows_store = BucketedStore(args.shows_prefix)
     games_store = BucketedStore(args.games_prefix)
+
+    if args.fix_czsk_country_labels_only:
+        print("Running Czech/Slovak country label patch only (--fix-czsk-country-labels-only)...", file=sys.stderr)
+        fixed = fix_stale_czsk_country_labels(movies_czsk_store, shows_store)
+        print(f"Fixed {fixed} records with a stale CS/XC country label.", file=sys.stderr)
+        print("Done.", file=sys.stderr)
+        return
 
     if args.backfill_show_scores_only:
         print("Running show-score-from-IMDb backfill only (--backfill-show-scores-only)...", file=sys.stderr)
@@ -1688,6 +1743,12 @@ def main():
     })
     for key in ("movie_cs", "movie_sk", "show_cs", "show_sk"):
         state.setdefault(key, {"start_year": CURRENT_YEAR_DEFAULT})
+
+    if args.reset_czsk_cursor:
+        for key in ("movie_cs", "movie_sk", "show_cs", "show_sk"):
+            state[key] = {"start_year": CURRENT_YEAR_DEFAULT}
+        save_json(args.state_file, state)
+        print("Czech/Slovak movie and show year cursors reset to the top — the next run will re-walk every year for cs/sk from scratch. Everything else's progress (and the seen-set) is untouched, so nothing already collected gets duplicated.", file=sys.stderr)
 
     movie_seen = set(state.get("movie_seen", [])) | {m["tmdb_id"] for m in movies_store.all_records() if m.get("tmdb_id")} | {m["tmdb_id"] for m in movies_czsk_store.all_records() if m.get("tmdb_id")}
     show_seen = set(state.get("show_seen", [])) | {s["tmdb_id"] for s in shows_store.all_records() if s.get("tmdb_id")}
