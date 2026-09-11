@@ -2026,6 +2026,8 @@ function renderBannerSlideContent(idx){
 async function loadAndRenderCommentBanner(){
   const container=document.getElementById('commentBannerContainer');
   if(!container) return; // navigated away before this resolved
+  if(!FULL_CATALOG_READY) await FULL_CATALOG_PROMISE;
+  if(!document.getElementById('commentBannerContainer')) return; // navigated away while waiting
   try{
     bannerSlides=await buildBannerSlides();
     if(!bannerSlides.length){ container.innerHTML=''; return; }
@@ -3499,10 +3501,16 @@ function pushModal(renderFn){
   modalStack.push(renderFn);
   renderTopModal();
 }
-function renderTopModal(){
+async function renderTopModal(){
   if(!modalStack.length) return;
-  modalStack[modalStack.length-1]();
   document.getElementById('reviewModalOverlay').classList.add('open');
+  if(!FULL_CATALOG_READY){
+    const card=document.getElementById('reviewModalCard');
+    if(card){ card.className='modal-card'; card.innerHTML=`<p class="empty-note" style="padding:20px 0;">Načítání...</p>`; }
+    await FULL_CATALOG_PROMISE;
+    if(!modalStack.length) return; // stack could've been cleared while we were waiting
+  }
+  modalStack[modalStack.length-1]();
 }
 function popModal(){
   modalStack.pop();

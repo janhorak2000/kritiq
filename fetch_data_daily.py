@@ -479,16 +479,17 @@ def is_czech_or_slovak(item):
     return item.get("original_language") in ("cs", "sk")
 
 
-CZSK_COUNTRY_CODES = {"CZ", "SK"}
+CZSK_COUNTRY_CODES = {"CZ", "SK", "CS"}  # CS = Czechoslovakia's historical ISO code, retired after the 1993 split — without it, every pre-1993 Czech/Slovak classic gets wrongly rejected
 
 
 def has_czsk_production_country(details):
     """Cross-check for the original_language=cs/sk classification: a genuinely Czech or
-    Slovak film should almost always list Czech Republic or Slovakia as an actual
-    production country on TMDb. If original_language claims cs/sk but neither country
-    appears anywhere in production_countries, that's a strong signal of bad/inconsistent
-    TMDb metadata rather than a real Czech/Slovak film — this has been directly observed
-    (American and Danish films incorrectly tagged with original_language=cs on TMDb)."""
+    Slovak film should almost always list Czech Republic, Slovakia, or (for pre-1993
+    titles) Czechoslovakia as an actual production country on TMDb. If original_language
+    claims cs/sk but none of those appear anywhere in production_countries, that's a
+    strong signal of bad/inconsistent TMDb metadata rather than a real Czech/Slovak film —
+    this has been directly observed (American and Danish films incorrectly tagged with
+    original_language=cs on TMDb)."""
     return bool(set((details or {}).get("countries") or []) & CZSK_COUNTRY_CODES)
 
 
@@ -1595,9 +1596,19 @@ def compute_trending(today, movies_prefix, movies_czsk_prefix, shows_prefix, gam
     make a meaningful pool yet."""
     today_date = datetime.date.fromisoformat(today)
 
-    def pick_trending(records, days_window, count=10, pool_size=25):
-        cutoff = (today_date - datetime.timedelta(days=days_window)).isoformat()
-        eligible = [r for r in records if r.get("score") is not None and r.get("date") and r["date"] >= cutoff]
+    def pick_trending(records, days_window, count=10, pool_size=25, fallback_days_window=365):
+        def eligible_within(days):
+            cutoff = (today_date - datetime.timedelta(days=days)).isoformat()
+            return [r for r in records if r.get("score") is not None and r.get("date") and r["date"] >= cutoff]
+
+        eligible = eligible_within(days_window)
+        if len(eligible) < count:
+            # Not enough well-scored titles in the narrow window yet (e.g. a catalog still
+            # being built up) — widen the search so the homepage can still show a full row
+            # instead of looking sparse. Once the catalog has enough recent, well-scored
+            # titles, this fallback naturally stops being needed.
+            eligible = eligible_within(fallback_days_window)
+
         eligible.sort(key=lambda r: -r["score"])
         pool = eligible[:pool_size]
         chosen = pool if len(pool) <= count else random.sample(pool, count)
