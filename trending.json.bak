@@ -1,31 +1,21 @@
 {
   "movies": [
     {
-      "title": "Runner",
+      "title": "6 gramů",
       "year": 2026,
-      "date": "2026-09-07",
-      "score": 84,
-      "poster": "https://image.tmdb.org/t/p/w500/yBKMAIj7clP42UkFejhGDBBoTpb.jpg",
-      "tmdb_id": 1377237,
-      "imdb_id": "tt31349844"
+      "date": "2026-08-06",
+      "score": 80,
+      "poster": "https://image.tmdb.org/t/p/w500/d0NYw1eIG1KEXrM7qWpP2r0WJPP.jpg",
+      "tmdb_id": 1671297
     },
     {
-      "title": "Pozvání",
+      "title": "Toy Story 5: Příběh hraček",
       "year": 2026,
-      "date": "2026-06-25",
-      "score": 75,
-      "poster": "https://image.tmdb.org/t/p/w500/fepkD6dlAeTk1u3YASMrcb26tR4.jpg",
-      "tmdb_id": 950028,
-      "imdb_id": "tt14173636"
-    },
-    {
-      "title": "The Rivals of Amziah King",
-      "year": 2026,
-      "date": "2026-08-13",
-      "score": 73,
-      "poster": "https://image.tmdb.org/t/p/w500/3iVDCDS1VwHIm95PjWEPwsfdhaf.jpg",
-      "tmdb_id": 1124142,
-      "imdb_id": "tt27706593"
+      "date": "2026-06-17",
+      "score": 74,
+      "poster": "https://image.tmdb.org/t/p/w500/8sVAmyPUAmswCajqyBBLWaDBCcC.jpg",
+      "tmdb_id": 1084244,
+      "imdb_id": "tt29355505"
     },
     {
       "title": "Hlasovky pro Isabelle",
@@ -37,22 +27,31 @@
       "imdb_id": "tt10375624"
     },
     {
-      "title": "Sex a smrt v kempu Miasma",
+      "title": "The Rivals of Amziah King",
       "year": 2026,
-      "date": "2026-08-06",
-      "score": 72,
-      "poster": "https://image.tmdb.org/t/p/w500/xCizP055jXunVf1Z6yWvlFcTDtT.jpg",
-      "tmdb_id": 1240889,
-      "imdb_id": "tt35298123"
+      "date": "2026-08-13",
+      "score": 73,
+      "poster": "https://image.tmdb.org/t/p/w500/3iVDCDS1VwHIm95PjWEPwsfdhaf.jpg",
+      "tmdb_id": 1124142,
+      "imdb_id": "tt27706593"
     },
     {
-      "title": "Buddy",
+      "title": "Protivníci pod ochranou",
       "year": 2026,
-      "date": "2026-08-27",
+      "date": "2026-09-09",
+      "score": 72,
+      "poster": "https://image.tmdb.org/t/p/w500/umlft1ztFbUcnHf960pXJocjpdv.jpg",
+      "tmdb_id": 1440098,
+      "imdb_id": "tt36073210"
+    },
+    {
+      "title": "Proč jsem se to vlastně ženil?",
+      "year": 2026,
+      "date": "2026-09-08",
       "score": 71,
-      "poster": "https://image.tmdb.org/t/p/w500/6Lh4ZlsAISFQFVfLZ90sE9ycVnN.jpg",
-      "tmdb_id": 1514026,
-      "imdb_id": "tt37281055"
+      "poster": "https://image.tmdb.org/t/p/w500/bgZN3gniRohjfKdsw1Q7EGBAyqz.jpg",
+      "tmdb_id": 1522689,
+      "imdb_id": "tt38061210"
     },
     {
       "title": "Chica Checa",
@@ -62,6 +61,15 @@
       "poster": "https://image.tmdb.org/t/p/w500/77xmXH1OBm1a2CHPHv9tcsnEncp.jpg",
       "tmdb_id": 1339767,
       "imdb_id": "tt13665532"
+    },
+    {
+      "title": "On the Sea",
+      "year": 2026,
+      "date": "2026-07-24",
+      "score": 70,
+      "poster": "https://image.tmdb.org/t/p/w500/9dZj1TDR2TlSdWjnzGI87jbZSts.jpg",
+      "tmdb_id": 1507796,
+      "imdb_id": "tt31936369"
     },
     {
       "title": "Young Washington",
@@ -80,15 +88,6 @@
       "poster": "https://image.tmdb.org/t/p/w500/x25OThoY6GmxlDpCQtEBAFSbZ6l.jpg",
       "tmdb_id": 1504358,
       "imdb_id": "tt36590417"
-    },
-    {
-      "title": "Konec Oak Street",
-      "year": 2026,
-      "date": "2026-08-12",
-      "score": 66,
-      "poster": "https://image.tmdb.org/t/p/w500/e97w6J9ta5TAsqrM1huWFKp58xN.jpg",
-      "tmdb_id": 1101383,
-      "imdb_id": "tt27165187"
     }
   ],
   "shows": [
@@ -111,31 +110,40 @@
       "imdb_id": "tt36303968"
     },
     {
-      "title": "Reaktivace agenta Kima",
+      "title": "Karameláska",
+      "year": 2026,
+      "date": "2026-08-07",
+      "score": 75,
+      "poster": "https://image.tmdb.org/t/p/w500/ny8zYj40mWGTgKJi1a8hjNFUj9n.jpg",
+      "tmdb_id": 291496,
+      "imdb_id": "tt36955608"
+    },
+    {
+      "title": "Sterling Point",
+      "year": 2026,
+      "date": "2026-08-05",
+      "score": 74,
+      "poster": "https://image.tmdb.org/t/p/w500/cThLWEGs6BEqY0QZMbU4FAeWwPT.jpg",
+      "tmdb_id": 283297,
+      "imdb_id": "tt35618070"
+    },
+    {
+      "title": "Domek v prérii",
+      "year": 2026,
+      "date": "2026-07-09",
+      "score": 73,
+      "poster": "https://image.tmdb.org/t/p/w500/oWUGSadxC9vQPOCeHDDVfDezmQC.jpg",
+      "tmdb_id": 283304,
+      "imdb_id": "tt2431250"
+    },
+    {
+      "title": "Kluk z poslední lavice",
       "year": 2026,
       "date": "2026-06-26",
-      "score": 76,
-      "poster": "https://image.tmdb.org/t/p/w500/7gY2f5Nejxycq2aVhLGn8XjLTei.jpg",
-      "tmdb_id": 296206,
-      "imdb_id": "tt42127457"
-    },
-    {
-      "title": "Jízda o život",
-      "year": 2026,
-      "date": "2026-07-15",
-      "score": 75,
-      "poster": "https://image.tmdb.org/t/p/w500/yhqJJG7AhhjWLbnF3XywLf5Ub4m.jpg",
-      "tmdb_id": 241882,
-      "imdb_id": "tt30494226"
-    },
-    {
-      "title": "Zítra zase do práce!",
-      "year": 2026,
-      "date": "2026-06-22",
-      "score": 72,
-      "poster": "https://image.tmdb.org/t/p/w500/6MELksXL65sIWNMZHR8Z9nLt1DE.jpg",
-      "tmdb_id": 289763,
-      "imdb_id": "tt38960812"
+      "score": 73,
+      "poster": "https://image.tmdb.org/t/p/w500/xSSp3JHoZFxc69aeFtc9JTgVMeu.jpg",
+      "tmdb_id": 286360,
+      "imdb_id": "tt36270432"
     },
     {
       "title": "Najdu si tě",
@@ -156,42 +164,25 @@
       "imdb_id": "tt39365311"
     },
     {
-      "title": "ヤニねこ",
+      "title": "Elle",
       "year": 2026,
-      "date": "2026-07-03",
-      "score": 70,
-      "poster": "https://image.tmdb.org/t/p/w500/1OEYjA3bpPlXNPwV51WJhGWx8Mk.jpg",
-      "tmdb_id": 312949,
-      "imdb_id": "tt39551330"
+      "date": "2026-07-01",
+      "score": 69,
+      "poster": "https://image.tmdb.org/t/p/w500/hJYrGoi0dIGG277P2LPo4AnQAcY.jpg",
+      "tmdb_id": 254420,
+      "imdb_id": "tt32020831"
     },
     {
-      "title": "Myšilov",
+      "title": "Smrt pastorovy ženy",
       "year": 2026,
-      "date": "2026-08-28",
-      "score": 70,
-      "poster": "https://image.tmdb.org/t/p/w500/z1xv9CKt7HmXgS6azNB563mU2FB.jpg",
-      "tmdb_id": 290193,
-      "imdb_id": "tt36996011"
-    },
-    {
-      "title": "Živá pára",
-      "year": 2026,
-      "date": "2026-07-02",
-      "score": 66,
-      "poster": "https://image.tmdb.org/t/p/w500/NXwPnMvjqTWtO9XIW5wthT8eO0.jpg",
-      "tmdb_id": 253960,
-      "imdb_id": "tt33083249"
+      "date": "2026-08-26",
+      "score": 67,
+      "poster": "https://image.tmdb.org/t/p/w500/o8H6HmQNt2qx5bIfmvuI6VJn13A.jpg",
+      "tmdb_id": 331616,
+      "imdb_id": "tt44113382"
     }
   ],
   "games": [
-    {
-      "title": "Pragmata",
-      "year": 2026,
-      "date": "2026-04-17",
-      "score": 88,
-      "poster": "https://media.rawg.io/media/games/9b2/9b20adbf00491d56ad6793654067f2fd.jpg",
-      "rawg_id": 452650
-    },
     {
       "title": "007 First Light",
       "year": 2026,
@@ -201,20 +192,12 @@
       "rawg_id": 1004298
     },
     {
-      "title": "Forza Horizon 6",
+      "title": "Pragmata",
       "year": 2026,
-      "date": "2026-05-19",
-      "score": 87,
-      "poster": "https://media.rawg.io/media/games/d74/d744a3b0f6f0f0bc63f5ceb9b5e63230.jpeg",
-      "rawg_id": 1010949
-    },
-    {
-      "title": "Star Wars Zero Company",
-      "year": 2026,
-      "date": "2026-08-27",
-      "score": 86,
-      "poster": "https://media.rawg.io/media/games/dae/dae6fd03dd5edbf15b193f20bec3cd58.jpg",
-      "rawg_id": 1002691
+      "date": "2026-04-17",
+      "score": 88,
+      "poster": "https://media.rawg.io/media/games/9b2/9b20adbf00491d56ad6793654067f2fd.jpg",
+      "rawg_id": 452650
     },
     {
       "title": "Onimusha: Way Of The Sword",
@@ -225,6 +208,14 @@
       "rawg_id": 994600
     },
     {
+      "title": "Star Wars Zero Company",
+      "year": 2026,
+      "date": "2026-08-27",
+      "score": 86,
+      "poster": "https://media.rawg.io/media/games/dae/dae6fd03dd5edbf15b193f20bec3cd58.jpg",
+      "rawg_id": 1002691
+    },
+    {
       "title": "Servant of the Lake",
       "year": 2026,
       "date": "2026-08-13",
@@ -233,12 +224,20 @@
       "rawg_id": 1019497
     },
     {
-      "title": "S.T.A.L.K.E.R. 2: Cost of Hope",
+      "title": "Mortal Shell II",
       "year": 2026,
       "date": "2026-08-20",
-      "score": 85,
-      "poster": "https://media.rawg.io/media/screenshots/dfd/dfd84af21deeef2b53d2781023e484bc.jpg",
-      "rawg_id": 1018108
+      "score": 84,
+      "poster": "https://media.rawg.io/media/games/c86/c8696c763ec825c6e4d49efbf2635a26.jpg",
+      "rawg_id": 1004515
+    },
+    {
+      "title": "The Blood Of Dawnwalker",
+      "year": 2026,
+      "date": "2026-09-03",
+      "score": 83,
+      "poster": "https://media.rawg.io/media/games/319/319d18680fd0233e0ff724f234c97d17.jpg",
+      "rawg_id": 996046
     },
     {
       "title": "The Sinking City 2",
