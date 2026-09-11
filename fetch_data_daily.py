@@ -153,6 +153,11 @@ COUNTRY_NAMES_CS = {
     "NL": "Nizozemsko", "IE": "Irsko", "NZ": "Nový Zéland", "SK": "Slovensko", "HU": "Maďarsko",
     "PT": "Portugalsko", "GR": "Řecko", "TR": "Turecko", "ZA": "Jihoafrická republika",
     "AR": "Argentina", "IL": "Izrael", "TH": "Thajsko", "HK": "Hongkong", "TW": "Tchaj-wan",
+    "CS": "Česko", "XC": "Česko",  # Czechoslovakia's historical ISO code (CS, retired 1993)
+                                     # and TMDb's own unofficial code for it (XC) — mapped to
+                                     # "Česko" so pre-1993 titles match the website's existing
+                                     # "Pouze české filmy/seriály" filter, matching how they're
+                                     # already correctly included in the catalog itself.
 }
 
 
