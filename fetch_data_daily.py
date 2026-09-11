@@ -479,7 +479,7 @@ def is_czech_or_slovak(item):
     return item.get("original_language") in ("cs", "sk")
 
 
-CZSK_COUNTRY_CODES = {"CZ", "SK", "CS"}  # CS = Czechoslovakia's historical ISO code, retired after the 1993 split — without it, every pre-1993 Czech/Slovak classic gets wrongly rejected
+CZSK_COUNTRY_CODES = {"CZ", "SK", "CS", "XC"}  # CS = Czechoslovakia's historical ISO code (retired after the 1993 split); XC = TMDb's own unofficial code for Czechoslovakia, used to avoid colliding with ISO's later reassignment of "CS" to Serbia and Montenegro (2003-2006) — without both, pre-1993 Czech/Slovak classics get wrongly rejected
 
 
 def has_czsk_production_country(details):
@@ -1620,6 +1620,7 @@ def compute_trending(today, movies_prefix, movies_czsk_prefix, shows_prefix, gam
         eligible.sort(key=lambda r: -r["score"])
         pool = eligible[:pool_size]
         chosen = pool if len(pool) <= count else random.sample(pool, count)
+        chosen.sort(key=lambda r: -r["score"])  # selection is random, but display order should still be highest score first
         out = []
         for r in chosen:
             entry = {"title": r.get("title"), "year": r.get("year"), "date": r.get("date"),
