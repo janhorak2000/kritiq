@@ -3873,14 +3873,17 @@ async function init(){
   FULL_CATALOG_PROMISE=loadFullCatalog(); // kicked off immediately, not awaited yet — runs in the background
 
   const trending=await loadTrendingLight();
-  if(trending){
+  if(trending && !FULL_CATALOG_READY){
     DB.movie=trending.movie; DB.show=trending.show; DB.game=trending.game;
     TRENDING_HOME_DATA=trending;
     // Rough placeholder bounds from the small trending subset — computeYearBounds() inside
     // loadFullCatalog() corrects this properly once the real catalog finishes loading.
-  }else{
+  }else if(!trending){
     await FULL_CATALOG_PROMISE; // no lightweight file available (e.g. demo/preview) — wait for the real thing before first render
   }
+  // else: trending.json loaded, but the full catalog RACE-WON and finished first — DB
+  // already correctly holds the full catalog with matching YEAR_BOUNDS, so trending data
+  // is deliberately discarded here rather than overwriting it.
 
   initSearchPanel();
   renderAuthBadge();
