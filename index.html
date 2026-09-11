@@ -2125,9 +2125,9 @@ const SKELETON_HOME_HTML=`<div class="skeleton-home">
 </div>`;
 
 function renderHome(){
-  const hotMovies=DB.movie.filter(m=>withinLast6Months(m.date)).sort((a,b)=>scoreSortValue(b)-scoreSortValue(a)).slice(0,10);
-  const hotShows=DB.show.filter(s=>withinLast6Months(s.date)).sort((a,b)=>scoreSortValue(b)-scoreSortValue(a)).slice(0,10);
-  const hotGames=DB.game.filter(g=>withinLast6Months(g.date)).sort((a,b)=>scoreSortValue(b)-scoreSortValue(a)).slice(0,10);
+  const hotMovies=TRENDING_HOME_DATA ? TRENDING_HOME_DATA.movie : DB.movie.filter(m=>withinLast6Months(m.date)).sort((a,b)=>scoreSortValue(b)-scoreSortValue(a)).slice(0,10);
+  const hotShows=TRENDING_HOME_DATA ? TRENDING_HOME_DATA.show : DB.show.filter(s=>withinLast6Months(s.date)).sort((a,b)=>scoreSortValue(b)-scoreSortValue(a)).slice(0,10);
+  const hotGames=TRENDING_HOME_DATA ? TRENDING_HOME_DATA.game : DB.game.filter(g=>withinLast6Months(g.date)).sort((a,b)=>scoreSortValue(b)-scoreSortValue(a)).slice(0,10);
   return `
     <div id="commentBannerContainer"></div>
     ${hotRowHTML('Top 10 filmů z poslední doby', hotMovies, '#/movies')}
@@ -3783,12 +3783,14 @@ async function loadFullCatalog(){
   FULL_CATALOG_READY=true;
   return loadedReal;
 }
+let TRENDING_HOME_DATA=null; // cached separately from DB — keeps the homepage showing the SAME server-chosen selection even after DB gets replaced by the full catalog, instead of re-deriving a different set client-side
 async function init(){
   FULL_CATALOG_PROMISE=loadFullCatalog(); // kicked off immediately, not awaited yet — runs in the background
 
   const trending=await loadTrendingLight();
   if(trending){
     DB.movie=trending.movie; DB.show=trending.show; DB.game=trending.game;
+    TRENDING_HOME_DATA=trending;
     // Rough placeholder bounds from the small trending subset — computeYearBounds() inside
     // loadFullCatalog() corrects this properly once the real catalog finishes loading.
   }else{
