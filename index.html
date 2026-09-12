@@ -2106,22 +2106,16 @@ function allTimestampedReviews(){
 }
 async function mostRecentFeaturedAsync(){
   try{
-    const snap=await db.collection('reviews').orderBy('createdAt','desc').limit(1).get();
+    const snap=await db.collection('reviews').orderBy('createdAt','desc').limit(20).get();
     if(snap.empty) return null;
-    const doc=snap.docs[0];
+    // Prefer the most recent review that has denormalized title/poster data (added
+    // recently) — this avoids ever triggering a full catalog load just to show one
+    // banner slide. Reviews created before this existed simply aren't eligible for this
+    // slide; once a handful of new reviews exist, one is very likely to qualify.
+    const doc=snap.docs.find(d=>d.data().itemTitle);
+    if(!doc) return null;
     const d=doc.data();
-    // Denormalized title/poster (stored on the review at submit time) let the banner
-    // display without needing this item's bucket loaded at all. Older reviews, created
-    // before this existed, fall back to a real lookup — which does need the bucket.
-    let itemStub;
-    if(d.itemTitle){
-      itemStub={id:d.itemId, type:d.itemType, title:d.itemTitle, poster:d.itemPoster||null};
-    }else{
-      await ensureFullCatalogLoaded();
-      const item=findItem(d.itemType, d.itemId);
-      if(!item) return null;
-      itemStub=item;
-    }
+    const itemStub={id:d.itemId, type:d.itemType, title:d.itemTitle, poster:d.itemPoster||null};
     const review=Object.assign(reviewDocToLocal(doc), {id:doc.id, baseLikes:0, baseDislikes:0, baseFunny:0, isUser:true});
     return {label:'Nejnovější recenze', review, item:itemStub, type:d.itemType};
   }catch(e){
@@ -2311,7 +2305,7 @@ const PLATFORM_ORDER=[
   'Atari ST','Atari 2600','Atari 5200','Atari 7800','Atari 8-bit','Atari XEGS','Atari Lynx','Atari Flashback',
 ];
 
-let listState={movies:{y0:2021,y1:2026,sort:'score',page:1,filter:'ALL'}, shows:{y0:2021,y1:2026,sort:'score',page:1,filter:'NO_DOC'}, games:{y0:2021,y1:2026,sort:'score',page:1,platform:'ALL'}};
+let listState={movies:{y0:2021,y1:2026,sort:'score',page:1,filter:'NO_DOC'}, shows:{y0:2021,y1:2026,sort:'score',page:1,filter:'NO_DOC'}, games:{y0:2021,y1:2026,sort:'score',page:1,platform:'ALL'}};
 
 function distinctGenres(type){
   const set=new Set();
@@ -2380,7 +2374,7 @@ function renderList(type){
     <div class="platform-filter-wrap">
       <button class="platform-filter-btn" id="genreFilterBtn" type="button">Filtrovat: ${esc(currentLabel)}</button>
       <div class="platform-dropdown" id="genreFilterDropdown">
-        ${type==='show' ? `<button class="platform-option ${st.filter==='NO_DOC'?'active':''}" data-filter="NO_DOC" type="button">Vše kromě dokumentů</button>` : ''}
+        <button class="platform-option ${st.filter==='NO_DOC'?'active':''}" data-filter="NO_DOC" type="button">Vše kromě dokumentů</button>
         <button class="platform-option ${st.filter==='ALL'?'active':''}" data-filter="ALL" type="button">Vše</button>
         <button class="platform-option ${st.filter==='CZECH'?'active':''}" data-filter="CZECH" type="button">${esc(czechLabel)}</button>
         ${genres.map(g=>`<button class="platform-option ${st.filter===g?'active':''}" data-filter="${esc(g)}" type="button">${esc(g)}</button>`).join('')}
@@ -3084,7 +3078,6 @@ async function ensureBucketsLoaded(prefixes, minYear, maxYear){
   if(!needed.length) return;
   await Promise.all(needed.map(fetchBucketInto));
   rebuildDBFromRaw();
-  widenYearBoundsPreservingSelection();
 }
 async function ensureFullCatalogLoaded(){
   if(FULL_CATALOG_READY) return;
@@ -3154,23 +3147,42 @@ async function loadRealData(){
     const parsed=manifest.map(parseBucketFilename).filter(Boolean);
     if(parsed.length){
       MANIFEST_INFO=parsed;
+
+      // The slider's ALLOWED range (min/max) must be the TRUE full span across every
+      // bucket, computed straight from the manifest's filenames — this needs no bucket
+      // CONTENT downloaded, just knowing which buckets exist. This has to happen before
+      // the default SELECTION below: if the allowed range started out narrow, the
+      // slider's own min/max HTML attributes would block the user from ever requesting
+      // an earlier year, and ensureBucketsLoaded() would never get a chance to run.
+      const fullRangeFor=(prefixes)=>{
+        const infos=parsed.filter(info=>prefixes.includes(info.prefix));
+        if(!infos.length) return null;
+        return {min:Math.min(...infos.map(i=>i.startYear)), max:Math.max(...infos.map(i=>i.endYear))};
+      };
+      YEAR_BOUNDS.movie=fullRangeFor(['movies','movies_czsk']) || YEAR_BOUNDS.movie;
+      YEAR_BOUNDS.show=fullRangeFor(['shows']) || YEAR_BOUNDS.show;
+      YEAR_BOUNDS.game=fullRangeFor(['games']) || YEAR_BOUNDS.game;
+
       const byPrefix={};
       parsed.forEach(info=>{ if(!byPrefix[info.prefix] || info.endYear>byPrefix[info.prefix].endYear) byPrefix[info.prefix]=info; });
       const recentInfos=Object.values(byPrefix);
       await Promise.all(recentInfos.map(fetchBucketInto));
       rebuildDBFromRaw();
 
+      // The default SELECTED range (what's shown until the user moves the slider) is
+      // just the recent bucket — separate from YEAR_BOUNDS above, which is the full
+      // allowed span.
       const recentRangeFor=(prefixes)=>{
         const infos=recentInfos.filter(info=>prefixes.includes(info.prefix));
         if(!infos.length) return null;
         return {min:Math.min(...infos.map(i=>i.startYear)), max:Math.max(...infos.map(i=>i.endYear))};
       };
-      YEAR_BOUNDS.movie=recentRangeFor(['movies','movies_czsk']) || YEAR_BOUNDS.movie;
-      YEAR_BOUNDS.show=recentRangeFor(['shows']) || YEAR_BOUNDS.show;
-      YEAR_BOUNDS.game=recentRangeFor(['games']) || YEAR_BOUNDS.game;
-      listState.movies.y0=YEAR_BOUNDS.movie.min; listState.movies.y1=YEAR_BOUNDS.movie.max;
-      listState.shows.y0=YEAR_BOUNDS.show.min; listState.shows.y1=YEAR_BOUNDS.show.max;
-      listState.games.y0=YEAR_BOUNDS.game.min; listState.games.y1=YEAR_BOUNDS.game.max;
+      const movieDefault=recentRangeFor(['movies','movies_czsk']);
+      const showDefault=recentRangeFor(['shows']);
+      const gameDefault=recentRangeFor(['games']);
+      if(movieDefault){ listState.movies.y0=movieDefault.min; listState.movies.y1=movieDefault.max; }
+      if(showDefault){ listState.shows.y0=showDefault.min; listState.shows.y1=showDefault.max; }
+      if(gameDefault){ listState.games.y0=gameDefault.min; listState.games.y1=gameDefault.max; }
       markRecentCatalogReady();
       return true;
     }
@@ -3478,6 +3490,7 @@ function renderAdminEditModal(item){
       <div class="auth-field"><label>Název</label><input type="text" id="adminEditTitle" value="${esc(item.title)}"></div>
       <div class="auth-field"><label>Popis</label><textarea id="adminEditSummary" rows="5">${esc(item.summary||'')}</textarea></div>
       <div class="auth-field"><label>Skóre (0-100, prázdné = neznámé)</label><input type="number" id="adminEditScore" min="0" max="100" value="${item.baseScore!==null && item.baseScore!==undefined ? item.baseScore : ''}"></div>
+      <div class="auth-field"><label>Žánry (oddělené čárkou)</label><input type="text" id="adminEditGenre" value="${esc(item.genre||'')}"></div>
       ${showCountryDuration ? `
       <div class="auth-field"><label>Země</label><input type="text" id="adminEditCountry" value="${esc(item.country||'')}"></div>
       <div class="auth-field"><label>Délka (minuty)</label><input type="number" id="adminEditDuration" min="1" value="${currentDuration!==null && currentDuration!==undefined ? currentDuration : ''}"></div>
@@ -3505,6 +3518,8 @@ function renderAdminEditModal(item){
       const scoreNum=parseInt(scoreRaw,10);
       if(!isNaN(scoreNum) && scoreNum>=0 && scoreNum<=100) fields.score=scoreNum;
     }
+    const newGenre=document.getElementById('adminEditGenre').value.trim();
+    if(newGenre!==(item.genre||'')) fields.genre=newGenre;
     if(showCountryDuration){
       const newCountry=document.getElementById('adminEditCountry').value.trim();
       if(newCountry && newCountry!==(item.country||'')) fields.country=newCountry;
@@ -4251,6 +4266,7 @@ function applyAdminOverridesToDB(){
       if(o.title) item.title=o.title;
       if(o.summary) item.summary=o.summary;
       if(o.score!==undefined && o.score!==null) item.baseScore=o.score;
+      if(o.genre) item.genre=o.genre;
       if(o.country) item.country=o.country;
       if(o.duration!==undefined && o.duration!==null){
         if(item.type==='movie') item.runtime=o.duration;
