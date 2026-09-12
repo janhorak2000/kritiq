@@ -1,0 +1,35 @@
+name: Recheck deaths
+
+on:
+  schedule:
+    - cron: '0 5 * * 0'   # runs every Sunday at 05:00 UTC — edit this to change the day/time
+  workflow_dispatch:        # adds a "Run workflow" button so you can trigger it manually too
+
+permissions:
+  contents: write   # required so the final "git push" step below can actually write back to the repo
+
+jobs:
+  recheck-deaths:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run death recheck
+        env:
+          TMDB_KEY: ${{ secrets.TMDB_KEY }}
+        run: python fetch_data_daily.py --tmdb-key "$TMDB_KEY" --recheck-deaths-only
+
+      - name: Commit updated people.json
+        run: |
+          git config user.name "kritiq-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "Weekly death recheck $(date -u +%Y-%m-%d)"
+          git push
