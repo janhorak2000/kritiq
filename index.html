@@ -325,6 +325,12 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
   .skeleton-card{width:110px; height:165px;}
   .skeleton-row{gap:14px;}
 }
+.skeleton-list-title{width:220px; height:30px; border-radius:6px; background:var(--bg-2); margin:0 0 12px; animation:skeletonPulse 1.4s ease-in-out infinite;}
+.skeleton-list-sub{width:340px; max-width:70%; height:14px; border-radius:5px; background:var(--bg-2); margin:0 0 26px; animation:skeletonPulse 1.4s ease-in-out infinite;}
+.skeleton-card-grid{border-radius:var(--radius-m); overflow:hidden;}
+.skeleton-card-grid-inner{aspect-ratio:2/3; width:100%; background:var(--bg-2); animation:skeletonPulse 1.4s ease-in-out infinite;}
+.skeleton-card-grid:nth-child(3n+2) .skeleton-card-grid-inner{animation-delay:.1s;}
+.skeleton-card-grid:nth-child(3n+3) .skeleton-card-grid-inner{animation-delay:.2s;}
 .hot-rank{
   position:absolute; right:14px; bottom:-6px; z-index:2;
   font-family:var(--font-display); font-weight:800; font-size:48px;
@@ -2249,6 +2255,15 @@ const SKELETON_HOME_HTML=`<div class="skeleton-home">
     <div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div>
   </div>
 </div>`;
+function skeletonListHTML(){
+  return `<div class="skeleton-list">
+    <div class="skeleton-list-title"></div>
+    <div class="skeleton-list-sub"></div>
+    <div class="grid">
+      ${Array.from({length:18}).map(()=>'<div class="skeleton-card-grid"><div class="skeleton-card-grid-inner"></div></div>').join('')}
+    </div>
+  </div>`;
+}
 
 function renderHome(){
   const hotMovies=TRENDING_HOME_DATA ? TRENDING_HOME_DATA.movie : DB.movie.filter(m=>withinLast6Months(m.date)).sort((a,b)=>scoreSortValue(b)-scoreSortValue(a)).slice(0,10);
@@ -2281,7 +2296,7 @@ const PLATFORM_ORDER=[
   'Atari ST','Atari 2600','Atari 5200','Atari 7800','Atari 8-bit','Atari XEGS','Atari Lynx','Atari Flashback',
 ];
 
-let listState={movies:{y0:2021,y1:2026,sort:'score',page:1,filter:'ALL'}, shows:{y0:2021,y1:2026,sort:'score',page:1,filter:'ALL'}, games:{y0:2021,y1:2026,sort:'score',page:1,platform:'ALL'}};
+let listState={movies:{y0:2021,y1:2026,sort:'score',page:1,filter:'ALL'}, shows:{y0:2021,y1:2026,sort:'score',page:1,filter:'NO_DOC'}, games:{y0:2021,y1:2026,sort:'score',page:1,platform:'ALL'}};
 
 function distinctGenres(type){
   const set=new Set();
@@ -2303,6 +2318,8 @@ function sortedListFor(type){
   if((type==='movie' || type==='show') && st.filter && st.filter!=='ALL'){
     if(st.filter==='CZECH'){
       items=items.filter(it=>it.country==='Česko');
+    }else if(st.filter==='NO_DOC'){
+      items=items.filter(it=>!(it.genre||'').split(',').map(g=>g.trim()).includes('Dokumentární'));
     }else{
       items=items.filter(it=>(it.genre||'').split(',').map(g=>g.trim()).includes(st.filter));
     }
@@ -2342,12 +2359,13 @@ function renderList(type){
   let genreFilterHTML = '';
   if(type==='movie' || type==='show'){
     const czechLabel = type==='movie' ? 'Pouze české filmy' : 'Pouze české seriály';
-    const currentLabel = st.filter==='ALL' ? 'Vše' : st.filter==='CZECH' ? czechLabel : st.filter;
+    const currentLabel = st.filter==='ALL' ? 'Vše' : st.filter==='CZECH' ? czechLabel : st.filter==='NO_DOC' ? 'Vše kromě dokumentů' : st.filter;
     const genres = distinctGenres(type);
     genreFilterHTML = `
     <div class="platform-filter-wrap">
       <button class="platform-filter-btn" id="genreFilterBtn" type="button">Filtrovat: ${esc(currentLabel)}</button>
       <div class="platform-dropdown" id="genreFilterDropdown">
+        ${type==='show' ? `<button class="platform-option ${st.filter==='NO_DOC'?'active':''}" data-filter="NO_DOC" type="button">Vše kromě dokumentů</button>` : ''}
         <button class="platform-option ${st.filter==='ALL'?'active':''}" data-filter="ALL" type="button">Vše</button>
         <button class="platform-option ${st.filter==='CZECH'?'active':''}" data-filter="CZECH" type="button">${esc(czechLabel)}</button>
         ${genres.map(g=>`<button class="platform-option ${st.filter===g?'active':''}" data-filter="${esc(g)}" type="button">${esc(g)}</button>`).join('')}
@@ -2420,7 +2438,7 @@ function bindGenreFilter(type){
       const st=listState[type+'s'];
       st.filter=val;
       st.page=1;
-      const label = val==='ALL' ? 'Vše' : val==='CZECH' ? czechLabel : val;
+      const label = val==='ALL' ? 'Vše' : val==='CZECH' ? czechLabel : val==='NO_DOC' ? 'Vše kromě dokumentů' : val;
       btn.textContent='Filtrovat: '+label;
       dropdown.querySelectorAll('.platform-option').forEach(o=>o.classList.toggle('active', o.dataset.filter===val));
       dropdown.classList.remove('open');
@@ -2916,7 +2934,11 @@ async function route(){
   setActiveNav(parts[0]||'');
 
   const isHomepage=parts.length===0;
-  if(!isHomepage && !FULL_CATALOG_READY){
+  const isListPage=['movies','shows','games'].includes(parts[0]);
+  if(isListPage && !RECENT_CATALOG_READY){
+    app.innerHTML=skeletonListHTML();
+    await RECENT_CATALOG_PROMISE;
+  }else if(!isHomepage && !isListPage && !FULL_CATALOG_READY){
     app.innerHTML=SKELETON_HOME_HTML;
     await FULL_CATALOG_PROMISE;
   }
@@ -2968,6 +2990,31 @@ async function route(){
      "games": [{title,year,date,score,genre,poster,gallery:[],developer}, ...] }               */
 let FULL_CATALOG_READY=false;
 let FULL_CATALOG_PROMISE=null;
+let RECENT_CATALOG_READY=false;
+let resolveRecentCatalogReady;
+let RECENT_CATALOG_PROMISE=new Promise(resolve=>{ resolveRecentCatalogReady=resolve; });
+function markRecentCatalogReady(){
+  if(RECENT_CATALOG_READY) return;
+  RECENT_CATALOG_READY=true;
+  resolveRecentCatalogReady();
+}
+function widenYearBoundsPreservingSelection(){
+  // Called once the full catalog finishes loading in the background. Widens the slider's
+  // ALLOWED range to the true min/max, but only moves the user's CURRENT selection if it
+  // still exactly matches the narrower phase-1 default — if they've already customized
+  // the slider, their choice is left alone rather than jumping underneath them.
+  ['movie','show','game'].forEach(type=>{
+    const years=DB[type].map(it=>it.year).filter(y=>Number.isFinite(y));
+    if(!years.length) return;
+    const newMin=Math.min(...years), newMax=Math.max(...years);
+    const key=type==='movie'?'movies':type==='show'?'shows':'games';
+    const st=listState[key];
+    const oldBounds=YEAR_BOUNDS[type];
+    if(st.y0===oldBounds.min) st.y0=newMin;
+    if(st.y1===oldBounds.max) st.y1=newMax;
+    YEAR_BOUNDS[type]={min:newMin, max:newMax};
+  });
+}
 async function loadTrendingLight(){
   try{
     const res=await fetch('./trending.json', {cache:'no-store'});
@@ -2981,26 +3028,78 @@ async function loadTrendingLight(){
     };
   }catch(e){ return null; }
 }
+function parseBucketFilename(filename){
+  const m=filename.match(/^([a-z_]+?)(\d{4})-(\d{4})\.json$/);
+  if(!m) return null;
+  return {filename, prefix:m[1], startYear:+m[2], endYear:+m[3]};
+}
+function mergeBucketResults(filenames, results, movies, moviesCzSk, shows, games){
+  filenames.forEach((filename, i)=>{
+    const records=results[i] || [];
+    if(filename.startsWith('movies_czsk')) moviesCzSk.push(...records);
+    else if(filename.startsWith('movies')) movies.push(...records);
+    else if(filename.startsWith('shows')) shows.push(...records);
+    else if(filename.startsWith('games')) games.push(...records);
+  });
+}
+async function loadOneJSON(path){
+  try{
+    const res=await fetch(path, {cache:'no-store'});
+    if(!res.ok) return null;
+    const json=await res.json();
+    return Array.isArray(json) ? json : null;
+  }catch(e){ return null; }
+}
 async function loadRealData(){
-  async function loadOne(path){
-    try{
-      const res=await fetch(path, {cache:'no-store'});
-      if(!res.ok) return null;
-      const json=await res.json();
-      return Array.isArray(json) ? json : null;
-    }catch(e){ return null; }
-  }
-  const manifest = await loadOne('./manifest.json');
+  const manifest = await loadOneJSON('./manifest.json');
   if(manifest && manifest.length){
-    const results = await Promise.all(manifest.map(f=>loadOne('./'+f)));
+    const parsed=manifest.map(parseBucketFilename).filter(Boolean);
+    if(parsed.length){
+      // PHASE 1: identify and load just the most-recent-year bucket per category —
+      // fast, and enough for the default list view (which sorts by score within that
+      // range but never needs older years unless the visitor explicitly asks for them).
+      const byPrefix={};
+      parsed.forEach(info=>{ if(!byPrefix[info.prefix] || info.endYear>byPrefix[info.prefix].endYear) byPrefix[info.prefix]=info; });
+      const recentInfos=Object.values(byPrefix);
+      const recentFiles=recentInfos.map(info=>info.filename);
+      const recentResults=await Promise.all(recentFiles.map(f=>loadOneJSON('./'+f)));
+
+      const movies=[], moviesCzSk=[], shows=[], games=[];
+      mergeBucketResults(recentFiles, recentResults, movies, moviesCzSk, shows, games);
+      DB.movie=buildFromRecords(movies.concat(moviesCzSk), 'movie', 'm');
+      DB.show=buildFromRecords(shows, 'show', 's');
+      DB.game=buildFromRecords(games, 'game', 'g');
+      applyAdminOverridesToDB();
+
+      const recentRangeFor=(prefixes)=>{
+        const infos=recentInfos.filter(info=>prefixes.includes(info.prefix));
+        if(!infos.length) return null;
+        return {min:Math.min(...infos.map(i=>i.startYear)), max:Math.max(...infos.map(i=>i.endYear))};
+      };
+      YEAR_BOUNDS.movie=recentRangeFor(['movies','movies_czsk']) || YEAR_BOUNDS.movie;
+      YEAR_BOUNDS.show=recentRangeFor(['shows']) || YEAR_BOUNDS.show;
+      YEAR_BOUNDS.game=recentRangeFor(['games']) || YEAR_BOUNDS.game;
+      listState.movies.y0=YEAR_BOUNDS.movie.min; listState.movies.y1=YEAR_BOUNDS.movie.max;
+      listState.shows.y0=YEAR_BOUNDS.show.min; listState.shows.y1=YEAR_BOUNDS.show.max;
+      listState.games.y0=YEAR_BOUNDS.game.min; listState.games.y1=YEAR_BOUNDS.game.max;
+      markRecentCatalogReady();
+
+      // PHASE 2: everything else, in the background
+      const otherFiles=manifest.filter(f=>!recentFiles.includes(f));
+      if(otherFiles.length){
+        const otherResults=await Promise.all(otherFiles.map(f=>loadOneJSON('./'+f)));
+        mergeBucketResults(otherFiles, otherResults, movies, moviesCzSk, shows, games);
+      }
+      DB.movie=buildFromRecords(movies.concat(moviesCzSk), 'movie', 'm');
+      DB.show=buildFromRecords(shows, 'show', 's');
+      DB.game=buildFromRecords(games, 'game', 'g');
+      return true;
+    }
+    // Manifest exists but nothing parsed as a proper year-bucket filename (e.g. a custom
+    // setup) — fall back to loading everything at once, same as before this change.
+    const results=await Promise.all(manifest.map(f=>loadOneJSON('./'+f)));
     const movies=[], moviesCzSk=[], shows=[], games=[];
-    manifest.forEach((filename, i)=>{
-      const records = results[i] || [];
-      if(filename.startsWith('movies_czsk')) moviesCzSk.push(...records);
-      else if(filename.startsWith('movies')) movies.push(...records);
-      else if(filename.startsWith('shows')) shows.push(...records);
-      else if(filename.startsWith('games')) games.push(...records);
-    });
+    mergeBucketResults(manifest, results, movies, moviesCzSk, shows, games);
     DB.movie=buildFromRecords(movies.concat(moviesCzSk), 'movie', 'm');
     DB.show=buildFromRecords(shows, 'show', 's');
     DB.game=buildFromRecords(games, 'game', 'g');
@@ -3009,7 +3108,7 @@ async function loadRealData(){
   // No manifest found — fall back to the older single-file-per-category scheme, for
   // deployments that haven't migrated to year-bucketed files yet.
   const [movies, moviesCzSk, shows, games] = await Promise.all([
-    loadOne('./movies.json'), loadOne('./movies_czsk.json'), loadOne('./shows.json'), loadOne('./games.json')
+    loadOneJSON('./movies.json'), loadOneJSON('./movies_czsk.json'), loadOneJSON('./shows.json'), loadOneJSON('./games.json')
   ]);
   if(movies===null && moviesCzSk===null && shows===null && games===null) return false; // nothing at all -> demo data fallback
   const allMovies=(movies||[]).concat(moviesCzSk||[]);
@@ -3020,15 +3119,6 @@ async function loadRealData(){
 }
 
 let YEAR_BOUNDS={movie:{min:2021,max:2026}, show:{min:2021,max:2026}, game:{min:2021,max:2026}};
-function computeYearBounds(){
-  ['movie','show','game'].forEach(type=>{
-    const years=DB[type].map(it=>it.year).filter(y=>Number.isFinite(y));
-    if(years.length){ YEAR_BOUNDS[type]={min:Math.min(...years), max:Math.max(...years)}; }
-  });
-  listState.movies.y0=YEAR_BOUNDS.movie.min; listState.movies.y1=YEAR_BOUNDS.movie.max;
-  listState.shows.y0=YEAR_BOUNDS.show.min; listState.shows.y1=YEAR_BOUNDS.show.max;
-  listState.games.y0=YEAR_BOUNDS.game.min; listState.games.y1=YEAR_BOUNDS.game.max;
-}
 
 /* ======================= REVIEW MODAL ======================= */
 /* ======================= AUTH (prototype only — local browser storage, no real server/OAuth) ======================= */
@@ -3298,6 +3388,7 @@ function renderAdminEditModal(item){
   const card=document.getElementById('reviewModalCard');
   card.className='modal-card';
   const showCountryDuration = item.type==='movie' || item.type==='show';
+  const showDeveloper = item.type==='game';
   const currentDuration = item.type==='movie' ? item.runtime : (item.type==='show' ? item.runtimeMin : null);
   card.innerHTML=`
     <button class="modal-close" id="adminEditClose" aria-label="Zavřít" type="button">✕</button>
@@ -3310,6 +3401,9 @@ function renderAdminEditModal(item){
       ${showCountryDuration ? `
       <div class="auth-field"><label>Země</label><input type="text" id="adminEditCountry" value="${esc(item.country||'')}"></div>
       <div class="auth-field"><label>Délka (minuty)</label><input type="number" id="adminEditDuration" min="1" value="${currentDuration!==null && currentDuration!==undefined ? currentDuration : ''}"></div>
+      ` : ''}
+      ${showDeveloper ? `
+      <div class="auth-field"><label>Vývojář</label><input type="text" id="adminEditDeveloper" value="${esc(item.developer||'')}"></div>
       ` : ''}
       <button class="auth-submit" id="adminEditSave" type="button">Uložit změny</button>
       <p class="form-note" id="adminEditStatus" style="margin-top:8px;"></p>
@@ -3339,6 +3433,10 @@ function renderAdminEditModal(item){
         const durationNum=parseInt(durationRaw,10);
         if(!isNaN(durationNum) && durationNum>0) fields.duration=durationNum;
       }
+    }
+    if(showDeveloper){
+      const newDeveloper=document.getElementById('adminEditDeveloper').value.trim();
+      if(newDeveloper && newDeveloper!==(item.developer||'')) fields.developer=newDeveloper;
     }
     if(Object.keys(fields).length===0){
       status.textContent='Žádné změny k uložení.';
@@ -4078,6 +4176,7 @@ function applyAdminOverridesToDB(){
         if(item.type==='movie') item.runtime=o.duration;
         else if(item.type==='show'){ item.runtimeMin=o.duration; item.runtimeMax=o.duration; }
       }
+      if(o.developer) item.developer=o.developer;
     });
   });
 }
@@ -4108,20 +4207,26 @@ async function loadFullCatalog(){
     runDailyDrop(); // simulated placeholder content — demo dataset only, never with real fetched data
   }
   applyAdminOverridesToDB();
-  computeYearBounds();
+  widenYearBoundsPreservingSelection();
+  markRecentCatalogReady(); // safety net — ensures this is true even when loadRealData() never got to do a two-phase split (demo mode, or the older single-file scheme)
   FULL_CATALOG_READY=true;
   return loadedReal;
 }
 let TRENDING_HOME_DATA=null; // cached separately from DB — keeps the homepage showing the SAME server-chosen selection even after DB gets replaced by the full catalog, instead of re-deriving a different set client-side
 async function init(){
   FULL_CATALOG_PROMISE=loadFullCatalog(); // kicked off immediately, not awaited yet — runs in the background
+  FULL_CATALOG_PROMISE.then(()=>{
+    const parts=(location.hash||'#/').replace(/^#\/?/,'').split('/').filter(Boolean);
+    if(['movies','shows','games'].includes(parts[0])) route(); // re-render so the slider's widened bounds take effect; current y0/y1 selection is preserved
+  });
 
   const trending=await loadTrendingLight();
-  if(trending && !FULL_CATALOG_READY){
+  if(trending && !RECENT_CATALOG_READY){
     DB.movie=trending.movie; DB.show=trending.show; DB.game=trending.game;
     TRENDING_HOME_DATA=trending;
-    // Rough placeholder bounds from the small trending subset — computeYearBounds() inside
-    // loadFullCatalog() corrects this properly once the real catalog finishes loading.
+    // Rough placeholder bounds from the small trending subset — the phase-1 (recent
+    // bucket) load inside loadFullCatalog() corrects this shortly, then the full
+    // background load corrects it further once everything has arrived.
   }else if(!trending){
     await FULL_CATALOG_PROMISE; // no lightweight file available (e.g. demo/preview) — wait for the real thing before first render
   }

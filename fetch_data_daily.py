@@ -682,6 +682,35 @@ def get_person_info(key, person_id, people_cache):
     return info
 
 
+def recheck_people_deaths(key, people_cache, limit):
+    """Periodically re-checks people currently marked alive (no deathday on file) to see
+    if TMDb has since recorded their death. Doesn't need to run often, and doesn't need
+    to touch everyone: people already marked deceased never need re-checking again, so
+    the pool of "still need checking" people only ever shrinks over time as the world
+    naturally does what it does. Updates people_cache in place; caller is responsible for
+    saving it back to disk afterward."""
+    alive_pids = [pid for pid, info in people_cache.items() if not info.get("deathday")]
+    to_check = alive_pids[:limit]
+    print(f"Re-checking {len(to_check)} of {len(alive_pids)} people currently on file as alive, for newly recorded deaths...", file=sys.stderr)
+
+    def refetch_one(pid):
+        try:
+            data = tmdb_get(f"/person/{pid}", key, {"language": "en-US"})
+            return pid, data.get("deathday")
+        except Exception:
+            return pid, None
+
+    updated = 0
+    with ThreadPoolExecutor(max_workers=PERSON_FETCH_WORKERS) as executor:
+        results = list(executor.map(refetch_one, to_check))
+    for pid, deathday in results:
+        if deathday and not people_cache.get(pid, {}).get("deathday"):
+            people_cache[pid]["deathday"] = deathday
+            updated += 1
+            print(f"  Nově zjištěné úmrtí: person {pid} -> {deathday}", file=sys.stderr)
+    return updated
+
+
 def compute_age(birthday, deathday, today):
     if not birthday:
         return None
@@ -1332,23 +1361,24 @@ def fetch_game_window(key, state, years_per_run, floor_year, seen_ids, today, ch
     return collected
 
 
-def fetch_lang_movies_recent(key, genres, seen_ids, fetch_galleries, fetch_reviews, imdb_ratings, min_imdb_votes, anime_benchmark, standup_benchmark, people_cache, years, max_pages, today, checkpoint, lang_code):
+def fetch_lang_movies_recent(key, genres, seen_ids, fetch_galleries, fetch_reviews, imdb_ratings, min_imdb_votes, anime_benchmark, standup_benchmark, people_cache, years, max_pages, today, checkpoint, lang_code, recent_days=None):
     collected = []
-    for year in years:
+
+    def run_query(params_extra, label):
         page = 1
         while page <= max_pages:
             try:
-                data = tmdb_get("/discover/movie", key, {
-                    "primary_release_year": year, "page": page, "language": TMDB_LANG,
+                data = tmdb_get("/discover/movie", key, dict({
+                    "page": page, "language": TMDB_LANG,
                     "sort_by": "popularity.desc", "with_original_language": lang_code,
-                })
+                }, **params_extra))
             except Exception as e:
-                print(f"  movies ({lang_code}, recent): error on year {year} page {page} ({e}) — stopping recent refresh, progress so far is saved", file=sys.stderr)
-                break
+                print(f"  movies ({lang_code}, recent): error on {label} page {page} ({e}) — stopping recent refresh, progress so far is saved", file=sys.stderr)
+                return
             results = data.get("results", [])
             total_pages = min(data.get("total_pages", 1), 500)
             if not results:
-                break
+                return
             for m in results:
                 if m["id"] in seen_ids or not m.get("release_date") or not m.get("title"):
                     continue
@@ -1362,31 +1392,39 @@ def fetch_lang_movies_recent(key, genres, seen_ids, fetch_galleries, fetch_revie
                     collected.append(movie_record(m, key, genres, fetch_galleries, fetch_reviews, imdb_ratings, min_imdb_votes, scored, details, people_cache, today))
                 except Exception as e:
                     print(f"    warning: skipped a movie due to error ({e})", file=sys.stderr)
-            print(f"  movies ({lang_code}, recent): year {year} page {page}/{total_pages} -> {len(collected)} new so far", file=sys.stderr)
+            print(f"  movies ({lang_code}, recent): {label} page {page}/{total_pages} -> {len(collected)} new so far", file=sys.stderr)
             checkpoint(collected)
             page += 1
             if page > total_pages:
-                break
+                return
+
+    if recent_days:
+        cutoff = (datetime.date.fromisoformat(today) - datetime.timedelta(days=recent_days)).isoformat()
+        run_query({"primary_release_date.gte": cutoff, "primary_release_date.lte": today}, f"{cutoff} to {today}")
+    else:
+        for year in years:
+            run_query({"primary_release_year": year}, f"year {year}")
     return collected
 
 
-def fetch_lang_shows_recent(key, genres, seen_ids, fetch_galleries, fetch_reviews, imdb_ratings, min_imdb_votes, anime_benchmark, standup_benchmark, people_cache, years, max_pages, today, checkpoint, lang_code):
+def fetch_lang_shows_recent(key, genres, seen_ids, fetch_galleries, fetch_reviews, imdb_ratings, min_imdb_votes, anime_benchmark, standup_benchmark, people_cache, years, max_pages, today, checkpoint, lang_code, recent_days=None):
     collected = []
-    for year in years:
+
+    def run_query(params_extra, label):
         page = 1
         while page <= max_pages:
             try:
-                data = tmdb_get("/discover/tv", key, {
-                    "first_air_date_year": year, "page": page, "language": TMDB_LANG,
+                data = tmdb_get("/discover/tv", key, dict({
+                    "page": page, "language": TMDB_LANG,
                     "sort_by": "popularity.desc", "with_original_language": lang_code,
-                })
+                }, **params_extra))
             except Exception as e:
-                print(f"  shows ({lang_code}, recent): error on year {year} page {page} ({e}) — stopping recent refresh, progress so far is saved", file=sys.stderr)
-                break
+                print(f"  shows ({lang_code}, recent): error on {label} page {page} ({e}) — stopping recent refresh, progress so far is saved", file=sys.stderr)
+                return
             results = data.get("results", [])
             total_pages = min(data.get("total_pages", 1), 500)
             if not results:
-                break
+                return
             for s in results:
                 if s["id"] in seen_ids or not s.get("first_air_date") or not s.get("name"):
                     continue
@@ -1400,34 +1438,45 @@ def fetch_lang_shows_recent(key, genres, seen_ids, fetch_galleries, fetch_review
                     collected.append(show_record(s, key, genres, fetch_galleries, fetch_reviews, imdb_ratings, min_imdb_votes, scored, countries, people_cache, today))
                 except Exception as e:
                     print(f"    warning: skipped a show due to error ({e})", file=sys.stderr)
-            print(f"  shows ({lang_code}, recent): year {year} page {page}/{total_pages} -> {len(collected)} new so far", file=sys.stderr)
+            print(f"  shows ({lang_code}, recent): {label} page {page}/{total_pages} -> {len(collected)} new so far", file=sys.stderr)
             checkpoint(collected)
             page += 1
             if page > total_pages:
-                break
+                return
+
+    if recent_days:
+        cutoff = (datetime.date.fromisoformat(today) - datetime.timedelta(days=recent_days)).isoformat()
+        run_query({"first_air_date.gte": cutoff, "first_air_date.lte": today}, f"{cutoff} to {today}")
+    else:
+        for year in years:
+            run_query({"first_air_date_year": year}, f"year {year}")
     return collected
 
 
-def fetch_movies_recent(key, genres, seen_ids, fetch_galleries, fetch_reviews, imdb_ratings, min_imdb_votes, anime_benchmark, standup_benchmark, people_cache, years, min_votes, max_pages, today, checkpoint):
+def fetch_movies_recent(key, genres, seen_ids, fetch_galleries, fetch_reviews, imdb_ratings, min_imdb_votes, anime_benchmark, standup_benchmark, people_cache, years, min_votes, max_pages, today, checkpoint, recent_days=None):
     """Runs every single time, independent of the historical backfill cursor — catches
     brand-new ALREADY-RELEASED titles TMDb added since the last run. Unreleased/future
-    titles are filtered out entirely, same as the historical backfill."""
+    titles are filtered out entirely, same as the historical backfill.
+    If recent_days is set, scans a precise date window (today minus recent_days) instead
+    of the whole current year — much lighter for an ongoing "just catch new releases"
+    mode once historical backfill is complete (see --skip-backfill)."""
     collected = []
-    for year in years:
+
+    def run_query(params_extra, label):
         page = 1
         while page <= max_pages:
             try:
-                data = tmdb_get("/discover/movie", key, {
-                    "primary_release_year": year, "page": page, "language": TMDB_LANG,
+                data = tmdb_get("/discover/movie", key, dict({
+                    "page": page, "language": TMDB_LANG,
                     "sort_by": "popularity.desc", "vote_count.gte": min_votes,
-                })
+                }, **params_extra))
             except Exception as e:
-                print(f"  movies (recent): error on year {year} page {page} ({e}) — stopping recent refresh, progress so far is saved", file=sys.stderr)
-                break
+                print(f"  movies (recent): error on {label} page {page} ({e}) — stopping recent refresh, progress so far is saved", file=sys.stderr)
+                return
             results = data.get("results", [])
             total_pages = min(data.get("total_pages", 1), 500)
             if not results:
-                break
+                return
             for m in results:
                 if m["id"] in seen_ids or not m.get("release_date") or not m.get("title"):
                     continue
@@ -1441,31 +1490,39 @@ def fetch_movies_recent(key, genres, seen_ids, fetch_galleries, fetch_reviews, i
                     collected.append(movie_record(m, key, genres, fetch_galleries, fetch_reviews, imdb_ratings, min_imdb_votes, scored, details, people_cache, today))
                 except Exception as e:
                     print(f"    warning: skipped a movie due to error ({e})", file=sys.stderr)
-            print(f"  movies (recent): year {year} page {page}/{total_pages} -> {len(collected)} new so far", file=sys.stderr)
+            print(f"  movies (recent): {label} page {page}/{total_pages} -> {len(collected)} new so far", file=sys.stderr)
             checkpoint(collected)
             page += 1
             if page > total_pages:
-                break
+                return
+
+    if recent_days:
+        cutoff = (datetime.date.fromisoformat(today) - datetime.timedelta(days=recent_days)).isoformat()
+        run_query({"primary_release_date.gte": cutoff, "primary_release_date.lte": today}, f"{cutoff} to {today}")
+    else:
+        for year in years:
+            run_query({"primary_release_year": year}, f"year {year}")
     return collected
 
 
-def fetch_shows_recent(key, genres, seen_ids, fetch_galleries, fetch_reviews, imdb_ratings, min_imdb_votes, anime_benchmark, standup_benchmark, people_cache, years, min_votes, max_pages, today, checkpoint):
+def fetch_shows_recent(key, genres, seen_ids, fetch_galleries, fetch_reviews, imdb_ratings, min_imdb_votes, anime_benchmark, standup_benchmark, people_cache, years, min_votes, max_pages, today, checkpoint, recent_days=None):
     collected = []
-    for year in years:
+
+    def run_query(params_extra, label):
         page = 1
         while page <= max_pages:
             try:
-                data = tmdb_get("/discover/tv", key, {
-                    "first_air_date_year": year, "page": page, "language": TMDB_LANG,
+                data = tmdb_get("/discover/tv", key, dict({
+                    "page": page, "language": TMDB_LANG,
                     "sort_by": "popularity.desc", "vote_count.gte": min_votes,
-                })
+                }, **params_extra))
             except Exception as e:
-                print(f"  shows (recent): error on year {year} page {page} ({e}) — stopping recent refresh, progress so far is saved", file=sys.stderr)
-                break
+                print(f"  shows (recent): error on {label} page {page} ({e}) — stopping recent refresh, progress so far is saved", file=sys.stderr)
+                return
             results = data.get("results", [])
             total_pages = min(data.get("total_pages", 1), 500)
             if not results:
-                break
+                return
             for s in results:
                 if s["id"] in seen_ids or not s.get("first_air_date") or not s.get("name"):
                     continue
@@ -1479,27 +1536,42 @@ def fetch_shows_recent(key, genres, seen_ids, fetch_galleries, fetch_reviews, im
                     collected.append(show_record(s, key, genres, fetch_galleries, fetch_reviews, imdb_ratings, min_imdb_votes, scored, countries, people_cache, today))
                 except Exception as e:
                     print(f"    warning: skipped a show due to error ({e})", file=sys.stderr)
-            print(f"  shows (recent): year {year} page {page}/{total_pages} -> {len(collected)} new so far", file=sys.stderr)
+            print(f"  shows (recent): {label} page {page}/{total_pages} -> {len(collected)} new so far", file=sys.stderr)
             checkpoint(collected)
             page += 1
             if page > total_pages:
-                break
+                return
+
+    if recent_days:
+        cutoff = (datetime.date.fromisoformat(today) - datetime.timedelta(days=recent_days)).isoformat()
+        run_query({"first_air_date.gte": cutoff, "first_air_date.lte": today}, f"{cutoff} to {today}")
+    else:
+        for year in years:
+            run_query({"first_air_date_year": year}, f"year {year}")
     return collected
 
 
-def fetch_games_recent(key, seen_ids, years, max_pages, today, checkpoint, min_wishlist=10):
+def fetch_games_recent(key, seen_ids, years, max_pages, today, checkpoint, min_wishlist=10, recent_days=None):
     collected = []
+    if recent_days:
+        windows = [(datetime.date.fromisoformat(today) - datetime.timedelta(days=recent_days)).isoformat(), today]
+    else:
+        windows = None
     for year in years:
         page = 1
         while page <= max_pages:
-            date_end = today if year == int(today[:4]) else f"{year}-12-31"
+            if windows:
+                date_start, date_end = windows
+            else:
+                date_start = f"{year}-01-01"
+                date_end = today if year == int(today[:4]) else f"{year}-12-31"
             try:
                 data = rawg_get("/games", key, {
-                    "dates": f"{year}-01-01,{date_end}",
+                    "dates": f"{date_start},{date_end}",
                     "page": page, "page_size": 40, "ordering": "-added",
                 })
             except Exception as e:
-                print(f"  games (recent): error on year {year} page {page} ({e}) — stopping recent refresh, progress so far is saved", file=sys.stderr)
+                print(f"  games (recent): error on {date_start} to {date_end} page {page} ({e}) — stopping recent refresh, progress so far is saved", file=sys.stderr)
                 break
             results = data.get("results", [])
             if not results:
@@ -1517,9 +1589,11 @@ def fetch_games_recent(key, seen_ids, years, max_pages, today, checkpoint, min_w
                     collected.append(game_record(g, key, details))
                 except Exception as e:
                     print(f"    warning: skipped a game due to error ({e})", file=sys.stderr)
-            print(f"  games (recent): year {year} page {page} -> {len(collected)} new so far", file=sys.stderr)
+            print(f"  games (recent): {date_start} to {date_end} page {page} -> {len(collected)} new so far", file=sys.stderr)
             checkpoint(collected)
             page += 1
+        if windows:
+            break  # a single precise window covers everything — no need to loop per "year"
     return collected
 
 
@@ -1702,7 +1776,10 @@ def main():
     ap.add_argument("--backfill-show-scores-only", action="store_true", help="run just the show-score-from-IMDb backfill against your existing data and exit immediately — no fetching, no API calls beyond loading the IMDb ratings cache")
     ap.add_argument("--reset-czsk-cursor", action="store_true", help="reset only the Czech/Slovak movie and show year cursors back to the top (use after fixing a classification bug that caused certain years to be silently skipped, e.g. the CS/XC pre-1993 country code fix) — the seen-set and every other category's progress stays untouched, so nothing gets re-added as a duplicate")
     ap.add_argument("--fix-czsk-country-labels-only", action="store_true", help="patch the country field on existing Czech/Slovak movies/shows whose label was saved as the raw 'CS'/'XC' code before the Česko mapping existed, then exit immediately — no TMDb calls, purely a local fix for data already on disk")
+    ap.add_argument("--recheck-deaths-only", action="store_true", help="re-check every person currently on file as alive (actors, directors, writers, composers) for a newly recorded death on TMDb, update people.json, then exit immediately — doesn't need to run often, e.g. weekly or monthly is plenty")
+    ap.add_argument("--recheck-deaths-limit", type=int, default=3000, help="safety cap on how many people to re-check in one run of --recheck-deaths-only (default 3000)")
     ap.add_argument("--recent-games-min-wishlist", type=int, default=10, help="flat wishlist floor for the recent-games scan (bypasses the era/genre-tiered thresholds used during backfill, since this scan is always 'recent' anyway)")
+    ap.add_argument("--recent-days", type=int, default=None, help="scan only a precise window of the last N days for all 'recent' fetches (movies, shows, both CZ/SK variants, and games), instead of re-scanning the whole current year every run. Combine with --skip-backfill once historical collection is complete, for a lightweight ongoing 'just catch new releases' mode, e.g. --recent-days 7")
     args = ap.parse_args()
     today = today_str()
     real_year = datetime.date.today().year
@@ -1715,6 +1792,14 @@ def main():
     movies_czsk_store = BucketedStore(args.movies_czsk_prefix)
     shows_store = BucketedStore(args.shows_prefix)
     games_store = BucketedStore(args.games_prefix)
+
+    if args.recheck_deaths_only:
+        print(f"Running death recheck only (--recheck-deaths-only, limit {args.recheck_deaths_limit})...", file=sys.stderr)
+        updated = recheck_people_deaths(args.tmdb_key, people_cache, args.recheck_deaths_limit)
+        save_json(args.people_cache_file, people_cache)
+        print(f"Found {updated} newly recorded death(s). people.json updated.", file=sys.stderr)
+        print("Done.", file=sys.stderr)
+        return
 
     if args.fix_czsk_country_labels_only:
         print("Running Czech/Slovak country label patch only (--fix-czsk-country-labels-only)...", file=sys.stderr)
@@ -1806,7 +1891,7 @@ def main():
             if not args.skip_recent:
                 try:
                     cp = make_movie_checkpoint(movie_seen, "movie_seen")
-                    fetch_movies_recent(args.tmdb_key, movie_genres, movie_seen, args.galleries, args.fetch_reviews, imdb_ratings, args.min_imdb_votes, args.anime_benchmark_votes, args.standup_benchmark_votes, people_cache, recent_years, args.recent_min_votes, args.recent_pages, today, cp)
+                    fetch_movies_recent(args.tmdb_key, movie_genres, movie_seen, args.galleries, args.fetch_reviews, imdb_ratings, args.min_imdb_votes, args.anime_benchmark_votes, args.standup_benchmark_votes, people_cache, recent_years, args.recent_min_votes, args.recent_pages, today, cp, recent_days=args.recent_days)
                 except Exception as e:
                     print(f"movies (recent): unexpected error ({e})", file=sys.stderr)
             print(f"  -> saved. movies total so far: {movies_store.total_on_disk()} worldwide + {movies_czsk_store.total_on_disk()} Czech/Slovak", file=sys.stderr)
@@ -1823,7 +1908,7 @@ def main():
             if not args.skip_recent:
                 try:
                     cp = make_movie_checkpoint(movie_seen, "movie_seen")
-                    fetch_lang_movies_recent(args.tmdb_key, movie_genres, movie_seen, args.galleries, args.fetch_reviews, imdb_ratings, args.min_imdb_votes, args.anime_benchmark_votes, args.standup_benchmark_votes, people_cache, recent_years, args.recent_pages, today, cp, lang_code)
+                    fetch_lang_movies_recent(args.tmdb_key, movie_genres, movie_seen, args.galleries, args.fetch_reviews, imdb_ratings, args.min_imdb_votes, args.anime_benchmark_votes, args.standup_benchmark_votes, people_cache, recent_years, args.recent_pages, today, cp, lang_code, recent_days=args.recent_days)
                 except Exception as e:
                     print(f"movies ({lang_code}, recent): unexpected error ({e})", file=sys.stderr)
         print(f"  -> saved. movies total so far: {movies_store.total_on_disk()} worldwide + {movies_czsk_store.total_on_disk()} Czech/Slovak", file=sys.stderr)
@@ -1843,7 +1928,7 @@ def main():
         if not args.skip_recent:
             try:
                 cp = make_bucket_checkpoint(shows_store, show_seen, "show_seen")
-                fetch_shows_recent(args.tmdb_key, show_genres, show_seen, args.galleries, args.fetch_reviews, imdb_ratings, args.min_imdb_votes, args.anime_benchmark_votes, args.standup_benchmark_votes, people_cache, recent_years, args.recent_min_votes, args.recent_pages, today, cp)
+                fetch_shows_recent(args.tmdb_key, show_genres, show_seen, args.galleries, args.fetch_reviews, imdb_ratings, args.min_imdb_votes, args.anime_benchmark_votes, args.standup_benchmark_votes, people_cache, recent_years, args.recent_min_votes, args.recent_pages, today, cp, recent_days=args.recent_days)
             except Exception as e:
                 print(f"shows (recent): unexpected error ({e})", file=sys.stderr)
         print(f"  -> saved. shows total so far: {shows_store.total_on_disk()}", file=sys.stderr)
@@ -1860,7 +1945,7 @@ def main():
             if not args.skip_recent:
                 try:
                     cp = make_bucket_checkpoint(shows_store, show_seen, "show_seen")
-                    fetch_lang_shows_recent(args.tmdb_key, show_genres, show_seen, args.galleries, args.fetch_reviews, imdb_ratings, args.min_imdb_votes, args.anime_benchmark_votes, args.standup_benchmark_votes, people_cache, recent_years, args.recent_pages, today, cp, lang_code)
+                    fetch_lang_shows_recent(args.tmdb_key, show_genres, show_seen, args.galleries, args.fetch_reviews, imdb_ratings, args.min_imdb_votes, args.anime_benchmark_votes, args.standup_benchmark_votes, people_cache, recent_years, args.recent_pages, today, cp, lang_code, recent_days=args.recent_days)
                 except Exception as e:
                     print(f"shows ({lang_code}, recent): unexpected error ({e})", file=sys.stderr)
         try:
@@ -1882,7 +1967,7 @@ def main():
         if not args.skip_recent:
             try:
                 cp = make_bucket_checkpoint(games_store, game_seen, "game_seen")
-                fetch_games_recent(args.rawg_key, game_seen, recent_years, args.recent_pages, today, cp, min_wishlist=args.recent_games_min_wishlist)
+                fetch_games_recent(args.rawg_key, game_seen, recent_years, args.recent_pages, today, cp, min_wishlist=args.recent_games_min_wishlist, recent_days=args.recent_days)
             except Exception as e:
                 print(f"games (recent): unexpected error ({e})", file=sys.stderr)
         try:
