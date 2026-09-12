@@ -4,6 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kritiq</title>
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+<link rel="alternate icon" href="./favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -2105,10 +2110,20 @@ async function mostRecentFeaturedAsync(){
     if(snap.empty) return null;
     const doc=snap.docs[0];
     const d=doc.data();
-    const item=findItem(d.itemType, d.itemId);
-    if(!item) return null;
+    // Denormalized title/poster (stored on the review at submit time) let the banner
+    // display without needing this item's bucket loaded at all. Older reviews, created
+    // before this existed, fall back to a real lookup — which does need the bucket.
+    let itemStub;
+    if(d.itemTitle){
+      itemStub={id:d.itemId, type:d.itemType, title:d.itemTitle, poster:d.itemPoster||null};
+    }else{
+      await ensureFullCatalogLoaded();
+      const item=findItem(d.itemType, d.itemId);
+      if(!item) return null;
+      itemStub=item;
+    }
     const review=Object.assign(reviewDocToLocal(doc), {id:doc.id, baseLikes:0, baseDislikes:0, baseFunny:0, isUser:true});
-    return {label:'Nejnovější recenze', review, item, type:d.itemType};
+    return {label:'Nejnovější recenze', review, item:itemStub, type:d.itemType};
   }catch(e){
     console.error('Nepodařilo se načíst nejnovější recenzi', e);
     return null;
@@ -2158,7 +2173,7 @@ function renderBannerSlideContent(idx){
 async function loadAndRenderCommentBanner(){
   const container=document.getElementById('commentBannerContainer');
   if(!container) return; // navigated away before this resolved
-  if(!FULL_CATALOG_READY) await FULL_CATALOG_PROMISE;
+  if(!RECENT_CATALOG_READY) await RECENT_CATALOG_PROMISE;
   if(!document.getElementById('commentBannerContainer')) return; // navigated away while waiting
   try{
     bannerSlides=await buildBannerSlides();
@@ -2467,9 +2482,21 @@ function bindPlatformFilter(){
     });
   });
 }
-function refreshListBody(type){
+async function refreshListBody(type){
+  const key=type+'s'; const st=listState[key];
+  const prefixes = type==='movie' ? ['movies','movies_czsk'] : type==='show' ? ['shows'] : ['games'];
+  const needsFetch = MANIFEST_INFO && MANIFEST_INFO.some(info=>
+    prefixes.includes(info.prefix) && info.endYear>=st.y0 && info.startYear<=st.y1 && !LOADED_BUCKET_FILES.has(info.filename)
+  );
+  const listBody=document.getElementById('listBody');
+  if(needsFetch && listBody){
+    listBody.innerHTML=`<p class="empty-note">Načítání dalších let…</p>`;
+  }
+  await ensureBucketsLoaded(prefixes, st.y0, st.y1);
   const body=listBodyHTML(type);
-  document.getElementById('listBody').innerHTML=body.html;
+  const freshListBody=document.getElementById('listBody');
+  if(!freshListBody) return; // navigated away while buckets were loading
+  freshListBody.innerHTML=body.html;
   const {min:YMIN, max:YMAX}=YEAR_BOUNDS[type];
   document.getElementById('listSub').textContent=`${typeLabelPl(type)} z let ${YMIN}–${YMAX}. Zobrazeno ${body.shown} z ${body.total} položek.`;
   bindLoadMore(type);
@@ -2662,6 +2689,7 @@ function attachDetailEvents(type,id){
           itemId:item.id, itemType:item.type, uid:CURRENT_UID, author:CURRENT_USER,
           score:selected, text, createdAt:firebase.firestore.FieldValue.serverTimestamp(), editedAt:null,
           likesCount:0, dislikesCount:0, funnyCount:0,
+          itemTitle:item.title, itemPoster:item.poster||null,
         });
         await loadReviewsForItem(item);
         route();
@@ -2935,12 +2963,35 @@ async function route(){
 
   const isHomepage=parts.length===0;
   const isListPage=['movies','shows','games'].includes(parts[0]);
-  if(isListPage && !RECENT_CATALOG_READY){
-    app.innerHTML=skeletonListHTML();
+  const needsFullCatalogUpfront=['person','search','user'].includes(parts[0]);
+  const isTitlePage=parts[0]==='title' && parts[1] && parts[2];
+
+  if(!isHomepage && !RECENT_CATALOG_READY){
+    // baseline: every non-homepage route needs at least the recent bucket loaded first
+    app.innerHTML=isListPage ? skeletonListHTML() : SKELETON_HOME_HTML;
     await RECENT_CATALOG_PROMISE;
-  }else if(!isHomepage && !isListPage && !FULL_CATALOG_READY){
+  }
+
+  if(isListPage){
+    const type=parts[0]==='movies'?'movie':parts[0]==='shows'?'show':'game';
+    const st=listState[parts[0]];
+    const prefixes = type==='movie' ? ['movies','movies_czsk'] : type==='show' ? ['shows'] : ['games'];
+    const needsFetch=MANIFEST_INFO && MANIFEST_INFO.some(info=>
+      prefixes.includes(info.prefix) && info.endYear>=st.y0 && info.startYear<=st.y1 && !LOADED_BUCKET_FILES.has(info.filename)
+    );
+    if(needsFetch) app.innerHTML=skeletonListHTML();
+    await ensureBucketsLoaded(prefixes, st.y0, st.y1);
+  }else if(needsFullCatalogUpfront && !FULL_CATALOG_READY){
+    // search/person/profile pages genuinely need to look across every item — no way to
+    // know in advance which bucket holds what they're looking for
     app.innerHTML=SKELETON_HOME_HTML;
-    await FULL_CATALOG_PROMISE;
+    await ensureFullCatalogLoaded();
+  }else if(isTitlePage && !findItem(parts[1],parts[2]) && !FULL_CATALOG_READY){
+    // this specific item isn't in what's currently loaded (e.g. an older title clicked
+    // from search or a comment banner) — load the rest to find it. Items already loaded
+    // (recent titles, or anything from a widened list view) skip this entirely.
+    app.innerHTML=SKELETON_HOME_HTML;
+    await ensureFullCatalogLoaded();
   }
 
   if(parts.length===0){
@@ -2988,9 +3039,8 @@ async function route(){
    { "movies":[{title,year,date,score,box,genre,poster,gallery:[],summary,director,composer,writer,actors:[]}, ...],
      "shows": [{title,year,date,score,genre,poster,gallery:[],summary,director,composer,writer,actors:[]}, ...],
      "games": [{title,year,date,score,genre,poster,gallery:[],developer}, ...] }               */
-let FULL_CATALOG_READY=false;
-let FULL_CATALOG_PROMISE=null;
-let RECENT_CATALOG_READY=false;
+let FULL_CATALOG_READY=false; // true once every bucket has been loaded (search/person-pages/achievements need this)
+let RECENT_CATALOG_READY=false; // true once just the most-recent bucket per category is loaded — list pages/homepage only need this
 let resolveRecentCatalogReady;
 let RECENT_CATALOG_PROMISE=new Promise(resolve=>{ resolveRecentCatalogReady=resolve; });
 function markRecentCatalogReady(){
@@ -2998,11 +3048,54 @@ function markRecentCatalogReady(){
   RECENT_CATALOG_READY=true;
   resolveRecentCatalogReady();
 }
+let MANIFEST_INFO=null; // [{filename, prefix, startYear, endYear}] — null means bucketed on-demand loading isn't available (demo mode, or an unrecognized manifest), so everything just loads at once the old way
+let LOADED_BUCKET_FILES=new Set(); // filenames already fetched and merged into RAW_RECORDS
+let BUCKET_FETCH_PROMISES={}; // filename -> in-flight promise, so two triggers for the same bucket never double-fetch
+let RAW_RECORDS={movies:[], moviesCzSk:[], shows:[], games:[]}; // accumulates as buckets are loaded — never reset, only appended to
+function rebuildDBFromRaw(){
+  DB.movie=buildFromRecords(RAW_RECORDS.movies.concat(RAW_RECORDS.moviesCzSk), 'movie', 'm');
+  DB.show=buildFromRecords(RAW_RECORDS.shows, 'show', 's');
+  DB.game=buildFromRecords(RAW_RECORDS.games, 'game', 'g');
+  applyAdminOverridesToDB();
+}
+function rawArrayForPrefix(prefix){
+  return prefix==='movies_czsk' ? RAW_RECORDS.moviesCzSk
+       : prefix==='movies' ? RAW_RECORDS.movies
+       : prefix==='shows' ? RAW_RECORDS.shows
+       : RAW_RECORDS.games;
+}
+function fetchBucketInto(info){
+  if(!BUCKET_FETCH_PROMISES[info.filename]){
+    BUCKET_FETCH_PROMISES[info.filename]=loadOneJSON('./'+info.filename).then(records=>{
+      rawArrayForPrefix(info.prefix).push(...(records||[]));
+      LOADED_BUCKET_FILES.add(info.filename);
+    });
+  }
+  return BUCKET_FETCH_PROMISES[info.filename];
+}
+async function ensureBucketsLoaded(prefixes, minYear, maxYear){
+  // Loads only the buckets overlapping [minYear,maxYear] for the given prefixes that
+  // aren't already loaded. Safe to call repeatedly — already-loaded buckets are skipped,
+  // and concurrent calls for the same bucket share one fetch rather than duplicating it.
+  if(!MANIFEST_INFO) return; // bucketed loading unavailable — DB is already fully populated some other way
+  const needed=MANIFEST_INFO.filter(info=>
+    prefixes.includes(info.prefix) && info.endYear>=minYear && info.startYear<=maxYear && !LOADED_BUCKET_FILES.has(info.filename)
+  );
+  if(!needed.length) return;
+  await Promise.all(needed.map(fetchBucketInto));
+  rebuildDBFromRaw();
+  widenYearBoundsPreservingSelection();
+}
+async function ensureFullCatalogLoaded(){
+  if(FULL_CATALOG_READY) return;
+  await ensureBucketsLoaded(['movies','movies_czsk','shows','games'], -Infinity, Infinity);
+  FULL_CATALOG_READY=true;
+}
 function widenYearBoundsPreservingSelection(){
-  // Called once the full catalog finishes loading in the background. Widens the slider's
-  // ALLOWED range to the true min/max, but only moves the user's CURRENT selection if it
-  // still exactly matches the narrower phase-1 default — if they've already customized
-  // the slider, their choice is left alone rather than jumping underneath them.
+  // Called whenever new buckets arrive and might widen what's available. Only moves the
+  // user's CURRENT slider selection if it still exactly matches the previous bounds —
+  // if they've already customized it, their choice is left alone rather than jumping
+  // underneath them.
   ['movie','show','game'].forEach(type=>{
     const years=DB[type].map(it=>it.year).filter(y=>Number.isFinite(y));
     if(!years.length) return;
@@ -3051,25 +3144,21 @@ async function loadOneJSON(path){
   }catch(e){ return null; }
 }
 async function loadRealData(){
+  // Loads ONLY the most-recent-year bucket per category — this is now the permanent
+  // steady state for a casual visitor, not a temporary "phase 1". Everything older is
+  // fetched strictly on-demand: ensureBucketsLoaded() when the year slider widens,
+  // ensureFullCatalogLoaded() when search/person-pages/achievements are actually used,
+  // or when a detail page needs a specific item this client hasn't loaded yet.
   const manifest = await loadOneJSON('./manifest.json');
   if(manifest && manifest.length){
     const parsed=manifest.map(parseBucketFilename).filter(Boolean);
     if(parsed.length){
-      // PHASE 1: identify and load just the most-recent-year bucket per category —
-      // fast, and enough for the default list view (which sorts by score within that
-      // range but never needs older years unless the visitor explicitly asks for them).
+      MANIFEST_INFO=parsed;
       const byPrefix={};
       parsed.forEach(info=>{ if(!byPrefix[info.prefix] || info.endYear>byPrefix[info.prefix].endYear) byPrefix[info.prefix]=info; });
       const recentInfos=Object.values(byPrefix);
-      const recentFiles=recentInfos.map(info=>info.filename);
-      const recentResults=await Promise.all(recentFiles.map(f=>loadOneJSON('./'+f)));
-
-      const movies=[], moviesCzSk=[], shows=[], games=[];
-      mergeBucketResults(recentFiles, recentResults, movies, moviesCzSk, shows, games);
-      DB.movie=buildFromRecords(movies.concat(moviesCzSk), 'movie', 'm');
-      DB.show=buildFromRecords(shows, 'show', 's');
-      DB.game=buildFromRecords(games, 'game', 'g');
-      applyAdminOverridesToDB();
+      await Promise.all(recentInfos.map(fetchBucketInto));
+      rebuildDBFromRaw();
 
       const recentRangeFor=(prefixes)=>{
         const infos=recentInfos.filter(info=>prefixes.includes(info.prefix));
@@ -3083,38 +3172,29 @@ async function loadRealData(){
       listState.shows.y0=YEAR_BOUNDS.show.min; listState.shows.y1=YEAR_BOUNDS.show.max;
       listState.games.y0=YEAR_BOUNDS.game.min; listState.games.y1=YEAR_BOUNDS.game.max;
       markRecentCatalogReady();
-
-      // PHASE 2: everything else, in the background
-      const otherFiles=manifest.filter(f=>!recentFiles.includes(f));
-      if(otherFiles.length){
-        const otherResults=await Promise.all(otherFiles.map(f=>loadOneJSON('./'+f)));
-        mergeBucketResults(otherFiles, otherResults, movies, moviesCzSk, shows, games);
-      }
-      DB.movie=buildFromRecords(movies.concat(moviesCzSk), 'movie', 'm');
-      DB.show=buildFromRecords(shows, 'show', 's');
-      DB.game=buildFromRecords(games, 'game', 'g');
       return true;
     }
     // Manifest exists but nothing parsed as a proper year-bucket filename (e.g. a custom
-    // setup) — fall back to loading everything at once, same as before this change.
+    // setup) — on-demand loading isn't possible without predictable bucket names, so fall
+    // back to loading everything at once, same as before this feature existed.
     const results=await Promise.all(manifest.map(f=>loadOneJSON('./'+f)));
-    const movies=[], moviesCzSk=[], shows=[], games=[];
-    mergeBucketResults(manifest, results, movies, moviesCzSk, shows, games);
-    DB.movie=buildFromRecords(movies.concat(moviesCzSk), 'movie', 'm');
-    DB.show=buildFromRecords(shows, 'show', 's');
-    DB.game=buildFromRecords(games, 'game', 'g');
+    mergeBucketResults(manifest, results, RAW_RECORDS.movies, RAW_RECORDS.moviesCzSk, RAW_RECORDS.shows, RAW_RECORDS.games);
+    rebuildDBFromRaw();
+    markRecentCatalogReady();
+    FULL_CATALOG_READY=true;
     return true;
   }
   // No manifest found — fall back to the older single-file-per-category scheme, for
-  // deployments that haven't migrated to year-bucketed files yet.
+  // deployments that haven't migrated to year-bucketed files yet. No on-demand loading
+  // possible here either — everything loads at once.
   const [movies, moviesCzSk, shows, games] = await Promise.all([
     loadOneJSON('./movies.json'), loadOneJSON('./movies_czsk.json'), loadOneJSON('./shows.json'), loadOneJSON('./games.json')
   ]);
   if(movies===null && moviesCzSk===null && shows===null && games===null) return false; // nothing at all -> demo data fallback
-  const allMovies=(movies||[]).concat(moviesCzSk||[]);
-  DB.movie=buildFromRecords(allMovies, 'movie', 'm');
-  DB.show=buildFromRecords(shows||[], 'show', 's');
-  DB.game=buildFromRecords(games||[], 'game', 'g');
+  RAW_RECORDS.movies=movies||[]; RAW_RECORDS.moviesCzSk=moviesCzSk||[]; RAW_RECORDS.shows=shows||[]; RAW_RECORDS.games=games||[];
+  rebuildDBFromRaw();
+  markRecentCatalogReady();
+  FULL_CATALOG_READY=true;
   return true;
 }
 
@@ -3873,7 +3953,7 @@ async function renderTopModal(){
   if(!FULL_CATALOG_READY){
     const card=document.getElementById('reviewModalCard');
     if(card){ card.className='modal-card'; card.innerHTML=`<p class="empty-note" style="padding:20px 0;">Načítání...</p>`; }
-    await FULL_CATALOG_PROMISE;
+    await ensureFullCatalogLoaded();
     if(!modalStack.length) return; // stack could've been cleared while we were waiting
   }
   modalStack[modalStack.length-1]();
@@ -4205,34 +4285,29 @@ async function loadFullCatalog(){
     DB.game=buildGames();
     restoreAddedItems();
     runDailyDrop(); // simulated placeholder content — demo dataset only, never with real fetched data
+    applyAdminOverridesToDB();
+    widenYearBoundsPreservingSelection();
+    markRecentCatalogReady();
+    FULL_CATALOG_READY=true; // demo mode has no bucketing at all — everything is "loaded" immediately
   }
-  applyAdminOverridesToDB();
-  widenYearBoundsPreservingSelection();
-  markRecentCatalogReady(); // safety net — ensures this is true even when loadRealData() never got to do a two-phase split (demo mode, or the older single-file scheme)
-  FULL_CATALOG_READY=true;
   return loadedReal;
 }
 let TRENDING_HOME_DATA=null; // cached separately from DB — keeps the homepage showing the SAME server-chosen selection even after DB gets replaced by the full catalog, instead of re-deriving a different set client-side
 async function init(){
-  FULL_CATALOG_PROMISE=loadFullCatalog(); // kicked off immediately, not awaited yet — runs in the background
-  FULL_CATALOG_PROMISE.then(()=>{
-    const parts=(location.hash||'#/').replace(/^#\/?/,'').split('/').filter(Boolean);
-    if(['movies','shows','games'].includes(parts[0])) route(); // re-render so the slider's widened bounds take effect; current y0/y1 selection is preserved
-  });
+  const initialLoadPromise=loadFullCatalog(); // loads just the recent bucket per category — kicked off immediately, not awaited yet
 
   const trending=await loadTrendingLight();
   if(trending && !RECENT_CATALOG_READY){
     DB.movie=trending.movie; DB.show=trending.show; DB.game=trending.game;
     TRENDING_HOME_DATA=trending;
-    // Rough placeholder bounds from the small trending subset — the phase-1 (recent
-    // bucket) load inside loadFullCatalog() corrects this shortly, then the full
-    // background load corrects it further once everything has arrived.
+    // Rough placeholder bounds from the small trending subset — the recent-bucket load
+    // inside loadFullCatalog() corrects this shortly after.
   }else if(!trending){
-    await FULL_CATALOG_PROMISE; // no lightweight file available (e.g. demo/preview) — wait for the real thing before first render
+    await initialLoadPromise; // no lightweight file available (e.g. demo/preview) — wait for the real thing before first render
   }
-  // else: trending.json loaded, but the full catalog RACE-WON and finished first — DB
-  // already correctly holds the full catalog with matching YEAR_BOUNDS, so trending data
-  // is deliberately discarded here rather than overwriting it.
+  // else: trending.json loaded, but the recent-bucket load RACE-WON and finished first —
+  // DB already correctly holds that data with matching YEAR_BOUNDS, so trending data is
+  // deliberately discarded here rather than overwriting it.
 
   initSearchPanel();
   renderAuthBadge();
