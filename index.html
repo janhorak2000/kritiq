@@ -198,6 +198,15 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
   flex:1; background:none; border:none; outline:none; color:var(--text);
   font-family:inherit; font-size:14.5px;
 }
+.search-panel-categories{display:flex; gap:8px; margin:12px 0 4px; flex-wrap:wrap;}
+.search-cat-btn{
+  font-family:var(--font-body); font-size:11.5px; font-weight:700; letter-spacing:.02em;
+  padding:6px 14px; border-radius:999px; border:1px solid var(--line-soft);
+  background:var(--bg-2); color:var(--text-faint); cursor:pointer;
+  transition:color .15s, border-color .15s, background .15s;
+}
+.search-cat-btn:hover{color:var(--text);}
+.search-cat-btn.active{color:#fff; border-color:var(--violet); background:rgba(155,92,246,.18);}
 .search-panel-box input::placeholder{color:var(--text-faint);}
 .search-panel-results{margin-top:12px; display:flex; flex-direction:column; gap:3px; max-height:320px; overflow-y:auto;}
 .search-result-row{
@@ -944,6 +953,12 @@ footer.site .footer-links{display:flex; gap:16px; flex-wrap:wrap;}
       <div class="search-panel-box">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         <input id="searchPanelInput" type="text" placeholder="Hledat filmy, seriály, hry...">
+      </div>
+      <div class="search-panel-categories" id="searchPanelCategories">
+        <button class="search-cat-btn active" data-cat="movie" type="button">Filmy</button>
+        <button class="search-cat-btn" data-cat="show" type="button">Seriály</button>
+        <button class="search-cat-btn" data-cat="game" type="button">Hry</button>
+        <button class="search-cat-btn" data-cat="person" type="button">Osobnosti</button>
       </div>
       <div class="search-panel-results" id="searchPanelResults"></div>
     </div>
@@ -2912,6 +2927,20 @@ function searchPeople(query){
   if(!nq) return [];
   return getPeopleIndex().filter(p=>normalizeSearchText(p.name).includes(nq));
 }
+function searchTitlesInCategory(query, category){
+  const nq=normalizeSearchText(query);
+  if(!nq) return [];
+  return DB[category].filter(it=>normalizeSearchText(it.title).includes(nq));
+}
+async function ensureCategoryDataLoaded(category){
+  // Loads only what THIS specific search category needs — never all three at once, unlike
+  // the old behavior. "person" is the one genuine exception: people aren't segregated by
+  // category, so finding them means having all three catalogs available regardless.
+  if(category==='person') await ensureBucketsLoaded(['movies','movies_czsk','shows','games'], -Infinity, Infinity);
+  else if(category==='movie') await ensureBucketsLoaded(['movies','movies_czsk'], -Infinity, Infinity);
+  else if(category==='show') await ensureBucketsLoaded(['shows'], -Infinity, Infinity);
+  else if(category==='game') await ensureBucketsLoaded(['games'], -Infinity, Infinity);
+}
 
 function renderSearch(q){
   const titleResults=searchTitles(q);
@@ -4199,29 +4228,45 @@ function initSearchPanel(){
   const panel=document.getElementById('searchPanel');
   const input=document.getElementById('searchPanelInput');
   const results=document.getElementById('searchPanelResults');
+  const categoryBtns=document.querySelectorAll('.search-cat-btn');
+  let currentCategory='movie';
+  let requestToken=0;
 
   function closePanel(){ panel.classList.remove('open'); toggleBtn.classList.remove('active'); }
   function openPanel(){
     panel.classList.add('open'); toggleBtn.classList.add('active');
     setTimeout(()=>input.focus(), 60);
   }
-  function renderResults(q){
+  function categoryLoadingLabel(cat){
+    return cat==='movie'?'filmů':cat==='show'?'seriálů':cat==='game'?'her':'osobností';
+  }
+
+  async function renderResults(q){
+    const myToken=++requestToken;
     if(!q){ results.innerHTML=''; return; }
-    const titleMatches=searchTitles(q);
-    const peopleMatches=searchPeople(q);
-    if(!titleMatches.length && !peopleMatches.length){ results.innerHTML=`<div class="search-empty-note">Nic jsme nenašli pro "${esc(q)}".</div>`; return; }
-    const peopleHTML=peopleMatches.slice(0,5).map(p=>{
-      const h=hashStr(p.name);
-      const style=`background:linear-gradient(135deg, hsl(${h%360} 60% 45%), hsl(${(h+70)%360} 65% 30%));`;
-      const inner=p.image ? `<img src="${esc(p.image)}" alt="" class="avatar-photo">` : esc(p.name.charAt(0));
-      return `<a class="search-result-row search-result-person" href="#/person/${encodeURIComponent(p.name)}"><span class="person-search-avatar" style="${style}">${inner}</span><span class="srr-title">${esc(p.name)}</span></a>`;
-    }).join('');
-    const titleHTML=titleMatches.slice(0,20).map(it=>{
-      const sc=liveScore(it); const badge=scoreBadge(sc);
-      const meta=(it.type==='movie' && it.box!==null && it.box!==undefined) ? `${fmtBox(it.box, it.boxCurrency)} · ${it.year}` : `${it.year}`;
-      return `<a class="search-result-row" href="#/title/${it.type}/${it.id}"><span class="srr-title">${esc(it.title)}</span><span class="srr-meta">${typeLabel(it.type)} · ${meta}</span><span class="srr-score ${badge.cls}">${badge.text}</span></a>`;
-    }).join('');
-    results.innerHTML=peopleHTML+titleHTML;
+    const category=currentCategory;
+    results.innerHTML=`<div class="search-empty-note">Načítání ${categoryLoadingLabel(category)}...</div>`;
+    await ensureCategoryDataLoaded(category);
+    if(myToken!==requestToken) return; // a newer search or category switch superseded this one
+
+    if(category==='person'){
+      const peopleMatches=searchPeople(q);
+      if(!peopleMatches.length){ results.innerHTML=`<div class="search-empty-note">Nic jsme nenašli pro "${esc(q)}".</div>`; return; }
+      results.innerHTML=peopleMatches.slice(0,20).map(p=>{
+        const h=hashStr(p.name);
+        const style=`background:linear-gradient(135deg, hsl(${h%360} 60% 45%), hsl(${(h+70)%360} 65% 30%));`;
+        const inner=p.image ? `<img src="${esc(p.image)}" alt="" class="avatar-photo">` : esc(p.name.charAt(0));
+        return `<a class="search-result-row search-result-person" href="#/person/${encodeURIComponent(p.name)}"><span class="person-search-avatar" style="${style}">${inner}</span><span class="srr-title">${esc(p.name)}</span></a>`;
+      }).join('');
+    }else{
+      const titleMatches=searchTitlesInCategory(q, category);
+      if(!titleMatches.length){ results.innerHTML=`<div class="search-empty-note">Nic jsme nenašli pro "${esc(q)}".</div>`; return; }
+      results.innerHTML=titleMatches.slice(0,20).map(it=>{
+        const sc=liveScore(it); const badge=scoreBadge(sc);
+        const meta=(it.type==='movie' && it.box!==null && it.box!==undefined) ? `${fmtBox(it.box, it.boxCurrency)} · ${it.year}` : `${it.year}`;
+        return `<a class="search-result-row" href="#/title/${it.type}/${it.id}"><span class="srr-title">${esc(it.title)}</span><span class="srr-meta">${typeLabel(it.type)} · ${meta}</span><span class="srr-score ${badge.cls}">${badge.text}</span></a>`;
+      }).join('');
+    }
   }
 
   toggleBtn.addEventListener('click', ()=>{
@@ -4229,6 +4274,15 @@ function initSearchPanel(){
     else { openPanel(); renderResults(input.value.trim()); }
   });
   input.addEventListener('input', ()=> renderResults(input.value.trim()));
+  categoryBtns.forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      if(btn.dataset.cat===currentCategory) return;
+      categoryBtns.forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+      currentCategory=btn.dataset.cat;
+      renderResults(input.value.trim());
+    });
+  });
   document.addEventListener('click', e=>{
     if(panel.classList.contains('open') && !panel.contains(e.target) && !toggleBtn.contains(e.target)) closePanel();
   });
@@ -4243,7 +4297,7 @@ function initSearchPanel(){
    they're re-applied on top of the catalog every time it loads. This means edits survive
    future re-fetches automatically, since the override layer is entirely independent of
    the JSON files themselves. */
-const ADMIN_UID='xi7dBc7SwxZDGC3ZSjcoQnO1rzh1'; // Firebase Console -> Authentication -> your account -> User UID
+const ADMIN_UID='PASTE_YOUR_FIREBASE_UID_HERE'; // Firebase Console -> Authentication -> your account -> User UID
 function isAdmin(){ return !!CURRENT_UID && CURRENT_UID===ADMIN_UID; }
 let ADMIN_OVERRIDES_CACHE=null;
 async function loadAdminOverrides(){
