@@ -123,7 +123,8 @@ import urllib.request
 import requests
 
 TMDB_BASE = "https://api.themoviedb.org/3"
-TMDB_IMG_BASE = "https://image.tmdb.org/t/p/w500"
+TMDB_IMG_BASE = "https://image.tmdb.org/t/p/w500"  # backdrops/gallery — shown larger, in a detail-page carousel
+TMDB_POSTER_IMG_BASE = "https://image.tmdb.org/t/p/w342"  # posters — small grid thumbnails, w342 is still sharp on retina displays at that size
 RAWG_BASE = "https://api.rawg.io/api"
 FLOOR_YEAR_DEFAULT = 1888
 YEARS_PER_RUN_DEFAULT = 5
@@ -387,6 +388,22 @@ def year_bucket_label(year):
     return f"{bucket_start}-{bucket_end}"
 
 
+def save_bucket_label(store, label, records):
+    """Saves one logical bucket's records, split into main (top N/year) + overflow —
+    exactly what BucketedStore.save() does. Used both there and by the in-place
+    correction functions below (score/label upgrades) that modify a store's records
+    directly rather than going through apply_full_collected(), so those can't
+    accidentally undo the split by writing the full merged content back to just the main
+    filename."""
+    main, overflow = split_main_overflow(records, BucketedStore.MAIN_TOP_N_PER_YEAR)
+    save_json(f"{store.prefix}{label}.json", main)
+    overflow_path = f"{store.prefix}{label}_more.json"
+    if overflow:
+        save_json(overflow_path, overflow)
+    elif os.path.exists(overflow_path):
+        os.remove(overflow_path)
+
+
 class BucketedStore:
     """A category's data split across multiple year-bucket files (e.g.
     movies2022-2026.json, movies2017-2021.json, ...) instead of one ever-growing file.
@@ -447,15 +464,7 @@ class BucketedStore:
 
     def save(self, label_to_records):
         for label, records in label_to_records.items():
-            main, overflow = split_main_overflow(records, self.MAIN_TOP_N_PER_YEAR)
-            save_json(f"{self.prefix}{label}.json", main)
-            overflow_path = f"{self.prefix}{label}_more.json"
-            if overflow:
-                save_json(overflow_path, overflow)
-            elif os.path.exists(overflow_path):
-                # nothing overflows for this bucket anymore (e.g. after a data correction
-                # shrank it) — remove the stale file rather than leaving outdated content
-                os.remove(overflow_path)
+            save_bucket_label(self, label, records)
 
     def total_on_disk(self):
         """Fresh count straight from disk — used for end-of-category reporting, after
@@ -699,6 +708,18 @@ def evaluate_show(key, s, min_votes, special_benchmark, standup_benchmark):
 
 
 TMDB_PROFILE_IMG_BASE = "https://image.tmdb.org/t/p/w300"
+
+
+def rawg_resize_image(url, width):
+    """RAWG's CDN supports on-the-fly resizing by inserting resize/{width}/-/ right after
+    /media/ in the URL path — confirmed directly from RAWG's own og:image meta tags on
+    rawg.io, which use this exact pattern (e.g. .../media/resize/1280/-/games/...). This
+    lets RAWG's CDN do the resizing and caching, without downloading/re-hosting images
+    ourselves. Falls back to the original URL untouched if it doesn't match the expected
+    RAWG CDN host, so this never breaks on an unexpected URL shape."""
+    if not url or "media.rawg.io/media/" not in url:
+        return url
+    return url.replace("media.rawg.io/media/", f"media.rawg.io/media/resize/{width}/-/", 1)
 PERSON_FETCH_WORKERS = 8  # concurrent /person/{id} lookups per title — TMDb's rate limit is generous (~50 req/s), so this is safely well under it
 
 
@@ -842,7 +863,7 @@ def movie_record(m, key, genres, fetch_galleries, fetch_reviews, imdb_ratings, m
     composer = person_crew_obj(composer_name, composer_id, key, people_cache)
     writer = person_crew_obj(writer_name, writer_id, key, people_cache)
     genre = genres.get((m.get("genre_ids") or [None])[0], "")
-    poster = f"{TMDB_IMG_BASE}{m['poster_path']}" if m.get("poster_path") else ""
+    poster = f"{TMDB_POSTER_IMG_BASE}{m['poster_path']}" if m.get("poster_path") else ""
     gallery = [f"{TMDB_IMG_BASE}{m['backdrop_path']}"] if m.get("backdrop_path") else []
     if fetch_galleries:
         try:
@@ -930,7 +951,7 @@ def show_record(s, key, genres, fetch_galleries, fetch_reviews, imdb_ratings, mi
     runtime_max = max(episode_runtimes) if episode_runtimes else None
     if runtime_min is None:
         scored = False
-    poster = f"{TMDB_IMG_BASE}{s['poster_path']}" if s.get("poster_path") else ""
+    poster = f"{TMDB_POSTER_IMG_BASE}{s['poster_path']}" if s.get("poster_path") else ""
     gallery = [f"{TMDB_IMG_BASE}{s['backdrop_path']}"] if s.get("backdrop_path") else []
     if fetch_galleries:
         try:
@@ -1079,8 +1100,8 @@ def game_record(g, key, details=None):
     genre = ", ".join(translate_game_genre(n) for n in genre_names)
     platform_list = g.get("platforms") or details.get("platforms") or []
     platforms = [p["platform"]["name"] for p in platform_list if p.get("platform") and p["platform"].get("name")]
-    poster = g.get("background_image") or ""
-    gallery = [s["image"] for s in (g.get("short_screenshots") or []) if s.get("image") and s.get("image") != poster][:6]
+    poster = rawg_resize_image(g.get("background_image") or "", 400)
+    gallery = [rawg_resize_image(s["image"], 640) for s in (g.get("short_screenshots") or []) if s.get("image") and s.get("image") != g.get("background_image")][:6]
     summary = (details.get("description_raw") or "").strip()[:800]  # English for now — fine to translate later
     return {
         "title": g["name"],
@@ -1672,7 +1693,7 @@ def refresh_recent_unranked_games(key, store, today, days=7):
                 upgraded += 1
                 print(f"  upgraded: '{g.get('title')}' now scored {new_score}", file=sys.stderr)
         if changed:
-            save_json(f"{store.prefix}{label}.json", records)
+            save_bucket_label(store, label, records)
             store.original[label] = records
     print(f"  games score refresh: checked {checked} recently-added unranked games, upgraded {upgraded}", file=sys.stderr)
 
@@ -1693,7 +1714,7 @@ def fix_stale_czsk_country_labels(movies_czsk_store, shows_store):
                     changed = True
                     fixed += 1
             if changed:
-                save_json(f"{store.prefix}{label}.json", records)
+                save_bucket_label(store, label, records)
                 store.original[label] = records
     return fixed
 
@@ -1722,7 +1743,7 @@ def backfill_show_scores_from_imdb(store, imdb_ratings, min_imdb_votes):
                 upgraded += 1
                 print(f"  upgraded: '{rec.get('title')}' now scored {rec['score']} (IMDb, {match[1]} votes)", file=sys.stderr)
         if changed:
-            save_json(f"{store.prefix}{label}.json", records)
+            save_bucket_label(store, label, records)
             store.original[label] = records
     print(f"  show score backfill: checked {checked} unranked shows with an imdb_id, upgraded {upgraded}", file=sys.stderr)
 

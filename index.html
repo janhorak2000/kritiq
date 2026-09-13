@@ -1297,18 +1297,18 @@ async function getUserReviewsAsync(username){
     // ONLY the specific buckets this user's reviewed items actually live in, instead of
     // needing the full catalog just to show one person's profile. Reviews saved before
     // this field existed can't be precisely targeted, so — only if any such review
-    // exists — this falls back to a one-time full load, which naturally stops being
-    // needed as those older reviews age out or get edited/re-saved.
+    // exists — this falls back to a one-time full load. Self-healing (below) means this
+    // fallback is only ever needed once per review, not every single time.
     const bucketsNeeded=new Map(); // itemType -> Set of years
-    let hasUndatedReview=false;
+    const undatedDocs=[];
     docs.forEach(doc=>{
       const d=doc.data();
-      if(d.itemYear===undefined || d.itemYear===null){ hasUndatedReview=true; return; }
+      if(d.itemYear===undefined || d.itemYear===null){ undatedDocs.push(doc); return; }
       if(!bucketsNeeded.has(d.itemType)) bucketsNeeded.set(d.itemType, new Set());
       bucketsNeeded.get(d.itemType).add(d.itemYear);
     });
 
-    if(hasUndatedReview){
+    if(undatedDocs.length){
       await ensureFullCatalogLoaded();
     }else{
       const loads=[];
@@ -1325,6 +1325,21 @@ async function getUserReviewsAsync(username){
       const review=Object.assign(reviewDocToLocal(doc), {baseLikes:0, baseDislikes:0, baseFunny:0, isUser:true});
       out.push({review, item, type:d.itemType});
     });
+
+    // Self-heal: now that these older reviews have been resolved via the full catalog,
+    // write the missing fields back so future loads never need this fallback again for
+    // them. Only attempted for the current user's own reviews — Firestore rules restrict
+    // review updates to their owner, so this would silently fail (harmlessly) otherwise.
+    if(undatedDocs.length && username===CURRENT_USER){
+      undatedDocs.forEach(doc=>{
+        const d=doc.data();
+        const item=findItem(d.itemType, d.itemId);
+        if(!item) return;
+        db.collection('reviews').doc(doc.id).update({
+          itemYear:item.year, itemTitle:item.title, itemPoster:item.poster||null,
+        }).catch(e=>console.error('Nepodařilo se doplnit chybějící údaje u recenze', doc.id, e));
+      });
+    }
   }catch(e){
     console.error('Nepodařilo se načíst recenze uživatele', username, e);
   }
@@ -4399,7 +4414,7 @@ function initSearchPanel(){
    they're re-applied on top of the catalog every time it loads. This means edits survive
    future re-fetches automatically, since the override layer is entirely independent of
    the JSON files themselves. */
-const ADMIN_UID='xi7dBc7SwxZDGC3ZSjcoQnO1rzh1'; // Firebase Console -> Authentication -> your account -> User UID
+const ADMIN_UID='PASTE_YOUR_FIREBASE_UID_HERE'; // Firebase Console -> Authentication -> your account -> User UID
 function isAdmin(){ return !!CURRENT_UID && CURRENT_UID===ADMIN_UID; }
 let ADMIN_OVERRIDES_CACHE=null;
 async function loadAdminOverrides(){
