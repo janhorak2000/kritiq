@@ -716,8 +716,9 @@ def rawg_resize_image(url, width):
     rawg.io, which use this exact pattern (e.g. .../media/resize/1280/-/games/...). This
     lets RAWG's CDN do the resizing and caching, without downloading/re-hosting images
     ourselves. Falls back to the original URL untouched if it doesn't match the expected
-    RAWG CDN host, so this never breaks on an unexpected URL shape."""
-    if not url or "media.rawg.io/media/" not in url:
+    RAWG CDN host, or if it's already been resized (idempotent — safe to run twice, e.g.
+    once during a normal fetch and again via --resize-images-only)."""
+    if not url or "media.rawg.io/media/" not in url or "/media/resize/" in url:
         return url
     return url.replace("media.rawg.io/media/", f"media.rawg.io/media/resize/{width}/-/", 1)
 PERSON_FETCH_WORKERS = 8  # concurrent /person/{id} lookups per title — TMDb's rate limit is generous (~50 req/s), so this is safely well under it
@@ -1698,6 +1699,50 @@ def refresh_recent_unranked_games(key, store, today, days=7):
     print(f"  games score refresh: checked {checked} recently-added unranked games, upgraded {upgraded}", file=sys.stderr)
 
 
+def resize_existing_images(movies_store, movies_czsk_store, shows_store, games_store):
+    """One-time migration to shrink poster/gallery image URLs already saved on disk from
+    earlier runs — a pure string transformation on data already fetched, no new API calls
+    needed. Games get RAWG's resize/{width}/-/ path inserted into their existing full-size
+    URLs; movie/show posters get their TMDb size segment swapped from w500 down to the
+    smaller w342. Backdrop/gallery images for movies/shows are left untouched, since that
+    size was never changed. Safe to run more than once — both transformations are
+    idempotent, so already-migrated records are simply skipped."""
+    changed = 0
+
+    for store in (movies_store, movies_czsk_store, shows_store):
+        for label, records in list(store.original.items()):
+            label_changed = False
+            for r in records:
+                old_poster = r.get("poster") or ""
+                new_poster = old_poster.replace("/t/p/w500/", "/t/p/w342/", 1)
+                if new_poster != old_poster:
+                    r["poster"] = new_poster
+                    label_changed = True
+                    changed += 1
+            if label_changed:
+                save_bucket_label(store, label, records)
+
+    for label, records in list(games_store.original.items()):
+        label_changed = False
+        for r in records:
+            old_poster = r.get("poster") or ""
+            new_poster = rawg_resize_image(old_poster, 400)
+            if new_poster != old_poster:
+                r["poster"] = new_poster
+                label_changed = True
+                changed += 1
+            old_gallery = r.get("gallery") or []
+            new_gallery = [rawg_resize_image(u, 640) for u in old_gallery]
+            if new_gallery != old_gallery:
+                r["gallery"] = new_gallery
+                label_changed = True
+                changed += 1
+        if label_changed:
+            save_bucket_label(games_store, label, records)
+
+    return changed
+
+
 def fix_stale_czsk_country_labels(movies_czsk_store, shows_store):
     """One-time fix for Czech/Slovak movies and shows fetched before the CS/XC -> Česko
     mapping existed — their country field was saved as the raw, untranslated ISO code
@@ -1869,6 +1914,7 @@ def main():
     ap.add_argument("--reset-czsk-cursor", action="store_true", help="reset only the Czech/Slovak movie and show year cursors back to the top (use after fixing a classification bug that caused certain years to be silently skipped, e.g. the CS/XC pre-1993 country code fix) — the seen-set and every other category's progress stays untouched, so nothing gets re-added as a duplicate")
     ap.add_argument("--fix-czsk-country-labels-only", action="store_true", help="patch the country field on existing Czech/Slovak movies/shows whose label was saved as the raw 'CS'/'XC' code before the Česko mapping existed, then exit immediately — no TMDb calls, purely a local fix for data already on disk")
     ap.add_argument("--recheck-deaths-only", action="store_true", help="re-check every person currently on file as alive (actors, directors, writers, composers) for a newly recorded death on TMDb, update people.json, then exit immediately — doesn't need to run often, e.g. weekly or monthly is plenty")
+    ap.add_argument("--resize-images-only", action="store_true", help="one-time migration: shrink poster/gallery image URLs already saved on disk from earlier runs (games get RAWG's resize path, movie/show posters swap to a smaller TMDb size), then exit immediately — no API calls, purely a local URL rewrite on data already on disk")
     ap.add_argument("--recheck-deaths-limit", type=int, default=3000, help="safety cap on how many people to re-check in one run of --recheck-deaths-only (default 3000)")
     ap.add_argument("--recent-games-min-wishlist", type=int, default=10, help="flat wishlist floor for the recent-games scan (bypasses the era/genre-tiered thresholds used during backfill, since this scan is always 'recent' anyway)")
     ap.add_argument("--recent-days", type=int, default=None, help="scan only a precise window of the last N days for all 'recent' fetches (movies, shows, both CZ/SK variants, and games), instead of re-scanning the whole current year every run. Combine with --skip-backfill once historical collection is complete, for a lightweight ongoing 'just catch new releases' mode, e.g. --recent-days 7")
@@ -1877,7 +1923,7 @@ def main():
     # --tmdb-key and --rawg-key aren't blanket-required at the argparse level anymore,
     # since the standalone maintenance flags below need one, the other, or neither —
     # never both. Validated here instead, based on which mode is actually running.
-    if args.fix_czsk_country_labels_only or args.backfill_show_scores_only:
+    if args.fix_czsk_country_labels_only or args.backfill_show_scores_only or args.resize_images_only:
         pass  # neither key touches the network for these — pure local data fixes
     elif args.recheck_deaths_only:
         if not args.tmdb_key:
@@ -1905,6 +1951,13 @@ def main():
         updated = recheck_people_deaths(args.tmdb_key, people_cache, args.recheck_deaths_limit)
         save_json(args.people_cache_file, people_cache)
         print(f"Found {updated} newly recorded death(s). people.json updated.", file=sys.stderr)
+        print("Done.", file=sys.stderr)
+        return
+
+    if args.resize_images_only:
+        print("Running image URL resize migration only (--resize-images-only)...", file=sys.stderr)
+        changed = resize_existing_images(movies_store, movies_czsk_store, shows_store, games_store)
+        print(f"Updated {changed} image URL(s) across all categories.", file=sys.stderr)
         print("Done.", file=sys.stderr)
         return
 
