@@ -395,15 +395,31 @@ class BucketedStore:
     year, not just the bucket(s) touched in this particular run, and so repeated
     checkpoint calls with a growing "collected so far" list never double-count —
     apply_full_collected always recomputes original + current-full-list from scratch,
-    the same safe pattern the single-file version used)."""
+    the same safe pattern the single-file version used).
+
+    Each 5-year bucket is additionally split on disk into a "main" file (up to
+    MAIN_TOP_N_PER_YEAR highest-scored titles per year) and an "_more" overflow file
+    (everything else for that same range) — so a website loading a bucket's main file
+    only pulls in a manageable, capped amount of data, with the rest available on demand.
+    Both files are transparently merged back into one logical bucket when read here, so
+    all the accumulation/dedup logic below works exactly as if there were still just one
+    file per bucket; the split only happens at the final save step."""
+
+    MAIN_TOP_N_PER_YEAR = 50
 
     def __init__(self, prefix):
         self.prefix = prefix
         self.original = {}
-        for path in glob.glob(f"{prefix}[0-9]*.json"):
+        self._load_from_disk()
+
+    def _load_from_disk(self):
+        self.original = {}
+        for path in glob.glob(f"{self.prefix}[0-9]*.json"):
             base = os.path.basename(path)
-            label = base[len(prefix):-len(".json")]
-            self.original[label] = load_json(path, [])
+            raw_label = base[len(self.prefix):-len(".json")]
+            label = raw_label[:-len("_more")] if raw_label.endswith("_more") else raw_label
+            self.original.setdefault(label, [])
+            self.original[label].extend(load_json(path, []))
 
     def refresh_original(self):
         """Re-reads the current on-disk state into the baseline snapshot. MUST be called
@@ -411,11 +427,7 @@ class BucketedStore:
         (e.g. switching from the CS scan to the SK scan) — otherwise apply_full_collected
         keeps comparing against the state from before this whole run started, silently
         discarding whatever an earlier pass in THIS SAME run already saved to disk."""
-        self.original = {}
-        for path in glob.glob(f"{self.prefix}[0-9]*.json"):
-            base = os.path.basename(path)
-            label = base[len(self.prefix):-len(".json")]
-            self.original[label] = load_json(path, [])
+        self._load_from_disk()
 
     def all_records(self):
         out = []
@@ -435,7 +447,15 @@ class BucketedStore:
 
     def save(self, label_to_records):
         for label, records in label_to_records.items():
-            save_json(f"{self.prefix}{label}.json", records)
+            main, overflow = split_main_overflow(records, self.MAIN_TOP_N_PER_YEAR)
+            save_json(f"{self.prefix}{label}.json", main)
+            overflow_path = f"{self.prefix}{label}_more.json"
+            if overflow:
+                save_json(overflow_path, overflow)
+            elif os.path.exists(overflow_path):
+                # nothing overflows for this bucket anymore (e.g. after a data correction
+                # shrank it) — remove the stale file rather than leaving outdated content
+                os.remove(overflow_path)
 
     def total_on_disk(self):
         """Fresh count straight from disk — used for end-of-category reporting, after
@@ -444,6 +464,28 @@ class BucketedStore:
         for path in glob.glob(f"{self.prefix}[0-9]*.json"):
             total += len(load_json(path, []))
         return total
+
+
+def split_main_overflow(records, top_n_per_year):
+    """Splits one logical bucket's records into (main, overflow): main has up to
+    top_n_per_year highest-scored titles PER YEAR within the bucket, overflow has
+    everything else. Unscored titles can never be "top by score", so they always land in
+    overflow. Order within each year is preserved otherwise (stable sort)."""
+    by_year = {}
+    for r in records:
+        by_year.setdefault(r.get("year"), []).append(r)
+
+    main = []
+    overflow = []
+    for year in sorted(by_year.keys(), key=lambda y: (y is None, y)):
+        year_records = by_year[year]
+        scored = [r for r in year_records if r.get("score") is not None]
+        unscored = [r for r in year_records if r.get("score") is None]
+        scored_sorted = sorted(scored, key=lambda r: -r["score"])
+        main.extend(scored_sorted[:top_n_per_year])
+        overflow.extend(scored_sorted[top_n_per_year:])
+        overflow.extend(unscored)
+    return main, overflow
 
 
 def dedupe_by_title_year(new_items, existing_items):

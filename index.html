@@ -2388,7 +2388,14 @@ function listBodyHTML(type){
   const shown=sorted.slice(0, st.page*PAGE_SIZE);
   const grid=shown.length? `<div class="grid">${shown.map(it=>cardHTML(it)).join('')}</div>` : `<p class="empty-note">V tomto rozmezí let nic nemáme. Zkuste posunout filtr.</p>`;
   const remaining=sorted.length-shown.length;
-  const more=remaining>0 ? `<div class="load-more-wrap"><button class="load-more-btn" id="loadMoreBtn">Načíst dalších ${Math.min(PAGE_SIZE,remaining)} (zbývá ${remaining})</button></div>` : '';
+  const prefixes = type==='movie' ? ['movies','movies_czsk'] : type==='show' ? ['shows'] : ['games'];
+  const hasUnloadedOverflow = MANIFEST_INFO && MANIFEST_INFO.some(info=>
+    prefixes.includes(info.prefix) && info.endYear>=st.y0 && info.startYear<=st.y1 && info.isOverflow && !LOADED_BUCKET_FILES.has(info.filename)
+  );
+  const showButton = remaining>0 || (shown.length>=sorted.length && hasUnloadedOverflow);
+  const more = showButton
+    ? `<div class="load-more-wrap"><button class="load-more-btn" id="loadMoreBtn">${remaining>0 ? `Načíst dalších ${Math.min(PAGE_SIZE,remaining)} (zbývá ${remaining})` : 'Načíst další tituly'}</button></div>`
+    : '';
   return {html:grid+more, shown:shown.length, total:sorted.length};
 }
 
@@ -2521,14 +2528,28 @@ function bindPlatformFilter(){
 async function refreshListBody(type){
   const key=type+'s'; const st=listState[key];
   const prefixes = type==='movie' ? ['movies','movies_czsk'] : type==='show' ? ['shows'] : ['games'];
-  const needsFetch = MANIFEST_INFO && MANIFEST_INFO.some(info=>
-    prefixes.includes(info.prefix) && info.endYear>=st.y0 && info.startYear<=st.y1 && !LOADED_BUCKET_FILES.has(info.filename)
-  );
   const listBody=document.getElementById('listBody');
-  if(needsFetch && listBody){
-    listBody.innerHTML=`<p class="empty-note">Načítání dalších let…</p>`;
+
+  // If the main-only data for this range is already fully accounted for by the page the
+  // user is now on, and there's overflow for this range not yet loaded, pull that in —
+  // this is what makes clicking Load More past the top-50-per-year cap actually work.
+  const sortedSoFar=sortedListFor(type);
+  const wouldShow=Math.min(st.page*PAGE_SIZE, sortedSoFar.length);
+  const hasUnloadedOverflow=MANIFEST_INFO && MANIFEST_INFO.some(info=>
+    prefixes.includes(info.prefix) && info.endYear>=st.y0 && info.startYear<=st.y1 && info.isOverflow && !LOADED_BUCKET_FILES.has(info.filename)
+  );
+
+  if(wouldShow>=sortedSoFar.length && hasUnloadedOverflow){
+    if(listBody) listBody.innerHTML=`<p class="empty-note">Načítání zbylých titulů…</p>`;
+    await ensureBucketsLoaded(prefixes, st.y0, st.y1, true); // now including overflow
+  }else{
+    const needsFetch=MANIFEST_INFO && MANIFEST_INFO.some(info=>
+      prefixes.includes(info.prefix) && info.endYear>=st.y0 && info.startYear<=st.y1 && !LOADED_BUCKET_FILES.has(info.filename) && !info.isOverflow
+    );
+    if(needsFetch && listBody) listBody.innerHTML=`<p class="empty-note">Načítání dalších let…</p>`;
+    await ensureBucketsLoaded(prefixes, st.y0, st.y1, false); // main only, same as the default view
   }
-  await ensureBucketsLoaded(prefixes, st.y0, st.y1);
+
   const body=listBodyHTML(type);
   const freshListBody=document.getElementById('listBody');
   if(!freshListBody) return; // navigated away while buckets were loading
@@ -3022,10 +3043,10 @@ async function route(){
     const st=listState[parts[0]];
     const prefixes = type==='movie' ? ['movies','movies_czsk'] : type==='show' ? ['shows'] : ['games'];
     const needsFetch=MANIFEST_INFO && MANIFEST_INFO.some(info=>
-      prefixes.includes(info.prefix) && info.endYear>=st.y0 && info.startYear<=st.y1 && !LOADED_BUCKET_FILES.has(info.filename)
+      prefixes.includes(info.prefix) && info.endYear>=st.y0 && info.startYear<=st.y1 && !LOADED_BUCKET_FILES.has(info.filename) && !info.isOverflow
     );
     if(needsFetch) app.innerHTML=skeletonListHTML();
-    await ensureBucketsLoaded(prefixes, st.y0, st.y1);
+    await ensureBucketsLoaded(prefixes, st.y0, st.y1, false);
   }else if(needsFullCatalogUpfront && !FULL_CATALOG_READY){
     // search/person/profile pages genuinely need to look across every item — no way to
     // know in advance which bucket holds what they're looking for
@@ -3119,13 +3140,18 @@ function fetchBucketInto(info){
   }
   return BUCKET_FETCH_PROMISES[info.filename];
 }
-async function ensureBucketsLoaded(prefixes, minYear, maxYear){
+async function ensureBucketsLoaded(prefixes, minYear, maxYear, includeOverflow=true){
   // Loads only the buckets overlapping [minYear,maxYear] for the given prefixes that
   // aren't already loaded. Safe to call repeatedly — already-loaded buckets are skipped,
   // and concurrent calls for the same bucket share one fetch rather than duplicating it.
+  // includeOverflow=false skips each bucket's "_more" file (everything beyond the top 50
+  // per year) — used specifically for the list page's default capped view; every other
+  // caller needs overflow included, since the specific item they're after (a search
+  // result, a reviewed item, a direct link) could be any score, not just a top-50 one.
   if(!MANIFEST_INFO) return; // bucketed loading unavailable — DB is already fully populated some other way
   const needed=MANIFEST_INFO.filter(info=>
-    prefixes.includes(info.prefix) && info.endYear>=minYear && info.startYear<=maxYear && !LOADED_BUCKET_FILES.has(info.filename)
+    prefixes.includes(info.prefix) && info.endYear>=minYear && info.startYear<=maxYear &&
+    !LOADED_BUCKET_FILES.has(info.filename) && (includeOverflow || !info.isOverflow)
   );
   if(!needed.length) return;
   await Promise.all(needed.map(fetchBucketInto));
@@ -3167,9 +3193,9 @@ async function loadTrendingLight(){
   }catch(e){ return null; }
 }
 function parseBucketFilename(filename){
-  const m=filename.match(/^([a-z_]+?)(\d{4})-(\d{4})\.json$/);
+  const m=filename.match(/^([a-z_]+?)(\d{4})-(\d{4})(_more)?\.json$/);
   if(!m) return null;
-  return {filename, prefix:m[1], startYear:+m[2], endYear:+m[3]};
+  return {filename, prefix:m[1], startYear:+m[2], endYear:+m[3], isOverflow:!!m[4]};
 }
 function mergeBucketResults(filenames, results, movies, moviesCzSk, shows, games){
   filenames.forEach((filename, i)=>{
@@ -3250,7 +3276,7 @@ async function loadRealData(){
       YEAR_BOUNDS.game=fullRangeFor(['games']) || YEAR_BOUNDS.game;
 
       const byPrefix={};
-      parsed.forEach(info=>{ if(!byPrefix[info.prefix] || info.endYear>byPrefix[info.prefix].endYear) byPrefix[info.prefix]=info; });
+      parsed.filter(info=>!info.isOverflow).forEach(info=>{ if(!byPrefix[info.prefix] || info.endYear>byPrefix[info.prefix].endYear) byPrefix[info.prefix]=info; });
       const recentInfos=Object.values(byPrefix);
       await Promise.all(recentInfos.map(fetchBucketInto));
       rebuildDBFromRaw();
@@ -4051,10 +4077,15 @@ function pushModal(renderFn){
 async function renderTopModal(){
   if(!modalStack.length) return;
   document.getElementById('reviewModalOverlay').classList.add('open');
-  if(!FULL_CATALOG_READY){
+  if(!RECENT_CATALOG_READY){
+    // Just the fast recent-bucket baseline — most modals (review writing, admin edit, auth,
+    // policy, favorites) need nothing more than this. The few that need data about OTHER
+    // items a user has touched (achievements, quests, profile pages) already do their own
+    // precise, targeted loading via getUserReviewsAsync, rather than needing everything
+    // pre-loaded here.
     const card=document.getElementById('reviewModalCard');
     if(card){ card.className='modal-card'; card.innerHTML=`<p class="empty-note" style="padding:20px 0;">Načítání...</p>`; }
-    await ensureFullCatalogLoaded();
+    await RECENT_CATALOG_PROMISE;
     if(!modalStack.length) return; // stack could've been cleared while we were waiting
   }
   modalStack[modalStack.length-1]();
@@ -4368,7 +4399,7 @@ function initSearchPanel(){
    they're re-applied on top of the catalog every time it loads. This means edits survive
    future re-fetches automatically, since the override layer is entirely independent of
    the JSON files themselves. */
-const ADMIN_UID='xi7dBc7SwxZDGC3ZSjcoQnO1rzh1'; // Firebase Console -> Authentication -> your account -> User UID
+const ADMIN_UID='PASTE_YOUR_FIREBASE_UID_HERE'; // Firebase Console -> Authentication -> your account -> User UID
 function isAdmin(){ return !!CURRENT_UID && CURRENT_UID===ADMIN_UID; }
 let ADMIN_OVERRIDES_CACHE=null;
 async function loadAdminOverrides(){
