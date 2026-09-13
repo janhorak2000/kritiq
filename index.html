@@ -1291,7 +1291,34 @@ async function getUserReviewsAsync(username){
   const out=[];
   try{
     const snap=await db.collection('reviews').where('author','==',username).get();
-    snap.docs.forEach(doc=>{
+    const docs=snap.docs;
+
+    // Use denormalized itemYear/itemType (stored on the review at submit time) to load
+    // ONLY the specific buckets this user's reviewed items actually live in, instead of
+    // needing the full catalog just to show one person's profile. Reviews saved before
+    // this field existed can't be precisely targeted, so — only if any such review
+    // exists — this falls back to a one-time full load, which naturally stops being
+    // needed as those older reviews age out or get edited/re-saved.
+    const bucketsNeeded=new Map(); // itemType -> Set of years
+    let hasUndatedReview=false;
+    docs.forEach(doc=>{
+      const d=doc.data();
+      if(d.itemYear===undefined || d.itemYear===null){ hasUndatedReview=true; return; }
+      if(!bucketsNeeded.has(d.itemType)) bucketsNeeded.set(d.itemType, new Set());
+      bucketsNeeded.get(d.itemType).add(d.itemYear);
+    });
+
+    if(hasUndatedReview){
+      await ensureFullCatalogLoaded();
+    }else{
+      const loads=[];
+      bucketsNeeded.forEach((years, type)=>{
+        years.forEach(year=> loads.push(ensureBucketsLoaded(bucketPrefixesForType(type), year, year)));
+      });
+      await Promise.all(loads);
+    }
+
+    docs.forEach(doc=>{
       const d=doc.data();
       const item=findItem(d.itemType, d.itemId);
       if(!item) return;
@@ -2698,7 +2725,7 @@ function attachDetailEvents(type,id){
           itemId:item.id, itemType:item.type, uid:CURRENT_UID, author:CURRENT_USER,
           score:selected, text, createdAt:firebase.firestore.FieldValue.serverTimestamp(), editedAt:null,
           likesCount:0, dislikesCount:0, funnyCount:0,
-          itemTitle:item.title, itemPoster:item.poster||null,
+          itemTitle:item.title, itemPoster:item.poster||null, itemYear:item.year,
         });
         await loadReviewsForItem(item);
         route();
@@ -2927,11 +2954,6 @@ function searchPeople(query){
   if(!nq) return [];
   return getPeopleIndex().filter(p=>normalizeSearchText(p.name).includes(nq));
 }
-function searchTitlesInCategory(query, category){
-  const nq=normalizeSearchText(query);
-  if(!nq) return [];
-  return DB[category].filter(it=>normalizeSearchText(it.title).includes(nq));
-}
 async function ensureCategoryDataLoaded(category){
   // Loads only what THIS specific search category needs — never all three at once, unlike
   // the old behavior. "person" is the one genuine exception: people aren't segregated by
@@ -3010,11 +3032,12 @@ async function route(){
     app.innerHTML=SKELETON_HOME_HTML;
     await ensureFullCatalogLoaded();
   }else if(isTitlePage && !findItem(parts[1],parts[2]) && !FULL_CATALOG_READY){
-    // this specific item isn't in what's currently loaded (e.g. an older title clicked
-    // from search or a comment banner) — load the rest to find it. Items already loaded
-    // (recent titles, or anything from a widened list view) skip this entirely.
+    // this specific item isn't in what's currently loaded (e.g. a direct link, bookmark,
+    // or comment banner click for an older title) — load just that category's buckets to
+    // find it, not the entire catalog. Items already loaded (recent titles, or anything
+    // a search-result click already preloaded) skip this entirely.
     app.innerHTML=SKELETON_HOME_HTML;
-    await ensureFullCatalogLoaded();
+    await ensureBucketsLoaded(bucketPrefixesForType(parts[1]), -Infinity, Infinity);
   }
 
   if(parts.length===0){
@@ -3164,6 +3187,40 @@ async function loadOneJSON(path){
     const json=await res.json();
     return Array.isArray(json) ? json : null;
   }catch(e){ return null; }
+}
+let SEARCH_INDEX=null; // {movie:[{title,year,score,id,type}], show:[...], game:[...]}
+let SEARCH_INDEX_PROMISE=null;
+async function loadSearchIndex(){
+  if(SEARCH_INDEX) return SEARCH_INDEX;
+  if(SEARCH_INDEX_PROMISE) return SEARCH_INDEX_PROMISE;
+  SEARCH_INDEX_PROMISE=(async()=>{
+    try{
+      const res=await fetch('./search_index.json', {cache:'no-store'});
+      if(!res.ok) return null;
+      const data=await res.json();
+      const buildCategory=(records, prefix, type)=> records.map((r,i)=>({
+        title:r.t, year:r.y, score:r.s,
+        id:stableId(prefix, {tmdb_id:r.tmdb_id, rawg_id:r.rawg_id, imdb_id:r.imdb_id}, i),
+        type,
+      }));
+      SEARCH_INDEX={
+        movie: buildCategory(data.movies||[], 'm', 'movie'),
+        show: buildCategory(data.shows||[], 's', 'show'),
+        game: buildCategory(data.games||[], 'g', 'game'),
+      };
+      return SEARCH_INDEX;
+    }catch(e){
+      console.error('Nepodařilo se načíst index pro vyhledávání', e);
+      return null;
+    }
+  })();
+  return SEARCH_INDEX_PROMISE;
+}
+function searchInIndex(query, category){
+  if(!SEARCH_INDEX) return [];
+  const nq=normalizeSearchText(query);
+  if(!nq) return [];
+  return SEARCH_INDEX[category].filter(it=>normalizeSearchText(it.title).includes(nq));
 }
 async function loadRealData(){
   // Loads ONLY the most-recent-year bucket per category — this is now the permanent
@@ -4223,6 +4280,16 @@ function fallbackCopy(text, cb){
 }
 
 /* ======================= SEARCH PANEL ======================= */
+function bucketPrefixesForType(type){
+  return type==='movie' ? ['movies','movies_czsk'] : type==='show' ? ['shows'] : ['games'];
+}
+async function preloadAndNavigateToTitle(type, id, year, e){
+  if(e) e.preventDefault();
+  if(!findItem(type, id)){
+    await ensureBucketsLoaded(bucketPrefixesForType(type), year, year);
+  }
+  location.hash=`#/title/${type}/${id}`;
+}
 function initSearchPanel(){
   const toggleBtn=document.getElementById('searchToggle');
   const panel=document.getElementById('searchPanel');
@@ -4237,19 +4304,16 @@ function initSearchPanel(){
     panel.classList.add('open'); toggleBtn.classList.add('active');
     setTimeout(()=>input.focus(), 60);
   }
-  function categoryLoadingLabel(cat){
-    return cat==='movie'?'filmů':cat==='show'?'seriálů':cat==='game'?'her':'osobností';
-  }
 
   async function renderResults(q){
     const myToken=++requestToken;
     if(!q){ results.innerHTML=''; return; }
     const category=currentCategory;
-    results.innerHTML=`<div class="search-empty-note">Načítání ${categoryLoadingLabel(category)}...</div>`;
-    await ensureCategoryDataLoaded(category);
-    if(myToken!==requestToken) return; // a newer search or category switch superseded this one
 
     if(category==='person'){
+      results.innerHTML=`<div class="search-empty-note">Načítání osobností...</div>`;
+      await ensureCategoryDataLoaded('person');
+      if(myToken!==requestToken) return; // a newer search or category switch superseded this one
       const peopleMatches=searchPeople(q);
       if(!peopleMatches.length){ results.innerHTML=`<div class="search-empty-note">Nic jsme nenašli pro "${esc(q)}".</div>`; return; }
       results.innerHTML=peopleMatches.slice(0,20).map(p=>{
@@ -4259,13 +4323,20 @@ function initSearchPanel(){
         return `<a class="search-result-row search-result-person" href="#/person/${encodeURIComponent(p.name)}"><span class="person-search-avatar" style="${style}">${inner}</span><span class="srr-title">${esc(p.name)}</span></a>`;
       }).join('');
     }else{
-      const titleMatches=searchTitlesInCategory(q, category);
+      // Title search runs against the tiny search_index.json — never needs this
+      // category's real buckets loaded just to find something by name.
+      if(!SEARCH_INDEX) results.innerHTML=`<div class="search-empty-note">Načítání...</div>`;
+      await loadSearchIndex();
+      if(myToken!==requestToken) return;
+      const titleMatches=searchInIndex(q, category);
       if(!titleMatches.length){ results.innerHTML=`<div class="search-empty-note">Nic jsme nenašli pro "${esc(q)}".</div>`; return; }
       results.innerHTML=titleMatches.slice(0,20).map(it=>{
-        const sc=liveScore(it); const badge=scoreBadge(sc);
-        const meta=(it.type==='movie' && it.box!==null && it.box!==undefined) ? `${fmtBox(it.box, it.boxCurrency)} · ${it.year}` : `${it.year}`;
-        return `<a class="search-result-row" href="#/title/${it.type}/${it.id}"><span class="srr-title">${esc(it.title)}</span><span class="srr-meta">${typeLabel(it.type)} · ${meta}</span><span class="srr-score ${badge.cls}">${badge.text}</span></a>`;
+        const badge=scoreBadge(it.score);
+        return `<a class="search-result-row" href="#/title/${it.type}/${it.id}" data-type="${it.type}" data-id="${esc(it.id)}" data-year="${it.year}"><span class="srr-title">${esc(it.title)}</span><span class="srr-meta">${typeLabel(it.type)} · ${it.year}</span><span class="srr-score ${badge.cls}">${badge.text}</span></a>`;
       }).join('');
+      results.querySelectorAll('.search-result-row[data-type]').forEach(row=>{
+        row.addEventListener('click', (e)=> preloadAndNavigateToTitle(row.dataset.type, row.dataset.id, +row.dataset.year, e));
+      });
     }
   }
 
@@ -4297,7 +4368,7 @@ function initSearchPanel(){
    they're re-applied on top of the catalog every time it loads. This means edits survive
    future re-fetches automatically, since the override layer is entirely independent of
    the JSON files themselves. */
-const ADMIN_UID='xi7dBc7SwxZDGC3ZSjcoQnO1rzh1'; // Firebase Console -> Authentication -> your account -> User UID
+const ADMIN_UID='PASTE_YOUR_FIREBASE_UID_HERE'; // Firebase Console -> Authentication -> your account -> User UID
 function isAdmin(){ return !!CURRENT_UID && CURRENT_UID===ADMIN_UID; }
 let ADMIN_OVERRIDES_CACHE=null;
 async function loadAdminOverrides(){

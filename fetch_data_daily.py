@@ -1744,10 +1744,39 @@ def compute_trending(today, movies_prefix, movies_czsk_prefix, shows_prefix, gam
     return trending
 
 
+def compute_search_index(movies_prefix, movies_czsk_prefix, shows_prefix, games_prefix):
+    """Builds a tiny index of every title's name/year/score across the ENTIRE catalog —
+    this is what the live search panel searches against, instead of needing full records
+    (cast lists, summaries, galleries) just to find something by name. Clicking a result
+    still loads that title's real bucket (just the one bucket it actually belongs to)
+    before navigating to its detail page."""
+    def minimal_entries(records):
+        out = []
+        for r in records:
+            entry = {"t": r.get("title"), "y": r.get("year"), "s": r.get("score")}
+            for id_field in ("tmdb_id", "rawg_id", "imdb_id"):
+                if r.get(id_field):
+                    entry[id_field] = r[id_field]
+            out.append(entry)
+        return out
+
+    movies_all = load_all_records_from_disk(movies_prefix) + load_all_records_from_disk(movies_czsk_prefix)
+    shows_all = load_all_records_from_disk(shows_prefix)
+    games_all = load_all_records_from_disk(games_prefix)
+
+    index = {
+        "movies": minimal_entries(movies_all),
+        "shows": minimal_entries(shows_all),
+        "games": minimal_entries(games_all),
+    }
+    save_json("search_index.json", index)
+    return index
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--tmdb-key", required=True)
-    ap.add_argument("--rawg-key", required=True)
+    ap.add_argument("--tmdb-key", default=None, help="required for a normal fetch run and --recheck-deaths-only; not needed for --fix-czsk-country-labels-only or --backfill-show-scores-only")
+    ap.add_argument("--rawg-key", default=None, help="required for a normal fetch run; not needed for any of the standalone maintenance flags (--recheck-deaths-only, --fix-czsk-country-labels-only, --backfill-show-scores-only)")
     ap.add_argument("--years-per-run", type=int, default=YEARS_PER_RUN_DEFAULT, help="how many release years to cover per run, per category")
     ap.add_argument("--min-votes", type=int, default=30, help="tier-1 (US/Czech) TMDb vote_count floor; tier 2 needs x3 this, tier 3 needs x8 this")
     ap.add_argument("--floor-year", type=int, default=FLOOR_YEAR_DEFAULT, help="stop walking backwards once past this year")
@@ -1781,6 +1810,21 @@ def main():
     ap.add_argument("--recent-games-min-wishlist", type=int, default=10, help="flat wishlist floor for the recent-games scan (bypasses the era/genre-tiered thresholds used during backfill, since this scan is always 'recent' anyway)")
     ap.add_argument("--recent-days", type=int, default=None, help="scan only a precise window of the last N days for all 'recent' fetches (movies, shows, both CZ/SK variants, and games), instead of re-scanning the whole current year every run. Combine with --skip-backfill once historical collection is complete, for a lightweight ongoing 'just catch new releases' mode, e.g. --recent-days 7")
     args = ap.parse_args()
+
+    # --tmdb-key and --rawg-key aren't blanket-required at the argparse level anymore,
+    # since the standalone maintenance flags below need one, the other, or neither —
+    # never both. Validated here instead, based on which mode is actually running.
+    if args.fix_czsk_country_labels_only or args.backfill_show_scores_only:
+        pass  # neither key touches the network for these — pure local data fixes
+    elif args.recheck_deaths_only:
+        if not args.tmdb_key:
+            ap.error("--tmdb-key is required for --recheck-deaths-only")
+    else:
+        if not args.tmdb_key:
+            ap.error("--tmdb-key is required")
+        if not args.rawg_key:
+            ap.error("--rawg-key is required")
+
     today = today_str()
     real_year = datetime.date.today().year
     recent_years = [real_year]  # only the current year — unreleased/future titles are filtered out anyway
@@ -1813,6 +1857,8 @@ def main():
         backfill_show_scores_from_imdb(shows_store, imdb_ratings, args.min_imdb_votes)
         trending = compute_trending(today, args.movies_prefix, args.movies_czsk_prefix, args.shows_prefix, args.games_prefix)
         print(f"trending.json refreshed: {len(trending['movies'])} movies, {len(trending['shows'])} shows, {len(trending['games'])} games", file=sys.stderr)
+        compute_search_index(args.movies_prefix, args.movies_czsk_prefix, args.shows_prefix, args.games_prefix)
+        print("search_index.json refreshed.", file=sys.stderr)
         print("Done.", file=sys.stderr)
         return
 
@@ -1990,6 +2036,9 @@ def main():
 
     trending = compute_trending(today, args.movies_prefix, args.movies_czsk_prefix, args.shows_prefix, args.games_prefix)
     print(f"trending.json written: {len(trending['movies'])} movies, {len(trending['shows'])} shows, {len(trending['games'])} games", file=sys.stderr)
+
+    search_index = compute_search_index(args.movies_prefix, args.movies_czsk_prefix, args.shows_prefix, args.games_prefix)
+    print(f"search_index.json written: {len(search_index['movies'])} movies, {len(search_index['shows'])} shows, {len(search_index['games'])} games", file=sys.stderr)
 
 
 if __name__ == "__main__":
