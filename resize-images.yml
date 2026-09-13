@@ -1,0 +1,33 @@
+name: Resize images
+
+on:
+  workflow_dispatch:   # manual trigger only — this is a one-time migration, not a recurring job.
+                        # Safe to run again later if needed: the transformation is idempotent,
+                        # so already-migrated records are simply left untouched.
+
+permissions:
+  contents: write   # required so the final "git push" step below can actually write back to the repo
+
+jobs:
+  resize-images:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run image resize migration
+        run: python fetch_data_daily.py --resize-images-only
+
+      - name: Commit updated bucket files
+        run: |
+          git config user.name "kritiq-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "Resize existing poster/gallery image URLs"
+          git push
