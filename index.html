@@ -482,6 +482,10 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
   font-weight:700; font-size:13.5px; transition:border-color .15s, background .15s;
 }
 .load-more-btn:hover{background:var(--bg-3); border-color:var(--violet);}
+.scroll-sentinel{
+  min-height:60px; display:flex; align-items:center; justify-content:center;
+  color:var(--text-faint); font-size:13px; padding:20px 0;
+}
 
 /* ---------- DETAIL ---------- */
 .detail-top{margin-bottom:38px;}
@@ -2025,7 +2029,7 @@ function reviewItemHTML(review, opts){
     <button class="pill-delete-btn no-modal-trigger" data-review-id="${review.id}" data-item-id="${opts.item.id}" type="button">ODSTRANIT</button>
   ` : '';
   return `
-  <div class="review-item" data-review-id="${review.id}" data-item-id="${opts.item ? opts.item.id : (opts.context ? opts.context.item.id : '')}">
+  <div class="review-item${opts.context ? ' review-item-clickable' : ''}" data-review-id="${review.id}" data-item-id="${opts.item ? opts.item.id : (opts.context ? opts.context.item.id : '')}"${opts.context ? ` data-nav-type="${opts.context.type}"` : ''}>
     <div class="review-score ${scoreClass(review.score)}">${review.score}</div>
     <div class="review-body">
       <div class="review-author-row">
@@ -2063,6 +2067,20 @@ function bindShowAllReviews(username){
   const btn=document.getElementById('showAllReviewsBtn');
   if(btn) btn.addEventListener('click', ()=> openAllReviewsModal(username));
 }
+function bindReviewItemNavigation(containerId){
+  // Makes review rows shown WITH context (profile previews, all-reviews modal) clickable
+  // anywhere on the card — not just the small title link — matching the comment banner's
+  // click behavior: navigate to the title AND auto-open that specific review there.
+  const container=document.getElementById(containerId);
+  if(!container) return;
+  container.querySelectorAll('.review-item[data-nav-type]').forEach(row=>{
+    row.addEventListener('click', (e)=>{
+      e.preventDefault();
+      PENDING_REVIEW_TO_OPEN=row.dataset.reviewId;
+      location.hash=`#/title/${row.dataset.navType}/${row.dataset.itemId}`;
+    });
+  });
+}
 function openAllReviewsModal(username){
   allReviewsModalPage[username]=1;
   pushModal(()=>renderAllReviewsModal(username));
@@ -2092,6 +2110,7 @@ async function renderAllReviewsModal(username){
     allReviewsModalPage[username]=(allReviewsModalPage[username]||1)+1;
     renderAllReviewsModal(username);
   });
+  bindReviewItemNavigation('allReviewsList');
 }
 
 function cardHTML(item, rank){
@@ -2407,11 +2426,9 @@ function listBodyHTML(type){
   const hasUnloadedOverflow = MANIFEST_INFO && MANIFEST_INFO.some(info=>
     prefixes.includes(info.prefix) && info.endYear>=st.y0 && info.startYear<=st.y1 && info.isOverflow && !LOADED_BUCKET_FILES.has(info.filename)
   );
-  const showButton = remaining>0 || (shown.length>=sorted.length && hasUnloadedOverflow);
-  const more = showButton
-    ? `<div class="load-more-wrap"><button class="load-more-btn" id="loadMoreBtn">${remaining>0 ? `Načíst dalších ${Math.min(PAGE_SIZE,remaining)} (zbývá ${remaining})` : 'Načíst další tituly'}</button></div>`
-    : '';
-  return {html:grid+more, shown:shown.length, total:sorted.length};
+  const hasMore = remaining>0 || (shown.length>=sorted.length && hasUnloadedOverflow);
+  const sentinel = hasMore ? `<div class="scroll-sentinel" id="scrollSentinel"></div>` : '';
+  return {html:grid+sentinel, shown:shown.length, total:sorted.length};
 }
 
 function renderList(type){
@@ -2446,8 +2463,6 @@ function renderList(type){
     </div>`;
   }
   return `
-    <h1 class="page-title">${typeLabelPl(type)}</h1>
-    <p class="page-sub" id="listSub">${typeLabelPl(type)} z let ${YMIN}–${YMAX}. Zobrazeno ${body.shown} z ${body.total} položek.</p>
     <div class="filterbar">
       ${platformFilterHTML}
       ${genreFilterHTML}
@@ -2484,7 +2499,7 @@ function attachListEvents(type){
     document.getElementById('yearReadout').textContent=lo+' – '+hi;
   }
   updateFill();
-  bindLoadMore(type);
+  observeScrollSentinel(type);
   if(type==='game') bindPlatformFilter();
   if(type==='movie' || type==='show') bindGenreFilter(type);
   [y0,y1].forEach(inp=>inp.addEventListener('input',()=>{
@@ -2543,25 +2558,28 @@ function bindPlatformFilter(){
 async function refreshListBody(type){
   const key=type+'s'; const st=listState[key];
   const prefixes = type==='movie' ? ['movies','movies_czsk'] : type==='show' ? ['shows'] : ['games'];
-  const listBody=document.getElementById('listBody');
 
   // If the main-only data for this range is already fully accounted for by the page the
   // user is now on, and there's overflow for this range not yet loaded, pull that in —
-  // this is what makes clicking Load More past the top-50-per-year cap actually work.
+  // this is what makes scrolling past the top-50-per-year cap actually work.
   const sortedSoFar=sortedListFor(type);
   const wouldShow=Math.min(st.page*PAGE_SIZE, sortedSoFar.length);
   const hasUnloadedOverflow=MANIFEST_INFO && MANIFEST_INFO.some(info=>
     prefixes.includes(info.prefix) && info.endYear>=st.y0 && info.startYear<=st.y1 && info.isOverflow && !LOADED_BUCKET_FILES.has(info.filename)
   );
+  const needsMoreFetch = wouldShow>=sortedSoFar.length && hasUnloadedOverflow;
+  const needsFetch=MANIFEST_INFO && MANIFEST_INFO.some(info=>
+    prefixes.includes(info.prefix) && info.endYear>=st.y0 && info.startYear<=st.y1 && !LOADED_BUCKET_FILES.has(info.filename) && !info.isOverflow
+  );
 
-  if(wouldShow>=sortedSoFar.length && hasUnloadedOverflow){
-    if(listBody) listBody.innerHTML=`<p class="empty-note">Načítání zbylých titulů…</p>`;
+  // Show a small loading note in the sentinel's place only — the already-visible grid
+  // stays put rather than being replaced by a full loading screen, so scrolling stays smooth.
+  const sentinel=document.getElementById('scrollSentinel');
+  if(sentinel && (needsFetch || needsMoreFetch)) sentinel.textContent='Načítání dalších titulů…';
+
+  if(needsMoreFetch){
     await ensureBucketsLoaded(prefixes, st.y0, st.y1, true); // now including overflow
   }else{
-    const needsFetch=MANIFEST_INFO && MANIFEST_INFO.some(info=>
-      prefixes.includes(info.prefix) && info.endYear>=st.y0 && info.startYear<=st.y1 && !LOADED_BUCKET_FILES.has(info.filename) && !info.isOverflow
-    );
-    if(needsFetch && listBody) listBody.innerHTML=`<p class="empty-note">Načítání dalších let…</p>`;
     await ensureBucketsLoaded(prefixes, st.y0, st.y1, false); // main only, same as the default view
   }
 
@@ -2569,17 +2587,22 @@ async function refreshListBody(type){
   const freshListBody=document.getElementById('listBody');
   if(!freshListBody) return; // navigated away while buckets were loading
   freshListBody.innerHTML=body.html;
-  const {min:YMIN, max:YMAX}=YEAR_BOUNDS[type];
-  document.getElementById('listSub').textContent=`${typeLabelPl(type)} z let ${YMIN}–${YMAX}. Zobrazeno ${body.shown} z ${body.total} položek.`;
-  bindLoadMore(type);
+  observeScrollSentinel(type);
 }
-function bindLoadMore(type){
-  const btn=document.getElementById('loadMoreBtn');
-  if(!btn) return;
-  btn.addEventListener('click',()=>{
+let scrollObservers={}; // type -> active IntersectionObserver, so a stale one never fires after the list re-renders
+function observeScrollSentinel(type){
+  if(scrollObservers[type]){ scrollObservers[type].disconnect(); delete scrollObservers[type]; }
+  const sentinel=document.getElementById('scrollSentinel');
+  if(!sentinel) return; // nothing more to load
+  const observer=new IntersectionObserver((entries)=>{
+    if(!entries[0].isIntersecting) return;
+    observer.disconnect();
+    delete scrollObservers[type];
     listState[type+'s'].page++;
     refreshListBody(type);
-  });
+  }, {rootMargin:'600px'}); // start loading well before the sentinel actually scrolls into view, for a smooth feel
+  observer.observe(sentinel);
+  scrollObservers[type]=observer;
 }
 
 
@@ -2925,9 +2948,11 @@ async function refreshUserReviews(username){
   const body=userReviewsPreviewHTML(username, entries);
   document.getElementById('userReviewsList').innerHTML=body.html;
   bindShowAllReviews(username);
+  bindReviewItemNavigation('userReviewsList');
 }
 function attachUserProfileEvents(username){
   bindShowAllReviews(username);
+  bindReviewItemNavigation('userReviewsList');
   document.getElementById('top10ViewBtn').addEventListener('click', ()=> openTop10ViewModal(username));
   document.getElementById('favUsersBtn').addEventListener('click', ()=> openFavoritesModal(username));
   document.getElementById('achievementsViewBtn').addEventListener('click', ()=> openAchievementsModalFor(username));
@@ -3044,7 +3069,7 @@ async function route(){
 
   const isHomepage=parts.length===0;
   const isListPage=['movies','shows','games'].includes(parts[0]);
-  const needsFullCatalogUpfront=['person','search','user'].includes(parts[0]);
+  const needsFullCatalogUpfront=['person','search'].includes(parts[0]);
   const isTitlePage=parts[0]==='title' && parts[1] && parts[2];
 
   if(!isHomepage && !RECENT_CATALOG_READY){
@@ -4288,6 +4313,7 @@ async function renderUserModal(){
   document.getElementById('modalFavUsersBtn').addEventListener('click', ()=> openFavoritesModal(username));
   document.getElementById('modalAchievementsViewBtn').addEventListener('click', ()=> openAchievementsModalFor(username));
   document.getElementById('modalQuestsViewBtn').addEventListener('click', ()=> openQuestsModalFor(username));
+  bindReviewItemNavigation('modalReviewsList');
   document.getElementById('modalAvatarBtn').addEventListener('click', ()=>{
     if(username===CURRENT_USER){
       triggerAvatarUpload(username, renderUserModal);

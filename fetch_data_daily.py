@@ -1101,7 +1101,7 @@ def game_record(g, key, details=None):
     genre = ", ".join(translate_game_genre(n) for n in genre_names)
     platform_list = g.get("platforms") or details.get("platforms") or []
     platforms = [p["platform"]["name"] for p in platform_list if p.get("platform") and p["platform"].get("name")]
-    poster = rawg_resize_image(g.get("background_image") or "", 400)
+    poster = rawg_resize_image(g.get("background_image") or "", 640)
     gallery = [rawg_resize_image(s["image"], 640) for s in (g.get("short_screenshots") or []) if s.get("image") and s.get("image") != g.get("background_image")][:6]
     summary = (details.get("description_raw") or "").strip()[:800]  # English for now — fine to translate later
     return {
@@ -1706,7 +1706,12 @@ def resize_existing_images(movies_store, movies_czsk_store, shows_store, games_s
     URLs; movie/show posters get their TMDb size segment swapped from w500 down to the
     smaller w342. Backdrop/gallery images for movies/shows are left untouched, since that
     size was never changed. Safe to run more than once — both transformations are
-    idempotent, so already-migrated records are simply skipped."""
+    idempotent, so already-migrated records are simply skipped.
+
+    Also repairs a specific earlier bug: game posters were briefly resized to width 400,
+    which RAWG's CDN apparently doesn't serve correctly (confirmed broken; 640, used for
+    gallery images throughout, is confirmed working) — any poster still carrying that
+    broken resize/400/-/ segment gets corrected to resize/640/-/ here."""
     changed = 0
 
     for store in (movies_store, movies_czsk_store, shows_store):
@@ -1726,7 +1731,11 @@ def resize_existing_images(movies_store, movies_czsk_store, shows_store, games_s
         label_changed = False
         for r in records:
             old_poster = r.get("poster") or ""
-            new_poster = rawg_resize_image(old_poster, 400)
+            if "/media/resize/400/-/" in old_poster:
+                # repair: this poster was broken by the earlier width=400 bug
+                new_poster = old_poster.replace("/media/resize/400/-/", "/media/resize/640/-/", 1)
+            else:
+                new_poster = rawg_resize_image(old_poster, 640)
             if new_poster != old_poster:
                 r["poster"] = new_poster
                 label_changed = True
