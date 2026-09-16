@@ -1302,12 +1302,16 @@ async function getUserReviewsAsync(username){
     // needing the full catalog just to show one person's profile. Reviews saved before
     // this field existed can't be precisely targeted, so — only if any such review
     // exists — this falls back to a one-time full load. Self-healing (below) means this
-    // fallback is only ever needed once per review, not every single time.
+    // fallback is only ever needed once per review, not every single time — including for
+    // reviews whose item can no longer be found at all (e.g. removed, or left over from an
+    // earlier id scheme), which get marked with a sentinel value rather than being left
+    // permanently "undated" and re-triggering this fallback on every future visit forever.
     const bucketsNeeded=new Map(); // itemType -> Set of years
     const undatedDocs=[];
     docs.forEach(doc=>{
       const d=doc.data();
       if(d.itemYear===undefined || d.itemYear===null){ undatedDocs.push(doc); return; }
+      if(d.itemYear===-1) return; // sentinel: item was confirmed unresolvable on an earlier visit — correctly excluded below too, same as any other review whose item can't be found
       if(!bucketsNeeded.has(d.itemType)) bucketsNeeded.set(d.itemType, new Set());
       bucketsNeeded.get(d.itemType).add(d.itemYear);
     });
@@ -1334,14 +1338,17 @@ async function getUserReviewsAsync(username){
     // write the missing fields back so future loads never need this fallback again for
     // them. Only attempted for the current user's own reviews — Firestore rules restrict
     // review updates to their owner, so this would silently fail (harmlessly) otherwise.
+    // Reviews whose item still can't be found even now get the sentinel itemYear: -1
+    // instead — genuinely unresolvable, but still marked "processed" so this fallback
+    // doesn't keep firing for them forever.
     if(undatedDocs.length && username===CURRENT_USER){
       undatedDocs.forEach(doc=>{
         const d=doc.data();
         const item=findItem(d.itemType, d.itemId);
-        if(!item) return;
-        db.collection('reviews').doc(doc.id).update({
-          itemYear:item.year, itemTitle:item.title, itemPoster:item.poster||null,
-        }).catch(e=>console.error('Nepodařilo se doplnit chybějící údaje u recenze', doc.id, e));
+        const fields=item
+          ? {itemYear:item.year, itemTitle:item.title, itemPoster:item.poster||null}
+          : {itemYear:-1};
+        db.collection('reviews').doc(doc.id).update(fields).catch(e=>console.error('Nepodařilo se doplnit chybějící údaje u recenze', doc.id, e));
       });
     }
   }catch(e){
@@ -4440,7 +4447,7 @@ function initSearchPanel(){
    they're re-applied on top of the catalog every time it loads. This means edits survive
    future re-fetches automatically, since the override layer is entirely independent of
    the JSON files themselves. */
-const ADMIN_UID='xi7dBc7SwxZDGC3ZSjcoQnO1rzh1'; // Firebase Console -> Authentication -> your account -> User UID
+const ADMIN_UID='PASTE_YOUR_FIREBASE_UID_HERE'; // Firebase Console -> Authentication -> your account -> User UID
 function isAdmin(){ return !!CURRENT_UID && CURRENT_UID===ADMIN_UID; }
 let ADMIN_OVERRIDES_CACHE=null;
 async function loadAdminOverrides(){
