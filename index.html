@@ -1924,11 +1924,13 @@ async function updateMyReview(item, newScore, newText){
   const idx=list.findIndex(r=>r.author===myIdentity());
   if(idx===-1) return;
   const rid=list[idx].rid;
+  const oldScore=list[idx].score;
   await clearVotesForReview(rid);
   await db.collection('reviews').doc(rid).update({
     score:newScore, text:newText, editedAt:firebase.firestore.FieldValue.serverTimestamp(),
     likesCount:0, dislikesCount:0, funnyCount:0,
   });
+  await applyItemScoreDelta(item.id, newScore-oldScore, 0).catch(e=>console.error('Nepodařilo se aktualizovat agregované skóre', e));
   delete MY_VOTES[rid];
   await loadReviewsForItem(item);
 }
@@ -1937,8 +1939,10 @@ async function deleteMyReview(item){
   const idx=list.findIndex(r=>r.author===myIdentity());
   if(idx===-1) return;
   const rid=list[idx].rid;
+  const oldScore=list[idx].score;
   await clearVotesForReview(rid);
   await db.collection('reviews').doc(rid).delete();
+  await applyItemScoreDelta(item.id, -oldScore, -1).catch(e=>console.error('Nepodařilo se aktualizovat agregované skóre', e));
   delete MY_VOTES[rid];
   await loadReviewsForItem(item);
 }
@@ -1951,6 +1955,56 @@ function liveScore(item){
   const avg=all.reduce((a,b)=>a+b,0)/all.length;
   return Math.round(avg);
 }
+
+let ITEM_SCORE_AGGREGATES={}; // itemId -> {sum,count}, cached once fetched, kept fresh in-place by the write-through updates in submit/edit/delete review
+function computeLiveScore(baseScore, agg){
+  // baseScore: the item's own static score (item.baseScore, or a search-index entry's
+  // score) — treated as one more "vote" in the average, matching liveScore()'s existing
+  // behavior. agg: {sum,count} of actual user review scores for this item, or undefined
+  // if it has none yet.
+  const hasBase=baseScore!==null && baseScore!==undefined;
+  if(!agg || agg.count===0) return hasBase ? Math.round(baseScore) : null;
+  const totalSum=(hasBase?baseScore:0)+agg.sum;
+  const totalCount=(hasBase?1:0)+agg.count;
+  return totalCount>0 ? Math.round(totalSum/totalCount) : null;
+}
+function scoreForListOrSearch(item){
+  // Used anywhere that shows many titles at once (list page cards, search results) — an
+  // item already fully loaded with its own reviews (i.e. its detail page has been
+  // visited this session) uses the exact liveScore(); otherwise falls back to the
+  // lightweight {sum,count} aggregate, which stays accurate without needing every
+  // individual review loaded for every title on screen.
+  if(USER_REVIEWS[item.id]!==undefined) return liveScore(item);
+  return computeLiveScore(item.baseScore, ITEM_SCORE_AGGREGATES[item.id]);
+}
+async function ensureItemScoreAggregates(itemIds){
+  const unique=[...new Set(itemIds)].filter(id=>!(id in ITEM_SCORE_AGGREGATES));
+  if(!unique.length) return;
+  const batches=[];
+  for(let i=0;i<unique.length;i+=30) batches.push(unique.slice(i,i+30)); // Firestore 'in' queries cap at 30 values
+  await Promise.all(batches.map(async(batch)=>{
+    try{
+      const snap=await db.collection('itemScores').where(firebase.firestore.FieldPath.documentId(),'in',batch).get();
+      const found=new Set();
+      snap.docs.forEach(doc=>{ ITEM_SCORE_AGGREGATES[doc.id]=doc.data(); found.add(doc.id); });
+      batch.forEach(id=>{ if(!found.has(id)) ITEM_SCORE_AGGREGATES[id]={sum:0,count:0}; }); // no reviews yet — cache the negative result too, so this batch is never re-queried
+    }catch(e){
+      console.error('Nepodařilo se načíst agregovaná skóre', e);
+    }
+  }));
+}
+async function applyItemScoreDelta(itemId, sumDelta, countDelta){
+  const ref=db.collection('itemScores').doc(itemId);
+  await ref.set({
+    sum:firebase.firestore.FieldValue.increment(sumDelta),
+    count:firebase.firestore.FieldValue.increment(countDelta),
+  }, {merge:true});
+  // Write-through: update the local cache immediately too, so the current page reflects
+  // the change without waiting for a re-fetch.
+  const cur=ITEM_SCORE_AGGREGATES[itemId] || {sum:0, count:0};
+  ITEM_SCORE_AGGREGATES[itemId]={sum:cur.sum+sumDelta, count:cur.count+countDelta};
+}
+
 /* For sort comparators: unscored ("N") items sort to the bottom rather than breaking
    the comparison (null - number is NaN in JS, which sorts unpredictably). */
 function scoreSortValue(item){
@@ -2121,7 +2175,7 @@ async function renderAllReviewsModal(username){
 }
 
 function cardHTML(item, rank){
-  const score=liveScore(item);
+  const score=scoreForListOrSearch(item);
   const badge=scoreBadge(score);
   const meta = item.year;
   return `
@@ -2357,15 +2411,16 @@ function skeletonListHTML(){
   </div>`;
 }
 
-function renderHome(){
+async function renderHome(){
   const hotMovies=TRENDING_HOME_DATA ? TRENDING_HOME_DATA.movie : DB.movie.filter(m=>withinLast6Months(m.date)).sort((a,b)=>scoreSortValue(b)-scoreSortValue(a)).slice(0,10);
   const hotShows=TRENDING_HOME_DATA ? TRENDING_HOME_DATA.show : DB.show.filter(s=>withinLast6Months(s.date)).sort((a,b)=>scoreSortValue(b)-scoreSortValue(a)).slice(0,10);
   const hotGames=TRENDING_HOME_DATA ? TRENDING_HOME_DATA.game : DB.game.filter(g=>withinLast6Months(g.date)).sort((a,b)=>scoreSortValue(b)-scoreSortValue(a)).slice(0,10);
+  await ensureItemScoreAggregates([...hotMovies, ...hotShows, ...hotGames].map(it=>it.id));
   return `
     <div id="commentBannerContainer"></div>
-    ${hotRowHTML('Top 10 filmů z poslední doby', hotMovies, '#/movies')}
-    ${hotRowHTML('Top 10 seriálů z poslední doby', hotShows, '#/shows')}
-    ${hotRowHTML('Top 10 her z poslední doby', hotGames, '#/games')}
+    ${hotRowHTML('Tipy na filmy z poslední doby', hotMovies, '#/movies')}
+    ${hotRowHTML('Tipy na seriály z poslední doby', hotShows, '#/shows')}
+    ${hotRowHTML('Tipy na hry z poslední doby', hotGames, '#/games')}
   `;
 }
 
@@ -2423,10 +2478,11 @@ function sortedListFor(type){
     return a.title.localeCompare(b.title);
   });
 }
-function listBodyHTML(type){
+async function listBodyHTML(type){
   const st=listState[type+'s'];
   const sorted=sortedListFor(type);
   const shown=sorted.slice(0, st.page*PAGE_SIZE);
+  await ensureItemScoreAggregates(shown.map(it=>it.id));
   const grid=shown.length? `<div class="grid">${shown.map(it=>cardHTML(it)).join('')}</div>` : `<p class="empty-note">V tomto rozmezí let nic nemáme. Zkuste posunout filtr.</p>`;
   const remaining=sorted.length-shown.length;
   const prefixes = type==='movie' ? ['movies','movies_czsk'] : type==='show' ? ['shows'] : ['games'];
@@ -2438,12 +2494,12 @@ function listBodyHTML(type){
   return {html:grid+sentinel, shown:shown.length, total:sorted.length};
 }
 
-function renderList(type){
+async function renderList(type){
   const key=type+'s';
   const st=listState[key];
   st.page=1;
   const {min:YMIN, max:YMAX}=YEAR_BOUNDS[type];
-  const body=listBodyHTML(type);
+  const body=await listBodyHTML(type);
   const boxOpt = type==='movie' ? `<option value="box">Tržby</option>` : '';
   const platformFilterHTML = type==='game' ? `
     <div class="platform-filter-wrap">
@@ -2590,7 +2646,7 @@ async function refreshListBody(type){
     await ensureBucketsLoaded(prefixes, st.y0, st.y1, false); // main only, same as the default view
   }
 
-  const body=listBodyHTML(type);
+  const body=await listBodyHTML(type);
   const freshListBody=document.getElementById('listBody');
   if(!freshListBody) return; // navigated away while buckets were loading
   freshListBody.innerHTML=body.html;
@@ -2793,6 +2849,7 @@ function attachDetailEvents(type,id){
           likesCount:0, dislikesCount:0, funnyCount:0,
           itemTitle:item.title, itemPoster:item.poster||null, itemYear:item.year,
         });
+        await applyItemScoreDelta(item.id, selected, 1).catch(e=>console.error('Nepodařilo se aktualizovat agregované skóre', e));
         await loadReviewsForItem(item);
         route();
       }catch(e){
@@ -3109,14 +3166,14 @@ async function route(){
   }
 
   if(parts.length===0){
-    app.innerHTML=renderHome(); attachHotRowEvents();
+    app.innerHTML=await renderHome(); attachHotRowEvents();
     loadAndRenderCommentBanner(); // fire-and-forget — trending rows shouldn't wait on this
   }else if(parts[0]==='movies'){
-    app.innerHTML=renderList('movie'); attachListEvents('movie');
+    app.innerHTML=await renderList('movie'); attachListEvents('movie');
   }else if(parts[0]==='shows'){
-    app.innerHTML=renderList('show'); attachListEvents('show');
+    app.innerHTML=await renderList('show'); attachListEvents('show');
   }else if(parts[0]==='games'){
-    app.innerHTML=renderList('game'); attachListEvents('game');
+    app.innerHTML=await renderList('game'); attachListEvents('game');
   }else if(parts[0]==='title' && parts[1] && parts[2]){
     const item=findItem(parts[1], parts[2]);
     if(item) await loadReviewsForItem(item);
@@ -3133,7 +3190,7 @@ async function route(){
   }else if(parts[0]==='search' && parts[1]){
     app.innerHTML=renderSearch(decodeURIComponent(parts[1]));
   }else{
-    app.innerHTML=renderHome(); attachHotRowEvents();
+    app.innerHTML=await renderHome(); attachHotRowEvents();
     loadAndRenderCommentBanner();
   }
 
@@ -3933,7 +3990,8 @@ async function renderAchievementsModal(){
   const {unlocked}=await refreshMyAchievements();
   const grid=document.getElementById('achGrid');
   if(!grid) return; // modal closed before this resolved
-  grid.innerHTML=ACHIEVEMENTS.map(a=>{
+  const sortedAchievements=ACHIEVEMENTS.slice().sort((a,b)=> (unlocked[b.id]?1:0)-(unlocked[a.id]?1:0));
+  grid.innerHTML=sortedAchievements.map(a=>{
     const done=!!unlocked[a.id];
     return `
       <div class="ach-card ${done?'ach-done':''}">
@@ -3966,7 +4024,8 @@ async function renderAchievementsModalReadOnly(username){
   const unlocked=progress.unlockedAchievements||{};
   const grid=document.getElementById('achGrid');
   if(!grid) return;
-  grid.innerHTML=ACHIEVEMENTS.map(a=>{
+  const sortedAchievements=ACHIEVEMENTS.slice().sort((a,b)=> (unlocked[b.id]?1:0)-(unlocked[a.id]?1:0));
+  grid.innerHTML=sortedAchievements.map(a=>{
     const done=!!unlocked[a.id];
     return `
       <div class="ach-card ${done?'ach-done':''}">
@@ -4409,8 +4468,12 @@ function initSearchPanel(){
       if(myToken!==requestToken) return;
       const titleMatches=searchInIndex(q, category);
       if(!titleMatches.length){ results.innerHTML=`<div class="search-empty-note">Nic jsme nenašli pro "${esc(q)}".</div>`; return; }
-      results.innerHTML=titleMatches.slice(0,20).map(it=>{
-        const badge=scoreBadge(it.score);
+      const topMatches=titleMatches.slice(0,20);
+      await ensureItemScoreAggregates(topMatches.map(it=>it.id));
+      if(myToken!==requestToken) return; // a newer search or category switch superseded this one, again
+      results.innerHTML=topMatches.map(it=>{
+        const liveScoreVal=computeLiveScore(it.score, ITEM_SCORE_AGGREGATES[it.id]);
+        const badge=scoreBadge(liveScoreVal);
         return `<a class="search-result-row" href="#/title/${it.type}/${it.id}" data-type="${it.type}" data-id="${esc(it.id)}" data-year="${it.year}"><span class="srr-title">${esc(it.title)}</span><span class="srr-meta">${typeLabel(it.type)} · ${it.year}</span><span class="srr-score ${badge.cls}">${badge.text}</span></a>`;
       }).join('');
       results.querySelectorAll('.search-result-row[data-type]').forEach(row=>{
