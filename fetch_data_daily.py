@@ -1890,6 +1890,52 @@ def compute_search_index(movies_prefix, movies_czsk_prefix, shows_prefix, games_
     return index
 
 
+def compute_people_index(movies_prefix, movies_czsk_prefix, shows_prefix, games_prefix):
+    """Builds a lightweight index of every person (actor/director/writer/composer, plus
+    game developers/studios) across the ENTIRE catalog — name, a photo if available, and
+    which years and title-types they're associated with. This is what the "Osobnosti"
+    search category searches against, and what a person's filmography page (#/person/...)
+    consults to know exactly which buckets to load — instead of either needing the full
+    catalog loaded just to search for a name, or just to show one person's work."""
+    movies_all = load_all_records_from_disk(movies_prefix) + load_all_records_from_disk(movies_czsk_prefix)
+    shows_all = load_all_records_from_disk(shows_prefix)
+    games_all = load_all_records_from_disk(games_prefix)
+
+    people = {}  # name -> {"image": str|None, "years": set, "types": set}
+
+    def add_person(name, image, year, type_):
+        if not name or year is None:
+            return
+        entry = people.setdefault(name, {"image": None, "years": set(), "types": set()})
+        if image and not entry["image"]:
+            entry["image"] = image
+        entry["years"].add(year)
+        entry["types"].add(type_)
+
+    for records, type_ in ((movies_all, "movie"), (shows_all, "show")):
+        for r in records:
+            year = r.get("year")
+            for role_field in ("director", "writer", "composer"):
+                person = r.get(role_field)
+                if person and person.get("name"):
+                    add_person(person["name"], person.get("image"), year, type_)
+            for actor in (r.get("actors") or []):
+                if actor.get("name"):
+                    add_person(actor["name"], actor.get("image"), year, type_)
+
+    for r in games_all:
+        developer = r.get("developer")
+        if developer and developer != "Neznámý vývojář":
+            add_person(developer, None, r.get("year"), "game")
+
+    index = [
+        {"n": name, "img": data["image"], "y": sorted(data["years"]), "t": sorted(data["types"])}
+        for name, data in people.items()
+    ]
+    save_json("people_index.json", index)
+    return index
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--tmdb-key", default=None, help="required for a normal fetch run and --recheck-deaths-only; not needed for --fix-czsk-country-labels-only or --backfill-show-scores-only")
@@ -2164,6 +2210,9 @@ def main():
 
     search_index = compute_search_index(args.movies_prefix, args.movies_czsk_prefix, args.shows_prefix, args.games_prefix)
     print(f"search_index.json written: {len(search_index['movies'])} movies, {len(search_index['shows'])} shows, {len(search_index['games'])} games", file=sys.stderr)
+
+    people_index = compute_people_index(args.movies_prefix, args.movies_czsk_prefix, args.shows_prefix, args.games_prefix)
+    print(f"people_index.json written: {len(people_index)} people", file=sys.stderr)
 
 
 if __name__ == "__main__":

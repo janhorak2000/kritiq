@@ -1291,27 +1291,73 @@ async function loadReviewsForItem(item){
     USER_REVIEWS[item.id]=USER_REVIEWS[item.id]||[];
   }
 }
-async function getUserReviewsAsync(username){
+function healReviewFields(doc){
+  // Resolves one review's item (via the already-loaded full catalog) and returns the
+  // fields to write back — real values if found, or the sentinel itemYear:-1 if the item
+  // genuinely can't be found (removed, or left over from an earlier id scheme). Doesn't
+  // perform the write itself — callers decide when/whether to.
+  const d=doc.data();
+  const item=findItem(d.itemType, d.itemId);
+  return item
+    ? {itemYear:item.year, itemTitle:item.title, itemPoster:item.poster||null}
+    : {itemYear:-1};
+}
+function healUndatedReviews(undatedDocs){
+  // Fire-and-forget: writes the healed fields back for each review. Only meaningful for
+  // the current user's own reviews — Firestore rules restrict review updates to their
+  // owner, so this silently (harmlessly) fails otherwise.
+  undatedDocs.forEach(doc=>{
+    const fields=healReviewFields(doc);
+    db.collection('reviews').doc(doc.id).update(fields).catch(e=>console.error('Nepodařilo se doplnit chybějící údaje u recenze', doc.id, e));
+  });
+}
+async function getUserReviewsAsync(username, opts){
+  opts=opts||{};
   const out=[];
   try{
     const snap=await db.collection('reviews').where('author','==',username).get();
     const docs=snap.docs;
 
-    // Use denormalized itemYear/itemType (stored on the review at submit time) to load
-    // ONLY the specific buckets this user's reviewed items actually live in, instead of
-    // needing the full catalog just to show one person's profile. Reviews saved before
-    // this field existed can't be precisely targeted, so — only if any such review
-    // exists — this falls back to a one-time full load. Self-healing (below) means this
+    if(opts.lightweight){
+      // Display-only path (profile page, review lists, aggregates) — every field these
+      // need (title, id for linking, the review's own score) is already denormalized
+      // directly on the review, so this builds a minimal pseudo-item straight from that,
+      // without loading ANY catalog bucket at all. Reviews not yet healed (rare — saved
+      // before denormalization existed, and not yet resolved by any other visit) are
+      // simply skipped here rather than blocking this fast path; a background, non-
+      // blocking heal is kicked off for them so they resolve in time for a later visit,
+      // without slowing down this one.
+      const undatedDocs=[];
+      docs.forEach(doc=>{
+        const d=doc.data();
+        if(d.itemYear===undefined || d.itemYear===null){ undatedDocs.push(doc); return; }
+        if(d.itemYear===-1) return; // confirmed unresolvable — correctly excluded, same as the full path
+        const item={id:d.itemId, type:d.itemType, title:d.itemTitle, year:d.itemYear, poster:d.itemPoster};
+        const review=Object.assign(reviewDocToLocal(doc), {baseLikes:0, baseDislikes:0, baseFunny:0, isUser:true});
+        out.push({review, item, type:d.itemType});
+      });
+      if(undatedDocs.length && username===CURRENT_USER){
+        ensureFullCatalogLoaded().then(()=> healUndatedReviews(undatedDocs)).catch(e=>console.error('Nepodařilo se doplnit chybějící recenze na pozadí', e));
+      }
+      return out.reverse();
+    }
+
+    // Full path (achievements/quests) — these need genuine item data (genre, year range
+    // checks, cast, etc.), not just title/id, so this loads the real buckets. Use
+    // denormalized itemYear/itemType to load ONLY the specific buckets this user's
+    // reviewed items actually live in, instead of needing the full catalog. Reviews
+    // saved before this field existed can't be precisely targeted, so — only if any such
+    // review exists — this falls back to a one-time full load. Self-healing means this
     // fallback is only ever needed once per review, not every single time — including for
-    // reviews whose item can no longer be found at all (e.g. removed, or left over from an
-    // earlier id scheme), which get marked with a sentinel value rather than being left
-    // permanently "undated" and re-triggering this fallback on every future visit forever.
+    // reviews whose item can no longer be found at all, which get marked with a sentinel
+    // value rather than being left permanently "undated" and re-triggering this fallback
+    // on every future visit forever.
     const bucketsNeeded=new Map(); // itemType -> Set of years
     const undatedDocs=[];
     docs.forEach(doc=>{
       const d=doc.data();
       if(d.itemYear===undefined || d.itemYear===null){ undatedDocs.push(doc); return; }
-      if(d.itemYear===-1) return; // sentinel: item was confirmed unresolvable on an earlier visit — correctly excluded below too, same as any other review whose item can't be found
+      if(d.itemYear===-1) return;
       if(!bucketsNeeded.has(d.itemType)) bucketsNeeded.set(d.itemType, new Set());
       bucketsNeeded.get(d.itemType).add(d.itemYear);
     });
@@ -1334,23 +1380,7 @@ async function getUserReviewsAsync(username){
       out.push({review, item, type:d.itemType});
     });
 
-    // Self-heal: now that these older reviews have been resolved via the full catalog,
-    // write the missing fields back so future loads never need this fallback again for
-    // them. Only attempted for the current user's own reviews — Firestore rules restrict
-    // review updates to their owner, so this would silently fail (harmlessly) otherwise.
-    // Reviews whose item still can't be found even now get the sentinel itemYear: -1
-    // instead — genuinely unresolvable, but still marked "processed" so this fallback
-    // doesn't keep firing for them forever.
-    if(undatedDocs.length && username===CURRENT_USER){
-      undatedDocs.forEach(doc=>{
-        const d=doc.data();
-        const item=findItem(d.itemType, d.itemId);
-        const fields=item
-          ? {itemYear:item.year, itemTitle:item.title, itemPoster:item.poster||null}
-          : {itemYear:-1};
-        db.collection('reviews').doc(doc.id).update(fields).catch(e=>console.error('Nepodařilo se doplnit chybějící údaje u recenze', doc.id, e));
-      });
-    }
+    if(undatedDocs.length && username===CURRENT_USER) healUndatedReviews(undatedDocs);
   }catch(e){
     console.error('Nepodařilo se načíst recenze uživatele', username, e);
   }
@@ -2149,7 +2179,7 @@ function openAllReviewsModal(username){
 async function renderAllReviewsModal(username){
   const card=document.getElementById('reviewModalCard');
   card.className='modal-card';
-  const entries=await getUserReviewsAsync(username);
+  const entries=await getUserReviewsAsync(username, {lightweight:true});
   const page=allReviewsModalPage[username]||1;
   const shown=entries.slice(0, page*ALL_REVIEWS_PAGE_SIZE);
   const html=shown.length
@@ -2969,7 +2999,7 @@ function renderPerson(name){
 let userProfileCurrent=null;
 async function renderUserProfile(username){
   userProfileCurrent=username;
-  const entries=await getUserReviewsAsync(username);
+  const entries=await getUserReviewsAsync(username, {lightweight:true});
   const agg=userAggregate(entries);
   const cls=scoreClass(agg.avg);
   const isFav=isFavoritedByMe(username);
@@ -3008,7 +3038,7 @@ async function renderUserProfile(username){
   `;
 }
 async function refreshUserReviews(username){
-  const entries=await getUserReviewsAsync(username);
+  const entries=await getUserReviewsAsync(username, {lightweight:true});
   const body=userReviewsPreviewHTML(username, entries);
   document.getElementById('userReviewsList').innerHTML=body.html;
   bindShowAllReviews(username);
@@ -3046,28 +3076,28 @@ function normalizeSearchText(s){
   // whether the visitor types accents or not.
   return (s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 }
-let PEOPLE_INDEX=null;
-function buildPeopleIndex(){
-  const map=new Map();
-  function addPerson(name, image){
-    if(!name) return;
-    if(!map.has(name)) map.set(name, {name, image:image||null});
-    else if(image && !map.get(name).image) map.get(name).image=image;
-  }
-  ['movie','show'].forEach(type=>{
-    DB[type].forEach(it=>{
-      if(it.director && it.director.name) addPerson(it.director.name, it.director.image);
-      if(it.writer && it.writer.name) addPerson(it.writer.name, it.writer.image);
-      if(it.composer && it.composer.name) addPerson(it.composer.name, it.composer.image);
-      (it.actors||[]).forEach(a=>addPerson(a.name, a.image));
-    });
-  });
-  DB.game.forEach(it=>{ if(it.developer) addPerson(it.developer, null); });
-  PEOPLE_INDEX=[...map.values()];
-  return PEOPLE_INDEX;
+let PEOPLE_INDEX=null; // [{name, image, years:[...], types:[...]}] — loaded from the tiny people_index.json, never requires the full catalog
+let PEOPLE_INDEX_PROMISE=null;
+async function loadPeopleIndex(){
+  if(PEOPLE_INDEX) return PEOPLE_INDEX;
+  if(PEOPLE_INDEX_PROMISE) return PEOPLE_INDEX_PROMISE;
+  PEOPLE_INDEX_PROMISE=(async()=>{
+    try{
+      const res=await fetch('./people_index.json', {cache:'no-store'});
+      if(!res.ok){ PEOPLE_INDEX=[]; return PEOPLE_INDEX; }
+      const data=await res.json();
+      PEOPLE_INDEX=data.map(p=>({name:p.n, image:p.img, years:p.y||[], types:p.t||[]}));
+      return PEOPLE_INDEX;
+    }catch(e){
+      console.error('Nepodařilo se načíst index osobností', e);
+      PEOPLE_INDEX=[];
+      return PEOPLE_INDEX;
+    }
+  })();
+  return PEOPLE_INDEX_PROMISE;
 }
-function getPeopleIndex(){
-  return PEOPLE_INDEX || buildPeopleIndex();
+function findPersonInIndex(name){
+  return (PEOPLE_INDEX||[]).find(p=>p.name===name);
 }
 function searchTitles(query){
   const nq=normalizeSearchText(query);
@@ -3075,15 +3105,17 @@ function searchTitles(query){
   return [...DB.movie,...DB.show,...DB.game].filter(it=>normalizeSearchText(it.title).includes(nq));
 }
 function searchPeople(query){
+  if(!PEOPLE_INDEX) return [];
   const nq=normalizeSearchText(query);
   if(!nq) return [];
-  return getPeopleIndex().filter(p=>normalizeSearchText(p.name).includes(nq));
+  return PEOPLE_INDEX.filter(p=>normalizeSearchText(p.name).includes(nq));
 }
 async function ensureCategoryDataLoaded(category){
-  // Loads only what THIS specific search category needs — never all three at once, unlike
-  // the old behavior. "person" is the one genuine exception: people aren't segregated by
-  // category, so finding them means having all three catalogs available regardless.
-  if(category==='person') await ensureBucketsLoaded(['movies','movies_czsk','shows','games'], -Infinity, Infinity);
+  // Loads only what THIS specific search category needs. "person" now uses the
+  // lightweight people_index.json instead of needing all three full catalogs loaded —
+  // finding a person by name never requires their actual filmography data, just their
+  // name and a photo.
+  if(category==='person') await loadPeopleIndex();
   else if(category==='movie') await ensureBucketsLoaded(['movies','movies_czsk'], -Infinity, Infinity);
   else if(category==='show') await ensureBucketsLoaded(['shows'], -Infinity, Infinity);
   else if(category==='game') await ensureBucketsLoaded(['games'], -Infinity, Infinity);
@@ -3133,7 +3165,7 @@ async function route(){
 
   const isHomepage=parts.length===0;
   const isListPage=['movies','shows','games'].includes(parts[0]);
-  const needsFullCatalogUpfront=['person','search'].includes(parts[0]);
+  const needsFullCatalogUpfront=['search'].includes(parts[0]);
   const isTitlePage=parts[0]==='title' && parts[1] && parts[2];
 
   if(!isHomepage && !RECENT_CATALOG_READY){
@@ -3152,8 +3184,9 @@ async function route(){
     if(needsFetch) app.innerHTML=skeletonListHTML();
     await ensureBucketsLoaded(prefixes, st.y0, st.y1, false);
   }else if(needsFullCatalogUpfront && !FULL_CATALOG_READY){
-    // search/person/profile pages genuinely need to look across every item — no way to
-    // know in advance which bucket holds what they're looking for
+    // search genuinely needs to look across every item — no way to know in advance which
+    // bucket holds what it's looking for. (This route is currently unreachable dead code —
+    // the live search panel bypasses this entirely — but kept correct regardless.)
     app.innerHTML=SKELETON_HOME_HTML;
     await ensureFullCatalogLoaded();
   }else if(isTitlePage && !findItem(parts[1],parts[2]) && !FULL_CATALOG_READY){
@@ -3184,7 +3217,10 @@ async function route(){
       openReviewModalById(parts[2], rid);
     }
   }else if(parts[0]==='person' && parts[1]){
-    app.innerHTML=renderPerson(decodeURIComponent(parts[1]));
+    const personName=decodeURIComponent(parts[1]);
+    app.innerHTML=SKELETON_HOME_HTML;
+    await ensureBucketsForPerson(personName);
+    app.innerHTML=renderPerson(personName);
   }else if(parts[0]==='user' && parts[1]){
     app.innerHTML=await renderUserProfile(decodeURIComponent(parts[1])); attachUserProfileEvents(decodeURIComponent(parts[1]));
   }else if(parts[0]==='search' && parts[1]){
@@ -4295,7 +4331,7 @@ async function favoritesForUser(username){
   }catch(e){
     console.error('Nepodařilo se načíst oblíbené uživatele profilu', username, e);
   }
-  const enriched = await Promise.all(list.map(async (u)=>({username:u, agg:userAggregate(await getUserReviewsAsync(u))})));
+  const enriched = await Promise.all(list.map(async (u)=>({username:u, agg:userAggregate(await getUserReviewsAsync(u, {lightweight:true}))})));
   return enriched.sort((a,b)=>(b.agg.likes+b.agg.funny)-(a.agg.likes+a.agg.funny));
 }
 async function renderFavoritesModal(){
@@ -4336,7 +4372,7 @@ function openUserModal(username){
 async function renderUserModal(){
   const username=userModalCurrent;
   const card=document.getElementById('reviewModalCard');
-  const entries=await getUserReviewsAsync(username);
+  const entries=await getUserReviewsAsync(username, {lightweight:true});
   const agg=userAggregate(entries);
   const cls=scoreClass(agg.avg);
   const isFav=isFavoritedByMe(username);
@@ -4420,6 +4456,17 @@ function fallbackCopy(text, cb){
 /* ======================= SEARCH PANEL ======================= */
 function bucketPrefixesForType(type){
   return type==='movie' ? ['movies','movies_czsk'] : type==='show' ? ['shows'] : ['games'];
+}
+async function ensureBucketsForPerson(name){
+  await loadPeopleIndex();
+  const person=findPersonInIndex(name);
+  if(!person) return;
+  const loads=[];
+  person.types.forEach(type=>{
+    const prefixes=bucketPrefixesForType(type);
+    person.years.forEach(year=> loads.push(ensureBucketsLoaded(prefixes, year, year)));
+  });
+  await Promise.all(loads);
 }
 async function preloadAndNavigateToTitle(type, id, year, e){
   if(e) e.preventDefault();
