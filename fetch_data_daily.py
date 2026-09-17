@@ -1914,6 +1914,16 @@ def shard_for_name(name):
     return first if "a" <= first <= "z" else "other"
 
 
+def strip_profile_img_base(url):
+    """Every person's photo uses the same constant TMDB_PROFILE_IMG_BASE prefix — storing
+    that prefix on every single entry (potentially tens of thousands of people) wastes
+    real bytes for zero benefit. The website re-adds this exact same prefix, so nothing
+    is lost."""
+    if url and url.startswith(TMDB_PROFILE_IMG_BASE):
+        return url[len(TMDB_PROFILE_IMG_BASE):]
+    return url
+
+
 def compute_people_index(movies_prefix, movies_czsk_prefix, shows_prefix, games_prefix):
     """Builds the people data used by search and filmography pages, in two tiers:
 
@@ -1974,7 +1984,8 @@ def compute_people_index(movies_prefix, movies_czsk_prefix, shows_prefix, games_
     search_index = []
     shards = {}  # shard letter -> {name: {img, birthday, deathday, age, works:[...]}}
     for name, data in people.items():
-        search_index.append({"n": name, "img": data["image"]})
+        stripped_img = strip_profile_img_base(data["image"])
+        search_index.append({"n": name, "img": stripped_img})
         works = [
             {"id": w["id"], "type": w["type"], "title": w["title"], "year": w["year"],
              "score": w["score"], "poster": w["poster"], "roles": sorted(w["roles"])}
@@ -1983,7 +1994,7 @@ def compute_people_index(movies_prefix, movies_czsk_prefix, shows_prefix, games_
         works.sort(key=lambda w: w["year"] or 0, reverse=True)
         shard = shard_for_name(name)
         shards.setdefault(shard, {})[name] = {
-            "img": data["image"], "birthday": data["birthday"], "deathday": data["deathday"],
+            "img": stripped_img, "birthday": data["birthday"], "deathday": data["deathday"],
             "age": data["age"], "works": works,
         }
 

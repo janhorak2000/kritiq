@@ -2981,7 +2981,7 @@ function renderPerson(name, personData){
     return items.map(it=>{
       const sc = personData ? computeLiveScore(it.score, ITEM_SCORE_AGGREGATES[it.id]) : liveScore(it);
       const badge=scoreBadge(sc); const cls=badge.cls;
-      return `<a class="filmo-item" href="#/title/${it.type}/${it.id}" style="background:linear-gradient(90deg, color-mix(in srgb, var(--${cls==='s-black'?'s-black-bg':cls==='s-grey'?'s-grey-bg':cls==='s-blue'?'s-blue-bg':cls==='s-purple'?'s-purple-bg':'s-gold-bg'}) 16%, var(--bg-1)), var(--bg-1));">
+      return `<a class="filmo-item" href="#/title/${it.type}/${it.id}" data-type="${it.type}" data-id="${esc(it.id)}" data-year="${it.year}" style="background:linear-gradient(90deg, color-mix(in srgb, var(--${cls==='s-black'?'s-black-bg':cls==='s-grey'?'s-grey-bg':cls==='s-blue'?'s-blue-bg':cls==='s-purple'?'s-purple-bg':'s-gold-bg'}) 16%, var(--bg-1)), var(--bg-1));">
         <span class="fi-title">${esc(it.title)}</span>
         <span class="fi-meta">${typeLabel(it.type)} · ${it.year}</span>
         <span class="fi-score ${cls}">${badge.text}</span>
@@ -3102,6 +3102,10 @@ function normalizeSearchText(s){
   // whether the visitor types accents or not.
   return (s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 }
+const TMDB_PROFILE_IMG_BASE='https://image.tmdb.org/t/p/w300'; // matches the fetch script exactly — person photo paths are stored stripped of this constant prefix to save space, re-added here
+function expandProfileImg(path){
+  return path ? TMDB_PROFILE_IMG_BASE+path : path;
+}
 let PEOPLE_INDEX=null; // [{name, image}] — loaded from the tiny people_search_index.json, just enough to search and show a result
 let PEOPLE_INDEX_PROMISE=null;
 async function loadPeopleIndex(){
@@ -3112,7 +3116,7 @@ async function loadPeopleIndex(){
       const res=await fetch('./people_search_index.json', {cache:'no-store'});
       if(!res.ok){ PEOPLE_INDEX=[]; return PEOPLE_INDEX; }
       const data=await res.json();
-      PEOPLE_INDEX=data.map(p=>({name:p.n, image:p.img}));
+      PEOPLE_INDEX=data.map(p=>({name:p.n, image:expandProfileImg(p.img)}));
       return PEOPLE_INDEX;
     }catch(e){
       console.error('Nepodařilo se načíst index osobností', e);
@@ -3138,7 +3142,9 @@ async function loadPersonShard(name){
     PERSON_SHARD_PROMISES[shard]=(async()=>{
       try{
         const res=await fetch(`./people/${shard}.json`, {cache:'no-store'});
-        PERSON_SHARDS[shard]=res.ok ? await res.json() : {};
+        const raw=res.ok ? await res.json() : {};
+        Object.values(raw).forEach(p=>{ p.img=expandProfileImg(p.img); });
+        PERSON_SHARDS[shard]=raw;
       }catch(e){
         console.error('Nepodařilo se načíst data osobnosti', e);
         PERSON_SHARDS[shard]={};
@@ -3240,11 +3246,18 @@ async function route(){
     await ensureFullCatalogLoaded();
   }else if(isTitlePage && !findItem(parts[1],parts[2]) && !FULL_CATALOG_READY){
     // this specific item isn't in what's currently loaded (e.g. a direct link, bookmark,
-    // or comment banner click for an older title) — load just that category's buckets to
-    // find it, not the entire catalog. Items already loaded (recent titles, or anything
-    // a search-result click already preloaded) skip this entirely.
+    // or comment banner click for an older title) — look up which year it's actually
+    // from via the tiny search index, then load just that one bucket. Only if it's
+    // genuinely not found there either (very rare) does this fall back to loading every
+    // bucket in the category, as a last resort.
     app.innerHTML=SKELETON_HOME_HTML;
-    await ensureBucketsLoaded(bucketPrefixesForType(parts[1]), -Infinity, Infinity);
+    const searchIdx=await loadSearchIndex();
+    const knownEntry=searchIdx && searchIdx[parts[1]] ? searchIdx[parts[1]].find(it=>it.id===parts[2]) : null;
+    if(knownEntry){
+      await ensureBucketsLoaded(bucketPrefixesForType(parts[1]), knownEntry.year, knownEntry.year);
+    }else{
+      await ensureBucketsLoaded(bucketPrefixesForType(parts[1]), -Infinity, Infinity);
+    }
   }
 
   if(parts.length===0){
@@ -3272,6 +3285,7 @@ async function route(){
     const personData=shard[personName];
     if(personData) await ensureItemScoreAggregates(personData.works.map(w=>w.id));
     app.innerHTML=renderPerson(personName, personData);
+    bindFilmoItemNavigation();
   }else if(parts[0]==='user' && parts[1]){
     app.innerHTML=await renderUserProfile(decodeURIComponent(parts[1])); attachUserProfileEvents(decodeURIComponent(parts[1]));
   }else if(parts[0]==='search' && parts[1]){
@@ -4507,6 +4521,11 @@ function fallbackCopy(text, cb){
 /* ======================= SEARCH PANEL ======================= */
 function bucketPrefixesForType(type){
   return type==='movie' ? ['movies','movies_czsk'] : type==='show' ? ['shows'] : ['games'];
+}
+function bindFilmoItemNavigation(){
+  document.querySelectorAll('.filmo-item[data-type]').forEach(el=>{
+    el.addEventListener('click', (e)=> preloadAndNavigateToTitle(el.dataset.type, el.dataset.id, +el.dataset.year, e));
+  });
 }
 async function preloadAndNavigateToTitle(type, id, year, e){
   if(e) e.preventDefault();
