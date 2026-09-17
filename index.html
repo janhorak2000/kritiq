@@ -1183,14 +1183,14 @@ let DB={movie:[],show:[],game:[]};
    never has to check whether it's dealing with the demo dataset or real fetched data. */
 function normalizeActors(list){
   return (list||[]).map(a=>{
-    if(typeof a==='string') return {name:a, birthday:null, deathday:null, age:null, image:''};
-    return {name:a.name||'', birthday:a.birthday||null, deathday:a.deathday||null, age:(a.age!==undefined?a.age:null), image:a.image||''};
+    if(typeof a==='string') return {id:null, name:a, birthday:null, deathday:null, age:null, image:''};
+    return {id:(a.id!==undefined?a.id:null), name:a.name||'', birthday:a.birthday||null, deathday:a.deathday||null, age:(a.age!==undefined?a.age:null), image:a.image||''};
   });
 }
 function normalizeCrew(person){
-  if(!person) return {name:'', image:''};
-  if(typeof person==='string') return {name:person, image:''};
-  return {name:person.name||'', image:person.image||''};
+  if(!person) return {id:null, name:'', image:''};
+  if(typeof person==='string') return {id:null, name:person, image:''};
+  return {id:(person.id!==undefined?person.id:null), name:person.name||'', image:person.image||''};
 }
 function stableId(prefix, r, index){
   // Position-based ids (prefix+index) silently break the moment a re-fetch changes
@@ -1291,6 +1291,36 @@ async function loadReviewsForItem(item){
     USER_REVIEWS[item.id]=USER_REVIEWS[item.id]||[];
   }
 }
+function denormalizedItemFields(item){
+  // Everything a review needs to carry about its item so that NOTHING downstream (the
+  // profile page, achievements, quests) ever needs the actual catalog bucket loaded.
+  // Fields are omitted rather than written as empty/null when not applicable to this
+  // item's type, since Firestore rejects undefined values outright.
+  const fields={itemYear:item.year, itemTitle:item.title, itemPoster:item.poster||null};
+  if(item.genre) fields.itemGenre=item.genre;
+  if(item.type==='game'){
+    if(item.developer) fields.itemDeveloper=item.developer;
+  }else{
+    if(item.actors && item.actors.length) fields.itemActorNames=item.actors.map(a=>a.name);
+    if(item.director && item.director.name) fields.itemDirectorName=item.director.name;
+    if(item.writer && item.writer.name) fields.itemWriterName=item.writer.name;
+  }
+  return fields;
+}
+function pseudoItemFromReviewDoc(d){
+  // Reconstructs enough of an "item" purely from what's denormalized on the review to
+  // satisfy every achievement/quest check that exists (title, year, genre, developer,
+  // and just the NAMES of actors/director/writer — never their photos or bios, which
+  // achievements never look at) — without loading any catalog bucket at all.
+  return {
+    id:d.itemId, type:d.itemType, title:d.itemTitle, year:d.itemYear, poster:d.itemPoster,
+    genre:d.itemGenre||'',
+    developer:d.itemDeveloper||'',
+    actors:(d.itemActorNames||[]).map(name=>({name})),
+    director:{name:d.itemDirectorName||''},
+    writer:{name:d.itemWriterName||''},
+  };
+}
 function healReviewFields(doc){
   // Resolves one review's item (via the already-loaded full catalog) and returns the
   // fields to write back — real values if found, or the sentinel itemYear:-1 if the item
@@ -1298,9 +1328,7 @@ function healReviewFields(doc){
   // perform the write itself — callers decide when/whether to.
   const d=doc.data();
   const item=findItem(d.itemType, d.itemId);
-  return item
-    ? {itemYear:item.year, itemTitle:item.title, itemPoster:item.poster||null}
-    : {itemYear:-1};
+  return item ? denormalizedItemFields(item) : {itemYear:-1};
 }
 function healUndatedReviews(undatedDocs){
   // Fire-and-forget: writes the healed fields back for each review. Only meaningful for
@@ -1311,76 +1339,31 @@ function healUndatedReviews(undatedDocs){
     db.collection('reviews').doc(doc.id).update(fields).catch(e=>console.error('Nepodařilo se doplnit chybějící údaje u recenze', doc.id, e));
   });
 }
-async function getUserReviewsAsync(username, opts){
-  opts=opts||{};
+async function getUserReviewsAsync(username){
+  // Every field ANY consumer of this needs — the profile page, achievements, quests — is
+  // now denormalized directly on the review (title/year/poster/genre/developer/actor
+  // names/director/writer), so this never needs to load a single catalog bucket for the
+  // common case. Reviews not yet healed (rare — saved before this denormalization
+  // existed, or missing the newer fields added since, and not yet resolved by any other
+  // visit) are simply skipped here rather than blocking this fast path; a background,
+  // non-blocking heal is kicked off for them so they resolve in time for a later visit.
   const out=[];
   try{
     const snap=await db.collection('reviews').where('author','==',username).get();
     const docs=snap.docs;
 
-    if(opts.lightweight){
-      // Display-only path (profile page, review lists, aggregates) — every field these
-      // need (title, id for linking, the review's own score) is already denormalized
-      // directly on the review, so this builds a minimal pseudo-item straight from that,
-      // without loading ANY catalog bucket at all. Reviews not yet healed (rare — saved
-      // before denormalization existed, and not yet resolved by any other visit) are
-      // simply skipped here rather than blocking this fast path; a background, non-
-      // blocking heal is kicked off for them so they resolve in time for a later visit,
-      // without slowing down this one.
-      const undatedDocs=[];
-      docs.forEach(doc=>{
-        const d=doc.data();
-        if(d.itemYear===undefined || d.itemYear===null){ undatedDocs.push(doc); return; }
-        if(d.itemYear===-1) return; // confirmed unresolvable — correctly excluded, same as the full path
-        const item={id:d.itemId, type:d.itemType, title:d.itemTitle, year:d.itemYear, poster:d.itemPoster};
-        const review=Object.assign(reviewDocToLocal(doc), {baseLikes:0, baseDislikes:0, baseFunny:0, isUser:true});
-        out.push({review, item, type:d.itemType});
-      });
-      if(undatedDocs.length && username===CURRENT_USER){
-        ensureFullCatalogLoaded().then(()=> healUndatedReviews(undatedDocs)).catch(e=>console.error('Nepodařilo se doplnit chybějící recenze na pozadí', e));
-      }
-      return out.reverse();
-    }
-
-    // Full path (achievements/quests) — these need genuine item data (genre, year range
-    // checks, cast, etc.), not just title/id, so this loads the real buckets. Use
-    // denormalized itemYear/itemType to load ONLY the specific buckets this user's
-    // reviewed items actually live in, instead of needing the full catalog. Reviews
-    // saved before this field existed can't be precisely targeted, so — only if any such
-    // review exists — this falls back to a one-time full load. Self-healing means this
-    // fallback is only ever needed once per review, not every single time — including for
-    // reviews whose item can no longer be found at all, which get marked with a sentinel
-    // value rather than being left permanently "undated" and re-triggering this fallback
-    // on every future visit forever.
-    const bucketsNeeded=new Map(); // itemType -> Set of years
     const undatedDocs=[];
     docs.forEach(doc=>{
       const d=doc.data();
       if(d.itemYear===undefined || d.itemYear===null){ undatedDocs.push(doc); return; }
-      if(d.itemYear===-1) return;
-      if(!bucketsNeeded.has(d.itemType)) bucketsNeeded.set(d.itemType, new Set());
-      bucketsNeeded.get(d.itemType).add(d.itemYear);
-    });
-
-    if(undatedDocs.length){
-      await ensureFullCatalogLoaded();
-    }else{
-      const loads=[];
-      bucketsNeeded.forEach((years, type)=>{
-        years.forEach(year=> loads.push(ensureBucketsLoaded(bucketPrefixesForType(type), year, year)));
-      });
-      await Promise.all(loads);
-    }
-
-    docs.forEach(doc=>{
-      const d=doc.data();
-      const item=findItem(d.itemType, d.itemId);
-      if(!item) return;
+      if(d.itemYear===-1) return; // confirmed unresolvable — correctly excluded
+      const item=pseudoItemFromReviewDoc(d);
       const review=Object.assign(reviewDocToLocal(doc), {baseLikes:0, baseDislikes:0, baseFunny:0, isUser:true});
       out.push({review, item, type:d.itemType});
     });
-
-    if(undatedDocs.length && username===CURRENT_USER) healUndatedReviews(undatedDocs);
+    if(undatedDocs.length && username===CURRENT_USER){
+      ensureFullCatalogLoaded().then(()=> healUndatedReviews(undatedDocs)).catch(e=>console.error('Nepodařilo se doplnit chybějící recenze na pozadí', e));
+    }
   }catch(e){
     console.error('Nepodařilo se načíst recenze uživatele', username, e);
   }
@@ -2179,7 +2162,7 @@ function openAllReviewsModal(username){
 async function renderAllReviewsModal(username){
   const card=document.getElementById('reviewModalCard');
   card.className='modal-card';
-  const entries=await getUserReviewsAsync(username, {lightweight:true});
+  const entries=await getUserReviewsAsync(username);
   const page=allReviewsModalPage[username]||1;
   const shown=entries.slice(0, page*ALL_REVIEWS_PAGE_SIZE);
   const html=shown.length
@@ -2717,7 +2700,7 @@ function renderDetail(type,id){
     const platformsRow = (item.platforms && item.platforms.length)
       ? `<div class="credit-row"><span class="ck-label">Platformy</span><div class="ck-values">${esc(item.platforms.join(', '))}</div></div>`
       : '';
-    creditsHTML=`<div class="credit-row"><span class="ck-label">Studio</span><div class="ck-values"><a class="person-link" href="#/person/${slug(item.developer)}">${esc(item.developer)}</a></div></div>${platformsRow}`;
+    creditsHTML=`<div class="credit-row"><span class="ck-label">Studio</span><div class="ck-values"><a class="person-link" href="#/person/${slug(personKeyFor(null, item.developer))}">${esc(item.developer)}</a></div></div>${platformsRow}`;
   }else{
     const countryPart = item.country ? ` <span class="sep">·</span> ${esc(item.country)}` : '';
     const boxPart = (type==='movie' && item.box!==null && item.box!==undefined) ? ` <span class="sep">·</span> tržby ${fmtBox(item.box, item.boxCurrency)}` : '';
@@ -2731,13 +2714,13 @@ function renderDetail(type,id){
     }
     metaLine=`${fmtDate(item.date, item.yearOnly)}${countryPart} <span class="sep">·</span> ${esc(item.genre)}${runtimePart} <span class="sep">·</span> ${typeLabel(type)}${boxPart} ${top10ButtonHTML(item)}`;
     creditsHTML=`
-      <div class="credit-row"><span class="ck-label">Režie</span><div class="ck-values"><a class="person-link" href="#/person/${slug(item.director.name)}">${esc(item.director.name)}</a></div></div>
-      <div class="credit-row"><span class="ck-label">Scénář</span><div class="ck-values"><a class="person-link" href="#/person/${slug(item.writer.name)}">${esc(item.writer.name)}</a></div></div>
-      ${item.composer.name ? `<div class="credit-row"><span class="ck-label">Hudba</span><div class="ck-values"><a class="person-link" href="#/person/${slug(item.composer.name)}">${esc(item.composer.name)}</a></div></div>` : ''}
+      <div class="credit-row"><span class="ck-label">Režie</span><div class="ck-values"><a class="person-link" href="#/person/${slug(personKeyFor(item.director.id, item.director.name))}">${esc(item.director.name)}</a></div></div>
+      <div class="credit-row"><span class="ck-label">Scénář</span><div class="ck-values"><a class="person-link" href="#/person/${slug(personKeyFor(item.writer.id, item.writer.name))}">${esc(item.writer.name)}</a></div></div>
+      ${item.composer.name ? `<div class="credit-row"><span class="ck-label">Hudba</span><div class="ck-values"><a class="person-link" href="#/person/${slug(personKeyFor(item.composer.id, item.composer.name))}">${esc(item.composer.name)}</a></div></div>` : ''}
     `;
     const castVisible=item.actors.slice(0,10);
     const castHidden=item.actors.slice(10);
-    const castChip=a=>`<a class="person-link" href="#/person/${slug(a.name)}">${esc(a.name)}</a>`;
+    const castChip=a=>`<a class="person-link" href="#/person/${slug(personKeyFor(a.id, a.name))}">${esc(a.name)}</a>`;
     castHTML=`
       <div class="block">
         <h3 class="section-title">Obsazení</h3>
@@ -2877,7 +2860,7 @@ function attachDetailEvents(type,id){
           itemId:item.id, itemType:item.type, uid:CURRENT_UID, author:CURRENT_USER,
           score:selected, text, createdAt:firebase.firestore.FieldValue.serverTimestamp(), editedAt:null,
           likesCount:0, dislikesCount:0, funnyCount:0,
-          itemTitle:item.title, itemPoster:item.poster||null, itemYear:item.year,
+          ...denormalizedItemFields(item),
         });
         await applyItemScoreDelta(item.id, selected, 1).catch(e=>console.error('Nepodařilo se aktualizovat agregované skóre', e));
         await loadReviewsForItem(item);
@@ -2959,11 +2942,13 @@ function fmtBioDate(d){
   return `${parseInt(day)}. ${months[parseInt(m)-1]} ${y}`;
 }
 
-function renderPerson(name, personData){
-  // personData is this person's own shard entry ({img, birthday, deathday, age, works}),
-  // already denormalized — no catalog buckets needed at all for the common case. Falls
-  // back to scanning DB only when no shard entry exists (demo mode, or the rare
-  // not-yet-indexed person).
+function renderPerson(key, personData){
+  // personData is this person's own shard entry ({name, img, birthday, deathday, age,
+  // works}), already denormalized — no catalog buckets needed at all for the common
+  // case. Falls back to scanning DB by name only when no shard entry exists (demo mode,
+  // or the rare not-yet-indexed person) — in that case, the key IS a name-based key
+  // (n{name}), so the original name is recovered directly from it.
+  const name = personData ? personData.name : (key.startsWith('n') ? key.slice(1) : key);
   const filmo = personData ? collectFilmography(personData.works) : collectFilmographyFromDB(name);
   const CATEGORY_LABELS={director:'Režisér', writer:'Scénárista', composer:'Hudba', actor:'Herec', developer:'Vývojář'};
   const CATEGORY_ORDER=['director','writer','composer','actor','developer'];
@@ -3025,7 +3010,7 @@ function renderPerson(name, personData){
 let userProfileCurrent=null;
 async function renderUserProfile(username){
   userProfileCurrent=username;
-  const entries=await getUserReviewsAsync(username, {lightweight:true});
+  const entries=await getUserReviewsAsync(username);
   const agg=userAggregate(entries);
   const cls=scoreClass(agg.avg);
   const isFav=isFavoritedByMe(username);
@@ -3064,7 +3049,7 @@ async function renderUserProfile(username){
   `;
 }
 async function refreshUserReviews(username){
-  const entries=await getUserReviewsAsync(username, {lightweight:true});
+  const entries=await getUserReviewsAsync(username);
   const body=userReviewsPreviewHTML(username, entries);
   document.getElementById('userReviewsList').innerHTML=body.html;
   bindShowAllReviews(username);
@@ -3106,7 +3091,15 @@ const TMDB_PROFILE_IMG_BASE='https://image.tmdb.org/t/p/w300'; // matches the fe
 function expandProfileImg(path){
   return path ? TMDB_PROFILE_IMG_BASE+path : path;
 }
-let PEOPLE_INDEX=null; // [{name, image}] — loaded from the tiny people_search_index.json, just enough to search and show a result
+function personKeyFor(id, name){
+  // Mirrors the fetch script's person_key() exactly. TMDb's own unique person id is what
+  // actually distinguishes two different real people who happen to share a name (e.g.
+  // Tom Holland the actor vs. Tom Holland the director) — without this, they'd collapse
+  // into a single, incorrectly-merged entry. Falls back to a name-based key only when no
+  // id is available (game developers, or the rare credit TMDb didn't tag with an id).
+  return (id!==null && id!==undefined) ? `p${id}` : `n${name}`;
+}
+let PEOPLE_INDEX=null; // [{name, image, key}] — loaded from the tiny people_search_index.json, just enough to search and show a result
 let PEOPLE_INDEX_PROMISE=null;
 async function loadPeopleIndex(){
   if(PEOPLE_INDEX) return PEOPLE_INDEX;
@@ -3116,7 +3109,7 @@ async function loadPeopleIndex(){
       const res=await fetch('./people_search_index.json', {cache:'no-store'});
       if(!res.ok){ PEOPLE_INDEX=[]; return PEOPLE_INDEX; }
       const data=await res.json();
-      PEOPLE_INDEX=data.map(p=>({name:p.n, image:expandProfileImg(p.img)}));
+      PEOPLE_INDEX=data.map(p=>({name:p.n, image:expandProfileImg(p.img), key:p.id}));
       return PEOPLE_INDEX;
     }catch(e){
       console.error('Nepodařilo se načíst index osobností', e);
@@ -3126,17 +3119,14 @@ async function loadPeopleIndex(){
   })();
   return PEOPLE_INDEX_PROMISE;
 }
-function shardForName(name){
-  // Mirrors the fetch script's shard_for_name() exactly — diacritic-stripped, lowercased
-  // first letter, or "other" for anything not starting with a-z.
-  const stripped=(name||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'');
-  const first=stripped.slice(0,1).toLowerCase();
-  return (first>='a' && first<='z') ? first : 'other';
+function shardForKey(key){
+  // Mirrors the fetch script's shard_for_key() exactly — hashStr(key) % PEOPLE_NUM_SHARDS.
+  return String(hashStr(key)%32);
 }
-const PERSON_SHARDS={}; // shard letter -> {name: {img, birthday, deathday, age, works:[...]}}
+const PERSON_SHARDS={}; // shard number (string) -> {key: {name, img, birthday, deathday, age, works:[...]}}
 const PERSON_SHARD_PROMISES={};
-async function loadPersonShard(name){
-  const shard=shardForName(name);
+async function loadPersonShard(key){
+  const shard=shardForKey(key);
   if(PERSON_SHARDS[shard]) return PERSON_SHARDS[shard];
   if(!PERSON_SHARD_PROMISES[shard]){
     PERSON_SHARD_PROMISES[shard]=(async()=>{
@@ -3189,7 +3179,7 @@ function renderSearch(q){
         const h=hashStr(p.name);
         const style=`background:linear-gradient(135deg, hsl(${h%360} 60% 45%), hsl(${(h+70)%360} 65% 30%));`;
         const inner=p.image ? `<img src="${esc(p.image)}" alt="" class="avatar-photo">` : esc(p.name.charAt(0));
-        return `<a class="person-search-item" href="#/person/${encodeURIComponent(p.name)}">
+        return `<a class="person-search-item" href="#/person/${encodeURIComponent(p.key)}">
           <span class="person-search-avatar" style="${style}">${inner}</span>
           <span class="person-search-name">${esc(p.name)}</span>
         </a>`;
@@ -3279,12 +3269,12 @@ async function route(){
       openReviewModalById(parts[2], rid);
     }
   }else if(parts[0]==='person' && parts[1]){
-    const personName=decodeURIComponent(parts[1]);
+    const personKey=decodeURIComponent(parts[1]);
     app.innerHTML=SKELETON_HOME_HTML;
-    const shard=await loadPersonShard(personName);
-    const personData=shard[personName];
+    const shard=await loadPersonShard(personKey);
+    const personData=shard[personKey];
     if(personData) await ensureItemScoreAggregates(personData.works.map(w=>w.id));
-    app.innerHTML=renderPerson(personName, personData);
+    app.innerHTML=renderPerson(personKey, personData);
     bindFilmoItemNavigation();
   }else if(parts[0]==='user' && parts[1]){
     app.innerHTML=await renderUserProfile(decodeURIComponent(parts[1])); attachUserProfileEvents(decodeURIComponent(parts[1]));
@@ -4396,7 +4386,7 @@ async function favoritesForUser(username){
   }catch(e){
     console.error('Nepodařilo se načíst oblíbené uživatele profilu', username, e);
   }
-  const enriched = await Promise.all(list.map(async (u)=>({username:u, agg:userAggregate(await getUserReviewsAsync(u, {lightweight:true}))})));
+  const enriched = await Promise.all(list.map(async (u)=>({username:u, agg:userAggregate(await getUserReviewsAsync(u))})));
   return enriched.sort((a,b)=>(b.agg.likes+b.agg.funny)-(a.agg.likes+a.agg.funny));
 }
 async function renderFavoritesModal(){
@@ -4437,7 +4427,7 @@ function openUserModal(username){
 async function renderUserModal(){
   const username=userModalCurrent;
   const card=document.getElementById('reviewModalCard');
-  const entries=await getUserReviewsAsync(username, {lightweight:true});
+  const entries=await getUserReviewsAsync(username);
   const agg=userAggregate(entries);
   const cls=scoreClass(agg.avg);
   const isFav=isFavoritedByMe(username);
@@ -4564,7 +4554,7 @@ function initSearchPanel(){
         const h=hashStr(p.name);
         const style=`background:linear-gradient(135deg, hsl(${h%360} 60% 45%), hsl(${(h+70)%360} 65% 30%));`;
         const inner=p.image ? `<img src="${esc(p.image)}" alt="" class="avatar-photo">` : esc(p.name.charAt(0));
-        return `<a class="search-result-row search-result-person" href="#/person/${encodeURIComponent(p.name)}"><span class="person-search-avatar" style="${style}">${inner}</span><span class="srr-title">${esc(p.name)}</span></a>`;
+        return `<a class="search-result-row search-result-person" href="#/person/${encodeURIComponent(p.key)}"><span class="person-search-avatar" style="${style}">${inner}</span><span class="srr-title">${esc(p.name)}</span></a>`;
       }).join('');
     }else{
       // Title search runs against the tiny search_index.json — never needs this
