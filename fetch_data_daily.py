@@ -791,9 +791,9 @@ def person_crew_obj(name, person_id, key, people_cache):
     """Same idea as build_actor_list but for a single credited person (director,
     composer, writer) — just name + photo, since birth/death wasn't asked for crew."""
     if not name:
-        return {"name": "", "image": ""}
+        return {"id": None, "name": "", "image": ""}
     info = get_person_info(key, person_id, people_cache) if person_id else {"image": ""}
-    return {"name": name, "image": info.get("image", "")}
+    return {"id": person_id, "name": name, "image": info.get("image", "")}
 
 
 def build_actor_list(key, cast, people_cache, today, cap=None):
@@ -813,6 +813,7 @@ def build_actor_list(key, cast, people_cache, today, cap=None):
         pid = c.get("id")
         info = people_cache.get(str(pid), {"birthday": None, "deathday": None, "image": ""}) if pid is not None else {"birthday": None, "deathday": None, "image": ""}
         actors.append({
+            "id": pid,
             "name": c.get("name", ""),
             "birthday": info.get("birthday"),
             "deathday": info.get("deathday"),
@@ -1905,13 +1906,32 @@ def stable_id_for_record(prefix, r):
     return None
 
 
-def shard_for_name(name):
-    """Diacritic-stripped, lowercased first letter — 'Čapek' and 'Capek' land in the same
-    shard as 'c'. Anything not starting with a recognizable a-z letter goes in 'other'.
-    27 shards total, each small enough that loading one person's shard is cheap."""
-    stripped = "".join(c for c in unicodedata.normalize("NFKD", name) if not unicodedata.combining(c))
-    first = stripped[:1].lower()
-    return first if "a" <= first <= "z" else "other"
+def hash_str(s):
+    """Exactly mirrors the website's hashStr(): base-31 polynomial rolling hash, wrapped
+    to unsigned 32-bit. Used here so shard assignment matches exactly between the fetch
+    script and the website, with no separate lookup needed."""
+    h = 0
+    for ch in s:
+        h = (h * 31 + ord(ch)) & 0xFFFFFFFF
+    return h
+
+
+PEOPLE_NUM_SHARDS = 32
+
+
+def person_key(person_id, name):
+    """TMDb's own unique person id is what actually disambiguates two different people who
+    happen to share a name — e.g. Tom Holland the Spider-Man actor (id 1136406) versus Tom
+    Holland the 1980s horror director (a different, unrelated TMDb id). Before this, both
+    collapsed into a single "Tom Holland" entry, merging their biography and filmography
+    together. Falls back to a name-based key only when TMDb genuinely didn't provide an id
+    for this credit (rare) — that rare case keeps the old name-collision risk, but doesn't
+    regress the common case at all."""
+    return f"p{person_id}" if person_id is not None else f"n{name}"
+
+
+def shard_for_key(key):
+    return str(hash_str(key) % PEOPLE_NUM_SHARDS)
 
 
 def strip_profile_img_base(url):
@@ -1927,32 +1947,38 @@ def strip_profile_img_base(url):
 def compute_people_index(movies_prefix, movies_czsk_prefix, shows_prefix, games_prefix):
     """Builds the people data used by search and filmography pages, in two tiers:
 
-    people_search_index.json — tiny, just name + photo for every person in the catalog.
-    This is all the search panel needs to find someone and show a result; nothing else.
+    people_search_index.json — tiny, just name + photo + key for every person in the
+    catalog. This is all the search panel needs to find someone and show a result.
 
-    people/{shard}.json (27 files, one per shard_for_name) — each person's COMPLETE
-    filmography as a lightweight snapshot (id, type, title, year, score, poster, roles)
-    per title, denormalized directly here rather than left to be looked up in the actual
-    catalog buckets. This is the key optimization: a 5-year catalog bucket holds every
-    title in that range (potentially hundreds, each with full cast/galleries/summaries) —
-    loading several such buckets just to extract the one or two titles a person actually
-    worked on in each easily reaches tens of megabytes for anyone with a multi-decade
-    career. Denormalizing their filmography here means a person's page loads exactly one
-    small shard file and nothing from the catalog at all — same idea as itemTitle/
-    itemYear/itemPoster already denormalized onto reviews for the same reason."""
+    people/{shard}.json (PEOPLE_NUM_SHARDS files) — each person's COMPLETE filmography as
+    a lightweight snapshot (id, type, title, year, score, poster, roles) per title,
+    denormalized directly here rather than left to be looked up in the actual catalog
+    buckets. This is the key optimization: a 5-year catalog bucket holds every title in
+    that range (potentially hundreds, each with full cast/galleries/summaries) — loading
+    several such buckets just to extract the one or two titles a person actually worked
+    on in each easily reaches tens of megabytes for anyone with a multi-decade career.
+    Denormalizing their filmography here means a person's page loads exactly one small
+    shard file and nothing from the catalog at all — same idea as itemTitle/itemYear/
+    itemPoster already denormalized onto reviews for the same reason.
+
+    People are grouped by person_key (TMDb's own unique person id), NOT by name — two
+    different real people sharing a name (e.g. Tom Holland the actor and Tom Holland the
+    director) must never be merged into one entry, since that mixes their biography and
+    filmography together incorrectly."""
     movies_all = load_all_records_from_disk(movies_prefix) + load_all_records_from_disk(movies_czsk_prefix)
     shows_all = load_all_records_from_disk(shows_prefix)
     games_all = load_all_records_from_disk(games_prefix)
 
-    people = {}  # name -> {"image": str|None, "birthday": str|None, "deathday": str|None, "age": int|None, "works": {work_id: {...,"roles": set()}}}
+    people = {}  # key -> {"name": str, "image": ..., "birthday": ..., "deathday": ..., "age": ..., "works": {work_id: {...,"roles": set()}}}
 
-    def get_person(name):
-        return people.setdefault(name, {"image": None, "birthday": None, "deathday": None, "age": None, "works": {}})
+    def get_person(key, name):
+        return people.setdefault(key, {"name": name, "image": None, "birthday": None, "deathday": None, "age": None, "works": {}})
 
-    def add_work(name, image, work_id, type_, title, year, score, poster, role, bio=None):
+    def add_work(person_id, name, image, work_id, type_, title, year, score, poster, role, bio=None):
         if not name or not work_id:
             return
-        p = get_person(name)
+        key = person_key(person_id, name)
+        p = get_person(key, name)
         if image and not p["image"]:
             p["image"] = image
         if bio and bio.get("birthday") and not p["birthday"]:
@@ -1970,31 +1996,33 @@ def compute_people_index(movies_prefix, movies_czsk_prefix, shows_prefix, games_
             for role_field in ("director", "writer", "composer"):
                 person = r.get(role_field)
                 if person and person.get("name"):
-                    add_work(person["name"], person.get("image"), work_id, type_, title, year, score, poster, role_field)
+                    add_work(person.get("id"), person["name"], person.get("image"), work_id, type_, title, year, score, poster, role_field)
             for actor in (r.get("actors") or []):
                 if actor.get("name"):
-                    add_work(actor["name"], actor.get("image"), work_id, type_, title, year, score, poster, "actor", bio=actor)
+                    add_work(actor.get("id"), actor["name"], actor.get("image"), work_id, type_, title, year, score, poster, "actor", bio=actor)
 
     for r in games_all:
         developer = r.get("developer")
         if developer and developer != "Neznámý vývojář":
             work_id = stable_id_for_record("g", r)
-            add_work(developer, None, work_id, "game", r.get("title"), r.get("year"), r.get("score"), r.get("poster"), "developer")
+            # Studios have no TMDb id, so this falls back to a name-based key — a separate,
+            # much lower-risk namespace than individual people's names.
+            add_work(None, developer, None, work_id, "game", r.get("title"), r.get("year"), r.get("score"), r.get("poster"), "developer")
 
     search_index = []
-    shards = {}  # shard letter -> {name: {img, birthday, deathday, age, works:[...]}}
-    for name, data in people.items():
+    shards = {}  # shard number (string) -> {key: {name, img, birthday, deathday, age, works:[...]}}
+    for key, data in people.items():
         stripped_img = strip_profile_img_base(data["image"])
-        search_index.append({"n": name, "img": stripped_img})
+        search_index.append({"n": data["name"], "img": stripped_img, "id": key})
         works = [
             {"id": w["id"], "type": w["type"], "title": w["title"], "year": w["year"],
              "score": w["score"], "poster": w["poster"], "roles": sorted(w["roles"])}
             for w in data["works"].values()
         ]
         works.sort(key=lambda w: w["year"] or 0, reverse=True)
-        shard = shard_for_name(name)
-        shards.setdefault(shard, {})[name] = {
-            "img": stripped_img, "birthday": data["birthday"], "deathday": data["deathday"],
+        shard = shard_for_key(key)
+        shards.setdefault(shard, {})[key] = {
+            "name": data["name"], "img": stripped_img, "birthday": data["birthday"], "deathday": data["deathday"],
             "age": data["age"], "works": works,
         }
 
