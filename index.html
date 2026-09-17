@@ -406,6 +406,31 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
 .s-blue{background:var(--s-blue-bg); color:var(--s-blue-fg);}
 .s-purple{background:var(--s-purple-bg); color:var(--s-purple-fg);}
 .s-gold{background:var(--s-gold-bg); color:var(--s-gold-fg); box-shadow:0 0 16px rgba(232,177,58,.55), 0 3px 10px rgba(0,0,0,.4);}
+.hero-carousel{
+  position:relative; width:100%; aspect-ratio:21/9; min-height:120px;
+  border-radius:var(--radius-l); overflow:hidden; margin:20px 0 28px;
+}
+.hero-slide{
+  position:absolute; inset:0; opacity:0; z-index:0; transition:opacity .7s ease;
+  background-size:cover; background-position:center; display:block;
+}
+.hero-slide.active{ opacity:1; z-index:1; }
+.hero-slide::before{
+  content:''; position:absolute; inset:0;
+  background:linear-gradient(180deg, rgba(0,0,0,0) 35%, rgba(0,0,0,.82) 100%);
+}
+.hero-slide-content{
+  position:absolute; left:20px; right:20px; bottom:16px; z-index:1;
+  display:flex; align-items:flex-end; justify-content:space-between; gap:16px;
+}
+.hero-slide-title{
+  font-family:var(--font-display); font-size:clamp(16px, 3vw, 26px); font-weight:800;
+  color:#fff; text-shadow:0 2px 10px rgba(0,0,0,.6); line-height:1.2;
+}
+.hero-slide-badge{
+  font-family:var(--font-display); font-size:clamp(14px, 2.2vw, 20px); font-weight:800;
+  padding:8px 16px; border-radius:999px; flex-shrink:0; box-shadow:0 2px 10px rgba(0,0,0,.35);
+}
 
 /* ---------- FILTER BAR ---------- */
 .filterbar{
@@ -1298,6 +1323,7 @@ function denormalizedItemFields(item){
   // item's type, since Firestore rejects undefined values outright.
   const fields={itemYear:item.year, itemTitle:item.title, itemPoster:item.poster||null};
   if(item.genre) fields.itemGenre=item.genre;
+  if(item.baseScore!==null && item.baseScore!==undefined) fields.itemBaseScore=item.baseScore;
   if(item.type==='game'){
     if(item.developer) fields.itemDeveloper=item.developer;
   }else{
@@ -1310,11 +1336,13 @@ function denormalizedItemFields(item){
 function pseudoItemFromReviewDoc(d){
   // Reconstructs enough of an "item" purely from what's denormalized on the review to
   // satisfy every achievement/quest check that exists (title, year, genre, developer,
-  // and just the NAMES of actors/director/writer — never their photos or bios, which
-  // achievements never look at) — without loading any catalog bucket at all.
+  // just the NAMES of actors/director/writer, and a base score for the two checks that
+  // need the item's live/community score rather than just the user's own rating) —
+  // without loading any catalog bucket at all.
   return {
     id:d.itemId, type:d.itemType, title:d.itemTitle, year:d.itemYear, poster:d.itemPoster,
     genre:d.itemGenre||'',
+    baseScore:(d.itemBaseScore!==undefined ? d.itemBaseScore : null),
     developer:d.itemDeveloper||'',
     actors:(d.itemActorNames||[]).map(name=>({name})),
     director:{name:d.itemDirectorName||''},
@@ -1672,7 +1700,7 @@ const ACHIEVEMENTS=[
   {id:'lunch_break', name:'Obědová pauza', desc:'Napiš dvě recenze mezi 12:00 a 13:00.', icon:'lunch',
     check:(ctx)=> ctx.entries.filter(e=>{ if(!e.review.createdAt) return false; const h=new Date(e.review.createdAt).getHours(); return h===12; }).length>=2},
   {id:'trash_movies', name:'Milovník trashe', desc:'Ohodnoť 3 filmy, které mají v době psaní tvé recenze 49 a méně procent.', icon:'trash',
-    check:(ctx)=> ctx.entries.filter(e=>{ if(e.type!=='movie') return false; const s=liveScore(e.item); return s!==null && s<=49; }).length>=3},
+    check:(ctx)=> ctx.entries.filter(e=>{ if(e.type!=='movie') return false; const s=computeLiveScore(e.item.baseScore, ITEM_SCORE_AGGREGATES[e.item.id]); return s!==null && s<=49; }).length>=3},
   {id:'half_century_decades', name:'Půl století', desc:'Napiš 5 recenzí k filmům, kdy jeden film byl vydán mezi lety 1970-1979, druhý mezi 1980-1989, třetí mezi 1990-1999, čtvrtý mezi 2000-2009 a pátý mezi 2010-2019.', icon:'clapperboard',
     check:(ctx)=>{
       const decades=[[1970,1979],[1980,1989],[1990,1999],[2000,2009],[2010,2019]];
@@ -1697,7 +1725,7 @@ const ACHIEVEMENTS=[
   {id:'hater_extremes', name:'Profesionální hater', desc:'Dej celkem deseti titulům z jakékoliv kategorie (filmy, seriály, hry) skóre 0 nebo 10.', icon:'text:0',
     check:(ctx)=> ctx.entries.filter(e=> e.review.score===0 || e.review.score===100).length>=10},
   {id:'different_taste', name:'Jinej vkus', desc:'Napiš recenzi a dej desítku titulu, který má průměrné skóre 70 a méně.', icon:'text100',
-    check:(ctx)=> ctx.entries.some(e=>{ if(e.review.score!==100) return false; const s=liveScore(e.item); return s!==null && s<=70; })},
+    check:(ctx)=> ctx.entries.some(e=>{ if(e.review.score!==100) return false; const s=computeLiveScore(e.item.baseScore, ITEM_SCORE_AGGREGATES[e.item.id]); return s!==null && s<=70; })},
   {id:'games_2020_2026_15', name:'Jsem hráč bejby', desc:'Napiš 15 recenzí ke hrám vydaným mezi lety 2020 a 2026.', icon:'controller',
     check:(ctx)=> ctx.entries.filter(e=>e.type==='game' && e.item.year>=2020 && e.item.year<=2026).length>=15},
   {id:'reviews_1000', name:'Všechno viděl a všude byl', desc:'Napiš recenzi k 1000 titulům.', icon:'text:1000',
@@ -1711,6 +1739,7 @@ async function buildAchievementContext(username){
     getTop10For(username,'game'),
     getProgress(CURRENT_UID),
   ]);
+  await ensureItemScoreAggregates(entries.map(e=>e.item.id));
   return {entries, top10Movie, top10Show, top10Game, progress};
 }
 async function refreshMyAchievements(){
@@ -2206,6 +2235,42 @@ function cardHTML(item, rank){
   </a>`;
 }
 
+function heroCarouselHTML(){
+  const recent=TRENDING_HOME_DATA && TRENDING_HOME_DATA.recentlyAdded;
+  if(!recent) return '';
+  const slides=['movie','show','game'].map(t=>recent[t]).filter(Boolean);
+  if(!slides.length) return '';
+  return `
+    <div class="hero-carousel" id="heroCarousel">
+      ${slides.map((s,i)=>{
+        const badge=scoreBadge(s.score);
+        return `<a class="hero-slide${i===0?' active':''}" href="#/title/${s.type}/${s.id}" data-type="${s.type}" data-id="${esc(s.id)}" data-year="${s.year}" style="background-image:url('${esc(s.backdrop)}')">
+          <div class="hero-slide-content">
+            <span class="hero-slide-title">${esc(s.title)}</span>
+            <span class="hero-slide-badge ${badge.cls}">${badge.text}</span>
+          </div>
+        </a>`;
+      }).join('')}
+    </div>
+  `;
+}
+let HERO_CAROUSEL_TIMER=null;
+function startHeroCarousel(){
+  if(HERO_CAROUSEL_TIMER){ clearInterval(HERO_CAROUSEL_TIMER); HERO_CAROUSEL_TIMER=null; }
+  const el=document.getElementById('heroCarousel');
+  if(!el) return;
+  const slides=[...el.querySelectorAll('.hero-slide')];
+  slides.forEach(s=> s.addEventListener('click', (e)=> preloadAndNavigateToTitle(s.dataset.type, s.dataset.id, +s.dataset.year, e)));
+  if(slides.length<=1) return; // nothing to cycle through
+  let idx=0;
+  HERO_CAROUSEL_TIMER=setInterval(()=>{
+    const stillHere=document.getElementById('heroCarousel');
+    if(!stillHere){ clearInterval(HERO_CAROUSEL_TIMER); HERO_CAROUSEL_TIMER=null; return; } // navigated away
+    slides[idx].classList.remove('active');
+    idx=(idx+1)%slides.length;
+    slides[idx].classList.add('active');
+  }, 5000);
+}
 function hotRowHTML(title, items, seeAllHref){
   const cards=items.map((it,idx)=>`<div class="hot-card">${cardHTML(it)}<div class="hot-rank">${idx+1}</div></div>`).join('');
   return `
@@ -2431,6 +2496,7 @@ async function renderHome(){
   await ensureItemScoreAggregates([...hotMovies, ...hotShows, ...hotGames].map(it=>it.id));
   return `
     <div id="commentBannerContainer"></div>
+    ${heroCarouselHTML()}
     ${hotRowHTML('Tipy na filmy z poslední doby', hotMovies, '#/movies')}
     ${hotRowHTML('Tipy na seriály z poslední doby', hotShows, '#/shows')}
     ${hotRowHTML('Tipy na hry z poslední doby', hotGames, '#/games')}
@@ -3251,7 +3317,7 @@ async function route(){
   }
 
   if(parts.length===0){
-    app.innerHTML=await renderHome(); attachHotRowEvents();
+    app.innerHTML=await renderHome(); attachHotRowEvents(); startHeroCarousel();
     loadAndRenderCommentBanner(); // fire-and-forget — trending rows shouldn't wait on this
   }else if(parts[0]==='movies'){
     app.innerHTML=await renderList('movie'); attachListEvents('movie');
@@ -3281,7 +3347,7 @@ async function route(){
   }else if(parts[0]==='search' && parts[1]){
     app.innerHTML=renderSearch(decodeURIComponent(parts[1]));
   }else{
-    app.innerHTML=await renderHome(); attachHotRowEvents();
+    app.innerHTML=await renderHome(); attachHotRowEvents(); startHeroCarousel();
     loadAndRenderCommentBanner();
   }
 
@@ -3380,10 +3446,18 @@ async function loadTrendingLight(){
     if(!res.ok) return null;
     const data=await res.json();
     if(!data || (!data.movies && !data.shows && !data.games)) return null;
+    const parseRecent=(raw, type, prefix)=> raw ? {
+      type, id:stableId(prefix, raw, 0), title:raw.title, year:raw.year, score:raw.score, backdrop:raw.backdrop,
+    } : null;
     return {
       movie: buildFromRecords(data.movies||[], 'movie', 'm'),
       show: buildFromRecords(data.shows||[], 'show', 's'),
       game: buildFromRecords(data.games||[], 'game', 'g'),
+      recentlyAdded: data.recentlyAdded ? {
+        movie: parseRecent(data.recentlyAdded.movie, 'movie', 'm'),
+        show: parseRecent(data.recentlyAdded.show, 'show', 's'),
+        game: parseRecent(data.recentlyAdded.game, 'game', 'g'),
+      } : null,
     };
   }catch(e){ return null; }
 }
@@ -4342,12 +4416,31 @@ function renderModalCard(item, review){
   });
 }
 
+function fullSizeImageUrl(url){
+  // Gallery thumbnails intentionally use a smaller size for bandwidth (w500 for TMDb,
+  // resize/640 for RAWG) — the full-size popup asks each CDN for a much larger version
+  // instead of just blowing up the thumbnail, which would look soft/blurry.
+  if(!url) return url;
+  if(url.includes('image.tmdb.org')) return url.replace(/\/t\/p\/w\d+\//, '/t/p/original/');
+  if(url.includes('media.rawg.io')) return url.replace(/\/resize\/\d+\/-\//, '/resize/1920/-/');
+  return url;
+}
+function openFullSizeImagePopup(url){
+  const fullUrl=fullSizeImageUrl(url);
+  const win=window.open('', '_blank', 'noopener,noreferrer');
+  if(!win) return; // popup blocked by the browser — nothing more we can do here
+  win.document.write(`<!DOCTYPE html><html><head><title>Obrázek</title><meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>html,body{margin:0;padding:0;background:#000;height:100%;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+    img{max-width:100vw;max-height:100vh;width:auto;height:auto;object-fit:contain;display:block;}</style>
+    </head><body><img src="${esc(fullUrl)}" alt=""></body></html>`);
+  win.document.close();
+}
 function openGalleryModal(item){
   pushModal(()=>{
     const card=document.getElementById('reviewModalCard');
     const realPhotos=[item.poster, ...(item.gallery||[])].filter(Boolean);
     const photosHTML = realPhotos.length
-      ? realPhotos.map(url=>`<div class="gallery-photo"><img src="${esc(url)}" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>`).join('')
+      ? realPhotos.map(url=>`<div class="gallery-photo" data-url="${esc(url)}" style="cursor:pointer;"><img src="${esc(url)}" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>`).join('')
       : Array.from({length:6},(_,i)=>posterStyle(item.id+item.title+'gal'+i)).map((st,i)=>`<div class="gallery-photo" style="${st}"><span class="gallery-photo-label">${esc(item.title.charAt(0))}${i+1}</span></div>`).join('');
     card.className='modal-card wide';
     card.innerHTML=`
@@ -4356,6 +4449,9 @@ function openGalleryModal(item){
       <div class="gallery-scroll">${photosHTML}</div>
     `;
     document.getElementById('galleryCloseBtn').addEventListener('click', popModal);
+    card.querySelectorAll('.gallery-photo[data-url]').forEach(el=>{
+      el.addEventListener('click', ()=> openFullSizeImagePopup(el.dataset.url));
+    });
   });
 }
 

@@ -1854,10 +1854,32 @@ def compute_trending(today, movies_prefix, movies_czsk_prefix, shows_prefix, gam
     shows_all = load_all_records_from_disk(shows_prefix)
     games_all = load_all_records_from_disk(games_prefix)
 
+    def most_recently_added(records):
+        """The single most recently added record (by date), with a wide backdrop image
+        for display — the homepage carousel needs a landscape image, and movie/show
+        posters are portrait, so this uses the first gallery/backdrop image instead,
+        falling back to the poster only if no gallery image exists at all (rare, but
+        better than nothing)."""
+        dated = [r for r in records if r.get("date")]
+        if not dated:
+            return None
+        r = max(dated, key=lambda x: x["date"])
+        backdrop = (r.get("gallery") or [None])[0] or r.get("poster", "")
+        entry = {"title": r.get("title"), "year": r.get("year"), "score": r.get("score"), "backdrop": backdrop}
+        for id_field in ("tmdb_id", "rawg_id", "imdb_id"):
+            if r.get(id_field):
+                entry[id_field] = r[id_field]
+        return entry
+
     trending = {
         "movies": pick_trending(movies_all, 90),   # ~3 months
         "shows": pick_trending(shows_all, 90),     # ~3 months
         "games": pick_trending(games_all, 180),    # ~6 months — unchanged from before
+        "recentlyAdded": {
+            "movie": most_recently_added(movies_all),
+            "show": most_recently_added(shows_all),
+            "game": most_recently_added(games_all),
+        },
     }
     save_json("trending.json", trending)
     return trending
