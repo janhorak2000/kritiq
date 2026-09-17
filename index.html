@@ -2890,7 +2890,30 @@ function attachDetailEvents(type,id){
   }
 }
 
-function collectFilmography(name){
+function collectFilmography(works){
+  // Builds the same category shape as before, but from a person's own pre-built works
+  // list (their shard entry) instead of scanning the full catalog. Each work already
+  // carries every role the person had on it (e.g. both "director" and "writer" for the
+  // same film), and is already sorted by year descending from the fetch script.
+  const cats={
+    director:{movie:[], show:[]}, writer:{movie:[], show:[]},
+    composer:{movie:[], show:[]}, actor:{movie:[], show:[]},
+    developer:[],
+  };
+  (works||[]).forEach(w=>{
+    if(w.type==='game'){
+      if(w.roles.includes('developer')) cats.developer.push(w);
+      return;
+    }
+    w.roles.forEach(role=>{ if(cats[role]) cats[role][w.type].push(w); });
+  });
+  return cats;
+}
+/* Legacy fallback, used only when no shard entry was found for this person — demo mode
+   (no people/*.json shards exist at all) or the rare edge case of a person genuinely not
+   yet in the index. Scans whatever's currently loaded in DB, same as the original
+   implementation before shards existed. */
+function collectFilmographyFromDB(name){
   const cats={
     director:{movie:[], show:[]}, writer:{movie:[], show:[]},
     composer:{movie:[], show:[]}, actor:{movie:[], show:[]},
@@ -2912,11 +2935,7 @@ function collectFilmography(name){
   cats.developer.sort((a,b)=>b.date.localeCompare(a.date));
   return cats;
 }
-/* Finds birthday/deathday/age/photo for a person by scanning credits across movies and
-   shows — Kritiq's person pages are keyed by name (not a stored id), so this grabs the
-   first match found. Actors carry birthday/deathday/age; director/composer/writer only
-   carry a photo (that's all that was asked for crew), so both are checked. */
-function findPersonInfo(name){
+function findPersonInfoFromDB(name){
   let photoOnly=null;
   for(const type of ['movie','show']){
     for(const it of DB[type]){
@@ -2940,21 +2959,28 @@ function fmtBioDate(d){
   return `${parseInt(day)}. ${months[parseInt(m)-1]} ${y}`;
 }
 
-function renderPerson(name){
-  const filmo=collectFilmography(name);
+function renderPerson(name, personData){
+  // personData is this person's own shard entry ({img, birthday, deathday, age, works}),
+  // already denormalized — no catalog buckets needed at all for the common case. Falls
+  // back to scanning DB only when no shard entry exists (demo mode, or the rare
+  // not-yet-indexed person).
+  const filmo = personData ? collectFilmography(personData.works) : collectFilmographyFromDB(name);
   const CATEGORY_LABELS={director:'Režisér', writer:'Scénárista', composer:'Hudba', actor:'Herec', developer:'Vývojář'};
   const CATEGORY_ORDER=['director','writer','composer','actor','developer'];
   const countFor=k => k==='developer' ? filmo[k].length : (filmo[k].movie.length + filmo[k].show.length);
   const activeCats=CATEGORY_ORDER.filter(k=>countFor(k)>0);
-  const isDev=DEVS.includes(name);
+  const isDev = personData ? (filmo.developer.length>0 && activeCats.length===1 && activeCats[0]==='developer') : DEVS.includes(name);
   const role=isDev ? 'Vývojářské studio' : (activeCats.filter(k=>k!=='developer').map(k=>CATEGORY_LABELS[k]).join(' · ') || 'Tvůrce / herec');
-  const bio=findPersonInfo(name);
+  const bio = personData
+    ? {image:personData.img, birthday:personData.birthday, deathday:personData.deathday, age:personData.age}
+    : findPersonInfoFromDB(name);
   const h=hashStr(name);
   const avatarStyle=`background:linear-gradient(135deg, hsl(${h%360} 60% 45%), hsl(${(h+70)%360} 65% 30%));`;
   const avatarInner = (bio && bio.image) ? `<img src="${esc(bio.image)}" alt="" class="avatar-photo">` : esc(name.charAt(0));
   function renderItems(items){
     return items.map(it=>{
-      const sc=liveScore(it); const badge=scoreBadge(sc); const cls=badge.cls;
+      const sc = personData ? computeLiveScore(it.score, ITEM_SCORE_AGGREGATES[it.id]) : liveScore(it);
+      const badge=scoreBadge(sc); const cls=badge.cls;
       return `<a class="filmo-item" href="#/title/${it.type}/${it.id}" style="background:linear-gradient(90deg, color-mix(in srgb, var(--${cls==='s-black'?'s-black-bg':cls==='s-grey'?'s-grey-bg':cls==='s-blue'?'s-blue-bg':cls==='s-purple'?'s-purple-bg':'s-gold-bg'}) 16%, var(--bg-1)), var(--bg-1));">
         <span class="fi-title">${esc(it.title)}</span>
         <span class="fi-meta">${typeLabel(it.type)} · ${it.year}</span>
@@ -3076,17 +3102,17 @@ function normalizeSearchText(s){
   // whether the visitor types accents or not.
   return (s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 }
-let PEOPLE_INDEX=null; // [{name, image, years:[...], types:[...]}] — loaded from the tiny people_index.json, never requires the full catalog
+let PEOPLE_INDEX=null; // [{name, image}] — loaded from the tiny people_search_index.json, just enough to search and show a result
 let PEOPLE_INDEX_PROMISE=null;
 async function loadPeopleIndex(){
   if(PEOPLE_INDEX) return PEOPLE_INDEX;
   if(PEOPLE_INDEX_PROMISE) return PEOPLE_INDEX_PROMISE;
   PEOPLE_INDEX_PROMISE=(async()=>{
     try{
-      const res=await fetch('./people_index.json', {cache:'no-store'});
+      const res=await fetch('./people_search_index.json', {cache:'no-store'});
       if(!res.ok){ PEOPLE_INDEX=[]; return PEOPLE_INDEX; }
       const data=await res.json();
-      PEOPLE_INDEX=data.map(p=>({name:p.n, image:p.img, years:p.y||[], types:p.t||[]}));
+      PEOPLE_INDEX=data.map(p=>({name:p.n, image:p.img}));
       return PEOPLE_INDEX;
     }catch(e){
       console.error('Nepodařilo se načíst index osobností', e);
@@ -3096,8 +3122,31 @@ async function loadPeopleIndex(){
   })();
   return PEOPLE_INDEX_PROMISE;
 }
-function findPersonInIndex(name){
-  return (PEOPLE_INDEX||[]).find(p=>p.name===name);
+function shardForName(name){
+  // Mirrors the fetch script's shard_for_name() exactly — diacritic-stripped, lowercased
+  // first letter, or "other" for anything not starting with a-z.
+  const stripped=(name||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+  const first=stripped.slice(0,1).toLowerCase();
+  return (first>='a' && first<='z') ? first : 'other';
+}
+const PERSON_SHARDS={}; // shard letter -> {name: {img, birthday, deathday, age, works:[...]}}
+const PERSON_SHARD_PROMISES={};
+async function loadPersonShard(name){
+  const shard=shardForName(name);
+  if(PERSON_SHARDS[shard]) return PERSON_SHARDS[shard];
+  if(!PERSON_SHARD_PROMISES[shard]){
+    PERSON_SHARD_PROMISES[shard]=(async()=>{
+      try{
+        const res=await fetch(`./people/${shard}.json`, {cache:'no-store'});
+        PERSON_SHARDS[shard]=res.ok ? await res.json() : {};
+      }catch(e){
+        console.error('Nepodařilo se načíst data osobnosti', e);
+        PERSON_SHARDS[shard]={};
+      }
+      return PERSON_SHARDS[shard];
+    })();
+  }
+  return PERSON_SHARD_PROMISES[shard];
 }
 function searchTitles(query){
   const nq=normalizeSearchText(query);
@@ -3112,9 +3161,9 @@ function searchPeople(query){
 }
 async function ensureCategoryDataLoaded(category){
   // Loads only what THIS specific search category needs. "person" now uses the
-  // lightweight people_index.json instead of needing all three full catalogs loaded —
-  // finding a person by name never requires their actual filmography data, just their
-  // name and a photo.
+  // lightweight people_search_index.json instead of needing all three full catalogs
+  // loaded — finding a person by name never requires their actual filmography data, just
+  // their name and a photo.
   if(category==='person') await loadPeopleIndex();
   else if(category==='movie') await ensureBucketsLoaded(['movies','movies_czsk'], -Infinity, Infinity);
   else if(category==='show') await ensureBucketsLoaded(['shows'], -Infinity, Infinity);
@@ -3219,8 +3268,10 @@ async function route(){
   }else if(parts[0]==='person' && parts[1]){
     const personName=decodeURIComponent(parts[1]);
     app.innerHTML=SKELETON_HOME_HTML;
-    await ensureBucketsForPerson(personName);
-    app.innerHTML=renderPerson(personName);
+    const shard=await loadPersonShard(personName);
+    const personData=shard[personName];
+    if(personData) await ensureItemScoreAggregates(personData.works.map(w=>w.id));
+    app.innerHTML=renderPerson(personName, personData);
   }else if(parts[0]==='user' && parts[1]){
     app.innerHTML=await renderUserProfile(decodeURIComponent(parts[1])); attachUserProfileEvents(decodeURIComponent(parts[1]));
   }else if(parts[0]==='search' && parts[1]){
@@ -4456,17 +4507,6 @@ function fallbackCopy(text, cb){
 /* ======================= SEARCH PANEL ======================= */
 function bucketPrefixesForType(type){
   return type==='movie' ? ['movies','movies_czsk'] : type==='show' ? ['shows'] : ['games'];
-}
-async function ensureBucketsForPerson(name){
-  await loadPeopleIndex();
-  const person=findPersonInIndex(name);
-  if(!person) return;
-  const loads=[];
-  person.types.forEach(type=>{
-    const prefixes=bucketPrefixesForType(type);
-    person.years.forEach(year=> loads.push(ensureBucketsLoaded(prefixes, year, year)));
-  });
-  await Promise.all(loads);
 }
 async function preloadAndNavigateToTitle(type, id, year, e){
   if(e) e.preventDefault();

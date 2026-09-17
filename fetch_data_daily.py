@@ -118,6 +118,7 @@ import os
 import shutil
 import sys
 import time
+import unicodedata
 from concurrent.futures import ThreadPoolExecutor
 import urllib.request
 import requests
@@ -1890,50 +1891,107 @@ def compute_search_index(movies_prefix, movies_czsk_prefix, shows_prefix, games_
     return index
 
 
+def stable_id_for_record(prefix, r):
+    """Mirrors the website's stableId() exactly (movie='m', show='s', game='g' + t/r/i +
+    the real id) so filmography entries link straight to a title without any extra
+    lookup. Position-based ids aren't reproducible outside the website's own array
+    build order, so the rare id-less record is simply skipped for this index."""
+    if r.get("tmdb_id"):
+        return f"{prefix}t{r['tmdb_id']}"
+    if r.get("rawg_id"):
+        return f"{prefix}r{r['rawg_id']}"
+    if r.get("imdb_id"):
+        return f"{prefix}i{r['imdb_id']}"
+    return None
+
+
+def shard_for_name(name):
+    """Diacritic-stripped, lowercased first letter — 'Čapek' and 'Capek' land in the same
+    shard as 'c'. Anything not starting with a recognizable a-z letter goes in 'other'.
+    27 shards total, each small enough that loading one person's shard is cheap."""
+    stripped = "".join(c for c in unicodedata.normalize("NFKD", name) if not unicodedata.combining(c))
+    first = stripped[:1].lower()
+    return first if "a" <= first <= "z" else "other"
+
+
 def compute_people_index(movies_prefix, movies_czsk_prefix, shows_prefix, games_prefix):
-    """Builds a lightweight index of every person (actor/director/writer/composer, plus
-    game developers/studios) across the ENTIRE catalog — name, a photo if available, and
-    which years and title-types they're associated with. This is what the "Osobnosti"
-    search category searches against, and what a person's filmography page (#/person/...)
-    consults to know exactly which buckets to load — instead of either needing the full
-    catalog loaded just to search for a name, or just to show one person's work."""
+    """Builds the people data used by search and filmography pages, in two tiers:
+
+    people_search_index.json — tiny, just name + photo for every person in the catalog.
+    This is all the search panel needs to find someone and show a result; nothing else.
+
+    people/{shard}.json (27 files, one per shard_for_name) — each person's COMPLETE
+    filmography as a lightweight snapshot (id, type, title, year, score, poster, roles)
+    per title, denormalized directly here rather than left to be looked up in the actual
+    catalog buckets. This is the key optimization: a 5-year catalog bucket holds every
+    title in that range (potentially hundreds, each with full cast/galleries/summaries) —
+    loading several such buckets just to extract the one or two titles a person actually
+    worked on in each easily reaches tens of megabytes for anyone with a multi-decade
+    career. Denormalizing their filmography here means a person's page loads exactly one
+    small shard file and nothing from the catalog at all — same idea as itemTitle/
+    itemYear/itemPoster already denormalized onto reviews for the same reason."""
     movies_all = load_all_records_from_disk(movies_prefix) + load_all_records_from_disk(movies_czsk_prefix)
     shows_all = load_all_records_from_disk(shows_prefix)
     games_all = load_all_records_from_disk(games_prefix)
 
-    people = {}  # name -> {"image": str|None, "years": set, "types": set}
+    people = {}  # name -> {"image": str|None, "birthday": str|None, "deathday": str|None, "age": int|None, "works": {work_id: {...,"roles": set()}}}
 
-    def add_person(name, image, year, type_):
-        if not name or year is None:
+    def get_person(name):
+        return people.setdefault(name, {"image": None, "birthday": None, "deathday": None, "age": None, "works": {}})
+
+    def add_work(name, image, work_id, type_, title, year, score, poster, role, bio=None):
+        if not name or not work_id:
             return
-        entry = people.setdefault(name, {"image": None, "years": set(), "types": set()})
-        if image and not entry["image"]:
-            entry["image"] = image
-        entry["years"].add(year)
-        entry["types"].add(type_)
+        p = get_person(name)
+        if image and not p["image"]:
+            p["image"] = image
+        if bio and bio.get("birthday") and not p["birthday"]:
+            p["birthday"], p["deathday"], p["age"] = bio.get("birthday"), bio.get("deathday"), bio.get("age")
+        w = p["works"].setdefault(work_id, {
+            "id": work_id, "type": type_, "title": title, "year": year,
+            "score": score, "poster": poster, "roles": set(),
+        })
+        w["roles"].add(role)
 
-    for records, type_ in ((movies_all, "movie"), (shows_all, "show")):
+    for records, type_, prefix in ((movies_all, "movie", "m"), (shows_all, "show", "s")):
         for r in records:
-            year = r.get("year")
+            work_id = stable_id_for_record(prefix, r)
+            title, year, score, poster = r.get("title"), r.get("year"), r.get("score"), r.get("poster")
             for role_field in ("director", "writer", "composer"):
                 person = r.get(role_field)
                 if person and person.get("name"):
-                    add_person(person["name"], person.get("image"), year, type_)
+                    add_work(person["name"], person.get("image"), work_id, type_, title, year, score, poster, role_field)
             for actor in (r.get("actors") or []):
                 if actor.get("name"):
-                    add_person(actor["name"], actor.get("image"), year, type_)
+                    add_work(actor["name"], actor.get("image"), work_id, type_, title, year, score, poster, "actor", bio=actor)
 
     for r in games_all:
         developer = r.get("developer")
         if developer and developer != "Neznámý vývojář":
-            add_person(developer, None, r.get("year"), "game")
+            work_id = stable_id_for_record("g", r)
+            add_work(developer, None, work_id, "game", r.get("title"), r.get("year"), r.get("score"), r.get("poster"), "developer")
 
-    index = [
-        {"n": name, "img": data["image"], "y": sorted(data["years"]), "t": sorted(data["types"])}
-        for name, data in people.items()
-    ]
-    save_json("people_index.json", index)
-    return index
+    search_index = []
+    shards = {}  # shard letter -> {name: {img, birthday, deathday, age, works:[...]}}
+    for name, data in people.items():
+        search_index.append({"n": name, "img": data["image"]})
+        works = [
+            {"id": w["id"], "type": w["type"], "title": w["title"], "year": w["year"],
+             "score": w["score"], "poster": w["poster"], "roles": sorted(w["roles"])}
+            for w in data["works"].values()
+        ]
+        works.sort(key=lambda w: w["year"] or 0, reverse=True)
+        shard = shard_for_name(name)
+        shards.setdefault(shard, {})[name] = {
+            "img": data["image"], "birthday": data["birthday"], "deathday": data["deathday"],
+            "age": data["age"], "works": works,
+        }
+
+    save_json("people_search_index.json", search_index)
+    os.makedirs("people", exist_ok=True)
+    for shard, data in shards.items():
+        save_json(f"people/{shard}.json", data)
+    return search_index, shards
 
 
 def main():
@@ -2211,8 +2269,8 @@ def main():
     search_index = compute_search_index(args.movies_prefix, args.movies_czsk_prefix, args.shows_prefix, args.games_prefix)
     print(f"search_index.json written: {len(search_index['movies'])} movies, {len(search_index['shows'])} shows, {len(search_index['games'])} games", file=sys.stderr)
 
-    people_index = compute_people_index(args.movies_prefix, args.movies_czsk_prefix, args.shows_prefix, args.games_prefix)
-    print(f"people_index.json written: {len(people_index)} people", file=sys.stderr)
+    people_search_index, people_shards = compute_people_index(args.movies_prefix, args.movies_czsk_prefix, args.shows_prefix, args.games_prefix)
+    print(f"people_search_index.json written: {len(people_search_index)} people, across {len(people_shards)} shard files", file=sys.stderr)
 
 
 if __name__ == "__main__":
