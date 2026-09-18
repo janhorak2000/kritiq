@@ -3992,10 +3992,12 @@ async function handlePasswordResetSubmit(){
   btn.disabled=true;
   try{
     await fbAuth.sendPasswordResetEmail(email);
+    console.log('[Kritiq] sendPasswordResetEmail resolved successfully for', email, '— Firebase accepted the request. If no email arrives despite this, the issue is on Firebase\'s delivery side, not in this code.');
     authError='';
     authInfo='Pokud pro tento e-mail existuje účet, poslali jsme na něj odkaz pro obnovení hesla. Zkontrolujte prosím i složku se spamem.';
     renderAuthModal();
   }catch(e){
+    console.error('[Kritiq] sendPasswordResetEmail FAILED for', email, '— full error object:', e, '— code:', e.code, '— message:', e.message);
     // Deliberately shows the same success message even if the email genuinely isn't
     // registered — Firebase's own error for "user not found" would otherwise let anyone
     // probe which email addresses have an account here, which is worth avoiding.
