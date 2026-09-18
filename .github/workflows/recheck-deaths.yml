@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write   # required so the final "git push" step below can actually write back to the repo
 
+concurrency:
+  group: kritiq-data-commits   # shared across every workflow that commits generated data —
+  cancel-in-progress: false     # queues them instead of letting two race to push at once.
+
 jobs:
   recheck-deaths:
     runs-on: ubuntu-latest
@@ -26,10 +30,27 @@ jobs:
           TMDB_KEY: ${{ secrets.TMDB_KEY }}
         run: python fetch_data_daily.py --tmdb-key "$TMDB_KEY" --recheck-deaths-only
 
-      - name: Commit updated people.json
+      - name: Commit and push (retries if the remote moved on while this ran)
         run: |
           git config user.name "kritiq-bot"
           git config user.email "bot@users.noreply.github.com"
           git add -A
-          git diff --staged --quiet || git commit -m "Weekly death recheck $(date -u +%Y-%m-%d)"
-          git push
+          if git diff --staged --quiet; then
+            echo "Nothing changed — nothing to commit."
+            exit 0
+          fi
+          git commit -m "Weekly death recheck $(date -u +%Y-%m-%d)"
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              echo "Pushed successfully."
+              exit 0
+            fi
+            echo "Push rejected (remote has moved on) — attempt $attempt/5, pulling and retrying..."
+            git pull --rebase --autostash origin "$GITHUB_REF_NAME" || {
+              echo "Rebase hit a real conflict (the remote touched the exact same lines this run changed) — needs manual resolution."
+              exit 1
+            }
+            sleep $((attempt * 5))
+          done
+          echo "Still failed after 5 attempts. This run's changes are safe on disk in this runner but weren't pushed anywhere. Re-running this workflow is safe."
+          exit 1
