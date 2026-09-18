@@ -26,6 +26,8 @@
   --violet:#9b5cf6;
   --violet-2:#c084fc;
   --magenta:#e264b8;
+  --bg-glow-1:#341f52;
+  --bg-glow-2:#2a1440;
   --s-black-bg:#0a0810; --s-black-fg:#f1ecfa;
   --s-grey-bg:#585068;  --s-grey-fg:#f1ecfa;
   --s-blue-bg:#3f6fdb;  --s-blue-fg:#ffffff;
@@ -37,13 +39,45 @@
   --font-display:'Unbounded', 'Manrope', sans-serif;
   --font-body:'Manrope', sans-serif;
 }
+:root[data-theme="blue"]{
+  --bg:#0a1220;
+  --bg-1:#0f1a2c;
+  --bg-2:#16243c;
+  --bg-3:#1c2f4a;
+  --line:#2b4a7a;
+  --line-soft:#1a2f52;
+  --text:#eaf1fb;
+  --text-dim:#a9bcd9;
+  --text-faint:#7891b8;
+  --violet:#4a8cf7;
+  --violet-2:#7db3ff;
+  --magenta:#3fc7e8;
+  --bg-glow-1:#1e3a6b;
+  --bg-glow-2:#14284a;
+}
+:root[data-theme="gold"]{
+  --bg:#1a1408;
+  --bg-1:#221a0c;
+  --bg-2:#2c2210;
+  --bg-3:#382c16;
+  --line:#5a4620;
+  --line-soft:#3a2c12;
+  --text:#faf3e4;
+  --text-dim:#d9c8a0;
+  --text-faint:#a8946a;
+  --violet:#d4a72c;
+  --violet-2:#e8c458;
+  --magenta:#e2824a;
+  --bg-glow-1:#4a3a14;
+  --bg-glow-2:#3a2a0e;
+}
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 body{
   margin:0;
   background:
-    radial-gradient(1100px 620px at 12% -8%, #341f52 0%, transparent 60%),
-    radial-gradient(900px 700px at 105% 15%, #2a1440 0%, transparent 55%),
+    radial-gradient(1100px 620px at 12% -8%, var(--bg-glow-1) 0%, transparent 60%),
+    radial-gradient(900px 700px at 105% 15%, var(--bg-glow-2) 0%, transparent 55%),
     var(--bg);
   color:var(--text);
   font-family:var(--font-body);
@@ -759,6 +793,7 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
 .pill-edit-btn:active, .pill-delete-btn:active{transform:scale(.96);}
 .review-author-link, .review-context-link{font-weight:700; font-size:13.5px; color:var(--text); text-decoration:none;}
 .review-author-link:hover, .review-context-link:hover{color:var(--violet-2); text-decoration:underline;}
+.review-author-deleted{font-style:italic; color:var(--text-faint); cursor:default;}
 .review-timestamp{font-size:12px; color:var(--text-faint); font-weight:400;}
 .review-edited-note{font-style:italic;}
 .review-context-link{color:var(--text-dim); font-weight:600;}
@@ -795,6 +830,7 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
 }
 .modal-review-author{font-weight:700; font-size:15px; color:var(--text); text-decoration:none;}
 .modal-review-author:hover{color:var(--violet-2); text-decoration:underline;}
+.modal-review-author.review-author-deleted:hover{color:var(--text-faint); text-decoration:none;}
 .modal-review-text{color:var(--text-dim); font-size:15px; line-height:1.65; margin-bottom:22px; white-space:pre-wrap;}
 .modal-react-row{display:flex; gap:8px; flex-wrap:nowrap;}
 .react-btn{
@@ -859,9 +895,16 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
 .auth-switch button{background:none; border:none; color:var(--violet-2); font-weight:700; cursor:pointer; font-family:inherit; font-size:13px; padding:0;}
 .auth-switch button:hover{text-decoration:underline;}
 .auth-error{color:#ff8a8a; font-size:12.5px; background:rgba(239,68,68,.1); border:1px solid rgba(239,68,68,.3); padding:9px 12px; border-radius:9px; margin-bottom:2px;}
+.auth-info{color:#7de8a8; font-size:12.5px; background:rgba(34,197,94,.1); border:1px solid rgba(34,197,94,.3); padding:9px 12px; border-radius:9px; margin-bottom:2px;}
+.auth-forgot-link{
+  align-self:flex-end; background:none; border:none; padding:0; margin-top:-6px;
+  font-size:12px; color:var(--violet-2); cursor:pointer; font-family:inherit;
+}
+.auth-forgot-link:hover{text-decoration:underline;}
 .auth-hint{font-size:11px; color:var(--text-faint); margin-top:-4px;}
 .avatar-photo{width:100%; height:100%; border-radius:50%; object-fit:cover;}
 .modal-head-row{position:absolute; top:16px; right:16px; display:flex; gap:8px; z-index:2;}
+.profile-head-row{display:flex; justify-content:flex-end; gap:8px; margin-bottom:10px;}
 .modal-icon-btn{
   width:32px; height:32px; border-radius:50%; padding:0;
   display:flex; align-items:center; justify-content:center;
@@ -940,6 +983,27 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
 .fav-users-btn-blue:hover{border-color:#60a5fa;}
 .fav-users-btn-gold{border-color:rgba(232,177,58,.45); color:#e8b13a;}
 .fav-users-btn-gold:hover{border-color:#e8b13a;}
+.settings-section{margin-bottom:22px;}
+.settings-label{font-size:12.5px; font-weight:800; color:var(--text-dim); text-transform:uppercase; letter-spacing:.04em; margin-bottom:10px;}
+.theme-swatch-row{display:flex; gap:10px; flex-wrap:wrap;}
+.theme-swatch-btn{
+  display:flex; flex-direction:column; align-items:center; gap:6px;
+  padding:10px 14px; border-radius:var(--radius-m); border:1px solid var(--line-soft);
+  background:var(--bg-2); color:var(--text-dim); font-size:12px; font-weight:700; cursor:pointer;
+  transition:border-color .15s, color .15s;
+}
+.theme-swatch-btn:hover{border-color:var(--violet);}
+.theme-swatch-btn.active{border-color:var(--violet); color:var(--text); box-shadow:0 0 0 1px var(--violet);}
+.theme-swatch-circle{width:28px; height:28px; border-radius:50%; border:1px solid rgba(255,255,255,.25);}
+.settings-danger-zone{padding-top:18px; border-top:1px solid var(--line-soft);}
+.danger-pill-btn{
+  font-family:var(--font-body); font-size:12.5px; font-weight:800; letter-spacing:.03em;
+  padding:9px 22px; border-radius:999px; border:1px solid rgba(240,96,96,.5);
+  background:rgba(240,96,96,.12); color:#f16060; cursor:pointer; text-transform:uppercase;
+  transition:background .15s, border-color .15s;
+}
+.danger-pill-btn:hover{background:rgba(240,96,96,.24); border-color:#f16060;}
+.danger-pill-btn:disabled{opacity:.5; cursor:not-allowed;}
 .profile-xp-total{font-size:12px; color:var(--text-faint); text-align:center; margin:2px 0 0; font-weight:600;}
 .profile-stats-row{
   display:flex; align-items:center; justify-content:center; gap:16px; width:100%; flex-wrap:wrap;
@@ -1096,6 +1160,7 @@ const ICON_FUNNY='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" str
 const ICON_STAR='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>';
 const ICON_PLUS='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>';
 const ICON_LINK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>';
+const ICON_SETTINGS='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>';
 const ICON_CHECK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>';
 const ICON_POWER='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path><line x1="12" y1="2" x2="12" y2="12"></line></svg>';
 
@@ -1355,6 +1420,7 @@ function reviewDocToLocal(doc){
   return {
     rid:doc.id, author:d.author, score:d.score, text:d.text, createdAt:toIso(d.createdAt), editedAt:toIso(d.editedAt),
     baseLikes:d.likesCount||0, baseDislikes:d.dislikesCount||0, baseFunny:d.funnyCount||0,
+    authorDeleted:!!d.authorDeleted,
   };
 }
 async function loadReviewsForItem(item){
@@ -2182,7 +2248,9 @@ function reviewItemHTML(review, opts){
     : '';
   const headLeft = opts.context
     ? `<a class="review-context-link no-modal-trigger" href="#/title/${opts.context.type}/${opts.context.item.id}">${esc(opts.context.item.title)}</a>${timestampHTML}`
-    : `<a class="review-author-link no-modal-trigger profile-link" data-username="${esc(review.author)}" href="#/user/${slug(review.author)}">${esc(review.author)}</a>${timestampHTML}`;
+    : review.authorDeleted
+      ? `<span class="review-author-link review-author-deleted">${esc(review.author)}</span>${timestampHTML}`
+      : `<a class="review-author-link no-modal-trigger profile-link" data-username="${esc(review.author)}" href="#/user/${slug(review.author)}">${esc(review.author)}</a>${timestampHTML}`;
   const ownActions = mine ? `
     <button class="pill-edit-btn no-modal-trigger" data-review-id="${review.id}" data-item-id="${opts.item.id}" type="button">UPRAVIT</button>
     <button class="pill-delete-btn no-modal-trigger" data-review-id="${review.id}" data-item-id="${opts.item.id}" type="button">ODSTRANIT</button>
@@ -3206,6 +3274,10 @@ async function renderUserProfile(username){
   const progress=await getProgressForUsername(username);
   return `
     <div class="crumb"><a href="#/">Kritiq</a> / ${esc(username)}</div>
+    <div class="profile-head-row">
+      ${username===CURRENT_USER ? `<button class="modal-icon-btn" id="profileSettingsBtn" title="Nastavení" type="button">${ICON_SETTINGS}</button>` : ''}
+      <button class="modal-icon-btn" id="profileCopyLinkBtn" title="Kopírovat odkaz na profil" type="button">${ICON_LINK}</button>
+    </div>
     <div class="profile-card">
       <div class="profile-top-combo">
         <button class="profile-avatar-btn" id="profileAvatarBtn" style="${avatar.style}" title="${username===CURRENT_USER?'Změnit profilovou fotku':'Zobrazit oblíbené uživatele'}" type="button">${avatar.inner}</button>
@@ -3243,6 +3315,8 @@ async function refreshUserReviews(username){
 function attachUserProfileEvents(username){
   bindShowAllReviews(username);
   bindReviewItemNavigation('userReviewsList');
+  document.getElementById('profileCopyLinkBtn').addEventListener('click', (e)=> copyProfileLink(username, e.currentTarget));
+  document.getElementById('profileSettingsBtn')?.addEventListener('click', ()=> openSettingsModal());
   document.getElementById('top10ViewBtn').addEventListener('click', ()=> openTop10ViewModal(username));
   document.getElementById('favUsersBtn').addEventListener('click', ()=> openFavoritesModal(username));
   document.getElementById('achievementsViewBtn').addEventListener('click', ()=> openAchievementsModalFor(username));
@@ -3773,6 +3847,7 @@ let CURRENT_USER=null;       // the chosen nickname, once resolved — null whil
 let CURRENT_UID=null;        // Firebase's own user id, always available immediately after sign-in
 let authMode='login';
 let authError='';
+let authInfo='';
 let pendingFirebaseUser=null; // set when a signed-in Firebase user has no nickname yet
 
 function slugifyNickname(raw){
@@ -3801,6 +3876,7 @@ fbAuth.onAuthStateChanged(async (user)=>{
     return;
   }
   CURRENT_UID=user.uid;
+  syncThemeFromAccount(user.uid);
   const nickname = await lookupNicknameForUid(user.uid);
   if(nickname){
     CURRENT_USER=nickname;
@@ -3840,6 +3916,7 @@ function renderAuthBadge(){
 function openAuthModal(mode){
   authMode=mode||'login';
   authError='';
+  authInfo='';
   pushModal(renderAuthModal);
 }
 function loginFormHTML(){
@@ -3852,6 +3929,7 @@ function loginFormHTML(){
       <div class="auth-divider">nebo</div>
       <div class="auth-field"><label>E-mail</label><input type="email" id="loginEmail" placeholder="vas@email.cz"></div>
       <div class="auth-field"><label>Heslo</label><input type="password" id="loginPassword" placeholder="••••••••"></div>
+      <button class="auth-forgot-link" id="forgotPasswordBtn" type="button">Zapomenuté heslo?</button>
       <button class="auth-submit" id="loginSubmitBtn" type="button">Přihlásit se</button>
       <div class="auth-switch">Ještě nemáte účet? <button id="toRegisterBtn" type="button">Zaregistrujte se</button></div>
     </div>`;
@@ -3872,18 +3950,59 @@ function registerFormHTML(){
       <div class="auth-switch">Už máte účet? <button id="toLoginBtn" type="button">Přihlaste se</button></div>
     </div>`;
 }
+function forgotPasswordFormHTML(){
+  return `
+    <button class="modal-close" id="authCloseBtn" aria-label="Zavřít" type="button">✕</button>
+    <h3 class="section-title" style="margin-bottom:16px;">Obnovení hesla</h3>
+    ${authError?`<div class="auth-error">${esc(authError)}</div>`:''}
+    ${authInfo?`<div class="auth-info">${esc(authInfo)}</div>`:''}
+    <div class="auth-form">
+      <p style="color:var(--text-dim); font-size:13.5px; margin:0 0 4px;">Zadejte e-mail, na který jste se na Kritiq zaregistrovali. Pošleme vám odkaz pro nastavení nového hesla.</p>
+      <div class="auth-field"><label>E-mail</label><input type="email" id="forgotEmail" placeholder="vas@email.cz"></div>
+      <button class="auth-submit" id="forgotSubmitBtn" type="button">Odeslat odkaz pro obnovení</button>
+      <div class="auth-switch">Vzpomněli jste si? <button id="toLoginFromForgotBtn" type="button">Zpět na přihlášení</button></div>
+    </div>`;
+}
 function renderAuthModal(){
   const card=document.getElementById('reviewModalCard');
   card.className='modal-card';
-  card.innerHTML = authMode==='login' ? loginFormHTML() : registerFormHTML();
+  card.innerHTML = authMode==='login' ? loginFormHTML() : authMode==='register' ? registerFormHTML() : forgotPasswordFormHTML();
   document.getElementById('authCloseBtn').addEventListener('click', popModal);
   document.getElementById('googleLoginBtn')?.addEventListener('click', handleGoogleLogin);
   if(authMode==='login'){
     document.getElementById('loginSubmitBtn').addEventListener('click', handleLoginSubmit);
-    document.getElementById('toRegisterBtn').addEventListener('click', ()=>{ authMode='register'; authError=''; renderAuthModal(); });
-  }else{
+    document.getElementById('toRegisterBtn').addEventListener('click', ()=>{ authMode='register'; authError=''; authInfo=''; renderAuthModal(); });
+    document.getElementById('forgotPasswordBtn').addEventListener('click', ()=>{ authMode='forgot'; authError=''; authInfo=''; renderAuthModal(); });
+  }else if(authMode==='register'){
     document.getElementById('registerSubmitBtn').addEventListener('click', handleRegisterSubmit);
-    document.getElementById('toLoginBtn').addEventListener('click', ()=>{ authMode='login'; authError=''; renderAuthModal(); });
+    document.getElementById('toLoginBtn').addEventListener('click', ()=>{ authMode='login'; authError=''; authInfo=''; renderAuthModal(); });
+  }else{
+    document.getElementById('forgotSubmitBtn').addEventListener('click', handlePasswordResetSubmit);
+    document.getElementById('toLoginFromForgotBtn').addEventListener('click', ()=>{ authMode='login'; authError=''; authInfo=''; renderAuthModal(); });
+  }
+}
+async function handlePasswordResetSubmit(){
+  const email=document.getElementById('forgotEmail').value.trim();
+  const btn=document.getElementById('forgotSubmitBtn');
+  if(!email){ authError='Zadejte svou e-mailovou adresu.'; authInfo=''; renderAuthModal(); return; }
+  btn.disabled=true;
+  try{
+    await fbAuth.sendPasswordResetEmail(email);
+    authError='';
+    authInfo='Pokud pro tento e-mail existuje účet, poslali jsme na něj odkaz pro obnovení hesla. Zkontrolujte prosím i složku se spamem.';
+    renderAuthModal();
+  }catch(e){
+    // Deliberately shows the same success message even if the email genuinely isn't
+    // registered — Firebase's own error for "user not found" would otherwise let anyone
+    // probe which email addresses have an account here, which is worth avoiding.
+    if(e.code==='auth/user-not-found'){
+      authError='';
+      authInfo='Pokud pro tento e-mail existuje účet, poslali jsme na něj odkaz pro obnovení hesla. Zkontrolujte prosím i složku se spamem.';
+    }else{
+      authError=firebaseErrorMessage(e);
+      authInfo='';
+    }
+    renderAuthModal();
   }
 }
 function firebaseErrorMessage(err){
@@ -3968,6 +4087,7 @@ async function handleNicknameSubmit(){
   popModal();
 }
 function top10ButtonHTML(item){
+  if(!CURRENT_USER) return '';
   return `<button class="top10-add-btn no-modal-trigger" id="top10AddBtn" type="button">Přidat do Top 10</button>`;
 }
 async function refreshTop10Button(item){
@@ -4099,7 +4219,7 @@ const POLICY_CONTENT={
   privacy:{
     title:'Zásady ochrany osobních údajů',
     html:`
-      <p style="color:var(--text-faint); font-size:12px; margin-bottom:14px;">Poslední aktualizace: [DOPLŇTE DATUM]</p>
+      <p style="color:var(--text-faint); font-size:12px; margin-bottom:14px;">Poslední aktualizace: 18. září 2026</p>
       <h4>Jaké údaje shromažďujeme</h4>
       <p>Pro vytvoření a provoz vašeho účtu na Kritiq shromažďujeme:</p>
       <p><b>Při registraci přes Google:</b> vaše jméno, e-mailovou adresu a profilovou fotku, které nám s vaším souhlasem poskytne Google v rámci přihlašovacího procesu.</p>
@@ -4110,9 +4230,9 @@ const POLICY_CONTENT={
       <h4>Sdílení s třetími stranami</h4>
       <p>Pokud se přihlásíte přes Google, proběhne autentizace přímo prostřednictvím Google podle <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">zásad ochrany osobních údajů Google</a>. Vaše přihlašovací údaje (heslo) nikdy neuvidíme ani neukládáme, pokud se přihlašujete přes Google. Vaše údaje dále nesdílíme s žádnou další třetí stranou pro marketingové účely.</p>
       <h4>Jak dlouho údaje uchováváme</h4>
-      <p>Vaše účet a související údaje uchováváme, dokud svůj účet nesmažete. Po smazání účtu jsou vaše osobní údaje trvale odstraněny z našich systémů do [DOPLŇTE LHŮTU, např. 30 dní].</p>
+      <p>Vaše účet a související osobní údaje uchováváme, dokud si svůj profil sami nesmažete přímo v nastavení účtu. Po smazání profilu jsou vaše osobní údaje (jméno, e-mail, profilová fotka a další identifikující informace) trvale odstraněny z našich systémů. Vaše napsané recenze a hodnocení na Kritiq zůstávají zachovány jako součást komunitního obsahu i po smazání profilu, ale jsou zobrazovány anonymně pod označením „Smazaný uživatel", bez jakéhokoliv odkazu na váš původní profil nebo možnosti dohledat vaši totožnost.</p>
       <h4>Vaše práva</h4>
-      <p>Máte právo požádat o přístup ke svým údajům, jejich opravu nebo úplné smazání. O smazání účtu a všech souvisejících dat můžete požádat na [DOPLŇTE KONTAKTNÍ E-MAIL].</p>
+      <p>Máte právo požádat o přístup ke svým údajům nebo jejich opravu. Svůj účet a osobní údaje můžete kdykoliv sami trvale smazat přímo v nastavení profilu (recenze zůstanou zachovány anonymně, jak je popsáno výše). V případě dalších dotazů nás můžete kontaktovat na john.h@email.cz.</p>
       <h4>Cookies a technické údaje</h4>
       <p>Kritiq používá pouze technické soubory cookie nebo obdobné technologie nezbytné k udržení vašeho přihlášení. Nepoužíváme reklamní ani analytické sledovací nástroje třetích stran.</p>
       <h4>Data o filmech, seriálech a hrách</h4>
@@ -4122,7 +4242,7 @@ const POLICY_CONTENT={
       <h4>Změny těchto zásad</h4>
       <p>Tyto zásady můžeme čas od času aktualizovat. O významných změnách vás budeme informovat prostřednictvím oznámení na této stránce.</p>
       <h4>Kontakt</h4>
-      <p>V případě dotazů ohledně ochrany osobních údajů nás kontaktujte na [DOPLŇTE KONTAKTNÍ E-MAIL].</p>
+      <p>V případě dotazů ohledně ochrany osobních údajů nás kontaktujte na john.h@email.cz.</p>
     `
   },
   terms:{
@@ -4134,10 +4254,12 @@ const POLICY_CONTENT={
       <p>Kritiq kombinuje automaticky získaná a ručně kurátorovaná data z <a href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer">TMDb</a> a <a href="https://rawg.io/" target="_blank" rel="noopener noreferrer">RAWG</a> s recenzemi napsanými uživateli komunity.</p>
       <h4>Vaše recenze</h4>
       <p>Za obsah svých recenzí odpovídáte vy sami. Recenze by měly být vaším vlastním, upřímným názorem — bez spamu, nenávistného obsahu nebo materiálu porušujícího práva třetích stran. Kritiq si vyhrazuje právo takový obsah nebo účet, který jej vytvořil, odstranit.</p>
+      <h4>Smazání účtu</h4>
+      <p>Svůj účet můžete kdykoliv sami trvale smazat přímo v nastavení profilu. Vaše osobní údaje budou odstraněny; vaše recenze a hodnocení zůstanou na Kritiq zachovány jako součást komunitního obsahu, avšak zobrazeny anonymně pod označením „Smazaný uživatel".</p>
       <h4>Bez záruky</h4>
       <p>Kritiq je poskytován „tak jak je", bez záruky přesnosti či nepřetržité dostupnosti. Skóre a hodnocení se mohou kdykoliv změnit na základě nových recenzí nebo aktualizace dat ze zdrojových služeb.</p>
       <h4>Kontakt</h4>
-      <p>V případě dotazů ohledně těchto podmínek nás kontaktujte na [DOPLŇTE KONTAKTNÍ E-MAIL].</p>
+      <p>V případě dotazů ohledně těchto podmínek nás kontaktujte na john.h@email.cz.</p>
     `
   }
 };
@@ -4514,7 +4636,9 @@ function renderModalCard(item, review){
     <button class="modal-close" id="reviewModalCloseBtn" aria-label="Zavřít" type="button">✕</button>
     <div class="modal-review-head">
       <div class="modal-review-score ${scoreClass(review.score)}">${review.score}</div>
-      <a class="modal-review-author profile-link" data-username="${esc(review.author)}" href="#/user/${slug(review.author)}">${esc(review.author)}</a>
+      ${review.authorDeleted
+        ? `<span class="modal-review-author review-author-deleted">${esc(review.author)}</span>`
+        : `<a class="modal-review-author profile-link" data-username="${esc(review.author)}" href="#/user/${slug(review.author)}">${esc(review.author)}</a>`}
     </div>
     <div class="modal-review-text">${esc(review.text)}</div>
     ${isOwnReview ? '' : `
@@ -4661,6 +4785,7 @@ async function renderUserModal(){
   card.className='modal-card';
   card.innerHTML=`
     <div class="modal-head-row">
+      ${username===CURRENT_USER ? `<button class="modal-icon-btn" id="modalSettingsBtn" title="Nastavení" type="button">${ICON_SETTINGS}</button>` : ''}
       <button class="modal-icon-btn" id="modalCopyLinkBtn" title="Kopírovat odkaz na profil" type="button">${ICON_LINK}</button>
       <button class="modal-icon-btn" id="modalProfileCloseBtn" aria-label="Zavřít" title="Zavřít" type="button">✕</button>
     </div>
@@ -4705,6 +4830,7 @@ async function renderUserModal(){
     renderUserModal();
   });
   document.getElementById('modalCopyLinkBtn').addEventListener('click', (e)=> copyProfileLink(username, e.currentTarget));
+  document.getElementById('modalSettingsBtn')?.addEventListener('click', ()=> openSettingsModal());
   bindShowAllReviews(username);
 }
 function copyProfileLink(username, btnEl){
@@ -4728,6 +4854,137 @@ function fallbackCopy(text, cb){
     document.body.appendChild(ta); ta.select(); document.execCommand('copy'); document.body.removeChild(ta);
     if(cb) cb();
   }catch(e){}
+}
+
+const THEME_OPTIONS=[
+  {id:'purple', label:'Fialová', swatch:'linear-gradient(135deg,#9b5cf6,#c084fc)'},
+  {id:'blue', label:'Tmavě modrá', swatch:'linear-gradient(135deg,#4a8cf7,#7db3ff)'},
+  {id:'gold', label:'Tmavě zlatá', swatch:'linear-gradient(135deg,#d4a72c,#e8c458)'},
+];
+function openSettingsModal(){
+  pushModal(()=>{
+    const card=document.getElementById('reviewModalCard');
+    let currentTheme='purple';
+    try{ currentTheme=localStorage.getItem('kritiqTheme')||'purple'; }catch(e){}
+    card.className='modal-card';
+    card.innerHTML=`
+      <button class="modal-close" id="settingsCloseBtn" aria-label="Zavřít" type="button">✕</button>
+      <h3 class="section-title" style="margin-bottom:16px;">Nastavení</h3>
+      <div class="settings-section">
+        <p class="settings-label">Barevné schéma Kritiq</p>
+        <div class="theme-swatch-row">
+          ${THEME_OPTIONS.map(t=>`
+            <button class="theme-swatch-btn${t.id===currentTheme?' active':''}" data-theme-id="${t.id}" type="button">
+              <span class="theme-swatch-circle" style="background:${t.swatch};"></span>
+              <span>${esc(t.label)}</span>
+            </button>
+          `).join('')}
+        </div>
+      </div>
+      <div class="settings-section settings-danger-zone">
+        <p class="settings-label">Nebezpečná zóna</p>
+        <button class="danger-pill-btn" id="deleteAccountOpenBtn" type="button">Smazat profil</button>
+      </div>
+    `;
+    document.getElementById('settingsCloseBtn').addEventListener('click', popModal);
+    card.querySelectorAll('.theme-swatch-btn').forEach(btn=>{
+      btn.addEventListener('click', async ()=>{
+        const id=btn.dataset.themeId;
+        card.querySelectorAll('.theme-swatch-btn').forEach(b=>b.classList.remove('active'));
+        btn.classList.add('active');
+        await setTheme(id);
+      });
+    });
+    document.getElementById('deleteAccountOpenBtn').addEventListener('click', ()=> openDeleteAccountConfirmModal());
+  });
+}
+function openDeleteAccountConfirmModal(){
+  pushModal(()=>{
+    const card=document.getElementById('reviewModalCard');
+    card.className='modal-card';
+    card.innerHTML=`
+      <button class="modal-close" id="deleteConfirmCloseBtn" aria-label="Zavřít" type="button">✕</button>
+      <h3 class="section-title" style="margin-bottom:10px;">Opravdu chcete smazat svůj profil?</h3>
+      <p style="color:var(--text-dim); font-size:14px; margin-bottom:16px; line-height:1.5;">Tato akce je nevratná. Vaše osobní údaje (jméno, e-mail, profilová fotka) budou trvale odstraněny. Vaše napsané recenze zůstanou na Kritiq zachovány, ale budou zobrazeny anonymně jako „Smazaný uživatel", bez odkazu na váš profil.</p>
+      <p style="font-size:13.5px; margin-bottom:8px;">Pro potvrzení napište <b>smazat</b> do pole níže:</p>
+      <div class="auth-field" style="margin-bottom:18px;"><input type="text" id="deleteConfirmInput" placeholder="smazat" autocomplete="off"></div>
+      <div style="display:flex; gap:10px; justify-content:flex-end;">
+        <button class="fav-users-btn" id="deleteConfirmCancelBtn" type="button" style="margin-top:0;">Zrušit</button>
+        <button class="danger-pill-btn" id="deleteConfirmSubmitBtn" type="button" disabled>Smazat profil</button>
+      </div>
+    `;
+    document.getElementById('deleteConfirmCloseBtn').addEventListener('click', popModal);
+    document.getElementById('deleteConfirmCancelBtn').addEventListener('click', popModal);
+    const input=document.getElementById('deleteConfirmInput');
+    const submitBtn=document.getElementById('deleteConfirmSubmitBtn');
+    input.addEventListener('input', ()=>{
+      submitBtn.disabled = input.value.trim().toLowerCase()!=='smazat';
+    });
+    submitBtn.addEventListener('click', async ()=>{
+      if(input.value.trim().toLowerCase()!=='smazat') return;
+      submitBtn.disabled=true; submitBtn.textContent='Mažu…';
+      try{
+        await deleteMyAccount();
+        closeAllModals();
+        location.hash='#/';
+        route();
+      }catch(e){
+        console.error('Nepodařilo se smazat profil', e);
+        submitBtn.disabled=false; submitBtn.textContent='Smazat profil';
+        alert('Smazání profilu se nezdařilo. Zkuste to prosím znovu, nebo nás kontaktujte na john.h@email.cz.');
+      }
+    });
+  });
+}
+async function deleteMyAccount(){
+  const uid=CURRENT_UID;
+  const username=CURRENT_USER;
+  if(!uid || !username) throw new Error('Not logged in');
+
+  // 1. Anonymize every review this account wrote — batched (Firestore caps a batch at
+  // 500 writes), so this scales regardless of how many reviews they've written.
+  const reviewsSnap=await db.collection('reviews').where('uid','==',uid).get();
+  const reviewDocs=reviewsSnap.docs;
+  for(let i=0;i<reviewDocs.length;i+=450){
+    const batch=db.batch();
+    reviewDocs.slice(i,i+450).forEach(doc=>{
+      batch.update(doc.ref, {author:'Smazaný uživatel', authorDeleted:true});
+    });
+    await batch.commit();
+  }
+
+  // 2. Delete this account's own favorites (who THEY followed) — also batched.
+  const favSnap=await db.collection('favorites').where('followerUid','==',uid).get();
+  const favDocs=favSnap.docs;
+  for(let i=0;i<favDocs.length;i+=450){
+    const batch=db.batch();
+    favDocs.slice(i,i+450).forEach(doc=> batch.delete(doc.ref));
+    await batch.commit();
+  }
+
+  // 3. Delete Top 10 lists, progress/XP, the claimed nickname, and the profile doc itself
+  // (which also holds the avatar, stored inline as base64 rather than in Storage).
+  await Promise.all(['movie','show','game'].map(type=>
+    db.collection('top10').doc(`${username}_${type}`).delete().catch(()=>{})
+  ));
+  await db.collection('progress').doc(uid).delete().catch(()=>{});
+  await db.collection('usernames').doc(username).delete().catch(()=>{});
+  await db.collection('users').doc(uid).delete().catch(()=>{});
+
+  try{ localStorage.removeItem('kritiqTheme'); }catch(e){}
+
+  // 4. Attempt to remove the Firebase Auth account itself. This can fail with
+  // 'auth/requires-recent-login' if the session is old — Firestore data is already gone
+  // at this point regardless, so this degrades gracefully to just signing them out rather
+  // than leaving the account in a half-deleted, confusing state.
+  try{
+    await fbAuth.currentUser.delete();
+  }catch(e){
+    console.error('Nepodařilo se smazat účet Firebase Auth (Firestore data už byla vymazána) — zřejmě je nutné čerstvé přihlášení', e);
+    await fbAuth.signOut();
+  }
+
+  CURRENT_USER=null; CURRENT_UID=null; MY_FAVORITES=[];
 }
 
 /* ======================= SEARCH PANEL ======================= */
@@ -4828,7 +5085,7 @@ function initSearchPanel(){
    they're re-applied on top of the catalog every time it loads. This means edits survive
    future re-fetches automatically, since the override layer is entirely independent of
    the JSON files themselves. */
-const ADMIN_UID='xi7dBc7SwxZDGC3ZSjcoQnO1rzh1'; // Firebase Console -> Authentication -> your account -> User UID
+const ADMIN_UID='PASTE_YOUR_FIREBASE_UID_HERE'; // Firebase Console -> Authentication -> your account -> User UID
 function isAdmin(){ return !!CURRENT_UID && CURRENT_UID===ADMIN_UID; }
 let ADMIN_OVERRIDES_CACHE=null;
 async function loadAdminOverrides(){
@@ -4894,7 +5151,39 @@ async function loadFullCatalog(){
   return loadedReal;
 }
 let TRENDING_HOME_DATA=null; // cached separately from DB — keeps the homepage showing the SAME server-chosen selection even after DB gets replaced by the full catalog, instead of re-deriving a different set client-side
+const THEME_NAMES=['purple','blue','gold'];
+function applyTheme(name){
+  if(name && name!=='purple' && THEME_NAMES.includes(name)) document.documentElement.setAttribute('data-theme', name);
+  else document.documentElement.removeAttribute('data-theme');
+}
+function applyThemeFromLocalCache(){
+  let theme=null;
+  try{ theme=localStorage.getItem('kritiqTheme'); }catch(e){}
+  if(theme) applyTheme(theme);
+}
+async function setTheme(name){
+  applyTheme(name);
+  try{ localStorage.setItem('kritiqTheme', name); }catch(e){}
+  if(CURRENT_UID){
+    try{ await db.collection('users').doc(CURRENT_UID).set({theme:name}, {merge:true}); }catch(e){ console.error('Nepodařilo se uložit barevné schéma', e); }
+  }
+}
+async function syncThemeFromAccount(uid){
+  // Cross-device sync: whatever this account last saved (if anything) takes precedence
+  // over whatever happened to be cached on this specific device.
+  try{
+    const doc=await db.collection('users').doc(uid).get();
+    const theme=doc.exists ? doc.data().theme : null;
+    if(theme){
+      applyTheme(theme);
+      try{ localStorage.setItem('kritiqTheme', theme); }catch(e){}
+    }
+  }catch(e){
+    console.error('Nepodařilo se načíst uložené barevné schéma', e);
+  }
+}
 async function init(){
+  applyThemeFromLocalCache(); // apply immediately, before any rendering, to avoid a flash of the wrong theme
   const initialLoadPromise=loadFullCatalog(); // loads just the recent bucket per category — kicked off immediately, not awaited yet
 
   const trending=await loadTrendingLight();
