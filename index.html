@@ -28,6 +28,7 @@
   --magenta:#e264b8;
   --bg-glow-1:#341f52;
   --bg-glow-2:#2a1440;
+  --header-bg:rgba(21,10,34,.86);
   --s-black-bg:#0a0810; --s-black-fg:#f1ecfa;
   --s-grey-bg:#585068;  --s-grey-fg:#f1ecfa;
   --s-blue-bg:#3f6fdb;  --s-blue-fg:#ffffff;
@@ -54,6 +55,7 @@
   --magenta:#3fc7e8;
   --bg-glow-1:#1e3a6b;
   --bg-glow-2:#14284a;
+  --header-bg:rgba(10,18,32,.86);
 }
 :root[data-theme="gold"]{
   --bg:#1a1408;
@@ -70,6 +72,7 @@
   --magenta:#e2824a;
   --bg-glow-1:#4a3a14;
   --bg-glow-2:#3a2a0e;
+  --header-bg:rgba(26,20,8,.86);
 }
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
@@ -98,7 +101,7 @@ button{font-family:inherit;}
 /* ---------- HEADER ---------- */
 header.site{
   position:sticky; top:0; z-index:50;
-  background:rgba(21,10,34,.86);
+  background:var(--header-bg);
   backdrop-filter:blur(14px);
   border-bottom:1px solid var(--line-soft);
 }
@@ -285,6 +288,7 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
 
 /* ---------- MAIN ---------- */
 #app{padding-top:3px; padding-bottom:22px;}
+.page-shift-10{margin-top:10px;}
 .page-title{
   font-family:var(--font-display); font-weight:800; font-size:30px;
   margin:0 0 4px;
@@ -2794,7 +2798,7 @@ async function renderList(type){
     </div>`;
   }
   return `
-    <div class="filterbar">
+    <div class="filterbar page-shift-10">
       ${platformFilterHTML}
       ${genreFilterHTML}
       <span class="label">Rok</span>
@@ -3031,7 +3035,7 @@ function renderDetail(type,id){
   }
 
   return `
-    <div class="detail-top detail-top--notag">
+    <div class="detail-top detail-top--notag page-shift-10">
       <div class="detail-header">
         <h1>${esc(item.title)}${isAdmin() ? `<button class="admin-edit-btn no-modal-trigger" id="adminEditBtn" title="Upravit údaje (jen pro admina)" type="button">✎</button>` : ''}</h1>
         <div class="detail-meta-line">${metaLine}</div>
@@ -3251,7 +3255,7 @@ function renderPerson(key, personData){
     }
   }
   return `
-    <div class="crumb"><a href="#/">Kritiq</a> / ${esc(name)}</div>
+    <div class="crumb page-shift-10"><a href="#/">Kritiq</a> / ${esc(name)}</div>
     <div class="person-head">
       <div class="person-avatar" style="${(bio && bio.image)?'':avatarStyle}">${avatarInner}</div>
       <div><h1 class="page-title" style="margin-bottom:2px;">${esc(name)}</h1><div class="person-role">${role}</div>${bioLine}</div>
