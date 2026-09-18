@@ -18,14 +18,17 @@
     ],
     "summary": "",
     "director": {
+      "id": 1868,
       "name": "Louis Lumière",
       "image": "https://image.tmdb.org/t/p/w300/xqlxj9bQCHhEPQ54yDinbF1hvJO.jpg"
     },
     "composer": {
+      "id": null,
       "name": "",
       "image": ""
     },
     "writer": {
+      "id": null,
       "name": "",
       "image": ""
     },
@@ -51,19 +54,23 @@
     ],
     "summary": "",
     "director": {
+      "id": 1868,
       "name": "Louis Lumière",
       "image": "https://image.tmdb.org/t/p/w300/xqlxj9bQCHhEPQ54yDinbF1hvJO.jpg"
     },
     "composer": {
+      "id": null,
       "name": "",
       "image": ""
     },
     "writer": {
+      "id": null,
       "name": "",
       "image": ""
     },
     "actors": [
       {
+        "id": 1419407,
         "name": "Madeleine Koehler",
         "birthday": "1895-06-01",
         "deathday": "1970-10-11",
@@ -71,6 +78,7 @@
         "image": ""
       },
       {
+        "id": 1419405,
         "name": "Marcel Koehler",
         "birthday": null,
         "deathday": null,
@@ -78,6 +86,7 @@
         "image": ""
       },
       {
+        "id": 1419401,
         "name": "Marguerite Lumière",
         "birthday": "1874-09-13",
         "deathday": "1963-06-25",
@@ -85,6 +94,7 @@
         "image": "https://image.tmdb.org/t/p/w300/smW5m81omlGSuu39BdNLG5GDWjK.jpg"
       },
       {
+        "id": 1419617,
         "name": "Jeanne-Joséphine Lumière",
         "birthday": "1841-06-21",
         "deathday": "1915-12-20",
@@ -92,6 +102,7 @@
         "image": ""
       },
       {
+        "id": 1419400,
         "name": "Rose Lumière",
         "birthday": "1868-08-03",
         "deathday": "1925-10-21",
@@ -99,6 +110,7 @@
         "image": ""
       },
       {
+        "id": 1419409,
         "name": "Suzanne Lumière",
         "birthday": "1894-09-15",
         "deathday": "1973-12-27",
