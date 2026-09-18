@@ -2213,6 +2213,14 @@ def main():
         changed, api_calls = backfill_person_ids(movies_store, movies_czsk_store, shows_store, args.tmdb_key, people_cache, today)
         save_json(args.people_cache_file, people_cache)
         print(f"Backfilled {changed} title(s) with person ids, using {api_calls} API call(s).", file=sys.stderr)
+        # The backfill only touches the underlying movie/show credit data — the actual
+        # files the website's person search and filmography pages read from
+        # (people_search_index.json, people/*.json) are DERIVED from that data and must
+        # be regenerated too, or the newly-added ids never take effect: the website would
+        # compute brand-new p{id} keys from the now-backfilled credits, but find nothing
+        # for them in shard files still keyed the old way.
+        people_search_index, people_shards = compute_people_index(args.movies_prefix, args.movies_czsk_prefix, args.shows_prefix, args.games_prefix)
+        print(f"Regenerated people_search_index.json and shards: {len(people_search_index)} people, across {len(people_shards)} shard files.", file=sys.stderr)
         print("Done.", file=sys.stderr)
         return
 
