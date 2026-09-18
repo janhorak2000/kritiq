@@ -250,7 +250,7 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
 }
 
 /* ---------- MAIN ---------- */
-#app{padding-top:13px; padding-bottom:32px;}
+#app{padding-top:3px; padding-bottom:22px;}
 .page-title{
   font-family:var(--font-display); font-weight:800; font-size:30px;
   margin:0 0 4px;
@@ -1446,7 +1446,12 @@ async function getUserReviewsAsync(username){
   }catch(e){
     console.error('Nepodařilo se načíst recenze uživatele', username, e);
   }
-  return out.reverse();
+  // Firestore's query order isn't guaranteed to be chronological (no orderBy was used,
+  // deliberately, to avoid needing a composite index) — sort explicitly by date instead
+  // of assuming query order and just reversing it, which was unreliable and could put an
+  // older review ahead of a genuinely newer one.
+  out.sort((a,b)=> (b.review.createdAt||'').localeCompare(a.review.createdAt||''));
+  return out;
 }
 
 function top10DocId(username, type){ return username+'_'+type; }
@@ -2101,7 +2106,7 @@ async function applyItemScoreDelta(itemId, sumDelta, countDelta){
 /* For sort comparators: unscored ("N") items sort to the bottom rather than breaking
    the comparison (null - number is NaN in JS, which sorts unpredictably). */
 function scoreSortValue(item){
-  const s=liveScore(item);
+  const s=scoreForListOrSearch(item);
   return s===null ? -1 : s;
 }
 
@@ -2638,7 +2643,7 @@ function distinctGenres(type){
   return Array.from(set).sort((a,b)=>a.localeCompare(b,'cs'));
 }
 
-function sortedListFor(type){
+function filteredListFor(type){
   const st=listState[type+'s'];
   let items=DB[type].filter(it=>it.year>=st.y0 && it.year<=st.y1);
   if(type==='game' && st.platform && st.platform!=='ALL'){
@@ -2653,7 +2658,11 @@ function sortedListFor(type){
       items=items.filter(it=>(it.genre||'').split(',').map(g=>g.trim()).includes(st.filter));
     }
   }
-  return items.slice().sort((a,b)=>{
+  return items;
+}
+function sortedListFor(type){
+  const st=listState[type+'s'];
+  return filteredListFor(type).slice().sort((a,b)=>{
     if(st.sort==='score') return scoreSortValue(b)-scoreSortValue(a);
     if(st.sort==='new') return b.date.localeCompare(a.date);
     if(st.sort==='box' && type==='movie') return (b.box===null||b.box===undefined?-1:b.box) - (a.box===null||a.box===undefined?-1:a.box);
@@ -2662,6 +2671,15 @@ function sortedListFor(type){
 }
 async function listBodyHTML(type){
   const st=listState[type+'s'];
+  if(st.sort==='score'){
+    // Pre-fetch aggregates for EVERY item in the filtered range before sorting, not just
+    // the page currently shown — otherwise the sort comparator would run against
+    // whatever happened to already be cached (often nothing), while the displayed badge
+    // (computed after sorting, via the same aggregate-aware function) would show the
+    // correct, current score. That exact mismatch is what let a title's position lag
+    // behind its own badge after a review changed its score.
+    await ensureItemScoreAggregates(filteredListFor(type).map(it=>it.id));
+  }
   const sorted=sortedListFor(type);
   const shown=sorted.slice(0, st.page*PAGE_SIZE);
   await ensureItemScoreAggregates(shown.map(it=>it.id));
