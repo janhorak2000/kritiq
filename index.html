@@ -2804,15 +2804,17 @@ async function refreshListBody(type){
   const key=type+'s'; const st=listState[key];
   const prefixes = type==='movie' ? ['movies','movies_czsk'] : type==='show' ? ['shows'] : ['games'];
 
-  // If the main-only data for this range is already fully accounted for by the page the
-  // user is now on, and there's overflow for this range not yet loaded, pull that in —
-  // this is what makes scrolling past the top-50-per-year cap actually work.
+  // Any sort other than "by score" needs the COMPLETE dataset for the selected year
+  // range, not just the top-50-by-score "main" subset — see the matching note in
+  // route() above for why.
+  const needsFullRangeForSort = st.sort!=='score';
+
   const sortedSoFar=sortedListFor(type);
   const wouldShow=Math.min(st.page*PAGE_SIZE, sortedSoFar.length);
   const hasUnloadedOverflow=MANIFEST_INFO && MANIFEST_INFO.some(info=>
     prefixes.includes(info.prefix) && info.endYear>=st.y0 && info.startYear<=st.y1 && info.isOverflow && !LOADED_BUCKET_FILES.has(info.filename)
   );
-  const needsMoreFetch = wouldShow>=sortedSoFar.length && hasUnloadedOverflow;
+  const needsMoreFetch = needsFullRangeForSort ? hasUnloadedOverflow : (wouldShow>=sortedSoFar.length && hasUnloadedOverflow);
   const needsFetch=MANIFEST_INFO && MANIFEST_INFO.some(info=>
     prefixes.includes(info.prefix) && info.endYear>=st.y0 && info.startYear<=st.y1 && !LOADED_BUCKET_FILES.has(info.filename) && !info.isOverflow
   );
@@ -2822,11 +2824,7 @@ async function refreshListBody(type){
   const sentinel=document.getElementById('scrollSentinel');
   if(sentinel && (needsFetch || needsMoreFetch)) sentinel.textContent='Načítání dalších titulů…';
 
-  if(needsMoreFetch){
-    await ensureBucketsLoaded(prefixes, st.y0, st.y1, true); // now including overflow
-  }else{
-    await ensureBucketsLoaded(prefixes, st.y0, st.y1, false); // main only, same as the default view
-  }
+  await ensureBucketsLoaded(prefixes, st.y0, st.y1, needsFullRangeForSort || needsMoreFetch);
 
   const body=await listBodyHTML(type);
   const freshListBody=document.getElementById('listBody');
@@ -3392,11 +3390,17 @@ async function route(){
     const type=parts[0]==='movies'?'movie':parts[0]==='shows'?'show':'game';
     const st=listState[parts[0]];
     const prefixes = type==='movie' ? ['movies','movies_czsk'] : type==='show' ? ['shows'] : ['games'];
+    // Any sort other than "by score" needs the COMPLETE dataset for the selected year
+    // range up front — the "main" bucket only holds each year's top 50 BY SCORE, so a
+    // newest/alphabetical/box-office sort would silently miss anything outside that
+    // subset (most obviously: a newly-added title that doesn't have many votes yet) if
+    // only main were loaded.
+    const needsFullRangeForSort = st.sort!=='score';
     const needsFetch=MANIFEST_INFO && MANIFEST_INFO.some(info=>
-      prefixes.includes(info.prefix) && info.endYear>=st.y0 && info.startYear<=st.y1 && !LOADED_BUCKET_FILES.has(info.filename) && !info.isOverflow
+      prefixes.includes(info.prefix) && info.endYear>=st.y0 && info.startYear<=st.y1 && !LOADED_BUCKET_FILES.has(info.filename) && (needsFullRangeForSort || !info.isOverflow)
     );
     if(needsFetch) app.innerHTML=skeletonListHTML();
-    await ensureBucketsLoaded(prefixes, st.y0, st.y1, false);
+    await ensureBucketsLoaded(prefixes, st.y0, st.y1, needsFullRangeForSort);
   }else if(needsFullCatalogUpfront && !FULL_CATALOG_READY){
     // search genuinely needs to look across every item — no way to know in advance which
     // bucket holds what it's looking for. (This route is currently unreachable dead code —
