@@ -1701,6 +1701,85 @@ def refresh_recent_unranked_games(key, store, today, days=7):
     print(f"  games score refresh: checked {checked} recently-added unranked games, upgraded {upgraded}", file=sys.stderr)
 
 
+def backfill_person_ids(movies_store, movies_czsk_store, shows_store, key, people_cache, today):
+    """One-time migration: re-fetches credits for any movie/show record whose director/
+    writer/composer/actors are missing the TMDb person id field (saved before that field
+    existed). This id is what actually disambiguates two different real people who happen
+    to share a name — e.g. the Spider-Man actor Tom Holland versus the unrelated 1980s
+    horror director of the same name, who would otherwise collapse into a single,
+    incorrectly-merged person entry (their biography and filmography mixed together).
+    Records that already carry ids are skipped entirely — no wasted API calls, and safe
+    to run more than once: anything already backfilled is simply left alone next time."""
+    changed = 0
+    api_calls = 0
+
+    def needs_backfill(r):
+        for field in ("director", "writer", "composer"):
+            person = r.get(field)
+            if person and person.get("name") and "id" not in person:
+                return True
+        for actor in (r.get("actors") or []):
+            if "id" not in actor:
+                return True
+        return False
+
+    def backfill_movie(r):
+        nonlocal api_calls
+        credits = tmdb_get(f"/movie/{r['tmdb_id']}/credits", key)
+        api_calls += 1
+        director_row = next((c for c in credits.get("crew", []) if c["job"] == "Director"), None)
+        composer_row = next((c for c in credits.get("crew", []) if c["job"] == "Original Music Composer"), None)
+        writer_row = next((c for c in credits.get("crew", []) if c["job"] in ("Screenplay", "Writer")), None)
+        r["director"] = person_crew_obj(director_row["name"] if director_row else "", director_row.get("id") if director_row else None, key, people_cache)
+        r["composer"] = person_crew_obj(composer_row["name"] if composer_row else "", composer_row.get("id") if composer_row else None, key, people_cache)
+        r["writer"] = person_crew_obj(writer_row["name"] if writer_row else "", writer_row.get("id") if writer_row else None, key, people_cache)
+        r["actors"] = build_actor_list(key, credits.get("cast", []), people_cache, today, cap=60)
+
+    def backfill_show(r):
+        nonlocal api_calls
+        details = tmdb_get(f"/tv/{r['tmdb_id']}", key, {"append_to_response": "aggregate_credits"})
+        api_calls += 1
+        agg = details.get("aggregate_credits") or {}
+        crew = agg.get("crew", [])
+        cast = agg.get("cast", [])
+
+        def find_job(job_names):
+            for c in crew:
+                jobs = {j.get("job") for j in (c.get("jobs") or [])}
+                if jobs & job_names:
+                    return c["name"], c.get("id")
+            return "", None
+
+        director_name, director_id = find_job({"Director", "Series Director"})
+        composer_name, composer_id = find_job({"Original Music Composer", "Music", "Composer"})
+        writer_name, writer_id = find_job({"Writer", "Story Editor", "Teleplay"})
+        if not writer_name:
+            creators = details.get("created_by") or []
+            if creators:
+                writer_name, writer_id = creators[0].get("name", ""), creators[0].get("id")
+        r["director"] = person_crew_obj(director_name, director_id, key, people_cache)
+        r["composer"] = person_crew_obj(composer_name, composer_id, key, people_cache)
+        r["writer"] = person_crew_obj(writer_name, writer_id, key, people_cache)
+        r["actors"] = build_actor_list(key, cast, people_cache, today, cap=110)
+
+    for store, backfill_fn in ((movies_store, backfill_movie), (movies_czsk_store, backfill_movie), (shows_store, backfill_show)):
+        for label, records in list(store.original.items()):
+            label_changed = False
+            for r in records:
+                if not r.get("tmdb_id") or not needs_backfill(r):
+                    continue
+                try:
+                    backfill_fn(r)
+                    label_changed = True
+                    changed += 1
+                except Exception as e:
+                    print(f"    warning: person-id backfill failed for tmdb_id {r.get('tmdb_id')} ({e})", file=sys.stderr)
+            if label_changed:
+                save_bucket_label(store, label, records)  # saved per-label as we go, so an interrupted run resumes cleanly rather than losing progress
+
+    return changed, api_calls
+
+
 def resize_existing_images(movies_store, movies_czsk_store, shows_store, games_store):
     """One-time migration to shrink poster/gallery image URLs already saved on disk from
     earlier runs — a pure string transformation on data already fetched, no new API calls
@@ -2089,6 +2168,7 @@ def main():
     ap.add_argument("--fix-czsk-country-labels-only", action="store_true", help="patch the country field on existing Czech/Slovak movies/shows whose label was saved as the raw 'CS'/'XC' code before the Česko mapping existed, then exit immediately — no TMDb calls, purely a local fix for data already on disk")
     ap.add_argument("--recheck-deaths-only", action="store_true", help="re-check every person currently on file as alive (actors, directors, writers, composers) for a newly recorded death on TMDb, update people.json, then exit immediately — doesn't need to run often, e.g. weekly or monthly is plenty")
     ap.add_argument("--resize-images-only", action="store_true", help="one-time migration: shrink poster/gallery image URLs already saved on disk from earlier runs (games get RAWG's resize path, movie/show posters swap to a smaller TMDb size), then exit immediately — no API calls, purely a local URL rewrite on data already on disk")
+    ap.add_argument("--backfill-person-ids-only", action="store_true", help="one-time migration: re-fetches credits for any movie/show already saved on disk whose director/writer/composer/actors are missing the TMDb person id (saved before that field existed) — needed to correctly distinguish two different real people who happen to share a name, then exits immediately. Needs --tmdb-key; makes one extra API call per affected title, safe to interrupt and re-run")
     ap.add_argument("--recheck-deaths-limit", type=int, default=3000, help="safety cap on how many people to re-check in one run of --recheck-deaths-only (default 3000)")
     ap.add_argument("--recent-games-min-wishlist", type=int, default=10, help="flat wishlist floor for the recent-games scan (bypasses the era/genre-tiered thresholds used during backfill, since this scan is always 'recent' anyway)")
     ap.add_argument("--recent-days", type=int, default=None, help="scan only a precise window of the last N days for all 'recent' fetches (movies, shows, both CZ/SK variants, and games), instead of re-scanning the whole current year every run. Combine with --skip-backfill once historical collection is complete, for a lightweight ongoing 'just catch new releases' mode, e.g. --recent-days 7")
@@ -2099,9 +2179,9 @@ def main():
     # never both. Validated here instead, based on which mode is actually running.
     if args.fix_czsk_country_labels_only or args.backfill_show_scores_only or args.resize_images_only:
         pass  # neither key touches the network for these — pure local data fixes
-    elif args.recheck_deaths_only:
+    elif args.recheck_deaths_only or args.backfill_person_ids_only:
         if not args.tmdb_key:
-            ap.error("--tmdb-key is required for --recheck-deaths-only")
+            ap.error("--tmdb-key is required for --recheck-deaths-only and --backfill-person-ids-only")
     else:
         if not args.tmdb_key:
             ap.error("--tmdb-key is required")
@@ -2125,6 +2205,14 @@ def main():
         updated = recheck_people_deaths(args.tmdb_key, people_cache, args.recheck_deaths_limit)
         save_json(args.people_cache_file, people_cache)
         print(f"Found {updated} newly recorded death(s). people.json updated.", file=sys.stderr)
+        print("Done.", file=sys.stderr)
+        return
+
+    if args.backfill_person_ids_only:
+        print("Running person-id backfill only (--backfill-person-ids-only)...", file=sys.stderr)
+        changed, api_calls = backfill_person_ids(movies_store, movies_czsk_store, shows_store, args.tmdb_key, people_cache, today)
+        save_json(args.people_cache_file, people_cache)
+        print(f"Backfilled {changed} title(s) with person ids, using {api_calls} API call(s).", file=sys.stderr)
         print("Done.", file=sys.stderr)
         return
 

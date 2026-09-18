@@ -408,7 +408,7 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
 .s-gold{background:var(--s-gold-bg); color:var(--s-gold-fg); box-shadow:0 0 16px rgba(232,177,58,.55), 0 3px 10px rgba(0,0,0,.4);}
 .hero-carousel{
   position:relative; width:100%; aspect-ratio:21/9; min-height:120px;
-  border-radius:var(--radius-l); overflow:hidden;
+  border-radius:var(--radius-l); overflow:hidden; touch-action:pan-y;
 }
 .home-hero-row{display:flex; flex-direction:column; gap:16px; margin:20px 0 28px;}
 .home-hero-banner-col{order:1;}
@@ -442,8 +442,8 @@ nav.main-nav a.active{color:#fff; background:linear-gradient(135deg,var(--violet
   background:linear-gradient(180deg, rgba(0,0,0,0) 35%, rgba(0,0,0,.82) 100%);
 }
 .hero-slide-kicker{
-  position:absolute; top:16px; left:20px; z-index:2;
-  font-family:var(--font-display); font-weight:700; font-size:13px; letter-spacing:.02em;
+  display:block; margin-bottom:4px;
+  font-family:var(--font-display); font-weight:700; font-size:10px; letter-spacing:.02em;
   color:#d4b3f7; text-shadow:0 2px 6px rgba(0,0,0,.75), 0 1px 2px rgba(0,0,0,.9);
 }
 .hero-slide-content{
@@ -2301,9 +2301,9 @@ function heroCarouselHTML(){
       ${slides.map((s,i)=>{
         const badge=scoreBadge(s.score);
         return `<a class="hero-slide${i===0?' active':''}" href="#/title/${s.type}/${s.id}" data-type="${s.type}" data-id="${esc(s.id)}" data-year="${s.year}" style="background-image:url('${esc(s.backdrop)}')">
-          <span class="hero-slide-kicker">${esc(KICKERS[s.type])}</span>
           <span class="hero-slide-badge ${badge.cls}">${badge.text}</span>
           <div class="hero-slide-content">
+            <span class="hero-slide-kicker">${esc(KICKERS[s.type])}</span>
             <span class="hero-slide-title">${esc(s.title)}</span>
           </div>
         </a>`;
@@ -2319,8 +2319,13 @@ function startHeroCarousel(){
   if(!el) return;
   const slides=[...el.querySelectorAll('.hero-slide')];
   if(!slides.length) return;
-  slides.forEach(s=> s.addEventListener('click', (e)=> preloadAndNavigateToTitle(s.dataset.type, s.dataset.id, +s.dataset.year, e)));
-  if(slides.length<=1) return; // nothing to cycle or navigate through
+
+  let wasSwipe=false;
+  slides.forEach(s=> s.addEventListener('click', (e)=>{
+    if(wasSwipe){ e.preventDefault(); wasSwipe=false; return; } // a swipe just ended on this slide — don't also navigate
+    preloadAndNavigateToTitle(s.dataset.type, s.dataset.id, +s.dataset.year, e);
+  }));
+  if(slides.length<=1) return; // nothing to cycle, navigate, or swipe through
 
   let idx=0;
   function goTo(newIdx){
@@ -2339,6 +2344,32 @@ function startHeroCarousel(){
   const nextBtn=el.querySelector('.hero-nav-next');
   if(prevBtn) prevBtn.addEventListener('click', (e)=>{ e.preventDefault(); goTo(idx-1); resetTimer(); });
   if(nextBtn) nextBtn.addEventListener('click', (e)=>{ e.preventDefault(); goTo(idx+1); resetTimer(); });
+
+  // Touch swipe (mobile, where the arrow buttons are hidden) — a horizontal drag past the
+  // threshold advances/retreats a slide; anything shorter is treated as a tap and falls
+  // through to the slide's own click-to-navigate above.
+  let touchStartX=null, touchStartY=null;
+  el.addEventListener('touchstart', (e)=>{
+    if(e.touches.length!==1) return;
+    touchStartX=e.touches[0].clientX; touchStartY=e.touches[0].clientY; wasSwipe=false;
+  }, {passive:true});
+  el.addEventListener('touchmove', (e)=>{
+    if(touchStartX===null || e.touches.length!==1) return;
+    const dx=e.touches[0].clientX-touchStartX, dy=e.touches[0].clientY-touchStartY;
+    if(Math.abs(dx)>Math.abs(dy) && Math.abs(dx)>10) wasSwipe=true;
+  }, {passive:true});
+  el.addEventListener('touchend', (e)=>{
+    if(touchStartX===null) return;
+    const endX=(e.changedTouches && e.changedTouches[0]) ? e.changedTouches[0].clientX : touchStartX;
+    const dx=endX-touchStartX;
+    if(Math.abs(dx)>40){
+      wasSwipe=true;
+      if(dx<0) goTo(idx+1); else goTo(idx-1);
+      resetTimer();
+    }
+    touchStartX=null; touchStartY=null;
+  });
+
   resetTimer();
 }
 function hotRowHTML(title, items, seeAllHref){
