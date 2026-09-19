@@ -3148,6 +3148,8 @@ function attachDetailEvents(type,id){
           ...denormalizedItemFields(item),
         });
         await applyItemScoreDelta(item.id, selected, 1).catch(e=>console.error('Nepodařilo se aktualizovat agregované skóre', e));
+        refreshMyAchievements().catch(e=>console.error('Nepodařilo se zkontrolovat nové úspěchy', e));
+        refreshMyQuests().catch(e=>console.error('Nepodařilo se zkontrolovat questy', e));
         await loadReviewsForItem(item);
         route();
       }catch(e){
