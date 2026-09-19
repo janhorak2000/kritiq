@@ -165,6 +165,11 @@ header.site{
   font-size:10px; font-weight:800; font-family:var(--font-display);
 }
 .auth-badge-quests:hover{background:rgba(232,177,58,.32); border-color:#e8b13a;}
+.auth-badge-unverified{
+  border-color:rgba(240,96,96,.45); background:rgba(240,96,96,.18); color:#f16060;
+  font-size:11px; font-weight:800; font-family:var(--font-display);
+}
+.auth-badge-unverified:hover{background:rgba(240,96,96,.32); border-color:#f16060;}
 
 .ach-grid{display:grid; grid-template-columns:repeat(auto-fill, minmax(140px,1fr)); gap:12px;}
 .ach-card{
@@ -1678,6 +1683,7 @@ async function timesFavorited(username){
 
 /* ===== GAMIFICATION: XP, levels, achievements ===== */
 const XP_PER_QUEST=10;
+const XP_PER_ACHIEVEMENT=10;
 // index i = XP needed to REACH level i+1 (level 1 starts at 0 XP). 15 entries -> levels 1-15, level 15 shown as MAX.
 const LEVEL_THRESHOLDS=[0,30,100,200,350,550,800,1100,1500,2000,2600,3250,3950,4700,5500];
 function levelForXp(xp){
@@ -1900,7 +1906,10 @@ async function refreshMyAchievements(){
   });
   if(newly.length){
     try{
-      await db.collection('progress').doc(CURRENT_UID).set({uid:CURRENT_UID, username:CURRENT_USER, unlockedAchievements:unlocked}, {merge:true});
+      await db.collection('progress').doc(CURRENT_UID).set({
+        uid:CURRENT_UID, username:CURRENT_USER, unlockedAchievements:unlocked,
+        xp:firebase.firestore.FieldValue.increment(newly.length*XP_PER_ACHIEVEMENT),
+      }, {merge:true});
     }catch(e){
       console.error('Nepodařilo se uložit nově získané úspěchy', e);
     }
@@ -3127,6 +3136,7 @@ function attachDetailEvents(type,id){
       const wc=wordCount(textarea.value);
       if(wc < REVIEW_MIN_WORDS || wc > REVIEW_MAX_WORDS) return; // guard in case the disabled state was somehow bypassed
       if(!CURRENT_USER){ openAuthModal('login'); return; }
+      if(!CURRENT_EMAIL_VERIFIED){ openVerifyEmailModal(); return; }
       const selected=parseInt(slider.value);
       const text=textarea.value.trim();
       submitBtn.disabled=true;
@@ -3867,6 +3877,7 @@ function avatarMarkup(username, url){
 
 let CURRENT_USER=null;       // the chosen nickname, once resolved — null while signed out or still resolving
 let CURRENT_UID=null;        // Firebase's own user id, always available immediately after sign-in
+let CURRENT_EMAIL_VERIFIED=true; // false only for an email/password account that hasn't clicked its verification link yet — Google accounts are always already verified
 let authMode='login';
 let authError='';
 let authInfo='';
@@ -3898,6 +3909,7 @@ fbAuth.onAuthStateChanged(async (user)=>{
     return;
   }
   CURRENT_UID=user.uid;
+  CURRENT_EMAIL_VERIFIED=user.emailVerified;
   syncThemeFromAccount(user.uid);
   const nickname = await lookupNicknameForUid(user.uid);
   if(nickname){
@@ -3922,11 +3934,13 @@ function renderAuthBadge(){
     wrap.innerHTML=`
       <div class="auth-badge-user">
         <button class="auth-badge-name profile-link" data-username="${esc(CURRENT_USER)}" type="button">${esc(CURRENT_USER)}</button>
-        <button class="auth-badge-logout auth-badge-achievements" id="achievementsBtn" title="Úspěchy" type="button">A</button>
+        ${!CURRENT_EMAIL_VERIFIED ? `<button class="auth-badge-logout auth-badge-unverified" id="unverifiedBtn" title="E-mail zatím není potvrzený" type="button">!</button>` : ''}
+        <button class="auth-badge-logout auth-badge-achievements" id="achievementsBtn" title="Achievmenty" type="button">A</button>
         <button class="auth-badge-logout auth-badge-quests" id="questsBtn" title="Týdenní questy" type="button">Q</button>
         <button class="auth-badge-logout" id="logoutBtn" title="Odhlásit se" type="button">${ICON_POWER}</button>
       </div>`;
     document.getElementById('logoutBtn').addEventListener('click', openLogoutConfirm);
+    document.getElementById('unverifiedBtn')?.addEventListener('click', openVerifyEmailModal);
     document.getElementById('achievementsBtn').addEventListener('click', openAchievementsModal);
     document.getElementById('questsBtn').addEventListener('click', openQuestsModal);
   }else{
@@ -4070,7 +4084,8 @@ async function handleRegisterSubmit(){
   if(!/^(?=.*[0-9])(?=.*[^A-Za-z0-9]).{8,}$/.test(pass)){ authError='Heslo musí mít alespoň 8 znaků, 1 číslo a 1 speciální znak.'; renderAuthModal(); return; }
   if(pass!==pass2){ authError='Hesla se neshodují.'; renderAuthModal(); return; }
   try{
-    await fbAuth.createUserWithEmailAndPassword(email, pass);
+    const cred=await fbAuth.createUserWithEmailAndPassword(email, pass);
+    try{ await cred.user.sendEmailVerification(); }catch(e){ console.error('Nepodařilo se odeslat ověřovací e-mail', e); }
     // onAuthStateChanged fires next and opens the nickname picker automatically.
   }catch(err){
     authError=firebaseErrorMessage(err);
@@ -4274,6 +4289,8 @@ const POLICY_CONTENT={
     html:`
       <h4>Účet</h4>
       <p>Pro psaní recenzí a hodnocení je nutná registrace přes Google nebo e-mailem. Jste zodpovědní za zabezpečení svého účtu a za veškerou aktivitu, ke které dojde pod vaším přihlášením.</p>
+      <h4>Beta verze</h4>
+      <p>Kritiq se aktuálně nachází ve fázi beta testování. Web je průběžně vyvíjen a mohou se na něm vyskytnout chyby, dočasné výpadky nebo nepřesnosti v datech či funkcích. Pracujeme na jejich odstranění, ale nemůžeme v této fázi zaručit bezchybný provoz.</p>
       <h4>O obsahu</h4>
       <p>Kritiq kombinuje automaticky získaná a ručně kurátorovaná data z <a href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer">TMDb</a> a <a href="https://rawg.io/" target="_blank" rel="noopener noreferrer">RAWG</a> s recenzemi napsanými uživateli komunity.</p>
       <h4>Vaše recenze</h4>
@@ -4422,7 +4439,8 @@ async function renderAchievementsModal(){
   card.className='modal-card';
   card.innerHTML=`
     <button class="modal-close" id="achClose" aria-label="Zavřít" type="button">✕</button>
-    <h3 class="section-title" style="margin-bottom:14px;">Úspěchy</h3>
+    <h3 class="section-title" style="margin-bottom:4px;">Achievmenty</h3>
+    <p class="page-sub" style="margin-bottom:14px;">Každý splněný úspěch přináší 10 XP.</p>
     <div class="ach-grid" id="achGrid"><p class="empty-note">Načítání...</p></div>
   `;
   document.getElementById('achClose').addEventListener('click', popModal);
@@ -4455,7 +4473,7 @@ async function renderAchievementsModalReadOnly(username){
   card.className='modal-card';
   card.innerHTML=`
     <button class="modal-close" id="achClose" aria-label="Zavřít" type="button">✕</button>
-    <h3 class="section-title" style="margin-bottom:14px;">Úspěchy — ${esc(username)}</h3>
+    <h3 class="section-title" style="margin-bottom:14px;">Achievmenty — ${esc(username)}</h3>
     <div class="ach-grid" id="achGrid"><p class="empty-note">Načítání...</p></div>
   `;
   document.getElementById('achClose').addEventListener('click', popModal);
@@ -4888,6 +4906,57 @@ const THEME_OPTIONS=[
   {id:'blue', label:'Tmavě modrá', swatch:'linear-gradient(135deg,#4a8cf7,#7db3ff)'},
   {id:'gold', label:'Tmavě zlatá', swatch:'linear-gradient(135deg,#d4a72c,#e8c458)'},
 ];
+function openVerifyEmailModal(){
+  verifyEmailStatus='';
+  pushModal(renderVerifyEmailModal);
+}
+let verifyEmailStatus='';
+function renderVerifyEmailModal(){
+  const card=document.getElementById('reviewModalCard');
+  card.className='modal-card';
+  const emailAddr=fbAuth.currentUser ? fbAuth.currentUser.email : '';
+  card.innerHTML=`
+    <button class="modal-close" id="verifyEmailCloseBtn" aria-label="Zavřít" type="button">✕</button>
+    <h3 class="section-title" style="margin-bottom:10px;">Potvrďte svůj e-mail</h3>
+    <p style="color:var(--text-dim); font-size:14px; margin-bottom:16px; line-height:1.5;">Pro psaní recenzí je potřeba nejdřív potvrdit svou e-mailovou adresu. Poslali jsme vám ověřovací odkaz na <b>${esc(emailAddr)}</b>. Zkontrolujte prosím i složku se spamem.</p>
+    ${verifyEmailStatus?`<div class="auth-info" style="margin-bottom:14px;">${esc(verifyEmailStatus)}</div>`:''}
+    <div style="display:flex; gap:10px; flex-wrap:wrap;">
+      <button class="fav-users-btn" id="verifyResendBtn" type="button" style="margin-top:0;">Poslat znovu</button>
+      <button class="auth-submit" id="verifyCheckAgainBtn" type="button" style="width:auto; flex:1;">Už jsem potvrdil(a), zkontrolovat</button>
+    </div>
+  `;
+  document.getElementById('verifyEmailCloseBtn').addEventListener('click', ()=>{ verifyEmailStatus=''; popModal(); });
+  document.getElementById('verifyResendBtn').addEventListener('click', async (e)=>{
+    e.currentTarget.disabled=true;
+    try{
+      await fbAuth.currentUser.sendEmailVerification();
+      verifyEmailStatus='Ověřovací e-mail byl znovu odeslán.';
+    }catch(err){
+      console.error('Nepodařilo se znovu odeslat ověřovací e-mail', err);
+      verifyEmailStatus='Odeslání se nezdařilo, zkuste to prosím za chvíli znovu.';
+    }
+    renderVerifyEmailModal();
+  });
+  document.getElementById('verifyCheckAgainBtn').addEventListener('click', async (e)=>{
+    e.currentTarget.disabled=true;
+    try{
+      await fbAuth.currentUser.reload(); // picks up a verification that happened in another tab/since sign-in
+      CURRENT_EMAIL_VERIFIED=fbAuth.currentUser.emailVerified;
+      if(CURRENT_EMAIL_VERIFIED){
+        verifyEmailStatus='';
+        popModal();
+        renderAuthBadge();
+      }else{
+        verifyEmailStatus='E-mail zatím není potvrzený. Zkontrolujte prosím svou schránku a klikněte na odkaz v e-mailu.';
+        renderVerifyEmailModal();
+      }
+    }catch(err){
+      console.error('Nepodařilo se zkontrolovat stav ověření', err);
+      verifyEmailStatus='Něco se nepovedlo, zkuste to prosím znovu.';
+      renderVerifyEmailModal();
+    }
+  });
+}
 function openSettingsModal(){
   pushModal(()=>{
     const card=document.getElementById('reviewModalCard');
