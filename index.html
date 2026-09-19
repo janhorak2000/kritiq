@@ -3880,6 +3880,7 @@ function avatarMarkup(username, url){
 let CURRENT_USER=null;       // the chosen nickname, once resolved — null while signed out or still resolving
 let CURRENT_UID=null;        // Firebase's own user id, always available immediately after sign-in
 let CURRENT_EMAIL_VERIFIED=true; // false only for an email/password account that hasn't clicked its verification link yet — Google accounts are always already verified
+const verificationEmailSentFor=new Set(); // uids already sent a verification email this session, to avoid re-sending on repeated onAuthStateChanged fires
 let authMode='login';
 let authError='';
 let authInfo='';
@@ -3926,6 +3927,16 @@ fbAuth.onAuthStateChanged(async (user)=>{
     pendingFirebaseUser=user;
     renderAuthBadge();
     openNicknamePickerModal();
+    // Send the verification email here rather than immediately off the registration
+    // promise — by the time onAuthStateChanged fires, Firebase's auth state is fully
+    // settled, which some developers report matters for this call. Guarded against
+    // re-sending every time this fires again (e.g. a page reload) while still on the
+    // nickname picker.
+    const isPasswordAccount=(user.providerData||[]).some(p=>p.providerId==='password');
+    if(isPasswordAccount && !user.emailVerified && !verificationEmailSentFor.has(user.uid)){
+      verificationEmailSentFor.add(user.uid);
+      user.sendEmailVerification().catch(e=>console.error('Nepodařilo se odeslat ověřovací e-mail', e));
+    }
   }
 });
 
@@ -4086,9 +4097,9 @@ async function handleRegisterSubmit(){
   if(!/^(?=.*[0-9])(?=.*[^A-Za-z0-9]).{8,}$/.test(pass)){ authError='Heslo musí mít alespoň 8 znaků, 1 číslo a 1 speciální znak.'; renderAuthModal(); return; }
   if(pass!==pass2){ authError='Hesla se neshodují.'; renderAuthModal(); return; }
   try{
-    const cred=await fbAuth.createUserWithEmailAndPassword(email, pass);
-    try{ await cred.user.sendEmailVerification(); }catch(e){ console.error('Nepodařilo se odeslat ověřovací e-mail', e); }
-    // onAuthStateChanged fires next and opens the nickname picker automatically.
+    await fbAuth.createUserWithEmailAndPassword(email, pass);
+    // onAuthStateChanged fires next — it opens the nickname picker automatically, and
+    // also sends the verification email once Firebase's auth state is fully settled.
   }catch(err){
     authError=firebaseErrorMessage(err);
     renderAuthModal();
@@ -4996,42 +5007,76 @@ function openSettingsModal(){
     document.getElementById('deleteAccountOpenBtn').addEventListener('click', ()=> openDeleteAccountConfirmModal());
   });
 }
+let deleteConfirmError='';
 function openDeleteAccountConfirmModal(){
-  pushModal(()=>{
-    const card=document.getElementById('reviewModalCard');
-    card.className='modal-card';
-    card.innerHTML=`
-      <button class="modal-close" id="deleteConfirmCloseBtn" aria-label="Zavřít" type="button">✕</button>
-      <h3 class="section-title" style="margin-bottom:10px;">Opravdu chcete smazat svůj profil?</h3>
-      <p style="color:var(--text-dim); font-size:14px; margin-bottom:16px; line-height:1.5;">Tato akce je nevratná. Vaše osobní údaje (jméno, e-mail, profilová fotka) budou trvale odstraněny. Vaše napsané recenze zůstanou na Kritiq zachovány, ale budou zobrazeny anonymně jako „Smazaný uživatel", bez odkazu na váš profil.</p>
-      <p style="font-size:13.5px; margin-bottom:8px;">Pro potvrzení napište <b>smazat</b> do pole níže:</p>
-      <div class="auth-field" style="margin-bottom:18px;"><input type="text" id="deleteConfirmInput" placeholder="smazat" autocomplete="off"></div>
-      <div style="display:flex; gap:10px; justify-content:flex-end;">
-        <button class="fav-users-btn" id="deleteConfirmCancelBtn" type="button" style="margin-top:0;">Zrušit</button>
-        <button class="danger-pill-btn" id="deleteConfirmSubmitBtn" type="button" disabled>Smazat profil</button>
-      </div>
-    `;
-    document.getElementById('deleteConfirmCloseBtn').addEventListener('click', popModal);
-    document.getElementById('deleteConfirmCancelBtn').addEventListener('click', popModal);
-    const input=document.getElementById('deleteConfirmInput');
-    const submitBtn=document.getElementById('deleteConfirmSubmitBtn');
-    input.addEventListener('input', ()=>{
-      submitBtn.disabled = input.value.trim().toLowerCase()!=='smazat';
-    });
-    submitBtn.addEventListener('click', async ()=>{
-      if(input.value.trim().toLowerCase()!=='smazat') return;
-      submitBtn.disabled=true; submitBtn.textContent='Mažu…';
-      try{
-        await deleteMyAccount();
-        closeAllModals();
-        location.hash='#/';
-        route();
-      }catch(e){
-        console.error('Nepodařilo se smazat profil', e);
-        submitBtn.disabled=false; submitBtn.textContent='Smazat profil';
-        alert('Smazání profilu se nezdařilo. Zkuste to prosím znovu, nebo nás kontaktujte na john.h@email.cz.');
+  deleteConfirmError='';
+  pushModal(renderDeleteAccountConfirmModal);
+}
+function renderDeleteAccountConfirmModal(){
+  const card=document.getElementById('reviewModalCard');
+  card.className='modal-card';
+  const isPasswordAccount=(fbAuth.currentUser.providerData||[]).some(p=>p.providerId==='password');
+  card.innerHTML=`
+    <button class="modal-close" id="deleteConfirmCloseBtn" aria-label="Zavřít" type="button">✕</button>
+    <h3 class="section-title" style="margin-bottom:10px;">Opravdu chcete smazat svůj profil?</h3>
+    <p style="color:var(--text-dim); font-size:14px; margin-bottom:16px; line-height:1.5;">Tato akce je nevratná. Vaše osobní údaje (jméno, e-mail, profilová fotka) budou trvale odstraněny. Vaše napsané recenze zůstanou na Kritiq zachovány, ale budou zobrazeny anonymně jako „Smazaný uživatel", bez odkazu na váš profil.</p>
+    ${isPasswordAccount ? `
+      <p style="font-size:13.5px; margin-bottom:8px;">Pro bezpečnostní ověření zadejte své současné heslo:</p>
+      <div class="auth-field" style="margin-bottom:14px;"><input type="password" id="deleteConfirmPassword" placeholder="Heslo" autocomplete="current-password"></div>
+    ` : `<p style="color:var(--text-faint); font-size:13px; margin-bottom:14px;">Před smazáním vás ještě jednou požádáme o potvrzení přes Google.</p>`}
+    <p style="font-size:13.5px; margin-bottom:8px;">Pro potvrzení napište <b>smazat</b> do pole níže:</p>
+    <div class="auth-field" style="margin-bottom:14px;"><input type="text" id="deleteConfirmInput" placeholder="smazat" autocomplete="off"></div>
+    ${deleteConfirmError?`<div class="auth-error" style="margin-bottom:14px;">${esc(deleteConfirmError)}</div>`:''}
+    <div style="display:flex; gap:10px; justify-content:flex-end;">
+      <button class="fav-users-btn" id="deleteConfirmCancelBtn" type="button" style="margin-top:0;">Zrušit</button>
+      <button class="danger-pill-btn" id="deleteConfirmSubmitBtn" type="button" disabled>Smazat profil</button>
+    </div>
+  `;
+  document.getElementById('deleteConfirmCloseBtn').addEventListener('click', popModal);
+  document.getElementById('deleteConfirmCancelBtn').addEventListener('click', popModal);
+  const input=document.getElementById('deleteConfirmInput');
+  const pwInput=document.getElementById('deleteConfirmPassword');
+  const submitBtn=document.getElementById('deleteConfirmSubmitBtn');
+  function refreshSubmitEnabled(){
+    const textOk=input.value.trim().toLowerCase()==='smazat';
+    const pwOk=!isPasswordAccount || (pwInput && pwInput.value.length>0);
+    submitBtn.disabled=!(textOk && pwOk);
+  }
+  input.addEventListener('input', refreshSubmitEnabled);
+  if(pwInput) pwInput.addEventListener('input', refreshSubmitEnabled);
+  submitBtn.addEventListener('click', async ()=>{
+    if(input.value.trim().toLowerCase()!=='smazat') return;
+    submitBtn.disabled=true; submitBtn.textContent='Ověřuji…';
+    try{
+      // Re-authenticate FIRST, before touching any data — this is what actually makes
+      // the final Auth-account deletion below reliably succeed, since Firebase requires
+      // a fresh sign-in for that specific operation. Anything that fails here leaves
+      // nothing deleted at all, so it's always safe to retry.
+      if(isPasswordAccount){
+        const cred=firebase.auth.EmailAuthProvider.credential(fbAuth.currentUser.email, pwInput.value);
+        await fbAuth.currentUser.reauthenticateWithCredential(cred);
+      }else{
+        await fbAuth.currentUser.reauthenticateWithPopup(new firebase.auth.GoogleAuthProvider());
       }
-    });
+    }catch(e){
+      console.error('Nepodařilo se znovu ověřit identitu před smazáním účtu', e);
+      deleteConfirmError = e.code==='auth/wrong-password'
+        ? 'Nesprávné heslo. Zkuste to prosím znovu.'
+        : 'Ověření se nezdařilo. Zkuste to prosím znovu.';
+      renderDeleteAccountConfirmModal();
+      return;
+    }
+    submitBtn.textContent='Mažu…';
+    try{
+      await deleteMyAccount();
+      closeAllModals();
+      location.hash='#/';
+      route();
+    }catch(e){
+      console.error('Nepodařilo se smazat profil', e);
+      deleteConfirmError='Smazání profilu se nezdařilo. Zkuste to prosím znovu, nebo nás kontaktujte na john.h@email.cz.';
+      renderDeleteAccountConfirmModal();
+    }
   });
 }
 async function deleteMyAccount(){
@@ -5071,14 +5116,17 @@ async function deleteMyAccount(){
 
   try{ localStorage.removeItem('kritiqTheme'); }catch(e){}
 
-  // 4. Attempt to remove the Firebase Auth account itself. This can fail with
-  // 'auth/requires-recent-login' if the session is old — Firestore data is already gone
-  // at this point regardless, so this degrades gracefully to just signing them out rather
-  // than leaving the account in a half-deleted, confusing state.
+  // 4. Remove the Firebase Auth account itself — this is what actually frees the email
+  // address up for a future re-registration. The confirmation modal already
+  // re-authenticated immediately before calling this, specifically so this succeeds
+  // reliably rather than hitting 'auth/requires-recent-login'. This fallback is kept as
+  // defense-in-depth against other rare failures (e.g. a network error) — Firestore data
+  // is already gone at this point regardless, so it degrades to just signing them out
+  // rather than leaving things in a confusing half-deleted state.
   try{
     await fbAuth.currentUser.delete();
   }catch(e){
-    console.error('Nepodařilo se smazat účet Firebase Auth (Firestore data už byla vymazána) — zřejmě je nutné čerstvé přihlášení', e);
+    console.error('Nepodařilo se smazat účet Firebase Auth (Firestore data už byla vymazána)', e);
     await fbAuth.signOut();
   }
 
