@@ -1525,6 +1525,21 @@ async function getUserReviewsAsync(username){
 }
 
 function top10DocId(username, type){ return username+'_'+type; }
+function top10SlotId(slotValue){
+  if(!slotValue) return null;
+  return typeof slotValue==='object' ? slotValue.id : slotValue;
+}
+function top10SlotToItemInfo(slotValue, type){
+  // New slots are already fully denormalized (id/title/poster/year/score) at the time
+  // they're set — nothing needs to be loaded to display them. Old slots (saved before
+  // this existed) are just a bare id string, so those still need the item found in
+  // whatever's currently loaded — same limitation as before, but only for slots that
+  // haven't been re-saved since.
+  if(!slotValue) return null;
+  if(typeof slotValue==='object') return slotValue;
+  const item=findItem(type, slotValue);
+  return item ? {id:item.id, title:item.title, poster:item.poster||null, year:item.year, score:(item.baseScore!==null && item.baseScore!==undefined ? item.baseScore : null)} : null;
+}
 async function getTop10For(username, type){
   try{
     const doc=await db.collection('top10').doc(top10DocId(username, type)).get();
@@ -1536,18 +1551,21 @@ async function getTop10For(username, type){
 }
 async function findMyTop10Position(username, type, itemId){
   const list=await getTop10For(username, type);
-  const found=Object.entries(list).find(([pos,id])=>id===itemId);
+  const found=Object.entries(list).find(([pos,val])=>top10SlotId(val)===itemId);
   return found ? parseInt(found[0]) : null;
 }
-async function setTop10Slot(username, type, position, itemId){
+async function setTop10Slot(username, type, position, item){
   const list=await getTop10For(username, type); // fetch fresh, so we never overwrite based on stale data
-  Object.keys(list).forEach(pos=>{ if(list[pos]===itemId) delete list[pos]; }); // a title only ever occupies one slot
-  list[position]=itemId;
+  Object.keys(list).forEach(pos=>{ if(top10SlotId(list[pos])===item.id) delete list[pos]; }); // a title only ever occupies one slot
+  list[position]={
+    id:item.id, title:item.title, poster:item.poster||null, year:item.year,
+    score:(item.baseScore!==null && item.baseScore!==undefined ? item.baseScore : null),
+  };
   await db.collection('top10').doc(top10DocId(username, type)).set({uid:CURRENT_UID, username, type, slots:list});
 }
 async function removeFromTop10(username, type, itemId){
   const list=await getTop10For(username, type);
-  Object.keys(list).forEach(pos=>{ if(list[pos]===itemId) delete list[pos]; });
+  Object.keys(list).forEach(pos=>{ if(top10SlotId(list[pos])===itemId) delete list[pos]; });
   await db.collection('top10').doc(top10DocId(username, type)).set({uid:CURRENT_UID, username, type, slots:list});
 }
 
@@ -4190,9 +4208,9 @@ async function renderTop10PickerModal(item){
   const currentPos=await findMyTop10Position(CURRENT_USER, item.type, item.id);
   const typeLabelGen = item.type==='movie' ? 'filmů' : item.type==='show' ? 'seriálů' : 'her';
   const slotsHTML=Array.from({length:10},(_,i)=>i+1).map(pos=>{
-    const occupiedId=list[pos];
-    const occupiedItem = (occupiedId && occupiedId!==item.id) ? findItem(item.type, occupiedId) : null;
-    const label = pos===currentPos ? esc(item.title) : (occupiedItem ? esc(occupiedItem.title) : 'Prázdné');
+    const occupiedId=top10SlotId(list[pos]);
+    const occupiedInfo = (occupiedId && occupiedId!==item.id) ? top10SlotToItemInfo(list[pos], item.type) : null;
+    const label = pos===currentPos ? esc(item.title) : (occupiedInfo ? esc(occupiedInfo.title) : (occupiedId ? 'Obsazeno' : 'Prázdné'));
     return `<button class="top10-slot-btn ${pos===currentPos?'active':''}" data-pos="${pos}" type="button">
       <span class="top10-slot-num">${pos}.</span>
       <span class="top10-slot-title">${label}</span>
@@ -4209,7 +4227,7 @@ async function renderTop10PickerModal(item){
   card.querySelectorAll('.top10-slot-btn').forEach(btn=>{
     btn.addEventListener('click', async ()=>{
       btn.disabled=true;
-      await setTop10Slot(CURRENT_USER, item.type, parseInt(btn.dataset.pos), item.id);
+      await setTop10Slot(CURRENT_USER, item.type, parseInt(btn.dataset.pos), item);
       popModal();
       route();
     });
@@ -4292,11 +4310,11 @@ async function renderTop10ViewModal(username){
   const sections=(await Promise.all([['movie','Filmy'],['show','Seriály'],['game','Hry']].map(async ([type,label])=>{
     const list=await getTop10For(username, type);
     const entries=Object.entries(list)
-      .map(([pos,id])=>({pos:parseInt(pos), item:findItem(type,id)}))
-      .filter(e=>e.item)
+      .map(([pos,val])=>({pos:parseInt(pos), info:top10SlotToItemInfo(val, type), type}))
+      .filter(e=>e.info)
       .sort((a,b)=>a.pos-b.pos);
     const body=entries.length
-      ? `<div class="top10-view-list">${entries.map(e=>`<a class="top10-view-item no-modal-trigger" href="#/title/${type}/${e.item.id}">${e.pos}. ${esc(e.item.title)}</a>`).join('')}</div>`
+      ? `<div class="top10-view-list">${entries.map(e=>`<a class="top10-view-item no-modal-trigger" href="#/title/${e.type}/${e.info.id}" data-type="${e.type}" data-id="${esc(e.info.id)}" data-year="${e.info.year}">${e.pos}. ${esc(e.info.title)}</a>`).join('')}</div>`
       : `<p class="empty-note">Uživatel zatím nepřidal žádný titul do svého Top 10 ${label.toLowerCase()}.</p>`;
     return `<h3 class="section-title" style="margin-top:18px;">${label}</h3>${body}`;
   }))).join('');
@@ -4306,6 +4324,9 @@ async function renderTop10ViewModal(username){
     ${sections}
   `;
   document.getElementById('top10ViewCloseBtn').addEventListener('click', popModal);
+  card.querySelectorAll('.top10-view-item[data-type]').forEach(el=>{
+    el.addEventListener('click', (e)=> preloadAndNavigateToTitle(el.dataset.type, el.dataset.id, +el.dataset.year, e));
+  });
 }
 function openEditReviewModal(item, review){
   pushModal(()=>{
