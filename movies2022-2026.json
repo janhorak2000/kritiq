@@ -11867,1301 +11867,1197 @@
     "reviews": []
   },
   {
-    "title": "Amerikán",
-    "tmdb_id": 998757,
-    "imdb_id": "tt13616368",
+    "title": "Životní trefa",
+    "tmdb_id": 705861,
+    "imdb_id": "tt8009428",
     "year": 2022,
-    "date": "2022-07-21",
+    "date": "2022-06-03",
     "score": 73,
-    "box": 0,
-    "box_currency": "USD",
-    "country": "AM",
-    "genre": "Drama",
-    "runtime": 115,
-    "poster": "https://image.tmdb.org/t/p/w342/jwgg2CxQCDP7PGEopqCTcmtUo9z.jpg",
-    "gallery": [
-      "https://image.tmdb.org/t/p/w500/1mFWlam1nXTujIj7a7LHeemO6vE.jpg"
-    ],
-    "summary": "V roce 1948 se Charlie po desetiletích v USA vrací do Arménie hledat své kořeny, ale místo toho končí v sovětském vězení…",
-    "director": {
-      "id": 49424,
-      "name": "Michael A. Goorjian",
-      "image": "https://image.tmdb.org/t/p/w300/3ReUquoMVEf01eu3xLWVSxhHHvr.jpg"
-    },
-    "composer": {
-      "id": 2374005,
-      "name": "Andranik Berberyan",
-      "image": ""
-    },
-    "writer": {
-      "id": 49424,
-      "name": "Michael A. Goorjian",
-      "image": "https://image.tmdb.org/t/p/w300/3ReUquoMVEf01eu3xLWVSxhHHvr.jpg"
-    },
-    "actors": [
-      {
-        "id": 49424,
-        "name": "Michael A. Goorjian",
-        "birthday": "1971-02-04",
-        "deathday": null,
-        "age": 55,
-        "image": "https://image.tmdb.org/t/p/w300/3ReUquoMVEf01eu3xLWVSxhHHvr.jpg"
-      },
-      {
-        "id": 1131415,
-        "name": "Hovik Keuchkerian",
-        "birthday": "1972-11-14",
-        "deathday": null,
-        "age": 53,
-        "image": "https://image.tmdb.org/t/p/w300/o5cGKWHlZl4RFROYlT2hD95j0lN.jpg"
-      },
-      {
-        "id": 118340,
-        "name": "Mikhail Trukhin",
-        "birthday": "1971-10-28",
-        "deathday": null,
-        "age": 54,
-        "image": "https://image.tmdb.org/t/p/w300/uqlsOEhl4lbOEhaEatdLoVzZBKT.jpg"
-      },
-      {
-        "id": 1437983,
-        "name": "Nelly Uvarova",
-        "birthday": "1980-03-14",
-        "deathday": null,
-        "age": 46,
-        "image": "https://image.tmdb.org/t/p/w300/uX0gE9gtwK9TXuBtJL3iDmuC4j.jpg"
-      },
-      {
-        "id": 1882031,
-        "name": "Narine Grigoryan",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/njXt9kPwAZp3zn4WmQFewUcFsdS.jpg"
-      },
-      {
-        "id": 1329526,
-        "name": "Jean-Pierre Nshanian",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/aK2fz64oFbryvRjZCUAbIEZ5FsQ.jpg"
-      },
-      {
-        "id": 3384871,
-        "name": "Aram Karakhanyan",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/afsBNvnnZLUYyS36rZbS8NbEdgq.jpg"
-      },
-      {
-        "id": 2010237,
-        "name": "Lernik Harutyunyan",
-        "birthday": "1981-05-16",
-        "deathday": null,
-        "age": 45,
-        "image": ""
-      },
-      {
-        "id": 1988976,
-        "name": "David Hakobyan",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/ArNjoO80zOjDhFA4pxi5vFxHFq7.jpg"
-      },
-      {
-        "id": 2371776,
-        "name": "Trdat Makaryan",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/hrp9onEQ0nNimruWtC8olXaU1jA.jpg"
-      },
-      {
-        "id": 1679601,
-        "name": "Aram Novosardyan",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 5225352,
-        "name": "Karine Janjukazyan",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 1881039,
-        "name": "George Hovakimyan",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 2010237,
-        "name": "Lernik Harutyunyan",
-        "birthday": "1981-05-16",
-        "deathday": null,
-        "age": 45,
-        "image": ""
-      },
-      {
-        "id": 5225358,
-        "name": "Arman Mejlumyan",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 5225360,
-        "name": "Kevo Manoukian",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 5225361,
-        "name": "Sargis Mikaelyan",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 1988974,
-        "name": "Mayranush Grigoryan",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/t7n7ciMsRIbdzAAYyzTkxnkjqWh.jpg"
-      },
-      {
-        "id": 5225363,
-        "name": "Nikolay Bagheyan",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 5225364,
-        "name": "Greg Ganoyan",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 5225365,
-        "name": "Varditer Nalbandyan",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 4199818,
-        "name": "Levon Mkrtchyan",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 5225367,
-        "name": "Victoria Aslanian",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 5225368,
-        "name": "Hovhannes Vardanyan",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 5225370,
-        "name": "Gagik Ginosyan",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 5225371,
-        "name": "Ani Bagratuni Aharonyan",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 5225372,
-        "name": "Elena Shuvaeva-Petrosyan",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 5225373,
-        "name": "Rafik Avagyan",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 1790730,
-        "name": "Miqayel Voskanyan",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/o9EKgf5XjkvGoqwmzHY4UoEhEGB.jpg"
-      }
-    ],
-    "reviews": []
-  },
-  {
-    "title": "Bullet Train",
-    "tmdb_id": 718930,
-    "imdb_id": "tt12593682",
-    "year": 2022,
-    "date": "2022-08-03",
-    "score": 73,
-    "box": 239,
-    "box_currency": "USD",
+    "box": null,
+    "box_currency": null,
     "country": "USA",
-    "genre": "Akční",
-    "runtime": 126,
-    "poster": "https://image.tmdb.org/t/p/w342/9TmnaiAuMN0UJho91bmWyfBvvLv.jpg",
+    "genre": "Drama",
+    "runtime": 117,
+    "poster": "https://image.tmdb.org/t/p/w342/m60IEDnuxa2WEj192r8ir1kDlhf.jpg",
     "gallery": [
-      "https://image.tmdb.org/t/p/w500/y2Ca1neKke2mGPMaHzlCNDVZqsK.jpg"
+      "https://image.tmdb.org/t/p/w500/hGr0FrLI74vqpBWTBOPloDBwOAK.jpg"
     ],
-    "summary": "Nájemný zabiják Beruška se rozhodne vykonávat svou práci mírumilovně, jelikož se mu spousta předchozích kšeftů vymkla z rukou a smůla se mu lepí na paty. Osud má nicméně jiné plány, protože Beruška se při své nejnovější misi v nejrychlejším vlaku světa dostane do křížku se smrtícími protivníky. Jejich cíle jsou vzájemně propojené, a zároveň protichůdné. Konec trati je pouze začátkem nepřetržité divoké a vzrušující jízdy napříč moderním Japonskem",
+    "summary": "Basketbalový skaut, kterému se smůla lepí na paty, objeví hráče s jedinečným talentem a taky komplikovanou minulostí. Nemá sice souhlas klubu, ale rozhodne se svoji hvězdu dostat do Států na vlastní pěst. A všemu navzdory oba nakonec dostanou poslední šanci ukázat, že koše pro ně nevisí příliš vysoko ani v NBA.",
     "director": {
-      "id": 40684,
-      "name": "David Leitch",
-      "image": "https://image.tmdb.org/t/p/w300/aWDxGlWkFVhs80DQMEE5A7c7YBr.jpg"
+      "id": 550121,
+      "name": "Jeremiah Zagar",
+      "image": "https://image.tmdb.org/t/p/w300/hWdATel5XUF2bUTMQRSroQHKQCT.jpg"
     },
     "composer": {
-      "id": 1404094,
-      "name": "Dominic Lewis",
-      "image": "https://image.tmdb.org/t/p/w300/8r3uR9LxtCG72l9JS4fjfVc3wdZ.jpg"
+      "id": 583871,
+      "name": "Dan Deacon",
+      "image": "https://image.tmdb.org/t/p/w300/yONiUqo763K3wRtmqHZkeckEuFA.jpg"
     },
     "writer": {
-      "id": 2601912,
-      "name": "Zak Olkewicz",
-      "image": "https://image.tmdb.org/t/p/w300/gUkCmTHsuDM5r9WDUKMoNmiUMB0.jpg"
+      "id": 224385,
+      "name": "Will Fetters",
+      "image": "https://image.tmdb.org/t/p/w300/ooM2uqKVtE2olUjT6MfaZLEgeQs.jpg"
     },
     "actors": [
       {
-        "id": 287,
-        "name": "Brad Pitt",
-        "birthday": "1963-12-18",
-        "deathday": null,
-        "age": 62,
-        "image": "https://image.tmdb.org/t/p/w300/ajNaPmXVVMJFg9GWmu6MJzTaXdV.jpg"
-      },
-      {
-        "id": 125025,
-        "name": "Joey King",
-        "birthday": "1999-07-30",
-        "deathday": null,
-        "age": 27,
-        "image": "https://image.tmdb.org/t/p/w300/94c69mPYSK9jFsAEu0OKB7Qs684.jpg"
-      },
-      {
-        "id": 27428,
-        "name": "Aaron Taylor-Johnson",
-        "birthday": "1990-06-13",
-        "deathday": null,
-        "age": 36,
-        "image": "https://image.tmdb.org/t/p/w300/pFtHhih2XEaFaD3qOFyQW6q83br.jpg"
-      },
-      {
-        "id": 226366,
-        "name": "Brian Tyree Henry",
-        "birthday": "1982-03-31",
-        "deathday": null,
-        "age": 44,
-        "image": "https://image.tmdb.org/t/p/w300/2MsJh0bpyzwvOUnXOltHp3j85Pb.jpg"
-      },
-      {
-        "id": 1658375,
-        "name": "Andrew Koji",
-        "birthday": "1987-11-10",
-        "deathday": null,
-        "age": 38,
-        "image": "https://image.tmdb.org/t/p/w300/oU53nWLQ6wFHzERwSi1fD53LxZB.jpg"
-      },
-      {
-        "id": 9195,
-        "name": "Hiroyuki Sanada",
-        "birthday": "1960-10-12",
-        "deathday": null,
-        "age": 65,
-        "image": "https://image.tmdb.org/t/p/w300/SOwDxhGnRccP2lAtssQ7TxCzOe.jpg"
-      },
-      {
-        "id": 335,
-        "name": "Michael Shannon",
-        "birthday": "1974-08-07",
-        "deathday": null,
-        "age": 52,
-        "image": "https://image.tmdb.org/t/p/w300/6mMczfjM8CiS1WuBOgo5Xom1TcR.jpg"
-      },
-      {
-        "id": 18277,
-        "name": "Sandra Bullock",
-        "birthday": "1964-07-26",
-        "deathday": null,
-        "age": 62,
-        "image": "https://image.tmdb.org/t/p/w300/4rfjISL3Flx16jfiusXoHbpt87X.jpg"
-      },
-      {
-        "id": 2550161,
-        "name": "Bad Bunny",
-        "birthday": "1994-03-10",
-        "deathday": null,
-        "age": 32,
-        "image": "https://image.tmdb.org/t/p/w300/r70aP80HleYJYVScjDhenNCeeWX.jpg"
-      },
-      {
-        "id": 33235,
-        "name": "Logan Lerman",
-        "birthday": "1992-01-19",
-        "deathday": null,
-        "age": 34,
-        "image": "https://image.tmdb.org/t/p/w300/ckcpgSvSWOhi8mvAfR1Cpsakg3S.jpg"
-      },
-      {
-        "id": 1545693,
-        "name": "Zazie Beetz",
-        "birthday": "1991-06-01",
-        "deathday": null,
-        "age": 35,
-        "image": "https://image.tmdb.org/t/p/w300/sgxzT54GnvgeMnOZgpQQx9csAdd.jpg"
-      },
-      {
-        "id": 17273,
-        "name": "Masi Oka",
-        "birthday": "1974-12-27",
-        "deathday": null,
-        "age": 51,
-        "image": "https://image.tmdb.org/t/p/w300/hNBA8J45AY2djhPbLXP3sbXgygI.jpg"
-      },
-      {
-        "id": 1461608,
-        "name": "Karen Fukuhara",
-        "birthday": "1992-02-10",
-        "deathday": null,
-        "age": 34,
-        "image": "https://image.tmdb.org/t/p/w300/sG6CWLdENCtzukNFkFYyPxqyRmS.jpg"
-      },
-      {
-        "id": 3687347,
-        "name": "Kevin Akiyoshi Ching",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 1709726,
-        "name": "Minchi Murakami",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 2264206,
-        "name": "Kaori Taketani",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/mqRn9RYHch82CxVgZNeoecsxCEz.jpg"
-      },
-      {
-        "id": 3687348,
-        "name": "Toshitaka Katsumi",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 962603,
-        "name": "Jim Garrity",
-        "birthday": "1964-09-18",
-        "deathday": null,
-        "age": 62,
-        "image": "https://image.tmdb.org/t/p/w300/lLAlcWaFKOuIUXRkRHLA5uMLQGn.jpg"
-      },
-      {
-        "id": 2672331,
-        "name": "Emelina Adams",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/gVSyivx7M8a51NzdaHE9gbffFiw.jpg"
-      },
-      {
-        "id": 1746630,
-        "name": "Jenson Cheng",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/AkBawKOZaYcTjDbqBgA2s900OoY.jpg"
-      },
-      {
-        "id": 1687370,
-        "name": "Nobuaki Shimamoto",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/da1fpSONCLtONhb6lwFxtxJHBrc.jpg"
-      },
-      {
-        "id": 1406627,
-        "name": "Yoshi Sudarso",
-        "birthday": "1989-04-12",
-        "deathday": null,
-        "age": 37,
-        "image": "https://image.tmdb.org/t/p/w300/8EN72XVPCXZWy57oU6AQZZC2Whw.jpg"
-      },
-      {
-        "id": 168931,
-        "name": "Johanna Watts",
-        "birthday": "1979-08-08",
-        "deathday": null,
-        "age": 47,
-        "image": "https://image.tmdb.org/t/p/w300/jROKrkYslotkvrRlXjpUaKYxJvJ.jpg"
-      },
-      {
-        "id": 3687349,
-        "name": "Ian Gabriel Martinez",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/nELfP6q9CHu8kJUD6TE69BTyI2j.jpg"
-      },
-      {
-        "id": 53251,
-        "name": "Tania Verafield",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/iSvj97Ve9AQKc9gEjN9TKC5Sv5F.jpg"
-      },
-      {
-        "id": 2596740,
-        "name": "Pancho Cardena",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/fc4FL3iSkmJZt1o3NfMtI7rfSBL.jpg"
-      },
-      {
-        "id": 2402973,
-        "name": "Julio Gabay",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/iJRroXBgf6blopeckpoFa4XkaE0.jpg"
-      },
-      {
-        "id": 3646335,
-        "name": "Andrea Muñoz",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/3Tuo8QDZFlKt5fXYH6knzKvo0LJ.jpg"
-      },
-      {
-        "id": 200999,
-        "name": "Nancy Daly",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/8bk5wOqmN4l0eFOZ4JnieLgemWP.jpg"
-      },
-      {
-        "id": 1749473,
-        "name": "Arnold Chun",
-        "birthday": "1976-05-07",
-        "deathday": null,
-        "age": 50,
-        "image": "https://image.tmdb.org/t/p/w300/A9PvRlPYIppLBMMc60LFMeGpc21.jpg"
-      },
-      {
-        "id": 1403647,
-        "name": "Naomi Matsuda",
-        "birthday": "1977-03-14",
-        "deathday": null,
-        "age": 49,
-        "image": "https://image.tmdb.org/t/p/w300/cuuLZzBPYRazjhIZMpo7gyfHtkR.jpg"
-      },
-      {
-        "id": 2074106,
-        "name": "Benmio McCrea",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/vQivcMpzTTMvDLmLAi98Xr88qz3.jpg"
-      },
-      {
-        "id": 52762,
-        "name": "Pasha D. Lychnikoff",
-        "birthday": "1967-02-16",
-        "deathday": null,
-        "age": 59,
-        "image": "https://image.tmdb.org/t/p/w300/xftO8wDW9j4RBO91g9wWzDAAHbz.jpg"
-      },
-      {
-        "id": 3687350,
-        "name": "Primus Johnson",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 3687351,
-        "name": "Miles Marz",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 101065,
-        "name": "Michelle Lee",
-        "birthday": "1978-08-02",
-        "deathday": null,
-        "age": 48,
-        "image": "https://image.tmdb.org/t/p/w300/r6QzFK8IBxO1Kp3zm3GJ3FUuwwR.jpg"
-      },
-      {
-        "id": 3687354,
-        "name": "Parker Lin",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 1518784,
-        "name": "Garland Scott",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/ibxGaEhzgAdmAbjYva8TodgxjLU.jpg"
-      },
-      {
-        "id": 154702,
-        "name": "Jason Matthew Smith",
-        "birthday": "1972-11-08",
-        "deathday": null,
-        "age": 53,
-        "image": "https://image.tmdb.org/t/p/w300/j8viDfDWQkGHUcMWBnIAfCx2dxA.jpg"
-      },
-      {
-        "id": 3687356,
-        "name": "Zooey Miyoshi",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/excnzmvT5lgWjvtDdGck3F2JrnV.jpg"
-      },
-      {
-        "id": 3687358,
-        "name": "Kamil Aydin",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 40684,
-        "name": "David Leitch",
-        "birthday": "1975-11-16",
-        "deathday": null,
-        "age": 50,
-        "image": "https://image.tmdb.org/t/p/w300/aWDxGlWkFVhs80DQMEE5A7c7YBr.jpg"
-      },
-      {
-        "id": 38673,
-        "name": "Channing Tatum",
-        "birthday": "1980-04-26",
-        "deathday": null,
-        "age": 46,
-        "image": "https://image.tmdb.org/t/p/w300/4TpgnS6l8YUXSne9Av9nda6mjxY.jpg"
-      },
-      {
-        "id": 10859,
-        "name": "Ryan Reynolds",
-        "birthday": "1976-10-23",
-        "deathday": null,
-        "age": 49,
-        "image": "https://image.tmdb.org/t/p/w300/trzgptffGvAlAT6MEu01fz47cLW.jpg"
-      },
-      {
-        "id": 1942319,
-        "name": "RiRia",
-        "birthday": "2000-11-27",
-        "deathday": null,
-        "age": 25,
-        "image": "https://image.tmdb.org/t/p/w300/sJv0lg6YkmPpH7PxXRyuWWUOgyz.jpg"
-      },
-      {
-        "id": 1699143,
-        "name": "Ray Buffer",
-        "birthday": "1969-09-02",
-        "deathday": null,
-        "age": 57,
-        "image": ""
-      },
-      {
-        "id": 4077064,
-        "name": "Samuel Code",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/s5dERXI21APzFXw554vc4JK6Aih.jpg"
-      },
-      {
-        "id": 2853890,
-        "name": "Dane E. Connor",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/cri7PbUenLUMhCEMUSag49dmXEc.jpg"
-      },
-      {
-        "id": 4665,
-        "name": "Josh Cruze",
-        "birthday": "1950-03-21",
-        "deathday": null,
-        "age": 76,
-        "image": "https://image.tmdb.org/t/p/w300/e0pQM4JUExvPKWY8l65ryc9dc9P.jpg"
-      },
-      {
-        "id": 1738122,
-        "name": "Louis Delavenne",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/3iuejVpjqd3yAKWLBUu52ooNwoQ.jpg"
-      },
-      {
-        "id": 2091809,
-        "name": "Mike Ferguson",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/20R1lPw9vqfiv9iyegYoI7ifofW.jpg"
-      },
-      {
-        "id": 2570031,
-        "name": "M.G. Gong",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/srKOwrAAytj26lJ8KqPrk8RC3Ee.jpg"
-      },
-      {
-        "id": 3512029,
-        "name": "Rolando Gonzalez",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/fzIC8S6Xp5FkOJJ1YETnNKh7Olz.jpg"
-      },
-      {
-        "id": 3236112,
-        "name": "Brandon Halvorsen",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/b5dsKU6hHa1pGUr1xg1tzEXGW08.jpg"
-      },
-      {
-        "id": 4034833,
-        "name": "Masashi Ishizuka",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/fguqYTQzq1DIVVYqQ9VAYTwgQRO.jpg"
-      },
-      {
-        "id": 3075461,
-        "name": "Shota Kakibata",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 3255984,
-        "name": "Darren Keilan",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/rSBxD5GhPTcoCdofT8HvGUvn7If.jpg"
-      },
-      {
-        "id": 1576369,
-        "name": "Alice Ko",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/8cnmdJiV2A5MXKeRw07628TnNQg.jpg"
-      },
-      {
-        "id": 1200895,
-        "name": "Waymond Lee",
-        "birthday": "1952-03-07",
-        "deathday": "2024-12-18",
-        "age": 72,
-        "image": "https://image.tmdb.org/t/p/w300/PXkskFrvX5onDvBMHgF4k5X0Fn.jpg"
-      },
-      {
-        "id": 4814532,
-        "name": "Willington Liu",
-        "birthday": "2000-10-25",
-        "deathday": null,
-        "age": 25,
-        "image": "https://image.tmdb.org/t/p/w300/1PUAp2bWyuXrHRnBj83tdqdW3Hs.jpg"
-      }
-    ],
-    "reviews": []
-  },
-  {
-    "title": "Elvis",
-    "tmdb_id": 614934,
-    "imdb_id": "tt3704428",
-    "year": 2022,
-    "date": "2022-06-22",
-    "score": 73,
-    "box": 289,
-    "box_currency": "USD",
-    "country": "Austrálie",
-    "genre": "Hudební",
-    "runtime": 159,
-    "poster": "https://image.tmdb.org/t/p/w342/qBOKWqAFbveZ4ryjJJwbie6tXkQ.jpg",
-    "gallery": [
-      "https://image.tmdb.org/t/p/w500/rLo9T9jEg67UZPq3midjLnTUYYi.jpg"
-    ],
-    "summary": "Film Baze Luhrmanna Elvis o životě a hudbě Elvise Presleyho z pohledu jeho komplikovaného vztahu s tajemným manažerem, plukovníkem Tomem Parkerem. Příběh se zabývá složitou dynamikou mezi Presleym a Parkerem, která trvá více než 20 let, od Presleyho vzestupu ke slávě až po jeho nebývalou slávu, na pozadí vyvíjející se kulturní krajiny a ztráty nevinnosti v Americe. Ústřední postavou této cesty je jedna z nejvýznamnějších a nejvlivnějších osob v Elvisově životě, Priscilla Presleyová.",
-    "director": {
-      "id": 6201,
-      "name": "Baz Luhrmann",
-      "image": "https://image.tmdb.org/t/p/w300/8K8ih7uFyGanOApYYzlzdxzcfDF.jpg"
-    },
-    "composer": {
-      "id": 1951899,
-      "name": "Elliott Wheeler",
-      "image": ""
-    },
-    "writer": {
-      "id": 142983,
-      "name": "Jeremy Doner",
-      "image": "https://image.tmdb.org/t/p/w300/9HyYm1rupnfk98YPjr8q8xkiXew.jpg"
-    },
-    "actors": [
-      {
-        "id": 86654,
-        "name": "Austin Butler",
-        "birthday": "1991-08-17",
-        "deathday": null,
-        "age": 35,
-        "image": "https://image.tmdb.org/t/p/w300/atdAs4pFGjUQ4m2W8kJYly7N6cC.jpg"
-      },
-      {
-        "id": 31,
-        "name": "Tom Hanks",
-        "birthday": "1956-07-09",
-        "deathday": null,
-        "age": 70,
-        "image": "https://image.tmdb.org/t/p/w300/oFvZoKI6lvU03n4YoNGAll9rkas.jpg"
-      },
-      {
-        "id": 1385063,
-        "name": "Olivia DeJonge",
-        "birthday": "1998-04-30",
-        "deathday": null,
-        "age": 28,
-        "image": "https://image.tmdb.org/t/p/w300/gQ43hkgb3jJRBjCtRwx7zEHexic.jpg"
-      },
-      {
-        "id": 94876,
-        "name": "Helen Thomson",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/uTKMoAEGLbkCHWCuBKbKMM3mR80.jpg"
-      },
-      {
-        "id": 12206,
-        "name": "Richard Roxburgh",
-        "birthday": "1962-01-23",
-        "deathday": null,
-        "age": 64,
-        "image": "https://image.tmdb.org/t/p/w300/de1XpxnOuW4v4fFWFEjmBqmHaRf.jpg"
-      },
-      {
-        "id": 1344361,
-        "name": "Kelvin Harrison Jr.",
-        "birthday": "1994-07-23",
-        "deathday": null,
-        "age": 32,
-        "image": "https://image.tmdb.org/t/p/w300/uRViX11fZQGmO9p91ZH7QVh2l5y.jpg"
-      },
-      {
-        "id": 1371,
-        "name": "David Wenham",
-        "birthday": "1965-09-21",
+        "id": 19292,
+        "name": "Adam Sandler",
+        "birthday": "1966-09-09",
         "deathday": null,
         "age": 60,
-        "image": "https://image.tmdb.org/t/p/w300/F7CWSqUE75HtrcdqIQ7UMZ9aTX.jpg"
+        "image": "https://image.tmdb.org/t/p/w300/iTMnXrPfC1rmom6a9q4hy6YSJWG.jpg"
       },
       {
-        "id": 113505,
-        "name": "Kodi Smit-McPhee",
-        "birthday": "1996-06-13",
+        "id": 15758,
+        "name": "Queen Latifah",
+        "birthday": "1970-03-18",
+        "deathday": null,
+        "age": 56,
+        "image": "https://image.tmdb.org/t/p/w300/zKJ0fZ7ne57fTWWd3WP1OVvoLS6.jpg"
+      },
+      {
+        "id": 2822959,
+        "name": "Juancho Hernangómez",
+        "birthday": "1995-09-28",
         "deathday": null,
         "age": 30,
-        "image": "https://image.tmdb.org/t/p/w300/sesCWba9NwPDYDZzbVLs7OgLOti.jpg"
+        "image": "https://image.tmdb.org/t/p/w300/oPWDzNjRCLLMMjzWyhG87MdZ4Vt.jpg"
       },
       {
-        "id": 972356,
-        "name": "Luke Bracey",
-        "birthday": "1989-04-26",
+        "id": 11107,
+        "name": "Ben Foster",
+        "birthday": "1980-10-29",
         "deathday": null,
-        "age": 37,
-        "image": "https://image.tmdb.org/t/p/w300/ot2h7IrXpC8XSnIZDSVsj2FQ5cx.jpg"
+        "age": 45,
+        "image": "https://image.tmdb.org/t/p/w300/p5FlM9OOStD9I0Nm3GGlhaiAC5r.jpg"
       },
       {
-        "id": 1525047,
-        "name": "Dacre Montgomery",
-        "birthday": "1994-11-22",
-        "deathday": null,
-        "age": 31,
-        "image": "https://image.tmdb.org/t/p/w300/v5zhoNq2RgnUEtSLAFLOPLTJWCT.jpg"
-      },
-      {
-        "id": 84451,
-        "name": "Leon Ford",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/djxNCzu1MYxz6D2XV5I1yCsw1e.jpg"
-      },
-      {
-        "id": 971937,
-        "name": "Gary Clark Jr.",
-        "birthday": "1984-02-15",
-        "deathday": null,
-        "age": 42,
-        "image": "https://image.tmdb.org/t/p/w300/w0ePaQi3UUOaejzNGmHpc2V87lK.jpg"
-      },
-      {
-        "id": 2546312,
-        "name": "Yola",
-        "birthday": "1983-07-31",
-        "deathday": null,
-        "age": 43,
-        "image": "https://image.tmdb.org/t/p/w300/hg8PhImJHIFDP1s9adcqZsYANq7.jpg"
-      },
-      {
-        "id": 1186660,
-        "name": "Natasha Bassett",
-        "birthday": "1992-10-16",
-        "deathday": null,
-        "age": 33,
-        "image": "https://image.tmdb.org/t/p/w300/xL8fWKOtpJzd1T7YtDHPniN5FQ.jpg"
-      },
-      {
-        "id": 109438,
-        "name": "Xavier Samuel",
-        "birthday": "1983-12-10",
-        "deathday": null,
-        "age": 42,
-        "image": "https://image.tmdb.org/t/p/w300/gHvKqCXfpzaGp46gqsy9MVDfmSf.jpg"
-      },
-      {
-        "id": 3430988,
-        "name": "Adam Dunn",
-        "birthday": "1979-11-09",
-        "deathday": null,
-        "age": 46,
-        "image": "https://image.tmdb.org/t/p/w300/evIYbZYGzodkaVmniiYe2nhoSAD.jpg"
-      },
-      {
-        "id": 2953700,
-        "name": "Alton Mason",
-        "birthday": "1997-11-21",
-        "deathday": null,
-        "age": 28,
-        "image": "https://image.tmdb.org/t/p/w300/4WuqtBtXniEHO398JDmWFEaVAtP.jpg"
-      },
-      {
-        "id": 3430991,
-        "name": "Shonka Dukureh",
-        "birthday": "1977-09-03",
-        "deathday": "2022-07-21",
-        "age": 44,
-        "image": ""
-      },
-      {
-        "id": 2534418,
-        "name": "David Gannon",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/gxCKECuzS85gxeE457ZFMzaLYB2.jpg"
-      },
-      {
-        "id": 3866155,
-        "name": "Shannon Sanders",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/5CdaHXTgo8gYHaj0FIE4CtAEupQ.jpg"
-      },
-      {
-        "id": 1520527,
-        "name": "Charles Grounds",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 1281967,
-        "name": "Josh McConville",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/3Au004X5BsV5KIpOLMB8g9DuevT.jpg"
-      },
-      {
-        "id": 123884,
-        "name": "Kate Mulvany",
-        "birthday": "1978-02-24",
-        "deathday": null,
-        "age": 48,
-        "image": "https://image.tmdb.org/t/p/w300/y80VZs4JwiXFlTvr5n8Y5Ezr3HS.jpg"
-      },
-      {
-        "id": 2580441,
-        "name": "Gareth Davies",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/pnyHWbHH1cW9wEQO0b8kMhzCocl.jpg"
-      },
-      {
-        "id": 3644672,
-        "name": "Chaydon Jay",
-        "birthday": "2007-06-20",
-        "deathday": null,
-        "age": 19,
-        "image": "https://image.tmdb.org/t/p/w300/7HuVic0AvYkr3EJlZhRy76tpqyh.jpg"
-      },
-      {
-        "id": 3866156,
-        "name": "Christian Kisando",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 3866157,
-        "name": "John Mukristayo",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 3866158,
-        "name": "Miles Burton",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 3866159,
-        "name": "Gad Banza",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 3866161,
-        "name": "Aristene Kisando",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 3866164,
-        "name": "Senayt Mebrahtu",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/hnr64DgBSckyIAXqAtdKe2Rn316.jpg"
-      },
-      {
-        "id": 3866167,
-        "name": "Princess Mariama Andrews",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 3866173,
-        "name": "Sharon Brooks",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/jaYXI3ePkhiGwCVAUj88l5I3obB.jpg"
-      },
-      {
-        "id": 15340,
-        "name": "Nicholas Bell",
-        "birthday": "1958-08-15",
-        "deathday": null,
-        "age": 68,
-        "image": "https://image.tmdb.org/t/p/w300/u6wGCSowG03IkZiXEFO8ecYXiZv.jpg"
-      },
-      {
-        "id": 75742,
-        "name": "Anthony Phelan",
-        "birthday": "1954-06-19",
-        "deathday": null,
-        "age": 72,
-        "image": "https://image.tmdb.org/t/p/w300/fsI4aYSSmvhHpR3PXZ28qtrUs9L.jpg"
-      },
-      {
-        "id": 3044768,
-        "name": "Sandro Colarelli",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 3644673,
-        "name": "Cle Morgan",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/ai3docGLMQZSfI6tdvhrOp1DChG.jpg"
-      },
-      {
-        "id": 1457509,
-        "name": "Charles Allen",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/gVPFtWlef1tgT78t03MYMXXkB6J.jpg"
-      },
-      {
-        "id": 220984,
-        "name": "Natalie Bassingthwaighte",
-        "birthday": "1975-09-01",
-        "deathday": null,
-        "age": 51,
-        "image": "https://image.tmdb.org/t/p/w300/rbOVKe9sykntMGfPYcyLxp4fvVT.jpg"
-      },
-      {
-        "id": 3866182,
-        "name": "Liz Blackett",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/kXUmoFb0F3Igpfg2HfalNuCxBuG.jpg"
-      },
-      {
-        "id": 2129508,
-        "name": "Mike Bingaman",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/9JGiRScT9whsUOZmtIi4cLI9xMu.jpg"
-      },
-      {
-        "id": 2620574,
-        "name": "Christian McCarty",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/w3nnig6LzDYhVamqZcM9A8kKRaC.jpg"
-      },
-      {
-        "id": 143270,
-        "name": "Tony Nixon",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/izHvwC3hb5hogp2dGx84cKgQoOt.jpg"
-      },
-      {
-        "id": 1769886,
-        "name": "Andrea Moor",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/iTe5DYwb3oz3iqyFjVszOSxFhkb.jpg"
-      },
-      {
-        "id": 107477,
-        "name": "Mark Leonard Winter",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/lTUrzZcAOOJzolIlTzgqT5FLNdh.jpg"
-      },
-      {
-        "id": 1542087,
-        "name": "Hugh Parker",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/2ZlZ3AzvNEVz0jHtGyyDouPZBVu.jpg"
-      },
-      {
-        "id": 2765459,
-        "name": "Thomas Larkin",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/t5NifuXVMEPnwIvZe6JkWuCGCWw.jpg"
-      },
-      {
-        "id": 3866196,
-        "name": "Hilton Hyppolite Denis",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 1014586,
-        "name": "Christopher Sommers",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/e86eKSvV5gr1qihDfG8Lpya04OC.jpg"
-      },
-      {
-        "id": 3866197,
-        "name": "Brad Leaver",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 1233261,
-        "name": "Simon Mallory",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/qUgXHJKgc1SbR7ihVwL48EmjLdO.jpg"
-      },
-      {
-        "id": 3866203,
-        "name": "Terepai Richmond",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/8nKVty5NrwheaCBijV6NtUoYdTB.jpg"
-      },
-      {
-        "id": 3866204,
-        "name": "Alex Knight",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 3866206,
-        "name": "Jordan A. Holland",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 3866207,
-        "name": "Lenesha Randolph",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 2140619,
-        "name": "Elizabeth Cullen",
-        "birthday": "1997-08-31",
-        "deathday": null,
-        "age": 29,
-        "image": "https://image.tmdb.org/t/p/w300/1Piix4T41OIpmQzkHONTBx8QWlO.jpg"
-      },
-      {
-        "id": 1184801,
-        "name": "Angie Milliken",
-        "birthday": "1964-11-07",
+        "id": 267116,
+        "name": "Kenny Smith",
+        "birthday": "1965-03-08",
         "deathday": null,
         "age": 61,
-        "image": "https://image.tmdb.org/t/p/w300/pfQZoIwFxaPiaxxuxJBHNQNrmQi.jpg"
+        "image": "https://image.tmdb.org/t/p/w300/9E1ZPGtOEAcZ8Gs1b6Sa2PXdMCH.jpg"
       },
       {
-        "id": 3866210,
-        "name": "Luke Corrin Care",
+        "id": 3570669,
+        "name": "Anthony Edwards",
+        "birthday": "2001-08-05",
+        "deathday": null,
+        "age": 25,
+        "image": "https://image.tmdb.org/t/p/w300/zE4nKNR0EDe1EqXBWvRkFgNDDul.jpg"
+      },
+      {
+        "id": 3087,
+        "name": "Robert Duvall",
+        "birthday": "1931-01-05",
+        "deathday": "2026-02-15",
+        "age": 95,
+        "image": "https://image.tmdb.org/t/p/w300/3tcKxC5Sc3DJ6XPDKKC2EAomEWn.jpg"
+      },
+      {
+        "id": 2543692,
+        "name": "Jordan Hull",
         "birthday": null,
         "deathday": null,
         "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/3fR2L8onj5Vgq9GmQfGnbQmt8Hp.jpg"
+        "image": "https://image.tmdb.org/t/p/w300/2GINvBMVYK0jgjHRwuIjY4Ej8u0.jpg"
       },
       {
-        "id": 2014143,
-        "name": "Jack McGirr",
+        "id": 46856,
+        "name": "María Botto",
+        "birthday": "1974-02-10",
+        "deathday": null,
+        "age": 52,
+        "image": "https://image.tmdb.org/t/p/w300/loXdfUOLAg9Ey6Ppt8pmJ36t5Gf.jpg"
+      },
+      {
+        "id": 2822960,
+        "name": "Ainhoa Pillet",
         "birthday": null,
         "deathday": null,
         "age": null,
         "image": ""
       },
       {
-        "id": 2100558,
-        "name": "Miranda Frangou",
+        "id": 557579,
+        "name": "Raúl Castillo",
+        "birthday": "1977-08-30",
+        "deathday": null,
+        "age": 49,
+        "image": "https://image.tmdb.org/t/p/w300/wyxl5HtyjeJRXkE89LtsItQhPHN.jpg"
+      },
+      {
+        "id": 1759221,
+        "name": "Heidi Gardner",
+        "birthday": "1983-07-27",
+        "deathday": null,
+        "age": 43,
+        "image": "https://image.tmdb.org/t/p/w300/pivHaSYFqB9ghAelkI3UuZKLQwD.jpg"
+      },
+      {
+        "id": 87079,
+        "name": "Jaleel White",
+        "birthday": "1976-11-27",
+        "deathday": null,
+        "age": 49,
+        "image": "https://image.tmdb.org/t/p/w300/txSsldskYkO4PbxKML8NvUq2sCk.jpg"
+      },
+      {
+        "id": 3602262,
+        "name": "Elvin Rodriguez",
         "birthday": null,
         "deathday": null,
         "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/bUPhhsz9p45nwdU8KeB652Epo9e.jpg"
+        "image": ""
+      },
+      {
+        "id": 3602264,
+        "name": "Moritz Wagner",
+        "birthday": "1997-04-26",
+        "deathday": null,
+        "age": 29,
+        "image": "https://image.tmdb.org/t/p/w300/r58MgN4ul2JPLJptc6RXARVYZBB.jpg"
+      },
+      {
+        "id": 2057864,
+        "name": "Boban Marjanović",
+        "birthday": "1988-08-15",
+        "deathday": null,
+        "age": 38,
+        "image": "https://image.tmdb.org/t/p/w300/1VSX0Fvq2hwpONVMA5kNolRpBLD.jpg"
+      },
+      {
+        "id": 3602273,
+        "name": "Michael Foster",
+        "birthday": "2003-01-16",
+        "deathday": null,
+        "age": 23,
+        "image": ""
+      },
+      {
+        "id": 196537,
+        "name": "Julius Erving",
+        "birthday": "1950-02-22",
+        "deathday": null,
+        "age": 76,
+        "image": "https://image.tmdb.org/t/p/w300/tvBg6Zu1Lgs6QQMaq7Y0XWVyFjz.jpg"
+      },
+      {
+        "id": 3214890,
+        "name": "Matisse Thybulle",
+        "birthday": "1997-03-04",
+        "deathday": null,
+        "age": 29,
+        "image": "https://image.tmdb.org/t/p/w300/qgOeIq64maKlGty9ofZK648kauF.jpg"
+      },
+      {
+        "id": 3214887,
+        "name": "Tobias Harris",
+        "birthday": "1992-07-15",
+        "deathday": null,
+        "age": 34,
+        "image": "https://image.tmdb.org/t/p/w300/xS9kjcTYGcNeawk4zDybSYkGTVd.jpg"
+      },
+      {
+        "id": 2421669,
+        "name": "Kyle Lowry",
+        "birthday": "1986-03-25",
+        "deathday": null,
+        "age": 40,
+        "image": "https://image.tmdb.org/t/p/w300/eLPclfs4LPYbiKfPvgui4CtL0h1.jpg"
+      },
+      {
+        "id": 3214889,
+        "name": "Tyrese Maxey",
+        "birthday": "2000-11-04",
+        "deathday": null,
+        "age": 25,
+        "image": "https://image.tmdb.org/t/p/w300/vKDcjRbW8NN120UMfz6UWzvvPyn.jpg"
+      },
+      {
+        "id": 3214888,
+        "name": "Seth Curry",
+        "birthday": "1990-08-23",
+        "deathday": null,
+        "age": 36,
+        "image": "https://image.tmdb.org/t/p/w300/iDhy7apK8kLSG79PQXzRFSBPN6v.jpg"
+      },
+      {
+        "id": 1177650,
+        "name": "Glenn 'Doc' Rivers",
+        "birthday": "1961-10-13",
+        "deathday": null,
+        "age": 64,
+        "image": "https://image.tmdb.org/t/p/w300/nd1ka9yZWfHD5mlrfB521x7pWaX.jpg"
+      },
+      {
+        "id": 214835,
+        "name": "Dirk Nowitzki",
+        "birthday": "1978-06-19",
+        "deathday": null,
+        "age": 48,
+        "image": "https://image.tmdb.org/t/p/w300/pII0DThKmzFmeE7tnr9gScL860p.jpg"
+      },
+      {
+        "id": 3580898,
+        "name": "Brad Stevens",
+        "birthday": "1976-10-22",
+        "deathday": null,
+        "age": 49,
+        "image": ""
+      },
+      {
+        "id": 3626103,
+        "name": "Jay Wright",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/x18AfDQLimG1fi1hEJFIjCBPa5I.jpg"
+      },
+      {
+        "id": 3580897,
+        "name": "Jordan Clarkson",
+        "birthday": "1992-06-07",
+        "deathday": null,
+        "age": 34,
+        "image": "https://image.tmdb.org/t/p/w300/mPAenRPoQpWhsleLnZtW9XtdOTA.jpg"
+      },
+      {
+        "id": 2601831,
+        "name": "Trae Young",
+        "birthday": "1998-09-19",
+        "deathday": null,
+        "age": 27,
+        "image": "https://image.tmdb.org/t/p/w300/e2Oy5r7xBM7isPC5tzIbwSoNs5d.jpg"
+      },
+      {
+        "id": 2076519,
+        "name": "Aaron Gordon",
+        "birthday": "1995-09-16",
+        "deathday": null,
+        "age": 31,
+        "image": "https://image.tmdb.org/t/p/w300/9YNG1TEnhkHPz47EaIypEjB2q5A.jpg"
+      },
+      {
+        "id": 1221738,
+        "name": "Mark Jackson",
+        "birthday": "1965-04-01",
+        "deathday": null,
+        "age": 61,
+        "image": ""
+      },
+      {
+        "id": 74883,
+        "name": "Allen Iverson",
+        "birthday": "1975-06-07",
+        "deathday": null,
+        "age": 51,
+        "image": "https://image.tmdb.org/t/p/w300/quuNSvrx5cddrqBvick4ly7JDYJ.jpg"
+      },
+      {
+        "id": 2949823,
+        "name": "Luka Dončić",
+        "birthday": "1999-02-28",
+        "deathday": null,
+        "age": 27,
+        "image": "https://image.tmdb.org/t/p/w300/oPqQNRBpQTfRJZOtemrQIjlsqTe.jpg"
+      },
+      {
+        "id": 3626106,
+        "name": "Tim Young",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 59785,
+        "name": "Fat Joe",
+        "birthday": "1970-08-19",
+        "deathday": null,
+        "age": 56,
+        "image": "https://image.tmdb.org/t/p/w300/g4Z1K3bywKBDFGcNT4C5OapbEQj.jpg"
+      },
+      {
+        "id": 3626111,
+        "name": "Mike James",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 3626112,
+        "name": "Leandro Barbosa",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/qgVQmAHFt4TSiqRSjbjUUFhtvj.jpg"
+      },
+      {
+        "id": 1931488,
+        "name": "James Goldstein",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 3626118,
+        "name": "Aaron Owens",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 3626119,
+        "name": "Lonnie Harrell",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 3626120,
+        "name": "Larry Williams",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 3435649,
+        "name": "Waliyy Dixon",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 238678,
+        "name": "Grayson Boucher",
+        "birthday": "1984-06-10",
+        "deathday": null,
+        "age": 42,
+        "image": "https://image.tmdb.org/t/p/w300/pM6qw7EDEOY4SbzkoF6zweAj0BB.jpg"
+      },
+      {
+        "id": 3626122,
+        "name": "Ty Tanner",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 3626123,
+        "name": "Chris Matthews",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 31515,
+        "name": "Mark Cuban",
+        "birthday": "1958-07-31",
+        "deathday": null,
+        "age": 68,
+        "image": "https://image.tmdb.org/t/p/w300/iK8LVp8R9Pf2MnYWBP6c0HKPf2D.jpg"
+      },
+      {
+        "id": 1215013,
+        "name": "Emeka Okafor",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 3626124,
+        "name": "Bill Duffy",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 2588120,
+        "name": "Jeff Schwartz",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 1224980,
+        "name": "Pat Croce",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/kRUyrWms3HtNMpsVad92gWR84lQ.jpg"
+      },
+      {
+        "id": 3626127,
+        "name": "Maurice Cheeks",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 3626128,
+        "name": "Kristine Leahy",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 1358966,
+        "name": "Aaron McKie",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 3626129,
+        "name": "Howard Wood",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 3160320,
+        "name": "Fran Fraschilla",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/dGvtv4amzi1A5RKDgabL7QYSvMl.jpg"
+      },
+      {
+        "id": 3580893,
+        "name": "Khris Middleton",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 3626130,
+        "name": "Greg St. Jean",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 3626131,
+        "name": "Lonnie Cooper",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 166029,
+        "name": "Dan Patrick",
+        "birthday": "1956-05-15",
+        "deathday": null,
+        "age": 70,
+        "image": "https://image.tmdb.org/t/p/w300/A4G9dtCuma1yR9QAkhqSyGZsDvr.jpg"
+      },
+      {
+        "id": 92940,
+        "name": "Beanie Sigel",
+        "birthday": "1974-03-06",
+        "deathday": null,
+        "age": 52,
+        "image": "https://image.tmdb.org/t/p/w300/mFdh9H9hQoRPD1vi4ZjkX49GzpG.jpg"
+      }
+    ],
+    "reviews": []
+  },
+  {
+    "title": "Obi-Wan Kenobi: Jediův návrat",
+    "tmdb_id": 1015606,
+    "imdb_id": "tt21860836",
+    "year": 2022,
+    "date": "2022-09-07",
+    "score": 73,
+    "box": null,
+    "box_currency": null,
+    "country": "USA",
+    "genre": "Dokumentární",
+    "runtime": 60,
+    "poster": "https://image.tmdb.org/t/p/w342/wwdjWwyPqMKqJIaDkxiDso4OixA.jpg",
+    "gallery": [
+      "https://image.tmdb.org/t/p/w500/c8jqJ502BzvkCXy2enrao1PuQEE.jpg"
+    ],
+    "summary": "Tento speciál zkoumá návrat Obi-Wana Kenobiho a Anakina Skywalkera na obrazovky, jakož i Ewana McGregora a Haydena Christensena do jejich klasických rolí. Režisérka Deborah Chow vede herce a štáb při tvorbě nových hrdinů a padouchů, kteří ožívají jako nové ztělesnění oblíbených postav Hvězdných válek, jakož i epický příběh, který dramaticky propojuje ságu filmů.",
+    "director": {
+      "id": 928915,
+      "name": "David Gelb",
+      "image": "https://image.tmdb.org/t/p/w300/dHsVDBUQJPtUcsolCc1fD5zqoAJ.jpg"
+    },
+    "composer": {
+      "id": 1803762,
+      "name": "Michael Dean Parsons",
+      "image": ""
+    },
+    "writer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "actors": [
+      {
+        "id": 3061,
+        "name": "Ewan McGregor",
+        "birthday": "1971-03-31",
+        "deathday": null,
+        "age": 55,
+        "image": "https://image.tmdb.org/t/p/w300/aEmyadfRXTmmR7UW7OXsm5a6smS.jpg"
+      },
+      {
+        "id": 17244,
+        "name": "Hayden Christensen",
+        "birthday": "1981-04-19",
+        "deathday": null,
+        "age": 45,
+        "image": "https://image.tmdb.org/t/p/w300/RuwAecNK9VDeTrfw6LUE4q4rIt.jpg"
+      },
+      {
+        "id": 928830,
+        "name": "Deborah Chow",
+        "birthday": "1971-01-01",
+        "deathday": null,
+        "age": 55,
+        "image": "https://image.tmdb.org/t/p/w300/7XiXU4d7JqPGbhiGCvaRQclISRT.jpg"
+      },
+      {
+        "id": 2042908,
+        "name": "Moses Ingram",
+        "birthday": "1994-02-06",
+        "deathday": null,
+        "age": 32,
+        "image": "https://image.tmdb.org/t/p/w300/u7I5f4Bgz7CI8G7fUOJDbFtd0qf.jpg"
+      },
+      {
+        "id": 1813472,
+        "name": "Vivien Lyra Blair",
+        "birthday": "2012-06-04",
+        "deathday": null,
+        "age": 14,
+        "image": "https://image.tmdb.org/t/p/w300/cTIzmWhrxDXsdaQpjSnSQQV8x8A.jpg"
+      },
+      {
+        "id": 74569,
+        "name": "Joby Harold",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/kgcPJwDF5xZTfJ1CzU9eYy0LlIv.jpg"
+      },
+      {
+        "id": 36669,
+        "name": "Rupert Friend",
+        "birthday": "1981-10-09",
+        "deathday": null,
+        "age": 44,
+        "image": "https://image.tmdb.org/t/p/w300/aMOUdXtTlqtscPumbuvfcH1JB42.jpg"
+      },
+      {
+        "id": 33192,
+        "name": "Joel Edgerton",
+        "birthday": "1974-06-23",
+        "deathday": null,
+        "age": 52,
+        "image": "https://image.tmdb.org/t/p/w300/r2TTDZ8cG5wrZqx7Drz1M95S9z3.jpg"
+      },
+      {
+        "id": 131634,
+        "name": "Bonnie Piesse",
+        "birthday": "1983-08-10",
+        "deathday": null,
+        "age": 43,
+        "image": "https://image.tmdb.org/t/p/w300/cF0HuGFh9Sk0ik1bAoaiVEedkou.jpg"
+      },
+      {
+        "id": 5367,
+        "name": "Zach Braff",
+        "birthday": "1975-04-06",
+        "deathday": null,
+        "age": 51,
+        "image": "https://image.tmdb.org/t/p/w300/koIHwqE6hWIXuOIDHNADwSuGq6N.jpg"
+      },
+      {
+        "id": 466505,
+        "name": "Kumail Nanjiani",
+        "birthday": "1978-05-02",
+        "deathday": null,
+        "age": 48,
+        "image": "https://image.tmdb.org/t/p/w300/9EyrK1Cv7ey1h1GgmsVAOn45w6G.jpg"
+      },
+      {
+        "id": 30430,
+        "name": "Indira Varma",
+        "birthday": "1973-09-27",
+        "deathday": null,
+        "age": 52,
+        "image": "https://image.tmdb.org/t/p/w300/yaFCI907dcK2XkzO0HQgtK25kp2.jpg"
+      },
+      {
+        "id": 1371398,
+        "name": "O'Shea Jackson Jr.",
+        "birthday": "1991-02-24",
+        "deathday": null,
+        "age": 35,
+        "image": "https://image.tmdb.org/t/p/w300/kXJ02sXvnExbGNJ11piC6d6WMOc.jpg"
+      },
+      {
+        "id": 27762,
+        "name": "Ian McDiarmid",
+        "birthday": "1944-08-11",
+        "deathday": null,
+        "age": 82,
+        "image": "https://image.tmdb.org/t/p/w300/9OSZMsnwNtM8JrHrEdgQEwyTaPj.jpg"
+      },
+      {
+        "id": 3896,
+        "name": "Liam Neeson",
+        "birthday": "1952-06-07",
+        "deathday": null,
+        "age": 74,
+        "image": "https://image.tmdb.org/t/p/w300/sRLev3wJioBgun3ZoeAUFpkLy0D.jpg"
+      },
+      {
+        "id": 55081,
+        "name": "Jonathan Eusebio",
+        "birthday": "1973-09-15",
+        "deathday": null,
+        "age": 53,
+        "image": "https://image.tmdb.org/t/p/w300/9PLs7wy3rLSCY1QNqfkzV4LTZho.jpg"
+      }
+    ],
+    "reviews": []
+  },
+  {
+    "title": "Když promluvila",
+    "tmdb_id": 837881,
+    "imdb_id": "tt11198810",
+    "year": 2022,
+    "date": "2022-11-17",
+    "score": 73,
+    "box": 14,
+    "box_currency": "USD",
+    "country": "USA",
+    "genre": "Drama",
+    "runtime": 129,
+    "poster": "https://image.tmdb.org/t/p/w342/njOC1bUGuu61hy2SLULuXd7IjJM.jpg",
+    "gallery": [
+      "https://image.tmdb.org/t/p/w500/5tb7RjF0OAAaiGDUXsuedvhoGqV.jpg"
+    ],
+    "summary": "Dne 5. října 2017 vyšel v deníku New York Times článek, který otřásl Hollywoodem v základech. Text odhalil jednoho z nejvýznamnějších filmových producentů Harveyho Weinsteina jako sexuálního predátora. Producent desítky let zneužíval své mocenské postavení, když kariéru u filmu „prodával“ za poskytování sexuálních služeb. Léta mu to procházelo, své oběti buď umlčoval penězi, nebo profesně likvidoval. Nenašel se nikdo, kdo by byl ochoten jít s ním do otevřeného střetu. Do nerovného souboje se pustily až dvě novinářky listu New York Times, Jodi Kantor a Megan Twohey, které věděly, že alfou a omegou jejich reportáže bude najít ženu, která by se nebála promluvit.",
+    "director": {
+      "id": 22686,
+      "name": "Maria Schrader",
+      "image": "https://image.tmdb.org/t/p/w300/sZuIcKq5D75GNKlYecK08O3X0hG.jpg"
+    },
+    "composer": {
+      "id": 1533516,
+      "name": "Nicholas Britell",
+      "image": "https://image.tmdb.org/t/p/w300/AruRbW6IEk09KCFokffFecZIzZU.jpg"
+    },
+    "writer": {
+      "id": 515221,
+      "name": "Rebecca Lenkiewicz",
+      "image": "https://image.tmdb.org/t/p/w300/G8R8oMtv0ecJkHTS5ywz4ywwFL.jpg"
+    },
+    "actors": [
+      {
+        "id": 36662,
+        "name": "Carey Mulligan",
+        "birthday": "1985-05-28",
+        "deathday": null,
+        "age": 41,
+        "image": "https://image.tmdb.org/t/p/w300/iwVHhqoz5b62FR0SDpZ7wfsuTBI.jpg"
+      },
+      {
+        "id": 35028,
+        "name": "Zoe Kazan",
+        "birthday": "1983-09-09",
+        "deathday": null,
+        "age": 43,
+        "image": "https://image.tmdb.org/t/p/w300/rCJxFVtkyNUVTVCWYd6chx2Q19g.jpg"
+      },
+      {
+        "id": 1276,
+        "name": "Patricia Clarkson",
+        "birthday": "1959-12-29",
+        "deathday": null,
+        "age": 66,
+        "image": "https://image.tmdb.org/t/p/w300/rHHM9G83fpBAcFathbSyV4Tot5j.jpg"
+      },
+      {
+        "id": 6861,
+        "name": "Andre Braugher",
+        "birthday": "1962-07-01",
+        "deathday": "2023-12-11",
+        "age": 61,
+        "image": "https://image.tmdb.org/t/p/w300/zdemT9c1U4Muxf7hi0iFq2zHNLd.jpg"
+      },
+      {
+        "id": 1969732,
+        "name": "Lola Petticrew",
+        "birthday": "1995-12-26",
+        "deathday": null,
+        "age": 30,
+        "image": "https://image.tmdb.org/t/p/w300/wc7o4vu3amWNiXkR88JxniYroAI.jpg"
+      },
+      {
+        "id": 3086341,
+        "name": "Katherine Laheen",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/nz1XVSwMtFVgFwKxP2LAczfrA2M.jpg"
+      },
+      {
+        "id": 2739543,
+        "name": "Emma Clare O'Connor",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/pHEVBVrfRLYLNgWdGnUApxAYSPE.jpg"
+      },
+      {
+        "id": 207442,
+        "name": "Tom Pelphrey",
+        "birthday": "1982-07-28",
+        "deathday": null,
+        "age": 44,
+        "image": "https://image.tmdb.org/t/p/w300/eRmK7HvM5FK1Czx9oQspRERbf0o.jpg"
+      },
+      {
+        "id": 2337520,
+        "name": "Dalya Knapp",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/lRxkJeR4s21nNZT0XZFsmtIzUii.jpg"
+      },
+      {
+        "id": 3827575,
+        "name": "Emery Ellis Harper",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 1255902,
+        "name": "Adam Shapiro",
+        "birthday": "1981-05-28",
+        "deathday": null,
+        "age": 45,
+        "image": "https://image.tmdb.org/t/p/w300/AcUpgagCJaCzBTaiN2WQbh9hNYq.jpg"
+      },
+      {
+        "id": 1756597,
+        "name": "James Austin Johnson",
+        "birthday": "1989-07-19",
+        "deathday": null,
+        "age": 37,
+        "image": "https://image.tmdb.org/t/p/w300/g9y0aABiKtB1FOIKmklDlgRpDof.jpg"
+      },
+      {
+        "id": 104496,
+        "name": "Katie Nisa",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/pI26GE2BnOt0SmhfaB3zxZBS3gY.jpg"
+      },
+      {
+        "id": 52021,
+        "name": "Frank Wood",
+        "birthday": "1960-05-06",
+        "deathday": null,
+        "age": 66,
+        "image": "https://image.tmdb.org/t/p/w300/er5hLYMwjAYb3saRQcNZED4rtgx.jpg"
+      },
+      {
+        "id": 1842813,
+        "name": "Sarah Ann Masse",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 3827582,
+        "name": "Mike Spara",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 14314,
+        "name": "Traci Wolfe",
+        "birthday": "1960-12-27",
+        "deathday": null,
+        "age": 65,
+        "image": "https://image.tmdb.org/t/p/w300/lvPqdsmm3nYO9xjdH1e9kAMrsdo.jpg"
+      },
+      {
+        "id": 3503961,
+        "name": "Sujata Eyrick",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 1100548,
+        "name": "Shirley Rumierk",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/blMEkyKSgoHJSGFVxPi5MJefTBF.jpg"
+      },
+      {
+        "id": 73937,
+        "name": "Judith Godrèche",
+        "birthday": "1972-03-23",
+        "deathday": null,
+        "age": 54,
+        "image": "https://image.tmdb.org/t/p/w300/wtoYVeYdi0Uv00eFbtEvUZCdEge.jpg"
+      },
+      {
+        "id": 2823692,
+        "name": "Dipa Anitia",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/qIovd7mn8NK2hWkFQtB9LWIVzfl.jpg"
+      },
+      {
+        "id": 3580747,
+        "name": "Tessa Lee",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 1848813,
+        "name": "Keilly McQuail",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/yzUNOVRzY3nMO19HaU3GqGwzigk.jpg"
+      },
+      {
+        "id": 15852,
+        "name": "Ashley Judd",
+        "birthday": "1968-04-19",
+        "deathday": null,
+        "age": 58,
+        "image": "https://image.tmdb.org/t/p/w300/5771ZxVIs5rQbI1SV8TOlAFcF15.jpg"
+      },
+      {
+        "id": 171955,
+        "name": "Zabryna Guevara",
+        "birthday": "1972-01-12",
+        "deathday": null,
+        "age": 54,
+        "image": "https://image.tmdb.org/t/p/w300/7NlCmTZoauvyqjNdzTZv2auwOXg.jpg"
+      },
+      {
+        "id": 25661,
+        "name": "Harvey Friedman",
+        "birthday": "1959-01-01",
+        "deathday": null,
+        "age": 67,
+        "image": "https://image.tmdb.org/t/p/w300/qjzyf2ZOVgfJJVlKtHyAxVJsRwt.jpg"
+      },
+      {
+        "id": 1348213,
+        "name": "Anastasia Barzee",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/l2lXb9RnEcRMd4xyyr53WT45v2b.jpg"
+      },
+      {
+        "id": 164542,
+        "name": "Roxanna Hope Radja",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/yIAQZgm4MeHd4CfYYpLIYdg6Y4o.jpg"
+      },
+      {
+        "id": 2724909,
+        "name": "John Mazurek",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/69NV1qV8t4k8gh8CbRPYz81LTiE.jpg"
+      },
+      {
+        "id": 1362743,
+        "name": "Hilary Greer",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/qX5WaJZxeLA7nx7uzpBIpoXolUk.jpg"
+      },
+      {
+        "id": 2949562,
+        "name": "Makia Martin",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/iXvhb8OOuho5dnmSnCbMxizagBJ.jpg"
+      },
+      {
+        "id": 1841514,
+        "name": "Leah Kreitz",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/iUMfzMt9FWUrfbZnzVWdicVjRQ5.jpg"
+      },
+      {
+        "id": 1658534,
+        "name": "Nicole Betancourt",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 54124,
+        "name": "Marceline Hugot",
+        "birthday": "1960-02-10",
+        "deathday": null,
+        "age": 66,
+        "image": "https://image.tmdb.org/t/p/w300/sgMqp6wANDPpnpu11VALilQUOlP.jpg"
+      },
+      {
+        "id": 4811495,
+        "name": "Ruby Thomas",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 1742861,
+        "name": "Alex Hurt",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/wrHAvjgw73dERsK8gPOxfo9jLrV.jpg"
+      },
+      {
+        "id": 3307037,
+        "name": "Richard Busser",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 177114,
+        "name": "Katherine Kendall",
+        "birthday": "1969-08-12",
+        "deathday": null,
+        "age": 57,
+        "image": "https://image.tmdb.org/t/p/w300/kbySBoXcZMr3b07Wj6WNsrCgzAB.jpg"
+      },
+      {
+        "id": 1990684,
+        "name": "Edward Astor Chin",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/kIrs5JZm6g0YUtBzODq8u6Zuffl.jpg"
+      },
+      {
+        "id": 49971,
+        "name": "Jennifer Ehle",
+        "birthday": "1969-12-29",
+        "deathday": null,
+        "age": 56,
+        "image": "https://image.tmdb.org/t/p/w300/kMddVKineLFpxsUoGrb3E6edkOv.jpg"
+      },
+      {
+        "id": 168848,
+        "name": "Kathleen Mary Carthy",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/1ULyOv2kK0lXxHqpsMv9NDmovdB.jpg"
+      },
+      {
+        "id": 2389660,
+        "name": "Maren Heary",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/41Gq9P81NrD4JSdfePeya2j2MK3.jpg"
+      },
+      {
+        "id": 1511922,
+        "name": "Elle Graham",
+        "birthday": "2009-05-25",
+        "deathday": null,
+        "age": 17,
+        "image": "https://image.tmdb.org/t/p/w300/1BuvN0qBpRoBaKYh5wzFVXc3c6I.jpg"
+      },
+      {
+        "id": 3503959,
+        "name": "Wesley Holloway",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/3PcwUCcn7B3PKgwDhJwzYiiVAUX.jpg"
+      },
+      {
+        "id": 2906294,
+        "name": "Justine Colan",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/ia9UKRDMqOuwkNWD5DjufvqvlMJ.jpg"
+      },
+      {
+        "id": 2206,
+        "name": "Samantha Morton",
+        "birthday": "1977-05-13",
+        "deathday": null,
+        "age": 49,
+        "image": "https://image.tmdb.org/t/p/w300/hyxtpw9axreB8CcS30eRmvzdLAY.jpg"
+      },
+      {
+        "id": 1415918,
+        "name": "Molly Windsor",
+        "birthday": "1997-06-19",
+        "deathday": null,
+        "age": 29,
+        "image": "https://image.tmdb.org/t/p/w300/qZgRiayNqoAVC4f0g548BCf0Tov.jpg"
+      },
+      {
+        "id": 2432481,
+        "name": "Ashley Chiu",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 2592839,
+        "name": "Safia Oakley-Green",
+        "birthday": "2001-06-01",
+        "deathday": null,
+        "age": 25,
+        "image": "https://image.tmdb.org/t/p/w300/k4JrjdSIfwWF1Qd5KHChDfnXpF2.jpg"
+      },
+      {
+        "id": 2653791,
+        "name": "Catherine LeFrere",
+        "birthday": "1986-03-02",
+        "deathday": null,
+        "age": 40,
+        "image": "https://image.tmdb.org/t/p/w300/1rSPf7YZmX9dGERYuDABoMZKlG7.jpg"
+      },
+      {
+        "id": 1343477,
+        "name": "Anita Sabherwal",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/qoqjnbPx8jPKqMfvKSBk74iqRtJ.jpg"
+      },
+      {
+        "id": 2198839,
+        "name": "Makayla Patton",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 54246,
+        "name": "Peter Friedman",
+        "birthday": "1949-04-24",
+        "deathday": null,
+        "age": 77,
+        "image": "https://image.tmdb.org/t/p/w300/3pyU0yQsRIqSZw1fYapFRXJ3EHp.jpg"
+      },
+      {
+        "id": 7471,
+        "name": "Zach Grenier",
+        "birthday": "1954-02-12",
+        "deathday": null,
+        "age": 72,
+        "image": "https://image.tmdb.org/t/p/w300/fSyQKZO39sUsqY283GXiScOg3Hi.jpg"
+      },
+      {
+        "id": 2113544,
+        "name": "Angela Yeoh",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/XGUkZkY01JfpHL5wmwDlgiQ6uk.jpg"
+      },
+      {
+        "id": 1087135,
+        "name": "Celia Au",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/n3QZuMvAdkhXMRKPZ74fp7UO1GP.jpg"
+      },
+      {
+        "id": 2133250,
+        "name": "Tina WongLu",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/pWBuxRm78eszqdLkEa7sJ2qi6tb.jpg"
+      },
+      {
+        "id": 3827604,
+        "name": "Lauren O'Connor",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 104196,
+        "name": "Sean Cullen",
+        "birthday": "1960-05-09",
+        "deathday": null,
+        "age": 66,
+        "image": "https://image.tmdb.org/t/p/w300/nsEjNZisXs9rT5dCMpNDkQ69n2m.jpg"
+      },
+      {
+        "id": 17179,
+        "name": "Gregg Edelman",
+        "birthday": "1958-09-12",
+        "deathday": null,
+        "age": 68,
+        "image": "https://image.tmdb.org/t/p/w300/jvdye1mZkBb5x4xjjtmtuLRmXzy.jpg"
       }
     ],
     "reviews": []
@@ -28167,6 +28063,802 @@
     "reviews": []
   },
   {
+    "title": "Dovbuš",
+    "tmdb_id": 815029,
+    "imdb_id": "tt21833376",
+    "year": 2023,
+    "date": "2023-08-24",
+    "score": 73,
+    "box": null,
+    "box_currency": null,
+    "country": "UA",
+    "genre": "Historický",
+    "runtime": 120,
+    "poster": "https://image.tmdb.org/t/p/w342/cI0AbBDhKLIheGDVazO2gCtT6cx.jpg",
+    "gallery": [
+      "https://image.tmdb.org/t/p/w500/AqLFZK2nykm6oURXFRHjOaAssqn.jpg"
+    ],
+    "summary": "Dobrodružný akční historický velkofilm Dovbuš nás převede na počátek 18. století do temných časů karpatských zemí. K vykonávání vůle a rozkazů panovníka slouží zvláštní vojenský oddíl tzv. opričnici. V centru snímku stojí opričnik Oleksa Dovbuš, který se odvážným bojem za svobodu svého národa stává lidovým hrdinou. Čím více jeho legenda sílí, tím větším je postrachem bohatých. Hrdina však odolává jak pokusům o dopadení, tak o zabití. Mocipáni tedy vymyslí nový plán, ve kterém využijí Dovbušovy slabiny. Tou je jeho dávná láska...",
+    "director": {
+      "id": 1313022,
+      "name": "Oles Sanin",
+      "image": "https://image.tmdb.org/t/p/w300/8VTfpgue5oKPXeSMaYEXQvtCskT.jpg"
+    },
+    "composer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "writer": {
+      "id": 1313022,
+      "name": "Oles Sanin",
+      "image": "https://image.tmdb.org/t/p/w300/8VTfpgue5oKPXeSMaYEXQvtCskT.jpg"
+    },
+    "actors": [
+      {
+        "id": 1122958,
+        "name": "Serhiy Strelnykov",
+        "birthday": "1979-11-13",
+        "deathday": null,
+        "age": 46,
+        "image": "https://image.tmdb.org/t/p/w300/hKKzNE6P1FEL4DUXmCpQaPTYfX3.jpg"
+      },
+      {
+        "id": 1752018,
+        "name": "Darya Plakhtiy",
+        "birthday": "1992-11-07",
+        "deathday": null,
+        "age": 33,
+        "image": "https://image.tmdb.org/t/p/w300/1KNZYzz2eScbtkO8BLuQG4uqw5g.jpg"
+      },
+      {
+        "id": 3043538,
+        "name": "Rostyslav Derzhypilskyi",
+        "birthday": "1975-10-07",
+        "deathday": null,
+        "age": 50,
+        "image": "https://image.tmdb.org/t/p/w300/n6SI0SXd9aUup1iiEi9akm8doAP.jpg"
+      },
+      {
+        "id": 3056099,
+        "name": "Oleksii Hnatkovskyi",
+        "birthday": "1985-11-09",
+        "deathday": null,
+        "age": 40,
+        "image": "https://image.tmdb.org/t/p/w300/pfRLNo9VJWjZ0YLMb2O3kp9V22C.jpg"
+      },
+      {
+        "id": 1886663,
+        "name": "Oleh Shulha",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/inCAXCrKoEBJgl1sNgXtxg1fMo2.jpg"
+      },
+      {
+        "id": 2401781,
+        "name": "Dmytro Vivchariuk",
+        "birthday": "1989-09-28",
+        "deathday": null,
+        "age": 36,
+        "image": "https://image.tmdb.org/t/p/w300/rrPP7S0LkZfu4VvtROJwum7VgfG.jpg"
+      },
+      {
+        "id": 3060219,
+        "name": "Petro Zhyrun",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 3060220,
+        "name": "Ivan Zhyrun",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 2342168,
+        "name": "Roman Yasinovskiy",
+        "birthday": "1982-08-01",
+        "deathday": null,
+        "age": 44,
+        "image": "https://image.tmdb.org/t/p/w300/oNGKZ1TJypBbXQjUmSC7ycOU4PF.jpg"
+      },
+      {
+        "id": 37982,
+        "name": "Agata Buzek",
+        "birthday": "1976-09-20",
+        "deathday": null,
+        "age": 49,
+        "image": "https://image.tmdb.org/t/p/w300/5hDbyoCdPKyA2fmw17wYfjWxR2y.jpg"
+      },
+      {
+        "id": 1482162,
+        "name": "Mateusz Kościukiewicz",
+        "birthday": "1986-05-01",
+        "deathday": null,
+        "age": 40,
+        "image": "https://image.tmdb.org/t/p/w300/yrlP8XhIUxvrvTAViAZukpycvxX.jpg"
+      },
+      {
+        "id": 3038667,
+        "name": "Yakiv Tkachenko",
+        "birthday": "1979-02-02",
+        "deathday": "2024-12-10",
+        "age": 45,
+        "image": "https://image.tmdb.org/t/p/w300/vPPqvNfxYMfMDcQuZKQAp4fcYzU.jpg"
+      }
+    ],
+    "reviews": []
+  },
+  {
+    "title": "Chlapec a volavka",
+    "tmdb_id": 508883,
+    "imdb_id": "tt6587046",
+    "year": 2023,
+    "date": "2023-07-14",
+    "score": 73,
+    "box": 294,
+    "box_currency": "USD",
+    "country": "Japonsko",
+    "genre": "Animovaný",
+    "runtime": 124,
+    "poster": "https://image.tmdb.org/t/p/w342/4QmyPCQa5uSYjRsxPJvu4XA1ZWJ.jpg",
+    "gallery": [
+      "https://image.tmdb.org/t/p/w500/75nSb1fbWooipwcSU5bUttiOriI.jpg"
+    ],
+    "summary": "Dospívající chlapec Mahito se s tatínkem přestěhuje na venkovské sídlo daleko od hektického Tokia. V novém domově se seznámí se svéráznou mluvící volavkou, která ho láká k prozkoumání záhadné opuštěné věže. V ní Mahito objeví magický svět, jemuž vládne tajemný stařec. Na cestě za poznáním se potká se statečnou dívkou Himi, armádou papoušků i roztomilými stvořeními Warawara.",
+    "director": {
+      "id": 608,
+      "name": "Hayao Miyazaki",
+      "image": "https://image.tmdb.org/t/p/w300/ouhjt9KugzhWtdEyBPipihB3ic8.jpg"
+    },
+    "composer": {
+      "id": 636,
+      "name": "Joe Hisaishi",
+      "image": "https://image.tmdb.org/t/p/w300/xmDT8LoDPIyV4f7Q2yPwETSey6k.jpg"
+    },
+    "writer": {
+      "id": 608,
+      "name": "Hayao Miyazaki",
+      "image": "https://image.tmdb.org/t/p/w300/ouhjt9KugzhWtdEyBPipihB3ic8.jpg"
+    },
+    "actors": [
+      {
+        "id": 2234011,
+        "name": "Soma Santoki",
+        "birthday": "2005-06-06",
+        "deathday": null,
+        "age": 21,
+        "image": "https://image.tmdb.org/t/p/w300/g4I9g3IRcbxqTqDuOtgG9QicvfB.jpg"
+      },
+      {
+        "id": 585211,
+        "name": "Masaki Suda",
+        "birthday": "1993-02-21",
+        "deathday": null,
+        "age": 33,
+        "image": "https://image.tmdb.org/t/p/w300/g7gXu0bE9jZ5LHjSqn1zHdNtiA1.jpg"
+      },
+      {
+        "id": 58593,
+        "name": "Ko Shibasaki",
+        "birthday": "1981-08-05",
+        "deathday": null,
+        "age": 45,
+        "image": "https://image.tmdb.org/t/p/w300/eEBNceN1MsDFibWVV3VIcEHygUW.jpg"
+      },
+      {
+        "id": 2705230,
+        "name": "Aimyon",
+        "birthday": "1995-03-06",
+        "deathday": null,
+        "age": 31,
+        "image": "https://image.tmdb.org/t/p/w300/4pFkEwuyqADASOX205qZhLl4hfF.jpg"
+      },
+      {
+        "id": 72764,
+        "name": "Yoshino Kimura",
+        "birthday": "1976-04-10",
+        "deathday": null,
+        "age": 50,
+        "image": "https://image.tmdb.org/t/p/w300/fI0ALURUC3CO96fEb33f4iijlF.jpg"
+      },
+      {
+        "id": 12670,
+        "name": "Takuya Kimura",
+        "birthday": "1972-11-13",
+        "deathday": null,
+        "age": 53,
+        "image": "https://image.tmdb.org/t/p/w300/sswCg8kvFsgSaVJwcIKKe4K7jOe.jpg"
+      },
+      {
+        "id": 548758,
+        "name": "Keiko Takeshita",
+        "birthday": "1953-09-15",
+        "deathday": null,
+        "age": 73,
+        "image": "https://image.tmdb.org/t/p/w300/jmXWhUM4IhvyMrRkzYnDQamkqjG.jpg"
+      },
+      {
+        "id": 119244,
+        "name": "Jun Fubuki",
+        "birthday": "1952-05-12",
+        "deathday": null,
+        "age": 74,
+        "image": "https://image.tmdb.org/t/p/w300/uHF9NdKrG1bN7GwZB7PI21Rkdv8.jpg"
+      },
+      {
+        "id": 930413,
+        "name": "Sawako Agawa",
+        "birthday": "1953-11-01",
+        "deathday": null,
+        "age": 72,
+        "image": "https://image.tmdb.org/t/p/w300/erf8kZxEitlpiOOcyFWqBNjbOjX.jpg"
+      },
+      {
+        "id": 1815948,
+        "name": "Karen Takizawa",
+        "birthday": "1992-05-13",
+        "deathday": null,
+        "age": 34,
+        "image": "https://image.tmdb.org/t/p/w300/rd5VCODW2qNJpLc4YNkpJF3089S.jpg"
+      },
+      {
+        "id": 545825,
+        "name": "Shinobu Otake",
+        "birthday": "1957-07-17",
+        "deathday": null,
+        "age": 69,
+        "image": "https://image.tmdb.org/t/p/w300/az5hCPy37MFM9EH2f3gn1cTBhA6.jpg"
+      },
+      {
+        "id": 2541,
+        "name": "Jun Kunimura",
+        "birthday": "1955-11-16",
+        "deathday": null,
+        "age": 70,
+        "image": "https://image.tmdb.org/t/p/w300/zC0GbuXQGPur7i8AkdPUWedmDKz.jpg"
+      },
+      {
+        "id": 20332,
+        "name": "Kaoru Kobayashi",
+        "birthday": "1951-09-04",
+        "deathday": null,
+        "age": 75,
+        "image": "https://image.tmdb.org/t/p/w300/zpnQ8L6SpyT8pI5vgbpKqXyMYoj.jpg"
+      },
+      {
+        "id": 72453,
+        "name": "Shōhei Hino",
+        "birthday": "1949-05-30",
+        "deathday": "2024-11-14",
+        "age": 75,
+        "image": "https://image.tmdb.org/t/p/w300/n9q1VZd7AoUFeCaRKMpycDP0SCM.jpg"
+      }
+    ],
+    "reviews": []
+  },
+  {
+    "title": "Zóna zájmu",
+    "tmdb_id": 467244,
+    "imdb_id": "tt7160372",
+    "year": 2023,
+    "date": "2023-12-15",
+    "score": 73,
+    "box": 53,
+    "box_currency": "USD",
+    "country": "USA",
+    "genre": "Drama",
+    "runtime": 105,
+    "poster": "https://image.tmdb.org/t/p/w342/nQXpE78DmCzsvtkHI08xDBi4Doq.jpg",
+    "gallery": [
+      "https://image.tmdb.org/t/p/w500/pnTSOKcYnvdpQNQElAtJM1rWOxH.jpg"
+    ],
+    "summary": "Rudolf, Hedwiga a jejich děti žijí ve velkém domě s krásnou, udržovanou zahradou. Každý den slaví společnou večeří, vzpomínají na milovanou Itálii, užívají si víkendové výlety k vodě a procházky s přáteli. Zpoza zdí jejich domova se však ozývají znepokojivé zvuky a občas něčí zoufalý křik. Rudolf Höss je totiž velitel koncentračního tábora v Osvětimi.",
+    "director": {
+      "id": 66728,
+      "name": "Jonathan Glazer",
+      "image": "https://image.tmdb.org/t/p/w300/lGaM7P0vjhhWs5EmIecsN6PYfxG.jpg"
+    },
+    "composer": {
+      "id": 1341726,
+      "name": "Mica Levi",
+      "image": "https://image.tmdb.org/t/p/w300/efQCxwoGL4SsAtX1ePDDv1EbBg8.jpg"
+    },
+    "writer": {
+      "id": 66728,
+      "name": "Jonathan Glazer",
+      "image": "https://image.tmdb.org/t/p/w300/lGaM7P0vjhhWs5EmIecsN6PYfxG.jpg"
+    },
+    "actors": [
+      {
+        "id": 71374,
+        "name": "Christian Friedel",
+        "birthday": "1979-03-09",
+        "deathday": null,
+        "age": 47,
+        "image": "https://image.tmdb.org/t/p/w300/e991OjrO8tjAxoPzhg5vjNDHaou.jpg"
+      },
+      {
+        "id": 7152,
+        "name": "Sandra Hüller",
+        "birthday": "1978-04-30",
+        "deathday": null,
+        "age": 48,
+        "image": "https://image.tmdb.org/t/p/w300/t7wGqC2dRwTEnt9Fk5pxQ0uXTqs.jpg"
+      },
+      {
+        "id": 4072267,
+        "name": "Johann Karthaus",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/6cPLuDzd0S6cFJZMg28DYiIWNuq.jpg"
+      },
+      {
+        "id": 4452138,
+        "name": "Luis Noah Witte",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/tlDRCi6I4MGAB09UQH9AC9FD1Cn.jpg"
+      },
+      {
+        "id": 4072269,
+        "name": "Nele Ahrensmeier",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/8THcOlwcMUCIWiaWiwufKgjU5fD.jpg"
+      },
+      {
+        "id": 4072268,
+        "name": "Lilli Falk",
+        "birthday": "2009-02-14",
+        "deathday": null,
+        "age": 17,
+        "image": "https://image.tmdb.org/t/p/w300/rdvtuPzvSkfYu3R14keUNS3rg1w.jpg"
+      },
+      {
+        "id": 4452146,
+        "name": "Anastazja Drobniak",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4452147,
+        "name": "Cecylia Pekala",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4452144,
+        "name": "Kalman Wilson",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4072265,
+        "name": "Medusa Knopf",
+        "birthday": "1976-02-19",
+        "deathday": null,
+        "age": 50,
+        "image": "https://image.tmdb.org/t/p/w300/aCXM1DWwxcB18sN75vI8vyI38h2.jpg"
+      },
+      {
+        "id": 1546090,
+        "name": "Maximilian Beck",
+        "birthday": "1995-11-26",
+        "deathday": null,
+        "age": 30,
+        "image": "https://image.tmdb.org/t/p/w300/7L6neL3YsSLDxOe4xTAO7K4SFKg.jpg"
+      },
+      {
+        "id": 2154749,
+        "name": "Andrey Isaev",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4547446,
+        "name": "Julia Babiarz",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 1824177,
+        "name": "Stephanie Petrowitz",
+        "birthday": "1975-01-01",
+        "deathday": null,
+        "age": 51,
+        "image": "https://image.tmdb.org/t/p/w300/wE5Z9tqOIThxU4U1spGIr5uETzo.jpg"
+      },
+      {
+        "id": 4452145,
+        "name": "Martyna Poznanski",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4452137,
+        "name": "Zuzanna Kobiela",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 49409,
+        "name": "Benjamin Utzerath",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 51862,
+        "name": "Thomas Neumann",
+        "birthday": "1946-02-09",
+        "deathday": null,
+        "age": 80,
+        "image": "https://image.tmdb.org/t/p/w300/wT7a2CFej8pUHSAvuCta0BcAQzM.jpg"
+      },
+      {
+        "id": 146066,
+        "name": "Klaudiusz Kaufmann",
+        "birthday": "1978-04-08",
+        "deathday": null,
+        "age": 48,
+        "image": "https://image.tmdb.org/t/p/w300/ktXK81KfJqQl00FGwwthnmwnD9c.jpg"
+      },
+      {
+        "id": 4547448,
+        "name": "Justyna Szklarska",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4547449,
+        "name": "Kacper Piwko",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 569358,
+        "name": "Marie Rosa Tietjen",
+        "birthday": "1986-01-01",
+        "deathday": null,
+        "age": 40,
+        "image": "https://image.tmdb.org/t/p/w300/m4F5wla6srP6iTfENVxMlpQF1jd.jpg"
+      },
+      {
+        "id": 4547451,
+        "name": "Antje Falk",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 3089255,
+        "name": "Jakub Sierenberg",
+        "birthday": "1998-12-16",
+        "deathday": null,
+        "age": 27,
+        "image": "https://image.tmdb.org/t/p/w300/7CnaIw3Nd524h8VpN0qjD9vhnDQ.jpg"
+      },
+      {
+        "id": 4345155,
+        "name": "Joerg Sierenberg",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4547456,
+        "name": "Joerg Giessler",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4547463,
+        "name": "Heiko Lange",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4386585,
+        "name": "Marek Łukasik",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4547465,
+        "name": "Bernhard Schirmer",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4386457,
+        "name": "Julia Polaczek",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 1149215,
+        "name": "Shenja Lacher",
+        "birthday": "1978-03-20",
+        "deathday": null,
+        "age": 48,
+        "image": "https://image.tmdb.org/t/p/w300/pRqSJwKG5qyJchnqEFvMnWLyqfe.jpg"
+      },
+      {
+        "id": 7153,
+        "name": "Imogen Kogge",
+        "birthday": "1957-02-08",
+        "deathday": null,
+        "age": 69,
+        "image": "https://image.tmdb.org/t/p/w300/nmgmu5YIl4tActaPjvcjiceEUX9.jpg"
+      },
+      {
+        "id": 4547470,
+        "name": "Wiktoria Wisniewska",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4547471,
+        "name": "Paulina Burzyk",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4328882,
+        "name": "Anna Marciniszyn",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4547472,
+        "name": "Agnieszka Wierny",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4547473,
+        "name": "Patryk Mika",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4547474,
+        "name": "Tomasz Piwko",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4547475,
+        "name": "Carsten Koch",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4547477,
+        "name": "Heinz Nielow",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 2458721,
+        "name": "Christine Schröder",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4547479,
+        "name": "Marnius Fislage",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 1856,
+        "name": "Ralph Herforth",
+        "birthday": "1960-01-15",
+        "deathday": null,
+        "age": 66,
+        "image": "https://image.tmdb.org/t/p/w300/pA6wnar5b3jaFz7PHOs2As9z05z.jpg"
+      },
+      {
+        "id": 1738714,
+        "name": "Daniel Holzberg",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/fv8ArJTyCSBP68ey6ykSfZJjfFY.jpg"
+      },
+      {
+        "id": 586676,
+        "name": "Rainer Haustein",
+        "birthday": "1966-01-01",
+        "deathday": null,
+        "age": 60,
+        "image": "https://image.tmdb.org/t/p/w300/pBHHROIiUjPjCn30JL6ADyxKDkz.jpg"
+      },
+      {
+        "id": 4547481,
+        "name": "Daniel Hoffman",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 2488795,
+        "name": "Wolfgang Lampl",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4547484,
+        "name": "Oscar Lebeck",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4547485,
+        "name": "Christian Willy",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 1910617,
+        "name": "Freya Kreutzkam",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/25zViBwxcPRD0Oenki1T5KMIrKC.jpg"
+      },
+      {
+        "id": 2940208,
+        "name": "Leo Meier",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/bVktQOjmWnWt3CuqwNCLsa5sFPX.jpg"
+      },
+      {
+        "id": 4547492,
+        "name": "Barbara Koszałka",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4547493,
+        "name": "Izabela Bara",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4547494,
+        "name": "Anna Kuwik",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4547495,
+        "name": "Mariola Karczewska",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4547496,
+        "name": "Halina Drzymota",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4547497,
+        "name": "Dominika Matonóg",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4547498,
+        "name": "Ewelina Kaczor",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4547499,
+        "name": "Małgorzata Żurek",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4547500,
+        "name": "Barbara Jakubowska",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      }
+    ],
+    "reviews": []
+  },
+  {
     "title": "Fenomén BlackBerry",
     "tmdb_id": 1016084,
     "imdb_id": "tt21867434",
@@ -28494,1018 +29186,6 @@
         "deathday": null,
         "age": null,
         "image": "https://image.tmdb.org/t/p/w300/5gVj24IP8gB0rYsRa4HQcE59KCH.jpg"
-      }
-    ],
-    "reviews": []
-  },
-  {
-    "title": "Chiméra",
-    "tmdb_id": 837335,
-    "imdb_id": "tt14561712",
-    "year": 2023,
-    "date": "2023-10-12",
-    "score": 73,
-    "box": 5,
-    "box_currency": "USD",
-    "country": "Itálie",
-    "genre": "Drama",
-    "runtime": 131,
-    "poster": "https://image.tmdb.org/t/p/w342/Al1yrTMD78aCW9w1DPuRNrxQdxG.jpg",
-    "gallery": [
-      "https://image.tmdb.org/t/p/w500/ovtTn2GkzOYsMvAVWl6Bt0jN4Ye.jpg"
-    ],
-    "summary": "80. léta minulého století. Rozcuchaný, neoholený, v umouněném bílém saku, neustále s cigaretou – takový je Angličan Arthur, vracející se do přímořské vísky kdesi v Toskánsku. Živobytí? Lovec pokladů – s bizarními kumpány vykrádající etruské hrobky. Za nedbalým zevnějškem se ale skrývá i vnitřní zmatek, zaviněný neodbytnými vzpomínkami na ztracenou lásku Beniaminu.",
-    "director": {
-      "id": 931211,
-      "name": "Alice Rohrwacher",
-      "image": "https://image.tmdb.org/t/p/w300/8xDpjRUr6hlS7aGh8W0DkNbfby7.jpg"
-    },
-    "composer": {
-      "id": null,
-      "name": "",
-      "image": ""
-    },
-    "writer": {
-      "id": 931211,
-      "name": "Alice Rohrwacher",
-      "image": "https://image.tmdb.org/t/p/w300/8xDpjRUr6hlS7aGh8W0DkNbfby7.jpg"
-    },
-    "actors": [
-      {
-        "id": 1206334,
-        "name": "Josh O'Connor",
-        "birthday": "1990-05-20",
-        "deathday": null,
-        "age": 36,
-        "image": "https://image.tmdb.org/t/p/w300/pVv0zCvpNyuWoJcABq8RrM90FsK.jpg"
-      },
-      {
-        "id": 2128873,
-        "name": "Carol Duarte",
-        "birthday": "1991-07-10",
-        "deathday": null,
-        "age": 35,
-        "image": "https://image.tmdb.org/t/p/w300/eDkJXH8mBCH45VPWbI3LKluc2vd.jpg"
-      },
-      {
-        "id": 128748,
-        "name": "Alba Rohrwacher",
-        "birthday": "1979-02-27",
-        "deathday": null,
-        "age": 47,
-        "image": "https://image.tmdb.org/t/p/w300/swffcvnDnj5966fdLSnXOMY186.jpg"
-      },
-      {
-        "id": 6588,
-        "name": "Isabella Rossellini",
-        "birthday": "1952-06-18",
-        "deathday": null,
-        "age": 74,
-        "image": "https://image.tmdb.org/t/p/w300/z0zojT6nwDxi35HMcXlVpBfuBAU.jpg"
-      },
-      {
-        "id": 1341582,
-        "name": "Vincenzo Nemolato",
-        "birthday": "1989-01-01",
-        "deathday": null,
-        "age": 37,
-        "image": "https://image.tmdb.org/t/p/w300/wTFAFh5UKCPse91IX3QrMcwSRjx.jpg"
-      },
-      {
-        "id": 1451519,
-        "name": "Lou Roy-Lecollinet",
-        "birthday": "1996-08-01",
-        "deathday": null,
-        "age": 30,
-        "image": "https://image.tmdb.org/t/p/w300/8ATTKbxquBwk15iWPlAToN1WYx4.jpg"
-      },
-      {
-        "id": 4072273,
-        "name": "Giuliano Mantovani",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 4072271,
-        "name": "Gian Piero Capretto",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 4072274,
-        "name": "Melchiorre Pala",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 1880576,
-        "name": "Ramona Fiorini",
-        "birthday": "1985-01-19",
-        "deathday": null,
-        "age": 41,
-        "image": "https://image.tmdb.org/t/p/w300/jMneKkqao51iKbnRpXOm6g09wjS.jpg"
-      },
-      {
-        "id": 4072272,
-        "name": "Luca Gargiullo",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 239920,
-        "name": "Yile Yara Vianello",
-        "birthday": "1999-02-02",
-        "deathday": null,
-        "age": 27,
-        "image": "https://image.tmdb.org/t/p/w300/oqmoWSIlF2eikiGv42rmqEVNi6a.jpg"
-      },
-      {
-        "id": 2185956,
-        "name": "Barbara Chiesa",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/6MmCaik4MzPNHf10HyOAUOUQcej.jpg"
-      },
-      {
-        "id": 1925159,
-        "name": "Elisabetta Perotto",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 2652385,
-        "name": "Chiara Pazzaglia",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 4306338,
-        "name": "Francesca Carrain",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/jXIGXubO1AiAbTboYyOiOT34N9i.jpg"
-      },
-      {
-        "id": 3103929,
-        "name": "Luciano Vergaro",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/ykzkucW2OBK5pTnJ3aK0gIx0Fii.jpg"
-      },
-      {
-        "id": 1524909,
-        "name": "Carlo Tarmati",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 4653113,
-        "name": "Valentino Santagati",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 2161399,
-        "name": "Piero Crucitti",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 1045414,
-        "name": "Milutin Dapčević",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/ftgM7JfQ5Rd5ox0jE1d6RRZPW3J.jpg"
-      },
-      {
-        "id": 2046229,
-        "name": "Luke Chikovani",
-        "birthday": "1994-04-12",
-        "deathday": null,
-        "age": 32,
-        "image": "https://image.tmdb.org/t/p/w300/9i3Ixe0tXIw5GhxPGaXwI2WMbYk.jpg"
-      },
-      {
-        "id": 4653114,
-        "name": "Julia Vella",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 1524907,
-        "name": "Agnese Graziani",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/dhHTy7jIUfPXpMzm6WnIVtt1nmA.jpg"
-      },
-      {
-        "id": 129106,
-        "name": "Alessandro Genovesi",
-        "birthday": "1973-01-10",
-        "deathday": null,
-        "age": 53,
-        "image": "https://image.tmdb.org/t/p/w300/agk2QJ41GBBr7MPif03yGIc9x7L.jpg"
-      },
-      {
-        "id": 4653115,
-        "name": "Cristiano Piazzati",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 3399635,
-        "name": "Sofia Stangherlin",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 4653117,
-        "name": "Marianna Pantani",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 1524906,
-        "name": "Maria Alexandra Lungu",
-        "birthday": "2000-01-01",
-        "deathday": null,
-        "age": 26,
-        "image": "https://image.tmdb.org/t/p/w300/vOW6jKgCguW1oz9HUJlPGOyMt6v.jpg"
-      },
-      {
-        "id": 4653120,
-        "name": "Paolo Bizzarri",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 4653121,
-        "name": "Claudio Fabbri",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 4653122,
-        "name": "Monaldo Gazzella",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 4653124,
-        "name": "Sofija Zobina",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/wTgPq30y4Zm25nExxeuR3QHpQNo.jpg"
-      },
-      {
-        "id": 3399638,
-        "name": "Silvia Lucarini",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 4653125,
-        "name": "Pancrazio Capretto",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 3170289,
-        "name": "Elisabetta Anella",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 2161402,
-        "name": "Maddalena Baiocco",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 4653127,
-        "name": "Leila Nuniz",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 2161403,
-        "name": "Giulia Caccavello",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 4653128,
-        "name": "Franco Barzi",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 4653129,
-        "name": "Fabrizio Pierini",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 4653130,
-        "name": "Andrea Pettirossi",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 4653131,
-        "name": "Maria Pia Clementi",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 4653132,
-        "name": "Anna DeLuca",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 1906186,
-        "name": "Adriano Tardiolo",
-        "birthday": "1998-01-01",
-        "deathday": null,
-        "age": 28,
-        "image": "https://image.tmdb.org/t/p/w300/dBZlZ3QDPaNmhhjhO5gwHmet2KE.jpg"
-      }
-    ],
-    "reviews": []
-  },
-  {
-    "title": "To jsem já, Margaret!",
-    "tmdb_id": 555285,
-    "imdb_id": "tt9185206",
-    "year": 2023,
-    "date": "2023-03-29",
-    "score": 73,
-    "box": 22,
-    "box_currency": "USD",
-    "country": "USA",
-    "genre": "Komedie",
-    "runtime": 106,
-    "poster": "https://image.tmdb.org/t/p/w342/yb6UB4WC3znlwU0L4AqMnjR9G9S.jpg",
-    "gallery": [
-      "https://image.tmdb.org/t/p/w500/qNmLEOGZy37vKAPqcTuZ47uCOS9.jpg"
-    ],
-    "summary": "Když se její rodina stěhuje z města na předměstí, jedenáctiletá Margaret (Abby Ryder Fortson) se potýká s novými přáteli, pocity a počátkem dospívání.",
-    "director": {
-      "id": 983909,
-      "name": "Kelly Fremon Craig",
-      "image": "https://image.tmdb.org/t/p/w300/wGOlsiIMd1NC0idrACFweIyLua.jpg"
-    },
-    "composer": {
-      "id": 947,
-      "name": "Hans Zimmer",
-      "image": "https://image.tmdb.org/t/p/w300/tpQnDeHY15szIXvpnhlprufz4d.jpg"
-    },
-    "writer": {
-      "id": 983909,
-      "name": "Kelly Fremon Craig",
-      "image": "https://image.tmdb.org/t/p/w300/wGOlsiIMd1NC0idrACFweIyLua.jpg"
-    },
-    "actors": [
-      {
-        "id": 1360010,
-        "name": "Abby Ryder Fortson",
-        "birthday": "2008-03-14",
-        "deathday": null,
-        "age": 18,
-        "image": "https://image.tmdb.org/t/p/w300/mNRZFVtAvj5P3HxM2PFM1YqXMAw.jpg"
-      },
-      {
-        "id": 53714,
-        "name": "Rachel McAdams",
-        "birthday": "1978-11-17",
-        "deathday": null,
-        "age": 47,
-        "image": "https://image.tmdb.org/t/p/w300/2DPh6KoNg0p57vvGc6N468zr3ct.jpg"
-      },
-      {
-        "id": 8534,
-        "name": "Kathy Bates",
-        "birthday": "1948-06-28",
-        "deathday": null,
-        "age": 78,
-        "image": "https://image.tmdb.org/t/p/w300/qZRTzTjV4OC1Ii9a0n8QBS9zMOd.jpg"
-      },
-      {
-        "id": 1511922,
-        "name": "Elle Graham",
-        "birthday": "2009-05-25",
-        "deathday": null,
-        "age": 17,
-        "image": "https://image.tmdb.org/t/p/w300/1BuvN0qBpRoBaKYh5wzFVXc3c6I.jpg"
-      },
-      {
-        "id": 227564,
-        "name": "Benny Safdie",
-        "birthday": "1986-02-24",
-        "deathday": null,
-        "age": 40,
-        "image": "https://image.tmdb.org/t/p/w300/u10A5DpUYRB1zMF7YoGYcyvhois.jpg"
-      },
-      {
-        "id": 4019844,
-        "name": "Amari Alexis Price",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/90Z2RTF1et2OdaDptIeYlxyGMFc.jpg"
-      },
-      {
-        "id": 4019845,
-        "name": "Katherine Mallen Kupferer",
-        "birthday": "2007-11-23",
-        "deathday": null,
-        "age": 18,
-        "image": "https://image.tmdb.org/t/p/w300/7K9yXtbStDmHCNaox20arYS74R.jpg"
-      },
-      {
-        "id": 3656214,
-        "name": "Kate MacCluggage",
-        "birthday": "1982-12-29",
-        "deathday": null,
-        "age": 43,
-        "image": "https://image.tmdb.org/t/p/w300/uADc5OReoieBFy0YuGJ8hhRNTNI.jpg"
-      },
-      {
-        "id": 1512134,
-        "name": "Aidan Wojtak-Hissong",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/iAf7SNYAikqwl9VDtuFrEWkEycv.jpg"
-      },
-      {
-        "id": 4019847,
-        "name": "Landon S. Baxter",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/tBzzelqhB0uPKUxUXsAFeFM8bV5.jpg"
-      },
-      {
-        "id": 1255907,
-        "name": "Echo Kellum",
-        "birthday": "1982-08-29",
-        "deathday": null,
-        "age": 44,
-        "image": "https://image.tmdb.org/t/p/w300/dI8sugd93NwhdlRWWL7HidG49xO.jpg"
-      },
-      {
-        "id": 1218005,
-        "name": "Mia Dillon",
-        "birthday": "1955-07-09",
-        "deathday": null,
-        "age": 71,
-        "image": "https://image.tmdb.org/t/p/w300/xtRF1lmE52zeBU6adUoSqRC3zsB.jpg"
-      },
-      {
-        "id": 3909,
-        "name": "Gary Houston",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/1je2kKuTFWourCvPGpst84Tn3d1.jpg"
-      },
-      {
-        "id": 4019848,
-        "name": "Mackenzie Joy Potter",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 4019849,
-        "name": "Olivia Williams",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 4019850,
-        "name": "Mike Platarote Jr.",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/rts9Vg5c3IIJ9c0KeLEkCfMTluG.jpg"
-      },
-      {
-        "id": 4019851,
-        "name": "Simms May",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/jfOkBcfi07i4xl9ayjwcOZgerhe.jpg"
-      },
-      {
-        "id": 4019852,
-        "name": "Zack Brooks",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/kIINsKZcfGpAZ1YdXWen2Nk1Aje.jpg"
-      },
-      {
-        "id": 2677281,
-        "name": "JeCobi Swain",
-        "birthday": "2009-06-08",
-        "deathday": null,
-        "age": 17,
-        "image": "https://image.tmdb.org/t/p/w300/crmKbGFNirnIOMZhMyFMsgwelZ3.jpg"
-      },
-      {
-        "id": 41019,
-        "name": "Wilbur Fitzgerald",
-        "birthday": "1948-09-15",
-        "deathday": null,
-        "age": 78,
-        "image": "https://image.tmdb.org/t/p/w300/2s0MtvrLkzb4zGQyLeJLmUWoEWU.jpg"
-      },
-      {
-        "id": 1468904,
-        "name": "Ethan McDowell",
-        "birthday": "1979-12-12",
-        "deathday": null,
-        "age": 46,
-        "image": "https://image.tmdb.org/t/p/w300/oSl1Ek1T8Xr8PJIryDf2YGDcvFD.jpg"
-      },
-      {
-        "id": 1848630,
-        "name": "Sloane Warren",
-        "birthday": "1975-06-07",
-        "deathday": null,
-        "age": 51,
-        "image": "https://image.tmdb.org/t/p/w300/7p3GkOQ0HdoqhIMQmlj7FzugISz.jpg"
-      },
-      {
-        "id": 2076448,
-        "name": "Isol Young",
-        "birthday": "2007-04-24",
-        "deathday": null,
-        "age": 19,
-        "image": "https://image.tmdb.org/t/p/w300/yBNEgYX94TzOJJX7IOOGbOjjaJP.jpg"
-      },
-      {
-        "id": 2683390,
-        "name": "Eden Lee",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/47Op3hles7HxfRwyoorDUh0qj0k.jpg"
-      },
-      {
-        "id": 2770381,
-        "name": "Naida Nelson",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/eN8q2cBBweA1NZ9e6Dcg9pMvC4i.jpg"
-      },
-      {
-        "id": 3707484,
-        "name": "Tahirah Harrison",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 4019857,
-        "name": "Zach Humphrey",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/o1DClByjZdS3T6VmtRuxUohMEyM.jpg"
-      },
-      {
-        "id": 3596218,
-        "name": "Karen Aruj",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 1170416,
-        "name": "Judy Blume",
-        "birthday": "1938-02-12",
-        "deathday": null,
-        "age": 88,
-        "image": "https://image.tmdb.org/t/p/w300/IfncQ93lOOnY73UNxWAzmWxxwN.jpg"
-      },
-      {
-        "id": 4019858,
-        "name": "George Cooper",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 4019859,
-        "name": "Joan Jackson",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 4019860,
-        "name": "Stephen Jackson",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 1650188,
-        "name": "Robert Haulbrook",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 2060934,
-        "name": "Johnny Land",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/4fcEVu9muZIygv1QErdUzJ5ZgjX.jpg"
-      },
-      {
-        "id": 4019863,
-        "name": "Jennifer Errington",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 2103482,
-        "name": "Evan Bergman",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/nI54Lzmvcr9qX914z9tSGqVfl1n.jpg"
-      },
-      {
-        "id": 4019864,
-        "name": "Michael Wolk",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 1948321,
-        "name": "Karen Macarah",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 4019865,
-        "name": "Ariel DiDonato",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 3743835,
-        "name": "Claude Deuce",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 1771585,
-        "name": "Keya Hamilton",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/yieJiETXnFBsv6OKe8WQOcYvR4J.jpg"
-      },
-      {
-        "id": 4019868,
-        "name": "Tanya J. McClellan",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 4019869,
-        "name": "Dennis Delamar",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 4019870,
-        "name": "Samantha LeBrocq",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 4019872,
-        "name": "Wally White",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 1205390,
-        "name": "Holli Saperstein",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/uHLDBnbOebLP4cyuAbXR7gD01tV.jpg"
-      },
-      {
-        "id": 4019873,
-        "name": "Deborah Helms",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 2755267,
-        "name": "Cooper Herrett",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 2872720,
-        "name": "Gezell Fleming",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/lKjlYDdyVl7KltIT31zXqwkPuBj.jpg"
-      },
-      {
-        "id": 2033010,
-        "name": "Jim France",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/4ouJIrB8ZOuSIgX6h78UQFFJ2Uw.jpg"
-      },
-      {
-        "id": 3511288,
-        "name": "Rakeem Massingill",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 5225908,
-        "name": "Mary Clare Mitchell",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      }
-    ],
-    "reviews": []
-  },
-  {
-    "title": "Femme",
-    "tmdb_id": 976581,
-    "imdb_id": "tt20114686",
-    "year": 2023,
-    "date": "2023-12-01",
-    "score": 73,
-    "box": null,
-    "box_currency": null,
-    "country": "Velká Británie",
-    "genre": "Drama",
-    "runtime": 99,
-    "poster": "https://image.tmdb.org/t/p/w342/ys0tzA5J0qW2mfMlrzJJdvipbmN.jpg",
-    "gallery": [
-      "https://image.tmdb.org/t/p/w500/zd9ErIEeBQSoxPfznnZYe7vUrSb.jpg"
-    ],
-    "summary": "",
-    "director": {
-      "id": 2818891,
-      "name": "Sam H. Freeman",
-      "image": "https://image.tmdb.org/t/p/w300/s5OVEDGVA6Wkg8nO8hX5sfLYNEB.jpg"
-    },
-    "composer": {
-      "id": 2548058,
-      "name": "Adam Janota Bzowski",
-      "image": ""
-    },
-    "writer": {
-      "id": 3004520,
-      "name": "Ng Choon Ping",
-      "image": "https://image.tmdb.org/t/p/w300/zt46hdkmI3xqy2eDK9UK1AZfap5.jpg"
-    },
-    "actors": [
-      {
-        "id": 221980,
-        "name": "Nathan Stewart-Jarrett",
-        "birthday": "1985-12-04",
-        "deathday": null,
-        "age": 40,
-        "image": "https://image.tmdb.org/t/p/w300/xWd7wOIgJlxAKoIo5sgrZh6G2jl.jpg"
-      },
-      {
-        "id": 146750,
-        "name": "George MacKay",
-        "birthday": "1992-03-13",
-        "deathday": null,
-        "age": 34,
-        "image": "https://image.tmdb.org/t/p/w300/wnDAg1CyCbBCklQAZ9I1dj5X6QY.jpg"
-      },
-      {
-        "id": 1819918,
-        "name": "John McCrea",
-        "birthday": "1992-10-10",
-        "deathday": null,
-        "age": 33,
-        "image": "https://image.tmdb.org/t/p/w300/xdyQaZq7CXMYk56dtArCrysQMuL.jpg"
-      },
-      {
-        "id": 1278555,
-        "name": "Antonia Clarke",
-        "birthday": "1995-05-24",
-        "deathday": null,
-        "age": 31,
-        "image": "https://image.tmdb.org/t/p/w300/yxJw7V4uz8pPgblbFOUfweWPBfh.jpg"
-      },
-      {
-        "id": 1935849,
-        "name": "Moe Bar-El",
-        "birthday": "1992-05-18",
-        "deathday": null,
-        "age": 34,
-        "image": "https://image.tmdb.org/t/p/w300/3P24nebiTXbfy9WCfc4p4VRtpu0.jpg"
-      },
-      {
-        "id": 2320930,
-        "name": "Nima Taleghani",
-        "birthday": "1992-10-24",
-        "deathday": null,
-        "age": 33,
-        "image": "https://image.tmdb.org/t/p/w300/sFFRkpFPgzMUhSlUdLXwHgmbUu9.jpg"
-      },
-      {
-        "id": 3122050,
-        "name": "John Leader",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/861Sr9u3AhZX0UIeOj3UnTm3gcF.jpg"
-      },
-      {
-        "id": 1624770,
-        "name": "Aaron Heffernan",
-        "birthday": "1990-02-23",
-        "deathday": null,
-        "age": 36,
-        "image": "https://image.tmdb.org/t/p/w300/KkE3C4DQM9GTRZoJT7VQPHlwi7.jpg"
-      },
-      {
-        "id": 2244410,
-        "name": "Peter McPherson",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/cLSyQhdp8P07xvoAx0Y7K1qDOWc.jpg"
-      },
-      {
-        "id": 1972796,
-        "name": "Asha Reid",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/dHrsJ1ezt4XQolV1oza5MQkeTUT.jpg"
-      },
-      {
-        "id": 4484663,
-        "name": "Paris Tenana",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/cvEIHvtVnnEDlrJfCqYGY3wrBaB.jpg"
-      },
-      {
-        "id": 2219081,
-        "name": "Ryan Walker-Edwards",
-        "birthday": "1994-12-01",
-        "deathday": null,
-        "age": 31,
-        "image": "https://image.tmdb.org/t/p/w300/1e6f2EoZJ6NYesmdQ0C5DlbdRAo.jpg"
-      },
-      {
-        "id": 3015388,
-        "name": "Peter Clements",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/5ObdoWXwy3NWoumg0URlfqLGNZj.jpg"
-      },
-      {
-        "id": 1958366,
-        "name": "Jackson Milner",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/gAbOTuLcsZcCoTc1WLibfLIraMc.jpg"
-      },
-      {
-        "id": 2910222,
-        "name": "Luis Torrecilla",
-        "birthday": "1980-11-08",
-        "deathday": null,
-        "age": 45,
-        "image": "https://image.tmdb.org/t/p/w300/gwsPZLWd3XQJQwJ3sN3tAN2YYKA.jpg"
-      },
-      {
-        "id": 1375554,
-        "name": "Charley Palmer Rothwell",
-        "birthday": "1992-02-09",
-        "deathday": null,
-        "age": 34,
-        "image": "https://image.tmdb.org/t/p/w300/vsum3VF3SyL0BxLbR0BGAkiCcyy.jpg"
       }
     ],
     "reviews": []
@@ -59638,265 +59318,57 @@
     "reviews": []
   },
   {
-    "title": "Sorry, Baby",
-    "tmdb_id": 1205515,
-    "imdb_id": "tt32843349",
+    "title": "Dokonalá sousedka",
+    "tmdb_id": 1400782,
+    "imdb_id": "tt34962891",
     "year": 2025,
-    "date": "2025-06-27",
+    "date": "2025-10-10",
     "score": 71,
-    "box": 2,
-    "box_currency": "USD",
+    "box": null,
+    "box_currency": null,
     "country": "USA",
-    "genre": "Drama",
-    "runtime": 103,
-    "poster": "https://image.tmdb.org/t/p/w342/n8wZEQen5hDNRGzm4fY4sxWe5xe.jpg",
+    "genre": "Krimi",
+    "runtime": 97,
+    "poster": "https://image.tmdb.org/t/p/w342/2NE7yN45zo19o4LJr6JFxDWmh2b.jpg",
     "gallery": [
-      "https://image.tmdb.org/t/p/w500/nVHEjkA8vuEGJLfNUOmVW5md6yn.jpg"
+      "https://image.tmdb.org/t/p/w500/2a3CC6VpCjqZ23Fe18GstMGg5Pj.jpg"
     ],
-    "summary": "Agnes se během studia na vysoké stalo něco hrozného, ale život jde dál. Aspoň pro svět kolem. Naštěstí je tu drzá kamarádka Lydia, která se nikdy neváhá Agnes zastat, neohrabaný, ale citlivý soused Gavin a jedno nic netušící kotě.",
+    "summary": "Záběry policejní kamery odhalují, jak se ze sousedského sporu stal vražedný konflikt. Dokument o strachu, předsudcích a SUB: doktríně Stand your ground.",
     "director": {
-      "id": 2425998,
-      "name": "Eva Victor",
-      "image": "https://image.tmdb.org/t/p/w300/nlEirkGOQPVUVgNzIqEJysnt70q.jpg"
+      "id": 1106893,
+      "name": "Geeta Gandbhir",
+      "image": "https://image.tmdb.org/t/p/w300/Aep5viOLzys01FhPiOesPOiJJMy.jpg"
     },
     "composer": {
-      "id": 1304184,
-      "name": "Lia Ouyang Rusli",
+      "id": 2412609,
+      "name": "Laura Heinzinger",
       "image": ""
     },
     "writer": {
-      "id": 2425998,
-      "name": "Eva Victor",
-      "image": "https://image.tmdb.org/t/p/w300/nlEirkGOQPVUVgNzIqEJysnt70q.jpg"
+      "id": null,
+      "name": "",
+      "image": ""
     },
     "actors": [
       {
-        "id": 2425998,
-        "name": "Eva Victor",
-        "birthday": "1994-02-11",
-        "deathday": null,
-        "age": 32,
-        "image": "https://image.tmdb.org/t/p/w300/nlEirkGOQPVUVgNzIqEJysnt70q.jpg"
-      },
-      {
-        "id": 1537686,
-        "name": "Naomi Ackie",
-        "birthday": "1991-08-22",
-        "deathday": null,
-        "age": 35,
-        "image": "https://image.tmdb.org/t/p/w300/dijwuTAEZUzQtoJfK49S4X80fQw.jpg"
-      },
-      {
-        "id": 163731,
-        "name": "Louis Cancelmi",
-        "birthday": "1978-06-09",
-        "deathday": null,
-        "age": 48,
-        "image": "https://image.tmdb.org/t/p/w300/4MUGuoK0WbLsTt3sg2CD4OsLynZ.jpg"
-      },
-      {
-        "id": 1309781,
-        "name": "Kelly McCormack",
-        "birthday": "1991-01-14",
-        "deathday": null,
-        "age": 35,
-        "image": "https://image.tmdb.org/t/p/w300/62TeNBs75LRmbmZfVoYEXjePp28.jpg"
-      },
-      {
-        "id": 1105079,
-        "name": "Lucas Hedges",
-        "birthday": "1996-12-12",
-        "deathday": null,
-        "age": 29,
-        "image": "https://image.tmdb.org/t/p/w300/8WP1uXUwm6Z1vzrMaIiKj89M6kX.jpg"
-      },
-      {
-        "id": 3911,
-        "name": "John Carroll Lynch",
-        "birthday": "1963-08-01",
-        "deathday": null,
-        "age": 63,
-        "image": "https://image.tmdb.org/t/p/w300/lXlHxLK91U2l3yb77Tw32yEHJyT.jpg"
-      },
-      {
-        "id": 1218184,
-        "name": "Hettienne Park",
-        "birthday": "1983-03-07",
-        "deathday": null,
-        "age": 43,
-        "image": "https://image.tmdb.org/t/p/w300/c5fZeiKZ6magmPWbLJkSjKm5oUX.jpg"
-      },
-      {
-        "id": 2849185,
-        "name": "E.R. Fightmaster",
-        "birthday": "1992-06-08",
-        "deathday": null,
-        "age": 34,
-        "image": "https://image.tmdb.org/t/p/w300/nuwfqtHEC09tv0PoI0LFZ2G3B1x.jpg"
-      },
-      {
-        "id": 3887701,
-        "name": "Cody Reiss",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/qwDrIT0e5ZP23pnyFqGIIRr1Xif.jpg"
-      },
-      {
-        "id": 3075124,
-        "name": "Jordan Mendoza",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/rIUmIBIVpXhMamsYRgymb0fjdSP.jpg"
-      },
-      {
-        "id": 1945796,
-        "name": "Anabel Graetz",
-        "birthday": "1942-01-01",
-        "deathday": null,
-        "age": 84,
-        "image": "https://image.tmdb.org/t/p/w300/4WxjKpIA71lbo6zsloKdZpt650k.jpg"
-      },
-      {
-        "id": 3746502,
-        "name": "Jonathan Myles",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/6FQyB1bSAerExyDcGg4xPMayoHD.jpg"
-      },
-      {
-        "id": 5220977,
-        "name": "Danny Diaz",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/qobRhaDM8eDsbitOtu933XEpJbG.jpg"
-      },
-      {
-        "id": 1745906,
-        "name": "Marc Carver",
+        "id": 5773350,
+        "name": "Susan Lorincz",
         "birthday": null,
         "deathday": null,
         "age": null,
         "image": ""
       },
       {
-        "id": 3225232,
-        "name": "Liz Bishop",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/6BI2nQdTLYqUH9odgsyzlN6e8g3.jpg"
-      },
-      {
-        "id": 4429746,
-        "name": "Natalie Rotter-Laitman",
+        "id": 5773372,
+        "name": "Ajike Owens",
         "birthday": null,
         "deathday": null,
         "age": null,
         "image": ""
       },
       {
-        "id": 3551980,
-        "name": "Francesca D'Uva",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 1732325,
-        "name": "Alison Wachtler",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 1452764,
-        "name": "David J. Curtis",
-        "birthday": "1979-12-20",
-        "deathday": null,
-        "age": 46,
-        "image": "https://image.tmdb.org/t/p/w300/ufbJYNtiGs2qxpARsNxxVHD7JeW.jpg"
-      },
-      {
-        "id": 4451904,
-        "name": "Priscilla Manning",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/eaG4i0FZHx8DXoPrrjbjY0aZwrR.jpg"
-      },
-      {
-        "id": 1588930,
-        "name": "Kate Fitzgerald",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/rUiDFLAdT57h7LpFmzc6QEXVr8G.jpg"
-      },
-      {
-        "id": 1750078,
-        "name": "Jesse Gabbard",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/cxZjrnX8RBpW6ygXPeIeu9vptId.jpg"
-      },
-      {
-        "id": 2622518,
-        "name": "Lucien Spelman",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/3oOqgL2NihtewHCty5gvRc2RuLb.jpg"
-      },
-      {
-        "id": 5221003,
-        "name": "Tom Ford",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 1139812,
-        "name": "Celeste Oliva",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/9lgzJtLM3igvxUpopDkHJkAbilB.jpg"
-      },
-      {
-        "id": 3810228,
-        "name": "Chhoyang Cheshatsang",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/c7zUlhwSxPGUoFsxulrxZtqxZFA.jpg"
-      },
-      {
-        "id": 2690142,
-        "name": "Conor Sweeney",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/5oHeaO91u37ZDz7n0VL2q2mIigg.jpg"
-      },
-      {
-        "id": 5549041,
-        "name": "Lensley Miles Adam",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 5549042,
-        "name": "Langston Shelby Moore",
+        "id": 5798813,
+        "name": "Pamela Dias",
         "birthday": null,
         "deathday": null,
         "age": null,
@@ -61175,6 +60647,523 @@
         "deathday": null,
         "age": 77,
         "image": "https://image.tmdb.org/t/p/w300/g5cVxQBAQ3AXt3LhdBXtbbN47Uc.jpg"
+      }
+    ],
+    "reviews": []
+  },
+  {
+    "title": "The Fix",
+    "tmdb_id": 1228834,
+    "imdb_id": "tt9601292",
+    "original_language": "en",
+    "year": 2026,
+    "date": "2026-09-10",
+    "score": 82,
+    "box": null,
+    "box_currency": null,
+    "country": "USA",
+    "genre": "Akční",
+    "runtime": 142,
+    "poster": "https://image.tmdb.org/t/p/w342/yopXjun3ICFfJci2ukcEzceZjUs.jpg",
+    "gallery": [
+      "https://image.tmdb.org/t/p/w500/dJTWIecL2vxsCRl5G0lRhPsfrhc.jpg"
+    ],
+    "summary": "",
+    "director": {
+      "id": 145612,
+      "name": "Guy Moshe",
+      "image": "https://image.tmdb.org/t/p/w300/cihfkHFJyWxPi7irCNXVh8U7NCs.jpg"
+    },
+    "composer": {
+      "id": 2536266,
+      "name": "Federico Bisozzi",
+      "image": ""
+    },
+    "writer": {
+      "id": 145612,
+      "name": "Guy Moshe",
+      "image": "https://image.tmdb.org/t/p/w300/cihfkHFJyWxPi7irCNXVh8U7NCs.jpg"
+    },
+    "actors": [
+      {
+        "id": 69899,
+        "name": "Zachary Levi",
+        "birthday": "1980-09-29",
+        "deathday": null,
+        "age": 45,
+        "image": "https://image.tmdb.org/t/p/w300/1W8L3kEMMPF9umT3ZGaNIiCYKfZ.jpg"
+      },
+      {
+        "id": 3896,
+        "name": "Liam Neeson",
+        "birthday": "1952-06-07",
+        "deathday": null,
+        "age": 74,
+        "image": "https://image.tmdb.org/t/p/w300/sRLev3wJioBgun3ZoeAUFpkLy0D.jpg"
+      },
+      {
+        "id": 51682,
+        "name": "Wes Chatham",
+        "birthday": "1978-10-11",
+        "deathday": null,
+        "age": 47,
+        "image": "https://image.tmdb.org/t/p/w300/lFoUyX8FZs3XvUWWItCm2ezvAEs.jpg"
+      },
+      {
+        "id": 39389,
+        "name": "Titus Welliver",
+        "birthday": "1962-03-12",
+        "deathday": null,
+        "age": 64,
+        "image": "https://image.tmdb.org/t/p/w300/3hTwn7Maktr6ONq1VvfqyRacjiv.jpg"
+      },
+      {
+        "id": 103330,
+        "name": "Navid Negahban",
+        "birthday": "1968-06-02",
+        "deathday": null,
+        "age": 58,
+        "image": "https://image.tmdb.org/t/p/w300/pWi5tINf4mDvTYbNKZDJPODYKra.jpg"
+      },
+      {
+        "id": 1257563,
+        "name": "Annet Mahendru",
+        "birthday": "1989-08-21",
+        "deathday": null,
+        "age": 37,
+        "image": "https://image.tmdb.org/t/p/w300/kEeokLN5vJsOdKSEFaN36qlzCRa.jpg"
+      },
+      {
+        "id": 1058027,
+        "name": "Grant Harvey",
+        "birthday": "1984-06-30",
+        "deathday": null,
+        "age": 42,
+        "image": "https://image.tmdb.org/t/p/w300/sThJJbhgjQOZNvCkHVO0g3qy78j.jpg"
+      },
+      {
+        "id": 1456279,
+        "name": "Augusto Aguilera",
+        "birthday": "1986-01-01",
+        "deathday": null,
+        "age": 40,
+        "image": "https://image.tmdb.org/t/p/w300/vxW6iEHbuCcC7eFoQWoBAS7SYjM.jpg"
+      },
+      {
+        "id": 35434,
+        "name": "Numan Acar",
+        "birthday": "1974-10-07",
+        "deathday": null,
+        "age": 51,
+        "image": "https://image.tmdb.org/t/p/w300/krAYCiFQGreNOOqtTLX3v6TlHk5.jpg"
+      },
+      {
+        "id": 2114526,
+        "name": "Elnaaz Norouzi",
+        "birthday": "1992-07-09",
+        "deathday": null,
+        "age": 34,
+        "image": "https://image.tmdb.org/t/p/w300/gbiXh5zoIKFH1kEPFtuhjfElY5c.jpg"
+      },
+      {
+        "id": 1395206,
+        "name": "Oliver Trevena",
+        "birthday": "1981-05-09",
+        "deathday": null,
+        "age": 45,
+        "image": "https://image.tmdb.org/t/p/w300/j0ejU7vdE7lRxYKKrhA5aWw1zCT.jpg"
+      },
+      {
+        "id": 3075864,
+        "name": "Quincy Isaiah",
+        "birthday": "1996-09-12",
+        "deathday": null,
+        "age": 30,
+        "image": "https://image.tmdb.org/t/p/w300/szlTbGRFRTo0Mx9jtwXGqcGrZhP.jpg"
+      },
+      {
+        "id": 1972789,
+        "name": "Despina Mirou",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/mjpyxXY6AGH2dbbEIkOtpYCk1rU.jpg"
+      },
+      {
+        "id": 2514314,
+        "name": "Lara Wolf",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/l2nYt7kKmQgUYCmpxY9jiL4LEXO.jpg"
+      },
+      {
+        "id": 1474019,
+        "name": "Jake Choi",
+        "birthday": "1988-01-14",
+        "deathday": null,
+        "age": 38,
+        "image": "https://image.tmdb.org/t/p/w300/ftutoBlPWjWVjdT86wBZxLB13kU.jpg"
+      },
+      {
+        "id": 2461357,
+        "name": "Ash Goldeh",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/nZWBdV8LauA3ealoweaXxxTHrGz.jpg"
+      },
+      {
+        "id": 3142896,
+        "name": "Major Dodge Jr.",
+        "birthday": "2009-12-13",
+        "deathday": null,
+        "age": 16,
+        "image": "https://image.tmdb.org/t/p/w300/wv9GCnJAaEYanuVhbZXHmAk2iiZ.jpg"
+      },
+      {
+        "id": 3528976,
+        "name": "K.J. Baker",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/7ruBbiRt8kPjh6y4lqkHAXHMHkl.jpg"
+      },
+      {
+        "id": 552966,
+        "name": "Jonathan Rosenthal",
+        "birthday": "1988-08-06",
+        "deathday": null,
+        "age": 38,
+        "image": "https://image.tmdb.org/t/p/w300/g7dupw7fKfrFbhAL9gAWbrkBTpU.jpg"
+      },
+      {
+        "id": 5308774,
+        "name": "David Cicci",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 6042203,
+        "name": "Patricia Guevara",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 6042204,
+        "name": "Veronica Ginn",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5113410,
+        "name": "Tabitha Mixon",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 6138240,
+        "name": "Sandro Kakhetelidze",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 16607,
+        "name": "Alon Aboutboul",
+        "birthday": "1965-05-28",
+        "deathday": "2025-07-29",
+        "age": 60,
+        "image": "https://image.tmdb.org/t/p/w300/ja0vix3b43U5whDTYZascbeXlQo.jpg"
+      },
+      {
+        "id": 204755,
+        "name": "Nicole Ansari-Cox",
+        "birthday": "1969-01-01",
+        "deathday": null,
+        "age": 57,
+        "image": "https://image.tmdb.org/t/p/w300/Qa4zWGLkDEjedoHbNlMG0e9giq.jpg"
+      },
+      {
+        "id": 4433640,
+        "name": "Jeff Perkins",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/nnwlU0raxgJuZ6Y3wKXPRGcK6yM.jpg"
+      },
+      {
+        "id": 6475465,
+        "name": "Lavie Moshe",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 6475467,
+        "name": "Tekla Aslani",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 6475471,
+        "name": "Irakli Revazishvili",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 6475472,
+        "name": "Deghan Shahrzan",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 6475473,
+        "name": "Mehrdad Shokri Nasab",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 6475474,
+        "name": "Matin Asgarpoor",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 6475475,
+        "name": "Vakho Chachanidze",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/n8WNWdzRePfXZbk7Y1EZn5q5JLY.jpg"
+      },
+      {
+        "id": 6475477,
+        "name": "Mariam Khukhunaishvili",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4290993,
+        "name": "Veronika Kalandarishvili",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/jdtLPEw4pzcpDioGkTzIlO7ZGK4.jpg"
+      },
+      {
+        "id": 6475479,
+        "name": "N’Guessan Ahonzy Georges Jocelyn",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 6475483,
+        "name": "Giorgi Abuladze",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 6475486,
+        "name": "Sofie Lomjaria",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 2427388,
+        "name": "Andro Chichinadze",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/mTDqneIvArbUrGpIvC2nP8BxbKE.jpg"
+      },
+      {
+        "id": 6475491,
+        "name": "Levan Sukhitashvili",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/7pGHIvTwpMPjSIFjJoCJiDmv1CW.jpg"
+      },
+      {
+        "id": 2677,
+        "name": "Bahar Soomekh",
+        "birthday": "1975-03-30",
+        "deathday": null,
+        "age": 51,
+        "image": "https://image.tmdb.org/t/p/w300/pexK8WSgJFunUFizBlvGEz8ez9U.jpg"
+      },
+      {
+        "id": 2815091,
+        "name": "Janette Luttrell",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 6475503,
+        "name": "Abigail Wild",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5549031,
+        "name": "Melissa Cannon",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 1386301,
+        "name": "Rebecca Chulew",
+        "birthday": "1977-07-03",
+        "deathday": null,
+        "age": 49,
+        "image": "https://image.tmdb.org/t/p/w300/csHJLrC3AHCO7e9ib7N8tgMf00L.jpg"
+      },
+      {
+        "id": 2429660,
+        "name": "Adrienne Marie Coins",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4824856,
+        "name": "Tremayne Cole",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5418582,
+        "name": "Russell C. Gibbs",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 2610061,
+        "name": "Stuart Greenwell",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 2647872,
+        "name": "Joseph Karre",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 3528985,
+        "name": "Hassel Kromer",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5612415,
+        "name": "Alisha 'LeeLah' Moore",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5922951,
+        "name": "Andreius 'Dreko Tha Prophet' Moore",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 6477706,
+        "name": "Merab Natadze",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 2610050,
+        "name": "Stacy Stephen Purser",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4335321,
+        "name": "Rhianna Richey",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/7ohLF3vkq2K30WGohW9auUiaQ7D.jpg"
+      },
+      {
+        "id": 5418579,
+        "name": "Brittany Seals",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 3855670,
+        "name": "Stephen Thaxton",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5729478,
+        "name": "Johnny Tomsik",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
       }
     ],
     "reviews": []
@@ -63716,6 +63705,83 @@
         "deathday": "2008-01-17",
         "age": 64,
         "image": "https://image.tmdb.org/t/p/w300/8uSbvBJB7yDQ7ui8aPjRZcEQ6OD.jpg"
+      }
+    ],
+    "reviews": []
+  },
+  {
+    "title": "Zip Wire",
+    "tmdb_id": 1482547,
+    "imdb_id": "tt36980377",
+    "original_language": "en",
+    "year": 2026,
+    "date": "2026-08-31",
+    "score": 76,
+    "box": null,
+    "box_currency": null,
+    "country": "Dánsko",
+    "genre": "Akční",
+    "runtime": 95,
+    "poster": "https://image.tmdb.org/t/p/w342/cO7J0XSVKPlAjUCMWC7DVBn1Py2.jpg",
+    "gallery": [
+      "https://image.tmdb.org/t/p/w500/sbkkAtymJaH5UzExiK974uPzCY4.jpg"
+    ],
+    "summary": "",
+    "director": {
+      "id": 572295,
+      "name": "Howard J. Ford",
+      "image": "https://image.tmdb.org/t/p/w300/hakICZOtktpxvqwQdg3db27DXbe.jpg"
+    },
+    "composer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "writer": {
+      "id": 3373654,
+      "name": "Tom Boyle",
+      "image": ""
+    },
+    "actors": [
+      {
+        "id": 57578,
+        "name": "MyAnna Buring",
+        "birthday": "1979-09-22",
+        "deathday": null,
+        "age": 46,
+        "image": "https://image.tmdb.org/t/p/w300/boC5LKewKpz8zhtUmPScHfkSAlV.jpg"
+      },
+      {
+        "id": 1190069,
+        "name": "Joseph Millson",
+        "birthday": "1974-04-27",
+        "deathday": null,
+        "age": 52,
+        "image": "https://image.tmdb.org/t/p/w300/pd5iENRPBpybR935qv8C2TVtGNL.jpg"
+      },
+      {
+        "id": 9825,
+        "name": "Saffron Burrows",
+        "birthday": "1972-10-22",
+        "deathday": null,
+        "age": 53,
+        "image": "https://image.tmdb.org/t/p/w300/2qMLZh9XWquBt7TZF9wmDiOtJdm.jpg"
+      },
+      {
+        "id": 1477555,
+        "name": "Michael Amariah",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/mWsW3cdo2gFsvymHSoefrRBHGuq.jpg"
+      },
+      {
+        "id": 3471358,
+        "name": "Silvia Presente",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
       }
     ],
     "reviews": []
@@ -73834,207 +73900,6 @@
       {
         "id": 2306648,
         "name": "Todd Warren",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      }
-    ],
-    "reviews": []
-  },
-  {
-    "title": "Stavros Halkias: Uncle Stav",
-    "tmdb_id": 1664003,
-    "imdb_id": "tt41975820",
-    "original_language": "en",
-    "year": 2026,
-    "date": "2026-09-08",
-    "score": 69,
-    "box": null,
-    "box_currency": null,
-    "country": "USA",
-    "genre": "Komedie",
-    "runtime": 64,
-    "poster": "https://image.tmdb.org/t/p/w342/lVdlQbkpnETCZXN76UwQzMiJH6m.jpg",
-    "gallery": [
-      "https://image.tmdb.org/t/p/w500/aZY17mncsi7zM8IcvucdxgnbM1C.jpg"
-    ],
-    "summary": "",
-    "director": {
-      "id": 1144092,
-      "name": "Matt Johnson",
-      "image": "https://image.tmdb.org/t/p/w300/3COKJ3lpoXhxgRELso9kmwDH29b.jpg"
-    },
-    "composer": {
-      "id": null,
-      "name": "",
-      "image": ""
-    },
-    "writer": {
-      "id": 1400595,
-      "name": "Stavros Halkias",
-      "image": "https://image.tmdb.org/t/p/w300/9QB7YGMk6O7hRgGWvK0OimTVzl7.jpg"
-    },
-    "actors": [
-      {
-        "id": 1400595,
-        "name": "Stavros Halkias",
-        "birthday": "1989-02-11",
-        "deathday": null,
-        "age": 37,
-        "image": "https://image.tmdb.org/t/p/w300/9QB7YGMk6O7hRgGWvK0OimTVzl7.jpg"
-      },
-      {
-        "id": 4313069,
-        "name": "Joey Malinski",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 6464642,
-        "name": "Caleb Vicars",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 6464643,
-        "name": "Travis Rothert",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      }
-    ],
-    "reviews": []
-  },
-  {
-    "title": "Christopherové",
-    "tmdb_id": 1400357,
-    "imdb_id": "tt34966562",
-    "year": 2026,
-    "date": "2026-03-30",
-    "score": 68,
-    "box": null,
-    "box_currency": null,
-    "country": "Velká Británie",
-    "genre": "Krimi",
-    "runtime": 100,
-    "poster": "https://image.tmdb.org/t/p/w342/f416nmbDDAavvFtJTstF3NaRFRQ.jpg",
-    "gallery": [
-      "https://image.tmdb.org/t/p/w500/saEkWul1fGNixEug2w6RtOmTws2.jpg"
-    ],
-    "summary": "Excentrický Julian Sklar, legenda londýnské výtvarné scény, se už 20 let nedotkl štětce. Jeho vypočítaví potomci se s tím ale odmítají smířit – otcův odkaz by jim totiž mohl vynést pohádkové dědictví. Najmou proto mladou padělatelku Lori, aby tajně dokončila Christophery, Julianem pečlivě střeženou sérii rozpracovaných obrazů. Jenže přechytračit starého mistra v jeho vlastním ateliéru nebude tak snadné.",
-    "director": {
-      "id": 1884,
-      "name": "Steven Soderbergh",
-      "image": "https://image.tmdb.org/t/p/w300/y8JlSDcQzd7gAaKyxFpExupMwDz.jpg"
-    },
-    "composer": {
-      "id": 1889,
-      "name": "David Holmes",
-      "image": "https://image.tmdb.org/t/p/w300/fT30VY0itg2AYj11uOm15Nd6kWr.jpg"
-    },
-    "writer": {
-      "id": 9612,
-      "name": "Ed Solomon",
-      "image": "https://image.tmdb.org/t/p/w300/5uvmBGQn0bPjQmfh5dTCkEnOVWZ.jpg"
-    },
-    "actors": [
-      {
-        "id": 1368012,
-        "name": "Michaela Coel",
-        "birthday": "1988-10-01",
-        "deathday": null,
-        "age": 37,
-        "image": "https://image.tmdb.org/t/p/w300/rbN1F0R8DMUh6IYwl0owyD8LukN.jpg"
-      },
-      {
-        "id": 1327,
-        "name": "Ian McKellen",
-        "birthday": "1939-05-25",
-        "deathday": null,
-        "age": 87,
-        "image": "https://image.tmdb.org/t/p/w300/5cnnnpnJG6TiYUSS7qgJheUZgnv.jpg"
-      },
-      {
-        "id": 1196101,
-        "name": "Jessica Gunning",
-        "birthday": "1986-01-01",
-        "deathday": null,
-        "age": 40,
-        "image": "https://image.tmdb.org/t/p/w300/c4nC6usiZdRlw4VkOcHFLXtrPa0.jpg"
-      },
-      {
-        "id": 55466,
-        "name": "James Corden",
-        "birthday": "1978-08-22",
-        "deathday": null,
-        "age": 48,
-        "image": "https://image.tmdb.org/t/p/w300/xGB0gfZ48M27gQjjL7inJIh1Pqj.jpg"
-      },
-      {
-        "id": 1828839,
-        "name": "Ferdy Roberts",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/3ZpPLbAXHBjUx77nsUGdi2qAmxr.jpg"
-      },
-      {
-        "id": 4320071,
-        "name": "Tilly Botsford",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/68j7R9sjaFnxYKqIcjkBqTCDASQ.jpg"
-      },
-      {
-        "id": 2441422,
-        "name": "Lucy McCormick",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/2jGJiq75Vn9uTPypUDgKJdv9hO5.jpg"
-      },
-      {
-        "id": 3781746,
-        "name": "Le Fil",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/6QDVG8bw6tovVu5c2qbT1dSuPIW.jpg"
-      },
-      {
-        "id": 1525322,
-        "name": "Daniel Fearn",
-        "birthday": "1977-05-09",
-        "deathday": null,
-        "age": 49,
-        "image": "https://image.tmdb.org/t/p/w300/u7qWojSsrVrVEDNEJziRj1FiFOu.jpg"
-      },
-      {
-        "id": 6135254,
-        "name": "Dmitri Prokopiev",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 86470,
-        "name": "Dallas Campbell",
-        "birthday": "1970-09-17",
-        "deathday": null,
-        "age": 56,
-        "image": "https://image.tmdb.org/t/p/w300/lBr4n544irZKPgm4Fg6x0Tg9kGB.jpg"
-      },
-      {
-        "id": 5918068,
-        "name": "Stuart Cooke",
         "birthday": null,
         "deathday": null,
         "age": null,
