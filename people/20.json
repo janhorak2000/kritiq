@@ -119935,37 +119935,6 @@
       }
     ]
   },
-  "p4082307": {
-    "name": "Stevie Dore",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1022256",
-        "type": "movie",
-        "title": "Selena Gomez: My Mind & Me",
-        "year": 2022,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/oMpsswJv8x4vnOnIKqs4xJs2Kn3.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt455656",
-        "type": "movie",
-        "title": "#realityhigh",
-        "year": 2017,
-        "score": 51,
-        "poster": "https://image.tmdb.org/t/p/w342/6WOWnBdR3I9gNhxbfStuUgpIv4O.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1404094": {
     "name": "Dominic Lewis",
     "img": "/8r3uR9LxtCG72l9JS4fjfVc3wdZ.jpg",
@@ -120350,6 +120319,59 @@
         "year": 2001,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/tsbBTABtNgu0ycsFpnIhiQ5woOM.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p164542": {
+    "name": "Roxanna Hope Radja",
+    "img": "/yIAQZgm4MeHd4CfYYpLIYdg6Y4o.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st289560",
+        "type": "show",
+        "title": "CIA",
+        "year": 2026,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/8XbgWv137Umc8resTDeWh9ff7Y0.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt837881",
+        "type": "movie",
+        "title": "Když promluvila",
+        "year": 2022,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/njOC1bUGuu61hy2SLULuXd7IjJM.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt72432",
+        "type": "movie",
+        "title": "Vpich",
+        "year": 2011,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/sQD8NLW8ZsKHZMx9n7dLHSDgseH.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt3638",
+        "type": "movie",
+        "title": "Koření života",
+        "year": 2007,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/wyfQV6rHdoEjR6MVbalHslWNOD4.jpg",
         "roles": [
           "actor"
         ]
@@ -122987,23 +123009,23 @@
         ]
       },
       {
-        "id": "mt837335",
-        "type": "movie",
-        "title": "Chiméra",
-        "year": 2023,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/Al1yrTMD78aCW9w1DPuRNrxQdxG.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt925263",
         "type": "movie",
         "title": "Il sol dell'avvenire",
         "year": 2023,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/p8SymFMIRs2DQbpqLCeqNGdUupG.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt837335",
+        "type": "movie",
+        "title": "Chiméra",
+        "year": 2023,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/Al1yrTMD78aCW9w1DPuRNrxQdxG.jpg",
         "roles": [
           "actor"
         ]
@@ -163728,6 +163750,17 @@
     "age": 45,
     "works": [
       {
+        "id": "mt1514863",
+        "type": "movie",
+        "title": "Zdaleka nejlepší",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/9soOjsZ91vtMzypK2F3MC378JI5.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt365177",
         "type": "movie",
         "title": "Borderlands",
@@ -189613,6 +189646,37 @@
         "year": 2017,
         "score": 52,
         "poster": "https://image.tmdb.org/t/p/w342/gOT1y090sJ9bqpWvyJmhC9R5hJJ.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4082307": {
+    "name": "Stevie Dore",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1022256",
+        "type": "movie",
+        "title": "Selena Gomez: My Mind & Me",
+        "year": 2022,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/oMpsswJv8x4vnOnIKqs4xJs2Kn3.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt455656",
+        "type": "movie",
+        "title": "#realityhigh",
+        "year": 2017,
+        "score": 51,
+        "poster": "https://image.tmdb.org/t/p/w342/6WOWnBdR3I9gNhxbfStuUgpIv4O.jpg",
         "roles": [
           "actor"
         ]
@@ -258688,59 +258752,6 @@
         "year": 1985,
         "score": 67,
         "poster": "https://image.tmdb.org/t/p/w342/bjUYC4uC82oASTMPkb6iGCYOO2e.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p164542": {
-    "name": "Roxanna Hope Radja",
-    "img": "/yIAQZgm4MeHd4CfYYpLIYdg6Y4o.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st289560",
-        "type": "show",
-        "title": "CIA",
-        "year": 2026,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/8XbgWv137Umc8resTDeWh9ff7Y0.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt837881",
-        "type": "movie",
-        "title": "Když promluvila",
-        "year": 2022,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/njOC1bUGuu61hy2SLULuXd7IjJM.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt72432",
-        "type": "movie",
-        "title": "Vpich",
-        "year": 2011,
-        "score": 68,
-        "poster": "https://image.tmdb.org/t/p/w342/sQD8NLW8ZsKHZMx9n7dLHSDgseH.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt3638",
-        "type": "movie",
-        "title": "Koření života",
-        "year": 2007,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/wyfQV6rHdoEjR6MVbalHslWNOD4.jpg",
         "roles": [
           "actor"
         ]
