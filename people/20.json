@@ -120378,6 +120378,37 @@
       }
     ]
   },
+  "p4082307": {
+    "name": "Stevie Dore",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1022256",
+        "type": "movie",
+        "title": "Selena Gomez: My Mind & Me",
+        "year": 2022,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/oMpsswJv8x4vnOnIKqs4xJs2Kn3.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt455656",
+        "type": "movie",
+        "title": "#realityhigh",
+        "year": 2017,
+        "score": 51,
+        "poster": "https://image.tmdb.org/t/p/w342/6WOWnBdR3I9gNhxbfStuUgpIv4O.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p175630": {
     "name": "Charlie Talbert",
     "img": "/4OHHVt0BtpfSYcOTbQTejplFEtD.jpg",
@@ -189646,37 +189677,6 @@
         "year": 2017,
         "score": 52,
         "poster": "https://image.tmdb.org/t/p/w342/gOT1y090sJ9bqpWvyJmhC9R5hJJ.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4082307": {
-    "name": "Stevie Dore",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1022256",
-        "type": "movie",
-        "title": "Selena Gomez: My Mind & Me",
-        "year": 2022,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/oMpsswJv8x4vnOnIKqs4xJs2Kn3.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt455656",
-        "type": "movie",
-        "title": "#realityhigh",
-        "year": 2017,
-        "score": 51,
-        "poster": "https://image.tmdb.org/t/p/w342/6WOWnBdR3I9gNhxbfStuUgpIv4O.jpg",
         "roles": [
           "actor"
         ]

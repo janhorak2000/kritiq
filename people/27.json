@@ -29803,6 +29803,17 @@
     "age": 59,
     "works": [
       {
+        "id": "mt1284186",
+        "type": "movie",
+        "title": "Sacrifice",
+        "year": 2026,
+        "score": 58,
+        "poster": "https://image.tmdb.org/t/p/w342/SGH7mlgfDyGgRCi2At62Ljg3zV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt970947",
         "type": "movie",
         "title": "The Shrouds",
@@ -125084,26 +125095,6 @@
       }
     ]
   },
-  "p1907549": {
-    "name": "Matt Birkbeck",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt988046",
-        "type": "movie",
-        "title": "Ta dívka z fotky",
-        "year": 2022,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/w6dnirDUhvWuHy91QECqGSYmOpa.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1545693": {
     "name": "Zazie Beetz",
     "img": "/sgxzT54GnvgeMnOZgpQQx9csAdd.jpg",
@@ -162006,71 +161997,64 @@
       }
     ]
   },
-  "p4547472": {
-    "name": "Agnieszka Wierny",
-    "img": null,
+  "p2683390": {
+    "name": "Eden Lee",
+    "img": "/47Op3hles7HxfRwyoorDUh0qj0k.jpg",
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "mt467244",
-        "type": "movie",
-        "title": "Zóna zájmu",
-        "year": 2023,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/nQXpE78DmCzsvtkHI08xDBi4Doq.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4547494": {
-    "name": "Anna Kuwik",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt467244",
-        "type": "movie",
-        "title": "Zóna zájmu",
-        "year": 2023,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/nQXpE78DmCzsvtkHI08xDBi4Doq.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2329333": {
-    "name": "Malakai Fox",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1016084",
-        "type": "movie",
-        "title": "Fenomén BlackBerry",
-        "year": 2023,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/nQSvHZDuMlrZdm7ooMo8gb4CXhW.jpg",
+        "id": "st216082",
+        "type": "show",
+        "title": "Nultý den",
+        "year": 2025,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/odIyR46aAX59dvQ1ON4P53ow1aE.jpg",
         "roles": [
           "actor"
         ]
       },
       {
-        "id": "mt401905",
+        "id": "st194741",
+        "type": "show",
+        "title": "Parish",
+        "year": 2024,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/iV1YDLXuJHwhxF85zwaTxXyrzN6.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt555285",
         "type": "movie",
-        "title": "451 stupňů Fahrenheita",
-        "year": 2018,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/urH9H50gKbUK8U6qTVd89SLQPjx.jpg",
+        "title": "To jsem já, Margaret!",
+        "year": 2023,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/yb6UB4WC3znlwU0L4AqMnjR9G9S.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1108658",
+        "type": "movie",
+        "title": "The Shift",
+        "year": 2023,
+        "score": 56,
+        "poster": "https://image.tmdb.org/t/p/w342/voLxg0emuu862JAgFwM4yTH3eGj.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st133748",
+        "type": "show",
+        "title": "Twisted Metal",
+        "year": 2023,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/zMwMClR9y7RBeVWMEmNn8LwUJHz.jpg",
         "roles": [
           "actor"
         ]
@@ -175345,70 +175329,6 @@
         "year": 2008,
         "score": 59,
         "poster": "https://image.tmdb.org/t/p/w342/7TKQLP4kK8QfhjN6785cHEgAQcw.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2683390": {
-    "name": "Eden Lee",
-    "img": "/47Op3hles7HxfRwyoorDUh0qj0k.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st216082",
-        "type": "show",
-        "title": "Nultý den",
-        "year": 2025,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/odIyR46aAX59dvQ1ON4P53ow1aE.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st194741",
-        "type": "show",
-        "title": "Parish",
-        "year": 2024,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/iV1YDLXuJHwhxF85zwaTxXyrzN6.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1108658",
-        "type": "movie",
-        "title": "The Shift",
-        "year": 2023,
-        "score": 56,
-        "poster": "https://image.tmdb.org/t/p/w342/voLxg0emuu862JAgFwM4yTH3eGj.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt555285",
-        "type": "movie",
-        "title": "To jsem já, Margaret!",
-        "year": 2023,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/yb6UB4WC3znlwU0L4AqMnjR9G9S.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st133748",
-        "type": "show",
-        "title": "Twisted Metal",
-        "year": 2023,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/zMwMClR9y7RBeVWMEmNn8LwUJHz.jpg",
         "roles": [
           "actor"
         ]
@@ -201607,6 +201527,48 @@
       }
     ]
   },
+  "p3711571": {
+    "name": "Youn Sang-hyun",
+    "img": "/imIEHfalj7qKKkHHR2ktmOsZtcn.jpg",
+    "birthday": "2002-04-08",
+    "deathday": null,
+    "age": 24,
+    "works": [
+      {
+        "id": "mt1355666",
+        "type": "movie",
+        "title": "Láska bez cuchání",
+        "year": 2025,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/hOi5K1tx8aAZN239VU1qzvyao87.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st222233",
+        "type": "show",
+        "title": "Doktoři na dně",
+        "year": 2024,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/6z9AXyb66MsMcUHbiQ3UQVr9MEB.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st156406",
+        "type": "show",
+        "title": "Pod královniným deštníkem",
+        "year": 2022,
+        "score": 84,
+        "poster": "https://image.tmdb.org/t/p/w342/tYZ4XCZa8YBG6MADepLQNk45H7z.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p1706788": {
     "name": "Cherelle Cargill",
     "img": "/AnECIJKjDk9K8YGus66YZ8zrA0l.jpg",
@@ -213492,6 +213454,37 @@
       }
     ]
   },
+  "p2008100": {
+    "name": "Magnus Schmitz",
+    "img": "/nKLdFEW1z9Do3gg4q3YZ555V6I2.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1261188",
+        "type": "movie",
+        "title": "Švédská spojka",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/wUfdjrCGdXDUWnAzvruLj7BlUUB.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st45016",
+        "type": "show",
+        "title": "Most",
+        "year": 2011,
+        "score": 86,
+        "poster": "https://image.tmdb.org/t/p/w342/bI9In0clXESpD28y071ZCXXTBmw.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p5206691": {
     "name": "Claire Scavone",
     "img": null,
@@ -215634,6 +215627,26 @@
         "year": 2019,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/8Ap1noT59KmbBGhbDWqcQgDVVrk.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1920166": {
+    "name": "Yung Lean",
+    "img": "/cTbH426TQvHua4LRBNCEEAj9CC4.jpg",
+    "birthday": "1996-07-18",
+    "deathday": null,
+    "age": 30,
+    "works": [
+      {
+        "id": "mt1284186",
+        "type": "movie",
+        "title": "Sacrifice",
+        "year": 2026,
+        "score": 58,
+        "poster": "https://image.tmdb.org/t/p/w342/SGH7mlgfDyGgRCi2At62Ljg3zV.jpg",
         "roles": [
           "actor"
         ]
@@ -254600,6 +254613,37 @@
         "year": 2011,
         "score": 72,
         "poster": "https://image.tmdb.org/t/p/w342/1k2AG40UCvBGZTg6Kicsz1c9QSu.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2329333": {
+    "name": "Malakai Fox",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1016084",
+        "type": "movie",
+        "title": "Fenomén BlackBerry",
+        "year": 2023,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/nQSvHZDuMlrZdm7ooMo8gb4CXhW.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt401905",
+        "type": "movie",
+        "title": "451 stupňů Fahrenheita",
+        "year": 2018,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/urH9H50gKbUK8U6qTVd89SLQPjx.jpg",
         "roles": [
           "actor"
         ]
@@ -344829,6 +344873,26 @@
       }
     ]
   },
+  "p1907549": {
+    "name": "Matt Birkbeck",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt988046",
+        "type": "movie",
+        "title": "Ta dívka z fotky",
+        "year": 2022,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/w6dnirDUhvWuHy91QECqGSYmOpa.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p4828731": {
     "name": "María Elena Pérez",
     "img": "/oYdEC0PPzJGo2S3kXBYsHeiTl9g.jpg",
@@ -345233,6 +345297,46 @@
         "year": 2023,
         "score": 75,
         "poster": "https://image.tmdb.org/t/p/w342/ue59lTGTYzyv6I1lBYlFuHtYy6n.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4547472": {
+    "name": "Agnieszka Wierny",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt467244",
+        "type": "movie",
+        "title": "Zóna zájmu",
+        "year": 2023,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/nQXpE78DmCzsvtkHI08xDBi4Doq.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4547494": {
+    "name": "Anna Kuwik",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt467244",
+        "type": "movie",
+        "title": "Zóna zájmu",
+        "year": 2023,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/nQXpE78DmCzsvtkHI08xDBi4Doq.jpg",
         "roles": [
           "actor"
         ]
@@ -346723,48 +346827,6 @@
       }
     ]
   },
-  "p3711571": {
-    "name": "Youn Sang-hyun",
-    "img": "/imIEHfalj7qKKkHHR2ktmOsZtcn.jpg",
-    "birthday": "2002-04-08",
-    "deathday": null,
-    "age": 24,
-    "works": [
-      {
-        "id": "mt1355666",
-        "type": "movie",
-        "title": "Láska bez cuchání",
-        "year": 2025,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/hOi5K1tx8aAZN239VU1qzvyao87.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st222233",
-        "type": "show",
-        "title": "Doktoři na dně",
-        "year": 2024,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/6z9AXyb66MsMcUHbiQ3UQVr9MEB.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st156406",
-        "type": "show",
-        "title": "Pod královniným deštníkem",
-        "year": 2022,
-        "score": 84,
-        "poster": "https://image.tmdb.org/t/p/w342/tYZ4XCZa8YBG6MADepLQNk45H7z.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1903028": {
     "name": "Daniel Dorr",
     "img": "/VMSs2aazlbxaipaeaD6oMG3VQt.jpg",
@@ -347150,37 +347212,6 @@
         "year": 2026,
         "score": 70,
         "poster": "https://image.tmdb.org/t/p/w342/ktuyOeHiqlso3d52PxP6j5QTwtj.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2008100": {
-    "name": "Magnus Schmitz",
-    "img": "/nKLdFEW1z9Do3gg4q3YZ555V6I2.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1261188",
-        "type": "movie",
-        "title": "Švédská spojka",
-        "year": 2026,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/wUfdjrCGdXDUWnAzvruLj7BlUUB.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st45016",
-        "type": "show",
-        "title": "Most",
-        "year": 2011,
-        "score": 86,
-        "poster": "https://image.tmdb.org/t/p/w342/bI9In0clXESpD28y071ZCXXTBmw.jpg",
         "roles": [
           "actor"
         ]

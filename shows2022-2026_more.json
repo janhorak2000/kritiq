@@ -544314,5 +544314,80 @@
       }
     ],
     "reviews": []
+  },
+  {
+    "title": "Znám tě",
+    "country": "Turecko",
+    "tmdb_id": 320760,
+    "imdb_id": "tt39397536",
+    "year": 2026,
+    "date": "2026-09-17",
+    "score": null,
+    "genre": "Drama",
+    "runtime_min": null,
+    "runtime_max": null,
+    "poster": "https://image.tmdb.org/t/p/w342/tgBRNtynz81e0DE4bWo8XwTbCw9.jpg",
+    "gallery": [
+      "https://image.tmdb.org/t/p/w500/RUkgsqD4YbEKKq77eFgJjeH89n.jpg"
+    ],
+    "summary": "Funda se snaží zvládnout mateřství i uměleckou kariéru, proto má radost, že jí někdo pomůže. Nová chůva je ale tak trochu záhadná a možná skrývá svoji pravou identitu.",
+    "director": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "composer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "writer": {
+      "id": 6462490,
+      "name": "Tuğba Doğan",
+      "image": ""
+    },
+    "actors": [
+      {
+        "id": 1969653,
+        "name": "Melis Sezen",
+        "birthday": "1997-01-02",
+        "deathday": null,
+        "age": 29,
+        "image": "https://image.tmdb.org/t/p/w300/kiTyCXXX1s6vtwtjKGCYKkhwTsx.jpg"
+      },
+      {
+        "id": 1494304,
+        "name": "Elçin Sangu",
+        "birthday": "1985-08-13",
+        "deathday": null,
+        "age": 41,
+        "image": "https://image.tmdb.org/t/p/w300/5jGVTT2ykGro046rvKP75y7Mnyi.jpg"
+      },
+      {
+        "id": 1584426,
+        "name": "Ozan Dolunay",
+        "birthday": "1990-05-02",
+        "deathday": null,
+        "age": 36,
+        "image": "https://image.tmdb.org/t/p/w300/vLXxGS3DOlK5C8nbAPVndWurnmu.jpg"
+      },
+      {
+        "id": 120877,
+        "name": "Cemal Hünal",
+        "birthday": "1976-10-02",
+        "deathday": null,
+        "age": 49,
+        "image": "https://image.tmdb.org/t/p/w300/fR3xGBAeOaLVI0W4XGsR9khWE3O.jpg"
+      },
+      {
+        "id": 3475166,
+        "name": "Efe Taşdelen",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/zNxVyYTQmzCvBNOrsL4KwdoFF9i.jpg"
+      }
+    ],
+    "reviews": []
   }
 ]

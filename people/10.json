@@ -31731,6 +31731,17 @@
     "age": 82,
     "works": [
       {
+        "id": "mt1308767",
+        "type": "movie",
+        "title": "Young Washington",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/6CdoTKnRQHJkjRGxTefFGkPQplB.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt898704",
         "type": "movie",
         "title": "Desert Warrior",
@@ -31748,17 +31759,6 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/ZWHxL2ETItcZzeVsVfs6gv3SZ7.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1308767",
-        "type": "movie",
-        "title": "Young Washington",
-        "year": 2026,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/6CdoTKnRQHJkjRGxTefFGkPQplB.jpg",
         "roles": [
           "actor"
         ]
@@ -204149,101 +204149,6 @@
       }
     ]
   },
-  "p1561416": {
-    "name": "Chris Newman",
-    "img": "/iDADcwh8EEwJJhybc0yMiE3OgIS.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt814340",
-        "type": "movie",
-        "title": "Cha Cha Real Smooth",
-        "year": 2022,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/iUvoVhvwTlP8DofoqeIu7QAGLAe.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt443297",
-        "type": "movie",
-        "title": "Moontrap: Target Earth",
-        "year": 2017,
-        "score": 28,
-        "poster": "https://image.tmdb.org/t/p/w342/cqMH1aIvOUjeF9S0fog0zdntHtH.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt401222",
-        "type": "movie",
-        "title": "ISRA 88",
-        "year": 2016,
-        "score": 36,
-        "poster": "https://image.tmdb.org/t/p/w342/e3Z630yx8l5zHQcNx0yxC2oh8LN.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt140222",
-        "type": "movie",
-        "title": "Láska a čest",
-        "year": 2013,
-        "score": 57,
-        "poster": "https://image.tmdb.org/t/p/w342/9QWC9cluFEf7TM6fNU8q1VClhJT.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt72207",
-        "type": "movie",
-        "title": "Zásnuby na dobu neurčitou",
-        "year": 2012,
-        "score": 62,
-        "poster": "https://image.tmdb.org/t/p/w342/4Bj6pw3ZCo1f2DXP4k7AUDwMTFX.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt39254",
-        "type": "movie",
-        "title": "Ocelová pěst",
-        "year": 2011,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/bCqIZ1oF1Esc8FjniiuFTsiiNl7.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5982954": {
-    "name": "Joe Fitzpatrick",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt988046",
-        "type": "movie",
-        "title": "Ta dívka z fotky",
-        "year": 2022,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/w6dnirDUhvWuHy91QECqGSYmOpa.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1131415": {
     "name": "Hovik Keuchkerian",
     "img": "/o5cGKWHlZl4RFROYlT2hD95j0lN.jpg",
@@ -204705,6 +204610,66 @@
         "year": 2007,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/3rWk9g0Oup5WHcrpjvw5zW1WhLc.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1290596": {
+    "name": "Brent L. Boxberger",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1022256",
+        "type": "movie",
+        "title": "Selena Gomez: My Mind & Me",
+        "year": 2022,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/oMpsswJv8x4vnOnIKqs4xJs2Kn3.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2295116": {
+    "name": "Arash Ashtiani",
+    "img": null,
+    "birthday": "1983-01-01",
+    "deathday": null,
+    "age": 43,
+    "works": [
+      {
+        "id": "mt889699",
+        "type": "movie",
+        "title": "Svatý pavouk",
+        "year": 2022,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/yXos8VpLUKOXqhrMnUQ9Pp0uZcE.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3543407": {
+    "name": "Mesbah Taleb",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt889699",
+        "type": "movie",
+        "title": "Svatý pavouk",
+        "year": 2022,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/yXos8VpLUKOXqhrMnUQ9Pp0uZcE.jpg",
         "roles": [
           "actor"
         ]
@@ -254785,282 +254750,6 @@
         "roles": [
           "director",
           "writer"
-        ]
-      }
-    ]
-  },
-  "p72764": {
-    "name": "Yoshino Kimura",
-    "img": "/fI0ALURUC3CO96fEb33f4iijlF.jpg",
-    "birthday": "1976-04-10",
-    "deathday": null,
-    "age": 50,
-    "works": [
-      {
-        "id": "mt508883",
-        "type": "movie",
-        "title": "Chlapec a volavka",
-        "year": 2023,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/4QmyPCQa5uSYjRsxPJvu4XA1ZWJ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt54186",
-        "type": "movie",
-        "title": "Kokuhaku",
-        "year": 2010,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/p8vr7jVwflsSqAq91nWcOPZ2RIv.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt8338",
-        "type": "movie",
-        "title": "Slepota",
-        "year": 2008,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/deBsx5IxyqCC217j3VY24TkkE0Z.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt13637",
-        "type": "movie",
-        "title": "Nemilosrdný střelec",
-        "year": 2007,
-        "score": 61,
-        "poster": "https://image.tmdb.org/t/p/w342/6rglnNhFPDetSms0DAR2WcXKJvq.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st3470",
-        "type": "show",
-        "title": "Mistři hrůzy",
-        "year": 2005,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/vgTy1Lfi5P1yD7ZvsuoPKYvxwzv.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4072265": {
-    "name": "Medusa Knopf",
-    "img": "/aCXM1DWwxcB18sN75vI8vyI38h2.jpg",
-    "birthday": "1976-02-19",
-    "deathday": null,
-    "age": 50,
-    "works": [
-      {
-        "id": "mt467244",
-        "type": "movie",
-        "title": "Zóna zájmu",
-        "year": 2023,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/nQXpE78DmCzsvtkHI08xDBi4Doq.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1292576": {
-    "name": "Michelle Giroux",
-    "img": "/fvJedTiQO2eBDlcAe62S3MX8chM.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1016084",
-        "type": "movie",
-        "title": "Fenomén BlackBerry",
-        "year": 2023,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/nQSvHZDuMlrZdm7ooMo8gb4CXhW.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st202097",
-        "type": "show",
-        "title": "Obžalovaní",
-        "year": 2023,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/apkkK3LW5rPMyQxtirWtIyYZRHR.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st131992",
-        "type": "show",
-        "title": "Podvrženec",
-        "year": 2023,
-        "score": 58,
-        "poster": "https://image.tmdb.org/t/p/w342/mIAmXrJBAUEGZspReqll0fJyVp6.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st112945",
-        "type": "show",
-        "title": "Hardyho chlapci",
-        "year": 2021,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/cKB5TIERxAwBzn5mNtvrYx1IE6m.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt447362",
-        "type": "movie",
-        "title": "Life in a Year",
-        "year": 2020,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/bP7u19opmHXYeTCUwGjlLldmUMc.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st86799",
-        "type": "show",
-        "title": "The Hot Zone",
-        "year": 2019,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/6CSPieuzXvp4gcSSPZzuUwBXjaP.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st70785",
-        "type": "show",
-        "title": "Anne s E na konci",
-        "year": 2017,
-        "score": 86,
-        "poster": "https://image.tmdb.org/t/p/w342/6P6tXhjT5tK3qOXzxF9OMLlG7iz.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3530724": {
-    "name": "Fuad Musayev",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1016084",
-        "type": "movie",
-        "title": "Fenomén BlackBerry",
-        "year": 2023,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/nQSvHZDuMlrZdm7ooMo8gb4CXhW.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1461459": {
-    "name": "Eric Osborne",
-    "img": "/v2zPLIr6X1eiwVg2R8ZsnicSQe3.jpg",
-    "birthday": "1997-02-25",
-    "deathday": null,
-    "age": 29,
-    "works": [
-      {
-        "id": "mt1016084",
-        "type": "movie",
-        "title": "Fenomén BlackBerry",
-        "year": 2023,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/nQSvHZDuMlrZdm7ooMo8gb4CXhW.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt795778",
-        "type": "movie",
-        "title": "Night Raiders",
-        "year": 2021,
-        "score": 53,
-        "poster": "https://image.tmdb.org/t/p/w342/wCjGxpp6jGtaef0PNGy66Vdoco0.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt829358",
-        "type": "movie",
-        "title": "Queen of Spades",
-        "year": 2021,
-        "score": 38,
-        "poster": "https://image.tmdb.org/t/p/w342/4IKBzVBPLXu9p5cfEfdJjHdlafV.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt582049",
-        "type": "movie",
-        "title": "Random Acts of Violence",
-        "year": 2019,
-        "score": 52,
-        "poster": "https://image.tmdb.org/t/p/w342/4eMWV14tUE10mnveNWhdwIsD4lg.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt448194",
-        "type": "movie",
-        "title": "Pyewacket",
-        "year": 2017,
-        "score": 58,
-        "poster": "https://image.tmdb.org/t/p/w342/3ET9MWmIx2ny2KP5mqY9ceb0WxF.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st65152",
-        "type": "show",
-        "title": "Degrassi: Next Class",
-        "year": 2016,
-        "score": 68,
-        "poster": "https://image.tmdb.org/t/p/w342/vSbSrFvnLkHeT7XGW68lEjcEaGG.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st1948",
-        "type": "show",
-        "title": "Degrassi",
-        "year": 2001,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/AfqQ4lZAi9LWyhnHm3VCpm2hLpB.jpg",
-        "roles": [
-          "actor"
         ]
       }
     ]
@@ -308596,6 +308285,26 @@
       }
     ]
   },
+  "p1253559": {
+    "name": "Hong Eun-hee",
+    "img": "/r6ZSTldUMUSmkUiaUEysHVpTHAp.jpg",
+    "birthday": "1980-02-17",
+    "deathday": null,
+    "age": 46,
+    "works": [
+      {
+        "id": "mt1355666",
+        "type": "movie",
+        "title": "Láska bez cuchání",
+        "year": 2025,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/hOi5K1tx8aAZN239VU1qzvyao87.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2581798": {
     "name": "Ashley London",
     "img": null,
@@ -322869,20 +322578,108 @@
       }
     ]
   },
-  "p6461410": {
-    "name": "Nova Valentina Biggers",
-    "img": null,
+  "p844266": {
+    "name": "Jon Erwin",
+    "img": "/fO4FG0QD9gr4jr0mh7Y2BwFF5d3.jpg",
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "mt1380417",
+        "id": "mt1308767",
         "type": "movie",
-        "title": "By Any Means",
+        "title": "Young Washington",
         "year": 2026,
         "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/f4hdIed8vh10O8TkQ1CkHS8MQ3G.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/6CdoTKnRQHJkjRGxTefFGkPQplB.jpg",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      },
+      {
+        "id": "st243881",
+        "type": "show",
+        "title": "Dům Davidův",
+        "year": 2025,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/cAhd5F9zO1MXkfcxE8HGIhqsnEG.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "mt673309",
+        "type": "movie",
+        "title": "Americký outsider",
+        "year": 2021,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/hAGIzHZcwZaCnIHY5KnvcpHsTHQ.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "mt585244",
+        "type": "movie",
+        "title": "Dokud jsi se mnou",
+        "year": 2020,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/eAcDqNmogTQqaxA9EHelOntbIl5.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "mt333596",
+        "type": "movie",
+        "title": "Woodlawn",
+        "year": 2015,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/BJ1XNBBEiqaCM4SQhHYTrWqCfn.jpg",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      },
+      {
+        "id": "mt83860",
+        "type": "movie",
+        "title": "October Baby",
+        "year": 2011,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/dZWU5Hn4lkhid3MqVMCEPk9z9QI.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6020310": {
+    "name": "Seo Ho-seok",
+    "img": null,
+    "birthday": "1992-09-06",
+    "deathday": null,
+    "age": 34,
+    "works": [
+      {
+        "id": "mt1268609",
+        "type": "movie",
+        "title": "Pavana",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/22RlxpIT4u4psfIx9tmtbPvgAbm.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt567629",
+        "type": "movie",
+        "title": "Bitva o Jangsari",
+        "year": 2019,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/qAUUabPHHxELQpkF7r5bQK776PS.jpg",
         "roles": [
           "actor"
         ]
@@ -345438,6 +345235,92 @@
       }
     ]
   },
+  "p1461459": {
+    "name": "Eric Osborne",
+    "img": "/v2zPLIr6X1eiwVg2R8ZsnicSQe3.jpg",
+    "birthday": "1997-02-25",
+    "deathday": null,
+    "age": 29,
+    "works": [
+      {
+        "id": "mt1016084",
+        "type": "movie",
+        "title": "Fenomén BlackBerry",
+        "year": 2023,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/nQSvHZDuMlrZdm7ooMo8gb4CXhW.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt795778",
+        "type": "movie",
+        "title": "Night Raiders",
+        "year": 2021,
+        "score": 53,
+        "poster": "https://image.tmdb.org/t/p/w342/wCjGxpp6jGtaef0PNGy66Vdoco0.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt829358",
+        "type": "movie",
+        "title": "Queen of Spades",
+        "year": 2021,
+        "score": 38,
+        "poster": "https://image.tmdb.org/t/p/w342/4IKBzVBPLXu9p5cfEfdJjHdlafV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt582049",
+        "type": "movie",
+        "title": "Random Acts of Violence",
+        "year": 2019,
+        "score": 52,
+        "poster": "https://image.tmdb.org/t/p/w342/4eMWV14tUE10mnveNWhdwIsD4lg.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt448194",
+        "type": "movie",
+        "title": "Pyewacket",
+        "year": 2017,
+        "score": 58,
+        "poster": "https://image.tmdb.org/t/p/w342/3ET9MWmIx2ny2KP5mqY9ceb0WxF.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st65152",
+        "type": "show",
+        "title": "Degrassi: Next Class",
+        "year": 2016,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/vSbSrFvnLkHeT7XGW68lEjcEaGG.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st1948",
+        "type": "show",
+        "title": "Degrassi",
+        "year": 2001,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/AfqQ4lZAi9LWyhnHm3VCpm2hLpB.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p1290563": {
     "name": "Anna Marie Dobbins",
     "img": "/8q5DZRYJCnBlPNukzthKXbvqqf9.jpg",
@@ -353757,6 +353640,81 @@
         "year": 2017,
         "score": 29,
         "poster": "https://image.tmdb.org/t/p/w342/yh1zWtaScdbseIzzuiDld9Aw917.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1561416": {
+    "name": "Chris Newman",
+    "img": "/iDADcwh8EEwJJhybc0yMiE3OgIS.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt814340",
+        "type": "movie",
+        "title": "Cha Cha Real Smooth",
+        "year": 2022,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/iUvoVhvwTlP8DofoqeIu7QAGLAe.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt443297",
+        "type": "movie",
+        "title": "Moontrap: Target Earth",
+        "year": 2017,
+        "score": 28,
+        "poster": "https://image.tmdb.org/t/p/w342/cqMH1aIvOUjeF9S0fog0zdntHtH.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt401222",
+        "type": "movie",
+        "title": "ISRA 88",
+        "year": 2016,
+        "score": 36,
+        "poster": "https://image.tmdb.org/t/p/w342/e3Z630yx8l5zHQcNx0yxC2oh8LN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt140222",
+        "type": "movie",
+        "title": "Láska a čest",
+        "year": 2013,
+        "score": 57,
+        "poster": "https://image.tmdb.org/t/p/w342/9QWC9cluFEf7TM6fNU8q1VClhJT.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt72207",
+        "type": "movie",
+        "title": "Zásnuby na dobu neurčitou",
+        "year": 2012,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/4Bj6pw3ZCo1f2DXP4k7AUDwMTFX.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt39254",
+        "type": "movie",
+        "title": "Ocelová pěst",
+        "year": 2011,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/bCqIZ1oF1Esc8FjniiuFTsiiNl7.jpg",
         "roles": [
           "actor"
         ]
@@ -382228,37 +382186,6 @@
       }
     ]
   },
-  "p6020310": {
-    "name": "Seo Ho-seok",
-    "img": null,
-    "birthday": "1992-09-06",
-    "deathday": null,
-    "age": 34,
-    "works": [
-      {
-        "id": "mt1268609",
-        "type": "movie",
-        "title": "Pavana",
-        "year": 2026,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/22RlxpIT4u4psfIx9tmtbPvgAbm.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt567629",
-        "type": "movie",
-        "title": "Bitva o Jangsari",
-        "year": 2019,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/qAUUabPHHxELQpkF7r5bQK776PS.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p2052005": {
     "name": "John Westley",
     "img": null,
@@ -394998,83 +394925,6 @@
       }
     ]
   },
-  "p844266": {
-    "name": "Jon Erwin",
-    "img": "/fO4FG0QD9gr4jr0mh7Y2BwFF5d3.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1308767",
-        "type": "movie",
-        "title": "Young Washington",
-        "year": 2026,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/6CdoTKnRQHJkjRGxTefFGkPQplB.jpg",
-        "roles": [
-          "director",
-          "writer"
-        ]
-      },
-      {
-        "id": "st243881",
-        "type": "show",
-        "title": "Dům Davidův",
-        "year": 2025,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/cAhd5F9zO1MXkfcxE8HGIhqsnEG.jpg",
-        "roles": [
-          "writer"
-        ]
-      },
-      {
-        "id": "mt673309",
-        "type": "movie",
-        "title": "Americký outsider",
-        "year": 2021,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/hAGIzHZcwZaCnIHY5KnvcpHsTHQ.jpg",
-        "roles": [
-          "director"
-        ]
-      },
-      {
-        "id": "mt585244",
-        "type": "movie",
-        "title": "Dokud jsi se mnou",
-        "year": 2020,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/eAcDqNmogTQqaxA9EHelOntbIl5.jpg",
-        "roles": [
-          "writer"
-        ]
-      },
-      {
-        "id": "mt333596",
-        "type": "movie",
-        "title": "Woodlawn",
-        "year": 2015,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/BJ1XNBBEiqaCM4SQhHYTrWqCfn.jpg",
-        "roles": [
-          "director",
-          "writer"
-        ]
-      },
-      {
-        "id": "mt83860",
-        "type": "movie",
-        "title": "October Baby",
-        "year": 2011,
-        "score": 66,
-        "poster": "https://image.tmdb.org/t/p/w342/dZWU5Hn4lkhid3MqVMCEPk9z9QI.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1265329": {
     "name": "Tanya Christiansen",
     "img": "/ciifmUGctpO3zPcazaaAlD8QvJ9.jpg",
@@ -396470,6 +396320,92 @@
         "year": 2020,
         "score": 63,
         "poster": "https://image.tmdb.org/t/p/w342/uIb8aJ8mKOE7HHK4gQ7YAzLZtwR.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1292576": {
+    "name": "Michelle Giroux",
+    "img": "/fvJedTiQO2eBDlcAe62S3MX8chM.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1016084",
+        "type": "movie",
+        "title": "Fenomén BlackBerry",
+        "year": 2023,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/nQSvHZDuMlrZdm7ooMo8gb4CXhW.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st202097",
+        "type": "show",
+        "title": "Obžalovaní",
+        "year": 2023,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/apkkK3LW5rPMyQxtirWtIyYZRHR.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st131992",
+        "type": "show",
+        "title": "Podvrženec",
+        "year": 2023,
+        "score": 58,
+        "poster": "https://image.tmdb.org/t/p/w342/mIAmXrJBAUEGZspReqll0fJyVp6.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st112945",
+        "type": "show",
+        "title": "Hardyho chlapci",
+        "year": 2021,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/cKB5TIERxAwBzn5mNtvrYx1IE6m.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt447362",
+        "type": "movie",
+        "title": "Life in a Year",
+        "year": 2020,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/bP7u19opmHXYeTCUwGjlLldmUMc.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st86799",
+        "type": "show",
+        "title": "The Hot Zone",
+        "year": 2019,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/6CSPieuzXvp4gcSSPZzuUwBXjaP.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st70785",
+        "type": "show",
+        "title": "Anne s E na konci",
+        "year": 2017,
+        "score": 86,
+        "poster": "https://image.tmdb.org/t/p/w342/6P6tXhjT5tK3qOXzxF9OMLlG7iz.jpg",
         "roles": [
           "actor"
         ]
@@ -435659,6 +435595,70 @@
         "year": 2010,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/iHMbrTHJwocsNvo5murCBw0CwTo.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p72764": {
+    "name": "Yoshino Kimura",
+    "img": "/fI0ALURUC3CO96fEb33f4iijlF.jpg",
+    "birthday": "1976-04-10",
+    "deathday": null,
+    "age": 50,
+    "works": [
+      {
+        "id": "mt508883",
+        "type": "movie",
+        "title": "Chlapec a volavka",
+        "year": 2023,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/4QmyPCQa5uSYjRsxPJvu4XA1ZWJ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt54186",
+        "type": "movie",
+        "title": "Kokuhaku",
+        "year": 2010,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/p8vr7jVwflsSqAq91nWcOPZ2RIv.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt8338",
+        "type": "movie",
+        "title": "Slepota",
+        "year": 2008,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/deBsx5IxyqCC217j3VY24TkkE0Z.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt13637",
+        "type": "movie",
+        "title": "Nemilosrdný střelec",
+        "year": 2007,
+        "score": 61,
+        "poster": "https://image.tmdb.org/t/p/w342/6rglnNhFPDetSms0DAR2WcXKJvq.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st3470",
+        "type": "show",
+        "title": "Mistři hrůzy",
+        "year": 2005,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/vgTy1Lfi5P1yD7ZvsuoPKYvxwzv.jpg",
         "roles": [
           "actor"
         ]
@@ -484097,60 +484097,20 @@
       }
     ]
   },
-  "p1290596": {
-    "name": "Brent L. Boxberger",
+  "p5982954": {
+    "name": "Joe Fitzpatrick",
     "img": null,
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "mt1022256",
+        "id": "mt988046",
         "type": "movie",
-        "title": "Selena Gomez: My Mind & Me",
+        "title": "Ta dívka z fotky",
         "year": 2022,
         "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/oMpsswJv8x4vnOnIKqs4xJs2Kn3.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2295116": {
-    "name": "Arash Ashtiani",
-    "img": null,
-    "birthday": "1983-01-01",
-    "deathday": null,
-    "age": 43,
-    "works": [
-      {
-        "id": "mt889699",
-        "type": "movie",
-        "title": "Svatý pavouk",
-        "year": 2022,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/yXos8VpLUKOXqhrMnUQ9Pp0uZcE.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3543407": {
-    "name": "Mesbah Taleb",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt889699",
-        "type": "movie",
-        "title": "Svatý pavouk",
-        "year": 2022,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/yXos8VpLUKOXqhrMnUQ9Pp0uZcE.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/w6dnirDUhvWuHy91QECqGSYmOpa.jpg",
         "roles": [
           "actor"
         ]
@@ -484890,6 +484850,46 @@
         "year": 2023,
         "score": 74,
         "poster": "https://image.tmdb.org/t/p/w342/xwkYWcs8aypUtk3xDRUh0ndo4GA.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4072265": {
+    "name": "Medusa Knopf",
+    "img": "/aCXM1DWwxcB18sN75vI8vyI38h2.jpg",
+    "birthday": "1976-02-19",
+    "deathday": null,
+    "age": 50,
+    "works": [
+      {
+        "id": "mt467244",
+        "type": "movie",
+        "title": "Zóna zájmu",
+        "year": 2023,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/nQXpE78DmCzsvtkHI08xDBi4Doq.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3530724": {
+    "name": "Fuad Musayev",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1016084",
+        "type": "movie",
+        "title": "Fenomén BlackBerry",
+        "year": 2023,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/nQSvHZDuMlrZdm7ooMo8gb4CXhW.jpg",
         "roles": [
           "actor"
         ]
@@ -486415,26 +486415,6 @@
       }
     ]
   },
-  "p1253559": {
-    "name": "Hong Eun-hee",
-    "img": "/r6ZSTldUMUSmkUiaUEysHVpTHAp.jpg",
-    "birthday": "1980-02-17",
-    "deathday": null,
-    "age": 46,
-    "works": [
-      {
-        "id": "mt1355666",
-        "type": "movie",
-        "title": "Láska bez cuchání",
-        "year": 2025,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/hOi5K1tx8aAZN239VU1qzvyao87.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p4882976": {
     "name": "Ashan Kumar",
     "img": "/6TcWIf3KBCOBzIXT2Zr5me4hDl7.jpg",
@@ -486822,6 +486802,26 @@
         "year": 2026,
         "score": 70,
         "poster": "https://image.tmdb.org/t/p/w342/pBEniJJ9G8cywQfb6lB3QqRqY2i.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6461410": {
+    "name": "Nova Valentina Biggers",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1380417",
+        "type": "movie",
+        "title": "By Any Means",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/f4hdIed8vh10O8TkQ1CkHS8MQ3G.jpg",
         "roles": [
           "actor"
         ]
