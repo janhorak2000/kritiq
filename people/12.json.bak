@@ -29855,17 +29855,6 @@
         ]
       },
       {
-        "id": "mt1016084",
-        "type": "movie",
-        "title": "Fenomén BlackBerry",
-        "year": 2023,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/nQSvHZDuMlrZdm7ooMo8gb4CXhW.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt739405",
         "type": "movie",
         "title": "Operace Fortune: Ruse de Guerre",
@@ -29905,6 +29894,17 @@
         "year": 2023,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/3cv0IvAyTbXZPCFPP8ZlHuu3Xvs.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1016084",
+        "type": "movie",
+        "title": "Fenomén BlackBerry",
+        "year": 2023,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/nQSvHZDuMlrZdm7ooMo8gb4CXhW.jpg",
         "roles": [
           "actor"
         ]
@@ -52586,23 +52586,23 @@
         ]
       },
       {
-        "id": "mt670292",
-        "type": "movie",
-        "title": "Stvořitel",
-        "year": 2023,
-        "score": 67,
-        "poster": "https://image.tmdb.org/t/p/w342/i4ktW6e6KVotkTTHrtV8G1jjdrB.jpg",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
         "id": "mt555285",
         "type": "movie",
         "title": "To jsem já, Margaret!",
         "year": 2023,
         "score": 73,
         "poster": "https://image.tmdb.org/t/p/w342/yb6UB4WC3znlwU0L4AqMnjR9G9S.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "mt670292",
+        "type": "movie",
+        "title": "Stvořitel",
+        "year": 2023,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/i4ktW6e6KVotkTTHrtV8G1jjdrB.jpg",
         "roles": [
           "composer"
         ]
@@ -213787,23 +213787,23 @@
         ]
       },
       {
-        "id": "mt872585",
-        "type": "movie",
-        "title": "Oppenheimer",
-        "year": 2023,
-        "score": 82,
-        "poster": "https://image.tmdb.org/t/p/w342/uwOo42nxRKeD5pyG2aREp0Dfu2a.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt555285",
         "type": "movie",
         "title": "To jsem já, Margaret!",
         "year": 2023,
         "score": 73,
         "poster": "https://image.tmdb.org/t/p/w342/yb6UB4WC3znlwU0L4AqMnjR9G9S.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt872585",
+        "type": "movie",
+        "title": "Oppenheimer",
+        "year": 2023,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/uwOo42nxRKeD5pyG2aREp0Dfu2a.jpg",
         "roles": [
           "actor"
         ]
@@ -227160,126 +227160,20 @@
       }
     ]
   },
-  "p1341726": {
-    "name": "Mica Levi",
-    "img": "/efQCxwoGL4SsAtX1ePDDv1EbBg8.jpg",
-    "birthday": null,
+  "p1122958": {
+    "name": "Serhiy Strelnykov",
+    "img": "/hKKzNE6P1FEL4DUXmCpQaPTYfX3.jpg",
+    "birthday": "1979-11-13",
     "deathday": null,
-    "age": null,
+    "age": 46,
     "works": [
       {
-        "id": "mt467244",
+        "id": "mt815029",
         "type": "movie",
-        "title": "Zóna zájmu",
+        "title": "Dovbuš",
         "year": 2023,
         "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/nQXpE78DmCzsvtkHI08xDBi4Doq.jpg",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
-        "id": "mt539565",
-        "type": "movie",
-        "title": "Zola",
-        "year": 2021,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/bJLCPROp9bmNndurwZpVnOioVpB.jpg",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
-        "id": "st90705",
-        "type": "show",
-        "title": "Sekerka",
-        "year": 2020,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/qAafv0Ao1y8C2dLux9BBg6nVuc1.jpg",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
-        "id": "mt417466",
-        "type": "movie",
-        "title": "Monos",
-        "year": 2019,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/bkt5H7qH4zwMzBxnQLFR0PByU81.jpg",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
-        "id": "mt426254",
-        "type": "movie",
-        "title": "Marjorie Prime",
-        "year": 2017,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/rvTZFjcNvzPFYJnmdrvSrGvqx67.jpg",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
-        "id": "mt376866",
-        "type": "movie",
-        "title": "Jackie",
-        "year": 2016,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/nF9N33PfhizMEzbfxHoxXBo2vx9.jpg",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
-        "id": "mt97370",
-        "type": "movie",
-        "title": "Pod kůží",
-        "year": 2014,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/55wmcXJIDYITr7JDijJTdvwSaAv.jpg",
-        "roles": [
-          "composer"
-        ]
-      }
-    ]
-  },
-  "p4072267": {
-    "name": "Johann Karthaus",
-    "img": "/6cPLuDzd0S6cFJZMg28DYiIWNuq.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt467244",
-        "type": "movie",
-        "title": "Zóna zájmu",
-        "year": 2023,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/nQXpE78DmCzsvtkHI08xDBi4Doq.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4094575": {
-    "name": "Derek Groulx",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1016084",
-        "type": "movie",
-        "title": "Fenomén BlackBerry",
-        "year": 2023,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/nQSvHZDuMlrZdm7ooMo8gb4CXhW.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/cI0AbBDhKLIheGDVazO2gCtT6cx.jpg",
         "roles": [
           "actor"
         ]
@@ -266290,26 +266184,6 @@
       }
     ]
   },
-  "p5845709": {
-    "name": "Peter Düring",
-    "img": "/ij1LhVQHo9vQ2QYy0rTDJqQhJC4.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1295400",
-        "type": "movie",
-        "title": "Poslední Viking",
-        "year": 2025,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/52tvR7dG2IoNbc0p0HrRqWzJUYu.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p5286337": {
     "name": "Matthew Castle",
     "img": null,
@@ -280507,34 +280381,241 @@
       }
     ]
   },
-  "p1211739": {
-    "name": "Rachel Hirons",
+  "p80631": {
+    "name": "Martijn Lakemeier",
+    "img": "/6Iul6fqTjEFzXZW21aailmj8BwN.jpg",
+    "birthday": "1993-09-17",
+    "deathday": null,
+    "age": 33,
+    "works": [
+      {
+        "id": "mt1308767",
+        "type": "movie",
+        "title": "Young Washington",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/6CdoTKnRQHJkjRGxTefFGkPQplB.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt138686",
+        "type": "movie",
+        "title": "Maratón",
+        "year": 2012,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/mLLrbnqXVf1BVyHs5pvcEn7fNum.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt16564",
+        "type": "movie",
+        "title": "Zima za války",
+        "year": 2008,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/nnKqG14HRkvG2BmIfOcmAH3cEip.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5169517": {
+    "name": "Declan Gill",
+    "img": null,
+    "birthday": "1991-10-02",
+    "deathday": null,
+    "age": 34,
+    "works": [
+      {
+        "id": "mt1308767",
+        "type": "movie",
+        "title": "Young Washington",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/6CdoTKnRQHJkjRGxTefFGkPQplB.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1307118",
+        "type": "movie",
+        "title": "Soulm8te",
+        "year": 2026,
+        "score": 58,
+        "poster": "https://image.tmdb.org/t/p/w342/bNErActDctl6cdUGw9pnjSCmyhQ.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p83898": {
+    "name": "Johan Glans",
+    "img": "/5yJXXfNq62b4QGqAZUYCiFLIasW.jpg",
+    "birthday": "1974-04-09",
+    "deathday": null,
+    "age": 52,
+    "works": [
+      {
+        "id": "mt1261188",
+        "type": "movie",
+        "title": "Švédská spojka",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/wUfdjrCGdXDUWnAzvruLj7BlUUB.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st67642",
+        "type": "show",
+        "title": "Swedish Dicks",
+        "year": 2016,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/1LDYgRsSjG0qIzenQzUixatZUug.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p997641": {
+    "name": "Richard Ulfsäter",
+    "img": "/mVhB7jztj07sTV5NgU84qyZXTrW.jpg",
+    "birthday": "1975-09-01",
+    "deathday": null,
+    "age": 51,
+    "works": [
+      {
+        "id": "mt1261188",
+        "type": "movie",
+        "title": "Švédská spojka",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/wUfdjrCGdXDUWnAzvruLj7BlUUB.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st67394",
+        "type": "show",
+        "title": "Půlnoční slunce",
+        "year": 2016,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/kdGuQNUDIPBNpdeBD2Z1y5mQ3g3.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt93230",
+        "type": "movie",
+        "title": "Nobelova poslední vůle",
+        "year": 2012,
+        "score": 59,
+        "poster": "https://image.tmdb.org/t/p/w342/zt3blt8ykieUIo1DJGJ07vz4D8E.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt118279",
+        "type": "movie",
+        "title": "Případy Anikky Bengtzonové - Studio Sex",
+        "year": 2012,
+        "score": 58,
+        "poster": "https://image.tmdb.org/t/p/w342/9zydSRirEoei3w9a2GRluMnweHB.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt17077",
+        "type": "movie",
+        "title": "Věčné okamžiky Marie Larssonové",
+        "year": 2008,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/l2h8gcdvvk9SUNppEc40ArdHZfL.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt15179",
+        "type": "movie",
+        "title": "Patrik - věk 1,5",
+        "year": 2008,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/i0HCdCDF51tiRvbNWHgrku4ePdI.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3964808": {
+    "name": "Lee Da-hye",
+    "img": "/nQ3LnfbV9eyZNnUClfIerdxqOY3.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1268609",
+        "type": "movie",
+        "title": "Pavana",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/22RlxpIT4u4psfIx9tmtbPvgAbm.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6020312": {
+    "name": "Jung Man-seob",
     "img": null,
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "mt1339588",
+        "id": "mt1268609",
         "type": "movie",
-        "title": "Finding Emily",
+        "title": "Pavana",
         "year": 2026,
         "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/bfEQ6C702oPsN4kzIiY7n4JsrxF.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/22RlxpIT4u4psfIx9tmtbPvgAbm.jpg",
         "roles": [
-          "writer"
+          "actor"
         ]
-      },
+      }
+    ]
+  },
+  "p5107829": {
+    "name": "Jo Beom-kyu",
+    "img": "/iK7uCKlraI5UNxuoowWUgaKnuHK.jpg",
+    "birthday": "2003-05-03",
+    "deathday": null,
+    "age": 23,
+    "works": [
       {
-        "id": "mt525696",
+        "id": "mt1268609",
         "type": "movie",
-        "title": "A Guide to Second Date Sex",
-        "year": 2019,
-        "score": 55,
-        "poster": "https://image.tmdb.org/t/p/w342/1ipvnH9qzMaOtRPOldPVt8B58Ya.jpg",
+        "title": "Pavana",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/22RlxpIT4u4psfIx9tmtbPvgAbm.jpg",
         "roles": [
-          "director",
-          "writer"
+          "actor"
         ]
       }
     ]
@@ -283334,37 +283415,6 @@
         "year": 2026,
         "score": 58,
         "poster": "https://image.tmdb.org/t/p/w342/1HRUTqEVDmJC4L6tp6zd85MI6uH.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5169517": {
-    "name": "Declan Gill",
-    "img": null,
-    "birthday": "1991-10-02",
-    "deathday": null,
-    "age": 34,
-    "works": [
-      {
-        "id": "mt1307118",
-        "type": "movie",
-        "title": "Soulm8te",
-        "year": 2026,
-        "score": 58,
-        "poster": "https://image.tmdb.org/t/p/w342/bNErActDctl6cdUGw9pnjSCmyhQ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1308767",
-        "type": "movie",
-        "title": "Young Washington",
-        "year": 2026,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/6CdoTKnRQHJkjRGxTefFGkPQplB.jpg",
         "roles": [
           "actor"
         ]
@@ -296344,6 +296394,92 @@
         "poster": "https://image.tmdb.org/t/p/w342/9Btip4jrDAxbAuDkEyPq8OkLbZw.jpg",
         "roles": [
           "actor"
+        ]
+      }
+    ]
+  },
+  "p1341726": {
+    "name": "Mica Levi",
+    "img": "/efQCxwoGL4SsAtX1ePDDv1EbBg8.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt467244",
+        "type": "movie",
+        "title": "Zóna zájmu",
+        "year": 2023,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/nQXpE78DmCzsvtkHI08xDBi4Doq.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "mt539565",
+        "type": "movie",
+        "title": "Zola",
+        "year": 2021,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/bJLCPROp9bmNndurwZpVnOioVpB.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "st90705",
+        "type": "show",
+        "title": "Sekerka",
+        "year": 2020,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/qAafv0Ao1y8C2dLux9BBg6nVuc1.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "mt417466",
+        "type": "movie",
+        "title": "Monos",
+        "year": 2019,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/bkt5H7qH4zwMzBxnQLFR0PByU81.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "mt426254",
+        "type": "movie",
+        "title": "Marjorie Prime",
+        "year": 2017,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/rvTZFjcNvzPFYJnmdrvSrGvqx67.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "mt376866",
+        "type": "movie",
+        "title": "Jackie",
+        "year": 2016,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/nF9N33PfhizMEzbfxHoxXBo2vx9.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "mt97370",
+        "type": "movie",
+        "title": "Pod kůží",
+        "year": 2014,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/55wmcXJIDYITr7JDijJTdvwSaAv.jpg",
+        "roles": [
+          "composer"
         ]
       }
     ]
@@ -334629,6 +334765,38 @@
       }
     ]
   },
+  "p1211739": {
+    "name": "Rachel Hirons",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1339588",
+        "type": "movie",
+        "title": "Finding Emily",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/bfEQ6C702oPsN4kzIiY7n4JsrxF.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "mt525696",
+        "type": "movie",
+        "title": "A Guide to Second Date Sex",
+        "year": 2019,
+        "score": 55,
+        "poster": "https://image.tmdb.org/t/p/w342/1ipvnH9qzMaOtRPOldPVt8B58Ya.jpg",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      }
+    ]
+  },
   "p5119929": {
     "name": "Jaka Dolinar",
     "img": null,
@@ -372109,81 +372277,6 @@
         "year": 2008,
         "score": 75,
         "poster": "https://image.tmdb.org/t/p/w342/nytcKOHE4CF7OlSej4zpIVEbCy7.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p997641": {
-    "name": "Richard Ulfsäter",
-    "img": "/mVhB7jztj07sTV5NgU84qyZXTrW.jpg",
-    "birthday": "1975-09-01",
-    "deathday": null,
-    "age": 51,
-    "works": [
-      {
-        "id": "mt1261188",
-        "type": "movie",
-        "title": "Švédská spojka",
-        "year": 2026,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/wUfdjrCGdXDUWnAzvruLj7BlUUB.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st67394",
-        "type": "show",
-        "title": "Půlnoční slunce",
-        "year": 2016,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/kdGuQNUDIPBNpdeBD2Z1y5mQ3g3.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt93230",
-        "type": "movie",
-        "title": "Nobelova poslední vůle",
-        "year": 2012,
-        "score": 59,
-        "poster": "https://image.tmdb.org/t/p/w342/zt3blt8ykieUIo1DJGJ07vz4D8E.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt118279",
-        "type": "movie",
-        "title": "Případy Anikky Bengtzonové - Studio Sex",
-        "year": 2012,
-        "score": 58,
-        "poster": "https://image.tmdb.org/t/p/w342/9zydSRirEoei3w9a2GRluMnweHB.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt17077",
-        "type": "movie",
-        "title": "Věčné okamžiky Marie Larssonové",
-        "year": 2008,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/l2h8gcdvvk9SUNppEc40ArdHZfL.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt15179",
-        "type": "movie",
-        "title": "Patrik - věk 1,5",
-        "year": 2008,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/i0HCdCDF51tiRvbNWHgrku4ePdI.jpg",
         "roles": [
           "actor"
         ]
@@ -416562,6 +416655,46 @@
       }
     ]
   },
+  "p4072267": {
+    "name": "Johann Karthaus",
+    "img": "/6cPLuDzd0S6cFJZMg28DYiIWNuq.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt467244",
+        "type": "movie",
+        "title": "Zóna zájmu",
+        "year": 2023,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/nQXpE78DmCzsvtkHI08xDBi4Doq.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4094575": {
+    "name": "Derek Groulx",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1016084",
+        "type": "movie",
+        "title": "Fenomén BlackBerry",
+        "year": 2023,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/nQSvHZDuMlrZdm7ooMo8gb4CXhW.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p3170289": {
     "name": "Elisabetta Anella",
     "img": null,
@@ -416576,26 +416709,6 @@
         "year": 2023,
         "score": 73,
         "poster": "https://image.tmdb.org/t/p/w342/Al1yrTMD78aCW9w1DPuRNrxQdxG.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1122958": {
-    "name": "Serhiy Strelnykov",
-    "img": "/hKKzNE6P1FEL4DUXmCpQaPTYfX3.jpg",
-    "birthday": "1979-11-13",
-    "deathday": null,
-    "age": 46,
-    "works": [
-      {
-        "id": "mt815029",
-        "type": "movie",
-        "title": "Dovbuš",
-        "year": 2023,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/cI0AbBDhKLIheGDVazO2gCtT6cx.jpg",
         "roles": [
           "actor"
         ]
@@ -418458,6 +418571,26 @@
       }
     ]
   },
+  "p5845709": {
+    "name": "Peter Düring",
+    "img": "/ij1LhVQHo9vQ2QYy0rTDJqQhJC4.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1295400",
+        "type": "movie",
+        "title": "Poslední Viking",
+        "year": 2025,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/52tvR7dG2IoNbc0p0HrRqWzJUYu.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p6475503": {
     "name": "Abigail Wild",
     "img": null,
@@ -419068,139 +419201,6 @@
         "year": 2026,
         "score": 70,
         "poster": "https://image.tmdb.org/t/p/w342/pBEniJJ9G8cywQfb6lB3QqRqY2i.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p80631": {
-    "name": "Martijn Lakemeier",
-    "img": "/6Iul6fqTjEFzXZW21aailmj8BwN.jpg",
-    "birthday": "1993-09-17",
-    "deathday": null,
-    "age": 33,
-    "works": [
-      {
-        "id": "mt1308767",
-        "type": "movie",
-        "title": "Young Washington",
-        "year": 2026,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/6CdoTKnRQHJkjRGxTefFGkPQplB.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt138686",
-        "type": "movie",
-        "title": "Maratón",
-        "year": 2012,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/mLLrbnqXVf1BVyHs5pvcEn7fNum.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt16564",
-        "type": "movie",
-        "title": "Zima za války",
-        "year": 2008,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/nnKqG14HRkvG2BmIfOcmAH3cEip.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p83898": {
-    "name": "Johan Glans",
-    "img": "/5yJXXfNq62b4QGqAZUYCiFLIasW.jpg",
-    "birthday": "1974-04-09",
-    "deathday": null,
-    "age": 52,
-    "works": [
-      {
-        "id": "mt1261188",
-        "type": "movie",
-        "title": "Švédská spojka",
-        "year": 2026,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/wUfdjrCGdXDUWnAzvruLj7BlUUB.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st67642",
-        "type": "show",
-        "title": "Swedish Dicks",
-        "year": 2016,
-        "score": 68,
-        "poster": "https://image.tmdb.org/t/p/w342/1LDYgRsSjG0qIzenQzUixatZUug.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3964808": {
-    "name": "Lee Da-hye",
-    "img": "/nQ3LnfbV9eyZNnUClfIerdxqOY3.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1268609",
-        "type": "movie",
-        "title": "Pavana",
-        "year": 2026,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/22RlxpIT4u4psfIx9tmtbPvgAbm.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6020312": {
-    "name": "Jung Man-seob",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1268609",
-        "type": "movie",
-        "title": "Pavana",
-        "year": 2026,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/22RlxpIT4u4psfIx9tmtbPvgAbm.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5107829": {
-    "name": "Jo Beom-kyu",
-    "img": "/iK7uCKlraI5UNxuoowWUgaKnuHK.jpg",
-    "birthday": "2003-05-03",
-    "deathday": null,
-    "age": 23,
-    "works": [
-      {
-        "id": "mt1268609",
-        "type": "movie",
-        "title": "Pavana",
-        "year": 2026,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/22RlxpIT4u4psfIx9tmtbPvgAbm.jpg",
         "roles": [
           "actor"
         ]

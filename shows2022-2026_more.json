@@ -544389,5 +544389,64 @@
       }
     ],
     "reviews": []
+  },
+  {
+    "title": "Příhody Brouka Pytlíka a Ferdy Mravence",
+    "country": "Česko",
+    "tmdb_id": 336045,
+    "imdb_id": null,
+    "year": 2026,
+    "date": "2026-09-01",
+    "score": null,
+    "genre": "Animovaný",
+    "runtime_min": null,
+    "runtime_max": null,
+    "poster": "https://image.tmdb.org/t/p/w342/9Mw6TlDzcCAhWKiSiqXj6MwWXJT.jpg",
+    "gallery": [
+      "https://image.tmdb.org/t/p/w500/tlCHZBsbpE9yAn0rt3qsAYi5wfz.jpg"
+    ],
+    "summary": "Nová dobrodružství Ferdy Mravence a jeho horlivého kamaráda Brouka Pytlíka! Seriál večerníčků na motivy oblíbených knih Ondřeje Sekory.",
+    "director": {
+      "id": 223656,
+      "name": "David Súkup",
+      "image": ""
+    },
+    "composer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "writer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "actors": [
+      {
+        "id": 107944,
+        "name": "Jaroslav Plesl",
+        "birthday": "1974-10-20",
+        "deathday": null,
+        "age": 51,
+        "image": "https://image.tmdb.org/t/p/w300/buaPaIQ2XGSZS4xFIlpRccsvIQg.jpg"
+      },
+      {
+        "id": 1494925,
+        "name": "Josef Carda",
+        "birthday": "1956-01-18",
+        "deathday": null,
+        "age": 70,
+        "image": "https://image.tmdb.org/t/p/w300/3miy0KVaNatORONjY0N5MtP75cw.jpg"
+      },
+      {
+        "id": 1280658,
+        "name": "Ivana Korolová",
+        "birthday": "1988-09-17",
+        "deathday": null,
+        "age": 38,
+        "image": "https://image.tmdb.org/t/p/w300/pEe2ZdaPHMT4km7m2SwhZRguRQE.jpg"
+      }
+    ],
+    "reviews": []
   }
 ]

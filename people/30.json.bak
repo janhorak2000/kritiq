@@ -94583,23 +94583,23 @@
         ]
       },
       {
-        "id": "mt1016084",
-        "type": "movie",
-        "title": "Fenomén BlackBerry",
-        "year": 2023,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/nQSvHZDuMlrZdm7ooMo8gb4CXhW.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1062482",
         "type": "movie",
         "title": "Condor's Nest",
         "year": 2023,
         "score": 44,
         "poster": "https://image.tmdb.org/t/p/w342/aBAsCMzsbGlFtQFqeWsKWM6hvOE.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1016084",
+        "type": "movie",
+        "title": "Fenomén BlackBerry",
+        "year": 2023,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/nQSvHZDuMlrZdm7ooMo8gb4CXhW.jpg",
         "roles": [
           "actor"
         ]
@@ -169957,26 +169957,6 @@
       }
     ]
   },
-  "p3603785": {
-    "name": "Meg Schimelpfenig",
-    "img": "/pCFoh39cpYHeD6fZtSehcKsde5.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt988046",
-        "type": "movie",
-        "title": "Ta dívka z fotky",
-        "year": 2022,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/w6dnirDUhvWuHy91QECqGSYmOpa.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p5225361": {
     "name": "Sargis Mikaelyan",
     "img": null,
@@ -170940,6 +170920,46 @@
         "year": 2018,
         "score": 80,
         "poster": "https://image.tmdb.org/t/p/w342/8A8wtHZhrgm94jlAbeq5E8cBiLQ.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2656454": {
+    "name": "Douglas Hurley",
+    "img": "/h2bUlTfk9bG8oxEI6DekoruyLmH.jpg",
+    "birthday": "1966-10-21",
+    "deathday": null,
+    "age": 59,
+    "works": [
+      {
+        "id": "mt950445",
+        "type": "movie",
+        "title": "Návrat do vesmíru",
+        "year": 2022,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/yUN0g7gJwr2JhqNZBYJS2obkxU2.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5047491": {
+    "name": "Vali Jokar",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt889699",
+        "type": "movie",
+        "title": "Svatý pavouk",
+        "year": 2022,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/yXos8VpLUKOXqhrMnUQ9Pp0uZcE.jpg",
         "roles": [
           "actor"
         ]
@@ -217301,190 +217321,115 @@
       }
     ]
   },
-  "p12670": {
-    "name": "Takuya Kimura",
-    "img": "/sswCg8kvFsgSaVJwcIKKe4K7jOe.jpg",
-    "birthday": "1972-11-13",
+  "p983909": {
+    "name": "Kelly Fremon Craig",
+    "img": "/wGOlsiIMd1NC0idrACFweIyLua.jpg",
+    "birthday": null,
     "deathday": null,
-    "age": 53,
+    "age": null,
     "works": [
       {
-        "id": "mt508883",
+        "id": "mt555285",
         "type": "movie",
-        "title": "Chlapec a volavka",
+        "title": "To jsem já, Margaret!",
         "year": 2023,
         "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/4QmyPCQa5uSYjRsxPJvu4XA1ZWJ.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/yb6UB4WC3znlwU0L4AqMnjR9G9S.jpg",
         "roles": [
-          "actor"
+          "director",
+          "writer"
         ]
       },
       {
-        "id": "st211240",
-        "type": "show",
-        "title": "Abysses",
-        "year": 2023,
-        "score": 59,
-        "poster": "https://image.tmdb.org/t/p/w342/55m16l9qP2g2AUUTwfs4vtxsRtQ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt554808",
+        "id": "mt376660",
         "type": "movie",
-        "title": "Masquerade Hotel",
+        "title": "Hořkých sedmnáct",
+        "year": 2016,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/15FykQKiM0aYpC1MuybR43xl8eF.jpg",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      },
+      {
+        "id": "mt25704",
+        "type": "movie",
+        "title": "Absolventka",
+        "year": 2009,
+        "score": 53,
+        "poster": "https://image.tmdb.org/t/p/w342/yM1QcAtEGkzAM3HFznXj8kvjyDk.jpg",
+        "roles": [
+          "writer"
+        ]
+      }
+    ]
+  },
+  "p2770381": {
+    "name": "Naida Nelson",
+    "img": "/eN8q2cBBweA1NZ9e6Dcg9pMvC4i.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt555285",
+        "type": "movie",
+        "title": "To jsem já, Margaret!",
+        "year": 2023,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/yb6UB4WC3znlwU0L4AqMnjR9G9S.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st82883",
+        "type": "show",
+        "title": "Odhalení",
         "year": 2019,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/tZeniiG0nbyOoar1LODpO23EzSr.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt426284",
-        "type": "movie",
-        "title": "無限の住人",
-        "year": 2017,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/dtQDbjjn2VJ6bRnQmst8JtTKHx0.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt31166",
-        "type": "movie",
-        "title": "Přicházím s deštěm",
-        "year": 2009,
-        "score": 54,
-        "poster": "https://image.tmdb.org/t/p/w342/wOJZ3XvHjcGfLBh0GLJU3HhsJKE.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt71883",
-        "type": "movie",
-        "title": "Redline",
-        "year": 2009,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/xjwGQJr4ycbfu7jfhOUDxjyrrmL.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt20527",
-        "type": "movie",
-        "title": "Láska a čest",
-        "year": 2006,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/jIome189e1E9dKSRz99C52VN7By.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt844",
-        "type": "movie",
-        "title": "2046",
-        "year": 2004,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/8isHlc8ZCRN3Eyx0xmAML7FMZvd.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt4935",
-        "type": "movie",
-        "title": "Zámek v oblacích",
-        "year": 2004,
-        "score": 82,
-        "poster": "https://image.tmdb.org/t/p/w342/xUBeB5Ad5fBqfrfeL3buomuKO2u.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st6100",
-        "type": "show",
-        "title": "Dlouhé prázdniny",
-        "year": 1996,
-        "score": 82,
-        "poster": "https://image.tmdb.org/t/p/w342/7PkSuliqZ1QnPU8jBh6puFjyvQ2.jpg",
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/vb1sQLC2MqfCPOFqHd8SyVsyDVB.jpg",
         "roles": [
           "actor"
         ]
       }
     ]
   },
-  "p4547475": {
-    "name": "Carsten Koch",
+  "p4019860": {
+    "name": "Stephen Jackson",
     "img": null,
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "mt467244",
+        "id": "mt555285",
         "type": "movie",
-        "title": "Zóna zájmu",
+        "title": "To jsem já, Margaret!",
         "year": 2023,
         "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/nQXpE78DmCzsvtkHI08xDBi4Doq.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/yb6UB4WC3znlwU0L4AqMnjR9G9S.jpg",
         "roles": [
           "actor"
         ]
       }
     ]
   },
-  "p4547497": {
-    "name": "Dominika Matonóg",
+  "p2755267": {
+    "name": "Cooper Herrett",
     "img": null,
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "mt467244",
+        "id": "mt555285",
         "type": "movie",
-        "title": "Zóna zájmu",
+        "title": "To jsem já, Margaret!",
         "year": 2023,
         "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/nQXpE78DmCzsvtkHI08xDBi4Doq.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3412286": {
-    "name": "Lauren Howe",
-    "img": "/7KEC1NY6RnrKfOfMpdCE62ftEA7.jpg",
-    "birthday": "1993-07-07",
-    "deathday": null,
-    "age": 33,
-    "works": [
-      {
-        "id": "mt1016084",
-        "type": "movie",
-        "title": "Fenomén BlackBerry",
-        "year": 2023,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/nQSvHZDuMlrZdm7ooMo8gb4CXhW.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st108978",
-        "type": "show",
-        "title": "Jack Reacher",
-        "year": 2022,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/uO1topZXzSiKoKfslwV51wSoju4.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/yb6UB4WC3znlwU0L4AqMnjR9G9S.jpg",
         "roles": [
           "actor"
         ]
@@ -270041,6 +269986,92 @@
       }
     ]
   },
+  "p3857731": {
+    "name": "Lee So-i",
+    "img": "/aadsURwBI3eA8v33qmsmXCch2zU.jpg",
+    "birthday": "2000-10-10",
+    "deathday": null,
+    "age": 25,
+    "works": [
+      {
+        "id": "mt1355666",
+        "type": "movie",
+        "title": "Láska bez cuchání",
+        "year": 2025,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/hOi5K1tx8aAZN239VU1qzvyao87.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st218099",
+        "type": "show",
+        "title": "HeartBeat",
+        "year": 2023,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/5pcU26JKPTVBZofYrUmGWmuNhZt.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st136283",
+        "type": "show",
+        "title": "Sláva",
+        "year": 2022,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/lmzoNGgMYpIWSip1euOz17iaUyK.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st211261",
+        "type": "show",
+        "title": "Specialisté Prvního Zásahu",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st108291",
+        "type": "show",
+        "title": "Snowdrop",
+        "year": 2021,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/eJkd9O0VNzPFtjmkb9vEdPwxW23.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st139798",
+        "type": "show",
+        "title": "Peklo pro nezadané",
+        "year": 2021,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/tF3G9yCgmTzcAWx22c7fZZLRURk.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st106651",
+        "type": "show",
+        "title": "Peklo",
+        "year": 2021,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/ofmtOCXZnKUOvgmZdHVqoif8VJX.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p1559974": {
     "name": "Natasha Halevi",
     "img": "/wDHcMDjNexo3cfOUjmruaThhv6H.jpg",
@@ -285990,31 +286021,40 @@
       }
     ]
   },
-  "p3553581": {
-    "name": "Faye Campbell",
+  "p6323161": {
+    "name": "Colby Thomas",
     "img": null,
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "mt1339588",
+        "id": "mt1308767",
         "type": "movie",
-        "title": "Finding Emily",
+        "title": "Young Washington",
         "year": 2026,
         "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/bfEQ6C702oPsN4kzIiY7n4JsrxF.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/6CdoTKnRQHJkjRGxTefFGkPQplB.jpg",
         "roles": [
           "actor"
         ]
-      },
+      }
+    ]
+  },
+  "p6323172": {
+    "name": "Brendan McCarthy",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
       {
-        "id": "st132156",
-        "type": "show",
-        "title": "The Cleaner",
-        "year": 2021,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/zEWFux3hrOjisaehbDUBvzeSJ4o.jpg",
+        "id": "mt1308767",
+        "type": "movie",
+        "title": "Young Washington",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/6CdoTKnRQHJkjRGxTefFGkPQplB.jpg",
         "roles": [
           "actor"
         ]
@@ -317872,6 +317912,125 @@
         "year": 2017,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/8k4lJ4e0hvDQtKpItXmmPdw69sO.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p12670": {
+    "name": "Takuya Kimura",
+    "img": "/sswCg8kvFsgSaVJwcIKKe4K7jOe.jpg",
+    "birthday": "1972-11-13",
+    "deathday": null,
+    "age": 53,
+    "works": [
+      {
+        "id": "mt508883",
+        "type": "movie",
+        "title": "Chlapec a volavka",
+        "year": 2023,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/4QmyPCQa5uSYjRsxPJvu4XA1ZWJ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st211240",
+        "type": "show",
+        "title": "Abysses",
+        "year": 2023,
+        "score": 59,
+        "poster": "https://image.tmdb.org/t/p/w342/55m16l9qP2g2AUUTwfs4vtxsRtQ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt554808",
+        "type": "movie",
+        "title": "Masquerade Hotel",
+        "year": 2019,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/tZeniiG0nbyOoar1LODpO23EzSr.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt426284",
+        "type": "movie",
+        "title": "無限の住人",
+        "year": 2017,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/dtQDbjjn2VJ6bRnQmst8JtTKHx0.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt31166",
+        "type": "movie",
+        "title": "Přicházím s deštěm",
+        "year": 2009,
+        "score": 54,
+        "poster": "https://image.tmdb.org/t/p/w342/wOJZ3XvHjcGfLBh0GLJU3HhsJKE.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt71883",
+        "type": "movie",
+        "title": "Redline",
+        "year": 2009,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/xjwGQJr4ycbfu7jfhOUDxjyrrmL.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt20527",
+        "type": "movie",
+        "title": "Láska a čest",
+        "year": 2006,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/jIome189e1E9dKSRz99C52VN7By.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt844",
+        "type": "movie",
+        "title": "2046",
+        "year": 2004,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/8isHlc8ZCRN3Eyx0xmAML7FMZvd.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt4935",
+        "type": "movie",
+        "title": "Zámek v oblacích",
+        "year": 2004,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/xUBeB5Ad5fBqfrfeL3buomuKO2u.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st6100",
+        "type": "show",
+        "title": "Dlouhé prázdniny",
+        "year": 1996,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/7PkSuliqZ1QnPU8jBh6puFjyvQ2.jpg",
         "roles": [
           "actor"
         ]
@@ -450615,40 +450774,20 @@
       }
     ]
   },
-  "p2656454": {
-    "name": "Douglas Hurley",
-    "img": "/h2bUlTfk9bG8oxEI6DekoruyLmH.jpg",
-    "birthday": "1966-10-21",
-    "deathday": null,
-    "age": 59,
-    "works": [
-      {
-        "id": "mt950445",
-        "type": "movie",
-        "title": "Návrat do vesmíru",
-        "year": 2022,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/yUN0g7gJwr2JhqNZBYJS2obkxU2.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5047491": {
-    "name": "Vali Jokar",
-    "img": null,
+  "p3603785": {
+    "name": "Meg Schimelpfenig",
+    "img": "/pCFoh39cpYHeD6fZtSehcKsde5.jpg",
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "mt889699",
+        "id": "mt988046",
         "type": "movie",
-        "title": "Svatý pavouk",
+        "title": "Ta dívka z fotky",
         "year": 2022,
         "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/yXos8VpLUKOXqhrMnUQ9Pp0uZcE.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/w6dnirDUhvWuHy91QECqGSYmOpa.jpg",
         "roles": [
           "actor"
         ]
@@ -451418,6 +451557,77 @@
       }
     ]
   },
+  "p4547475": {
+    "name": "Carsten Koch",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt467244",
+        "type": "movie",
+        "title": "Zóna zájmu",
+        "year": 2023,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/nQXpE78DmCzsvtkHI08xDBi4Doq.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4547497": {
+    "name": "Dominika Matonóg",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt467244",
+        "type": "movie",
+        "title": "Zóna zájmu",
+        "year": 2023,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/nQXpE78DmCzsvtkHI08xDBi4Doq.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3412286": {
+    "name": "Lauren Howe",
+    "img": "/7KEC1NY6RnrKfOfMpdCE62ftEA7.jpg",
+    "birthday": "1993-07-07",
+    "deathday": null,
+    "age": 33,
+    "works": [
+      {
+        "id": "mt1016084",
+        "type": "movie",
+        "title": "Fenomén BlackBerry",
+        "year": 2023,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/nQSvHZDuMlrZdm7ooMo8gb4CXhW.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st108978",
+        "type": "show",
+        "title": "Jack Reacher",
+        "year": 2022,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/uO1topZXzSiKoKfslwV51wSoju4.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p4653130": {
     "name": "Andrea Pettirossi",
     "img": null,
@@ -451432,121 +451642,6 @@
         "year": 2023,
         "score": 73,
         "poster": "https://image.tmdb.org/t/p/w342/Al1yrTMD78aCW9w1DPuRNrxQdxG.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p983909": {
-    "name": "Kelly Fremon Craig",
-    "img": "/wGOlsiIMd1NC0idrACFweIyLua.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt555285",
-        "type": "movie",
-        "title": "To jsem já, Margaret!",
-        "year": 2023,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/yb6UB4WC3znlwU0L4AqMnjR9G9S.jpg",
-        "roles": [
-          "director",
-          "writer"
-        ]
-      },
-      {
-        "id": "mt376660",
-        "type": "movie",
-        "title": "Hořkých sedmnáct",
-        "year": 2016,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/15FykQKiM0aYpC1MuybR43xl8eF.jpg",
-        "roles": [
-          "director",
-          "writer"
-        ]
-      },
-      {
-        "id": "mt25704",
-        "type": "movie",
-        "title": "Absolventka",
-        "year": 2009,
-        "score": 53,
-        "poster": "https://image.tmdb.org/t/p/w342/yM1QcAtEGkzAM3HFznXj8kvjyDk.jpg",
-        "roles": [
-          "writer"
-        ]
-      }
-    ]
-  },
-  "p2770381": {
-    "name": "Naida Nelson",
-    "img": "/eN8q2cBBweA1NZ9e6Dcg9pMvC4i.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt555285",
-        "type": "movie",
-        "title": "To jsem já, Margaret!",
-        "year": 2023,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/yb6UB4WC3znlwU0L4AqMnjR9G9S.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st82883",
-        "type": "show",
-        "title": "Odhalení",
-        "year": 2019,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/vb1sQLC2MqfCPOFqHd8SyVsyDVB.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4019860": {
-    "name": "Stephen Jackson",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt555285",
-        "type": "movie",
-        "title": "To jsem já, Margaret!",
-        "year": 2023,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/yb6UB4WC3znlwU0L4AqMnjR9G9S.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2755267": {
-    "name": "Cooper Herrett",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt555285",
-        "type": "movie",
-        "title": "To jsem já, Margaret!",
-        "year": 2023,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/yb6UB4WC3znlwU0L4AqMnjR9G9S.jpg",
         "roles": [
           "actor"
         ]
@@ -453457,92 +453552,6 @@
       }
     ]
   },
-  "p3857731": {
-    "name": "Lee So-i",
-    "img": "/aadsURwBI3eA8v33qmsmXCch2zU.jpg",
-    "birthday": "2000-10-10",
-    "deathday": null,
-    "age": 25,
-    "works": [
-      {
-        "id": "mt1355666",
-        "type": "movie",
-        "title": "Láska bez cuchání",
-        "year": 2025,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/hOi5K1tx8aAZN239VU1qzvyao87.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st218099",
-        "type": "show",
-        "title": "HeartBeat",
-        "year": 2023,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/5pcU26JKPTVBZofYrUmGWmuNhZt.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st136283",
-        "type": "show",
-        "title": "Sláva",
-        "year": 2022,
-        "score": 82,
-        "poster": "https://image.tmdb.org/t/p/w342/lmzoNGgMYpIWSip1euOz17iaUyK.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st211261",
-        "type": "show",
-        "title": "Specialisté Prvního Zásahu",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st108291",
-        "type": "show",
-        "title": "Snowdrop",
-        "year": 2021,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/eJkd9O0VNzPFtjmkb9vEdPwxW23.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st139798",
-        "type": "show",
-        "title": "Peklo pro nezadané",
-        "year": 2021,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/tF3G9yCgmTzcAWx22c7fZZLRURk.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st106651",
-        "type": "show",
-        "title": "Peklo",
-        "year": 2021,
-        "score": 66,
-        "poster": "https://image.tmdb.org/t/p/w342/ofmtOCXZnKUOvgmZdHVqoif8VJX.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p2018201": {
     "name": "Damien de Froberville",
     "img": "/vwlptE197B8BI8jKXc2Y9lQB4lQ.jpg",
@@ -454155,40 +454164,31 @@
       }
     ]
   },
-  "p6323161": {
-    "name": "Colby Thomas",
+  "p3553581": {
+    "name": "Faye Campbell",
     "img": null,
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "mt1308767",
+        "id": "mt1339588",
         "type": "movie",
-        "title": "Young Washington",
+        "title": "Finding Emily",
         "year": 2026,
         "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/6CdoTKnRQHJkjRGxTefFGkPQplB.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/bfEQ6C702oPsN4kzIiY7n4JsrxF.jpg",
         "roles": [
           "actor"
         ]
-      }
-    ]
-  },
-  "p6323172": {
-    "name": "Brendan McCarthy",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
+      },
       {
-        "id": "mt1308767",
-        "type": "movie",
-        "title": "Young Washington",
-        "year": 2026,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/6CdoTKnRQHJkjRGxTefFGkPQplB.jpg",
+        "id": "st132156",
+        "type": "show",
+        "title": "The Cleaner",
+        "year": 2021,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/zEWFux3hrOjisaehbDUBvzeSJ4o.jpg",
         "roles": [
           "actor"
         ]
