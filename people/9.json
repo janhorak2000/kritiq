@@ -112149,23 +112149,23 @@
     "age": 74,
     "works": [
       {
-        "id": "mt1024621",
-        "type": "movie",
-        "title": "Říkejte mi Čihiro",
-        "year": 2023,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/aF0CmJl2rP7MvKxgNzKdKOk03rJ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt508883",
         "type": "movie",
         "title": "Chlapec a volavka",
         "year": 2023,
         "score": 73,
         "poster": "https://image.tmdb.org/t/p/w342/4QmyPCQa5uSYjRsxPJvu4XA1ZWJ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1024621",
+        "type": "movie",
+        "title": "Říkejte mi Čihiro",
+        "year": 2023,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/aF0CmJl2rP7MvKxgNzKdKOk03rJ.jpg",
         "roles": [
           "actor"
         ]
@@ -226366,154 +226366,6 @@
       }
     ]
   },
-  "p1457509": {
-    "name": "Charles Allen",
-    "img": "/gVPFtWlef1tgT78t03MYMXXkB6J.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt969492",
-        "type": "movie",
-        "title": "V nepřátelské zóně",
-        "year": 2024,
-        "score": 66,
-        "poster": "https://image.tmdb.org/t/p/w342/dTQnehecHwOcvNqR3NgWsMKkRz3.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt614934",
-        "type": "movie",
-        "title": "Elvis",
-        "year": 2022,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/qBOKWqAFbveZ4ryjJJwbie6tXkQ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt800939",
-        "type": "movie",
-        "title": "Vstupenka do ráje",
-        "year": 2022,
-        "score": 61,
-        "poster": "https://image.tmdb.org/t/p/w342/eg3TMnqViyw4uKc45KZSplXzBoH.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt934761",
-        "type": "movie",
-        "title": "Dokonalá souhra",
-        "year": 2022,
-        "score": 61,
-        "poster": "https://image.tmdb.org/t/p/w342/h65lLhYEfRGOWVZzwX9n7vYOixf.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt696822",
-        "type": "movie",
-        "title": "Bloody Hell",
-        "year": 2020,
-        "score": 66,
-        "poster": "https://image.tmdb.org/t/p/w342/73I98oHHWEaAmp6UwTdE3tJkHCq.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt399363",
-        "type": "movie",
-        "title": "Wendy",
-        "year": 2020,
-        "score": 57,
-        "poster": "https://image.tmdb.org/t/p/w342/nphsStbtAuJ2IaXtCvDXDwMUF5N.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st88561",
-        "type": "show",
-        "title": "Reef Break",
-        "year": 2019,
-        "score": 60,
-        "poster": "https://image.tmdb.org/t/p/w342/oZkIUk12jijhkqLI6fXWeLkTG1C.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2100558": {
-    "name": "Miranda Frangou",
-    "img": "/bUPhhsz9p45nwdU8KeB652Epo9e.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt614934",
-        "type": "movie",
-        "title": "Elvis",
-        "year": 2022,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/qBOKWqAFbveZ4ryjJJwbie6tXkQ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st130578",
-        "type": "show",
-        "title": "Dusno",
-        "year": 2022,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/oH4JPLdxSdz0xGKEQSuDHHUWFEq.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt341287",
-        "type": "movie",
-        "title": "Breath",
-        "year": 2017,
-        "score": 67,
-        "poster": "https://image.tmdb.org/t/p/w342/1YaHbvNyo8LB37S2P3Z5lvAV8X2.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3160320": {
-    "name": "Fran Fraschilla",
-    "img": "/dGvtv4amzi1A5RKDgabL7QYSvMl.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt705861",
-        "type": "movie",
-        "title": "Životní trefa",
-        "year": 2022,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/m60IEDnuxa2WEj192r8ir1kDlhf.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p207442": {
     "name": "Tom Pelphrey",
     "img": "/eRmK7HvM5FK1Czx9oQspRERbf0o.jpg",
@@ -227045,6 +226897,79 @@
         "year": 2022,
         "score": 73,
         "poster": "https://image.tmdb.org/t/p/w342/w6dnirDUhvWuHy91QECqGSYmOpa.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2294554": {
+    "name": "Ída Mekkín Hlynsdóttir",
+    "img": "/6M8Ozk9o2aTjGLyxjMUCkEBlLIf.jpg",
+    "birthday": "2008-08-22",
+    "deathday": null,
+    "age": 18,
+    "works": [
+      {
+        "id": "mt1258509",
+        "type": "movie",
+        "title": "Co nám zbylo z lásky",
+        "year": 2025,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/j2m7Vqy3kmhH94BZg6fLl9pmOcN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt928747",
+        "type": "movie",
+        "title": "Hnízdečko",
+        "year": 2022,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/7yOuTddGIINNwL7fciq2naTrpzs.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt960206",
+        "type": "movie",
+        "title": "Zapomenutá země",
+        "year": 2022,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/u37ClY7KDyDaw59eJQRK4J180cq.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt596870",
+        "type": "movie",
+        "title": "Bílý bílý den",
+        "year": 2019,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/syjSrvuTEjCu9OZVkqFYPM73sLf.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2010237": {
+    "name": "Lernik Harutyunyan",
+    "img": null,
+    "birthday": "1981-05-16",
+    "deathday": null,
+    "age": 45,
+    "works": [
+      {
+        "id": "mt998757",
+        "type": "movie",
+        "title": "Amerikán",
+        "year": 2022,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/jwgg2CxQCDP7PGEopqCTcmtUo9z.jpg",
         "roles": [
           "actor"
         ]
@@ -229262,59 +229187,6 @@
         "year": 2022,
         "score": 71,
         "poster": "https://image.tmdb.org/t/p/w342/bFTgfsw4cnNjIZZ2r6P363X2Uk3.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2294554": {
-    "name": "Ída Mekkín Hlynsdóttir",
-    "img": "/6M8Ozk9o2aTjGLyxjMUCkEBlLIf.jpg",
-    "birthday": "2008-08-22",
-    "deathday": null,
-    "age": 18,
-    "works": [
-      {
-        "id": "mt1258509",
-        "type": "movie",
-        "title": "Co nám zbylo z lásky",
-        "year": 2025,
-        "score": 68,
-        "poster": "https://image.tmdb.org/t/p/w342/j2m7Vqy3kmhH94BZg6fLl9pmOcN.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt960206",
-        "type": "movie",
-        "title": "Zapomenutá země",
-        "year": 2022,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/u37ClY7KDyDaw59eJQRK4J180cq.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt928747",
-        "type": "movie",
-        "title": "Hnízdečko",
-        "year": 2022,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/7yOuTddGIINNwL7fciq2naTrpzs.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt596870",
-        "type": "movie",
-        "title": "Bílý bílý den",
-        "year": 2019,
-        "score": 66,
-        "poster": "https://image.tmdb.org/t/p/w342/syjSrvuTEjCu9OZVkqFYPM73sLf.jpg",
         "roles": [
           "actor"
         ]
@@ -235079,23 +234951,23 @@
     "age": 50,
     "works": [
       {
-        "id": "mt1268127",
-        "type": "movie",
-        "title": "Humint",
-        "year": 2026,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/f7sCSLEPRfV2fWQ0RYOtHhnHXuG.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1268609",
         "type": "movie",
         "title": "Pavana",
         "year": 2026,
         "score": 69,
         "poster": "https://image.tmdb.org/t/p/w342/22RlxpIT4u4psfIx9tmtbPvgAbm.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1268127",
+        "type": "movie",
+        "title": "Humint",
+        "year": 2026,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/f7sCSLEPRfV2fWQ0RYOtHhnHXuG.jpg",
         "roles": [
           "actor"
         ]
@@ -248778,6 +248650,92 @@
         "year": 2013,
         "score": 37,
         "poster": "https://image.tmdb.org/t/p/w342/baRGOduYxFF7bub87KpmU2Xwzwb.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1457509": {
+    "name": "Charles Allen",
+    "img": "/gVPFtWlef1tgT78t03MYMXXkB6J.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt969492",
+        "type": "movie",
+        "title": "V nepřátelské zóně",
+        "year": 2024,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/dTQnehecHwOcvNqR3NgWsMKkRz3.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt800939",
+        "type": "movie",
+        "title": "Vstupenka do ráje",
+        "year": 2022,
+        "score": 61,
+        "poster": "https://image.tmdb.org/t/p/w342/eg3TMnqViyw4uKc45KZSplXzBoH.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt934761",
+        "type": "movie",
+        "title": "Dokonalá souhra",
+        "year": 2022,
+        "score": 61,
+        "poster": "https://image.tmdb.org/t/p/w342/h65lLhYEfRGOWVZzwX9n7vYOixf.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt614934",
+        "type": "movie",
+        "title": "Elvis",
+        "year": 2022,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/qBOKWqAFbveZ4ryjJJwbie6tXkQ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt696822",
+        "type": "movie",
+        "title": "Bloody Hell",
+        "year": 2020,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/73I98oHHWEaAmp6UwTdE3tJkHCq.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt399363",
+        "type": "movie",
+        "title": "Wendy",
+        "year": 2020,
+        "score": 57,
+        "poster": "https://image.tmdb.org/t/p/w342/nphsStbtAuJ2IaXtCvDXDwMUF5N.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st88561",
+        "type": "show",
+        "title": "Reef Break",
+        "year": 2019,
+        "score": 60,
+        "poster": "https://image.tmdb.org/t/p/w342/oZkIUk12jijhkqLI6fXWeLkTG1C.jpg",
         "roles": [
           "actor"
         ]
@@ -272704,594 +272662,20 @@
       }
     ]
   },
-  "p4452138": {
-    "name": "Luis Noah Witte",
-    "img": "/tlDRCi6I4MGAB09UQH9AC9FD1Cn.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt467244",
-        "type": "movie",
-        "title": "Zóna zájmu",
-        "year": 2023,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/nQXpE78DmCzsvtkHI08xDBi4Doq.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4386457": {
-    "name": "Julia Polaczek",
+  "p3060220": {
+    "name": "Ivan Zhyrun",
     "img": null,
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "mt467244",
+        "id": "mt815029",
         "type": "movie",
-        "title": "Zóna zájmu",
+        "title": "Dovbuš",
         "year": 2023,
         "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/nQXpE78DmCzsvtkHI08xDBi4Doq.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p449": {
-    "name": "Jay Baruchel",
-    "img": "/1GYJeQzPcY9Pfmc3FFsBwClkCv7.jpg",
-    "birthday": "1982-04-09",
-    "deathday": null,
-    "age": 44,
-    "works": [
-      {
-        "id": "mt1177767",
-        "type": "movie",
-        "title": "Mile End Kicks",
-        "year": 2026,
-        "score": 61,
-        "poster": "https://image.tmdb.org/t/p/w342/qq3Q1tsxAxMqP38YTZKl8m5zmA4.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt914215",
-        "type": "movie",
-        "title": "Humane",
-        "year": 2024,
-        "score": 55,
-        "poster": "https://image.tmdb.org/t/p/w342/9yaD6w3wxT0YZJt297bE7fzFnL5.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1016084",
-        "type": "movie",
-        "title": "Fenomén BlackBerry",
-        "year": 2023,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/nQSvHZDuMlrZdm7ooMo8gb4CXhW.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st221300",
-        "type": "show",
-        "title": "FUBAR",
-        "year": 2023,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/6fM34tcGFp3A0csyxJJomknZB4b.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt166428",
-        "type": "movie",
-        "title": "Jak vycvičit draka 3",
-        "year": 2019,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/yYJy9LtmfG32tPM1SrUws37C1Ek.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt520390",
-        "type": "movie",
-        "title": "Průvodce přežití v New Yorku",
-        "year": 2019,
-        "score": 66,
-        "poster": "https://image.tmdb.org/t/p/w342/9E9CB9YdhBl2q9tMqqXfKgf9hyP.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt582049",
-        "type": "movie",
-        "title": "Random Acts of Violence",
-        "year": 2019,
-        "score": 52,
-        "poster": "https://image.tmdb.org/t/p/w342/4eMWV14tUE10mnveNWhdwIsD4lg.jpg",
-        "roles": [
-          "actor",
-          "director"
-        ]
-      },
-      {
-        "id": "mt336890",
-        "type": "movie",
-        "title": "Goon: Last of the Enforcers",
-        "year": 2017,
-        "score": 58,
-        "poster": "https://image.tmdb.org/t/p/w342/mVpqXYZ3X1YYnVQ7aj8jEm88vHS.jpg",
-        "roles": [
-          "actor",
-          "director",
-          "writer"
-        ]
-      },
-      {
-        "id": "st65798",
-        "type": "show",
-        "title": "Letterkenny",
-        "year": 2016,
-        "score": 85,
-        "poster": "https://image.tmdb.org/t/p/w342/zrB0Viy72GYKiLrtSs7SQVz5QWl.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st61871",
-        "type": "show",
-        "title": "Muž hledá ženu",
-        "year": 2015,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/wXsJOBQm8zuYe89iItzIOeA0YTX.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st78173",
-        "type": "show",
-        "title": "Jak vycvičit draky: Závod na hřeben",
-        "year": 2015,
-        "score": 82,
-        "poster": "https://image.tmdb.org/t/p/w342/y5sNfaTvWR3ObILyf9uV6deAcKT.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt82702",
-        "type": "movie",
-        "title": "Jak vycvičit draka 2",
-        "year": 2014,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/g3sbtj3jJ0a6g5p4Gs8Dk0N7JS8.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt97020",
-        "type": "movie",
-        "title": "RoboCop",
-        "year": 2014,
-        "score": 61,
-        "poster": "https://image.tmdb.org/t/p/w342/gM5ql3BKYmHG3WtZ0buKXN7xY8O.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt109414",
-        "type": "movie",
-        "title": "Apokalypsa v Hollywoodu",
-        "year": 2013,
-        "score": 66,
-        "poster": "https://image.tmdb.org/t/p/w342/1S852rQ3zEbbrnSHkYICQcVFcbn.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt209247",
-        "type": "movie",
-        "title": "Loupež na úrovni",
-        "year": 2013,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/4R6ojBfyO8fj3WszLE9rog5qR4W.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt74387",
-        "type": "movie",
-        "title": "Ranař",
-        "year": 2012,
-        "score": 68,
-        "poster": "https://image.tmdb.org/t/p/w342/WBptU7FLhyXySrHkCuy6NpuBiK.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt49014",
-        "type": "movie",
-        "title": "Cosmopolis",
-        "year": 2012,
-        "score": 51,
-        "poster": "https://image.tmdb.org/t/p/w342/kXoaAmh0kkcAqW0ikafWEvqVezJ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st44305",
-        "type": "show",
-        "title": "Jak vycvičit draky",
-        "year": 2012,
-        "score": 79,
-        "poster": "https://image.tmdb.org/t/p/w342/gFhBIF8oXjpdVk1NbI4kP4l8LAe.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt64320",
-        "type": "movie",
-        "title": "Good Neighbours",
-        "year": 2011,
-        "score": 58,
-        "poster": "https://image.tmdb.org/t/p/w342/1i2YBTnZyC71TuJXq4RQWPGSbvv.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt10191",
-        "type": "movie",
-        "title": "Jak vycvičit draka",
-        "year": 2010,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/4NZde94xSeiTACur550cBYcv7tx.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt46584",
-        "type": "movie",
-        "title": "The Trotsky",
-        "year": 2010,
-        "score": 67,
-        "poster": "https://image.tmdb.org/t/p/w342/dSZRDk2xpVdf0BHVqKnSeVUIxLH.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt34016",
-        "type": "movie",
-        "title": "Na tuhle nemám",
-        "year": 2010,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/mpYHjyPX0DAxbsnWKmSK5jZ1s4T.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt27022",
-        "type": "movie",
-        "title": "Čarodějův učeň",
-        "year": 2010,
-        "score": 61,
-        "poster": "https://image.tmdb.org/t/p/w342/u3ViKaDknp95fwiAo7Ef1JygPSO.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt13532",
-        "type": "movie",
-        "title": "Fanoušci",
-        "year": 2009,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/fitksX4J3xfBjT38YgDUXOlBkHk.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt18360",
-        "type": "movie",
-        "title": "Noc v muzeu 2",
-        "year": 2009,
-        "score": 60,
-        "poster": "https://image.tmdb.org/t/p/w342/gOuuke2ymtyBJjQVgubh5PjfWa4.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt7446",
-        "type": "movie",
-        "title": "Tropická bouře",
-        "year": 2008,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/b1ReInRjwUWBswqLQaQvUPdPU6E.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt12182",
-        "type": "movie",
-        "title": "Rande na jednu noc",
-        "year": 2008,
-        "score": 66,
-        "poster": "https://image.tmdb.org/t/p/w342/cndxWgZEHnSUtytrMjal97ye34E.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt4964",
-        "type": "movie",
-        "title": "Zbouchnutá",
-        "year": 2007,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/i51g4D0JBNOtebIfLXdIRXQlwbQ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt15182",
-        "type": "movie",
-        "title": "Just Buried",
-        "year": 2007,
-        "score": 60,
-        "poster": "https://image.tmdb.org/t/p/w342/1gLnBaOGMaTVP7EumjWs9IBqeV7.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt41044",
-        "type": "movie",
-        "title": "Tady Reed Fish",
-        "year": 2007,
-        "score": 56,
-        "poster": "https://image.tmdb.org/t/p/w342/uAKVpiAKzqwfkqZgckoI1mGcrmT.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt46729",
-        "type": "movie",
-        "title": "Fetching Cody",
-        "year": 2005,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/p7vuoA0vIldc9t48CRwougpidoj.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st578",
-        "type": "show",
-        "title": "Vražedná čísla",
-        "year": 2005,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/pvfPbs4lhi5kO0Ay1atac1iSG4.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt70",
-        "type": "movie",
-        "title": "Million Dollar Baby",
-        "year": 2004,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/jcfEqKdWF1zeyvECPqp3mkWLct2.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt45877",
-        "type": "movie",
-        "title": "Nemesis",
-        "year": 2003,
-        "score": 53,
-        "poster": "https://image.tmdb.org/t/p/w342/6CwK46VeembPAiT6IdF2Z2BjNbG.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1809",
-        "type": "movie",
-        "title": "Pravidla vášně",
-        "year": 2002,
-        "score": 66,
-        "poster": "https://image.tmdb.org/t/p/w342/6OybelUmwUkDm7fbX1BI7OhpYeQ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st3948",
-        "type": "show",
-        "title": "Kolej, základ života",
-        "year": 2001,
-        "score": 79,
-        "poster": "https://image.tmdb.org/t/p/w342/cCCy0WYZvMxoz3LC2kyHX4Vy6eT.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt786",
-        "type": "movie",
-        "title": "Na pokraji slávy",
-        "year": 2000,
-        "score": 79,
-        "poster": "https://image.tmdb.org/t/p/w342/ftqzQiSyzBfNr2hoUkMjzxRgji4.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st7237",
-        "type": "show",
-        "title": "Čarodějnice školou povinné",
-        "year": 1998,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/aywA417wTmoOtWUe4FxmNVZ3HTy.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st2913",
-        "type": "show",
-        "title": "Bojíte se tmy?",
-        "year": 1992,
-        "score": 82,
-        "poster": "https://image.tmdb.org/t/p/w342/2HA7bHYyWgQ0CeEq2mVepY30I7j.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1571304": {
-    "name": "Conor Casey",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1016084",
-        "type": "movie",
-        "title": "Fenomén BlackBerry",
-        "year": 2023,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/nQSvHZDuMlrZdm7ooMo8gb4CXhW.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2161399": {
-    "name": "Piero Crucitti",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt837335",
-        "type": "movie",
-        "title": "Chiméra",
-        "year": 2023,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/Al1yrTMD78aCW9w1DPuRNrxQdxG.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2046229": {
-    "name": "Luke Chikovani",
-    "img": "/9i3Ixe0tXIw5GhxPGaXwI2WMbYk.jpg",
-    "birthday": "1994-04-12",
-    "deathday": null,
-    "age": 32,
-    "works": [
-      {
-        "id": "mt837335",
-        "type": "movie",
-        "title": "Chiméra",
-        "year": 2023,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/Al1yrTMD78aCW9w1DPuRNrxQdxG.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1047016",
-        "type": "movie",
-        "title": "Velitel ponorky",
-        "year": 2023,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/miXmz8at1jJo1G0I8wKpBeyN8Nw.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt481432",
-        "type": "movie",
-        "title": "Šťastný Lazzaro",
-        "year": 2018,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/b4XwXDuMtUCFECdrkkn5Zk29bNq.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1524906": {
-    "name": "Maria Alexandra Lungu",
-    "img": "/vOW6jKgCguW1oz9HUJlPGOyMt6v.jpg",
-    "birthday": "2000-01-01",
-    "deathday": null,
-    "age": 26,
-    "works": [
-      {
-        "id": "mt837335",
-        "type": "movie",
-        "title": "Chiméra",
-        "year": 2023,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/Al1yrTMD78aCW9w1DPuRNrxQdxG.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt833408",
-        "type": "movie",
-        "title": "Král krabů",
-        "year": 2021,
-        "score": 67,
-        "poster": "https://image.tmdb.org/t/p/w342/47KDAXd0gNBc2t617QIJSP8HefJ.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/cI0AbBDhKLIheGDVazO2gCtT6cx.jpg",
         "roles": [
           "actor"
         ]
@@ -276769,6 +276153,17 @@
     "deathday": null,
     "age": 26,
     "works": [
+      {
+        "id": "mt445466",
+        "type": "movie",
+        "title": "Idiots",
+        "year": 2026,
+        "score": 61,
+        "poster": "https://image.tmdb.org/t/p/w342/flpCqxH46pGZD1kNOdYgrVsDoTm.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt1287814",
         "type": "movie",
@@ -281274,6 +280669,48 @@
         "year": 2023,
         "score": 65,
         "poster": "https://image.tmdb.org/t/p/w342/2UioqCCiiIR2pPVFC3YZxiSEOp5.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2046229": {
+    "name": "Luke Chikovani",
+    "img": "/9i3Ixe0tXIw5GhxPGaXwI2WMbYk.jpg",
+    "birthday": "1994-04-12",
+    "deathday": null,
+    "age": 32,
+    "works": [
+      {
+        "id": "mt1047016",
+        "type": "movie",
+        "title": "Velitel ponorky",
+        "year": 2023,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/miXmz8at1jJo1G0I8wKpBeyN8Nw.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt837335",
+        "type": "movie",
+        "title": "Chiméra",
+        "year": 2023,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/Al1yrTMD78aCW9w1DPuRNrxQdxG.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt481432",
+        "type": "movie",
+        "title": "Šťastný Lazzaro",
+        "year": 2018,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/b4XwXDuMtUCFECdrkkn5Zk29bNq.jpg",
         "roles": [
           "actor"
         ]
@@ -320573,6 +320010,447 @@
       }
     ]
   },
+  "p449": {
+    "name": "Jay Baruchel",
+    "img": "/1GYJeQzPcY9Pfmc3FFsBwClkCv7.jpg",
+    "birthday": "1982-04-09",
+    "deathday": null,
+    "age": 44,
+    "works": [
+      {
+        "id": "mt1177767",
+        "type": "movie",
+        "title": "Mile End Kicks",
+        "year": 2026,
+        "score": 61,
+        "poster": "https://image.tmdb.org/t/p/w342/qq3Q1tsxAxMqP38YTZKl8m5zmA4.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt914215",
+        "type": "movie",
+        "title": "Humane",
+        "year": 2024,
+        "score": 55,
+        "poster": "https://image.tmdb.org/t/p/w342/9yaD6w3wxT0YZJt297bE7fzFnL5.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1016084",
+        "type": "movie",
+        "title": "Fenomén BlackBerry",
+        "year": 2023,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/nQSvHZDuMlrZdm7ooMo8gb4CXhW.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st221300",
+        "type": "show",
+        "title": "FUBAR",
+        "year": 2023,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/6fM34tcGFp3A0csyxJJomknZB4b.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt166428",
+        "type": "movie",
+        "title": "Jak vycvičit draka 3",
+        "year": 2019,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/yYJy9LtmfG32tPM1SrUws37C1Ek.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt520390",
+        "type": "movie",
+        "title": "Průvodce přežití v New Yorku",
+        "year": 2019,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/9E9CB9YdhBl2q9tMqqXfKgf9hyP.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt582049",
+        "type": "movie",
+        "title": "Random Acts of Violence",
+        "year": 2019,
+        "score": 52,
+        "poster": "https://image.tmdb.org/t/p/w342/4eMWV14tUE10mnveNWhdwIsD4lg.jpg",
+        "roles": [
+          "actor",
+          "director"
+        ]
+      },
+      {
+        "id": "mt336890",
+        "type": "movie",
+        "title": "Goon: Last of the Enforcers",
+        "year": 2017,
+        "score": 58,
+        "poster": "https://image.tmdb.org/t/p/w342/mVpqXYZ3X1YYnVQ7aj8jEm88vHS.jpg",
+        "roles": [
+          "actor",
+          "director",
+          "writer"
+        ]
+      },
+      {
+        "id": "st65798",
+        "type": "show",
+        "title": "Letterkenny",
+        "year": 2016,
+        "score": 85,
+        "poster": "https://image.tmdb.org/t/p/w342/zrB0Viy72GYKiLrtSs7SQVz5QWl.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st61871",
+        "type": "show",
+        "title": "Muž hledá ženu",
+        "year": 2015,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/wXsJOBQm8zuYe89iItzIOeA0YTX.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st78173",
+        "type": "show",
+        "title": "Jak vycvičit draky: Závod na hřeben",
+        "year": 2015,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/y5sNfaTvWR3ObILyf9uV6deAcKT.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt82702",
+        "type": "movie",
+        "title": "Jak vycvičit draka 2",
+        "year": 2014,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/g3sbtj3jJ0a6g5p4Gs8Dk0N7JS8.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt97020",
+        "type": "movie",
+        "title": "RoboCop",
+        "year": 2014,
+        "score": 61,
+        "poster": "https://image.tmdb.org/t/p/w342/gM5ql3BKYmHG3WtZ0buKXN7xY8O.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt109414",
+        "type": "movie",
+        "title": "Apokalypsa v Hollywoodu",
+        "year": 2013,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/1S852rQ3zEbbrnSHkYICQcVFcbn.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt209247",
+        "type": "movie",
+        "title": "Loupež na úrovni",
+        "year": 2013,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/4R6ojBfyO8fj3WszLE9rog5qR4W.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt74387",
+        "type": "movie",
+        "title": "Ranař",
+        "year": 2012,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/WBptU7FLhyXySrHkCuy6NpuBiK.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt49014",
+        "type": "movie",
+        "title": "Cosmopolis",
+        "year": 2012,
+        "score": 51,
+        "poster": "https://image.tmdb.org/t/p/w342/kXoaAmh0kkcAqW0ikafWEvqVezJ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st44305",
+        "type": "show",
+        "title": "Jak vycvičit draky",
+        "year": 2012,
+        "score": 79,
+        "poster": "https://image.tmdb.org/t/p/w342/gFhBIF8oXjpdVk1NbI4kP4l8LAe.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt64320",
+        "type": "movie",
+        "title": "Good Neighbours",
+        "year": 2011,
+        "score": 58,
+        "poster": "https://image.tmdb.org/t/p/w342/1i2YBTnZyC71TuJXq4RQWPGSbvv.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt10191",
+        "type": "movie",
+        "title": "Jak vycvičit draka",
+        "year": 2010,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/4NZde94xSeiTACur550cBYcv7tx.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt46584",
+        "type": "movie",
+        "title": "The Trotsky",
+        "year": 2010,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/dSZRDk2xpVdf0BHVqKnSeVUIxLH.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt34016",
+        "type": "movie",
+        "title": "Na tuhle nemám",
+        "year": 2010,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/mpYHjyPX0DAxbsnWKmSK5jZ1s4T.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt27022",
+        "type": "movie",
+        "title": "Čarodějův učeň",
+        "year": 2010,
+        "score": 61,
+        "poster": "https://image.tmdb.org/t/p/w342/u3ViKaDknp95fwiAo7Ef1JygPSO.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt13532",
+        "type": "movie",
+        "title": "Fanoušci",
+        "year": 2009,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/fitksX4J3xfBjT38YgDUXOlBkHk.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt18360",
+        "type": "movie",
+        "title": "Noc v muzeu 2",
+        "year": 2009,
+        "score": 60,
+        "poster": "https://image.tmdb.org/t/p/w342/gOuuke2ymtyBJjQVgubh5PjfWa4.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt7446",
+        "type": "movie",
+        "title": "Tropická bouře",
+        "year": 2008,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/b1ReInRjwUWBswqLQaQvUPdPU6E.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt12182",
+        "type": "movie",
+        "title": "Rande na jednu noc",
+        "year": 2008,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/cndxWgZEHnSUtytrMjal97ye34E.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt4964",
+        "type": "movie",
+        "title": "Zbouchnutá",
+        "year": 2007,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/i51g4D0JBNOtebIfLXdIRXQlwbQ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt15182",
+        "type": "movie",
+        "title": "Just Buried",
+        "year": 2007,
+        "score": 60,
+        "poster": "https://image.tmdb.org/t/p/w342/1gLnBaOGMaTVP7EumjWs9IBqeV7.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt41044",
+        "type": "movie",
+        "title": "Tady Reed Fish",
+        "year": 2007,
+        "score": 56,
+        "poster": "https://image.tmdb.org/t/p/w342/uAKVpiAKzqwfkqZgckoI1mGcrmT.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt46729",
+        "type": "movie",
+        "title": "Fetching Cody",
+        "year": 2005,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/p7vuoA0vIldc9t48CRwougpidoj.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st578",
+        "type": "show",
+        "title": "Vražedná čísla",
+        "year": 2005,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/pvfPbs4lhi5kO0Ay1atac1iSG4.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt70",
+        "type": "movie",
+        "title": "Million Dollar Baby",
+        "year": 2004,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/jcfEqKdWF1zeyvECPqp3mkWLct2.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt45877",
+        "type": "movie",
+        "title": "Nemesis",
+        "year": 2003,
+        "score": 53,
+        "poster": "https://image.tmdb.org/t/p/w342/6CwK46VeembPAiT6IdF2Z2BjNbG.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1809",
+        "type": "movie",
+        "title": "Pravidla vášně",
+        "year": 2002,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/6OybelUmwUkDm7fbX1BI7OhpYeQ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st3948",
+        "type": "show",
+        "title": "Kolej, základ života",
+        "year": 2001,
+        "score": 79,
+        "poster": "https://image.tmdb.org/t/p/w342/cCCy0WYZvMxoz3LC2kyHX4Vy6eT.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt786",
+        "type": "movie",
+        "title": "Na pokraji slávy",
+        "year": 2000,
+        "score": 79,
+        "poster": "https://image.tmdb.org/t/p/w342/ftqzQiSyzBfNr2hoUkMjzxRgji4.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st7237",
+        "type": "show",
+        "title": "Čarodějnice školou povinné",
+        "year": 1998,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/aywA417wTmoOtWUe4FxmNVZ3HTy.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st2913",
+        "type": "show",
+        "title": "Bojíte se tmy?",
+        "year": 1992,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/2HA7bHYyWgQ0CeEq2mVepY30I7j.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p4120741": {
     "name": "Eadie Murphy",
     "img": "/dpxsyE9ismRhv4XGAkzUuJ3vd8g.jpg",
@@ -330249,117 +330127,6 @@
         "year": 2011,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/u11TFyZp3qtvo31jLzdyEFYmrfM.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5331456": {
-    "name": "Nicanor Fernandez",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1086497",
-        "type": "movie",
-        "title": "The Penguin Lessons",
-        "year": 2025,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/pJUfkCcU5mCEMF8O0LKvlMnYAfD.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2785759": {
-    "name": "Hugo Fuertes",
-    "img": "/8OKYb21E166EpTFdN9P9lr2LExW.jpg",
-    "birthday": "2008-11-19",
-    "deathday": null,
-    "age": 17,
-    "works": [
-      {
-        "id": "mt1086497",
-        "type": "movie",
-        "title": "The Penguin Lessons",
-        "year": 2025,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/pJUfkCcU5mCEMF8O0LKvlMnYAfD.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt639798",
-        "type": "movie",
-        "title": "Malasaña 32",
-        "year": 2020,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/mJTIkMOaEM74ChVBX9WVxyufLrm.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5439817": {
-    "name": "Osvaldo Ayre",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1086497",
-        "type": "movie",
-        "title": "The Penguin Lessons",
-        "year": 2025,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/pJUfkCcU5mCEMF8O0LKvlMnYAfD.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3162630": {
-    "name": "Silvia de Esteban",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1086497",
-        "type": "movie",
-        "title": "The Penguin Lessons",
-        "year": 2025,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/pJUfkCcU5mCEMF8O0LKvlMnYAfD.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3275787": {
-    "name": "Ailén Maciel",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1086497",
-        "type": "movie",
-        "title": "The Penguin Lessons",
-        "year": 2025,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/pJUfkCcU5mCEMF8O0LKvlMnYAfD.jpg",
         "roles": [
           "actor"
         ]
@@ -347593,46 +347360,6 @@
       }
     ]
   },
-  "p6461420": {
-    "name": "Jalyn Degraffenreid",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1380417",
-        "type": "movie",
-        "title": "By Any Means",
-        "year": 2026,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/f4hdIed8vh10O8TkQ1CkHS8MQ3G.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6464643": {
-    "name": "Travis Rothert",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1664003",
-        "type": "movie",
-        "title": "Stavros Halkias: Uncle Stav",
-        "year": 2026,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/lVdlQbkpnETCZXN76UwQzMiJH6m.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p3350499": {
     "name": "Alice Oseman",
     "img": "/frHxKvydZJ4k2qBZsrE6wVy9TaN.jpg",
@@ -347702,6 +347429,330 @@
         "year": 2022,
         "score": 85,
         "poster": "https://image.tmdb.org/t/p/w342/2SvBpm9Y913XJsd9b8urb9aZWIC.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1174787": {
+    "name": "Marianne Mörck",
+    "img": "/mksDG8FQLo5Fd2HljggAbEOk0Hc.jpg",
+    "birthday": "1949-09-02",
+    "deathday": null,
+    "age": 77,
+    "works": [
+      {
+        "id": "mt1261188",
+        "type": "movie",
+        "title": "Švédská spojka",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/wUfdjrCGdXDUWnAzvruLj7BlUUB.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st55270",
+        "type": "show",
+        "title": "Vraždy v Sandhamnu",
+        "year": 2010,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/ujatzDW6UQBuJyZbJemBDk93OsG.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6043134": {
+    "name": "Robert Beyer",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1261188",
+        "type": "movie",
+        "title": "Švédská spojka",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/wUfdjrCGdXDUWnAzvruLj7BlUUB.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2133921": {
+    "name": "Lee Bong-ryeon",
+    "img": "/AkpzrUGpT0JvRY9Zk6qceKm937l.jpg",
+    "birthday": "1981-02-07",
+    "deathday": null,
+    "age": 45,
+    "works": [
+      {
+        "id": "mt1268609",
+        "type": "movie",
+        "title": "Pavana",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/22RlxpIT4u4psfIx9tmtbPvgAbm.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st219246",
+        "type": "show",
+        "title": "Dobrá práce",
+        "year": 2025,
+        "score": 90,
+        "poster": "https://image.tmdb.org/t/p/w342/koMkV9qm0PEZHDmX5dRpBpMH1FY.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st235355",
+        "type": "show",
+        "title": "Nemocniční manuál",
+        "year": 2025,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/oXaMHOQGx2V4HwoBa0IrouBe1yb.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st259710",
+        "type": "show",
+        "title": "Královna podvodnic",
+        "year": 2025,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/ccY3OWkCS7ClA3QFB4zNKn3jgkB.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st241454",
+        "type": "show",
+        "title": "Láska od sousedů",
+        "year": 2024,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/39JcptCyPz5AEFRtWruQzHDvKE.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st202318",
+        "type": "show",
+        "title": "Rychlokurz romantiky",
+        "year": 2023,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/fiu77Gn4o9GpVAxeMGCMym4MY7B.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st215001",
+        "type": "show",
+        "title": "Spojení osudem",
+        "year": 2023,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/8KxGVT5dWrHZObv1B5oYcIt6xzU.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st197067",
+        "type": "show",
+        "title": "Výjimečná právnička U Jong-u",
+        "year": 2022,
+        "score": 85,
+        "poster": "https://image.tmdb.org/t/p/w342/yv57TccCkgdy3St7rspBPKROeRK.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st97970",
+        "type": "show",
+        "title": "Narkosvětci",
+        "year": 2022,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/xjyqTu16hdsP9LYiGoP1TVCLJ6v.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st128883",
+        "type": "show",
+        "title": "Městečko na pobřeží",
+        "year": 2021,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/ub2ZaobABSYtkWKaEycWmMjkorP.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st96977",
+        "type": "show",
+        "title": "When the Weather Is Fine",
+        "year": 2020,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/2SpLILOO9ODAi2te1xN3C0dbED9.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st113240",
+        "type": "show",
+        "title": "Nezastavuj!",
+        "year": 2020,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/jPDCzju47VyLobokx4kDEd3kOhR.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st96648",
+        "type": "show",
+        "title": "Sladký domove!",
+        "year": 2020,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/kJEcSBMPacDJuAihPNmcUEgon1Y.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt572164",
+        "type": "movie",
+        "title": "Eksiteu",
+        "year": 2019,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/7GTwjMaEVLbDBkg6McEizHTH1PF.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st92911",
+        "type": "show",
+        "title": "Melting Me Softly",
+        "year": 2019,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/9yNW3iE7chV7egW77SqCeEaVLy7.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt491584",
+        "type": "movie",
+        "title": "Vzplanutí",
+        "year": 2018,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/AlKlezuaJkP2lDEWbJxYv47GeDf.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt544627",
+        "type": "movie",
+        "title": "Dark Figure of Crime",
+        "year": 2018,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/j2DhCOOfTv3xCLELreArzea9tRJ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st79407",
+        "type": "show",
+        "title": "Life on Mars",
+        "year": 2018,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/jcSulDrfPtamxCtTCh2ZGxT79zy.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt387426",
+        "type": "movie",
+        "title": "Okja",
+        "year": 2017,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/pHlRr2MfjK77VIIAO7p0R4jhsJI.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt437068",
+        "type": "movie",
+        "title": "Taxikář ze Soulu",
+        "year": 2017,
+        "score": 79,
+        "poster": "https://image.tmdb.org/t/p/w342/pCdx7X5JLaSJZLNVtpryGSdjvvB.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st70649",
+        "type": "show",
+        "title": "While You Were Sleeping",
+        "year": 2017,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/vtyzRkxPl3Y6bC5DgUDZ1sLb8Fs.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st68250",
+        "type": "show",
+        "title": "Zítra s tebou",
+        "year": 2017,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/vM0BhKkY0OextIweDKCPrqpltSX.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt133200",
+        "type": "movie",
+        "title": "Králův dvojník",
+        "year": 2012,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/s0eLBbR7XFcAIxfZJ7q2CGU24f8.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt140212",
+        "type": "movie",
+        "title": "Confession of Murder",
+        "year": 2012,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/5s6B5o36cUSmmpc8UWseJ9zaQye.jpg",
         "roles": [
           "actor"
         ]
@@ -351042,6 +351093,66 @@
       }
     ]
   },
+  "p6395134": {
+    "name": "Ramita Ravi",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt675871",
+        "type": "movie",
+        "title": "Super Troopers 3",
+        "year": 2026,
+        "score": 61,
+        "poster": "https://image.tmdb.org/t/p/w342/iZK7dZXAZEqAt5TYionYretrgWg.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2688508": {
+    "name": "Daniel Kelly",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt445466",
+        "type": "movie",
+        "title": "Idiots",
+        "year": 2026,
+        "score": 61,
+        "poster": "https://image.tmdb.org/t/p/w342/flpCqxH46pGZD1kNOdYgrVsDoTm.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5572521": {
+    "name": "Buck Eddy-Blair",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt445466",
+        "type": "movie",
+        "title": "Idiots",
+        "year": 2026,
+        "score": 61,
+        "poster": "https://image.tmdb.org/t/p/w342/flpCqxH46pGZD1kNOdYgrVsDoTm.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p4633814": {
     "name": "Alfie Lawless",
     "img": "/761sH9H88m86M3iUuxMJpLQ2GE2.jpg",
@@ -353304,6 +353415,17 @@
         "year": 2026,
         "score": 50,
         "poster": "https://image.tmdb.org/t/p/w342/4uNhvGxBDiO0mU5UhxuXBsJwKF3.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1607127",
+        "type": "movie",
+        "title": "One Last Shot",
+        "year": 2026,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/niQ4NBh2jqAf1hDZP5m6ReWFAb7.jpg",
         "roles": [
           "actor"
         ]
@@ -359673,279 +359795,6 @@
       }
     ]
   },
-  "p2133921": {
-    "name": "Lee Bong-ryeon",
-    "img": "/AkpzrUGpT0JvRY9Zk6qceKm937l.jpg",
-    "birthday": "1981-02-07",
-    "deathday": null,
-    "age": 45,
-    "works": [
-      {
-        "id": "mt1268609",
-        "type": "movie",
-        "title": "Pavana",
-        "year": 2026,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/22RlxpIT4u4psfIx9tmtbPvgAbm.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st219246",
-        "type": "show",
-        "title": "Dobrá práce",
-        "year": 2025,
-        "score": 90,
-        "poster": "https://image.tmdb.org/t/p/w342/koMkV9qm0PEZHDmX5dRpBpMH1FY.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st235355",
-        "type": "show",
-        "title": "Nemocniční manuál",
-        "year": 2025,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/oXaMHOQGx2V4HwoBa0IrouBe1yb.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st259710",
-        "type": "show",
-        "title": "Královna podvodnic",
-        "year": 2025,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/ccY3OWkCS7ClA3QFB4zNKn3jgkB.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st241454",
-        "type": "show",
-        "title": "Láska od sousedů",
-        "year": 2024,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/39JcptCyPz5AEFRtWruQzHDvKE.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st202318",
-        "type": "show",
-        "title": "Rychlokurz romantiky",
-        "year": 2023,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/fiu77Gn4o9GpVAxeMGCMym4MY7B.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st215001",
-        "type": "show",
-        "title": "Spojení osudem",
-        "year": 2023,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/8KxGVT5dWrHZObv1B5oYcIt6xzU.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st197067",
-        "type": "show",
-        "title": "Výjimečná právnička U Jong-u",
-        "year": 2022,
-        "score": 85,
-        "poster": "https://image.tmdb.org/t/p/w342/yv57TccCkgdy3St7rspBPKROeRK.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st97970",
-        "type": "show",
-        "title": "Narkosvětci",
-        "year": 2022,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/xjyqTu16hdsP9LYiGoP1TVCLJ6v.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st128883",
-        "type": "show",
-        "title": "Městečko na pobřeží",
-        "year": 2021,
-        "score": 83,
-        "poster": "https://image.tmdb.org/t/p/w342/ub2ZaobABSYtkWKaEycWmMjkorP.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st96977",
-        "type": "show",
-        "title": "When the Weather Is Fine",
-        "year": 2020,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/2SpLILOO9ODAi2te1xN3C0dbED9.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st113240",
-        "type": "show",
-        "title": "Nezastavuj!",
-        "year": 2020,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/jPDCzju47VyLobokx4kDEd3kOhR.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st96648",
-        "type": "show",
-        "title": "Sladký domove!",
-        "year": 2020,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/kJEcSBMPacDJuAihPNmcUEgon1Y.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt572164",
-        "type": "movie",
-        "title": "Eksiteu",
-        "year": 2019,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/7GTwjMaEVLbDBkg6McEizHTH1PF.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st92911",
-        "type": "show",
-        "title": "Melting Me Softly",
-        "year": 2019,
-        "score": 68,
-        "poster": "https://image.tmdb.org/t/p/w342/9yNW3iE7chV7egW77SqCeEaVLy7.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt491584",
-        "type": "movie",
-        "title": "Vzplanutí",
-        "year": 2018,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/AlKlezuaJkP2lDEWbJxYv47GeDf.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt544627",
-        "type": "movie",
-        "title": "Dark Figure of Crime",
-        "year": 2018,
-        "score": 67,
-        "poster": "https://image.tmdb.org/t/p/w342/j2DhCOOfTv3xCLELreArzea9tRJ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st79407",
-        "type": "show",
-        "title": "Life on Mars",
-        "year": 2018,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/jcSulDrfPtamxCtTCh2ZGxT79zy.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt387426",
-        "type": "movie",
-        "title": "Okja",
-        "year": 2017,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/pHlRr2MfjK77VIIAO7p0R4jhsJI.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt437068",
-        "type": "movie",
-        "title": "Taxikář ze Soulu",
-        "year": 2017,
-        "score": 79,
-        "poster": "https://image.tmdb.org/t/p/w342/pCdx7X5JLaSJZLNVtpryGSdjvvB.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st70649",
-        "type": "show",
-        "title": "While You Were Sleeping",
-        "year": 2017,
-        "score": 82,
-        "poster": "https://image.tmdb.org/t/p/w342/vtyzRkxPl3Y6bC5DgUDZ1sLb8Fs.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st68250",
-        "type": "show",
-        "title": "Zítra s tebou",
-        "year": 2017,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/vM0BhKkY0OextIweDKCPrqpltSX.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt133200",
-        "type": "movie",
-        "title": "Králův dvojník",
-        "year": 2012,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/s0eLBbR7XFcAIxfZJ7q2CGU24f8.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt140212",
-        "type": "movie",
-        "title": "Confession of Murder",
-        "year": 2012,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/5s6B5o36cUSmmpc8UWseJ9zaQye.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p2205916": {
     "name": "Chris Breslin",
     "img": null,
@@ -363684,6 +363533,48 @@
         "year": 1973,
         "score": 61,
         "poster": "https://image.tmdb.org/t/p/w342/17ixya9IMy7dLWMYt7RKDo28kkc.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2100558": {
+    "name": "Miranda Frangou",
+    "img": "/bUPhhsz9p45nwdU8KeB652Epo9e.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt614934",
+        "type": "movie",
+        "title": "Elvis",
+        "year": 2022,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/qBOKWqAFbveZ4ryjJJwbie6tXkQ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st130578",
+        "type": "show",
+        "title": "Dusno",
+        "year": 2022,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/oH4JPLdxSdz0xGKEQSuDHHUWFEq.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt341287",
+        "type": "movie",
+        "title": "Breath",
+        "year": 2017,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/1YaHbvNyo8LB37S2P3Z5lvAV8X2.jpg",
         "roles": [
           "actor"
         ]
@@ -434463,6 +434354,37 @@
       }
     ]
   },
+  "p2785759": {
+    "name": "Hugo Fuertes",
+    "img": "/8OKYb21E166EpTFdN9P9lr2LExW.jpg",
+    "birthday": "2008-11-19",
+    "deathday": null,
+    "age": 17,
+    "works": [
+      {
+        "id": "mt1086497",
+        "type": "movie",
+        "title": "The Penguin Lessons",
+        "year": 2025,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/pJUfkCcU5mCEMF8O0LKvlMnYAfD.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt639798",
+        "type": "movie",
+        "title": "Malasaña 32",
+        "year": 2020,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/mJTIkMOaEM74ChVBX9WVxyufLrm.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2055018": {
     "name": "John Henry Ward",
     "img": "/rxMKmehcUGBXuPhsXFBx7Y4i9ln.jpg",
@@ -438077,6 +437999,37 @@
         "poster": "https://image.tmdb.org/t/p/w342/47KDAXd0gNBc2t617QIJSP8HefJ.jpg",
         "roles": [
           "composer"
+        ]
+      }
+    ]
+  },
+  "p1524906": {
+    "name": "Maria Alexandra Lungu",
+    "img": "/vOW6jKgCguW1oz9HUJlPGOyMt6v.jpg",
+    "birthday": "2000-01-01",
+    "deathday": null,
+    "age": 26,
+    "works": [
+      {
+        "id": "mt837335",
+        "type": "movie",
+        "title": "Chiméra",
+        "year": 2023,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/Al1yrTMD78aCW9w1DPuRNrxQdxG.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt833408",
+        "type": "movie",
+        "title": "Král krabů",
+        "year": 2021,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/47KDAXd0gNBc2t617QIJSP8HefJ.jpg",
+        "roles": [
+          "actor"
         ]
       }
     ]
@@ -517855,20 +517808,20 @@
       }
     ]
   },
-  "p2010237": {
-    "name": "Lernik Harutyunyan",
-    "img": null,
-    "birthday": "1981-05-16",
+  "p3160320": {
+    "name": "Fran Fraschilla",
+    "img": "/dGvtv4amzi1A5RKDgabL7QYSvMl.jpg",
+    "birthday": null,
     "deathday": null,
-    "age": 45,
+    "age": null,
     "works": [
       {
-        "id": "mt998757",
+        "id": "mt705861",
         "type": "movie",
-        "title": "Amerikán",
+        "title": "Životní trefa",
         "year": 2022,
         "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/jwgg2CxQCDP7PGEopqCTcmtUo9z.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/m60IEDnuxa2WEj192r8ir1kDlhf.jpg",
         "roles": [
           "actor"
         ]
@@ -518747,6 +518700,86 @@
       }
     ]
   },
+  "p4452138": {
+    "name": "Luis Noah Witte",
+    "img": "/tlDRCi6I4MGAB09UQH9AC9FD1Cn.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt467244",
+        "type": "movie",
+        "title": "Zóna zájmu",
+        "year": 2023,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/nQXpE78DmCzsvtkHI08xDBi4Doq.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4386457": {
+    "name": "Julia Polaczek",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt467244",
+        "type": "movie",
+        "title": "Zóna zájmu",
+        "year": 2023,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/nQXpE78DmCzsvtkHI08xDBi4Doq.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1571304": {
+    "name": "Conor Casey",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1016084",
+        "type": "movie",
+        "title": "Fenomén BlackBerry",
+        "year": 2023,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/nQSvHZDuMlrZdm7ooMo8gb4CXhW.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2161399": {
+    "name": "Piero Crucitti",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt837335",
+        "type": "movie",
+        "title": "Chiméra",
+        "year": 2023,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/Al1yrTMD78aCW9w1DPuRNrxQdxG.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p4019849": {
     "name": "Olivia Williams",
     "img": null,
@@ -518761,26 +518794,6 @@
         "year": 2023,
         "score": 73,
         "poster": "https://image.tmdb.org/t/p/w342/yb6UB4WC3znlwU0L4AqMnjR9G9S.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3060220": {
-    "name": "Ivan Zhyrun",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt815029",
-        "type": "movie",
-        "title": "Dovbuš",
-        "year": 2023,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/cI0AbBDhKLIheGDVazO2gCtT6cx.jpg",
         "roles": [
           "actor"
         ]
@@ -520867,6 +520880,86 @@
       }
     ]
   },
+  "p5331456": {
+    "name": "Nicanor Fernandez",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1086497",
+        "type": "movie",
+        "title": "The Penguin Lessons",
+        "year": 2025,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/pJUfkCcU5mCEMF8O0LKvlMnYAfD.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5439817": {
+    "name": "Osvaldo Ayre",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1086497",
+        "type": "movie",
+        "title": "The Penguin Lessons",
+        "year": 2025,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/pJUfkCcU5mCEMF8O0LKvlMnYAfD.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3162630": {
+    "name": "Silvia de Esteban",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1086497",
+        "type": "movie",
+        "title": "The Penguin Lessons",
+        "year": 2025,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/pJUfkCcU5mCEMF8O0LKvlMnYAfD.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3275787": {
+    "name": "Ailén Maciel",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1086497",
+        "type": "movie",
+        "title": "The Penguin Lessons",
+        "year": 2025,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/pJUfkCcU5mCEMF8O0LKvlMnYAfD.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p6475445": {
     "name": "Zak Patel",
     "img": null,
@@ -520881,6 +520974,37 @@
         "year": 2026,
         "score": 84,
         "poster": "https://image.tmdb.org/t/p/w342/yBKMAIj7clP42UkFejhGDBBoTpb.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5153685": {
+    "name": "Isaac Beechey",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1607127",
+        "type": "movie",
+        "title": "One Last Shot",
+        "year": 2026,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/niQ4NBh2jqAf1hDZP5m6ReWFAb7.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st93870",
+        "type": "show",
+        "title": "Pluk mizerů",
+        "year": 2022,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/lOx7YS4jIlO6NvOhCOyfvzdkw1D.jpg",
         "roles": [
           "actor"
         ]
@@ -521749,51 +521873,40 @@
       }
     ]
   },
-  "p1174787": {
-    "name": "Marianne Mörck",
-    "img": "/mksDG8FQLo5Fd2HljggAbEOk0Hc.jpg",
-    "birthday": "1949-09-02",
-    "deathday": null,
-    "age": 77,
-    "works": [
-      {
-        "id": "mt1261188",
-        "type": "movie",
-        "title": "Švédská spojka",
-        "year": 2026,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/wUfdjrCGdXDUWnAzvruLj7BlUUB.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st55270",
-        "type": "show",
-        "title": "Vraždy v Sandhamnu",
-        "year": 2010,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/ujatzDW6UQBuJyZbJemBDk93OsG.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6043134": {
-    "name": "Robert Beyer",
+  "p6461420": {
+    "name": "Jalyn Degraffenreid",
     "img": null,
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "mt1261188",
+        "id": "mt1380417",
         "type": "movie",
-        "title": "Švédská spojka",
+        "title": "By Any Means",
         "year": 2026,
         "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/wUfdjrCGdXDUWnAzvruLj7BlUUB.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/f4hdIed8vh10O8TkQ1CkHS8MQ3G.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6464643": {
+    "name": "Travis Rothert",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1664003",
+        "type": "movie",
+        "title": "Stavros Halkias: Uncle Stav",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/lVdlQbkpnETCZXN76UwQzMiJH6m.jpg",
         "roles": [
           "actor"
         ]
@@ -767620,26 +767733,6 @@
       }
     ]
   },
-  "p5153685": {
-    "name": "Isaac Beechey",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st93870",
-        "type": "show",
-        "title": "Pluk mizerů",
-        "year": 2022,
-        "score": 82,
-        "poster": "https://image.tmdb.org/t/p/w342/lOx7YS4jIlO6NvOhCOyfvzdkw1D.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p4210567": {
     "name": "Kim Hyun-jin",
     "img": null,
@@ -773426,97 +773519,6 @@
         "year": 2026,
         "score": 75,
         "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3152752": {
-    "name": "James Lontayao",
-    "img": "/8yEDrC6Y1k9EVrHk01wpRRQVmkQ.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st198178",
-        "type": "show",
-        "title": "Wonder Man",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/6yy9nQlFt2l6UVWzrfhszFCaZ5C.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3771799": {
-    "name": "Makela Yepez",
-    "img": "/jGuJTgBFr0mXM52iZ05aw84MCp6.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st198178",
-        "type": "show",
-        "title": "Wonder Man",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/6yy9nQlFt2l6UVWzrfhszFCaZ5C.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st153312",
-        "type": "show",
-        "title": "Král Tulsy",
-        "year": 2022,
-        "score": 79,
-        "poster": "https://image.tmdb.org/t/p/w342/rOYLWCdAifpUtPlTf1WHxyaxeMt.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5967608": {
-    "name": "Abby Semenick",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st198178",
-        "type": "show",
-        "title": "Wonder Man",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/6yy9nQlFt2l6UVWzrfhszFCaZ5C.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3264842": {
-    "name": "Bradley Tejeda",
-    "img": "/pkOkjZbziNIRkQwNE4OjnCnXJZK.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st198178",
-        "type": "show",
-        "title": "Wonder Man",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/6yy9nQlFt2l6UVWzrfhszFCaZ5C.jpg",
         "roles": [
           "actor"
         ]
@@ -791355,6 +791357,37 @@
       }
     ]
   },
+  "p3771799": {
+    "name": "Makela Yepez",
+    "img": "/jGuJTgBFr0mXM52iZ05aw84MCp6.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st198178",
+        "type": "show",
+        "title": "Wonder Man",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/6yy9nQlFt2l6UVWzrfhszFCaZ5C.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st153312",
+        "type": "show",
+        "title": "Král Tulsy",
+        "year": 2022,
+        "score": 79,
+        "poster": "https://image.tmdb.org/t/p/w342/rOYLWCdAifpUtPlTf1WHxyaxeMt.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2761614": {
     "name": "Dallas Oshae",
     "img": "/bxV3jLJ73AAtjEzf27PoQa80ES8.jpg",
@@ -805687,6 +805720,66 @@
         "year": 2025,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/rsh0EsgpjSTb6IE3LjjZDh6Uexp.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3152752": {
+    "name": "James Lontayao",
+    "img": "/8yEDrC6Y1k9EVrHk01wpRRQVmkQ.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st198178",
+        "type": "show",
+        "title": "Wonder Man",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/6yy9nQlFt2l6UVWzrfhszFCaZ5C.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5967608": {
+    "name": "Abby Semenick",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st198178",
+        "type": "show",
+        "title": "Wonder Man",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/6yy9nQlFt2l6UVWzrfhszFCaZ5C.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3264842": {
+    "name": "Bradley Tejeda",
+    "img": "/pkOkjZbziNIRkQwNE4OjnCnXJZK.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st198178",
+        "type": "show",
+        "title": "Wonder Man",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/6yy9nQlFt2l6UVWzrfhszFCaZ5C.jpg",
         "roles": [
           "actor"
         ]

@@ -71373,17 +71373,6 @@
         ]
       },
       {
-        "id": "mt1015606",
-        "type": "movie",
-        "title": "Obi-Wan Kenobi: Jediův návrat",
-        "year": 2022,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/wwdjWwyPqMKqJIaDkxiDso4OixA.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt818397",
         "type": "movie",
         "title": "Memory",
@@ -71401,6 +71390,17 @@
         "year": 2022,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/bv9dy8mnwftdY2j6gG39gCfSFpV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1015606",
+        "type": "movie",
+        "title": "Obi-Wan Kenobi: Jediův návrat",
+        "year": 2022,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/wwdjWwyPqMKqJIaDkxiDso4OixA.jpg",
         "roles": [
           "actor"
         ]
@@ -129559,222 +129559,6 @@
       }
     ]
   },
-  "p123884": {
-    "name": "Kate Mulvany",
-    "img": "/y80VZs4JwiXFlTvr5n8Y5Ezr3HS.jpg",
-    "birthday": "1978-02-24",
-    "deathday": null,
-    "age": 48,
-    "works": [
-      {
-        "id": "st309798",
-        "type": "show",
-        "title": "Moje skvělá kariéra",
-        "year": 2026,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/fhpa8B6USatHybK04XBbPAB6Mlz.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt799766",
-        "type": "movie",
-        "title": "Better Man",
-        "year": 2024,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/fbGCmMp0HlYnAPv28GOENPShezM.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st202208",
-        "type": "show",
-        "title": "Ferina Lišák",
-        "year": 2023,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/iudAJFppfXPQxZHpDFQuyZapNTe.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st202162",
-        "type": "show",
-        "title": "V Clearingu",
-        "year": 2023,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/kvIMfyBI1KiqMKXoYFqejClsX56.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt614934",
-        "type": "movie",
-        "title": "Elvis",
-        "year": 2022,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/qBOKWqAFbveZ4ryjJJwbie6tXkQ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st79622",
-        "type": "show",
-        "title": "Velký lov",
-        "year": 2020,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/czQlvjJaPOeQTwAdreiTS0gXzyg.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st91413",
-        "type": "show",
-        "title": "Ovečky Boží",
-        "year": 2019,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/7EdevpTHAoizlEHVATfvgurFsaY.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st66357",
-        "type": "show",
-        "title": "Tajné město",
-        "year": 2016,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/c8MWyp6WuA3QT1WwTc3SmASEhN2.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt276844",
-        "type": "movie",
-        "title": "Malá smrt",
-        "year": 2014,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/wH15YYgBT9ZX37nFkSQ0OM8qjCE.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt64682",
-        "type": "movie",
-        "title": "Velký Gatsby",
-        "year": 2013,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/sXXkQOzxgZZoo9MeSfPmnSNSLgw.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st43078",
-        "type": "show",
-        "title": "Vražedné záhady slečny Fisherové",
-        "year": 2012,
-        "score": 82,
-        "poster": "https://image.tmdb.org/t/p/w342/AeHJVpoWWKtCyFIZ6LbLkAR52vz.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt66942",
-        "type": "movie",
-        "title": "Griff the Invisible",
-        "year": 2011,
-        "score": 60,
-        "poster": "https://image.tmdb.org/t/p/w342/12DpWfDhBacOE09wJgR75rwCVUH.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p583871": {
-    "name": "Dan Deacon",
-    "img": "/yONiUqo763K3wRtmqHZkeckEuFA.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1397385",
-        "type": "movie",
-        "title": "Malý bratr",
-        "year": 2026,
-        "score": 55,
-        "poster": "https://image.tmdb.org/t/p/w342/agjSD0xJNg8AuLL4lsEhCHT0RAJ.jpg",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
-        "id": "st228305",
-        "type": "show",
-        "title": "Jednotka",
-        "year": 2025,
-        "score": 79,
-        "poster": "https://image.tmdb.org/t/p/w342/rK5HyBrFyI6CA6Xe3NOI0pqB1Mm.jpg",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
-        "id": "mt858414",
-        "type": "movie",
-        "title": "Rez Ball",
-        "year": 2024,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/5MKpjuiCTk8nYnsUf5QegiPKEDh.jpg",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
-        "id": "mt912649",
-        "type": "movie",
-        "title": "Venom: Poslední tanec",
-        "year": 2024,
-        "score": 60,
-        "poster": "https://image.tmdb.org/t/p/w342/gc8c5YxjDcJbvpwbbhjTzeOmKP6.jpg",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
-        "id": "mt705861",
-        "type": "movie",
-        "title": "Životní trefa",
-        "year": 2022,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/m60IEDnuxa2WEj192r8ir1kDlhf.jpg",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
-        "id": "mt776561",
-        "type": "movie",
-        "title": "Strawberry Mansion",
-        "year": 2021,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/xJtBlQIJaioDugwl5ZQbgrMRSi5.jpg",
-        "roles": [
-          "composer"
-        ]
-      }
-    ]
-  },
   "p2592839": {
     "name": "Safia Oakley-Green",
     "img": "/k4JrjdSIfwWF1Qd5KHChDfnXpF2.jpg",
@@ -129877,6 +129661,57 @@
         "year": 2021,
         "score": 68,
         "poster": "https://image.tmdb.org/t/p/w342/yo9XO3yUCqvu1XF7hm72s3JWzZR.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3390757": {
+    "name": "Þorgils Hlynsson",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1258509",
+        "type": "movie",
+        "title": "Co nám zbylo z lásky",
+        "year": 2025,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/j2m7Vqy3kmhH94BZg6fLl9pmOcN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt928747",
+        "type": "movie",
+        "title": "Hnízdečko",
+        "year": 2022,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/7yOuTddGIINNwL7fciq2naTrpzs.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4199818": {
+    "name": "Levon Mkrtchyan",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt998757",
+        "type": "movie",
+        "title": "Amerikán",
+        "year": 2022,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/jwgg2CxQCDP7PGEopqCTcmtUo9z.jpg",
         "roles": [
           "actor"
         ]
@@ -154396,26 +154231,6 @@
       }
     ]
   },
-  "p586676": {
-    "name": "Rainer Haustein",
-    "img": "/pBHHROIiUjPjCn30JL6ADyxKDkz.jpg",
-    "birthday": "1966-01-01",
-    "deathday": null,
-    "age": 60,
-    "works": [
-      {
-        "id": "mt467244",
-        "type": "movie",
-        "title": "Zóna zájmu",
-        "year": 2023,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/nQXpE78DmCzsvtkHI08xDBi4Doq.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p3284629": {
     "name": "Matt Carver",
     "img": null,
@@ -170033,6 +169848,81 @@
       }
     ]
   },
+  "p583871": {
+    "name": "Dan Deacon",
+    "img": "/yONiUqo763K3wRtmqHZkeckEuFA.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1397385",
+        "type": "movie",
+        "title": "Malý bratr",
+        "year": 2026,
+        "score": 55,
+        "poster": "https://image.tmdb.org/t/p/w342/agjSD0xJNg8AuLL4lsEhCHT0RAJ.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "st228305",
+        "type": "show",
+        "title": "Jednotka",
+        "year": 2025,
+        "score": 79,
+        "poster": "https://image.tmdb.org/t/p/w342/rK5HyBrFyI6CA6Xe3NOI0pqB1Mm.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "mt858414",
+        "type": "movie",
+        "title": "Rez Ball",
+        "year": 2024,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/5MKpjuiCTk8nYnsUf5QegiPKEDh.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "mt912649",
+        "type": "movie",
+        "title": "Venom: Poslední tanec",
+        "year": 2024,
+        "score": 60,
+        "poster": "https://image.tmdb.org/t/p/w342/gc8c5YxjDcJbvpwbbhjTzeOmKP6.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "mt705861",
+        "type": "movie",
+        "title": "Životní trefa",
+        "year": 2022,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/m60IEDnuxa2WEj192r8ir1kDlhf.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "mt776561",
+        "type": "movie",
+        "title": "Strawberry Mansion",
+        "year": 2021,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/xJtBlQIJaioDugwl5ZQbgrMRSi5.jpg",
+        "roles": [
+          "composer"
+        ]
+      }
+    ]
+  },
   "p51905": {
     "name": "Andrés Gertrúdix",
     "img": "/qR9EyorWi9Z8WnoFcY5AskYBW4B.jpg",
@@ -176707,6 +176597,147 @@
       }
     ]
   },
+  "p123884": {
+    "name": "Kate Mulvany",
+    "img": "/y80VZs4JwiXFlTvr5n8Y5Ezr3HS.jpg",
+    "birthday": "1978-02-24",
+    "deathday": null,
+    "age": 48,
+    "works": [
+      {
+        "id": "st309798",
+        "type": "show",
+        "title": "Moje skvělá kariéra",
+        "year": 2026,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/fhpa8B6USatHybK04XBbPAB6Mlz.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt799766",
+        "type": "movie",
+        "title": "Better Man",
+        "year": 2024,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/fbGCmMp0HlYnAPv28GOENPShezM.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st202208",
+        "type": "show",
+        "title": "Ferina Lišák",
+        "year": 2023,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/iudAJFppfXPQxZHpDFQuyZapNTe.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st202162",
+        "type": "show",
+        "title": "V Clearingu",
+        "year": 2023,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/kvIMfyBI1KiqMKXoYFqejClsX56.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt614934",
+        "type": "movie",
+        "title": "Elvis",
+        "year": 2022,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/qBOKWqAFbveZ4ryjJJwbie6tXkQ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st79622",
+        "type": "show",
+        "title": "Velký lov",
+        "year": 2020,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/czQlvjJaPOeQTwAdreiTS0gXzyg.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st91413",
+        "type": "show",
+        "title": "Ovečky Boží",
+        "year": 2019,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/7EdevpTHAoizlEHVATfvgurFsaY.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st66357",
+        "type": "show",
+        "title": "Tajné město",
+        "year": 2016,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/c8MWyp6WuA3QT1WwTc3SmASEhN2.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt276844",
+        "type": "movie",
+        "title": "Malá smrt",
+        "year": 2014,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/wH15YYgBT9ZX37nFkSQ0OM8qjCE.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt64682",
+        "type": "movie",
+        "title": "Velký Gatsby",
+        "year": 2013,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/sXXkQOzxgZZoo9MeSfPmnSNSLgw.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st43078",
+        "type": "show",
+        "title": "Vražedné záhady slečny Fisherové",
+        "year": 2012,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/AeHJVpoWWKtCyFIZ6LbLkAR52vz.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt66942",
+        "type": "movie",
+        "title": "Griff the Invisible",
+        "year": 2011,
+        "score": 60,
+        "poster": "https://image.tmdb.org/t/p/w342/12DpWfDhBacOE09wJgR75rwCVUH.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p6431707": {
     "name": "Noam Mouhib",
     "img": "/6WuWTlV8ZBLUnnz6kBMSFf4mkat.jpg",
@@ -178208,37 +178239,6 @@
         "year": 2025,
         "score": 68,
         "poster": "https://image.tmdb.org/t/p/w342/931RWObebU1Y4EUS2fpwmZQRGPs.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3390757": {
-    "name": "Þorgils Hlynsson",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1258509",
-        "type": "movie",
-        "title": "Co nám zbylo z lásky",
-        "year": 2025,
-        "score": 68,
-        "poster": "https://image.tmdb.org/t/p/w342/j2m7Vqy3kmhH94BZg6fLl9pmOcN.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt928747",
-        "type": "movie",
-        "title": "Hnízdečko",
-        "year": 2022,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/7yOuTddGIINNwL7fciq2naTrpzs.jpg",
         "roles": [
           "actor"
         ]
@@ -183832,20 +183832,82 @@
       }
     ]
   },
-  "p6461418": {
-    "name": "Henry Bromin",
+  "p997625": {
+    "name": "Olle Jansson",
+    "img": "/wRuoAr6OD7tK8NbjRByyFca8QWK.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1261188",
+        "type": "movie",
+        "title": "Švédská spojka",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/wUfdjrCGdXDUWnAzvruLj7BlUUB.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p107648": {
+    "name": "Simon Norrthon",
+    "img": "/tnYiclBIH6KtIcgJfuvK6KQZaQ8.jpg",
+    "birthday": "1967-08-04",
+    "deathday": null,
+    "age": 59,
+    "works": [
+      {
+        "id": "mt1261188",
+        "type": "movie",
+        "title": "Švédská spojka",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/wUfdjrCGdXDUWnAzvruLj7BlUUB.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt417503",
+        "type": "movie",
+        "title": "Šlápni na to 2",
+        "year": 2016,
+        "score": 59,
+        "poster": "https://image.tmdb.org/t/p/w342/sO9oY7vu1JaFQPSahxIPkr9OdYP.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st43058",
+        "type": "show",
+        "title": "Skuteční lidé",
+        "year": 2012,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/alG1Z8LtLoX8hKo9dWBnwPYiiG3.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5363706": {
+    "name": "Clara Lioe",
     "img": null,
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "mt1380417",
+        "id": "mt1339588",
         "type": "movie",
-        "title": "By Any Means",
+        "title": "Finding Emily",
         "year": 2026,
         "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/f4hdIed8vh10O8TkQ1CkHS8MQ3G.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/bfEQ6C702oPsN4kzIiY7n4JsrxF.jpg",
         "roles": [
           "actor"
         ]
@@ -270695,26 +270757,6 @@
       }
     ]
   },
-  "p4199818": {
-    "name": "Levon Mkrtchyan",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt998757",
-        "type": "movie",
-        "title": "Amerikán",
-        "year": 2022,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/jwgg2CxQCDP7PGEopqCTcmtUo9z.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p3330829": {
     "name": "Andy Pruss",
     "img": "/qCND4r7KAhUkoHA8t0E0uuuAsV4.jpg",
@@ -271104,6 +271146,26 @@
         "year": 2023,
         "score": 74,
         "poster": "https://image.tmdb.org/t/p/w342/8ficX9BQFQAbVGZZsrKe1WiwQTI.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p586676": {
+    "name": "Rainer Haustein",
+    "img": "/pBHHROIiUjPjCn30JL6ADyxKDkz.jpg",
+    "birthday": "1966-01-01",
+    "deathday": null,
+    "age": 60,
+    "works": [
+      {
+        "id": "mt467244",
+        "type": "movie",
+        "title": "Zóna zájmu",
+        "year": 2023,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/nQXpE78DmCzsvtkHI08xDBi4Doq.jpg",
         "roles": [
           "actor"
         ]
@@ -271662,6 +271724,26 @@
       }
     ]
   },
+  "p5360901": {
+    "name": "Rhys Hayhurst",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1607127",
+        "type": "movie",
+        "title": "One Last Shot",
+        "year": 2026,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/niQ4NBh2jqAf1hDZP5m6ReWFAb7.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p5022937": {
     "name": "Iyana Fawcett",
     "img": "/Rx2hd3uBLa8hJovAZPg0Q5iYeX.jpg",
@@ -271742,82 +271824,20 @@
       }
     ]
   },
-  "p997625": {
-    "name": "Olle Jansson",
-    "img": "/wRuoAr6OD7tK8NbjRByyFca8QWK.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1261188",
-        "type": "movie",
-        "title": "Švédská spojka",
-        "year": 2026,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/wUfdjrCGdXDUWnAzvruLj7BlUUB.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p107648": {
-    "name": "Simon Norrthon",
-    "img": "/tnYiclBIH6KtIcgJfuvK6KQZaQ8.jpg",
-    "birthday": "1967-08-04",
-    "deathday": null,
-    "age": 59,
-    "works": [
-      {
-        "id": "mt1261188",
-        "type": "movie",
-        "title": "Švédská spojka",
-        "year": 2026,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/wUfdjrCGdXDUWnAzvruLj7BlUUB.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt417503",
-        "type": "movie",
-        "title": "Šlápni na to 2",
-        "year": 2016,
-        "score": 59,
-        "poster": "https://image.tmdb.org/t/p/w342/sO9oY7vu1JaFQPSahxIPkr9OdYP.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st43058",
-        "type": "show",
-        "title": "Skuteční lidé",
-        "year": 2012,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/alG1Z8LtLoX8hKo9dWBnwPYiiG3.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5363706": {
-    "name": "Clara Lioe",
+  "p6461418": {
+    "name": "Henry Bromin",
     "img": null,
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "mt1339588",
+        "id": "mt1380417",
         "type": "movie",
-        "title": "Finding Emily",
+        "title": "By Any Means",
         "year": 2026,
         "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/bfEQ6C702oPsN4kzIiY7n4JsrxF.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/f4hdIed8vh10O8TkQ1CkHS8MQ3G.jpg",
         "roles": [
           "actor"
         ]
@@ -383023,6 +383043,17 @@
     "age": null,
     "works": [
       {
+        "id": "st319851",
+        "type": "show",
+        "title": "The Blame",
+        "year": 2026,
+        "score": 87,
+        "poster": "https://image.tmdb.org/t/p/w342/5ZeHhMqi7tDTgKvfUdy9rs7VKUt.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
         "id": "st251597",
         "type": "show",
         "title": "Antikvář",
@@ -386759,6 +386790,48 @@
       }
     ]
   },
+  "p2190822": {
+    "name": "Megan Gallagher",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st319851",
+        "type": "show",
+        "title": "The Blame",
+        "year": 2026,
+        "score": 87,
+        "poster": "https://image.tmdb.org/t/p/w342/5ZeHhMqi7tDTgKvfUdy9rs7VKUt.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "st246386",
+        "type": "show",
+        "title": "Její vina",
+        "year": 2025,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/o8vZKZlc8H4OcgpbJuqP0iK4B2.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "st222117",
+        "type": "show",
+        "title": "Vlk",
+        "year": 2023,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/wQB5bOHhzoWhTIR0KlndLUdxHkp.jpg",
+        "roles": [
+          "writer"
+        ]
+      }
+    ]
+  },
   "p3166907": {
     "name": "Fergus Craig",
     "img": "/j6Wft1bUQKuuwGu2YJ5RAOjlgTq.jpg",
@@ -387106,99 +387179,6 @@
         "year": 2026,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/xIQKtBSUJhlz2Jl9TsXEI0iZMgu.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1829330": {
-    "name": "Daniel Augustin",
-    "img": "/oxPNNK31GBvSRZZbFIJSBPlZOSO.jpg",
-    "birthday": "1994-04-30",
-    "deathday": null,
-    "age": 32,
-    "works": [
-      {
-        "id": "st198178",
-        "type": "show",
-        "title": "Wonder Man",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/6yy9nQlFt2l6UVWzrfhszFCaZ5C.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st155772",
-        "type": "show",
-        "title": "Rap Sh!t",
-        "year": 2022,
-        "score": 66,
-        "poster": "https://image.tmdb.org/t/p/w342/vHkgTxk0YE94AiQIbv8PfJGkxR2.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st124010",
-        "type": "show",
-        "title": "Jak jsem poznala tvého otce",
-        "year": 2022,
-        "score": 57,
-        "poster": "https://image.tmdb.org/t/p/w342/8psLGtFzTMYCXxUNMpMOCB6doPn.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st90870",
-        "type": "show",
-        "title": "Wu-Tang: Americká sága",
-        "year": 2019,
-        "score": 82,
-        "poster": "https://image.tmdb.org/t/p/w342/AunI02k3Upi19gjLvrXMxkRg0Jy.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4083416": {
-    "name": "Francesca Barker McCormick",
-    "img": "/8miiLk26cAQ5g19jae82Vudjo72.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st198178",
-        "type": "show",
-        "title": "Wonder Man",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/6yy9nQlFt2l6UVWzrfhszFCaZ5C.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3549070": {
-    "name": "Andrea Granera",
-    "img": "/pAd8Bta0gY0K4JzDmcflKQYzpY9.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st198178",
-        "type": "show",
-        "title": "Wonder Man",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/6yy9nQlFt2l6UVWzrfhszFCaZ5C.jpg",
         "roles": [
           "actor"
         ]
@@ -392897,6 +392877,59 @@
       }
     ]
   },
+  "p1829330": {
+    "name": "Daniel Augustin",
+    "img": "/oxPNNK31GBvSRZZbFIJSBPlZOSO.jpg",
+    "birthday": "1994-04-30",
+    "deathday": null,
+    "age": 32,
+    "works": [
+      {
+        "id": "st198178",
+        "type": "show",
+        "title": "Wonder Man",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/6yy9nQlFt2l6UVWzrfhszFCaZ5C.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st155772",
+        "type": "show",
+        "title": "Rap Sh!t",
+        "year": 2022,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/vHkgTxk0YE94AiQIbv8PfJGkxR2.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st124010",
+        "type": "show",
+        "title": "Jak jsem poznala tvého otce",
+        "year": 2022,
+        "score": 57,
+        "poster": "https://image.tmdb.org/t/p/w342/8psLGtFzTMYCXxUNMpMOCB6doPn.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st90870",
+        "type": "show",
+        "title": "Wu-Tang: Americká sága",
+        "year": 2019,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/AunI02k3Upi19gjLvrXMxkRg0Jy.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2728195": {
     "name": "Choni Francis",
     "img": "/35J36YwilnFYfzvcV1ZW10LeEmM.jpg",
@@ -395561,37 +395594,6 @@
       }
     ]
   },
-  "p2190822": {
-    "name": "Megan Gallagher",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st246386",
-        "type": "show",
-        "title": "Její vina",
-        "year": 2025,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/o8vZKZlc8H4OcgpbJuqP0iK4B2.jpg",
-        "roles": [
-          "writer"
-        ]
-      },
-      {
-        "id": "st222117",
-        "type": "show",
-        "title": "Vlk",
-        "year": 2023,
-        "score": 68,
-        "poster": "https://image.tmdb.org/t/p/w342/wQB5bOHhzoWhTIR0KlndLUdxHkp.jpg",
-        "roles": [
-          "writer"
-        ]
-      }
-    ]
-  },
   "p4256809": {
     "name": "Ripley Parker",
     "img": null,
@@ -397479,6 +397481,46 @@
         "poster": "https://image.tmdb.org/t/p/w342/fuVuDYrs8sxvEolnYr0wCSvtyTi.jpg",
         "roles": [
           "writer"
+        ]
+      }
+    ]
+  },
+  "p4083416": {
+    "name": "Francesca Barker McCormick",
+    "img": "/8miiLk26cAQ5g19jae82Vudjo72.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st198178",
+        "type": "show",
+        "title": "Wonder Man",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/6yy9nQlFt2l6UVWzrfhszFCaZ5C.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3549070": {
+    "name": "Andrea Granera",
+    "img": "/pAd8Bta0gY0K4JzDmcflKQYzpY9.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st198178",
+        "type": "show",
+        "title": "Wonder Man",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/6yy9nQlFt2l6UVWzrfhszFCaZ5C.jpg",
+        "roles": [
+          "actor"
         ]
       }
     ]
