@@ -106800,6 +106800,17 @@
         ]
       },
       {
+        "id": "st236994",
+        "type": "show",
+        "title": "ドラゴンボールDAIMA",
+        "year": 2024,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/u8GIA3ue6qsgA0QVxku5tg4IPVG.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st127532",
         "type": "show",
         "title": "俺だけレベルアップな件",
@@ -106828,17 +106839,6 @@
         "year": 2024,
         "score": 82,
         "poster": "https://image.tmdb.org/t/p/w342/A6JOsCdFFTxtbDnKAfE0iY6jOiE.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st236994",
-        "type": "show",
-        "title": "ドラゴンボールDAIMA",
-        "year": 2024,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/u8GIA3ue6qsgA0QVxku5tg4IPVG.jpg",
         "roles": [
           "actor"
         ]
@@ -108078,23 +108078,23 @@
     "age": 72,
     "works": [
       {
-        "id": "st245219",
-        "type": "show",
-        "title": "Rána bleskem",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/KyUrz3GA1FML3XnKkY795XxDxN.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st248394",
         "type": "show",
         "title": "Miluju tě navždy",
         "year": 2025,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/twlp0YMmuKmn4cKAInAL3zde59W.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st245219",
+        "type": "show",
+        "title": "Rána bleskem",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/KyUrz3GA1FML3XnKkY795XxDxN.jpg",
         "roles": [
           "actor"
         ]
@@ -270863,6 +270863,69 @@
       }
     ]
   },
+  "p1309082": {
+    "name": "Aaron Schoenke",
+    "img": "/3p6fPXzK3sC5CRR1EQNNdOlTkcc.jpg",
+    "birthday": "1984-10-04",
+    "deathday": null,
+    "age": 41,
+    "works": [
+      {
+        "id": "mt843352",
+        "type": "movie",
+        "title": "Legend of the White Dragon",
+        "year": 2026,
+        "score": 58,
+        "poster": "https://image.tmdb.org/t/p/w342/5JJRTM1mMuqnK4BJojMljm5Xpgj.jpg",
+        "roles": [
+          "actor",
+          "director"
+        ]
+      }
+    ]
+  },
+  "p145562": {
+    "name": "Xango Henry",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt843352",
+        "type": "movie",
+        "title": "Legend of the White Dragon",
+        "year": 2026,
+        "score": 58,
+        "poster": "https://image.tmdb.org/t/p/w342/5JJRTM1mMuqnK4BJojMljm5Xpgj.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt87584",
+        "type": "movie",
+        "title": "Celebrity Sex Tape",
+        "year": 2012,
+        "score": 29,
+        "poster": "https://image.tmdb.org/t/p/w342/3FWSUD1yIvGPmLIXgyOS72MrTrC.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt52208",
+        "type": "movie",
+        "title": "Nude Nuns with Big Guns",
+        "year": 2010,
+        "score": 40,
+        "poster": "https://image.tmdb.org/t/p/w342/jJwUJpHJ8FPyulcnSajSJdKgCMr.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p6252734": {
     "name": "London McKenna",
     "img": "/f9wti5LvRi6M6OVooTA3I4WceAp.jpg",
@@ -366539,37 +366602,6 @@
         "year": 2010,
         "score": 41,
         "poster": "https://image.tmdb.org/t/p/w342/A3LppVfwslUokTyETpclKwGAXSM.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p145562": {
-    "name": "Xango Henry",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt87584",
-        "type": "movie",
-        "title": "Celebrity Sex Tape",
-        "year": 2012,
-        "score": 29,
-        "poster": "https://image.tmdb.org/t/p/w342/3FWSUD1yIvGPmLIXgyOS72MrTrC.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt52208",
-        "type": "movie",
-        "title": "Nude Nuns with Big Guns",
-        "year": 2010,
-        "score": 40,
-        "poster": "https://image.tmdb.org/t/p/w342/jJwUJpHJ8FPyulcnSajSJdKgCMr.jpg",
         "roles": [
           "actor"
         ]
@@ -468675,6 +468707,59 @@
       }
     ]
   },
+  "p1483904": {
+    "name": "Taku Kishimoto",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st131041",
+        "type": "show",
+        "title": "Blue Lock",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "st105556",
+        "type": "show",
+        "title": "Neškádli mě, Nagatoro!",
+        "year": 2021,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/k1z2xv3JjGobO9jfybHGo2tqAKC.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "st65249",
+        "type": "show",
+        "title": "ERASED",
+        "year": 2016,
+        "score": 84,
+        "poster": "https://image.tmdb.org/t/p/w342/2xo5jNOwXGP41umcmxzZgPxGpaI.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "st60863",
+        "type": "show",
+        "title": "Haikyu!!",
+        "year": 2014,
+        "score": 87,
+        "poster": "https://image.tmdb.org/t/p/w342/qNKaeunuUdL0smnowVVgShCkWZ4.jpg",
+        "roles": [
+          "writer"
+        ]
+      }
+    ]
+  },
   "p1381868": {
     "name": "Gracy Goldman",
     "img": null,
@@ -474165,6 +474250,147 @@
         "year": 2023,
         "score": 30,
         "poster": "https://image.tmdb.org/t/p/w342/t4I2HAFblxUVr7Al4i9137d8gZa.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1252728": {
+    "name": "Nobuaki Kanemitsu",
+    "img": "/wf7IW1avxFoY1zecsN5dvI1EdZX.jpg",
+    "birthday": "1975-11-22",
+    "deathday": null,
+    "age": 50,
+    "works": [
+      {
+        "id": "st236994",
+        "type": "show",
+        "title": "ドラゴンボールDAIMA",
+        "year": 2024,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/u8GIA3ue6qsgA0QVxku5tg4IPVG.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st123876",
+        "type": "show",
+        "title": "Komi neumí komunikovat",
+        "year": 2021,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/dPaI9Ho4k4ZhNgPyRIkfEyiA2K7.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st97525",
+        "type": "show",
+        "title": "不滅のあなたへ",
+        "year": 2021,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/bohMYRVSIG68md0zQobyWbV4S8e.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st86034",
+        "type": "show",
+        "title": "ありふれた職業で世界最強",
+        "year": 2019,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/3vwcB2MtQA1VZMCljCRSrDzNzdj.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st76121",
+        "type": "show",
+        "title": "Darling in the Franxx",
+        "year": 2018,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/wwk3zyeXdyCx68oJ7ncjDkLNkU9.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st73833",
+        "type": "show",
+        "title": "魔法使いの嫁",
+        "year": 2017,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/sExUEM7eI1MQdsxgdRunrCeDNMT.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st60863",
+        "type": "show",
+        "title": "Haikyu!!",
+        "year": 2014,
+        "score": 87,
+        "poster": "https://image.tmdb.org/t/p/w342/qNKaeunuUdL0smnowVVgShCkWZ4.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st61461",
+        "type": "show",
+        "title": "暁のヨナ",
+        "year": 2014,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/uF11jqAUCXJzG5aLihc8My4IIgc.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st46298",
+        "type": "show",
+        "title": "Hunter x Hunter",
+        "year": 2011,
+        "score": 90,
+        "poster": "https://image.tmdb.org/t/p/w342/9WxfAQquTun9ATkV6iAeFHMkqxv.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st39434",
+        "type": "show",
+        "title": "あの日見た花の名前を僕達はまだ知らない。",
+        "year": 2011,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/dZf3KcRtHBzJ4EjgjwTuqYqoGJe.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st42916",
+        "type": "show",
+        "title": "Toradora!",
+        "year": 2008,
+        "score": 79,
+        "poster": "https://image.tmdb.org/t/p/w342/gOG9zHfbhqvcKtzxjEtmpuw8WuU.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st30984",
+        "type": "show",
+        "title": "Bleach",
+        "year": 2004,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/e0kKmeM8R7Kersh5N2PPzIRNRhr.jpg",
         "roles": [
           "actor"
         ]
@@ -479681,59 +479907,6 @@
       }
     ]
   },
-  "p1483904": {
-    "name": "Taku Kishimoto",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st131041",
-        "type": "show",
-        "title": "Blue Lock",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
-        "roles": [
-          "writer"
-        ]
-      },
-      {
-        "id": "st105556",
-        "type": "show",
-        "title": "Neškádli mě, Nagatoro!",
-        "year": 2021,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/k1z2xv3JjGobO9jfybHGo2tqAKC.jpg",
-        "roles": [
-          "writer"
-        ]
-      },
-      {
-        "id": "st65249",
-        "type": "show",
-        "title": "ERASED",
-        "year": 2016,
-        "score": 84,
-        "poster": "https://image.tmdb.org/t/p/w342/2xo5jNOwXGP41umcmxzZgPxGpaI.jpg",
-        "roles": [
-          "writer"
-        ]
-      },
-      {
-        "id": "st60863",
-        "type": "show",
-        "title": "Haikyu!!",
-        "year": 2014,
-        "score": 87,
-        "poster": "https://image.tmdb.org/t/p/w342/qNKaeunuUdL0smnowVVgShCkWZ4.jpg",
-        "roles": [
-          "writer"
-        ]
-      }
-    ]
-  },
   "p4160226": {
     "name": "Yang Jong-wook",
     "img": "/rt3JEJYB6L513zL8LVpLRCJ5E2o.jpg",
@@ -480585,147 +480758,6 @@
         "year": 2024,
         "score": 80,
         "poster": "https://image.tmdb.org/t/p/w342/jgKHZA474t3ZnIRgE59VgYlJjDw.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1252728": {
-    "name": "Nobuaki Kanemitsu",
-    "img": "/wf7IW1avxFoY1zecsN5dvI1EdZX.jpg",
-    "birthday": "1975-11-22",
-    "deathday": null,
-    "age": 50,
-    "works": [
-      {
-        "id": "st236994",
-        "type": "show",
-        "title": "ドラゴンボールDAIMA",
-        "year": 2024,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/u8GIA3ue6qsgA0QVxku5tg4IPVG.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st123876",
-        "type": "show",
-        "title": "Komi neumí komunikovat",
-        "year": 2021,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/dPaI9Ho4k4ZhNgPyRIkfEyiA2K7.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st97525",
-        "type": "show",
-        "title": "不滅のあなたへ",
-        "year": 2021,
-        "score": 82,
-        "poster": "https://image.tmdb.org/t/p/w342/bohMYRVSIG68md0zQobyWbV4S8e.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st86034",
-        "type": "show",
-        "title": "ありふれた職業で世界最強",
-        "year": 2019,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/3vwcB2MtQA1VZMCljCRSrDzNzdj.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st76121",
-        "type": "show",
-        "title": "Darling in the Franxx",
-        "year": 2018,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/wwk3zyeXdyCx68oJ7ncjDkLNkU9.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st73833",
-        "type": "show",
-        "title": "魔法使いの嫁",
-        "year": 2017,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/sExUEM7eI1MQdsxgdRunrCeDNMT.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st60863",
-        "type": "show",
-        "title": "Haikyu!!",
-        "year": 2014,
-        "score": 87,
-        "poster": "https://image.tmdb.org/t/p/w342/qNKaeunuUdL0smnowVVgShCkWZ4.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st61461",
-        "type": "show",
-        "title": "暁のヨナ",
-        "year": 2014,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/uF11jqAUCXJzG5aLihc8My4IIgc.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st46298",
-        "type": "show",
-        "title": "Hunter x Hunter",
-        "year": 2011,
-        "score": 90,
-        "poster": "https://image.tmdb.org/t/p/w342/9WxfAQquTun9ATkV6iAeFHMkqxv.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st39434",
-        "type": "show",
-        "title": "あの日見た花の名前を僕達はまだ知らない。",
-        "year": 2011,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/dZf3KcRtHBzJ4EjgjwTuqYqoGJe.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st42916",
-        "type": "show",
-        "title": "Toradora!",
-        "year": 2008,
-        "score": 79,
-        "poster": "https://image.tmdb.org/t/p/w342/gOG9zHfbhqvcKtzxjEtmpuw8WuU.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st30984",
-        "type": "show",
-        "title": "Bleach",
-        "year": 2004,
-        "score": 83,
-        "poster": "https://image.tmdb.org/t/p/w342/e0kKmeM8R7Kersh5N2PPzIRNRhr.jpg",
         "roles": [
           "actor"
         ]
