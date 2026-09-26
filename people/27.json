@@ -10959,6 +10959,17 @@
     "age": 64,
     "works": [
       {
+        "id": "st323111",
+        "type": "show",
+        "title": "Michael Jackson: Verdikt",
+        "year": 2026,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/8R40yI5AJ931Hd3P4Yf8pdFgwJ1.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1226841",
         "type": "movie",
         "title": "Nejhvězdnější noc popu",
@@ -14906,6 +14917,17 @@
         ]
       },
       {
+        "id": "st153496",
+        "type": "show",
+        "title": "Reborn Rich",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lRtxdLhnmaKYc65WfMHPrE4TuuI.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st112833",
         "type": "show",
         "title": "Spravedlnost pro mladistvé",
@@ -14923,17 +14945,6 @@
         "year": 2022,
         "score": 71,
         "poster": "https://image.tmdb.org/t/p/w342/yBwjikdOaLB3yhpipGwdNdlWXmw.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st153496",
-        "type": "show",
-        "title": "Reborn Rich",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lRtxdLhnmaKYc65WfMHPrE4TuuI.jpg",
         "roles": [
           "actor"
         ]
@@ -24232,6 +24243,17 @@
         ]
       },
       {
+        "id": "st279089",
+        "type": "show",
+        "title": "Possession",
+        "year": 2026,
+        "score": 57,
+        "poster": "https://image.tmdb.org/t/p/w342/qVvUs2KFhT3h36dvcVRtzaicl7n.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st252107",
         "type": "show",
         "title": "Hvězdné městečko",
@@ -24511,6 +24533,59 @@
         "year": 2023,
         "score": 58,
         "poster": "https://image.tmdb.org/t/p/w342/AlkZUyjnQyUyiF71RcrrXGLGZZ9.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p200618": {
+    "name": "Peter James Haworth",
+    "img": "/jkAUCBr19usyXIsOhbf3K2AkLxl.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1492640",
+        "type": "movie",
+        "title": "UNABOMBER",
+        "year": 2026,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/39aMkR8Y5vhCG9dTkjiqRl8AVqp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt334536",
+        "type": "movie",
+        "title": "February",
+        "year": 2017,
+        "score": 59,
+        "poster": "https://image.tmdb.org/t/p/w342/jO2aHAiWgQSlpAIPGZikiMDdMXx.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1249",
+        "type": "movie",
+        "title": "Hollywoodland",
+        "year": 2006,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/8FgNVvJEEwRgFURiAcW7VuXwvf1.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt9415",
+        "type": "movie",
+        "title": "Vražda v Bílém domě",
+        "year": 1997,
+        "score": 61,
+        "poster": "https://image.tmdb.org/t/p/w342/pESRhnmqbHTewmeBHxs2blBtfuO.jpg",
         "roles": [
           "actor"
         ]
@@ -87045,48 +87120,6 @@
         "year": 1995,
         "score": 86,
         "poster": "https://image.tmdb.org/t/p/w342/qL7KC7nF9JPL1IAM7tPW06m4zPJ.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p200618": {
-    "name": "Peter James Haworth",
-    "img": "/jkAUCBr19usyXIsOhbf3K2AkLxl.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt334536",
-        "type": "movie",
-        "title": "February",
-        "year": 2017,
-        "score": 59,
-        "poster": "https://image.tmdb.org/t/p/w342/jO2aHAiWgQSlpAIPGZikiMDdMXx.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1249",
-        "type": "movie",
-        "title": "Hollywoodland",
-        "year": 2006,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/8FgNVvJEEwRgFURiAcW7VuXwvf1.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt9415",
-        "type": "movie",
-        "title": "Vražda v Bílém domě",
-        "year": 1997,
-        "score": 61,
-        "poster": "https://image.tmdb.org/t/p/w342/pESRhnmqbHTewmeBHxs2blBtfuO.jpg",
         "roles": [
           "actor"
         ]
@@ -165645,6 +165678,17 @@
     "age": 48,
     "works": [
       {
+        "id": "st295780",
+        "type": "show",
+        "title": "Život, Larry a honba za neštěstím",
+        "year": 2026,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/p0fc8dypXm288JNZ9q60grblzRP.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt639720",
         "type": "movie",
         "title": "Imaginární přátelé",
@@ -167080,23 +167124,23 @@
         ]
       },
       {
-        "id": "st131041",
-        "type": "show",
-        "title": "Blue Lock",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st120089",
         "type": "show",
         "title": "SPY×FAMILY",
         "year": 2022,
         "score": 82,
         "poster": "https://image.tmdb.org/t/p/w342/vaIREdPGZOnW9Jrs86mheVVlIQQ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st131041",
+        "type": "show",
+        "title": "Blue Lock",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
         "roles": [
           "actor"
         ]
@@ -252246,23 +252290,23 @@
         ]
       },
       {
-        "id": "st131041",
-        "type": "show",
-        "title": "Blue Lock",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st114410",
         "type": "show",
         "title": "Chainsaw Man",
         "year": 2022,
         "score": 83,
         "poster": "https://image.tmdb.org/t/p/w342/mIz0eKhzHuSPeRSePCyoCt9bKVp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st131041",
+        "type": "show",
+        "title": "Blue Lock",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
         "roles": [
           "actor"
         ]
@@ -329507,23 +329551,23 @@
         ]
       },
       {
-        "id": "st131041",
-        "type": "show",
-        "title": "Blue Lock",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st120089",
         "type": "show",
         "title": "SPY×FAMILY",
         "year": 2022,
         "score": 82,
         "poster": "https://image.tmdb.org/t/p/w342/vaIREdPGZOnW9Jrs86mheVVlIQQ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st131041",
+        "type": "show",
+        "title": "Blue Lock",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
         "roles": [
           "actor"
         ]
@@ -439642,6 +439686,17 @@
     "age": null,
     "works": [
       {
+        "id": "st295780",
+        "type": "show",
+        "title": "Život, Larry a honba za neštěstím",
+        "year": 2026,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/p0fc8dypXm288JNZ9q60grblzRP.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt305342",
         "type": "movie",
         "title": "Dean",
@@ -504762,148 +504817,75 @@
       }
     ]
   },
-  "p2312690": {
-    "name": "Jason Edwards",
-    "img": null,
-    "birthday": null,
+  "p1747532": {
+    "name": "Kim Nam-hee",
+    "img": "/isgY8huXgnoW7AD97vKYlhJwAyI.jpg",
+    "birthday": "1986-05-25",
     "deathday": null,
-    "age": null,
+    "age": 40,
     "works": [
       {
-        "id": "st155537",
+        "id": "st291496",
         "type": "show",
-        "title": "Volavka",
+        "title": "Karameláska",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/ny8zYj40mWGTgKJi1a8hjNFUj9n.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st206686",
+        "type": "show",
+        "title": "Kuřecí kroketa",
+        "year": 2024,
+        "score": 51,
+        "poster": "https://image.tmdb.org/t/p/w342/g4hSAfG5HQgt65Tvwz1N5Ml6W0d.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st153496",
+        "type": "show",
+        "title": "Reborn Rich",
         "year": 2022,
         "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/waW5NMQmpd3Pox7lHGjXZt14Xrp.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3127471": {
-    "name": "Lee Jae-woo",
-    "img": "/5IOtkmZVEVtFGphe48dsXQnSuOS.jpg",
-    "birthday": "1972-01-24",
-    "deathday": null,
-    "age": 54,
-    "works": [
-      {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/lRtxdLhnmaKYc65WfMHPrE4TuuI.jpg",
         "roles": [
           "actor"
         ]
       },
       {
-        "id": "st134465",
+        "id": "st156248",
         "type": "show",
-        "title": "Šílená romance",
+        "title": "The Law Cafe",
         "year": 2022,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/8U3foujYcmmFgqFIbTn2HNe656k.jpg",
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/mMtXEgD82cPqF8z8fORxU8ILCZu.jpg",
         "roles": [
           "actor"
         ]
       },
       {
-        "id": "st129888",
+        "id": "st136699",
         "type": "show",
-        "title": "Pětadvacet jednadvacet",
+        "title": "Zásek",
         "year": 2022,
-        "score": 85,
-        "poster": "https://image.tmdb.org/t/p/w342/706Ar36Q1XT3056JQHoYpJbh6W0.jpg",
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/9tKVQXrbzytCzXeCSAE9p2m8Pbx.jpg",
         "roles": [
           "actor"
         ]
       },
       {
-        "id": "st119466",
+        "id": "st125350",
         "type": "show",
-        "title": "Youth of May",
+        "title": "Bláznivě zamilovaní",
         "year": 2021,
-        "score": 83,
-        "poster": "https://image.tmdb.org/t/p/w342/9hCEHk1iJfZEq4Ih2hHfeaKVrdF.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3009045": {
-    "name": "Choi Nam-wook",
-    "img": "/jmrElPMqrtgSyEz63c1OAtN0IPW.jpg",
-    "birthday": "1977-01-01",
-    "deathday": null,
-    "age": 49,
-    "works": [
-      {
-        "id": "st259710",
-        "type": "show",
-        "title": "Královna podvodnic",
-        "year": 2025,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/ccY3OWkCS7ClA3QFB4zNKn3jgkB.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st203164",
-        "type": "show",
-        "title": "Silná holka Nam-sun",
-        "year": 2023,
-        "score": 66,
-        "poster": "https://image.tmdb.org/t/p/w342/ktB3epuAUGjVE6te7udTUAHBuv2.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st146102",
-        "type": "show",
-        "title": "Through the Darkness",
-        "year": 2022,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/rE8zEZtwmg6J6zj5wBLciYtnQzc.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st131028",
-        "type": "show",
-        "title": "Devětatřicet",
-        "year": 2022,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/1f9BXeKOhGQpqT6uEeBL1xFkmnw.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st119466",
-        "type": "show",
-        "title": "Youth of May",
-        "year": 2021,
-        "score": 83,
-        "poster": "https://image.tmdb.org/t/p/w342/9hCEHk1iJfZEq4Ih2hHfeaKVrdF.jpg",
+        "score": 79,
+        "poster": "https://image.tmdb.org/t/p/w342/sMQu6bLdSj3rjKg18zCdnNcHXLX.jpg",
         "roles": [
           "actor"
         ]
@@ -504920,12 +504902,65 @@
         ]
       },
       {
-        "id": "st96162",
+        "id": "st89410",
         "type": "show",
-        "title": "Třída z Itaewonu",
-        "year": 2020,
+        "title": "Search: WWW",
+        "year": 2019,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/s34j381n5B4oARTQ5pctFORZVfS.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st75820",
+        "type": "show",
+        "title": "Mr. Sunshine",
+        "year": 2018,
+        "score": 87,
+        "poster": "https://image.tmdb.org/t/p/w342/uSavP0BSfnyUaJe62f0ZTXIHLs8.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3724287": {
+    "name": "Cha Sung-je",
+    "img": "/4O2bEPuPjnxdqlAPcO0dDPvZ4zx.jpg",
+    "birthday": "2007-04-13",
+    "deathday": null,
+    "age": 19,
+    "works": [
+      {
+        "id": "st204241",
+        "type": "show",
+        "title": "Rozvodový právník Šin",
+        "year": 2023,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/8NPsU2dXH76IjFVbv1iYM4RQ6Gw.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st153496",
+        "type": "show",
+        "title": "Reborn Rich",
+        "year": 2022,
         "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/2tTMci6Hq99gkagpYe19RulNXRr.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/lRtxdLhnmaKYc65WfMHPrE4TuuI.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st94796",
+        "type": "show",
+        "title": "Láska padá z nebe",
+        "year": 2019,
+        "score": 87,
+        "poster": "https://image.tmdb.org/t/p/w342/mvy18bPg93JNLwTQHHP2ZjPYP0A.jpg",
         "roles": [
           "actor"
         ]
@@ -505322,6 +505357,103 @@
         "year": 2016,
         "score": 84,
         "poster": "https://image.tmdb.org/t/p/w342/dmVgWSrtEj39DUv1QEjT6nGpX3L.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3009045": {
+    "name": "Choi Nam-wook",
+    "img": "/jmrElPMqrtgSyEz63c1OAtN0IPW.jpg",
+    "birthday": "1977-01-01",
+    "deathday": null,
+    "age": 49,
+    "works": [
+      {
+        "id": "st259710",
+        "type": "show",
+        "title": "Královna podvodnic",
+        "year": 2025,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/ccY3OWkCS7ClA3QFB4zNKn3jgkB.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st203164",
+        "type": "show",
+        "title": "Silná holka Nam-sun",
+        "year": 2023,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/ktB3epuAUGjVE6te7udTUAHBuv2.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st146102",
+        "type": "show",
+        "title": "Through the Darkness",
+        "year": 2022,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/rE8zEZtwmg6J6zj5wBLciYtnQzc.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st131028",
+        "type": "show",
+        "title": "Devětatřicet",
+        "year": 2022,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/1f9BXeKOhGQpqT6uEeBL1xFkmnw.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st119466",
+        "type": "show",
+        "title": "Youth of May",
+        "year": 2021,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/9hCEHk1iJfZEq4Ih2hHfeaKVrdF.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st96648",
+        "type": "show",
+        "title": "Sladký domove!",
+        "year": 2020,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/kJEcSBMPacDJuAihPNmcUEgon1Y.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st96162",
+        "type": "show",
+        "title": "Třída z Itaewonu",
+        "year": 2020,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/2tTMci6Hq99gkagpYe19RulNXRr.jpg",
         "roles": [
           "actor"
         ]
@@ -507518,6 +507650,59 @@
       }
     ]
   },
+  "p3127471": {
+    "name": "Lee Jae-woo",
+    "img": "/5IOtkmZVEVtFGphe48dsXQnSuOS.jpg",
+    "birthday": "1972-01-24",
+    "deathday": null,
+    "age": 54,
+    "works": [
+      {
+        "id": "st134465",
+        "type": "show",
+        "title": "Šílená romance",
+        "year": 2022,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/8U3foujYcmmFgqFIbTn2HNe656k.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st129888",
+        "type": "show",
+        "title": "Pětadvacet jednadvacet",
+        "year": 2022,
+        "score": 85,
+        "poster": "https://image.tmdb.org/t/p/w342/706Ar36Q1XT3056JQHoYpJbh6W0.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st119466",
+        "type": "show",
+        "title": "Youth of May",
+        "year": 2021,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/9hCEHk1iJfZEq4Ih2hHfeaKVrdF.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p4012190": {
     "name": "Shin Jun-Chul",
     "img": "/ijyXFWPh2kt4rVYQYK9m1cAl2zk.jpg",
@@ -507962,114 +508147,6 @@
         "year": 2022,
         "score": 73,
         "poster": "https://image.tmdb.org/t/p/w342/p22xaH2ZpxhdJa1ZFF528Yk7AWc.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1747532": {
-    "name": "Kim Nam-hee",
-    "img": "/isgY8huXgnoW7AD97vKYlhJwAyI.jpg",
-    "birthday": "1986-05-25",
-    "deathday": null,
-    "age": 40,
-    "works": [
-      {
-        "id": "st291496",
-        "type": "show",
-        "title": "Karameláska",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/ny8zYj40mWGTgKJi1a8hjNFUj9n.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st206686",
-        "type": "show",
-        "title": "Kuřecí kroketa",
-        "year": 2024,
-        "score": 51,
-        "poster": "https://image.tmdb.org/t/p/w342/g4hSAfG5HQgt65Tvwz1N5Ml6W0d.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st156248",
-        "type": "show",
-        "title": "The Law Cafe",
-        "year": 2022,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/mMtXEgD82cPqF8z8fORxU8ILCZu.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st136699",
-        "type": "show",
-        "title": "Zásek",
-        "year": 2022,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/9tKVQXrbzytCzXeCSAE9p2m8Pbx.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st153496",
-        "type": "show",
-        "title": "Reborn Rich",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lRtxdLhnmaKYc65WfMHPrE4TuuI.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st125350",
-        "type": "show",
-        "title": "Bláznivě zamilovaní",
-        "year": 2021,
-        "score": 79,
-        "poster": "https://image.tmdb.org/t/p/w342/sMQu6bLdSj3rjKg18zCdnNcHXLX.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st96648",
-        "type": "show",
-        "title": "Sladký domove!",
-        "year": 2020,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/kJEcSBMPacDJuAihPNmcUEgon1Y.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st89410",
-        "type": "show",
-        "title": "Search: WWW",
-        "year": 2019,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/s34j381n5B4oARTQ5pctFORZVfS.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st75820",
-        "type": "show",
-        "title": "Mr. Sunshine",
-        "year": 2018,
-        "score": 87,
-        "poster": "https://image.tmdb.org/t/p/w342/uSavP0BSfnyUaJe62f0ZTXIHLs8.jpg",
         "roles": [
           "actor"
         ]
@@ -513126,48 +513203,6 @@
       }
     ]
   },
-  "p3724287": {
-    "name": "Cha Sung-je",
-    "img": "/4O2bEPuPjnxdqlAPcO0dDPvZ4zx.jpg",
-    "birthday": "2007-04-13",
-    "deathday": null,
-    "age": 19,
-    "works": [
-      {
-        "id": "st204241",
-        "type": "show",
-        "title": "Rozvodový právník Šin",
-        "year": 2023,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/8NPsU2dXH76IjFVbv1iYM4RQ6Gw.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st153496",
-        "type": "show",
-        "title": "Reborn Rich",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lRtxdLhnmaKYc65WfMHPrE4TuuI.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st94796",
-        "type": "show",
-        "title": "Láska padá z nebe",
-        "year": 2019,
-        "score": 87,
-        "poster": "https://image.tmdb.org/t/p/w342/mvy18bPg93JNLwTQHHP2ZjPYP0A.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p3965165": {
     "name": "Renata Machačová",
     "img": null,
@@ -516779,6 +516814,37 @@
         "year": 2023,
         "score": null,
         "poster": "",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2418246": {
+    "name": "Nava Mau",
+    "img": "/u8cS0PxTVnNJQeWItZdcr6JxrBs.jpg",
+    "birthday": "1992-05-14",
+    "deathday": null,
+    "age": 34,
+    "works": [
+      {
+        "id": "st241259",
+        "type": "show",
+        "title": "Sobík",
+        "year": 2024,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/e0I3aUxQiDvjClyxa4ZfuhitbQp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st96718",
+        "type": "show",
+        "title": "Genera+ion",
+        "year": 2021,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/k2T6PmKcTIZRvNAP5LV81MekoPf.jpg",
         "roles": [
           "actor"
         ]
@@ -523674,6 +523740,26 @@
       }
     ]
   },
+  "p2312690": {
+    "name": "Jason Edwards",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st155537",
+        "type": "show",
+        "title": "Volavka",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/waW5NMQmpd3Pox7lHGjXZt14Xrp.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2109784": {
     "name": "Kaori Ikeda",
     "img": "/srDJzCWe8hgqop6RcS5yLQzKuJO.jpg",
@@ -524726,37 +524812,6 @@
         "year": 2024,
         "score": 77,
         "poster": "https://image.tmdb.org/t/p/w342/6mRwM5lrwwYRlwpyTxkNnTTPfWO.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2418246": {
-    "name": "Nava Mau",
-    "img": "/u8cS0PxTVnNJQeWItZdcr6JxrBs.jpg",
-    "birthday": "1992-05-14",
-    "deathday": null,
-    "age": 34,
-    "works": [
-      {
-        "id": "st241259",
-        "type": "show",
-        "title": "Sobík",
-        "year": 2024,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/e0I3aUxQiDvjClyxa4ZfuhitbQp.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st96718",
-        "type": "show",
-        "title": "Genera+ion",
-        "year": 2021,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/k2T6PmKcTIZRvNAP5LV81MekoPf.jpg",
         "roles": [
           "actor"
         ]

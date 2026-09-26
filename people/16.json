@@ -20040,6 +20040,26 @@
       }
     ]
   },
+  "p2609481": {
+    "name": "Éric Gagnon",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1492640",
+        "type": "movie",
+        "title": "UNABOMBER",
+        "year": 2026,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/39aMkR8Y5vhCG9dTkjiqRl8AVqp.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p6050885": {
     "name": "Matthew Liptak",
     "img": null,
@@ -21081,70 +21101,6 @@
         "year": 2026,
         "score": 70,
         "poster": "https://image.tmdb.org/t/p/w342/pBEniJJ9G8cywQfb6lB3QqRqY2i.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p83605": {
-    "name": "Mike Hickman",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1380417",
-        "type": "movie",
-        "title": "By Any Means",
-        "year": 2026,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/f4hdIed8vh10O8TkQ1CkHS8MQ3G.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt445466",
-        "type": "movie",
-        "title": "Idiots",
-        "year": 2026,
-        "score": 61,
-        "poster": "https://image.tmdb.org/t/p/w342/flpCqxH46pGZD1kNOdYgrVsDoTm.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st133748",
-        "type": "show",
-        "title": "Twisted Metal",
-        "year": 2023,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/zMwMClR9y7RBeVWMEmNn8LwUJHz.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt157386",
-        "type": "movie",
-        "title": "Kouzlo přítomného okamžiku",
-        "year": 2013,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/obDS8pTWVWZiNAaTyfIFWYZbRsZ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt29427",
-        "type": "movie",
-        "title": "Podivní",
-        "year": 2010,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/ggtG9DZELyTtM2Y0DRJDOJa5iP8.jpg",
         "roles": [
           "actor"
         ]
@@ -29989,6 +29945,17 @@
         "year": 2026,
         "score": 61,
         "poster": "https://image.tmdb.org/t/p/w342/98T4bnMjJs71WOVZoeY8edZhfgZ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st295780",
+        "type": "show",
+        "title": "Život, Larry a honba za neštěstím",
+        "year": 2026,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/p0fc8dypXm288JNZ9q60grblzRP.jpg",
         "roles": [
           "actor"
         ]
@@ -111114,6 +111081,17 @@
     "age": 54,
     "works": [
       {
+        "id": "st292742",
+        "type": "show",
+        "title": "S.W.A.T. Exiles",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/pPiEujhVa2MBSowmvnNWqEzxH0x.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st71790",
         "type": "show",
         "title": "S.W.A.T.",
@@ -126870,6 +126848,17 @@
     "deathday": null,
     "age": 54,
     "works": [
+      {
+        "id": "st295780",
+        "type": "show",
+        "title": "Život, Larry a honba za neštěstím",
+        "year": 2026,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/p0fc8dypXm288JNZ9q60grblzRP.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "st208713",
         "type": "show",
@@ -178292,23 +178281,23 @@
         ]
       },
       {
-        "id": "st155537",
-        "type": "show",
-        "title": "Volavka",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/waW5NMQmpd3Pox7lHGjXZt14Xrp.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st111894",
         "type": "show",
         "title": "Noční obloha",
         "year": 2022,
         "score": 73,
         "poster": "https://image.tmdb.org/t/p/w342/wQAOmJvPsjlmsDTjeOHQikczY1K.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st155537",
+        "type": "show",
+        "title": "Volavka",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/waW5NMQmpd3Pox7lHGjXZt14Xrp.jpg",
         "roles": [
           "actor"
         ]
@@ -241860,6 +241849,70 @@
         "year": 2025,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/9iu54iBYguzaYQK0eYRVJTv8RHx.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p83605": {
+    "name": "Mike Hickman",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1380417",
+        "type": "movie",
+        "title": "By Any Means",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/f4hdIed8vh10O8TkQ1CkHS8MQ3G.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt445466",
+        "type": "movie",
+        "title": "Idiots",
+        "year": 2026,
+        "score": 61,
+        "poster": "https://image.tmdb.org/t/p/w342/flpCqxH46pGZD1kNOdYgrVsDoTm.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st133748",
+        "type": "show",
+        "title": "Twisted Metal",
+        "year": 2023,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/zMwMClR9y7RBeVWMEmNn8LwUJHz.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt157386",
+        "type": "movie",
+        "title": "Kouzlo přítomného okamžiku",
+        "year": 2013,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/obDS8pTWVWZiNAaTyfIFWYZbRsZ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt29427",
+        "type": "movie",
+        "title": "Podivní",
+        "year": 2010,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/ggtG9DZELyTtM2Y0DRJDOJa5iP8.jpg",
         "roles": [
           "actor"
         ]
@@ -436925,84 +436978,51 @@
       }
     ]
   },
-  "p3481219": {
-    "name": "Yun Sang-jeong",
-    "img": "/pOwEfgsFJhYQ8PtxtQW0aaeW0nR.jpg",
-    "birthday": "1998-01-17",
-    "deathday": null,
-    "age": 28,
-    "works": [
-      {
-        "id": "st303143",
-        "type": "show",
-        "title": "My Royal Nemesis",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/u2cX3CVzUZLIGVwd9HB7bUhE7OP.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st196474",
-        "type": "show",
-        "title": "Čas volá tvé jméno",
-        "year": 2023,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/tzCAgw7fFwY0JRINqYr3fbpsFFm.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st136732",
-        "type": "show",
-        "title": "Sh**ting Stars",
-        "year": 2022,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/tF8Zu1yDZh9t1ndte2XUAU7qtmE.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st126698",
-        "type": "show",
-        "title": "Jsi mé jaro",
-        "year": 2021,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/hAH3lc6tiRQPqv1a3tvSEQIqzFo.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4012849": {
-    "name": "Lim Jung-ok",
-    "img": "/4sfrLeU7xvjElkE9D5KCLvVK3uD.jpg",
+  "p2164926": {
+    "name": "Kim Tae-hee",
+    "img": null,
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "st154825",
+        "id": "st153496",
         "type": "show",
-        "title": "Obchodní návrh",
+        "title": "Reborn Rich",
         "year": 2022,
         "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/lRtxdLhnmaKYc65WfMHPrE4TuuI.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "st86824",
+        "type": "show",
+        "title": "Prezident v pořadí: 60 dní",
+        "year": 2019,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/fpRC1zhGOx3nvtkWb9Nrl6EZpwB.jpg",
+        "roles": [
+          "writer"
+        ]
+      }
+    ]
+  },
+  "p3281657": {
+    "name": "Jeff Heapy",
+    "img": "/eSfzkhuYmsatZqZ1wIUCbKLorEB.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st139397",
+        "type": "show",
+        "title": "Svět podle nás",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
         "roles": [
           "actor"
         ]
@@ -437545,6 +437565,70 @@
         "year": 2019,
         "score": 72,
         "poster": "https://image.tmdb.org/t/p/w342/xqquBr7LURe9CWTbCkMnvXtsilu.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3481219": {
+    "name": "Yun Sang-jeong",
+    "img": "/pOwEfgsFJhYQ8PtxtQW0aaeW0nR.jpg",
+    "birthday": "1998-01-17",
+    "deathday": null,
+    "age": 28,
+    "works": [
+      {
+        "id": "st303143",
+        "type": "show",
+        "title": "My Royal Nemesis",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/u2cX3CVzUZLIGVwd9HB7bUhE7OP.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st196474",
+        "type": "show",
+        "title": "Čas volá tvé jméno",
+        "year": 2023,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/tzCAgw7fFwY0JRINqYr3fbpsFFm.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st136732",
+        "type": "show",
+        "title": "Sh**ting Stars",
+        "year": 2022,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/tF8Zu1yDZh9t1ndte2XUAU7qtmE.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st126698",
+        "type": "show",
+        "title": "Jsi mé jaro",
+        "year": 2021,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/hAH3lc6tiRQPqv1a3tvSEQIqzFo.jpg",
         "roles": [
           "actor"
         ]
@@ -444222,6 +444306,26 @@
       }
     ]
   },
+  "p968869": {
+    "name": "Jakub Korolczuk",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st270444",
+        "type": "show",
+        "title": "Olověné děti",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/ikawmMAPwHMmoZU8YCw4t8847sv.jpg",
+        "roles": [
+          "writer"
+        ]
+      }
+    ]
+  },
   "p4071578": {
     "name": "Sean Thomas Simmons",
     "img": "/lKmovRWFublyfUopCdTFISfQL9C.jpg",
@@ -445520,6 +445624,26 @@
       }
     ]
   },
+  "p4012849": {
+    "name": "Lim Jung-ok",
+    "img": "/4sfrLeU7xvjElkE9D5KCLvVK3uD.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p1696909": {
     "name": "Haruka Itou",
     "img": "/6kWOfUqnIH5hJtvw6wmALZIg6ao.jpg",
@@ -445534,57 +445658,6 @@
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2164926": {
-    "name": "Kim Tae-hee",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st153496",
-        "type": "show",
-        "title": "Reborn Rich",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lRtxdLhnmaKYc65WfMHPrE4TuuI.jpg",
-        "roles": [
-          "writer"
-        ]
-      },
-      {
-        "id": "st86824",
-        "type": "show",
-        "title": "Prezident v pořadí: 60 dní",
-        "year": 2019,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/fpRC1zhGOx3nvtkWb9Nrl6EZpwB.jpg",
-        "roles": [
-          "writer"
-        ]
-      }
-    ]
-  },
-  "p3281657": {
-    "name": "Jeff Heapy",
-    "img": "/eSfzkhuYmsatZqZ1wIUCbKLorEB.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st139397",
-        "type": "show",
-        "title": "Svět podle nás",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
         "roles": [
           "actor"
         ]
@@ -446911,46 +446984,6 @@
       }
     ]
   },
-  "p5473704": {
-    "name": "Stefanie Michova",
-    "img": "/6v0XDTIZa4MEsicInI1LxNX1YAp.jpg",
-    "birthday": "1991-06-08",
-    "deathday": null,
-    "age": 35,
-    "works": [
-      {
-        "id": "st303143",
-        "type": "show",
-        "title": "My Royal Nemesis",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/u2cX3CVzUZLIGVwd9HB7bUhE7OP.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p968869": {
-    "name": "Jakub Korolczuk",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st270444",
-        "type": "show",
-        "title": "Olověné děti",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/ikawmMAPwHMmoZU8YCw4t8847sv.jpg",
-        "roles": [
-          "writer"
-        ]
-      }
-    ]
-  },
   "p6143824": {
     "name": "Yoon Hye-rim",
     "img": "/meawWGnxwtZtO10LjmsqYXBXDEl.jpg",
@@ -446965,6 +446998,26 @@
         "year": 2026,
         "score": 75,
         "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5473704": {
+    "name": "Stefanie Michova",
+    "img": "/6v0XDTIZa4MEsicInI1LxNX1YAp.jpg",
+    "birthday": "1991-06-08",
+    "deathday": null,
+    "age": 35,
+    "works": [
+      {
+        "id": "st303143",
+        "type": "show",
+        "title": "My Royal Nemesis",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/u2cX3CVzUZLIGVwd9HB7bUhE7OP.jpg",
         "roles": [
           "actor"
         ]

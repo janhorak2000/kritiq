@@ -135966,6 +135966,17 @@
     "age": 57,
     "works": [
       {
+        "id": "mt843352",
+        "type": "movie",
+        "title": "Legend of the White Dragon",
+        "year": 2026,
+        "score": 58,
+        "poster": "https://image.tmdb.org/t/p/w342/5JJRTM1mMuqnK4BJojMljm5Xpgj.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1119377",
         "type": "movie",
         "title": "Xeno",
@@ -232141,23 +232152,23 @@
         ]
       },
       {
-        "id": "st239385",
-        "type": "show",
-        "title": "Manipulátor",
-        "year": 2025,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/j5E4RXqovOrV3CS1duTGxDfmlFt.jpg",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
         "id": "st224819",
         "type": "show",
         "title": "Drahý Hongnangu",
         "year": 2025,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/bmWzKsD5iRUBR9uvOzuTMM6EYn1.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "st239385",
+        "type": "show",
+        "title": "Manipulátor",
+        "year": 2025,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/j5E4RXqovOrV3CS1duTGxDfmlFt.jpg",
         "roles": [
           "composer"
         ]
@@ -346785,6 +346796,48 @@
       }
     ]
   },
+  "p1441209": {
+    "name": "Lola Blanc",
+    "img": "/vOkE7XMsTHOQt1U11StSHCQawVP.jpg",
+    "birthday": "1987-12-20",
+    "deathday": null,
+    "age": 38,
+    "works": [
+      {
+        "id": "mt843352",
+        "type": "movie",
+        "title": "Legend of the White Dragon",
+        "year": 2026,
+        "score": 58,
+        "poster": "https://image.tmdb.org/t/p/w342/5JJRTM1mMuqnK4BJojMljm5Xpgj.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt554908",
+        "type": "movie",
+        "title": "Konce a začátky",
+        "year": 2020,
+        "score": 56,
+        "poster": "https://image.tmdb.org/t/p/w342/5yfJDjTp6n8QXN0M9aGCYpqahXZ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt396461",
+        "type": "movie",
+        "title": "Záhada Silver Lake",
+        "year": 2018,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/xrV6ceP2z7RAc2bTfZTE2wRSF7F.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p6236318": {
     "name": "Sandeep Sharma",
     "img": null,
@@ -405970,37 +406023,6 @@
         "year": 2005,
         "score": 85,
         "poster": "https://image.tmdb.org/t/p/w342/lHfmc6d8pOVFrD0eOKPiDbjeucG.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1441209": {
-    "name": "Lola Blanc",
-    "img": "/vOkE7XMsTHOQt1U11StSHCQawVP.jpg",
-    "birthday": "1987-12-20",
-    "deathday": null,
-    "age": 38,
-    "works": [
-      {
-        "id": "mt554908",
-        "type": "movie",
-        "title": "Konce a začátky",
-        "year": 2020,
-        "score": 56,
-        "poster": "https://image.tmdb.org/t/p/w342/5yfJDjTp6n8QXN0M9aGCYpqahXZ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt396461",
-        "type": "movie",
-        "title": "Záhada Silver Lake",
-        "year": 2018,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/xrV6ceP2z7RAc2bTfZTE2wRSF7F.jpg",
         "roles": [
           "actor"
         ]
@@ -641787,48 +641809,6 @@
       }
     ]
   },
-  "p2276934": {
-    "name": "Laura Miranda",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st219937",
-        "type": "show",
-        "title": "Dexter: Original Sin",
-        "year": 2024,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/j5bP7spdfS0NpDLKDlqJYyJPi1j.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st139397",
-        "type": "show",
-        "title": "Svět podle nás",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st119243",
-        "type": "show",
-        "title": "iCarly",
-        "year": 2021,
-        "score": 67,
-        "poster": "https://image.tmdb.org/t/p/w342/tM4P2RNIIFzFJi7UngNVB80sRCp.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p2995806": {
     "name": "Hong Bo-hee",
     "img": null,
@@ -652792,66 +652772,6 @@
       }
     ]
   },
-  "p4730715": {
-    "name": "Charles Blyzniuk",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st247522",
-        "type": "show",
-        "title": "Gumy, kam se podíváš",
-        "year": 2024,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/6mRwM5lrwwYRlwpyTxkNnTTPfWO.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4730737": {
-    "name": "Rumando Kelley",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st247522",
-        "type": "show",
-        "title": "Gumy, kam se podíváš",
-        "year": 2024,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/6mRwM5lrwwYRlwpyTxkNnTTPfWO.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4730748": {
-    "name": "Blair Griffith",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st247522",
-        "type": "show",
-        "title": "Gumy, kam se podíváš",
-        "year": 2024,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/6mRwM5lrwwYRlwpyTxkNnTTPfWO.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p3510705": {
     "name": "Kevin Del Aguila",
     "img": "/fCxjQcAxoikVh3YAC93TlJukNex.jpg",
@@ -656114,6 +656034,130 @@
       }
     ]
   },
+  "p4794614": {
+    "name": "Gu Hyun",
+    "img": "/3SzPXhd7wHYFwtXRy5tX5TfNpp5.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st227191",
+        "type": "show",
+        "title": "Devět Hádanek",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/3odibmWnSpFf0fwA1KT1SO3yVfX.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st238084",
+        "type": "show",
+        "title": "Spoušť",
+        "year": 2025,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/6kk0yTA1m8Hxt9lctUT3ygmj6aa.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st280945",
+        "type": "show",
+        "title": "Bon Appétit, Vaše Výsosti",
+        "year": 2025,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/kqFofZ0hOQ7Y3VUQQ59lpHaCJpM.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5503707": {
+    "name": "Alice Malakhov",
+    "img": "/zk7Eb301oD8qaWWtfUcCRQL2tyg.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st281401",
+        "type": "show",
+        "title": "Na hraně",
+        "year": 2026,
+        "score": 59,
+        "poster": "https://image.tmdb.org/t/p/w342/7t6iXlbfoBSfVyINLRHms5kqfze.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st260458",
+        "type": "show",
+        "title": "Dospělost",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4550843": {
+    "name": "Talia Evans",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st260458",
+        "type": "show",
+        "title": "Dospělost",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4663714": {
+    "name": "Marvin L. Winans III",
+    "img": "/d6m9HYE1DMiNgS1rOH0w6aPOMlc.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st248394",
+        "type": "show",
+        "title": "Miluju tě navždy",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/twlp0YMmuKmn4cKAInAL3zde59W.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st125935",
+        "type": "show",
+        "title": "Základka Willarda Abbotta",
+        "year": 2021,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/5NYBd2NyCHt6FXwAzaL6Xyf8Z3m.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p6225307": {
     "name": "Bernardo Tuccillo",
     "img": "/hTsfgSvVt6oY0UQDdWE7qLRJSqn.jpg",
@@ -656610,48 +656654,6 @@
         "year": 2025,
         "score": 72,
         "poster": "https://image.tmdb.org/t/p/w342/1yQoJgfhvUsVLo59iTNa897M5lV.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4794614": {
-    "name": "Gu Hyun",
-    "img": "/3SzPXhd7wHYFwtXRy5tX5TfNpp5.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st238084",
-        "type": "show",
-        "title": "Spoušť",
-        "year": 2025,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/6kk0yTA1m8Hxt9lctUT3ygmj6aa.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st280945",
-        "type": "show",
-        "title": "Bon Appétit, Vaše Výsosti",
-        "year": 2025,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/kqFofZ0hOQ7Y3VUQQ59lpHaCJpM.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st227191",
-        "type": "show",
-        "title": "Devět Hádanek",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/3odibmWnSpFf0fwA1KT1SO3yVfX.jpg",
         "roles": [
           "actor"
         ]
@@ -660025,37 +660027,6 @@
       }
     ]
   },
-  "p5503707": {
-    "name": "Alice Malakhov",
-    "img": "/zk7Eb301oD8qaWWtfUcCRQL2tyg.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st281401",
-        "type": "show",
-        "title": "Na hraně",
-        "year": 2026,
-        "score": 59,
-        "poster": "https://image.tmdb.org/t/p/w342/7t6iXlbfoBSfVyINLRHms5kqfze.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st260458",
-        "type": "show",
-        "title": "Dospělost",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p6061033": {
     "name": "Amandine Faye",
     "img": null,
@@ -661253,6 +661224,48 @@
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2276934": {
+    "name": "Laura Miranda",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st219937",
+        "type": "show",
+        "title": "Dexter: Original Sin",
+        "year": 2024,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/j5bP7spdfS0NpDLKDlqJYyJPi1j.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st139397",
+        "type": "show",
+        "title": "Svět podle nás",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st119243",
+        "type": "show",
+        "title": "iCarly",
+        "year": 2021,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/tM4P2RNIIFzFJi7UngNVB80sRCp.jpg",
         "roles": [
           "actor"
         ]
@@ -662635,6 +662648,66 @@
       }
     ]
   },
+  "p4730715": {
+    "name": "Charles Blyzniuk",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st247522",
+        "type": "show",
+        "title": "Gumy, kam se podíváš",
+        "year": 2024,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/6mRwM5lrwwYRlwpyTxkNnTTPfWO.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4730737": {
+    "name": "Rumando Kelley",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st247522",
+        "type": "show",
+        "title": "Gumy, kam se podíváš",
+        "year": 2024,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/6mRwM5lrwwYRlwpyTxkNnTTPfWO.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4730748": {
+    "name": "Blair Griffith",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st247522",
+        "type": "show",
+        "title": "Gumy, kam se podíváš",
+        "year": 2024,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/6mRwM5lrwwYRlwpyTxkNnTTPfWO.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p6236329": {
     "name": "한보라",
     "img": null,
@@ -663378,77 +663451,6 @@
       }
     ]
   },
-  "p589760": {
-    "name": "Kwon Jong-kwan",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st209110",
-        "type": "show",
-        "title": "Cena přiznání",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/6R7UMF0aAOy9p4v8dlGtCIPhwcS.jpg",
-        "roles": [
-          "writer"
-        ]
-      }
-    ]
-  },
-  "p4550843": {
-    "name": "Talia Evans",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st260458",
-        "type": "show",
-        "title": "Dospělost",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4663714": {
-    "name": "Marvin L. Winans III",
-    "img": "/d6m9HYE1DMiNgS1rOH0w6aPOMlc.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st248394",
-        "type": "show",
-        "title": "Miluju tě navždy",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/twlp0YMmuKmn4cKAInAL3zde59W.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st125935",
-        "type": "show",
-        "title": "Základka Willarda Abbotta",
-        "year": 2021,
-        "score": 82,
-        "poster": "https://image.tmdb.org/t/p/w342/5NYBd2NyCHt6FXwAzaL6Xyf8Z3m.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p4013119": {
     "name": "Tom Lucca",
     "img": "/9dx3Fj8Fl0uAAfHRNOjElxayEOg.jpg",
@@ -663476,6 +663478,26 @@
         "poster": "https://image.tmdb.org/t/p/w342/fRQ3JV67ADyTrRNyXqefqJkJsD4.jpg",
         "roles": [
           "actor"
+        ]
+      }
+    ]
+  },
+  "p589760": {
+    "name": "Kwon Jong-kwan",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st209110",
+        "type": "show",
+        "title": "Cena přiznání",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/6R7UMF0aAOy9p4v8dlGtCIPhwcS.jpg",
+        "roles": [
+          "writer"
         ]
       }
     ]
