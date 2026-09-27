@@ -89016,6 +89016,17 @@
     "age": 44,
     "works": [
       {
+        "id": "mt1088434",
+        "type": "movie",
+        "title": "Hellfire",
+        "year": 2026,
+        "score": 47,
+        "poster": "https://image.tmdb.org/t/p/w342/tQti9QTf13MfzNpXguijgNh7ojE.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt974961",
         "type": "movie",
         "title": "Murder at Yellowstone City",
@@ -149686,23 +149697,23 @@
         ]
       },
       {
-        "id": "st224819",
-        "type": "show",
-        "title": "Drahý Hongnangu",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/bmWzKsD5iRUBR9uvOzuTMM6EYn1.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st245079",
         "type": "show",
         "title": "Hyper skalpel",
         "year": 2025,
         "score": 73,
         "poster": "https://image.tmdb.org/t/p/w342/k1WRnwvmW6DmK6j2D1F3HfWlxuO.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st224819",
+        "type": "show",
+        "title": "Drahý Hongnangu",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/bmWzKsD5iRUBR9uvOzuTMM6EYn1.jpg",
         "roles": [
           "actor"
         ]
@@ -168404,6 +168415,19 @@
         ]
       },
       {
+        "id": "mt1516724",
+        "type": "movie",
+        "title": "Pour le plaisir",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/2cWdr2n7VNrLEAer6hMPASIP7Px.jpg",
+        "roles": [
+          "actor",
+          "director",
+          "writer"
+        ]
+      },
+      {
         "id": "mt977331",
         "type": "movie",
         "title": "Kočka a pes: Šílené dobrodružství",
@@ -183538,23 +183562,23 @@
         ]
       },
       {
-        "id": "st129888",
-        "type": "show",
-        "title": "Pětadvacet jednadvacet",
-        "year": 2022,
-        "score": 85,
-        "poster": "https://image.tmdb.org/t/p/w342/706Ar36Q1XT3056JQHoYpJbh6W0.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st154825",
         "type": "show",
         "title": "Obchodní návrh",
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st129888",
+        "type": "show",
+        "title": "Pětadvacet jednadvacet",
+        "year": 2022,
+        "score": 85,
+        "poster": "https://image.tmdb.org/t/p/w342/706Ar36Q1XT3056JQHoYpJbh6W0.jpg",
         "roles": [
           "actor"
         ]

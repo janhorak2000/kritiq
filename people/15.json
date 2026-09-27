@@ -108111,23 +108111,23 @@
     "age": 72,
     "works": [
       {
-        "id": "st248394",
-        "type": "show",
-        "title": "Miluju tě navždy",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/twlp0YMmuKmn4cKAInAL3zde59W.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st245219",
         "type": "show",
         "title": "Rána bleskem",
         "year": 2025,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/KyUrz3GA1FML3XnKkY795XxDxN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st248394",
+        "type": "show",
+        "title": "Miluju tě navždy",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/twlp0YMmuKmn4cKAInAL3zde59W.jpg",
         "roles": [
           "actor"
         ]
@@ -222773,6 +222773,17 @@
     "age": 47,
     "works": [
       {
+        "id": "mt1088434",
+        "type": "movie",
+        "title": "Hellfire",
+        "year": 2026,
+        "score": 47,
+        "poster": "https://image.tmdb.org/t/p/w342/tQti9QTf13MfzNpXguijgNh7ojE.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st261363",
         "type": "show",
         "title": "Mid-Century Modern",
@@ -240554,6 +240565,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "mt1376415",
+        "type": "movie",
+        "title": "L'Affaire Bojarski",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/r60UQDxVX3ayqlvUDdjPWUfD3x4.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt1005685",
         "type": "movie",
@@ -468751,99 +468773,6 @@
       }
     ]
   },
-  "p4160226": {
-    "name": "Yang Jong-wook",
-    "img": "/rt3JEJYB6L513zL8LVpLRCJ5E2o.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st211261",
-        "type": "show",
-        "title": "Specialisté Prvního Zásahu",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p118975": {
-    "name": "Choi Jae-hwan",
-    "img": "/62hWPPcUcjvI6yeAvP0xsIGtQUv.jpg",
-    "birthday": "1983-07-15",
-    "deathday": null,
-    "age": 43,
-    "works": [
-      {
-        "id": "st216310",
-        "type": "show",
-        "title": "Diva trosečnice",
-        "year": 2023,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/1NseFoBcprx5BYJcd03sTUEczG3.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st211261",
-        "type": "show",
-        "title": "Specialisté Prvního Zásahu",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st209275",
-        "type": "show",
-        "title": "Mohu vám pomoci?",
-        "year": 2022,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/4WRmW8ATNfKbacwh9eeL8i4SpSl.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4083215": {
-    "name": "Ha I-aan",
-    "img": "/lJ0wjEIdBc3k9pIojXr5P204XzE.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st211261",
-        "type": "show",
-        "title": "Specialisté Prvního Zásahu",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st68398",
-        "type": "show",
-        "title": "MUDr. Romantik",
-        "year": 2016,
-        "score": 84,
-        "poster": "https://image.tmdb.org/t/p/w342/dmVgWSrtEj39DUv1QEjT6nGpX3L.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1381868": {
     "name": "Gracy Goldman",
     "img": null,
@@ -469593,6 +469522,48 @@
         "year": 2022,
         "score": 59,
         "poster": "https://image.tmdb.org/t/p/w342/ov3BkiVaY6t3YypbZ4eulbn8U04.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p118975": {
+    "name": "Choi Jae-hwan",
+    "img": "/62hWPPcUcjvI6yeAvP0xsIGtQUv.jpg",
+    "birthday": "1983-07-15",
+    "deathday": null,
+    "age": 43,
+    "works": [
+      {
+        "id": "st216310",
+        "type": "show",
+        "title": "Diva trosečnice",
+        "year": 2023,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/1NseFoBcprx5BYJcd03sTUEczG3.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st209275",
+        "type": "show",
+        "title": "Mohu vám pomoci?",
+        "year": 2022,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/4WRmW8ATNfKbacwh9eeL8i4SpSl.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st211261",
+        "type": "show",
+        "title": "Specialisté Prvního Zásahu",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
         "roles": [
           "actor"
         ]
@@ -476335,6 +476306,26 @@
       }
     ]
   },
+  "p1846190": {
+    "name": "Geoffrey Murphy",
+    "img": "/oUpTzxjpUx4plloKTLz0jUQInjK.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st241609",
+        "type": "show",
+        "title": "Sousedská tajemství",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p3094227": {
     "name": "Paola Montes De Oca",
     "img": "/AnaNOPWsAZ2al0ivMYYbpqz6j49.jpg",
@@ -479881,6 +479872,57 @@
       }
     ]
   },
+  "p4160226": {
+    "name": "Yang Jong-wook",
+    "img": "/rt3JEJYB6L513zL8LVpLRCJ5E2o.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st211261",
+        "type": "show",
+        "title": "Specialisté Prvního Zásahu",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4083215": {
+    "name": "Ha I-aan",
+    "img": "/lJ0wjEIdBc3k9pIojXr5P204XzE.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st211261",
+        "type": "show",
+        "title": "Specialisté Prvního Zásahu",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st68398",
+        "type": "show",
+        "title": "MUDr. Romantik",
+        "year": 2016,
+        "score": 84,
+        "poster": "https://image.tmdb.org/t/p/w342/dmVgWSrtEj39DUv1QEjT6nGpX3L.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p4970409": {
     "name": "Miyuki Wakayama",
     "img": "/yrSqrJ8VAkSmCUxcWBCnFPc91gt.jpg",
@@ -481062,26 +481104,6 @@
         "year": 2025,
         "score": 77,
         "poster": "https://image.tmdb.org/t/p/w342/bNPVb2Sv4N3CO7l6AdfjxNkMTfN.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1846190": {
-    "name": "Geoffrey Murphy",
-    "img": "/oUpTzxjpUx4plloKTLz0jUQInjK.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st241609",
-        "type": "show",
-        "title": "Sousedská tajemství",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
         "roles": [
           "actor"
         ]
