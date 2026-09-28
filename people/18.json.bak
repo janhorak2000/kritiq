@@ -260891,6 +260891,17 @@
     "age": 55,
     "works": [
       {
+        "id": "st312663",
+        "type": "show",
+        "title": "Čističi",
+        "year": 2026,
+        "score": 60,
+        "poster": "https://image.tmdb.org/t/p/w342/mZ0rPTMe9XfrWRUAeoJzr62cyIa.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt773569",
         "type": "movie",
         "title": "The Soul",
@@ -381301,26 +381312,6 @@
       }
     ]
   },
-  "p4180326": {
-    "name": "Baek In-joo",
-    "img": "/dJYOxJjOzfnEVX8OdBylc1d9Esm.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st211261",
-        "type": "show",
-        "title": "Specialisté Prvního Zásahu",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p557713": {
     "name": "María Abadi",
     "img": "/oa99vjSXHXp1HkV9BFpqTM2c5Ow.jpg",
@@ -388085,6 +388076,26 @@
         "year": 2013,
         "score": 84,
         "poster": "https://image.tmdb.org/t/p/w342/w1UBlxEXhbKe8sp0fxFZh7MqTce.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4180326": {
+    "name": "Baek In-joo",
+    "img": "/dJYOxJjOzfnEVX8OdBylc1d9Esm.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st211261",
+        "type": "show",
+        "title": "Specialisté Prvního Zásahu",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
         "roles": [
           "actor"
         ]

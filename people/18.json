@@ -4816,23 +4816,23 @@
         ]
       },
       {
-        "id": "st92830",
-        "type": "show",
-        "title": "Obi-Wan Kenobi",
-        "year": 2022,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/xleD0VJzltw6lr4WPJELhqmi7Bz.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st203085",
         "type": "show",
         "title": "Star Wars: Příběhy rytířů Jedi",
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/g2JsYEIyZGJy8slnVxmaH7j97bB.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st92830",
+        "type": "show",
+        "title": "Obi-Wan Kenobi",
+        "year": 2022,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/xleD0VJzltw6lr4WPJELhqmi7Bz.jpg",
         "roles": [
           "actor"
         ]
@@ -65076,23 +65076,23 @@
         ]
       },
       {
-        "id": "st139397",
-        "type": "show",
-        "title": "Svět podle nás",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st155631",
         "type": "show",
         "title": "Santa Clausovi",
         "year": 2022,
         "score": 64,
         "poster": "https://image.tmdb.org/t/p/w342/mzFkt3vn0NkiooWSxDcWvopJl14.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st139397",
+        "type": "show",
+        "title": "Svět podle nás",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
         "roles": [
           "actor"
         ]
@@ -153304,6 +153304,17 @@
         ]
       },
       {
+        "id": "st131041",
+        "type": "show",
+        "title": "Blue Lock",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st119495",
         "type": "show",
         "title": "陰の実力者になりたくて！",
@@ -153321,17 +153332,6 @@
         "year": 2022,
         "score": 82,
         "poster": "https://image.tmdb.org/t/p/w342/vaIREdPGZOnW9Jrs86mheVVlIQQ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st131041",
-        "type": "show",
-        "title": "Blue Lock",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
         "roles": [
           "actor"
         ]
@@ -172529,6 +172529,17 @@
         "year": 2026,
         "score": 71,
         "poster": "https://image.tmdb.org/t/p/w342/4xFfnDzmzhRp0iDaNpr3JMQXwCL.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "st258036",
+        "type": "show",
+        "title": "The Audacity",
+        "year": 2026,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/ea6hHjW8yWjROSYwynpWsYc4mYZ.jpg",
         "roles": [
           "composer"
         ]
@@ -408414,6 +408425,48 @@
       }
     ]
   },
+  "nElf Games": {
+    "name": "Elf Games",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "gr350748",
+        "type": "game",
+        "title": "Children of Silentown",
+        "year": 2023,
+        "score": 76,
+        "poster": "https://media.rawg.io/media/resize/640/-/games/a15/a154fbb7432eddb43bf9e121602ed203.jpg",
+        "roles": [
+          "developer"
+        ]
+      },
+      {
+        "id": "gr522990",
+        "type": "game",
+        "title": "Children of Silentown: Prologue",
+        "year": 2020,
+        "score": null,
+        "poster": "https://media.rawg.io/media/resize/640/-/screenshots/f99/f99694d8852d429bf6dcb925deb19533.jpg",
+        "roles": [
+          "developer"
+        ]
+      },
+      {
+        "id": "gr52885",
+        "type": "game",
+        "title": "Doukyuusei 2 (SNES)",
+        "year": 1997,
+        "score": null,
+        "poster": "https://media.rawg.io/media/resize/640/-/games/eae/eaea60439c873aba873668696cb4c500.jpg",
+        "roles": [
+          "developer"
+        ]
+      }
+    ]
+  },
   "nRundisc": {
     "name": "Rundisc",
     "img": null,
@@ -410540,48 +410593,6 @@
         "year": 1997,
         "score": null,
         "poster": "https://media.rawg.io/media/resize/640/-/screenshots/ea3/ea33c443990c8b392a387b630a2a56b2.jpg",
-        "roles": [
-          "developer"
-        ]
-      }
-    ]
-  },
-  "nElf Games": {
-    "name": "Elf Games",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "gr350748",
-        "type": "game",
-        "title": "Children of Silentown",
-        "year": 2023,
-        "score": 76,
-        "poster": "https://media.rawg.io/media/resize/640/-/games/a15/a154fbb7432eddb43bf9e121602ed203.jpg",
-        "roles": [
-          "developer"
-        ]
-      },
-      {
-        "id": "gr522990",
-        "type": "game",
-        "title": "Children of Silentown: Prologue",
-        "year": 2020,
-        "score": null,
-        "poster": "https://media.rawg.io/media/resize/640/-/screenshots/f99/f99694d8852d429bf6dcb925deb19533.jpg",
-        "roles": [
-          "developer"
-        ]
-      },
-      {
-        "id": "gr52885",
-        "type": "game",
-        "title": "Doukyuusei 2 (SNES)",
-        "year": 1997,
-        "score": null,
-        "poster": "https://media.rawg.io/media/resize/640/-/games/eae/eaea60439c873aba873668696cb4c500.jpg",
         "roles": [
           "developer"
         ]

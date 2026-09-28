@@ -221222,6 +221222,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1088434",
+        "type": "movie",
+        "title": "Hellfire",
+        "year": 2026,
+        "score": 47,
+        "poster": "https://image.tmdb.org/t/p/w342/tQti9QTf13MfzNpXguijgNh7ojE.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st277439",
         "type": "show",
         "title": "Mys hrůzy",
@@ -230341,23 +230352,23 @@
         ]
       },
       {
-        "id": "st253321",
-        "type": "show",
-        "title": "Ta lepší z nás",
-        "year": 2025,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/kTVz4yTSPGLQPC1ChoCFLJQ7el0.jpg",
-        "roles": [
-          "director"
-        ]
-      },
-      {
         "id": "st241609",
         "type": "show",
         "title": "Sousedská tajemství",
         "year": 2025,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "st253321",
+        "type": "show",
+        "title": "Ta lepší z nás",
+        "year": 2025,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/kTVz4yTSPGLQPC1ChoCFLJQ7el0.jpg",
         "roles": [
           "director"
         ]
@@ -232486,6 +232497,37 @@
       }
     ]
   },
+  "p2932264": {
+    "name": "Layne Herrin",
+    "img": "/t1NkvzhbgPjqwoD1U970tY0su5Z.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1088434",
+        "type": "movie",
+        "title": "Hellfire",
+        "year": 2026,
+        "score": 47,
+        "poster": "https://image.tmdb.org/t/p/w342/tQti9QTf13MfzNpXguijgNh7ojE.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st225634",
+        "type": "show",
+        "title": "Monstra: Příběh Lylea a Erika Menendezových",
+        "year": 2024,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/5IhyxuPanlzCWznzyMYzxG7hisE.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2749202": {
     "name": "Ektoras Liatsos",
     "img": "/yHJCLaSURVYSgmXtseiePtGoMKc.jpg",
@@ -233911,6 +233953,70 @@
         "year": 2014,
         "score": 51,
         "poster": "https://image.tmdb.org/t/p/w342/dHA9jV7xKWjOvv2lYWxDwAmZjhk.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1910045": {
+    "name": "Axelle Simon",
+    "img": "/cGXCZS63SAxnzdh1Y1ZgI1fc5Jg.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1376415",
+        "type": "movie",
+        "title": "L'Affaire Bojarski",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/r60UQDxVX3ayqlvUDdjPWUfD3x4.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt482712",
+        "type": "movie",
+        "title": "Zjevení",
+        "year": 2018,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/yDidbDtVdQBegzR8JcOuxBd7tjD.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt430424",
+        "type": "movie",
+        "title": "Na shledanou tam nahoře",
+        "year": 2017,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/rEjps1pALw5IErXYQgj5v4qWsjZ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st64249",
+        "type": "show",
+        "title": "Velmi tajná služba",
+        "year": 2015,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/oLzQyOqkXDYKsBu9v6wy9kJnDSO.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st64589",
+        "type": "show",
+        "title": " Profil zločinu ",
+        "year": 2009,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/9Z3J7qep9g29gL0B1elMZ0Z84qD.jpg",
         "roles": [
           "actor"
         ]
@@ -239719,23 +239825,23 @@
     "age": null,
     "works": [
       {
-        "id": "st122196",
-        "type": "show",
-        "title": "Schodiště",
-        "year": 2022,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/jiAcdCyf1UbWYBImcNtVeLW0pRj.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st155537",
         "type": "show",
         "title": "Volavka",
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/waW5NMQmpd3Pox7lHGjXZt14Xrp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st122196",
+        "type": "show",
+        "title": "Schodiště",
+        "year": 2022,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/jiAcdCyf1UbWYBImcNtVeLW0pRj.jpg",
         "roles": [
           "actor"
         ]
@@ -266342,59 +266448,6 @@
         "year": 1941,
         "score": 67,
         "poster": "https://image.tmdb.org/t/p/w342/wpWsAhUjcOnnkGCcGDDeEWehMw0.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1910045": {
-    "name": "Axelle Simon",
-    "img": "/cGXCZS63SAxnzdh1Y1ZgI1fc5Jg.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt482712",
-        "type": "movie",
-        "title": "Zjevení",
-        "year": 2018,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/yDidbDtVdQBegzR8JcOuxBd7tjD.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt430424",
-        "type": "movie",
-        "title": "Na shledanou tam nahoře",
-        "year": 2017,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/rEjps1pALw5IErXYQgj5v4qWsjZ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st64249",
-        "type": "show",
-        "title": "Velmi tajná služba",
-        "year": 2015,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/oLzQyOqkXDYKsBu9v6wy9kJnDSO.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st64589",
-        "type": "show",
-        "title": " Profil zločinu ",
-        "year": 2009,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/9Z3J7qep9g29gL0B1elMZ0Z84qD.jpg",
         "roles": [
           "actor"
         ]
@@ -462798,48 +462851,6 @@
       }
     ]
   },
-  "p2879354": {
-    "name": "Son Ji-yoon",
-    "img": "/wuuj3UNpPxZQc6leAwsWi4RD5nL.jpg",
-    "birthday": "1983-02-18",
-    "deathday": null,
-    "age": 43,
-    "works": [
-      {
-        "id": "st254391",
-        "type": "show",
-        "title": "Láska a brambory",
-        "year": 2025,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/8OQZwmjD81uDk27ICiSbJZeGOrM.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st235355",
-        "type": "show",
-        "title": "Nemocniční manuál",
-        "year": 2025,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/oXaMHOQGx2V4HwoBa0IrouBe1yb.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st211261",
-        "type": "show",
-        "title": "Specialisté Prvního Zásahu",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1653481": {
     "name": "Bhav Dhulia",
     "img": null,
@@ -462856,6 +462867,88 @@
         "poster": "https://image.tmdb.org/t/p/w342/xvr3WrwAQMlcb00OZEos9nLekTE.jpg",
         "roles": [
           "director"
+        ]
+      }
+    ]
+  },
+  "p2405540": {
+    "name": "Jeong Dong-hwan",
+    "img": "/cDU7Mzk6xnRiEbzzuURjWip9hng.jpg",
+    "birthday": "1992-01-11",
+    "deathday": null,
+    "age": 34,
+    "works": [
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4014180": {
+    "name": "Kim Seo-kyung",
+    "img": "/xmc9AoJssBMr1VsFj115JzfSFym.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st228689",
+        "type": "show",
+        "title": "Džine, něco si přej",
+        "year": 2025,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/d5p8TP7nYcl760zJmNX7ysb3fg8.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2878474": {
+    "name": "Kim Jung-soo",
+    "img": "/sS4CpDKsHkCwvwxh48ps80TviRJ.jpg",
+    "birthday": "1957-04-25",
+    "deathday": null,
+    "age": 69,
+    "works": [
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st134465",
+        "type": "show",
+        "title": "Šílená romance",
+        "year": 2022,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/8U3foujYcmmFgqFIbTn2HNe656k.jpg",
+        "roles": [
+          "actor"
         ]
       }
     ]
@@ -464474,37 +464567,6 @@
         "year": 2022,
         "score": 74,
         "poster": "https://image.tmdb.org/t/p/w342/i5N0LKem5gTUxyMfaly8NhK2GjR.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2878474": {
-    "name": "Kim Jung-soo",
-    "img": "/sS4CpDKsHkCwvwxh48ps80TviRJ.jpg",
-    "birthday": "1957-04-25",
-    "deathday": null,
-    "age": 69,
-    "works": [
-      {
-        "id": "st134465",
-        "type": "show",
-        "title": "Šílená romance",
-        "year": 2022,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/8U3foujYcmmFgqFIbTn2HNe656k.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
         "roles": [
           "actor"
         ]
@@ -471048,26 +471110,6 @@
       }
     ]
   },
-  "p2932264": {
-    "name": "Layne Herrin",
-    "img": "/t1NkvzhbgPjqwoD1U970tY0su5Z.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st225634",
-        "type": "show",
-        "title": "Monstra: Příběh Lylea a Erika Menendezových",
-        "year": 2024,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/5IhyxuPanlzCWznzyMYzxG7hisE.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1649246": {
     "name": "Lilah Richcreek Estrada",
     "img": "/pA3pPpC5ShWvoqREeHLpScXd2Qg.jpg",
@@ -473773,6 +473815,26 @@
       }
     ]
   },
+  "p5445060": {
+    "name": "Jameson Flynn Lopez",
+    "img": "/dPuPqsikAJuP8GyX20T8w7y3iYP.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st241609",
+        "type": "show",
+        "title": "Sousedská tajemství",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p1420380": {
     "name": "Juan Lecanda",
     "img": "/jpHpVoEdhYBR8HfYAFWHckRskWh.jpg",
@@ -474660,6 +474722,48 @@
       }
     ]
   },
+  "p2879354": {
+    "name": "Son Ji-yoon",
+    "img": "/wuuj3UNpPxZQc6leAwsWi4RD5nL.jpg",
+    "birthday": "1983-02-18",
+    "deathday": null,
+    "age": 43,
+    "works": [
+      {
+        "id": "st254391",
+        "type": "show",
+        "title": "Láska a brambory",
+        "year": 2025,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/8OQZwmjD81uDk27ICiSbJZeGOrM.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st235355",
+        "type": "show",
+        "title": "Nemocniční manuál",
+        "year": 2025,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/oXaMHOQGx2V4HwoBa0IrouBe1yb.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st211261",
+        "type": "show",
+        "title": "Specialisté Prvního Zásahu",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p5316250": {
     "name": "Aaron Potter",
     "img": "/fQBH9vmFuIgRN7l6SsEtCtmd1oR.jpg",
@@ -474825,37 +474929,6 @@
         "year": 2025,
         "score": 67,
         "poster": "https://image.tmdb.org/t/p/w342/AtIqctFgTwLhDjYQCdvuvCLkwbN.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4014180": {
-    "name": "Kim Seo-kyung",
-    "img": "/xmc9AoJssBMr1VsFj115JzfSFym.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st228689",
-        "type": "show",
-        "title": "Džine, něco si přej",
-        "year": 2025,
-        "score": 66,
-        "poster": "https://image.tmdb.org/t/p/w342/d5p8TP7nYcl760zJmNX7ysb3fg8.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
         "roles": [
           "actor"
         ]
@@ -477075,26 +477148,6 @@
       }
     ]
   },
-  "p2405540": {
-    "name": "Jeong Dong-hwan",
-    "img": "/cDU7Mzk6xnRiEbzzuURjWip9hng.jpg",
-    "birthday": "1992-01-11",
-    "deathday": null,
-    "age": 34,
-    "works": [
-      {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1488085": {
     "name": "Momoka Ayukawa",
     "img": "/wEADFVq0rkdUxIdjJm8PrHTElnh.jpg",
@@ -478628,26 +478681,6 @@
         "year": 2025,
         "score": 77,
         "poster": "https://image.tmdb.org/t/p/w342/bNPVb2Sv4N3CO7l6AdfjxNkMTfN.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5445060": {
-    "name": "Jameson Flynn Lopez",
-    "img": "/dPuPqsikAJuP8GyX20T8w7y3iYP.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st241609",
-        "type": "show",
-        "title": "Sousedská tajemství",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
         "roles": [
           "actor"
         ]
