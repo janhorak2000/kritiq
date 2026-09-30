@@ -14793,6 +14793,68 @@
       }
     ]
   },
+  "p1705263": {
+    "name": "Cosmo Sheldrake",
+    "img": "/7UH0EVtPiW1Q20dhLZXvhM3cxE.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1248832",
+        "type": "movie",
+        "title": "Digger",
+        "year": 2026,
+        "score": 79,
+        "poster": "https://image.tmdb.org/t/p/w342/qiXi6tAv8DoNfPf56G4yljjWhqG.jpg",
+        "roles": [
+          "composer"
+        ]
+      }
+    ]
+  },
+  "p1924471": {
+    "name": "Charlie Bentley",
+    "img": "/xIrwKlRiAdGXBN7M8b8uAztv3rs.jpg",
+    "birthday": "1992-12-21",
+    "deathday": null,
+    "age": 33,
+    "works": [
+      {
+        "id": "mt1248832",
+        "type": "movie",
+        "title": "Digger",
+        "year": 2026,
+        "score": 79,
+        "poster": "https://image.tmdb.org/t/p/w342/qiXi6tAv8DoNfPf56G4yljjWhqG.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st241259",
+        "type": "show",
+        "title": "Sobík",
+        "year": 2024,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/e0I3aUxQiDvjClyxa4ZfuhitbQp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt717728",
+        "type": "movie",
+        "title": "Jeepers Creepers: Reborn",
+        "year": 2022,
+        "score": 26,
+        "poster": "https://image.tmdb.org/t/p/w342/aGBuiirBIQ7o64FmJxO53eYDuro.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p6471617": {
     "name": "M. Vidushika",
     "img": null,
@@ -171616,37 +171678,6 @@
         "year": 2012,
         "score": 74,
         "poster": "https://image.tmdb.org/t/p/w342/rYFKm38ClVGVe6Bj3RUYf67Vc9E.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1924471": {
-    "name": "Charlie Bentley",
-    "img": "/xIrwKlRiAdGXBN7M8b8uAztv3rs.jpg",
-    "birthday": "1992-12-21",
-    "deathday": null,
-    "age": 33,
-    "works": [
-      {
-        "id": "st241259",
-        "type": "show",
-        "title": "Sobík",
-        "year": 2024,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/e0I3aUxQiDvjClyxa4ZfuhitbQp.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt717728",
-        "type": "movie",
-        "title": "Jeepers Creepers: Reborn",
-        "year": 2022,
-        "score": 26,
-        "poster": "https://image.tmdb.org/t/p/w342/aGBuiirBIQ7o64FmJxO53eYDuro.jpg",
         "roles": [
           "actor"
         ]

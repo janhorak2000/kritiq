@@ -8172,6 +8172,17 @@
     "age": 43,
     "works": [
       {
+        "id": "mt1248832",
+        "type": "movie",
+        "title": "Digger",
+        "year": 2026,
+        "score": 79,
+        "poster": "https://image.tmdb.org/t/p/w342/qiXi6tAv8DoNfPf56G4yljjWhqG.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st257519",
         "type": "show",
         "title": "Návnada",
@@ -25910,26 +25921,6 @@
         "year": 2018,
         "score": 65,
         "poster": "https://image.tmdb.org/t/p/w342/AuaWSpeR5bMJlGeol04Zy3UEVLG.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5663295": {
-    "name": "Xui Dawid",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1451867",
-        "type": "movie",
-        "title": "Neviditelní obři",
-        "year": 2026,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/pBEniJJ9G8cywQfb6lB3QqRqY2i.jpg",
         "roles": [
           "actor"
         ]
@@ -382054,6 +382045,26 @@
         "year": 2022,
         "score": 80,
         "poster": "",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5663295": {
+    "name": "Xui Dawid",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1451867",
+        "type": "movie",
+        "title": "Neviditelní obři",
+        "year": 2026,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/pBEniJJ9G8cywQfb6lB3QqRqY2i.jpg",
         "roles": [
           "actor"
         ]

@@ -1,6 +1,15 @@
 {
   "movies": [
     {
+      "title": "Runner",
+      "year": 2026,
+      "date": "2026-09-07",
+      "score": 84,
+      "poster": "https://image.tmdb.org/t/p/w342/yBKMAIj7clP42UkFejhGDBBoTpb.jpg",
+      "tmdb_id": 1377237,
+      "imdb_id": "tt31349844"
+    },
+    {
       "title": "Odyssea",
       "year": 2026,
       "date": "2026-07-15",
@@ -10,22 +19,21 @@
       "imdb_id": "tt33764258"
     },
     {
-      "title": "Resident Evil",
+      "title": "The Fix",
       "year": 2026,
-      "date": "2026-09-16",
-      "score": 84,
-      "poster": "https://image.tmdb.org/t/p/w342/i7UyjfPio0VFHB9rBUZSFyhOoM8.jpg",
-      "tmdb_id": 1423191,
-      "imdb_id": "tt35538033"
+      "date": "2026-09-10",
+      "score": 82,
+      "poster": "https://image.tmdb.org/t/p/w342/yopXjun3ICFfJci2ukcEzceZjUs.jpg",
+      "tmdb_id": 1228834,
+      "imdb_id": "tt9601292"
     },
     {
-      "title": "One Last Shot",
+      "title": "6 gramů",
       "year": 2026,
-      "date": "2026-09-22",
-      "score": 83,
-      "poster": "https://image.tmdb.org/t/p/w342/niQ4NBh2jqAf1hDZP5m6ReWFAb7.jpg",
-      "tmdb_id": 1607127,
-      "imdb_id": "tt37971717"
+      "date": "2026-08-06",
+      "score": 80,
+      "poster": "https://image.tmdb.org/t/p/w342/d0NYw1eIG1KEXrM7qWpP2r0WJPP.jpg",
+      "tmdb_id": 1671297
     },
     {
       "title": "Spider-Man: Zbrusu nový den",
@@ -37,12 +45,13 @@
       "imdb_id": "tt22084616"
     },
     {
-      "title": "Dovolená v Českém ráji",
+      "title": "Kojot vrací úder",
       "year": 2026,
-      "date": "2026-07-30",
-      "score": 75,
-      "poster": "https://image.tmdb.org/t/p/w342/9fCmXAp4IIwLT3dZoG7vicNeK3e.jpg",
-      "tmdb_id": 1661097
+      "date": "2026-08-20",
+      "score": 76,
+      "poster": "https://image.tmdb.org/t/p/w342/fFjf76Ngjf8BXCDsGPhIqpZUAkY.jpg",
+      "tmdb_id": 1204680,
+      "imdb_id": "tt1756855"
     },
     {
       "title": "Mayday",
@@ -63,42 +72,33 @@
       "imdb_id": "tt16478058"
     },
     {
-      "title": "Bad Apples",
+      "title": "The Rivals of Amziah King",
       "year": 2026,
-      "date": "2026-09-10",
-      "score": 72,
-      "poster": "https://image.tmdb.org/t/p/w342/60BxAjKM20ABTSYnWZcJ8ExiVNL.jpg",
-      "tmdb_id": 1198654,
-      "imdb_id": "tt29714073"
+      "date": "2026-08-13",
+      "score": 73,
+      "poster": "https://image.tmdb.org/t/p/w342/3iVDCDS1VwHIm95PjWEPwsfdhaf.jpg",
+      "tmdb_id": 1124142,
+      "imdb_id": "tt27706593"
     },
     {
-      "title": "UNABOMBER",
+      "title": "Protivníci pod ochranou",
       "year": 2026,
-      "date": "2026-09-25",
+      "date": "2026-09-09",
       "score": 72,
-      "poster": "https://image.tmdb.org/t/p/w342/39aMkR8Y5vhCG9dTkjiqRl8AVqp.jpg",
-      "tmdb_id": 1492640,
-      "imdb_id": "tt6933238"
-    },
-    {
-      "title": "Buddy",
-      "year": 2026,
-      "date": "2026-08-27",
-      "score": 71,
-      "poster": "https://image.tmdb.org/t/p/w342/6Lh4ZlsAISFQFVfLZ90sE9ycVnN.jpg",
-      "tmdb_id": 1514026,
-      "imdb_id": "tt37281055"
+      "poster": "https://image.tmdb.org/t/p/w342/umlft1ztFbUcnHf960pXJocjpdv.jpg",
+      "tmdb_id": 1440098,
+      "imdb_id": "tt36073210"
     }
   ],
   "shows": [
     {
-      "title": "Grand Tour",
+      "title": "오싹한 연애",
       "year": 2026,
-      "date": "2026-09-04",
-      "score": 84,
-      "poster": "https://image.tmdb.org/t/p/w342/kq6XB6xmD86txW4UR32tT2JUiN9.jpg",
-      "tmdb_id": 329471,
-      "imdb_id": "tt44974627"
+      "date": "2026-07-18",
+      "score": 75,
+      "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
+      "tmdb_id": 298610,
+      "imdb_id": "tt40247521"
     },
     {
       "title": "Karameláska",
@@ -119,22 +119,22 @@
       "imdb_id": "tt36517689"
     },
     {
-      "title": "Sterling Point",
+      "title": "Domek v prérii",
       "year": 2026,
-      "date": "2026-08-05",
-      "score": 74,
-      "poster": "https://image.tmdb.org/t/p/w342/cThLWEGs6BEqY0QZMbU4FAeWwPT.jpg",
-      "tmdb_id": 283297,
-      "imdb_id": "tt35618070"
+      "date": "2026-07-09",
+      "score": 73,
+      "poster": "https://image.tmdb.org/t/p/w342/oWUGSadxC9vQPOCeHDDVfDezmQC.jpg",
+      "tmdb_id": 283304,
+      "imdb_id": "tt2431250"
     },
     {
-      "title": "The Westies",
+      "title": "BLACK TORCH",
       "year": 2026,
-      "date": "2026-07-12",
-      "score": 72,
-      "poster": "https://image.tmdb.org/t/p/w342/6nNxw6SsbEtSpktVEGdoYDqPH7C.jpg",
-      "tmdb_id": 286709,
-      "imdb_id": "tt31849235"
+      "date": "2026-07-04",
+      "score": 71,
+      "poster": "https://image.tmdb.org/t/p/w342/m0Y86byoQXcxbYPdg4pQ8feEjE1.jpg",
+      "tmdb_id": 285993,
+      "imdb_id": "tt37532893"
     },
     {
       "title": "S&X",
@@ -146,13 +146,13 @@
       "imdb_id": "tt39365311"
     },
     {
-      "title": "ヤニねこ",
+      "title": "Jak Stuart nezachránil vesmír",
       "year": 2026,
-      "date": "2026-07-03",
-      "score": 70,
-      "poster": "https://image.tmdb.org/t/p/w342/1OEYjA3bpPlXNPwV51WJhGWx8Mk.jpg",
-      "tmdb_id": 312949,
-      "imdb_id": "tt39551330"
+      "date": "2026-07-23",
+      "score": 71,
+      "poster": "https://image.tmdb.org/t/p/w342/3Djz7brd4WcLM3fXHx2JHFqNDp2.jpg",
+      "tmdb_id": 287620,
+      "imdb_id": "tt27497393"
     },
     {
       "title": "Moje skvělá kariéra",
@@ -164,15 +164,6 @@
       "imdb_id": "tt37352716"
     },
     {
-      "title": "Myšilov",
-      "year": 2026,
-      "date": "2026-08-28",
-      "score": 70,
-      "poster": "https://image.tmdb.org/t/p/w342/z1xv9CKt7HmXgS6azNB563mU2FB.jpg",
-      "tmdb_id": 290193,
-      "imdb_id": "tt36996011"
-    },
-    {
       "title": "Elle",
       "year": 2026,
       "date": "2026-07-01",
@@ -180,6 +171,15 @@
       "poster": "https://image.tmdb.org/t/p/w342/hJYrGoi0dIGG277P2LPo4AnQAcY.jpg",
       "tmdb_id": 254420,
       "imdb_id": "tt32020831"
+    },
+    {
+      "title": "Živá pára",
+      "year": 2026,
+      "date": "2026-07-02",
+      "score": 66,
+      "poster": "https://image.tmdb.org/t/p/w342/NXwPnMvjqTWtO9XIW5wthT8eO0.jpg",
+      "tmdb_id": 253960,
+      "imdb_id": "tt33083249"
     }
   ],
   "games": [
@@ -192,14 +192,6 @@
       "rawg_id": 1004298
     },
     {
-      "title": "Pragmata",
-      "year": 2026,
-      "date": "2026-04-17",
-      "score": 88,
-      "poster": "https://media.rawg.io/media/resize/640/-/games/9b2/9b20adbf00491d56ad6793654067f2fd.jpg",
-      "rawg_id": 452650
-    },
-    {
       "title": "Forza Horizon 6",
       "year": 2026,
       "date": "2026-05-19",
@@ -208,12 +200,20 @@
       "rawg_id": 1010949
     },
     {
-      "title": "Servant of the Lake",
+      "title": "Onimusha: Way Of The Sword",
       "year": 2026,
-      "date": "2026-08-13",
+      "date": "2026-09-04",
       "score": 86,
-      "poster": "https://media.rawg.io/media/resize/640/-/screenshots/169/16983887be1563167b019c82be65cebe.jpg",
-      "rawg_id": 1019497
+      "poster": "https://media.rawg.io/media/resize/640/-/games/48e/48ea2f7adb60615d658887899ffe4d1f.jpg",
+      "rawg_id": 994600
+    },
+    {
+      "title": "Star Wars Zero Company",
+      "year": 2026,
+      "date": "2026-08-27",
+      "score": 86,
+      "poster": "https://media.rawg.io/media/resize/640/-/games/dae/dae6fd03dd5edbf15b193f20bec3cd58.jpg",
+      "rawg_id": 1002691
     },
     {
       "title": "Mortal Shell II",
@@ -266,12 +266,12 @@
   ],
   "recentlyAdded": {
     "movie": {
-      "title": "UNABOMBER",
+      "title": "Digger",
       "year": 2026,
-      "score": 72,
-      "backdrop": "https://image.tmdb.org/t/p/w500/58D9nalUYW5L5K0guw7hcpsEJBH.jpg",
-      "tmdb_id": 1492640,
-      "imdb_id": "tt6933238"
+      "score": 79,
+      "backdrop": "https://image.tmdb.org/t/p/w500/b7t3r39Oll5qPxBKzLZ8eHMBD7l.jpg",
+      "tmdb_id": 1248832,
+      "imdb_id": "tt31450459"
     },
     "show": {
       "title": "Poslední případ",

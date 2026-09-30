@@ -64554,6 +64554,243 @@
     "reviews": []
   },
   {
+    "title": "Pravda, nebo lež",
+    "tmdb_id": 1283515,
+    "imdb_id": "tt32261958",
+    "original_language": "en",
+    "year": 2026,
+    "date": "2026-09-30",
+    "score": 77,
+    "box": null,
+    "box_currency": null,
+    "country": "USA",
+    "genre": "Mysteriózní",
+    "runtime": 117,
+    "poster": "https://image.tmdb.org/t/p/w342/dGSsPovyUW5XVekXcy7F2GyhTEh.jpg",
+    "gallery": [
+      "https://image.tmdb.org/t/p/w500/sSPreWTXybWDgfNvKoL9E4sahqH.jpg"
+    ],
+    "summary": "Začínající autorka Lowen Ashleigh dostane nabídku dokončit knihy úspěšné spisovatelky Verity Crawford jako anonymní autorka, a proto se dočasně přestěhuje na odlehlé rodinné sídlo Crawfordových. Během pobytu ale narazí na rukopis, který vypadá jako Verityiny tajné autobiografické zápisky – a ty jsou dost děsivé. Obsahují temná přiznání týkající se jejího manžela Jeremyho. Lowen postupně přestává vědět, co je skutečnost a co jen dobře promyšlená hra – a zároveň ji to všechno začne nebezpečně přitahovat.",
+    "director": {
+      "id": 22215,
+      "name": "Michael Showalter",
+      "image": "https://image.tmdb.org/t/p/w300/AtX8Eli8Cg8g8HrcRJDBFnplyN0.jpg"
+    },
+    "composer": {
+      "id": 1023809,
+      "name": "Volker Bertelmann",
+      "image": "https://image.tmdb.org/t/p/w300/6iZPE8RAh3twac8yHYPWRpWWPZ9.jpg"
+    },
+    "writer": {
+      "id": 1114792,
+      "name": "Nick Antosca",
+      "image": "https://image.tmdb.org/t/p/w300/vDG608gWyZX8PPhJyDW5FCFls2U.jpg"
+    },
+    "actors": [
+      {
+        "id": 1813,
+        "name": "Anne Hathaway",
+        "birthday": "1982-11-12",
+        "deathday": null,
+        "age": 43,
+        "image": "https://image.tmdb.org/t/p/w300/nbccV2pMoyLTCeg5DQip24Eq0Jp.jpg"
+      },
+      {
+        "id": 118545,
+        "name": "Dakota Johnson",
+        "birthday": "1989-10-04",
+        "deathday": null,
+        "age": 36,
+        "image": "https://image.tmdb.org/t/p/w300/qFek0KqpaPV5mVyHHNfAapDE9Tj.jpg"
+      },
+      {
+        "id": 2299,
+        "name": "Josh Hartnett",
+        "birthday": "1978-07-21",
+        "deathday": null,
+        "age": 48,
+        "image": "https://image.tmdb.org/t/p/w300/5eMo8D7h1XrSu6ZN4UXhPcS6YNG.jpg"
+      },
+      {
+        "id": 5269231,
+        "name": "Brady Wagner",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/9zwYF2aPqotnCknqXktEbZ9wdg7.jpg"
+      },
+      {
+        "id": 1100144,
+        "name": "Ismael Cruz Cordova",
+        "birthday": "1987-04-07",
+        "deathday": null,
+        "age": 39,
+        "image": "https://image.tmdb.org/t/p/w300/oXcrsQGndk60iFkNB8qFnMHlNzL.jpg"
+      },
+      {
+        "id": 1429011,
+        "name": "Irina Dvorovenko",
+        "birthday": "1973-08-28",
+        "deathday": null,
+        "age": 53,
+        "image": "https://image.tmdb.org/t/p/w300/f0XyxPtobP1MkwByneD3zAi0YNj.jpg"
+      },
+      {
+        "id": 6497911,
+        "name": "Sienna Kulovitz",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 221810,
+        "name": "K.K. Moggie",
+        "birthday": "1977-05-06",
+        "deathday": null,
+        "age": 49,
+        "image": "https://image.tmdb.org/t/p/w300/hQvZKknETtr4eTuK5I27f6jdRUY.jpg"
+      },
+      {
+        "id": 1620969,
+        "name": "Tom Galantich",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/5d1I6tyB1CnECYhos3rX3xOqH9R.jpg"
+      },
+      {
+        "id": 106187,
+        "name": "Lou Martini Jr.",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/85s5KR0BA6dhMJtOrvtKGY8Bz8E.jpg"
+      },
+      {
+        "id": 71889,
+        "name": "Michael Abbott Jr.",
+        "birthday": "1978-07-08",
+        "deathday": null,
+        "age": 48,
+        "image": "https://image.tmdb.org/t/p/w300/lL6epnepASAxQolqXeNve8hEcaR.jpg"
+      },
+      {
+        "id": 1956107,
+        "name": "Clark Carmichael",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/rkk2AnclGlMPwGBwkSKvWrCKpNF.jpg"
+      },
+      {
+        "id": 5944489,
+        "name": "Stephen Elrod",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5854206,
+        "name": "Nathan Tylutki",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 1907269,
+        "name": "Thursday Farrar",
+        "birthday": "1964-03-14",
+        "deathday": null,
+        "age": 62,
+        "image": "https://image.tmdb.org/t/p/w300/4AfMXbBm1SYCiAS8y1QxpjLYsgS.jpg"
+      },
+      {
+        "id": 6460521,
+        "name": "Asel Swango",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4992172,
+        "name": "Daniel Echevarria",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 3071550,
+        "name": "Wren Rivera",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 3713091,
+        "name": "Emily McEnroe",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 3260037,
+        "name": "Luke Klein",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/t8EcepzLZIRkGsdZKTKelwtWkgr.jpg"
+      },
+      {
+        "id": 4680583,
+        "name": "Tanya Lim",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 1817019,
+        "name": "Colleen Hoover",
+        "birthday": "1979-12-11",
+        "deathday": null,
+        "age": 46,
+        "image": "https://image.tmdb.org/t/p/w300/1UVLH7yqLcDRQxmWOauVp36stCf.jpg"
+      },
+      {
+        "id": 1229974,
+        "name": "Gayle King",
+        "birthday": "1954-12-28",
+        "deathday": null,
+        "age": 71,
+        "image": "https://image.tmdb.org/t/p/w300/8pgxwvySCYZ7XXtONVjpPHfSSQR.jpg"
+      },
+      {
+        "id": 4356415,
+        "name": "Alex Cooper",
+        "birthday": "1994-08-21",
+        "deathday": null,
+        "age": 32,
+        "image": "https://image.tmdb.org/t/p/w300/s04BgPEHp6UN7ELegquaveJXo19.jpg"
+      },
+      {
+        "id": 1843421,
+        "name": "Sean Evans",
+        "birthday": "1986-04-26",
+        "deathday": null,
+        "age": 40,
+        "image": "https://image.tmdb.org/t/p/w300/1UmSrK9vMuOsaudiDnpMu3VhXnx.jpg"
+      }
+    ],
+    "reviews": []
+  },
+  {
     "title": "Pozoruhodně bystrá stvoření",
     "tmdb_id": 1330021,
     "imdb_id": "tt33100314",
@@ -74005,195 +74242,6 @@
       {
         "id": 5547527,
         "name": "Gavin Gomes",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      }
-    ],
-    "reviews": []
-  },
-  {
-    "title": "On the Sea",
-    "tmdb_id": 1507796,
-    "imdb_id": "tt31936369",
-    "original_language": "en",
-    "year": 2026,
-    "date": "2026-07-24",
-    "score": 70,
-    "box": null,
-    "box_currency": null,
-    "country": "Velká Británie",
-    "genre": "Drama",
-    "runtime": 115,
-    "poster": "https://image.tmdb.org/t/p/w342/9dZj1TDR2TlSdWjnzGI87jbZSts.jpg",
-    "gallery": [
-      "https://image.tmdb.org/t/p/w500/wdy7TUJom58vwIFpx0h5Z8pix3l.jpg"
-    ],
-    "summary": "",
-    "director": {
-      "id": 1525718,
-      "name": "Helen Walsh",
-      "image": ""
-    },
-    "composer": {
-      "id": 2051328,
-      "name": "Felix Rösch",
-      "image": ""
-    },
-    "writer": {
-      "id": 1525718,
-      "name": "Helen Walsh",
-      "image": ""
-    },
-    "actors": [
-      {
-        "id": 1307013,
-        "name": "Barry Ward",
-        "birthday": "1971-01-13",
-        "deathday": null,
-        "age": 55,
-        "image": "https://image.tmdb.org/t/p/w300/3cIhm76aPUvJdIa9GbGrzhAL5GF.jpg"
-      },
-      {
-        "id": 1034703,
-        "name": "Lorne MacFadyen",
-        "birthday": "1990-05-27",
-        "deathday": null,
-        "age": 36,
-        "image": "https://image.tmdb.org/t/p/w300/y1cdclslL2nNkFw5RVj64iAHIIb.jpg"
-      },
-      {
-        "id": 90046,
-        "name": "Liz White",
-        "birthday": "1979-11-05",
-        "deathday": null,
-        "age": 46,
-        "image": "https://image.tmdb.org/t/p/w300/1KVn3zFv1X7wy0VMJ4cokJtNiEU.jpg"
-      },
-      {
-        "id": 2209728,
-        "name": "Henry Lawfull",
-        "birthday": "2006-07-13",
-        "deathday": null,
-        "age": 20,
-        "image": "https://image.tmdb.org/t/p/w300/csiZffsmwifkFrd91APNnJwCCw1.jpg"
-      },
-      {
-        "id": 206161,
-        "name": "Celyn Jones",
-        "birthday": "1979-06-04",
-        "deathday": null,
-        "age": 47,
-        "image": "https://image.tmdb.org/t/p/w300/7aDQ4sZDyWAhUx15jlPhQPm9apH.jpg"
-      },
-      {
-        "id": 5647273,
-        "name": "Leisa Gwenllian",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/ev60YsyEBHWyrO38iRU68Vz9U3l.jpg"
-      },
-      {
-        "id": 53917,
-        "name": "Danny Webb",
-        "birthday": "1958-06-06",
-        "deathday": null,
-        "age": 68,
-        "image": "https://image.tmdb.org/t/p/w300/e7OhVUIsfGWYIrYxwD1KEWF7afP.jpg"
-      },
-      {
-        "id": 4597446,
-        "name": "Callum Hymers",
-        "birthday": "1998-07-11",
-        "deathday": null,
-        "age": 28,
-        "image": "https://image.tmdb.org/t/p/w300/9rzzGMG7IX28eiHsKzVU6aRI7w0.jpg"
-      },
-      {
-        "id": 6389354,
-        "name": "Sheldon Jones",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 4199682,
-        "name": "Tristan Jones",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 6389356,
-        "name": "Kieran Roberts",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 3213538,
-        "name": "Lisa Jên Brown",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 1469649,
-        "name": "Robert Gwyn Davin",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 109650,
-        "name": "Julian Lewis Jones",
-        "birthday": "1968-01-01",
-        "deathday": null,
-        "age": 58,
-        "image": "https://image.tmdb.org/t/p/w300/s6bfs9wbqB3gRhgNH8FmEq39qyZ.jpg"
-      },
-      {
-        "id": 1184047,
-        "name": "William Huw",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 3310932,
-        "name": "Owen Arwyn",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 6389359,
-        "name": "Aaron Leacock",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 6389360,
-        "name": "Chukwudalu Molokwu",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 6389362,
-        "name": "Elena Valentine",
         "birthday": null,
         "deathday": null,
         "age": null,

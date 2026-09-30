@@ -158714,6 +158714,17 @@
     "age": 19,
     "works": [
       {
+        "id": "st291334",
+        "type": "show",
+        "title": "The Fall and Rise of Reggie Dinkins",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/lrF8Ve4GoazCalfbrSY52tUIXSN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt673271",
         "type": "movie",
         "title": "13: Muzikál",
@@ -180415,6 +180426,17 @@
     "deathday": null,
     "age": 52,
     "works": [
+      {
+        "id": "mt1560520",
+        "type": "movie",
+        "title": "Batman: Knightfall Part 1: Knightfall",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/360qdtu2hLnqMu8SVHMywn420w1.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt1011985",
         "type": "movie",
@@ -203903,6 +203925,17 @@
     "deathday": null,
     "age": 36,
     "works": [
+      {
+        "id": "st298008",
+        "type": "show",
+        "title": "Umělá krása",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/zUp3F7qtpJIUMsf31DDLNx1xOdS.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "st110316",
         "type": "show",
@@ -359310,6 +359343,46 @@
       }
     ]
   },
+  "p3949154": {
+    "name": "Konami",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st90296",
+        "type": "show",
+        "title": "Tokyo Vice",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p557408": {
+    "name": "Yoo Jang-hee",
+    "img": "/rxATUhQDGDehl2JqlE14i3PHlxD.jpg",
+    "birthday": "1993-09-17",
+    "deathday": null,
+    "age": 33,
+    "works": [
+      {
+        "id": "st136369",
+        "type": "show",
+        "title": "Zítra je taky den",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p3809542": {
     "name": "Facundo Calvo",
     "img": null,
@@ -363574,48 +363647,6 @@
       }
     ]
   },
-  "p160165": {
-    "name": "Keith Walker",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st250923",
-        "type": "show",
-        "title": "Tohle nikdo nechce",
-        "year": 2024,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/cvGpkCyUFvweJmQ2e2B6SUMvPMJ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st121509",
-        "type": "show",
-        "title": "My jsme Upshawovi",
-        "year": 2021,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/bgtpwAsKNfqJmgp3zBxuSHMBAaW.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st117910",
-        "type": "show",
-        "title": "United States of Al",
-        "year": 2021,
-        "score": 66,
-        "poster": "https://image.tmdb.org/t/p/w342/iE9STLu2DjxwM6TkOrszkfNS0hV.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1754390": {
     "name": "Vivienne Medrano",
     "img": "/cco4rKedqE5n9jvOHanINDcyBJy.jpg",
@@ -366395,6 +366426,26 @@
       }
     ]
   },
+  "p2634060": {
+    "name": "Hana Amano",
+    "img": "/o5LtkbE74WODGQQ8ZpRUVXA7cfw.jpg",
+    "birthday": "1995-09-01",
+    "deathday": null,
+    "age": 31,
+    "works": [
+      {
+        "id": "st298008",
+        "type": "show",
+        "title": "Umělá krása",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/zUp3F7qtpJIUMsf31DDLNx1xOdS.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p5945280": {
     "name": "Charlie Cherman",
     "img": null,
@@ -366480,46 +366531,6 @@
         "year": 2022,
         "score": 82,
         "poster": "https://image.tmdb.org/t/p/w342/eYzbGcYnOUlvj2fa76pTgIXogd7.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3949154": {
-    "name": "Konami",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st90296",
-        "type": "show",
-        "title": "Tokyo Vice",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p557408": {
-    "name": "Yoo Jang-hee",
-    "img": "/rxATUhQDGDehl2JqlE14i3PHlxD.jpg",
-    "birthday": "1993-09-17",
-    "deathday": null,
-    "age": 33,
-    "works": [
-      {
-        "id": "st136369",
-        "type": "show",
-        "title": "Zítra je taky den",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
         "roles": [
           "actor"
         ]
@@ -367143,6 +367154,48 @@
         "year": 2021,
         "score": 71,
         "poster": "https://image.tmdb.org/t/p/w342/k1z2xv3JjGobO9jfybHGo2tqAKC.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p160165": {
+    "name": "Keith Walker",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st250923",
+        "type": "show",
+        "title": "Tohle nikdo nechce",
+        "year": 2024,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/cvGpkCyUFvweJmQ2e2B6SUMvPMJ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st121509",
+        "type": "show",
+        "title": "My jsme Upshawovi",
+        "year": 2021,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/bgtpwAsKNfqJmgp3zBxuSHMBAaW.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st117910",
+        "type": "show",
+        "title": "United States of Al",
+        "year": 2021,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/iE9STLu2DjxwM6TkOrszkfNS0hV.jpg",
         "roles": [
           "actor"
         ]
