@@ -5842,6 +5842,17 @@
     "age": 48,
     "works": [
       {
+        "id": "mt1283515",
+        "type": "movie",
+        "title": "Pravda, nebo lež",
+        "year": 2026,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/dGSsPovyUW5XVekXcy7F2GyhTEh.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1212855",
         "type": "movie",
         "title": "Smrtonosný let",
@@ -20832,255 +20843,6 @@
         "year": 2026,
         "score": 71,
         "poster": "https://image.tmdb.org/t/p/w342/bgZN3gniRohjfKdsw1Q7EGBAyqz.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p146751": {
-    "name": "Kevin Otto",
-    "img": "/ueyvfE9GiKCq6bqzsHYiJQk8sUM.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1119449",
-        "type": "movie",
-        "title": "Zlom vaz, bav se, neumři",
-        "year": 2026,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/xmhnO0cMTU4jMh0JIZLDZPs3CaV.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt882059",
-        "type": "movie",
-        "title": "Boy Kills World",
-        "year": 2024,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/6nUjT9hPJs7T6GaUFSLSGqQNwey.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt583083",
-        "type": "movie",
-        "title": "Stánek s polibky 2",
-        "year": 2020,
-        "score": 57,
-        "poster": "https://image.tmdb.org/t/p/w342/2olKc5Krs4539FO904Zzf8h772G.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt339095",
-        "type": "movie",
-        "title": "Konec zločinu v Americe",
-        "year": 2020,
-        "score": 38,
-        "poster": "https://image.tmdb.org/t/p/w342/ygCQnDEqUEIamBpdQdDYnFfxvgM.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt619278",
-        "type": "movie",
-        "title": "Spojenec 2",
-        "year": 2019,
-        "score": 56,
-        "poster": "https://image.tmdb.org/t/p/w342/zcDZisqVQK9akfKgyrB9HYzYuVh.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st73544",
-        "type": "show",
-        "title": "Bojovník",
-        "year": 2019,
-        "score": 84,
-        "poster": "https://image.tmdb.org/t/p/w342/hR9qPFMI6BoR63XK6BBX5Ueghan.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st71693",
-        "type": "show",
-        "title": "Blood Drive",
-        "year": 2017,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/qB9PBQMyKrp8diKGxVpfayKZbgd.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt332794",
-        "type": "movie",
-        "title": "Odysea",
-        "year": 2016,
-        "score": 66,
-        "poster": "https://image.tmdb.org/t/p/w342/vulN3Ehh1m7kN7oAJnmhQ2V2hbw.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt173897",
-        "type": "movie",
-        "title": "Resident Evil: Poslední kapitola",
-        "year": 2016,
-        "score": 55,
-        "poster": "https://image.tmdb.org/t/p/w342/6pqiuYM986KSTciM4VCTrBnhwlP.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt400045",
-        "type": "movie",
-        "title": "An American Girl: Lea to the Rescue",
-        "year": 2016,
-        "score": 52,
-        "poster": "https://image.tmdb.org/t/p/w342/nZUMI8Y63UT0niYxfjZQznsAzzw.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt198184",
-        "type": "movie",
-        "title": "Chappie",
-        "year": 2015,
-        "score": 68,
-        "poster": "https://image.tmdb.org/t/p/w342/uuDUpzlMFomdSfNWlpEPS9nVZWV.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st60685",
-        "type": "show",
-        "title": "Dominion",
-        "year": 2014,
-        "score": 67,
-        "poster": "https://image.tmdb.org/t/p/w342/2rBiS2m5hZbTSxorXQmUcbt2cTU.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt34751",
-        "type": "movie",
-        "title": "Zachraňte Willyho 4: Útěk z pirátské zátoky",
-        "year": 2010,
-        "score": 51,
-        "poster": "https://image.tmdb.org/t/p/w342/48i53xuzGLmBOvigCLW2QO1ZLPE.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt11127",
-        "type": "movie",
-        "title": "Hvězdná pěchota 3 - Skrytý nepřítel",
-        "year": 2008,
-        "score": 44,
-        "poster": "https://image.tmdb.org/t/p/w342/ggBnUb48KfiQay0rT4Di71k3cBw.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt24029",
-        "type": "movie",
-        "title": "Deset minut života",
-        "year": 2005,
-        "score": 45,
-        "poster": "https://image.tmdb.org/t/p/w342/8Y0Dg7IlN97qTAWZSCVFhoM1y3g.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st9026",
-        "type": "show",
-        "title": "Záhada Bermudského trojúhelníku",
-        "year": 2005,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/l5qJgE7XAuh664RzP0D0cxRKvP8.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st4372",
-        "type": "show",
-        "title": "Tremors",
-        "year": 2003,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/uJXjZ3OgU8v0HKUPbHk1DZUW3m9.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st2254",
-        "type": "show",
-        "title": "Sunset Beach",
-        "year": 1997,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/b4wqMNq1v3oksZ1V88aemWxbx15.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st1841",
-        "type": "show",
-        "title": "Sindibádova dobrodružství",
-        "year": 1996,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/dakx8dktuEWOZ28AmDtCiKOKxTF.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4381679": {
-    "name": "Lindzay Naidoo",
-    "img": "/xxTLYD7cx0yg5Hpgpl9wMcZGSU8.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1119449",
-        "type": "movie",
-        "title": "Zlom vaz, bav se, neumři",
-        "year": 2026,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/xmhnO0cMTU4jMh0JIZLDZPs3CaV.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1292695",
-        "type": "movie",
-        "title": "Najdou si tě",
-        "year": 2026,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/lY25X5cnepYfFbfMQx7FOMssxVX.jpg",
         "roles": [
           "actor"
         ]
@@ -89010,17 +88772,6 @@
         ]
       },
       {
-        "id": "st213463",
-        "type": "show",
-        "title": "The Best Man: The Final Chapters",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lpInnZep9PfG491qJtZAIbAEF7F.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st205272",
         "type": "show",
         "title": "Důvodné pochybnosti",
@@ -89038,6 +88789,17 @@
         "year": 2022,
         "score": 45,
         "poster": "https://image.tmdb.org/t/p/w342/itMjVGw4abhhCDZFppmb7yGLrRa.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st213463",
+        "type": "show",
+        "title": "The Best Man: The Final Chapters",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lpInnZep9PfG491qJtZAIbAEF7F.jpg",
         "roles": [
           "actor"
         ]
@@ -218332,6 +218094,17 @@
     "age": 32,
     "works": [
       {
+        "id": "mt1560520",
+        "type": "movie",
+        "title": "Batman: Knightfall Part 1: Knightfall",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/360qdtu2hLnqMu8SVHMywn420w1.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1083862",
         "type": "movie",
         "title": "Resident Evil: Ostrov smrti",
@@ -228370,6 +228143,224 @@
         "year": 2024,
         "score": 65,
         "poster": "https://image.tmdb.org/t/p/w342/3SOjU2NB1m8synM5kjM2LgTCeBt.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p146751": {
+    "name": "Kevin Otto",
+    "img": "/ueyvfE9GiKCq6bqzsHYiJQk8sUM.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1119449",
+        "type": "movie",
+        "title": "Zlom vaz, bav se, neumři",
+        "year": 2026,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/xmhnO0cMTU4jMh0JIZLDZPs3CaV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt882059",
+        "type": "movie",
+        "title": "Boy Kills World",
+        "year": 2024,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/6nUjT9hPJs7T6GaUFSLSGqQNwey.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt583083",
+        "type": "movie",
+        "title": "Stánek s polibky 2",
+        "year": 2020,
+        "score": 57,
+        "poster": "https://image.tmdb.org/t/p/w342/2olKc5Krs4539FO904Zzf8h772G.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt339095",
+        "type": "movie",
+        "title": "Konec zločinu v Americe",
+        "year": 2020,
+        "score": 38,
+        "poster": "https://image.tmdb.org/t/p/w342/ygCQnDEqUEIamBpdQdDYnFfxvgM.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt619278",
+        "type": "movie",
+        "title": "Spojenec 2",
+        "year": 2019,
+        "score": 56,
+        "poster": "https://image.tmdb.org/t/p/w342/zcDZisqVQK9akfKgyrB9HYzYuVh.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st73544",
+        "type": "show",
+        "title": "Bojovník",
+        "year": 2019,
+        "score": 84,
+        "poster": "https://image.tmdb.org/t/p/w342/hR9qPFMI6BoR63XK6BBX5Ueghan.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st71693",
+        "type": "show",
+        "title": "Blood Drive",
+        "year": 2017,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/qB9PBQMyKrp8diKGxVpfayKZbgd.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt332794",
+        "type": "movie",
+        "title": "Odysea",
+        "year": 2016,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/vulN3Ehh1m7kN7oAJnmhQ2V2hbw.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt173897",
+        "type": "movie",
+        "title": "Resident Evil: Poslední kapitola",
+        "year": 2016,
+        "score": 55,
+        "poster": "https://image.tmdb.org/t/p/w342/6pqiuYM986KSTciM4VCTrBnhwlP.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt400045",
+        "type": "movie",
+        "title": "An American Girl: Lea to the Rescue",
+        "year": 2016,
+        "score": 52,
+        "poster": "https://image.tmdb.org/t/p/w342/nZUMI8Y63UT0niYxfjZQznsAzzw.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt198184",
+        "type": "movie",
+        "title": "Chappie",
+        "year": 2015,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/uuDUpzlMFomdSfNWlpEPS9nVZWV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st60685",
+        "type": "show",
+        "title": "Dominion",
+        "year": 2014,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/2rBiS2m5hZbTSxorXQmUcbt2cTU.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt34751",
+        "type": "movie",
+        "title": "Zachraňte Willyho 4: Útěk z pirátské zátoky",
+        "year": 2010,
+        "score": 51,
+        "poster": "https://image.tmdb.org/t/p/w342/48i53xuzGLmBOvigCLW2QO1ZLPE.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt11127",
+        "type": "movie",
+        "title": "Hvězdná pěchota 3 - Skrytý nepřítel",
+        "year": 2008,
+        "score": 44,
+        "poster": "https://image.tmdb.org/t/p/w342/ggBnUb48KfiQay0rT4Di71k3cBw.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt24029",
+        "type": "movie",
+        "title": "Deset minut života",
+        "year": 2005,
+        "score": 45,
+        "poster": "https://image.tmdb.org/t/p/w342/8Y0Dg7IlN97qTAWZSCVFhoM1y3g.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st9026",
+        "type": "show",
+        "title": "Záhada Bermudského trojúhelníku",
+        "year": 2005,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/l5qJgE7XAuh664RzP0D0cxRKvP8.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st4372",
+        "type": "show",
+        "title": "Tremors",
+        "year": 2003,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/uJXjZ3OgU8v0HKUPbHk1DZUW3m9.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st2254",
+        "type": "show",
+        "title": "Sunset Beach",
+        "year": 1997,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/b4wqMNq1v3oksZ1V88aemWxbx15.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st1841",
+        "type": "show",
+        "title": "Sindibádova dobrodružství",
+        "year": 1996,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/dakx8dktuEWOZ28AmDtCiKOKxTF.jpg",
         "roles": [
           "actor"
         ]
@@ -241851,6 +241842,37 @@
         "year": 2025,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/9iu54iBYguzaYQK0eYRVJTv8RHx.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4381679": {
+    "name": "Lindzay Naidoo",
+    "img": "/xxTLYD7cx0yg5Hpgpl9wMcZGSU8.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1119449",
+        "type": "movie",
+        "title": "Zlom vaz, bav se, neumři",
+        "year": 2026,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/xmhnO0cMTU4jMh0JIZLDZPs3CaV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1292695",
+        "type": "movie",
+        "title": "Najdou si tě",
+        "year": 2026,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/lY25X5cnepYfFbfMQx7FOMssxVX.jpg",
         "roles": [
           "actor"
         ]
@@ -437084,6 +437106,211 @@
       }
     ]
   },
+  "p1696909": {
+    "name": "Haruka Itou",
+    "img": "/6kWOfUqnIH5hJtvw6wmALZIg6ao.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st90296",
+        "type": "show",
+        "title": "Tokyo Vice",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1294914": {
+    "name": "Yun Yoo-sun",
+    "img": "/aQZZCxYxFX0c5furNutwp4qFz5Q.jpg",
+    "birthday": "1969-01-17",
+    "deathday": null,
+    "age": 57,
+    "works": [
+      {
+        "id": "st281004",
+        "type": "show",
+        "title": "Právní cesta",
+        "year": 2025,
+        "score": 79,
+        "poster": "https://image.tmdb.org/t/p/w342/y9SDvLKABqz0FWymCz6IGhpYoFs.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st127529",
+        "type": "show",
+        "title": "Čmuchalové",
+        "year": 2023,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/j4BjkbSqY7Cbc4XcdKMyJGyr9iT.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st136369",
+        "type": "show",
+        "title": "Zítra je taky den",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st205040",
+        "type": "show",
+        "title": "Adamas",
+        "year": 2022,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/qaodZmdbTorhGISrlDQKSjaHcHy.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st211746",
+        "type": "show",
+        "title": "V zájmu lásky",
+        "year": 2022,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/dtqNXe8whqJPbEEVluGThB0jQa3.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st196907",
+        "type": "show",
+        "title": "Svatba je peklo",
+        "year": 2022,
+        "score": 60,
+        "poster": "https://image.tmdb.org/t/p/w342/k5iEn12RF4WQuxwY5kZa5SYu83M.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st197067",
+        "type": "show",
+        "title": "Výjimečná právnička U Jong-u",
+        "year": 2022,
+        "score": 85,
+        "poster": "https://image.tmdb.org/t/p/w342/yv57TccCkgdy3St7rspBPKROeRK.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st116708",
+        "type": "show",
+        "title": "Imitation",
+        "year": 2021,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/e81oWdxXLrFmfsV0pWdENwQJw2A.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st128995",
+        "type": "show",
+        "title": "Yumieui Sepodeul",
+        "year": 2021,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9D8vdvwT1sTJzWCPfzc53R54awD.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st93541",
+        "type": "show",
+        "title": "Tale of Nok-Du",
+        "year": 2019,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/pMoDyXj6UxsfdSgz3nlow14t89N.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st88328",
+        "type": "show",
+        "title": "Hlubina",
+        "year": 2019,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/nwUNLG77EUjysAvtxpWd0l619ep.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st72690",
+        "type": "show",
+        "title": "Zachraňte mě",
+        "year": 2017,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/g4FhqMaH6HXwWEmmYnqevFZbaQU.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st74829",
+        "type": "show",
+        "title": "Just Between Lovers",
+        "year": 2017,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/gLh0AA7W7cA4Ah4hFUy1uTtS5Bx.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st67272",
+        "type": "show",
+        "title": "Shopping King Louie",
+        "year": 2016,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/vB17pXlKkuwLTnJelkrJonMPElq.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st63767",
+        "type": "show",
+        "title": "She was pretty",
+        "year": 2015,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/bG2tWZQCOY9hggdoI3womeiyguE.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st33544",
+        "type": "show",
+        "title": "My Girlfriend Is a Gumiho",
+        "year": 2010,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/plIrEjiBJwQuyGExNjl1tKGNSct.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2659080": {
     "name": "Ditte Maria Le-Fevre",
     "img": "/tnEShkYbnTQ5I8Vy4og2Pf2aBb3.jpg",
@@ -438236,191 +438463,6 @@
         "year": 2022,
         "score": 70,
         "poster": "https://image.tmdb.org/t/p/w342/ckwIGJghs2AuUcjyhByRlXNMBYZ.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1294914": {
-    "name": "Yun Yoo-sun",
-    "img": "/aQZZCxYxFX0c5furNutwp4qFz5Q.jpg",
-    "birthday": "1969-01-17",
-    "deathday": null,
-    "age": 57,
-    "works": [
-      {
-        "id": "st281004",
-        "type": "show",
-        "title": "Právní cesta",
-        "year": 2025,
-        "score": 79,
-        "poster": "https://image.tmdb.org/t/p/w342/y9SDvLKABqz0FWymCz6IGhpYoFs.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st127529",
-        "type": "show",
-        "title": "Čmuchalové",
-        "year": 2023,
-        "score": 82,
-        "poster": "https://image.tmdb.org/t/p/w342/j4BjkbSqY7Cbc4XcdKMyJGyr9iT.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st205040",
-        "type": "show",
-        "title": "Adamas",
-        "year": 2022,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/qaodZmdbTorhGISrlDQKSjaHcHy.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st211746",
-        "type": "show",
-        "title": "V zájmu lásky",
-        "year": 2022,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/dtqNXe8whqJPbEEVluGThB0jQa3.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st196907",
-        "type": "show",
-        "title": "Svatba je peklo",
-        "year": 2022,
-        "score": 60,
-        "poster": "https://image.tmdb.org/t/p/w342/k5iEn12RF4WQuxwY5kZa5SYu83M.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st197067",
-        "type": "show",
-        "title": "Výjimečná právnička U Jong-u",
-        "year": 2022,
-        "score": 85,
-        "poster": "https://image.tmdb.org/t/p/w342/yv57TccCkgdy3St7rspBPKROeRK.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st136369",
-        "type": "show",
-        "title": "Zítra je taky den",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st116708",
-        "type": "show",
-        "title": "Imitation",
-        "year": 2021,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/e81oWdxXLrFmfsV0pWdENwQJw2A.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st128995",
-        "type": "show",
-        "title": "Yumieui Sepodeul",
-        "year": 2021,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9D8vdvwT1sTJzWCPfzc53R54awD.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st93541",
-        "type": "show",
-        "title": "Tale of Nok-Du",
-        "year": 2019,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/pMoDyXj6UxsfdSgz3nlow14t89N.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st88328",
-        "type": "show",
-        "title": "Hlubina",
-        "year": 2019,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/nwUNLG77EUjysAvtxpWd0l619ep.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st72690",
-        "type": "show",
-        "title": "Zachraňte mě",
-        "year": 2017,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/g4FhqMaH6HXwWEmmYnqevFZbaQU.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st74829",
-        "type": "show",
-        "title": "Just Between Lovers",
-        "year": 2017,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/gLh0AA7W7cA4Ah4hFUy1uTtS5Bx.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st67272",
-        "type": "show",
-        "title": "Shopping King Louie",
-        "year": 2016,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/vB17pXlKkuwLTnJelkrJonMPElq.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st63767",
-        "type": "show",
-        "title": "She was pretty",
-        "year": 2015,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/bG2tWZQCOY9hggdoI3womeiyguE.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st33544",
-        "type": "show",
-        "title": "My Girlfriend Is a Gumiho",
-        "year": 2010,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/plIrEjiBJwQuyGExNjl1tKGNSct.jpg",
         "roles": [
           "actor"
         ]
@@ -443212,6 +443254,46 @@
       }
     ]
   },
+  "p5320309": {
+    "name": "Mercy Miller",
+    "img": null,
+    "birthday": "2005-09-13",
+    "deathday": null,
+    "age": 21,
+    "works": [
+      {
+        "id": "st248394",
+        "type": "show",
+        "title": "Miluju tě navždy",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/twlp0YMmuKmn4cKAInAL3zde59W.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6173623": {
+    "name": "Ghalee Wadood Jr.",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st248394",
+        "type": "show",
+        "title": "Miluju tě navždy",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/twlp0YMmuKmn4cKAInAL3zde59W.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p5672727": {
     "name": "Josh McGowan",
     "img": null,
@@ -444257,6 +444339,26 @@
       }
     ]
   },
+  "p6143824": {
+    "name": "Yoon Hye-rim",
+    "img": "/meawWGnxwtZtO10LjmsqYXBXDEl.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st298610",
+        "type": "show",
+        "title": "오싹한 연애",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p4071578": {
     "name": "Sean Thomas Simmons",
     "img": "/lKmovRWFublyfUopCdTFISfQL9C.jpg",
@@ -444599,6 +444701,26 @@
         "year": 2020,
         "score": 70,
         "poster": "https://image.tmdb.org/t/p/w342/eVJyT5RJ4xNsxs4y0SbrJa3LKif.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6095149": {
+    "name": "Daniel Lin",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st291334",
+        "type": "show",
+        "title": "The Fall and Rise of Reggie Dinkins",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/lrF8Ve4GoazCalfbrSY52tUIXSN.jpg",
         "roles": [
           "actor"
         ]
@@ -445549,26 +445671,6 @@
         "year": 2020,
         "score": 87,
         "poster": "https://image.tmdb.org/t/p/w342/zy0FJYPsKkfOrZG5r5lFtTIx1up.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1696909": {
-    "name": "Haruka Itou",
-    "img": "/6kWOfUqnIH5hJtvw6wmALZIg6ao.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st90296",
-        "type": "show",
-        "title": "Tokyo Vice",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
         "roles": [
           "actor"
         ]
@@ -446693,46 +446795,6 @@
       }
     ]
   },
-  "p5320309": {
-    "name": "Mercy Miller",
-    "img": null,
-    "birthday": "2005-09-13",
-    "deathday": null,
-    "age": 21,
-    "works": [
-      {
-        "id": "st248394",
-        "type": "show",
-        "title": "Miluju tě navždy",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/twlp0YMmuKmn4cKAInAL3zde59W.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6173623": {
-    "name": "Ghalee Wadood Jr.",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st248394",
-        "type": "show",
-        "title": "Miluju tě navždy",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/twlp0YMmuKmn4cKAInAL3zde59W.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p6060015": {
     "name": "Petra Lukešová",
     "img": "/4idyNgb79xaGos83Wvoujg5sBTn.jpg",
@@ -447022,26 +447084,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/ikawmMAPwHMmoZU8YCw4t8847sv.jpg",
         "roles": [
           "writer"
-        ]
-      }
-    ]
-  },
-  "p6143824": {
-    "name": "Yoon Hye-rim",
-    "img": "/meawWGnxwtZtO10LjmsqYXBXDEl.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st298610",
-        "type": "show",
-        "title": "오싹한 연애",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
-        "roles": [
-          "actor"
         ]
       }
     ]

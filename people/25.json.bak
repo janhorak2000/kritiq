@@ -3752,6 +3752,17 @@
     "age": 42,
     "works": [
       {
+        "id": "st298008",
+        "type": "show",
+        "title": "Umělá krása",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/zUp3F7qtpJIUMsf31DDLNx1xOdS.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1050035",
         "type": "movie",
         "title": "Netvor",
@@ -12907,6 +12918,17 @@
         ]
       },
       {
+        "id": "mt1283515",
+        "type": "movie",
+        "title": "Pravda, nebo lež",
+        "year": 2026,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/dGSsPovyUW5XVekXcy7F2GyhTEh.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1101383",
         "type": "movie",
         "title": "Konec Oak Street",
@@ -14768,1122 +14790,6 @@
         "year": 2026,
         "score": 71,
         "poster": "https://image.tmdb.org/t/p/w342/4hfMbVbYc2gsMnSE1K8Oc9LQH4j.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6807": {
-    "name": "Sam Rockwell",
-    "img": "/afYhNpLwpa65Yy0Q0g00FNFhzx5.jpg",
-    "birthday": "1968-11-05",
-    "deathday": null,
-    "age": 57,
-    "works": [
-      {
-        "id": "mt1119449",
-        "type": "movie",
-        "title": "Zlom vaz, bav se, neumři",
-        "year": 2026,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/xmhnO0cMTU4jMh0JIZLDZPs3CaV.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1175942",
-        "type": "movie",
-        "title": "Zlouni 2",
-        "year": 2025,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/n2OqVCKWh6VsHB01IX4QXpM3jV4.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt639720",
-        "type": "movie",
-        "title": "Imaginární přátelé",
-        "year": 2024,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/ecBdFXfeLjuAW4NdDLNgFBVZTMy.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt848538",
-        "type": "movie",
-        "title": "Argylle: Tajný agent",
-        "year": 2024,
-        "score": 56,
-        "poster": "https://image.tmdb.org/t/p/w342/3IqxPAZ8h54LULWXVSgJH8ynGFX.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt629542",
-        "type": "movie",
-        "title": "Zlouni",
-        "year": 2022,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/wlGkNAr9rkLQWbcO3H0pVQ7dQ8I.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt766475",
-        "type": "movie",
-        "title": "Vražda v Londýně",
-        "year": 2022,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/nRLDrtHcNKQMLOxMepOOesP8BUa.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st111803",
-        "type": "show",
-        "title": "Bílý lotos",
-        "year": 2021,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/cbo6SK1MKkgjVoMNvoFXX5KrUcU.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt508570",
-        "type": "movie",
-        "title": "Ivan je jen jeden",
-        "year": 2020,
-        "score": 66,
-        "poster": "https://image.tmdb.org/t/p/w342/u2tftW3VGIA438aqRLeMnR15ylr.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt446893",
-        "type": "movie",
-        "title": "Trollové: Světové turné",
-        "year": 2020,
-        "score": 61,
-        "poster": "https://image.tmdb.org/t/p/w342/aZ5213j3DgCesthFW3fyekohT9k.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt515001",
-        "type": "movie",
-        "title": "Králíček Jojo",
-        "year": 2019,
-        "score": 79,
-        "poster": "https://image.tmdb.org/t/p/w342/thhSujO9djZUra0n8wYbb8tzXQ9.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt292011",
-        "type": "movie",
-        "title": "Richard Jewell",
-        "year": 2019,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/uuSxln4kae5U1qxP8AhE9ArzuN2.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt458131",
-        "type": "movie",
-        "title": "The Best of Enemies",
-        "year": 2019,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/4pA9318BY7CSnXVi3xKBtPYMe1T.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st81131",
-        "type": "show",
-        "title": "Fosse/Verdonová",
-        "year": 2019,
-        "score": 79,
-        "poster": "https://image.tmdb.org/t/p/w342/rbHkfnaFBcMx90GRBzjCL8MPozo.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt429197",
-        "type": "movie",
-        "title": "Muž v pozadí",
-        "year": 2018,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/1gCab6rNv1r6V64cwsU4oEr649Y.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt396373",
-        "type": "movie",
-        "title": "Žena jde napřed",
-        "year": 2018,
-        "score": 67,
-        "poster": "https://image.tmdb.org/t/p/w342/qI5NcQHR0nsykPqlG2qnfFyMgW6.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt471429",
-        "type": "movie",
-        "title": "Blue Iguana",
-        "year": 2018,
-        "score": 56,
-        "poster": "https://image.tmdb.org/t/p/w342/8ixLHMV9RoyBGJz2yRuggsr0vyX.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt401371",
-        "type": "movie",
-        "title": "Mute",
-        "year": 2018,
-        "score": 55,
-        "poster": "https://image.tmdb.org/t/p/w342/ihGg1xndLl3MW34Km332pNkyLH7.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt359940",
-        "type": "movie",
-        "title": "Tři billboardy kousek za Ebbingem",
-        "year": 2017,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/bRYLt8fV82tdVoDppSFTZIcJiLN.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt333385",
-        "type": "movie",
-        "title": "Pan dokonalý",
-        "year": 2016,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/aSx5YUCLcSUAR4nt93aeIpZYHF6.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt295490",
-        "type": "movie",
-        "title": "Hledači ohně",
-        "year": 2015,
-        "score": 58,
-        "poster": "https://image.tmdb.org/t/p/w342/rJjT0uoqWl2ETSshtNg3Wv2MkMT.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt309298",
-        "type": "movie",
-        "title": "Don Verdean",
-        "year": 2015,
-        "score": 54,
-        "poster": "https://image.tmdb.org/t/p/w342/qDRa5s8n0jEHW2SSE8Xn4HRI3Ue.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt243688",
-        "type": "movie",
-        "title": "Poltergeist",
-        "year": 2015,
-        "score": 49,
-        "poster": "https://image.tmdb.org/t/p/w342/jBXupXZ7WEPUpkYFpkQsdipwBQn.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st62223",
-        "type": "show",
-        "title": "The Late Late Show with James Corden",
-        "year": 2015,
-        "score": 55,
-        "poster": "https://image.tmdb.org/t/p/w342/qPmVoG8G9tc1nN8ZwGV2zYcknit.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st63522",
-        "type": "show",
-        "title": "R jako rodina",
-        "year": 2015,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/3gkdyR58Hm0gMkItqvyNz7zSTWH.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt244264",
-        "type": "movie",
-        "title": "Laggies",
-        "year": 2014,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/kL2ccASO8O6v92gGTaaY5gOCAI4.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt157099",
-        "type": "movie",
-        "title": "Blondýna na předpis",
-        "year": 2014,
-        "score": 62,
-        "poster": "https://image.tmdb.org/t/p/w342/9PpwTNDsXnuGHcwBdpgybVSwsFN.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt147773",
-        "type": "movie",
-        "title": "Nezapomenutelné prázdniny",
-        "year": 2013,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/uGvRhDwZjLXbBIBTjgJefaGDCEl.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt174343",
-        "type": "movie",
-        "title": "Věř mi",
-        "year": 2013,
-        "score": 61,
-        "poster": "https://image.tmdb.org/t/p/w342/za40eaNet6AsJ8voY6AMNokhj4P.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt159932",
-        "type": "movie",
-        "title": "Jednou ranou",
-        "year": 2013,
-        "score": 57,
-        "poster": "https://image.tmdb.org/t/p/w342/zRGBGjdeGf12Pmalr1adT9IpoId.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt174316",
-        "type": "movie",
-        "title": "Muž na míru",
-        "year": 2013,
-        "score": 56,
-        "poster": "https://image.tmdb.org/t/p/w342/qP6X7K5BWtQv28leIpxJNmq1deB.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st56219",
-        "type": "show",
-        "title": "Drunk History",
-        "year": 2013,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/6zTclFjUEm6aTodjYciYtwzh5tY.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt86838",
-        "type": "movie",
-        "title": "Sedm psychopatů",
-        "year": 2012,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/4ukEYAxlSivFcDG6vLxJB6PjTjg.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt57431",
-        "type": "movie",
-        "title": "Spratci na zabití",
-        "year": 2011,
-        "score": 56,
-        "poster": "https://image.tmdb.org/t/p/w342/jlGzZ8McDp73PAaWMeYCHWeHiM4.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt49849",
-        "type": "movie",
-        "title": "Kovbojové a vetřelci",
-        "year": 2011,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/9SIFtjxRFFeTlXFkvo2gj5FTsX7.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt45094",
-        "type": "movie",
-        "title": "Odsouzení",
-        "year": 2010,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/rUxznyFz7D0HgC5zcYigzP1XUi4.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt10138",
-        "type": "movie",
-        "title": "Iron Man 2",
-        "year": 2010,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/dPomoMZZcxSxLIgckRENDIX8JOq.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt17431",
-        "type": "movie",
-        "title": "Moon",
-        "year": 2009,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/35IU0Mq0zFsN1mYwDGts5mKc77n.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt26171",
-        "type": "movie",
-        "title": "Všichni jsou v pohodě",
-        "year": 2009,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/iLJY72NYcryT63t0u6pR63S37gA.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt44750",
-        "type": "movie",
-        "title": "The Winning Season",
-        "year": 2009,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/8givSWfcusfGrktBPmzh8MPdg7J.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt22820",
-        "type": "movie",
-        "title": "Divnej týpek",
-        "year": 2009,
-        "score": 62,
-        "poster": "https://image.tmdb.org/t/p/w342/eRnUC60trqoRZuAtM8M3gOFT6ED.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt19585",
-        "type": "movie",
-        "title": "G-Force",
-        "year": 2009,
-        "score": 51,
-        "poster": "https://image.tmdb.org/t/p/w342/9Tly3ZXTTsQKM26fis8v9LR4GxG.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt11499",
-        "type": "movie",
-        "title": "Duel Frost/Nixon",
-        "year": 2008,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/nLrRrHZQ40tWqLTY3kxgS4x7GUw.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt13973",
-        "type": "movie",
-        "title": "Zalknutí",
-        "year": 2008,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/7osy71os3YLiFpNYn567koOnAKZ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt4512",
-        "type": "movie",
-        "title": "Zabití Jesseho Jamese zbabělcem Robertem Fordem",
-        "year": 2007,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/xMKn6EQS7eR5ubhPJbw5pQSBZMw.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt14054",
-        "type": "movie",
-        "title": "Sněžní andělé",
-        "year": 2007,
-        "score": 67,
-        "poster": "https://image.tmdb.org/t/p/w342/hKtht1ezc31mH1cBIHoDPmScnk9.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt5956",
-        "type": "movie",
-        "title": "Milovaný Joshua",
-        "year": 2007,
-        "score": 58,
-        "poster": "https://image.tmdb.org/t/p/w342/91yHfa0apWqMr8HmuwUPrVKYuDR.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt7453",
-        "type": "movie",
-        "title": "Stopařův průvodce po galaxii",
-        "year": 2005,
-        "score": 67,
-        "poster": "https://image.tmdb.org/t/p/w342/exf2LybCyWStjW4XveKQuypwKFK.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt7270",
-        "type": "movie",
-        "title": "Švindlíři",
-        "year": 2003,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/cIWQzIoWOvx0piZM0UpiHMhzHWW.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt4912",
-        "type": "movie",
-        "title": "Milujte svého zabijáka",
-        "year": 2002,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/mM58ABMRzwn5zVx6BS7IiNK0j3F.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt9260",
-        "type": "movie",
-        "title": "Bombakšeft",
-        "year": 2002,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/7XyvoOopwWwDCWOcItOQiAwm30b.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt11088",
-        "type": "movie",
-        "title": "Poslední loupež",
-        "year": 2001,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/xrwwSXFeW35wYsnobreXbGxHwUC.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt15745",
-        "type": "movie",
-        "title": "Špinavý prachy",
-        "year": 2001,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/sMfZBW8Ww1mVXDdE9jOgDIceKBF.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt4327",
-        "type": "movie",
-        "title": "Charlieho andílci",
-        "year": 2000,
-        "score": 57,
-        "poster": "https://image.tmdb.org/t/p/w342/bjNyEnbVceVYjCo7LPIBG1WANf3.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt10210",
-        "type": "movie",
-        "title": "Sen noci svatojánské",
-        "year": 1999,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/5KTYh2gXmsHUzsRsrstBGy0QfXf.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt497",
-        "type": "movie",
-        "title": "Zelená míle",
-        "year": 1999,
-        "score": 86,
-        "poster": "https://image.tmdb.org/t/p/w342/sZtr3qQuacQLBg0H7jUpPo4nfPt.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt926",
-        "type": "movie",
-        "title": "Galaxy Quest",
-        "year": 1999,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/naJqvdXJtqTnY9XS3JXhEz6X0Vh.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt76891",
-        "type": "movie",
-        "title": "Jerry and Tom",
-        "year": 1998,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/7vb4RjMgdzPflqSpdUwwUjdwjTu.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt9466",
-        "type": "movie",
-        "title": "Celebrity",
-        "year": 1998,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/q4UJHtH14nO8tbMfGtJ3Z3Tw5RW.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt16155",
-        "type": "movie",
-        "title": "Safe Men",
-        "year": 1998,
-        "score": 58,
-        "poster": "https://image.tmdb.org/t/p/w342/857L7x6uFNr4c2oHD5KJw5pkbxn.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt35796",
-        "type": "movie",
-        "title": "Lawn Dogs",
-        "year": 1997,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/hNi2M5Z7GUEaSCPjt66yavLlsqV.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt31146",
-        "type": "movie",
-        "title": "Život v sedmém nebi",
-        "year": 1996,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/ibDb9U1JsPXJYycSgq6ssSOz1W4.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt549",
-        "type": "movie",
-        "title": "Basquiat",
-        "year": 1996,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/gFfVhN8BbgHhMb3ZNQRAH5xc7kq.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt26626",
-        "type": "movie",
-        "title": "Glory Daze",
-        "year": 1995,
-        "score": 56,
-        "poster": "https://image.tmdb.org/t/p/w342/mosH3RnC5wjcThd0DZq4ZqWkTPQ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt67365",
-        "type": "movie",
-        "title": "The Search for One-eye Jimmy",
-        "year": 1994,
-        "score": 60,
-        "poster": "https://image.tmdb.org/t/p/w342/da9r0FJxecJvLK6X5iqirRLMxks.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt52936",
-        "type": "movie",
-        "title": "In the Soup",
-        "year": 1992,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/kj7j6q8g3kptgqnpjpZlr5det2I.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt36351",
-        "type": "movie",
-        "title": "Muž beze spánku",
-        "year": 1992,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/fFSdOYKp80rcK81KuNW3rz7FcLX.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt45147",
-        "type": "movie",
-        "title": "Strictly Business",
-        "year": 1991,
-        "score": 55,
-        "poster": "https://image.tmdb.org/t/p/w342/aH8NjAzgxQckbt1oY4YBpCYLrDd.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt30519",
-        "type": "movie",
-        "title": "Happy Hell Night",
-        "year": 1991,
-        "score": 48,
-        "poster": "https://image.tmdb.org/t/p/w342/9KBH7erBJrqzaydlszf6lncea4h.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt25756",
-        "type": "movie",
-        "title": "Clownhouse",
-        "year": 1990,
-        "score": 54,
-        "poster": "https://image.tmdb.org/t/p/w342/lRhXNf7zrOShQumPmMxHifUUUhz.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1498",
-        "type": "movie",
-        "title": "Želví nindžové",
-        "year": 1990,
-        "score": 68,
-        "poster": "https://image.tmdb.org/t/p/w342/shfAU6xIIEAEtsloIT3n9Fscz2E.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt12774",
-        "type": "movie",
-        "title": "Poslední útěk do Brooklynu",
-        "year": 1989,
-        "score": 68,
-        "poster": "https://image.tmdb.org/t/p/w342/89Lg30XE7gwVZpJUk0RKqV8CtND.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p571437": {
-    "name": "Adam Burton",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1119449",
-        "type": "movie",
-        "title": "Zlom vaz, bav se, neumři",
-        "year": 2026,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/xmhnO0cMTU4jMh0JIZLDZPs3CaV.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt505379",
-        "type": "movie",
-        "title": "Rebeka",
-        "year": 2020,
-        "score": 61,
-        "poster": "https://image.tmdb.org/t/p/w342/kGhllBArW7ImDycSMIG5bj6GEPL.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st46648",
-        "type": "show",
-        "title": "Temný případ",
-        "year": 2014,
-        "score": 88,
-        "poster": "https://image.tmdb.org/t/p/w342/9vi5YeujfBwLwxdJmanINKSVy0o.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1307013": {
-    "name": "Barry Ward",
-    "img": "/3cIhm76aPUvJdIa9GbGrzhAL5GF.jpg",
-    "birthday": "1971-01-13",
-    "deathday": null,
-    "age": 55,
-    "works": [
-      {
-        "id": "mt1507796",
-        "type": "movie",
-        "title": "On the Sea",
-        "year": 2026,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/9dZj1TDR2TlSdWjnzGI87jbZSts.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1532470",
-        "type": "movie",
-        "title": "Nevděčné bytosti",
-        "year": 2026,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/sMLNPPaZOUOMoIAaDrxNRVBN3HW.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1242686",
-        "type": "movie",
-        "title": "Na dno ringu",
-        "year": 2025,
-        "score": 59,
-        "poster": "https://image.tmdb.org/t/p/w342/cAPIS05UGqsTwiu0Qjs0WlIUW1l.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt715370",
-        "type": "movie",
-        "title": "Burial",
-        "year": 2022,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/c4D22vnat4DUm9a9TFPZ0abDEsc.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st132159",
-        "type": "show",
-        "title": "Pistol",
-        "year": 2022,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/qHswJ2FXpN9jJIqNlxgc5ZooFb4.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st199318",
-        "type": "show",
-        "title": "Zlé sestry",
-        "year": 2022,
-        "score": 82,
-        "poster": "https://image.tmdb.org/t/p/w342/rrLESj9NXPhlcMpgDdJAUTIEq4q.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st126400",
-        "type": "show",
-        "title": "Anne Boleyn",
-        "year": 2021,
-        "score": 56,
-        "poster": "https://image.tmdb.org/t/p/w342/1vC3LpIJl9BkNNsYVPhT9qGIYTY.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt635918",
-        "type": "movie",
-        "title": "Rande na oko",
-        "year": 2020,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/bNL90Vji3aJKqgFvrzam1LCLVI.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st96628",
-        "type": "show",
-        "title": "Des",
-        "year": 2020,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/9llAQpT74W2fajazgRvgN5Z5fyG.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st99610",
-        "type": "show",
-        "title": "Na pohodu",
-        "year": 2020,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/ri3dx91b3QeRGB35gnEiHGhXxdP.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st90265",
-        "type": "show",
-        "title": "White Lines",
-        "year": 2020,
-        "score": 66,
-        "poster": "https://image.tmdb.org/t/p/w342/3O1lB4ZhTMZ0Q3VsU7SHtFBDYI1.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt538227",
-        "type": "movie",
-        "title": "Extra Ordinary",
-        "year": 2019,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/z3IRiGKXx2eMhxtV8GktKwvWkhm.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st93166",
-        "type": "show",
-        "title": "The Capture",
-        "year": 2019,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/6keUrgntgKt299a39UJCDYldb8b.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st92647",
-        "type": "show",
-        "title": "Na podruhé",
-        "year": 2019,
-        "score": 62,
-        "poster": "https://image.tmdb.org/t/p/w342/mUfPaaVpK8vkWed1zmAda8DGnoV.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt472553",
-        "type": "movie",
-        "title": "Slůně v nesnázích",
-        "year": 2018,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/tUlO39EcZzPlKS4JOhlUansgKFJ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st75789",
-        "type": "show",
-        "title": "Save Me",
-        "year": 2018,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/uc7TY2yKnXz3DFPkyGRa3eIWyMA.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st70484",
-        "type": "show",
-        "title": "Britannia",
-        "year": 2018,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/fjdXymXAas9NSehc6GCOHQcEM05.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt408616",
-        "type": "movie",
-        "title": "The Journey",
-        "year": 2017,
-        "score": 67,
-        "poster": "https://image.tmdb.org/t/p/w342/avmWN1YGYbzW4n1cbffw4uLCZSr.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt464566",
-        "type": "movie",
-        "title": "Maze",
-        "year": 2017,
-        "score": 59,
-        "poster": "https://image.tmdb.org/t/p/w342/bWEF3a1qErRIjmLW0xU28zAgV9D.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st74577",
-        "type": "show",
-        "title": "The End of the F***ing World",
-        "year": 2017,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/f1OV9xEJCZVYcYSDRr5xOD8NJw3.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt399612",
-        "type": "movie",
-        "title": "Project Lazarus",
-        "year": 2016,
-        "score": 59,
-        "poster": "https://image.tmdb.org/t/p/w342/1TSETMXX3ncT9lPtsKzvo7u1sdu.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st65153",
-        "type": "show",
-        "title": "Povstání",
-        "year": 2016,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/c0BnaDnGZ5zucdyMPRtQZ96jqL0.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt329004",
-        "type": "movie",
-        "title": "The Survivalist",
-        "year": 2015,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/hd491WgKPxeQus2LnvFbYmyUFmt.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt262958",
-        "type": "movie",
-        "title": "Jimmyho tančírna",
-        "year": 2014,
-        "score": 67,
-        "poster": "https://image.tmdb.org/t/p/w342/lo5MjmuMTTcgGVsup5RvjtDj4T7.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt44853",
-        "type": "movie",
-        "title": "Vykoupení",
-        "year": 2000,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/drpLBTmnMOzDUVAd3jqeLjdolcf.jpg",
         "roles": [
           "actor"
         ]
@@ -26402,6 +25308,17 @@
         "year": 2026,
         "score": 74,
         "poster": "https://image.tmdb.org/t/p/w342/xeQ7KBNF2uhOI9PCPXFWS56zx0J.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st291334",
+        "type": "show",
+        "title": "The Fall and Rise of Reggie Dinkins",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/lrF8Ve4GoazCalfbrSY52tUIXSN.jpg",
         "roles": [
           "actor"
         ]
@@ -37934,6 +36851,17 @@
     "age": null,
     "works": [
       {
+        "id": "st291334",
+        "type": "show",
+        "title": "The Fall and Rise of Reggie Dinkins",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/lrF8Ve4GoazCalfbrSY52tUIXSN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1314129",
         "type": "movie",
         "title": "Preparation for the Next Life",
@@ -42852,6 +41780,796 @@
         "year": 1984,
         "score": 56,
         "poster": "https://image.tmdb.org/t/p/w342/vwtsHfe7zrkGFD10K7AkhEQk5cE.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6807": {
+    "name": "Sam Rockwell",
+    "img": "/afYhNpLwpa65Yy0Q0g00FNFhzx5.jpg",
+    "birthday": "1968-11-05",
+    "deathday": null,
+    "age": 57,
+    "works": [
+      {
+        "id": "mt1119449",
+        "type": "movie",
+        "title": "Zlom vaz, bav se, neumři",
+        "year": 2026,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/xmhnO0cMTU4jMh0JIZLDZPs3CaV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1175942",
+        "type": "movie",
+        "title": "Zlouni 2",
+        "year": 2025,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/n2OqVCKWh6VsHB01IX4QXpM3jV4.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt639720",
+        "type": "movie",
+        "title": "Imaginární přátelé",
+        "year": 2024,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/ecBdFXfeLjuAW4NdDLNgFBVZTMy.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt848538",
+        "type": "movie",
+        "title": "Argylle: Tajný agent",
+        "year": 2024,
+        "score": 56,
+        "poster": "https://image.tmdb.org/t/p/w342/3IqxPAZ8h54LULWXVSgJH8ynGFX.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt629542",
+        "type": "movie",
+        "title": "Zlouni",
+        "year": 2022,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/wlGkNAr9rkLQWbcO3H0pVQ7dQ8I.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt766475",
+        "type": "movie",
+        "title": "Vražda v Londýně",
+        "year": 2022,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/nRLDrtHcNKQMLOxMepOOesP8BUa.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st111803",
+        "type": "show",
+        "title": "Bílý lotos",
+        "year": 2021,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/cbo6SK1MKkgjVoMNvoFXX5KrUcU.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt508570",
+        "type": "movie",
+        "title": "Ivan je jen jeden",
+        "year": 2020,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/u2tftW3VGIA438aqRLeMnR15ylr.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt446893",
+        "type": "movie",
+        "title": "Trollové: Světové turné",
+        "year": 2020,
+        "score": 61,
+        "poster": "https://image.tmdb.org/t/p/w342/aZ5213j3DgCesthFW3fyekohT9k.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt515001",
+        "type": "movie",
+        "title": "Králíček Jojo",
+        "year": 2019,
+        "score": 79,
+        "poster": "https://image.tmdb.org/t/p/w342/thhSujO9djZUra0n8wYbb8tzXQ9.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt292011",
+        "type": "movie",
+        "title": "Richard Jewell",
+        "year": 2019,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/uuSxln4kae5U1qxP8AhE9ArzuN2.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt458131",
+        "type": "movie",
+        "title": "The Best of Enemies",
+        "year": 2019,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/4pA9318BY7CSnXVi3xKBtPYMe1T.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st81131",
+        "type": "show",
+        "title": "Fosse/Verdonová",
+        "year": 2019,
+        "score": 79,
+        "poster": "https://image.tmdb.org/t/p/w342/rbHkfnaFBcMx90GRBzjCL8MPozo.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt429197",
+        "type": "movie",
+        "title": "Muž v pozadí",
+        "year": 2018,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/1gCab6rNv1r6V64cwsU4oEr649Y.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt396373",
+        "type": "movie",
+        "title": "Žena jde napřed",
+        "year": 2018,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/qI5NcQHR0nsykPqlG2qnfFyMgW6.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt471429",
+        "type": "movie",
+        "title": "Blue Iguana",
+        "year": 2018,
+        "score": 56,
+        "poster": "https://image.tmdb.org/t/p/w342/8ixLHMV9RoyBGJz2yRuggsr0vyX.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt401371",
+        "type": "movie",
+        "title": "Mute",
+        "year": 2018,
+        "score": 55,
+        "poster": "https://image.tmdb.org/t/p/w342/ihGg1xndLl3MW34Km332pNkyLH7.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt359940",
+        "type": "movie",
+        "title": "Tři billboardy kousek za Ebbingem",
+        "year": 2017,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/bRYLt8fV82tdVoDppSFTZIcJiLN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt333385",
+        "type": "movie",
+        "title": "Pan dokonalý",
+        "year": 2016,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/aSx5YUCLcSUAR4nt93aeIpZYHF6.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt295490",
+        "type": "movie",
+        "title": "Hledači ohně",
+        "year": 2015,
+        "score": 58,
+        "poster": "https://image.tmdb.org/t/p/w342/rJjT0uoqWl2ETSshtNg3Wv2MkMT.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt309298",
+        "type": "movie",
+        "title": "Don Verdean",
+        "year": 2015,
+        "score": 54,
+        "poster": "https://image.tmdb.org/t/p/w342/qDRa5s8n0jEHW2SSE8Xn4HRI3Ue.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt243688",
+        "type": "movie",
+        "title": "Poltergeist",
+        "year": 2015,
+        "score": 49,
+        "poster": "https://image.tmdb.org/t/p/w342/jBXupXZ7WEPUpkYFpkQsdipwBQn.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st62223",
+        "type": "show",
+        "title": "The Late Late Show with James Corden",
+        "year": 2015,
+        "score": 55,
+        "poster": "https://image.tmdb.org/t/p/w342/qPmVoG8G9tc1nN8ZwGV2zYcknit.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st63522",
+        "type": "show",
+        "title": "R jako rodina",
+        "year": 2015,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/3gkdyR58Hm0gMkItqvyNz7zSTWH.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt244264",
+        "type": "movie",
+        "title": "Laggies",
+        "year": 2014,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/kL2ccASO8O6v92gGTaaY5gOCAI4.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt157099",
+        "type": "movie",
+        "title": "Blondýna na předpis",
+        "year": 2014,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/9PpwTNDsXnuGHcwBdpgybVSwsFN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt147773",
+        "type": "movie",
+        "title": "Nezapomenutelné prázdniny",
+        "year": 2013,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/uGvRhDwZjLXbBIBTjgJefaGDCEl.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt174343",
+        "type": "movie",
+        "title": "Věř mi",
+        "year": 2013,
+        "score": 61,
+        "poster": "https://image.tmdb.org/t/p/w342/za40eaNet6AsJ8voY6AMNokhj4P.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt159932",
+        "type": "movie",
+        "title": "Jednou ranou",
+        "year": 2013,
+        "score": 57,
+        "poster": "https://image.tmdb.org/t/p/w342/zRGBGjdeGf12Pmalr1adT9IpoId.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt174316",
+        "type": "movie",
+        "title": "Muž na míru",
+        "year": 2013,
+        "score": 56,
+        "poster": "https://image.tmdb.org/t/p/w342/qP6X7K5BWtQv28leIpxJNmq1deB.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st56219",
+        "type": "show",
+        "title": "Drunk History",
+        "year": 2013,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/6zTclFjUEm6aTodjYciYtwzh5tY.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt86838",
+        "type": "movie",
+        "title": "Sedm psychopatů",
+        "year": 2012,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/4ukEYAxlSivFcDG6vLxJB6PjTjg.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt57431",
+        "type": "movie",
+        "title": "Spratci na zabití",
+        "year": 2011,
+        "score": 56,
+        "poster": "https://image.tmdb.org/t/p/w342/jlGzZ8McDp73PAaWMeYCHWeHiM4.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt49849",
+        "type": "movie",
+        "title": "Kovbojové a vetřelci",
+        "year": 2011,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/9SIFtjxRFFeTlXFkvo2gj5FTsX7.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt45094",
+        "type": "movie",
+        "title": "Odsouzení",
+        "year": 2010,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/rUxznyFz7D0HgC5zcYigzP1XUi4.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt10138",
+        "type": "movie",
+        "title": "Iron Man 2",
+        "year": 2010,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/dPomoMZZcxSxLIgckRENDIX8JOq.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt17431",
+        "type": "movie",
+        "title": "Moon",
+        "year": 2009,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/35IU0Mq0zFsN1mYwDGts5mKc77n.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt26171",
+        "type": "movie",
+        "title": "Všichni jsou v pohodě",
+        "year": 2009,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/iLJY72NYcryT63t0u6pR63S37gA.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt44750",
+        "type": "movie",
+        "title": "The Winning Season",
+        "year": 2009,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/8givSWfcusfGrktBPmzh8MPdg7J.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt22820",
+        "type": "movie",
+        "title": "Divnej týpek",
+        "year": 2009,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/eRnUC60trqoRZuAtM8M3gOFT6ED.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt19585",
+        "type": "movie",
+        "title": "G-Force",
+        "year": 2009,
+        "score": 51,
+        "poster": "https://image.tmdb.org/t/p/w342/9Tly3ZXTTsQKM26fis8v9LR4GxG.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt11499",
+        "type": "movie",
+        "title": "Duel Frost/Nixon",
+        "year": 2008,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/nLrRrHZQ40tWqLTY3kxgS4x7GUw.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt13973",
+        "type": "movie",
+        "title": "Zalknutí",
+        "year": 2008,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/7osy71os3YLiFpNYn567koOnAKZ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt4512",
+        "type": "movie",
+        "title": "Zabití Jesseho Jamese zbabělcem Robertem Fordem",
+        "year": 2007,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/xMKn6EQS7eR5ubhPJbw5pQSBZMw.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt14054",
+        "type": "movie",
+        "title": "Sněžní andělé",
+        "year": 2007,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/hKtht1ezc31mH1cBIHoDPmScnk9.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt5956",
+        "type": "movie",
+        "title": "Milovaný Joshua",
+        "year": 2007,
+        "score": 58,
+        "poster": "https://image.tmdb.org/t/p/w342/91yHfa0apWqMr8HmuwUPrVKYuDR.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt7453",
+        "type": "movie",
+        "title": "Stopařův průvodce po galaxii",
+        "year": 2005,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/exf2LybCyWStjW4XveKQuypwKFK.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt7270",
+        "type": "movie",
+        "title": "Švindlíři",
+        "year": 2003,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/cIWQzIoWOvx0piZM0UpiHMhzHWW.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt4912",
+        "type": "movie",
+        "title": "Milujte svého zabijáka",
+        "year": 2002,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/mM58ABMRzwn5zVx6BS7IiNK0j3F.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt9260",
+        "type": "movie",
+        "title": "Bombakšeft",
+        "year": 2002,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/7XyvoOopwWwDCWOcItOQiAwm30b.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt11088",
+        "type": "movie",
+        "title": "Poslední loupež",
+        "year": 2001,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/xrwwSXFeW35wYsnobreXbGxHwUC.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt15745",
+        "type": "movie",
+        "title": "Špinavý prachy",
+        "year": 2001,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/sMfZBW8Ww1mVXDdE9jOgDIceKBF.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt4327",
+        "type": "movie",
+        "title": "Charlieho andílci",
+        "year": 2000,
+        "score": 57,
+        "poster": "https://image.tmdb.org/t/p/w342/bjNyEnbVceVYjCo7LPIBG1WANf3.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt10210",
+        "type": "movie",
+        "title": "Sen noci svatojánské",
+        "year": 1999,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/5KTYh2gXmsHUzsRsrstBGy0QfXf.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt497",
+        "type": "movie",
+        "title": "Zelená míle",
+        "year": 1999,
+        "score": 86,
+        "poster": "https://image.tmdb.org/t/p/w342/sZtr3qQuacQLBg0H7jUpPo4nfPt.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt926",
+        "type": "movie",
+        "title": "Galaxy Quest",
+        "year": 1999,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/naJqvdXJtqTnY9XS3JXhEz6X0Vh.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt76891",
+        "type": "movie",
+        "title": "Jerry and Tom",
+        "year": 1998,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/7vb4RjMgdzPflqSpdUwwUjdwjTu.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt9466",
+        "type": "movie",
+        "title": "Celebrity",
+        "year": 1998,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/q4UJHtH14nO8tbMfGtJ3Z3Tw5RW.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt16155",
+        "type": "movie",
+        "title": "Safe Men",
+        "year": 1998,
+        "score": 58,
+        "poster": "https://image.tmdb.org/t/p/w342/857L7x6uFNr4c2oHD5KJw5pkbxn.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt35796",
+        "type": "movie",
+        "title": "Lawn Dogs",
+        "year": 1997,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/hNi2M5Z7GUEaSCPjt66yavLlsqV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt31146",
+        "type": "movie",
+        "title": "Život v sedmém nebi",
+        "year": 1996,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/ibDb9U1JsPXJYycSgq6ssSOz1W4.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt549",
+        "type": "movie",
+        "title": "Basquiat",
+        "year": 1996,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/gFfVhN8BbgHhMb3ZNQRAH5xc7kq.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt26626",
+        "type": "movie",
+        "title": "Glory Daze",
+        "year": 1995,
+        "score": 56,
+        "poster": "https://image.tmdb.org/t/p/w342/mosH3RnC5wjcThd0DZq4ZqWkTPQ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt67365",
+        "type": "movie",
+        "title": "The Search for One-eye Jimmy",
+        "year": 1994,
+        "score": 60,
+        "poster": "https://image.tmdb.org/t/p/w342/da9r0FJxecJvLK6X5iqirRLMxks.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt52936",
+        "type": "movie",
+        "title": "In the Soup",
+        "year": 1992,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/kj7j6q8g3kptgqnpjpZlr5det2I.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt36351",
+        "type": "movie",
+        "title": "Muž beze spánku",
+        "year": 1992,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/fFSdOYKp80rcK81KuNW3rz7FcLX.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt45147",
+        "type": "movie",
+        "title": "Strictly Business",
+        "year": 1991,
+        "score": 55,
+        "poster": "https://image.tmdb.org/t/p/w342/aH8NjAzgxQckbt1oY4YBpCYLrDd.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt30519",
+        "type": "movie",
+        "title": "Happy Hell Night",
+        "year": 1991,
+        "score": 48,
+        "poster": "https://image.tmdb.org/t/p/w342/9KBH7erBJrqzaydlszf6lncea4h.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt25756",
+        "type": "movie",
+        "title": "Clownhouse",
+        "year": 1990,
+        "score": 54,
+        "poster": "https://image.tmdb.org/t/p/w342/lRhXNf7zrOShQumPmMxHifUUUhz.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1498",
+        "type": "movie",
+        "title": "Želví nindžové",
+        "year": 1990,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/shfAU6xIIEAEtsloIT3n9Fscz2E.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt12774",
+        "type": "movie",
+        "title": "Poslední útěk do Brooklynu",
+        "year": 1989,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/89Lg30XE7gwVZpJUk0RKqV8CtND.jpg",
         "roles": [
           "actor"
         ]
@@ -90060,6 +89778,290 @@
       }
     ]
   },
+  "p1307013": {
+    "name": "Barry Ward",
+    "img": "/3cIhm76aPUvJdIa9GbGrzhAL5GF.jpg",
+    "birthday": "1971-01-13",
+    "deathday": null,
+    "age": 55,
+    "works": [
+      {
+        "id": "mt1507796",
+        "type": "movie",
+        "title": "On the Sea",
+        "year": 2026,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/9dZj1TDR2TlSdWjnzGI87jbZSts.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1532470",
+        "type": "movie",
+        "title": "Nevděčné bytosti",
+        "year": 2026,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/sMLNPPaZOUOMoIAaDrxNRVBN3HW.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1242686",
+        "type": "movie",
+        "title": "Na dno ringu",
+        "year": 2025,
+        "score": 59,
+        "poster": "https://image.tmdb.org/t/p/w342/cAPIS05UGqsTwiu0Qjs0WlIUW1l.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt715370",
+        "type": "movie",
+        "title": "Burial",
+        "year": 2022,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/c4D22vnat4DUm9a9TFPZ0abDEsc.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st132159",
+        "type": "show",
+        "title": "Pistol",
+        "year": 2022,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/qHswJ2FXpN9jJIqNlxgc5ZooFb4.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st199318",
+        "type": "show",
+        "title": "Zlé sestry",
+        "year": 2022,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/rrLESj9NXPhlcMpgDdJAUTIEq4q.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st126400",
+        "type": "show",
+        "title": "Anne Boleyn",
+        "year": 2021,
+        "score": 56,
+        "poster": "https://image.tmdb.org/t/p/w342/1vC3LpIJl9BkNNsYVPhT9qGIYTY.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt635918",
+        "type": "movie",
+        "title": "Rande na oko",
+        "year": 2020,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/bNL90Vji3aJKqgFvrzam1LCLVI.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st96628",
+        "type": "show",
+        "title": "Des",
+        "year": 2020,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/9llAQpT74W2fajazgRvgN5Z5fyG.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st99610",
+        "type": "show",
+        "title": "Na pohodu",
+        "year": 2020,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/ri3dx91b3QeRGB35gnEiHGhXxdP.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st90265",
+        "type": "show",
+        "title": "White Lines",
+        "year": 2020,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/3O1lB4ZhTMZ0Q3VsU7SHtFBDYI1.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt538227",
+        "type": "movie",
+        "title": "Extra Ordinary",
+        "year": 2019,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/z3IRiGKXx2eMhxtV8GktKwvWkhm.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st93166",
+        "type": "show",
+        "title": "The Capture",
+        "year": 2019,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/6keUrgntgKt299a39UJCDYldb8b.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st92647",
+        "type": "show",
+        "title": "Na podruhé",
+        "year": 2019,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/mUfPaaVpK8vkWed1zmAda8DGnoV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt472553",
+        "type": "movie",
+        "title": "Slůně v nesnázích",
+        "year": 2018,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/tUlO39EcZzPlKS4JOhlUansgKFJ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st75789",
+        "type": "show",
+        "title": "Save Me",
+        "year": 2018,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/uc7TY2yKnXz3DFPkyGRa3eIWyMA.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st70484",
+        "type": "show",
+        "title": "Britannia",
+        "year": 2018,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/fjdXymXAas9NSehc6GCOHQcEM05.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt408616",
+        "type": "movie",
+        "title": "The Journey",
+        "year": 2017,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/avmWN1YGYbzW4n1cbffw4uLCZSr.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt464566",
+        "type": "movie",
+        "title": "Maze",
+        "year": 2017,
+        "score": 59,
+        "poster": "https://image.tmdb.org/t/p/w342/bWEF3a1qErRIjmLW0xU28zAgV9D.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st74577",
+        "type": "show",
+        "title": "The End of the F***ing World",
+        "year": 2017,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/f1OV9xEJCZVYcYSDRr5xOD8NJw3.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt399612",
+        "type": "movie",
+        "title": "Project Lazarus",
+        "year": 2016,
+        "score": 59,
+        "poster": "https://image.tmdb.org/t/p/w342/1TSETMXX3ncT9lPtsKzvo7u1sdu.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st65153",
+        "type": "show",
+        "title": "Povstání",
+        "year": 2016,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/c0BnaDnGZ5zucdyMPRtQZ96jqL0.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt329004",
+        "type": "movie",
+        "title": "The Survivalist",
+        "year": 2015,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/hd491WgKPxeQus2LnvFbYmyUFmt.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt262958",
+        "type": "movie",
+        "title": "Jimmyho tančírna",
+        "year": 2014,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/lo5MjmuMTTcgGVsup5RvjtDj4T7.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt44853",
+        "type": "movie",
+        "title": "Vykoupení",
+        "year": 2000,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/drpLBTmnMOzDUVAd3jqeLjdolcf.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p223903": {
     "name": "Tammy Macintosh",
     "img": "/dKU6IZpKZMMMLQ8tAKF1PPLFmTd.jpg",
@@ -133271,23 +133273,23 @@
     "age": 47,
     "works": [
       {
-        "id": "st238084",
-        "type": "show",
-        "title": "Spoušť",
-        "year": 2025,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/6kk0yTA1m8Hxt9lctUT3ygmj6aa.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st259486",
         "type": "show",
         "title": "Gwi-gong",
         "year": 2025,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/kjp97iwFZ2iAG2AVPsgQeVsUMHK.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st238084",
+        "type": "show",
+        "title": "Spoušť",
+        "year": 2025,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/6kk0yTA1m8Hxt9lctUT3ygmj6aa.jpg",
         "roles": [
           "actor"
         ]
@@ -150774,23 +150776,23 @@
     "age": 57,
     "works": [
       {
-        "id": "st229891",
-        "type": "show",
-        "title": "Jak tlumočit lásku?",
-        "year": 2026,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/ePz0D6B6wbxoLHsUtcaqfGx7E41.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st293608",
         "type": "show",
         "title": "Slečna Hongová v utajení",
         "year": 2026,
         "score": 75,
         "poster": "https://image.tmdb.org/t/p/w342/nJ0gSaXfoiPFngy1ulCCuxsKt0q.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st229891",
+        "type": "show",
+        "title": "Jak tlumočit lásku?",
+        "year": 2026,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/ePz0D6B6wbxoLHsUtcaqfGx7E41.jpg",
         "roles": [
           "actor"
         ]
@@ -204950,6 +204952,48 @@
         "year": 2025,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/1YxPokS4rc2ABi6R6m7ioSpjFlM.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p571437": {
+    "name": "Adam Burton",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1119449",
+        "type": "movie",
+        "title": "Zlom vaz, bav se, neumři",
+        "year": 2026,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/xmhnO0cMTU4jMh0JIZLDZPs3CaV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt505379",
+        "type": "movie",
+        "title": "Rebeka",
+        "year": 2020,
+        "score": 61,
+        "poster": "https://image.tmdb.org/t/p/w342/kGhllBArW7ImDycSMIG5bj6GEPL.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st46648",
+        "type": "show",
+        "title": "Temný případ",
+        "year": 2014,
+        "score": 88,
+        "poster": "https://image.tmdb.org/t/p/w342/9vi5YeujfBwLwxdJmanINKSVy0o.jpg",
         "roles": [
           "actor"
         ]
@@ -359873,6 +359917,17 @@
         ]
       },
       {
+        "id": "st136369",
+        "type": "show",
+        "title": "Zítra je taky den",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st131028",
         "type": "show",
         "title": "Devětatřicet",
@@ -359890,17 +359945,6 @@
         "year": 2022,
         "score": 70,
         "poster": "https://image.tmdb.org/t/p/w342/qaodZmdbTorhGISrlDQKSjaHcHy.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st136369",
-        "type": "show",
-        "title": "Zítra je taky den",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
         "roles": [
           "actor"
         ]
@@ -422264,6 +422308,37 @@
       }
     ]
   },
+  "p2833043": {
+    "name": "Cinai Leonard",
+    "img": "/jk7NNhNnO6oLB6fPfZouAGldM2E.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st216412",
+        "type": "show",
+        "title": "Side Quest",
+        "year": 2025,
+        "score": 61,
+        "poster": "https://image.tmdb.org/t/p/w342/1DGS6UQ063QLAjLlBAvKY5GcsM4.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st156933",
+        "type": "show",
+        "title": "Nedostatek důkazů",
+        "year": 2024,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/s3wbFZos8K4MrOqZh0bYCd2XSZG.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p4748330": {
     "name": "Sean James William Parris",
     "img": null,
@@ -424631,26 +424706,6 @@
       }
     ]
   },
-  "p3906599": {
-    "name": "Brandon Macpherson",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st260458",
-        "type": "show",
-        "title": "Dospělost",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1606554": {
     "name": "Leigh Scully",
     "img": "/qxvrZ2o312PF4PHn87omT9DGL4n.jpg",
@@ -425661,37 +425716,6 @@
       }
     ]
   },
-  "p2833043": {
-    "name": "Cinai Leonard",
-    "img": "/jk7NNhNnO6oLB6fPfZouAGldM2E.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st216412",
-        "type": "show",
-        "title": "Side Quest",
-        "year": 2025,
-        "score": 61,
-        "poster": "https://image.tmdb.org/t/p/w342/1DGS6UQ063QLAjLlBAvKY5GcsM4.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st156933",
-        "type": "show",
-        "title": "Nedostatek důkazů",
-        "year": 2024,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/s3wbFZos8K4MrOqZh0bYCd2XSZG.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p2845176": {
     "name": "Marek Wróbel",
     "img": null,
@@ -426234,6 +426258,26 @@
         "year": 2026,
         "score": 69,
         "poster": "https://image.tmdb.org/t/p/w342/adv6By32sBsYcLvA603NLVZlEUO.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2377071": {
+    "name": "Katie McCarty",
+    "img": "/vzLllcqhwLLZDotBKnOVIdptn2l.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st291334",
+        "type": "show",
+        "title": "The Fall and Rise of Reggie Dinkins",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/lrF8Ve4GoazCalfbrSY52tUIXSN.jpg",
         "roles": [
           "actor"
         ]
@@ -427884,26 +427928,6 @@
       }
     ]
   },
-  "p233418": {
-    "name": "Patrick Reams",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st259709",
-        "type": "show",
-        "title": "Wyatt Earp a válka kovbojů",
-        "year": 2024,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/3J6MdyMKOb5bAEn0C6c3RtuqgT7.jpg",
-        "roles": [
-          "director"
-        ]
-      }
-    ]
-  },
   "p2027062": {
     "name": "Maki Tsuruta",
     "img": "/g5WTDFUbecLmrxWMUat9uKoMB5Q.jpg",
@@ -427931,6 +427955,26 @@
         "poster": "https://image.tmdb.org/t/p/w342/yv5dLSRPbWlivdY7TQG8ZPB8NiL.jpg",
         "roles": [
           "actor"
+        ]
+      }
+    ]
+  },
+  "p233418": {
+    "name": "Patrick Reams",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st259709",
+        "type": "show",
+        "title": "Wyatt Earp a válka kovbojů",
+        "year": 2024,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/3J6MdyMKOb5bAEn0C6c3RtuqgT7.jpg",
+        "roles": [
+          "director"
         ]
       }
     ]
@@ -428315,6 +428359,26 @@
         "year": 2017,
         "score": 66,
         "poster": "https://image.tmdb.org/t/p/w342/5TgdridU2w1pVsbQB2pt1xvazBX.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3906599": {
+    "name": "Brandon Macpherson",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st260458",
+        "type": "show",
+        "title": "Dospělost",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
         "roles": [
           "actor"
         ]
