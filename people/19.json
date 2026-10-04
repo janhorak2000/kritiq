@@ -369819,37 +369819,6 @@
       }
     ]
   },
-  "p3195937": {
-    "name": "Tasuku Kaito",
-    "img": "/eDtru6RxBnCtuYtU2mIXidKekJv.jpg",
-    "birthday": "1997-09-15",
-    "deathday": null,
-    "age": 29,
-    "works": [
-      {
-        "id": "st240411",
-        "type": "show",
-        "title": "Dandadan",
-        "year": 2024,
-        "score": 83,
-        "poster": "https://image.tmdb.org/t/p/w342/dse3OM0apuA6HZt4gznRMmUirM3.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st131041",
-        "type": "show",
-        "title": "Blue Lock",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1707462": {
     "name": "Kim Yong-rim",
     "img": "/goBfXmVKIrp5g4CwfPESRNOzn4w.jpg",
@@ -376047,6 +376016,37 @@
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3195937": {
+    "name": "Tasuku Kaito",
+    "img": "/eDtru6RxBnCtuYtU2mIXidKekJv.jpg",
+    "birthday": "1997-09-15",
+    "deathday": null,
+    "age": 29,
+    "works": [
+      {
+        "id": "st240411",
+        "type": "show",
+        "title": "Dandadan",
+        "year": 2024,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/dse3OM0apuA6HZt4gznRMmUirM3.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st131041",
+        "type": "show",
+        "title": "Blue Lock",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
         "roles": [
           "actor"
         ]

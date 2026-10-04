@@ -130123,23 +130123,23 @@
     "age": 68,
     "works": [
       {
-        "id": "st259837",
-        "type": "show",
-        "title": "SUPERpaka",
-        "year": 2026,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/qlPdAwp7rjltEl1vaBxoejP5boB.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st303143",
         "type": "show",
         "title": "My Royal Nemesis",
         "year": 2026,
         "score": 75,
         "poster": "https://image.tmdb.org/t/p/w342/u2cX3CVzUZLIGVwd9HB7bUhE7OP.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st259837",
+        "type": "show",
+        "title": "SUPERpaka",
+        "year": 2026,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/qlPdAwp7rjltEl1vaBxoejP5boB.jpg",
         "roles": [
           "actor"
         ]
@@ -149708,23 +149708,23 @@
         ]
       },
       {
-        "id": "st224819",
-        "type": "show",
-        "title": "Drahý Hongnangu",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/bmWzKsD5iRUBR9uvOzuTMM6EYn1.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st245079",
         "type": "show",
         "title": "Hyper skalpel",
         "year": 2025,
         "score": 73,
         "poster": "https://image.tmdb.org/t/p/w342/k1WRnwvmW6DmK6j2D1F3HfWlxuO.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st224819",
+        "type": "show",
+        "title": "Drahý Hongnangu",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/bmWzKsD5iRUBR9uvOzuTMM6EYn1.jpg",
         "roles": [
           "actor"
         ]
@@ -174199,6 +174199,17 @@
     "deathday": null,
     "age": 32,
     "works": [
+      {
+        "id": "mt1458857",
+        "type": "movie",
+        "title": "Doživotní šance",
+        "year": 2026,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/5nZVjsCk5tWyyhLGt5U2TxsR85w.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt1081400",
         "type": "movie",
@@ -219298,23 +219309,23 @@
     "age": null,
     "works": [
       {
-        "id": "st201380",
-        "type": "show",
-        "title": "Opuštěný",
-        "year": 2022,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/ckwIGJghs2AuUcjyhByRlXNMBYZ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st81723",
         "type": "show",
         "title": "Pozlacený věk",
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/msO0qHSe2yrpdkLLoeg0s1Wiiu9.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st201380",
+        "type": "show",
+        "title": "Opuštěný",
+        "year": 2022,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/ckwIGJghs2AuUcjyhByRlXNMBYZ.jpg",
         "roles": [
           "actor"
         ]
@@ -359354,20 +359365,60 @@
       }
     ]
   },
-  "p1526162": {
-    "name": "Justin James Hughes",
-    "img": "/zvFM1CHKkK9f9i9q6JYdcm81L6f.jpg",
+  "p3949154": {
+    "name": "Konami",
+    "img": null,
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "st139397",
+        "id": "st90296",
         "type": "show",
-        "title": "Svět podle nás",
+        "title": "Tokyo Vice",
         "year": 2022,
         "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p557408": {
+    "name": "Yoo Jang-hee",
+    "img": "/rxATUhQDGDehl2JqlE14i3PHlxD.jpg",
+    "birthday": "1993-09-17",
+    "deathday": null,
+    "age": 33,
+    "works": [
+      {
+        "id": "st136369",
+        "type": "show",
+        "title": "Zítra je taky den",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1869890": {
+    "name": "Phil Donlon",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st119845",
+        "type": "show",
+        "title": "Power Book IV: Force",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/yzL4Tqbw2JA9MCsHJWFC4xV1IYU.jpg",
         "roles": [
           "actor"
         ]
@@ -366528,60 +366579,20 @@
       }
     ]
   },
-  "p3949154": {
-    "name": "Konami",
-    "img": null,
+  "p1526162": {
+    "name": "Justin James Hughes",
+    "img": "/zvFM1CHKkK9f9i9q6JYdcm81L6f.jpg",
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "st90296",
+        "id": "st139397",
         "type": "show",
-        "title": "Tokyo Vice",
+        "title": "Svět podle nás",
         "year": 2022,
         "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p557408": {
-    "name": "Yoo Jang-hee",
-    "img": "/rxATUhQDGDehl2JqlE14i3PHlxD.jpg",
-    "birthday": "1993-09-17",
-    "deathday": null,
-    "age": 33,
-    "works": [
-      {
-        "id": "st136369",
-        "type": "show",
-        "title": "Zítra je taky den",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1869890": {
-    "name": "Phil Donlon",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st119845",
-        "type": "show",
-        "title": "Power Book IV: Force",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/yzL4Tqbw2JA9MCsHJWFC4xV1IYU.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
         "roles": [
           "actor"
         ]
