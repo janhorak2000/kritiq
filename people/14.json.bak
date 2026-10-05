@@ -36840,23 +36840,23 @@
         ]
       },
       {
-        "id": "st203085",
-        "type": "show",
-        "title": "Star Wars: Příběhy rytířů Jedi",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/g2JsYEIyZGJy8slnVxmaH7j97bB.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st153657",
         "type": "show",
         "title": "Bosch: Odkaz",
         "year": 2022,
         "score": 84,
         "poster": "https://image.tmdb.org/t/p/w342/ge5gFKCO6m7MuGyjwjoGvqo2q2m.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st203085",
+        "type": "show",
+        "title": "Star Wars: Příběhy rytířů Jedi",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/g2JsYEIyZGJy8slnVxmaH7j97bB.jpg",
         "roles": [
           "actor"
         ]
@@ -526587,48 +526587,6 @@
       }
     ]
   },
-  "p3026939": {
-    "name": "Ayasa Goto",
-    "img": "/kLfUvPkFmhWTPkUBruBEzIBDXNx.jpg",
-    "birthday": "1998-11-23",
-    "deathday": null,
-    "age": 27,
-    "works": [
-      {
-        "id": "st131041",
-        "type": "show",
-        "title": "Blue Lock",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st123876",
-        "type": "show",
-        "title": "Komi neumí komunikovat",
-        "year": 2021,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/dPaI9Ho4k4ZhNgPyRIkfEyiA2K7.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st82739",
-        "type": "show",
-        "title": "Seišun buta jaró wa Bunny Girl-senpai no jume o minai",
-        "year": 2018,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/cvYi7KYiCr7OCKoZlXaFShfH3vz.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p4111836": {
     "name": "Hannah Shealy",
     "img": "/pgTL2f3L8kJzMhzx9IaiUAZ38pB.jpg",
@@ -526643,6 +526601,26 @@
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/msO0qHSe2yrpdkLLoeg0s1Wiiu9.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4180311": {
+    "name": "Kang Seo-ha",
+    "img": "/1i7Xb2gbnzeq17d6qTaOOOWBost.jpg",
+    "birthday": "1998-10-03",
+    "deathday": null,
+    "age": 27,
+    "works": [
+      {
+        "id": "st211261",
+        "type": "show",
+        "title": "Specialisté Prvního Zásahu",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
         "roles": [
           "actor"
         ]
@@ -533677,6 +533655,108 @@
       }
     ]
   },
+  "p4543707": {
+    "name": "Jaelynn Thora Brooks",
+    "img": "/37sm3LdjV2W4VBfZy6dbQzHP51g.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st223530",
+        "type": "show",
+        "title": "Star Trek: Akademie Hvězdné flotily",
+        "year": 2026,
+        "score": 46,
+        "poster": "https://image.tmdb.org/t/p/w342/fBH0t2OTfeYrmPKiOyUpdZh6ers.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st260458",
+        "type": "show",
+        "title": "Dospělost",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5351822": {
+    "name": "Shakila Fernando",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st323411",
+        "type": "show",
+        "title": "The Vampire Lestat",
+        "year": 2026,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/gZcmNUcDDR1nR7lmroOJTCrhrhK.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st260458",
+        "type": "show",
+        "title": "Dospělost",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6072344": {
+    "name": "최민규",
+    "img": "/5sJkGYcnIkN7AdslXu5V5ileB0u.jpg",
+    "birthday": "1999-12-16",
+    "deathday": null,
+    "age": 26,
+    "works": [
+      {
+        "id": "st224819",
+        "type": "show",
+        "title": "Drahý Hongnangu",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/bmWzKsD5iRUBR9uvOzuTMM6EYn1.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4191399": {
+    "name": "Faith West",
+    "img": "/tZZEOAK0EGTO1sK6X973QmtzNVr.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st248394",
+        "type": "show",
+        "title": "Miluju tě navždy",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/twlp0YMmuKmn4cKAInAL3zde59W.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p3581625": {
     "name": "Brandon Finn",
     "img": "/vQPHRLGuZns4TZi8vRIXShFS1K9.jpg",
@@ -536345,37 +536425,6 @@
       }
     ]
   },
-  "p4543707": {
-    "name": "Jaelynn Thora Brooks",
-    "img": "/37sm3LdjV2W4VBfZy6dbQzHP51g.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st223530",
-        "type": "show",
-        "title": "Star Trek: Akademie Hvězdné flotily",
-        "year": 2026,
-        "score": 46,
-        "poster": "https://image.tmdb.org/t/p/w342/fBH0t2OTfeYrmPKiOyUpdZh6ers.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st260458",
-        "type": "show",
-        "title": "Dospělost",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p5888908": {
     "name": "Marian Kužma",
     "img": null,
@@ -537066,26 +537115,6 @@
       }
     ]
   },
-  "p4180311": {
-    "name": "Kang Seo-ha",
-    "img": "/1i7Xb2gbnzeq17d6qTaOOOWBost.jpg",
-    "birthday": "1998-10-03",
-    "deathday": null,
-    "age": 27,
-    "works": [
-      {
-        "id": "st211261",
-        "type": "show",
-        "title": "Specialisté Prvního Zásahu",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p84868": {
     "name": "Elaine Hall",
     "img": null,
@@ -537140,6 +537169,48 @@
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3026939": {
+    "name": "Ayasa Goto",
+    "img": "/kLfUvPkFmhWTPkUBruBEzIBDXNx.jpg",
+    "birthday": "1998-11-23",
+    "deathday": null,
+    "age": 27,
+    "works": [
+      {
+        "id": "st131041",
+        "type": "show",
+        "title": "Blue Lock",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st123876",
+        "type": "show",
+        "title": "Komi neumí komunikovat",
+        "year": 2021,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/dPaI9Ho4k4ZhNgPyRIkfEyiA2K7.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st82739",
+        "type": "show",
+        "title": "Seišun buta jaró wa Bunny Girl-senpai no jume o minai",
+        "year": 2018,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/cvYi7KYiCr7OCKoZlXaFShfH3vz.jpg",
         "roles": [
           "actor"
         ]
@@ -538223,77 +538294,6 @@
         "year": 2025,
         "score": 77,
         "poster": "https://image.tmdb.org/t/p/w342/AfIHFoByUqMOaluHRXOkV8JiXtJ.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5351822": {
-    "name": "Shakila Fernando",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st323411",
-        "type": "show",
-        "title": "The Vampire Lestat",
-        "year": 2026,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/gZcmNUcDDR1nR7lmroOJTCrhrhK.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st260458",
-        "type": "show",
-        "title": "Dospělost",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6072344": {
-    "name": "최민규",
-    "img": "/5sJkGYcnIkN7AdslXu5V5ileB0u.jpg",
-    "birthday": "1999-12-16",
-    "deathday": null,
-    "age": 26,
-    "works": [
-      {
-        "id": "st224819",
-        "type": "show",
-        "title": "Drahý Hongnangu",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/bmWzKsD5iRUBR9uvOzuTMM6EYn1.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4191399": {
-    "name": "Faith West",
-    "img": "/tZZEOAK0EGTO1sK6X973QmtzNVr.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st248394",
-        "type": "show",
-        "title": "Miluju tě navždy",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/twlp0YMmuKmn4cKAInAL3zde59W.jpg",
         "roles": [
           "actor"
         ]

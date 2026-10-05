@@ -108388,23 +108388,23 @@
     "age": 72,
     "works": [
       {
-        "id": "st245219",
-        "type": "show",
-        "title": "Rána bleskem",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/KyUrz3GA1FML3XnKkY795XxDxN.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st248394",
         "type": "show",
         "title": "Miluju tě navždy",
         "year": 2025,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/twlp0YMmuKmn4cKAInAL3zde59W.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st245219",
+        "type": "show",
+        "title": "Rána bleskem",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/KyUrz3GA1FML3XnKkY795XxDxN.jpg",
         "roles": [
           "actor"
         ]
@@ -468872,59 +468872,6 @@
       }
     ]
   },
-  "p1483904": {
-    "name": "Taku Kishimoto",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st131041",
-        "type": "show",
-        "title": "Blue Lock",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
-        "roles": [
-          "writer"
-        ]
-      },
-      {
-        "id": "st105556",
-        "type": "show",
-        "title": "Neškádli mě, Nagatoro!",
-        "year": 2021,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/k1z2xv3JjGobO9jfybHGo2tqAKC.jpg",
-        "roles": [
-          "writer"
-        ]
-      },
-      {
-        "id": "st65249",
-        "type": "show",
-        "title": "ERASED",
-        "year": 2016,
-        "score": 84,
-        "poster": "https://image.tmdb.org/t/p/w342/2xo5jNOwXGP41umcmxzZgPxGpaI.jpg",
-        "roles": [
-          "writer"
-        ]
-      },
-      {
-        "id": "st60863",
-        "type": "show",
-        "title": "Haikyu!!",
-        "year": 2014,
-        "score": 87,
-        "poster": "https://image.tmdb.org/t/p/w342/qNKaeunuUdL0smnowVVgShCkWZ4.jpg",
-        "roles": [
-          "writer"
-        ]
-      }
-    ]
-  },
   "p3042989": {
     "name": "Seon Ah Rin",
     "img": "/xr5q1rkz5SP6pphzhwDFLBExbMl.jpg",
@@ -468972,6 +468919,99 @@
         "year": 2021,
         "score": 86,
         "poster": "https://image.tmdb.org/t/p/w342/lrWHBK1h4rrEnx5Ml8iDR1SwNux.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4160226": {
+    "name": "Yang Jong-wook",
+    "img": "/rt3JEJYB6L513zL8LVpLRCJ5E2o.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st211261",
+        "type": "show",
+        "title": "Specialisté Prvního Zásahu",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p118975": {
+    "name": "Choi Jae-hwan",
+    "img": "/62hWPPcUcjvI6yeAvP0xsIGtQUv.jpg",
+    "birthday": "1983-07-15",
+    "deathday": null,
+    "age": 43,
+    "works": [
+      {
+        "id": "st216310",
+        "type": "show",
+        "title": "Diva trosečnice",
+        "year": 2023,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/1NseFoBcprx5BYJcd03sTUEczG3.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st211261",
+        "type": "show",
+        "title": "Specialisté Prvního Zásahu",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st209275",
+        "type": "show",
+        "title": "Mohu vám pomoci?",
+        "year": 2022,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/4WRmW8ATNfKbacwh9eeL8i4SpSl.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4083215": {
+    "name": "Ha I-aan",
+    "img": "/lJ0wjEIdBc3k9pIojXr5P204XzE.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st211261",
+        "type": "show",
+        "title": "Specialisté Prvního Zásahu",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st68398",
+        "type": "show",
+        "title": "MUDr. Romantik",
+        "year": 2016,
+        "score": 84,
+        "poster": "https://image.tmdb.org/t/p/w342/dmVgWSrtEj39DUv1QEjT6nGpX3L.jpg",
         "roles": [
           "actor"
         ]
@@ -469738,48 +469778,6 @@
         "year": 2022,
         "score": 59,
         "poster": "https://image.tmdb.org/t/p/w342/ov3BkiVaY6t3YypbZ4eulbn8U04.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p118975": {
-    "name": "Choi Jae-hwan",
-    "img": "/62hWPPcUcjvI6yeAvP0xsIGtQUv.jpg",
-    "birthday": "1983-07-15",
-    "deathday": null,
-    "age": 43,
-    "works": [
-      {
-        "id": "st216310",
-        "type": "show",
-        "title": "Diva trosečnice",
-        "year": 2023,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/1NseFoBcprx5BYJcd03sTUEczG3.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st209275",
-        "type": "show",
-        "title": "Mohu vám pomoci?",
-        "year": 2022,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/4WRmW8ATNfKbacwh9eeL8i4SpSl.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st211261",
-        "type": "show",
-        "title": "Specialisté Prvního Zásahu",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
         "roles": [
           "actor"
         ]
@@ -478103,37 +478101,6 @@
       }
     ]
   },
-  "p4480656": {
-    "name": "Ha Na-ri",
-    "img": "/6IMMiZbvNYCWAvmqUH67oBue5B4.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st303143",
-        "type": "show",
-        "title": "My Royal Nemesis",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/u2cX3CVzUZLIGVwd9HB7bUhE7OP.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st154887",
-        "type": "show",
-        "title": "Moje poznámky z osvobození",
-        "year": 2022,
-        "score": 82,
-        "poster": "https://image.tmdb.org/t/p/w342/mrOxruke1FI0Sx6v6BOdpu4yppZ.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p2180303": {
     "name": "Carol Tate",
     "img": null,
@@ -479942,6 +479909,37 @@
       }
     ]
   },
+  "p4480656": {
+    "name": "Ha Na-ri",
+    "img": "/6IMMiZbvNYCWAvmqUH67oBue5B4.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st303143",
+        "type": "show",
+        "title": "My Royal Nemesis",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/u2cX3CVzUZLIGVwd9HB7bUhE7OP.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st154887",
+        "type": "show",
+        "title": "Moje poznámky z osvobození",
+        "year": 2022,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/mrOxruke1FI0Sx6v6BOdpu4yppZ.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p3684806": {
     "name": "Ben Larrison",
     "img": "/ywlM1V3JLDa2rCzfuDlXjVknKNB.jpg",
@@ -479982,53 +479980,55 @@
       }
     ]
   },
-  "p4160226": {
-    "name": "Yang Jong-wook",
-    "img": "/rt3JEJYB6L513zL8LVpLRCJ5E2o.jpg",
+  "p1483904": {
+    "name": "Taku Kishimoto",
+    "img": null,
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "st211261",
+        "id": "st131041",
         "type": "show",
-        "title": "Specialisté Prvního Zásahu",
+        "title": "Blue Lock",
         "year": 2022,
         "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
         "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4083215": {
-    "name": "Ha I-aan",
-    "img": "/lJ0wjEIdBc3k9pIojXr5P204XzE.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st211261",
-        "type": "show",
-        "title": "Specialisté Prvního Zásahu",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
-        "roles": [
-          "actor"
+          "writer"
         ]
       },
       {
-        "id": "st68398",
+        "id": "st105556",
         "type": "show",
-        "title": "MUDr. Romantik",
+        "title": "Neškádli mě, Nagatoro!",
+        "year": 2021,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/k1z2xv3JjGobO9jfybHGo2tqAKC.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "st65249",
+        "type": "show",
+        "title": "ERASED",
         "year": 2016,
         "score": 84,
-        "poster": "https://image.tmdb.org/t/p/w342/dmVgWSrtEj39DUv1QEjT6nGpX3L.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/2xo5jNOwXGP41umcmxzZgPxGpaI.jpg",
         "roles": [
-          "actor"
+          "writer"
+        ]
+      },
+      {
+        "id": "st60863",
+        "type": "show",
+        "title": "Haikyu!!",
+        "year": 2014,
+        "score": 87,
+        "poster": "https://image.tmdb.org/t/p/w342/qNKaeunuUdL0smnowVVgShCkWZ4.jpg",
+        "roles": [
+          "writer"
         ]
       }
     ]

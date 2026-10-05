@@ -186342,23 +186342,23 @@
         ]
       },
       {
-        "id": "st134675",
-        "type": "show",
-        "title": "Tři malé ženy",
-        "year": 2022,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/ow718Omn1oKqYR7izEzkS4cdC3O.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st153496",
         "type": "show",
         "title": "Reborn Rich",
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/lRtxdLhnmaKYc65WfMHPrE4TuuI.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st134675",
+        "type": "show",
+        "title": "Tři malé ženy",
+        "year": 2022,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/ow718Omn1oKqYR7izEzkS4cdC3O.jpg",
         "roles": [
           "actor"
         ]
@@ -201081,6 +201081,17 @@
     "deathday": null,
     "age": 44,
     "works": [
+      {
+        "id": "st335227",
+        "type": "show",
+        "title": "Dávám přednost smrti",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/693nWyAysWVy6Wt8X2B4e8BrydZ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "st259702",
         "type": "show",
@@ -303884,17 +303895,6 @@
     "age": 26,
     "works": [
       {
-        "id": "st243954",
-        "type": "show",
-        "title": "Motorheads",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/jglGmYMPEiHD7tVncvif7WtCOBJ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st255055",
         "type": "show",
         "title": "Doktorka",
@@ -303912,6 +303912,17 @@
         "year": 2025,
         "score": 59,
         "poster": "https://image.tmdb.org/t/p/w342/oE0JFrN5rimTi0smRgEDiJuUKsN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st243954",
+        "type": "show",
+        "title": "Motorheads",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/jglGmYMPEiHD7tVncvif7WtCOBJ.jpg",
         "roles": [
           "actor"
         ]
@@ -424679,6 +424690,26 @@
       }
     ]
   },
+  "p3906599": {
+    "name": "Brandon Macpherson",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st260458",
+        "type": "show",
+        "title": "Dospělost",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p1606554": {
     "name": "Leigh Scully",
     "img": "/qxvrZ2o312PF4PHn87omT9DGL4n.jpg",
@@ -428012,6 +428043,26 @@
       }
     ]
   },
+  "p233418": {
+    "name": "Patrick Reams",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st259709",
+        "type": "show",
+        "title": "Wyatt Earp a válka kovbojů",
+        "year": 2024,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/3J6MdyMKOb5bAEn0C6c3RtuqgT7.jpg",
+        "roles": [
+          "director"
+        ]
+      }
+    ]
+  },
   "p2027062": {
     "name": "Maki Tsuruta",
     "img": "/g5WTDFUbecLmrxWMUat9uKoMB5Q.jpg",
@@ -428039,26 +428090,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/yv5dLSRPbWlivdY7TQG8ZPB8NiL.jpg",
         "roles": [
           "actor"
-        ]
-      }
-    ]
-  },
-  "p233418": {
-    "name": "Patrick Reams",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st259709",
-        "type": "show",
-        "title": "Wyatt Earp a válka kovbojů",
-        "year": 2024,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/3J6MdyMKOb5bAEn0C6c3RtuqgT7.jpg",
-        "roles": [
-          "director"
         ]
       }
     ]
@@ -428443,26 +428474,6 @@
         "year": 2017,
         "score": 66,
         "poster": "https://image.tmdb.org/t/p/w342/5TgdridU2w1pVsbQB2pt1xvazBX.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3906599": {
-    "name": "Brandon Macpherson",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st260458",
-        "type": "show",
-        "title": "Dospělost",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
         "roles": [
           "actor"
         ]

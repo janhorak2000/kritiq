@@ -206951,23 +206951,23 @@
         ]
       },
       {
-        "id": "st131041",
-        "type": "show",
-        "title": "Blue Lock",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st120089",
         "type": "show",
         "title": "SPY×FAMILY",
         "year": 2022,
         "score": 82,
         "poster": "https://image.tmdb.org/t/p/w342/vaIREdPGZOnW9Jrs86mheVVlIQQ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st131041",
+        "type": "show",
+        "title": "Blue Lock",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
         "roles": [
           "actor"
         ]
@@ -257753,23 +257753,23 @@
     "age": 29,
     "works": [
       {
-        "id": "st222405",
-        "type": "show",
-        "title": "Tatér z Osvětimi",
-        "year": 2024,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/itGPV92MDFVleR4BL18L7cbp4wZ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st200908",
         "type": "show",
         "title": "Měli jsme štěstí",
         "year": 2024,
         "score": 77,
         "poster": "https://image.tmdb.org/t/p/w342/iHvsIKCy4Lk3faZYOfyONOzuRFV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st222405",
+        "type": "show",
+        "title": "Tatér z Osvětimi",
+        "year": 2024,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/itGPV92MDFVleR4BL18L7cbp4wZ.jpg",
         "roles": [
           "actor"
         ]
@@ -271562,17 +271562,6 @@
         ]
       },
       {
-        "id": "st131041",
-        "type": "show",
-        "title": "Blue Lock",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st123249",
         "type": "show",
         "title": "My Dress-Up Darling",
@@ -271601,6 +271590,17 @@
         "year": 2022,
         "score": 82,
         "poster": "https://image.tmdb.org/t/p/w342/vaIREdPGZOnW9Jrs86mheVVlIQQ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st131041",
+        "type": "show",
+        "title": "Blue Lock",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
         "roles": [
           "actor"
         ]
@@ -548738,48 +548738,6 @@
       }
     ]
   },
-  "p2650815": {
-    "name": "Yuki Otani",
-    "img": "/wuCgq2gsdevMRKKYEq2m1O9fGq6.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st131041",
-        "type": "show",
-        "title": "Blue Lock",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st123249",
-        "type": "show",
-        "title": "My Dress-Up Darling",
-        "year": 2022,
-        "score": 79,
-        "poster": "https://image.tmdb.org/t/p/w342/yDry50KhVrNJyS0Cjzv6auNJ0cx.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st83121",
-        "type": "show",
-        "title": "Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen",
-        "year": 2019,
-        "score": 85,
-        "poster": "https://image.tmdb.org/t/p/w342/tvemh1UGxnDKWPFYj40Zs6IWN7y.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1053956": {
     "name": "Ryosuke Watabe",
     "img": "/qqcvI4KHjb7wtdzcekwUtrgPGPy.jpg",
@@ -549071,6 +549029,48 @@
         "year": 2022,
         "score": 79,
         "poster": "https://image.tmdb.org/t/p/w342/yDry50KhVrNJyS0Cjzv6auNJ0cx.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2650815": {
+    "name": "Yuki Otani",
+    "img": "/wuCgq2gsdevMRKKYEq2m1O9fGq6.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st123249",
+        "type": "show",
+        "title": "My Dress-Up Darling",
+        "year": 2022,
+        "score": 79,
+        "poster": "https://image.tmdb.org/t/p/w342/yDry50KhVrNJyS0Cjzv6auNJ0cx.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st131041",
+        "type": "show",
+        "title": "Blue Lock",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st83121",
+        "type": "show",
+        "title": "Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen",
+        "year": 2019,
+        "score": 85,
+        "poster": "https://image.tmdb.org/t/p/w342/tvemh1UGxnDKWPFYj40Zs6IWN7y.jpg",
         "roles": [
           "actor"
         ]
@@ -558810,6 +558810,26 @@
       }
     ]
   },
+  "p6173631": {
+    "name": "Iyanna Jennaé",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st248394",
+        "type": "show",
+        "title": "Miluju tě navždy",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/twlp0YMmuKmn4cKAInAL3zde59W.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p6225606": {
     "name": "Nimo Hochenberg",
     "img": "/nlacJuUuCJTNh71AXu3m92mkAO.jpg",
@@ -564317,26 +564337,6 @@
       }
     ]
   },
-  "p6173631": {
-    "name": "Iyanna Jennaé",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st248394",
-        "type": "show",
-        "title": "Miluju tě navždy",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/twlp0YMmuKmn4cKAInAL3zde59W.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p5190671": {
     "name": "Zhang Yuanyu",
     "img": "/owdPtuiUA68sQPB8UrXtYha5lAm.jpg",
@@ -564821,26 +564821,6 @@
       }
     ]
   },
-  "p109645": {
-    "name": "Kim Nam-jin",
-    "img": "/oJHfLfwilLQZUvJBc0bjYqtkr0m.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st291496",
-        "type": "show",
-        "title": "Karameláska",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/ny8zYj40mWGTgKJi1a8hjNFUj9n.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p3072995": {
     "name": "Joe Eyre",
     "img": "/wVYXQ6MZguVnrKTgHUJxhupaZrt.jpg",
@@ -564855,6 +564835,26 @@
         "year": 2026,
         "score": 75,
         "poster": "https://image.tmdb.org/t/p/w342/7qHP3oZh9sZGM4bRw88iABg3SwN.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p109645": {
+    "name": "Kim Nam-jin",
+    "img": "/oJHfLfwilLQZUvJBc0bjYqtkr0m.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st291496",
+        "type": "show",
+        "title": "Karameláska",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/ny8zYj40mWGTgKJi1a8hjNFUj9n.jpg",
         "roles": [
           "actor"
         ]
