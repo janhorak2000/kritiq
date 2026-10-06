@@ -696177,48 +696177,6 @@
       }
     ]
   },
-  "nRed Hook Studios": {
-    "name": "Red Hook Studios",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "gr295014",
-        "type": "game",
-        "title": "Darkest Dungeon 2",
-        "year": 2023,
-        "score": 76,
-        "poster": "https://media.rawg.io/media/resize/640/-/games/aea/aeaab29c551ea9919e571c44e75a5106.jpg",
-        "roles": [
-          "developer"
-        ]
-      },
-      {
-        "id": "gr960605",
-        "type": "game",
-        "title": "Darkest Dungeon II",
-        "year": 2023,
-        "score": null,
-        "poster": "https://media.rawg.io/media/resize/640/-/screenshots/d1c/d1cba2479752332e5d8950bd1b00538a.jpg",
-        "roles": [
-          "developer"
-        ]
-      },
-      {
-        "id": "gr1244",
-        "type": "game",
-        "title": "Darkest Dungeon",
-        "year": 2016,
-        "score": 84,
-        "poster": "https://media.rawg.io/media/games/fd9/fd92f105dcd6491bc5d61135033d1f19.jpg",
-        "roles": [
-          "developer"
-        ]
-      }
-    ]
-  },
   "nO'olBlue": {
     "name": "O'olBlue",
     "img": null,
@@ -696233,6 +696191,48 @@
         "year": 2023,
         "score": 51,
         "poster": "https://media.rawg.io/media/resize/640/-/screenshots/199/199b1769522219bb7a20089606a4291b.jpg",
+        "roles": [
+          "developer"
+        ]
+      }
+    ]
+  },
+  "nRed Hook Studios": {
+    "name": "Red Hook Studios",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "gr960605",
+        "type": "game",
+        "title": "Darkest Dungeon II",
+        "year": 2023,
+        "score": null,
+        "poster": "https://media.rawg.io/media/resize/640/-/screenshots/d1c/d1cba2479752332e5d8950bd1b00538a.jpg",
+        "roles": [
+          "developer"
+        ]
+      },
+      {
+        "id": "gr295014",
+        "type": "game",
+        "title": "Darkest Dungeon 2",
+        "year": 2023,
+        "score": 76,
+        "poster": "https://media.rawg.io/media/resize/640/-/games/aea/aeaab29c551ea9919e571c44e75a5106.jpg",
+        "roles": [
+          "developer"
+        ]
+      },
+      {
+        "id": "gr1244",
+        "type": "game",
+        "title": "Darkest Dungeon",
+        "year": 2016,
+        "score": 84,
+        "poster": "https://media.rawg.io/media/games/fd9/fd92f105dcd6491bc5d61135033d1f19.jpg",
         "roles": [
           "developer"
         ]

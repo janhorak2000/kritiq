@@ -84216,23 +84216,23 @@
         ]
       },
       {
-        "id": "st119845",
-        "type": "show",
-        "title": "Power Book IV: Force",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/yzL4Tqbw2JA9MCsHJWFC4xV1IYU.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st94997",
         "type": "show",
         "title": "Rod Draka",
         "year": 2022,
         "score": 83,
         "poster": "https://image.tmdb.org/t/p/w342/qT9apXmRW5SrHIb3a2mGlTQ3tBJ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st119845",
+        "type": "show",
+        "title": "Power Book IV: Force",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/yzL4Tqbw2JA9MCsHJWFC4xV1IYU.jpg",
         "roles": [
           "actor"
         ]
@@ -89954,17 +89954,6 @@
         ]
       },
       {
-        "id": "st81723",
-        "type": "show",
-        "title": "Pozlacený věk",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/msO0qHSe2yrpdkLLoeg0s1Wiiu9.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st116799",
         "type": "show",
         "title": "Advokát",
@@ -89993,6 +89982,17 @@
         "year": 2022,
         "score": 83,
         "poster": "https://image.tmdb.org/t/p/w342/6B9hTge98t52bQofyvs1M370k7n.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st81723",
+        "type": "show",
+        "title": "Pozlacený věk",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/msO0qHSe2yrpdkLLoeg0s1Wiiu9.jpg",
         "roles": [
           "actor"
         ]
@@ -190226,6 +190226,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "st295532",
+        "type": "show",
+        "title": "Dear England",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/8gNZM8tRj1HIxl5SxOlTD3TStsl.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt1294203",
         "type": "movie",
@@ -369819,31 +369830,31 @@
       }
     ]
   },
-  "p1707462": {
-    "name": "Kim Yong-rim",
-    "img": "/goBfXmVKIrp5g4CwfPESRNOzn4w.jpg",
-    "birthday": "1940-03-03",
+  "p3195937": {
+    "name": "Tasuku Kaito",
+    "img": "/eDtru6RxBnCtuYtU2mIXidKekJv.jpg",
+    "birthday": "1997-09-15",
     "deathday": null,
-    "age": 86,
+    "age": 29,
     "works": [
       {
-        "id": "st219246",
+        "id": "st240411",
         "type": "show",
-        "title": "Dobrá práce",
-        "year": 2025,
-        "score": 90,
-        "poster": "https://image.tmdb.org/t/p/w342/koMkV9qm0PEZHDmX5dRpBpMH1FY.jpg",
+        "title": "Dandadan",
+        "year": 2024,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/dse3OM0apuA6HZt4gznRMmUirM3.jpg",
         "roles": [
           "actor"
         ]
       },
       {
-        "id": "st136369",
+        "id": "st131041",
         "type": "show",
-        "title": "Zítra je taky den",
+        "title": "Blue Lock",
         "year": 2022,
         "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
         "roles": [
           "actor"
         ]
@@ -376002,6 +376013,37 @@
       }
     ]
   },
+  "p1707462": {
+    "name": "Kim Yong-rim",
+    "img": "/goBfXmVKIrp5g4CwfPESRNOzn4w.jpg",
+    "birthday": "1940-03-03",
+    "deathday": null,
+    "age": 86,
+    "works": [
+      {
+        "id": "st219246",
+        "type": "show",
+        "title": "Dobrá práce",
+        "year": 2025,
+        "score": 90,
+        "poster": "https://image.tmdb.org/t/p/w342/koMkV9qm0PEZHDmX5dRpBpMH1FY.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st136369",
+        "type": "show",
+        "title": "Zítra je taky den",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p5060459": {
     "name": "Dylan Kiedman",
     "img": "/uAlCFjK4je8W0amgUKKPkFBZxG8.jpg",
@@ -376016,37 +376058,6 @@
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3195937": {
-    "name": "Tasuku Kaito",
-    "img": "/eDtru6RxBnCtuYtU2mIXidKekJv.jpg",
-    "birthday": "1997-09-15",
-    "deathday": null,
-    "age": 29,
-    "works": [
-      {
-        "id": "st240411",
-        "type": "show",
-        "title": "Dandadan",
-        "year": 2024,
-        "score": 83,
-        "poster": "https://image.tmdb.org/t/p/w342/dse3OM0apuA6HZt4gznRMmUirM3.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st131041",
-        "type": "show",
-        "title": "Blue Lock",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
         "roles": [
           "actor"
         ]

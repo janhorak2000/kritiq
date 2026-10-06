@@ -468999,6 +468999,48 @@
       }
     ]
   },
+  "nFuse Games": {
+    "name": "Fuse Games",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "gr1017395",
+        "type": "game",
+        "title": "Star Wars: Galactic Racer",
+        "year": 2026,
+        "score": null,
+        "poster": "https://media.rawg.io/media/resize/640/-/games/553/5536c25da9711a39a5c4d752361de551.jpg",
+        "roles": [
+          "developer"
+        ]
+      },
+      {
+        "id": "gr24941",
+        "type": "game",
+        "title": "Metroid Prime Pinball",
+        "year": 2005,
+        "score": null,
+        "poster": "https://media.rawg.io/media/resize/640/-/screenshots/f3b/f3bf7d40ce1a4bfdfc238228ce63cccc.jpg",
+        "roles": [
+          "developer"
+        ]
+      },
+      {
+        "id": "gr53395",
+        "type": "game",
+        "title": "Mario Pinball Land",
+        "year": 2004,
+        "score": 62,
+        "poster": "https://media.rawg.io/media/resize/640/-/games/044/044f4525d37a69f7563cf4b5becfe4ee.jpg",
+        "roles": [
+          "developer"
+        ]
+      }
+    ]
+  },
   "nBig Boat Interactive": {
     "name": "Big Boat Interactive",
     "img": null,
@@ -473215,37 +473257,6 @@
         "year": 2003,
         "score": null,
         "poster": "https://media.rawg.io/media/resize/640/-/screenshots/f2d/f2df21dd9adb34c7d541d7397424509c.jpg",
-        "roles": [
-          "developer"
-        ]
-      }
-    ]
-  },
-  "nFuse Games": {
-    "name": "Fuse Games",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "gr24941",
-        "type": "game",
-        "title": "Metroid Prime Pinball",
-        "year": 2005,
-        "score": null,
-        "poster": "https://media.rawg.io/media/resize/640/-/screenshots/f3b/f3bf7d40ce1a4bfdfc238228ce63cccc.jpg",
-        "roles": [
-          "developer"
-        ]
-      },
-      {
-        "id": "gr53395",
-        "type": "game",
-        "title": "Mario Pinball Land",
-        "year": 2004,
-        "score": 62,
-        "poster": "https://media.rawg.io/media/resize/640/-/games/044/044f4525d37a69f7563cf4b5becfe4ee.jpg",
         "roles": [
           "developer"
         ]

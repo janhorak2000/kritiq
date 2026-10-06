@@ -156699,6 +156699,18 @@
     "age": 49,
     "works": [
       {
+        "id": "mt1627217",
+        "type": "movie",
+        "title": "Basta Mamá",
+        "year": 2026,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/t8EarPqNvaAttgzEmaOWlyawsJF.jpg",
+        "roles": [
+          "actor",
+          "director"
+        ]
+      },
+      {
         "id": "mt1414413",
         "type": "movie",
         "title": "Peklo v Sierra Madre",
@@ -350233,6 +350245,26 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/r60UQDxVX3ayqlvUDdjPWUfD3x4.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4580543": {
+    "name": "Ricardo Galina",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1339274",
+        "type": "movie",
+        "title": "No dejes a los niños solos",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/jxg1sLzG0TJRDPSNU6AmR4wR4Ce.jpg",
         "roles": [
           "actor"
         ]
@@ -702394,6 +702426,26 @@
       }
     ]
   },
+  "nCrytivo Games": {
+    "name": "Crytivo Games",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "gr9794",
+        "type": "game",
+        "title": "The Universim",
+        "year": 2024,
+        "score": 71,
+        "poster": "https://media.rawg.io/media/resize/640/-/screenshots/b73/b737e900881090f2c944f808f0116f1e.jpg",
+        "roles": [
+          "developer"
+        ]
+      }
+    ]
+  },
   "nFriedemann": {
     "name": "Friedemann",
     "img": null,
@@ -707690,26 +707742,6 @@
         "year": 2024,
         "score": 79,
         "poster": "https://media.rawg.io/media/resize/640/-/games/c11/c119d11961d785498ccb8e1ed9b006ca.jpg",
-        "roles": [
-          "developer"
-        ]
-      }
-    ]
-  },
-  "nCrytivo Games": {
-    "name": "Crytivo Games",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "gr9794",
-        "type": "game",
-        "title": "The Universim",
-        "year": 2024,
-        "score": 71,
-        "poster": "https://media.rawg.io/media/resize/640/-/screenshots/b73/b737e900881090f2c944f808f0116f1e.jpg",
         "roles": [
           "developer"
         ]
