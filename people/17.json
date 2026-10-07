@@ -159538,23 +159538,23 @@
     "age": 65,
     "works": [
       {
-        "id": "st210213",
-        "type": "show",
-        "title": "Gannibal",
-        "year": 2022,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/i5N0LKem5gTUxyMfaly8NhK2GjR.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st90296",
         "type": "show",
         "title": "Tokyo Vice",
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st210213",
+        "type": "show",
+        "title": "Gannibal",
+        "year": 2022,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/i5N0LKem5gTUxyMfaly8NhK2GjR.jpg",
         "roles": [
           "actor"
         ]
@@ -200982,6 +200982,17 @@
     "age": 44,
     "works": [
       {
+        "id": "st280948",
+        "type": "show",
+        "title": "스프링 피버",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/jTJgfbSQ4UczxMOgscHPsoVuL5X.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st281004",
         "type": "show",
         "title": "Právní cesta",
@@ -203169,6 +203180,17 @@
         ]
       },
       {
+        "id": "st136369",
+        "type": "show",
+        "title": "Zítra je taky den",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st209275",
         "type": "show",
         "title": "Mohu vám pomoci?",
@@ -203208,17 +203230,6 @@
         "year": 2022,
         "score": 84,
         "poster": "https://image.tmdb.org/t/p/w342/i3RWu1qROa9Si5WOdoDw5GgZ8LU.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st136369",
-        "type": "show",
-        "title": "Zítra je taky den",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
         "roles": [
           "actor"
         ]
@@ -203922,23 +203933,23 @@
         ]
       },
       {
-        "id": "st110382",
-        "type": "show",
-        "title": "Pačinko",
-        "year": 2022,
-        "score": 84,
-        "poster": "https://image.tmdb.org/t/p/w342/i3RWu1qROa9Si5WOdoDw5GgZ8LU.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st90296",
         "type": "show",
         "title": "Tokyo Vice",
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st110382",
+        "type": "show",
+        "title": "Pačinko",
+        "year": 2022,
+        "score": 84,
+        "poster": "https://image.tmdb.org/t/p/w342/i3RWu1qROa9Si5WOdoDw5GgZ8LU.jpg",
         "roles": [
           "actor"
         ]
@@ -354771,23 +354782,23 @@
     "age": 61,
     "works": [
       {
-        "id": "st209275",
-        "type": "show",
-        "title": "Mohu vám pomoci?",
-        "year": 2022,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/4WRmW8ATNfKbacwh9eeL8i4SpSl.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st136369",
         "type": "show",
         "title": "Zítra je taky den",
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st209275",
+        "type": "show",
+        "title": "Mohu vám pomoci?",
+        "year": 2022,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/4WRmW8ATNfKbacwh9eeL8i4SpSl.jpg",
         "roles": [
           "actor"
         ]
@@ -412289,37 +412300,6 @@
       }
     ]
   },
-  "p1284806": {
-    "name": "Bob Senkewicz",
-    "img": "/mGZcM0mDxxgoa9VB2UsqIcza9Pf.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st247522",
-        "type": "show",
-        "title": "Gumy, kam se podíváš",
-        "year": 2024,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/6mRwM5lrwwYRlwpyTxkNnTTPfWO.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st88055",
-        "type": "show",
-        "title": "Servant",
-        "year": 2019,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/plsSSobmPSSz4hm8vYMXeIVkJJP.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p3271417": {
     "name": "Bamidele Ali",
     "img": null,
@@ -413471,6 +413451,26 @@
         "year": 2024,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/y35mtjO08cmax8cLBIbIsHI0vVU.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2909265": {
+    "name": "Chanda Hartman",
+    "img": "/jmmRbtvNTZhJYcbRBNGgV2KXTw5.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st248394",
+        "type": "show",
+        "title": "Miluju tě navždy",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/twlp0YMmuKmn4cKAInAL3zde59W.jpg",
         "roles": [
           "actor"
         ]
@@ -416800,6 +416800,37 @@
       }
     ]
   },
+  "p1284806": {
+    "name": "Bob Senkewicz",
+    "img": "/mGZcM0mDxxgoa9VB2UsqIcza9Pf.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st247522",
+        "type": "show",
+        "title": "Gumy, kam se podíváš",
+        "year": 2024,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/6mRwM5lrwwYRlwpyTxkNnTTPfWO.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st88055",
+        "type": "show",
+        "title": "Servant",
+        "year": 2019,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/plsSSobmPSSz4hm8vYMXeIVkJJP.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p157730": {
     "name": "Greg Yaitanes",
     "img": "/pC1K4bglE5uX1vKVO6NIijEWtfm.jpg",
@@ -417235,26 +417266,6 @@
         "year": 2025,
         "score": 77,
         "poster": "https://image.tmdb.org/t/p/w342/zUjHmffgLYODaGpDrqGNMPrrwd4.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2909265": {
-    "name": "Chanda Hartman",
-    "img": "/jmmRbtvNTZhJYcbRBNGgV2KXTw5.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st248394",
-        "type": "show",
-        "title": "Miluju tě navždy",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/twlp0YMmuKmn4cKAInAL3zde59W.jpg",
         "roles": [
           "actor"
         ]

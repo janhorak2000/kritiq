@@ -68048,5 +68048,181 @@
       }
     ],
     "reviews": []
+  },
+  {
+    "title": "Odjezd branců",
+    "tmdb_id": 1513221,
+    "imdb_id": null,
+    "original_language": "cs",
+    "year": 2026,
+    "date": "2026-10-01",
+    "score": null,
+    "box": null,
+    "box_currency": null,
+    "country": "Česko",
+    "genre": "Dokumentární",
+    "runtime": null,
+    "poster": "",
+    "gallery": [],
+    "summary": "FilmIMPRESE, natočený ve spolupráci s kameramany Antonínem Lhotským a Jiřím Stivínem, zachycuje skupinu branců, kteří se na pražském Hlavním nádraží loučí se svými dívkami a rodiči, zpívají, tančí a popíjejí. Pod stropem nádražní haly zní piáno a po mužích, kteří odjeli, zůstalo jen prázdné nástupiště poseté odpadky",
+    "director": {
+      "id": 1462455,
+      "name": "Woody Vasulka",
+      "image": "https://image.tmdb.org/t/p/w300/dWfN3PGOfzSI84pz041zXmSsH28.jpg"
+    },
+    "composer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "writer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "actors": [],
+    "reviews": []
+  },
+  {
+    "title": "Živá voda",
+    "tmdb_id": 1789865,
+    "imdb_id": null,
+    "original_language": "cs",
+    "year": 2026,
+    "date": "2026-10-01",
+    "score": null,
+    "box": null,
+    "box_currency": null,
+    "country": "Česko",
+    "genre": "Dokumentární",
+    "runtime": null,
+    "poster": "",
+    "gallery": [],
+    "summary": "",
+    "director": {
+      "id": 550770,
+      "name": "Helena Třeštíková",
+      "image": "https://image.tmdb.org/t/p/w300/fNNLoEjLdlrR14jomj0W16yUY34.jpg"
+    },
+    "composer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "writer": {
+      "id": 550770,
+      "name": "Helena Třeštíková",
+      "image": "https://image.tmdb.org/t/p/w300/fNNLoEjLdlrR14jomj0W16yUY34.jpg"
+    },
+    "actors": [
+      {
+        "id": 1269931,
+        "name": "Václav Voska",
+        "birthday": "1918-10-21",
+        "deathday": "1982-08-20",
+        "age": 63,
+        "image": "https://image.tmdb.org/t/p/w300/vhvXOz1EKoyDt9kqbWNrUStnAKW.jpg"
+      },
+      {
+        "id": 2572859,
+        "name": "Jiří Valenta",
+        "birthday": "1928-10-13",
+        "deathday": "1996-08-10",
+        "age": 67,
+        "image": ""
+      }
+    ],
+    "reviews": []
+  },
+  {
+    "title": "Setkání",
+    "tmdb_id": 1789836,
+    "imdb_id": "tt10224764",
+    "original_language": "cs",
+    "year": 2026,
+    "date": "2026-10-01",
+    "score": null,
+    "box": null,
+    "box_currency": null,
+    "country": "Česko",
+    "genre": "Komedie",
+    "runtime": null,
+    "poster": "",
+    "gallery": [],
+    "summary": "U pražského Hlavního nádraží se do tramvaje nahrnou davy lidí. Na plošině zůstane stát venkovan s živou husou v košíku. Po chvíli si všimne, že v druhém voze jede jeho známý s dcerkou...",
+    "director": {
+      "id": 1093332,
+      "name": "Vladimír Svitáček",
+      "image": ""
+    },
+    "composer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "writer": {
+      "id": 1093332,
+      "name": "Vladimír Svitáček",
+      "image": ""
+    },
+    "actors": [
+      {
+        "id": 93426,
+        "name": "Miloš Kopecký",
+        "birthday": "1922-08-22",
+        "deathday": "1996-02-16",
+        "age": 73,
+        "image": "https://image.tmdb.org/t/p/w300/A4bIGzAKGc8HJj20LyHXv0LbOp9.jpg"
+      },
+      {
+        "id": 137020,
+        "name": "Jiří Sovák",
+        "birthday": "1920-12-27",
+        "deathday": "2000-09-06",
+        "age": 79,
+        "image": "https://image.tmdb.org/t/p/w300/zVExdaXisVzhcemmye6DoyBFsPu.jpg"
+      },
+      {
+        "id": 548099,
+        "name": "Jana Werichová",
+        "birthday": "1935-10-18",
+        "deathday": "1981-05-09",
+        "age": 45,
+        "image": "https://image.tmdb.org/t/p/w300/1r3Iba72gLaZA502V3ShCPuC3G6.jpg"
+      },
+      {
+        "id": 2512753,
+        "name": "Stanislav Juna",
+        "birthday": "1898-02-16",
+        "deathday": null,
+        "age": 128,
+        "image": ""
+      },
+      {
+        "id": 6530095,
+        "name": "Kateřina Kopecká",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 2569492,
+        "name": "Bruno Šefranka",
+        "birthday": "1928-11-29",
+        "deathday": "1985-12-15",
+        "age": 57,
+        "image": ""
+      },
+      {
+        "id": 3479201,
+        "name": "Eva Rohanová",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      }
+    ],
+    "reviews": []
   }
 ]

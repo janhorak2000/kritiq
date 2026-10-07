@@ -491457,6 +491457,17 @@
     "age": 67,
     "works": [
       {
+        "id": "mt1789865",
+        "type": "movie",
+        "title": "Živá voda",
+        "year": 2026,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1091088",
         "type": "movie",
         "title": "Útěk s Cézarem",
@@ -492768,6 +492779,17 @@
     "deathday": "1996-02-16",
     "age": 73,
     "works": [
+      {
+        "id": "mt1789836",
+        "type": "movie",
+        "title": "Setkání",
+        "year": 2026,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "st86221",
         "type": "show",
@@ -533688,53 +533710,102 @@
       }
     ]
   },
-  "p571173": {
-    "name": "Lee Cho-hee",
-    "img": "/17vIKn6bLaDt29q5DEdjabbOjId.jpg",
-    "birthday": "1989-10-04",
+  "p4543707": {
+    "name": "Jaelynn Thora Brooks",
+    "img": "/37sm3LdjV2W4VBfZy6dbQzHP51g.jpg",
+    "birthday": null,
     "deathday": null,
-    "age": 36,
+    "age": null,
     "works": [
       {
-        "id": "st209110",
+        "id": "st223530",
         "type": "show",
-        "title": "Cena přiznání",
+        "title": "Star Trek: Akademie Hvězdné flotily",
+        "year": 2026,
+        "score": 46,
+        "poster": "https://image.tmdb.org/t/p/w342/fBH0t2OTfeYrmPKiOyUpdZh6ers.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st260458",
+        "type": "show",
+        "title": "Dospělost",
         "year": 2025,
         "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/6R7UMF0aAOy9p4v8dlGtCIPhwcS.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5351822": {
+    "name": "Shakila Fernando",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st323411",
+        "type": "show",
+        "title": "The Vampire Lestat",
+        "year": 2026,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/gZcmNUcDDR1nR7lmroOJTCrhrhK.jpg",
         "roles": [
           "actor"
         ]
       },
       {
-        "id": "st233742",
+        "id": "st260458",
         "type": "show",
-        "title": "Nyutopia",
+        "title": "Dospělost",
         "year": 2025,
-        "score": 66,
-        "poster": "https://image.tmdb.org/t/p/w342/ilBndopP8kfpmhmlWDoR6xs5fKa.jpg",
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
         "roles": [
           "actor"
         ]
-      },
+      }
+    ]
+  },
+  "p6072344": {
+    "name": "최민규",
+    "img": "/5sJkGYcnIkN7AdslXu5V5ileB0u.jpg",
+    "birthday": "1999-12-16",
+    "deathday": null,
+    "age": 26,
+    "works": [
       {
-        "id": "st154822",
+        "id": "st224819",
         "type": "show",
-        "title": "Láska bez tíže",
+        "title": "Drahý Hongnangu",
         "year": 2025,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/2veWG0YsXXfKdVlBTzkFduk2xfX.jpg",
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/bmWzKsD5iRUBR9uvOzuTMM6EYn1.jpg",
         "roles": [
           "actor"
         ]
-      },
+      }
+    ]
+  },
+  "p4191399": {
+    "name": "Faith West",
+    "img": "/tZZEOAK0EGTO1sK6X973QmtzNVr.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
       {
-        "id": "st68879",
+        "id": "st248394",
         "type": "show",
-        "title": "Seven first kisses",
-        "year": 2016,
-        "score": 61,
-        "poster": "https://image.tmdb.org/t/p/w342/bFmfYjeOb67mAtKpITDidTRdsaM.jpg",
+        "title": "Miluju tě navždy",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/twlp0YMmuKmn4cKAInAL3zde59W.jpg",
         "roles": [
           "actor"
         ]
@@ -534847,6 +534918,59 @@
         "year": 2025,
         "score": 66,
         "poster": "https://image.tmdb.org/t/p/w342/vNByuzy60v31nmUVPMA8oAtneUK.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p571173": {
+    "name": "Lee Cho-hee",
+    "img": "/17vIKn6bLaDt29q5DEdjabbOjId.jpg",
+    "birthday": "1989-10-04",
+    "deathday": null,
+    "age": 36,
+    "works": [
+      {
+        "id": "st233742",
+        "type": "show",
+        "title": "Nyutopia",
+        "year": 2025,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/ilBndopP8kfpmhmlWDoR6xs5fKa.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st154822",
+        "type": "show",
+        "title": "Láska bez tíže",
+        "year": 2025,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/2veWG0YsXXfKdVlBTzkFduk2xfX.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st209110",
+        "type": "show",
+        "title": "Cena přiznání",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/6R7UMF0aAOy9p4v8dlGtCIPhwcS.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st68879",
+        "type": "show",
+        "title": "Seven first kisses",
+        "year": 2016,
+        "score": 61,
+        "poster": "https://image.tmdb.org/t/p/w342/bFmfYjeOb67mAtKpITDidTRdsaM.jpg",
         "roles": [
           "actor"
         ]
@@ -536350,37 +536474,6 @@
         "year": 2026,
         "score": 55,
         "poster": "https://image.tmdb.org/t/p/w342/5H4wX5PFw3kCs3h1zW2Fn5snvjH.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4543707": {
-    "name": "Jaelynn Thora Brooks",
-    "img": "/37sm3LdjV2W4VBfZy6dbQzHP51g.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st223530",
-        "type": "show",
-        "title": "Star Trek: Akademie Hvězdné flotily",
-        "year": 2026,
-        "score": 46,
-        "poster": "https://image.tmdb.org/t/p/w342/fBH0t2OTfeYrmPKiOyUpdZh6ers.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st260458",
-        "type": "show",
-        "title": "Dospělost",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
         "roles": [
           "actor"
         ]
@@ -538234,77 +538327,6 @@
         "year": 2025,
         "score": 77,
         "poster": "https://image.tmdb.org/t/p/w342/AfIHFoByUqMOaluHRXOkV8JiXtJ.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5351822": {
-    "name": "Shakila Fernando",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st323411",
-        "type": "show",
-        "title": "The Vampire Lestat",
-        "year": 2026,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/gZcmNUcDDR1nR7lmroOJTCrhrhK.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st260458",
-        "type": "show",
-        "title": "Dospělost",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6072344": {
-    "name": "최민규",
-    "img": "/5sJkGYcnIkN7AdslXu5V5ileB0u.jpg",
-    "birthday": "1999-12-16",
-    "deathday": null,
-    "age": 26,
-    "works": [
-      {
-        "id": "st224819",
-        "type": "show",
-        "title": "Drahý Hongnangu",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/bmWzKsD5iRUBR9uvOzuTMM6EYn1.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4191399": {
-    "name": "Faith West",
-    "img": "/tZZEOAK0EGTO1sK6X973QmtzNVr.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st248394",
-        "type": "show",
-        "title": "Miluju tě navždy",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/twlp0YMmuKmn4cKAInAL3zde59W.jpg",
         "roles": [
           "actor"
         ]

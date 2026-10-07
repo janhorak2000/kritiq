@@ -5220,6 +5220,17 @@
     "age": 35,
     "works": [
       {
+        "id": "mt1281331",
+        "type": "movie",
+        "title": "The Social Reckoning",
+        "year": 2026,
+        "score": 89,
+        "poster": "https://image.tmdb.org/t/p/w342/nZ8cQbjAQHRuSqwxvuYhOfxyhfW.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1228710",
         "type": "movie",
         "title": "Star Wars: Mandalorian a Grogu",
@@ -157405,23 +157416,23 @@
         ]
       },
       {
-        "id": "st233686",
-        "type": "show",
-        "title": "Karma",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/kFx0FD0Cgns9OThcSkAmWYcnYzu.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st239385",
         "type": "show",
         "title": "Manipulátor",
         "year": 2025,
         "score": 77,
         "poster": "https://image.tmdb.org/t/p/w342/j5E4RXqovOrV3CS1duTGxDfmlFt.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st233686",
+        "type": "show",
+        "title": "Karma",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/kFx0FD0Cgns9OThcSkAmWYcnYzu.jpg",
         "roles": [
           "actor"
         ]
@@ -270466,23 +270477,23 @@
     "age": null,
     "works": [
       {
-        "id": "st255859",
-        "type": "show",
-        "title": "Nezvladatelní",
-        "year": 2025,
-        "score": 59,
-        "poster": "https://image.tmdb.org/t/p/w342/oE0JFrN5rimTi0smRgEDiJuUKsN.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st260458",
         "type": "show",
         "title": "Dospělost",
         "year": 2025,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st255859",
+        "type": "show",
+        "title": "Nezvladatelní",
+        "year": 2025,
+        "score": 59,
+        "poster": "https://image.tmdb.org/t/p/w342/oE0JFrN5rimTi0smRgEDiJuUKsN.jpg",
         "roles": [
           "actor"
         ]
@@ -360751,23 +360762,23 @@
         ]
       },
       {
-        "id": "st207468",
-        "type": "show",
-        "title": "怪獣８号",
-        "year": 2024,
-        "score": 82,
-        "poster": "https://image.tmdb.org/t/p/w342/A6JOsCdFFTxtbDnKAfE0iY6jOiE.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st236994",
         "type": "show",
         "title": "ドラゴンボールDAIMA",
         "year": 2024,
         "score": 77,
         "poster": "https://image.tmdb.org/t/p/w342/u8GIA3ue6qsgA0QVxku5tg4IPVG.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st207468",
+        "type": "show",
+        "title": "怪獣８号",
+        "year": 2024,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/A6JOsCdFFTxtbDnKAfE0iY6jOiE.jpg",
         "roles": [
           "actor"
         ]
@@ -360889,6 +360900,48 @@
         "year": 2000,
         "score": 80,
         "poster": "https://image.tmdb.org/t/p/w342/anr0fmIho046C7Wcz9oHkG52eca.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3979020": {
+    "name": "Kang Joo-hee",
+    "img": "/uJtSvhSCkH9n5BalAneJMfszYiK.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st136369",
+        "type": "show",
+        "title": "Zítra je taky den",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st135155",
+        "type": "show",
+        "title": "Prostě báječní",
+        "year": 2022,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/9ST1FIXudsnd0MfvJRG88iVCLrg.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st64840",
+        "type": "show",
+        "title": "Signál",
+        "year": 2016,
+        "score": 84,
+        "poster": "https://image.tmdb.org/t/p/w342/mB6FlHFK0A4DPyuGTrlM4QgEkIH.jpg",
         "roles": [
           "actor"
         ]
@@ -362990,48 +363043,6 @@
         "year": 2019,
         "score": 74,
         "poster": "https://image.tmdb.org/t/p/w342/l5N985pVvDC41QwEprORSoGz3Q5.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3979020": {
-    "name": "Kang Joo-hee",
-    "img": "/uJtSvhSCkH9n5BalAneJMfszYiK.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st135155",
-        "type": "show",
-        "title": "Prostě báječní",
-        "year": 2022,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/9ST1FIXudsnd0MfvJRG88iVCLrg.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st136369",
-        "type": "show",
-        "title": "Zítra je taky den",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st64840",
-        "type": "show",
-        "title": "Signál",
-        "year": 2016,
-        "score": 84,
-        "poster": "https://image.tmdb.org/t/p/w342/mB6FlHFK0A4DPyuGTrlM4QgEkIH.jpg",
         "roles": [
           "actor"
         ]
@@ -368357,6 +368368,26 @@
         "year": 2026,
         "score": 73,
         "poster": "https://image.tmdb.org/t/p/w342/hoZ1z0WeMjLmGJL4DWXSpak09j0.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5714270": {
+    "name": "Park Cho-eun",
+    "img": "/76PfVU0hQC8v2oGpmTwfcfi41i5.jpg",
+    "birthday": "1991-01-21",
+    "deathday": null,
+    "age": 35,
+    "works": [
+      {
+        "id": "st280948",
+        "type": "show",
+        "title": "스프링 피버",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/jTJgfbSQ4UczxMOgscHPsoVuL5X.jpg",
         "roles": [
           "actor"
         ]

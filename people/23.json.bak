@@ -196532,6 +196532,26 @@
       }
     ]
   },
+  "p4502071": {
+    "name": "Bernardo García",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1627217",
+        "type": "movie",
+        "title": "Basta Mamá",
+        "year": 2026,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/t8EarPqNvaAttgzEmaOWlyawsJF.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p113901": {
     "name": "Michael Jelenic",
     "img": "/rzfpbDQ3S3lDqnyMfcGzDv0QCwZ.jpg",
@@ -198678,6 +198698,39 @@
         "poster": "https://image.tmdb.org/t/p/w342/a25CyXmPJx6SrVFA9yirJTL9iAH.jpg",
         "roles": [
           "actor"
+        ]
+      }
+    ]
+  },
+  "p587968": {
+    "name": "Emilio Portes",
+    "img": "/d4JhG8TVuPHRWbJKoA0O7oRt5Ln.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1339274",
+        "type": "movie",
+        "title": "No dejes a los niños solos",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/jxg1sLzG0TJRDPSNU6AmR4wR4Ce.jpg",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      },
+      {
+        "id": "mt373226",
+        "type": "movie",
+        "title": "Belzebuth",
+        "year": 2019,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/mlBfHKirPMVeBNvPxdKrTIKFXaW.jpg",
+        "roles": [
+          "director",
+          "writer"
         ]
       }
     ]
@@ -251399,27 +251452,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/qRPevWM0fO1OXv8NtcTDjqMKvgF.jpg",
         "roles": [
           "actor"
-        ]
-      }
-    ]
-  },
-  "p587968": {
-    "name": "Emilio Portes",
-    "img": "/d4JhG8TVuPHRWbJKoA0O7oRt5Ln.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt373226",
-        "type": "movie",
-        "title": "Belzebuth",
-        "year": 2019,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/mlBfHKirPMVeBNvPxdKrTIKFXaW.jpg",
-        "roles": [
-          "director",
-          "writer"
         ]
       }
     ]
