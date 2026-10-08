@@ -1184,6 +1184,17 @@
     "age": 58,
     "works": [
       {
+        "id": "mt1281331",
+        "type": "movie",
+        "title": "The Social Reckoning",
+        "year": 2026,
+        "score": 89,
+        "poster": "https://image.tmdb.org/t/p/w342/nZ8cQbjAQHRuSqwxvuYhOfxyhfW.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1202479",
         "type": "movie",
         "title": "Opus",
@@ -13029,6 +13040,134 @@
       }
     ]
   },
+  "p2307481": {
+    "name": "Anna Lambe",
+    "img": "/cKm5ZnAOVc6nD8KAgSDMJdZclYH.jpg",
+    "birthday": "2000-09-25",
+    "deathday": null,
+    "age": 26,
+    "works": [
+      {
+        "id": "mt1281331",
+        "type": "movie",
+        "title": "The Social Reckoning",
+        "year": 2026,
+        "score": 89,
+        "poster": "https://image.tmdb.org/t/p/w342/nZ8cQbjAQHRuSqwxvuYhOfxyhfW.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1263337",
+        "type": "movie",
+        "title": "V srdci divočiny",
+        "year": 2026,
+        "score": 79,
+        "poster": "https://image.tmdb.org/t/p/w342/vIQY7fG0AzSCUhO8BIOusCdhjAz.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st249023",
+        "type": "show",
+        "title": "Sever na druhou",
+        "year": 2025,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/luAre9npa3cqxAol5XKnbkheZkX.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st197242",
+        "type": "show",
+        "title": "Městečko Three Pines",
+        "year": 2022,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/s6TWJ9nomRdYiL3Ojz0scKinDrq.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st106707",
+        "type": "show",
+        "title": "Trickster",
+        "year": 2020,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/xOGaNevMHwbrHSo6zwIZxECMt8m.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt539819",
+        "type": "movie",
+        "title": "The Grizzlies",
+        "year": 2019,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/wQ2BRrMSKv57gzTyYNbrrN092KN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st46648",
+        "type": "show",
+        "title": "Temný případ",
+        "year": 2014,
+        "score": 88,
+        "poster": "https://image.tmdb.org/t/p/w342/9vi5YeujfBwLwxdJmanINKSVy0o.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1846295": {
+    "name": "Matthew Nelson-Mahood",
+    "img": "/mstQjfNKQCNyRVEechqYvi2VJYO.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1281331",
+        "type": "movie",
+        "title": "The Social Reckoning",
+        "year": 2026,
+        "score": 89,
+        "poster": "https://image.tmdb.org/t/p/w342/nZ8cQbjAQHRuSqwxvuYhOfxyhfW.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st211288",
+        "type": "show",
+        "title": "Stopař",
+        "year": 2024,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/ftk7WIWuPPJI8DxQgY1MYVBdF7p.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt449535",
+        "type": "movie",
+        "title": "Lesní chata",
+        "year": 2017,
+        "score": 55,
+        "poster": "https://image.tmdb.org/t/p/w342/rKqYBB6ysJW4DQqUwM1DaCIxDM5.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p145612": {
     "name": "Guy Moshe",
     "img": "/cihfkHFJyWxPi7irCNXVh8U7NCs.jpg",
@@ -13101,81 +13240,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/vIQY7fG0AzSCUhO8BIOusCdhjAz.jpg",
         "roles": [
           "writer"
-        ]
-      }
-    ]
-  },
-  "p2307481": {
-    "name": "Anna Lambe",
-    "img": "/cKm5ZnAOVc6nD8KAgSDMJdZclYH.jpg",
-    "birthday": "2000-09-25",
-    "deathday": null,
-    "age": 25,
-    "works": [
-      {
-        "id": "mt1263337",
-        "type": "movie",
-        "title": "V srdci divočiny",
-        "year": 2026,
-        "score": 79,
-        "poster": "https://image.tmdb.org/t/p/w342/vIQY7fG0AzSCUhO8BIOusCdhjAz.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st249023",
-        "type": "show",
-        "title": "Sever na druhou",
-        "year": 2025,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/luAre9npa3cqxAol5XKnbkheZkX.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st197242",
-        "type": "show",
-        "title": "Městečko Three Pines",
-        "year": 2022,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/s6TWJ9nomRdYiL3Ojz0scKinDrq.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st106707",
-        "type": "show",
-        "title": "Trickster",
-        "year": 2020,
-        "score": 68,
-        "poster": "https://image.tmdb.org/t/p/w342/xOGaNevMHwbrHSo6zwIZxECMt8m.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt539819",
-        "type": "movie",
-        "title": "The Grizzlies",
-        "year": 2019,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/wQ2BRrMSKv57gzTyYNbrrN092KN.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st46648",
-        "type": "show",
-        "title": "Temný případ",
-        "year": 2014,
-        "score": 88,
-        "poster": "https://image.tmdb.org/t/p/w342/9vi5YeujfBwLwxdJmanINKSVy0o.jpg",
-        "roles": [
-          "actor"
         ]
       }
     ]
@@ -130123,23 +130187,23 @@
     "age": 68,
     "works": [
       {
-        "id": "st259837",
-        "type": "show",
-        "title": "SUPERpaka",
-        "year": 2026,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/qlPdAwp7rjltEl1vaBxoejP5boB.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st303143",
         "type": "show",
         "title": "My Royal Nemesis",
         "year": 2026,
         "score": 75,
         "poster": "https://image.tmdb.org/t/p/w342/u2cX3CVzUZLIGVwd9HB7bUhE7OP.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st259837",
+        "type": "show",
+        "title": "SUPERpaka",
+        "year": 2026,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/qlPdAwp7rjltEl1vaBxoejP5boB.jpg",
         "roles": [
           "actor"
         ]
@@ -149708,23 +149772,23 @@
         ]
       },
       {
-        "id": "st245079",
-        "type": "show",
-        "title": "Hyper skalpel",
-        "year": 2025,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/k1WRnwvmW6DmK6j2D1F3HfWlxuO.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st224819",
         "type": "show",
         "title": "Drahý Hongnangu",
         "year": 2025,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/bmWzKsD5iRUBR9uvOzuTMM6EYn1.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st245079",
+        "type": "show",
+        "title": "Hyper skalpel",
+        "year": 2025,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/k1WRnwvmW6DmK6j2D1F3HfWlxuO.jpg",
         "roles": [
           "actor"
         ]
@@ -229690,37 +229754,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/wzgeFbUgDFSnVG63T0FrQOdLCc1.jpg",
         "roles": [
           "director"
-        ]
-      }
-    ]
-  },
-  "p1846295": {
-    "name": "Matthew Nelson-Mahood",
-    "img": "/mstQjfNKQCNyRVEechqYvi2VJYO.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st211288",
-        "type": "show",
-        "title": "Stopař",
-        "year": 2024,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/ftk7WIWuPPJI8DxQgY1MYVBdF7p.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt449535",
-        "type": "movie",
-        "title": "Lesní chata",
-        "year": 2017,
-        "score": 55,
-        "poster": "https://image.tmdb.org/t/p/w342/rKqYBB6ysJW4DQqUwM1DaCIxDM5.jpg",
-        "roles": [
-          "actor"
         ]
       }
     ]
@@ -359365,6 +359398,46 @@
       }
     ]
   },
+  "p3949154": {
+    "name": "Konami",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st90296",
+        "type": "show",
+        "title": "Tokyo Vice",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p557408": {
+    "name": "Yoo Jang-hee",
+    "img": "/rxATUhQDGDehl2JqlE14i3PHlxD.jpg",
+    "birthday": "1993-09-17",
+    "deathday": null,
+    "age": 33,
+    "works": [
+      {
+        "id": "st136369",
+        "type": "show",
+        "title": "Zítra je taky den",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p3809542": {
     "name": "Facundo Calvo",
     "img": null,
@@ -363629,6 +363702,48 @@
       }
     ]
   },
+  "p3290539": {
+    "name": "Yudai Mino",
+    "img": "/ndM2zeVSLsb80JUBRCMF1BOUgai.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st278043",
+        "type": "show",
+        "title": "正反対な君と僕",
+        "year": 2026,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/lLjcMT7fwuO5fgswb2drlbFwoTJ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st236994",
+        "type": "show",
+        "title": "ドラゴンボールDAIMA",
+        "year": 2024,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/u8GIA3ue6qsgA0QVxku5tg4IPVG.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st105556",
+        "type": "show",
+        "title": "Neškádli mě, Nagatoro!",
+        "year": 2021,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/k1z2xv3JjGobO9jfybHGo2tqAKC.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p1754390": {
     "name": "Vivienne Medrano",
     "img": "/cco4rKedqE5n9jvOHanINDcyBJy.jpg",
@@ -366519,46 +366634,6 @@
       }
     ]
   },
-  "p3949154": {
-    "name": "Konami",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st90296",
-        "type": "show",
-        "title": "Tokyo Vice",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p557408": {
-    "name": "Yoo Jang-hee",
-    "img": "/rxATUhQDGDehl2JqlE14i3PHlxD.jpg",
-    "birthday": "1993-09-17",
-    "deathday": null,
-    "age": 33,
-    "works": [
-      {
-        "id": "st136369",
-        "type": "show",
-        "title": "Zítra je taky den",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1869890": {
     "name": "Phil Donlon",
     "img": null,
@@ -367134,48 +367209,6 @@
         "year": 2024,
         "score": 79,
         "poster": "https://image.tmdb.org/t/p/w342/sl07onNa8fhOM6Vd3x74jvipmfJ.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3290539": {
-    "name": "Yudai Mino",
-    "img": "/ndM2zeVSLsb80JUBRCMF1BOUgai.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st278043",
-        "type": "show",
-        "title": "正反対な君と僕",
-        "year": 2026,
-        "score": 82,
-        "poster": "https://image.tmdb.org/t/p/w342/lLjcMT7fwuO5fgswb2drlbFwoTJ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st236994",
-        "type": "show",
-        "title": "ドラゴンボールDAIMA",
-        "year": 2024,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/u8GIA3ue6qsgA0QVxku5tg4IPVG.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st105556",
-        "type": "show",
-        "title": "Neškádli mě, Nagatoro!",
-        "year": 2021,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/k1z2xv3JjGobO9jfybHGo2tqAKC.jpg",
         "roles": [
           "actor"
         ]

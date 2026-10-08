@@ -12499,6 +12499,17 @@
     "age": 64,
     "works": [
       {
+        "id": "mt1545360",
+        "type": "movie",
+        "title": "Generál Golian",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/A4PuRauX4hwYeTtq5MF2DFIBw41.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1567441",
         "type": "movie",
         "title": "Potopa",
@@ -14455,6 +14466,17 @@
         ]
       },
       {
+        "id": "st81723",
+        "type": "show",
+        "title": "Pozlacený věk",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/msO0qHSe2yrpdkLLoeg0s1Wiiu9.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st136741",
         "type": "show",
         "title": "Řev",
@@ -14472,17 +14494,6 @@
         "year": 2022,
         "score": 86,
         "poster": "https://image.tmdb.org/t/p/w342/uAZukCD4dfCsZaQ1U6Ivj71g4zC.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st81723",
-        "type": "show",
-        "title": "Pozlacený věk",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/msO0qHSe2yrpdkLLoeg0s1Wiiu9.jpg",
         "roles": [
           "actor"
         ]
@@ -16068,37 +16079,6 @@
         "year": 1988,
         "score": 56,
         "poster": "https://image.tmdb.org/t/p/w342/niIHSyg2Wgj3v4POepjtlMaWUtw.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4505121": {
-    "name": "Madison Polan",
-    "img": "/rFlA9iYyefyFTWv1YIMdMoUFgfZ.jpg",
-    "birthday": "2014-01-01",
-    "deathday": null,
-    "age": 12,
-    "works": [
-      {
-        "id": "mt1514026",
-        "type": "movie",
-        "title": "Buddy",
-        "year": 2026,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/6Lh4ZlsAISFQFVfLZ90sE9ycVnN.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt519182",
-        "type": "movie",
-        "title": "Já, padouch 4",
-        "year": 2024,
-        "score": 62,
-        "poster": "https://image.tmdb.org/t/p/w342/z8ixsCWreUOcq5HoyBG5fRuTttS.jpg",
         "roles": [
           "actor"
         ]
@@ -209639,6 +209619,37 @@
       }
     ]
   },
+  "p4505121": {
+    "name": "Madison Polan",
+    "img": "/rFlA9iYyefyFTWv1YIMdMoUFgfZ.jpg",
+    "birthday": "2014-01-01",
+    "deathday": null,
+    "age": 12,
+    "works": [
+      {
+        "id": "mt1514026",
+        "type": "movie",
+        "title": "Buddy",
+        "year": 2026,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/6Lh4ZlsAISFQFVfLZ90sE9ycVnN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt519182",
+        "type": "movie",
+        "title": "Já, padouch 4",
+        "year": 2024,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/z8ixsCWreUOcq5HoyBG5fRuTttS.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p4613273": {
     "name": "Alexx A-Game",
     "img": null,
@@ -221850,6 +221861,17 @@
     "age": null,
     "works": [
       {
+        "id": "st288673",
+        "type": "show",
+        "title": "Carrie",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/eXjk4W4robXs7l1YXwaXMv4f2qb.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt798645",
         "type": "movie",
         "title": "Běžící muž",
@@ -230449,23 +230471,23 @@
         ]
       },
       {
-        "id": "st253321",
-        "type": "show",
-        "title": "Ta lepší z nás",
-        "year": 2025,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/kTVz4yTSPGLQPC1ChoCFLJQ7el0.jpg",
-        "roles": [
-          "director"
-        ]
-      },
-      {
         "id": "st241609",
         "type": "show",
         "title": "Sousedská tajemství",
         "year": 2025,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "st253321",
+        "type": "show",
+        "title": "Ta lepší z nás",
+        "year": 2025,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/kTVz4yTSPGLQPC1ChoCFLJQ7el0.jpg",
         "roles": [
           "director"
         ]
@@ -239858,23 +239880,23 @@
     "age": null,
     "works": [
       {
-        "id": "st155537",
-        "type": "show",
-        "title": "Volavka",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/waW5NMQmpd3Pox7lHGjXZt14Xrp.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st122196",
         "type": "show",
         "title": "Schodiště",
         "year": 2022,
         "score": 71,
         "poster": "https://image.tmdb.org/t/p/w342/jiAcdCyf1UbWYBImcNtVeLW0pRj.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st155537",
+        "type": "show",
+        "title": "Volavka",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/waW5NMQmpd3Pox7lHGjXZt14Xrp.jpg",
         "roles": [
           "actor"
         ]
@@ -462917,88 +462939,6 @@
       }
     ]
   },
-  "p2405540": {
-    "name": "Jeong Dong-hwan",
-    "img": "/cDU7Mzk6xnRiEbzzuURjWip9hng.jpg",
-    "birthday": "1992-01-11",
-    "deathday": null,
-    "age": 34,
-    "works": [
-      {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4014180": {
-    "name": "Kim Seo-kyung",
-    "img": "/xmc9AoJssBMr1VsFj115JzfSFym.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st228689",
-        "type": "show",
-        "title": "Džine, něco si přej",
-        "year": 2025,
-        "score": 66,
-        "poster": "https://image.tmdb.org/t/p/w342/d5p8TP7nYcl760zJmNX7ysb3fg8.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2878474": {
-    "name": "Kim Jung-soo",
-    "img": "/sS4CpDKsHkCwvwxh48ps80TviRJ.jpg",
-    "birthday": "1957-04-25",
-    "deathday": null,
-    "age": 69,
-    "works": [
-      {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st134465",
-        "type": "show",
-        "title": "Šílená romance",
-        "year": 2022,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/8U3foujYcmmFgqFIbTn2HNe656k.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1488085": {
     "name": "Momoka Ayukawa",
     "img": "/wEADFVq0rkdUxIdjJm8PrHTElnh.jpg",
@@ -463150,6 +463090,59 @@
         "year": 2021,
         "score": 80,
         "poster": "https://image.tmdb.org/t/p/w342/2BuwNyTiMjlStKweY1VRIBsusRJ.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2504001": {
+    "name": "Brian Keys",
+    "img": "/gno2WbwYJiVBVx9EUsRJDv9v6s2.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st119845",
+        "type": "show",
+        "title": "Power Book IV: Force",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/yzL4Tqbw2JA9MCsHJWFC4xV1IYU.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st96095",
+        "type": "show",
+        "title": "Soundtrack",
+        "year": 2019,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/w1VdMlm63e5nY9BlCxk4BpotvWO.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st72071",
+        "type": "show",
+        "title": "The Chi",
+        "year": 2018,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/niD8X5pEXpmRUDhSPdDOgI3Gw5Q.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st67993",
+        "type": "show",
+        "title": "Chicago Justice",
+        "year": 2017,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/hZ76A8l1JoONy2NoL0BF4AU2g3c.jpg",
         "roles": [
           "actor"
         ]
@@ -464770,6 +464763,37 @@
         "year": 2022,
         "score": 74,
         "poster": "https://image.tmdb.org/t/p/w342/i5N0LKem5gTUxyMfaly8NhK2GjR.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2878474": {
+    "name": "Kim Jung-soo",
+    "img": "/sS4CpDKsHkCwvwxh48ps80TviRJ.jpg",
+    "birthday": "1957-04-25",
+    "deathday": null,
+    "age": 69,
+    "works": [
+      {
+        "id": "st134465",
+        "type": "show",
+        "title": "Šílená romance",
+        "year": 2022,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/8U3foujYcmmFgqFIbTn2HNe656k.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
         "roles": [
           "actor"
         ]
@@ -467744,23 +467768,23 @@
     "age": 33,
     "works": [
       {
-        "id": "st303143",
-        "type": "show",
-        "title": "My Royal Nemesis",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/u2cX3CVzUZLIGVwd9HB7bUhE7OP.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st298610",
         "type": "show",
         "title": "오싹한 연애",
         "year": 2026,
         "score": 75,
         "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st303143",
+        "type": "show",
+        "title": "My Royal Nemesis",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/u2cX3CVzUZLIGVwd9HB7bUhE7OP.jpg",
         "roles": [
           "actor"
         ]
@@ -473943,6 +473967,26 @@
       }
     ]
   },
+  "p5445060": {
+    "name": "Jameson Flynn Lopez",
+    "img": "/dPuPqsikAJuP8GyX20T8w7y3iYP.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st241609",
+        "type": "show",
+        "title": "Sousedská tajemství",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p1420380": {
     "name": "Juan Lecanda",
     "img": "/jpHpVoEdhYBR8HfYAFWHckRskWh.jpg",
@@ -475037,6 +475081,37 @@
         "year": 2025,
         "score": 67,
         "poster": "https://image.tmdb.org/t/p/w342/AtIqctFgTwLhDjYQCdvuvCLkwbN.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4014180": {
+    "name": "Kim Seo-kyung",
+    "img": "/xmc9AoJssBMr1VsFj115JzfSFym.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st228689",
+        "type": "show",
+        "title": "Džine, něco si přej",
+        "year": 2025,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/d5p8TP7nYcl760zJmNX7ysb3fg8.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
         "roles": [
           "actor"
         ]
@@ -477256,59 +477331,6 @@
       }
     ]
   },
-  "p2504001": {
-    "name": "Brian Keys",
-    "img": "/gno2WbwYJiVBVx9EUsRJDv9v6s2.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st119845",
-        "type": "show",
-        "title": "Power Book IV: Force",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/yzL4Tqbw2JA9MCsHJWFC4xV1IYU.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st96095",
-        "type": "show",
-        "title": "Soundtrack",
-        "year": 2019,
-        "score": 68,
-        "poster": "https://image.tmdb.org/t/p/w342/w1VdMlm63e5nY9BlCxk4BpotvWO.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st72071",
-        "type": "show",
-        "title": "The Chi",
-        "year": 2018,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/niD8X5pEXpmRUDhSPdDOgI3Gw5Q.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st67993",
-        "type": "show",
-        "title": "Chicago Justice",
-        "year": 2017,
-        "score": 68,
-        "poster": "https://image.tmdb.org/t/p/w342/hZ76A8l1JoONy2NoL0BF4AU2g3c.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1653481": {
     "name": "Bhav Dhulia",
     "img": null,
@@ -477325,6 +477347,26 @@
         "poster": "https://image.tmdb.org/t/p/w342/xvr3WrwAQMlcb00OZEos9nLekTE.jpg",
         "roles": [
           "director"
+        ]
+      }
+    ]
+  },
+  "p2405540": {
+    "name": "Jeong Dong-hwan",
+    "img": "/cDU7Mzk6xnRiEbzzuURjWip9hng.jpg",
+    "birthday": "1992-01-11",
+    "deathday": null,
+    "age": 34,
+    "works": [
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "actor"
         ]
       }
     ]
@@ -478727,26 +478769,6 @@
         "year": 2025,
         "score": 77,
         "poster": "https://image.tmdb.org/t/p/w342/bNPVb2Sv4N3CO7l6AdfjxNkMTfN.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5445060": {
-    "name": "Jameson Flynn Lopez",
-    "img": "/dPuPqsikAJuP8GyX20T8w7y3iYP.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st241609",
-        "type": "show",
-        "title": "Sousedská tajemství",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
         "roles": [
           "actor"
         ]

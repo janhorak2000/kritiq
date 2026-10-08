@@ -7150,23 +7150,23 @@
     "age": 50,
     "works": [
       {
-        "id": "st289424",
-        "type": "show",
-        "title": "모두가 자신의 무가치함과 싸우고 있다",
-        "year": 2026,
-        "score": 85,
-        "poster": "https://image.tmdb.org/t/p/w342/pdxOM4FIGRykIv6KxF648fG9bor.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st293608",
         "type": "show",
         "title": "Slečna Hongová v utajení",
         "year": 2026,
         "score": 75,
         "poster": "https://image.tmdb.org/t/p/w342/nJ0gSaXfoiPFngy1ulCCuxsKt0q.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st289424",
+        "type": "show",
+        "title": "모두가 자신의 무가치함과 싸우고 있다",
+        "year": 2026,
+        "score": 85,
+        "poster": "https://image.tmdb.org/t/p/w342/pdxOM4FIGRykIv6KxF648fG9bor.jpg",
         "roles": [
           "actor"
         ]
@@ -23623,6 +23623,92 @@
         "year": 2025,
         "score": 71,
         "poster": "https://image.tmdb.org/t/p/w342/pJUfkCcU5mCEMF8O0LKvlMnYAfD.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1672241": {
+    "name": "Alec Secăreanu",
+    "img": "/faV10C9gsWfF7E5HwKoqymhbDPb.jpg",
+    "birthday": "1984-12-04",
+    "deathday": null,
+    "age": 41,
+    "works": [
+      {
+        "id": "mt1400837",
+        "type": "movie",
+        "title": "Neskutečná máma",
+        "year": 2026,
+        "score": 91,
+        "poster": "https://image.tmdb.org/t/p/w342/wC63aSSosgURJpfDLadm4gbDpxd.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st207334",
+        "type": "show",
+        "title": "Závoj",
+        "year": 2024,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/z66a5b6dv33vzy53oZALvEpepKQ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt568467",
+        "type": "movie",
+        "title": "Amonit",
+        "year": 2020,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/5lx4pUHWZoOKJWsVsvurRRNW9FK.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt653615",
+        "type": "movie",
+        "title": "Amulet",
+        "year": 2020,
+        "score": 49,
+        "poster": "https://image.tmdb.org/t/p/w342/kEVyAkEkpwpfyx4oZMg22A8ivDI.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st86735",
+        "type": "show",
+        "title": "Baptiste",
+        "year": 2019,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/xgu7gih8wYtd4As95uDhVajjkM4.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt428493",
+        "type": "movie",
+        "title": "Na konci světa",
+        "year": 2017,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/hKJz8Moim43P1f1kGrM9Gh0c0rf.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt407518",
+        "type": "movie",
+        "title": "Chosen",
+        "year": 2016,
+        "score": 54,
+        "poster": "https://image.tmdb.org/t/p/w342/x02EEkwMpV0TlFMpwB65F9jlLZQ.jpg",
         "roles": [
           "actor"
         ]
@@ -220315,81 +220401,6 @@
       }
     ]
   },
-  "p1672241": {
-    "name": "Alec Secăreanu",
-    "img": "/faV10C9gsWfF7E5HwKoqymhbDPb.jpg",
-    "birthday": "1984-12-04",
-    "deathday": null,
-    "age": 41,
-    "works": [
-      {
-        "id": "st207334",
-        "type": "show",
-        "title": "Závoj",
-        "year": 2024,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/z66a5b6dv33vzy53oZALvEpepKQ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt568467",
-        "type": "movie",
-        "title": "Amonit",
-        "year": 2020,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/5lx4pUHWZoOKJWsVsvurRRNW9FK.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt653615",
-        "type": "movie",
-        "title": "Amulet",
-        "year": 2020,
-        "score": 49,
-        "poster": "https://image.tmdb.org/t/p/w342/kEVyAkEkpwpfyx4oZMg22A8ivDI.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st86735",
-        "type": "show",
-        "title": "Baptiste",
-        "year": 2019,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/xgu7gih8wYtd4As95uDhVajjkM4.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt428493",
-        "type": "movie",
-        "title": "Na konci světa",
-        "year": 2017,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/hKJz8Moim43P1f1kGrM9Gh0c0rf.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt407518",
-        "type": "movie",
-        "title": "Chosen",
-        "year": 2016,
-        "score": 54,
-        "poster": "https://image.tmdb.org/t/p/w342/x02EEkwMpV0TlFMpwB65F9jlLZQ.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1413433": {
     "name": "Harry Lister Smith",
     "img": "/eqqBKGbqFdaYrxtuBN8KlVuJlET.jpg",
@@ -286213,23 +286224,23 @@
     "age": 53,
     "works": [
       {
-        "id": "st303143",
-        "type": "show",
-        "title": "My Royal Nemesis",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/u2cX3CVzUZLIGVwd9HB7bUhE7OP.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st298610",
         "type": "show",
         "title": "오싹한 연애",
         "year": 2026,
         "score": 75,
         "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st303143",
+        "type": "show",
+        "title": "My Royal Nemesis",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/u2cX3CVzUZLIGVwd9HB7bUhE7OP.jpg",
         "roles": [
           "actor"
         ]
@@ -311020,23 +311031,23 @@
         ]
       },
       {
-        "id": "st248394",
-        "type": "show",
-        "title": "Miluju tě navždy",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/twlp0YMmuKmn4cKAInAL3zde59W.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st247168",
         "type": "show",
         "title": "Chad Powers",
         "year": 2025,
         "score": 75,
         "poster": "https://image.tmdb.org/t/p/w342/aXetUcD4wfalCj90QmT6kSvwO6D.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st248394",
+        "type": "show",
+        "title": "Miluju tě navždy",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/twlp0YMmuKmn4cKAInAL3zde59W.jpg",
         "roles": [
           "actor"
         ]
@@ -637004,6 +637015,17 @@
     "age": 70,
     "works": [
       {
+        "id": "mt1734866",
+        "type": "movie",
+        "title": "Wirbel",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/3VltYvrz1CSnXtGpclHRDQkDtE6.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1181578",
         "type": "movie",
         "title": "Cesta do tmy",
@@ -678083,6 +678105,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1545360",
+        "type": "movie",
+        "title": "Generál Golian",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/A4PuRauX4hwYeTtq5MF2DFIBw41.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st298624",
         "type": "show",
         "title": "V zovretí",
@@ -691863,6 +691896,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "mt1545360",
+        "type": "movie",
+        "title": "Generál Golian",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/A4PuRauX4hwYeTtq5MF2DFIBw41.jpg",
+        "roles": [
+          "director"
+        ]
+      },
       {
         "id": "st230947",
         "type": "show",
@@ -707123,6 +707167,81 @@
       }
     ]
   },
+  "p3846116": {
+    "name": "Adam Jančina",
+    "img": "/8TWvk8eWgvLrst80eqIuaaZLCDp.jpg",
+    "birthday": "1992-08-03",
+    "deathday": null,
+    "age": 34,
+    "works": [
+      {
+        "id": "mt1545360",
+        "type": "movie",
+        "title": "Generál Golian",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/A4PuRauX4hwYeTtq5MF2DFIBw41.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st278819",
+        "type": "show",
+        "title": "Najvyšší čas",
+        "year": 2024,
+        "score": 40,
+        "poster": "https://image.tmdb.org/t/p/w342/xV95bMiXaQIadysLbrAXMmV3bYH.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st236960",
+        "type": "show",
+        "title": "Duch",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/qR99lvzNy9QQB4uNe8kRNTaQSrs.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st132347",
+        "type": "show",
+        "title": "Pravá tvár",
+        "year": 2017,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/aTwIINDD2Bnzg1gbx8E5WOYxAOz.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st72696",
+        "type": "show",
+        "title": "Za sklem",
+        "year": 2016,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/u0K7ufhFfX1WMpEgYMTPo4oq2a8.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st289948",
+        "type": "show",
+        "title": "Gympel.tv",
+        "year": 2011,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/dQBhtX95C8AoSzfMtTHu5Ti0kO7.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p5029111": {
     "name": "Michal Karvai",
     "img": null,
@@ -712721,68 +712840,6 @@
       }
     ]
   },
-  "p2302189": {
-    "name": "No Eul",
-    "img": "/uBbkTzzBgTDQcDZsYtKEH64sWEY.jpg",
-    "birthday": "1989-05-10",
-    "deathday": null,
-    "age": 37,
-    "works": [
-      {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3559720": {
-    "name": "Jo Ji-seung",
-    "img": "/fsyCbn3wx1IVBCsa5dPagx5QFl8.jpg",
-    "birthday": "1991-01-22",
-    "deathday": null,
-    "age": 35,
-    "works": [
-      {
-        "id": "st137040",
-        "type": "show",
-        "title": "Rytíř v černém",
-        "year": 2023,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/jdPFCyJGaU4mZWXktwTcFb1sBwf.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st99047",
-        "type": "show",
-        "title": "Obrazy z mládí",
-        "year": 2020,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/gDWva9h1wHz40wXvOTfpTNM3ws8.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p2534630": {
     "name": "Kazuki Ura",
     "img": "/7eUgENWREmWSMnLPUFCQhvUSpdI.jpg",
@@ -713868,23 +713925,23 @@
     "age": 45,
     "works": [
       {
-        "id": "st224819",
-        "type": "show",
-        "title": "Drahý Hongnangu",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/bmWzKsD5iRUBR9uvOzuTMM6EYn1.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st281004",
         "type": "show",
         "title": "Právní cesta",
         "year": 2025,
         "score": 79,
         "poster": "https://image.tmdb.org/t/p/w342/y9SDvLKABqz0FWymCz6IGhpYoFs.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st224819",
+        "type": "show",
+        "title": "Drahý Hongnangu",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/bmWzKsD5iRUBR9uvOzuTMM6EYn1.jpg",
         "roles": [
           "actor"
         ]
@@ -715572,6 +715629,17 @@
     "deathday": null,
     "age": 27,
     "works": [
+      {
+        "id": "st288673",
+        "type": "show",
+        "title": "Carrie",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/eXjk4W4robXs7l1YXwaXMv4f2qb.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "st323411",
         "type": "show",
@@ -727853,6 +727921,48 @@
       }
     ]
   },
+  "p3559720": {
+    "name": "Jo Ji-seung",
+    "img": "/fsyCbn3wx1IVBCsa5dPagx5QFl8.jpg",
+    "birthday": "1991-01-22",
+    "deathday": null,
+    "age": 35,
+    "works": [
+      {
+        "id": "st137040",
+        "type": "show",
+        "title": "Rytíř v černém",
+        "year": 2023,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/jdPFCyJGaU4mZWXktwTcFb1sBwf.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st99047",
+        "type": "show",
+        "title": "Obrazy z mládí",
+        "year": 2020,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/gDWva9h1wHz40wXvOTfpTNM3ws8.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p1489520": {
     "name": "Yoo Jang-young",
     "img": "/zMQC2OBuvDvLweN1EJM7oU8CmnI.jpg",
@@ -729180,70 +729290,6 @@
         "year": 2023,
         "score": 50,
         "poster": "https://image.tmdb.org/t/p/w342/bnnv6Ei6HyYgI50zpiP0ZBQpNwV.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3846116": {
-    "name": "Adam Jančina",
-    "img": "/8TWvk8eWgvLrst80eqIuaaZLCDp.jpg",
-    "birthday": "1992-08-03",
-    "deathday": null,
-    "age": 34,
-    "works": [
-      {
-        "id": "st278819",
-        "type": "show",
-        "title": "Najvyšší čas",
-        "year": 2024,
-        "score": 40,
-        "poster": "https://image.tmdb.org/t/p/w342/xV95bMiXaQIadysLbrAXMmV3bYH.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st236960",
-        "type": "show",
-        "title": "Duch",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/qR99lvzNy9QQB4uNe8kRNTaQSrs.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st132347",
-        "type": "show",
-        "title": "Pravá tvár",
-        "year": 2017,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/aTwIINDD2Bnzg1gbx8E5WOYxAOz.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st72696",
-        "type": "show",
-        "title": "Za sklem",
-        "year": 2016,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/u0K7ufhFfX1WMpEgYMTPo4oq2a8.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st289948",
-        "type": "show",
-        "title": "Gympel.tv",
-        "year": 2011,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/dQBhtX95C8AoSzfMtTHu5Ti0kO7.jpg",
         "roles": [
           "actor"
         ]
@@ -733973,46 +734019,6 @@
       }
     ]
   },
-  "p5503750": {
-    "name": "Olivia King",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st260458",
-        "type": "show",
-        "title": "Dospělost",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1419912": {
-    "name": "Ryuya Shimekake",
-    "img": "/7m0Ucao3A0M70H4nSStFWXWxp6T.jpg",
-    "birthday": "1995-06-23",
-    "deathday": null,
-    "age": 31,
-    "works": [
-      {
-        "id": "st290160",
-        "type": "show",
-        "title": "Vezměte si mého manžela: Japonsko",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/kY07zDg3bhavOcH8AH5bHUX81NJ.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p5839800": {
     "name": "Orlando Ivanovic",
     "img": null,
@@ -737924,6 +737930,68 @@
       }
     ]
   },
+  "p4899861": {
+    "name": "Sin Woo-cheol",
+    "img": null,
+    "birthday": "1977-02-28",
+    "deathday": null,
+    "age": 49,
+    "works": [
+      {
+        "id": "st298610",
+        "type": "show",
+        "title": "오싹한 연애",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2565298": {
+    "name": "Yoo Hyun-jong",
+    "img": "/oXIrsms449MKkFvd8pH5dhsFgoZ.jpg",
+    "birthday": "1991-06-11",
+    "deathday": null,
+    "age": 35,
+    "works": [
+      {
+        "id": "st298610",
+        "type": "show",
+        "title": "오싹한 연애",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st235355",
+        "type": "show",
+        "title": "Nemocniční manuál",
+        "year": 2025,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/oXaMHOQGx2V4HwoBa0IrouBe1yb.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st215720",
+        "type": "show",
+        "title": "Královna slz",
+        "year": 2024,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/3x8GHyMTMsuXVX8pZ1OhUUHgOBx.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2647688": {
     "name": "Dru Perez",
     "img": null,
@@ -741300,6 +741368,26 @@
       }
     ]
   },
+  "p2302189": {
+    "name": "No Eul",
+    "img": "/uBbkTzzBgTDQcDZsYtKEH64sWEY.jpg",
+    "birthday": "1989-05-10",
+    "deathday": null,
+    "age": 37,
+    "works": [
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p1647634": {
     "name": "Azumi Waki",
     "img": "/nxm4DLWv0BOcK2owvAz5yafSAXj.jpg",
@@ -742655,48 +742743,6 @@
       }
     ]
   },
-  "p2565298": {
-    "name": "Yoo Hyun-jong",
-    "img": "/oXIrsms449MKkFvd8pH5dhsFgoZ.jpg",
-    "birthday": "1991-06-11",
-    "deathday": null,
-    "age": 35,
-    "works": [
-      {
-        "id": "st298610",
-        "type": "show",
-        "title": "오싹한 연애",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st235355",
-        "type": "show",
-        "title": "Nemocniční manuál",
-        "year": 2025,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/oXaMHOQGx2V4HwoBa0IrouBe1yb.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st215720",
-        "type": "show",
-        "title": "Královna slz",
-        "year": 2024,
-        "score": 82,
-        "poster": "https://image.tmdb.org/t/p/w342/3x8GHyMTMsuXVX8pZ1OhUUHgOBx.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p3515830": {
     "name": "Viktória Bauer",
     "img": null,
@@ -743050,6 +743096,26 @@
       }
     ]
   },
+  "p4834477": {
+    "name": "Brit Prawat",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st156933",
+        "type": "show",
+        "title": "Nedostatek důkazů",
+        "year": 2024,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/s3wbFZos8K4MrOqZh0bYCd2XSZG.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p3727888": {
     "name": "Francis Ellis",
     "img": null,
@@ -743084,26 +743150,6 @@
         "year": 2024,
         "score": 77,
         "poster": "https://image.tmdb.org/t/p/w342/iHvsIKCy4Lk3faZYOfyONOzuRFV.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4834477": {
-    "name": "Brit Prawat",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st156933",
-        "type": "show",
-        "title": "Nedostatek důkazů",
-        "year": 2024,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/s3wbFZos8K4MrOqZh0bYCd2XSZG.jpg",
         "roles": [
           "actor"
         ]
@@ -743796,6 +743842,46 @@
         "year": 2025,
         "score": 77,
         "poster": "https://image.tmdb.org/t/p/w342/zUjHmffgLYODaGpDrqGNMPrrwd4.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5503750": {
+    "name": "Olivia King",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st260458",
+        "type": "show",
+        "title": "Dospělost",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1419912": {
+    "name": "Ryuya Shimekake",
+    "img": "/7m0Ucao3A0M70H4nSStFWXWxp6T.jpg",
+    "birthday": "1995-06-23",
+    "deathday": null,
+    "age": 31,
+    "works": [
+      {
+        "id": "st290160",
+        "type": "show",
+        "title": "Vezměte si mého manžela: Japonsko",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/kY07zDg3bhavOcH8AH5bHUX81NJ.jpg",
         "roles": [
           "actor"
         ]
@@ -744685,26 +744771,6 @@
         "year": 2026,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/mDugtY17uzG4r6yU0pRgjawcfSA.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4899861": {
-    "name": "Sin Woo-cheol",
-    "img": null,
-    "birthday": "1977-02-28",
-    "deathday": null,
-    "age": 49,
-    "works": [
-      {
-        "id": "st298610",
-        "type": "show",
-        "title": "오싹한 연애",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
         "roles": [
           "actor"
         ]

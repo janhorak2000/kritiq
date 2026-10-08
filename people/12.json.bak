@@ -14064,6 +14064,17 @@
     "age": 56,
     "works": [
       {
+        "id": "mt1281331",
+        "type": "movie",
+        "title": "The Social Reckoning",
+        "year": 2026,
+        "score": 89,
+        "poster": "https://image.tmdb.org/t/p/w342/nZ8cQbjAQHRuSqwxvuYhOfxyhfW.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1240889",
         "type": "movie",
         "title": "Sex a smrt v kempu Miasma",
@@ -253614,23 +253625,23 @@
         ]
       },
       {
-        "id": "st280945",
-        "type": "show",
-        "title": "Bon Appétit, Vaše Výsosti",
-        "year": 2025,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/kqFofZ0hOQ7Y3VUQQ59lpHaCJpM.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st224819",
         "type": "show",
         "title": "Drahý Hongnangu",
         "year": 2025,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/bmWzKsD5iRUBR9uvOzuTMM6EYn1.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st280945",
+        "type": "show",
+        "title": "Bon Appétit, Vaše Výsosti",
+        "year": 2025,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/kqFofZ0hOQ7Y3VUQQ59lpHaCJpM.jpg",
         "roles": [
           "actor"
         ]
@@ -298840,6 +298851,17 @@
         ]
       },
       {
+        "id": "st136369",
+        "type": "show",
+        "title": "Zítra je taky den",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st155226",
         "type": "show",
         "title": "Velká huba",
@@ -298879,17 +298901,6 @@
         "year": 2022,
         "score": 85,
         "poster": "https://image.tmdb.org/t/p/w342/yv57TccCkgdy3St7rspBPKROeRK.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st136369",
-        "type": "show",
-        "title": "Zítra je taky den",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
         "roles": [
           "actor"
         ]
@@ -299981,23 +299992,23 @@
         ]
       },
       {
-        "id": "st233686",
-        "type": "show",
-        "title": "Karma",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/kFx0FD0Cgns9OThcSkAmWYcnYzu.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st245079",
         "type": "show",
         "title": "Hyper skalpel",
         "year": 2025,
         "score": 73,
         "poster": "https://image.tmdb.org/t/p/w342/k1WRnwvmW6DmK6j2D1F3HfWlxuO.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st233686",
+        "type": "show",
+        "title": "Karma",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/kFx0FD0Cgns9OThcSkAmWYcnYzu.jpg",
         "roles": [
           "actor"
         ]
@@ -312656,23 +312667,23 @@
         ]
       },
       {
-        "id": "st210213",
-        "type": "show",
-        "title": "Gannibal",
-        "year": 2022,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/i5N0LKem5gTUxyMfaly8NhK2GjR.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st90296",
         "type": "show",
         "title": "Tokyo Vice",
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st210213",
+        "type": "show",
+        "title": "Gannibal",
+        "year": 2022,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/i5N0LKem5gTUxyMfaly8NhK2GjR.jpg",
         "roles": [
           "actor"
         ]
@@ -409208,6 +409219,17 @@
     "deathday": null,
     "age": 43,
     "works": [
+      {
+        "id": "st280948",
+        "type": "show",
+        "title": "스프링 피버",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/jTJgfbSQ4UczxMOgscHPsoVuL5X.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "st136369",
         "type": "show",
@@ -598477,6 +598499,26 @@
       }
     ]
   },
+  "p3533806": {
+    "name": "Jazee Minor",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st90296",
+        "type": "show",
+        "title": "Tokyo Vice",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2279718": {
     "name": "Adam Maros",
     "img": "/oOyl9te4CxQghw0p4yIOZPfU0n2.jpg",
@@ -599633,6 +599675,17 @@
     "deathday": null,
     "age": 29,
     "works": [
+      {
+        "id": "st280948",
+        "type": "show",
+        "title": "스프링 피버",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/jTJgfbSQ4UczxMOgscHPsoVuL5X.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "st224900",
         "type": "show",
@@ -607276,6 +607329,81 @@
       }
     ]
   },
+  "p126485": {
+    "name": "Yumiko Kobayashi",
+    "img": "/83IuLRuKivjifdFwfsKhmhTJKzd.jpg",
+    "birthday": "1979-06-18",
+    "deathday": null,
+    "age": 47,
+    "works": [
+      {
+        "id": "st236994",
+        "type": "show",
+        "title": "ドラゴンボールDAIMA",
+        "year": 2024,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/u8GIA3ue6qsgA0QVxku5tg4IPVG.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st98034",
+        "type": "show",
+        "title": "デジモンアドベンチャー：",
+        "year": 2020,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/vYoiupxiXVJBT8Bz0hCBwi1FLdL.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st65942",
+        "type": "show",
+        "title": "Re: Zero - Život od nuly",
+        "year": 2016,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/sqMVORIn8crxtkE3AYkcs9EfUVc.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st62104",
+        "type": "show",
+        "title": "Sedm smrtelných hříchů",
+        "year": 2014,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/8CgrM1wNIowRfDIUOWpzdwW0vjY.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st42942",
+        "type": "show",
+        "title": "Angel Beats!",
+        "year": 2010,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/6FGbsF8k9dJrHfFVYV9mkoMRWvn.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st36250",
+        "type": "show",
+        "title": "XXX ホリック",
+        "year": 2006,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/k9HSk7qw3j7k6Yhuzhmr5SiglXR.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p3271423": {
     "name": "Alex Benito Rodriguez",
     "img": null,
@@ -609704,6 +609832,57 @@
       }
     ]
   },
+  "p5473579": {
+    "name": "John Moore",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st260458",
+        "type": "show",
+        "title": "Dospělost",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3221912": {
+    "name": "Alex Somerville",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st223530",
+        "type": "show",
+        "title": "Star Trek: Akademie Hvězdné flotily",
+        "year": 2026,
+        "score": 46,
+        "poster": "https://image.tmdb.org/t/p/w342/fBH0t2OTfeYrmPKiOyUpdZh6ers.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st260458",
+        "type": "show",
+        "title": "Dospělost",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p1881529": {
     "name": "Alexander Uloom",
     "img": "/65PDKintL28er7lzh5KdvpNGoa3.jpg",
@@ -611789,6 +611968,92 @@
       }
     ]
   },
+  "p2184678": {
+    "name": "Park Ah-in",
+    "img": "/ox6FlVKrHHp0Ndr7SAADtEYySEC.jpg",
+    "birthday": "1985-02-12",
+    "deathday": null,
+    "age": 41,
+    "works": [
+      {
+        "id": "st303143",
+        "type": "show",
+        "title": "My Royal Nemesis",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/u2cX3CVzUZLIGVwd9HB7bUhE7OP.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st278573",
+        "type": "show",
+        "title": "Dokonalá koruna",
+        "year": 2026,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/fEYOFHAXZLTv9WF7zjy6qVuDHop.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st96648",
+        "type": "show",
+        "title": "Sladký domove!",
+        "year": 2020,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/kJEcSBMPacDJuAihPNmcUEgon1Y.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st92983",
+        "type": "show",
+        "title": "Vagabond",
+        "year": 2019,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/iSB720SU8k53NOsemk55aIqTAKI.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st84464",
+        "type": "show",
+        "title": "My Strange Hero",
+        "year": 2018,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/sY5QJHdrdjegDA8kIfGu3n2DnjK.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st78869",
+        "type": "show",
+        "title": "Clean with Passion for Now",
+        "year": 2018,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/jyHHFaV0B22L2xKNJ0j1F2RZuH7.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st75820",
+        "type": "show",
+        "title": "Mr. Sunshine",
+        "year": 2018,
+        "score": 87,
+        "poster": "https://image.tmdb.org/t/p/w342/uSavP0BSfnyUaJe62f0ZTXIHLs8.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p1761816": {
     "name": "Phumzile Sitole",
     "img": "/l1s9oknuAwR8osuvVcoiN9ieKCz.jpg",
@@ -613069,37 +613334,6 @@
       }
     ]
   },
-  "p3221912": {
-    "name": "Alex Somerville",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st223530",
-        "type": "show",
-        "title": "Star Trek: Akademie Hvězdné flotily",
-        "year": 2026,
-        "score": 46,
-        "poster": "https://image.tmdb.org/t/p/w342/fBH0t2OTfeYrmPKiOyUpdZh6ers.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st260458",
-        "type": "show",
-        "title": "Dospělost",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p6155139": {
     "name": "Natálie Plavcová",
     "img": "/ohfyJHzXIPMlHzE2BTFSTiP161p.jpg",
@@ -614170,26 +614404,6 @@
         "year": 2020,
         "score": 80,
         "poster": "https://image.tmdb.org/t/p/w342/xwXgYXqxLRAYfVGUaS1STEFnmzZ.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3533806": {
-    "name": "Jazee Minor",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st90296",
-        "type": "show",
-        "title": "Tokyo Vice",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
         "roles": [
           "actor"
         ]
@@ -615576,112 +615790,6 @@
       }
     ]
   },
-  "p2185107": {
-    "name": "Antony Azor",
-    "img": "/xLZRaiYadtQxEyTUyKa7f90yiFz.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st206586",
-        "type": "show",
-        "title": "The Walking Dead: The Ones Who Live",
-        "year": 2024,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/ywbacot78IuNhGW4uVZPxxxVTkm.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st1402",
-        "type": "show",
-        "title": "Živí mrtví",
-        "year": 2010,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/76HyQ3QJNzn9qICnm4L4Cmk5DpO.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p126485": {
-    "name": "Yumiko Kobayashi",
-    "img": "/83IuLRuKivjifdFwfsKhmhTJKzd.jpg",
-    "birthday": "1979-06-18",
-    "deathday": null,
-    "age": 47,
-    "works": [
-      {
-        "id": "st236994",
-        "type": "show",
-        "title": "ドラゴンボールDAIMA",
-        "year": 2024,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/u8GIA3ue6qsgA0QVxku5tg4IPVG.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st98034",
-        "type": "show",
-        "title": "デジモンアドベンチャー：",
-        "year": 2020,
-        "score": 68,
-        "poster": "https://image.tmdb.org/t/p/w342/vYoiupxiXVJBT8Bz0hCBwi1FLdL.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st65942",
-        "type": "show",
-        "title": "Re: Zero - Život od nuly",
-        "year": 2016,
-        "score": 83,
-        "poster": "https://image.tmdb.org/t/p/w342/sqMVORIn8crxtkE3AYkcs9EfUVc.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st62104",
-        "type": "show",
-        "title": "Sedm smrtelných hříchů",
-        "year": 2014,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/8CgrM1wNIowRfDIUOWpzdwW0vjY.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st42942",
-        "type": "show",
-        "title": "Angel Beats!",
-        "year": 2010,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/6FGbsF8k9dJrHfFVYV9mkoMRWvn.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st36250",
-        "type": "show",
-        "title": "XXX ホリック",
-        "year": 2006,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/k9HSk7qw3j7k6Yhuzhmr5SiglXR.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p3010745": {
     "name": "Ryann Werner",
     "img": null,
@@ -615727,6 +615835,37 @@
         "year": 2014,
         "score": 75,
         "poster": "https://image.tmdb.org/t/p/w342/ssli1RoRtD81vuHPj86OtKJSnBJ.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2185107": {
+    "name": "Antony Azor",
+    "img": "/xLZRaiYadtQxEyTUyKa7f90yiFz.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st206586",
+        "type": "show",
+        "title": "The Walking Dead: The Ones Who Live",
+        "year": 2024,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/ywbacot78IuNhGW4uVZPxxxVTkm.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st1402",
+        "type": "show",
+        "title": "Živí mrtví",
+        "year": 2010,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/76HyQ3QJNzn9qICnm4L4Cmk5DpO.jpg",
         "roles": [
           "actor"
         ]
@@ -616245,26 +616384,6 @@
       }
     ]
   },
-  "p5473579": {
-    "name": "John Moore",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st260458",
-        "type": "show",
-        "title": "Dospělost",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p5589926": {
     "name": "Atticus Elsass",
     "img": "/oBAGpBRmHXdusWBcHgklYuk89Om.jpg",
@@ -616525,92 +616644,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/rCI8bgsqoq2ho04ZE0gUr36l8Pg.jpg",
         "roles": [
           "writer"
-        ]
-      }
-    ]
-  },
-  "p2184678": {
-    "name": "Park Ah-in",
-    "img": "/ox6FlVKrHHp0Ndr7SAADtEYySEC.jpg",
-    "birthday": "1985-02-12",
-    "deathday": null,
-    "age": 41,
-    "works": [
-      {
-        "id": "st278573",
-        "type": "show",
-        "title": "Dokonalá koruna",
-        "year": 2026,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/fEYOFHAXZLTv9WF7zjy6qVuDHop.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st303143",
-        "type": "show",
-        "title": "My Royal Nemesis",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/u2cX3CVzUZLIGVwd9HB7bUhE7OP.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st96648",
-        "type": "show",
-        "title": "Sladký domove!",
-        "year": 2020,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/kJEcSBMPacDJuAihPNmcUEgon1Y.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st92983",
-        "type": "show",
-        "title": "Vagabond",
-        "year": 2019,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/iSB720SU8k53NOsemk55aIqTAKI.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st84464",
-        "type": "show",
-        "title": "My Strange Hero",
-        "year": 2018,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/sY5QJHdrdjegDA8kIfGu3n2DnjK.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st78869",
-        "type": "show",
-        "title": "Clean with Passion for Now",
-        "year": 2018,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/jyHHFaV0B22L2xKNJ0j1F2RZuH7.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st75820",
-        "type": "show",
-        "title": "Mr. Sunshine",
-        "year": 2018,
-        "score": 87,
-        "poster": "https://image.tmdb.org/t/p/w342/uSavP0BSfnyUaJe62f0ZTXIHLs8.jpg",
-        "roles": [
-          "actor"
         ]
       }
     ]
