@@ -11265,6 +11265,17 @@
     "age": 54,
     "works": [
       {
+        "id": "mt1764157",
+        "type": "movie",
+        "title": "Šipkaři",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/tRed2a9P8cVKV64Jcc0QeHCQuwL.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1567441",
         "type": "movie",
         "title": "Potopa",
@@ -86104,17 +86115,6 @@
         ]
       },
       {
-        "id": "st155537",
-        "type": "show",
-        "title": "Volavka",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/waW5NMQmpd3Pox7lHGjXZt14Xrp.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st197434",
         "type": "show",
         "title": "Přítel rodiny",
@@ -86132,6 +86132,17 @@
         "year": 2022,
         "score": 73,
         "poster": "https://image.tmdb.org/t/p/w342/vOos5pwq3tzPCwFohG80i2SXAgR.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st155537",
+        "type": "show",
+        "title": "Volavka",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/waW5NMQmpd3Pox7lHGjXZt14Xrp.jpg",
         "roles": [
           "actor"
         ]
@@ -136475,6 +136486,17 @@
         ]
       },
       {
+        "id": "st293489",
+        "type": "show",
+        "title": "鬼の花嫁",
+        "year": 2026,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/xh9hNzzadcT0vn9pJMUu5SA2w0c.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st207468",
         "type": "show",
         "title": "怪獣８号",
@@ -150776,23 +150798,23 @@
     "age": 57,
     "works": [
       {
-        "id": "st229891",
-        "type": "show",
-        "title": "Jak tlumočit lásku?",
-        "year": 2026,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/ePz0D6B6wbxoLHsUtcaqfGx7E41.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st293608",
         "type": "show",
         "title": "Slečna Hongová v utajení",
         "year": 2026,
         "score": 75,
         "poster": "https://image.tmdb.org/t/p/w342/nJ0gSaXfoiPFngy1ulCCuxsKt0q.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st229891",
+        "type": "show",
+        "title": "Jak tlumočit lásku?",
+        "year": 2026,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/ePz0D6B6wbxoLHsUtcaqfGx7E41.jpg",
         "roles": [
           "actor"
         ]
@@ -190412,6 +190434,17 @@
         "year": 2026,
         "score": 58,
         "poster": "https://image.tmdb.org/t/p/w342/sIwakdbMGS1krtgendTWpxTY9Hw.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st288673",
+        "type": "show",
+        "title": "Carrie",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/eXjk4W4robXs7l1YXwaXMv4f2qb.jpg",
         "roles": [
           "actor"
         ]
@@ -411145,6 +411178,37 @@
       }
     ]
   },
+  "p4526064": {
+    "name": "Dávid Snopek",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1545360",
+        "type": "movie",
+        "title": "Generál Golian",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/A4PuRauX4hwYeTtq5MF2DFIBw41.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st244249",
+        "type": "show",
+        "title": "Zrada",
+        "year": 2024,
+        "score": 60,
+        "poster": "https://image.tmdb.org/t/p/w342/hkD4w1w1YFH44Xq4fsiOLNOHglv.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p1515650": {
     "name": "Debora Štolbová",
     "img": "/ze83GZyPLPqlp8KDZHuAF54k3jY.jpg",
@@ -413961,46 +414025,6 @@
         "year": 1995,
         "score": null,
         "poster": "",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1504485": {
-    "name": "Bae Woo-hee",
-    "img": "/dbyf0RKl2LKGom0ZNHGtkeuEOkn.jpg",
-    "birthday": "1991-11-21",
-    "deathday": null,
-    "age": 34,
-    "works": [
-      {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1676283": {
-    "name": "Kim Kyu-jong",
-    "img": "/1AHoF2Kw8z9jJhUHIxPdrneYIFx.jpg",
-    "birthday": "1987-02-24",
-    "deathday": null,
-    "age": 39,
-    "works": [
-      {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
         "roles": [
           "actor"
         ]
@@ -422414,37 +422438,6 @@
       }
     ]
   },
-  "p2027062": {
-    "name": "Maki Tsuruta",
-    "img": "/g5WTDFUbecLmrxWMUat9uKoMB5Q.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st236994",
-        "type": "show",
-        "title": "ドラゴンボールDAIMA",
-        "year": 2024,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/u8GIA3ue6qsgA0QVxku5tg4IPVG.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st112160",
-        "type": "show",
-        "title": "Muž v domácnosti",
-        "year": 2021,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/yv5dLSRPbWlivdY7TQG8ZPB8NiL.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p4748330": {
     "name": "Sean James William Parris",
     "img": null,
@@ -424641,26 +424634,6 @@
       }
     ]
   },
-  "p4526064": {
-    "name": "Dávid Snopek",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st244249",
-        "type": "show",
-        "title": "Zrada",
-        "year": 2024,
-        "score": 60,
-        "poster": "https://image.tmdb.org/t/p/w342/hkD4w1w1YFH44Xq4fsiOLNOHglv.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1927952": {
     "name": "Adam Horwitz",
     "img": null,
@@ -424786,26 +424759,6 @@
         "year": 2024,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/1BaQhd4f7tsFfLLbJGcRqHBWATV.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3906599": {
-    "name": "Brandon Macpherson",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st260458",
-        "type": "show",
-        "title": "Dospělost",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
         "roles": [
           "actor"
         ]
@@ -427579,6 +427532,46 @@
       }
     ]
   },
+  "p1504485": {
+    "name": "Bae Woo-hee",
+    "img": "/dbyf0RKl2LKGom0ZNHGtkeuEOkn.jpg",
+    "birthday": "1991-11-21",
+    "deathday": null,
+    "age": 34,
+    "works": [
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1676283": {
+    "name": "Kim Kyu-jong",
+    "img": "/1AHoF2Kw8z9jJhUHIxPdrneYIFx.jpg",
+    "birthday": "1987-02-24",
+    "deathday": null,
+    "age": 39,
+    "works": [
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p1789231": {
     "name": "Rikako Yamaguchi",
     "img": "/cN5BX5yNcm9goxUHgTfumP7mwkN.jpg",
@@ -428105,6 +428098,37 @@
       }
     ]
   },
+  "p2027062": {
+    "name": "Maki Tsuruta",
+    "img": "/g5WTDFUbecLmrxWMUat9uKoMB5Q.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st236994",
+        "type": "show",
+        "title": "ドラゴンボールDAIMA",
+        "year": 2024,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/u8GIA3ue6qsgA0QVxku5tg4IPVG.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st112160",
+        "type": "show",
+        "title": "Muž v domácnosti",
+        "year": 2021,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/yv5dLSRPbWlivdY7TQG8ZPB8NiL.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p233418": {
     "name": "Patrick Reams",
     "img": null,
@@ -428505,6 +428529,26 @@
         "year": 2017,
         "score": 66,
         "poster": "https://image.tmdb.org/t/p/w342/5TgdridU2w1pVsbQB2pt1xvazBX.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3906599": {
+    "name": "Brandon Macpherson",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st260458",
+        "type": "show",
+        "title": "Dospělost",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
         "roles": [
           "actor"
         ]

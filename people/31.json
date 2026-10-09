@@ -7150,23 +7150,23 @@
     "age": 50,
     "works": [
       {
-        "id": "st293608",
-        "type": "show",
-        "title": "Slečna Hongová v utajení",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/nJ0gSaXfoiPFngy1ulCCuxsKt0q.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st289424",
         "type": "show",
         "title": "모두가 자신의 무가치함과 싸우고 있다",
         "year": 2026,
         "score": 85,
         "poster": "https://image.tmdb.org/t/p/w342/pdxOM4FIGRykIv6KxF648fG9bor.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st293608",
+        "type": "show",
+        "title": "Slečna Hongová v utajení",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/nJ0gSaXfoiPFngy1ulCCuxsKt0q.jpg",
         "roles": [
           "actor"
         ]
@@ -266516,6 +266516,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1244523",
+        "type": "movie",
+        "title": "Beware Boiúna",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/uW5YMPxJUzT9bkafrCKHXjPTCoQ.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
         "id": "mt1085103",
         "type": "movie",
         "title": "Hodiny",
@@ -286224,23 +286235,23 @@
     "age": 53,
     "works": [
       {
-        "id": "st298610",
-        "type": "show",
-        "title": "오싹한 연애",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st303143",
         "type": "show",
         "title": "My Royal Nemesis",
         "year": 2026,
         "score": 75,
         "poster": "https://image.tmdb.org/t/p/w342/u2cX3CVzUZLIGVwd9HB7bUhE7OP.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st298610",
+        "type": "show",
+        "title": "오싹한 연애",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
         "roles": [
           "actor"
         ]
@@ -318181,6 +318192,17 @@
     "age": 51,
     "works": [
       {
+        "id": "st314784",
+        "type": "show",
+        "title": "로맨스의 절댓값",
+        "year": 2026,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/ghOiXHwu16X5saCh3BgK5OY11cC.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt965094",
         "type": "movie",
         "title": "Pilot",
@@ -347545,6 +347567,48 @@
       }
     ]
   },
+  "p2675210": {
+    "name": "Aiden Stoxx",
+    "img": "/42xffUpYAlk6tHz4ee7Z3rqsbLr.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1148365",
+        "type": "movie",
+        "title": "Matchbox the Movie",
+        "year": 2026,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/lFKA4GMz36dImEy3DQPdPF7G4V9.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st117488",
+        "type": "show",
+        "title": "Yellowjackets",
+        "year": 2021,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/xRnGrn7Z7SC0KIBodocoU1QgDZF.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st89233",
+        "type": "show",
+        "title": "Away",
+        "year": 2020,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/lkT776mSvQ9wZ8wkYsnpQuogp10.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2898048": {
     "name": "Nathan Lam",
     "img": null,
@@ -352468,6 +352532,37 @@
         "year": 2011,
         "score": 63,
         "poster": "https://image.tmdb.org/t/p/w342/4Z3iwSpudLcqSMSZXSUy2avk1Rf.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1159872": {
+    "name": "Nuria Mencía",
+    "img": "/vmgSmyVJTbn9W9VL7x0a1u3Zq9Q.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1422041",
+        "type": "movie",
+        "title": "La bola negra",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/4omaYktw4VYkk5Tkq7rmUsWnQa5.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st93878",
+        "type": "show",
+        "title": "Criminal: Španělsko",
+        "year": 2019,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/dLXoEooo1ocH1qQGjvgD1ywsX4R.jpg",
         "roles": [
           "actor"
         ]
@@ -712840,6 +712935,68 @@
       }
     ]
   },
+  "p2302189": {
+    "name": "No Eul",
+    "img": "/uBbkTzzBgTDQcDZsYtKEH64sWEY.jpg",
+    "birthday": "1989-05-10",
+    "deathday": null,
+    "age": 37,
+    "works": [
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3559720": {
+    "name": "Jo Ji-seung",
+    "img": "/fsyCbn3wx1IVBCsa5dPagx5QFl8.jpg",
+    "birthday": "1991-01-22",
+    "deathday": null,
+    "age": 35,
+    "works": [
+      {
+        "id": "st137040",
+        "type": "show",
+        "title": "Rytíř v černém",
+        "year": 2023,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/jdPFCyJGaU4mZWXktwTcFb1sBwf.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st99047",
+        "type": "show",
+        "title": "Obrazy z mládí",
+        "year": 2020,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/gDWva9h1wHz40wXvOTfpTNM3ws8.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2534630": {
     "name": "Kazuki Ura",
     "img": "/7eUgENWREmWSMnLPUFCQhvUSpdI.jpg",
@@ -712982,159 +713139,6 @@
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2524257": {
-    "name": "Nobushige Suematsu",
-    "img": "/tJcw8M8WNPGtHdQKU6eLLooDy1E.jpg",
-    "birthday": "1983-01-30",
-    "deathday": null,
-    "age": 43,
-    "works": [
-      {
-        "id": "st90296",
-        "type": "show",
-        "title": "Tokyo Vice",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st94659",
-        "type": "show",
-        "title": "Giri / Haji",
-        "year": 2019,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/mOeqBvuGOcq0eN1ssGCcRtWA7XW.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1560393": {
-    "name": "Kensei Mikami",
-    "img": "/wI2KYEK1bnxbh3jn10vuhb9uuCw.jpg",
-    "birthday": "1984-04-02",
-    "deathday": null,
-    "age": 42,
-    "works": [
-      {
-        "id": "st90296",
-        "type": "show",
-        "title": "Tokyo Vice",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3520890": {
-    "name": "Moon Seo-Youn",
-    "img": "/fjWXFWrT9KRFcvlxpSqPQJhnaMs.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st136369",
-        "type": "show",
-        "title": "Zítra je taky den",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4059087": {
-    "name": "Jung Se-Hyun",
-    "img": "/tPtYtc6t9dO747q4etbbeU6EhBw.jpg",
-    "birthday": "1998-09-08",
-    "deathday": null,
-    "age": 28,
-    "works": [
-      {
-        "id": "st235577",
-        "type": "show",
-        "title": "Soudce z pekla",
-        "year": 2024,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/4rZfFtluuNbBnj2ziadDVaiDZMl.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st210702",
-        "type": "show",
-        "title": "Revenant",
-        "year": 2023,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/uLqu0gCPKyC7IXCh9mTrkaXPBD8.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st136369",
-        "type": "show",
-        "title": "Zítra je taky den",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4059197": {
-    "name": "Yoo Sun-ho",
-    "img": "/uMh6kkw7rds6gb2RXgZWnf3qKU9.jpg",
-    "birthday": "1983-12-16",
-    "deathday": null,
-    "age": 42,
-    "works": [
-      {
-        "id": "st136369",
-        "type": "show",
-        "title": "Zítra je taky den",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4059241": {
-    "name": "Baek Jin-wook",
-    "img": "/vGS4dDTzRhu6RRiVnhrOl8ENVxT.jpg",
-    "birthday": "1993-12-02",
-    "deathday": null,
-    "age": 32,
-    "works": [
-      {
-        "id": "st136369",
-        "type": "show",
-        "title": "Zítra je taky den",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
         "roles": [
           "actor"
         ]
@@ -723964,6 +723968,48 @@
       }
     ]
   },
+  "p4059087": {
+    "name": "Jung Se-Hyun",
+    "img": "/tPtYtc6t9dO747q4etbbeU6EhBw.jpg",
+    "birthday": "1998-09-08",
+    "deathday": null,
+    "age": 28,
+    "works": [
+      {
+        "id": "st235577",
+        "type": "show",
+        "title": "Soudce z pekla",
+        "year": 2024,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/4rZfFtluuNbBnj2ziadDVaiDZMl.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st210702",
+        "type": "show",
+        "title": "Revenant",
+        "year": 2023,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/uLqu0gCPKyC7IXCh9mTrkaXPBD8.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st136369",
+        "type": "show",
+        "title": "Zítra je taky den",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p4288283": {
     "name": "Lee Won-hee",
     "img": "/gG6B5PMlHqEQnQvo6tBfmXhxfWU.jpg",
@@ -727921,48 +727967,6 @@
       }
     ]
   },
-  "p3559720": {
-    "name": "Jo Ji-seung",
-    "img": "/fsyCbn3wx1IVBCsa5dPagx5QFl8.jpg",
-    "birthday": "1991-01-22",
-    "deathday": null,
-    "age": 35,
-    "works": [
-      {
-        "id": "st137040",
-        "type": "show",
-        "title": "Rytíř v černém",
-        "year": 2023,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/jdPFCyJGaU4mZWXktwTcFb1sBwf.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st99047",
-        "type": "show",
-        "title": "Obrazy z mládí",
-        "year": 2020,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/gDWva9h1wHz40wXvOTfpTNM3ws8.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1489520": {
     "name": "Yoo Jang-young",
     "img": "/zMQC2OBuvDvLweN1EJM7oU8CmnI.jpg",
@@ -729543,6 +729547,26 @@
         "year": 2023,
         "score": null,
         "poster": "",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1645115": {
+    "name": "Patrycja Trzoch",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st200908",
+        "type": "show",
+        "title": "Měli jsme štěstí",
+        "year": 2024,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/iHvsIKCy4Lk3faZYOfyONOzuRFV.jpg",
         "roles": [
           "actor"
         ]
@@ -737930,68 +737954,6 @@
       }
     ]
   },
-  "p4899861": {
-    "name": "Sin Woo-cheol",
-    "img": null,
-    "birthday": "1977-02-28",
-    "deathday": null,
-    "age": 49,
-    "works": [
-      {
-        "id": "st298610",
-        "type": "show",
-        "title": "오싹한 연애",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2565298": {
-    "name": "Yoo Hyun-jong",
-    "img": "/oXIrsms449MKkFvd8pH5dhsFgoZ.jpg",
-    "birthday": "1991-06-11",
-    "deathday": null,
-    "age": 35,
-    "works": [
-      {
-        "id": "st298610",
-        "type": "show",
-        "title": "오싹한 연애",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st235355",
-        "type": "show",
-        "title": "Nemocniční manuál",
-        "year": 2025,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/oXaMHOQGx2V4HwoBa0IrouBe1yb.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st215720",
-        "type": "show",
-        "title": "Královna slz",
-        "year": 2024,
-        "score": 82,
-        "poster": "https://image.tmdb.org/t/p/w342/3x8GHyMTMsuXVX8pZ1OhUUHgOBx.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p2647688": {
     "name": "Dru Perez",
     "img": null,
@@ -741277,6 +741239,117 @@
       }
     ]
   },
+  "p2524257": {
+    "name": "Nobushige Suematsu",
+    "img": "/tJcw8M8WNPGtHdQKU6eLLooDy1E.jpg",
+    "birthday": "1983-01-30",
+    "deathday": null,
+    "age": 43,
+    "works": [
+      {
+        "id": "st90296",
+        "type": "show",
+        "title": "Tokyo Vice",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st94659",
+        "type": "show",
+        "title": "Giri / Haji",
+        "year": 2019,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/mOeqBvuGOcq0eN1ssGCcRtWA7XW.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1560393": {
+    "name": "Kensei Mikami",
+    "img": "/wI2KYEK1bnxbh3jn10vuhb9uuCw.jpg",
+    "birthday": "1984-04-02",
+    "deathday": null,
+    "age": 42,
+    "works": [
+      {
+        "id": "st90296",
+        "type": "show",
+        "title": "Tokyo Vice",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3520890": {
+    "name": "Moon Seo-Youn",
+    "img": "/fjWXFWrT9KRFcvlxpSqPQJhnaMs.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st136369",
+        "type": "show",
+        "title": "Zítra je taky den",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4059197": {
+    "name": "Yoo Sun-ho",
+    "img": "/uMh6kkw7rds6gb2RXgZWnf3qKU9.jpg",
+    "birthday": "1983-12-16",
+    "deathday": null,
+    "age": 42,
+    "works": [
+      {
+        "id": "st136369",
+        "type": "show",
+        "title": "Zítra je taky den",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4059241": {
+    "name": "Baek Jin-wook",
+    "img": "/vGS4dDTzRhu6RRiVnhrOl8ENVxT.jpg",
+    "birthday": "1993-12-02",
+    "deathday": null,
+    "age": 32,
+    "works": [
+      {
+        "id": "st136369",
+        "type": "show",
+        "title": "Zítra je taky den",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2266230": {
     "name": "Kim Young-sam",
     "img": "/dWpXFOPH44VPajj0BkFNDxP7A93.jpg",
@@ -741362,26 +741435,6 @@
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/xvr3WrwAQMlcb00OZEos9nLekTE.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2302189": {
-    "name": "No Eul",
-    "img": "/uBbkTzzBgTDQcDZsYtKEH64sWEY.jpg",
-    "birthday": "1989-05-10",
-    "deathday": null,
-    "age": 37,
-    "works": [
-      {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
         "roles": [
           "actor"
         ]
@@ -742743,6 +742796,48 @@
       }
     ]
   },
+  "p2565298": {
+    "name": "Yoo Hyun-jong",
+    "img": "/oXIrsms449MKkFvd8pH5dhsFgoZ.jpg",
+    "birthday": "1991-06-11",
+    "deathday": null,
+    "age": 35,
+    "works": [
+      {
+        "id": "st298610",
+        "type": "show",
+        "title": "오싹한 연애",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st235355",
+        "type": "show",
+        "title": "Nemocniční manuál",
+        "year": 2025,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/oXaMHOQGx2V4HwoBa0IrouBe1yb.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st215720",
+        "type": "show",
+        "title": "Královna slz",
+        "year": 2024,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/3x8GHyMTMsuXVX8pZ1OhUUHgOBx.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p3515830": {
     "name": "Viktória Bauer",
     "img": null,
@@ -743130,26 +743225,6 @@
         "year": 2024,
         "score": 77,
         "poster": "https://image.tmdb.org/t/p/w342/6mRwM5lrwwYRlwpyTxkNnTTPfWO.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1645115": {
-    "name": "Patrycja Trzoch",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st200908",
-        "type": "show",
-        "title": "Měli jsme štěstí",
-        "year": 2024,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/iHvsIKCy4Lk3faZYOfyONOzuRFV.jpg",
         "roles": [
           "actor"
         ]
@@ -744771,6 +744846,26 @@
         "year": 2026,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/mDugtY17uzG4r6yU0pRgjawcfSA.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4899861": {
+    "name": "Sin Woo-cheol",
+    "img": null,
+    "birthday": "1977-02-28",
+    "deathday": null,
+    "age": 49,
+    "works": [
+      {
+        "id": "st298610",
+        "type": "show",
+        "title": "오싹한 연애",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
         "roles": [
           "actor"
         ]
@@ -759983,26 +760078,6 @@
       }
     ]
   },
-  "p1159872": {
-    "name": "Nuria Mencía",
-    "img": "/vmgSmyVJTbn9W9VL7x0a1u3Zq9Q.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st93878",
-        "type": "show",
-        "title": "Criminal: Španělsko",
-        "year": 2019,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/dLXoEooo1ocH1qQGjvgD1ywsX4R.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1772671": {
     "name": "Merigan Mulhern",
     "img": null,
@@ -764685,37 +764760,6 @@
     "deathday": null,
     "age": null,
     "works": [
-      {
-        "id": "st89233",
-        "type": "show",
-        "title": "Away",
-        "year": 2020,
-        "score": 66,
-        "poster": "https://image.tmdb.org/t/p/w342/lkT776mSvQ9wZ8wkYsnpQuogp10.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2675210": {
-    "name": "Aiden Stoxx",
-    "img": "/42xffUpYAlk6tHz4ee7Z3rqsbLr.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st117488",
-        "type": "show",
-        "title": "Yellowjackets",
-        "year": 2021,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/xRnGrn7Z7SC0KIBodocoU1QgDZF.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
       {
         "id": "st89233",
         "type": "show",
