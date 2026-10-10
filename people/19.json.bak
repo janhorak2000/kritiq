@@ -84731,23 +84731,23 @@
         ]
       },
       {
-        "id": "st119845",
-        "type": "show",
-        "title": "Power Book IV: Force",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/yzL4Tqbw2JA9MCsHJWFC4xV1IYU.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st94997",
         "type": "show",
         "title": "Rod Draka",
         "year": 2022,
         "score": 83,
         "poster": "https://image.tmdb.org/t/p/w342/qT9apXmRW5SrHIb3a2mGlTQ3tBJ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st119845",
+        "type": "show",
+        "title": "Power Book IV: Force",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/yzL4Tqbw2JA9MCsHJWFC4xV1IYU.jpg",
         "roles": [
           "actor"
         ]
@@ -90469,17 +90469,6 @@
         ]
       },
       {
-        "id": "st81723",
-        "type": "show",
-        "title": "Pozlacený věk",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/msO0qHSe2yrpdkLLoeg0s1Wiiu9.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st116799",
         "type": "show",
         "title": "Advokát",
@@ -90508,6 +90497,17 @@
         "year": 2022,
         "score": 83,
         "poster": "https://image.tmdb.org/t/p/w342/6B9hTge98t52bQofyvs1M370k7n.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st81723",
+        "type": "show",
+        "title": "Pozlacený věk",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/msO0qHSe2yrpdkLLoeg0s1Wiiu9.jpg",
         "roles": [
           "actor"
         ]
@@ -205011,6 +205011,17 @@
         "year": 2026,
         "score": 60,
         "poster": "https://image.tmdb.org/t/p/w342/wYCJdVniQwV7x61g37ffb6bX99Q.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1422041",
+        "type": "movie",
+        "title": "La bola negra",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/4omaYktw4VYkk5Tkq7rmUsWnQa5.jpg",
         "roles": [
           "actor"
         ]
@@ -369872,37 +369883,6 @@
       }
     ]
   },
-  "p1707462": {
-    "name": "Kim Yong-rim",
-    "img": "/goBfXmVKIrp5g4CwfPESRNOzn4w.jpg",
-    "birthday": "1940-03-03",
-    "deathday": null,
-    "age": 86,
-    "works": [
-      {
-        "id": "st219246",
-        "type": "show",
-        "title": "Dobrá práce",
-        "year": 2025,
-        "score": 90,
-        "poster": "https://image.tmdb.org/t/p/w342/koMkV9qm0PEZHDmX5dRpBpMH1FY.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st136369",
-        "type": "show",
-        "title": "Zítra je taky den",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p583036": {
     "name": "Rasmus Lyberth",
     "img": "/20DDZtbMJeSPzMdQDhVoLBXVy4t.jpg",
@@ -376069,6 +376049,37 @@
         "year": 2021,
         "score": 64,
         "poster": "https://image.tmdb.org/t/p/w342/5OVWXeltSy2ZazkmfMMAPhhwWms.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1707462": {
+    "name": "Kim Yong-rim",
+    "img": "/goBfXmVKIrp5g4CwfPESRNOzn4w.jpg",
+    "birthday": "1940-03-03",
+    "deathday": null,
+    "age": 86,
+    "works": [
+      {
+        "id": "st219246",
+        "type": "show",
+        "title": "Dobrá práce",
+        "year": 2025,
+        "score": 90,
+        "poster": "https://image.tmdb.org/t/p/w342/koMkV9qm0PEZHDmX5dRpBpMH1FY.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st136369",
+        "type": "show",
+        "title": "Zítra je taky den",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
         "roles": [
           "actor"
         ]

@@ -161771,23 +161771,23 @@
         ]
       },
       {
-        "id": "st128098",
-        "type": "show",
-        "title": "Interview with the Vampire",
-        "year": 2022,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/mQ0fbfc5ELwb2zjFZM4uwAnN3ee.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st155537",
         "type": "show",
         "title": "Volavka",
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/waW5NMQmpd3Pox7lHGjXZt14Xrp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st128098",
+        "type": "show",
+        "title": "Interview with the Vampire",
+        "year": 2022,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/mQ0fbfc5ELwb2zjFZM4uwAnN3ee.jpg",
         "roles": [
           "actor"
         ]
@@ -162775,6 +162775,17 @@
     "deathday": null,
     "age": 58,
     "works": [
+      {
+        "id": "mt1422041",
+        "type": "movie",
+        "title": "La bola negra",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/4omaYktw4VYkk5Tkq7rmUsWnQa5.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt1440144",
         "type": "movie",
@@ -204518,6 +204529,48 @@
       }
     ]
   },
+  "p3070857": {
+    "name": "Carlos González",
+    "img": "/bPag2U3ei3Wb2KfSXEQGDY5a8pi.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1422041",
+        "type": "movie",
+        "title": "La bola negra",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/4omaYktw4VYkk5Tkq7rmUsWnQa5.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st218428",
+        "type": "show",
+        "title": "Zamilovávání",
+        "year": 2023,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/8x9n8a83vRbTDDhI7u5QHFPfyjs.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st100834",
+        "type": "show",
+        "title": "Veneno",
+        "year": 2020,
+        "score": 86,
+        "poster": "https://image.tmdb.org/t/p/w342/cXVbEJ88JmIkibl84F80irRVe6.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p19073": {
     "name": "Francine Racette",
     "img": "/nU2ExfaGIuRfh9OoZMTUpk5Yh60.jpg",
@@ -209408,6 +209461,17 @@
         ]
       },
       {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st155226",
         "type": "show",
         "title": "Velká huba",
@@ -209425,17 +209489,6 @@
         "year": 2022,
         "score": 85,
         "poster": "https://image.tmdb.org/t/p/w342/yv57TccCkgdy3St7rspBPKROeRK.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
         "roles": [
           "actor"
         ]
@@ -355050,6 +355103,70 @@
       }
     ]
   },
+  "p3979491": {
+    "name": "Shin Dong-eun",
+    "img": "/bvQVqxofyCi5LYPodLzLGSaNIaQ.jpg",
+    "birthday": "1976-06-09",
+    "deathday": null,
+    "age": 50,
+    "works": [
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st155226",
+        "type": "show",
+        "title": "Velká huba",
+        "year": 2022,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/8HTCtxyJWyjVMnxF14tSWJ0GYj4.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st152511",
+        "type": "show",
+        "title": "Předpověď lásky a počasí",
+        "year": 2022,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/vg8ufRo1TKtjV19zkYWc7mTzC7C.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st197067",
+        "type": "show",
+        "title": "Výjimečná právnička U Jong-u",
+        "year": 2022,
+        "score": 85,
+        "poster": "https://image.tmdb.org/t/p/w342/yv57TccCkgdy3St7rspBPKROeRK.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st99491",
+        "type": "show",
+        "title": "Tajemný pop-up bar",
+        "year": 2020,
+        "score": 79,
+        "poster": "https://image.tmdb.org/t/p/w342/4xjtsQgxLkVKfkig5p6MoVoz6PH.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p3195927": {
     "name": "Jun Murayama",
     "img": null,
@@ -355066,26 +355183,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
         "roles": [
           "composer"
-        ]
-      }
-    ]
-  },
-  "p2418173": {
-    "name": "Kôichirô Kanzaki",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st90296",
-        "type": "show",
-        "title": "Tokyo Vice",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
-        "roles": [
-          "actor"
         ]
       }
     ]
@@ -355336,70 +355433,6 @@
         "year": 2022,
         "score": 79,
         "poster": "https://image.tmdb.org/t/p/w342/dDvTNR23umvRansPewY1FoWb6zk.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3979491": {
-    "name": "Shin Dong-eun",
-    "img": "/bvQVqxofyCi5LYPodLzLGSaNIaQ.jpg",
-    "birthday": "1976-06-09",
-    "deathday": null,
-    "age": 50,
-    "works": [
-      {
-        "id": "st155226",
-        "type": "show",
-        "title": "Velká huba",
-        "year": 2022,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/8HTCtxyJWyjVMnxF14tSWJ0GYj4.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st152511",
-        "type": "show",
-        "title": "Předpověď lásky a počasí",
-        "year": 2022,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/vg8ufRo1TKtjV19zkYWc7mTzC7C.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st197067",
-        "type": "show",
-        "title": "Výjimečná právnička U Jong-u",
-        "year": 2022,
-        "score": 85,
-        "poster": "https://image.tmdb.org/t/p/w342/yv57TccCkgdy3St7rspBPKROeRK.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st99491",
-        "type": "show",
-        "title": "Tajemný pop-up bar",
-        "year": 2020,
-        "score": 79,
-        "poster": "https://image.tmdb.org/t/p/w342/4xjtsQgxLkVKfkig5p6MoVoz6PH.jpg",
         "roles": [
           "actor"
         ]
@@ -359095,37 +359128,6 @@
       }
     ]
   },
-  "p3070857": {
-    "name": "Carlos González",
-    "img": "/bPag2U3ei3Wb2KfSXEQGDY5a8pi.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st218428",
-        "type": "show",
-        "title": "Zamilovávání",
-        "year": 2023,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/8x9n8a83vRbTDDhI7u5QHFPfyjs.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st100834",
-        "type": "show",
-        "title": "Veneno",
-        "year": 2020,
-        "score": 86,
-        "poster": "https://image.tmdb.org/t/p/w342/cXVbEJ88JmIkibl84F80irRVe6.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1811490": {
     "name": "Eeva Putro",
     "img": "/jy1kjrGc6wZglry875Xv3qHjMkJ.jpg",
@@ -359415,6 +359417,26 @@
         "poster": "https://image.tmdb.org/t/p/w342/gc7PtkwEZnrEVfh6nnLSpOJL0R6.jpg",
         "roles": [
           "actor"
+        ]
+      }
+    ]
+  },
+  "p1828089": {
+    "name": "Erica Lipez",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st200908",
+        "type": "show",
+        "title": "Měli jsme štěstí",
+        "year": 2024,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/iHvsIKCy4Lk3faZYOfyONOzuRFV.jpg",
+        "roles": [
+          "writer"
         ]
       }
     ]
@@ -361368,6 +361390,26 @@
       }
     ]
   },
+  "p6071734": {
+    "name": "Neve Gordon",
+    "img": "/yknxvrrBg9pAT8YZ9Uw3S7aqY4a.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st255661",
+        "type": "show",
+        "title": "Mladý Sherlock",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/7qHP3oZh9sZGM4bRw88iABg3SwN.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2637370": {
     "name": "Genevieve Kane",
     "img": null,
@@ -362096,6 +362138,26 @@
       }
     ]
   },
+  "p2418173": {
+    "name": "Kôichirô Kanzaki",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st90296",
+        "type": "show",
+        "title": "Tokyo Vice",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p4559191": {
     "name": "Ryouga Imai",
     "img": "/9aED73Blq3rXG3GWm1buTDQA1AG.jpg",
@@ -362600,26 +362662,6 @@
       }
     ]
   },
-  "p1828089": {
-    "name": "Erica Lipez",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st200908",
-        "type": "show",
-        "title": "Měli jsme štěstí",
-        "year": 2024,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/iHvsIKCy4Lk3faZYOfyONOzuRFV.jpg",
-        "roles": [
-          "writer"
-        ]
-      }
-    ]
-  },
   "p3718076": {
     "name": "Brian Dives",
     "img": null,
@@ -363100,26 +363142,6 @@
         "year": 2026,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/thrGp18vsQoGaQFdoDc9y3xgDy7.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6071734": {
-    "name": "Neve Gordon",
-    "img": "/yknxvrrBg9pAT8YZ9Uw3S7aqY4a.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st255661",
-        "type": "show",
-        "title": "Mladý Sherlock",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/7qHP3oZh9sZGM4bRw88iABg3SwN.jpg",
         "roles": [
           "actor"
         ]

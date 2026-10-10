@@ -7176,6 +7176,17 @@
     "age": 61,
     "works": [
       {
+        "id": "mt1148365",
+        "type": "movie",
+        "title": "Matchbox the Movie",
+        "year": 2026,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/lFKA4GMz36dImEy3DQPdPF7G4V9.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt467905",
         "type": "movie",
         "title": "Rodina na zabití",
@@ -104222,23 +104233,23 @@
         ]
       },
       {
-        "id": "st247704",
-        "type": "show",
-        "title": "Noční let",
-        "year": 2024,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/7gQztRBl0zlTmPmc89BP26gQY97.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st200908",
         "type": "show",
         "title": "Měli jsme štěstí",
         "year": 2024,
         "score": 77,
         "poster": "https://image.tmdb.org/t/p/w342/iHvsIKCy4Lk3faZYOfyONOzuRFV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st247704",
+        "type": "show",
+        "title": "Noční let",
+        "year": 2024,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/7gQztRBl0zlTmPmc89BP26gQY97.jpg",
         "roles": [
           "actor"
         ]
@@ -233868,17 +233879,6 @@
     "age": 61,
     "works": [
       {
-        "id": "st298610",
-        "type": "show",
-        "title": "오싹한 연애",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st280948",
         "type": "show",
         "title": "스프링 피버",
@@ -233907,6 +233907,17 @@
         "year": 2026,
         "score": 75,
         "poster": "https://image.tmdb.org/t/p/w342/ny8zYj40mWGTgKJi1a8hjNFUj9n.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st298610",
+        "type": "show",
+        "title": "오싹한 연애",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
         "roles": [
           "actor"
         ]
@@ -301963,6 +301974,17 @@
     "age": 32,
     "works": [
       {
+        "id": "st305644",
+        "type": "show",
+        "title": "포핸즈",
+        "year": 2026,
+        "score": 87,
+        "poster": "https://image.tmdb.org/t/p/w342/sdvxrJMzACBUG87YS1YYKmRzTN8.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt921436",
         "type": "movie",
         "title": "Talju",
@@ -304735,23 +304757,23 @@
         ]
       },
       {
-        "id": "st136369",
-        "type": "show",
-        "title": "Zítra je taky den",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st123349",
         "type": "show",
         "title": "Melodie kouzel",
         "year": 2022,
         "score": 75,
         "poster": "https://image.tmdb.org/t/p/w342/epxfP6YaUEOflSuKMAT6LhdPiqk.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st136369",
+        "type": "show",
+        "title": "Zítra je taky den",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
         "roles": [
           "actor"
         ]
@@ -328035,6 +328057,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1244523",
+        "type": "movie",
+        "title": "Beware Boiúna",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/uW5YMPxJUzT9bkafrCKHXjPTCoQ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt757725",
         "type": "movie",
         "title": "Krycí oddíl",
@@ -336427,6 +336460,26 @@
         "year": 1989,
         "score": 86,
         "poster": "https://image.tmdb.org/t/p/w342/6f4IVfbn8knb7RjdZlGLuW5guDc.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6516695": {
+    "name": "Maria Barrier",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1422041",
+        "type": "movie",
+        "title": "La bola negra",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/4omaYktw4VYkk5Tkq7rmUsWnQa5.jpg",
         "roles": [
           "actor"
         ]
@@ -410121,23 +410174,23 @@
     "age": 25,
     "works": [
       {
-        "id": "st81723",
-        "type": "show",
-        "title": "Pozlacený věk",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/msO0qHSe2yrpdkLLoeg0s1Wiiu9.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st81322",
         "type": "show",
         "title": "Zakletý v čase",
         "year": 2022,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/rwPIGO0tCcCZKWHwTOHOu5FGj0k.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st81723",
+        "type": "show",
+        "title": "Pozlacený věk",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/msO0qHSe2yrpdkLLoeg0s1Wiiu9.jpg",
         "roles": [
           "actor"
         ]
@@ -434577,6 +434630,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "st305644",
+        "type": "show",
+        "title": "포핸즈",
+        "year": 2026,
+        "score": 87,
+        "poster": "https://image.tmdb.org/t/p/w342/sdvxrJMzACBUG87YS1YYKmRzTN8.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "st276161",
         "type": "show",
@@ -668948,6 +669012,207 @@
       }
     ]
   },
+  "p3167096": {
+    "name": "Michael Francis Horn",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st155537",
+        "type": "show",
+        "title": "Volavka",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/waW5NMQmpd3Pox7lHGjXZt14Xrp.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1806418": {
+    "name": "Santo Panzarella",
+    "img": "/85V56c6fUgeTrzttguiHowzFcpT.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st155537",
+        "type": "show",
+        "title": "Volavka",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/waW5NMQmpd3Pox7lHGjXZt14Xrp.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3981074": {
+    "name": "Bae Yu-ri",
+    "img": "/wEFmhYZ8kvv64mQY5Wo04yiLFxf.jpg",
+    "birthday": "1984-02-25",
+    "deathday": null,
+    "age": 42,
+    "works": [
+      {
+        "id": "st229891",
+        "type": "show",
+        "title": "Jak tlumočit lásku?",
+        "year": 2026,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/ePz0D6B6wbxoLHsUtcaqfGx7E41.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st129888",
+        "type": "show",
+        "title": "Pětadvacet jednadvacet",
+        "year": 2022,
+        "score": 85,
+        "poster": "https://image.tmdb.org/t/p/w342/706Ar36Q1XT3056JQHoYpJbh6W0.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st99048",
+        "type": "show",
+        "title": "Start-Up",
+        "year": 2020,
+        "score": 79,
+        "poster": "https://image.tmdb.org/t/p/w342/hq55ekoWj3zHfBM8RoyxYcw64l3.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st96462",
+        "type": "show",
+        "title": "Dotkni se mých ran",
+        "year": 2020,
+        "score": 85,
+        "poster": "https://image.tmdb.org/t/p/w342/HKVk1KiNYzIiRQJQOMZfSeZYvC.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3668278": {
+    "name": "Park Sang-hyeon",
+    "img": "/vnPsnKzqtKM2W5dfs7OM6v062d4.jpg",
+    "birthday": "1991-11-07",
+    "deathday": null,
+    "age": 34,
+    "works": [
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st155226",
+        "type": "show",
+        "title": "Velká huba",
+        "year": 2022,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/8HTCtxyJWyjVMnxF14tSWJ0GYj4.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st152511",
+        "type": "show",
+        "title": "Předpověď lásky a počasí",
+        "year": 2022,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/vg8ufRo1TKtjV19zkYWc7mTzC7C.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st116386",
+        "type": "show",
+        "title": "Doom at Your Service",
+        "year": 2021,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/9szerhScQy1QVNgkTmAwsF62nGo.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st108284",
+        "type": "show",
+        "title": "Tale of the Nine Tailed",
+        "year": 2020,
+        "score": 79,
+        "poster": "https://image.tmdb.org/t/p/w342/toZBZ9XS9U3Xle13ZobiUf5vpGB.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st99048",
+        "type": "show",
+        "title": "Start-Up",
+        "year": 2020,
+        "score": 79,
+        "poster": "https://image.tmdb.org/t/p/w342/hq55ekoWj3zHfBM8RoyxYcw64l3.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st99047",
+        "type": "show",
+        "title": "Obrazy z mládí",
+        "year": 2020,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/gDWva9h1wHz40wXvOTfpTNM3ws8.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st113268",
+        "type": "show",
+        "title": "Záhadný lovec",
+        "year": 2020,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/xwXgYXqxLRAYfVGUaS1STEFnmzZ.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2015132": {
     "name": "Teppei Uenishi",
     "img": "/ytMeFdygmOHwZzLoDIJImGt5Ylk.jpg",
@@ -669048,325 +669313,6 @@
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4529765": {
-    "name": "Kaho Yamasaki",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st90296",
-        "type": "show",
-        "title": "Tokyo Vice",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2722773": {
-    "name": "Aver Hamilton II",
-    "img": "/coHVEUbVnypwnI7cUAuSLKj3aPx.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st90296",
-        "type": "show",
-        "title": "Tokyo Vice",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4529754": {
-    "name": "Keiko Nishio",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st90296",
-        "type": "show",
-        "title": "Tokyo Vice",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4059031": {
-    "name": "Kim Sa-Rang",
-    "img": "/6W9ASmOelYeCWu4rPdyx5rfqSpN.jpg",
-    "birthday": "1984-01-13",
-    "deathday": null,
-    "age": 42,
-    "works": [
-      {
-        "id": "st136369",
-        "type": "show",
-        "title": "Zítra je taky den",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4059141": {
-    "name": "Hong A-ron",
-    "img": "/qedBWEuPNrmBv0FL54q61UVR0ab.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st210586",
-        "type": "show",
-        "title": "Bo Ra! Deborah",
-        "year": 2023,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/vyfduo2Qgi3S1VBkkod0Eq7f5kD.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st201019",
-        "type": "show",
-        "title": "Tale of the Nine-Tailed 1938",
-        "year": 2023,
-        "score": 88,
-        "poster": "https://image.tmdb.org/t/p/w342/gho6kNdp5C9yB40a05sKZ9fMNBz.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st136369",
-        "type": "show",
-        "title": "Zítra je taky den",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st158865",
-        "type": "show",
-        "title": "Blind",
-        "year": 2022,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/x6WTJbPHR4RsPeQIveFEqgKVss9.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st157161",
-        "type": "show",
-        "title": "Stínový detektiv",
-        "year": 2022,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/yBwjikdOaLB3yhpipGwdNdlWXmw.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4059185": {
-    "name": "Kim Jung-Do",
-    "img": "/wjPtZJt6biTr8Gtyu8QIXSw2XTl.jpg",
-    "birthday": "1982-06-14",
-    "deathday": null,
-    "age": 44,
-    "works": [
-      {
-        "id": "st136369",
-        "type": "show",
-        "title": "Zítra je taky den",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3579145": {
-    "name": "Park Yoon-young",
-    "img": "/1dNCZZ1Re2mHo7K2405kabqIdek.jpg",
-    "birthday": "2004-03-08",
-    "deathday": null,
-    "age": 22,
-    "works": [
-      {
-        "id": "st136369",
-        "type": "show",
-        "title": "Zítra je taky den",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st125437",
-        "type": "show",
-        "title": "Badmintonový sen",
-        "year": 2021,
-        "score": 53,
-        "poster": "https://image.tmdb.org/t/p/w342/2WHTFmDXsBvjTHdzDhvKwKTekCc.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2976059": {
-    "name": "Claybourne Elder",
-    "img": "/3gBqOXCzBM3VAki26guiAePhlJn.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st81723",
-        "type": "show",
-        "title": "Pozlacený věk",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/msO0qHSe2yrpdkLLoeg0s1Wiiu9.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2039893": {
-    "name": "Peter Bradbury",
-    "img": "/rzzD1DSSU5pnBPN7AjM8H8u1Fc6.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st81723",
-        "type": "show",
-        "title": "Pozlacený věk",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/msO0qHSe2yrpdkLLoeg0s1Wiiu9.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st68018",
-        "type": "show",
-        "title": "Černá listina: Vykoupení",
-        "year": 2017,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/9h3C0A6YlQUR0712B8I0AAQQT67.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st64433",
-        "type": "show",
-        "title": "Špinaví poldové",
-        "year": 2016,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/wxg8lxFpandLQtOiHRnTEQf7oeL.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st46952",
-        "type": "show",
-        "title": "Černá listina",
-        "year": 2013,
-        "score": 79,
-        "poster": "https://image.tmdb.org/t/p/w342/tDKIWzGgpy7MCUb2H9hs2SzDoGN.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3159583": {
-    "name": "Blair Ross",
-    "img": null,
-    "birthday": "1956-03-13",
-    "deathday": null,
-    "age": 70,
-    "works": [
-      {
-        "id": "st81723",
-        "type": "show",
-        "title": "Pozlacený věk",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/msO0qHSe2yrpdkLLoeg0s1Wiiu9.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st67697",
-        "type": "show",
-        "title": "Search Party",
-        "year": 2016,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/8ldHjc3Hx29NKK0bfgaYZkIwQWN.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1921148": {
-    "name": "Edward Williams III",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st119845",
-        "type": "show",
-        "title": "Power Book IV: Force",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/yzL4Tqbw2JA9MCsHJWFC4xV1IYU.jpg",
         "roles": [
           "actor"
         ]
@@ -669719,6 +669665,70 @@
         "year": 2022,
         "score": 80,
         "poster": "https://image.tmdb.org/t/p/w342/rE8zEZtwmg6J6zj5wBLciYtnQzc.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4059141": {
+    "name": "Hong A-ron",
+    "img": "/qedBWEuPNrmBv0FL54q61UVR0ab.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st210586",
+        "type": "show",
+        "title": "Bo Ra! Deborah",
+        "year": 2023,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/vyfduo2Qgi3S1VBkkod0Eq7f5kD.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st201019",
+        "type": "show",
+        "title": "Tale of the Nine-Tailed 1938",
+        "year": 2023,
+        "score": 88,
+        "poster": "https://image.tmdb.org/t/p/w342/gho6kNdp5C9yB40a05sKZ9fMNBz.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st158865",
+        "type": "show",
+        "title": "Blind",
+        "year": 2022,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/x6WTJbPHR4RsPeQIveFEqgKVss9.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st157161",
+        "type": "show",
+        "title": "Stínový detektiv",
+        "year": 2022,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/yBwjikdOaLB3yhpipGwdNdlWXmw.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st136369",
+        "type": "show",
+        "title": "Zítra je taky den",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
         "roles": [
           "actor"
         ]
@@ -670340,103 +670350,6 @@
         "year": 2019,
         "score": 87,
         "poster": "https://image.tmdb.org/t/p/w342/mvy18bPg93JNLwTQHHP2ZjPYP0A.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3668278": {
-    "name": "Park Sang-hyeon",
-    "img": "/vnPsnKzqtKM2W5dfs7OM6v062d4.jpg",
-    "birthday": "1991-11-07",
-    "deathday": null,
-    "age": 34,
-    "works": [
-      {
-        "id": "st155226",
-        "type": "show",
-        "title": "Velká huba",
-        "year": 2022,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/8HTCtxyJWyjVMnxF14tSWJ0GYj4.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st152511",
-        "type": "show",
-        "title": "Předpověď lásky a počasí",
-        "year": 2022,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/vg8ufRo1TKtjV19zkYWc7mTzC7C.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st116386",
-        "type": "show",
-        "title": "Doom at Your Service",
-        "year": 2021,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/9szerhScQy1QVNgkTmAwsF62nGo.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st108284",
-        "type": "show",
-        "title": "Tale of the Nine Tailed",
-        "year": 2020,
-        "score": 79,
-        "poster": "https://image.tmdb.org/t/p/w342/toZBZ9XS9U3Xle13ZobiUf5vpGB.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st99048",
-        "type": "show",
-        "title": "Start-Up",
-        "year": 2020,
-        "score": 79,
-        "poster": "https://image.tmdb.org/t/p/w342/hq55ekoWj3zHfBM8RoyxYcw64l3.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st99047",
-        "type": "show",
-        "title": "Obrazy z mládí",
-        "year": 2020,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/gDWva9h1wHz40wXvOTfpTNM3ws8.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st113268",
-        "type": "show",
-        "title": "Záhadný lovec",
-        "year": 2020,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/xwXgYXqxLRAYfVGUaS1STEFnmzZ.jpg",
         "roles": [
           "actor"
         ]
@@ -693726,70 +693639,6 @@
       }
     ]
   },
-  "p3981074": {
-    "name": "Bae Yu-ri",
-    "img": "/wEFmhYZ8kvv64mQY5Wo04yiLFxf.jpg",
-    "birthday": "1984-02-25",
-    "deathday": null,
-    "age": 42,
-    "works": [
-      {
-        "id": "st229891",
-        "type": "show",
-        "title": "Jak tlumočit lásku?",
-        "year": 2026,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/ePz0D6B6wbxoLHsUtcaqfGx7E41.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st129888",
-        "type": "show",
-        "title": "Pětadvacet jednadvacet",
-        "year": 2022,
-        "score": 85,
-        "poster": "https://image.tmdb.org/t/p/w342/706Ar36Q1XT3056JQHoYpJbh6W0.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st99048",
-        "type": "show",
-        "title": "Start-Up",
-        "year": 2020,
-        "score": 79,
-        "poster": "https://image.tmdb.org/t/p/w342/hq55ekoWj3zHfBM8RoyxYcw64l3.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st96462",
-        "type": "show",
-        "title": "Dotkni se mých ran",
-        "year": 2020,
-        "score": 85,
-        "poster": "https://image.tmdb.org/t/p/w342/HKVk1KiNYzIiRQJQOMZfSeZYvC.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p2697121": {
     "name": "Maral Milani",
     "img": null,
@@ -694612,6 +694461,261 @@
       }
     ]
   },
+  "p4529765": {
+    "name": "Kaho Yamasaki",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st90296",
+        "type": "show",
+        "title": "Tokyo Vice",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2722773": {
+    "name": "Aver Hamilton II",
+    "img": "/coHVEUbVnypwnI7cUAuSLKj3aPx.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st90296",
+        "type": "show",
+        "title": "Tokyo Vice",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4529754": {
+    "name": "Keiko Nishio",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st90296",
+        "type": "show",
+        "title": "Tokyo Vice",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4059031": {
+    "name": "Kim Sa-Rang",
+    "img": "/6W9ASmOelYeCWu4rPdyx5rfqSpN.jpg",
+    "birthday": "1984-01-13",
+    "deathday": null,
+    "age": 42,
+    "works": [
+      {
+        "id": "st136369",
+        "type": "show",
+        "title": "Zítra je taky den",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4059185": {
+    "name": "Kim Jung-Do",
+    "img": "/wjPtZJt6biTr8Gtyu8QIXSw2XTl.jpg",
+    "birthday": "1982-06-14",
+    "deathday": null,
+    "age": 44,
+    "works": [
+      {
+        "id": "st136369",
+        "type": "show",
+        "title": "Zítra je taky den",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3579145": {
+    "name": "Park Yoon-young",
+    "img": "/1dNCZZ1Re2mHo7K2405kabqIdek.jpg",
+    "birthday": "2004-03-08",
+    "deathday": null,
+    "age": 22,
+    "works": [
+      {
+        "id": "st136369",
+        "type": "show",
+        "title": "Zítra je taky den",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st125437",
+        "type": "show",
+        "title": "Badmintonový sen",
+        "year": 2021,
+        "score": 53,
+        "poster": "https://image.tmdb.org/t/p/w342/2WHTFmDXsBvjTHdzDhvKwKTekCc.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2976059": {
+    "name": "Claybourne Elder",
+    "img": "/3gBqOXCzBM3VAki26guiAePhlJn.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st81723",
+        "type": "show",
+        "title": "Pozlacený věk",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/msO0qHSe2yrpdkLLoeg0s1Wiiu9.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2039893": {
+    "name": "Peter Bradbury",
+    "img": "/rzzD1DSSU5pnBPN7AjM8H8u1Fc6.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st81723",
+        "type": "show",
+        "title": "Pozlacený věk",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/msO0qHSe2yrpdkLLoeg0s1Wiiu9.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st68018",
+        "type": "show",
+        "title": "Černá listina: Vykoupení",
+        "year": 2017,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/9h3C0A6YlQUR0712B8I0AAQQT67.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st64433",
+        "type": "show",
+        "title": "Špinaví poldové",
+        "year": 2016,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/wxg8lxFpandLQtOiHRnTEQf7oeL.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st46952",
+        "type": "show",
+        "title": "Černá listina",
+        "year": 2013,
+        "score": 79,
+        "poster": "https://image.tmdb.org/t/p/w342/tDKIWzGgpy7MCUb2H9hs2SzDoGN.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3159583": {
+    "name": "Blair Ross",
+    "img": null,
+    "birthday": "1956-03-13",
+    "deathday": null,
+    "age": 70,
+    "works": [
+      {
+        "id": "st81723",
+        "type": "show",
+        "title": "Pozlacený věk",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/msO0qHSe2yrpdkLLoeg0s1Wiiu9.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st67697",
+        "type": "show",
+        "title": "Search Party",
+        "year": 2016,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/8ldHjc3Hx29NKK0bfgaYZkIwQWN.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1921148": {
+    "name": "Edward Williams III",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st119845",
+        "type": "show",
+        "title": "Power Book IV: Force",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/yzL4Tqbw2JA9MCsHJWFC4xV1IYU.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p4200095": {
     "name": "Yoo Dok-hyun",
     "img": "/3q22Kfp4fywXjtc5IkxN49J6LLe.jpg",
@@ -694657,46 +694761,6 @@
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3167096": {
-    "name": "Michael Francis Horn",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st155537",
-        "type": "show",
-        "title": "Volavka",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/waW5NMQmpd3Pox7lHGjXZt14Xrp.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1806418": {
-    "name": "Santo Panzarella",
-    "img": "/85V56c6fUgeTrzttguiHowzFcpT.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st155537",
-        "type": "show",
-        "title": "Volavka",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/waW5NMQmpd3Pox7lHGjXZt14Xrp.jpg",
         "roles": [
           "actor"
         ]
@@ -697090,6 +697154,46 @@
         "year": 2025,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6468196": {
+    "name": "Kang Yu-kyung",
+    "img": "/1iBUydYP5IckZlXS6EXr8bmlQOk.jpg",
+    "birthday": "1979-08-01",
+    "deathday": null,
+    "age": 47,
+    "works": [
+      {
+        "id": "st305644",
+        "type": "show",
+        "title": "포핸즈",
+        "year": 2026,
+        "score": 87,
+        "poster": "https://image.tmdb.org/t/p/w342/sdvxrJMzACBUG87YS1YYKmRzTN8.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5817920": {
+    "name": "Park Hoo",
+    "img": "/gKlDEV4s6uXKmw5M8Ly6R844t1V.jpg",
+    "birthday": "2015-01-01",
+    "deathday": null,
+    "age": 11,
+    "works": [
+      {
+        "id": "st305644",
+        "type": "show",
+        "title": "포핸즈",
+        "year": 2026,
+        "score": 87,
+        "poster": "https://image.tmdb.org/t/p/w342/sdvxrJMzACBUG87YS1YYKmRzTN8.jpg",
         "roles": [
           "actor"
         ]
