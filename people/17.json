@@ -21720,26 +21720,6 @@
       }
     ]
   },
-  "p6374308": {
-    "name": "Daniel Teak",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1184941",
-        "type": "movie",
-        "title": "Blue Heron",
-        "year": 2026,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/4hfMbVbYc2gsMnSE1K8Oc9LQH4j.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p109506": {
     "name": "Kenny Ho Ka-King",
     "img": "/6gQZYCr0ts1NAfCDNboxkNCA0L6.jpg",
@@ -200496,23 +200476,23 @@
         ]
       },
       {
-        "id": "st128095",
-        "type": "show",
-        "title": "Ve jménu nebes",
-        "year": 2022,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/rcbslMYgxuGyTIsxd64tixqQ9XE.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st81723",
         "type": "show",
         "title": "Pozlacený věk",
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/msO0qHSe2yrpdkLLoeg0s1Wiiu9.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st128095",
+        "type": "show",
+        "title": "Ve jménu nebes",
+        "year": 2022,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/rcbslMYgxuGyTIsxd64tixqQ9XE.jpg",
         "roles": [
           "actor"
         ]
@@ -210311,6 +210291,17 @@
     "deathday": null,
     "age": 61,
     "works": [
+      {
+        "id": "st303630",
+        "type": "show",
+        "title": "Cupertino",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/70AhJpOqU2oKyQF2paJA764CSje.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "st202555",
         "type": "show",
@@ -228350,6 +228341,26 @@
       }
     ]
   },
+  "p6374308": {
+    "name": "Daniel Teak",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1184941",
+        "type": "movie",
+        "title": "Blue Heron",
+        "year": 2026,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/4hfMbVbYc2gsMnSE1K8Oc9LQH4j.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p6194326": {
     "name": "Colton Hill",
     "img": null,
@@ -231514,6 +231525,59 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/uW5YMPxJUzT9bkafrCKHXjPTCoQ.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p143210": {
+    "name": "Noel Gallagher",
+    "img": "/aBFYsStheYLMxlmyugFBgEEa7dA.jpg",
+    "birthday": "1967-05-29",
+    "deathday": null,
+    "age": 59,
+    "works": [
+      {
+        "id": "mt1447853",
+        "type": "movie",
+        "title": "Oasis: Don't Look Back in Anger",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/5XoHhKZ1IROW6f5UlRpADHnTL2l.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st72025",
+        "type": "show",
+        "title": "The Jim Jefferies Show",
+        "year": 2017,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/oGBUMBbBFlzFH41TADyFpkZbPWw.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt412924",
+        "type": "movie",
+        "title": "Supersonic",
+        "year": 2016,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/gMHLEKTB22J212To1gSnundcIhH.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt39452",
+        "type": "movie",
+        "title": "Banksy: Exit Through the Gift Shop",
+        "year": 2010,
+        "score": 79,
+        "poster": "https://image.tmdb.org/t/p/w342/ruM5ehUQlHC1Kx3SF18d6klfrAx.jpg",
         "roles": [
           "actor"
         ]
@@ -251022,48 +251086,6 @@
         "year": 2016,
         "score": 80,
         "poster": "https://image.tmdb.org/t/p/w342/2VFhMD3UOG7kPVVkdv5bCzLjQe5.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p143210": {
-    "name": "Noel Gallagher",
-    "img": "/aBFYsStheYLMxlmyugFBgEEa7dA.jpg",
-    "birthday": "1967-05-29",
-    "deathday": null,
-    "age": 59,
-    "works": [
-      {
-        "id": "st72025",
-        "type": "show",
-        "title": "The Jim Jefferies Show",
-        "year": 2017,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/oGBUMBbBFlzFH41TADyFpkZbPWw.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt412924",
-        "type": "movie",
-        "title": "Supersonic",
-        "year": 2016,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/gMHLEKTB22J212To1gSnundcIhH.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt39452",
-        "type": "movie",
-        "title": "Banksy: Exit Through the Gift Shop",
-        "year": 2010,
-        "score": 79,
-        "poster": "https://image.tmdb.org/t/p/w342/ruM5ehUQlHC1Kx3SF18d6klfrAx.jpg",
         "roles": [
           "actor"
         ]
@@ -320085,6 +320107,17 @@
         "year": 2026,
         "score": 72,
         "poster": "https://image.tmdb.org/t/p/w342/oKxBWbXmnWFO2Wh1QRTtshdfIRa.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st303630",
+        "type": "show",
+        "title": "Cupertino",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/70AhJpOqU2oKyQF2paJA764CSje.jpg",
         "roles": [
           "actor"
         ]
@@ -408792,106 +408825,164 @@
       }
     ]
   },
-  "p3380867": {
-    "name": "James Keene",
-    "img": null,
+  "p4032804": {
+    "name": "Emilie Kouatchou",
+    "img": "/orUduCmqZEuRTYdirzJOf01yHUS.jpg",
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "st155537",
+        "id": "st81723",
         "type": "show",
-        "title": "Volavka",
+        "title": "Pozlacený věk",
         "year": 2022,
         "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/waW5NMQmpd3Pox7lHGjXZt14Xrp.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/msO0qHSe2yrpdkLLoeg0s1Wiiu9.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st107113",
+        "type": "show",
+        "title": "Jen vraždy v budově",
+        "year": 2021,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/mMiPuUbxePDAZlLRELniVGyHeGu.jpg",
         "roles": [
           "actor"
         ]
       }
     ]
   },
-  "p4012905": {
-    "name": "Kim Ryeo-eun",
-    "img": "/tpOgsIcM4eDvPQ4dBu7JqJzMITQ.jpg",
-    "birthday": null,
+  "p3055916": {
+    "name": "Stephen Carlile",
+    "img": "/xUHtNgpbWECeE5gkOjxzHMxReZ0.jpg",
+    "birthday": "1978-04-19",
     "deathday": null,
-    "age": null,
+    "age": 48,
     "works": [
       {
-        "id": "st215720",
+        "id": "st81723",
         "type": "show",
-        "title": "Královna slz",
-        "year": 2024,
-        "score": 82,
-        "poster": "https://image.tmdb.org/t/p/w342/3x8GHyMTMsuXVX8pZ1OhUUHgOBx.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
+        "title": "Pozlacený věk",
         "year": 2022,
         "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/msO0qHSe2yrpdkLLoeg0s1Wiiu9.jpg",
         "roles": [
           "actor"
         ]
       },
       {
-        "id": "st99480",
+        "id": "st100350",
         "type": "show",
-        "title": "Dobrej detektiv",
-        "year": 2020,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/51iYzWkefsyFv6aEirPuzUScXxY.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st96102",
-        "type": "show",
-        "title": "Nemocniční playlist",
-        "year": 2020,
-        "score": 87,
-        "poster": "https://image.tmdb.org/t/p/w342/zy0FJYPsKkfOrZG5r5lFtTIx1up.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st64840",
-        "type": "show",
-        "title": "Signál",
-        "year": 2016,
-        "score": 84,
-        "poster": "https://image.tmdb.org/t/p/w342/mB6FlHFK0A4DPyuGTrlM4QgEkIH.jpg",
+        "title": "Girls5eva",
+        "year": 2021,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/1RplQ2ooky3kONomTNhsptZxqAV.jpg",
         "roles": [
           "actor"
         ]
       }
     ]
   },
-  "p3055927": {
-    "name": "Tetsuaki Watanabe",
+  "p4180314": {
+    "name": "Kwon Do-ha",
+    "img": "/lL0vw001LpEXB6ziJwZJcTC7TPA.jpg",
+    "birthday": "1988-09-29",
+    "deathday": null,
+    "age": 37,
+    "works": [
+      {
+        "id": "st211261",
+        "type": "show",
+        "title": "Specialisté Prvního Zásahu",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6075405": {
+    "name": "Kim Dong-su",
+    "img": "/jTZY5kI6TWOQ0C2AbtiRmZBjw8d.jpg",
+    "birthday": "1970-06-05",
+    "deathday": null,
+    "age": 56,
+    "works": [
+      {
+        "id": "st211261",
+        "type": "show",
+        "title": "Specialisté Prvního Zásahu",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1928087": {
+    "name": "Do Ki-seok",
+    "img": "/en1w368AFJu7kxmP6Z0gGXTVT30.jpg",
+    "birthday": "1974-09-16",
+    "deathday": null,
+    "age": 52,
+    "works": [
+      {
+        "id": "st211261",
+        "type": "show",
+        "title": "Specialisté Prvního Zásahu",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5060479": {
+    "name": "Erica Acevedo",
     "img": null,
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "st131041",
+        "id": "st139397",
         "type": "show",
-        "title": "Blue Lock",
+        "title": "Svět podle nás",
         "year": 2022,
         "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
         "roles": [
-          "director"
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p202885": {
+    "name": "Henry Barrial",
+    "img": "/ct9Cq2D1VmTtDhHbSpNK001qReo.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st139397",
+        "type": "show",
+        "title": "Svět podle nás",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
+        "roles": [
+          "actor"
         ]
       }
     ]
@@ -412364,6 +412455,37 @@
       }
     ]
   },
+  "p1284806": {
+    "name": "Bob Senkewicz",
+    "img": "/mGZcM0mDxxgoa9VB2UsqIcza9Pf.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st247522",
+        "type": "show",
+        "title": "Gumy, kam se podíváš",
+        "year": 2024,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/6mRwM5lrwwYRlwpyTxkNnTTPfWO.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st88055",
+        "type": "show",
+        "title": "Servant",
+        "year": 2019,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/plsSSobmPSSz4hm8vYMXeIVkJJP.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p3271417": {
     "name": "Bamidele Ali",
     "img": null,
@@ -413515,6 +413637,26 @@
         "year": 2024,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/y35mtjO08cmax8cLBIbIsHI0vVU.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2909265": {
+    "name": "Chanda Hartman",
+    "img": "/jmmRbtvNTZhJYcbRBNGgV2KXTw5.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st248394",
+        "type": "show",
+        "title": "Miluju tě navždy",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/twlp0YMmuKmn4cKAInAL3zde59W.jpg",
         "roles": [
           "actor"
         ]
@@ -415236,6 +415378,37 @@
       }
     ]
   },
+  "p1907022": {
+    "name": "Athena Colón",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st303630",
+        "type": "show",
+        "title": "Cupertino",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/70AhJpOqU2oKyQF2paJA764CSje.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st77485",
+        "type": "show",
+        "title": "The Last O.G.",
+        "year": 2018,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/4jJ4TfnhA6ph3NWic50bsF9Rwer.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p4375817": {
     "name": "Vladimír Sirka",
     "img": null,
@@ -415866,164 +416039,106 @@
       }
     ]
   },
-  "p4032804": {
-    "name": "Emilie Kouatchou",
-    "img": "/orUduCmqZEuRTYdirzJOf01yHUS.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st81723",
-        "type": "show",
-        "title": "Pozlacený věk",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/msO0qHSe2yrpdkLLoeg0s1Wiiu9.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st107113",
-        "type": "show",
-        "title": "Jen vraždy v budově",
-        "year": 2021,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/mMiPuUbxePDAZlLRELniVGyHeGu.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3055916": {
-    "name": "Stephen Carlile",
-    "img": "/xUHtNgpbWECeE5gkOjxzHMxReZ0.jpg",
-    "birthday": "1978-04-19",
-    "deathday": null,
-    "age": 48,
-    "works": [
-      {
-        "id": "st81723",
-        "type": "show",
-        "title": "Pozlacený věk",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/msO0qHSe2yrpdkLLoeg0s1Wiiu9.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st100350",
-        "type": "show",
-        "title": "Girls5eva",
-        "year": 2021,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/1RplQ2ooky3kONomTNhsptZxqAV.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4180314": {
-    "name": "Kwon Do-ha",
-    "img": "/lL0vw001LpEXB6ziJwZJcTC7TPA.jpg",
-    "birthday": "1988-09-29",
-    "deathday": null,
-    "age": 37,
-    "works": [
-      {
-        "id": "st211261",
-        "type": "show",
-        "title": "Specialisté Prvního Zásahu",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6075405": {
-    "name": "Kim Dong-su",
-    "img": "/jTZY5kI6TWOQ0C2AbtiRmZBjw8d.jpg",
-    "birthday": "1970-06-05",
-    "deathday": null,
-    "age": 56,
-    "works": [
-      {
-        "id": "st211261",
-        "type": "show",
-        "title": "Specialisté Prvního Zásahu",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1928087": {
-    "name": "Do Ki-seok",
-    "img": "/en1w368AFJu7kxmP6Z0gGXTVT30.jpg",
-    "birthday": "1974-09-16",
-    "deathday": null,
-    "age": 52,
-    "works": [
-      {
-        "id": "st211261",
-        "type": "show",
-        "title": "Specialisté Prvního Zásahu",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5060479": {
-    "name": "Erica Acevedo",
+  "p3380867": {
+    "name": "James Keene",
     "img": null,
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "st139397",
+        "id": "st155537",
         "type": "show",
-        "title": "Svět podle nás",
+        "title": "Volavka",
         "year": 2022,
         "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/waW5NMQmpd3Pox7lHGjXZt14Xrp.jpg",
         "roles": [
           "actor"
         ]
       }
     ]
   },
-  "p202885": {
-    "name": "Henry Barrial",
-    "img": "/ct9Cq2D1VmTtDhHbSpNK001qReo.jpg",
+  "p4012905": {
+    "name": "Kim Ryeo-eun",
+    "img": "/tpOgsIcM4eDvPQ4dBu7JqJzMITQ.jpg",
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "st139397",
+        "id": "st215720",
         "type": "show",
-        "title": "Svět podle nás",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
+        "title": "Královna slz",
+        "year": 2024,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/3x8GHyMTMsuXVX8pZ1OhUUHgOBx.jpg",
         "roles": [
           "actor"
+        ]
+      },
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st99480",
+        "type": "show",
+        "title": "Dobrej detektiv",
+        "year": 2020,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/51iYzWkefsyFv6aEirPuzUScXxY.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st96102",
+        "type": "show",
+        "title": "Nemocniční playlist",
+        "year": 2020,
+        "score": 87,
+        "poster": "https://image.tmdb.org/t/p/w342/zy0FJYPsKkfOrZG5r5lFtTIx1up.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st64840",
+        "type": "show",
+        "title": "Signál",
+        "year": 2016,
+        "score": 84,
+        "poster": "https://image.tmdb.org/t/p/w342/mB6FlHFK0A4DPyuGTrlM4QgEkIH.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3055927": {
+    "name": "Tetsuaki Watanabe",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st131041",
+        "type": "show",
+        "title": "Blue Lock",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
+        "roles": [
+          "director"
         ]
       }
     ]
@@ -416941,37 +417056,6 @@
       }
     ]
   },
-  "p1284806": {
-    "name": "Bob Senkewicz",
-    "img": "/mGZcM0mDxxgoa9VB2UsqIcza9Pf.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st247522",
-        "type": "show",
-        "title": "Gumy, kam se podíváš",
-        "year": 2024,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/6mRwM5lrwwYRlwpyTxkNnTTPfWO.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st88055",
-        "type": "show",
-        "title": "Servant",
-        "year": 2019,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/plsSSobmPSSz4hm8vYMXeIVkJJP.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1927482": {
     "name": "Nick DiBrizzi Jr.",
     "img": "/e0HSs5NRv5gHoCzlLjCDzD3Fd4i.jpg",
@@ -417321,26 +417405,6 @@
         "year": 2025,
         "score": 77,
         "poster": "https://image.tmdb.org/t/p/w342/zUjHmffgLYODaGpDrqGNMPrrwd4.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2909265": {
-    "name": "Chanda Hartman",
-    "img": "/jmmRbtvNTZhJYcbRBNGgV2KXTw5.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st248394",
-        "type": "show",
-        "title": "Miluju tě navždy",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/twlp0YMmuKmn4cKAInAL3zde59W.jpg",
         "roles": [
           "actor"
         ]
@@ -421333,26 +421397,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/jyHHFaV0B22L2xKNJ0j1F2RZuH7.jpg",
         "roles": [
           "writer"
-        ]
-      }
-    ]
-  },
-  "p1907022": {
-    "name": "Athena Colón",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st77485",
-        "type": "show",
-        "title": "The Last O.G.",
-        "year": 2018,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/4jJ4TfnhA6ph3NWic50bsF9Rwer.jpg",
-        "roles": [
-          "actor"
         ]
       }
     ]

@@ -24081,6 +24081,37 @@
       }
     ]
   },
+  "p5452666": {
+    "name": "Amy Alexander",
+    "img": "/pSnjJsL4BRN08bGtbKjbJ4nyibI.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1165369",
+        "type": "movie",
+        "title": "De Gaulle 2: Svoboda",
+        "year": 2026,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/9qc5CzjnxGpjpuwVlIziVr7ODcL.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1165366",
+        "type": "movie",
+        "title": "La Bataille de Gaulle - partie 1 : L'Âge de Fer",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/zWuZWFKyga6GF3agrhJn8UtdMSu.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p5494477": {
     "name": "Michael Brockmann",
     "img": "/o60zRu8xbBDg1PrOaslgdRQbDev.jpg",
@@ -369973,6 +370004,59 @@
       }
     ]
   },
+  "p984582": {
+    "name": "Anna Schafer",
+    "img": "/AtpZOzp7t6ybvB1bJrSwTJfWTyZ.jpg",
+    "birthday": "1992-03-15",
+    "deathday": null,
+    "age": 34,
+    "works": [
+      {
+        "id": "mt1476746",
+        "type": "movie",
+        "title": "The Florist",
+        "year": 2026,
+        "score": 60,
+        "poster": "https://image.tmdb.org/t/p/w342/1etZaDkyHpaRz2cTvH2evgQm19J.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt253279",
+        "type": "movie",
+        "title": "Pravda je jen slovo",
+        "year": 2013,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/2u9raM4MWJTtGVQ7MeYwfgGouRl.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt65760",
+        "type": "movie",
+        "title": "Informátorka",
+        "year": 2010,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/iIVcea2BHHi7RJgucGEmpt3zkED.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt35221",
+        "type": "movie",
+        "title": "Father of Invention",
+        "year": 2010,
+        "score": 57,
+        "poster": "https://image.tmdb.org/t/p/w342/7ZPJQpl6dRgTYQ1krbSBptZQjMI.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p4321019": {
     "name": "Bianca Nugara",
     "img": "/4GwLSOjs2l4vLhmmCAaCDF8fFMx.jpg",
@@ -373740,26 +373824,6 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/r60UQDxVX3ayqlvUDdjPWUfD3x4.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5452666": {
-    "name": "Amy Alexander",
-    "img": "/pSnjJsL4BRN08bGtbKjbJ4nyibI.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1165366",
-        "type": "movie",
-        "title": "La Bataille de Gaulle - partie 1 : L'Âge de Fer",
-        "year": 2026,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/zWuZWFKyga6GF3agrhJn8UtdMSu.jpg",
         "roles": [
           "actor"
         ]
@@ -518964,48 +519028,6 @@
         "year": 2010,
         "score": 71,
         "poster": "https://image.tmdb.org/t/p/w342/a0qhPkNlxLfsf5B2jFyI1Pp04XV.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p984582": {
-    "name": "Anna Schafer",
-    "img": "/AtpZOzp7t6ybvB1bJrSwTJfWTyZ.jpg",
-    "birthday": "1992-03-15",
-    "deathday": null,
-    "age": 34,
-    "works": [
-      {
-        "id": "mt253279",
-        "type": "movie",
-        "title": "Pravda je jen slovo",
-        "year": 2013,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/2u9raM4MWJTtGVQ7MeYwfgGouRl.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt65760",
-        "type": "movie",
-        "title": "Informátorka",
-        "year": 2010,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/iIVcea2BHHi7RJgucGEmpt3zkED.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt35221",
-        "type": "movie",
-        "title": "Father of Invention",
-        "year": 2010,
-        "score": 57,
-        "poster": "https://image.tmdb.org/t/p/w342/7ZPJQpl6dRgTYQ1krbSBptZQjMI.jpg",
         "roles": [
           "actor"
         ]

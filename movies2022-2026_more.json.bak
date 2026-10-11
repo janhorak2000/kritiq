@@ -741350,6 +741350,234 @@
     "reviews": []
   },
   {
+    "title": "Blue Heron",
+    "tmdb_id": 1184941,
+    "imdb_id": "tt32252801",
+    "year": 2026,
+    "date": "2026-03-21",
+    "score": 71,
+    "box": null,
+    "box_currency": null,
+    "country": "Kanada",
+    "genre": "Drama",
+    "runtime": 91,
+    "poster": "https://image.tmdb.org/t/p/w342/4hfMbVbYc2gsMnSE1K8Oc9LQH4j.jpg",
+    "gallery": [
+      "https://image.tmdb.org/t/p/w500/t62n8FPCo4kJZYnsxkcLojgThJF.jpg"
+    ],
+    "summary": "",
+    "director": {
+      "id": 1703613,
+      "name": "Sophy Romvari",
+      "image": "https://image.tmdb.org/t/p/w300/6GBHpEkWtXkVuCOX3krvkRNgBnS.jpg"
+    },
+    "composer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "writer": {
+      "id": 1703613,
+      "name": "Sophy Romvari",
+      "image": "https://image.tmdb.org/t/p/w300/6GBHpEkWtXkVuCOX3krvkRNgBnS.jpg"
+    },
+    "actors": [
+      {
+        "id": 5551858,
+        "name": "Eylul Guven",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/3v1pjPSSqrrDnbiDYMY7K0J3I7I.jpg"
+      },
+      {
+        "id": 2917976,
+        "name": "Iringó Réti",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/ajc9HukRgGYLSVghUC01w1EhN2U.jpg"
+      },
+      {
+        "id": 2100642,
+        "name": "Ádám Tompa",
+        "birthday": "1983-12-09",
+        "deathday": null,
+        "age": 42,
+        "image": "https://image.tmdb.org/t/p/w300/qI5LYGm74se7hAkbFlyh3zYffx4.jpg"
+      },
+      {
+        "id": 5551860,
+        "name": "Edik Beddoes",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/4MuPYQpWOMRLAjuMGqfcxDuAfwB.jpg"
+      },
+      {
+        "id": 1998732,
+        "name": "Amy Zimmer",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/shJLNOFfFcTUzLo87KEstzNkXVF.jpg"
+      },
+      {
+        "id": 4616678,
+        "name": "Liam Serg",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/qnj0hByUUyme8MqBoyMN2FazzO9.jpg"
+      },
+      {
+        "id": 2639340,
+        "name": "Preston Drabble",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/svzuVRnLOz3XNF1kfYnkel4c57i.jpg"
+      },
+      {
+        "id": 5551866,
+        "name": "Lucy Turnbull",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/2wV9cxThRKEaGin1mhQGnqP6PHO.jpg"
+      },
+      {
+        "id": 5551868,
+        "name": "Jecca Beauchamp",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/8kKG9WmSdUuLjgyvFev5UjKdqII.jpg"
+      },
+      {
+        "id": 6168224,
+        "name": "Georgia Blake",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/h83snoLbYt2fqiggViE4EYrgQ4g.jpg"
+      },
+      {
+        "id": 1291233,
+        "name": "Matthew Rankin",
+        "birthday": "1980-08-05",
+        "deathday": null,
+        "age": 46,
+        "image": "https://image.tmdb.org/t/p/w300/1kw8TdCp6ud1k0QIYPozBE8hexz.jpg"
+      },
+      {
+        "id": 1882626,
+        "name": "Kalvin Olafson",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/bUpL0334uowf1SEll8hn6LWAKNe.jpg"
+      },
+      {
+        "id": 2114807,
+        "name": "Kelly Richard Fennig",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/8ka3ZqPIhKEWx0kvjkZy2mN3gsH.jpg"
+      },
+      {
+        "id": 6374300,
+        "name": "Allie Shapiro",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 6374301,
+        "name": "Beverly Anderson",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 6374303,
+        "name": "Lisa LaFlamme",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 6374304,
+        "name": "Brett Maletic",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 6374306,
+        "name": "Desiree Symons",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 6374307,
+        "name": "Samraj Singh",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 6374308,
+        "name": "Daniel Teak",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 1775140,
+        "name": "Sara Wylie",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 6374311,
+        "name": "Bonnie Murrell",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5689091,
+        "name": "Boldiszár Romvari",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 6374312,
+        "name": "Frank Pluta",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      }
+    ],
+    "reviews": []
+  },
+  {
     "title": "Taylor Tomlinson: Prodigal Daughter",
     "tmdb_id": 1617908,
     "imdb_id": "tt39367471",
@@ -790826,6 +791054,75 @@
     "reviews": []
   },
   {
+    "title": "Infirmary",
+    "tmdb_id": 1610703,
+    "imdb_id": "tt35682658",
+    "original_language": "en",
+    "year": 2026,
+    "date": "2026-10-02",
+    "score": 55,
+    "box": null,
+    "box_currency": null,
+    "country": "USA",
+    "genre": "Horor",
+    "runtime": 85,
+    "poster": "https://image.tmdb.org/t/p/w342/bHiAp8WWHgfUrJmRnoiw4URYGcq.jpg",
+    "gallery": [
+      "https://image.tmdb.org/t/p/w500/qkxk9URcK33HK54YSXFPQO8aqJH.jpg"
+    ],
+    "summary": "",
+    "director": {
+      "id": 5945047,
+      "name": "Nicholas Pineda",
+      "image": ""
+    },
+    "composer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "writer": {
+      "id": 5945048,
+      "name": "Katy Krauland",
+      "image": ""
+    },
+    "actors": [
+      {
+        "id": 3036186,
+        "name": "Paul Syre",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/onz39SwzawuJe5ENt4nvrPDpkma.jpg"
+      },
+      {
+        "id": 1581659,
+        "name": "Mark Anthony Williams",
+        "birthday": "1970-01-09",
+        "deathday": null,
+        "age": 56,
+        "image": "https://image.tmdb.org/t/p/w300/iFUm2rJ14GEhdcwIalOXkLA2sxc.jpg"
+      },
+      {
+        "id": 1492017,
+        "name": "Danielle Kennedy",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/lNRtMdZfKhbmZUkuFuNDjYrW1DK.jpg"
+      },
+      {
+        "id": 2705546,
+        "name": "Corinna Wagner-Smith",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      }
+    ],
+    "reviews": []
+  },
+  {
     "title": "72 hodin",
     "tmdb_id": 949838,
     "imdb_id": "tt36304003",
@@ -821829,6 +822126,123 @@
         "deathday": null,
         "age": null,
         "image": "https://image.tmdb.org/t/p/w300/1kVebQx0Hl2k00yQAJCG1I0FkgL.jpg"
+      }
+    ],
+    "reviews": []
+  },
+  {
+    "title": "Oasis: Don't Look Back in Anger",
+    "tmdb_id": 1447853,
+    "imdb_id": "tt36150957",
+    "original_language": "en",
+    "year": 2026,
+    "date": "2026-09-09",
+    "score": null,
+    "box": null,
+    "box_currency": null,
+    "country": "Velká Británie",
+    "genre": "Dokumentární",
+    "runtime": 123,
+    "poster": "https://image.tmdb.org/t/p/w342/5XoHhKZ1IROW6f5UlRpADHnTL2l.jpg",
+    "gallery": [
+      "https://image.tmdb.org/t/p/w500/7Ud7QIJo21odjCaev6V4md9sK16.jpg"
+    ],
+    "summary": "Legendární Oasis se vrací na velké plátno. Dokument Don’t Look Back In Anger zachycuje triumfální comeback Liama a Noela Gallagherových během turné Live ’25, které znamenalo jejich první společné živé vystoupení po 16 letech. Film nabídne dosud nezveřejněné záběry ze zákulisí, zkoušek i koncertních pódií a také první společné rozhovory bratrů Gallagherových po více než dvou dekádách.",
+    "director": {
+      "id": 128992,
+      "name": "Dylan Southern",
+      "image": "https://image.tmdb.org/t/p/w300/oY14DaI18jS2giD2OkbrbCCNgA2.jpg"
+    },
+    "composer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "writer": {
+      "id": 23227,
+      "name": "Steven Knight",
+      "image": "https://image.tmdb.org/t/p/w300/vmM9j2yXI8A3AccX3YgOEZHQWcO.jpg"
+    },
+    "actors": [
+      {
+        "id": 82990,
+        "name": "Liam Gallagher",
+        "birthday": "1972-09-21",
+        "deathday": null,
+        "age": 54,
+        "image": "https://image.tmdb.org/t/p/w300/4lE3FR6ToSBSU5186W1hmP04QJv.jpg"
+      },
+      {
+        "id": 143210,
+        "name": "Noel Gallagher",
+        "birthday": "1967-05-29",
+        "deathday": null,
+        "age": 59,
+        "image": "https://image.tmdb.org/t/p/w300/aBFYsStheYLMxlmyugFBgEEa7dA.jpg"
+      },
+      {
+        "id": 82992,
+        "name": "Paul Arthurs",
+        "birthday": "1965-06-23",
+        "deathday": null,
+        "age": 61,
+        "image": "https://image.tmdb.org/t/p/w300/afjM0Ve9Bjh8RdKD5K38u4yDxaZ.jpg"
+      },
+      {
+        "id": 143211,
+        "name": "Gem Archer",
+        "birthday": "1966-12-07",
+        "deathday": null,
+        "age": 59,
+        "image": "https://image.tmdb.org/t/p/w300/auXwK7uyGxbAhWt6rNi0PZK4kd6.jpg"
+      },
+      {
+        "id": 143212,
+        "name": "Andy Bell",
+        "birthday": "1970-08-11",
+        "deathday": null,
+        "age": 56,
+        "image": ""
+      },
+      {
+        "id": 61074,
+        "name": "Joey Waronker",
+        "birthday": "1969-05-20",
+        "deathday": null,
+        "age": 57,
+        "image": "https://image.tmdb.org/t/p/w300/wQjXgt6kE5GwzvaBARaHx5SJteF.jpg"
+      },
+      {
+        "id": 3818743,
+        "name": "Christian Madden",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4104460,
+        "name": "Anaïs Gallagher",
+        "birthday": "2000-01-27",
+        "deathday": null,
+        "age": 26,
+        "image": "https://image.tmdb.org/t/p/w300/sJasdEinUkFiGx7KPNY49ZWHGCv.jpg"
+      },
+      {
+        "id": 5259756,
+        "name": "Molly Elson",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/vhA9TzF61IPFxtLkVYrdWbg0wxr.jpg"
+      },
+      {
+        "id": 1178199,
+        "name": "Gary 'Mani' Mounfield",
+        "birthday": "1962-11-16",
+        "deathday": null,
+        "age": 63,
+        "image": "https://image.tmdb.org/t/p/w300/gpG5qzfzzlNx6zaj1V6eaxJsyoy.jpg"
       }
     ],
     "reviews": []
