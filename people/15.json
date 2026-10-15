@@ -108810,23 +108810,23 @@
     "age": 72,
     "works": [
       {
-        "id": "st248394",
-        "type": "show",
-        "title": "Miluju tě navždy",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/twlp0YMmuKmn4cKAInAL3zde59W.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st245219",
         "type": "show",
         "title": "Rána bleskem",
         "year": 2025,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/KyUrz3GA1FML3XnKkY795XxDxN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st248394",
+        "type": "show",
+        "title": "Miluju tě navždy",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/twlp0YMmuKmn4cKAInAL3zde59W.jpg",
         "roles": [
           "actor"
         ]
@@ -231542,6 +231542,17 @@
         ]
       },
       {
+        "id": "st259486",
+        "type": "show",
+        "title": "Gwi-gong",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/kjp97iwFZ2iAG2AVPsgQeVsUMHK.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st258025",
         "type": "show",
         "title": "Až po uši",
@@ -231559,17 +231570,6 @@
         "year": 2025,
         "score": 72,
         "poster": "https://image.tmdb.org/t/p/w342/6kk0yTA1m8Hxt9lctUT3ygmj6aa.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st259486",
-        "type": "show",
-        "title": "Gwi-gong",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/kjp97iwFZ2iAG2AVPsgQeVsUMHK.jpg",
         "roles": [
           "actor"
         ]
@@ -243924,6 +243924,17 @@
     "deathday": null,
     "age": 31,
     "works": [
+      {
+        "id": "mt1381078",
+        "type": "movie",
+        "title": "Láska tvého života",
+        "year": 2026,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/9eNA9QkC2goWXwB9EQhbCYgb61A.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt1010755",
         "type": "movie",
@@ -270296,6 +270307,26 @@
         "year": 2026,
         "score": 62,
         "poster": "https://image.tmdb.org/t/p/w342/4LnIZsJQQ1qfWQeDPnzZVhBZSPe.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5981804": {
+    "name": "Isabelle Andrade",
+    "img": "/437QggKhitWz7A4qwkZnpKrO29j.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1381078",
+        "type": "movie",
+        "title": "Láska tvého života",
+        "year": 2026,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/9eNA9QkC2goWXwB9EQhbCYgb61A.jpg",
         "roles": [
           "actor"
         ]
@@ -469024,6 +469055,59 @@
       }
     ]
   },
+  "p1483904": {
+    "name": "Taku Kishimoto",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st131041",
+        "type": "show",
+        "title": "Blue Lock",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "st105556",
+        "type": "show",
+        "title": "Neškádli mě, Nagatoro!",
+        "year": 2021,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/k1z2xv3JjGobO9jfybHGo2tqAKC.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "st65249",
+        "type": "show",
+        "title": "ERASED",
+        "year": 2016,
+        "score": 84,
+        "poster": "https://image.tmdb.org/t/p/w342/2xo5jNOwXGP41umcmxzZgPxGpaI.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "st60863",
+        "type": "show",
+        "title": "Haikyu!!",
+        "year": 2014,
+        "score": 87,
+        "poster": "https://image.tmdb.org/t/p/w342/qNKaeunuUdL0smnowVVgShCkWZ4.jpg",
+        "roles": [
+          "writer"
+        ]
+      }
+    ]
+  },
   "p1381868": {
     "name": "Gracy Goldman",
     "img": null,
@@ -476579,6 +476663,26 @@
       }
     ]
   },
+  "p1846190": {
+    "name": "Geoffrey Murphy",
+    "img": "/oUpTzxjpUx4plloKTLz0jUQInjK.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st241609",
+        "type": "show",
+        "title": "Sousedská tajemství",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p3094227": {
     "name": "Paola Montes De Oca",
     "img": "/AnaNOPWsAZ2al0ivMYYbpqz6j49.jpg",
@@ -478220,6 +478324,26 @@
         "poster": "https://image.tmdb.org/t/p/w342/c2RFktsVIVeU0s3Q46Ew2NYOHsL.jpg",
         "roles": [
           "actor"
+        ]
+      }
+    ]
+  },
+  "p3481944": {
+    "name": "Moon Hyun-Kyeong",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st293608",
+        "type": "show",
+        "title": "Slečna Hongová v utajení",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/nJ0gSaXfoiPFngy1ulCCuxsKt0q.jpg",
+        "roles": [
+          "writer"
         ]
       }
     ]
@@ -480134,59 +480258,6 @@
       }
     ]
   },
-  "p1483904": {
-    "name": "Taku Kishimoto",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st131041",
-        "type": "show",
-        "title": "Blue Lock",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
-        "roles": [
-          "writer"
-        ]
-      },
-      {
-        "id": "st105556",
-        "type": "show",
-        "title": "Neškádli mě, Nagatoro!",
-        "year": 2021,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/k1z2xv3JjGobO9jfybHGo2tqAKC.jpg",
-        "roles": [
-          "writer"
-        ]
-      },
-      {
-        "id": "st65249",
-        "type": "show",
-        "title": "ERASED",
-        "year": 2016,
-        "score": 84,
-        "poster": "https://image.tmdb.org/t/p/w342/2xo5jNOwXGP41umcmxzZgPxGpaI.jpg",
-        "roles": [
-          "writer"
-        ]
-      },
-      {
-        "id": "st60863",
-        "type": "show",
-        "title": "Haikyu!!",
-        "year": 2014,
-        "score": 87,
-        "poster": "https://image.tmdb.org/t/p/w342/qNKaeunuUdL0smnowVVgShCkWZ4.jpg",
-        "roles": [
-          "writer"
-        ]
-      }
-    ]
-  },
   "p4160226": {
     "name": "Yang Jong-wook",
     "img": "/rt3JEJYB6L513zL8LVpLRCJ5E2o.jpg",
@@ -481425,26 +481496,6 @@
       }
     ]
   },
-  "p1846190": {
-    "name": "Geoffrey Murphy",
-    "img": "/oUpTzxjpUx4plloKTLz0jUQInjK.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st241609",
-        "type": "show",
-        "title": "Sousedská tajemství",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p6053887": {
     "name": "Xiao Lu",
     "img": "/xvWPSJPrPZE3RnKIKwsyuuYS6P6.jpg",
@@ -481741,26 +481792,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/xIQKtBSUJhlz2Jl9TsXEI0iZMgu.jpg",
         "roles": [
           "actor"
-        ]
-      }
-    ]
-  },
-  "p3481944": {
-    "name": "Moon Hyun-Kyeong",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st293608",
-        "type": "show",
-        "title": "Slečna Hongová v utajení",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/nJ0gSaXfoiPFngy1ulCCuxsKt0q.jpg",
-        "roles": [
-          "writer"
         ]
       }
     ]

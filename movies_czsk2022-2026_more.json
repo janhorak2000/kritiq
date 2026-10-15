@@ -68809,5 +68809,154 @@
       }
     ],
     "reviews": []
+  },
+  {
+    "title": "Divočina",
+    "tmdb_id": 1356215,
+    "imdb_id": "tt43661652",
+    "original_language": "cs",
+    "year": 2026,
+    "date": "2026-10-15",
+    "score": null,
+    "box": null,
+    "box_currency": null,
+    "country": "Česko",
+    "genre": "Drama",
+    "runtime": 88,
+    "poster": "https://image.tmdb.org/t/p/w342/imeqhOV2rSOBGNVTHYm5RpO5wPZ.jpg",
+    "gallery": [
+      "https://image.tmdb.org/t/p/w500/uuh01A4NAfYxCVRS6o4WQS4QwIE.jpg"
+    ],
+    "summary": "Drama o tom, že skutečná divočina je vlastní rodina! Marta s dětmi utíká od násilnického manžela Milana a hledá útočiště v domě svého dětství. Namísto klidu a bezpečí se musí konfrontovat se stárnoucím podivínským otcem – prepperem. Ten z domu na okraji lesa buduje soukromou pevnost, v níž se připravuje na konec světa. Martu i vnučky zapojí do své „školy přežití“. Když se nečekaně objeví Milan a chce si odvést dcery, Marty snaha vzít život do vlastních rukou nabere dramatický spád hrozící rodinnou apokalypsou.",
+    "director": {
+      "id": 1892078,
+      "name": "Evženie Brabcová",
+      "image": ""
+    },
+    "composer": {
+      "id": 2282485,
+      "name": "Pjoni",
+      "image": ""
+    },
+    "writer": {
+      "id": 1892078,
+      "name": "Evženie Brabcová",
+      "image": ""
+    },
+    "actors": [
+      {
+        "id": 107943,
+        "name": "Klára Issová",
+        "birthday": "1979-04-26",
+        "deathday": null,
+        "age": 47,
+        "image": "https://image.tmdb.org/t/p/w300/3z5gSkWzGKaGHTx22hxCOYonMya.jpg"
+      },
+      {
+        "id": 33938,
+        "name": "Jan Vlasák",
+        "birthday": "1943-02-03",
+        "deathday": null,
+        "age": 83,
+        "image": "https://image.tmdb.org/t/p/w300/zhhVqsBQFb1vnLJJUICOkQahG08.jpg"
+      },
+      {
+        "id": 932853,
+        "name": "Ivana Uhlířová",
+        "birthday": "1980-07-23",
+        "deathday": null,
+        "age": 46,
+        "image": "https://image.tmdb.org/t/p/w300/yTPaJjEYElpc4ziy6dPfeOmBHYN.jpg"
+      },
+      {
+        "id": 1261323,
+        "name": "Juraj Loj",
+        "birthday": "1984-02-20",
+        "deathday": null,
+        "age": 42,
+        "image": "https://image.tmdb.org/t/p/w300/9sH7J6joRWkVEoVP9mi0FPKjdPO.jpg"
+      },
+      {
+        "id": 4144624,
+        "name": "Josefína Ramešová",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 2124450,
+        "name": "Michaela Černá",
+        "birthday": "1943-09-30",
+        "deathday": null,
+        "age": 83,
+        "image": ""
+      },
+      {
+        "id": 2073703,
+        "name": "Jan František Uher",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/vGQRDMleaPLWSTUhHfk1RmnRI70.jpg"
+      },
+      {
+        "id": 3844006,
+        "name": "Jakub Tvrdík",
+        "birthday": "1984-06-06",
+        "deathday": null,
+        "age": 42,
+        "image": "https://image.tmdb.org/t/p/w300/rfbJzHRqMPgq9JEeTq7vwgdwny.jpg"
+      },
+      {
+        "id": 2571262,
+        "name": "Jiří Bohatý",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 3153980,
+        "name": "Gabriela Pyšná",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 1350984,
+        "name": "Jiří Racek",
+        "birthday": "1976-03-11",
+        "deathday": null,
+        "age": 50,
+        "image": "https://image.tmdb.org/t/p/w300/g4SKeQr4l2ciDhSqLuACqbhK0eO.jpg"
+      },
+      {
+        "id": 2143474,
+        "name": "Hana Marie Maroušková",
+        "birthday": "1987-04-30",
+        "deathday": null,
+        "age": 39,
+        "image": "https://image.tmdb.org/t/p/w300/6L4SR5NJBzdTv568RAOc7qiyRAt.jpg"
+      },
+      {
+        "id": 2736762,
+        "name": "Tibor Fabó",
+        "birthday": "1964-05-08",
+        "deathday": null,
+        "age": 62,
+        "image": "https://image.tmdb.org/t/p/w300/dMHxhBoGReHC6lhmDqpzlSUUzbe.jpg"
+      },
+      {
+        "id": 1499637,
+        "name": "Tomáš Turek",
+        "birthday": "1961-08-30",
+        "deathday": null,
+        "age": 65,
+        "image": "https://image.tmdb.org/t/p/w300/u0xWWGv115X7jjoIgtPyDD5GBt9.jpg"
+      }
+    ],
+    "reviews": []
   }
 ]

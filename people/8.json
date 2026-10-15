@@ -10650,6 +10650,17 @@
     "age": 58,
     "works": [
       {
+        "id": "mt1255833",
+        "type": "movie",
+        "title": "Velrybí pád",
+        "year": 2026,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/uSjnb0s4oNZFhO8PiYLxs2Qqw48.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1007734",
         "type": "movie",
         "title": "Nikdo 2",
@@ -37078,26 +37089,6 @@
         "year": 1999,
         "score": 50,
         "poster": "https://image.tmdb.org/t/p/w342/4eB1Gw5r3Etbe4su6PhOo6OAN9E.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6114732": {
-    "name": "Shawn Fogarty",
-    "img": null,
-    "birthday": "1962-03-17",
-    "deathday": null,
-    "age": 64,
-    "works": [
-      {
-        "id": "mt1325734",
-        "type": "movie",
-        "title": "Drama",
-        "year": 2026,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/pjztX7PQZMh0CxsSKaptAWfAY5n.jpg",
         "roles": [
           "actor"
         ]
@@ -115679,23 +115670,23 @@
         ]
       },
       {
-        "id": "st139397",
-        "type": "show",
-        "title": "Svět podle nás",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st201992",
         "type": "show",
         "title": "Zelenáč v sukni",
         "year": 2022,
         "score": 54,
         "poster": "https://image.tmdb.org/t/p/w342/ttqpW20UVabyy8DQFWe56ov1JHS.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st139397",
+        "type": "show",
+        "title": "Svět podle nás",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
         "roles": [
           "actor"
         ]
@@ -310405,6 +310396,17 @@
     "age": 26,
     "works": [
       {
+        "id": "st298610",
+        "type": "show",
+        "title": "오싹한 연애",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st314784",
         "type": "show",
         "title": "로맨스의 절댓값",
@@ -310433,17 +310435,6 @@
         "year": 2026,
         "score": 78,
         "poster": "https://image.tmdb.org/t/p/w342/fEYOFHAXZLTv9WF7zjy6qVuDHop.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st298610",
-        "type": "show",
-        "title": "오싹한 연애",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
         "roles": [
           "actor"
         ]
@@ -344514,6 +344505,17 @@
     "deathday": null,
     "age": 42,
     "works": [
+      {
+        "id": "mt1356215",
+        "type": "movie",
+        "title": "Divočina",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/imeqhOV2rSOBGNVTHYm5RpO5wPZ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt1341775",
         "type": "movie",
@@ -400091,6 +400093,26 @@
       }
     ]
   },
+  "p6114732": {
+    "name": "Shawn Fogarty",
+    "img": null,
+    "birthday": "1962-03-17",
+    "deathday": null,
+    "age": 64,
+    "works": [
+      {
+        "id": "mt1325734",
+        "type": "movie",
+        "title": "Drama",
+        "year": 2026,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/pjztX7PQZMh0CxsSKaptAWfAY5n.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p1085730": {
     "name": "Eric Salazar",
     "img": "/bPFWIV2ClLBZeF9oaSH78gMzqzS.jpg",
@@ -403483,6 +403505,26 @@
         "year": 2021,
         "score": 67,
         "poster": "https://image.tmdb.org/t/p/w342/uo7unmhOjl60cOQQ1YA82QmXKxN.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6394792": {
+    "name": "Gayané Kaligian",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1381078",
+        "type": "movie",
+        "title": "Láska tvého života",
+        "year": 2026,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/9eNA9QkC2goWXwB9EQhbCYgb61A.jpg",
         "roles": [
           "actor"
         ]
@@ -422484,6 +422526,17 @@
     "deathday": null,
     "age": 38,
     "works": [
+      {
+        "id": "st300529",
+        "type": "show",
+        "title": "Rovnou do pekla",
+        "year": 2026,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/hxxV4xoraCCEcyP1Mlf626Ixr4e.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt426284",
         "type": "movie",
@@ -442061,6 +442114,17 @@
     "deathday": null,
     "age": 40,
     "works": [
+      {
+        "id": "st300131",
+        "type": "show",
+        "title": "キルアオ",
+        "year": 2026,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/1hzamo8nOZmurGQQ7P2uqpsGHek.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "st256721",
         "type": "show",
@@ -512024,17 +512088,6 @@
         ]
       },
       {
-        "id": "st260458",
-        "type": "show",
-        "title": "Dospělost",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st255055",
         "type": "show",
         "title": "Doktorka",
@@ -512052,6 +512105,17 @@
         "year": 2025,
         "score": 62,
         "poster": "https://image.tmdb.org/t/p/w342/nLCpxH7BhFwP50lF0VFpxeeFjmM.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st260458",
+        "type": "show",
+        "title": "Dospělost",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
         "roles": [
           "actor"
         ]
@@ -707915,6 +707979,17 @@
     "age": 50,
     "works": [
       {
+        "id": "mt1356215",
+        "type": "movie",
+        "title": "Divočina",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/imeqhOV2rSOBGNVTHYm5RpO5wPZ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st273970",
         "type": "show",
         "title": "Studna",
@@ -781795,46 +781870,6 @@
       }
     ]
   },
-  "p3361388": {
-    "name": "Albert Rutecki",
-    "img": "/1KyhWjFydYmiUjmpnYy4a271Z5Z.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st139397",
-        "type": "show",
-        "title": "Svět podle nás",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2025889": {
-    "name": "Denise Marciel",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st139397",
-        "type": "show",
-        "title": "Svět podle nás",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p2011358": {
     "name": "Kwajalyn Brown",
     "img": "/oRqTOXv8gWh0VAIHiCmB8go2Q3x.jpg",
@@ -782127,6 +782162,59 @@
         "year": 2021,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/qDLhCBbl7eUSesMSV9rYqHR8qwW.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2047801": {
+    "name": "Sohta Arai",
+    "img": "/t6hCcCRZM5JYH1WwcQuFG3YuPqo.jpg",
+    "birthday": "1986-04-12",
+    "deathday": null,
+    "age": 40,
+    "works": [
+      {
+        "id": "st312359",
+        "type": "show",
+        "title": "ドラゴンボール超 ビルス",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/sGuCmIy8kEmx3FWZyMj654rF6g8.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st131041",
+        "type": "show",
+        "title": "Blue Lock",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st62602",
+        "type": "show",
+        "title": "アオハライド",
+        "year": 2014,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/c4TTkNCkrClHGjKztNLRgEzrL2T.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st61695",
+        "type": "show",
+        "title": "境界の彼方",
+        "year": 2013,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/h99ADMiMZ6h7f8g4Y07WEgle7hT.jpg",
         "roles": [
           "actor"
         ]
@@ -782917,23 +783005,23 @@
     "age": 29,
     "works": [
       {
-        "id": "st278573",
-        "type": "show",
-        "title": "Dokonalá koruna",
-        "year": 2026,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/fEYOFHAXZLTv9WF7zjy6qVuDHop.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st293608",
         "type": "show",
         "title": "Slečna Hongová v utajení",
         "year": 2026,
         "score": 75,
         "poster": "https://image.tmdb.org/t/p/w342/nJ0gSaXfoiPFngy1ulCCuxsKt0q.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st278573",
+        "type": "show",
+        "title": "Dokonalá koruna",
+        "year": 2026,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/fEYOFHAXZLTv9WF7zjy6qVuDHop.jpg",
         "roles": [
           "actor"
         ]
@@ -801320,26 +801408,6 @@
       }
     ]
   },
-  "p3167348": {
-    "name": "Ben Kronengold",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st260458",
-        "type": "show",
-        "title": "Dospělost",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
-        "roles": [
-          "writer"
-        ]
-      }
-    ]
-  },
   "p3663767": {
     "name": "Juan Fernando Monge",
     "img": "/cpGdmG9vVz7MNMRoDyyKKmAo2bV.jpg",
@@ -806984,53 +807052,20 @@
       }
     ]
   },
-  "p2047801": {
-    "name": "Sohta Arai",
-    "img": "/t6hCcCRZM5JYH1WwcQuFG3YuPqo.jpg",
-    "birthday": "1986-04-12",
+  "p6489326": {
+    "name": "Katja Ponickau",
+    "img": "/34stNsJekzoUx2tOlmoEQw4oDkk.jpg",
+    "birthday": null,
     "deathday": null,
-    "age": 40,
+    "age": null,
     "works": [
       {
-        "id": "st312359",
+        "id": "st283371",
         "type": "show",
-        "title": "ドラゴンボール超 ビルス",
+        "title": "Past",
         "year": 2026,
         "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/sGuCmIy8kEmx3FWZyMj654rF6g8.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st131041",
-        "type": "show",
-        "title": "Blue Lock",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st62602",
-        "type": "show",
-        "title": "アオハライド",
-        "year": 2014,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/c4TTkNCkrClHGjKztNLRgEzrL2T.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st61695",
-        "type": "show",
-        "title": "境界の彼方",
-        "year": 2013,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/h99ADMiMZ6h7f8g4Y07WEgle7hT.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/XWLjagzgc20SyQd0Nufwu0Jwx.jpg",
         "roles": [
           "actor"
         ]
@@ -808323,6 +808358,46 @@
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/yzL4Tqbw2JA9MCsHJWFC4xV1IYU.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3361388": {
+    "name": "Albert Rutecki",
+    "img": "/1KyhWjFydYmiUjmpnYy4a271Z5Z.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st139397",
+        "type": "show",
+        "title": "Svět podle nás",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2025889": {
+    "name": "Denise Marciel",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st139397",
+        "type": "show",
+        "title": "Svět podle nás",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
         "roles": [
           "actor"
         ]
@@ -811773,6 +811848,26 @@
       }
     ]
   },
+  "p3167348": {
+    "name": "Ben Kronengold",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st260458",
+        "type": "show",
+        "title": "Dospělost",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
+        "roles": [
+          "writer"
+        ]
+      }
+    ]
+  },
   "p3399327": {
     "name": "Sun Kai",
     "img": "/yaA4GVGGqDaYpZYjd13eZlJks8w.jpg",
@@ -812273,6 +812368,26 @@
         "poster": "https://image.tmdb.org/t/p/w342/nZVRyqVbDqfLSOrLcsGGTUHccZ8.jpg",
         "roles": [
           "actor"
+        ]
+      }
+    ]
+  },
+  "p4114833": {
+    "name": "Shunki Hashizume",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st258063",
+        "type": "show",
+        "title": "Spřízněná duše",
+        "year": 2026,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/8ppPFQJhrc6fD6s2roCL7PTRDzX.jpg",
+        "roles": [
+          "director"
         ]
       }
     ]

@@ -37737,23 +37737,23 @@
         ]
       },
       {
-        "id": "st153657",
-        "type": "show",
-        "title": "Bosch: Odkaz",
-        "year": 2022,
-        "score": 84,
-        "poster": "https://image.tmdb.org/t/p/w342/ge5gFKCO6m7MuGyjwjoGvqo2q2m.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st203085",
         "type": "show",
         "title": "Star Wars: Příběhy rytířů Jedi",
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/g2JsYEIyZGJy8slnVxmaH7j97bB.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st153657",
+        "type": "show",
+        "title": "Bosch: Odkaz",
+        "year": 2022,
+        "score": 84,
+        "poster": "https://image.tmdb.org/t/p/w342/ge5gFKCO6m7MuGyjwjoGvqo2q2m.jpg",
         "roles": [
           "actor"
         ]
@@ -149050,6 +149050,17 @@
     "age": 70,
     "works": [
       {
+        "id": "st300529",
+        "type": "show",
+        "title": "Rovnou do pekla",
+        "year": 2026,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/hxxV4xoraCCEcyP1Mlf626Ixr4e.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st210269",
         "type": "show",
         "title": "Žák sumo",
@@ -153458,6 +153469,17 @@
         "year": 2026,
         "score": 70,
         "poster": "https://image.tmdb.org/t/p/w342/9WzSp58KeedU8NHcAcJkqYNYnuv.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1356215",
+        "type": "movie",
+        "title": "Divočina",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/imeqhOV2rSOBGNVTHYm5RpO5wPZ.jpg",
         "roles": [
           "actor"
         ]
@@ -267877,6 +267899,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1381078",
+        "type": "movie",
+        "title": "Láska tvého života",
+        "year": 2026,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/9eNA9QkC2goWXwB9EQhbCYgb61A.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
         "id": "mt610219",
         "type": "movie",
         "title": "The Fire Inside",
@@ -294697,6 +294730,26 @@
         "year": 2026,
         "score": 62,
         "poster": "https://image.tmdb.org/t/p/w342/4LnIZsJQQ1qfWQeDPnzZVhBZSPe.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3046728": {
+    "name": "Vas Constanti",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1381078",
+        "type": "movie",
+        "title": "Láska tvého života",
+        "year": 2026,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/9eNA9QkC2goWXwB9EQhbCYgb61A.jpg",
         "roles": [
           "actor"
         ]
@@ -511906,6 +511959,17 @@
     "age": 46,
     "works": [
       {
+        "id": "mt1356215",
+        "type": "movie",
+        "title": "Divočina",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/imeqhOV2rSOBGNVTHYm5RpO5wPZ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1503469",
         "type": "movie",
         "title": "Uzel zla",
@@ -526751,46 +526815,6 @@
       }
     ]
   },
-  "p84868": {
-    "name": "Elaine Hall",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st139397",
-        "type": "show",
-        "title": "Svět podle nás",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5060465": {
-    "name": "Alhan Bilal",
-    "img": "/k1LtZ0OefLwlD17LrF4e7yypkxa.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st139397",
-        "type": "show",
-        "title": "Svět podle nás",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p4012858": {
     "name": "Min Hyo-won",
     "img": "/hPoex7FhP1fQ9fIqLVMqyGdRO8v.jpg",
@@ -526805,6 +526829,48 @@
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3026939": {
+    "name": "Ayasa Goto",
+    "img": "/kLfUvPkFmhWTPkUBruBEzIBDXNx.jpg",
+    "birthday": "1998-11-23",
+    "deathday": null,
+    "age": 27,
+    "works": [
+      {
+        "id": "st131041",
+        "type": "show",
+        "title": "Blue Lock",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st123876",
+        "type": "show",
+        "title": "Komi neumí komunikovat",
+        "year": 2021,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/dPaI9Ho4k4ZhNgPyRIkfEyiA2K7.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st82739",
+        "type": "show",
+        "title": "Seišun buta jaró wa Bunny Girl-senpai no jume o minai",
+        "year": 2018,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/cvYi7KYiCr7OCKoZlXaFShfH3vz.jpg",
         "roles": [
           "actor"
         ]
@@ -533850,102 +533916,60 @@
       }
     ]
   },
-  "p4543707": {
-    "name": "Jaelynn Thora Brooks",
-    "img": "/37sm3LdjV2W4VBfZy6dbQzHP51g.jpg",
+  "p5275339": {
+    "name": "Ella Kennedy Davis",
+    "img": "/fWrgzw6fsBt3fAeQ9si7xZov810.jpg",
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "st223530",
+        "id": "st241609",
         "type": "show",
-        "title": "Star Trek: Akademie Hvězdné flotily",
-        "year": 2026,
-        "score": 46,
-        "poster": "https://image.tmdb.org/t/p/w342/fBH0t2OTfeYrmPKiOyUpdZh6ers.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st260458",
-        "type": "show",
-        "title": "Dospělost",
+        "title": "Sousedská tajemství",
         "year": 2025,
         "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
         "roles": [
           "actor"
         ]
       }
     ]
   },
-  "p5351822": {
-    "name": "Shakila Fernando",
-    "img": null,
+  "p5011108": {
+    "name": "Jordan Avery",
+    "img": "/1950vCPlFkuUB0u2TMVsZx3mCO5.jpg",
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "st323411",
+        "id": "st241609",
         "type": "show",
-        "title": "The Vampire Lestat",
-        "year": 2026,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/gZcmNUcDDR1nR7lmroOJTCrhrhK.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st260458",
-        "type": "show",
-        "title": "Dospělost",
+        "title": "Sousedská tajemství",
         "year": 2025,
         "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
         "roles": [
           "actor"
         ]
       }
     ]
   },
-  "p6072344": {
-    "name": "최민규",
-    "img": "/5sJkGYcnIkN7AdslXu5V5ileB0u.jpg",
-    "birthday": "1999-12-16",
-    "deathday": null,
-    "age": 26,
-    "works": [
-      {
-        "id": "st224819",
-        "type": "show",
-        "title": "Drahý Hongnangu",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/bmWzKsD5iRUBR9uvOzuTMM6EYn1.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4191399": {
-    "name": "Faith West",
-    "img": "/tZZEOAK0EGTO1sK6X973QmtzNVr.jpg",
+  "p3370623": {
+    "name": "Finn Egan-Liang",
+    "img": "/7oHMr3CkchPsoId5xvHrJgRNIEF.jpg",
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "st248394",
+        "id": "st241609",
         "type": "show",
-        "title": "Miluju tě navždy",
+        "title": "Sousedská tajemství",
         "year": 2025,
         "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/twlp0YMmuKmn4cKAInAL3zde59W.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
         "roles": [
           "actor"
         ]
@@ -536620,6 +536644,37 @@
       }
     ]
   },
+  "p4543707": {
+    "name": "Jaelynn Thora Brooks",
+    "img": "/37sm3LdjV2W4VBfZy6dbQzHP51g.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st223530",
+        "type": "show",
+        "title": "Star Trek: Akademie Hvězdné flotily",
+        "year": 2026,
+        "score": 46,
+        "poster": "https://image.tmdb.org/t/p/w342/fBH0t2OTfeYrmPKiOyUpdZh6ers.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st260458",
+        "type": "show",
+        "title": "Dospělost",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p5888908": {
     "name": "Marian Kužma",
     "img": null,
@@ -537310,48 +537365,6 @@
       }
     ]
   },
-  "p3026939": {
-    "name": "Ayasa Goto",
-    "img": "/kLfUvPkFmhWTPkUBruBEzIBDXNx.jpg",
-    "birthday": "1998-11-23",
-    "deathday": null,
-    "age": 27,
-    "works": [
-      {
-        "id": "st131041",
-        "type": "show",
-        "title": "Blue Lock",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st123876",
-        "type": "show",
-        "title": "Komi neumí komunikovat",
-        "year": 2021,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/dPaI9Ho4k4ZhNgPyRIkfEyiA2K7.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st82739",
-        "type": "show",
-        "title": "Seišun buta jaró wa Bunny Girl-senpai no jume o minai",
-        "year": 2018,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/cvYi7KYiCr7OCKoZlXaFShfH3vz.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p4111836": {
     "name": "Hannah Shealy",
     "img": "/pgTL2f3L8kJzMhzx9IaiUAZ38pB.jpg",
@@ -537386,6 +537399,46 @@
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p84868": {
+    "name": "Elaine Hall",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st139397",
+        "type": "show",
+        "title": "Svět podle nás",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5060465": {
+    "name": "Alhan Bilal",
+    "img": "/k1LtZ0OefLwlD17LrF4e7yypkxa.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st139397",
+        "type": "show",
+        "title": "Svět podle nás",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
         "roles": [
           "actor"
         ]
@@ -538475,60 +538528,71 @@
       }
     ]
   },
-  "p5275339": {
-    "name": "Ella Kennedy Davis",
-    "img": "/fWrgzw6fsBt3fAeQ9si7xZov810.jpg",
+  "p5351822": {
+    "name": "Shakila Fernando",
+    "img": null,
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "st241609",
+        "id": "st323411",
         "type": "show",
-        "title": "Sousedská tajemství",
+        "title": "The Vampire Lestat",
+        "year": 2026,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/gZcmNUcDDR1nR7lmroOJTCrhrhK.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st260458",
+        "type": "show",
+        "title": "Dospělost",
         "year": 2025,
         "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
         "roles": [
           "actor"
         ]
       }
     ]
   },
-  "p5011108": {
-    "name": "Jordan Avery",
-    "img": "/1950vCPlFkuUB0u2TMVsZx3mCO5.jpg",
-    "birthday": null,
+  "p6072344": {
+    "name": "최민규",
+    "img": "/5sJkGYcnIkN7AdslXu5V5ileB0u.jpg",
+    "birthday": "1999-12-16",
     "deathday": null,
-    "age": null,
+    "age": 26,
     "works": [
       {
-        "id": "st241609",
+        "id": "st224819",
         "type": "show",
-        "title": "Sousedská tajemství",
+        "title": "Drahý Hongnangu",
         "year": 2025,
         "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/bmWzKsD5iRUBR9uvOzuTMM6EYn1.jpg",
         "roles": [
           "actor"
         ]
       }
     ]
   },
-  "p3370623": {
-    "name": "Finn Egan-Liang",
-    "img": "/7oHMr3CkchPsoId5xvHrJgRNIEF.jpg",
+  "p4191399": {
+    "name": "Faith West",
+    "img": "/tZZEOAK0EGTO1sK6X973QmtzNVr.jpg",
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "st241609",
+        "id": "st248394",
         "type": "show",
-        "title": "Sousedská tajemství",
+        "title": "Miluju tě navždy",
         "year": 2025,
         "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/twlp0YMmuKmn4cKAInAL3zde59W.jpg",
         "roles": [
           "actor"
         ]
@@ -538769,6 +538833,26 @@
         "year": 2026,
         "score": 78,
         "poster": "https://image.tmdb.org/t/p/w342/nZVRyqVbDqfLSOrLcsGGTUHccZ8.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2151537": {
+    "name": "Koshi Mizukami",
+    "img": "/xMZ03bRz7pGAXi57q9PxZandnnu.jpg",
+    "birthday": "1999-05-12",
+    "deathday": null,
+    "age": 27,
+    "works": [
+      {
+        "id": "st258063",
+        "type": "show",
+        "title": "Spřízněná duše",
+        "year": 2026,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/8ppPFQJhrc6fD6s2roCL7PTRDzX.jpg",
         "roles": [
           "actor"
         ]

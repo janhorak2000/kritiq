@@ -7264,23 +7264,23 @@
         ]
       },
       {
-        "id": "st243316",
-        "type": "show",
-        "title": "Čtyři roční období",
-        "year": 2025,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/w5rZPhvcluPUGH7SF1MRruTdRv6.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st241405",
         "type": "show",
         "title": "Zemřít pro sex",
         "year": 2025,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/jKtmOnMx6XibS4ispof2CZ05jLc.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st243316",
+        "type": "show",
+        "title": "Čtyři roční období",
+        "year": 2025,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/w5rZPhvcluPUGH7SF1MRruTdRv6.jpg",
         "roles": [
           "actor"
         ]
@@ -7797,6 +7797,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "mt1381078",
+        "type": "movie",
+        "title": "Láska tvého života",
+        "year": 2026,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/9eNA9QkC2goWXwB9EQhbCYgb61A.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt1222248",
         "type": "movie",
@@ -13672,81 +13683,6 @@
         "year": 2004,
         "score": 70,
         "poster": "https://image.tmdb.org/t/p/w342/hgcpfMJ59TbWKFgrPLzqTZqclN4.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p152545": {
-    "name": "Kelly Butler",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1325734",
-        "type": "movie",
-        "title": "Drama",
-        "year": 2026,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/pjztX7PQZMh0CxsSKaptAWfAY5n.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1008042",
-        "type": "movie",
-        "title": "Mluv se mnou",
-        "year": 2023,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/9YlsDgPGp4n9OTApQk8uAzNOJKH.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st82728",
-        "type": "show",
-        "title": "Blue",
-        "year": 2018,
-        "score": 92,
-        "poster": "https://image.tmdb.org/t/p/w342/9p4pNoGcuyCfHcGWKNrTopqMWtq.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt337958",
-        "type": "movie",
-        "title": "Poslední taxi do Darwinu",
-        "year": 2015,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/2MuEECBQKHTfrDY0HJuLRWwCNTJ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt43930",
-        "type": "movie",
-        "title": "Nemilosrdní",
-        "year": 2010,
-        "score": 61,
-        "poster": "https://image.tmdb.org/t/p/w342/5gCch2MnpAhWimy3B77D5s6Sgn1.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt604",
-        "type": "movie",
-        "title": "Matrix Reloaded",
-        "year": 2003,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/aA5qHS0FbSXO8PxcxUIHbDrJyuh.jpg",
         "roles": [
           "actor"
         ]
@@ -173738,6 +173674,81 @@
         "year": 2023,
         "score": 72,
         "poster": "https://image.tmdb.org/t/p/w342/yYzcbcXsj31xi3oaiiFz78g98bD.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p152545": {
+    "name": "Kelly Butler",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1325734",
+        "type": "movie",
+        "title": "Drama",
+        "year": 2026,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/pjztX7PQZMh0CxsSKaptAWfAY5n.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1008042",
+        "type": "movie",
+        "title": "Mluv se mnou",
+        "year": 2023,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/9YlsDgPGp4n9OTApQk8uAzNOJKH.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st82728",
+        "type": "show",
+        "title": "Blue",
+        "year": 2018,
+        "score": 92,
+        "poster": "https://image.tmdb.org/t/p/w342/9p4pNoGcuyCfHcGWKNrTopqMWtq.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt337958",
+        "type": "movie",
+        "title": "Poslední taxi do Darwinu",
+        "year": 2015,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/2MuEECBQKHTfrDY0HJuLRWwCNTJ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt43930",
+        "type": "movie",
+        "title": "Nemilosrdní",
+        "year": 2010,
+        "score": 61,
+        "poster": "https://image.tmdb.org/t/p/w342/5gCch2MnpAhWimy3B77D5s6Sgn1.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt604",
+        "type": "movie",
+        "title": "Matrix Reloaded",
+        "year": 2003,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/aA5qHS0FbSXO8PxcxUIHbDrJyuh.jpg",
         "roles": [
           "actor"
         ]
@@ -399209,31 +399220,119 @@
       }
     ]
   },
-  "p1647242": {
-    "name": "Jamie Love",
-    "img": "/amXG7jaVnyyp0IdwYDJlOGHv04o.jpg",
-    "birthday": null,
+  "p1951282": {
+    "name": "Yoshihito Sasaki",
+    "img": "/s3dCKhdu453qD4piXkz43UpBKdI.jpg",
+    "birthday": "1982-07-28",
     "deathday": null,
-    "age": null,
+    "age": 44,
     "works": [
       {
-        "id": "st139397",
+        "id": "st256721",
         "type": "show",
-        "title": "Svět podle nás",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
+        "title": "ガチアクタ",
+        "year": 2025,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/RxuL7KuFoOzHC0htjtLGxJEGGx.jpg",
         "roles": [
           "actor"
         ]
       },
       {
-        "id": "st50844",
+        "id": "st131041",
         "type": "show",
-        "title": "Enlisted",
-        "year": 2014,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/aWDyOXFZfflS8Igy20trgjPStxH.jpg",
+        "title": "Blue Lock",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st114410",
+        "type": "show",
+        "title": "Chainsaw Man",
+        "year": 2022,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/mIz0eKhzHuSPeRSePCyoCt9bKVp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st112160",
+        "type": "show",
+        "title": "Muž v domácnosti",
+        "year": 2021,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/yv5dLSRPbWlivdY7TQG8ZPB8NiL.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st121078",
+        "type": "show",
+        "title": "見える子ちゃん",
+        "year": 2021,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/oI3XhfpVoXRBdA7orxPsFkKcWKU.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st78204",
+        "type": "show",
+        "title": "ソードアート・オンライン オルタナティブ ガンゲイル・オンライン",
+        "year": 2018,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/e3lTqAxwYgzURmjI2mKZd02dFqX.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st82684",
+        "type": "show",
+        "title": "Jak jsem se reinkarnoval coby sliz",
+        "year": 2018,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/9YcNx1dnNkZ3PZzrMqc52WjCEcw.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st61901",
+        "type": "show",
+        "title": "Death Parade",
+        "year": 2015,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/pgnHXXTn2Uy0unuNCKFKHhL7BHR.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st1429",
+        "type": "show",
+        "title": "Šingeki no kjodžin",
+        "year": 2013,
+        "score": 91,
+        "poster": "https://image.tmdb.org/t/p/w342/qlbcGr0EYKRICD0MTrIwnIztQna.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st45790",
+        "type": "show",
+        "title": "JoJova prazvláštní dobrodružství",
+        "year": 2012,
+        "score": 86,
+        "poster": "https://image.tmdb.org/t/p/w342/2Sc0veFPh9CcHMtNqMyiQqIW9ZF.jpg",
         "roles": [
           "actor"
         ]
@@ -400449,23 +400548,23 @@
     "age": null,
     "works": [
       {
-        "id": "st244628",
-        "type": "show",
-        "title": "Long Bright River",
-        "year": 2025,
-        "score": 68,
-        "poster": "https://image.tmdb.org/t/p/w342/tQHOmmDXtDSsmXn55GcdtSOLMAc.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st241609",
         "type": "show",
         "title": "Sousedská tajemství",
         "year": 2025,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st244628",
+        "type": "show",
+        "title": "Long Bright River",
+        "year": 2025,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/tQHOmmDXtDSsmXn55GcdtSOLMAc.jpg",
         "roles": [
           "actor"
         ]
@@ -408065,6 +408164,46 @@
       }
     ]
   },
+  "p1917754": {
+    "name": "Kokoro Inuzuka",
+    "img": "/ufoq6F8SNe9GY2lAp2HciFDVghl.jpg",
+    "birthday": "2006-05-22",
+    "deathday": null,
+    "age": 20,
+    "works": [
+      {
+        "id": "st239137",
+        "type": "show",
+        "title": "Asura",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/jWHHkHspmVSDcEt416fcCg8aTd2.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4223090": {
+    "name": "Nick Doolan",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st241609",
+        "type": "show",
+        "title": "Sousedská tajemství",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p3975293": {
     "name": "Alejandro Antonio Ruiz",
     "img": null,
@@ -409462,6 +409601,114 @@
       }
     ]
   },
+  "p1321070": {
+    "name": "Yumi Uchiyama",
+    "img": "/JvavoF3YOLCf4LHfl4XvYobANE.jpg",
+    "birthday": "1987-10-30",
+    "deathday": null,
+    "age": 38,
+    "works": [
+      {
+        "id": "st300131",
+        "type": "show",
+        "title": "キルアオ",
+        "year": 2026,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/1hzamo8nOZmurGQQ7P2uqpsGHek.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st94664",
+        "type": "show",
+        "title": "Mushoku Tensei: Převtělený povaleč",
+        "year": 2021,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/tn2mxPYSSUPHgfcAe5SCga1DO0i.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st97525",
+        "type": "show",
+        "title": "不滅のあなたへ",
+        "year": 2021,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/bohMYRVSIG68md0zQobyWbV4S8e.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st90660",
+        "type": "show",
+        "title": "KENGAN ASHURA",
+        "year": 2019,
+        "score": 79,
+        "poster": "https://image.tmdb.org/t/p/w342/yB8e1BnzrXoPbxfi3GnUgjCiN41.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st78204",
+        "type": "show",
+        "title": "ソードアート・オンライン オルタナティブ ガンゲイル・オンライン",
+        "year": 2018,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/e3lTqAxwYgzURmjI2mKZd02dFqX.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st65942",
+        "type": "show",
+        "title": "Re: Zero - Život od nuly",
+        "year": 2016,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/sqMVORIn8crxtkE3AYkcs9EfUVc.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st64196",
+        "type": "show",
+        "title": "Overlord",
+        "year": 2015,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/7kOBPcfhmmfJxIXwJXSeuKM9BID.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st65329",
+        "type": "show",
+        "title": "氷菓",
+        "year": 2012,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/jLqFI9DNx5omo3SCUlvtHyhfhYa.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st30984",
+        "type": "show",
+        "title": "Bleach",
+        "year": 2004,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/e0kKmeM8R7Kersh5N2PPzIRNRhr.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p6396909": {
     "name": "Brooklyn Jaramillo",
     "img": "/hbRvlzeALvSuRrmaiVnHXqBTb1C.jpg",
@@ -410132,125 +410379,6 @@
       }
     ]
   },
-  "p1951282": {
-    "name": "Yoshihito Sasaki",
-    "img": "/s3dCKhdu453qD4piXkz43UpBKdI.jpg",
-    "birthday": "1982-07-28",
-    "deathday": null,
-    "age": 44,
-    "works": [
-      {
-        "id": "st256721",
-        "type": "show",
-        "title": "ガチアクタ",
-        "year": 2025,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/RxuL7KuFoOzHC0htjtLGxJEGGx.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st114410",
-        "type": "show",
-        "title": "Chainsaw Man",
-        "year": 2022,
-        "score": 83,
-        "poster": "https://image.tmdb.org/t/p/w342/mIz0eKhzHuSPeRSePCyoCt9bKVp.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st131041",
-        "type": "show",
-        "title": "Blue Lock",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st112160",
-        "type": "show",
-        "title": "Muž v domácnosti",
-        "year": 2021,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/yv5dLSRPbWlivdY7TQG8ZPB8NiL.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st121078",
-        "type": "show",
-        "title": "見える子ちゃん",
-        "year": 2021,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/oI3XhfpVoXRBdA7orxPsFkKcWKU.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st78204",
-        "type": "show",
-        "title": "ソードアート・オンライン オルタナティブ ガンゲイル・オンライン",
-        "year": 2018,
-        "score": 68,
-        "poster": "https://image.tmdb.org/t/p/w342/e3lTqAxwYgzURmjI2mKZd02dFqX.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st82684",
-        "type": "show",
-        "title": "Jak jsem se reinkarnoval coby sliz",
-        "year": 2018,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/9YcNx1dnNkZ3PZzrMqc52WjCEcw.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st61901",
-        "type": "show",
-        "title": "Death Parade",
-        "year": 2015,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/pgnHXXTn2Uy0unuNCKFKHhL7BHR.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st1429",
-        "type": "show",
-        "title": "Šingeki no kjodžin",
-        "year": 2013,
-        "score": 91,
-        "poster": "https://image.tmdb.org/t/p/w342/qlbcGr0EYKRICD0MTrIwnIztQna.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st45790",
-        "type": "show",
-        "title": "JoJova prazvláštní dobrodružství",
-        "year": 2012,
-        "score": 86,
-        "poster": "https://image.tmdb.org/t/p/w342/2Sc0veFPh9CcHMtNqMyiQqIW9ZF.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p126706": {
     "name": "Uko Tachibana",
     "img": "/x7lpGYcSe89SDibcdjXM9CiTrik.jpg",
@@ -410413,6 +410541,37 @@
         "year": 2022,
         "score": 82,
         "poster": "https://image.tmdb.org/t/p/w342/eYzbGcYnOUlvj2fa76pTgIXogd7.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1647242": {
+    "name": "Jamie Love",
+    "img": "/amXG7jaVnyyp0IdwYDJlOGHv04o.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st139397",
+        "type": "show",
+        "title": "Svět podle nás",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st50844",
+        "type": "show",
+        "title": "Enlisted",
+        "year": 2014,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/aWDyOXFZfflS8Igy20trgjPStxH.jpg",
         "roles": [
           "actor"
         ]
@@ -411365,46 +411524,6 @@
         "year": 2025,
         "score": 77,
         "poster": "https://image.tmdb.org/t/p/w342/bNPVb2Sv4N3CO7l6AdfjxNkMTfN.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1917754": {
-    "name": "Kokoro Inuzuka",
-    "img": "/ufoq6F8SNe9GY2lAp2HciFDVghl.jpg",
-    "birthday": "2006-05-22",
-    "deathday": null,
-    "age": 20,
-    "works": [
-      {
-        "id": "st239137",
-        "type": "show",
-        "title": "Asura",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/jWHHkHspmVSDcEt416fcCg8aTd2.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4223090": {
-    "name": "Nick Doolan",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st241609",
-        "type": "show",
-        "title": "Sousedská tajemství",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
         "roles": [
           "actor"
         ]
@@ -417958,103 +418077,6 @@
         "year": 2018,
         "score": 67,
         "poster": "https://image.tmdb.org/t/p/w342/tGVQa6Fym1wGkoM5o6LYFTlk6jx.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1321070": {
-    "name": "Yumi Uchiyama",
-    "img": "/JvavoF3YOLCf4LHfl4XvYobANE.jpg",
-    "birthday": "1987-10-30",
-    "deathday": null,
-    "age": 38,
-    "works": [
-      {
-        "id": "st94664",
-        "type": "show",
-        "title": "Mushoku Tensei: Převtělený povaleč",
-        "year": 2021,
-        "score": 82,
-        "poster": "https://image.tmdb.org/t/p/w342/tn2mxPYSSUPHgfcAe5SCga1DO0i.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st97525",
-        "type": "show",
-        "title": "不滅のあなたへ",
-        "year": 2021,
-        "score": 82,
-        "poster": "https://image.tmdb.org/t/p/w342/bohMYRVSIG68md0zQobyWbV4S8e.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st90660",
-        "type": "show",
-        "title": "KENGAN ASHURA",
-        "year": 2019,
-        "score": 79,
-        "poster": "https://image.tmdb.org/t/p/w342/yB8e1BnzrXoPbxfi3GnUgjCiN41.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st78204",
-        "type": "show",
-        "title": "ソードアート・オンライン オルタナティブ ガンゲイル・オンライン",
-        "year": 2018,
-        "score": 68,
-        "poster": "https://image.tmdb.org/t/p/w342/e3lTqAxwYgzURmjI2mKZd02dFqX.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st65942",
-        "type": "show",
-        "title": "Re: Zero - Život od nuly",
-        "year": 2016,
-        "score": 83,
-        "poster": "https://image.tmdb.org/t/p/w342/sqMVORIn8crxtkE3AYkcs9EfUVc.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st64196",
-        "type": "show",
-        "title": "Overlord",
-        "year": 2015,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/7kOBPcfhmmfJxIXwJXSeuKM9BID.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st65329",
-        "type": "show",
-        "title": "氷菓",
-        "year": 2012,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/jLqFI9DNx5omo3SCUlvtHyhfhYa.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st30984",
-        "type": "show",
-        "title": "Bleach",
-        "year": 2004,
-        "score": 83,
-        "poster": "https://image.tmdb.org/t/p/w342/e0kKmeM8R7Kersh5N2PPzIRNRhr.jpg",
         "roles": [
           "actor"
         ]

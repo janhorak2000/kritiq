@@ -3237,23 +3237,23 @@
         ]
       },
       {
-        "id": "st92830",
-        "type": "show",
-        "title": "Obi-Wan Kenobi",
-        "year": 2022,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/xleD0VJzltw6lr4WPJELhqmi7Bz.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st203085",
         "type": "show",
         "title": "Star Wars: Příběhy rytířů Jedi",
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/g2JsYEIyZGJy8slnVxmaH7j97bB.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st92830",
+        "type": "show",
+        "title": "Obi-Wan Kenobi",
+        "year": 2022,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/xleD0VJzltw6lr4WPJELhqmi7Bz.jpg",
         "roles": [
           "actor"
         ]
@@ -22497,6 +22497,73 @@
       }
     ]
   },
+  "p1295292": {
+    "name": "Brian Duffield",
+    "img": "/sNFeU2PGn8FULqQcqf73sBiL34i.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1255833",
+        "type": "movie",
+        "title": "Velrybí pád",
+        "year": 2026,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/uSjnb0s4oNZFhO8PiYLxs2Qqw48.jpg",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      },
+      {
+        "id": "mt820609",
+        "type": "movie",
+        "title": "Nikdo tě nezachrání",
+        "year": 2023,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/iMP2EcifRvFqnyMSBzfezIYCgrI.jpg",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      },
+      {
+        "id": "mt604578",
+        "type": "movie",
+        "title": "Výbuch",
+        "year": 2020,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/qhDICM8YxuDn9241O2UVEe9DupC.jpg",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      },
+      {
+        "id": "mt419479",
+        "type": "movie",
+        "title": "Chůva na zabití",
+        "year": 2017,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/uAzKNxGnbK5SL7VF7UeQyZdQLHV.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "mt262500",
+        "type": "movie",
+        "title": "Rezistence",
+        "year": 2015,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/rEh4A4Xcy1SBlUmiXQrC1xcTs7m.jpg",
+        "roles": [
+          "writer"
+        ]
+      }
+    ]
+  },
   "p1610783": {
     "name": "Eric Nam",
     "img": "/gEH0b5q9tupL49dmUFkjm9dnxP2.jpg",
@@ -25744,145 +25811,6 @@
         "year": 2026,
         "score": 72,
         "poster": "https://image.tmdb.org/t/p/w342/60BxAjKM20ABTSYnWZcJ8ExiVNL.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1223770": {
-    "name": "Dee Nelson",
-    "img": "/kfmANsOBqw6MUsa0ZJj7nkhjpJM.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1325734",
-        "type": "movie",
-        "title": "Drama",
-        "year": 2026,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/pjztX7PQZMh0CxsSKaptAWfAY5n.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt507532",
-        "type": "movie",
-        "title": "Ti nejlepší",
-        "year": 2023,
-        "score": 62,
-        "poster": "https://image.tmdb.org/t/p/w342/90D6sXfbXKhDpd4S1cHICdAe8VD.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt339976",
-        "type": "movie",
-        "title": "Americká žena",
-        "year": 2018,
-        "score": 68,
-        "poster": "https://image.tmdb.org/t/p/w342/jNK6NoDOJIC70abBGFITXcyO88n.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st4106",
-        "type": "show",
-        "title": "Kalifornské léto",
-        "year": 2004,
-        "score": 68,
-        "poster": "https://image.tmdb.org/t/p/w342/mvdhBaU7CaIaZzoO4SgjPcyxXAM.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt31005",
-        "type": "movie",
-        "title": "Půlnoční míle",
-        "year": 2002,
-        "score": 66,
-        "poster": "https://image.tmdb.org/t/p/w342/jKDnCPUkL4QsgeqKCtyNMPL2XUU.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt21991",
-        "type": "movie",
-        "title": "Velké trable malého města",
-        "year": 2000,
-        "score": 67,
-        "poster": "https://image.tmdb.org/t/p/w342/348hvpWeSGdAQlCrGvKbpC0FpQN.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt28902",
-        "type": "movie",
-        "title": "Přízraky ze snů",
-        "year": 1999,
-        "score": 55,
-        "poster": "https://image.tmdb.org/t/p/w342/q3Q00fCgeZGjAYaiwbfTMuIrUb0.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt32144",
-        "type": "movie",
-        "title": "Zakázaná touha",
-        "year": 1998,
-        "score": 62,
-        "poster": "https://image.tmdb.org/t/p/w342/zIPmvZyWLHOTZgpPXgnKgO2pvM0.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt178",
-        "type": "movie",
-        "title": "Zděšení",
-        "year": 1994,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/x7Z9oOGDh1S837li7RNYyB1pQAA.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2535498": {
-    "name": "Al Warren",
-    "img": "/x8wJ1WgJsm4tQNwavJPRYeCM5uO.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1325734",
-        "type": "movie",
-        "title": "Drama",
-        "year": 2026,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/pjztX7PQZMh0CxsSKaptAWfAY5n.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt823482",
-        "type": "movie",
-        "title": "To se mi snad zdá",
-        "year": 2023,
-        "score": 68,
-        "poster": "https://image.tmdb.org/t/p/w342/kk29jqouOgnSrb28snBtwyr5kCp.jpg",
         "roles": [
           "actor"
         ]
@@ -121885,6 +121813,114 @@
         "year": 1994,
         "score": 74,
         "poster": "https://image.tmdb.org/t/p/w342/6lGTDkWbd1ETg10xOV0OueH3x8a.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1223770": {
+    "name": "Dee Nelson",
+    "img": "/kfmANsOBqw6MUsa0ZJj7nkhjpJM.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1325734",
+        "type": "movie",
+        "title": "Drama",
+        "year": 2026,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/pjztX7PQZMh0CxsSKaptAWfAY5n.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt507532",
+        "type": "movie",
+        "title": "Ti nejlepší",
+        "year": 2023,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/90D6sXfbXKhDpd4S1cHICdAe8VD.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt339976",
+        "type": "movie",
+        "title": "Americká žena",
+        "year": 2018,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/jNK6NoDOJIC70abBGFITXcyO88n.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st4106",
+        "type": "show",
+        "title": "Kalifornské léto",
+        "year": 2004,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/mvdhBaU7CaIaZzoO4SgjPcyxXAM.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt31005",
+        "type": "movie",
+        "title": "Půlnoční míle",
+        "year": 2002,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/jKDnCPUkL4QsgeqKCtyNMPL2XUU.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt21991",
+        "type": "movie",
+        "title": "Velké trable malého města",
+        "year": 2000,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/348hvpWeSGdAQlCrGvKbpC0FpQN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt28902",
+        "type": "movie",
+        "title": "Přízraky ze snů",
+        "year": 1999,
+        "score": 55,
+        "poster": "https://image.tmdb.org/t/p/w342/q3Q00fCgeZGjAYaiwbfTMuIrUb0.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt32144",
+        "type": "movie",
+        "title": "Zakázaná touha",
+        "year": 1998,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/zIPmvZyWLHOTZgpPXgnKgO2pvM0.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt178",
+        "type": "movie",
+        "title": "Zděšení",
+        "year": 1994,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/x7Z9oOGDh1S837li7RNYyB1pQAA.jpg",
         "roles": [
           "actor"
         ]
@@ -234245,6 +234281,17 @@
     "age": 61,
     "works": [
       {
+        "id": "st298610",
+        "type": "show",
+        "title": "오싹한 연애",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st280948",
         "type": "show",
         "title": "스프링 피버",
@@ -234273,17 +234320,6 @@
         "year": 2026,
         "score": 75,
         "poster": "https://image.tmdb.org/t/p/w342/ny8zYj40mWGTgKJi1a8hjNFUj9n.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st298610",
-        "type": "show",
-        "title": "오싹한 연애",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
         "roles": [
           "actor"
         ]
@@ -252159,6 +252195,17 @@
         ]
       },
       {
+        "id": "st241405",
+        "type": "show",
+        "title": "Zemřít pro sex",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/jKtmOnMx6XibS4ispof2CZ05jLc.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
         "id": "st221079",
         "type": "show",
         "title": "Nejzazší hranice",
@@ -252176,17 +252223,6 @@
         "year": 2025,
         "score": 66,
         "poster": "https://image.tmdb.org/t/p/w342/sGHZrYxOU2U2JLrmYO12qGl1VK4.jpg",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
-        "id": "st241405",
-        "type": "show",
-        "title": "Zemřít pro sex",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/jKtmOnMx6XibS4ispof2CZ05jLc.jpg",
         "roles": [
           "composer"
         ]
@@ -273195,6 +273231,37 @@
       }
     ]
   },
+  "p2535498": {
+    "name": "Al Warren",
+    "img": "/x8wJ1WgJsm4tQNwavJPRYeCM5uO.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1325734",
+        "type": "movie",
+        "title": "Drama",
+        "year": 2026,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/pjztX7PQZMh0CxsSKaptAWfAY5n.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt823482",
+        "type": "movie",
+        "title": "To se mi snad zdá",
+        "year": 2023,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/kk29jqouOgnSrb28snBtwyr5kCp.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2015495": {
     "name": "Africa Miranda",
     "img": "/a8oKFhMIrOgCBw3OIoI2sCUaeIS.jpg",
@@ -279213,61 +279280,6 @@
       }
     ]
   },
-  "p1295292": {
-    "name": "Brian Duffield",
-    "img": "/sNFeU2PGn8FULqQcqf73sBiL34i.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt820609",
-        "type": "movie",
-        "title": "Nikdo tě nezachrání",
-        "year": 2023,
-        "score": 62,
-        "poster": "https://image.tmdb.org/t/p/w342/iMP2EcifRvFqnyMSBzfezIYCgrI.jpg",
-        "roles": [
-          "director",
-          "writer"
-        ]
-      },
-      {
-        "id": "mt604578",
-        "type": "movie",
-        "title": "Výbuch",
-        "year": 2020,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/qhDICM8YxuDn9241O2UVEe9DupC.jpg",
-        "roles": [
-          "director",
-          "writer"
-        ]
-      },
-      {
-        "id": "mt419479",
-        "type": "movie",
-        "title": "Chůva na zabití",
-        "year": 2017,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/uAzKNxGnbK5SL7VF7UeQyZdQLHV.jpg",
-        "roles": [
-          "writer"
-        ]
-      },
-      {
-        "id": "mt262500",
-        "type": "movie",
-        "title": "Rezistence",
-        "year": 2015,
-        "score": 62,
-        "poster": "https://image.tmdb.org/t/p/w342/rEh4A4Xcy1SBlUmiXQrC1xcTs7m.jpg",
-        "roles": [
-          "writer"
-        ]
-      }
-    ]
-  },
   "p3743584": {
     "name": "Ike Zacsongo-Joseph",
     "img": "/436HoOgbA6ucGgc3MRhzdIio06X.jpg",
@@ -281456,23 +281468,23 @@
         ]
       },
       {
-        "id": "st260458",
-        "type": "show",
-        "title": "Dospělost",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st243316",
         "type": "show",
         "title": "Čtyři roční období",
         "year": 2025,
         "score": 72,
         "poster": "https://image.tmdb.org/t/p/w342/w5rZPhvcluPUGH7SF1MRruTdRv6.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st260458",
+        "type": "show",
+        "title": "Dospělost",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
         "roles": [
           "actor"
         ]
@@ -549475,23 +549487,23 @@
     "age": null,
     "works": [
       {
-        "id": "st248394",
-        "type": "show",
-        "title": "Miluju tě navždy",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/twlp0YMmuKmn4cKAInAL3zde59W.jpg",
-        "roles": [
-          "director"
-        ]
-      },
-      {
         "id": "st258742",
         "type": "show",
         "title": "Všechno je fér",
         "year": 2025,
         "score": 37,
         "poster": "https://image.tmdb.org/t/p/w342/aTGcVnrPmf0YC3EuKLs9CuIpaRR.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "st248394",
+        "type": "show",
+        "title": "Miluju tě navždy",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/twlp0YMmuKmn4cKAInAL3zde59W.jpg",
         "roles": [
           "director"
         ]
@@ -604908,6 +604920,17 @@
     "deathday": null,
     "age": 82,
     "works": [
+      {
+        "id": "mt1356215",
+        "type": "movie",
+        "title": "Divočina",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/imeqhOV2rSOBGNVTHYm5RpO5wPZ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt1042913",
         "type": "movie",
@@ -669372,6 +669395,112 @@
       }
     ]
   },
+  "p2015132": {
+    "name": "Teppei Uenishi",
+    "img": "/ytMeFdygmOHwZzLoDIJImGt5Ylk.jpg",
+    "birthday": "1993-09-01",
+    "deathday": null,
+    "age": 33,
+    "works": [
+      {
+        "id": "st131041",
+        "type": "show",
+        "title": "Blue Lock",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st97525",
+        "type": "show",
+        "title": "不滅のあなたへ",
+        "year": 2021,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/bohMYRVSIG68md0zQobyWbV4S8e.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st95269",
+        "type": "show",
+        "title": "地縛少年花子くん",
+        "year": 2020,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/sPXvmpUW4tFf7DuNeovSomcTWLF.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st97617",
+        "type": "show",
+        "title": "The Misfit of Demon King Academy: History's Strongest Demon King Reincarnates and Goes to School with His Descendants",
+        "year": 2020,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/eVJyT5RJ4xNsxs4y0SbrJa3LKif.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st86034",
+        "type": "show",
+        "title": "ありふれた職業で世界最強",
+        "year": 2019,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/3vwcB2MtQA1VZMCljCRSrDzNzdj.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st83121",
+        "type": "show",
+        "title": "Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen",
+        "year": 2019,
+        "score": 85,
+        "poster": "https://image.tmdb.org/t/p/w342/tvemh1UGxnDKWPFYj40Zs6IWN7y.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st77721",
+        "type": "show",
+        "title": "３Ｄ彼女　リアルガール",
+        "year": 2018,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/eug6a4OSN5IV21SRNNZjXRNWZmw.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3245163": {
+    "name": "Miyuu Ayase",
+    "img": "/4hgOnZMiyh9DzIFsowRE20uiw0D.jpg",
+    "birthday": "2002-11-13",
+    "deathday": null,
+    "age": 23,
+    "works": [
+      {
+        "id": "st131041",
+        "type": "show",
+        "title": "Blue Lock",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p5609811": {
     "name": "Aaron De Lacey",
     "img": null,
@@ -688158,73 +688287,51 @@
       }
     ]
   },
-  "p1433012": {
-    "name": "Chantele Francis",
-    "img": "/5bRuDnopeGck0innFFOmX3W2vfq.jpg",
+  "p2625456": {
+    "name": "Isabella Mia",
+    "img": "/qTIr0uqhHABiLTAZX6pPggmcEoT.jpg",
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "st260458",
+        "id": "st241609",
         "type": "show",
-        "title": "Dospělost",
+        "title": "Sousedská tajemství",
         "year": 2025,
         "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st68006",
-        "type": "show",
-        "title": "Posedlý pomstou",
-        "year": 2017,
-        "score": 66,
-        "poster": "https://image.tmdb.org/t/p/w342/5TgdridU2w1pVsbQB2pt1xvazBX.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st60858",
-        "type": "show",
-        "title": "Hrdinové - Znovuzrození",
-        "year": 2015,
-        "score": 66,
-        "poster": "https://image.tmdb.org/t/p/w342/bHSkrlwjJgHq8Aa6AdDJvWuSI2X.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st60557",
-        "type": "show",
-        "title": "Witches of East End",
-        "year": 2013,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/jBWSp8hw8CNUFWxTCawXzAhu2Hj.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
         "roles": [
           "actor"
         ]
       }
     ]
   },
-  "p5503661": {
-    "name": "Christopher David Robertson",
-    "img": null,
+  "p3952243": {
+    "name": "Crede Cooper",
+    "img": "/tbyTwOzHLLspEDqliCFyMkazA4L.jpg",
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "st260458",
+        "id": "st241609",
         "type": "show",
-        "title": "Dospělost",
+        "title": "Sousedská tajemství",
         "year": 2025,
         "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st257534",
+        "type": "show",
+        "title": "Ďábel v přestrojení: John Wayne Gacy",
+        "year": 2025,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/vsXSxLYsAq0VsjWIMRpQGorjLjh.jpg",
         "roles": [
           "actor"
         ]
@@ -688720,37 +688827,6 @@
         "year": 2018,
         "score": 86,
         "poster": "https://image.tmdb.org/t/p/w342/5f23i30nFJz0nrd3DGheOCqXa2P.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3952243": {
-    "name": "Crede Cooper",
-    "img": "/tbyTwOzHLLspEDqliCFyMkazA4L.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st257534",
-        "type": "show",
-        "title": "Ďábel v přestrojení: John Wayne Gacy",
-        "year": 2025,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/vsXSxLYsAq0VsjWIMRpQGorjLjh.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st241609",
-        "type": "show",
-        "title": "Sousedská tajemství",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
         "roles": [
           "actor"
         ]
@@ -691894,6 +691970,38 @@
       }
     ]
   },
+  "p1789720": {
+    "name": "Hiro Kaburagi",
+    "img": "/yxqhX4tEaoaR5bn4QmsexKjyNYg.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st300131",
+        "type": "show",
+        "title": "キルアオ",
+        "year": 2026,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/1hzamo8nOZmurGQQ7P2uqpsGHek.jpg",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      },
+      {
+        "id": "st46041",
+        "type": "show",
+        "title": "となりの怪物くん",
+        "year": 2012,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/k3zDcJwqNMoTTEDdTdiKdsllGbM.jpg",
+        "roles": [
+          "director"
+        ]
+      }
+    ]
+  },
   "p3756674": {
     "name": "Zsolt Kormendy",
     "img": null,
@@ -694640,112 +694748,6 @@
       }
     ]
   },
-  "p2015132": {
-    "name": "Teppei Uenishi",
-    "img": "/ytMeFdygmOHwZzLoDIJImGt5Ylk.jpg",
-    "birthday": "1993-09-01",
-    "deathday": null,
-    "age": 33,
-    "works": [
-      {
-        "id": "st131041",
-        "type": "show",
-        "title": "Blue Lock",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st97525",
-        "type": "show",
-        "title": "不滅のあなたへ",
-        "year": 2021,
-        "score": 82,
-        "poster": "https://image.tmdb.org/t/p/w342/bohMYRVSIG68md0zQobyWbV4S8e.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st95269",
-        "type": "show",
-        "title": "地縛少年花子くん",
-        "year": 2020,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/sPXvmpUW4tFf7DuNeovSomcTWLF.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st97617",
-        "type": "show",
-        "title": "The Misfit of Demon King Academy: History's Strongest Demon King Reincarnates and Goes to School with His Descendants",
-        "year": 2020,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/eVJyT5RJ4xNsxs4y0SbrJa3LKif.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st86034",
-        "type": "show",
-        "title": "ありふれた職業で世界最強",
-        "year": 2019,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/3vwcB2MtQA1VZMCljCRSrDzNzdj.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st83121",
-        "type": "show",
-        "title": "Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen",
-        "year": 2019,
-        "score": 85,
-        "poster": "https://image.tmdb.org/t/p/w342/tvemh1UGxnDKWPFYj40Zs6IWN7y.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st77721",
-        "type": "show",
-        "title": "３Ｄ彼女　リアルガール",
-        "year": 2018,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/eug6a4OSN5IV21SRNNZjXRNWZmw.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3245163": {
-    "name": "Miyuu Ayase",
-    "img": "/4hgOnZMiyh9DzIFsowRE20uiw0D.jpg",
-    "birthday": "2002-11-13",
-    "deathday": null,
-    "age": 23,
-    "works": [
-      {
-        "id": "st131041",
-        "type": "show",
-        "title": "Blue Lock",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p4529765": {
     "name": "Kaho Yamasaki",
     "img": null,
@@ -697341,20 +697343,73 @@
       }
     ]
   },
-  "p2625456": {
-    "name": "Isabella Mia",
-    "img": "/qTIr0uqhHABiLTAZX6pPggmcEoT.jpg",
+  "p1433012": {
+    "name": "Chantele Francis",
+    "img": "/5bRuDnopeGck0innFFOmX3W2vfq.jpg",
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "st241609",
+        "id": "st260458",
         "type": "show",
-        "title": "Sousedská tajemství",
+        "title": "Dospělost",
         "year": 2025,
         "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st68006",
+        "type": "show",
+        "title": "Posedlý pomstou",
+        "year": 2017,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/5TgdridU2w1pVsbQB2pt1xvazBX.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st60858",
+        "type": "show",
+        "title": "Hrdinové - Znovuzrození",
+        "year": 2015,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/bHSkrlwjJgHq8Aa6AdDJvWuSI2X.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st60557",
+        "type": "show",
+        "title": "Witches of East End",
+        "year": 2013,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/jBWSp8hw8CNUFWxTCawXzAhu2Hj.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5503661": {
+    "name": "Christopher David Robertson",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st260458",
+        "type": "show",
+        "title": "Dospělost",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
         "roles": [
           "actor"
         ]
@@ -726804,26 +726859,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/5awTemzEgzOvsopOk92vmLRwhhu.jpg",
         "roles": [
           "actor"
-        ]
-      }
-    ]
-  },
-  "p1789720": {
-    "name": "Hiro Kaburagi",
-    "img": "/yxqhX4tEaoaR5bn4QmsexKjyNYg.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st46041",
-        "type": "show",
-        "title": "となりの怪物くん",
-        "year": 2012,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/k3zDcJwqNMoTTEDdTdiKdsllGbM.jpg",
-        "roles": [
-          "director"
         ]
       }
     ]
