@@ -2753,6 +2753,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1445363",
+        "type": "movie",
+        "title": "EPiC: Elvis Presley in Concert",
+        "year": 2026,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/2K2NH5dforjT9kLcUC0eeBpdZkC.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
         "id": "st204999",
         "type": "show",
         "title": "Faraway Downs",
@@ -16935,6 +16946,103 @@
       }
     ]
   },
+  "p12949": {
+    "name": "Priscilla Presley",
+    "img": "/AkHLzziAPK1NVI5lfELYt6u0kRP.jpg",
+    "birthday": "1945-05-24",
+    "deathday": null,
+    "age": 81,
+    "works": [
+      {
+        "id": "mt1445363",
+        "type": "movie",
+        "title": "EPiC: Elvis Presley in Concert",
+        "year": 2026,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/2K2NH5dforjT9kLcUC0eeBpdZkC.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1035259",
+        "type": "movie",
+        "title": "Bláznivá střela",
+        "year": 2025,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/cpmF9EnQFZYJRjJFFKZQ0T5sDuq.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st2359",
+        "type": "show",
+        "title": "Všichni starostovi muži",
+        "year": 1996,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/3Ksmbpg33PigXKWncD8rFMl24vF.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt36593",
+        "type": "movie",
+        "title": "Bláznivá střela 33 ⅓: Poslední trapas",
+        "year": 1994,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/63piHHluVo8EfZ7R94FYiz3ZtFJ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt37137",
+        "type": "movie",
+        "title": "Bláznivá střela 2 a ½: Vůně strachu",
+        "year": 1991,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/UkY24eTaAGL0YQljemVrpPymKq.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt9548",
+        "type": "movie",
+        "title": "Dobrodružství Forda Fairlanea",
+        "year": 1990,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/u6accimG7LmroR8WgNklEJS7oFq.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt37136",
+        "type": "movie",
+        "title": "Bláznivá střela",
+        "year": 1988,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/AwlutvejBGCrYQnMr0q3biXj0hD.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st40",
+        "type": "show",
+        "title": "Dallas",
+        "year": 1978,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/jmqo8bgHrhKYPc0RK5F71GHa8rm.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p6242975": {
     "name": "Alex Maystrik",
     "img": null,
@@ -19560,6 +19668,17 @@
         ]
       },
       {
+        "id": "st299255",
+        "type": "show",
+        "title": "Bacha, máma!",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/3XKj9YnIrzdm7Syu5lptjhn0Qn.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt959604",
         "type": "movie",
         "title": "Zběsilá láska",
@@ -20573,277 +20692,6 @@
         "year": 2018,
         "score": 63,
         "poster": "https://image.tmdb.org/t/p/w342/s4Qn5LF6OwK4rIifmthIDtbqDSs.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p589652": {
-    "name": "Robert Emms",
-    "img": "/yqXBUz5WMcuicfyp6GlKSLBdBJH.jpg",
-    "birthday": "1986-05-20",
-    "deathday": null,
-    "age": 40,
-    "works": [
-      {
-        "id": "mt1198654",
-        "type": "movie",
-        "title": "Bad Apples",
-        "year": 2026,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/60BxAjKM20ABTSYnWZcJ8ExiVNL.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt933090",
-        "type": "movie",
-        "title": "Starve Acre",
-        "year": 2024,
-        "score": 54,
-        "poster": "https://image.tmdb.org/t/p/w342/5j37QHXuNygzEa2X54RMlOb6hj3.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st102621",
-        "type": "show",
-        "title": "KAOS",
-        "year": 2024,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/dDBTUSl3tRsOeKC1jZugBSFHy9I.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st155243",
-        "type": "show",
-        "title": "Sherwood",
-        "year": 2022,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/rxjrfxGVzLNqvi4GSi7wuAGcJWg.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st153936",
-        "type": "show",
-        "title": "Čtyři životy",
-        "year": 2022,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/gPwcWYvu8qJO1LXWR0gGDxHvlwO.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st83867",
-        "type": "show",
-        "title": "Andor",
-        "year": 2022,
-        "score": 86,
-        "poster": "https://image.tmdb.org/t/p/w342/kkrR7x9TRAdtJ8v4Rxe98wZu3Ul.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st68507",
-        "type": "show",
-        "title": "Jeho temné esence",
-        "year": 2019,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/wqpoCbVvSi1NlAZWyqvKF0kyTPj.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st86374",
-        "type": "show",
-        "title": "Válka světů",
-        "year": 2019,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/yThmbQkxSzW4HHdAaoj8RYHFH3i.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st87108",
-        "type": "show",
-        "title": "Černobyl",
-        "year": 2019,
-        "score": 93,
-        "poster": "https://image.tmdb.org/t/p/w342/kPvKh7zbQXDBogKOgawQqKYW9eN.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt351286",
-        "type": "movie",
-        "title": "Jurský svět: Zánik říše",
-        "year": 2018,
-        "score": 62,
-        "poster": "https://image.tmdb.org/t/p/w342/yJK6Ds1XC0nOViJbT7Mcs9ngb6P.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt397538",
-        "type": "movie",
-        "title": "Borg/McEnroe",
-        "year": 2017,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/xIcivKyGdhu4HYr1yESyor150qh.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt473309",
-        "type": "movie",
-        "title": "Apostasy",
-        "year": 2017,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/zjhVHDCCl2nwR1yCPZX4xw819Se.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st73550",
-        "type": "show",
-        "title": "Střelný prach",
-        "year": 2017,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/3eHeKVmm08g8LDoXobBioyti7id.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st65522",
-        "type": "show",
-        "title": "Živí a mrtví",
-        "year": 2016,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/yIN4Se4XeP2JQ5dATrDlWv6TXlt.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st61244",
-        "type": "show",
-        "title": "Šťastné údolí",
-        "year": 2014,
-        "score": 85,
-        "poster": "https://image.tmdb.org/t/p/w342/cCBiJ09DnVYwEOGL8abJffiyaZz.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt194101",
-        "type": "movie",
-        "title": "Sobecký obr",
-        "year": 2013,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/5Bj6Oku5o7mcqZHMn6sZM1ifMhd.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt59859",
-        "type": "movie",
-        "title": "Kick-Ass 2",
-        "year": 2013,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/1go2A3gdQjaMuHWquybgoJlQRcX.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st47054",
-        "type": "show",
-        "title": "Atlantis",
-        "year": 2013,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/bmdlBu7y0pZq3KZwtFFHzWPEsbP.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt109584",
-        "type": "movie",
-        "title": "Rozbitý svět",
-        "year": 2012,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/cNeDPyJdeV4Gzs3TcVthM8AJYHW.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt62764",
-        "type": "movie",
-        "title": "Sněhurka",
-        "year": 2012,
-        "score": 56,
-        "poster": "https://image.tmdb.org/t/p/w342/gzTSQUUuFrm5ndkIbOVibT797os.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt61891",
-        "type": "movie",
-        "title": "Anonym",
-        "year": 2011,
-        "score": 68,
-        "poster": "https://image.tmdb.org/t/p/w342/mRjdFP0kqCPaDKeXgQtsb7how6e.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt57212",
-        "type": "movie",
-        "title": "Válečný kůň",
-        "year": 2011,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/3aRHhvvngFPJFy5uAjo7GVr3PhL.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5795407": {
-    "name": "Hudson Green",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1198654",
-        "type": "movie",
-        "title": "Bad Apples",
-        "year": 2026,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/60BxAjKM20ABTSYnWZcJ8ExiVNL.jpg",
         "roles": [
           "actor"
         ]
@@ -85101,92 +84949,6 @@
         "year": 1983,
         "score": 54,
         "poster": "https://image.tmdb.org/t/p/w342/aFeucuLcWHEiaITxJyT79fo8SUx.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p12949": {
-    "name": "Priscilla Presley",
-    "img": "/AkHLzziAPK1NVI5lfELYt6u0kRP.jpg",
-    "birthday": "1945-05-24",
-    "deathday": null,
-    "age": 81,
-    "works": [
-      {
-        "id": "mt1035259",
-        "type": "movie",
-        "title": "Bláznivá střela",
-        "year": 2025,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/cpmF9EnQFZYJRjJFFKZQ0T5sDuq.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st2359",
-        "type": "show",
-        "title": "Všichni starostovi muži",
-        "year": 1996,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/3Ksmbpg33PigXKWncD8rFMl24vF.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt36593",
-        "type": "movie",
-        "title": "Bláznivá střela 33 ⅓: Poslední trapas",
-        "year": 1994,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/63piHHluVo8EfZ7R94FYiz3ZtFJ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt37137",
-        "type": "movie",
-        "title": "Bláznivá střela 2 a ½: Vůně strachu",
-        "year": 1991,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/UkY24eTaAGL0YQljemVrpPymKq.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt9548",
-        "type": "movie",
-        "title": "Dobrodružství Forda Fairlanea",
-        "year": 1990,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/u6accimG7LmroR8WgNklEJS7oFq.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt37136",
-        "type": "movie",
-        "title": "Bláznivá střela",
-        "year": 1988,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/AwlutvejBGCrYQnMr0q3biXj0hD.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st40",
-        "type": "show",
-        "title": "Dallas",
-        "year": 1978,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/jmqo8bgHrhKYPc0RK5F71GHa8rm.jpg",
         "roles": [
           "actor"
         ]
@@ -206977,23 +206739,23 @@
         ]
       },
       {
-        "id": "st131041",
-        "type": "show",
-        "title": "Blue Lock",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st120089",
         "type": "show",
         "title": "SPY×FAMILY",
         "year": 2022,
         "score": 82,
         "poster": "https://image.tmdb.org/t/p/w342/vaIREdPGZOnW9Jrs86mheVVlIQQ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st131041",
+        "type": "show",
+        "title": "Blue Lock",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
         "roles": [
           "actor"
         ]
@@ -247439,6 +247201,17 @@
     "age": null,
     "works": [
       {
+        "id": "st213562",
+        "type": "show",
+        "title": "Crystal Lake",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/sIj9WcA1LkcjGbYjrbfV3pGegbF.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1015963",
         "type": "movie",
         "title": "Recept na smrt",
@@ -271643,17 +271416,6 @@
         ]
       },
       {
-        "id": "st131041",
-        "type": "show",
-        "title": "Blue Lock",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st123249",
         "type": "show",
         "title": "My Dress-Up Darling",
@@ -271682,6 +271444,17 @@
         "year": 2022,
         "score": 82,
         "poster": "https://image.tmdb.org/t/p/w342/vaIREdPGZOnW9Jrs86mheVVlIQQ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st131041",
+        "type": "show",
+        "title": "Blue Lock",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
         "roles": [
           "actor"
         ]
@@ -282241,6 +282014,257 @@
         "year": 2024,
         "score": 54,
         "poster": "https://image.tmdb.org/t/p/w342/9tG77VE7bP8ve79X86ABwHzDqbb.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p589652": {
+    "name": "Robert Emms",
+    "img": "/yqXBUz5WMcuicfyp6GlKSLBdBJH.jpg",
+    "birthday": "1986-05-20",
+    "deathday": null,
+    "age": 40,
+    "works": [
+      {
+        "id": "mt1198654",
+        "type": "movie",
+        "title": "Bad Apples",
+        "year": 2026,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/60BxAjKM20ABTSYnWZcJ8ExiVNL.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt933090",
+        "type": "movie",
+        "title": "Starve Acre",
+        "year": 2024,
+        "score": 54,
+        "poster": "https://image.tmdb.org/t/p/w342/5j37QHXuNygzEa2X54RMlOb6hj3.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st102621",
+        "type": "show",
+        "title": "KAOS",
+        "year": 2024,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/dDBTUSl3tRsOeKC1jZugBSFHy9I.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st155243",
+        "type": "show",
+        "title": "Sherwood",
+        "year": 2022,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/rxjrfxGVzLNqvi4GSi7wuAGcJWg.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st153936",
+        "type": "show",
+        "title": "Čtyři životy",
+        "year": 2022,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/gPwcWYvu8qJO1LXWR0gGDxHvlwO.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st83867",
+        "type": "show",
+        "title": "Andor",
+        "year": 2022,
+        "score": 86,
+        "poster": "https://image.tmdb.org/t/p/w342/kkrR7x9TRAdtJ8v4Rxe98wZu3Ul.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st68507",
+        "type": "show",
+        "title": "Jeho temné esence",
+        "year": 2019,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/wqpoCbVvSi1NlAZWyqvKF0kyTPj.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st86374",
+        "type": "show",
+        "title": "Válka světů",
+        "year": 2019,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/yThmbQkxSzW4HHdAaoj8RYHFH3i.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st87108",
+        "type": "show",
+        "title": "Černobyl",
+        "year": 2019,
+        "score": 93,
+        "poster": "https://image.tmdb.org/t/p/w342/kPvKh7zbQXDBogKOgawQqKYW9eN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt351286",
+        "type": "movie",
+        "title": "Jurský svět: Zánik říše",
+        "year": 2018,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/yJK6Ds1XC0nOViJbT7Mcs9ngb6P.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt397538",
+        "type": "movie",
+        "title": "Borg/McEnroe",
+        "year": 2017,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/xIcivKyGdhu4HYr1yESyor150qh.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt473309",
+        "type": "movie",
+        "title": "Apostasy",
+        "year": 2017,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/zjhVHDCCl2nwR1yCPZX4xw819Se.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st73550",
+        "type": "show",
+        "title": "Střelný prach",
+        "year": 2017,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/3eHeKVmm08g8LDoXobBioyti7id.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st65522",
+        "type": "show",
+        "title": "Živí a mrtví",
+        "year": 2016,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/yIN4Se4XeP2JQ5dATrDlWv6TXlt.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st61244",
+        "type": "show",
+        "title": "Šťastné údolí",
+        "year": 2014,
+        "score": 85,
+        "poster": "https://image.tmdb.org/t/p/w342/cCBiJ09DnVYwEOGL8abJffiyaZz.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt194101",
+        "type": "movie",
+        "title": "Sobecký obr",
+        "year": 2013,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/5Bj6Oku5o7mcqZHMn6sZM1ifMhd.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt59859",
+        "type": "movie",
+        "title": "Kick-Ass 2",
+        "year": 2013,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/1go2A3gdQjaMuHWquybgoJlQRcX.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st47054",
+        "type": "show",
+        "title": "Atlantis",
+        "year": 2013,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/bmdlBu7y0pZq3KZwtFFHzWPEsbP.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt109584",
+        "type": "movie",
+        "title": "Rozbitý svět",
+        "year": 2012,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/cNeDPyJdeV4Gzs3TcVthM8AJYHW.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt62764",
+        "type": "movie",
+        "title": "Sněhurka",
+        "year": 2012,
+        "score": 56,
+        "poster": "https://image.tmdb.org/t/p/w342/gzTSQUUuFrm5ndkIbOVibT797os.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt61891",
+        "type": "movie",
+        "title": "Anonym",
+        "year": 2011,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/mRjdFP0kqCPaDKeXgQtsb7how6e.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt57212",
+        "type": "movie",
+        "title": "Válečný kůň",
+        "year": 2011,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/3aRHhvvngFPJFy5uAjo7GVr3PhL.jpg",
         "roles": [
           "actor"
         ]
@@ -293278,6 +293302,17 @@
     "age": 65,
     "works": [
       {
+        "id": "st213562",
+        "type": "show",
+        "title": "Crystal Lake",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/sIj9WcA1LkcjGbYjrbfV3pGegbF.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1314129",
         "type": "movie",
         "title": "Preparation for the Next Life",
@@ -298117,6 +298152,26 @@
       }
     ]
   },
+  "p5795407": {
+    "name": "Hudson Green",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1198654",
+        "type": "movie",
+        "title": "Bad Apples",
+        "year": 2026,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/60BxAjKM20ABTSYnWZcJ8ExiVNL.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2114807": {
     "name": "Kelly Richard Fennig",
     "img": "/8ka3ZqPIhKEWx0kvjkZy2mN3gsH.jpg",
@@ -298151,6 +298206,26 @@
         "year": 2026,
         "score": 71,
         "poster": "https://image.tmdb.org/t/p/w342/4hfMbVbYc2gsMnSE1K8Oc9LQH4j.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1285825": {
+    "name": "Jess Royal",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1610413",
+        "type": "movie",
+        "title": "Poslední dobrodružství: Jak vznikaly Stranger Things 5",
+        "year": 2026,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/iX3ccl1TUNZgu4cNUm1pRLcevww.jpg",
         "roles": [
           "actor"
         ]
@@ -436717,23 +436792,23 @@
         ]
       },
       {
-        "id": "st127162",
-        "type": "show",
-        "title": "Jasnovidka Maggie",
-        "year": 2022,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/5kgwKKFZlrRCCRDGeRRNqep4Olh.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st139397",
         "type": "show",
         "title": "Svět podle nás",
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st127162",
+        "type": "show",
+        "title": "Jasnovidka Maggie",
+        "year": 2022,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/5kgwKKFZlrRCCRDGeRRNqep4Olh.jpg",
         "roles": [
           "actor"
         ]
@@ -465692,6 +465767,17 @@
     "deathday": null,
     "age": 56,
     "works": [
+      {
+        "id": "st213562",
+        "type": "show",
+        "title": "Crystal Lake",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/sIj9WcA1LkcjGbYjrbfV3pGegbF.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt188166",
         "type": "movie",
@@ -548956,185 +549042,6 @@
       }
     ]
   },
-  "p1232904": {
-    "name": "Lee Duck-hwa",
-    "img": "/ysB2JatlYtEHffdujEn7BZuNRXU.jpg",
-    "birthday": "1952-05-08",
-    "deathday": null,
-    "age": 74,
-    "works": [
-      {
-        "id": "st293608",
-        "type": "show",
-        "title": "Slečna Hongová v utajení",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/nJ0gSaXfoiPFngy1ulCCuxsKt0q.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st201852",
-        "type": "show",
-        "title": "Právník za dolar",
-        "year": 2022,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/aHmf91k8s19B1vLmt0F3lItF3QV.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st132925",
-        "type": "show",
-        "title": "The Red Sleeve",
-        "year": 2021,
-        "score": 84,
-        "poster": "https://image.tmdb.org/t/p/w342/uNwgSae0mzrY5X86Ret0lwd5glJ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st71349",
-        "type": "show",
-        "title": "Suspicious Partner",
-        "year": 2017,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/4ljaX3WO4RO7uTnQ5fKbaWgm85O.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2481327": {
-    "name": "Choi Kyung-min",
-    "img": "/nSl5GWzJSZTRrs3t84f4V4UM0Xs.jpg",
-    "birthday": "1996-04-21",
-    "deathday": null,
-    "age": 30,
-    "works": [
-      {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st99480",
-        "type": "show",
-        "title": "Dobrej detektiv",
-        "year": 2020,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/51iYzWkefsyFv6aEirPuzUScXxY.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3031338": {
-    "name": "Im Yu-ran",
-    "img": "/8bA3KGVD9ha4LbVQCdUYIpkluL2.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st117378",
-        "type": "show",
-        "title": "Mouse",
-        "year": 2021,
-        "score": 86,
-        "poster": "https://image.tmdb.org/t/p/w342/lrWHBK1h4rrEnx5Ml8iDR1SwNux.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st96977",
-        "type": "show",
-        "title": "When the Weather Is Fine",
-        "year": 2020,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/2SpLILOO9ODAi2te1xN3C0dbED9.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2650815": {
-    "name": "Yuki Otani",
-    "img": "/wuCgq2gsdevMRKKYEq2m1O9fGq6.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st131041",
-        "type": "show",
-        "title": "Blue Lock",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st123249",
-        "type": "show",
-        "title": "My Dress-Up Darling",
-        "year": 2022,
-        "score": 79,
-        "poster": "https://image.tmdb.org/t/p/w342/yDry50KhVrNJyS0Cjzv6auNJ0cx.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st83121",
-        "type": "show",
-        "title": "Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen",
-        "year": 2019,
-        "score": 85,
-        "poster": "https://image.tmdb.org/t/p/w342/tvemh1UGxnDKWPFYj40Zs6IWN7y.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p2271645": {
     "name": "Ashionye Michelle Raccah",
     "img": "/kN3y72RQu3gtn2jAdcgw29Bj8Hn.jpg",
@@ -549189,6 +549096,70 @@
         "year": 2022,
         "score": 80,
         "poster": "https://image.tmdb.org/t/p/w342/zYPRXAImgarNSKrwd4kXobjXQNQ.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1232904": {
+    "name": "Lee Duck-hwa",
+    "img": "/ysB2JatlYtEHffdujEn7BZuNRXU.jpg",
+    "birthday": "1952-05-08",
+    "deathday": null,
+    "age": 74,
+    "works": [
+      {
+        "id": "st293608",
+        "type": "show",
+        "title": "Slečna Hongová v utajení",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/nJ0gSaXfoiPFngy1ulCCuxsKt0q.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st201852",
+        "type": "show",
+        "title": "Právník za dolar",
+        "year": 2022,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/aHmf91k8s19B1vLmt0F3lItF3QV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st132925",
+        "type": "show",
+        "title": "The Red Sleeve",
+        "year": 2021,
+        "score": 84,
+        "poster": "https://image.tmdb.org/t/p/w342/uNwgSae0mzrY5X86Ret0lwd5glJ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st71349",
+        "type": "show",
+        "title": "Suspicious Partner",
+        "year": 2017,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/4ljaX3WO4RO7uTnQ5fKbaWgm85O.jpg",
         "roles": [
           "actor"
         ]
@@ -549280,6 +549251,48 @@
         "year": 2022,
         "score": 79,
         "poster": "https://image.tmdb.org/t/p/w342/yDry50KhVrNJyS0Cjzv6auNJ0cx.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2650815": {
+    "name": "Yuki Otani",
+    "img": "/wuCgq2gsdevMRKKYEq2m1O9fGq6.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st123249",
+        "type": "show",
+        "title": "My Dress-Up Darling",
+        "year": 2022,
+        "score": 79,
+        "poster": "https://image.tmdb.org/t/p/w342/yDry50KhVrNJyS0Cjzv6auNJ0cx.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st131041",
+        "type": "show",
+        "title": "Blue Lock",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st83121",
+        "type": "show",
+        "title": "Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen",
+        "year": 2019,
+        "score": 85,
+        "poster": "https://image.tmdb.org/t/p/w342/tvemh1UGxnDKWPFYj40Zs6IWN7y.jpg",
         "roles": [
           "actor"
         ]
@@ -561114,6 +561127,26 @@
       }
     ]
   },
+  "p109645": {
+    "name": "Kim Nam-jin",
+    "img": "/oJHfLfwilLQZUvJBc0bjYqtkr0m.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st291496",
+        "type": "show",
+        "title": "Karameláska",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/ny8zYj40mWGTgKJi1a8hjNFUj9n.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p3072995": {
     "name": "Joe Eyre",
     "img": "/wVYXQ6MZguVnrKTgHUJxhupaZrt.jpg",
@@ -561510,6 +561543,17 @@
         "year": 2026,
         "score": 69,
         "poster": "https://image.tmdb.org/t/p/w342/lrF8Ve4GoazCalfbrSY52tUIXSN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st213562",
+        "type": "show",
+        "title": "Crystal Lake",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/sIj9WcA1LkcjGbYjrbfV3pGegbF.jpg",
         "roles": [
           "actor"
         ]
@@ -562300,6 +562344,46 @@
       }
     ]
   },
+  "p4070101": {
+    "name": "Michael Keyloun",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st213562",
+        "type": "show",
+        "title": "Crystal Lake",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/sIj9WcA1LkcjGbYjrbfV3pGegbF.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6522947": {
+    "name": "Ella Bostyn",
+    "img": "/l9YgU45iqbadjb7Uut8lNCHistQ.jpg",
+    "birthday": "2009-07-22",
+    "deathday": null,
+    "age": 17,
+    "works": [
+      {
+        "id": "st321532",
+        "type": "show",
+        "title": "Winter",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/r6Uf6RXvvnAgQphfpRuw47XJnhe.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p3981705": {
     "name": "Eva Šmerdová",
     "img": null,
@@ -562880,6 +562964,79 @@
         "year": 2022,
         "score": 82,
         "poster": "https://image.tmdb.org/t/p/w342/mrOxruke1FI0Sx6v6BOdpu4yppZ.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2481327": {
+    "name": "Choi Kyung-min",
+    "img": "/nSl5GWzJSZTRrs3t84f4V4UM0Xs.jpg",
+    "birthday": "1996-04-21",
+    "deathday": null,
+    "age": 30,
+    "works": [
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st99480",
+        "type": "show",
+        "title": "Dobrej detektiv",
+        "year": 2020,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/51iYzWkefsyFv6aEirPuzUScXxY.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3031338": {
+    "name": "Im Yu-ran",
+    "img": "/8bA3KGVD9ha4LbVQCdUYIpkluL2.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st117378",
+        "type": "show",
+        "title": "Mouse",
+        "year": 2021,
+        "score": 86,
+        "poster": "https://image.tmdb.org/t/p/w342/lrWHBK1h4rrEnx5Ml8iDR1SwNux.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st96977",
+        "type": "show",
+        "title": "When the Weather Is Fine",
+        "year": 2020,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/2SpLILOO9ODAi2te1xN3C0dbED9.jpg",
         "roles": [
           "actor"
         ]
@@ -565208,26 +565365,6 @@
         "year": 2026,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/xIQKtBSUJhlz2Jl9TsXEI0iZMgu.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p109645": {
-    "name": "Kim Nam-jin",
-    "img": "/oJHfLfwilLQZUvJBc0bjYqtkr0m.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st291496",
-        "type": "show",
-        "title": "Karameláska",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/ny8zYj40mWGTgKJi1a8hjNFUj9n.jpg",
         "roles": [
           "actor"
         ]

@@ -1,13 +1,31 @@
 {
   "movies": [
     {
-      "title": "Runner",
+      "title": "The Social Reckoning",
       "year": 2026,
-      "date": "2026-09-07",
+      "date": "2026-10-07",
+      "score": 89,
+      "poster": "https://image.tmdb.org/t/p/w342/nZ8cQbjAQHRuSqwxvuYhOfxyhfW.jpg",
+      "tmdb_id": 1281331,
+      "imdb_id": "tt37510326"
+    },
+    {
+      "title": "Resident Evil",
+      "year": 2026,
+      "date": "2026-09-16",
       "score": 84,
-      "poster": "https://image.tmdb.org/t/p/w342/yBKMAIj7clP42UkFejhGDBBoTpb.jpg",
-      "tmdb_id": 1377237,
-      "imdb_id": "tt31349844"
+      "poster": "https://image.tmdb.org/t/p/w342/i7UyjfPio0VFHB9rBUZSFyhOoM8.jpg",
+      "tmdb_id": 1423191,
+      "imdb_id": "tt35538033"
+    },
+    {
+      "title": "The Fix",
+      "year": 2026,
+      "date": "2026-09-10",
+      "score": 82,
+      "poster": "https://image.tmdb.org/t/p/w342/yopXjun3ICFfJci2ukcEzceZjUs.jpg",
+      "tmdb_id": 1228834,
+      "imdb_id": "tt9601292"
     },
     {
       "title": "Spider-Man: Zbrusu nový den",
@@ -19,39 +37,31 @@
       "imdb_id": "tt22084616"
     },
     {
-      "title": "V srdci divočiny",
+      "title": "Digger",
       "year": 2026,
-      "date": "2026-09-19",
+      "date": "2026-09-28",
       "score": 79,
-      "poster": "https://image.tmdb.org/t/p/w342/vIQY7fG0AzSCUhO8BIOusCdhjAz.jpg",
-      "tmdb_id": 1263337,
-      "imdb_id": "tt7526136"
+      "poster": "https://image.tmdb.org/t/p/w342/qiXi6tAv8DoNfPf56G4yljjWhqG.jpg",
+      "tmdb_id": 1248832,
+      "imdb_id": "tt31450459"
     },
     {
-      "title": "Legenda o Aangovi: Poslední vládce větru",
+      "title": "Primetime",
       "year": 2026,
-      "date": "2026-07-24",
-      "score": 77,
-      "poster": "https://image.tmdb.org/t/p/w342/3sgnSfNT27Bx5O5ukr7B26mhEQq.jpg",
-      "tmdb_id": 980431,
-      "imdb_id": "tt18259538"
+      "date": "2026-09-23",
+      "score": 78,
+      "poster": "https://image.tmdb.org/t/p/w342/51VDtNQFuD2I86hrT4ekytg9Dq3.jpg",
+      "tmdb_id": 1375441,
+      "imdb_id": "tt34206385"
     },
     {
-      "title": "Kojot vrací úder",
+      "title": "Tony",
       "year": 2026,
-      "date": "2026-08-20",
+      "date": "2026-08-07",
       "score": 76,
-      "poster": "https://image.tmdb.org/t/p/w342/fFjf76Ngjf8BXCDsGPhIqpZUAkY.jpg",
-      "tmdb_id": 1204680,
-      "imdb_id": "tt1756855"
-    },
-    {
-      "title": "Dovolená v Českém ráji",
-      "year": 2026,
-      "date": "2026-07-30",
-      "score": 75,
-      "poster": "https://image.tmdb.org/t/p/w342/9fCmXAp4IIwLT3dZoG7vicNeK3e.jpg",
-      "tmdb_id": 1661097
+      "poster": "https://image.tmdb.org/t/p/w342/gkcJYUSaJPYzAN7f5NsxcLmi95S.jpg",
+      "tmdb_id": 1329016,
+      "imdb_id": "tt33095251"
     },
     {
       "title": "The Incomer",
@@ -63,13 +73,12 @@
       "imdb_id": "tt36980182"
     },
     {
-      "title": "Zvířata",
+      "title": "Dovolená v Českém ráji",
       "year": 2026,
-      "date": "2026-10-09",
-      "score": 74,
-      "poster": "https://image.tmdb.org/t/p/w342/ilG5SDwCpuncg9XF4MLVcjj9lkK.jpg",
-      "tmdb_id": 1236045,
-      "imdb_id": "tt31049299"
+      "date": "2026-07-30",
+      "score": 75,
+      "poster": "https://image.tmdb.org/t/p/w342/9fCmXAp4IIwLT3dZoG7vicNeK3e.jpg",
+      "tmdb_id": 1661097
     },
     {
       "title": "The Rivals of Amziah King",
@@ -79,27 +88,9 @@
       "poster": "https://image.tmdb.org/t/p/w342/3iVDCDS1VwHIm95PjWEPwsfdhaf.jpg",
       "tmdb_id": 1124142,
       "imdb_id": "tt27706593"
-    },
-    {
-      "title": "Zdaleka nejlepší",
-      "year": 2026,
-      "date": "2026-09-18",
-      "score": 73,
-      "poster": "https://image.tmdb.org/t/p/w342/9soOjsZ91vtMzypK2F3MC378JI5.jpg",
-      "tmdb_id": 1514863,
-      "imdb_id": "tt16478058"
     }
   ],
   "shows": [
-    {
-      "title": "포핸즈",
-      "year": 2026,
-      "date": "2026-08-29",
-      "score": 87,
-      "poster": "https://image.tmdb.org/t/p/w342/sdvxrJMzACBUG87YS1YYKmRzTN8.jpg",
-      "tmdb_id": 305644,
-      "imdb_id": "tt39368345"
-    },
     {
       "title": "Grand Tour",
       "year": 2026,
@@ -119,22 +110,13 @@
       "imdb_id": "tt36303968"
     },
     {
-      "title": "오싹한 연애",
+      "title": "Lanterns",
       "year": 2026,
-      "date": "2026-07-18",
-      "score": 75,
-      "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
-      "tmdb_id": 298610,
-      "imdb_id": "tt40247521"
-    },
-    {
-      "title": "Sterling Point",
-      "year": 2026,
-      "date": "2026-08-05",
-      "score": 74,
-      "poster": "https://image.tmdb.org/t/p/w342/cThLWEGs6BEqY0QZMbU4FAeWwPT.jpg",
-      "tmdb_id": 283297,
-      "imdb_id": "tt35618070"
+      "date": "2026-08-16",
+      "score": 78,
+      "poster": "https://image.tmdb.org/t/p/w342/gpC7h43xPMEV3goYMQShfJbTtLq.jpg",
+      "tmdb_id": 95350,
+      "imdb_id": "tt26545992"
     },
     {
       "title": "S&X",
@@ -146,40 +128,58 @@
       "imdb_id": "tt39365311"
     },
     {
-      "title": "Moje skvělá kariéra",
+      "title": "Jak Stuart nezachránil vesmír",
       "year": 2026,
-      "date": "2026-08-13",
+      "date": "2026-07-23",
+      "score": 71,
+      "poster": "https://image.tmdb.org/t/p/w342/3Djz7brd4WcLM3fXHx2JHFqNDp2.jpg",
+      "tmdb_id": 287620,
+      "imdb_id": "tt27497393"
+    },
+    {
+      "title": "Akademie Minerva",
+      "year": 2026,
+      "date": "2026-09-22",
       "score": 70,
-      "poster": "https://image.tmdb.org/t/p/w342/fhpa8B6USatHybK04XBbPAB6Mlz.jpg",
-      "tmdb_id": 309798,
-      "imdb_id": "tt37352716"
+      "poster": "https://image.tmdb.org/t/p/w342/cTTXRklz5tJWX6wrN3XrjHo34H1.jpg",
+      "tmdb_id": 312557,
+      "imdb_id": "tt28765828"
     },
     {
-      "title": "Hawk",
+      "title": "A Tale of Two Cities",
       "year": 2026,
-      "date": "2026-07-16",
+      "date": "2026-09-06",
+      "score": 67,
+      "poster": "https://image.tmdb.org/t/p/w342/ht3OVVRBTrTeVtUVQiKSekjIFVH.jpg",
+      "tmdb_id": 301626,
+      "imdb_id": "tt38128417"
+    },
+    {
+      "title": "Elitní jednotka",
+      "year": 2026,
+      "date": "2026-07-22",
       "score": 64,
-      "poster": "https://image.tmdb.org/t/p/w342/6XCbqv7t0rYE2U1jzjh52fBxczj.jpg",
-      "tmdb_id": 254528,
-      "imdb_id": "tt27550719"
+      "poster": "https://image.tmdb.org/t/p/w342/vQdH60N1xXzKnym1qsYaDpzwNYL.jpg",
+      "tmdb_id": 281281,
+      "imdb_id": "tt35495063"
     },
     {
-      "title": "Filter",
+      "title": "Krvavá oběť",
       "year": 2026,
-      "date": "2026-09-02",
+      "date": "2026-08-20",
       "score": 63,
-      "poster": "https://image.tmdb.org/t/p/w342/3QFQKxdoCtZvtKAyuNg7o0XtbjZ.jpg",
-      "tmdb_id": 312978,
-      "imdb_id": "tt38267578"
+      "poster": "https://image.tmdb.org/t/p/w342/8iFUWLKBAWDrJ9rOunscgIDrGQ1.jpg",
+      "tmdb_id": 303351,
+      "imdb_id": "tt38553367"
     },
     {
-      "title": "Čističi",
+      "title": "Anna Pigeon",
       "year": 2026,
-      "date": "2026-09-17",
+      "date": "2026-08-07",
       "score": 60,
-      "poster": "https://image.tmdb.org/t/p/w342/mZ0rPTMe9XfrWRUAeoJzr62cyIa.jpg",
-      "tmdb_id": 312663,
-      "imdb_id": "tt39495239"
+      "poster": "https://image.tmdb.org/t/p/w342/iLhi3wqsLOdHB61vySJRm7y09XS.jpg",
+      "tmdb_id": 291350,
+      "imdb_id": "tt36937503"
     }
   ],
   "games": [
@@ -192,28 +192,12 @@
       "rawg_id": 1004298
     },
     {
-      "title": "Pragmata",
-      "year": 2026,
-      "date": "2026-04-17",
-      "score": 88,
-      "poster": "https://media.rawg.io/media/resize/640/-/games/9b2/9b20adbf00491d56ad6793654067f2fd.jpg",
-      "rawg_id": 452650
-    },
-    {
       "title": "Forza Horizon 6",
       "year": 2026,
       "date": "2026-05-19",
       "score": 87,
       "poster": "https://media.rawg.io/media/resize/640/-/games/d74/d744a3b0f6f0f0bc63f5ceb9b5e63230.jpeg",
       "rawg_id": 1010949
-    },
-    {
-      "title": "Star Wars Zero Company",
-      "year": 2026,
-      "date": "2026-08-27",
-      "score": 86,
-      "poster": "https://media.rawg.io/media/resize/640/-/games/dae/dae6fd03dd5edbf15b193f20bec3cd58.jpg",
-      "rawg_id": 1002691
     },
     {
       "title": "Servant of the Lake",
@@ -232,6 +216,14 @@
       "rawg_id": 994600
     },
     {
+      "title": "Star Wars Zero Company",
+      "year": 2026,
+      "date": "2026-08-27",
+      "score": 86,
+      "poster": "https://media.rawg.io/media/resize/640/-/games/dae/dae6fd03dd5edbf15b193f20bec3cd58.jpg",
+      "rawg_id": 1002691
+    },
+    {
       "title": "S.T.A.L.K.E.R. 2: Cost of Hope",
       "year": 2026,
       "date": "2026-08-20",
@@ -240,12 +232,12 @@
       "rawg_id": 1018108
     },
     {
-      "title": "The Blood Of Dawnwalker",
+      "title": "Mortal Shell II",
       "year": 2026,
-      "date": "2026-09-03",
-      "score": 83,
-      "poster": "https://media.rawg.io/media/resize/640/-/games/319/319d18680fd0233e0ff724f234c97d17.jpg",
-      "rawg_id": 996046
+      "date": "2026-08-20",
+      "score": 84,
+      "poster": "https://media.rawg.io/media/resize/640/-/games/c86/c8696c763ec825c6e4d49efbf2635a26.jpg",
+      "rawg_id": 1004515
     },
     {
       "title": "Resonance: A Plague Tale Legacy",
@@ -262,15 +254,24 @@
       "score": 79,
       "poster": "https://media.rawg.io/media/resize/640/-/games/5d3/5d3bf8f5f7f769d2a85d1a9de159a645.jpg",
       "rawg_id": 979038
+    },
+    {
+      "title": "Duskfade",
+      "year": 2026,
+      "date": "2026-08-13",
+      "score": 78,
+      "poster": "https://media.rawg.io/media/resize/640/-/games/f58/f583b6126e57ac2cf9eeed6d526b9e6a.jpg",
+      "rawg_id": 1001012
     }
   ],
   "recentlyAdded": {
     "movie": {
-      "title": "Pitomá příroda",
+      "title": "Divočina",
       "year": 2026,
       "score": null,
-      "backdrop": "https://image.tmdb.org/t/p/w500/74wRcggQpcyuw4KyT3EAThePn3n.jpg",
-      "tmdb_id": 1791470
+      "backdrop": "https://image.tmdb.org/t/p/w500/uuh01A4NAfYxCVRS6o4WQS4QwIE.jpg",
+      "tmdb_id": 1356215,
+      "imdb_id": "tt43661652"
     },
     "show": {
       "title": "VisionQuest",
@@ -281,11 +282,11 @@
       "imdb_id": "tt23112594"
     },
     "game": {
-      "title": "Valor Mortis",
+      "title": "Enshrouded",
       "year": 2026,
       "score": null,
-      "backdrop": "https://media.rawg.io/media/resize/640/-/screenshots/20e/20e62ea7ec2a498bf56e31058f0bd4b1.jpg",
-      "rawg_id": 1008986
+      "backdrop": "https://media.rawg.io/media/resize/640/-/screenshots/98e/98e4f3b3096a2784cd28663c51eca14f.jpg",
+      "rawg_id": 975605
     }
   }
 }
