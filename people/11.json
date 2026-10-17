@@ -13307,6 +13307,17 @@
     "age": 65,
     "works": [
       {
+        "id": "mt1561726",
+        "type": "movie",
+        "title": "Mistrovský plán",
+        "year": 2026,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/2nItMjKr4I4lD1LEy4LoX3aSEJ1.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1314481",
         "type": "movie",
         "title": "Ďábel nosí Pradu 2",
@@ -29554,123 +29565,6 @@
         "year": 2024,
         "score": 54,
         "poster": "https://image.tmdb.org/t/p/w342/erEAU7ygq2XFjziI3FpAdMajJFZ.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1919072": {
-    "name": "Gerald Tyler",
-    "img": "/nI6FJw3XbbHXRvvGJpChxwonClU.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt977942",
-        "type": "movie",
-        "title": "The Uprising",
-        "year": 2026,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/7TUl15TOsIvndKlgMWTtLgtEzZP.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt706693",
-        "type": "movie",
-        "title": "Timestalker",
-        "year": 2024,
-        "score": 55,
-        "poster": "https://image.tmdb.org/t/p/w342/gUIBW4NKSFQ2GiJLLULDmtHT21.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st227496",
-        "type": "show",
-        "title": "Než tě zabiju",
-        "year": 2024,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/uyKHq8uSDSxbxn2xVaHMxtzp0Ti.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt941019",
-        "type": "movie",
-        "title": "LOLA",
-        "year": 2023,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/6IQEDnHKMvzforhtQW9mwW5kSHB.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt637649",
-        "type": "movie",
-        "title": "Rozhněvaný muž",
-        "year": 2021,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/AkkNSwdNMZ2Nc2cin9dfN7OVO2y.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt614205",
-        "type": "movie",
-        "title": "Dark Light",
-        "year": 2019,
-        "score": 45,
-        "poster": "https://image.tmdb.org/t/p/w342/468foMrROMKsaF8HWmQaZ5nhDrR.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt426487",
-        "type": "movie",
-        "title": "The Lighthouse",
-        "year": 2016,
-        "score": 54,
-        "poster": "https://image.tmdb.org/t/p/w342/xkBdT6p7242LTfBdGuyrZNZSeOb.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt141058",
-        "type": "movie",
-        "title": "A Viking Saga: The Darkest Day",
-        "year": 2013,
-        "score": 42,
-        "poster": "https://image.tmdb.org/t/p/w342/37LtzncocEztZVhvrRAefqXGLQg.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6475359": {
-    "name": "Florian Schreiber",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt977942",
-        "type": "movie",
-        "title": "The Uprising",
-        "year": 2026,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/7TUl15TOsIvndKlgMWTtLgtEzZP.jpg",
         "roles": [
           "actor"
         ]
@@ -293547,6 +293441,103 @@
       }
     ]
   },
+  "p1919072": {
+    "name": "Gerald Tyler",
+    "img": "/nI6FJw3XbbHXRvvGJpChxwonClU.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt977942",
+        "type": "movie",
+        "title": "The Uprising",
+        "year": 2026,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/7TUl15TOsIvndKlgMWTtLgtEzZP.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt706693",
+        "type": "movie",
+        "title": "Timestalker",
+        "year": 2024,
+        "score": 55,
+        "poster": "https://image.tmdb.org/t/p/w342/gUIBW4NKSFQ2GiJLLULDmtHT21.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st227496",
+        "type": "show",
+        "title": "Než tě zabiju",
+        "year": 2024,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/uyKHq8uSDSxbxn2xVaHMxtzp0Ti.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt941019",
+        "type": "movie",
+        "title": "LOLA",
+        "year": 2023,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/6IQEDnHKMvzforhtQW9mwW5kSHB.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt637649",
+        "type": "movie",
+        "title": "Rozhněvaný muž",
+        "year": 2021,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/AkkNSwdNMZ2Nc2cin9dfN7OVO2y.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt614205",
+        "type": "movie",
+        "title": "Dark Light",
+        "year": 2019,
+        "score": 45,
+        "poster": "https://image.tmdb.org/t/p/w342/468foMrROMKsaF8HWmQaZ5nhDrR.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt426487",
+        "type": "movie",
+        "title": "The Lighthouse",
+        "year": 2016,
+        "score": 54,
+        "poster": "https://image.tmdb.org/t/p/w342/xkBdT6p7242LTfBdGuyrZNZSeOb.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt141058",
+        "type": "movie",
+        "title": "A Viking Saga: The Darkest Day",
+        "year": 2013,
+        "score": 42,
+        "poster": "https://image.tmdb.org/t/p/w342/37LtzncocEztZVhvrRAefqXGLQg.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p4765409": {
     "name": "Khalil Amonette",
     "img": null,
@@ -343685,6 +343676,26 @@
         "year": 2025,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/exmzlC9szpz0tGitM02hXwlKKf8.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6475359": {
+    "name": "Florian Schreiber",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt977942",
+        "type": "movie",
+        "title": "The Uprising",
+        "year": 2026,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/7TUl15TOsIvndKlgMWTtLgtEzZP.jpg",
         "roles": [
           "actor"
         ]
@@ -702961,26 +702972,6 @@
       }
     ]
   },
-  "nCrytivo Games": {
-    "name": "Crytivo Games",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "gr9794",
-        "type": "game",
-        "title": "The Universim",
-        "year": 2024,
-        "score": 71,
-        "poster": "https://media.rawg.io/media/resize/640/-/screenshots/b73/b737e900881090f2c944f808f0116f1e.jpg",
-        "roles": [
-          "developer"
-        ]
-      }
-    ]
-  },
   "nFriedemann": {
     "name": "Friedemann",
     "img": null,
@@ -708277,6 +708268,26 @@
         "year": 2024,
         "score": 79,
         "poster": "https://media.rawg.io/media/resize/640/-/games/c11/c119d11961d785498ccb8e1ed9b006ca.jpg",
+        "roles": [
+          "developer"
+        ]
+      }
+    ]
+  },
+  "nCrytivo Games": {
+    "name": "Crytivo Games",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "gr9794",
+        "type": "game",
+        "title": "The Universim",
+        "year": 2024,
+        "score": 71,
+        "poster": "https://media.rawg.io/media/resize/640/-/screenshots/b73/b737e900881090f2c944f808f0116f1e.jpg",
         "roles": [
           "developer"
         ]

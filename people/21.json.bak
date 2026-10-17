@@ -13266,6 +13266,26 @@
       }
     ]
   },
+  "p3570907": {
+    "name": "Gladys Presley",
+    "img": null,
+    "birthday": "1912-04-25",
+    "deathday": "1958-08-14",
+    "age": 46,
+    "works": [
+      {
+        "id": "mt1445363",
+        "type": "movie",
+        "title": "EPiC: Elvis Presley in Concert",
+        "year": 2026,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/2K2NH5dforjT9kLcUC0eeBpdZkC.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p4609220": {
     "name": "Cameron Alexander",
     "img": null,
@@ -13459,6 +13479,26 @@
         "year": 2026,
         "score": 74,
         "poster": "https://image.tmdb.org/t/p/w342/dueFqKLvjftnELZaGYwY7xinfaI.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1467191": {
+    "name": "Ashley P. Jones",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1437396",
+        "type": "movie",
+        "title": "Your Mother Your Mother Your Mother",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
         "roles": [
           "actor"
         ]
@@ -14483,90 +14523,6 @@
         "year": 2020,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/rUHNEwJJP42onidB02FHbMo7EUP.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4828175": {
-    "name": "Reena Dusila",
-    "img": "/yNko9qZWGdS4CtcMQONYwm5ThFx.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1198654",
-        "type": "movie",
-        "title": "Bad Apples",
-        "year": 2026,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/60BxAjKM20ABTSYnWZcJ8ExiVNL.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1233575",
-        "type": "movie",
-        "title": "Operace Black Bag",
-        "year": 2025,
-        "score": 67,
-        "poster": "https://image.tmdb.org/t/p/w342/zwcSjDAfl7nQzVxucTkQLIq6yGU.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt975773",
-        "type": "movie",
-        "title": "Nemravné dopisy",
-        "year": 2024,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/k3Wm0Y4XElmueedwqgp5Js5gUxs.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2081529": {
-    "name": "Christopher de Courcy-Ireland",
-    "img": "/y4iYbM5mQMUNypg9sbE4ggde9cd.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1492640",
-        "type": "movie",
-        "title": "UNABOMBER",
-        "year": 2026,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/39aMkR8Y5vhCG9dTkjiqRl8AVqp.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt406759",
-        "type": "movie",
-        "title": "Pád Měsíce",
-        "year": 2022,
-        "score": 52,
-        "poster": "https://image.tmdb.org/t/p/w342/odVv1sqVs0KxBXiA8bhIBlPgalx.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st69630",
-        "type": "show",
-        "title": "Troufalky",
-        "year": 2017,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/cKloQpl6zE7kdFf8SUeYU2qPT9H.jpg",
         "roles": [
           "actor"
         ]
@@ -130240,23 +130196,23 @@
     "age": 68,
     "works": [
       {
-        "id": "st303143",
-        "type": "show",
-        "title": "My Royal Nemesis",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/u2cX3CVzUZLIGVwd9HB7bUhE7OP.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st259837",
         "type": "show",
         "title": "SUPERpaka",
         "year": 2026,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/qlPdAwp7rjltEl1vaBxoejP5boB.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st303143",
+        "type": "show",
+        "title": "My Royal Nemesis",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/u2cX3CVzUZLIGVwd9HB7bUhE7OP.jpg",
         "roles": [
           "actor"
         ]
@@ -156391,6 +156347,17 @@
     "age": 41,
     "works": [
       {
+        "id": "mt1623256",
+        "type": "movie",
+        "title": "Bouře",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/kjAsuaDcNsemYTQ8tUorpVE1FJb.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt760868",
         "type": "movie",
         "title": "Černý krab",
@@ -158799,6 +158766,48 @@
         "year": 2018,
         "score": 59,
         "poster": "https://image.tmdb.org/t/p/w342/9KYEVSiRf6qWYO94NNfOw1BvO2x.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2081529": {
+    "name": "Christopher de Courcy-Ireland",
+    "img": "/y4iYbM5mQMUNypg9sbE4ggde9cd.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1492640",
+        "type": "movie",
+        "title": "UNABOMBER",
+        "year": 2026,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/39aMkR8Y5vhCG9dTkjiqRl8AVqp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt406759",
+        "type": "movie",
+        "title": "Pád Měsíce",
+        "year": 2022,
+        "score": 52,
+        "poster": "https://image.tmdb.org/t/p/w342/odVv1sqVs0KxBXiA8bhIBlPgalx.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st69630",
+        "type": "show",
+        "title": "Troufalky",
+        "year": 2017,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/cKloQpl6zE7kdFf8SUeYU2qPT9H.jpg",
         "roles": [
           "actor"
         ]
@@ -179371,6 +179380,48 @@
       }
     ]
   },
+  "p4828175": {
+    "name": "Reena Dusila",
+    "img": "/yNko9qZWGdS4CtcMQONYwm5ThFx.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1198654",
+        "type": "movie",
+        "title": "Bad Apples",
+        "year": 2026,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/60BxAjKM20ABTSYnWZcJ8ExiVNL.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1233575",
+        "type": "movie",
+        "title": "Operace Black Bag",
+        "year": 2025,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/zwcSjDAfl7nQzVxucTkQLIq6yGU.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt975773",
+        "type": "movie",
+        "title": "Nemravné dopisy",
+        "year": 2024,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/k3Wm0Y4XElmueedwqgp5Js5gUxs.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p5341929": {
     "name": "Damien Bilon",
     "img": null,
@@ -183725,23 +183776,23 @@
         ]
       },
       {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st129888",
         "type": "show",
         "title": "Pětadvacet jednadvacet",
         "year": 2022,
         "score": 85,
         "poster": "https://image.tmdb.org/t/p/w342/706Ar36Q1XT3056JQHoYpJbh6W0.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
         "roles": [
           "actor"
         ]
@@ -220234,6 +220285,17 @@
     "deathday": null,
     "age": 76,
     "works": [
+      {
+        "id": "st316544",
+        "type": "show",
+        "title": "Ronaldinho: Naprostý unikát",
+        "year": 2026,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/zYdSaQLM8w3NMuBnjRPjqpiUnyp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt58496",
         "type": "movie",
@@ -359475,6 +359537,26 @@
       }
     ]
   },
+  "p1526162": {
+    "name": "Justin James Hughes",
+    "img": "/zvFM1CHKkK9f9i9q6JYdcm81L6f.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st139397",
+        "type": "show",
+        "title": "Svět podle nás",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p3809542": {
     "name": "Facundo Calvo",
     "img": null,
@@ -360734,6 +360816,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "st306603",
+        "type": "show",
+        "title": "Gone",
+        "year": 2026,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/qnxKB5HlkAZZcyIiITIV7dAUX7u.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "st223313",
         "type": "show",
@@ -363750,6 +363843,48 @@
       }
     ]
   },
+  "p160165": {
+    "name": "Keith Walker",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st250923",
+        "type": "show",
+        "title": "Tohle nikdo nechce",
+        "year": 2024,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/cvGpkCyUFvweJmQ2e2B6SUMvPMJ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st121509",
+        "type": "show",
+        "title": "My jsme Upshawovi",
+        "year": 2021,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/bgtpwAsKNfqJmgp3zBxuSHMBAaW.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st117910",
+        "type": "show",
+        "title": "United States of Al",
+        "year": 2021,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/iE9STLu2DjxwM6TkOrszkfNS0hV.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p1754390": {
     "name": "Vivienne Medrano",
     "img": "/cco4rKedqE5n9jvOHanINDcyBJy.jpg",
@@ -366700,26 +366835,6 @@
       }
     ]
   },
-  "p1526162": {
-    "name": "Justin James Hughes",
-    "img": "/zvFM1CHKkK9f9i9q6JYdcm81L6f.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st139397",
-        "type": "show",
-        "title": "Svět podle nás",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p2506031": {
     "name": "Hwang Hee",
     "img": "/jbsK0zA0ujSGtnAuhK7VKh4UsXc.jpg",
@@ -367297,48 +367412,6 @@
         "year": 2021,
         "score": 71,
         "poster": "https://image.tmdb.org/t/p/w342/k1z2xv3JjGobO9jfybHGo2tqAKC.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p160165": {
-    "name": "Keith Walker",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st250923",
-        "type": "show",
-        "title": "Tohle nikdo nechce",
-        "year": 2024,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/cvGpkCyUFvweJmQ2e2B6SUMvPMJ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st121509",
-        "type": "show",
-        "title": "My jsme Upshawovi",
-        "year": 2021,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/bgtpwAsKNfqJmgp3zBxuSHMBAaW.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st117910",
-        "type": "show",
-        "title": "United States of Al",
-        "year": 2021,
-        "score": 66,
-        "poster": "https://image.tmdb.org/t/p/w342/iE9STLu2DjxwM6TkOrszkfNS0hV.jpg",
         "roles": [
           "actor"
         ]

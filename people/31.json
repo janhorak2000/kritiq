@@ -1261,6 +1261,17 @@
     "age": 69,
     "works": [
       {
+        "id": "mt1487317",
+        "type": "movie",
+        "title": "Terapie, jak má být",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/vaok2Dm7suKG2gEY2cKBXL4OMYf.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st226362",
         "type": "show",
         "title": "Eternaut",
@@ -27445,6 +27456,110 @@
         "year": 2026,
         "score": 75,
         "poster": "https://image.tmdb.org/t/p/w342/uSrozVUxIUaer6FIUHHFtOdbqj8.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3402354": {
+    "name": "Emanuel Diez",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1487317",
+        "type": "movie",
+        "title": "Terapie, jak má být",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/vaok2Dm7suKG2gEY2cKBXL4OMYf.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "mt931935",
+        "type": "movie",
+        "title": "V nesprávných službách",
+        "year": 2023,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/9LZrDfLoxG4sCRoAMonWlE6Uoxy.jpg",
+        "roles": [
+          "writer"
+        ]
+      }
+    ]
+  },
+  "p1562670": {
+    "name": "Miriam Odorico",
+    "img": "/3wdXhgm7DlrYA4mD7NZPwEotMbG.jpg",
+    "birthday": "1961-11-09",
+    "deathday": null,
+    "age": 64,
+    "works": [
+      {
+        "id": "mt1487317",
+        "type": "movie",
+        "title": "Terapie, jak má být",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/vaok2Dm7suKG2gEY2cKBXL4OMYf.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st128306",
+        "type": "show",
+        "title": "Šéf",
+        "year": 2022,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/41SlC4xbNhYkuaGCo62fxYfNXQ7.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt620883",
+        "type": "movie",
+        "title": "Tušení",
+        "year": 2020,
+        "score": 56,
+        "poster": "https://image.tmdb.org/t/p/w342/8UxtCBZiZ72GjNIoGAVKPrOD36T.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2413751": {
+    "name": "Andrés Granier",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1487317",
+        "type": "movie",
+        "title": "Terapie, jak má být",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/vaok2Dm7suKG2gEY2cKBXL4OMYf.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1002459",
+        "type": "movie",
+        "title": "Únos",
+        "year": 2023,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/7ayaN1HSWcBO8ODQmONQKzleZep.jpg",
         "roles": [
           "actor"
         ]
@@ -294442,26 +294557,6 @@
       }
     ]
   },
-  "p2413751": {
-    "name": "Andrés Granier",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1002459",
-        "type": "movie",
-        "title": "Únos",
-        "year": 2023,
-        "score": 62,
-        "poster": "https://image.tmdb.org/t/p/w342/7ayaN1HSWcBO8ODQmONQKzleZep.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p4510241": {
     "name": "Alexis Lennon",
     "img": null,
@@ -308324,26 +308419,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/aM3wnZTKEuPLDwxuMWcHDibOkiw.jpg",
         "roles": [
           "actor"
-        ]
-      }
-    ]
-  },
-  "p3402354": {
-    "name": "Emanuel Diez",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt931935",
-        "type": "movie",
-        "title": "V nesprávných službách",
-        "year": 2023,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/9LZrDfLoxG4sCRoAMonWlE6Uoxy.jpg",
-        "roles": [
-          "writer"
         ]
       }
     ]
@@ -350946,6 +351021,88 @@
         "year": 2012,
         "score": 80,
         "poster": "https://image.tmdb.org/t/p/w342/eoAozU5BAxw5jbXtB8xpG95HZe8.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2689026": {
+    "name": "Dan Garza",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1742441",
+        "type": "movie",
+        "title": "V/H/S/Mixtape",
+        "year": 2026,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/uS8yoiA6NfsuYeOTbVfpem8Ib9.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st73925",
+        "type": "show",
+        "title": "K smíchu",
+        "year": 2018,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/oYqvxrvN5PVd4Kvp46LnXVl42nW.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3583293": {
+    "name": "Amanda Maddock",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1742441",
+        "type": "movie",
+        "title": "V/H/S/Mixtape",
+        "year": 2026,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/uS8yoiA6NfsuYeOTbVfpem8Ib9.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st1894",
+        "type": "show",
+        "title": "LazyTown",
+        "year": 2004,
+        "score": 61,
+        "poster": "https://image.tmdb.org/t/p/w342/9bkxU7kTMLuhBOPnkAYXtCsqZj3.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4742231": {
+    "name": "Anatol Rotman",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1742441",
+        "type": "movie",
+        "title": "V/H/S/Mixtape",
+        "year": 2026,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/uS8yoiA6NfsuYeOTbVfpem8Ib9.jpg",
         "roles": [
           "actor"
         ]
@@ -463973,37 +464130,6 @@
         "year": 2018,
         "score": 73,
         "poster": "https://image.tmdb.org/t/p/w342/sNqZzxDi7IaU3DBrsVud56iLn92.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1562670": {
-    "name": "Miriam Odorico",
-    "img": "/3wdXhgm7DlrYA4mD7NZPwEotMbG.jpg",
-    "birthday": "1961-11-09",
-    "deathday": null,
-    "age": 64,
-    "works": [
-      {
-        "id": "st128306",
-        "type": "show",
-        "title": "Šéf",
-        "year": 2022,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/41SlC4xbNhYkuaGCo62fxYfNXQ7.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt620883",
-        "type": "movie",
-        "title": "Tušení",
-        "year": 2020,
-        "score": 56,
-        "poster": "https://image.tmdb.org/t/p/w342/8UxtCBZiZ72GjNIoGAVKPrOD36T.jpg",
         "roles": [
           "actor"
         ]
@@ -754127,26 +754253,6 @@
       }
     ]
   },
-  "p2689026": {
-    "name": "Dan Garza",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st73925",
-        "type": "show",
-        "title": "K smíchu",
-        "year": 2018,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/oYqvxrvN5PVd4Kvp46LnXVl42nW.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p2041192": {
     "name": "Sebastian Maltz",
     "img": "/7T3ni3sU5zFnFt0Mu759fbyX3cR.jpg",
@@ -786332,26 +786438,6 @@
         "year": 1993,
         "score": 84,
         "poster": "https://image.tmdb.org/t/p/w342/SjgpJrNXSmus9dXWO1ZCSase0k.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3583293": {
-    "name": "Amanda Maddock",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st1894",
-        "type": "show",
-        "title": "LazyTown",
-        "year": 2004,
-        "score": 61,
-        "poster": "https://image.tmdb.org/t/p/w342/9bkxU7kTMLuhBOPnkAYXtCsqZj3.jpg",
         "roles": [
           "actor"
         ]

@@ -23814,6 +23814,37 @@
       }
     ]
   },
+  "p2075123": {
+    "name": "Patricia Echegoyen",
+    "img": null,
+    "birthday": "1962-03-16",
+    "deathday": null,
+    "age": 64,
+    "works": [
+      {
+        "id": "mt1487317",
+        "type": "movie",
+        "title": "Terapie, jak má být",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/vaok2Dm7suKG2gEY2cKBXL4OMYf.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st261615",
+        "type": "show",
+        "title": "Závistivá",
+        "year": 2024,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/jx9j67VSSQA8ng3cbNrQPlZWbjS.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p1990676": {
     "name": "KeiLyn Durrel Jones",
     "img": "/4wDO3Zt9KJg9CARCEgjuVdhWa8x.jpg",
@@ -322297,6 +322328,17 @@
     "age": 43,
     "works": [
       {
+        "id": "mt1742441",
+        "type": "movie",
+        "title": "V/H/S/Mixtape",
+        "year": 2026,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/uS8yoiA6NfsuYeOTbVfpem8Ib9.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st202101",
         "type": "show",
         "title": "Night Court",
@@ -425197,6 +425239,59 @@
       }
     ]
   },
+  "p1489824": {
+    "name": "Eliott Margueron",
+    "img": "/bXXHdRf9NBXHlA0OBlROZgolaMp.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1561726",
+        "type": "movie",
+        "title": "Mistrovský plán",
+        "year": 2026,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/2nItMjKr4I4lD1LEy4LoX3aSEJ1.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st157368",
+        "type": "show",
+        "title": "New look",
+        "year": 2024,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/zbJ03Iy0ZkAhnq9joY1XAOWWQTo.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt382501",
+        "type": "movie",
+        "title": "Věčnost",
+        "year": 2016,
+        "score": 55,
+        "poster": "https://image.tmdb.org/t/p/w342/fUYM4VgH7Orvx5BdWSGOJYtFtrS.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt377263",
+        "type": "movie",
+        "title": "Frantz",
+        "year": 2016,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/soakku6EGI1kj8eTPh9Rx7O2gJT.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p1620933": {
     "name": "DeVere Jehl",
     "img": null,
@@ -431333,6 +431428,26 @@
         "year": 2026,
         "score": 50,
         "poster": "https://image.tmdb.org/t/p/w342/nPPIufTBnzEg0d7NoR5RLL1oPra.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6197472": {
+    "name": "T J Minor",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1742441",
+        "type": "movie",
+        "title": "V/H/S/Mixtape",
+        "year": 2026,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/uS8yoiA6NfsuYeOTbVfpem8Ib9.jpg",
         "roles": [
           "actor"
         ]
@@ -720949,48 +721064,6 @@
       }
     ]
   },
-  "p1489824": {
-    "name": "Eliott Margueron",
-    "img": "/bXXHdRf9NBXHlA0OBlROZgolaMp.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st157368",
-        "type": "show",
-        "title": "New look",
-        "year": 2024,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/zbJ03Iy0ZkAhnq9joY1XAOWWQTo.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt382501",
-        "type": "movie",
-        "title": "Věčnost",
-        "year": 2016,
-        "score": 55,
-        "poster": "https://image.tmdb.org/t/p/w342/fUYM4VgH7Orvx5BdWSGOJYtFtrS.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt377263",
-        "type": "movie",
-        "title": "Frantz",
-        "year": 2016,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/soakku6EGI1kj8eTPh9Rx7O2gJT.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1140222": {
     "name": "Mariko Munro",
     "img": null,
@@ -859639,26 +859712,6 @@
         "year": 2024,
         "score": 73,
         "poster": "https://image.tmdb.org/t/p/w342/zPK4dB6pMvAjUnDcPE2JlStvHV1.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2075123": {
-    "name": "Patricia Echegoyen",
-    "img": null,
-    "birthday": "1962-03-16",
-    "deathday": null,
-    "age": 64,
-    "works": [
-      {
-        "id": "st261615",
-        "type": "show",
-        "title": "Závistivá",
-        "year": 2024,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/jx9j67VSSQA8ng3cbNrQPlZWbjS.jpg",
         "roles": [
           "actor"
         ]
