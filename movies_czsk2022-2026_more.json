@@ -68958,5 +68958,90 @@
       }
     ],
     "reviews": []
+  },
+  {
+    "title": "Call",
+    "tmdb_id": 1759906,
+    "imdb_id": null,
+    "original_language": "cs",
+    "year": 2026,
+    "date": "2026-09-17",
+    "score": null,
+    "box": null,
+    "box_currency": null,
+    "country": "Česko",
+    "genre": "Drama",
+    "runtime": 61,
+    "poster": "https://image.tmdb.org/t/p/w342/joOTPrsOtC77qgXKccknXvAItEp.jpg",
+    "gallery": [
+      "https://image.tmdb.org/t/p/w500/y2wAjFwmcYpfOZvwe7mPuC0QS95.jpg"
+    ],
+    "summary": "Adam má všechno – kariéru, krásnou ženu, dvě děti, byt v centru města. Jenže jedno odpoledne, kdy zůstane sám doma, se připojí na zdánlivě anonymní sex call. Nevinná hra? Malý úlet? Nebo past? Na druhé straně sedí někdo, kdo ví víc, než by měl.",
+    "director": {
+      "id": 2930401,
+      "name": "Matěj Balcar",
+      "image": ""
+    },
+    "composer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "writer": {
+      "id": 2930401,
+      "name": "Matěj Balcar",
+      "image": ""
+    },
+    "actors": [
+      {
+        "id": 1364527,
+        "name": "Daniel Šváb",
+        "birthday": "1976-04-12",
+        "deathday": null,
+        "age": 50,
+        "image": ""
+      },
+      {
+        "id": 1425313,
+        "name": "Jana Kolesárová",
+        "birthday": "1976-02-15",
+        "deathday": null,
+        "age": 50,
+        "image": "https://image.tmdb.org/t/p/w300/sJzhVCgssHyPWQaLSb7AvuZeGin.jpg"
+      },
+      {
+        "id": 2930401,
+        "name": "Matěj Balcar",
+        "birthday": "1991-04-30",
+        "deathday": null,
+        "age": 35,
+        "image": ""
+      },
+      {
+        "id": 2508933,
+        "name": "Ines Ben Ahmed",
+        "birthday": "2006-11-07",
+        "deathday": null,
+        "age": 19,
+        "image": ""
+      },
+      {
+        "id": 1996776,
+        "name": "Johana Nováčková",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/yxnP9YzEYMNxCyWm6aq0kZK0oxZ.jpg"
+      },
+      {
+        "id": 6449647,
+        "name": "Matěj Hezký",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      }
+    ],
+    "reviews": []
   }
 ]

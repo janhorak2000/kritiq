@@ -30834,92 +30834,6 @@
       }
     ]
   },
-  "p2262886": {
-    "name": "Dónal Finn",
-    "img": "/4LXCZdrP9OOYQ9PeGGCCBQsyIUP.jpg",
-    "birthday": "1995-08-31",
-    "deathday": null,
-    "age": 31,
-    "works": [
-      {
-        "id": "mt977942",
-        "type": "movie",
-        "title": "The Uprising",
-        "year": 2026,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/7TUl15TOsIvndKlgMWTtLgtEzZP.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st255661",
-        "type": "show",
-        "title": "Mladý Sherlock",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/7qHP3oZh9sZGM4bRw88iABg3SwN.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st273866",
-        "type": "show",
-        "title": "Jedna ze sester Bennetových",
-        "year": 2026,
-        "score": 83,
-        "poster": "https://image.tmdb.org/t/p/w342/esU4D2XSA7hNHC8G2bmMkvX5g5H.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt338953",
-        "type": "movie",
-        "title": "Fantastická zvířata: Brumbálova tajemství",
-        "year": 2022,
-        "score": 62,
-        "poster": "https://image.tmdb.org/t/p/w342/d7sq9SJbU1yGnvnDLljczowiWkK.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st93870",
-        "type": "show",
-        "title": "Pluk mizerů",
-        "year": 2022,
-        "score": 82,
-        "poster": "https://image.tmdb.org/t/p/w342/lOx7YS4jIlO6NvOhCOyfvzdkw1D.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st71914",
-        "type": "show",
-        "title": "Kolo času",
-        "year": 2021,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/t56wId9q6miNfFH8GXfKzuZ3hmx.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt572299",
-        "type": "movie",
-        "title": "Jak stvořit dívku",
-        "year": 2020,
-        "score": 60,
-        "poster": "https://image.tmdb.org/t/p/w342/svEKCyQmJs3ZRu4YC6rQl248AAs.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p56957": {
     "name": "Tom Szollosi",
     "img": null,
@@ -275558,6 +275472,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1742441",
+        "type": "movie",
+        "title": "V/H/S/Mixtape",
+        "year": 2026,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/uS8yoiA6NfsuYeOTbVfpem8Ib9.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt893372",
         "type": "movie",
         "title": "Jízda s Madeleine",
@@ -288875,6 +288800,92 @@
         "year": 2022,
         "score": 62,
         "poster": "https://image.tmdb.org/t/p/w342/d7sq9SJbU1yGnvnDLljczowiWkK.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2262886": {
+    "name": "Dónal Finn",
+    "img": "/4LXCZdrP9OOYQ9PeGGCCBQsyIUP.jpg",
+    "birthday": "1995-08-31",
+    "deathday": null,
+    "age": 31,
+    "works": [
+      {
+        "id": "mt977942",
+        "type": "movie",
+        "title": "The Uprising",
+        "year": 2026,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/7TUl15TOsIvndKlgMWTtLgtEzZP.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st255661",
+        "type": "show",
+        "title": "Mladý Sherlock",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/7qHP3oZh9sZGM4bRw88iABg3SwN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st273866",
+        "type": "show",
+        "title": "Jedna ze sester Bennetových",
+        "year": 2026,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/esU4D2XSA7hNHC8G2bmMkvX5g5H.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt338953",
+        "type": "movie",
+        "title": "Fantastická zvířata: Brumbálova tajemství",
+        "year": 2022,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/d7sq9SJbU1yGnvnDLljczowiWkK.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st93870",
+        "type": "show",
+        "title": "Pluk mizerů",
+        "year": 2022,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/lOx7YS4jIlO6NvOhCOyfvzdkw1D.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st71914",
+        "type": "show",
+        "title": "Kolo času",
+        "year": 2021,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/t56wId9q6miNfFH8GXfKzuZ3hmx.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt572299",
+        "type": "movie",
+        "title": "Jak stvořit dívku",
+        "year": 2020,
+        "score": 60,
+        "poster": "https://image.tmdb.org/t/p/w342/svEKCyQmJs3ZRu4YC6rQl248AAs.jpg",
         "roles": [
           "actor"
         ]
@@ -372260,6 +372271,26 @@
         "year": 2026,
         "score": 50,
         "poster": "https://image.tmdb.org/t/p/w342/nPPIufTBnzEg0d7NoR5RLL1oPra.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6440510": {
+    "name": "Erin Griff",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1742441",
+        "type": "movie",
+        "title": "V/H/S/Mixtape",
+        "year": 2026,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/uS8yoiA6NfsuYeOTbVfpem8Ib9.jpg",
         "roles": [
           "actor"
         ]

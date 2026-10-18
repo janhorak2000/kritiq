@@ -1827,6 +1827,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1288069",
+        "type": "movie",
+        "title": "Tenzing",
+        "year": 2026,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/eI0QW02PYqhnmIvLRdn9vrfVVP7.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st196890",
         "type": "show",
         "title": "Válečný velitel",
@@ -19772,6 +19783,79 @@
         "year": 2016,
         "score": 73,
         "poster": "https://image.tmdb.org/t/p/w342/nBYG0D2FcbL1m926sIj7RN4m0sb.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p14594": {
+    "name": "Lhakpa Tsamchoe",
+    "img": "/kiodZp3zbkgHEIGfmXQDAug1V57.jpg",
+    "birthday": "1972-01-01",
+    "deathday": null,
+    "age": 54,
+    "works": [
+      {
+        "id": "mt1288069",
+        "type": "movie",
+        "title": "Tenzing",
+        "year": 2026,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/eI0QW02PYqhnmIvLRdn9vrfVVP7.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt26813",
+        "type": "movie",
+        "title": "Himaláj – Karavana",
+        "year": 1999,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/xsZL2ivKKKmOcWRtCAqrgKJFMhm.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt978",
+        "type": "movie",
+        "title": "Sedm let v Tibetu",
+        "year": 1997,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/cOU97mM8bkpTXBxV8zTnSEtESaY.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1749118": {
+    "name": "Umesh Tamang",
+    "img": "/vcuZrLRaYhUFIsQAB4wCIqFPvMd.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1288069",
+        "type": "movie",
+        "title": "Tenzing",
+        "year": 2026,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/eI0QW02PYqhnmIvLRdn9vrfVVP7.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt421447",
+        "type": "movie",
+        "title": "Výstup",
+        "year": 2017,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/jxmnYUawdlSUctpN1JJ9wvE47ZH.jpg",
         "roles": [
           "actor"
         ]
@@ -93637,37 +93721,6 @@
       }
     ]
   },
-  "p14594": {
-    "name": "Lhakpa Tsamchoe",
-    "img": "/kiodZp3zbkgHEIGfmXQDAug1V57.jpg",
-    "birthday": "1972-01-01",
-    "deathday": null,
-    "age": 54,
-    "works": [
-      {
-        "id": "mt26813",
-        "type": "movie",
-        "title": "Himaláj – Karavana",
-        "year": 1999,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/xsZL2ivKKKmOcWRtCAqrgKJFMhm.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt978",
-        "type": "movie",
-        "title": "Sedm let v Tibetu",
-        "year": 1997,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/cOU97mM8bkpTXBxV8zTnSEtESaY.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1336046": {
     "name": "Peter D'Allesandro",
     "img": null,
@@ -123206,23 +123259,23 @@
     "age": null,
     "works": [
       {
-        "id": "st225120",
-        "type": "show",
-        "title": "Muž na vrcholu",
-        "year": 2024,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/xd5N8hvh8a3QIeiCYAOus9HDMCK.jpg",
-        "roles": [
-          "writer"
-        ]
-      },
-      {
         "id": "st156933",
         "type": "show",
         "title": "Nedostatek důkazů",
         "year": 2024,
         "score": 77,
         "poster": "https://image.tmdb.org/t/p/w342/s3wbFZos8K4MrOqZh0bYCd2XSZG.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "st225120",
+        "type": "show",
+        "title": "Muž na vrcholu",
+        "year": 2024,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/xd5N8hvh8a3QIeiCYAOus9HDMCK.jpg",
         "roles": [
           "writer"
         ]
@@ -189791,23 +189844,23 @@
     "age": null,
     "works": [
       {
-        "id": "st95556",
-        "type": "show",
-        "title": "Expatrianti",
-        "year": 2024,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/2ycyphD5ErMqTTYZlvR2UDqJwp5.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st156933",
         "type": "show",
         "title": "Nedostatek důkazů",
         "year": 2024,
         "score": 77,
         "poster": "https://image.tmdb.org/t/p/w342/s3wbFZos8K4MrOqZh0bYCd2XSZG.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st95556",
+        "type": "show",
+        "title": "Expatrianti",
+        "year": 2024,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/2ycyphD5ErMqTTYZlvR2UDqJwp5.jpg",
         "roles": [
           "actor"
         ]
@@ -218646,23 +218699,23 @@
     "age": 55,
     "works": [
       {
-        "id": "st293608",
-        "type": "show",
-        "title": "Slečna Hongová v utajení",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/nJ0gSaXfoiPFngy1ulCCuxsKt0q.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st303143",
         "type": "show",
         "title": "My Royal Nemesis",
         "year": 2026,
         "score": 75,
         "poster": "https://image.tmdb.org/t/p/w342/u2cX3CVzUZLIGVwd9HB7bUhE7OP.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st293608",
+        "type": "show",
+        "title": "Slečna Hongová v utajení",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/nJ0gSaXfoiPFngy1ulCCuxsKt0q.jpg",
         "roles": [
           "actor"
         ]
@@ -278459,23 +278512,23 @@
         ]
       },
       {
-        "id": "st261579",
-        "type": "show",
-        "title": "Tajný level",
-        "year": 2024,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/fYooYYWySMSpGIdp2jCeBQm4fIM.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st156933",
         "type": "show",
         "title": "Nedostatek důkazů",
         "year": 2024,
         "score": 77,
         "poster": "https://image.tmdb.org/t/p/w342/s3wbFZos8K4MrOqZh0bYCd2XSZG.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st261579",
+        "type": "show",
+        "title": "Tajný level",
+        "year": 2024,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/fYooYYWySMSpGIdp2jCeBQm4fIM.jpg",
         "roles": [
           "actor"
         ]
@@ -283255,23 +283308,23 @@
         ]
       },
       {
-        "id": "st211261",
-        "type": "show",
-        "title": "Specialisté Prvního Zásahu",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st205040",
         "type": "show",
         "title": "Adamas",
         "year": 2022,
         "score": 70,
         "poster": "https://image.tmdb.org/t/p/w342/qaodZmdbTorhGISrlDQKSjaHcHy.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st211261",
+        "type": "show",
+        "title": "Specialisté Prvního Zásahu",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
         "roles": [
           "actor"
         ]
@@ -290078,23 +290131,23 @@
         ]
       },
       {
-        "id": "st206916",
-        "type": "show",
-        "title": "Orphan Black: Echoes",
-        "year": 2024,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/iz8w67Q6pJBB7JJiczA95YlHrfG.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st156933",
         "type": "show",
         "title": "Nedostatek důkazů",
         "year": 2024,
         "score": 77,
         "poster": "https://image.tmdb.org/t/p/w342/s3wbFZos8K4MrOqZh0bYCd2XSZG.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st206916",
+        "type": "show",
+        "title": "Orphan Black: Echoes",
+        "year": 2024,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/iz8w67Q6pJBB7JJiczA95YlHrfG.jpg",
         "roles": [
           "actor"
         ]
@@ -304314,6 +304367,68 @@
         "year": 2011,
         "score": 70,
         "poster": "https://image.tmdb.org/t/p/w342/6yc6GsJpaad5MRZ8155giAXcwwK.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1720199": {
+    "name": "Ángel Gómez Hernández",
+    "img": "/dVhZGpcJnBgWDJVyyBE4mbHPlcW.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1376400",
+        "type": "movie",
+        "title": "Hnízdo",
+        "year": 2026,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/lNXeEpg4yLSRwXwOeR5lbPgwbqL.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "mt726208",
+        "type": "movie",
+        "title": "Hlasy",
+        "year": 2020,
+        "score": 61,
+        "poster": "https://image.tmdb.org/t/p/w342/kB1jM3vsbkWBxLo4esCDvgrsZVj.jpg",
+        "roles": [
+          "director"
+        ]
+      }
+    ]
+  },
+  "p2985694": {
+    "name": "Lea Vivier",
+    "img": "/20GHsomQ3P8koYtiMA30HISiVo8.jpg",
+    "birthday": "1992-01-15",
+    "deathday": null,
+    "age": 34,
+    "works": [
+      {
+        "id": "mt1376400",
+        "type": "movie",
+        "title": "Hnízdo",
+        "year": 2026,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/lNXeEpg4yLSRwXwOeR5lbPgwbqL.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st108296",
+        "type": "show",
+        "title": "Resident Evil: Lék",
+        "year": 2022,
+        "score": 42,
+        "poster": "https://image.tmdb.org/t/p/w342/rmLvn4w4HMdxobPkjmIqrhJiXDO.jpg",
         "roles": [
           "actor"
         ]
@@ -352642,26 +352757,6 @@
       }
     ]
   },
-  "p1749118": {
-    "name": "Umesh Tamang",
-    "img": "/vcuZrLRaYhUFIsQAB4wCIqFPvMd.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt421447",
-        "type": "movie",
-        "title": "Výstup",
-        "year": 2017,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/jxmnYUawdlSUctpN1JJ9wvE47ZH.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1992570": {
     "name": "Chris Drexel",
     "img": null,
@@ -358947,23 +359042,23 @@
         ]
       },
       {
-        "id": "st247619",
-        "type": "show",
-        "title": "Splynout s davem",
-        "year": 2025,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/wNhHmw9BjCoR27FtknWEdRLSyVI.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st260458",
         "type": "show",
         "title": "Dospělost",
         "year": 2025,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st247619",
+        "type": "show",
+        "title": "Splynout s davem",
+        "year": 2025,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/wNhHmw9BjCoR27FtknWEdRLSyVI.jpg",
         "roles": [
           "actor"
         ]
@@ -372688,23 +372783,23 @@
     "age": 47,
     "works": [
       {
-        "id": "st135157",
-        "type": "show",
-        "title": "Alchymie duše",
-        "year": 2022,
-        "score": 87,
-        "poster": "https://image.tmdb.org/t/p/w342/pGs6UA4rPUZEokDyTwAGdRvwrAD.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st154825",
         "type": "show",
         "title": "Obchodní návrh",
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st135157",
+        "type": "show",
+        "title": "Alchymie duše",
+        "year": 2022,
+        "score": 87,
+        "poster": "https://image.tmdb.org/t/p/w342/pGs6UA4rPUZEokDyTwAGdRvwrAD.jpg",
         "roles": [
           "actor"
         ]
@@ -406479,26 +406574,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/kGhllBArW7ImDycSMIG5bj6GEPL.jpg",
         "roles": [
           "actor"
-        ]
-      }
-    ]
-  },
-  "p1720199": {
-    "name": "Ángel Gómez Hernández",
-    "img": "/dVhZGpcJnBgWDJVyyBE4mbHPlcW.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt726208",
-        "type": "movie",
-        "title": "Hlasy",
-        "year": 2020,
-        "score": 61,
-        "poster": "https://image.tmdb.org/t/p/w342/kB1jM3vsbkWBxLo4esCDvgrsZVj.jpg",
-        "roles": [
-          "director"
         ]
       }
     ]
@@ -545199,17 +545274,6 @@
         ]
       },
       {
-        "id": "st211261",
-        "type": "show",
-        "title": "Specialisté Prvního Zásahu",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st134675",
         "type": "show",
         "title": "Tři malé ženy",
@@ -545227,6 +545291,17 @@
         "year": 2022,
         "score": 70,
         "poster": "https://image.tmdb.org/t/p/w342/qaodZmdbTorhGISrlDQKSjaHcHy.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st211261",
+        "type": "show",
+        "title": "Specialisté Prvního Zásahu",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
         "roles": [
           "actor"
         ]
@@ -617319,145 +617394,6 @@
       }
     ]
   },
-  "p3206662": {
-    "name": "Kim Sang-ho",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st153496",
-        "type": "show",
-        "title": "Reborn Rich",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lRtxdLhnmaKYc65WfMHPrE4TuuI.jpg",
-        "roles": [
-          "director"
-        ]
-      },
-      {
-        "id": "st131028",
-        "type": "show",
-        "title": "Devětatřicet",
-        "year": 2022,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/1f9BXeKOhGQpqT6uEeBL1xFkmnw.jpg",
-        "roles": [
-          "director"
-        ]
-      }
-    ]
-  },
-  "p1510022": {
-    "name": "Gong Seung-yeon",
-    "img": "/yHZsZH9AHJbaRiHSWiKQamIeHWa.jpg",
-    "birthday": "1993-02-27",
-    "deathday": null,
-    "age": 33,
-    "works": [
-      {
-        "id": "st278573",
-        "type": "show",
-        "title": "Dokonalá koruna",
-        "year": 2026,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/fEYOFHAXZLTv9WF7zjy6qVuDHop.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st233686",
-        "type": "show",
-        "title": "Karma",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/kFx0FD0Cgns9OThcSkAmWYcnYzu.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st211261",
-        "type": "show",
-        "title": "Specialisté Prvního Zásahu",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st137520",
-        "type": "show",
-        "title": "Bulgasal: Nesmrtelní",
-        "year": 2021,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/sqprACh9qcqSw9EdFsv2bHtr64V.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st92732",
-        "type": "show",
-        "title": "Flower Crew: Joseon Marriage Agency",
-        "year": 2019,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/4rog7wutc1ARIGDyeyQhLbDq9AL.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st72548",
-        "type": "show",
-        "title": "Jsi taky člověk?",
-        "year": 2018,
-        "score": 79,
-        "poster": "https://image.tmdb.org/t/p/w342/5gRKiZMN49TICCRP0pjaLKYJNWK.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st70581",
-        "type": "show",
-        "title": "Circle: Two worlds connected",
-        "year": 2017,
-        "score": 79,
-        "poster": "https://image.tmdb.org/t/p/w342/9ZeCBhSlqY2nS2i5yBGE9lHrZct.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st69205",
-        "type": "show",
-        "title": "Můj nesmělý šéf",
-        "year": 2017,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/oqHa2rmpp7wvBD29fnr2A74iNCG.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st70372",
-        "type": "show",
-        "title": "My Only Love Song",
-        "year": 2017,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/jYRuWdko1b4l84sjTyFYCxxy1JV.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1255273": {
     "name": "Karan Tacker",
     "img": "/9Xn36FsPr9dbRK1HWyDpPsni58L.jpg",
@@ -617567,6 +617503,390 @@
         "year": 2009,
         "score": 68,
         "poster": "https://image.tmdb.org/t/p/w342/TIIgcznwNfNr3KOZvxn26eKV99.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2258451": {
+    "name": "Dominique McClellan",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st155537",
+        "type": "show",
+        "title": "Volavka",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/waW5NMQmpd3Pox7lHGjXZt14Xrp.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4648872": {
+    "name": "Carter Bellaimey",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st155537",
+        "type": "show",
+        "title": "Volavka",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/waW5NMQmpd3Pox7lHGjXZt14Xrp.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2146592": {
+    "name": "Holly Bonney",
+    "img": "/hkD68u7MnPA1UiyGfpnfgGFns6c.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st138501",
+        "type": "show",
+        "title": "Agatha za vším schovaná",
+        "year": 2024,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/faMy6S8xSbCWntrvYWTTyyzCUXD.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st155537",
+        "type": "show",
+        "title": "Volavka",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/waW5NMQmpd3Pox7lHGjXZt14Xrp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st106502",
+        "type": "show",
+        "title": "Leverage: Redemption",
+        "year": 2021,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/i3Evib4bHONndY7pZ9gbznYUcGj.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st66606",
+        "type": "show",
+        "title": "Kořeny ",
+        "year": 2016,
+        "score": 79,
+        "poster": "https://image.tmdb.org/t/p/w342/nBYRp5pL1FPEfMpfDgfM1Fo4oCS.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1565088": {
+    "name": "Kim Min-gue",
+    "img": "/w4NojHsHdLGf7LLoT6jfyDcE8K6.jpg",
+    "birthday": "1994-12-25",
+    "deathday": null,
+    "age": 31,
+    "works": [
+      {
+        "id": "st227114",
+        "type": "show",
+        "title": "Motýlek",
+        "year": 2025,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/5V3ns5N0TsiQE0RlWMHcuBwCO1o.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st202625",
+        "type": "show",
+        "title": "The Heavenly Idol",
+        "year": 2023,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/aCNilosf2E7FTDnqvQvE5khFXtQ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st122978",
+        "type": "show",
+        "title": "So I Married an Anti-Fan",
+        "year": 2021,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/wcRJ64E8xrO1GxuRIp2RXwE7sU6.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st108291",
+        "type": "show",
+        "title": "Snowdrop",
+        "year": 2021,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/eJkd9O0VNzPFtjmkb9vEdPwxW23.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st98827",
+        "type": "show",
+        "title": "Backstreet Rookie",
+        "year": 2020,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/zMTjm78DPk51LbHpEVt0r5mUmMi.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st74074",
+        "type": "show",
+        "title": "Because This Is My First Life",
+        "year": 2017,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/5ULjbe75ZIeWOJY3xogoDxOGzQz.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st74829",
+        "type": "show",
+        "title": "Just Between Lovers",
+        "year": 2017,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/gLh0AA7W7cA4Ah4hFUy1uTtS5Bx.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st64840",
+        "type": "show",
+        "title": "Signál",
+        "year": 2016,
+        "score": 84,
+        "poster": "https://image.tmdb.org/t/p/w342/mB6FlHFK0A4DPyuGTrlM4QgEkIH.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1622057": {
+    "name": "Tei",
+    "img": "/rOBFCONhmmUcToBnTbzIWouk36N.jpg",
+    "birthday": "1983-04-04",
+    "deathday": null,
+    "age": 43,
+    "works": [
+      {
+        "id": "st245684",
+        "type": "show",
+        "title": "Outsideři proti mistrům: Bitva kulinářských kast",
+        "year": 2024,
+        "score": 85,
+        "poster": "https://image.tmdb.org/t/p/w342/tsEIrmV6SIbEVqPZimWqXGvbFcw.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1239675": {
+    "name": "Hwang Bo-ra",
+    "img": "/kYqk3HTZkE5HLvDJC7h1q0usbNl.jpg",
+    "birthday": "1983-10-02",
+    "deathday": null,
+    "age": 42,
+    "works": [
+      {
+        "id": "st202318",
+        "type": "show",
+        "title": "Rychlokurz romantiky",
+        "year": 2023,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/fiu77Gn4o9GpVAxeMGCMym4MY7B.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st215001",
+        "type": "show",
+        "title": "Spojení osudem",
+        "year": 2023,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/8KxGVT5dWrHZObv1B5oYcIt6xzU.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st135895",
+        "type": "show",
+        "title": "Můj šestý smysl",
+        "year": 2022,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/24qWKGEnfY5DwXzt32gmUtKDllY.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st131026",
+        "type": "show",
+        "title": "Dali and Cocky Prince",
+        "year": 2021,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/2BuwNyTiMjlStKweY1VRIBsusRJ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st99491",
+        "type": "show",
+        "title": "Tajemný pop-up bar",
+        "year": 2020,
+        "score": 79,
+        "poster": "https://image.tmdb.org/t/p/w342/4xjtsQgxLkVKfkig5p6MoVoz6PH.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st95110",
+        "type": "show",
+        "title": "Hyena",
+        "year": 2020,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/uw5PG8Lyv3BCX0FA1vMavkIVu05.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st108285",
+        "type": "show",
+        "title": "Zombie Detective",
+        "year": 2020,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/4u8446xiDlHZcxGFon3ml7BnSLX.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st92983",
+        "type": "show",
+        "title": "Vagabond",
+        "year": 2019,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/iSB720SU8k53NOsemk55aIqTAKI.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st85404",
+        "type": "show",
+        "title": "Dotkni se mého srdce",
+        "year": 2019,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/8SKDgtYPPuKDDaTPsJmNhGVEV2i.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st84464",
+        "type": "show",
+        "title": "My Strange Hero",
+        "year": 2018,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/sY5QJHdrdjegDA8kIfGu3n2DnjK.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st79434",
+        "type": "show",
+        "title": "What's Wrong with Secretary Kim",
+        "year": 2018,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/3hd6yqp59ozCt2DRlFtj1tD9cHH.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st70813",
+        "type": "show",
+        "title": "Vlastní (ne)cestou",
+        "year": 2017,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/u6N8Uv5j7P0xi8y88db7ab8qcuL.jpg",
         "roles": [
           "actor"
         ]
@@ -618095,6 +618415,17 @@
     "age": 23,
     "works": [
       {
+        "id": "st287591",
+        "type": "show",
+        "title": "うるわしの宵の月",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/3061lEeTTSb5NtX0ASXnRSO7Mo5.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st273467",
         "type": "show",
         "title": "姫騎士は蛮族の嫁",
@@ -618513,23 +618844,23 @@
     "age": null,
     "works": [
       {
-        "id": "st259837",
-        "type": "show",
-        "title": "SUPERpaka",
-        "year": 2026,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/qlPdAwp7rjltEl1vaBxoejP5boB.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st303143",
         "type": "show",
         "title": "My Royal Nemesis",
         "year": 2026,
         "score": 75,
         "poster": "https://image.tmdb.org/t/p/w342/u2cX3CVzUZLIGVwd9HB7bUhE7OP.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st259837",
+        "type": "show",
+        "title": "SUPERpaka",
+        "year": 2026,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/qlPdAwp7rjltEl1vaBxoejP5boB.jpg",
         "roles": [
           "actor"
         ]
@@ -619367,6 +619698,37 @@
         "poster": "https://image.tmdb.org/t/p/w342/qZJRmHXDk1dfeqE13Wx2AZOq4fJ.jpg",
         "roles": [
           "actor"
+        ]
+      }
+    ]
+  },
+  "p3206662": {
+    "name": "Kim Sang-ho",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st131028",
+        "type": "show",
+        "title": "Devětatřicet",
+        "year": 2022,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/1f9BXeKOhGQpqT6uEeBL1xFkmnw.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "st153496",
+        "type": "show",
+        "title": "Reborn Rich",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lRtxdLhnmaKYc65WfMHPrE4TuuI.jpg",
+        "roles": [
+          "director"
         ]
       }
     ]
@@ -621860,158 +622222,6 @@
         "year": 2022,
         "score": 72,
         "poster": "https://image.tmdb.org/t/p/w342/s6TWJ9nomRdYiL3Ojz0scKinDrq.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1239675": {
-    "name": "Hwang Bo-ra",
-    "img": "/kYqk3HTZkE5HLvDJC7h1q0usbNl.jpg",
-    "birthday": "1983-10-02",
-    "deathday": null,
-    "age": 42,
-    "works": [
-      {
-        "id": "st202318",
-        "type": "show",
-        "title": "Rychlokurz romantiky",
-        "year": 2023,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/fiu77Gn4o9GpVAxeMGCMym4MY7B.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st215001",
-        "type": "show",
-        "title": "Spojení osudem",
-        "year": 2023,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/8KxGVT5dWrHZObv1B5oYcIt6xzU.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st135895",
-        "type": "show",
-        "title": "Můj šestý smysl",
-        "year": 2022,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/24qWKGEnfY5DwXzt32gmUtKDllY.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st131026",
-        "type": "show",
-        "title": "Dali and Cocky Prince",
-        "year": 2021,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/2BuwNyTiMjlStKweY1VRIBsusRJ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st99491",
-        "type": "show",
-        "title": "Tajemný pop-up bar",
-        "year": 2020,
-        "score": 79,
-        "poster": "https://image.tmdb.org/t/p/w342/4xjtsQgxLkVKfkig5p6MoVoz6PH.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st95110",
-        "type": "show",
-        "title": "Hyena",
-        "year": 2020,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/uw5PG8Lyv3BCX0FA1vMavkIVu05.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st108285",
-        "type": "show",
-        "title": "Zombie Detective",
-        "year": 2020,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/4u8446xiDlHZcxGFon3ml7BnSLX.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st92983",
-        "type": "show",
-        "title": "Vagabond",
-        "year": 2019,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/iSB720SU8k53NOsemk55aIqTAKI.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st85404",
-        "type": "show",
-        "title": "Dotkni se mého srdce",
-        "year": 2019,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/8SKDgtYPPuKDDaTPsJmNhGVEV2i.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st84464",
-        "type": "show",
-        "title": "My Strange Hero",
-        "year": 2018,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/sY5QJHdrdjegDA8kIfGu3n2DnjK.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st79434",
-        "type": "show",
-        "title": "What's Wrong with Secretary Kim",
-        "year": 2018,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/3hd6yqp59ozCt2DRlFtj1tD9cHH.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st70813",
-        "type": "show",
-        "title": "Vlastní (ne)cestou",
-        "year": 2017,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/u6N8Uv5j7P0xi8y88db7ab8qcuL.jpg",
         "roles": [
           "actor"
         ]
@@ -625491,26 +625701,6 @@
         "year": 2022,
         "score": 45,
         "poster": "https://image.tmdb.org/t/p/w342/itMjVGw4abhhCDZFppmb7yGLrRa.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2985694": {
-    "name": "Lea Vivier",
-    "img": "/20GHsomQ3P8koYtiMA30HISiVo8.jpg",
-    "birthday": "1992-01-15",
-    "deathday": null,
-    "age": 34,
-    "works": [
-      {
-        "id": "st108296",
-        "type": "show",
-        "title": "Resident Evil: Lék",
-        "year": 2022,
-        "score": 42,
-        "poster": "https://image.tmdb.org/t/p/w342/rmLvn4w4HMdxobPkjmIqrhJiXDO.jpg",
         "roles": [
           "actor"
         ]
@@ -629709,114 +629899,6 @@
       }
     ]
   },
-  "p1565088": {
-    "name": "Kim Min-gue",
-    "img": "/w4NojHsHdLGf7LLoT6jfyDcE8K6.jpg",
-    "birthday": "1994-12-25",
-    "deathday": null,
-    "age": 31,
-    "works": [
-      {
-        "id": "st227114",
-        "type": "show",
-        "title": "Motýlek",
-        "year": 2025,
-        "score": 67,
-        "poster": "https://image.tmdb.org/t/p/w342/5V3ns5N0TsiQE0RlWMHcuBwCO1o.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st202625",
-        "type": "show",
-        "title": "The Heavenly Idol",
-        "year": 2023,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/aCNilosf2E7FTDnqvQvE5khFXtQ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st122978",
-        "type": "show",
-        "title": "So I Married an Anti-Fan",
-        "year": 2021,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/wcRJ64E8xrO1GxuRIp2RXwE7sU6.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st108291",
-        "type": "show",
-        "title": "Snowdrop",
-        "year": 2021,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/eJkd9O0VNzPFtjmkb9vEdPwxW23.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st98827",
-        "type": "show",
-        "title": "Backstreet Rookie",
-        "year": 2020,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/zMTjm78DPk51LbHpEVt0r5mUmMi.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st74074",
-        "type": "show",
-        "title": "Because This Is My First Life",
-        "year": 2017,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/5ULjbe75ZIeWOJY3xogoDxOGzQz.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st74829",
-        "type": "show",
-        "title": "Just Between Lovers",
-        "year": 2017,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/gLh0AA7W7cA4Ah4hFUy1uTtS5Bx.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st64840",
-        "type": "show",
-        "title": "Signál",
-        "year": 2016,
-        "score": 84,
-        "poster": "https://image.tmdb.org/t/p/w342/mB6FlHFK0A4DPyuGTrlM4QgEkIH.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p3609504": {
     "name": "Brin Alexander",
     "img": null,
@@ -632746,59 +632828,6 @@
       }
     ]
   },
-  "p2146592": {
-    "name": "Holly Bonney",
-    "img": "/hkD68u7MnPA1UiyGfpnfgGFns6c.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st138501",
-        "type": "show",
-        "title": "Agatha za vším schovaná",
-        "year": 2024,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/faMy6S8xSbCWntrvYWTTyyzCUXD.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st155537",
-        "type": "show",
-        "title": "Volavka",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/waW5NMQmpd3Pox7lHGjXZt14Xrp.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st106502",
-        "type": "show",
-        "title": "Leverage: Redemption",
-        "year": 2021,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/i3Evib4bHONndY7pZ9gbznYUcGj.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st66606",
-        "type": "show",
-        "title": "Kořeny ",
-        "year": 2016,
-        "score": 79,
-        "poster": "https://image.tmdb.org/t/p/w342/nBYRp5pL1FPEfMpfDgfM1Fo4oCS.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p5526870": {
     "name": "Lottie Lee",
     "img": null,
@@ -635393,20 +635422,102 @@
       }
     ]
   },
-  "p5445063": {
-    "name": "Valentine Peyton Kim",
+  "p2703731": {
+    "name": "Timothy Otis",
+    "img": null,
+    "birthday": "1965-08-05",
+    "deathday": null,
+    "age": 61,
+    "works": [
+      {
+        "id": "st245219",
+        "type": "show",
+        "title": "Rána bleskem",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/KyUrz3GA1FML3XnKkY795XxDxN.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2421361": {
+    "name": "Kim Doh-yon",
+    "img": "/uUr2lbaLyh7T3T2iLdHhHRDA1sf.jpg",
+    "birthday": "1991-04-09",
+    "deathday": null,
+    "age": 35,
+    "works": [
+      {
+        "id": "st227191",
+        "type": "show",
+        "title": "Devět Hádanek",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/3odibmWnSpFf0fwA1KT1SO3yVfX.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st96571",
+        "type": "show",
+        "title": "Směr nebe",
+        "year": 2021,
+        "score": 85,
+        "poster": "https://image.tmdb.org/t/p/w342/drEK6iGpzQBzFCmiT5KiG3s8ktO.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st80737",
+        "type": "show",
+        "title": "My ID Is Gangnam Beauty",
+        "year": 2018,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/u3ECyrETokQpgzrL5xmG6G49d7U.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4008331": {
+    "name": "Liam Cullagh",
     "img": null,
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "st241609",
+        "id": "st260458",
         "type": "show",
-        "title": "Sousedská tajemství",
+        "title": "Dospělost",
         "year": 2025,
         "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1637985": {
+    "name": "Anthony Parisi",
+    "img": "/tGxAXMiwL9cMSZFzFu53PtLJiGt.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st260458",
+        "type": "show",
+        "title": "Dospělost",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
         "roles": [
           "actor"
         ]
@@ -637954,37 +638065,6 @@
       }
     ]
   },
-  "p572519": {
-    "name": "Byeon Jung-su",
-    "img": "/6VZQvRC4mNIzddoE3hVpbNgycKN.jpg",
-    "birthday": "1974-04-15",
-    "deathday": null,
-    "age": 52,
-    "works": [
-      {
-        "id": "st293608",
-        "type": "show",
-        "title": "Slečna Hongová v utajení",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/nJ0gSaXfoiPFngy1ulCCuxsKt0q.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st127527",
-        "type": "show",
-        "title": "Melancholia",
-        "year": 2021,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/qnd1QeSUdJAKWtVp0xqqYNk0iJ7.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p5729897": {
     "name": "Calla Hughes",
     "img": "/lCTv4MkbjvDVZDvwV0HTiWQF6hZ.jpg",
@@ -638172,6 +638252,48 @@
         "poster": "https://image.tmdb.org/t/p/w342/8gNZM8tRj1HIxl5SxOlTD3TStsl.jpg",
         "roles": [
           "composer"
+        ]
+      }
+    ]
+  },
+  "p3921101": {
+    "name": "Saki Takahashi",
+    "img": "/yNGz49k5FaPQQb1LGci79c9iU0r.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st287591",
+        "type": "show",
+        "title": "うるわしの宵の月",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/3061lEeTTSb5NtX0ASXnRSO7Mo5.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st278043",
+        "type": "show",
+        "title": "正反対な君と僕",
+        "year": 2026,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/lLjcMT7fwuO5fgswb2drlbFwoTJ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st220542",
+        "type": "show",
+        "title": "Zápisky Lékárnice",
+        "year": 2023,
+        "score": 86,
+        "poster": "https://image.tmdb.org/t/p/w342/sUep3kEPjvXp3VKAfNikpzBZmzw.jpg",
+        "roles": [
+          "actor"
         ]
       }
     ]
@@ -640116,77 +640238,6 @@
       }
     ]
   },
-  "p2258451": {
-    "name": "Dominique McClellan",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st155537",
-        "type": "show",
-        "title": "Volavka",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/waW5NMQmpd3Pox7lHGjXZt14Xrp.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4648872": {
-    "name": "Carter Bellaimey",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st155537",
-        "type": "show",
-        "title": "Volavka",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/waW5NMQmpd3Pox7lHGjXZt14Xrp.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1622057": {
-    "name": "Tei",
-    "img": "/rOBFCONhmmUcToBnTbzIWouk36N.jpg",
-    "birthday": "1983-04-04",
-    "deathday": null,
-    "age": 43,
-    "works": [
-      {
-        "id": "st245684",
-        "type": "show",
-        "title": "Outsideři proti mistrům: Bitva kulinářských kast",
-        "year": 2024,
-        "score": 85,
-        "poster": "https://image.tmdb.org/t/p/w342/tsEIrmV6SIbEVqPZimWqXGvbFcw.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1970691": {
     "name": "Misaki Watada",
     "img": "/7TKumXGpHGmK8qJPhBUjhqRe6C6.jpg",
@@ -640311,6 +640362,114 @@
       }
     ]
   },
+  "p1510022": {
+    "name": "Gong Seung-yeon",
+    "img": "/yHZsZH9AHJbaRiHSWiKQamIeHWa.jpg",
+    "birthday": "1993-02-27",
+    "deathday": null,
+    "age": 33,
+    "works": [
+      {
+        "id": "st278573",
+        "type": "show",
+        "title": "Dokonalá koruna",
+        "year": 2026,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/fEYOFHAXZLTv9WF7zjy6qVuDHop.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st233686",
+        "type": "show",
+        "title": "Karma",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/kFx0FD0Cgns9OThcSkAmWYcnYzu.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st211261",
+        "type": "show",
+        "title": "Specialisté Prvního Zásahu",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st137520",
+        "type": "show",
+        "title": "Bulgasal: Nesmrtelní",
+        "year": 2021,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/sqprACh9qcqSw9EdFsv2bHtr64V.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st92732",
+        "type": "show",
+        "title": "Flower Crew: Joseon Marriage Agency",
+        "year": 2019,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/4rog7wutc1ARIGDyeyQhLbDq9AL.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st72548",
+        "type": "show",
+        "title": "Jsi taky člověk?",
+        "year": 2018,
+        "score": 79,
+        "poster": "https://image.tmdb.org/t/p/w342/5gRKiZMN49TICCRP0pjaLKYJNWK.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st70581",
+        "type": "show",
+        "title": "Circle: Two worlds connected",
+        "year": 2017,
+        "score": 79,
+        "poster": "https://image.tmdb.org/t/p/w342/9ZeCBhSlqY2nS2i5yBGE9lHrZct.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st69205",
+        "type": "show",
+        "title": "Můj nesmělý šéf",
+        "year": 2017,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/oqHa2rmpp7wvBD29fnr2A74iNCG.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st70372",
+        "type": "show",
+        "title": "My Only Love Song",
+        "year": 2017,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/jYRuWdko1b4l84sjTyFYCxxy1JV.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2125351": {
     "name": "Kim Na-hyun",
     "img": "/1fOGPV0AXnJ45yuOGfrCeNjCC72.jpg",
@@ -640356,37 +640515,6 @@
         "year": 2005,
         "score": 74,
         "poster": "https://image.tmdb.org/t/p/w342/eb9sH2am9IUSQ8GhXTNAVoujk8W.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3921101": {
-    "name": "Saki Takahashi",
-    "img": "/yNGz49k5FaPQQb1LGci79c9iU0r.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st278043",
-        "type": "show",
-        "title": "正反対な君と僕",
-        "year": 2026,
-        "score": 82,
-        "poster": "https://image.tmdb.org/t/p/w342/lLjcMT7fwuO5fgswb2drlbFwoTJ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st220542",
-        "type": "show",
-        "title": "Zápisky Lékárnice",
-        "year": 2023,
-        "score": 86,
-        "poster": "https://image.tmdb.org/t/p/w342/sUep3kEPjvXp3VKAfNikpzBZmzw.jpg",
         "roles": [
           "actor"
         ]
@@ -641744,6 +641872,37 @@
       }
     ]
   },
+  "p1254074": {
+    "name": "Yuko Kakihara",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st236994",
+        "type": "show",
+        "title": "ドラゴンボールDAIMA",
+        "year": 2024,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/u8GIA3ue6qsgA0QVxku5tg4IPVG.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "st66958",
+        "type": "show",
+        "title": "orange",
+        "year": 2016,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/oxnWNFG4cSLBXJTDLOJU8ucMpmD.jpg",
+        "roles": [
+          "writer"
+        ]
+      }
+    ]
+  },
   "p3616764": {
     "name": "Ellen McAlpine",
     "img": null,
@@ -641800,37 +641959,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/e0I3aUxQiDvjClyxa4ZfuhitbQp.jpg",
         "roles": [
           "actor"
-        ]
-      }
-    ]
-  },
-  "p1254074": {
-    "name": "Yuko Kakihara",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st236994",
-        "type": "show",
-        "title": "ドラゴンボールDAIMA",
-        "year": 2024,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/u8GIA3ue6qsgA0QVxku5tg4IPVG.jpg",
-        "roles": [
-          "writer"
-        ]
-      },
-      {
-        "id": "st66958",
-        "type": "show",
-        "title": "orange",
-        "year": 2016,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/oxnWNFG4cSLBXJTDLOJU8ucMpmD.jpg",
-        "roles": [
-          "writer"
         ]
       }
     ]
@@ -642270,108 +642398,6 @@
       }
     ]
   },
-  "p2703731": {
-    "name": "Timothy Otis",
-    "img": null,
-    "birthday": "1965-08-05",
-    "deathday": null,
-    "age": 61,
-    "works": [
-      {
-        "id": "st245219",
-        "type": "show",
-        "title": "Rána bleskem",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/KyUrz3GA1FML3XnKkY795XxDxN.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2421361": {
-    "name": "Kim Doh-yon",
-    "img": "/uUr2lbaLyh7T3T2iLdHhHRDA1sf.jpg",
-    "birthday": "1991-04-09",
-    "deathday": null,
-    "age": 35,
-    "works": [
-      {
-        "id": "st227191",
-        "type": "show",
-        "title": "Devět Hádanek",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/3odibmWnSpFf0fwA1KT1SO3yVfX.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st96571",
-        "type": "show",
-        "title": "Směr nebe",
-        "year": 2021,
-        "score": 85,
-        "poster": "https://image.tmdb.org/t/p/w342/drEK6iGpzQBzFCmiT5KiG3s8ktO.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st80737",
-        "type": "show",
-        "title": "My ID Is Gangnam Beauty",
-        "year": 2018,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/u3ECyrETokQpgzrL5xmG6G49d7U.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4008331": {
-    "name": "Liam Cullagh",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st260458",
-        "type": "show",
-        "title": "Dospělost",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1637985": {
-    "name": "Anthony Parisi",
-    "img": "/tGxAXMiwL9cMSZFzFu53PtLJiGt.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st260458",
-        "type": "show",
-        "title": "Dospělost",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p2209424": {
     "name": "Evan Camacho",
     "img": "/uN6TRPCgVHixpOrVMvFWz5OBiLH.jpg",
@@ -642386,6 +642412,26 @@
         "year": 2025,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/twlp0YMmuKmn4cKAInAL3zde59W.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5445063": {
+    "name": "Valentine Peyton Kim",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st241609",
+        "type": "show",
+        "title": "Sousedská tajemství",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
         "roles": [
           "actor"
         ]
@@ -643259,6 +643305,37 @@
         "year": 2026,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/xIQKtBSUJhlz2Jl9TsXEI0iZMgu.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p572519": {
+    "name": "Byeon Jung-su",
+    "img": "/6VZQvRC4mNIzddoE3hVpbNgycKN.jpg",
+    "birthday": "1974-04-15",
+    "deathday": null,
+    "age": 52,
+    "works": [
+      {
+        "id": "st293608",
+        "type": "show",
+        "title": "Slečna Hongová v utajení",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/nJ0gSaXfoiPFngy1ulCCuxsKt0q.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st127527",
+        "type": "show",
+        "title": "Melancholia",
+        "year": 2021,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/qnd1QeSUdJAKWtVp0xqqYNk0iJ7.jpg",
         "roles": [
           "actor"
         ]

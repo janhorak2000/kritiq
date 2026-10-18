@@ -14020,6 +14020,17 @@
     "age": 32,
     "works": [
       {
+        "id": "mt1561726",
+        "type": "movie",
+        "title": "Mistrovský plán",
+        "year": 2026,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/2nItMjKr4I4lD1LEy4LoX3aSEJ1.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1230208",
         "type": "movie",
         "title": "Další válka policajtů",
@@ -418278,6 +418289,26 @@
       }
     ]
   },
+  "p1800801": {
+    "name": "Polérik Rouvière",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1561726",
+        "type": "movie",
+        "title": "Mistrovský plán",
+        "year": 2026,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/2nItMjKr4I4lD1LEy4LoX3aSEJ1.jpg",
+        "roles": [
+          "composer"
+        ]
+      }
+    ]
+  },
   "p3766677": {
     "name": "Elizabeth Gibbs",
     "img": null,
@@ -423841,6 +423872,46 @@
         "year": 2026,
         "score": 50,
         "poster": "https://image.tmdb.org/t/p/w342/nPPIufTBnzEg0d7NoR5RLL1oPra.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6539249": {
+    "name": "Zach Jobe",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1742441",
+        "type": "movie",
+        "title": "V/H/S/Mixtape",
+        "year": 2026,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/uS8yoiA6NfsuYeOTbVfpem8Ib9.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3987667": {
+    "name": "Sarah Berman",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1742441",
+        "type": "movie",
+        "title": "V/H/S/Mixtape",
+        "year": 2026,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/uS8yoiA6NfsuYeOTbVfpem8Ib9.jpg",
         "roles": [
           "actor"
         ]

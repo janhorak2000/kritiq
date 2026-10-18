@@ -25266,37 +25266,6 @@
       }
     ]
   },
-  "p1753296": {
-    "name": "Sam Chapman",
-    "img": "/3ZTn5RjOAMTwmWb5AsnDulRNhl7.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt977942",
-        "type": "movie",
-        "title": "The Uprising",
-        "year": 2026,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/7TUl15TOsIvndKlgMWTtLgtEzZP.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st13643",
-        "type": "show",
-        "title": "Láska v bílém pekle",
-        "year": 2004,
-        "score": 85,
-        "poster": "https://image.tmdb.org/t/p/w342/djdM8JblEUsJN23vXd869X7ACQE.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p131835": {
     "name": "Joyce Godenzi",
     "img": "/eFSl7i8h2tGvYj7NJT5AgXPFolI.jpg",
@@ -180436,6 +180405,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1742441",
+        "type": "movie",
+        "title": "V/H/S/Mixtape",
+        "year": 2026,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/uS8yoiA6NfsuYeOTbVfpem8Ib9.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1323625",
         "type": "movie",
         "title": "Night Patrol",
@@ -253644,6 +253624,37 @@
       }
     ]
   },
+  "p1753296": {
+    "name": "Sam Chapman",
+    "img": "/3ZTn5RjOAMTwmWb5AsnDulRNhl7.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt977942",
+        "type": "movie",
+        "title": "The Uprising",
+        "year": 2026,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/7TUl15TOsIvndKlgMWTtLgtEzZP.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st13643",
+        "type": "show",
+        "title": "Láska v bílém pekle",
+        "year": 2004,
+        "score": 85,
+        "poster": "https://image.tmdb.org/t/p/w342/djdM8JblEUsJN23vXd869X7ACQE.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2917976": {
     "name": "Iringó Réti",
     "img": "/ajc9HukRgGYLSVghUC01w1EhN2U.jpg",
@@ -253866,6 +253877,48 @@
         "year": 2026,
         "score": 65,
         "poster": "https://image.tmdb.org/t/p/w342/rJK549oC9H6RG81F96piznsdmbq.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1684040": {
+    "name": "Srbo Markovic",
+    "img": "/pYtUeefoM9CN78S0gRc6K6BUgUd.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1561726",
+        "type": "movie",
+        "title": "Mistrovský plán",
+        "year": 2026,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/2nItMjKr4I4lD1LEy4LoX3aSEJ1.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt466081",
+        "type": "movie",
+        "title": "Tři vteřiny",
+        "year": 2019,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/pbGveUC8mk0QRkdXpERPLbMFnrg.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt417643",
+        "type": "movie",
+        "title": "Děsivá temnota",
+        "year": 2018,
+        "score": 58,
+        "poster": "https://image.tmdb.org/t/p/w342/A4gJEE1zpImXE8MYkeq4sB69mfZ.jpg",
         "roles": [
           "actor"
         ]
@@ -256757,6 +256810,46 @@
         "year": 2023,
         "score": 63,
         "poster": "https://image.tmdb.org/t/p/w342/gI3cc3aMKNQJVwEQXy3or7b0GHK.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6539341": {
+    "name": "Julie Clergerie",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1742441",
+        "type": "movie",
+        "title": "V/H/S/Mixtape",
+        "year": 2026,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/uS8yoiA6NfsuYeOTbVfpem8Ib9.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6539231": {
+    "name": "Understanding Diggs",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1742441",
+        "type": "movie",
+        "title": "V/H/S/Mixtape",
+        "year": 2026,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/uS8yoiA6NfsuYeOTbVfpem8Ib9.jpg",
         "roles": [
           "actor"
         ]
@@ -312140,37 +312233,6 @@
         "year": 2018,
         "score": 58,
         "poster": "https://image.tmdb.org/t/p/w342/E4twRNScyq3g6tRpvK6X8LdD1z.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1684040": {
-    "name": "Srbo Markovic",
-    "img": "/pYtUeefoM9CN78S0gRc6K6BUgUd.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt466081",
-        "type": "movie",
-        "title": "Tři vteřiny",
-        "year": 2019,
-        "score": 66,
-        "poster": "https://image.tmdb.org/t/p/w342/pbGveUC8mk0QRkdXpERPLbMFnrg.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt417643",
-        "type": "movie",
-        "title": "Děsivá temnota",
-        "year": 2018,
-        "score": 58,
-        "poster": "https://image.tmdb.org/t/p/w342/A4gJEE1zpImXE8MYkeq4sB69mfZ.jpg",
         "roles": [
           "actor"
         ]

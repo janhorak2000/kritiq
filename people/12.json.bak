@@ -21697,6 +21697,17 @@
         ]
       },
       {
+        "id": "mt1561726",
+        "type": "movie",
+        "title": "Mistrovský plán",
+        "year": 2026,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/2nItMjKr4I4lD1LEy4LoX3aSEJ1.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1294698",
         "type": "movie",
         "title": "Případ 137",
@@ -29466,48 +29477,6 @@
         "year": 1996,
         "score": 73,
         "poster": "https://image.tmdb.org/t/p/w342/3Ksmbpg33PigXKWncD8rFMl24vF.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2381523": {
-    "name": "Ben Manning",
-    "img": "/qEMOKGGoqlPBl1tdbuCUHWOH1pj.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt977942",
-        "type": "movie",
-        "title": "The Uprising",
-        "year": 2026,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/7TUl15TOsIvndKlgMWTtLgtEzZP.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st114922",
-        "type": "show",
-        "title": "Citadela",
-        "year": 2023,
-        "score": 62,
-        "poster": "https://image.tmdb.org/t/p/w342/1qd09UPWgbNTw8ha0zw2xM1hc69.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt973509",
-        "type": "movie",
-        "title": "The Highwayman",
-        "year": 2022,
-        "score": 33,
-        "poster": "https://image.tmdb.org/t/p/w342/eVEyBmldMAfKBOIjuuLnXxFThiI.jpg",
         "roles": [
           "actor"
         ]
@@ -273492,6 +273461,48 @@
       }
     ]
   },
+  "p2381523": {
+    "name": "Ben Manning",
+    "img": "/qEMOKGGoqlPBl1tdbuCUHWOH1pj.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt977942",
+        "type": "movie",
+        "title": "The Uprising",
+        "year": 2026,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/7TUl15TOsIvndKlgMWTtLgtEzZP.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st114922",
+        "type": "show",
+        "title": "Citadela",
+        "year": 2023,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/1qd09UPWgbNTw8ha0zw2xM1hc69.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt973509",
+        "type": "movie",
+        "title": "The Highwayman",
+        "year": 2022,
+        "score": 33,
+        "poster": "https://image.tmdb.org/t/p/w342/eVEyBmldMAfKBOIjuuLnXxFThiI.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2571735": {
     "name": "Brian DeRozan",
     "img": "/zspXQBDpuacJfbRjqlGb6wGn05a.jpg",
@@ -289010,6 +289021,18 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "mt1561726",
+        "type": "movie",
+        "title": "Mistrovský plán",
+        "year": 2026,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/2nItMjKr4I4lD1LEy4LoX3aSEJ1.jpg",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      },
       {
         "id": "mt848187",
         "type": "movie",
@@ -327429,6 +327452,26 @@
         "year": 2026,
         "score": 50,
         "poster": "https://image.tmdb.org/t/p/w342/nPPIufTBnzEg0d7NoR5RLL1oPra.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6474755": {
+    "name": "Bob Gorman",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1742441",
+        "type": "movie",
+        "title": "V/H/S/Mixtape",
+        "year": 2026,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/uS8yoiA6NfsuYeOTbVfpem8Ib9.jpg",
         "roles": [
           "actor"
         ]

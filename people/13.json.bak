@@ -18103,6 +18103,37 @@
       }
     ]
   },
+  "p969603": {
+    "name": "Eugenia Alonso",
+    "img": "/kFr4K0EopeXDmbdjo6YfEsrUfPx.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1487317",
+        "type": "movie",
+        "title": "Terapie, jak má být",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/vaok2Dm7suKG2gEY2cKBXL4OMYf.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt349105",
+        "type": "movie",
+        "title": "Papež František: Modlete se za mě",
+        "year": 2015,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/yp332Pn3lzhCjlpgyJO5elDckvK.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p6330865": {
     "name": "John Rabe",
     "img": "/ovAUmepyF9G52gade5JiyR5cgsu.jpg",
@@ -20606,92 +20637,6 @@
         "year": 2026,
         "score": 72,
         "poster": "https://image.tmdb.org/t/p/w342/lKK9ImwpoTCwDZKgYpjIIJCnlf0.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2388828": {
-    "name": "Sky Yang",
-    "img": "/vOkkOgn7CrSHY1pecVr5p8ZHIcB.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt977942",
-        "type": "movie",
-        "title": "The Uprising",
-        "year": 2026,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/7TUl15TOsIvndKlgMWTtLgtEzZP.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1193501",
-        "type": "movie",
-        "title": "Ozvěna",
-        "year": 2026,
-        "score": 52,
-        "poster": "https://image.tmdb.org/t/p/w342/v6Hkkl7V9XokSIZDRBSxaR9B91t.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1126336",
-        "type": "movie",
-        "title": "Anniversary",
-        "year": 2025,
-        "score": 67,
-        "poster": "https://image.tmdb.org/t/p/w342/sSdpXGBNt3mQzjZZVK6eV5NcPdc.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt934632",
-        "type": "movie",
-        "title": "Rebel Moon: Druhá část – Jizvonoška",
-        "year": 2024,
-        "score": 54,
-        "poster": "https://image.tmdb.org/t/p/w342/fOQDkMNfpaLtSuzaOFeV7KLjPTX.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt848326",
-        "type": "movie",
-        "title": "Rebel Moon: První část – Zrozená z ohně",
-        "year": 2023,
-        "score": 56,
-        "poster": "https://image.tmdb.org/t/p/w342/1fD4NS96lP1PIKTW858A6ARpp6y.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st52814",
-        "type": "show",
-        "title": "Halo",
-        "year": 2022,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/4UmNhZCEu8Vt3byMvNxNEPyf8EY.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt338970",
-        "type": "movie",
-        "title": "Tomb Raider",
-        "year": 2018,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/s4Qn5LF6OwK4rIifmthIDtbqDSs.jpg",
         "roles": [
           "actor"
         ]
@@ -265141,6 +265086,92 @@
       }
     ]
   },
+  "p2388828": {
+    "name": "Sky Yang",
+    "img": "/vOkkOgn7CrSHY1pecVr5p8ZHIcB.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt977942",
+        "type": "movie",
+        "title": "The Uprising",
+        "year": 2026,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/7TUl15TOsIvndKlgMWTtLgtEzZP.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1193501",
+        "type": "movie",
+        "title": "Ozvěna",
+        "year": 2026,
+        "score": 52,
+        "poster": "https://image.tmdb.org/t/p/w342/v6Hkkl7V9XokSIZDRBSxaR9B91t.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1126336",
+        "type": "movie",
+        "title": "Anniversary",
+        "year": 2025,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/sSdpXGBNt3mQzjZZVK6eV5NcPdc.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt934632",
+        "type": "movie",
+        "title": "Rebel Moon: Druhá část – Jizvonoška",
+        "year": 2024,
+        "score": 54,
+        "poster": "https://image.tmdb.org/t/p/w342/fOQDkMNfpaLtSuzaOFeV7KLjPTX.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt848326",
+        "type": "movie",
+        "title": "Rebel Moon: První část – Zrozená z ohně",
+        "year": 2023,
+        "score": 56,
+        "poster": "https://image.tmdb.org/t/p/w342/1fD4NS96lP1PIKTW858A6ARpp6y.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st52814",
+        "type": "show",
+        "title": "Halo",
+        "year": 2022,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/4UmNhZCEu8Vt3byMvNxNEPyf8EY.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt338970",
+        "type": "movie",
+        "title": "Tomb Raider",
+        "year": 2018,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/s4Qn5LF6OwK4rIifmthIDtbqDSs.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p5891998": {
     "name": "Eric Bernard",
     "img": null,
@@ -296508,6 +296539,17 @@
     "age": 42,
     "works": [
       {
+        "id": "mt1742441",
+        "type": "movie",
+        "title": "V/H/S/Mixtape",
+        "year": 2026,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/uS8yoiA6NfsuYeOTbVfpem8Ib9.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
         "id": "mt1323625",
         "type": "movie",
         "title": "Night Patrol",
@@ -302129,6 +302171,59 @@
         "year": 2026,
         "score": 50,
         "poster": "https://image.tmdb.org/t/p/w342/nPPIufTBnzEg0d7NoR5RLL1oPra.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1499907": {
+    "name": "Zoe Cooper",
+    "img": "/hd6J9RPOSoDqHV3CW7HuALbm1WK.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1742441",
+        "type": "movie",
+        "title": "V/H/S/Mixtape",
+        "year": 2026,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/uS8yoiA6NfsuYeOTbVfpem8Ib9.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "mt795518",
+        "type": "movie",
+        "title": "Pirátská vysílání",
+        "year": 2021,
+        "score": 54,
+        "poster": "https://image.tmdb.org/t/p/w342/hMv5Fgm718QB8anCBpJZIKj17hX.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt586586",
+        "type": "movie",
+        "title": "Bliss",
+        "year": 2019,
+        "score": 59,
+        "poster": "https://image.tmdb.org/t/p/w342/kf0OkO0Ncdgqvaulk70zgW8eyzN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt354251",
+        "type": "movie",
+        "title": "Southbound",
+        "year": 2015,
+        "score": 59,
+        "poster": "https://image.tmdb.org/t/p/w342/ehXtB1jlMx8FBlsX9JLhSQkvlZp.jpg",
         "roles": [
           "actor"
         ]
@@ -374095,48 +374190,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/877peQUdeHbb6RLEicjKng9D4Zp.jpg",
         "roles": [
           "writer"
-        ]
-      }
-    ]
-  },
-  "p1499907": {
-    "name": "Zoe Cooper",
-    "img": "/hd6J9RPOSoDqHV3CW7HuALbm1WK.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt795518",
-        "type": "movie",
-        "title": "Pirátská vysílání",
-        "year": 2021,
-        "score": 54,
-        "poster": "https://image.tmdb.org/t/p/w342/hMv5Fgm718QB8anCBpJZIKj17hX.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt586586",
-        "type": "movie",
-        "title": "Bliss",
-        "year": 2019,
-        "score": 59,
-        "poster": "https://image.tmdb.org/t/p/w342/kf0OkO0Ncdgqvaulk70zgW8eyzN.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt354251",
-        "type": "movie",
-        "title": "Southbound",
-        "year": 2015,
-        "score": 59,
-        "poster": "https://image.tmdb.org/t/p/w342/ehXtB1jlMx8FBlsX9JLhSQkvlZp.jpg",
-        "roles": [
-          "actor"
         ]
       }
     ]
@@ -474599,26 +474652,6 @@
         "year": 2015,
         "score": 63,
         "poster": "https://image.tmdb.org/t/p/w342/ziImW5nB2AENKBjSo5oEZBUGYOw.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p969603": {
-    "name": "Eugenia Alonso",
-    "img": "/kFr4K0EopeXDmbdjo6YfEsrUfPx.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt349105",
-        "type": "movie",
-        "title": "Papež František: Modlete se za mě",
-        "year": 2015,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/yp332Pn3lzhCjlpgyJO5elDckvK.jpg",
         "roles": [
           "actor"
         ]
