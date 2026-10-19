@@ -272083,6 +272083,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1700680",
+        "type": "movie",
+        "title": "Loco México Mágico",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/eCUYoQP0tB5mfwVUT3NidnoQCI3.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt772515",
         "type": "movie",
         "title": "Huesera: Sběratelka kostí",
@@ -292434,6 +292445,17 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/fcB3umyKDAAm65yKNCxPHcSRwE0.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1700680",
+        "type": "movie",
+        "title": "Loco México Mágico",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/eCUYoQP0tB5mfwVUT3NidnoQCI3.jpg",
         "roles": [
           "actor"
         ]

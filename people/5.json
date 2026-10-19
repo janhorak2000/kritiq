@@ -3650,6 +3650,17 @@
     "age": 40,
     "works": [
       {
+        "id": "mt1280300",
+        "type": "movie",
+        "title": "The Whistler",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/sX8tqkFR1aqZaLQ4Jgb8jEMB4RN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1041513",
         "type": "movie",
         "title": "Encanto v Hollywood Bowl",
@@ -444494,6 +444505,88 @@
       }
     ]
   },
+  "p5157344": {
+    "name": "Shaní Lozano",
+    "img": "/7uH0nR4BDJF4xUDNU46KMXz7OWS.jpg",
+    "birthday": "1996-06-29",
+    "deathday": null,
+    "age": 30,
+    "works": [
+      {
+        "id": "mt1700680",
+        "type": "movie",
+        "title": "Loco México Mágico",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/eCUYoQP0tB5mfwVUT3NidnoQCI3.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st259730",
+        "type": "show",
+        "title": "Neštěstí",
+        "year": 2024,
+        "score": 58,
+        "poster": "https://image.tmdb.org/t/p/w342/4Rpsdbk5dnRCtRN3jUfyef19i0M.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st227322",
+        "type": "show",
+        "title": "Náhradnice Yeni",
+        "year": 2023,
+        "score": 58,
+        "poster": "https://image.tmdb.org/t/p/w342/yJbkVNOlQdDtHBnKo5jw7X4GLtd.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6406427": {
+    "name": "Hikari Akemi",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1700680",
+        "type": "movie",
+        "title": "Loco México Mágico",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/eCUYoQP0tB5mfwVUT3NidnoQCI3.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6406438": {
+    "name": "Carlos Castillo",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1700680",
+        "type": "movie",
+        "title": "Loco México Mágico",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/eCUYoQP0tB5mfwVUT3NidnoQCI3.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p45446": {
     "name": "Megan Follows",
     "img": "/b51laNa6sqSpLrYCUpW7hcsbZio.jpg",
@@ -873041,37 +873134,6 @@
         "year": 2023,
         "score": 58,
         "poster": "https://image.tmdb.org/t/p/w342/aDgsyosno3aKCiAn0UoUuw6HNME.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5157344": {
-    "name": "Shaní Lozano",
-    "img": "/7uH0nR4BDJF4xUDNU46KMXz7OWS.jpg",
-    "birthday": "1996-06-29",
-    "deathday": null,
-    "age": 30,
-    "works": [
-      {
-        "id": "st259730",
-        "type": "show",
-        "title": "Neštěstí",
-        "year": 2024,
-        "score": 58,
-        "poster": "https://image.tmdb.org/t/p/w342/4Rpsdbk5dnRCtRN3jUfyef19i0M.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st227322",
-        "type": "show",
-        "title": "Náhradnice Yeni",
-        "year": 2023,
-        "score": 58,
-        "poster": "https://image.tmdb.org/t/p/w342/yJbkVNOlQdDtHBnKo5jw7X4GLtd.jpg",
         "roles": [
           "actor"
         ]

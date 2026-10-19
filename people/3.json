@@ -345611,6 +345611,17 @@
     "age": 21,
     "works": [
       {
+        "id": "mt1700680",
+        "type": "movie",
+        "title": "Loco México Mágico",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/eCUYoQP0tB5mfwVUT3NidnoQCI3.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt960519",
         "type": "movie",
         "title": "Nenechat se umlčet",
@@ -378925,6 +378936,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "mt1700680",
+        "type": "movie",
+        "title": "Loco México Mágico",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/eCUYoQP0tB5mfwVUT3NidnoQCI3.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt1002185",
         "type": "movie",
@@ -433601,6 +433623,57 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/kjAsuaDcNsemYTQ8tUorpVE1FJb.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2156652": {
+    "name": "Flor Benítez",
+    "img": "/buwnu68UpnZf9UCTXJZEF8pLWAs.jpg",
+    "birthday": "1986-09-05",
+    "deathday": null,
+    "age": 40,
+    "works": [
+      {
+        "id": "mt1700680",
+        "type": "movie",
+        "title": "Loco México Mágico",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/eCUYoQP0tB5mfwVUT3NidnoQCI3.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st61720",
+        "type": "show",
+        "title": "Violetta",
+        "year": 2012,
+        "score": 56,
+        "poster": "https://image.tmdb.org/t/p/w342/b3MUGJeKakAZwQa7lNJxTP1pJmD.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6406436": {
+    "name": "Giovanna Torres",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1700680",
+        "type": "movie",
+        "title": "Loco México Mágico",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/eCUYoQP0tB5mfwVUT3NidnoQCI3.jpg",
         "roles": [
           "actor"
         ]
@@ -934317,26 +934390,6 @@
         "year": 2011,
         "score": 75,
         "poster": "https://image.tmdb.org/t/p/w342/uMPBLLx0cvOidaLLXnzsHdTq9A7.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2156652": {
-    "name": "Flor Benítez",
-    "img": "/buwnu68UpnZf9UCTXJZEF8pLWAs.jpg",
-    "birthday": "1986-09-05",
-    "deathday": null,
-    "age": 40,
-    "works": [
-      {
-        "id": "st61720",
-        "type": "show",
-        "title": "Violetta",
-        "year": 2012,
-        "score": 56,
-        "poster": "https://image.tmdb.org/t/p/w342/b3MUGJeKakAZwQa7lNJxTP1pJmD.jpg",
         "roles": [
           "actor"
         ]

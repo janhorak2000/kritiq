@@ -350730,6 +350730,37 @@
       }
     ]
   },
+  "p67947": {
+    "name": "Freddy Sheinfeld",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1280300",
+        "type": "movie",
+        "title": "The Whistler",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/sX8tqkFR1aqZaLQ4Jgb8jEMB4RN.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "st40143",
+        "type": "show",
+        "title": "Král Šamanů",
+        "year": 2001,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/conBjZLX8KBc18vdQjSNegZytln.jpg",
+        "roles": [
+          "composer"
+        ]
+      }
+    ]
+  },
   "p2101517": {
     "name": "Gary Cheeseman",
     "img": null,
@@ -690196,26 +690227,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/nIcIwVTYcZnW1BDzexGfFO7KmX1.jpg",
         "roles": [
           "actor"
-        ]
-      }
-    ]
-  },
-  "p67947": {
-    "name": "Freddy Sheinfeld",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st40143",
-        "type": "show",
-        "title": "Král Šamanů",
-        "year": 2001,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/conBjZLX8KBc18vdQjSNegZytln.jpg",
-        "roles": [
-          "composer"
         ]
       }
     ]

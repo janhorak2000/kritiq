@@ -287786,6 +287786,17 @@
     "age": 49,
     "works": [
       {
+        "id": "mt1280300",
+        "type": "movie",
+        "title": "The Whistler",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/sX8tqkFR1aqZaLQ4Jgb8jEMB4RN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st299167",
         "type": "show",
         "title": "Ranč Duttonových",
@@ -330051,6 +330062,46 @@
         "year": 2021,
         "score": 82,
         "poster": "https://image.tmdb.org/t/p/w342/5ewpqgugwEN61atojXf7QNsrf0O.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5892943": {
+    "name": "Alberto Gorgonio",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1700680",
+        "type": "movie",
+        "title": "Loco México Mágico",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/eCUYoQP0tB5mfwVUT3NidnoQCI3.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5781964": {
+    "name": "Brendan Fagan",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1700680",
+        "type": "movie",
+        "title": "Loco México Mágico",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/eCUYoQP0tB5mfwVUT3NidnoQCI3.jpg",
         "roles": [
           "actor"
         ]
