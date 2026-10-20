@@ -307317,6 +307317,17 @@
     "age": 41,
     "works": [
       {
+        "id": "mt1700680",
+        "type": "movie",
+        "title": "Loco México Mágico",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/eCUYoQP0tB5mfwVUT3NidnoQCI3.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1002185",
         "type": "movie",
         "title": "Milion mil daleko",
@@ -353011,6 +353022,26 @@
         "poster": "https://image.tmdb.org/t/p/w342/dLXoEooo1ocH1qQGjvgD1ywsX4R.jpg",
         "roles": [
           "actor"
+        ]
+      }
+    ]
+  },
+  "p937282": {
+    "name": "Diego Velasco",
+    "img": "/ftImRf8Nr4S97gKH2nzP1HyG8Gn.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1280300",
+        "type": "movie",
+        "title": "The Whistler",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/sX8tqkFR1aqZaLQ4Jgb8jEMB4RN.jpg",
+        "roles": [
+          "director"
         ]
       }
     ]

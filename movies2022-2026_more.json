@@ -741350,6 +741350,154 @@
     "reviews": []
   },
   {
+    "title": "Spodina",
+    "tmdb_id": 1307373,
+    "imdb_id": "tt29028515",
+    "year": 2026,
+    "date": "2026-02-20",
+    "score": 72,
+    "box": 1,
+    "box_currency": "USD",
+    "country": "Velká Británie",
+    "genre": "Krimi",
+    "runtime": 91,
+    "poster": "https://image.tmdb.org/t/p/w342/lKK9ImwpoTCwDZKgYpjIIJCnlf0.jpg",
+    "gallery": [
+      "https://image.tmdb.org/t/p/w500/qLp9td9ZfOe7G6wHhrepKtIH5Qe.jpg"
+    ],
+    "summary": "Taylorovy naděje na nový začátek po propuštění na podmínku ohrožuje příchod spoluvězně Deeho. Dee si Taylora vezme pod svá křídla, ale jejich pouto prověří brutální útok, který Taylora donutí vybrat si mezi ochranou Deeho a vlastními šancemi na svobodu.",
+    "director": {
+      "id": 5559748,
+      "name": "Cal McMau",
+      "image": ""
+    },
+    "composer": {
+      "id": 2440213,
+      "name": "Forest Swords",
+      "image": ""
+    },
+    "writer": {
+      "id": 2901609,
+      "name": "Eoin Doran",
+      "image": ""
+    },
+    "actors": [
+      {
+        "id": 2761308,
+        "name": "David Jonsson",
+        "birthday": "1993-09-04",
+        "deathday": null,
+        "age": 33,
+        "image": "https://image.tmdb.org/t/p/w300/2ZZNGZw57KKMrVIr27g7W16G0jV.jpg"
+      },
+      {
+        "id": 1524100,
+        "name": "Tom Blyth",
+        "birthday": "1995-02-02",
+        "deathday": null,
+        "age": 31,
+        "image": "https://image.tmdb.org/t/p/w300/q8bkN1GvXqjs1ZGFYWViH9o2WDq.jpg"
+      },
+      {
+        "id": 178634,
+        "name": "Alex Hassell",
+        "birthday": "1980-09-17",
+        "deathday": null,
+        "age": 46,
+        "image": "https://image.tmdb.org/t/p/w300/ssL09IDQBkw1BtRcvvZnm6OJMSm.jpg"
+      },
+      {
+        "id": 583816,
+        "name": "Neil Linpow",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/1be5xAB1L4gCdo6cd01pYfSZMc0.jpg"
+      },
+      {
+        "id": 134466,
+        "name": "Paul Hilton",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/qbvVlXTwvtEiHJB9C6CagBdMiWt.jpg"
+      },
+      {
+        "id": 2833518,
+        "name": "Corin Silva",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/qSF5NmUrxmsfAsN1LAOOlXFYb4L.jpg"
+      },
+      {
+        "id": 5215453,
+        "name": "Layton Blake",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/hto5PX2oPEjbZeuIg6EhjSVy44t.jpg"
+      },
+      {
+        "id": 3997417,
+        "name": "Jack Barker",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/1BBNYIP5QO2eopgt50bi9RlSx9a.jpg"
+      },
+      {
+        "id": 4441659,
+        "name": "Fred Muthui",
+        "birthday": "1999-12-23",
+        "deathday": null,
+        "age": 26,
+        "image": ""
+      },
+      {
+        "id": 2827330,
+        "name": "Lunga Anele-Skosana",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4502181,
+        "name": "Robert Rhodes",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/d3fUGvffYdI6pxmEID3O5a3rPZk.jpg"
+      },
+      {
+        "id": 4471279,
+        "name": "Paul Black",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/iEyzI9Tz4vDQH7pQ9dfglkV0co9.jpg"
+      },
+      {
+        "id": 5755354,
+        "name": "Keaton Ancona-Francis",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 3573565,
+        "name": "Cole Martin",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/reBTDl8OYFoWTwt8zM3OIbrtGNw.jpg"
+      }
+    ],
+    "reviews": []
+  },
+  {
     "title": "Protivníci pod ochranou",
     "tmdb_id": 1440098,
     "imdb_id": "tt36073210",
@@ -765790,6 +765938,83 @@
         "deathday": null,
         "age": null,
         "image": ""
+      }
+    ],
+    "reviews": []
+  },
+  {
+    "title": "The Beast",
+    "tmdb_id": 1185344,
+    "imdb_id": "tt29256561",
+    "original_language": "en",
+    "year": 2026,
+    "date": "2026-10-08",
+    "score": 63,
+    "box": null,
+    "box_currency": null,
+    "country": "Velká Británie",
+    "genre": "Akční",
+    "runtime": 99,
+    "poster": "https://image.tmdb.org/t/p/w342/ocg5JfJP19fodcv5uQUApkmZMdI.jpg",
+    "gallery": [
+      "https://image.tmdb.org/t/p/w500/v5Wb9NoE0s1mGmC5wVeQR1OK22V.jpg"
+    ],
+    "summary": "",
+    "director": {
+      "id": 16938,
+      "name": "Renny Harlin",
+      "image": "https://image.tmdb.org/t/p/w300/IhXiDrZBrsLZpB5K5BmzUGkp4G.jpg"
+    },
+    "composer": {
+      "id": 65840,
+      "name": "Tuomas Kantelinen",
+      "image": "https://image.tmdb.org/t/p/w300/cjcLGFO1WF9DybDTH745vtdM34H.jpg"
+    },
+    "writer": {
+      "id": 1436975,
+      "name": "Umair Aleem",
+      "image": ""
+    },
+    "actors": [
+      {
+        "id": 2231,
+        "name": "Samuel L. Jackson",
+        "birthday": "1948-12-21",
+        "deathday": null,
+        "age": 77,
+        "image": "https://image.tmdb.org/t/p/w300/qdfRtvPCj51C9Uy5VEgjgj69JyV.jpg"
+      },
+      {
+        "id": 92404,
+        "name": "Joel Kinnaman",
+        "birthday": "1979-11-25",
+        "deathday": null,
+        "age": 46,
+        "image": "https://image.tmdb.org/t/p/w300/cVfYzTyQdJ4xtxKPZe7IcW3BJN4.jpg"
+      },
+      {
+        "id": 545195,
+        "name": "Guy Burnet",
+        "birthday": "1983-08-08",
+        "deathday": null,
+        "age": 43,
+        "image": "https://image.tmdb.org/t/p/w300/ksxpXRLJplv8kSfEHPYdboIwNfi.jpg"
+      },
+      {
+        "id": 111801,
+        "name": "Eoin Macken",
+        "birthday": "1983-02-21",
+        "deathday": null,
+        "age": 43,
+        "image": "https://image.tmdb.org/t/p/w300/9QcWKlulGbdDI8XNCJW88BfPyPv.jpg"
+      },
+      {
+        "id": 1559387,
+        "name": "Colin Morgan",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/wuRCR2u5MK8IA3MQAMwjF6RGv5k.jpg"
       }
     ],
     "reviews": []

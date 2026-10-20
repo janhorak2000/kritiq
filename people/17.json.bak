@@ -124955,6 +124955,17 @@
     "age": 59,
     "works": [
       {
+        "id": "mt1700680",
+        "type": "movie",
+        "title": "Loco México Mágico",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/eCUYoQP0tB5mfwVUT3NidnoQCI3.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st259730",
         "type": "show",
         "title": "Neštěstí",
@@ -231717,6 +231728,26 @@
         "year": 2010,
         "score": 79,
         "poster": "https://image.tmdb.org/t/p/w342/ruM5ehUQlHC1Kx3SF18d6klfrAx.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2090259": {
+    "name": "Diego Landaeta",
+    "img": "/hdDMEsqkJ60U8MptTrd5XtHE2cT.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1280300",
+        "type": "movie",
+        "title": "The Whistler",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/sX8tqkFR1aqZaLQ4Jgb8jEMB4RN.jpg",
         "roles": [
           "actor"
         ]

@@ -10021,6 +10021,17 @@
     "age": 51,
     "works": [
       {
+        "id": "mt1400940",
+        "type": "movie",
+        "title": "Clayface",
+        "year": 2026,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/5jCpQnWPikggmQZoDp1eAi6BI6w.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt911430",
         "type": "movie",
         "title": "F1",
@@ -12097,6 +12108,302 @@
         "year": 2017,
         "score": 41,
         "poster": "https://image.tmdb.org/t/p/w342/vg3EQp0ZvUNMXgSRrNynZMAsBmz.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2978": {
+    "name": "Max Minghella",
+    "img": "/AhVDxsOOoAnwwVBL7ZY8W0mGsYJ.jpg",
+    "birthday": "1985-09-16",
+    "deathday": null,
+    "age": 41,
+    "works": [
+      {
+        "id": "mt1400940",
+        "type": "movie",
+        "title": "Clayface",
+        "year": 2026,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/5jCpQnWPikggmQZoDp1eAi6BI6w.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt787747",
+        "type": "movie",
+        "title": "Shell",
+        "year": 2025,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/2XBNS8DxMFP7qOoTOY7cc8OYFwI.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "mt615777",
+        "type": "movie",
+        "title": "Babylon",
+        "year": 2022,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/wjOHjWCUE0YzDiEzKv8AfqHj3ir.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt602734",
+        "type": "movie",
+        "title": "Spirála strachu: Saw pokračuje",
+        "year": 2021,
+        "score": 52,
+        "poster": "https://image.tmdb.org/t/p/w342/z5Krug9rJ5Cql6pjKUUoT14fvN5.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st90812",
+        "type": "show",
+        "title": "Sektor",
+        "year": 2020,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/kZd6L5ZNv4bPcUgcztN2RWoxVVN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt440918",
+        "type": "movie",
+        "title": "Jít za svým snem",
+        "year": 2019,
+        "score": 61,
+        "poster": "https://image.tmdb.org/t/p/w342/aFPqJZ9vOcH7QroNxXV5wefX2qe.jpg",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      },
+      {
+        "id": "st69478",
+        "type": "show",
+        "title": "Příběh služebnice",
+        "year": 2017,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/vj18GvYHwZqCGsXmcQ3DDg4NbWM.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt294795",
+        "type": "movie",
+        "title": "Devátý život Louise Draxe",
+        "year": 2016,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/w1DUBuhET3OEPBwoay8UL2OUxs.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "mt334538",
+        "type": "movie",
+        "title": "Into the Forest",
+        "year": 2016,
+        "score": 58,
+        "poster": "https://image.tmdb.org/t/p/w342/3xBUU6pYZPe9tqVH2R430y6psEm.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt259956",
+        "type": "movie",
+        "title": "Víkend s Alexem",
+        "year": 2014,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/h2V85AL6bt5jQi7rLHKy9CSLlFd.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt256347",
+        "type": "movie",
+        "title": "Smrtící důkazy",
+        "year": 2014,
+        "score": 58,
+        "poster": "https://image.tmdb.org/t/p/w342/jSSMXBKwoTXGVOiy2WsGOUlOzv6.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt149509",
+        "type": "movie",
+        "title": "Rohy",
+        "year": 2013,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/tjTy6W05mPXXw87IqpjeGNhIcM4.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt116741",
+        "type": "movie",
+        "title": "Stážisti",
+        "year": 2013,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/hIh3ZgsZ31nbUAGn5SKIZGKiKCX.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt58547",
+        "type": "movie",
+        "title": "Třídní sraz",
+        "year": 2012,
+        "score": 61,
+        "poster": "https://image.tmdb.org/t/p/w342/AuCM5jU751cMLKOtHybzUoL6RaX.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st44857",
+        "type": "show",
+        "title": "The Mindy Project",
+        "year": 2012,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/A3txgCPox6hJlOZ0TDTOxch7rVa.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt10316",
+        "type": "movie",
+        "title": "Den zrady",
+        "year": 2011,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/w8t4UnJnC24S9ygoaFgmMzRbErd.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt71469",
+        "type": "movie",
+        "title": "Černá hodina",
+        "year": 2011,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/ippUh55HTIFxtCxoR7M0Ko6AHz7.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt37799",
+        "type": "movie",
+        "title": "Sociální síť",
+        "year": 2010,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/xNlPH5EBU9v6JA15KA5ijGmNArX.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt26428",
+        "type": "movie",
+        "title": "Agora",
+        "year": 2009,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/1xsFa6I5vDd2UI1AJ1tsW7BUChv.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt29151",
+        "type": "movie",
+        "title": "Něco na těch mužích je",
+        "year": 2009,
+        "score": 54,
+        "poster": "https://image.tmdb.org/t/p/w342/iPiqZKtF3rvuCW0fPsXc4Yzt8hw.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt13092",
+        "type": "movie",
+        "title": "Jak se zbavit přátel a zůstat úplně sám",
+        "year": 2008,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/8Xd1mO861aK2OirTbxZrODNhihW.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt19554",
+        "type": "movie",
+        "title": "Elvis a Anabelle",
+        "year": 2007,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/eYucJWWJiTQVDwwbjhHIu1aDp5C.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt9786",
+        "type": "movie",
+        "title": "Umění musí bolet",
+        "year": 2006,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/eV6UL22Zlpsq5XybUupWh0rBOp0.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt231",
+        "type": "movie",
+        "title": "Syriana",
+        "year": 2005,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/mO3hWUTOxmLJxihvDU0YFkb0Mb5.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt24618",
+        "type": "movie",
+        "title": "Tajná přání",
+        "year": 2005,
+        "score": 54,
+        "poster": "https://image.tmdb.org/t/p/w342/xeUOz7tYY8YuARrwAQL54DThscu.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt2289",
+        "type": "movie",
+        "title": "Návrat do Cold Mountain",
+        "year": 2003,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/j0AJeeR5CQPDFh0otyWyCWREHO8.jpg",
         "roles": [
           "actor"
         ]
@@ -154961,291 +155268,6 @@
       }
     ]
   },
-  "p2978": {
-    "name": "Max Minghella",
-    "img": "/AhVDxsOOoAnwwVBL7ZY8W0mGsYJ.jpg",
-    "birthday": "1985-09-16",
-    "deathday": null,
-    "age": 41,
-    "works": [
-      {
-        "id": "mt787747",
-        "type": "movie",
-        "title": "Shell",
-        "year": 2025,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/2XBNS8DxMFP7qOoTOY7cc8OYFwI.jpg",
-        "roles": [
-          "director"
-        ]
-      },
-      {
-        "id": "mt615777",
-        "type": "movie",
-        "title": "Babylon",
-        "year": 2022,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/wjOHjWCUE0YzDiEzKv8AfqHj3ir.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt602734",
-        "type": "movie",
-        "title": "Spirála strachu: Saw pokračuje",
-        "year": 2021,
-        "score": 52,
-        "poster": "https://image.tmdb.org/t/p/w342/z5Krug9rJ5Cql6pjKUUoT14fvN5.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st90812",
-        "type": "show",
-        "title": "Sektor",
-        "year": 2020,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/kZd6L5ZNv4bPcUgcztN2RWoxVVN.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt440918",
-        "type": "movie",
-        "title": "Jít za svým snem",
-        "year": 2019,
-        "score": 61,
-        "poster": "https://image.tmdb.org/t/p/w342/aFPqJZ9vOcH7QroNxXV5wefX2qe.jpg",
-        "roles": [
-          "director",
-          "writer"
-        ]
-      },
-      {
-        "id": "st69478",
-        "type": "show",
-        "title": "Příběh služebnice",
-        "year": 2017,
-        "score": 83,
-        "poster": "https://image.tmdb.org/t/p/w342/vj18GvYHwZqCGsXmcQ3DDg4NbWM.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt294795",
-        "type": "movie",
-        "title": "Devátý život Louise Draxe",
-        "year": 2016,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/w1DUBuhET3OEPBwoay8UL2OUxs.jpg",
-        "roles": [
-          "writer"
-        ]
-      },
-      {
-        "id": "mt334538",
-        "type": "movie",
-        "title": "Into the Forest",
-        "year": 2016,
-        "score": 58,
-        "poster": "https://image.tmdb.org/t/p/w342/3xBUU6pYZPe9tqVH2R430y6psEm.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt259956",
-        "type": "movie",
-        "title": "Víkend s Alexem",
-        "year": 2014,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/h2V85AL6bt5jQi7rLHKy9CSLlFd.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt256347",
-        "type": "movie",
-        "title": "Smrtící důkazy",
-        "year": 2014,
-        "score": 58,
-        "poster": "https://image.tmdb.org/t/p/w342/jSSMXBKwoTXGVOiy2WsGOUlOzv6.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt149509",
-        "type": "movie",
-        "title": "Rohy",
-        "year": 2013,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/tjTy6W05mPXXw87IqpjeGNhIcM4.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt116741",
-        "type": "movie",
-        "title": "Stážisti",
-        "year": 2013,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/hIh3ZgsZ31nbUAGn5SKIZGKiKCX.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt58547",
-        "type": "movie",
-        "title": "Třídní sraz",
-        "year": 2012,
-        "score": 61,
-        "poster": "https://image.tmdb.org/t/p/w342/AuCM5jU751cMLKOtHybzUoL6RaX.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st44857",
-        "type": "show",
-        "title": "The Mindy Project",
-        "year": 2012,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/A3txgCPox6hJlOZ0TDTOxch7rVa.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt10316",
-        "type": "movie",
-        "title": "Den zrady",
-        "year": 2011,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/w8t4UnJnC24S9ygoaFgmMzRbErd.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt71469",
-        "type": "movie",
-        "title": "Černá hodina",
-        "year": 2011,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/ippUh55HTIFxtCxoR7M0Ko6AHz7.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt37799",
-        "type": "movie",
-        "title": "Sociální síť",
-        "year": 2010,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/xNlPH5EBU9v6JA15KA5ijGmNArX.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt26428",
-        "type": "movie",
-        "title": "Agora",
-        "year": 2009,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/1xsFa6I5vDd2UI1AJ1tsW7BUChv.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt29151",
-        "type": "movie",
-        "title": "Něco na těch mužích je",
-        "year": 2009,
-        "score": 54,
-        "poster": "https://image.tmdb.org/t/p/w342/iPiqZKtF3rvuCW0fPsXc4Yzt8hw.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt13092",
-        "type": "movie",
-        "title": "Jak se zbavit přátel a zůstat úplně sám",
-        "year": 2008,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/8Xd1mO861aK2OirTbxZrODNhihW.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt19554",
-        "type": "movie",
-        "title": "Elvis a Anabelle",
-        "year": 2007,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/eYucJWWJiTQVDwwbjhHIu1aDp5C.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt9786",
-        "type": "movie",
-        "title": "Umění musí bolet",
-        "year": 2006,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/eV6UL22Zlpsq5XybUupWh0rBOp0.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt231",
-        "type": "movie",
-        "title": "Syriana",
-        "year": 2005,
-        "score": 68,
-        "poster": "https://image.tmdb.org/t/p/w342/mO3hWUTOxmLJxihvDU0YFkb0Mb5.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt24618",
-        "type": "movie",
-        "title": "Tajná přání",
-        "year": 2005,
-        "score": 54,
-        "poster": "https://image.tmdb.org/t/p/w342/xeUOz7tYY8YuARrwAQL54DThscu.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt2289",
-        "type": "movie",
-        "title": "Návrat do Cold Mountain",
-        "year": 2003,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/j0AJeeR5CQPDFh0otyWyCWREHO8.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1608973": {
     "name": "Laura Steinel",
     "img": "/nMtglQD1J7H5KEpJmmQzqoSs0Kt.jpg",
@@ -158829,6 +158851,17 @@
     "deathday": null,
     "age": 43,
     "works": [
+      {
+        "id": "mt1185344",
+        "type": "movie",
+        "title": "The Beast",
+        "year": 2026,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/ocg5JfJP19fodcv5uQUApkmZMdI.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt1480574",
         "type": "movie",
