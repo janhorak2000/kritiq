@@ -30757,26 +30757,6 @@
       }
     ]
   },
-  "p4471279": {
-    "name": "Paul Black",
-    "img": "/iEyzI9Tz4vDQH7pQ9dfglkV0co9.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1307373",
-        "type": "movie",
-        "title": "Spodina",
-        "year": 2026,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/lKK9ImwpoTCwDZKgYpjIIJCnlf0.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p56957": {
     "name": "Tom Szollosi",
     "img": null,
@@ -367874,6 +367854,26 @@
         "year": 1964,
         "score": 85,
         "poster": "https://image.tmdb.org/t/p/w342/tVFCu0jE9m5QHmHM4rzEFGs1kUI.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4471279": {
+    "name": "Paul Black",
+    "img": "/iEyzI9Tz4vDQH7pQ9dfglkV0co9.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1307373",
+        "type": "movie",
+        "title": "Spodina",
+        "year": 2026,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/lKK9ImwpoTCwDZKgYpjIIJCnlf0.jpg",
         "roles": [
           "actor"
         ]

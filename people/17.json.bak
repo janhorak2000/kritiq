@@ -1183,6 +1183,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1400940",
+        "type": "movie",
+        "title": "Clayface",
+        "year": 2026,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/5jCpQnWPikggmQZoDp1eAi6BI6w.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
         "id": "mt1283515",
         "type": "movie",
         "title": "Pravda, nebo lež",

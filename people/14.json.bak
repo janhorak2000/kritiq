@@ -17144,6 +17144,17 @@
     "age": 49,
     "works": [
       {
+        "id": "mt1400940",
+        "type": "movie",
+        "title": "Clayface",
+        "year": 2026,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/5jCpQnWPikggmQZoDp1eAi6BI6w.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt533535",
         "type": "movie",
         "title": "Deadpool & Wolverine",
@@ -21970,6 +21981,213 @@
         "year": 2017,
         "score": 36,
         "poster": "https://image.tmdb.org/t/p/w342/sBD608VF4TcFHmP7SuC0OcvZQ0b.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3551": {
+    "name": "Jake Curran",
+    "img": "/pC6ozticiOmovaPpwqKVOMhn0b9.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1400940",
+        "type": "movie",
+        "title": "Clayface",
+        "year": 2026,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/5jCpQnWPikggmQZoDp1eAi6BI6w.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1390300",
+        "type": "movie",
+        "title": "Jen přes tvou mrtvolu",
+        "year": 2026,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/kZCauMzAt9eMAhLMopCqnFw1Q5k.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt659986",
+        "type": "movie",
+        "title": "The Owners",
+        "year": 2020,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/zMUpzTRF4f4MkScDkUZM030H2t0.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st85021",
+        "type": "show",
+        "title": "Gangs of London",
+        "year": 2020,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/fVgwa6wGw9ddGM5O7mqrrwB6gHK.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt336843",
+        "type": "movie",
+        "title": "Labyrint: Vražedná léčba",
+        "year": 2018,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/zg0F4daRStEubHIZepIV2XbjyxS.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt438259",
+        "type": "movie",
+        "title": "Na konci cesty",
+        "year": 2017,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/5gGkt84bCPt7XRo35FcsrOeer78.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt300803",
+        "type": "movie",
+        "title": "Dračí srdce 3: Čarodějova kletba",
+        "year": 2015,
+        "score": 51,
+        "poster": "https://image.tmdb.org/t/p/w342/qPiyMWZHlRGgQ54roaraS3iJR12.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt228150",
+        "type": "movie",
+        "title": "Železná srdce",
+        "year": 2014,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/cxhOaH49nLC0t15eo2ndKsnsW3Z.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st43529",
+        "type": "show",
+        "title": "Labyrint",
+        "year": 2012,
+        "score": 59,
+        "poster": "https://image.tmdb.org/t/p/w342/7ze6V3XYVBeQe3Y9opRw3Hbyhbh.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt74394",
+        "type": "movie",
+        "title": "The Holding",
+        "year": 2011,
+        "score": 47,
+        "poster": "https://image.tmdb.org/t/p/w342/rBh5EqFI6mFlgH5Z5lkQJkxJ0Fb.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt20662",
+        "type": "movie",
+        "title": "Robin Hood",
+        "year": 2010,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/9NS5QGOfck24yL3bZqWeW06PgPC.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt23823",
+        "type": "movie",
+        "title": "Pach krve 3",
+        "year": 2009,
+        "score": 46,
+        "poster": "https://image.tmdb.org/t/p/w342/84s4LMWuGbm4xPWW5PSbHyQhh33.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt2270",
+        "type": "movie",
+        "title": "Hvězdný prach",
+        "year": 2007,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/7Acaf4hCKscMWjYZpq9grFU4bQK.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st10268",
+        "type": "show",
+        "title": "Pravěk útočí",
+        "year": 2007,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/pjRhnncEnTT8T5YsLbTb0A4msuQ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt257",
+        "type": "movie",
+        "title": "Oliver Twist",
+        "year": 2005,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/zhPdYZ3x2uanhM1SyBj4CuL6hSa.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt11400",
+        "type": "movie",
+        "title": "Nový svět",
+        "year": 2005,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/8al4bQsdjtSg2hhO18I1pacrDAR.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt7548",
+        "type": "movie",
+        "title": "Libertin",
+        "year": 2004,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/umdmdUlYXi2zxM3vQ7pY795mC5m.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt5248",
+        "type": "movie",
+        "title": "Virtual Sexuality",
+        "year": 1999,
+        "score": 51,
+        "poster": "https://image.tmdb.org/t/p/w342/lMx1firCTM9gs7kVxyRKjHx56Lm.jpg",
         "roles": [
           "actor"
         ]
@@ -67370,6 +67588,17 @@
     "deathday": null,
     "age": 77,
     "works": [
+      {
+        "id": "mt1185344",
+        "type": "movie",
+        "title": "The Beast",
+        "year": 2026,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/ocg5JfJP19fodcv5uQUApkmZMdI.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt1480574",
         "type": "movie",
@@ -132926,202 +133155,6 @@
         "year": 2002,
         "score": 75,
         "poster": "https://image.tmdb.org/t/p/w342/5VRYeJ8DI3GkVzO7MUlug8v2BZO.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt5248",
-        "type": "movie",
-        "title": "Virtual Sexuality",
-        "year": 1999,
-        "score": 51,
-        "poster": "https://image.tmdb.org/t/p/w342/lMx1firCTM9gs7kVxyRKjHx56Lm.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3551": {
-    "name": "Jake Curran",
-    "img": "/pC6ozticiOmovaPpwqKVOMhn0b9.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1390300",
-        "type": "movie",
-        "title": "Jen přes tvou mrtvolu",
-        "year": 2026,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/kZCauMzAt9eMAhLMopCqnFw1Q5k.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt659986",
-        "type": "movie",
-        "title": "The Owners",
-        "year": 2020,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/zMUpzTRF4f4MkScDkUZM030H2t0.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st85021",
-        "type": "show",
-        "title": "Gangs of London",
-        "year": 2020,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/fVgwa6wGw9ddGM5O7mqrrwB6gHK.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt336843",
-        "type": "movie",
-        "title": "Labyrint: Vražedná léčba",
-        "year": 2018,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/zg0F4daRStEubHIZepIV2XbjyxS.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt438259",
-        "type": "movie",
-        "title": "Na konci cesty",
-        "year": 2017,
-        "score": 67,
-        "poster": "https://image.tmdb.org/t/p/w342/5gGkt84bCPt7XRo35FcsrOeer78.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt300803",
-        "type": "movie",
-        "title": "Dračí srdce 3: Čarodějova kletba",
-        "year": 2015,
-        "score": 51,
-        "poster": "https://image.tmdb.org/t/p/w342/qPiyMWZHlRGgQ54roaraS3iJR12.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt228150",
-        "type": "movie",
-        "title": "Železná srdce",
-        "year": 2014,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/cxhOaH49nLC0t15eo2ndKsnsW3Z.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st43529",
-        "type": "show",
-        "title": "Labyrint",
-        "year": 2012,
-        "score": 59,
-        "poster": "https://image.tmdb.org/t/p/w342/7ze6V3XYVBeQe3Y9opRw3Hbyhbh.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt74394",
-        "type": "movie",
-        "title": "The Holding",
-        "year": 2011,
-        "score": 47,
-        "poster": "https://image.tmdb.org/t/p/w342/rBh5EqFI6mFlgH5Z5lkQJkxJ0Fb.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt20662",
-        "type": "movie",
-        "title": "Robin Hood",
-        "year": 2010,
-        "score": 66,
-        "poster": "https://image.tmdb.org/t/p/w342/9NS5QGOfck24yL3bZqWeW06PgPC.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt23823",
-        "type": "movie",
-        "title": "Pach krve 3",
-        "year": 2009,
-        "score": 46,
-        "poster": "https://image.tmdb.org/t/p/w342/84s4LMWuGbm4xPWW5PSbHyQhh33.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt2270",
-        "type": "movie",
-        "title": "Hvězdný prach",
-        "year": 2007,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/7Acaf4hCKscMWjYZpq9grFU4bQK.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st10268",
-        "type": "show",
-        "title": "Pravěk útočí",
-        "year": 2007,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/pjRhnncEnTT8T5YsLbTb0A4msuQ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt257",
-        "type": "movie",
-        "title": "Oliver Twist",
-        "year": 2005,
-        "score": 68,
-        "poster": "https://image.tmdb.org/t/p/w342/zhPdYZ3x2uanhM1SyBj4CuL6hSa.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt11400",
-        "type": "movie",
-        "title": "Nový svět",
-        "year": 2005,
-        "score": 67,
-        "poster": "https://image.tmdb.org/t/p/w342/8al4bQsdjtSg2hhO18I1pacrDAR.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt7548",
-        "type": "movie",
-        "title": "Libertin",
-        "year": 2004,
-        "score": 62,
-        "poster": "https://image.tmdb.org/t/p/w342/umdmdUlYXi2zxM3vQ7pY795mC5m.jpg",
         "roles": [
           "actor"
         ]

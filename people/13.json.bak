@@ -20698,26 +20698,6 @@
       }
     ]
   },
-  "p4441659": {
-    "name": "Fred Muthui",
-    "img": null,
-    "birthday": "1999-12-23",
-    "deathday": null,
-    "age": 26,
-    "works": [
-      {
-        "id": "mt1307373",
-        "type": "movie",
-        "title": "Spodina",
-        "year": 2026,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/lKK9ImwpoTCwDZKgYpjIIJCnlf0.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p129258": {
     "name": "Stacey Glick",
     "img": "/tMVGcY8nr1d09uQ5D4EWiig6Xus.jpg",
@@ -298285,6 +298265,26 @@
         "year": 2024,
         "score": 77,
         "poster": "https://image.tmdb.org/t/p/w342/by8522UxsaqhM09QmlcmTObygAw.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4441659": {
+    "name": "Fred Muthui",
+    "img": null,
+    "birthday": "1999-12-23",
+    "deathday": null,
+    "age": 26,
+    "works": [
+      {
+        "id": "mt1307373",
+        "type": "movie",
+        "title": "Spodina",
+        "year": 2026,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/lKK9ImwpoTCwDZKgYpjIIJCnlf0.jpg",
         "roles": [
           "actor"
         ]

@@ -16757,6 +16757,17 @@
     "age": 48,
     "works": [
       {
+        "id": "mt1400940",
+        "type": "movie",
+        "title": "Clayface",
+        "year": 2026,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/5jCpQnWPikggmQZoDp1eAi6BI6w.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
         "id": "st288673",
         "type": "show",
         "title": "Carrie",

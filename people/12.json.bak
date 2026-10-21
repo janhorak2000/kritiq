@@ -26747,6 +26747,105 @@
       }
     ]
   },
+  "p63306": {
+    "name": "James Watkins",
+    "img": "/e43iDwSH5SU8aeKvYYUh7cXcrLU.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1400940",
+        "type": "movie",
+        "title": "Clayface",
+        "year": 2026,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/5jCpQnWPikggmQZoDp1eAi6BI6w.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "mt1114513",
+        "type": "movie",
+        "title": "Nepřivolávej nic zlého",
+        "year": 2024,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/tIwBOynrS2FJNnliOyH2cjGaNCe.jpg",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      },
+      {
+        "id": "st114926",
+        "type": "show",
+        "title": "Harry Palmer: Případ Ipcress",
+        "year": 2022,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/dq9ayINjdgdUGD27YL8KgX6OhrP.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "st75666",
+        "type": "show",
+        "title": "McMafia",
+        "year": 2018,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/jdt7RFfVCGWrNnrxeQ0Us9kGhJu.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "mt333669",
+        "type": "movie",
+        "title": "Den dobytí Bastily",
+        "year": 2016,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/lTby7l0zX7xG8Pt0eNrWBrNzdqX.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "mt65086",
+        "type": "movie",
+        "title": "Žena v černém",
+        "year": 2012,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/peKkO5lYyyZ7flxeFuXoZPXArXo.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "mt34480",
+        "type": "movie",
+        "title": "Pád do tmy 2",
+        "year": 2009,
+        "score": 57,
+        "poster": "https://image.tmdb.org/t/p/w342/dOURlcw2MO0xys0Dl2NiAcUxlWA.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "mt13510",
+        "type": "movie",
+        "title": "Jezero smrti",
+        "year": 2008,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/grELoo5HeIR0hwC0oQObiaSAZh1.jpg",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      }
+    ]
+  },
   "p2381985": {
     "name": "Curry Barker",
     "img": "/A16CxGKlkQYryoxGpxzKj4Wxk83.jpg",
@@ -297382,94 +297481,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/uBvwfnINOiKitWxnYt3aQYszgi8.jpg",
         "roles": [
           "actor"
-        ]
-      }
-    ]
-  },
-  "p63306": {
-    "name": "James Watkins",
-    "img": "/e43iDwSH5SU8aeKvYYUh7cXcrLU.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1114513",
-        "type": "movie",
-        "title": "Nepřivolávej nic zlého",
-        "year": 2024,
-        "score": 68,
-        "poster": "https://image.tmdb.org/t/p/w342/tIwBOynrS2FJNnliOyH2cjGaNCe.jpg",
-        "roles": [
-          "director",
-          "writer"
-        ]
-      },
-      {
-        "id": "st114926",
-        "type": "show",
-        "title": "Harry Palmer: Případ Ipcress",
-        "year": 2022,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/dq9ayINjdgdUGD27YL8KgX6OhrP.jpg",
-        "roles": [
-          "director"
-        ]
-      },
-      {
-        "id": "st75666",
-        "type": "show",
-        "title": "McMafia",
-        "year": 2018,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/jdt7RFfVCGWrNnrxeQ0Us9kGhJu.jpg",
-        "roles": [
-          "director"
-        ]
-      },
-      {
-        "id": "mt333669",
-        "type": "movie",
-        "title": "Den dobytí Bastily",
-        "year": 2016,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/lTby7l0zX7xG8Pt0eNrWBrNzdqX.jpg",
-        "roles": [
-          "director"
-        ]
-      },
-      {
-        "id": "mt65086",
-        "type": "movie",
-        "title": "Žena v černém",
-        "year": 2012,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/peKkO5lYyyZ7flxeFuXoZPXArXo.jpg",
-        "roles": [
-          "director"
-        ]
-      },
-      {
-        "id": "mt34480",
-        "type": "movie",
-        "title": "Pád do tmy 2",
-        "year": 2009,
-        "score": 57,
-        "poster": "https://image.tmdb.org/t/p/w342/dOURlcw2MO0xys0Dl2NiAcUxlWA.jpg",
-        "roles": [
-          "writer"
-        ]
-      },
-      {
-        "id": "mt13510",
-        "type": "movie",
-        "title": "Jezero smrti",
-        "year": 2008,
-        "score": 67,
-        "poster": "https://image.tmdb.org/t/p/w342/grELoo5HeIR0hwC0oQObiaSAZh1.jpg",
-        "roles": [
-          "director",
-          "writer"
         ]
       }
     ]

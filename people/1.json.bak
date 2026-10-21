@@ -36779,26 +36779,6 @@
       }
     ]
   },
-  "p5215453": {
-    "name": "Layton Blake",
-    "img": "/hto5PX2oPEjbZeuIg6EhjSVy44t.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1307373",
-        "type": "movie",
-        "title": "Spodina",
-        "year": 2026,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/lKK9ImwpoTCwDZKgYpjIIJCnlf0.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p18899": {
     "name": "Yuen Woo-ping",
     "img": "/ZUNnqF9qAp6QnYBtTwxHXihpro.jpg",
@@ -398369,6 +398349,26 @@
       }
     ]
   },
+  "p5215453": {
+    "name": "Layton Blake",
+    "img": "/hto5PX2oPEjbZeuIg6EhjSVy44t.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1307373",
+        "type": "movie",
+        "title": "Spodina",
+        "year": 2026,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/lKK9ImwpoTCwDZKgYpjIIJCnlf0.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p3975885": {
     "name": "Jorge Valder",
     "img": "/cRFtMvil0Bp4tHPF7k61gYJ0PKn.jpg",
@@ -400722,6 +400722,37 @@
         "poster": "https://image.tmdb.org/t/p/w342/cLZ7iFZc25vluSIKt3XtdSTait4.jpg",
         "roles": [
           "actor"
+        ]
+      }
+    ]
+  },
+  "p1436975": {
+    "name": "Umair Aleem",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1185344",
+        "type": "movie",
+        "title": "The Beast",
+        "year": 2026,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/ocg5JfJP19fodcv5uQUApkmZMdI.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "mt597891",
+        "type": "movie",
+        "title": "Kate",
+        "year": 2021,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/uJgdT1boTSP0dDIjdTgGleg71l4.jpg",
+        "roles": [
+          "writer"
         ]
       }
     ]
@@ -541722,26 +541753,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/4MhtbfcCP3syodRjhcTFpnGL3QS.jpg",
         "roles": [
           "actor"
-        ]
-      }
-    ]
-  },
-  "p1436975": {
-    "name": "Umair Aleem",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt597891",
-        "type": "movie",
-        "title": "Kate",
-        "year": 2021,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/uJgdT1boTSP0dDIjdTgGleg71l4.jpg",
-        "roles": [
-          "writer"
         ]
       }
     ]
