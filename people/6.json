@@ -13064,6 +13064,17 @@
     "age": 46,
     "works": [
       {
+        "id": "mt1401459",
+        "type": "movie",
+        "title": "Fjord",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/qiYm44CQBFOZ0Vs8BtmH2swYLz2.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1290879",
         "type": "movie",
         "title": "Žena z kajuty č. 10",
@@ -242553,6 +242564,17 @@
     "age": 45,
     "works": [
       {
+        "id": "mt1401459",
+        "type": "movie",
+        "title": "Fjord",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/qiYm44CQBFOZ0Vs8BtmH2swYLz2.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1422179",
         "type": "movie",
         "title": "Křivou stopou",
@@ -303208,6 +303230,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "mt1285895",
+        "type": "movie",
+        "title": "Late Fame",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/bcyXE0p4XmZUlcxvTDbvdG9lgsN.jpg",
+        "roles": [
+          "director"
+        ]
+      },
       {
         "id": "mt510034",
         "type": "movie",
@@ -532813,6 +532846,48 @@
         "year": 2019,
         "score": 85,
         "poster": "https://image.tmdb.org/t/p/w342/mOa7gvagTWBfknXzLIaCFTtowDV.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2053464": {
+    "name": "Dan Jablons",
+    "img": "/ciUqQVCrsFAyB8TWMAg26Y9Zpo1.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1285895",
+        "type": "movie",
+        "title": "Late Fame",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/bcyXE0p4XmZUlcxvTDbvdG9lgsN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st114925",
+        "type": "show",
+        "title": "Pam a Tommy",
+        "year": 2022,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/u6Hfb3EsnvlPChr01jErXDTsdan.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st84007",
+        "type": "show",
+        "title": "Carl Weber's The Family Business",
+        "year": 2018,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/A1WwpjcFynFe52KyD4sUb29KUrZ.jpg",
         "roles": [
           "actor"
         ]
@@ -793386,6 +793461,17 @@
         ]
       },
       {
+        "id": "mt1099453",
+        "type": "movie",
+        "title": "Villa Lucia",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/3DoIC0wP8dCHkBvHjOGeZ0W54d2.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1221631",
         "type": "movie",
         "title": "Tři zlaté dukáty",
@@ -793403,17 +793489,6 @@
         "year": 2023,
         "score": 55,
         "poster": "https://image.tmdb.org/t/p/w342/AnimCqHeI9YhqdE3qV9boK8al89.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1099453",
-        "type": "movie",
-        "title": "Villa Lucia",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/3DoIC0wP8dCHkBvHjOGeZ0W54d2.jpg",
         "roles": [
           "actor"
         ]
@@ -796455,23 +796530,23 @@
     "age": null,
     "works": [
       {
-        "id": "mt1222638",
-        "type": "movie",
-        "title": "Jedeme na teambuilding",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/unUKbHpP6npzgzajv9FI4FxPs6D.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1128515",
         "type": "movie",
         "title": "To ty nosíš smůlu, lásko",
         "year": 2023,
         "score": 42,
         "poster": "https://image.tmdb.org/t/p/w342/1zmL2yLB6As5MmgKWhlA1gPFfGX.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1222638",
+        "type": "movie",
+        "title": "Jedeme na teambuilding",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/unUKbHpP6npzgzajv9FI4FxPs6D.jpg",
         "roles": [
           "actor"
         ]
@@ -810533,23 +810608,23 @@
         ]
       },
       {
-        "id": "mt1053136",
-        "type": "movie",
-        "title": "Zešílet",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1194806",
         "type": "movie",
         "title": "Dotyky Slovenského raja",
         "year": 2023,
         "score": null,
         "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1053136",
+        "type": "movie",
+        "title": "Zešílet",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
         "roles": [
           "actor"
         ]
@@ -814529,115 +814604,20 @@
       }
     ]
   },
-  "p3875801": {
-    "name": "Petr Kalmus",
+  "p5066771": {
+    "name": "Nikola Zavrelová",
     "img": null,
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "mt1053136",
+        "id": "mt1193181",
         "type": "movie",
-        "title": "Zešílet",
+        "title": "Dýchajúce obrazy",
         "year": 2023,
         "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3060690": {
-    "name": "Peter Bálik",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1053136",
-        "type": "movie",
-        "title": "Zešílet",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt756400",
-        "type": "movie",
-        "title": "Varga",
-        "year": 2017,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/bpjGuQQE0Gwl1cxIv5DUwFOZrg1.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4450584": {
-    "name": "Justýna Zedníková",
-    "img": "/a0DEzlT0Qbs4MUHPvIffR8wiaer.jpg",
-    "birthday": "2002-08-05",
-    "deathday": null,
-    "age": 24,
-    "works": [
-      {
-        "id": "mt1733409",
-        "type": "movie",
-        "title": "Dokonalý den",
-        "year": 2026,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/8IjN4Gvx6t24SPJSkk1hDLgYrb8.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1669062",
-        "type": "movie",
-        "title": "Říkají mi Lars",
-        "year": 2026,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/xLRBY2VF0zLypLg77U4tgVv1hb7.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1767766",
-        "type": "movie",
-        "title": "Proč bychom se nezabili",
-        "year": 2026,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/vuxm0LcHnbMivBylCkkhSzZ3Vg5.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1222638",
-        "type": "movie",
-        "title": "Jedeme na teambuilding",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/unUKbHpP6npzgzajv9FI4FxPs6D.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st221701",
-        "type": "show",
-        "title": "Inkognito",
-        "year": 2021,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/1jXZExCz80uYRUnwGAaZ87WHFiU.jpg",
+        "poster": "",
         "roles": [
           "actor"
         ]
@@ -815592,26 +815572,6 @@
         "year": 2023,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/zY9Y615CftlaajHuQfGyRElMKCd.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5106206": {
-    "name": "Anna Olšová",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1237772",
-        "type": "movie",
-        "title": "Fentasy",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/3m6UI9B8DAMEJpcIAvRbbZZs50U.jpg",
         "roles": [
           "actor"
         ]
@@ -817130,6 +817090,70 @@
         "year": 2018,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/dbkHOIXcWiktUzR7g0rvVUL1RXZ.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4450584": {
+    "name": "Justýna Zedníková",
+    "img": "/a0DEzlT0Qbs4MUHPvIffR8wiaer.jpg",
+    "birthday": "2002-08-05",
+    "deathday": null,
+    "age": 24,
+    "works": [
+      {
+        "id": "mt1733409",
+        "type": "movie",
+        "title": "Dokonalý den",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/8IjN4Gvx6t24SPJSkk1hDLgYrb8.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1669062",
+        "type": "movie",
+        "title": "Říkají mi Lars",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/xLRBY2VF0zLypLg77U4tgVv1hb7.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1767766",
+        "type": "movie",
+        "title": "Proč bychom se nezabili",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/vuxm0LcHnbMivBylCkkhSzZ3Vg5.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1222638",
+        "type": "movie",
+        "title": "Jedeme na teambuilding",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/unUKbHpP6npzgzajv9FI4FxPs6D.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st221701",
+        "type": "show",
+        "title": "Inkognito",
+        "year": 2021,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/1jXZExCz80uYRUnwGAaZ87WHFiU.jpg",
         "roles": [
           "actor"
         ]
@@ -824482,6 +824506,37 @@
         "year": 2017,
         "score": null,
         "poster": "",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3060690": {
+    "name": "Peter Bálik",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1053136",
+        "type": "movie",
+        "title": "Zešílet",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt756400",
+        "type": "movie",
+        "title": "Varga",
+        "year": 2017,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/bpjGuQQE0Gwl1cxIv5DUwFOZrg1.jpg",
         "roles": [
           "actor"
         ]
@@ -832442,20 +832497,20 @@
       }
     ]
   },
-  "p5066771": {
-    "name": "Nikola Zavrelová",
+  "p3875801": {
+    "name": "Petr Kalmus",
     "img": null,
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "mt1193181",
+        "id": "mt1053136",
         "type": "movie",
-        "title": "Dýchajúce obrazy",
+        "title": "Zešílet",
         "year": 2023,
         "score": 50,
-        "poster": "",
+        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
         "roles": [
           "actor"
         ]
@@ -832795,6 +832850,26 @@
         "year": 2024,
         "score": 54,
         "poster": "https://image.tmdb.org/t/p/w342/oUP6VfWQGVgXMj5dChfXoM2hc7O.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5106206": {
+    "name": "Anna Olšová",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1237772",
+        "type": "movie",
+        "title": "Fentasy",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/3m6UI9B8DAMEJpcIAvRbbZZs50U.jpg",
         "roles": [
           "actor"
         ]
@@ -856409,37 +856484,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/A1WwpjcFynFe52KyD4sUb29KUrZ.jpg",
         "roles": [
           "writer"
-        ]
-      }
-    ]
-  },
-  "p2053464": {
-    "name": "Dan Jablons",
-    "img": "/ciUqQVCrsFAyB8TWMAg26Y9Zpo1.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st114925",
-        "type": "show",
-        "title": "Pam a Tommy",
-        "year": 2022,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/u6Hfb3EsnvlPChr01jErXDTsdan.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st84007",
-        "type": "show",
-        "title": "Carl Weber's The Family Business",
-        "year": 2018,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/A1WwpjcFynFe52KyD4sUb29KUrZ.jpg",
-        "roles": [
-          "actor"
         ]
       }
     ]
@@ -900349,6 +900393,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "st303745",
+        "type": "show",
+        "title": "Láska v přestrojení",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/5T4P5CyAGBmb8Rb3aNwDeBJDPTH.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "st202318",
         "type": "show",

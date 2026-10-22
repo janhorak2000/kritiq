@@ -310596,6 +310596,17 @@
     "age": 32,
     "works": [
       {
+        "id": "mt1742276",
+        "type": "movie",
+        "title": "Kluci to vidí jinak než holky",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/xhnWc6xf9MrpJJm4De8XylYImHH.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1483477",
         "type": "movie",
         "title": "Sbormistr",
@@ -509450,6 +509461,26 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/eCUYoQP0tB5mfwVUT3NidnoQCI3.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6462200": {
+    "name": "Billy Evans",
+    "img": "/tLOCcMkylvIES7ZKFv6Dks6XmD.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1765072",
+        "type": "movie",
+        "title": "Uvidíš všechno",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/Ap8QwmKfSjYbWC4XIP8w9pdn72O.jpg",
         "roles": [
           "actor"
         ]
@@ -737625,17 +737656,6 @@
         ]
       },
       {
-        "id": "mt1053136",
-        "type": "movie",
-        "title": "Zešílet",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1157275",
         "type": "movie",
         "title": "Světloplachost",
@@ -737644,6 +737664,17 @@
         "poster": "https://image.tmdb.org/t/p/w342/hbQSBtHWXlMb60qu16zSm5aNvOP.jpg",
         "roles": [
           "director"
+        ]
+      },
+      {
+        "id": "mt1053136",
+        "type": "movie",
+        "title": "Zešílet",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
+        "roles": [
+          "actor"
         ]
       },
       {
@@ -754779,24 +754810,24 @@
     "age": 58,
     "works": [
       {
-        "id": "mt1134680",
-        "type": "movie",
-        "title": "Pyšná princezna",
-        "year": 2024,
-        "score": 62,
-        "poster": "https://image.tmdb.org/t/p/w342/vnW5CUN10ENlAF3CG2EqquNOMrR.jpg",
-        "roles": [
-          "director",
-          "writer"
-        ]
-      },
-      {
         "id": "mt1165416",
         "type": "movie",
         "title": "Velký pán",
         "year": 2024,
         "score": 50,
         "poster": "https://image.tmdb.org/t/p/w342/pahss6UcHL1xsH6XN8KiiBIT0pf.jpg",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      },
+      {
+        "id": "mt1134680",
+        "type": "movie",
+        "title": "Pyšná princezna",
+        "year": 2024,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/vnW5CUN10ENlAF3CG2EqquNOMrR.jpg",
         "roles": [
           "director",
           "writer"
@@ -757604,79 +757635,6 @@
       }
     ]
   },
-  "p3875803": {
-    "name": "Róbert Zipser",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1053136",
-        "type": "movie",
-        "title": "Zešílet",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3644803": {
-    "name": "Ondřej Bábor",
-    "img": "/vS5OKkHUxYfBJ2FD5lp4i1uxQI7.jpg",
-    "birthday": "1990-11-28",
-    "deathday": null,
-    "age": 35,
-    "works": [
-      {
-        "id": "st309091",
-        "type": "show",
-        "title": "Inspekce",
-        "year": 2026,
-        "score": 40,
-        "poster": "https://image.tmdb.org/t/p/w342/wSM1WFvs2A5Chflp3X4oUfwSTwA.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1222638",
-        "type": "movie",
-        "title": "Jedeme na teambuilding",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/unUKbHpP6npzgzajv9FI4FxPs6D.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st153223",
-        "type": "show",
-        "title": "ZOO",
-        "year": 2022,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/6f1yWctHkluRiB6u9mYM0A0Tmg3.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt593809",
-        "type": "movie",
-        "title": "Teroristka",
-        "year": 2019,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/6tKtHlKjGbKIuibJWIEsP04ajro.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p5096484": {
     "name": "Natalie Mwansa",
     "img": null,
@@ -758453,123 +758411,6 @@
         "year": 2023,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/1kQ0R5d6taZKigMvT6cN8XJx1IM.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3473203": {
-    "name": "Viktória Šuplatová",
-    "img": "/ax9DvUqwF4hGbWWJHSkb4mybUM9.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1696221",
-        "type": "movie",
-        "title": "Táto izba sa nedá zjesť",
-        "year": 2026,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/6qz9Op9cluGARdiQ6SocLbr9RDG.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1237772",
-        "type": "movie",
-        "title": "Fentasy",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/3m6UI9B8DAMEJpcIAvRbbZZs50U.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st278925",
-        "type": "show",
-        "title": "Večne mladí",
-        "year": 2024,
-        "score": 20,
-        "poster": "https://image.tmdb.org/t/p/w342/gU4yFmD79CRnhRod55emYrbWaPk.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st218145",
-        "type": "show",
-        "title": "Mama na prenájom",
-        "year": 2023,
-        "score": 56,
-        "poster": "https://image.tmdb.org/t/p/w342/fH7PP2Rkdlo414IHvZABBHhtoqd.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt966742",
-        "type": "movie",
-        "title": "Chléb náš vezdejší",
-        "year": 2022,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/eeR5nxwoy84CGTX8MGMvcg9Kxcr.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st154677",
-        "type": "show",
-        "title": "Druhá šanca",
-        "year": 2022,
-        "score": 40,
-        "poster": "https://image.tmdb.org/t/p/w342/8NGhqYylDCQAta59kvAinYQdc1m.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st230947",
-        "type": "show",
-        "title": "Radošinská pošta",
-        "year": 2022,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/a5k45L4tMLcv9eWr9fwFClKuoXi.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st131975",
-        "type": "show",
-        "title": "Nemocnica",
-        "year": 2021,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/oaUsI8BBoLlSJnsOCzBwJOhz5R4.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5106208": {
-    "name": "Janka Spergerová",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1237772",
-        "type": "movie",
-        "title": "Fentasy",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/3m6UI9B8DAMEJpcIAvRbbZZs50U.jpg",
         "roles": [
           "actor"
         ]
@@ -760110,6 +759951,103 @@
         "year": 2020,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/imi65M26WFOPsehQsW7wgDQzJFL.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3473203": {
+    "name": "Viktória Šuplatová",
+    "img": "/ax9DvUqwF4hGbWWJHSkb4mybUM9.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1696221",
+        "type": "movie",
+        "title": "Táto izba sa nedá zjesť",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/6qz9Op9cluGARdiQ6SocLbr9RDG.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1237772",
+        "type": "movie",
+        "title": "Fentasy",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/3m6UI9B8DAMEJpcIAvRbbZZs50U.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st278925",
+        "type": "show",
+        "title": "Večne mladí",
+        "year": 2024,
+        "score": 20,
+        "poster": "https://image.tmdb.org/t/p/w342/gU4yFmD79CRnhRod55emYrbWaPk.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st218145",
+        "type": "show",
+        "title": "Mama na prenájom",
+        "year": 2023,
+        "score": 56,
+        "poster": "https://image.tmdb.org/t/p/w342/fH7PP2Rkdlo414IHvZABBHhtoqd.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt966742",
+        "type": "movie",
+        "title": "Chléb náš vezdejší",
+        "year": 2022,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/eeR5nxwoy84CGTX8MGMvcg9Kxcr.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st154677",
+        "type": "show",
+        "title": "Druhá šanca",
+        "year": 2022,
+        "score": 40,
+        "poster": "https://image.tmdb.org/t/p/w342/8NGhqYylDCQAta59kvAinYQdc1m.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st230947",
+        "type": "show",
+        "title": "Radošinská pošta",
+        "year": 2022,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/a5k45L4tMLcv9eWr9fwFClKuoXi.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st131975",
+        "type": "show",
+        "title": "Nemocnica",
+        "year": 2021,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/oaUsI8BBoLlSJnsOCzBwJOhz5R4.jpg",
         "roles": [
           "actor"
         ]
@@ -765745,6 +765683,59 @@
         "year": 1989,
         "score": null,
         "poster": "",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3644803": {
+    "name": "Ondřej Bábor",
+    "img": "/vS5OKkHUxYfBJ2FD5lp4i1uxQI7.jpg",
+    "birthday": "1990-11-28",
+    "deathday": null,
+    "age": 35,
+    "works": [
+      {
+        "id": "st309091",
+        "type": "show",
+        "title": "Inspekce",
+        "year": 2026,
+        "score": 40,
+        "poster": "https://image.tmdb.org/t/p/w342/wSM1WFvs2A5Chflp3X4oUfwSTwA.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1222638",
+        "type": "movie",
+        "title": "Jedeme na teambuilding",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/unUKbHpP6npzgzajv9FI4FxPs6D.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st153223",
+        "type": "show",
+        "title": "ZOO",
+        "year": 2022,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/6f1yWctHkluRiB6u9mYM0A0Tmg3.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt593809",
+        "type": "movie",
+        "title": "Teroristka",
+        "year": 2019,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/6tKtHlKjGbKIuibJWIEsP04ajro.jpg",
         "roles": [
           "actor"
         ]
@@ -773294,6 +773285,26 @@
       }
     ]
   },
+  "p3875803": {
+    "name": "Róbert Zipser",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1053136",
+        "type": "movie",
+        "title": "Zešílet",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p4763107": {
     "name": "Natália Fašánková",
     "img": "/dyQhMTS2ippFfForu9K9XJZAA4l.jpg",
@@ -773519,6 +773530,26 @@
         "year": 2024,
         "score": 54,
         "poster": "https://image.tmdb.org/t/p/w342/oUP6VfWQGVgXMj5dChfXoM2hc7O.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5106208": {
+    "name": "Janka Spergerová",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1237772",
+        "type": "movie",
+        "title": "Fentasy",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/3m6UI9B8DAMEJpcIAvRbbZZs50U.jpg",
         "roles": [
           "actor"
         ]

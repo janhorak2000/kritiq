@@ -3563,6 +3563,17 @@
     "age": 40,
     "works": [
       {
+        "id": "mt1765072",
+        "type": "movie",
+        "title": "Uvidíš všechno",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/Ap8QwmKfSjYbWC4XIP8w9pdn72O.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st258165",
         "type": "show",
         "title": "East of Eden",
@@ -5327,12 +5338,12 @@
         ]
       },
       {
-        "id": "mt762901",
+        "id": "mt1165416",
         "type": "movie",
-        "title": "Barevný sen",
+        "title": "Velký pán",
         "year": 2024,
         "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/bvzJWqSQbcaKTN2CMdUhXCO1bZY.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/pahss6UcHL1xsH6XN8KiiBIT0pf.jpg",
         "roles": [
           "actor"
         ]
@@ -5360,12 +5371,12 @@
         ]
       },
       {
-        "id": "mt1165416",
+        "id": "mt762901",
         "type": "movie",
-        "title": "Velký pán",
+        "title": "Barevný sen",
         "year": 2024,
         "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/pahss6UcHL1xsH6XN8KiiBIT0pf.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/bvzJWqSQbcaKTN2CMdUhXCO1bZY.jpg",
         "roles": [
           "actor"
         ]
@@ -12444,6 +12455,17 @@
         "year": 2026,
         "score": 78,
         "poster": "https://image.tmdb.org/t/p/w342/51VDtNQFuD2I86hrT4ekytg9Dq3.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "mt1765072",
+        "type": "movie",
+        "title": "Uvidíš všechno",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/Ap8QwmKfSjYbWC4XIP8w9pdn72O.jpg",
         "roles": [
           "composer"
         ]
@@ -79213,6 +79235,17 @@
     "deathday": null,
     "age": 48,
     "works": [
+      {
+        "id": "st303745",
+        "type": "show",
+        "title": "Láska v přestrojení",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/5T4P5CyAGBmb8Rb3aNwDeBJDPTH.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "st259486",
         "type": "show",
@@ -240802,6 +240835,17 @@
     "age": 52,
     "works": [
       {
+        "id": "st303745",
+        "type": "show",
+        "title": "Láska v přestrojení",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/5T4P5CyAGBmb8Rb3aNwDeBJDPTH.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1131759",
         "type": "movie",
         "title": "Omniscient Reader: The Prophecy",
@@ -379442,6 +379486,17 @@
     "age": 55,
     "works": [
       {
+        "id": "mt1302879",
+        "type": "movie",
+        "title": "Janžurka",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/2jcX0ztCQl2NA9Y54nIhC5L9RAc.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1257517",
         "type": "movie",
         "title": "Prodaná nevěsta",
@@ -379462,17 +379517,6 @@
         "roles": [
           "director",
           "writer"
-        ]
-      },
-      {
-        "id": "mt1302879",
-        "type": "movie",
-        "title": "Janžurka",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/2jcX0ztCQl2NA9Y54nIhC5L9RAc.jpg",
-        "roles": [
-          "actor"
         ]
       },
       {
@@ -389947,37 +389991,6 @@
       }
     ]
   },
-  "p3977482": {
-    "name": "Darek Král",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1213913",
-        "type": "movie",
-        "title": "Krvavý Johann",
-        "year": 2024,
-        "score": 60,
-        "poster": "https://image.tmdb.org/t/p/w342/fMzqc95x4oRyxhvJNLAEzGb6Qxo.jpg",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
-        "id": "mt1104172",
-        "type": "movie",
-        "title": "O malých věcech",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/rpNy6ayzh5FIbY4kEVnn8U4cpDZ.jpg",
-        "roles": [
-          "composer"
-        ]
-      }
-    ]
-  },
   "p2828323": {
     "name": "Sára Rychlíková",
     "img": "/yUxGUl9BlgCpRkgs78wIQ2W2rz6.jpg",
@@ -395875,6 +395888,37 @@
         "poster": "https://image.tmdb.org/t/p/w342/fH7PP2Rkdlo414IHvZABBHhtoqd.jpg",
         "roles": [
           "actor"
+        ]
+      }
+    ]
+  },
+  "p3977482": {
+    "name": "Darek Král",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1213913",
+        "type": "movie",
+        "title": "Krvavý Johann",
+        "year": 2024,
+        "score": 60,
+        "poster": "https://image.tmdb.org/t/p/w342/fMzqc95x4oRyxhvJNLAEzGb6Qxo.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "mt1104172",
+        "type": "movie",
+        "title": "O malých věcech",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/rpNy6ayzh5FIbY4kEVnn8U4cpDZ.jpg",
+        "roles": [
+          "composer"
         ]
       }
     ]

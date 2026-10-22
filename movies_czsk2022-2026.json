@@ -15700,492 +15700,259 @@
     "reviews": []
   },
   {
-    "title": "Dvě Mařenky",
-    "tmdb_id": 1222338,
-    "imdb_id": null,
+    "title": "Zešílet",
+    "tmdb_id": 1053136,
+    "imdb_id": "tt22897490",
     "year": 2023,
-    "date": "2023-12-24",
+    "date": "2023-04-06",
     "score": 50,
     "box": null,
     "box_currency": null,
     "country": "Česko",
-    "genre": "Rodinný",
-    "runtime": null,
-    "poster": "",
-    "gallery": [
-      "https://image.tmdb.org/t/p/w500/7IGpmBSwFIJod5Xfo8azngxP1Xy.jpg"
-    ],
-    "summary": "Na jednom zámku mají svéhlavou rozmazlenou princeznu Máju, která vzteklými výstupy vyvádí z míry nejen služebnictvo, ale i bezradného tatínka knížete. S laskavou a pracovitou Mařenkou z podzámčí by si tuhle dračici opravdu nemohl nikdo splést. Ale jen dokud se díky kouzlu moudré kořenářky zhýčkaná Mája neprobudí v chudobné chaloupce a hodná Mařenka v přepychu na zámku. Pozná pak vůbec někdo, že před ním stojí úplně jiná osoba? Naučí se princezna Mája laskavosti a dosáhne Mařenka toho, po čem nejvíc touží?",
+    "genre": "Drama",
+    "runtime": 79,
+    "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
+    "gallery": [],
+    "summary": "Překladatelka Nadia se svojí dcerou po rozvodu nachází novou stabilitu a klid, když konečně získá nový byt. Postupně ale zjistí, že sousedské vztahy v domě mají víc, než výstřední rozměr.  Nadina nejbližší sousedka zjevně není v pořádku. Nová oáza se mění v místo zážitků, kdy se komedie prolíná s noční můrou a končí groteskním obrazem systému, ve kterém přehlížení problémů patří k důležité výbavě k přežití.",
     "director": {
-      "id": 592365,
-      "name": "Ivo Macharáček",
+      "id": 1124587,
+      "name": "Zuzana Piussi",
       "image": ""
     },
     "composer": {
-      "id": null,
-      "name": "",
+      "id": 3875785,
+      "name": "Lucia Piussi",
       "image": ""
     },
     "writer": {
-      "id": 2292291,
-      "name": "Michal Čunderle",
+      "id": 3875780,
+      "name": "Ingrid Hrubaničová",
       "image": ""
     },
     "actors": [
       {
-        "id": 2484571,
-        "name": "Monika Goldefusová",
-        "birthday": null,
+        "id": 3875780,
+        "name": "Ingrid Hrubaničová",
+        "birthday": "1965-05-03",
         "deathday": null,
-        "age": null,
+        "age": 61,
         "image": ""
       },
       {
-        "id": 1280658,
-        "name": "Ivana Korolová",
-        "birthday": "1988-09-17",
-        "deathday": null,
-        "age": 38,
-        "image": "https://image.tmdb.org/t/p/w300/pEe2ZdaPHMT4km7m2SwhZRguRQE.jpg"
-      },
-      {
-        "id": 2484565,
-        "name": "Zlatuše Kurcová",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 227726,
-        "name": "Naďa Konvalinková",
-        "birthday": "1951-04-18",
-        "deathday": null,
-        "age": 75,
-        "image": "https://image.tmdb.org/t/p/w300/51YCLFH4Lyp6lC2CcC5x9xtKDHU.jpg"
-      },
-      {
-        "id": 4447597,
-        "name": "Alan Ptáček",
-        "birthday": "1978-09-20",
-        "deathday": null,
-        "age": 47,
-        "image": ""
-      },
-      {
-        "id": 2137120,
-        "name": "Martin Preiss",
-        "birthday": "1973-06-14",
-        "deathday": null,
-        "age": 53,
-        "image": "https://image.tmdb.org/t/p/w300/bcgk4Zu52132vuKSlZhk3OkJ4vG.jpg"
-      },
-      {
-        "id": 2484568,
-        "name": "František Půlpán",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 1518323,
-        "name": "Pavel Tesař",
-        "birthday": "1967-07-05",
-        "deathday": null,
-        "age": 59,
-        "image": "https://image.tmdb.org/t/p/w300/6wKmUXCDG74cgr3r6Cvdxe9GuOi.jpg"
-      },
-      {
-        "id": 4447593,
-        "name": "Jindřich Mikulík",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 1290129,
-        "name": "Petr Lněnička",
-        "birthday": "1979-07-20",
-        "deathday": null,
-        "age": 47,
-        "image": "https://image.tmdb.org/t/p/w300/vMS1A430ft8OiLSDbMVFedLT6d8.jpg"
-      },
-      {
-        "id": 4447596,
-        "name": "Andrea Krajíčková Kalců",
-        "birthday": "1980-10-31",
-        "deathday": null,
-        "age": 45,
-        "image": ""
-      },
-      {
-        "id": 1414913,
-        "name": "Lucie Pernetová",
-        "birthday": "1978-12-15",
-        "deathday": null,
-        "age": 47,
-        "image": "https://image.tmdb.org/t/p/w300/nZI7JsUzsywKDt0467nWuo2dUJC.jpg"
-      },
-      {
-        "id": 4447599,
-        "name": "Věra Sagulová",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 4447609,
-        "name": "Terezie Taberyová",
-        "birthday": "1992-03-04",
-        "deathday": null,
-        "age": 34,
-        "image": ""
-      },
-      {
-        "id": 4447598,
-        "name": "Bohumil Vojtek",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 222783,
-        "name": "Pavel Zedníček",
-        "birthday": "1949-11-01",
-        "deathday": null,
-        "age": 76,
-        "image": "https://image.tmdb.org/t/p/w300/ykmLzzALDOkZluSBgFCqmb4dr5v.jpg"
-      },
-      {
-        "id": 2484570,
-        "name": "Milan Fritz",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 2143529,
-        "name": "Jan Battěk",
-        "birthday": "1992-02-10",
-        "deathday": null,
-        "age": 34,
-        "image": "https://image.tmdb.org/t/p/w300/rJjeOdMuCYRhOT7AjZNfILaNL7y.jpg"
-      },
-      {
-        "id": 4447615,
-        "name": "Michael Veselý",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 1136097,
-        "name": "Svatopluk Schuller",
-        "birthday": "1964-06-23",
-        "deathday": null,
-        "age": 62,
-        "image": "https://image.tmdb.org/t/p/w300/6SWLUcTDo01pk0IaGeVdm02lveK.jpg"
-      },
-      {
-        "id": 1477373,
-        "name": "Martina Šťastná",
-        "birthday": "1976-12-03",
-        "deathday": null,
-        "age": 49,
-        "image": ""
-      },
-      {
-        "id": 4447617,
-        "name": "Karolína Daitlová",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 4447618,
-        "name": "Daniela Nováková",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      }
-    ],
-    "reviews": []
-  },
-  {
-    "title": "Expedice Kola",
-    "tmdb_id": 1118178,
-    "imdb_id": null,
-    "year": 2023,
-    "date": "2023-04-25",
-    "score": 50,
-    "box": null,
-    "box_currency": null,
-    "country": "Česko",
-    "genre": "Dokumentární",
-    "runtime": null,
-    "poster": "",
-    "gallery": [],
-    "summary": "Dokument o skupině mladých studentů z Přerova, kteří se vydají na cestu na poloostrov Kola v Sovětském svazu do oblasti, která byla cizincům uzavřena.",
-    "director": {
-      "id": 3061771,
-      "name": "Zdeněk Zvonek",
-      "image": ""
-    },
-    "composer": {
-      "id": null,
-      "name": "",
-      "image": ""
-    },
-    "writer": {
-      "id": null,
-      "name": "",
-      "image": ""
-    },
-    "actors": [],
-    "reviews": []
-  },
-  {
-    "title": "Husa",
-    "tmdb_id": 1078165,
-    "imdb_id": null,
-    "year": 2023,
-    "date": "2023-05-02",
-    "score": 50,
-    "box": null,
-    "box_currency": null,
-    "country": "Česko",
-    "genre": "Animovaný",
-    "runtime": 13,
-    "poster": "https://image.tmdb.org/t/p/w342/tKLtADLl0khA0b5YDVUx5xoQzFo.jpg",
-    "gallery": [],
-    "summary": "",
-    "director": {
-      "id": 2391647,
-      "name": "Jan Míka",
-      "image": ""
-    },
-    "composer": {
-      "id": 2361041,
-      "name": "Viliam Béreš",
-      "image": ""
-    },
-    "writer": {
-      "id": 2391647,
-      "name": "Jan Míka",
-      "image": ""
-    },
-    "actors": [
-      {
-        "id": 3889047,
-        "name": "Vojtěch Míka",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 3889048,
-        "name": "Pavel Kumžǎk",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      }
-    ],
-    "reviews": []
-  },
-  {
-    "title": "15 x 15 x 5 (minisalon 1984)",
-    "tmdb_id": 1247018,
-    "imdb_id": null,
-    "year": 2023,
-    "date": "2023-11-09",
-    "score": 50,
-    "box": null,
-    "box_currency": null,
-    "country": "Česko",
-    "genre": "Dokumentární",
-    "runtime": null,
-    "poster": "https://image.tmdb.org/t/p/w342/ma7TiYA61KFVAkMlZNoYX3HeYu9.jpg",
-    "gallery": [],
-    "summary": "Filmová esej o hranicích svobody nás zavede na dobrodružnou cestu do minulosti, kdy umění vzdorovalo omezením a stalo se prostředkem odporu. Středobodem příběhu je ilegální experiment Minisalon, který v „orwellovském“ roce 1984 uspořádal výtvarník a disident Joska Skalník. Napříč československou výtvarnou scénou rozeslal čtvercové krabičky s výzvou na svobodnou uměleckou hru. Vznikla tak kolekce 244 unikátních výtvarných děl významných a často umlčovaných umělkyň a umělců, jejichž umění a kreativita žily v 80. letech 20. století navzdory represivnímu režimu. Příběhy účastníků projektu Minisalon a jejich děl, dobové archivní materiály a vrstevnaté vizuální hry vytvářejí z filmu fascinující mozaiku minulosti, která promlouvá i k naší současnosti a blízké budoucnosti.",
-    "director": {
-      "id": 4355058,
-      "name": "Janek Růžička",
-      "image": ""
-    },
-    "composer": {
-      "id": 1403497,
-      "name": "Ivan Acher",
-      "image": "https://image.tmdb.org/t/p/w300/reoYjMw5nb3v1QPlx2T0KHKIXaK.jpg"
-    },
-    "writer": {
-      "id": 4355058,
-      "name": "Janek Růžička",
-      "image": ""
-    },
-    "actors": [
-      {
-        "id": 4545361,
-        "name": "Joska Skalník",
-        "birthday": "1948-03-23",
-        "deathday": null,
-        "age": 78,
-        "image": ""
-      },
-      {
-        "id": 4545367,
-        "name": "Michael Rittstein",
-        "birthday": "1949-09-17",
-        "deathday": null,
-        "age": 77,
-        "image": ""
-      },
-      {
-        "id": 4545370,
-        "name": "Kurt Gebauer",
-        "birthday": "1941-08-18",
-        "deathday": null,
-        "age": 85,
-        "image": ""
-      },
-      {
-        "id": 4545372,
-        "name": "Laco Teren",
-        "birthday": "1960-06-11",
+        "id": 1526493,
+        "name": "Vladimír Zboroň",
+        "birthday": "1960-09-05",
         "deathday": null,
         "age": 66,
+        "image": "https://image.tmdb.org/t/p/w300/9e1kMwlHoBEJVcIXGqnPtRlzXRN.jpg"
+      },
+      {
+        "id": 1869196,
+        "name": "Jaroslava Sisáková",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
         "image": ""
       },
       {
-        "id": 4545373,
-        "name": "Rudolf Sikora",
-        "birthday": "1946-04-17",
+        "id": 2552373,
+        "name": "Daniela Gudabová",
+        "birthday": "1960-03-04",
         "deathday": null,
-        "age": 80,
+        "age": 66,
+        "image": "https://image.tmdb.org/t/p/w300/eoko8AbkgmueIBLLzsgbvZmKnOf.jpg"
+      },
+      {
+        "id": 3875794,
+        "name": "Tatiana Marta Rehúšová",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 3377665,
+        "name": "Ľudmila Lukačíková",
+        "birthday": "1960-02-28",
+        "deathday": null,
+        "age": 66,
+        "image": "https://image.tmdb.org/t/p/w300/il0GBdrEhLT00udoCR8pIpWxPq3.jpg"
+      },
+      {
+        "id": 3875801,
+        "name": "Petr Kalmus",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 3060690,
+        "name": "Peter Bálik",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 3875803,
+        "name": "Róbert Zipser",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 3875805,
+        "name": "Ivan Dianiška",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 1352436,
+        "name": "Ivan Ostrochovský",
+        "birthday": "1972-11-12",
+        "deathday": null,
+        "age": 53,
+        "image": "https://image.tmdb.org/t/p/w300/ufpYV3XtIIDG6w1DVXllYbl8iql.jpg"
+      },
+      {
+        "id": 3110881,
+        "name": "Zvonko Lakčevič",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 2744219,
+        "name": "Jozef Tkáč",
+        "birthday": "1950-01-15",
+        "deathday": null,
+        "age": 76,
+        "image": ""
+      },
+      {
+        "id": 3368349,
+        "name": "Michal Ďuriš st.",
+        "birthday": "1964-07-08",
+        "deathday": null,
+        "age": 62,
+        "image": "https://image.tmdb.org/t/p/w300/c1jcHsjCykPxg36HAVbvwgF2ASO.jpg"
+      },
+      {
+        "id": 1774971,
+        "name": "Mária Breinerová",
+        "birthday": "1957-07-02",
+        "deathday": null,
+        "age": 69,
+        "image": "https://image.tmdb.org/t/p/w300/yJQMn0gLJcfWNsPRR4QmHaau3W7.jpg"
+      },
+      {
+        "id": 1869190,
+        "name": "Valéria Fürješová",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/WMVKBceYwQ4CY22CL7A7VRikvO.jpg"
+      },
+      {
+        "id": 3776970,
+        "name": "Lucia Fričová",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/qKg6WdAn3u1LtgePc3tnHX7dVbB.jpg"
+      },
+      {
+        "id": 3875806,
+        "name": "Karolína Poláková",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 1193221,
+        "name": "Vít Bednárik",
+        "birthday": "1951-01-01",
+        "deathday": null,
+        "age": 75,
+        "image": "https://image.tmdb.org/t/p/w300/u0DTuPd4q2PEMzVlMwDdcWVKGJ5.jpg"
+      },
+      {
+        "id": 3875807,
+        "name": "Erika Čisáriková",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 3875808,
+        "name": "Ondrej Gubač",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 2069802,
+        "name": "Milan Chalmovský",
+        "birthday": "1973-10-05",
+        "deathday": null,
+        "age": 52,
+        "image": "https://image.tmdb.org/t/p/w300/uz7ppt2OtyAaB8rTJabHZhN4dnX.jpg"
+      },
+      {
+        "id": 1871585,
+        "name": "Petra Fornayová",
+        "birthday": "1972-11-08",
+        "deathday": null,
+        "age": 53,
+        "image": ""
+      },
+      {
+        "id": 3875809,
+        "name": "Zuzana Kovalčíková",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 3875811,
+        "name": "Iveta Baňárová",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
         "image": ""
       }
     ],
     "reviews": []
   },
   {
-    "title": "Dýchajúce obrazy",
-    "tmdb_id": 1193181,
-    "imdb_id": "tt29543654",
+    "title": "Jedeme na teambuilding",
+    "tmdb_id": 1222638,
+    "imdb_id": "tt30760223",
     "year": 2023,
-    "date": "2023-07-01",
+    "date": "2023-12-28",
     "score": 50,
     "box": null,
     "box_currency": null,
     "country": "Česko",
-    "genre": "",
-    "runtime": 13,
-    "poster": "",
-    "gallery": [],
-    "summary": "Malá holčička přichází s rodiči na výstavu do galerie. Za obrazy nevidí jen obyčejné postavy, ale díky dětské fantazii si vymýšlí zajímavé příběhy a vytváří souvislosti mezi dílem a procesem jeho vzniku. Setkává se tváří v tvář s osobnostmi z nejslavnějších uměleckých děl historie a jejich autory. Obrazy ožívají před dívčinýma očima a vtahují ji do děje. Děvčátko se stává součástí příběhů, které se na obrazech odehrávají.",
-    "director": {
-      "id": 4327844,
-      "name": "Radovan Hradil",
-      "image": ""
-    },
-    "composer": {
-      "id": null,
-      "name": "",
-      "image": ""
-    },
-    "writer": {
-      "id": 4327844,
-      "name": "Radovan Hradil",
-      "image": ""
-    },
-    "actors": [
-      {
-        "id": 5066769,
-        "name": "Liliana Rysánková",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 5066771,
-        "name": "Nikola Zavrelová",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 4447215,
-        "name": "Eva Gribová",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/1LYBgtFsJ99jnxLbalJY9PX1TR8.jpg"
-      },
-      {
-        "id": 5066774,
-        "name": "Václav Trnka",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 5066775,
-        "name": "Eva Kristková",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 5066776,
-        "name": "Lucia Nedelková",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 4988882,
-        "name": "Timon w. Duda",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      }
-    ],
-    "reviews": []
-  },
-  {
-    "title": "Villa Lucia",
-    "tmdb_id": 1099453,
-    "imdb_id": "tt27131692",
-    "year": 2023,
-    "date": "2023-03-09",
-    "score": 50,
-    "box": 0,
-    "box_currency": "USD",
-    "country": "Česko",
     "genre": "Komedie",
-    "runtime": 116,
-    "poster": "https://image.tmdb.org/t/p/w342/3DoIC0wP8dCHkBvHjOGeZ0W54d2.jpg",
+    "runtime": 105,
+    "poster": "https://image.tmdb.org/t/p/w342/unUKbHpP6npzgzajv9FI4FxPs6D.jpg",
     "gallery": [
-      "https://image.tmdb.org/t/p/w500/djPu6Ud8j3ptFlEBaZvoEn5tQDb.jpg"
+      "https://image.tmdb.org/t/p/w500/fVuO4tR2oBBR24j1vR8ZXO79p46.jpg"
     ],
-    "summary": "Tři kámoše spojuje vzpomínka na jejich nejkrásnější spolužačku ze střední školy, na úchvatnou Lucii. Cyril ji vždy miloval, několikrát se kvůli ní teatrálně pokusil o sebevraždu, a právě dnes vychází z psychiatrické léčebny, aby se jí v rámci terapie za všechno omluvil. Gorazd se s ní dal mezitím dohromady, bude si ji brát a jejich vztah je přesně to, o čem se nestabilní Cyril nesmí dozvědět. Svatopluk sní o tom, že by jejich starou partu dal zase dohromady, a právě dnes má jedinečnou šanci, aby si své staré křivdy vyříkali. Sejdou se v Luciině rodném domě, ve velké staré vile nad městem, kde je ale čeká mnohem větší problém. Právě dnes se ji totiž rozhodli vyloupit dva zkorumpovaní policajti jako svou poslední fušku. Nastává noc plná zmatků, záměn, akce a zábavy. Přežijí jen ti, co drží spolu, i kdyby to bylo proti jejich vůli.",
+    "summary": "Když si myslíte, že máte ve všech směrech skvěle našlápnuto a nic vás nezastaví, tak se většinou hodně pletete. Ambiciózní korporátní zaměstnanec Aleš je svým narcistickým šéfem místo povýšení přeložen do nejhoršího firemního oddělení – do call centra. Tam velice rychle musí přijít na to, jak spolu s potrhlou konspirátorkou Marcelou, neurotickým nihilistou Michalem, vzorňačkou Jitkou a dalšími bizarními kolegy vytvořit sehranou partu. Jen tak může během teambuildingového víkendu porazit bývalé kolegy, zachránit své nové oddělení před zrušením a hlavně najít ztracenou sebeúctu.",
     "director": {
-      "id": 1077975,
-      "name": "Michal Kollár",
+      "id": 1800149,
+      "name": "Zuzana Marianková",
       "image": ""
     },
     "composer": {
@@ -16194,50 +15961,74 @@
       "image": ""
     },
     "writer": {
-      "id": 5671959,
-      "name": "Lukáš Sigmund",
+      "id": 2329712,
+      "name": "Alex Coteț",
       "image": ""
     },
     "actors": [
       {
-        "id": 931821,
-        "name": "Vlado Černý",
-        "birthday": "1951-06-21",
-        "deathday": null,
-        "age": 75,
-        "image": "https://image.tmdb.org/t/p/w300/nPUNjAfCof56vqUGTuBzdJpEoRW.jpg"
-      },
-      {
-        "id": 2285590,
-        "name": "Martin Meľo",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/jURL466QCj4XsCw4mli1qQJqzow.jpg"
-      },
-      {
-        "id": 1475688,
-        "name": "Michal Kubovčík",
-        "birthday": "1980-05-17",
-        "deathday": null,
-        "age": 46,
-        "image": "https://image.tmdb.org/t/p/w300/hCii5wSpOFdVdA0SDyHozhZY2P7.jpg"
-      },
-      {
-        "id": 1283520,
-        "name": "Hana Vagnerová",
-        "birthday": "1983-02-21",
+        "id": 1288874,
+        "name": "Jakub Prachař",
+        "birthday": "1983-08-30",
         "deathday": null,
         "age": 43,
-        "image": "https://image.tmdb.org/t/p/w300/bYfXMlmLtGC3LC4SO6qW4SD0xgc.jpg"
+        "image": "https://image.tmdb.org/t/p/w300/7n0SY1Sn0jbNSoK70Sw1u4qihiX.jpg"
       },
       {
-        "id": 1421789,
-        "name": "Juraj Hrčka",
-        "birthday": "1980-05-29",
+        "id": 544234,
+        "name": "Vojtěch Kotek",
+        "birthday": "1988-01-08",
         "deathday": null,
-        "age": 46,
-        "image": "https://image.tmdb.org/t/p/w300/zVPDjuqsf0pXRtANPECjFmG9bxH.jpg"
+        "age": 38,
+        "image": "https://image.tmdb.org/t/p/w300/vMIOlckSMBplKhjNmgGIwvSRpPT.jpg"
+      },
+      {
+        "id": 544555,
+        "name": "Anna Polívková",
+        "birthday": "1979-03-24",
+        "deathday": null,
+        "age": 47,
+        "image": "https://image.tmdb.org/t/p/w300/jpDP8RcouxQBBMWBtIk2WdYAzPb.jpg"
+      },
+      {
+        "id": 1179814,
+        "name": "Bořivoj Čermák",
+        "birthday": "2003-04-16",
+        "deathday": null,
+        "age": 23,
+        "image": "https://image.tmdb.org/t/p/w300/mTMSUiuNOKflETTSSYjReqvzHS9.jpg"
+      },
+      {
+        "id": 1261322,
+        "name": "Petra Polnišová",
+        "birthday": "1976-02-24",
+        "deathday": null,
+        "age": 50,
+        "image": "https://image.tmdb.org/t/p/w300/eCcveJ9DV7cKYN3YR913BcQDiNh.jpg"
+      },
+      {
+        "id": 2814389,
+        "name": "Robin Ferro",
+        "birthday": "1996-01-31",
+        "deathday": null,
+        "age": 30,
+        "image": "https://image.tmdb.org/t/p/w300/oCf3syiKub5K4pA791JgU5SXWCG.jpg"
+      },
+      {
+        "id": 1259749,
+        "name": "Alexander Bárta",
+        "birthday": "1976-02-27",
+        "deathday": null,
+        "age": 50,
+        "image": "https://image.tmdb.org/t/p/w300/seFzETsTTuR4Vgf1INcG0CtxAiV.jpg"
+      },
+      {
+        "id": 1602193,
+        "name": "Erika Stárková",
+        "birthday": "1984-07-08",
+        "deathday": null,
+        "age": 42,
+        "image": "https://image.tmdb.org/t/p/w300/mFI7sMl5675XWgqcJN9UK5Kn2bY.jpg"
       },
       {
         "id": 2223019,
@@ -16248,6 +16039,78 @@
         "image": "https://image.tmdb.org/t/p/w300/y3tOMdlv3MY89rYWhlWlZT1bGtt.jpg"
       },
       {
+        "id": 2035612,
+        "name": "Roman Blumaier",
+        "birthday": "1983-10-27",
+        "deathday": null,
+        "age": 42,
+        "image": "https://image.tmdb.org/t/p/w300/23CMBkFDShmaBiyz6QrJ6UqqagV.jpg"
+      },
+      {
+        "id": 2719922,
+        "name": "Ondřej Malý",
+        "birthday": "1991-07-15",
+        "deathday": null,
+        "age": 35,
+        "image": "https://image.tmdb.org/t/p/w300/eVNwBSgPowixLUlekD09q2jdycs.jpg"
+      },
+      {
+        "id": 3644803,
+        "name": "Ondřej Bábor",
+        "birthday": "1990-11-28",
+        "deathday": null,
+        "age": 35,
+        "image": "https://image.tmdb.org/t/p/w300/vS5OKkHUxYfBJ2FD5lp4i1uxQI7.jpg"
+      },
+      {
+        "id": 2944662,
+        "name": "Filip Teller",
+        "birthday": "1991-06-03",
+        "deathday": null,
+        "age": 35,
+        "image": "https://image.tmdb.org/t/p/w300/9SyAuhQpz7JwlhkmTg3hPTmDk8E.jpg"
+      },
+      {
+        "id": 2539822,
+        "name": "Adam Langer",
+        "birthday": "1996-03-22",
+        "deathday": null,
+        "age": 30,
+        "image": "https://image.tmdb.org/t/p/w300/o9dmBbrBVbTS8jqtMQrpC3Hbw3z.jpg"
+      },
+      {
+        "id": 4450584,
+        "name": "Justýna Zedníková",
+        "birthday": "2002-08-05",
+        "deathday": null,
+        "age": 24,
+        "image": "https://image.tmdb.org/t/p/w300/a0DEzlT0Qbs4MUHPvIffR8wiaer.jpg"
+      },
+      {
+        "id": 1977909,
+        "name": "Eva Kramerová",
+        "birthday": "1990-05-30",
+        "deathday": null,
+        "age": 36,
+        "image": "https://image.tmdb.org/t/p/w300/uSofRKhjvIAMzOegwrK8EdCmnYk.jpg"
+      },
+      {
+        "id": 2436169,
+        "name": "Natálie Otáhalová",
+        "birthday": "2000-06-05",
+        "deathday": null,
+        "age": 26,
+        "image": "https://image.tmdb.org/t/p/w300/w2REekK2ENgRk7fhdXm8uqNuPuh.jpg"
+      },
+      {
+        "id": 3802628,
+        "name": "Anna Marie Purić",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/gW4CydhdYH5OdTzsDuBK2AWbNLV.jpg"
+      },
+      {
         "id": 2202953,
         "name": "Richard Autner",
         "birthday": "1992-04-03",
@@ -16256,68 +16119,432 @@
         "image": "https://image.tmdb.org/t/p/w300/nWMXBwtEEYtgl4Wa1SvGT9TTi2i.jpg"
       },
       {
-        "id": 1575205,
-        "name": "Boris Farkaš",
-        "birthday": "1954-07-04",
-        "deathday": null,
-        "age": 72,
-        "image": "https://image.tmdb.org/t/p/w300/M3R5LNZKbrIAwDKvoONsWCAMkr.jpg"
-      },
-      {
-        "id": 1421791,
-        "name": "Marta Maťová",
-        "birthday": "1989-08-29",
-        "deathday": null,
-        "age": 37,
-        "image": "https://image.tmdb.org/t/p/w300/qDh2SZEasgAzZlbZvyEGGj1RlJe.jpg"
-      },
-      {
-        "id": 2204455,
-        "name": "Zdeněk Godla",
-        "birthday": "1975-05-25",
-        "deathday": null,
-        "age": 51,
-        "image": "https://image.tmdb.org/t/p/w300/emOfI4xESMloEE1Qy679rlfMASe.jpg"
-      },
-      {
-        "id": 95925,
-        "name": "Robert Nebřenský",
-        "birthday": "1964-02-08",
-        "deathday": null,
-        "age": 62,
-        "image": "https://image.tmdb.org/t/p/w300/uvd9KQ69jrzdGizLKkclu9QJy4t.jpg"
-      },
-      {
-        "id": 3387784,
-        "name": "Branislav Matranovič",
+        "id": 2659482,
+        "name": "Katarína Morháčová",
         "birthday": null,
         "deathday": null,
         "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/g7aYD1UG1SyiRXpwcnOJM6vRC1C.jpg"
+        "image": "https://image.tmdb.org/t/p/w300/ibamKcx7hcRylOA0wdgEcWCmTU4.jpg"
       },
       {
-        "id": 2580815,
-        "name": "Hoang Anh Doan",
+        "id": 4450585,
+        "name": "Samuel Procházka",
         "birthday": null,
         "deathday": null,
         "age": null,
         "image": ""
       },
       {
-        "id": 2243666,
-        "name": "Lukáš Duy Anh Tran",
-        "birthday": "1993-07-15",
+        "id": 1259747,
+        "name": "Róbert Jakab",
+        "birthday": "1976-07-23",
         "deathday": null,
-        "age": 33,
-        "image": "https://image.tmdb.org/t/p/w300/7wWDquwUUbP7Ui6jIxGAEJxvLpn.jpg"
+        "age": 50,
+        "image": "https://image.tmdb.org/t/p/w300/kWZ61YY5YJOuDSLA1TTBDUjVluU.jpg"
       },
       {
-        "id": 1848162,
-        "name": "Anna Jakab Rakovská",
-        "birthday": "1993-06-04",
+        "id": 3923283,
+        "name": "Bekim Aziri",
+        "birthday": "1988-07-14",
         "deathday": null,
-        "age": 33,
-        "image": "https://image.tmdb.org/t/p/w300/6Zzt4hqrhcBArkrCYHvowgW2wEr.jpg"
+        "age": 38,
+        "image": ""
+      },
+      {
+        "id": 1253871,
+        "name": "Michal David",
+        "birthday": "1960-07-14",
+        "deathday": null,
+        "age": 66,
+        "image": "https://image.tmdb.org/t/p/w300/ltgMgP4TXVryZKNKxhv2TEdBFUz.jpg"
+      },
+      {
+        "id": 3415885,
+        "name": "Marek Hamšík",
+        "birthday": "1987-07-27",
+        "deathday": null,
+        "age": 39,
+        "image": "https://image.tmdb.org/t/p/w300/s4f9MVtnWOXNjYg3qmrx02AIqaG.jpg"
+      },
+      {
+        "id": 2693657,
+        "name": "Hana Müllerová",
+        "birthday": "1960-06-06",
+        "deathday": null,
+        "age": 66,
+        "image": ""
+      },
+      {
+        "id": 3931511,
+        "name": "Lukáš Jurko",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/hXDZFeN07HNRifvip9WPnaOKD5E.jpg"
+      },
+      {
+        "id": 2580643,
+        "name": "Jiří Krupica",
+        "birthday": "1988-12-02",
+        "deathday": null,
+        "age": 37,
+        "image": ""
+      },
+      {
+        "id": 3707995,
+        "name": "Natálie Kočendová",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/zdQBdYAkozCfMzWBm4SUlKjirth.jpg"
+      },
+      {
+        "id": 4971269,
+        "name": "Miloš Slemenský",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/ivRbFZIkmzWcWhW5HZj20vVYWKs.jpg"
+      },
+      {
+        "id": 2580588,
+        "name": "Táňa Malíková",
+        "birthday": "1991-02-13",
+        "deathday": null,
+        "age": 35,
+        "image": "https://image.tmdb.org/t/p/w300/xZFYfWM6ccFK5Jn4EHkTRmkYfTJ.jpg"
+      },
+      {
+        "id": 5672105,
+        "name": "Chiara Steinerová",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      }
+    ],
+    "reviews": []
+  },
+  {
+    "title": "O malých věcech",
+    "tmdb_id": 1104172,
+    "imdb_id": "tt27447581",
+    "year": 2023,
+    "date": "2023-06-15",
+    "score": 50,
+    "box": 0,
+    "box_currency": "USD",
+    "country": "Česko",
+    "genre": "Drama",
+    "runtime": 75,
+    "poster": "https://image.tmdb.org/t/p/w342/rpNy6ayzh5FIbY4kEVnn8U4cpDZ.jpg",
+    "gallery": [],
+    "summary": "Povídkový film se odehrává v jednom domě, na neurčitém místě, v nespecifikované době. Co se stane, když se manžel začne dusit u večeře? Když posloucháte, co se děje u sousedů v ložnici, když nechcete ukázat, kdo vám napsal dopis, nebo když si s bývalým partnerem vzájemně napíšete básničku?",
+    "director": {
+      "id": 2201362,
+      "name": "Denis Šafařík",
+      "image": "https://image.tmdb.org/t/p/w300/33hQysB8tkvfVHY13ZDAOMfGYjC.jpg"
+    },
+    "composer": {
+      "id": 3977482,
+      "name": "Darek Král",
+      "image": ""
+    },
+    "writer": {
+      "id": 2201362,
+      "name": "Denis Šafařík",
+      "image": "https://image.tmdb.org/t/p/w300/33hQysB8tkvfVHY13ZDAOMfGYjC.jpg"
+    },
+    "actors": [
+      {
+        "id": 2143478,
+        "name": "Lukáš Černoch",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/dbuDQf9y9Yk1a2jcFvVEKgXiINo.jpg"
+      },
+      {
+        "id": 3965112,
+        "name": "Barbora Kubátová",
+        "birthday": "1987-08-28",
+        "deathday": null,
+        "age": 39,
+        "image": ""
+      },
+      {
+        "id": 3281634,
+        "name": "Radka Caldová",
+        "birthday": "1996-10-11",
+        "deathday": null,
+        "age": 29,
+        "image": "https://image.tmdb.org/t/p/w300/89F4xlKq81a0Td86QpAz8BKfFTp.jpg"
+      },
+      {
+        "id": 2053429,
+        "name": "Oskar Hes",
+        "birthday": "1998-12-26",
+        "deathday": null,
+        "age": 27,
+        "image": "https://image.tmdb.org/t/p/w300/vguxcaWhlbsJRdqBXWRgrw7WJnK.jpg"
+      },
+      {
+        "id": 2156480,
+        "name": "Kamila Trnková",
+        "birthday": "1991-07-03",
+        "deathday": null,
+        "age": 35,
+        "image": "https://image.tmdb.org/t/p/w300/6bgwHPcxiGqc74fBUIf8buughWU.jpg"
+      },
+      {
+        "id": 2402928,
+        "name": "Darija Pavlovičová",
+        "birthday": "2001-11-19",
+        "deathday": null,
+        "age": 24,
+        "image": "https://image.tmdb.org/t/p/w300/aJBTDk6n9pF9TgBasQrpQMgu7QY.jpg"
+      },
+      {
+        "id": 6075093,
+        "name": "Jan Hušek",
+        "birthday": "1988-08-01",
+        "deathday": null,
+        "age": 38,
+        "image": ""
+      }
+    ],
+    "reviews": []
+  },
+  {
+    "title": "Jiříkovo vidění",
+    "tmdb_id": 1189094,
+    "imdb_id": "tt29228803",
+    "year": 2023,
+    "date": "2023-11-02",
+    "score": 50,
+    "box": null,
+    "box_currency": null,
+    "country": "Česko",
+    "genre": "Dokumentární",
+    "runtime": 77,
+    "poster": "https://image.tmdb.org/t/p/w342/c8tU59nZpKjqhRTmuHzP3MQvZlD.jpg",
+    "gallery": [
+      "https://image.tmdb.org/t/p/w500/u0DdzKCV7ZwnirqJ2AO0m4my2jd.jpg"
+    ],
+    "summary": "„Myslela jsem si, že to půjde snáz,“ připouští režisérka Marta Kovářová v půlce filmu. Formou živého deníku v něm zachytila boj svého otce za klimatickou spravedlnost. Jiří Svoboda z Ústavu fyziky materiálů Akademie věd přišel s geniálně jednoduchým nápadem, jak snížit emise skleníkových plynů. Navrhuje globální zpoplatnění uhlíku. Brněnský vědec za doprovodu dceřiny kamery a písní navštěvuje lokální protestní setkání i světové ekologické summity. Nakažlivé odhodlání obou protagonistů ale naráží na liknavost politiků a političek a nepružnost mocenských struktur. Svobodu přesto neopouští humor a víra, že určité věci má smysl dělat zkrátka proto, že jsou správné.",
+    "director": {
+      "id": 4312388,
+      "name": "Marta Kovářová",
+      "image": ""
+    },
+    "composer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "writer": {
+      "id": 4312388,
+      "name": "Marta Kovářová",
+      "image": ""
+    },
+    "actors": [
+      {
+        "id": 4365860,
+        "name": "Jiří Svoboda",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4312388,
+        "name": "Marta Kovářová",
+        "birthday": "1983-02-21",
+        "deathday": null,
+        "age": 43,
+        "image": ""
+      }
+    ],
+    "reviews": []
+  },
+  {
+    "title": "Tajný zákop",
+    "tmdb_id": 1150639,
+    "imdb_id": "tt28228116",
+    "year": 2023,
+    "date": "2023-08-17",
+    "score": 50,
+    "box": null,
+    "box_currency": null,
+    "country": "Česko",
+    "genre": "Historický",
+    "runtime": 90,
+    "poster": "https://image.tmdb.org/t/p/w342/lKh7eybPjrwBqv2632et5k54UUN.jpg",
+    "gallery": [],
+    "summary": "Válka se chýlí ke konci a zatímco část německých důstojníků vede boje s fanatickým přesvědčením až do úplného konce, jiná část začíná myslet na život po válce. Bohatství, které nacisté v průběhu války na různých místech ukryli, pak láká nejen samotné Němce, ale i tajné služby spojenců. Jejich agenti a obávaní commandos se pokusí překonat kruté boje na frontě a německou armádu i obávané gestapo infiltrovat.",
+    "director": {
+      "id": 2321689,
+      "name": "Martin Linhart",
+      "image": ""
+    },
+    "composer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "writer": {
+      "id": 2321689,
+      "name": "Martin Linhart",
+      "image": ""
+    },
+    "actors": [
+      {
+        "id": 143620,
+        "name": "Jiří Bartoška",
+        "birthday": "1947-03-24",
+        "deathday": "2025-05-08",
+        "age": 78,
+        "image": "https://image.tmdb.org/t/p/w300/vCA91vwuwBm7KaFO6Mh21iuiWOt.jpg"
+      },
+      {
+        "id": 1027759,
+        "name": "Ondřej Sokol",
+        "birthday": "1971-10-16",
+        "deathday": null,
+        "age": 54,
+        "image": "https://image.tmdb.org/t/p/w300/rrwTRAgEYUX4SmOCWiVaJM9gF7S.jpg"
+      },
+      {
+        "id": 1161739,
+        "name": "Hynek Čermák",
+        "birthday": "1973-02-14",
+        "deathday": null,
+        "age": 53,
+        "image": "https://image.tmdb.org/t/p/w300/aWdyy7xlYibd03useKgKUbQQf4.jpg"
+      },
+      {
+        "id": 136796,
+        "name": "Kryštof Hádek",
+        "birthday": "1982-03-10",
+        "deathday": null,
+        "age": 44,
+        "image": "https://image.tmdb.org/t/p/w300/35mTGXSU81R2Z7vXq6OpmmwIwzk.jpg"
+      },
+      {
+        "id": 544242,
+        "name": "Jiří Langmajer",
+        "birthday": "1966-06-03",
+        "deathday": null,
+        "age": 60,
+        "image": "https://image.tmdb.org/t/p/w300/dtSV3r0lUpA6wna59xkgnGqgnt1.jpg"
+      },
+      {
+        "id": 4228593,
+        "name": "Michal Lyga",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 2510730,
+        "name": "Milan Cimerák",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 3743731,
+        "name": "Marek Zahradníček",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 2850937,
+        "name": "Lenka Konvičková",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/ghglG4dZG9hu28GsHCP9YduWpAz.jpg"
+      }
+    ],
+    "reviews": []
+  },
+  {
+    "title": "Erhart",
+    "tmdb_id": 1074767,
+    "imdb_id": "tt8576206",
+    "year": 2023,
+    "date": "2023-06-01",
+    "score": 50,
+    "box": null,
+    "box_currency": null,
+    "country": "Česko",
+    "genre": "Drama",
+    "runtime": 71,
+    "poster": "https://image.tmdb.org/t/p/w342/mbcYo543VAoASCSH0uoSfdYkYyJ.jpg",
+    "gallery": [
+      "https://image.tmdb.org/t/p/w500/x1yVR7pYNy1NQi55YQTT5zuUbYb.jpg"
+    ],
+    "summary": "Erhart se vrací do rodného města, aby navštívil svou duševně nemocnou matku, když shledá, že jejich chátrající dům je na prodej a mají se neprodleně vystěhovat. Hospitalizovaná matka navíc tvrdí, že jeho zmizelý otec se vrátil, aby tomu učinil přítrž. Mezitím se místní průmyslník Novotný, žijící v daleko honosnějších kulisách, rozhodl kandidovat do senátu a jeho nezletilá dcera Bíba mu chce na to konto natočit volební video, což jí příchod Erharta velmi zkomplikuje. Film vypráví zdánlivě detektivní příběh minulosti rodičů na pozadí romantické současnosti jejich dětí, aby postupně obě roviny nevratně propojil. Co má společného Novotný s Erhartovým otcem, který byl nejprve poslán do vězení a později zmizel neznámo kam? Jak věcmi zamíchá půvabná terapeutka Fany, která propojuje obě rodiny a obě generace?",
+    "director": {
+      "id": 2927817,
+      "name": "Jan Březina",
+      "image": ""
+    },
+    "composer": {
+      "id": 2503119,
+      "name": "Martin Hůla",
+      "image": ""
+    },
+    "writer": {
+      "id": 2927817,
+      "name": "Jan Březina",
+      "image": ""
+    },
+    "actors": [
+      {
+        "id": 2162587,
+        "name": "Filip Březina",
+        "birthday": "1995-03-19",
+        "deathday": null,
+        "age": 31,
+        "image": "https://image.tmdb.org/t/p/w300/sZ8KFjJHh3KADYQAv0UunVkHvIY.jpg"
+      },
+      {
+        "id": 1815179,
+        "name": "Elizaveta Maximová",
+        "birthday": "1992-03-16",
+        "deathday": null,
+        "age": 34,
+        "image": "https://image.tmdb.org/t/p/w300/xupNgaaSAECz17MyuxE7Zw7PU6D.jpg"
+      },
+      {
+        "id": 544274,
+        "name": "Petra Jungmanová",
+        "birthday": "1971-07-11",
+        "deathday": null,
+        "age": 55,
+        "image": "https://image.tmdb.org/t/p/w300/k487Acs1EfiylUYdFppo52Cl4u1.jpg"
+      },
+      {
+        "id": 3876054,
+        "name": "Klára Soukupová",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 1970529,
+        "name": "Přemysl Bureš",
+        "birthday": "1971-03-03",
+        "deathday": null,
+        "age": 55,
+        "image": "https://image.tmdb.org/t/p/w300/agnxH3OEte1YeJLXe7AbWJ4QAB9.jpg"
       }
     ],
     "reviews": []
@@ -25226,132 +25453,26 @@
     "reviews": []
   },
   {
-    "title": "Janžurka",
-    "tmdb_id": 1302879,
-    "imdb_id": "tt32843180",
+    "title": "Barevný sen",
+    "tmdb_id": 762901,
+    "imdb_id": "tt13432244",
     "year": 2024,
-    "date": "2024-09-26",
+    "date": "2024-10-31",
     "score": 50,
     "box": null,
     "box_currency": null,
     "country": "Česko",
-    "genre": "Dokumentární",
-    "runtime": 110,
-    "poster": "https://image.tmdb.org/t/p/w342/2jcX0ztCQl2NA9Y54nIhC5L9RAc.jpg",
-    "gallery": [
-      "https://image.tmdb.org/t/p/w500/qDa4Obbph6v8UazvEXYQxgmefNE.jpg"
-    ],
-    "summary": "V dokumentárním portrétu je Iva Janžurová – ikona českého filmu, televize a divadla – nazírána citlivým pohledem své dcery, dokumentaristky Theodory Remundové. Tento nejbližší možný vztah umožňuje režisérce pohybovat se v její bezprostřední blízkosti. Tímto pohledem odkrýváme nejen obdivuhodnou profesní aktivitu Ivy Janžurové v současnosti, ale i její minulou kariéru a osobní život v dobových souvislostech.",
-    "director": {
-      "id": 138809,
-      "name": "Theodora Remundová",
-      "image": "https://image.tmdb.org/t/p/w300/odt1TWEM7UAFrTCn6b0DqKkfdMM.jpg"
-    },
-    "composer": {
-      "id": 1506970,
-      "name": "Tadeáš Věrčák",
-      "image": ""
-    },
-    "writer": {
-      "id": 138809,
-      "name": "Theodora Remundová",
-      "image": "https://image.tmdb.org/t/p/w300/odt1TWEM7UAFrTCn6b0DqKkfdMM.jpg"
-    },
-    "actors": [
-      {
-        "id": 146761,
-        "name": "Iva Janžurová",
-        "birthday": "1941-05-19",
-        "deathday": null,
-        "age": 85,
-        "image": "https://image.tmdb.org/t/p/w300/2v1k7i0EpHX6g0darnHsjzbVG6W.jpg"
-      },
-      {
-        "id": 138809,
-        "name": "Theodora Remundová",
-        "birthday": "1974-01-28",
-        "deathday": null,
-        "age": 52,
-        "image": "https://image.tmdb.org/t/p/w300/odt1TWEM7UAFrTCn6b0DqKkfdMM.jpg"
-      },
-      {
-        "id": 138810,
-        "name": "Sabina Remundová",
-        "birthday": "1972-05-18",
-        "deathday": null,
-        "age": 54,
-        "image": "https://image.tmdb.org/t/p/w300/wz5GuOxARIgIdWykJJFFQDC4fzJ.jpg"
-      },
-      {
-        "id": 1386752,
-        "name": "Marta Kubišová",
-        "birthday": "1942-11-01",
-        "deathday": null,
-        "age": 83,
-        "image": "https://image.tmdb.org/t/p/w300/j4WAbYpeh4qtRQ4o4qhWcopWczA.jpg"
-      },
-      {
-        "id": 1650371,
-        "name": "Stanislav Remunda",
-        "birthday": "1927-07-22",
-        "deathday": "2012-05-21",
-        "age": 84,
-        "image": "https://image.tmdb.org/t/p/w300/sACh4UsPhT4X8h6hi36Hk21C4Lr.jpg"
-      },
-      {
-        "id": 1403489,
-        "name": "Igor Orozovič",
-        "birthday": "1984-07-07",
-        "deathday": null,
-        "age": 42,
-        "image": "https://image.tmdb.org/t/p/w300/gfebmUBMgEF9u4DfUAEOFZc5KQs.jpg"
-      },
-      {
-        "id": 138806,
-        "name": "Alice Nellis",
-        "birthday": "1971-01-03",
-        "deathday": null,
-        "age": 55,
-        "image": "https://image.tmdb.org/t/p/w300/3jZry4JFkYNKv6EBdhtstoAQppP.jpg"
-      },
-      {
-        "id": 135449,
-        "name": "Dušan Hanák",
-        "birthday": "1938-04-27",
-        "deathday": null,
-        "age": 88,
-        "image": "https://image.tmdb.org/t/p/w300/sFtOCSzET1Dd8nUgcjWD1ZihI2o.jpg"
-      },
-      {
-        "id": 4855296,
-        "name": "Valeria Recman",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      }
-    ],
-    "reviews": []
-  },
-  {
-    "title": "Velký pán",
-    "tmdb_id": 1165416,
-    "imdb_id": "tt30877290",
-    "year": 2024,
-    "date": "2024-10-03",
-    "score": 50,
-    "box": 0,
-    "box_currency": "USD",
-    "country": "Česko",
     "genre": "Animovaný",
-    "runtime": 73,
-    "poster": "https://image.tmdb.org/t/p/w342/pahss6UcHL1xsH6XN8KiiBIT0pf.jpg",
-    "gallery": [],
-    "summary": "Malý pán se raduje ze společenského života v lesní vesnici, s Majolenkou provozuje lesní kiosek a s kamarády má kapelu. Idylu naruší až zpráva o podivných jeleňácích, ohrožujících obyvatele lesa. A podezření budí i podivínský ochranitel doktor Zetek, distribuující po lese televize. Obyvatele vesnice postupně ovládá strach, les se hemží roboty a kiosek zeje prázdnotou. Malý pán se tak opět musí vydat na cestu, aby zachránil svou milovanou Majolenku, své přátele a vlastně i svůj domov.",
+    "runtime": 71,
+    "poster": "https://image.tmdb.org/t/p/w342/bvzJWqSQbcaKTN2CMdUhXCO1bZY.jpg",
+    "gallery": [
+      "https://image.tmdb.org/t/p/w500/sLL1QBU6C5ng5NqqwHoUspt1LKl.jpg"
+    ],
+    "summary": "Na Ostrov ztracený v oceánu, kde panuje všemocný Velitel a přísný pořádek, přijíždí parta pouličních umělců. Nepovedený výstřel z pouťového kanonu při jejich vystoupení odstartuje řadu dramatických událostí. Mládenec Drin, dívka Tuvi a racek Natan se musejí pustit do souboje s policejní přesilou.",
     "director": {
-      "id": 1462359,
-      "name": "Radek Beran",
-      "image": ""
+      "id": 232934,
+      "name": "Jan Balej",
+      "image": "https://image.tmdb.org/t/p/w300/zScw7nOAP07nx13pFb3gkM8AG8G.jpg"
     },
     "composer": {
       "id": null,
@@ -25359,50 +25480,26 @@
       "image": ""
     },
     "writer": {
-      "id": 1462359,
-      "name": "Radek Beran",
-      "image": ""
+      "id": 232934,
+      "name": "Jan Balej",
+      "image": "https://image.tmdb.org/t/p/w300/zScw7nOAP07nx13pFb3gkM8AG8G.jpg"
     },
     "actors": [
       {
-        "id": 231248,
-        "name": "Saša Rašilov",
-        "birthday": "1972-07-26",
+        "id": 2053430,
+        "name": "Antonie Formanová",
+        "birthday": "1998-06-30",
         "deathday": null,
-        "age": 54,
-        "image": "https://image.tmdb.org/t/p/w300/kqymhZNT4QRkwYSadMVAYiI5bJE.jpg"
+        "age": 28,
+        "image": "https://image.tmdb.org/t/p/w300/bLZdUJCaBGqp7zdND5WZm6M3zej.jpg"
       },
       {
-        "id": 1180344,
-        "name": "Barbora Poláková",
-        "birthday": "1983-10-03",
+        "id": 1247355,
+        "name": "Matouš Ruml",
+        "birthday": "1985-10-04",
         "deathday": null,
-        "age": 42,
-        "image": "https://image.tmdb.org/t/p/w300/5VHV6HLyz84ibITmVvqmCOadQJX.jpg"
-      },
-      {
-        "id": 111217,
-        "name": "Pavel Liška",
-        "birthday": "1972-01-29",
-        "deathday": null,
-        "age": 54,
-        "image": "https://image.tmdb.org/t/p/w300/kjtMEeCbYzX9Pky1ZfGIVyWJ7Gu.jpg"
-      },
-      {
-        "id": 47838,
-        "name": "Miroslav Táborský",
-        "birthday": "1959-11-09",
-        "deathday": null,
-        "age": 66,
-        "image": "https://image.tmdb.org/t/p/w300/nAjgnvfc8F1sF4gijJGIOmN0gB8.jpg"
-      },
-      {
-        "id": 96384,
-        "name": "Miroslav Krobot",
-        "birthday": "1951-11-12",
-        "deathday": null,
-        "age": 74,
-        "image": "https://image.tmdb.org/t/p/w300/8xq3PCCUBXjJDqF9Kz0abOmo9eg.jpg"
+        "age": 40,
+        "image": "https://image.tmdb.org/t/p/w300/o1vb5chlQ7SR7ncIVoaOG2goB12.jpg"
       },
       {
         "id": 138828,
@@ -25413,12 +25510,288 @@
         "image": "https://image.tmdb.org/t/p/w300/i8o9nZHcRiwK9RVOKEMmaM8RILG.jpg"
       },
       {
-        "id": 127873,
-        "name": "David Novotný",
-        "birthday": "1969-06-12",
+        "id": 2854824,
+        "name": "Karin Vápeníčková",
+        "birthday": null,
         "deathday": null,
-        "age": 57,
-        "image": "https://image.tmdb.org/t/p/w300/ugtOkVgF2y3QDZ1prEDNJLZ39BQ.jpg"
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/hc0kpJwOGCSsVCTjdSisB2K3MBj.jpg"
+      },
+      {
+        "id": 35118,
+        "name": "Petr Forman",
+        "birthday": "1964-08-23",
+        "deathday": null,
+        "age": 62,
+        "image": "https://image.tmdb.org/t/p/w300/sLcHD4HNl6bDqo2zvR4xS3UnPzX.jpg"
+      },
+      {
+        "id": 47838,
+        "name": "Miroslav Táborský",
+        "birthday": "1959-11-09",
+        "deathday": null,
+        "age": 66,
+        "image": "https://image.tmdb.org/t/p/w300/nAjgnvfc8F1sF4gijJGIOmN0gB8.jpg"
+      },
+      {
+        "id": 83878,
+        "name": "Barbora Hrzánová",
+        "birthday": "1964-04-22",
+        "deathday": null,
+        "age": 62,
+        "image": "https://image.tmdb.org/t/p/w300/neOHi3sRMRMW47G0FNU9hp9PQzt.jpg"
+      },
+      {
+        "id": 133561,
+        "name": "Radek Holub",
+        "birthday": "1968-08-22",
+        "deathday": null,
+        "age": 58,
+        "image": "https://image.tmdb.org/t/p/w300/s8bJAr5rG9D3ogGYE7gYKvCQNVz.jpg"
+      },
+      {
+        "id": 2291999,
+        "name": "Michal Bureš",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 111217,
+        "name": "Pavel Liška",
+        "birthday": "1972-01-29",
+        "deathday": null,
+        "age": 54,
+        "image": "https://image.tmdb.org/t/p/w300/kjtMEeCbYzX9Pky1ZfGIVyWJ7Gu.jpg"
+      },
+      {
+        "id": 222829,
+        "name": "David Vávra",
+        "birthday": "1957-03-09",
+        "deathday": null,
+        "age": 69,
+        "image": "https://image.tmdb.org/t/p/w300/q9I9oDFueawEd71FhnS3UX0lCb4.jpg"
+      }
+    ],
+    "reviews": []
+  },
+  {
+    "title": "Fentasy",
+    "tmdb_id": 1237772,
+    "imdb_id": "tt30886984",
+    "year": 2024,
+    "date": "2024-03-14",
+    "score": 50,
+    "box": null,
+    "box_currency": null,
+    "country": "Slovensko",
+    "genre": "Krimi",
+    "runtime": 85,
+    "poster": "https://image.tmdb.org/t/p/w342/3m6UI9B8DAMEJpcIAvRbbZZs50U.jpg",
+    "gallery": [
+      "https://image.tmdb.org/t/p/w500/hQwkl15FCKWvtoa6aAjjFTbaJVH.jpg"
+    ],
+    "summary": "Sofia nadevše miluje divoké večírky. A to hlavně ty, na kterých jsou hlavním zdrojem zábavy látky silnější než alkohol. Se svým novým přítelem Pellerem, amatérským chemikem, rozjíždí velmi lukrativní podnikání. Když se totiž jakákoliv podomácku vyrobená droga řízne fentanylem, její účinky se závratně násobí. A stejně tak zisk. Co na tom, že jejich droga se pro mnohé stává smrtícím koktejlem, když teď vládnou pouliční scéně. Euforii z rychle rostoucího bohatství vystřídá kruté vystřízlivění. Jejich úspěch velmi brzy přiláká pozornost policie, ale hlavně ruské mafie, která konkurenci netoleruje. Sofia se rozhodne hrát vabank a nezáleží, kolik životů to bude stát...",
+    "director": {
+      "id": 4506610,
+      "name": "Samuel Vičan",
+      "image": ""
+    },
+    "composer": {
+      "id": 1080768,
+      "name": "Ondřej Brousek",
+      "image": "https://image.tmdb.org/t/p/w300/csXoFuWxxF5oYWIi43JAlTHY4YB.jpg"
+    },
+    "writer": {
+      "id": 4506612,
+      "name": "Anastasia Hoppanová",
+      "image": ""
+    },
+    "actors": [
+      {
+        "id": 1728589,
+        "name": "Kristína Kanátová",
+        "birthday": "1992-04-22",
+        "deathday": null,
+        "age": 34,
+        "image": "https://image.tmdb.org/t/p/w300/p1bcRTN4xUuVZgCK8Ukz91qczmR.jpg"
+      },
+      {
+        "id": 138851,
+        "name": "David Švehlík",
+        "birthday": "1972-04-06",
+        "deathday": null,
+        "age": 54,
+        "image": "https://image.tmdb.org/t/p/w300/1ommaNCH8Cj7Ht7F7PVBj4Sa3jS.jpg"
+      },
+      {
+        "id": 1421792,
+        "name": "Noël Czuczor",
+        "birthday": "1989-03-25",
+        "deathday": null,
+        "age": 37,
+        "image": "https://image.tmdb.org/t/p/w300/oJwaNWq6EJT88rZeos6XXY2L1Lk.jpg"
+      },
+      {
+        "id": 1848162,
+        "name": "Anna Jakab Rakovská",
+        "birthday": "1993-06-04",
+        "deathday": null,
+        "age": 33,
+        "image": "https://image.tmdb.org/t/p/w300/6Zzt4hqrhcBArkrCYHvowgW2wEr.jpg"
+      },
+      {
+        "id": 3473203,
+        "name": "Viktória Šuplatová",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/ax9DvUqwF4hGbWWJHSkb4mybUM9.jpg"
+      },
+      {
+        "id": 2692286,
+        "name": "Peter Ondrejička",
+        "birthday": "1994-04-25",
+        "deathday": null,
+        "age": 32,
+        "image": "https://image.tmdb.org/t/p/w300/sPSzIY1HzkqXJSvlaQrLBKesIUs.jpg"
+      },
+      {
+        "id": 1654235,
+        "name": "Tomáš Magát",
+        "birthday": "1990-07-30",
+        "deathday": null,
+        "age": 36,
+        "image": "https://image.tmdb.org/t/p/w300/nHPo09cf94pYgazMyBBxPfMn6hS.jpg"
+      },
+      {
+        "id": 1080757,
+        "name": "Vladimír Jedľovský",
+        "birthday": "1951-11-07",
+        "deathday": null,
+        "age": 74,
+        "image": "https://image.tmdb.org/t/p/w300/swfMrIHt7ywSIYUH9w5EZxTAI0h.jpg"
+      },
+      {
+        "id": 1996783,
+        "name": "Erik Ollé",
+        "birthday": "1975-08-09",
+        "deathday": null,
+        "age": 51,
+        "image": "https://image.tmdb.org/t/p/w300/pd9znkSk6TKkLuubBZg6DCWfhiS.jpg"
+      },
+      {
+        "id": 2912214,
+        "name": "Emil Zvarik",
+        "birthday": "1997-08-19",
+        "deathday": null,
+        "age": 29,
+        "image": "https://image.tmdb.org/t/p/w300/tmYuU28T4BINZ3OSNwFxZiqk7LU.jpg"
+      },
+      {
+        "id": 2163533,
+        "name": "Broňa Kováčiková",
+        "birthday": "1996-07-08",
+        "deathday": null,
+        "age": 30,
+        "image": "https://image.tmdb.org/t/p/w300/iHGC1x8gj6M0HuP2bWHKb5crV4d.jpg"
+      },
+      {
+        "id": 1649030,
+        "name": "Zuzana Konečná",
+        "birthday": "1985-02-11",
+        "deathday": null,
+        "age": 41,
+        "image": "https://image.tmdb.org/t/p/w300/a95E20hh8fqi60V8OOMQ43IrDwi.jpg"
+      },
+      {
+        "id": 5106201,
+        "name": "Patrik Puchner",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5106203,
+        "name": "Peter Lahuta",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 3839743,
+        "name": "Drahomíra Kuliačková Panušková",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/udTtiFi6TAT5j7Nl0M3jLAQL1tE.jpg"
+      },
+      {
+        "id": 5106206,
+        "name": "Anna Olšová",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5106207,
+        "name": "Štefan Matejička",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5106208,
+        "name": "Janka Spergerová",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5106210,
+        "name": "Mária Michalová",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5106211,
+        "name": "Klára Lapinová",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5106212,
+        "name": "Martin Darnadi",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 4670057,
+        "name": "Ladislav Ciria",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 3922868,
+        "name": "Michaela Mäsiarová",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/h8pf2BEwWL86FjwuJuXWyJUEFMj.jpg"
       }
     ],
     "reviews": []

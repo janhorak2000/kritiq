@@ -221909,6 +221909,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1285895",
+        "type": "movie",
+        "title": "Late Fame",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/bcyXE0p4XmZUlcxvTDbvdG9lgsN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1013850",
         "type": "movie",
         "title": "Opravdová bolest",
@@ -246736,23 +246747,23 @@
         ]
       },
       {
-        "id": "mt1237772",
-        "type": "movie",
-        "title": "Fentasy",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/3m6UI9B8DAMEJpcIAvRbbZZs50U.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1291745",
         "type": "movie",
         "title": "Kavej",
         "year": 2024,
         "score": 61,
         "poster": "https://image.tmdb.org/t/p/w342/mXQfajD7gLPxWeEvOJgSfeDPTiV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1237772",
+        "type": "movie",
+        "title": "Fentasy",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/3m6UI9B8DAMEJpcIAvRbbZZs50U.jpg",
         "roles": [
           "actor"
         ]
@@ -256652,6 +256663,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "mt1285895",
+        "type": "movie",
+        "title": "Late Fame",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/bcyXE0p4XmZUlcxvTDbvdG9lgsN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt1212271",
         "type": "movie",
@@ -319658,17 +319680,6 @@
         ]
       },
       {
-        "id": "mt1150639",
-        "type": "movie",
-        "title": "Tajný zákop",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/lKh7eybPjrwBqv2632et5k54UUN.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1174842",
         "type": "movie",
         "title": "Každý má svou pravdu",
@@ -319686,6 +319697,17 @@
         "year": 2023,
         "score": 62,
         "poster": "https://image.tmdb.org/t/p/w342/c8SMPkLcGgmpCYl3o1w1no0h7ir.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1150639",
+        "type": "movie",
+        "title": "Tajný zákop",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/lKh7eybPjrwBqv2632et5k54UUN.jpg",
         "roles": [
           "actor"
         ]
@@ -355070,17 +355092,6 @@
         ]
       },
       {
-        "id": "mt1237772",
-        "type": "movie",
-        "title": "Fentasy",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/3m6UI9B8DAMEJpcIAvRbbZZs50U.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1282833",
         "type": "movie",
         "title": "Svobodu slepicím!",
@@ -355098,6 +355109,17 @@
         "year": 2024,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/okskb3QDQEdY6UF8JC41MyRjBHu.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1237772",
+        "type": "movie",
+        "title": "Fentasy",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/3m6UI9B8DAMEJpcIAvRbbZZs50U.jpg",
         "roles": [
           "actor"
         ]
@@ -375895,6 +375917,26 @@
       }
     ]
   },
+  "p5671959": {
+    "name": "Lukáš Sigmund",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1099453",
+        "type": "movie",
+        "title": "Villa Lucia",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/3DoIC0wP8dCHkBvHjOGeZ0W54d2.jpg",
+        "roles": [
+          "writer"
+        ]
+      }
+    ]
+  },
   "p4493859": {
     "name": "Milan Gablas",
     "img": null,
@@ -376049,257 +376091,6 @@
         "year": 2023,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/aREom59q6OMgwjQEuQhV1yHMmx2.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1080768": {
-    "name": "Ondřej Brousek",
-    "img": "/csXoFuWxxF5oYWIi43JAlTHY4YB.jpg",
-    "birthday": "1981-03-28",
-    "deathday": null,
-    "age": 45,
-    "works": [
-      {
-        "id": "mt1503469",
-        "type": "movie",
-        "title": "Uzel zla",
-        "year": 2025,
-        "score": 46,
-        "poster": "https://image.tmdb.org/t/p/w342/8M6qYct51eGypGf4l5eMkbz22yK.jpg",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
-        "id": "st273991",
-        "type": "show",
-        "title": "Limity",
-        "year": 2025,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/c6cjIj1DvJEaCUmCVEnP91dVP2R.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1237772",
-        "type": "movie",
-        "title": "Fentasy",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/3m6UI9B8DAMEJpcIAvRbbZZs50U.jpg",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
-        "id": "mt588890",
-        "type": "movie",
-        "title": "Myši patří do nebe",
-        "year": 2021,
-        "score": 67,
-        "poster": "https://image.tmdb.org/t/p/w342/a5ewhL36pAac0oUSJh1lwhmL5I5.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt868858",
-        "type": "movie",
-        "title": "Sama v čase normálnosti",
-        "year": 2021,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
-        "id": "mt950300",
-        "type": "movie",
-        "title": "Monkey Business v ostravském Brickhousu",
-        "year": 2019,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st94177",
-        "type": "show",
-        "title": "Dobrodružství s orchestrem",
-        "year": 2019,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt749725",
-        "type": "movie",
-        "title": "Amadeus",
-        "year": 2018,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st91420",
-        "type": "show",
-        "title": "Místo zločinu Plzeň",
-        "year": 2015,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/uZjyYRXJvwUtxQMdMBqSSn1FI3r.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt934795",
-        "type": "movie",
-        "title": "Vřesový trůn",
-        "year": 2006,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
-        "id": "st28171",
-        "type": "show",
-        "title": "Redakce",
-        "year": 2004,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/qaXfb6V9Be6kgtzwc1ka3Cobh3g.jpg",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
-        "id": "mt1162598",
-        "type": "movie",
-        "title": "Prsten kohouta Alektrya",
-        "year": 2002,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/7esHcUTGiIsktPPzmaU8aLiHtKs.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st36217",
-        "type": "show",
-        "title": "O ztracené lásce",
-        "year": 2002,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/vIO3cEIZwClffF5J4lnagntZVoG.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt306877",
-        "type": "movie",
-        "title": "Elixír a Halíbela",
-        "year": 2001,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/bHywjg5qNFny2UxsbTHiz2xOeK5.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt511965",
-        "type": "movie",
-        "title": "Ze života pubescentky",
-        "year": 2000,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/2aARdKoYUd3BXhyatLNwgfxjkus.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt809950",
-        "type": "movie",
-        "title": "Stín",
-        "year": 1999,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt512429",
-        "type": "movie",
-        "title": "Stříbrný a Ryšavec",
-        "year": 1999,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/xHtB9ijcOmWkHiDdZqtFTkeeoad.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1573790",
-        "type": "movie",
-        "title": "Dceruška Růže",
-        "year": 1999,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt15387",
-        "type": "movie",
-        "title": "Pelíšky",
-        "year": 1999,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/pcmeM8epUgYWlxSxkzQEzp7PJ4N.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st37770",
-        "type": "show",
-        "title": "Policajti z předměstí",
-        "year": 1999,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/fHvwHp5O3ONeF8TvqBp3zlxj28q.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt513557",
-        "type": "movie",
-        "title": "Spravedlivý Bohumil",
-        "year": 1998,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/nhIRdLQb4VvRL40Nhex6viwxmVc.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt250917",
-        "type": "movie",
-        "title": "Pták Ohnivák",
-        "year": 1997,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/z9SMcGMq7fuawGueSjXE6Pp68Kr.jpg",
         "roles": [
           "actor"
         ]
@@ -377623,6 +377414,257 @@
         "year": 1956,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/lyouYXU7WAN2ZTbSCeJfOTy41HC.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1080768": {
+    "name": "Ondřej Brousek",
+    "img": "/csXoFuWxxF5oYWIi43JAlTHY4YB.jpg",
+    "birthday": "1981-03-28",
+    "deathday": null,
+    "age": 45,
+    "works": [
+      {
+        "id": "mt1503469",
+        "type": "movie",
+        "title": "Uzel zla",
+        "year": 2025,
+        "score": 46,
+        "poster": "https://image.tmdb.org/t/p/w342/8M6qYct51eGypGf4l5eMkbz22yK.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "st273991",
+        "type": "show",
+        "title": "Limity",
+        "year": 2025,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/c6cjIj1DvJEaCUmCVEnP91dVP2R.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1237772",
+        "type": "movie",
+        "title": "Fentasy",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/3m6UI9B8DAMEJpcIAvRbbZZs50U.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "mt588890",
+        "type": "movie",
+        "title": "Myši patří do nebe",
+        "year": 2021,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/a5ewhL36pAac0oUSJh1lwhmL5I5.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt868858",
+        "type": "movie",
+        "title": "Sama v čase normálnosti",
+        "year": 2021,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "mt950300",
+        "type": "movie",
+        "title": "Monkey Business v ostravském Brickhousu",
+        "year": 2019,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st94177",
+        "type": "show",
+        "title": "Dobrodružství s orchestrem",
+        "year": 2019,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt749725",
+        "type": "movie",
+        "title": "Amadeus",
+        "year": 2018,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st91420",
+        "type": "show",
+        "title": "Místo zločinu Plzeň",
+        "year": 2015,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/uZjyYRXJvwUtxQMdMBqSSn1FI3r.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt934795",
+        "type": "movie",
+        "title": "Vřesový trůn",
+        "year": 2006,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "st28171",
+        "type": "show",
+        "title": "Redakce",
+        "year": 2004,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/qaXfb6V9Be6kgtzwc1ka3Cobh3g.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "mt1162598",
+        "type": "movie",
+        "title": "Prsten kohouta Alektrya",
+        "year": 2002,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/7esHcUTGiIsktPPzmaU8aLiHtKs.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st36217",
+        "type": "show",
+        "title": "O ztracené lásce",
+        "year": 2002,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/vIO3cEIZwClffF5J4lnagntZVoG.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt306877",
+        "type": "movie",
+        "title": "Elixír a Halíbela",
+        "year": 2001,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/bHywjg5qNFny2UxsbTHiz2xOeK5.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt511965",
+        "type": "movie",
+        "title": "Ze života pubescentky",
+        "year": 2000,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/2aARdKoYUd3BXhyatLNwgfxjkus.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt809950",
+        "type": "movie",
+        "title": "Stín",
+        "year": 1999,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt512429",
+        "type": "movie",
+        "title": "Stříbrný a Ryšavec",
+        "year": 1999,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/xHtB9ijcOmWkHiDdZqtFTkeeoad.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1573790",
+        "type": "movie",
+        "title": "Dceruška Růže",
+        "year": 1999,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt15387",
+        "type": "movie",
+        "title": "Pelíšky",
+        "year": 1999,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/pcmeM8epUgYWlxSxkzQEzp7PJ4N.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st37770",
+        "type": "show",
+        "title": "Policajti z předměstí",
+        "year": 1999,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/fHvwHp5O3ONeF8TvqBp3zlxj28q.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt513557",
+        "type": "movie",
+        "title": "Spravedlivý Bohumil",
+        "year": 1998,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/nhIRdLQb4VvRL40Nhex6viwxmVc.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt250917",
+        "type": "movie",
+        "title": "Pták Ohnivák",
+        "year": 1997,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/z9SMcGMq7fuawGueSjXE6Pp68Kr.jpg",
         "roles": [
           "actor"
         ]
@@ -379388,26 +379430,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/xkCUJdz5ZPWpBwTmheVrRPITEKe.jpg",
         "roles": [
           "actor"
-        ]
-      }
-    ]
-  },
-  "p5671959": {
-    "name": "Lukáš Sigmund",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1099453",
-        "type": "movie",
-        "title": "Villa Lucia",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/3DoIC0wP8dCHkBvHjOGeZ0W54d2.jpg",
-        "roles": [
-          "writer"
         ]
       }
     ]

@@ -253269,6 +253269,26 @@
       }
     ]
   },
+  "p5260758": {
+    "name": "Michael Lowery",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1285895",
+        "type": "movie",
+        "title": "Late Fame",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/bcyXE0p4XmZUlcxvTDbvdG9lgsN.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p6156917": {
     "name": "Mohammad Athhar Arsaputra",
     "img": null,
@@ -361218,23 +361238,23 @@
         ]
       },
       {
-        "id": "mt1237772",
-        "type": "movie",
-        "title": "Fentasy",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/3m6UI9B8DAMEJpcIAvRbbZZs50U.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1283665",
         "type": "movie",
         "title": "Konec svĕta",
         "year": 2024,
         "score": 60,
         "poster": "https://image.tmdb.org/t/p/w342/dhIMJf7kkkcbPXxyrjzg5RPcnau.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1237772",
+        "type": "movie",
+        "title": "Fentasy",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/3m6UI9B8DAMEJpcIAvRbbZZs50U.jpg",
         "roles": [
           "actor"
         ]

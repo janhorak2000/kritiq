@@ -19880,6 +19880,17 @@
     "age": 28,
     "works": [
       {
+        "id": "mt1285895",
+        "type": "movie",
+        "title": "Late Fame",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/bcyXE0p4XmZUlcxvTDbvdG9lgsN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt661539",
         "type": "movie",
         "title": "Bob Dylan: Úplně neznámý",
@@ -473698,23 +473709,23 @@
         ]
       },
       {
-        "id": "mt1074767",
-        "type": "movie",
-        "title": "Erhart",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/mbcYo543VAoASCSH0uoSfdYkYyJ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1179960",
         "type": "movie",
         "title": "Klíč svatého Petra",
         "year": 2023,
         "score": 55,
         "poster": "https://image.tmdb.org/t/p/w342/zm4XGluuTen7wOVceK1yIvHrJ2i.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1074767",
+        "type": "movie",
+        "title": "Erhart",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/mbcYo543VAoASCSH0uoSfdYkYyJ.jpg",
         "roles": [
           "actor"
         ]
@@ -495071,23 +495082,23 @@
         ]
       },
       {
-        "id": "mt1237772",
-        "type": "movie",
-        "title": "Fentasy",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/3m6UI9B8DAMEJpcIAvRbbZZs50U.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1231374",
         "type": "movie",
         "title": "Válka policajtů",
         "year": 2024,
         "score": 65,
         "poster": "https://image.tmdb.org/t/p/w342/zFDuzv08Dj7lkZC8E3TXYogATbe.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1237772",
+        "type": "movie",
+        "title": "Fentasy",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/3m6UI9B8DAMEJpcIAvRbbZZs50U.jpg",
         "roles": [
           "actor"
         ]
@@ -495358,6 +495369,26 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/eCUYoQP0tB5mfwVUT3NidnoQCI3.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6552346": {
+    "name": "Noel Anne",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1765072",
+        "type": "movie",
+        "title": "Uvidíš všechno",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/Ap8QwmKfSjYbWC4XIP8w9pdn72O.jpg",
         "roles": [
           "actor"
         ]
@@ -732533,6 +732564,175 @@
       }
     ]
   },
+  "p2484568": {
+    "name": "František Půlpán",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1567376",
+        "type": "movie",
+        "title": "Ke všem čertům",
+        "year": 2025,
+        "score": 40,
+        "poster": "https://image.tmdb.org/t/p/w342/zIdTzRngywAtW9zZ9blnQlj5hlL.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1408916",
+        "type": "movie",
+        "title": "Čarodějnická pohádka",
+        "year": 2024,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1222338",
+        "type": "movie",
+        "title": "Dvě Mařenky",
+        "year": 2023,
+        "score": 50,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt922179",
+        "type": "movie",
+        "title": "O kouzelné rybí kostičce",
+        "year": 2021,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1224759",
+        "type": "movie",
+        "title": "Loupežnická balada",
+        "year": 2020,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt934793",
+        "type": "movie",
+        "title": "Vodníkova princezna",
+        "year": 2018,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt924083",
+        "type": "movie",
+        "title": "Nejkrásnější dar",
+        "year": 2017,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt454912",
+        "type": "movie",
+        "title": "Minulost",
+        "year": 1998,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4447617": {
+    "name": "Karolína Daitlová",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1222338",
+        "type": "movie",
+        "title": "Dvě Mařenky",
+        "year": 2023,
+        "score": 50,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3061771": {
+    "name": "Zdeněk Zvonek",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1118178",
+        "type": "movie",
+        "title": "Expedice Kola",
+        "year": 2023,
+        "score": 50,
+        "poster": "",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "mt791382",
+        "type": "movie",
+        "title": "Čeští vědci v tající Arktidě",
+        "year": 2021,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      }
+    ]
+  },
+  "p5066774": {
+    "name": "Václav Trnka",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1193181",
+        "type": "movie",
+        "title": "Dýchajúce obrazy",
+        "year": 2023,
+        "score": 50,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2484447": {
     "name": "Dalibor Buš",
     "img": "/67sLPH8MJwPKXzRxooc0mRqFroN.jpg",
@@ -734481,103 +734681,6 @@
         "year": 2017,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/olszoRHRpvWiEbAHFXsBN6lEbKS.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2484568": {
-    "name": "František Půlpán",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1567376",
-        "type": "movie",
-        "title": "Ke všem čertům",
-        "year": 2025,
-        "score": 40,
-        "poster": "https://image.tmdb.org/t/p/w342/zIdTzRngywAtW9zZ9blnQlj5hlL.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1408916",
-        "type": "movie",
-        "title": "Čarodějnická pohádka",
-        "year": 2024,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1222338",
-        "type": "movie",
-        "title": "Dvě Mařenky",
-        "year": 2023,
-        "score": 50,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt922179",
-        "type": "movie",
-        "title": "O kouzelné rybí kostičce",
-        "year": 2021,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1224759",
-        "type": "movie",
-        "title": "Loupežnická balada",
-        "year": 2020,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt934793",
-        "type": "movie",
-        "title": "Vodníkova princezna",
-        "year": 2018,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt924083",
-        "type": "movie",
-        "title": "Nejkrásnější dar",
-        "year": 2017,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt454912",
-        "type": "movie",
-        "title": "Minulost",
-        "year": 1998,
-        "score": null,
-        "poster": "",
         "roles": [
           "actor"
         ]
@@ -743421,38 +743524,6 @@
       }
     ]
   },
-  "p3061771": {
-    "name": "Zdeněk Zvonek",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1118178",
-        "type": "movie",
-        "title": "Expedice Kola",
-        "year": 2023,
-        "score": 50,
-        "poster": "",
-        "roles": [
-          "director"
-        ]
-      },
-      {
-        "id": "mt791382",
-        "type": "movie",
-        "title": "Čeští vědci v tající Arktidě",
-        "year": 2021,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "director",
-          "writer"
-        ]
-      }
-    ]
-  },
   "p4262135": {
     "name": "Ján Hančin",
     "img": null,
@@ -747393,46 +747464,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/x5SZgjRo0fqK8zh47n6numIthX9.jpg",
         "roles": [
           "director"
-        ]
-      }
-    ]
-  },
-  "p4447617": {
-    "name": "Karolína Daitlová",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1222338",
-        "type": "movie",
-        "title": "Dvě Mařenky",
-        "year": 2023,
-        "score": 50,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5066774": {
-    "name": "Václav Trnka",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1193181",
-        "type": "movie",
-        "title": "Dýchajúce obrazy",
-        "year": 2023,
-        "score": 50,
-        "poster": "",
-        "roles": [
-          "actor"
         ]
       }
     ]
@@ -787946,6 +787977,17 @@
         "year": 2026,
         "score": 84,
         "poster": "https://image.tmdb.org/t/p/w342/unR9jBLm0j13XgIqMg1pcAZt2a0.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st303745",
+        "type": "show",
+        "title": "Láska v přestrojení",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/5T4P5CyAGBmb8Rb3aNwDeBJDPTH.jpg",
         "roles": [
           "actor"
         ]

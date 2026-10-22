@@ -180951,6 +180951,17 @@
     "age": 49,
     "works": [
       {
+        "id": "st303745",
+        "type": "show",
+        "title": "Láska v přestrojení",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/5T4P5CyAGBmb8Rb3aNwDeBJDPTH.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st230923",
         "type": "show",
         "title": "Okouzlující běžec",
@@ -647134,197 +647145,20 @@
       }
     ]
   },
-  "p2201362": {
-    "name": "Denis Šafařík",
-    "img": "/33hQysB8tkvfVHY13ZDAOMfGYjC.jpg",
-    "birthday": "1994-03-04",
+  "p3889048": {
+    "name": "Pavel Kumžǎk",
+    "img": null,
+    "birthday": null,
     "deathday": null,
-    "age": 32,
+    "age": null,
     "works": [
       {
-        "id": "mt1416927",
+        "id": "mt1078165",
         "type": "movie",
-        "title": "40 rolí",
-        "year": 2025,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/9onoVXKiUvkiQsrpCBs2QY05Njs.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1294729",
-        "type": "movie",
-        "title": "Tichá pošta",
-        "year": 2025,
-        "score": 58,
-        "poster": "https://image.tmdb.org/t/p/w342/snB0NnZhxbXYCaZ4s1VBi77P5K7.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st286409",
-        "type": "show",
-        "title": "Noční operatér",
-        "year": 2025,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/x2a98Fa9vYsXZXP2zJ1fnvK6RFW.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st294284",
-        "type": "show",
-        "title": "Bratři a sestry",
-        "year": 2025,
-        "score": 30,
-        "poster": "https://image.tmdb.org/t/p/w342/o0Ez8FCq0kS9FnCk8NQHKkX9RpS.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1389313",
-        "type": "movie",
-        "title": "Marta",
-        "year": 2024,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1104172",
-        "type": "movie",
-        "title": "O malých věcech",
+        "title": "Husa",
         "year": 2023,
         "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/rpNy6ayzh5FIbY4kEVnn8U4cpDZ.jpg",
-        "roles": [
-          "director",
-          "writer"
-        ]
-      },
-      {
-        "id": "mt1174842",
-        "type": "movie",
-        "title": "Každý má svou pravdu",
-        "year": 2023,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/eOSyA1MbLgVtoCVvttLmW9wvlem.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1134950",
-        "type": "movie",
-        "title": "294 statečných",
-        "year": 2023,
-        "score": 65,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st227856",
-        "type": "show",
-        "title": "Vědma",
-        "year": 2023,
-        "score": 10,
-        "poster": "https://image.tmdb.org/t/p/w342/cEEWd1bu18IgWXvPgadK3i3xQRH.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st205151",
-        "type": "show",
-        "title": "Král Šumavy",
-        "year": 2022,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/3zJPVia5mCjZfyAEQDpOASctJhi.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st153996",
-        "type": "show",
-        "title": "Odznak Vysočina",
-        "year": 2022,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/pqWEfUaaXTP5KbJibkB51D5DoYz.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt810916",
-        "type": "movie",
-        "title": "Španělská chřipka",
-        "year": 2021,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st105917",
-        "type": "show",
-        "title": "Zločiny Velké Prahy",
-        "year": 2021,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/f2EVdMTaUQhRshsolIW1Yoxc1WK.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st132919",
-        "type": "show",
-        "title": "Pan profesor",
-        "year": 2021,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/k4BuikCxH4HnmUtrjqFQUjSBX6E.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt570542",
-        "type": "movie",
-        "title": "Kouzelník Žito",
-        "year": 2018,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/c43UyxNhDEIGJL6QVOas4mq2O9z.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt509345",
-        "type": "movie",
-        "title": "Věčně tvá nevěrná",
-        "year": 2018,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/dkxkaNtTtxqEehxwoER3gsBnWfu.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st74429",
-        "type": "show",
-        "title": "Tvoje tvář má známý hlas",
-        "year": 2016,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/4x5xCqeqX9TocHBzU4YNFdlSPpk.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/tKLtADLl0khA0b5YDVUx5xoQzFo.jpg",
         "roles": [
           "actor"
         ]
@@ -648138,6 +647972,203 @@
       }
     ]
   },
+  "p2201362": {
+    "name": "Denis Šafařík",
+    "img": "/33hQysB8tkvfVHY13ZDAOMfGYjC.jpg",
+    "birthday": "1994-03-04",
+    "deathday": null,
+    "age": 32,
+    "works": [
+      {
+        "id": "mt1416927",
+        "type": "movie",
+        "title": "40 rolí",
+        "year": 2025,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/9onoVXKiUvkiQsrpCBs2QY05Njs.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1294729",
+        "type": "movie",
+        "title": "Tichá pošta",
+        "year": 2025,
+        "score": 58,
+        "poster": "https://image.tmdb.org/t/p/w342/snB0NnZhxbXYCaZ4s1VBi77P5K7.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st286409",
+        "type": "show",
+        "title": "Noční operatér",
+        "year": 2025,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/x2a98Fa9vYsXZXP2zJ1fnvK6RFW.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st294284",
+        "type": "show",
+        "title": "Bratři a sestry",
+        "year": 2025,
+        "score": 30,
+        "poster": "https://image.tmdb.org/t/p/w342/o0Ez8FCq0kS9FnCk8NQHKkX9RpS.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1389313",
+        "type": "movie",
+        "title": "Marta",
+        "year": 2024,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1174842",
+        "type": "movie",
+        "title": "Každý má svou pravdu",
+        "year": 2023,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/eOSyA1MbLgVtoCVvttLmW9wvlem.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1134950",
+        "type": "movie",
+        "title": "294 statečných",
+        "year": 2023,
+        "score": 65,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1104172",
+        "type": "movie",
+        "title": "O malých věcech",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/rpNy6ayzh5FIbY4kEVnn8U4cpDZ.jpg",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      },
+      {
+        "id": "st227856",
+        "type": "show",
+        "title": "Vědma",
+        "year": 2023,
+        "score": 10,
+        "poster": "https://image.tmdb.org/t/p/w342/cEEWd1bu18IgWXvPgadK3i3xQRH.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st205151",
+        "type": "show",
+        "title": "Král Šumavy",
+        "year": 2022,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/3zJPVia5mCjZfyAEQDpOASctJhi.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st153996",
+        "type": "show",
+        "title": "Odznak Vysočina",
+        "year": 2022,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/pqWEfUaaXTP5KbJibkB51D5DoYz.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt810916",
+        "type": "movie",
+        "title": "Španělská chřipka",
+        "year": 2021,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st105917",
+        "type": "show",
+        "title": "Zločiny Velké Prahy",
+        "year": 2021,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/f2EVdMTaUQhRshsolIW1Yoxc1WK.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st132919",
+        "type": "show",
+        "title": "Pan profesor",
+        "year": 2021,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/k4BuikCxH4HnmUtrjqFQUjSBX6E.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt570542",
+        "type": "movie",
+        "title": "Kouzelník Žito",
+        "year": 2018,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/c43UyxNhDEIGJL6QVOas4mq2O9z.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt509345",
+        "type": "movie",
+        "title": "Věčně tvá nevěrná",
+        "year": 2018,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/dkxkaNtTtxqEehxwoER3gsBnWfu.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st74429",
+        "type": "show",
+        "title": "Tvoje tvář má známý hlas",
+        "year": 2016,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/4x5xCqeqX9TocHBzU4YNFdlSPpk.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p3945445": {
     "name": "David Chmelař",
     "img": null,
@@ -648305,26 +648336,6 @@
         "poster": "",
         "roles": [
           "actor"
-        ]
-      }
-    ]
-  },
-  "p4506610": {
-    "name": "Samuel Vičan",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1237772",
-        "type": "movie",
-        "title": "Fentasy",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/3m6UI9B8DAMEJpcIAvRbbZZs50U.jpg",
-        "roles": [
-          "director"
         ]
       }
     ]
@@ -661390,26 +661401,6 @@
       }
     ]
   },
-  "p3889048": {
-    "name": "Pavel Kumžǎk",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1078165",
-        "type": "movie",
-        "title": "Husa",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/tKLtADLl0khA0b5YDVUx5xoQzFo.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p4524386": {
     "name": "Peter Bús",
     "img": "/xbD5dPnjRfDHlXWVhHKotOJp1Ht.jpg",
@@ -661845,6 +661836,26 @@
         "poster": "https://image.tmdb.org/t/p/w342/oUP6VfWQGVgXMj5dChfXoM2hc7O.jpg",
         "roles": [
           "composer"
+        ]
+      }
+    ]
+  },
+  "p4506610": {
+    "name": "Samuel Vičan",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1237772",
+        "type": "movie",
+        "title": "Fentasy",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/3m6UI9B8DAMEJpcIAvRbbZZs50U.jpg",
+        "roles": [
+          "director"
         ]
       }
     ]

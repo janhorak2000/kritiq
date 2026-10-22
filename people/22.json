@@ -97355,6 +97355,17 @@
     "age": 58,
     "works": [
       {
+        "id": "st303745",
+        "type": "show",
+        "title": "Láska v přestrojení",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/5T4P5CyAGBmb8Rb3aNwDeBJDPTH.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st154824",
         "type": "show",
         "title": "Nashle v mém 19. životě",
@@ -246513,6 +246524,92 @@
       }
     ]
   },
+  "p1729333": {
+    "name": "Ava Eisenson",
+    "img": "/yNqQhaTh9fx1mt7x4rQBnRdnO0g.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1285895",
+        "type": "movie",
+        "title": "Late Fame",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/bcyXE0p4XmZUlcxvTDbvdG9lgsN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt949838",
+        "type": "movie",
+        "title": "72 hodin",
+        "year": 2026,
+        "score": 54,
+        "poster": "https://image.tmdb.org/t/p/w342/9Bu1PW2R1XayqRqnl0aDOgMcrdS.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st131142",
+        "type": "show",
+        "title": "Love Story",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/qp67ixTkVd4MEhMZhGorFoOXRxl.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st123192",
+        "type": "show",
+        "title": "Přeplněný pokoj",
+        "year": 2023,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/cljjPk246WQsZmbVOAFKlBNyTkm.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st95839",
+        "type": "show",
+        "title": "Lisey a její příběh",
+        "year": 2021,
+        "score": 59,
+        "poster": "https://image.tmdb.org/t/p/w342/35hEXS71w4W0JHolVR2bjM1gWsL.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt487680",
+        "type": "movie",
+        "title": "Pekelná kuchyně",
+        "year": 2019,
+        "score": 56,
+        "poster": "https://image.tmdb.org/t/p/w342/l3smhHvnczXg8E2WzysRVKIXSYJ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st83127",
+        "type": "show",
+        "title": "Politik",
+        "year": 2019,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/5Bm3rMQAoXSFKAVYMxPYQRyM07U.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p1618332": {
     "name": "Bahia Haifi",
     "img": "/g0uaVCnG3nDQztqU8ukOi6qW8yI.jpg",
@@ -247780,81 +247877,6 @@
         "year": 2023,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1729333": {
-    "name": "Ava Eisenson",
-    "img": "/yNqQhaTh9fx1mt7x4rQBnRdnO0g.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt949838",
-        "type": "movie",
-        "title": "72 hodin",
-        "year": 2026,
-        "score": 54,
-        "poster": "https://image.tmdb.org/t/p/w342/9Bu1PW2R1XayqRqnl0aDOgMcrdS.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st131142",
-        "type": "show",
-        "title": "Love Story",
-        "year": 2026,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/qp67ixTkVd4MEhMZhGorFoOXRxl.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st123192",
-        "type": "show",
-        "title": "Přeplněný pokoj",
-        "year": 2023,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/cljjPk246WQsZmbVOAFKlBNyTkm.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st95839",
-        "type": "show",
-        "title": "Lisey a její příběh",
-        "year": 2021,
-        "score": 59,
-        "poster": "https://image.tmdb.org/t/p/w342/35hEXS71w4W0JHolVR2bjM1gWsL.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt487680",
-        "type": "movie",
-        "title": "Pekelná kuchyně",
-        "year": 2019,
-        "score": 56,
-        "poster": "https://image.tmdb.org/t/p/w342/l3smhHvnczXg8E2WzysRVKIXSYJ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st83127",
-        "type": "show",
-        "title": "Politik",
-        "year": 2019,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/5Bm3rMQAoXSFKAVYMxPYQRyM07U.jpg",
         "roles": [
           "actor"
         ]
@@ -347750,17 +347772,6 @@
         ]
       },
       {
-        "id": "mt1053136",
-        "type": "movie",
-        "title": "Zešílet",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1128515",
         "type": "movie",
         "title": "To ty nosíš smůlu, lásko",
@@ -347778,6 +347789,17 @@
         "year": 2023,
         "score": 72,
         "poster": "https://image.tmdb.org/t/p/w342/g5mKhJJGihhL0AzXxCnWdkJSItU.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1053136",
+        "type": "movie",
+        "title": "Zešílet",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
         "roles": [
           "actor"
         ]
@@ -354086,48 +354108,6 @@
       }
     ]
   },
-  "p3923283": {
-    "name": "Bekim Aziri",
-    "img": null,
-    "birthday": "1988-07-14",
-    "deathday": null,
-    "age": 38,
-    "works": [
-      {
-        "id": "mt1573810",
-        "type": "movie",
-        "title": "Dream Team",
-        "year": 2026,
-        "score": 62,
-        "poster": "https://image.tmdb.org/t/p/w342/wkTTDRKt4VaROYcX71sYWC3pjAr.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1222638",
-        "type": "movie",
-        "title": "Jedeme na teambuilding",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/unUKbHpP6npzgzajv9FI4FxPs6D.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st112361",
-        "type": "show",
-        "title": "Pumpa",
-        "year": 2020,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/imi65M26WFOPsehQsW7wgDQzJFL.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p4628372": {
     "name": "Sára Polyáková",
     "img": "/4lKcSklNR8sXfLX9660sIQvs3R4.jpg",
@@ -358398,6 +358378,48 @@
         "year": 2023,
         "score": 67,
         "poster": "https://image.tmdb.org/t/p/w342/d2sNrpJbirrCQ17UDP9VPdgPXw.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3923283": {
+    "name": "Bekim Aziri",
+    "img": null,
+    "birthday": "1988-07-14",
+    "deathday": null,
+    "age": 38,
+    "works": [
+      {
+        "id": "mt1573810",
+        "type": "movie",
+        "title": "Dream Team",
+        "year": 2026,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/wkTTDRKt4VaROYcX71sYWC3pjAr.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1222638",
+        "type": "movie",
+        "title": "Jedeme na teambuilding",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/unUKbHpP6npzgzajv9FI4FxPs6D.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st112361",
+        "type": "show",
+        "title": "Pumpa",
+        "year": 2020,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/imi65M26WFOPsehQsW7wgDQzJFL.jpg",
         "roles": [
           "actor"
         ]
@@ -385993,6 +386015,26 @@
         "poster": "https://image.tmdb.org/t/p/w342/57XScX1aYtKi1LvHYFQLPUxVhTG.jpg",
         "roles": [
           "actor"
+        ]
+      }
+    ]
+  },
+  "p6060703": {
+    "name": "Moon Soo-jeong",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st303745",
+        "type": "show",
+        "title": "Láska v přestrojení",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/5T4P5CyAGBmb8Rb3aNwDeBJDPTH.jpg",
+        "roles": [
+          "writer"
         ]
       }
     ]
