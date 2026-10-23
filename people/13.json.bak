@@ -107013,6 +107013,17 @@
     "age": 44,
     "works": [
       {
+        "id": "mt1401459",
+        "type": "movie",
+        "title": "Fjord",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/qiYm44CQBFOZ0Vs8BtmH2swYLz2.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt986056",
         "type": "movie",
         "title": "Thunderbolts*",
@@ -251955,6 +251966,17 @@
     "deathday": null,
     "age": 53,
     "works": [
+      {
+        "id": "mt1401459",
+        "type": "movie",
+        "title": "Fjord",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/qiYm44CQBFOZ0Vs8BtmH2swYLz2.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt407518",
         "type": "movie",
@@ -537324,48 +537346,6 @@
       }
     ]
   },
-  "p3875808": {
-    "name": "Ondrej Gubač",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1053136",
-        "type": "movie",
-        "title": "Zešílet",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st70340",
-        "type": "show",
-        "title": "1890",
-        "year": 2017,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/yqisgQudsbaSUMkTLf8kvShw5bR.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st271612",
-        "type": "show",
-        "title": "Kukučka",
-        "year": 2015,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/qWl38bHaZDo8BAeAXDHoVUBnvWt.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p5096489": {
     "name": "Elizabeth Kambou",
     "img": null,
@@ -545159,6 +545139,48 @@
         "year": 2023,
         "score": 63,
         "poster": "https://image.tmdb.org/t/p/w342/hbQSBtHWXlMb60qu16zSm5aNvOP.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3875808": {
+    "name": "Ondrej Gubač",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1053136",
+        "type": "movie",
+        "title": "Zešílet",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st70340",
+        "type": "show",
+        "title": "1890",
+        "year": 2017,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/yqisgQudsbaSUMkTLf8kvShw5bR.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st271612",
+        "type": "show",
+        "title": "Kukučka",
+        "year": 2015,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/qWl38bHaZDo8BAeAXDHoVUBnvWt.jpg",
         "roles": [
           "actor"
         ]
@@ -591221,6 +591243,17 @@
         "year": 2026,
         "score": null,
         "poster": "https://media.rawg.io/media/resize/640/-/screenshots/a7a/a7aed08ad87bacbc7b6b7bec1aba4094.jpg",
+        "roles": [
+          "developer"
+        ]
+      },
+      {
+        "id": "gr1018134",
+        "type": "game",
+        "title": "Final Fantasy Resonance",
+        "year": 2026,
+        "score": null,
+        "poster": "https://media.rawg.io/media/resize/640/-/games/e51/e51aab3845c598b52a2881c3f7155f76.jpg",
         "roles": [
           "developer"
         ]

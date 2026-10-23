@@ -323759,6 +323759,18 @@
     "age": 43,
     "works": [
       {
+        "id": "mt1765072",
+        "type": "movie",
+        "title": "Uvidíš všechno",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/Ap8QwmKfSjYbWC4XIP8w9pdn72O.jpg",
+        "roles": [
+          "actor",
+          "director"
+        ]
+      },
+      {
         "id": "st114655",
         "type": "show",
         "title": "The Curse",
@@ -503317,23 +503329,23 @@
         ]
       },
       {
-        "id": "mt1222638",
-        "type": "movie",
-        "title": "Jedeme na teambuilding",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/unUKbHpP6npzgzajv9FI4FxPs6D.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1099453",
         "type": "movie",
         "title": "Villa Lucia",
         "year": 2023,
         "score": 50,
         "poster": "https://image.tmdb.org/t/p/w342/3DoIC0wP8dCHkBvHjOGeZ0W54d2.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1222638",
+        "type": "movie",
+        "title": "Jedeme na teambuilding",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/unUKbHpP6npzgzajv9FI4FxPs6D.jpg",
         "roles": [
           "actor"
         ]
@@ -547096,6 +547108,26 @@
       }
     ]
   },
+  "p3209937": {
+    "name": "Clay Singer",
+    "img": "/qFcGZDtVUKwbO3XyyrGMPHJ4W6b.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1285895",
+        "type": "movie",
+        "title": "Late Fame",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/bcyXE0p4XmZUlcxvTDbvdG9lgsN.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p6408913": {
     "name": "Dana Beth Steiner",
     "img": null,
@@ -553678,6 +553710,26 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/eCUYoQP0tB5mfwVUT3NidnoQCI3.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6552342": {
+    "name": "Christian Rasmus Holmes IV",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1765072",
+        "type": "movie",
+        "title": "Uvidíš všechno",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/Ap8QwmKfSjYbWC4XIP8w9pdn72O.jpg",
         "roles": [
           "actor"
         ]
@@ -808055,23 +808107,23 @@
         ]
       },
       {
-        "id": "mt1063197",
-        "type": "movie",
-        "title": "Invalida",
-        "year": 2023,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/g5mKhJJGihhL0AzXxCnWdkJSItU.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1099453",
         "type": "movie",
         "title": "Villa Lucia",
         "year": 2023,
         "score": 50,
         "poster": "https://image.tmdb.org/t/p/w342/3DoIC0wP8dCHkBvHjOGeZ0W54d2.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1063197",
+        "type": "movie",
+        "title": "Invalida",
+        "year": 2023,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/g5mKhJJGihhL0AzXxCnWdkJSItU.jpg",
         "roles": [
           "actor"
         ]
@@ -827251,154 +827303,6 @@
       }
     ]
   },
-  "p3377665": {
-    "name": "Ľudmila Lukačíková",
-    "img": "/il0GBdrEhLT00udoCR8pIpWxPq3.jpg",
-    "birthday": "1960-02-28",
-    "deathday": null,
-    "age": 66,
-    "works": [
-      {
-        "id": "mt1053136",
-        "type": "movie",
-        "title": "Zešílet",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st217650",
-        "type": "show",
-        "title": "Dunaj, k vašim službám",
-        "year": 2023,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/dHt0ehVLaHTgN4eulK5T1h0GcmT.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt924457",
-        "type": "movie",
-        "title": "Bolo raz jedno more...",
-        "year": 2022,
-        "score": 60,
-        "poster": "https://image.tmdb.org/t/p/w342/pR7fDCgTAZgvNykOn8C501Y5dgU.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st155377",
-        "type": "show",
-        "title": "Hranica",
-        "year": 2022,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/f1gA7cTm3V9Ebe76YMf4FA1P8Ur.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st221690",
-        "type": "show",
-        "title": "Zrod divadla",
-        "year": 2020,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st70340",
-        "type": "show",
-        "title": "1890",
-        "year": 2017,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/yqisgQudsbaSUMkTLf8kvShw5bR.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt936731",
-        "type": "movie",
-        "title": "Dzeň kolačovi",
-        "year": 1996,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3875811": {
-    "name": "Iveta Baňárová",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1053136",
-        "type": "movie",
-        "title": "Zešílet",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3802628": {
-    "name": "Anna Marie Purić",
-    "img": "/gW4CydhdYH5OdTzsDuBK2AWbNLV.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1222638",
-        "type": "movie",
-        "title": "Jedeme na teambuilding",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/unUKbHpP6npzgzajv9FI4FxPs6D.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st227856",
-        "type": "show",
-        "title": "Vědma",
-        "year": 2023,
-        "score": 10,
-        "poster": "https://image.tmdb.org/t/p/w342/cEEWd1bu18IgWXvPgadK3i3xQRH.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt852052",
-        "type": "movie",
-        "title": "BANGER.",
-        "year": 2022,
-        "score": 67,
-        "poster": "https://image.tmdb.org/t/p/w342/yC2KRI4cWkcWwWIpXMZpyHAOyNz.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p3456106": {
     "name": "Kristiina Mäki",
     "img": "/vT0HfbQWkvrcMijg4vpxvFFmgZ2.jpg",
@@ -828487,48 +828391,6 @@
         "year": 2023,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/zY9Y615CftlaajHuQfGyRElMKCd.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2854824": {
-    "name": "Karin Vápeníčková",
-    "img": "/hc0kpJwOGCSsVCTjdSisB2K3MBj.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1500939",
-        "type": "movie",
-        "title": "1+1+1",
-        "year": 2026,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/7yeNIM0Dmw9jn44VRc01LF6bkg9.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt762901",
-        "type": "movie",
-        "title": "Barevný sen",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/bvzJWqSQbcaKTN2CMdUhXCO1bZY.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1295091",
-        "type": "movie",
-        "title": "Mord",
-        "year": 2024,
-        "score": 67,
-        "poster": "https://image.tmdb.org/t/p/w342/1eIqnuxHZD71lt4vywobujjOcaX.jpg",
         "roles": [
           "actor"
         ]
@@ -831068,6 +830930,48 @@
         "year": 2022,
         "score": 46,
         "poster": "https://image.tmdb.org/t/p/w342/B7qnTrKQ4WbQZmMLnwSw3v9CL9.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2854824": {
+    "name": "Karin Vápeníčková",
+    "img": "/hc0kpJwOGCSsVCTjdSisB2K3MBj.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1500939",
+        "type": "movie",
+        "title": "1+1+1",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/7yeNIM0Dmw9jn44VRc01LF6bkg9.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1295091",
+        "type": "movie",
+        "title": "Mord",
+        "year": 2024,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/1eIqnuxHZD71lt4vywobujjOcaX.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt762901",
+        "type": "movie",
+        "title": "Barevný sen",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/bvzJWqSQbcaKTN2CMdUhXCO1bZY.jpg",
         "roles": [
           "actor"
         ]
@@ -845702,6 +845606,48 @@
       }
     ]
   },
+  "p3802628": {
+    "name": "Anna Marie Purić",
+    "img": "/gW4CydhdYH5OdTzsDuBK2AWbNLV.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1222638",
+        "type": "movie",
+        "title": "Jedeme na teambuilding",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/unUKbHpP6npzgzajv9FI4FxPs6D.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st227856",
+        "type": "show",
+        "title": "Vědma",
+        "year": 2023,
+        "score": 10,
+        "poster": "https://image.tmdb.org/t/p/w342/cEEWd1bu18IgWXvPgadK3i3xQRH.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt852052",
+        "type": "movie",
+        "title": "BANGER.",
+        "year": 2022,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/yC2KRI4cWkcWwWIpXMZpyHAOyNz.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p3802639": {
     "name": "Anna Bangoura",
     "img": "/3xTaDKIQ55LCjMCUin0PrATSRoU.jpg",
@@ -845931,6 +845877,92 @@
         "year": 2022,
         "score": 60,
         "poster": "https://image.tmdb.org/t/p/w342/25cYoJy1PfITeuh1XOz1AikHA2J.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3377665": {
+    "name": "Ľudmila Lukačíková",
+    "img": "/il0GBdrEhLT00udoCR8pIpWxPq3.jpg",
+    "birthday": "1960-02-28",
+    "deathday": null,
+    "age": 66,
+    "works": [
+      {
+        "id": "mt1053136",
+        "type": "movie",
+        "title": "Zešílet",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st217650",
+        "type": "show",
+        "title": "Dunaj, k vašim službám",
+        "year": 2023,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/dHt0ehVLaHTgN4eulK5T1h0GcmT.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt924457",
+        "type": "movie",
+        "title": "Bolo raz jedno more...",
+        "year": 2022,
+        "score": 60,
+        "poster": "https://image.tmdb.org/t/p/w342/pR7fDCgTAZgvNykOn8C501Y5dgU.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st155377",
+        "type": "show",
+        "title": "Hranica",
+        "year": 2022,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/f1gA7cTm3V9Ebe76YMf4FA1P8Ur.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st221690",
+        "type": "show",
+        "title": "Zrod divadla",
+        "year": 2020,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st70340",
+        "type": "show",
+        "title": "1890",
+        "year": 2017,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/yqisgQudsbaSUMkTLf8kvShw5bR.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt936731",
+        "type": "movie",
+        "title": "Dzeň kolačovi",
+        "year": 1996,
+        "score": null,
+        "poster": "",
         "roles": [
           "actor"
         ]
@@ -846182,6 +846214,26 @@
         "year": 2023,
         "score": 57,
         "poster": "https://image.tmdb.org/t/p/w342/njIRAnbY8HRPipRQte7g9jjmSgq.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3875811": {
+    "name": "Iveta Baňárová",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1053136",
+        "type": "movie",
+        "title": "Zešílet",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
         "roles": [
           "actor"
         ]
@@ -864066,6 +864118,17 @@
         "year": 2026,
         "score": 73,
         "poster": "https://image.tmdb.org/t/p/w342/hqIXo0s2gof6UxWDWeiP4d3rMr0.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st303745",
+        "type": "show",
+        "title": "Láska v přestrojení",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/5T4P5CyAGBmb8Rb3aNwDeBJDPTH.jpg",
         "roles": [
           "actor"
         ]

@@ -6887,12 +6887,12 @@
         ]
       },
       {
-        "id": "mt762901",
+        "id": "mt1165416",
         "type": "movie",
-        "title": "Barevný sen",
+        "title": "Velký pán",
         "year": 2024,
         "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/bvzJWqSQbcaKTN2CMdUhXCO1bZY.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/pahss6UcHL1xsH6XN8KiiBIT0pf.jpg",
         "roles": [
           "actor"
         ]
@@ -6909,12 +6909,12 @@
         ]
       },
       {
-        "id": "mt1165416",
+        "id": "mt762901",
         "type": "movie",
-        "title": "Velký pán",
+        "title": "Barevný sen",
         "year": 2024,
         "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/pahss6UcHL1xsH6XN8KiiBIT0pf.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/bvzJWqSQbcaKTN2CMdUhXCO1bZY.jpg",
         "roles": [
           "actor"
         ]
@@ -245399,6 +245399,37 @@
       }
     ]
   },
+  "p2538010": {
+    "name": "Emilie Hetland",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1401459",
+        "type": "movie",
+        "title": "Fjord",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/qiYm44CQBFOZ0Vs8BtmH2swYLz2.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt559907",
+        "type": "movie",
+        "title": "Zelený rytíř",
+        "year": 2021,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/370Zh1Y1IUap8BTDS2u94XjOT9l.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2615021": {
     "name": "Daniele Micheletti",
     "img": null,
@@ -284384,26 +284415,6 @@
         "year": 2021,
         "score": 66,
         "poster": "https://image.tmdb.org/t/p/w342/vLC4VKEasZLYbhNc6diFgYYuV7H.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2538010": {
-    "name": "Emilie Hetland",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt559907",
-        "type": "movie",
-        "title": "Zelený rytíř",
-        "year": 2021,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/370Zh1Y1IUap8BTDS2u94XjOT9l.jpg",
         "roles": [
           "actor"
         ]

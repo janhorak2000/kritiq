@@ -1,6 +1,15 @@
 {
   "movies": [
     {
+      "title": "Hypotéza lásky",
+      "year": 2026,
+      "date": "2026-09-23",
+      "score": 94,
+      "poster": "https://image.tmdb.org/t/p/w342/1T7oeObdTrIr2t2ZtpUxdXTC8Pt.jpg",
+      "tmdb_id": 1032863,
+      "imdb_id": "tt22526100"
+    },
+    {
       "title": "Neskutečná máma",
       "year": 2026,
       "date": "2026-10-07",
@@ -8,6 +17,15 @@
       "poster": "https://image.tmdb.org/t/p/w342/wC63aSSosgURJpfDLadm4gbDpxd.jpg",
       "tmdb_id": 1400837,
       "imdb_id": "tt36586020"
+    },
+    {
+      "title": "Resident Evil",
+      "year": 2026,
+      "date": "2026-09-16",
+      "score": 84,
+      "poster": "https://image.tmdb.org/t/p/w342/i7UyjfPio0VFHB9rBUZSFyhOoM8.jpg",
+      "tmdb_id": 1423191,
+      "imdb_id": "tt35538033"
     },
     {
       "title": "One Last Shot",
@@ -19,23 +37,6 @@
       "imdb_id": "tt37971717"
     },
     {
-      "title": "Tenzing",
-      "year": 2026,
-      "date": "2026-10-09",
-      "score": 83,
-      "poster": "https://image.tmdb.org/t/p/w342/eI0QW02PYqhnmIvLRdn9vrfVVP7.jpg",
-      "tmdb_id": 1288069,
-      "imdb_id": "tt6262770"
-    },
-    {
-      "title": "6 gramů",
-      "year": 2026,
-      "date": "2026-08-06",
-      "score": 80,
-      "poster": "https://image.tmdb.org/t/p/w342/d0NYw1eIG1KEXrM7qWpP2r0WJPP.jpg",
-      "tmdb_id": 1671297
-    },
-    {
       "title": "Clayface",
       "year": 2026,
       "date": "2026-10-19",
@@ -45,31 +46,22 @@
       "imdb_id": "tt34890576"
     },
     {
-      "title": "Digger",
+      "title": "V srdci divočiny",
       "year": 2026,
-      "date": "2026-09-28",
+      "date": "2026-09-19",
       "score": 79,
-      "poster": "https://image.tmdb.org/t/p/w342/qiXi6tAv8DoNfPf56G4yljjWhqG.jpg",
-      "tmdb_id": 1248832,
-      "imdb_id": "tt31450459"
+      "poster": "https://image.tmdb.org/t/p/w342/vIQY7fG0AzSCUhO8BIOusCdhjAz.jpg",
+      "tmdb_id": 1263337,
+      "imdb_id": "tt7526136"
     },
     {
-      "title": "Velrybí pád",
+      "title": "Pravda, nebo lež",
       "year": 2026,
-      "date": "2026-10-14",
-      "score": 78,
-      "poster": "https://image.tmdb.org/t/p/w342/uSjnb0s4oNZFhO8PiYLxs2Qqw48.jpg",
-      "tmdb_id": 1255833,
-      "imdb_id": "tt28535715"
-    },
-    {
-      "title": "Rozum a cit",
-      "year": 2026,
-      "date": "2026-09-23",
+      "date": "2026-09-30",
       "score": 77,
-      "poster": "https://image.tmdb.org/t/p/w342/tFZYaRLR1QwliMA3uoQ7qkyNjNI.jpg",
-      "tmdb_id": 1503762,
-      "imdb_id": "tt13609648"
+      "poster": "https://image.tmdb.org/t/p/w342/dGSsPovyUW5XVekXcy7F2GyhTEh.jpg",
+      "tmdb_id": 1283515,
+      "imdb_id": "tt32261958"
     },
     {
       "title": "The Incomer",
@@ -79,6 +71,14 @@
       "poster": "https://image.tmdb.org/t/p/w342/iccroKK1eUTdCnLfmp7I3YXwAKF.jpg",
       "tmdb_id": 1554956,
       "imdb_id": "tt36980182"
+    },
+    {
+      "title": "Dovolená v Českém ráji",
+      "year": 2026,
+      "date": "2026-07-30",
+      "score": 75,
+      "poster": "https://image.tmdb.org/t/p/w342/9fCmXAp4IIwLT3dZoG7vicNeK3e.jpg",
+      "tmdb_id": 1661097
     },
     {
       "title": "Zvířata",
@@ -92,22 +92,22 @@
   ],
   "shows": [
     {
-      "title": "Lanterns",
+      "title": "Grand Tour",
       "year": 2026,
-      "date": "2026-08-16",
-      "score": 78,
-      "poster": "https://image.tmdb.org/t/p/w342/gpC7h43xPMEV3goYMQShfJbTtLq.jpg",
-      "tmdb_id": 95350,
-      "imdb_id": "tt26545992"
+      "date": "2026-09-04",
+      "score": 84,
+      "poster": "https://image.tmdb.org/t/p/w342/kq6XB6xmD86txW4UR32tT2JUiN9.jpg",
+      "tmdb_id": 329471,
+      "imdb_id": "tt44974627"
     },
     {
-      "title": "Karameláska",
+      "title": "Sterling Point",
       "year": 2026,
-      "date": "2026-08-07",
-      "score": 75,
-      "poster": "https://image.tmdb.org/t/p/w342/ny8zYj40mWGTgKJi1a8hjNFUj9n.jpg",
-      "tmdb_id": 291496,
-      "imdb_id": "tt36955608"
+      "date": "2026-08-05",
+      "score": 74,
+      "poster": "https://image.tmdb.org/t/p/w342/cThLWEGs6BEqY0QZMbU4FAeWwPT.jpg",
+      "tmdb_id": 283297,
+      "imdb_id": "tt35618070"
     },
     {
       "title": "S&X",
@@ -119,40 +119,31 @@
       "imdb_id": "tt39365311"
     },
     {
-      "title": "Akademie Minerva",
+      "title": "Myšilov",
       "year": 2026,
-      "date": "2026-09-22",
+      "date": "2026-08-28",
       "score": 70,
-      "poster": "https://image.tmdb.org/t/p/w342/cTTXRklz5tJWX6wrN3XrjHo34H1.jpg",
-      "tmdb_id": 312557,
-      "imdb_id": "tt28765828"
+      "poster": "https://image.tmdb.org/t/p/w342/z1xv9CKt7HmXgS6azNB563mU2FB.jpg",
+      "tmdb_id": 290193,
+      "imdb_id": "tt36996011"
     },
     {
-      "title": "A Tale of Two Cities",
+      "title": "Smrt pastorovy ženy",
       "year": 2026,
-      "date": "2026-09-06",
+      "date": "2026-08-26",
       "score": 67,
-      "poster": "https://image.tmdb.org/t/p/w342/ht3OVVRBTrTeVtUVQiKSekjIFVH.jpg",
-      "tmdb_id": 301626,
-      "imdb_id": "tt38128417"
+      "poster": "https://image.tmdb.org/t/p/w342/o8H6HmQNt2qx5bIfmvuI6VJn13A.jpg",
+      "tmdb_id": 331616,
+      "imdb_id": "tt44113382"
     },
     {
-      "title": "Filter",
+      "title": "Krvavá oběť",
       "year": 2026,
-      "date": "2026-09-02",
+      "date": "2026-08-20",
       "score": 63,
-      "poster": "https://image.tmdb.org/t/p/w342/3QFQKxdoCtZvtKAyuNg7o0XtbjZ.jpg",
-      "tmdb_id": 312978,
-      "imdb_id": "tt38267578"
-    },
-    {
-      "title": "Poslední případ",
-      "year": 2026,
-      "date": "2026-09-25",
-      "score": 63,
-      "poster": "https://image.tmdb.org/t/p/w342/jVHx7Yxh41Xf1txD5AsX5MZ4E1e.jpg",
-      "tmdb_id": 290720,
-      "imdb_id": "tt36832679"
+      "poster": "https://image.tmdb.org/t/p/w342/8iFUWLKBAWDrJ9rOunscgIDrGQ1.jpg",
+      "tmdb_id": 303351,
+      "imdb_id": "tt38553367"
     },
     {
       "title": "Anna Pigeon",
@@ -162,6 +153,15 @@
       "poster": "https://image.tmdb.org/t/p/w342/iLhi3wqsLOdHB61vySJRm7y09XS.jpg",
       "tmdb_id": 291350,
       "imdb_id": "tt36937503"
+    },
+    {
+      "title": "Střepy",
+      "year": 2026,
+      "date": "2026-08-05",
+      "score": 60,
+      "poster": "https://image.tmdb.org/t/p/w342/oeNdFmHmXnHhYZtscMUtKLWq1GQ.jpg",
+      "tmdb_id": 298168,
+      "imdb_id": "tt27543562"
     },
     {
       "title": "Rozervaná láskou",
@@ -192,20 +192,20 @@
       "rawg_id": 1004298
     },
     {
-      "title": "Star Wars Zero Company",
-      "year": 2026,
-      "date": "2026-08-27",
-      "score": 86,
-      "poster": "https://media.rawg.io/media/resize/640/-/games/dae/dae6fd03dd5edbf15b193f20bec3cd58.jpg",
-      "rawg_id": 1002691
-    },
-    {
       "title": "Servant of the Lake",
       "year": 2026,
       "date": "2026-08-13",
       "score": 86,
       "poster": "https://media.rawg.io/media/resize/640/-/screenshots/169/16983887be1563167b019c82be65cebe.jpg",
       "rawg_id": 1019497
+    },
+    {
+      "title": "Star Wars Zero Company",
+      "year": 2026,
+      "date": "2026-08-27",
+      "score": 86,
+      "poster": "https://media.rawg.io/media/resize/640/-/games/dae/dae6fd03dd5edbf15b193f20bec3cd58.jpg",
+      "rawg_id": 1002691
     },
     {
       "title": "Onimusha: Way Of The Sword",
@@ -222,14 +222,6 @@
       "score": 85,
       "poster": "https://media.rawg.io/media/resize/640/-/screenshots/dfd/dfd84af21deeef2b53d2781023e484bc.jpg",
       "rawg_id": 1018108
-    },
-    {
-      "title": "Mortal Shell II",
-      "year": 2026,
-      "date": "2026-08-20",
-      "score": 84,
-      "poster": "https://media.rawg.io/media/resize/640/-/games/c86/c8696c763ec825c6e4d49efbf2635a26.jpg",
-      "rawg_id": 1004515
     },
     {
       "title": "The Blood Of Dawnwalker",
@@ -256,6 +248,14 @@
       "rawg_id": 979038
     },
     {
+      "title": "Duskfade",
+      "year": 2026,
+      "date": "2026-08-13",
+      "score": 78,
+      "poster": "https://media.rawg.io/media/resize/640/-/games/f58/f583b6126e57ac2cf9eeed6d526b9e6a.jpg",
+      "rawg_id": 1001012
+    },
+    {
       "title": "Enshrouded",
       "year": 2026,
       "date": "2026-10-15",
@@ -274,19 +274,18 @@
       "imdb_id": "tt43663737"
     },
     "show": {
-      "title": "Phony",
+      "title": "The Narco Hack",
       "year": 2026,
       "score": null,
-      "backdrop": "https://image.tmdb.org/t/p/w500/kVf3qP9DHfiW7H9ZzFmE1XrNpJ4.jpg",
-      "tmdb_id": 275139,
-      "imdb_id": "tt21952924"
+      "backdrop": "https://image.tmdb.org/t/p/w342/ZqWMQTKfCz818wY2fiHFBnHtd5.jpg",
+      "tmdb_id": 339716
     },
     "game": {
-      "title": "Final Fantasy Resonance",
+      "title": "Call of Duty: Modern Warfare 4",
       "year": 2026,
       "score": null,
-      "backdrop": "https://media.rawg.io/media/resize/640/-/screenshots/e79/e79f71ca3e876b54f4ca02c0a5d03aa2.jpg",
-      "rawg_id": 1018134
+      "backdrop": "https://media.rawg.io/media/resize/640/-/games/a93/a9304d97c8f264da59566a0f5e0a2181.jpeg",
+      "rawg_id": 1017981
     }
   }
 }

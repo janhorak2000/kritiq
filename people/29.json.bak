@@ -1447,6 +1447,17 @@
         ]
       },
       {
+        "id": "mt1765072",
+        "type": "movie",
+        "title": "Uvidíš všechno",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/Ap8QwmKfSjYbWC4XIP8w9pdn72O.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt785084",
         "type": "movie",
         "title": "Velryba",
@@ -270653,6 +270664,17 @@
     "age": 61,
     "works": [
       {
+        "id": "mt1285895",
+        "type": "movie",
+        "title": "Late Fame",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/bcyXE0p4XmZUlcxvTDbvdG9lgsN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1397385",
         "type": "movie",
         "title": "Malý bratr",
@@ -393135,6 +393157,37 @@
       }
     ]
   },
+  "p2269143": {
+    "name": "Elizabeth Holmes",
+    "img": "/s7ej8dZ7zncd4nPBrkBUbArnTJl.jpg",
+    "birthday": "1984-02-03",
+    "deathday": null,
+    "age": 42,
+    "works": [
+      {
+        "id": "mt1765072",
+        "type": "movie",
+        "title": "Uvidíš všechno",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/Ap8QwmKfSjYbWC4XIP8w9pdn72O.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt566228",
+        "type": "movie",
+        "title": "Vynálezkyně: Z kapky krve",
+        "year": 2019,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/u21ImPnHHX2SFgkdHIjwlpEwRux.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p68153": {
     "name": "Mauro Marchetti",
     "img": "/2UFxNZPDMczB38qFSqIRw91ZTUW.jpg",
@@ -439131,26 +439184,6 @@
         "year": 2019,
         "score": 72,
         "poster": "https://image.tmdb.org/t/p/w342/5ACJu8n3KaJSzM5nmGaA5q6VkH3.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2269143": {
-    "name": "Elizabeth Holmes",
-    "img": "/s7ej8dZ7zncd4nPBrkBUbArnTJl.jpg",
-    "birthday": "1984-02-03",
-    "deathday": null,
-    "age": 42,
-    "works": [
-      {
-        "id": "mt566228",
-        "type": "movie",
-        "title": "Vynálezkyně: Z kapky krve",
-        "year": 2019,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/u21ImPnHHX2SFgkdHIjwlpEwRux.jpg",
         "roles": [
           "actor"
         ]
@@ -596669,42 +596702,40 @@
       }
     ]
   },
-  "p3965112": {
-    "name": "Barbora Kubátová",
+  "p3889047": {
+    "name": "Vojtěch Míka",
     "img": null,
-    "birthday": "1987-08-28",
+    "birthday": null,
     "deathday": null,
-    "age": 39,
+    "age": null,
     "works": [
       {
-        "id": "mt1104172",
+        "id": "mt1078165",
         "type": "movie",
-        "title": "O malých věcech",
+        "title": "Husa",
         "year": 2023,
         "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/rpNy6ayzh5FIbY4kEVnn8U4cpDZ.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/tKLtADLl0khA0b5YDVUx5xoQzFo.jpg",
         "roles": [
           "actor"
         ]
-      },
+      }
+    ]
+  },
+  "p4545373": {
+    "name": "Rudolf Sikora",
+    "img": null,
+    "birthday": "1946-04-17",
+    "deathday": null,
+    "age": 80,
+    "works": [
       {
-        "id": "mt1134950",
+        "id": "mt1247018",
         "type": "movie",
-        "title": "294 statečných",
+        "title": "15 x 15 x 5 (minisalon 1984)",
         "year": 2023,
-        "score": 65,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st216295",
-        "type": "show",
-        "title": "Dobré ráno, Brno!",
-        "year": 2023,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/9kpWS3rXwTqSd3eccBjgzuk5EQA.jpg",
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/ma7TiYA61KFVAkMlZNoYX3HeYu9.jpg",
         "roles": [
           "actor"
         ]
@@ -597195,156 +597226,6 @@
         "year": 2020,
         "score": null,
         "poster": "",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1996783": {
-    "name": "Erik Ollé",
-    "img": "/pd9znkSk6TKkLuubBZg6DCWfhiS.jpg",
-    "birthday": "1975-08-09",
-    "deathday": null,
-    "age": 51,
-    "works": [
-      {
-        "id": "st297508",
-        "type": "show",
-        "title": "Neuer",
-        "year": 2025,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/lZQ5U0YzRn40ONiJMgcsygyXD7K.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1237772",
-        "type": "movie",
-        "title": "Fentasy",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/3m6UI9B8DAMEJpcIAvRbbZZs50U.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1231374",
-        "type": "movie",
-        "title": "Válka policajtů",
-        "year": 2024,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/zFDuzv08Dj7lkZC8E3TXYogATbe.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1297002",
-        "type": "movie",
-        "title": "Ema a smrtihlav",
-        "year": 2024,
-        "score": 58,
-        "poster": "https://image.tmdb.org/t/p/w342/tu1H4gT9DGV2Qv5bExkHYhEDImW.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st213183",
-        "type": "show",
-        "title": "Kriminálka Kraj",
-        "year": 2022,
-        "score": 60,
-        "poster": "https://image.tmdb.org/t/p/w342/jNeXWyfXsSM9OEAkFS68iHjl9mq.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt444995",
-        "type": "movie",
-        "title": "Únos",
-        "year": 2017,
-        "score": 67,
-        "poster": "https://image.tmdb.org/t/p/w342/nsVfS7ZkIWp9GcTEX0ZC5nRfriu.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt463983",
-        "type": "movie",
-        "title": "Čára",
-        "year": 2017,
-        "score": 66,
-        "poster": "https://image.tmdb.org/t/p/w342/iZTHWClzmoK57tmL6HIm4DscOid.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st107265",
-        "type": "show",
-        "title": "Kolonáda",
-        "year": 2014,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/5ySoo4F7BbypyYojwM9WCeIJDkP.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st285488",
-        "type": "show",
-        "title": "Klan",
-        "year": 2013,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/mFxtHjM6otWfpcH3TSPHJGf5mhf.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt511157",
-        "type": "movie",
-        "title": "Déšť padá na naše duše",
-        "year": 2002,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/xZrQr7RdvLVUem0Durl6mPQDHjn.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2912214": {
-    "name": "Emil Zvarik",
-    "img": "/tmYuU28T4BINZ3OSNwFxZiqk7LU.jpg",
-    "birthday": "1997-08-19",
-    "deathday": null,
-    "age": 29,
-    "works": [
-      {
-        "id": "mt1237772",
-        "type": "movie",
-        "title": "Fentasy",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/3m6UI9B8DAMEJpcIAvRbbZZs50U.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st285488",
-        "type": "show",
-        "title": "Klan",
-        "year": 2013,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/mFxtHjM6otWfpcH3TSPHJGf5mhf.jpg",
         "roles": [
           "actor"
         ]
@@ -602466,6 +602347,125 @@
         "year": 2017,
         "score": 67,
         "poster": "https://image.tmdb.org/t/p/w342/bwbVeEi0i3BL8UyETfyLYSck1aa.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1996783": {
+    "name": "Erik Ollé",
+    "img": "/pd9znkSk6TKkLuubBZg6DCWfhiS.jpg",
+    "birthday": "1975-08-09",
+    "deathday": null,
+    "age": 51,
+    "works": [
+      {
+        "id": "st297508",
+        "type": "show",
+        "title": "Neuer",
+        "year": 2025,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/lZQ5U0YzRn40ONiJMgcsygyXD7K.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1231374",
+        "type": "movie",
+        "title": "Válka policajtů",
+        "year": 2024,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/zFDuzv08Dj7lkZC8E3TXYogATbe.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1297002",
+        "type": "movie",
+        "title": "Ema a smrtihlav",
+        "year": 2024,
+        "score": 58,
+        "poster": "https://image.tmdb.org/t/p/w342/tu1H4gT9DGV2Qv5bExkHYhEDImW.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1237772",
+        "type": "movie",
+        "title": "Fentasy",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/3m6UI9B8DAMEJpcIAvRbbZZs50U.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st213183",
+        "type": "show",
+        "title": "Kriminálka Kraj",
+        "year": 2022,
+        "score": 60,
+        "poster": "https://image.tmdb.org/t/p/w342/jNeXWyfXsSM9OEAkFS68iHjl9mq.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt444995",
+        "type": "movie",
+        "title": "Únos",
+        "year": 2017,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/nsVfS7ZkIWp9GcTEX0ZC5nRfriu.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt463983",
+        "type": "movie",
+        "title": "Čára",
+        "year": 2017,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/iZTHWClzmoK57tmL6HIm4DscOid.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st107265",
+        "type": "show",
+        "title": "Kolonáda",
+        "year": 2014,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/5ySoo4F7BbypyYojwM9WCeIJDkP.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st285488",
+        "type": "show",
+        "title": "Klan",
+        "year": 2013,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/mFxtHjM6otWfpcH3TSPHJGf5mhf.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt511157",
+        "type": "movie",
+        "title": "Déšť padá na naše duše",
+        "year": 2002,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/xZrQr7RdvLVUem0Durl6mPQDHjn.jpg",
         "roles": [
           "actor"
         ]
@@ -608672,6 +608672,48 @@
       }
     ]
   },
+  "p3965112": {
+    "name": "Barbora Kubátová",
+    "img": null,
+    "birthday": "1987-08-28",
+    "deathday": null,
+    "age": 39,
+    "works": [
+      {
+        "id": "mt1134950",
+        "type": "movie",
+        "title": "294 statečných",
+        "year": 2023,
+        "score": 65,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1104172",
+        "type": "movie",
+        "title": "O malých věcech",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/rpNy6ayzh5FIbY4kEVnn8U4cpDZ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st216295",
+        "type": "show",
+        "title": "Dobré ráno, Brno!",
+        "year": 2023,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/9kpWS3rXwTqSd3eccBjgzuk5EQA.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p4653041": {
     "name": "Vilém Richard Borovička",
     "img": null,
@@ -608826,46 +608868,6 @@
         "year": 2023,
         "score": 55,
         "poster": "https://image.tmdb.org/t/p/w342/koYPMaI9V1bv3VR3LtyRGvL2EHG.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3889047": {
-    "name": "Vojtěch Míka",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1078165",
-        "type": "movie",
-        "title": "Husa",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/tKLtADLl0khA0b5YDVUx5xoQzFo.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4545373": {
-    "name": "Rudolf Sikora",
-    "img": null,
-    "birthday": "1946-04-17",
-    "deathday": null,
-    "age": 80,
-    "works": [
-      {
-        "id": "mt1247018",
-        "type": "movie",
-        "title": "15 x 15 x 5 (minisalon 1984)",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/ma7TiYA61KFVAkMlZNoYX3HeYu9.jpg",
         "roles": [
           "actor"
         ]
@@ -609220,6 +609222,37 @@
         "year": 2024,
         "score": 55,
         "poster": "https://image.tmdb.org/t/p/w342/ibjzzCkBCs3OiRA5kmtsjwPoPWn.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2912214": {
+    "name": "Emil Zvarik",
+    "img": "/tmYuU28T4BINZ3OSNwFxZiqk7LU.jpg",
+    "birthday": "1997-08-19",
+    "deathday": null,
+    "age": 29,
+    "works": [
+      {
+        "id": "mt1237772",
+        "type": "movie",
+        "title": "Fentasy",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/3m6UI9B8DAMEJpcIAvRbbZZs50U.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st285488",
+        "type": "show",
+        "title": "Klan",
+        "year": 2013,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/mFxtHjM6otWfpcH3TSPHJGf5mhf.jpg",
         "roles": [
           "actor"
         ]
