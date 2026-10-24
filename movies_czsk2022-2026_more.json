@@ -68904,5 +68904,82 @@
       }
     ],
     "reviews": []
+  },
+  {
+    "title": "Za slovo ručím životem",
+    "tmdb_id": 1790511,
+    "imdb_id": "tt49019444",
+    "original_language": "cs",
+    "year": 2026,
+    "date": "2026-10-24",
+    "score": null,
+    "box": null,
+    "box_currency": null,
+    "country": "Česko",
+    "genre": "Dokumentární",
+    "runtime": null,
+    "poster": "https://image.tmdb.org/t/p/w342/w5LS0O3J39m367qRvfJJeHZTVHc.jpg",
+    "gallery": [],
+    "summary": "",
+    "director": {
+      "id": 1405287,
+      "name": "Slobodanka Radun",
+      "image": ""
+    },
+    "composer": {
+      "id": 4999695,
+      "name": "Ian Mikyska",
+      "image": ""
+    },
+    "writer": {
+      "id": 1405287,
+      "name": "Slobodanka Radun",
+      "image": ""
+    },
+    "actors": [
+      {
+        "id": 1405288,
+        "name": "Radka Denemarková",
+        "birthday": "1968-03-14",
+        "deathday": null,
+        "age": 58,
+        "image": ""
+      }
+    ],
+    "reviews": []
+  },
+  {
+    "title": "Vteřina houby",
+    "tmdb_id": 1800759,
+    "imdb_id": null,
+    "original_language": "cs",
+    "year": 2026,
+    "date": "2026-10-24",
+    "score": null,
+    "box": null,
+    "box_currency": null,
+    "country": "Česko",
+    "genre": "Dokumentární",
+    "runtime": null,
+    "poster": "",
+    "gallery": [],
+    "summary": "",
+    "director": {
+      "id": 4689177,
+      "name": "Aleš Pojar",
+      "image": ""
+    },
+    "composer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "writer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "actors": [],
+    "reviews": []
   }
 ]
