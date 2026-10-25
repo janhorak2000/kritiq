@@ -68784,6 +68784,147 @@
     "reviews": []
   },
   {
+    "title": "The Cycle",
+    "tmdb_id": 1290418,
+    "imdb_id": "tt32358390",
+    "original_language": "en",
+    "year": 2026,
+    "date": "2026-09-24",
+    "score": 75,
+    "box": 0,
+    "box_currency": "USD",
+    "country": "USA",
+    "genre": "Krimi",
+    "runtime": 111,
+    "poster": "https://image.tmdb.org/t/p/w342/rHCbyKrFNcec8h7RAW0h1eUgcat.jpg",
+    "gallery": [
+      "https://image.tmdb.org/t/p/w500/bgHW6AJl2SdKzxglvf9tshXbI84.jpg"
+    ],
+    "summary": "",
+    "director": {
+      "id": 1113259,
+      "name": "Jordan Downey",
+      "image": "https://image.tmdb.org/t/p/w300/nyOsMrXXdoHTD9RgIjKPqUWQiI.jpg"
+    },
+    "composer": {
+      "id": 1641093,
+      "name": "Nick Soole",
+      "image": "https://image.tmdb.org/t/p/w300/6YYiLFBw3zrsY2ZaerIjPNGpA9t.jpg"
+    },
+    "writer": {
+      "id": 1113259,
+      "name": "Jordan Downey",
+      "image": "https://image.tmdb.org/t/p/w300/nyOsMrXXdoHTD9RgIjKPqUWQiI.jpg"
+    },
+    "actors": [
+      {
+        "id": 212154,
+        "name": "Deborah Ann Woll",
+        "birthday": "1985-02-07",
+        "deathday": null,
+        "age": 41,
+        "image": "https://image.tmdb.org/t/p/w300/btTnyvRLXOH0pz2SLBwyKbmnFhX.jpg"
+      },
+      {
+        "id": 52886,
+        "name": "Jeffrey Donovan",
+        "birthday": "1968-05-11",
+        "deathday": null,
+        "age": 58,
+        "image": "https://image.tmdb.org/t/p/w300/wlDXfXpu6Uz32LUmbFzU8QPDoQH.jpg"
+      },
+      {
+        "id": 79734,
+        "name": "Gretchen Corbett",
+        "birthday": "1945-08-13",
+        "deathday": null,
+        "age": 81,
+        "image": "https://image.tmdb.org/t/p/w300/qGtjneRWJlK5opx4qSBWCW6rBFs.jpg"
+      },
+      {
+        "id": 116265,
+        "name": "Jack Doolan",
+        "birthday": "1987-07-28",
+        "deathday": null,
+        "age": 39,
+        "image": "https://image.tmdb.org/t/p/w300/oxG0UbYNecEjsIMHxi0E5J1ywBD.jpg"
+      },
+      {
+        "id": 1802817,
+        "name": "Will Hochman",
+        "birthday": "1992-03-04",
+        "deathday": null,
+        "age": 34,
+        "image": "https://image.tmdb.org/t/p/w300/uSefUOsCY0h3gdMY4uhFzwERYI.jpg"
+      },
+      {
+        "id": 1252505,
+        "name": "Dana Millican",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/aWkq5gAXtbd4bN2i6tygdW7b8Ex.jpg"
+      },
+      {
+        "id": 1386927,
+        "name": "Phillip Andre Botello",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/wzLtwcPc8VGYwBqeHl9d7gMVixL.jpg"
+      },
+      {
+        "id": 35092,
+        "name": "Don Keith Opper",
+        "birthday": "1949-06-12",
+        "deathday": null,
+        "age": 77,
+        "image": "https://image.tmdb.org/t/p/w300/9LmJECVKmN0HcCUJpZuuCTcEwFz.jpg"
+      },
+      {
+        "id": 133855,
+        "name": "Carl W. Crudup",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/16kUMGhIEb7i0hbtkyjqkETvVMW.jpg"
+      },
+      {
+        "id": 1798927,
+        "name": "Danika Golombek",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 1001968,
+        "name": "Jeb Berrier",
+        "birthday": "1967-09-11",
+        "deathday": null,
+        "age": 59,
+        "image": "https://image.tmdb.org/t/p/w300/nMzXzir5K1rY5kYZsOBzh9B0Tdb.jpg"
+      },
+      {
+        "id": 2688330,
+        "name": "David Myers Gregory",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 3958162,
+        "name": "Trevor Newlin",
+        "birthday": "1996-10-14",
+        "deathday": null,
+        "age": 30,
+        "image": "https://image.tmdb.org/t/p/w300/3TcnxO2PSErW5WsOUcM5HHiqd3I.jpg"
+      }
+    ],
+    "reviews": []
+  },
+  {
     "title": "Michael",
     "tmdb_id": 936075,
     "imdb_id": "tt11378946",
@@ -73643,226 +73784,6 @@
         "deathday": null,
         "age": 47,
         "image": "https://image.tmdb.org/t/p/w300/gMYqVwLdoaPhIFyWUAQrRlGGjkE.jpg"
-      }
-    ],
-    "reviews": []
-  },
-  {
-    "title": "28 let poté: Chrám z kostí",
-    "tmdb_id": 1272837,
-    "imdb_id": "tt32141377",
-    "year": 2026,
-    "date": "2026-01-14",
-    "score": 72,
-    "box": 59,
-    "box_currency": "USD",
-    "country": "Velká Británie",
-    "genre": "Horor",
-    "runtime": 109,
-    "poster": "https://image.tmdb.org/t/p/w342/ccpY0VN7HOTu7ZCJKnepMJvXt4y.jpg",
-    "gallery": [
-      "https://image.tmdb.org/t/p/w500/hHDNOlATHhre4eZ7aYz5cdyJLik.jpg"
-    ],
-    "summary": "V pokračování příběhu se Dr. Kelson ocitá v šokujícím novém vztahu, jehož důsledky mohou změnit svět – setkání se Spikeem a s Jimmym Crystalem se stává pro něho noční můrou, ze které nemůže uniknout. Infikovaní totiž nepředstavují největší hrozbu pro přežití – nelidskost přeživších může být ještě podivnější a děsivější.",
-    "director": {
-      "id": 1795072,
-      "name": "Nia DaCosta",
-      "image": "https://image.tmdb.org/t/p/w300/zRyaLNXLT2gKgPvLreyg3GeEIdD.jpg"
-    },
-    "composer": {
-      "id": 1178828,
-      "name": "Hildur Guðnadóttir",
-      "image": "https://image.tmdb.org/t/p/w300/xkJTSLeYZkOqouzflrUNgLSC1lL.jpg"
-    },
-    "writer": {
-      "id": 2036,
-      "name": "Alex Garland",
-      "image": "https://image.tmdb.org/t/p/w300/qSWzYnDw68xm4i5xprH9BwQ6q25.jpg"
-    },
-    "actors": [
-      {
-        "id": 5469,
-        "name": "Ralph Fiennes",
-        "birthday": "1962-12-22",
-        "deathday": null,
-        "age": 63,
-        "image": "https://image.tmdb.org/t/p/w300/tJr9GcmGNHhLVVEH3i7QYbj6hBi.jpg"
-      },
-      {
-        "id": 5107934,
-        "name": "Alfie Williams",
-        "birthday": "2011-01-03",
-        "deathday": null,
-        "age": 15,
-        "image": "https://image.tmdb.org/t/p/w300/3F46vn64Ya20rwtvTFVnqAK2LuI.jpg"
-      },
-      {
-        "id": 85065,
-        "name": "Jack O'Connell",
-        "birthday": "1990-08-01",
-        "deathday": null,
-        "age": 36,
-        "image": "https://image.tmdb.org/t/p/w300/8jiqppSqdmHZ0smiAyd6Iu3P3ZQ.jpg"
-      },
-      {
-        "id": 1672504,
-        "name": "Erin Kellyman",
-        "birthday": "1998-10-17",
-        "deathday": null,
-        "age": 27,
-        "image": "https://image.tmdb.org/t/p/w300/ngTdJIcwZ9YsyvXIR5PUzv9plwV.jpg"
-      },
-      {
-        "id": 1344320,
-        "name": "Chi Lewis-Parry",
-        "birthday": "1983-08-10",
-        "deathday": null,
-        "age": 43,
-        "image": "https://image.tmdb.org/t/p/w300/jAMu6BW9lDBVkawwB7VIi8CLai5.jpg"
-      },
-      {
-        "id": 5518922,
-        "name": "Connor Newall",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/tH5BfF7KwpfME997B0pZ57Bfi6h.jpg"
-      },
-      {
-        "id": 5514148,
-        "name": "Maura Bird",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/kuQCb4Nhe0xEE4LqanGAizuCAGR.jpg"
-      },
-      {
-        "id": 3916722,
-        "name": "Ghazi Al Ruffai",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/iaoN4uHwbLmVmt4ESxeardbJmRG.jpg"
-      },
-      {
-        "id": 4502181,
-        "name": "Robert Rhodes",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/d3fUGvffYdI6pxmEID3O5a3rPZk.jpg"
-      },
-      {
-        "id": 2290611,
-        "name": "Emma Laird",
-        "birthday": "1998-09-08",
-        "deathday": null,
-        "age": 28,
-        "image": "https://image.tmdb.org/t/p/w300/gl4DXdh64j0lWn3UTp4YNjHbeD2.jpg"
-      },
-      {
-        "id": 5512256,
-        "name": "Sam Locke",
-        "birthday": "2001-04-12",
-        "deathday": null,
-        "age": 25,
-        "image": "https://image.tmdb.org/t/p/w300/5e33CGwTztSLeSuurikvEF3AIjx.jpg"
-      },
-      {
-        "id": 5191218,
-        "name": "Gareth Locke",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/rAQglCmGAPA7fmZaEQzZFsJVhGM.jpg"
-      },
-      {
-        "id": 3122023,
-        "name": "Celi Crossland",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/cBVbqPOAOH8zxl4BbGTJM3RNYGK.jpg"
-      },
-      {
-        "id": 2517398,
-        "name": "Mirren Mack",
-        "birthday": "1997-12-08",
-        "deathday": null,
-        "age": 28,
-        "image": "https://image.tmdb.org/t/p/w300/3xOiyeum1KDzlPqnfrPeEQh8kOE.jpg"
-      },
-      {
-        "id": 563560,
-        "name": "Gordon Alexander",
-        "birthday": "1985-01-18",
-        "deathday": null,
-        "age": 41,
-        "image": "https://image.tmdb.org/t/p/w300/d7Z5Rbctu6Jj9WmJJgrMHk8mhK6.jpg"
-      },
-      {
-        "id": 1742624,
-        "name": "Louis Ashbourne Serkis",
-        "birthday": "2004-06-19",
-        "deathday": null,
-        "age": 22,
-        "image": "https://image.tmdb.org/t/p/w300/mx44YUmWqkAuRonvPinZa11klQi.jpg"
-      },
-      {
-        "id": 117654,
-        "name": "David Sterne",
-        "birthday": "1946-11-01",
-        "deathday": null,
-        "age": 79,
-        "image": "https://image.tmdb.org/t/p/w300/ipvWDt43Md5CHeq4tDq6oucNFl5.jpg"
-      },
-      {
-        "id": 4930703,
-        "name": "Elliot Benn",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/59Cd93bc4kBXyXHAnmyjha63dJs.jpg"
-      },
-      {
-        "id": 1693442,
-        "name": "Lynne Anne Rodgers",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/k7kRefRiyeKTFlr5V2xcj2JdAXW.jpg"
-      },
-      {
-        "id": 5944321,
-        "name": "Sebastian Williams-Barrow",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": ""
-      },
-      {
-        "id": 4272165,
-        "name": "Natalie Cousteau",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/pgDPWRLDPjXSNlmiomno1YVXyvp.jpg"
-      },
-      {
-        "id": 4379652,
-        "name": "Maiya Eastmond",
-        "birthday": null,
-        "deathday": null,
-        "age": null,
-        "image": "https://image.tmdb.org/t/p/w300/kIhk8ljLAqPnrlDRXxi4PdKLH0V.jpg"
-      },
-      {
-        "id": 2037,
-        "name": "Cillian Murphy",
-        "birthday": "1976-05-25",
-        "deathday": null,
-        "age": 50,
-        "image": "https://image.tmdb.org/t/p/w300/2lKs67r7FI4bPu0AXxMUJZxmUXn.jpg"
       }
     ],
     "reviews": []

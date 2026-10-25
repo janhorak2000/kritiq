@@ -12883,6 +12883,59 @@
       }
     ]
   },
+  "p1641093": {
+    "name": "Nick Soole",
+    "img": "/6YYiLFBw3zrsY2ZaerIjPNGpA9t.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1290418",
+        "type": "movie",
+        "title": "The Cycle",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/rHCbyKrFNcec8h7RAW0h1eUgcat.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "mt553141",
+        "type": "movie",
+        "title": "The Head Hunter",
+        "year": 2019,
+        "score": 54,
+        "poster": "https://image.tmdb.org/t/p/w342/ol0DSLOIN8Rq1BcWDTsk6NNwas6.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "mt418585",
+        "type": "movie",
+        "title": "The Crooked Man",
+        "year": 2016,
+        "score": 42,
+        "poster": "https://image.tmdb.org/t/p/w342/wWTsClmyLTsUV7FNzv1uxibAKMv.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "mt394223",
+        "type": "movie",
+        "title": "Sniper: Special Ops",
+        "year": 2016,
+        "score": 30,
+        "poster": "https://image.tmdb.org/t/p/w342/jgE31g7hqV9UVJKqz3LCwm5oDb8.jpg",
+        "roles": [
+          "composer"
+        ]
+      }
+    ]
+  },
   "p110998": {
     "name": "Xochitl Romero",
     "img": null,
@@ -266563,48 +266616,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/qNJ2gPnPvb8Zfq3pjNRTcdWOIN2.jpg",
         "roles": [
           "actor"
-        ]
-      }
-    ]
-  },
-  "p1641093": {
-    "name": "Nick Soole",
-    "img": "/6YYiLFBw3zrsY2ZaerIjPNGpA9t.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt553141",
-        "type": "movie",
-        "title": "The Head Hunter",
-        "year": 2019,
-        "score": 54,
-        "poster": "https://image.tmdb.org/t/p/w342/ol0DSLOIN8Rq1BcWDTsk6NNwas6.jpg",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
-        "id": "mt418585",
-        "type": "movie",
-        "title": "The Crooked Man",
-        "year": 2016,
-        "score": 42,
-        "poster": "https://image.tmdb.org/t/p/w342/wWTsClmyLTsUV7FNzv1uxibAKMv.jpg",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
-        "id": "mt394223",
-        "type": "movie",
-        "title": "Sniper: Special Ops",
-        "year": 2016,
-        "score": 30,
-        "poster": "https://image.tmdb.org/t/p/w342/jgE31g7hqV9UVJKqz3LCwm5oDb8.jpg",
-        "roles": [
-          "composer"
         ]
       }
     ]

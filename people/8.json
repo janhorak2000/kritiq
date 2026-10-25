@@ -36574,59 +36574,6 @@
       }
     ]
   },
-  "p4930703": {
-    "name": "Elliot Benn",
-    "img": "/59Cd93bc4kBXyXHAnmyjha63dJs.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1272837",
-        "type": "movie",
-        "title": "28 let poté: Chrám z kostí",
-        "year": 2026,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/ccpY0VN7HOTu7ZCJKnepMJvXt4y.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1078581",
-        "type": "movie",
-        "title": "Giant",
-        "year": 2026,
-        "score": 67,
-        "poster": "https://image.tmdb.org/t/p/w342/kd2AEp0yK5b3gNZILMcSJyY5NI3.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st223389",
-        "type": "show",
-        "title": "Malpractice",
-        "year": 2023,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/hJezVawlievVnDFwGP6FzZUVX10.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt826680",
-        "type": "movie",
-        "title": "Vlak do bezpečí",
-        "year": 2022,
-        "score": 56,
-        "poster": "https://image.tmdb.org/t/p/w342/sbps2oKs5ixtNSQqEae3r4mBq7x.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p119452": {
     "name": "Yuen Miu",
     "img": "/lzpCy5dif52Nh3kOrw5CGscVf5O.jpg",
@@ -318910,6 +318857,59 @@
         "year": 1998,
         "score": 82,
         "poster": "https://image.tmdb.org/t/p/w342/bx0JJyMiMnYJdCtryxQCrRe2aen.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4930703": {
+    "name": "Elliot Benn",
+    "img": "/59Cd93bc4kBXyXHAnmyjha63dJs.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1272837",
+        "type": "movie",
+        "title": "28 let poté: Chrám z kostí",
+        "year": 2026,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/ccpY0VN7HOTu7ZCJKnepMJvXt4y.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1078581",
+        "type": "movie",
+        "title": "Giant",
+        "year": 2026,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/kd2AEp0yK5b3gNZILMcSJyY5NI3.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st223389",
+        "type": "show",
+        "title": "Malpractice",
+        "year": 2023,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/hJezVawlievVnDFwGP6FzZUVX10.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt826680",
+        "type": "movie",
+        "title": "Vlak do bezpečí",
+        "year": 2022,
+        "score": 56,
+        "poster": "https://image.tmdb.org/t/p/w342/sbps2oKs5ixtNSQqEae3r4mBq7x.jpg",
         "roles": [
           "actor"
         ]
