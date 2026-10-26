@@ -323237,6 +323237,17 @@
     "age": 31,
     "works": [
       {
+        "id": "mt1780005",
+        "type": "movie",
+        "title": "Dva proti hurikánu",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/jRxkFK6ooUARbH7bk4RafdOLtiY.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st246485",
         "type": "show",
         "title": "Mrtvý holky",
@@ -407067,6 +407078,59 @@
         "year": 1996,
         "score": 63,
         "poster": "https://image.tmdb.org/t/p/w342/dJ5TsV4NP5Jtah6igUAkdbybuP5.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1379379": {
+    "name": "Benny Emmanuel",
+    "img": "/rSqiumttAOg08Auypm5Z7FpdvMS.jpg",
+    "birthday": "1996-12-17",
+    "deathday": null,
+    "age": 29,
+    "works": [
+      {
+        "id": "mt1780005",
+        "type": "movie",
+        "title": "Dva proti hurikánu",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/jRxkFK6ooUARbH7bk4RafdOLtiY.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st226241",
+        "type": "show",
+        "title": "VGLY",
+        "year": 2023,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/SYvwtsk4vWPAtB0wlgLlecWCFc.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt667257",
+        "type": "movie",
+        "title": "Cosas imposibles",
+        "year": 2021,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/eaf7GQj0ieOwm08rrvjJQNbN0kN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt21191",
+        "type": "movie",
+        "title": "Sin Nombre",
+        "year": 2009,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/dubZwiGWp6TwYNGYtyGEUC7XAin.jpg",
         "roles": [
           "actor"
         ]
@@ -549141,48 +549205,6 @@
         "year": 2021,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/sAnAMv3eyQiGI1z2k8NsvH0Y6r5.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1379379": {
-    "name": "Benny Emmanuel",
-    "img": "/rSqiumttAOg08Auypm5Z7FpdvMS.jpg",
-    "birthday": "1996-12-17",
-    "deathday": null,
-    "age": 29,
-    "works": [
-      {
-        "id": "st226241",
-        "type": "show",
-        "title": "VGLY",
-        "year": 2023,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/SYvwtsk4vWPAtB0wlgLlecWCFc.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt667257",
-        "type": "movie",
-        "title": "Cosas imposibles",
-        "year": 2021,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/eaf7GQj0ieOwm08rrvjJQNbN0kN.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt21191",
-        "type": "movie",
-        "title": "Sin Nombre",
-        "year": 2009,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/dubZwiGWp6TwYNGYtyGEUC7XAin.jpg",
         "roles": [
           "actor"
         ]

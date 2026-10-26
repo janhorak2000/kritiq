@@ -17147,6 +17147,59 @@
       }
     ]
   },
+  "p3958162": {
+    "name": "Trevor Newlin",
+    "img": "/3TcnxO2PSErW5WsOUcM5HHiqd3I.jpg",
+    "birthday": "1996-10-14",
+    "deathday": null,
+    "age": 30,
+    "works": [
+      {
+        "id": "mt1290418",
+        "type": "movie",
+        "title": "The Cycle",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/rHCbyKrFNcec8h7RAW0h1eUgcat.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1061474",
+        "type": "movie",
+        "title": "Superman",
+        "year": 2025,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/oUPYYXPj1v0Hq7kEaZTCvSA8BjW.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt945961",
+        "type": "movie",
+        "title": "Vetřelec: Romulus",
+        "year": 2024,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/9bHvsoszDIzkqRA99IteUern5QT.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1100782",
+        "type": "movie",
+        "title": "Úsměv 2",
+        "year": 2024,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/7eQegpObDoDcIQHfWYR5qzrl6xA.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p164465": {
     "name": "Laith Nakli",
     "img": "/nn78jjIjoSf1Lp6FGBcIffFmwEb.jpg",
@@ -185722,48 +185775,6 @@
         "year": 2023,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/zEjG2LXebr8rpgZQQA6J2YOl77i.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3958162": {
-    "name": "Trevor Newlin",
-    "img": "/3TcnxO2PSErW5WsOUcM5HHiqd3I.jpg",
-    "birthday": "1996-10-14",
-    "deathday": null,
-    "age": 29,
-    "works": [
-      {
-        "id": "mt1061474",
-        "type": "movie",
-        "title": "Superman",
-        "year": 2025,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/oUPYYXPj1v0Hq7kEaZTCvSA8BjW.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt945961",
-        "type": "movie",
-        "title": "Vetřelec: Romulus",
-        "year": 2024,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/9bHvsoszDIzkqRA99IteUern5QT.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1100782",
-        "type": "movie",
-        "title": "Úsměv 2",
-        "year": 2024,
-        "score": 67,
-        "poster": "https://image.tmdb.org/t/p/w342/7eQegpObDoDcIQHfWYR5qzrl6xA.jpg",
         "roles": [
           "actor"
         ]

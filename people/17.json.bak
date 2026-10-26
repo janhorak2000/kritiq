@@ -21616,152 +21616,6 @@
       }
     ]
   },
-  "p2036": {
-    "name": "Alex Garland",
-    "img": "/qSWzYnDw68xm4i5xprH9BwQ6q25.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1272837",
-        "type": "movie",
-        "title": "28 let poté: Chrám z kostí",
-        "year": 2026,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/ccpY0VN7HOTu7ZCJKnepMJvXt4y.jpg",
-        "roles": [
-          "writer"
-        ]
-      },
-      {
-        "id": "mt1241436",
-        "type": "movie",
-        "title": "Válka",
-        "year": 2025,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/e05JiKcnlMLtgZpEO3OX7W6TSsF.jpg",
-        "roles": [
-          "writer"
-        ]
-      },
-      {
-        "id": "mt1100988",
-        "type": "movie",
-        "title": "28 let poté",
-        "year": 2025,
-        "score": 66,
-        "poster": "https://image.tmdb.org/t/p/w342/bTdxz1a3XNj0rFFfYa3ufd3IbkS.jpg",
-        "roles": [
-          "writer"
-        ]
-      },
-      {
-        "id": "mt929590",
-        "type": "movie",
-        "title": "Občanská válka",
-        "year": 2024,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/2HlLHNcxtMK8vFVYjEjyWVfmLou.jpg",
-        "roles": [
-          "director",
-          "writer"
-        ]
-      },
-      {
-        "id": "mt780609",
-        "type": "movie",
-        "title": "Men",
-        "year": 2022,
-        "score": 60,
-        "poster": "https://image.tmdb.org/t/p/w342/jo1Kv3P3UgDVk7JnUFr2Cl8WWUM.jpg",
-        "roles": [
-          "director",
-          "writer"
-        ]
-      },
-      {
-        "id": "st81349",
-        "type": "show",
-        "title": "Devs",
-        "year": 2020,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/uv63iNWOh69bSJYJQZjiX6n8B3m.jpg",
-        "roles": [
-          "director",
-          "writer"
-        ]
-      },
-      {
-        "id": "mt300668",
-        "type": "movie",
-        "title": "Anihilace",
-        "year": 2018,
-        "score": 68,
-        "poster": "https://image.tmdb.org/t/p/w342/gqPML3k1AzB4i9AD2u0SiXnCmCN.jpg",
-        "roles": [
-          "director",
-          "writer"
-        ]
-      },
-      {
-        "id": "mt264660",
-        "type": "movie",
-        "title": "Ex Machina",
-        "year": 2015,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/dmJW8IAKHKxFNiUnoDR7JfsK7Rp.jpg",
-        "roles": [
-          "director",
-          "writer"
-        ]
-      },
-      {
-        "id": "mt49049",
-        "type": "movie",
-        "title": "Dredd",
-        "year": 2012,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/wLx65gtGVnUFCxceHWGszcruCZj.jpg",
-        "roles": [
-          "writer"
-        ]
-      },
-      {
-        "id": "mt42188",
-        "type": "movie",
-        "title": "Neopouštěj mě",
-        "year": 2010,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/8F0r5ng9Fp60OhzQfR5v33fppq.jpg",
-        "roles": [
-          "writer"
-        ]
-      },
-      {
-        "id": "mt1272",
-        "type": "movie",
-        "title": "Sunshine",
-        "year": 2007,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/oKGGeJ8qvm0UmClz43VJ31fzPP7.jpg",
-        "roles": [
-          "writer"
-        ]
-      },
-      {
-        "id": "mt170",
-        "type": "movie",
-        "title": "28 dní poté",
-        "year": 2002,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/cGOQXoH7Dv47qSS4gvHFpJbA4TY.jpg",
-        "roles": [
-          "writer"
-        ]
-      }
-    ]
-  },
   "p109506": {
     "name": "Kenny Ho Ka-King",
     "img": "/6gQZYCr0ts1NAfCDNboxkNCA0L6.jpg",
@@ -188376,6 +188230,152 @@
         "poster": "https://image.tmdb.org/t/p/w342/fstEe6RsyNyPUnMwNcL20iNl0nE.jpg",
         "roles": [
           "actor"
+        ]
+      }
+    ]
+  },
+  "p2036": {
+    "name": "Alex Garland",
+    "img": "/qSWzYnDw68xm4i5xprH9BwQ6q25.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1272837",
+        "type": "movie",
+        "title": "28 let poté: Chrám z kostí",
+        "year": 2026,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/ccpY0VN7HOTu7ZCJKnepMJvXt4y.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "mt1241436",
+        "type": "movie",
+        "title": "Válka",
+        "year": 2025,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/e05JiKcnlMLtgZpEO3OX7W6TSsF.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "mt1100988",
+        "type": "movie",
+        "title": "28 let poté",
+        "year": 2025,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/bTdxz1a3XNj0rFFfYa3ufd3IbkS.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "mt929590",
+        "type": "movie",
+        "title": "Občanská válka",
+        "year": 2024,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/2HlLHNcxtMK8vFVYjEjyWVfmLou.jpg",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      },
+      {
+        "id": "mt780609",
+        "type": "movie",
+        "title": "Men",
+        "year": 2022,
+        "score": 60,
+        "poster": "https://image.tmdb.org/t/p/w342/jo1Kv3P3UgDVk7JnUFr2Cl8WWUM.jpg",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      },
+      {
+        "id": "st81349",
+        "type": "show",
+        "title": "Devs",
+        "year": 2020,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/uv63iNWOh69bSJYJQZjiX6n8B3m.jpg",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      },
+      {
+        "id": "mt300668",
+        "type": "movie",
+        "title": "Anihilace",
+        "year": 2018,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/gqPML3k1AzB4i9AD2u0SiXnCmCN.jpg",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      },
+      {
+        "id": "mt264660",
+        "type": "movie",
+        "title": "Ex Machina",
+        "year": 2015,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/dmJW8IAKHKxFNiUnoDR7JfsK7Rp.jpg",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      },
+      {
+        "id": "mt49049",
+        "type": "movie",
+        "title": "Dredd",
+        "year": 2012,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/wLx65gtGVnUFCxceHWGszcruCZj.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "mt42188",
+        "type": "movie",
+        "title": "Neopouštěj mě",
+        "year": 2010,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/8F0r5ng9Fp60OhzQfR5v33fppq.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "mt1272",
+        "type": "movie",
+        "title": "Sunshine",
+        "year": 2007,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/oKGGeJ8qvm0UmClz43VJ31fzPP7.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "mt170",
+        "type": "movie",
+        "title": "28 dní poté",
+        "year": 2002,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/cGOQXoH7Dv47qSS4gvHFpJbA4TY.jpg",
+        "roles": [
+          "writer"
         ]
       }
     ]

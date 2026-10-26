@@ -14418,26 +14418,6 @@
       }
     ]
   },
-  "p5191218": {
-    "name": "Gareth Locke",
-    "img": "/rAQglCmGAPA7fmZaEQzZFsJVhGM.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1272837",
-        "type": "movie",
-        "title": "28 let poté: Chrám z kostí",
-        "year": 2026,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/ccpY0VN7HOTu7ZCJKnepMJvXt4y.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p112304": {
     "name": "Annie Ryan",
     "img": null,
@@ -193400,6 +193380,26 @@
         "year": 2025,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/tZpc9f3V8BtTOVhtsJ7CscYfKn9.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5191218": {
+    "name": "Gareth Locke",
+    "img": "/rAQglCmGAPA7fmZaEQzZFsJVhGM.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1272837",
+        "type": "movie",
+        "title": "28 let poté: Chrám z kostí",
+        "year": 2026,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/ccpY0VN7HOTu7ZCJKnepMJvXt4y.jpg",
         "roles": [
           "actor"
         ]
