@@ -69117,5 +69117,107 @@
     },
     "actors": [],
     "reviews": []
+  },
+  {
+    "title": "Jediná vteřina",
+    "tmdb_id": 1799373,
+    "imdb_id": null,
+    "original_language": "cs",
+    "year": 2026,
+    "date": "2026-10-27",
+    "score": null,
+    "box": null,
+    "box_currency": null,
+    "country": "Česko",
+    "genre": "Dokumentární",
+    "runtime": 88,
+    "poster": "https://image.tmdb.org/t/p/w342/y3i3BKh74YOu8S5Y3raG8tNnwT5.jpg",
+    "gallery": [],
+    "summary": "",
+    "director": {
+      "id": 574389,
+      "name": "Vít Klusák",
+      "image": "https://image.tmdb.org/t/p/w300/7RDYb4TDygwFUv1Ef0LQbtap3TU.jpg"
+    },
+    "composer": {
+      "id": 2282485,
+      "name": "Pjoni",
+      "image": ""
+    },
+    "writer": {
+      "id": 574389,
+      "name": "Vít Klusák",
+      "image": "https://image.tmdb.org/t/p/w300/7RDYb4TDygwFUv1Ef0LQbtap3TU.jpg"
+    },
+    "actors": [],
+    "reviews": []
+  },
+  {
+    "title": "Vyprahlá ústa kamene",
+    "tmdb_id": 1800687,
+    "imdb_id": null,
+    "original_language": "cs",
+    "year": 2026,
+    "date": "2026-10-27",
+    "score": null,
+    "box": null,
+    "box_currency": null,
+    "country": "Česko",
+    "genre": "Dokumentární",
+    "runtime": null,
+    "poster": "https://image.tmdb.org/t/p/w342/toEJ0hXOpe3hzcvf59Ei6YYkbhW.jpg",
+    "gallery": [],
+    "summary": "",
+    "director": {
+      "id": 4340743,
+      "name": "Kateryna Ruzhyna",
+      "image": "https://image.tmdb.org/t/p/w300/te9g7DwZs4QmyhqzAeBMNenJ4y8.jpg"
+    },
+    "composer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "writer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "actors": [],
+    "reviews": []
+  },
+  {
+    "title": "Zóny nikoho",
+    "tmdb_id": 1800654,
+    "imdb_id": null,
+    "original_language": "sk",
+    "year": 2026,
+    "date": "2026-10-27",
+    "score": null,
+    "box": null,
+    "box_currency": null,
+    "country": "Slovensko",
+    "genre": "Dokumentární",
+    "runtime": null,
+    "poster": "",
+    "gallery": [],
+    "summary": "",
+    "director": {
+      "id": 1385681,
+      "name": "Viera Čakányová",
+      "image": ""
+    },
+    "composer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "writer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "actors": [],
+    "reviews": []
   }
 ]

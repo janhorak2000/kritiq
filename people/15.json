@@ -36084,6 +36084,17 @@
     "age": 71,
     "works": [
       {
+        "id": "st262486",
+        "type": "show",
+        "title": "High Value Target",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/aItPJsNvH6xaHAWVWbYifPljVri.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1265344",
         "type": "movie",
         "title": "Swiped",
@@ -231595,6 +231606,17 @@
         ]
       },
       {
+        "id": "st259486",
+        "type": "show",
+        "title": "Gwi-gong",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/kjp97iwFZ2iAG2AVPsgQeVsUMHK.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st258025",
         "type": "show",
         "title": "Až po uši",
@@ -231612,17 +231634,6 @@
         "year": 2025,
         "score": 72,
         "poster": "https://image.tmdb.org/t/p/w342/6kk0yTA1m8Hxt9lctUT3ygmj6aa.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st259486",
-        "type": "show",
-        "title": "Gwi-gong",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/kjp97iwFZ2iAG2AVPsgQeVsUMHK.jpg",
         "roles": [
           "actor"
         ]
@@ -237223,6 +237234,17 @@
         "year": 2026,
         "score": 64,
         "poster": "https://image.tmdb.org/t/p/w342/vDV1aqGKLlpQPWVt0RAysFI6gNu.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st262486",
+        "type": "show",
+        "title": "High Value Target",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/aItPJsNvH6xaHAWVWbYifPljVri.jpg",
         "roles": [
           "actor"
         ]
@@ -469400,73 +469422,51 @@
       }
     ]
   },
-  "p1483904": {
-    "name": "Taku Kishimoto",
-    "img": null,
+  "p4160226": {
+    "name": "Yang Jong-wook",
+    "img": "/rt3JEJYB6L513zL8LVpLRCJ5E2o.jpg",
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "st131041",
+        "id": "st211261",
         "type": "show",
-        "title": "Blue Lock",
+        "title": "Specialisté Prvního Zásahu",
         "year": 2022,
         "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
         "roles": [
-          "writer"
-        ]
-      },
-      {
-        "id": "st105556",
-        "type": "show",
-        "title": "Neškádli mě, Nagatoro!",
-        "year": 2021,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/k1z2xv3JjGobO9jfybHGo2tqAKC.jpg",
-        "roles": [
-          "writer"
-        ]
-      },
-      {
-        "id": "st65249",
-        "type": "show",
-        "title": "ERASED",
-        "year": 2016,
-        "score": 84,
-        "poster": "https://image.tmdb.org/t/p/w342/2xo5jNOwXGP41umcmxzZgPxGpaI.jpg",
-        "roles": [
-          "writer"
-        ]
-      },
-      {
-        "id": "st60863",
-        "type": "show",
-        "title": "Haikyu!!",
-        "year": 2014,
-        "score": 87,
-        "poster": "https://image.tmdb.org/t/p/w342/qNKaeunuUdL0smnowVVgShCkWZ4.jpg",
-        "roles": [
-          "writer"
+          "actor"
         ]
       }
     ]
   },
-  "p3042989": {
-    "name": "Seon Ah Rin",
-    "img": "/xr5q1rkz5SP6pphzhwDFLBExbMl.jpg",
-    "birthday": "1992-01-18",
+  "p118975": {
+    "name": "Choi Jae-hwan",
+    "img": "/62hWPPcUcjvI6yeAvP0xsIGtQUv.jpg",
+    "birthday": "1983-07-15",
     "deathday": null,
-    "age": 34,
+    "age": 43,
     "works": [
       {
-        "id": "st136369",
+        "id": "st216310",
         "type": "show",
-        "title": "Zítra je taky den",
+        "title": "Diva trosečnice",
+        "year": 2023,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/1NseFoBcprx5BYJcd03sTUEczG3.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st211261",
+        "type": "show",
+        "title": "Specialisté Prvního Zásahu",
         "year": 2022,
         "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
         "roles": [
           "actor"
         ]
@@ -469481,25 +469481,34 @@
         "roles": [
           "actor"
         ]
-      },
+      }
+    ]
+  },
+  "p4083215": {
+    "name": "Ha I-aan",
+    "img": "/lJ0wjEIdBc3k9pIojXr5P204XzE.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
       {
-        "id": "st116386",
+        "id": "st211261",
         "type": "show",
-        "title": "Doom at Your Service",
-        "year": 2021,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/9szerhScQy1QVNgkTmAwsF62nGo.jpg",
+        "title": "Specialisté Prvního Zásahu",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
         "roles": [
           "actor"
         ]
       },
       {
-        "id": "st117378",
+        "id": "st68398",
         "type": "show",
-        "title": "Mouse",
-        "year": 2021,
-        "score": 86,
-        "poster": "https://image.tmdb.org/t/p/w342/lrWHBK1h4rrEnx5Ml8iDR1SwNux.jpg",
+        "title": "MUDr. Romantik",
+        "year": 2016,
+        "score": 84,
+        "poster": "https://image.tmdb.org/t/p/w342/dmVgWSrtEj39DUv1QEjT6nGpX3L.jpg",
         "roles": [
           "actor"
         ]
@@ -470272,48 +470281,6 @@
       }
     ]
   },
-  "p118975": {
-    "name": "Choi Jae-hwan",
-    "img": "/62hWPPcUcjvI6yeAvP0xsIGtQUv.jpg",
-    "birthday": "1983-07-15",
-    "deathday": null,
-    "age": 43,
-    "works": [
-      {
-        "id": "st216310",
-        "type": "show",
-        "title": "Diva trosečnice",
-        "year": 2023,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/1NseFoBcprx5BYJcd03sTUEczG3.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st209275",
-        "type": "show",
-        "title": "Mohu vám pomoci?",
-        "year": 2022,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/4WRmW8ATNfKbacwh9eeL8i4SpSl.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st211261",
-        "type": "show",
-        "title": "Specialisté Prvního Zásahu",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p4034639": {
     "name": "Jeong Seo-yeon",
     "img": "/jyvfnBPfwAbc5vyJUJ0kxE8CIpx.jpg",
@@ -470361,6 +470328,59 @@
         "year": 2022,
         "score": 86,
         "poster": "https://image.tmdb.org/t/p/w342/1qbiyfmJe7tu4QpqCz5flW93mKj.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3042989": {
+    "name": "Seon Ah Rin",
+    "img": "/xr5q1rkz5SP6pphzhwDFLBExbMl.jpg",
+    "birthday": "1992-01-18",
+    "deathday": null,
+    "age": 34,
+    "works": [
+      {
+        "id": "st209275",
+        "type": "show",
+        "title": "Mohu vám pomoci?",
+        "year": 2022,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/4WRmW8ATNfKbacwh9eeL8i4SpSl.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st136369",
+        "type": "show",
+        "title": "Zítra je taky den",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st116386",
+        "type": "show",
+        "title": "Doom at Your Service",
+        "year": 2021,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/9szerhScQy1QVNgkTmAwsF62nGo.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st117378",
+        "type": "show",
+        "title": "Mouse",
+        "year": 2021,
+        "score": 86,
+        "poster": "https://image.tmdb.org/t/p/w342/lrWHBK1h4rrEnx5Ml8iDR1SwNux.jpg",
         "roles": [
           "actor"
         ]
@@ -477008,6 +477028,26 @@
       }
     ]
   },
+  "p1846190": {
+    "name": "Geoffrey Murphy",
+    "img": "/oUpTzxjpUx4plloKTLz0jUQInjK.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st241609",
+        "type": "show",
+        "title": "Sousedská tajemství",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p3094227": {
     "name": "Paola Montes De Oca",
     "img": "/AnaNOPWsAZ2al0ivMYYbpqz6j49.jpg",
@@ -478653,26 +478693,6 @@
       }
     ]
   },
-  "p3481944": {
-    "name": "Moon Hyun-Kyeong",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st293608",
-        "type": "show",
-        "title": "Slečna Hongová v utajení",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/nJ0gSaXfoiPFngy1ulCCuxsKt0q.jpg",
-        "roles": [
-          "writer"
-        ]
-      }
-    ]
-  },
   "p4480656": {
     "name": "Ha Na-ri",
     "img": "/6IMMiZbvNYCWAvmqUH67oBue5B4.jpg",
@@ -480137,6 +480157,26 @@
       }
     ]
   },
+  "p6574737": {
+    "name": "Matthew Spencer",
+    "img": "/A2x7sEgzSxxNofoxJwrrY3QqDGt.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st262486",
+        "type": "show",
+        "title": "High Value Target",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/aItPJsNvH6xaHAWVWbYifPljVri.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p4375815": {
     "name": "Ingrid Kunková",
     "img": null,
@@ -480736,53 +480776,55 @@
       }
     ]
   },
-  "p4160226": {
-    "name": "Yang Jong-wook",
-    "img": "/rt3JEJYB6L513zL8LVpLRCJ5E2o.jpg",
+  "p1483904": {
+    "name": "Taku Kishimoto",
+    "img": null,
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "st211261",
+        "id": "st131041",
         "type": "show",
-        "title": "Specialisté Prvního Zásahu",
+        "title": "Blue Lock",
         "year": 2022,
         "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
         "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4083215": {
-    "name": "Ha I-aan",
-    "img": "/lJ0wjEIdBc3k9pIojXr5P204XzE.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st211261",
-        "type": "show",
-        "title": "Specialisté Prvního Zásahu",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
-        "roles": [
-          "actor"
+          "writer"
         ]
       },
       {
-        "id": "st68398",
+        "id": "st105556",
         "type": "show",
-        "title": "MUDr. Romantik",
+        "title": "Neškádli mě, Nagatoro!",
+        "year": 2021,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/k1z2xv3JjGobO9jfybHGo2tqAKC.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "st65249",
+        "type": "show",
+        "title": "ERASED",
         "year": 2016,
         "score": 84,
-        "poster": "https://image.tmdb.org/t/p/w342/dmVgWSrtEj39DUv1QEjT6nGpX3L.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/2xo5jNOwXGP41umcmxzZgPxGpaI.jpg",
         "roles": [
-          "actor"
+          "writer"
+        ]
+      },
+      {
+        "id": "st60863",
+        "type": "show",
+        "title": "Haikyu!!",
+        "year": 2014,
+        "score": 87,
+        "poster": "https://image.tmdb.org/t/p/w342/qNKaeunuUdL0smnowVVgShCkWZ4.jpg",
+        "roles": [
+          "writer"
         ]
       }
     ]
@@ -481974,26 +482016,6 @@
       }
     ]
   },
-  "p1846190": {
-    "name": "Geoffrey Murphy",
-    "img": "/oUpTzxjpUx4plloKTLz0jUQInjK.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st241609",
-        "type": "show",
-        "title": "Sousedská tajemství",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p6059937": {
     "name": "Guan Bo",
     "img": "/hChDOoMIGU1QuMqcaGJrw7sZ8Sl.jpg",
@@ -482270,6 +482292,26 @@
         "poster": "https://image.tmdb.org/t/p/w342/xIQKtBSUJhlz2Jl9TsXEI0iZMgu.jpg",
         "roles": [
           "actor"
+        ]
+      }
+    ]
+  },
+  "p3481944": {
+    "name": "Moon Hyun-Kyeong",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st293608",
+        "type": "show",
+        "title": "Slečna Hongová v utajení",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/nJ0gSaXfoiPFngy1ulCCuxsKt0q.jpg",
+        "roles": [
+          "writer"
         ]
       }
     ]
