@@ -69219,5 +69219,124 @@
     },
     "actors": [],
     "reviews": []
+  },
+  {
+    "title": "Nesnášení",
+    "tmdb_id": 1799371,
+    "imdb_id": null,
+    "original_language": "cs",
+    "year": 2026,
+    "date": "2026-10-28",
+    "score": null,
+    "box": null,
+    "box_currency": null,
+    "country": "Česko",
+    "genre": "Dokumentární",
+    "runtime": 84,
+    "poster": "",
+    "gallery": [],
+    "summary": "",
+    "director": {
+      "id": 2503378,
+      "name": "Ondřej Šálek",
+      "image": ""
+    },
+    "composer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "writer": {
+      "id": 2053427,
+      "name": "Jakub Režný",
+      "image": ""
+    },
+    "actors": [],
+    "reviews": []
+  },
+  {
+    "title": "Drazí spoluobčané",
+    "tmdb_id": 1800713,
+    "imdb_id": null,
+    "original_language": "cs",
+    "year": 2026,
+    "date": "2026-10-28",
+    "score": null,
+    "box": null,
+    "box_currency": null,
+    "country": "Česko",
+    "genre": "Dokumentární",
+    "runtime": null,
+    "poster": "",
+    "gallery": [],
+    "summary": "",
+    "director": {
+      "id": 1669630,
+      "name": "Andrea Culková",
+      "image": "https://image.tmdb.org/t/p/w300/uyK8T7nMwt0EtMlgXf1Le5DiLoD.jpg"
+    },
+    "composer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "writer": {
+      "id": 1669630,
+      "name": "Andrea Culková",
+      "image": "https://image.tmdb.org/t/p/w300/uyK8T7nMwt0EtMlgXf1Le5DiLoD.jpg"
+    },
+    "actors": [],
+    "reviews": []
+  },
+  {
+    "title": "Andulka",
+    "tmdb_id": 1800701,
+    "imdb_id": null,
+    "original_language": "cs",
+    "year": 2026,
+    "date": "2026-10-28",
+    "score": null,
+    "box": null,
+    "box_currency": null,
+    "country": "Česko",
+    "genre": "Dokumentární",
+    "runtime": null,
+    "poster": "https://image.tmdb.org/t/p/w342/yBhOYtvpS8pJANcDDNPwolBjQE4.jpg",
+    "gallery": [],
+    "summary": "",
+    "director": {
+      "id": 6557536,
+      "name": "Mariana Macháňová",
+      "image": ""
+    },
+    "composer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "writer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "actors": [
+      {
+        "id": 6573954,
+        "name": "Nikol Macháňová",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 6573956,
+        "name": "Lubomír Macháň",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      }
+    ],
+    "reviews": []
   }
 ]
