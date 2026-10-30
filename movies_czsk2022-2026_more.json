@@ -69736,5 +69736,107 @@
     },
     "actors": [],
     "reviews": []
+  },
+  {
+    "title": "Zářit",
+    "tmdb_id": 1800818,
+    "imdb_id": null,
+    "original_language": "cs",
+    "year": 2026,
+    "date": "2026-10-30",
+    "score": null,
+    "box": null,
+    "box_currency": null,
+    "country": "Česko",
+    "genre": "Dokumentární",
+    "runtime": null,
+    "poster": "",
+    "gallery": [],
+    "summary": "",
+    "director": {
+      "id": 2315880,
+      "name": "Martin Páv",
+      "image": "https://image.tmdb.org/t/p/w300/2DKHhYGsPENxbhG91NbJn8rd2XB.jpg"
+    },
+    "composer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "writer": {
+      "id": 2315880,
+      "name": "Martin Páv",
+      "image": "https://image.tmdb.org/t/p/w300/2DKHhYGsPENxbhG91NbJn8rd2XB.jpg"
+    },
+    "actors": [],
+    "reviews": []
+  },
+  {
+    "title": "Vyhrát musí předseda",
+    "tmdb_id": 1800772,
+    "imdb_id": null,
+    "original_language": "cs",
+    "year": 2026,
+    "date": "2026-10-30",
+    "score": null,
+    "box": null,
+    "box_currency": null,
+    "country": "Česko",
+    "genre": "Dokumentární",
+    "runtime": null,
+    "poster": "",
+    "gallery": [],
+    "summary": "",
+    "director": {
+      "id": 1295407,
+      "name": "Jan Novák",
+      "image": ""
+    },
+    "composer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "writer": {
+      "id": 1295407,
+      "name": "Jan Novák",
+      "image": ""
+    },
+    "actors": [],
+    "reviews": []
+  },
+  {
+    "title": "Ji.hlava30: Myslet filmem",
+    "tmdb_id": 1811615,
+    "imdb_id": null,
+    "original_language": "cs",
+    "year": 2026,
+    "date": "2026-10-24",
+    "score": null,
+    "box": null,
+    "box_currency": null,
+    "country": "Česko",
+    "genre": "Dokumentární",
+    "runtime": 50,
+    "poster": "",
+    "gallery": [],
+    "summary": "",
+    "director": {
+      "id": 1341099,
+      "name": "Andrea Slováková",
+      "image": ""
+    },
+    "composer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "writer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "actors": [],
+    "reviews": []
   }
 ]
