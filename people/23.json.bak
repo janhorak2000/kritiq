@@ -21064,6 +21064,26 @@
       }
     ]
   },
+  "p6509120": {
+    "name": "François Ziadé",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1562777",
+        "type": "movie",
+        "title": "The Stunt Driver",
+        "year": 2026,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/jFiMdTG8Hw41A3VxrzLEWtMFIYX.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p1816344": {
     "name": "Nezar Alderazi",
     "img": "/940awVhZvZO9ANqj3TE9ExcSB88.jpg",
@@ -76186,6 +76206,17 @@
     "deathday": null,
     "age": 48,
     "works": [
+      {
+        "id": "st279185",
+        "type": "show",
+        "title": "Trýzeň",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/uWKHKCMg4eGKF21gfn49ULSbQot.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt1072699",
         "type": "movie",
@@ -163432,17 +163463,6 @@
         ]
       },
       {
-        "id": "st209110",
-        "type": "show",
-        "title": "Cena přiznání",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/6R7UMF0aAOy9p4v8dlGtCIPhwcS.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st233742",
         "type": "show",
         "title": "Nyutopia",
@@ -163460,6 +163480,17 @@
         "year": 2025,
         "score": 77,
         "poster": "https://image.tmdb.org/t/p/w342/j5E4RXqovOrV3CS1duTGxDfmlFt.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st209110",
+        "type": "show",
+        "title": "Cena přiznání",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/6R7UMF0aAOy9p4v8dlGtCIPhwcS.jpg",
         "roles": [
           "actor"
         ]
@@ -318081,23 +318112,23 @@
     "age": 29,
     "works": [
       {
-        "id": "st291496",
-        "type": "show",
-        "title": "Karameláska",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/ny8zYj40mWGTgKJi1a8hjNFUj9n.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st305644",
         "type": "show",
         "title": "포핸즈",
         "year": 2026,
         "score": 87,
         "poster": "https://image.tmdb.org/t/p/w342/sdvxrJMzACBUG87YS1YYKmRzTN8.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st291496",
+        "type": "show",
+        "title": "Karameláska",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/ny8zYj40mWGTgKJi1a8hjNFUj9n.jpg",
         "roles": [
           "actor"
         ]
@@ -388677,17 +388708,6 @@
     "age": 54,
     "works": [
       {
-        "id": "st209110",
-        "type": "show",
-        "title": "Cena přiznání",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/6R7UMF0aAOy9p4v8dlGtCIPhwcS.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st219246",
         "type": "show",
         "title": "Dobrá práce",
@@ -388699,12 +388719,12 @@
         ]
       },
       {
-        "id": "st197067",
+        "id": "st209110",
         "type": "show",
-        "title": "Výjimečná právnička U Jong-u",
-        "year": 2022,
-        "score": 85,
-        "poster": "https://image.tmdb.org/t/p/w342/yv57TccCkgdy3St7rspBPKROeRK.jpg",
+        "title": "Cena přiznání",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/6R7UMF0aAOy9p4v8dlGtCIPhwcS.jpg",
         "roles": [
           "actor"
         ]
@@ -388716,6 +388736,17 @@
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st197067",
+        "type": "show",
+        "title": "Výjimečná právnička U Jong-u",
+        "year": 2022,
+        "score": 85,
+        "poster": "https://image.tmdb.org/t/p/w342/yv57TccCkgdy3St7rspBPKROeRK.jpg",
         "roles": [
           "actor"
         ]
@@ -395119,40 +395150,60 @@
       }
     ]
   },
-  "p1508542": {
-    "name": "Fred Davis",
-    "img": "/rlDf5lwVjiCxcxVc9NmEk8CKXrU.jpg",
-    "birthday": "1921-01-01",
-    "deathday": "1996-07-05",
-    "age": 75,
+  "p2845394": {
+    "name": "Hisashi Yamauchi",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
     "works": [
       {
-        "id": "st155537",
+        "id": "st90296",
         "type": "show",
-        "title": "Volavka",
+        "title": "Tokyo Vice",
         "year": 2022,
         "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/waW5NMQmpd3Pox7lHGjXZt14Xrp.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
         "roles": [
           "actor"
         ]
       }
     ]
   },
-  "p3954271": {
-    "name": "Kim Min-seok",
-    "img": "/or71xiL6gCfx7EkBSC9nMvcfhRL.jpg",
-    "birthday": "1991-08-26",
+  "p1615220": {
+    "name": "Min Ji-eun",
+    "img": "/ohy73GtKlGXx8lKurObGc8G74r0.jpg",
+    "birthday": null,
     "deathday": null,
-    "age": 35,
+    "age": null,
     "works": [
       {
-        "id": "st154825",
+        "id": "st211261",
         "type": "show",
-        "title": "Obchodní návrh",
+        "title": "Specialisté Prvního Zásahu",
         "year": 2022,
         "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
+        "roles": [
+          "writer"
+        ]
+      }
+    ]
+  },
+  "p2626142": {
+    "name": "Jung Wook",
+    "img": "/VZNXB5ENQcxCJyEWnaFdkp2UIf.jpg",
+    "birthday": "1973-08-07",
+    "deathday": null,
+    "age": 53,
+    "works": [
+      {
+        "id": "st211261",
+        "type": "show",
+        "title": "Specialisté Prvního Zásahu",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
         "roles": [
           "actor"
         ]
@@ -399075,6 +399126,37 @@
       }
     ]
   },
+  "p3509486": {
+    "name": "Eileen Álvarez",
+    "img": "/6xM1oRtDwWD6AO4IeVycEN8410j.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st156933",
+        "type": "show",
+        "title": "Nedostatek důkazů",
+        "year": 2024,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/s3wbFZos8K4MrOqZh0bYCd2XSZG.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st117303",
+        "type": "show",
+        "title": "Lekce chemie",
+        "year": 2023,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/pI3zaF12zMCsGWjkNKgf0iDpiv2.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p3856470": {
     "name": "Ck Bolado",
     "img": "/kdgj9JV7YZNBjMwcyJaKnrCwLM8.jpg",
@@ -402317,60 +402399,40 @@
       }
     ]
   },
-  "p2845394": {
-    "name": "Hisashi Yamauchi",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
+  "p1508542": {
+    "name": "Fred Davis",
+    "img": "/rlDf5lwVjiCxcxVc9NmEk8CKXrU.jpg",
+    "birthday": "1921-01-01",
+    "deathday": "1996-07-05",
+    "age": 75,
     "works": [
       {
-        "id": "st90296",
+        "id": "st155537",
         "type": "show",
-        "title": "Tokyo Vice",
+        "title": "Volavka",
         "year": 2022,
         "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/waW5NMQmpd3Pox7lHGjXZt14Xrp.jpg",
         "roles": [
           "actor"
         ]
       }
     ]
   },
-  "p1615220": {
-    "name": "Min Ji-eun",
-    "img": "/ohy73GtKlGXx8lKurObGc8G74r0.jpg",
-    "birthday": null,
+  "p3954271": {
+    "name": "Kim Min-seok",
+    "img": "/or71xiL6gCfx7EkBSC9nMvcfhRL.jpg",
+    "birthday": "1991-08-26",
     "deathday": null,
-    "age": null,
+    "age": 35,
     "works": [
       {
-        "id": "st211261",
+        "id": "st154825",
         "type": "show",
-        "title": "Specialisté Prvního Zásahu",
+        "title": "Obchodní návrh",
         "year": 2022,
         "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
-        "roles": [
-          "writer"
-        ]
-      }
-    ]
-  },
-  "p2626142": {
-    "name": "Jung Wook",
-    "img": "/VZNXB5ENQcxCJyEWnaFdkp2UIf.jpg",
-    "birthday": "1973-08-07",
-    "deathday": null,
-    "age": 53,
-    "works": [
-      {
-        "id": "st211261",
-        "type": "show",
-        "title": "Specialisté Prvního Zásahu",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
         "roles": [
           "actor"
         ]
@@ -402475,37 +402537,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/tiafvHRKUUdY3aPBbdxZbjhkZvd.jpg",
         "roles": [
           "director"
-        ]
-      }
-    ]
-  },
-  "p3509486": {
-    "name": "Eileen Álvarez",
-    "img": "/6xM1oRtDwWD6AO4IeVycEN8410j.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st156933",
-        "type": "show",
-        "title": "Nedostatek důkazů",
-        "year": 2024,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/s3wbFZos8K4MrOqZh0bYCd2XSZG.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st117303",
-        "type": "show",
-        "title": "Lekce chemie",
-        "year": 2023,
-        "score": 82,
-        "poster": "https://image.tmdb.org/t/p/w342/pI3zaF12zMCsGWjkNKgf0iDpiv2.jpg",
-        "roles": [
-          "actor"
         ]
       }
     ]

@@ -118191,6 +118191,17 @@
     "age": 58,
     "works": [
       {
+        "id": "mt1453407",
+        "type": "movie",
+        "title": "Osudná noc",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/e4N7M52cBbyi24xLga8yI6yt1u1.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt744676",
         "type": "movie",
         "title": "Nemá mě ráda, má mě ráda",
@@ -120931,6 +120942,17 @@
     "deathday": null,
     "age": 34,
     "works": [
+      {
+        "id": "mt1507696",
+        "type": "movie",
+        "title": "Apokalypsa Z: Nový svět",
+        "year": 2026,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/cH2Hu5UU9dCjCxz2arjoBfSW5sp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt1118031",
         "type": "movie",
@@ -155176,6 +155198,17 @@
     "deathday": null,
     "age": 39,
     "works": [
+      {
+        "id": "st289517",
+        "type": "show",
+        "title": "Pekelná práce",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/yyA9CI8BLNg6LtVRvmVxki4xiGb.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "st224414",
         "type": "show",
@@ -309746,23 +309779,23 @@
         ]
       },
       {
-        "id": "st241609",
-        "type": "show",
-        "title": "Sousedská tajemství",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
-        "roles": [
-          "director"
-        ]
-      },
-      {
         "id": "st253321",
         "type": "show",
         "title": "Ta lepší z nás",
         "year": 2025,
         "score": 70,
         "poster": "https://image.tmdb.org/t/p/w342/kTVz4yTSPGLQPC1ChoCFLJQ7el0.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "st241609",
+        "type": "show",
+        "title": "Sousedská tajemství",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
         "roles": [
           "director"
         ]
@@ -333728,6 +333761,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "mt1507696",
+        "type": "movie",
+        "title": "Apokalypsa Z: Nový svět",
+        "year": 2026,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/cH2Hu5UU9dCjCxz2arjoBfSW5sp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt630004",
         "type": "movie",
@@ -490052,57 +490096,6 @@
       }
     ]
   },
-  "p1488085": {
-    "name": "Momoka Ayukawa",
-    "img": "/wEADFVq0rkdUxIdjJm8PrHTElnh.jpg",
-    "birthday": "1991-06-10",
-    "deathday": null,
-    "age": 35,
-    "works": [
-      {
-        "id": "st90296",
-        "type": "show",
-        "title": "Tokyo Vice",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st110316",
-        "type": "show",
-        "title": "Alice in Borderland",
-        "year": 2020,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/i0i7kGDrArtM1sCd8niZDC7iboV.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3488292": {
-    "name": "Kim Min-So",
-    "img": "/7lCf123icYzguPIh5ggiaZmFdCr.jpg",
-    "birthday": "1995-01-13",
-    "deathday": null,
-    "age": 31,
-    "works": [
-      {
-        "id": "st136369",
-        "type": "show",
-        "title": "Zítra je taky den",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p2504001": {
     "name": "Brian Keys",
     "img": "/gno2WbwYJiVBVx9EUsRJDv9v6s2.jpg",
@@ -490194,6 +490187,26 @@
         "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
         "roles": [
           "actor"
+        ]
+      }
+    ]
+  },
+  "p1653481": {
+    "name": "Bhav Dhulia",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st213635",
+        "type": "show",
+        "title": "Policie v khaki: Případ Bihár",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/xvr3WrwAQMlcb00OZEos9nLekTE.jpg",
+        "roles": [
+          "director"
         ]
       }
     ]
@@ -493570,23 +493583,23 @@
     "age": 33,
     "works": [
       {
-        "id": "st298610",
-        "type": "show",
-        "title": "오싹한 연애",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st303143",
         "type": "show",
         "title": "My Royal Nemesis",
         "year": 2026,
         "score": 75,
         "poster": "https://image.tmdb.org/t/p/w342/u2cX3CVzUZLIGVwd9HB7bUhE7OP.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st298610",
+        "type": "show",
+        "title": "오싹한 연애",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
         "roles": [
           "actor"
         ]
@@ -498177,26 +498190,6 @@
       }
     ]
   },
-  "p5445060": {
-    "name": "Jameson Flynn Lopez",
-    "img": "/dPuPqsikAJuP8GyX20T8w7y3iYP.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st241609",
-        "type": "show",
-        "title": "Sousedská tajemství",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1420380": {
     "name": "Juan Lecanda",
     "img": "/jpHpVoEdhYBR8HfYAFWHckRskWh.jpg",
@@ -500885,26 +500878,6 @@
       }
     ]
   },
-  "p1653481": {
-    "name": "Bhav Dhulia",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st213635",
-        "type": "show",
-        "title": "Policie v khaki: Případ Bihár",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/xvr3WrwAQMlcb00OZEos9nLekTE.jpg",
-        "roles": [
-          "director"
-        ]
-      }
-    ]
-  },
   "p2405540": {
     "name": "Jeong Dong-hwan",
     "img": "/cDU7Mzk6xnRiEbzzuURjWip9hng.jpg",
@@ -500919,6 +500892,57 @@
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1488085": {
+    "name": "Momoka Ayukawa",
+    "img": "/wEADFVq0rkdUxIdjJm8PrHTElnh.jpg",
+    "birthday": "1991-06-10",
+    "deathday": null,
+    "age": 35,
+    "works": [
+      {
+        "id": "st90296",
+        "type": "show",
+        "title": "Tokyo Vice",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st110316",
+        "type": "show",
+        "title": "Alice in Borderland",
+        "year": 2020,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/i0i7kGDrArtM1sCd8niZDC7iboV.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3488292": {
+    "name": "Kim Min-So",
+    "img": "/7lCf123icYzguPIh5ggiaZmFdCr.jpg",
+    "birthday": "1995-01-13",
+    "deathday": null,
+    "age": 31,
+    "works": [
+      {
+        "id": "st136369",
+        "type": "show",
+        "title": "Zítra je taky den",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
         "roles": [
           "actor"
         ]
@@ -501914,6 +501938,26 @@
         "year": 2025,
         "score": 77,
         "poster": "https://image.tmdb.org/t/p/w342/bNPVb2Sv4N3CO7l6AdfjxNkMTfN.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5445060": {
+    "name": "Jameson Flynn Lopez",
+    "img": "/dPuPqsikAJuP8GyX20T8w7y3iYP.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st241609",
+        "type": "show",
+        "title": "Sousedská tajemství",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
         "roles": [
           "actor"
         ]

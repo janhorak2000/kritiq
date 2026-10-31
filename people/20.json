@@ -86091,23 +86091,23 @@
     "age": 57,
     "works": [
       {
-        "id": "st241609",
-        "type": "show",
-        "title": "Sousedská tajemství",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st253941",
         "type": "show",
         "title": "The Paper",
         "year": 2025,
         "score": 69,
         "poster": "https://image.tmdb.org/t/p/w342/ySA5MvhoxTdezNUMe0ifPmhxH4w.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st241609",
+        "type": "show",
+        "title": "Sousedská tajemství",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
         "roles": [
           "actor"
         ]
@@ -91954,23 +91954,23 @@
         ]
       },
       {
-        "id": "st241609",
-        "type": "show",
-        "title": "Sousedská tajemství",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
         "id": "st209876",
         "type": "show",
         "title": "Zlodějíčci",
         "year": 2025,
         "score": 70,
         "poster": "https://image.tmdb.org/t/p/w342/9e2KHC3pzXGoLWrwmGf8tGV7IJ5.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "st241609",
+        "type": "show",
+        "title": "Sousedská tajemství",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
         "roles": [
           "composer"
         ]
@@ -183185,6 +183185,17 @@
         ]
       },
       {
+        "id": "st227191",
+        "type": "show",
+        "title": "Devět Hádanek",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/3odibmWnSpFf0fwA1KT1SO3yVfX.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st259710",
         "type": "show",
         "title": "Královna podvodnic",
@@ -183202,17 +183213,6 @@
         "year": 2025,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/kFx0FD0Cgns9OThcSkAmWYcnYzu.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st227191",
-        "type": "show",
-        "title": "Devět Hádanek",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/3odibmWnSpFf0fwA1KT1SO3yVfX.jpg",
         "roles": [
           "actor"
         ]
@@ -357038,23 +357038,23 @@
     "age": null,
     "works": [
       {
-        "id": "st136741",
-        "type": "show",
-        "title": "Řev",
-        "year": 2022,
-        "score": 57,
-        "poster": "https://image.tmdb.org/t/p/w342/u8QEYotLa7JqO3p4kLGUl6s6f5O.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st139397",
         "type": "show",
         "title": "Svět podle nás",
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st136741",
+        "type": "show",
+        "title": "Řev",
+        "year": 2022,
+        "score": 57,
+        "poster": "https://image.tmdb.org/t/p/w342/u8QEYotLa7JqO3p4kLGUl6s6f5O.jpg",
         "roles": [
           "actor"
         ]
@@ -368040,26 +368040,6 @@
       }
     ]
   },
-  "p2418173": {
-    "name": "Kôichirô Kanzaki",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st90296",
-        "type": "show",
-        "title": "Tokyo Vice",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p3726062": {
     "name": "Rodney Burford",
     "img": "/q9OuniAhsdi8FFsHKHsc6M49JFE.jpg",
@@ -372861,6 +372841,26 @@
         "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
         "roles": [
           "composer"
+        ]
+      }
+    ]
+  },
+  "p2418173": {
+    "name": "Kôichirô Kanzaki",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st90296",
+        "type": "show",
+        "title": "Tokyo Vice",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
+        "roles": [
+          "actor"
         ]
       }
     ]
