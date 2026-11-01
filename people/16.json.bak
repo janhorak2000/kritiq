@@ -125371,23 +125371,23 @@
         ]
       },
       {
-        "id": "st241609",
-        "type": "show",
-        "title": "Sousedská tajemství",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st259453",
         "type": "show",
         "title": "Kravaťáci LA",
         "year": 2025,
         "score": 58,
         "poster": "https://image.tmdb.org/t/p/w342/3hYiNPkcLoI3QWDokOHQJIfn55O.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st241609",
+        "type": "show",
+        "title": "Sousedská tajemství",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
         "roles": [
           "actor"
         ]
@@ -136096,6 +136096,17 @@
         "year": 2026,
         "score": 69,
         "poster": "https://image.tmdb.org/t/p/w342/zFLjSv4zhnYWVaTRCkQMfCR9JhG.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st289517",
+        "type": "show",
+        "title": "Pekelná práce",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/yyA9CI8BLNg6LtVRvmVxki4xiGb.jpg",
         "roles": [
           "actor"
         ]
@@ -380955,6 +380966,37 @@
       }
     ]
   },
+  "p6095611": {
+    "name": "Edu Martín",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1657630",
+        "type": "movie",
+        "title": "El despertar",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/w3YJx1PPPC6aiVKusxfc9QA0uYS.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st85703",
+        "type": "show",
+        "title": "Čarodějnice navždy",
+        "year": 2019,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/bgACgk9Ws4mB8IGTe9ryLIi1Fdo.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p544302": {
     "name": "Jaroslav Průcha",
     "img": "/81w7vvPzlL3WVwWaMvZz8fEp8if.jpg",
@@ -444317,17 +444359,6 @@
         ]
       },
       {
-        "id": "st136369",
-        "type": "show",
-        "title": "Zítra je taky den",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st205040",
         "type": "show",
         "title": "Adamas",
@@ -444367,6 +444398,17 @@
         "year": 2022,
         "score": 85,
         "poster": "https://image.tmdb.org/t/p/w342/yv57TccCkgdy3St7rspBPKROeRK.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st136369",
+        "type": "show",
+        "title": "Zítra je taky den",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
         "roles": [
           "actor"
         ]
@@ -451517,26 +451559,6 @@
       }
     ]
   },
-  "p1696909": {
-    "name": "Haruka Itou",
-    "img": "/6kWOfUqnIH5hJtvw6wmALZIg6ao.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st90296",
-        "type": "show",
-        "title": "Tokyo Vice",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p2164926": {
     "name": "Kim Tae-hee",
     "img": null,
@@ -451564,6 +451586,26 @@
         "poster": "https://image.tmdb.org/t/p/w342/fpRC1zhGOx3nvtkWb9Nrl6EZpwB.jpg",
         "roles": [
           "writer"
+        ]
+      }
+    ]
+  },
+  "p3281657": {
+    "name": "Jeff Heapy",
+    "img": "/eSfzkhuYmsatZqZ1wIUCbKLorEB.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st139397",
+        "type": "show",
+        "title": "Svět podle nás",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
+        "roles": [
+          "actor"
         ]
       }
     ]
@@ -457012,57 +457054,6 @@
       }
     ]
   },
-  "p968869": {
-    "name": "Jakub Korolczuk",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st270444",
-        "type": "show",
-        "title": "Olověné děti",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/ikawmMAPwHMmoZU8YCw4t8847sv.jpg",
-        "roles": [
-          "writer"
-        ]
-      }
-    ]
-  },
-  "p6143824": {
-    "name": "Yoon Hye-rim",
-    "img": "/meawWGnxwtZtO10LjmsqYXBXDEl.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st298610",
-        "type": "show",
-        "title": "오싹한 연애",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st314784",
-        "type": "show",
-        "title": "로맨스의 절댓값",
-        "year": 2026,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/ghOiXHwu16X5saCh3BgK5OY11cC.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p5473704": {
     "name": "Stefanie Michova",
     "img": "/6v0XDTIZa4MEsicInI1LxNX1YAp.jpg",
@@ -457079,6 +457070,26 @@
         "poster": "https://image.tmdb.org/t/p/w342/u2cX3CVzUZLIGVwd9HB7bUhE7OP.jpg",
         "roles": [
           "actor"
+        ]
+      }
+    ]
+  },
+  "p968869": {
+    "name": "Jakub Korolczuk",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st270444",
+        "type": "show",
+        "title": "Olověné děti",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/ikawmMAPwHMmoZU8YCw4t8847sv.jpg",
+        "roles": [
+          "writer"
         ]
       }
     ]
@@ -457348,6 +457359,37 @@
         "year": 2026,
         "score": 71,
         "poster": "https://image.tmdb.org/t/p/w342/iNOXveSqB5tUTmGKxp5flQuQ72f.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6143824": {
+    "name": "Yoon Hye-rim",
+    "img": "/meawWGnxwtZtO10LjmsqYXBXDEl.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st314784",
+        "type": "show",
+        "title": "로맨스의 절댓값",
+        "year": 2026,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/ghOiXHwu16X5saCh3BgK5OY11cC.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st298610",
+        "type": "show",
+        "title": "오싹한 연애",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
         "roles": [
           "actor"
         ]
@@ -458247,26 +458289,6 @@
       }
     ]
   },
-  "p3281657": {
-    "name": "Jeff Heapy",
-    "img": "/eSfzkhuYmsatZqZ1wIUCbKLorEB.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st139397",
-        "type": "show",
-        "title": "Svět podle nás",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p4012849": {
     "name": "Lim Jung-ok",
     "img": "/4sfrLeU7xvjElkE9D5KCLvVK3uD.jpg",
@@ -458281,6 +458303,26 @@
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1696909": {
+    "name": "Haruka Itou",
+    "img": "/6kWOfUqnIH5hJtvw6wmALZIg6ao.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st90296",
+        "type": "show",
+        "title": "Tokyo Vice",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
         "roles": [
           "actor"
         ]
@@ -461207,26 +461249,6 @@
         "year": 2019,
         "score": 65,
         "poster": "https://image.tmdb.org/t/p/w342/8Qmy3J38hf4vc9RpX08NCCCRmRh.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6095611": {
-    "name": "Edu Martín",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st85703",
-        "type": "show",
-        "title": "Čarodějnice navždy",
-        "year": 2019,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/bgACgk9Ws4mB8IGTe9ryLIi1Fdo.jpg",
         "roles": [
           "actor"
         ]

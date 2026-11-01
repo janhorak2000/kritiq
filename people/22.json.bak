@@ -62354,23 +62354,23 @@
         ]
       },
       {
-        "id": "st241609",
-        "type": "show",
-        "title": "Sousedská tajemství",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st243881",
         "type": "show",
         "title": "Dům Davidův",
         "year": 2025,
         "score": 75,
         "poster": "https://image.tmdb.org/t/p/w342/cAhd5F9zO1MXkfcxE8HGIhqsnEG.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st241609",
+        "type": "show",
+        "title": "Sousedská tajemství",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
         "roles": [
           "actor"
         ]
@@ -136954,6 +136954,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "mt1453407",
+        "type": "movie",
+        "title": "Osudná noc",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/e4N7M52cBbyi24xLga8yI6yt1u1.jpg",
+        "roles": [
+          "director"
+        ]
+      },
       {
         "id": "mt397365",
         "type": "movie",
@@ -321273,6 +321284,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1657630",
+        "type": "movie",
+        "title": "El despertar",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/w3YJx1PPPC6aiVKusxfc9QA0uYS.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1126934",
         "type": "movie",
         "title": "What You Wish For",
@@ -329825,6 +329847,26 @@
         "year": 2021,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/8pqCanIwJFehhZdP00gXE0qc9xc.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4509176": {
+    "name": "Iván Piñacué",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1657630",
+        "type": "movie",
+        "title": "El despertar",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/w3YJx1PPPC6aiVKusxfc9QA0uYS.jpg",
         "roles": [
           "actor"
         ]
@@ -362708,23 +362750,23 @@
     "age": null,
     "works": [
       {
-        "id": "st136369",
-        "type": "show",
-        "title": "Zítra je taky den",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st135155",
         "type": "show",
         "title": "Prostě báječní",
         "year": 2022,
         "score": 64,
         "poster": "https://image.tmdb.org/t/p/w342/9ST1FIXudsnd0MfvJRG88iVCLrg.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st136369",
+        "type": "show",
+        "title": "Zítra je taky den",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
         "roles": [
           "actor"
         ]

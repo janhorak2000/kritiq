@@ -163463,28 +163463,6 @@
         ]
       },
       {
-        "id": "st233742",
-        "type": "show",
-        "title": "Nyutopia",
-        "year": 2025,
-        "score": 66,
-        "poster": "https://image.tmdb.org/t/p/w342/ilBndopP8kfpmhmlWDoR6xs5fKa.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st239385",
-        "type": "show",
-        "title": "Manipulátor",
-        "year": 2025,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/j5E4RXqovOrV3CS1duTGxDfmlFt.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st209110",
         "type": "show",
         "title": "Cena přiznání",
@@ -163502,6 +163480,28 @@
         "year": 2025,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/3odibmWnSpFf0fwA1KT1SO3yVfX.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st233742",
+        "type": "show",
+        "title": "Nyutopia",
+        "year": 2025,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/ilBndopP8kfpmhmlWDoR6xs5fKa.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st239385",
+        "type": "show",
+        "title": "Manipulátor",
+        "year": 2025,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/j5E4RXqovOrV3CS1duTGxDfmlFt.jpg",
         "roles": [
           "actor"
         ]
@@ -318112,23 +318112,23 @@
     "age": 29,
     "works": [
       {
-        "id": "st305644",
-        "type": "show",
-        "title": "포핸즈",
-        "year": 2026,
-        "score": 87,
-        "poster": "https://image.tmdb.org/t/p/w342/sdvxrJMzACBUG87YS1YYKmRzTN8.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st291496",
         "type": "show",
         "title": "Karameláska",
         "year": 2026,
         "score": 75,
         "poster": "https://image.tmdb.org/t/p/w342/ny8zYj40mWGTgKJi1a8hjNFUj9n.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st305644",
+        "type": "show",
+        "title": "포핸즈",
+        "year": 2026,
+        "score": 87,
+        "poster": "https://image.tmdb.org/t/p/w342/sdvxrJMzACBUG87YS1YYKmRzTN8.jpg",
         "roles": [
           "actor"
         ]
@@ -323031,6 +323031,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "st289517",
+        "type": "show",
+        "title": "Pekelná práce",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/yyA9CI8BLNg6LtVRvmVxki4xiGb.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
       {
         "id": "mt729854",
         "type": "movie",
@@ -334456,6 +334467,68 @@
         "poster": "https://image.tmdb.org/t/p/w342/jRxkFK6ooUARbH7bk4RafdOLtiY.jpg",
         "roles": [
           "writer"
+        ]
+      }
+    ]
+  },
+  "p1633150": {
+    "name": "Claudio Cataño",
+    "img": "/k5L4EDlJVhqvzQojcwvbrohKeJm.jpg",
+    "birthday": "1986-12-29",
+    "deathday": null,
+    "age": 39,
+    "works": [
+      {
+        "id": "mt1657630",
+        "type": "movie",
+        "title": "El despertar",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/w3YJx1PPPC6aiVKusxfc9QA0uYS.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st207333",
+        "type": "show",
+        "title": "Sto roků samoty",
+        "year": 2024,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/3VRa9ZM0wq2vhdMGZ1Z3UpZDkXm.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st81146",
+        "type": "show",
+        "title": "Rosario Tijeras",
+        "year": 2010,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/13JdedQwxn9hhTM3wFbZL12aFfU.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6095607": {
+    "name": "Fernando Campo Cubrera",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1657630",
+        "type": "movie",
+        "title": "El despertar",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/w3YJx1PPPC6aiVKusxfc9QA0uYS.jpg",
+        "roles": [
+          "actor"
         ]
       }
     ]
@@ -384722,37 +384795,6 @@
       }
     ]
   },
-  "p1633150": {
-    "name": "Claudio Cataño",
-    "img": "/k5L4EDlJVhqvzQojcwvbrohKeJm.jpg",
-    "birthday": "1986-12-29",
-    "deathday": null,
-    "age": 39,
-    "works": [
-      {
-        "id": "st207333",
-        "type": "show",
-        "title": "Sto roků samoty",
-        "year": 2024,
-        "score": 83,
-        "poster": "https://image.tmdb.org/t/p/w342/3VRa9ZM0wq2vhdMGZ1Z3UpZDkXm.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st81146",
-        "type": "show",
-        "title": "Rosario Tijeras",
-        "year": 2010,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/13JdedQwxn9hhTM3wFbZL12aFfU.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p110667": {
     "name": "Chisa Yokoyama",
     "img": "/zdG1f8EJl4vNSCaW9ABkz3ezZFI.jpg",
@@ -388708,23 +388750,23 @@
     "age": 54,
     "works": [
       {
-        "id": "st219246",
-        "type": "show",
-        "title": "Dobrá práce",
-        "year": 2025,
-        "score": 90,
-        "poster": "https://image.tmdb.org/t/p/w342/koMkV9qm0PEZHDmX5dRpBpMH1FY.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st209110",
         "type": "show",
         "title": "Cena přiznání",
         "year": 2025,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/6R7UMF0aAOy9p4v8dlGtCIPhwcS.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st219246",
+        "type": "show",
+        "title": "Dobrá práce",
+        "year": 2025,
+        "score": 90,
+        "poster": "https://image.tmdb.org/t/p/w342/koMkV9qm0PEZHDmX5dRpBpMH1FY.jpg",
         "roles": [
           "actor"
         ]
@@ -395150,26 +395192,6 @@
       }
     ]
   },
-  "p2845394": {
-    "name": "Hisashi Yamauchi",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st90296",
-        "type": "show",
-        "title": "Tokyo Vice",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1615220": {
     "name": "Min Ji-eun",
     "img": "/ohy73GtKlGXx8lKurObGc8G74r0.jpg",
@@ -399126,33 +399148,44 @@
       }
     ]
   },
-  "p3509486": {
-    "name": "Eileen Álvarez",
-    "img": "/6xM1oRtDwWD6AO4IeVycEN8410j.jpg",
+  "p2515064": {
+    "name": "Weronika Tofilska",
+    "img": "/1HUl2aTDM7eVwInb51K1lSossPr.jpg",
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "st156933",
+        "id": "st259265",
         "type": "show",
-        "title": "Nedostatek důkazů",
-        "year": 2024,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/s3wbFZos8K4MrOqZh0bYCd2XSZG.jpg",
+        "title": "Stane se něco hrozně špatného",
+        "year": 2026,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/eK39KSennwJPzzgQ6V3q1iSSRYt.jpg",
         "roles": [
-          "actor"
+          "director"
         ]
       },
       {
-        "id": "st117303",
+        "id": "st241259",
         "type": "show",
-        "title": "Lekce chemie",
-        "year": 2023,
-        "score": 82,
-        "poster": "https://image.tmdb.org/t/p/w342/pI3zaF12zMCsGWjkNKgf0iDpiv2.jpg",
+        "title": "Sobík",
+        "year": 2024,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/e0I3aUxQiDvjClyxa4ZfuhitbQp.jpg",
         "roles": [
-          "actor"
+          "director"
+        ]
+      },
+      {
+        "id": "st98187",
+        "type": "show",
+        "title": "Příležitostní detektivové z Baker Street",
+        "year": 2021,
+        "score": 61,
+        "poster": "https://image.tmdb.org/t/p/w342/qN6HCKR3ZRqbpGBWFctVlSTKR2k.jpg",
+        "roles": [
+          "director"
         ]
       }
     ]
@@ -401683,48 +401716,6 @@
       }
     ]
   },
-  "p2515064": {
-    "name": "Weronika Tofilska",
-    "img": "/1HUl2aTDM7eVwInb51K1lSossPr.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st259265",
-        "type": "show",
-        "title": "Stane se něco hrozně špatného",
-        "year": 2026,
-        "score": 68,
-        "poster": "https://image.tmdb.org/t/p/w342/eK39KSennwJPzzgQ6V3q1iSSRYt.jpg",
-        "roles": [
-          "director"
-        ]
-      },
-      {
-        "id": "st241259",
-        "type": "show",
-        "title": "Sobík",
-        "year": 2024,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/e0I3aUxQiDvjClyxa4ZfuhitbQp.jpg",
-        "roles": [
-          "director"
-        ]
-      },
-      {
-        "id": "st98187",
-        "type": "show",
-        "title": "Příležitostní detektivové z Baker Street",
-        "year": 2021,
-        "score": 61,
-        "poster": "https://image.tmdb.org/t/p/w342/qN6HCKR3ZRqbpGBWFctVlSTKR2k.jpg",
-        "roles": [
-          "director"
-        ]
-      }
-    ]
-  },
   "p6096806": {
     "name": "Kenny Jermyn",
     "img": null,
@@ -401911,6 +401902,26 @@
         "year": 2026,
         "score": 57,
         "poster": "https://image.tmdb.org/t/p/w342/qVvUs2KFhT3h36dvcVRtzaicl7n.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3748373": {
+    "name": "Ana Garcés",
+    "img": "/gwttUDHoPRmrkNKOXptzAoFBwjR.jpg",
+    "birthday": "2000-05-09",
+    "deathday": null,
+    "age": 26,
+    "works": [
+      {
+        "id": "st296285",
+        "type": "show",
+        "title": "Oasis",
+        "year": 2026,
+        "score": 55,
+        "poster": "https://image.tmdb.org/t/p/w342/vWBtcjETIUd45OoIULEqc6qZxM7.jpg",
         "roles": [
           "actor"
         ]
@@ -402439,6 +402450,26 @@
       }
     ]
   },
+  "p2845394": {
+    "name": "Hisashi Yamauchi",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st90296",
+        "type": "show",
+        "title": "Tokyo Vice",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p1428440": {
     "name": "Genki Okawa",
     "img": "/nWTFYAF9phuYsoxc7Ta4X1TDJ12.jpg",
@@ -402537,6 +402568,37 @@
         "poster": "https://image.tmdb.org/t/p/w342/tiafvHRKUUdY3aPBbdxZbjhkZvd.jpg",
         "roles": [
           "director"
+        ]
+      }
+    ]
+  },
+  "p3509486": {
+    "name": "Eileen Álvarez",
+    "img": "/6xM1oRtDwWD6AO4IeVycEN8410j.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st156933",
+        "type": "show",
+        "title": "Nedostatek důkazů",
+        "year": 2024,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/s3wbFZos8K4MrOqZh0bYCd2XSZG.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st117303",
+        "type": "show",
+        "title": "Lekce chemie",
+        "year": 2023,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/pI3zaF12zMCsGWjkNKgf0iDpiv2.jpg",
+        "roles": [
+          "actor"
         ]
       }
     ]

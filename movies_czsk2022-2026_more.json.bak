@@ -69838,5 +69838,58 @@
     },
     "actors": [],
     "reviews": []
+  },
+  {
+    "title": "The Collectors",
+    "tmdb_id": 1812443,
+    "imdb_id": null,
+    "original_language": "cs",
+    "year": 2026,
+    "date": "2026-06-20",
+    "score": null,
+    "box": null,
+    "box_currency": null,
+    "country": "Česko",
+    "genre": "Horor",
+    "runtime": null,
+    "poster": "https://image.tmdb.org/t/p/w342/5suuCKmvRHzFEPgFh1HRidRdcnU.jpg",
+    "gallery": [
+      "https://image.tmdb.org/t/p/w500/rAH46mfiyWaXMkNXi5vKTTK3OlG.jpg"
+    ],
+    "summary": "Potkali se ve starožitnictví. Spojila je láska pro sběratelství, rozdělila je závist. Nyní soupeří o nejlepší sbírku v celém sklepě. Kdo ze souboje plného šílenství, zběsilého uklízení a krveprolití vyjde jako vítěz? A kdo za něj zaplatí životem? Sběr právě začíná...",
+    "director": {
+      "id": 6586894,
+      "name": "Jiří Arbter",
+      "image": "https://image.tmdb.org/t/p/w300/1WDEMSkogKQ6mO7DJDGxaEgdyqA.jpg"
+    },
+    "composer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "writer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "actors": [
+      {
+        "id": 6586894,
+        "name": "Jiří Arbter",
+        "birthday": "2005-02-08",
+        "deathday": null,
+        "age": 21,
+        "image": "https://image.tmdb.org/t/p/w300/1WDEMSkogKQ6mO7DJDGxaEgdyqA.jpg"
+      },
+      {
+        "id": 6586898,
+        "name": "David Puc",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      }
+    ],
+    "reviews": []
   }
 ]

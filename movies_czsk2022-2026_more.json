@@ -69891,5 +69891,122 @@
       }
     ],
     "reviews": []
+  },
+  {
+    "title": "JOŽIN: ZROZENÍ",
+    "tmdb_id": 1813896,
+    "imdb_id": null,
+    "original_language": "cs",
+    "year": 2026,
+    "date": "2026-10-31",
+    "score": null,
+    "box": null,
+    "box_currency": null,
+    "country": "Česko",
+    "genre": "Horor",
+    "runtime": null,
+    "poster": "https://image.tmdb.org/t/p/w342/l60zgSTsSABnc2fxR27UZzKFfYw.jpg",
+    "gallery": [
+      "https://image.tmdb.org/t/p/w500/4YzN7hYPKPDQe0cAPf8SKLt8OjM.jpg"
+    ],
+    "summary": "Parta kamarádů se snaží o Reboot jejich short filmu ‘Jožin’ z roku 2024. Mají ale malý budget a po sehnání herečky u baru a kradené techniky se vydají na lokalitu natáčení. Tam se ale vše zvrhne na krvelačnou past protože záhadná krabička posedne jednoho z herců Jožina.",
+    "director": {
+      "id": 6385923,
+      "name": "Adam Lysek",
+      "image": "https://image.tmdb.org/t/p/w300/oHPg6ti8wWDQXgwYsx8zueLip0y.jpg"
+    },
+    "composer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "writer": {
+      "id": 6385923,
+      "name": "Adam Lysek",
+      "image": "https://image.tmdb.org/t/p/w300/oHPg6ti8wWDQXgwYsx8zueLip0y.jpg"
+    },
+    "actors": [
+      {
+        "id": 6590479,
+        "name": "Filip Čmiel",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 6385923,
+        "name": "Adam Lysek",
+        "birthday": "1996-05-18",
+        "deathday": null,
+        "age": 30,
+        "image": "https://image.tmdb.org/t/p/w300/oHPg6ti8wWDQXgwYsx8zueLip0y.jpg"
+      },
+      {
+        "id": 6590481,
+        "name": "Tomáš Dokoupil",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5448019,
+        "name": "Magdalena Bařáková",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/74mIWaSYwHPYaG7OPM7SMfApKPp.jpg"
+      },
+      {
+        "id": 6590482,
+        "name": "Bart Klimsza",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 6590484,
+        "name": "Aneta Holarová",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 6590486,
+        "name": "Petr Brunner",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 6590487,
+        "name": "Dušan Brachna",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 6590488,
+        "name": "Lucie Krhovská",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 6590489,
+        "name": "Iveta Bendl",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      }
+    ],
+    "reviews": []
   }
 ]

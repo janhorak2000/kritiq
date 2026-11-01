@@ -61726,23 +61726,23 @@
         ]
       },
       {
-        "id": "st106454",
-        "type": "show",
-        "title": "Afterparty",
-        "year": 2022,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/sYhm5jINEunKW5QVQAYm7D2MOcF.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st139397",
         "type": "show",
         "title": "Svět podle nás",
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st106454",
+        "type": "show",
+        "title": "Afterparty",
+        "year": 2022,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/sYhm5jINEunKW5QVQAYm7D2MOcF.jpg",
         "roles": [
           "actor"
         ]
@@ -150129,23 +150129,23 @@
     "age": 38,
     "works": [
       {
-        "id": "st298610",
-        "type": "show",
-        "title": "오싹한 연애",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st281016",
         "type": "show",
         "title": "Můj kluk na vyžádání",
         "year": 2026,
         "score": 73,
         "poster": "https://image.tmdb.org/t/p/w342/hqIXo0s2gof6UxWDWeiP4d3rMr0.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st298610",
+        "type": "show",
+        "title": "오싹한 연애",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
         "roles": [
           "actor"
         ]
@@ -166709,23 +166709,23 @@
         ]
       },
       {
-        "id": "st136369",
-        "type": "show",
-        "title": "Zítra je taky den",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st209275",
         "type": "show",
         "title": "Mohu vám pomoci?",
         "year": 2022,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/4WRmW8ATNfKbacwh9eeL8i4SpSl.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st136369",
+        "type": "show",
+        "title": "Zítra je taky den",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
         "roles": [
           "actor"
         ]
@@ -372053,6 +372053,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1507696",
+        "type": "movie",
+        "title": "Apokalypsa Z: Nový svět",
+        "year": 2026,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/cH2Hu5UU9dCjCxz2arjoBfSW5sp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st271152",
         "type": "show",
         "title": "Tajemství řeky",
@@ -382054,6 +382065,17 @@
     "deathday": null,
     "age": 31,
     "works": [
+      {
+        "id": "st289517",
+        "type": "show",
+        "title": "Pekelná práce",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/yyA9CI8BLNg6LtVRvmVxki4xiGb.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "st226529",
         "type": "show",
@@ -491068,6 +491090,57 @@
       }
     ]
   },
+  "p1653153": {
+    "name": "Hector Sánchez",
+    "img": "/9hBuxzcIBUzGA7xsoE0VAQztAFv.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1657630",
+        "type": "movie",
+        "title": "El despertar",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/w3YJx1PPPC6aiVKusxfc9QA0uYS.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1147461": {
+    "name": "Saqib Saleem",
+    "img": "/r9I1R0OwwSiCKRTxEp8zO89s7vS.jpg",
+    "birthday": "1988-04-08",
+    "deathday": null,
+    "age": 38,
+    "works": [
+      {
+        "id": "mt1453407",
+        "type": "movie",
+        "title": "Osudná noc",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/e4N7M52cBbyi24xLga8yI6yt1u1.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st154084",
+        "type": "show",
+        "title": "Citadel Honey Bunny",
+        "year": 2024,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/lzZ9J2FOsaq1DCuD7k2f4ogbXdD.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p1602531": {
     "name": "Václav Vydra",
     "img": "/zOvlmg3HY5LZgjsPkp1dYB24yMc.jpg",
@@ -592397,108 +592470,6 @@
       }
     ]
   },
-  "p4529763": {
-    "name": "Chisato Yamasaki",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st90296",
-        "type": "show",
-        "title": "Tokyo Vice",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2104285": {
-    "name": "Han Hae-in",
-    "img": "/211ThVbEv3pdmHTuUsAZBNXbud6.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st136369",
-        "type": "show",
-        "title": "Zítra je taky den",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3515178": {
-    "name": "Yang Jae-hyun",
-    "img": "/pyQcgmVzQBo4FJ7pI6cWDOBdEXF.jpg",
-    "birthday": "1988-10-25",
-    "deathday": null,
-    "age": 37,
-    "works": [
-      {
-        "id": "st136369",
-        "type": "show",
-        "title": "Zítra je taky den",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st209275",
-        "type": "show",
-        "title": "Mohu vám pomoci?",
-        "year": 2022,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/4WRmW8ATNfKbacwh9eeL8i4SpSl.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2447551": {
-    "name": "Kim Jun-gyeong",
-    "img": "/8Mhw4m3BK6VVLjiWMUB3LgURhav.jpg",
-    "birthday": "1990-09-17",
-    "deathday": null,
-    "age": 36,
-    "works": [
-      {
-        "id": "st232616",
-        "type": "show",
-        "title": "Neobvyklá rodina",
-        "year": 2024,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/eRGLeKVt3W1vcSVX7t3oRBPXsup.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st136369",
-        "type": "show",
-        "title": "Zítra je taky den",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1745256": {
     "name": "Katherine Romans",
     "img": "/tq72lzwI6hTOW0Ejc2H1gmsJ4U5.jpg",
@@ -592668,6 +592639,37 @@
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4747332": {
+    "name": "Robby Clater",
+    "img": "/g2kogOC2gkTP10AyJx6zZ5tih6Z.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st139397",
+        "type": "show",
+        "title": "Svět podle nás",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st89624",
+        "type": "show",
+        "title": "Almost Family",
+        "year": 2019,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/eKh0YP4g5AnUN177V7ak39kMlPe.jpg",
         "roles": [
           "actor"
         ]
@@ -593478,6 +593480,37 @@
         "year": 2017,
         "score": 64,
         "poster": "https://image.tmdb.org/t/p/w342/d8mmn9thQ5dBk2qbv6BCqGUXWK3.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3515178": {
+    "name": "Yang Jae-hyun",
+    "img": "/pyQcgmVzQBo4FJ7pI6cWDOBdEXF.jpg",
+    "birthday": "1988-10-25",
+    "deathday": null,
+    "age": 37,
+    "works": [
+      {
+        "id": "st209275",
+        "type": "show",
+        "title": "Mohu vám pomoci?",
+        "year": 2022,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/4WRmW8ATNfKbacwh9eeL8i4SpSl.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st136369",
+        "type": "show",
+        "title": "Zítra je taky den",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
         "roles": [
           "actor"
         ]
@@ -601026,6 +601059,26 @@
       }
     ]
   },
+  "p1996221": {
+    "name": "Grace Parry",
+    "img": "/uZhxZG4qWw2jSC6DWi67yJLLVAh.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st241259",
+        "type": "show",
+        "title": "Sobík",
+        "year": 2024,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/e0I3aUxQiDvjClyxa4ZfuhitbQp.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p1862263": {
     "name": "Melissa Canciller",
     "img": null,
@@ -601080,6 +601133,37 @@
         "year": 2024,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/c09XdTLpLku2tqHt158NZBgC4hi.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2447551": {
+    "name": "Kim Jun-gyeong",
+    "img": "/8Mhw4m3BK6VVLjiWMUB3LgURhav.jpg",
+    "birthday": "1990-09-17",
+    "deathday": null,
+    "age": 36,
+    "works": [
+      {
+        "id": "st232616",
+        "type": "show",
+        "title": "Neobvyklá rodina",
+        "year": 2024,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/eRGLeKVt3W1vcSVX7t3oRBPXsup.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st136369",
+        "type": "show",
+        "title": "Zítra je taky den",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
         "roles": [
           "actor"
         ]
@@ -603358,26 +603442,6 @@
       }
     ]
   },
-  "p1147461": {
-    "name": "Saqib Saleem",
-    "img": "/r9I1R0OwwSiCKRTxEp8zO89s7vS.jpg",
-    "birthday": "1988-04-08",
-    "deathday": null,
-    "age": 38,
-    "works": [
-      {
-        "id": "st154084",
-        "type": "show",
-        "title": "Citadel Honey Bunny",
-        "year": 2024,
-        "score": 62,
-        "poster": "https://image.tmdb.org/t/p/w342/lzZ9J2FOsaq1DCuD7k2f4ogbXdD.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p4500261": {
     "name": "Janelle Mukiza",
     "img": null,
@@ -603980,40 +604044,20 @@
       }
     ]
   },
-  "p5445051": {
-    "name": "Karen Prior",
-    "img": "/m0coa4SEbNf2RVyzdKDzKRDFTnq.jpg",
+  "p5339561": {
+    "name": "Jack Alldridge",
+    "img": "/zz3IDRqx7wM26KTwptjDH63st5c.jpg",
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "st241609",
+        "id": "st245219",
         "type": "show",
-        "title": "Sousedská tajemství",
+        "title": "Rána bleskem",
         "year": 2025,
         "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5445073": {
-    "name": "Will River",
-    "img": "/xaZteeHq9cgGFdyvDhk0QOyZi8T.jpg",
-    "birthday": "2004-12-02",
-    "deathday": null,
-    "age": 21,
-    "works": [
-      {
-        "id": "st241609",
-        "type": "show",
-        "title": "Sousedská tajemství",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/KyUrz3GA1FML3XnKkY795XxDxN.jpg",
         "roles": [
           "actor"
         ]
@@ -606169,6 +606213,66 @@
       }
     ]
   },
+  "p4737960": {
+    "name": "Jean-Philippe Renaud",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st255661",
+        "type": "show",
+        "title": "Mladý Sherlock",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/7qHP3oZh9sZGM4bRw88iABg3SwN.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5616640": {
+    "name": "Heo Jin",
+    "img": "/AksEmOZVN8Bo1ycWVvLf6dz9eYJ.jpg",
+    "birthday": "1986-03-10",
+    "deathday": null,
+    "age": 40,
+    "works": [
+      {
+        "id": "st303143",
+        "type": "show",
+        "title": "My Royal Nemesis",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/u2cX3CVzUZLIGVwd9HB7bUhE7OP.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3038163": {
+    "name": "Choi Yu-ju",
+    "img": "/250k8ArRW9MeEM5tX5CnRxWEQ7N.jpg",
+    "birthday": "1997-03-05",
+    "deathday": null,
+    "age": 29,
+    "works": [
+      {
+        "id": "st291496",
+        "type": "show",
+        "title": "Karameláska",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/ny8zYj40mWGTgKJi1a8hjNFUj9n.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2145271": {
     "name": "Park Seon-ho",
     "img": "/asuUwah7AtgbCCpnhkeIvGUfgrF.jpg",
@@ -606218,108 +606322,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/4ljaX3WO4RO7uTnQ5fKbaWgm85O.jpg",
         "roles": [
           "director"
-        ]
-      }
-    ]
-  },
-  "p3901212": {
-    "name": "Lee Min-soo",
-    "img": "/dckiF72bbkh4beqANSFMCh7bSwj.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st298610",
-        "type": "show",
-        "title": "오싹한 연애",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
-        "roles": [
-          "director"
-        ]
-      },
-      {
-        "id": "st235355",
-        "type": "show",
-        "title": "Nemocniční manuál",
-        "year": 2025,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/oXaMHOQGx2V4HwoBa0IrouBe1yb.jpg",
-        "roles": [
-          "director"
-        ]
-      }
-    ]
-  },
-  "p3103492": {
-    "name": "Im Ji-min",
-    "img": "/tncGjzPt2Lyr3qykMiMaUCVBFOa.jpg",
-    "birthday": "1987-06-09",
-    "deathday": null,
-    "age": 39,
-    "works": [
-      {
-        "id": "st298610",
-        "type": "show",
-        "title": "오싹한 연애",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st122978",
-        "type": "show",
-        "title": "So I Married an Anti-Fan",
-        "year": 2021,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/wcRJ64E8xrO1GxuRIp2RXwE7sU6.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4737960": {
-    "name": "Jean-Philippe Renaud",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st255661",
-        "type": "show",
-        "title": "Mladý Sherlock",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/7qHP3oZh9sZGM4bRw88iABg3SwN.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5616640": {
-    "name": "Heo Jin",
-    "img": "/AksEmOZVN8Bo1ycWVvLf6dz9eYJ.jpg",
-    "birthday": "1986-03-10",
-    "deathday": null,
-    "age": 40,
-    "works": [
-      {
-        "id": "st303143",
-        "type": "show",
-        "title": "My Royal Nemesis",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/u2cX3CVzUZLIGVwd9HB7bUhE7OP.jpg",
-        "roles": [
-          "actor"
         ]
       }
     ]
@@ -607401,6 +607403,26 @@
       }
     ]
   },
+  "p2825236": {
+    "name": "Kim Seung-ho",
+    "img": "/eCPJO0r5WvBI3obpamLH5UgxYE7.jpg",
+    "birthday": "2001-06-02",
+    "deathday": null,
+    "age": 25,
+    "works": [
+      {
+        "id": "st289517",
+        "type": "show",
+        "title": "Pekelná práce",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/yyA9CI8BLNg6LtVRvmVxki4xiGb.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p5216460": {
     "name": "John McManus",
     "img": null,
@@ -607787,37 +607809,6 @@
       }
     ]
   },
-  "p4747332": {
-    "name": "Robby Clater",
-    "img": "/g2kogOC2gkTP10AyJx6zZ5tih6Z.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st139397",
-        "type": "show",
-        "title": "Svět podle nás",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st89624",
-        "type": "show",
-        "title": "Almost Family",
-        "year": 2019,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/eKh0YP4g5AnUN177V7ak39kMlPe.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p4648860": {
     "name": "Avery Echelard",
     "img": null,
@@ -607832,6 +607823,46 @@
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/waW5NMQmpd3Pox7lHGjXZt14Xrp.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4529763": {
+    "name": "Chisato Yamasaki",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st90296",
+        "type": "show",
+        "title": "Tokyo Vice",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2104285": {
+    "name": "Han Hae-in",
+    "img": "/211ThVbEv3pdmHTuUsAZBNXbud6.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st136369",
+        "type": "show",
+        "title": "Zítra je taky den",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
         "roles": [
           "actor"
         ]
@@ -608802,26 +608833,6 @@
       }
     ]
   },
-  "p1996221": {
-    "name": "Grace Parry",
-    "img": "/uZhxZG4qWw2jSC6DWi67yJLLVAh.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st241259",
-        "type": "show",
-        "title": "Sobík",
-        "year": 2024,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/e0I3aUxQiDvjClyxa4ZfuhitbQp.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1649479": {
     "name": "Stan J. Adams",
     "img": null,
@@ -609038,6 +609049,37 @@
         "poster": "https://image.tmdb.org/t/p/w342/bbuSuT2rYwVhzcHtd628C4764sT.jpg",
         "roles": [
           "actor"
+        ]
+      }
+    ]
+  },
+  "p3901212": {
+    "name": "Lee Min-soo",
+    "img": "/dckiF72bbkh4beqANSFMCh7bSwj.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st298610",
+        "type": "show",
+        "title": "오싹한 연애",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "st235355",
+        "type": "show",
+        "title": "Nemocniční manuál",
+        "year": 2025,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/oXaMHOQGx2V4HwoBa0IrouBe1yb.jpg",
+        "roles": [
+          "director"
         ]
       }
     ]
@@ -609266,26 +609308,6 @@
       }
     ]
   },
-  "p5339561": {
-    "name": "Jack Alldridge",
-    "img": "/zz3IDRqx7wM26KTwptjDH63st5c.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st245219",
-        "type": "show",
-        "title": "Rána bleskem",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/KyUrz3GA1FML3XnKkY795XxDxN.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p2865199": {
     "name": "Rico Tudico",
     "img": null,
@@ -609300,6 +609322,46 @@
         "year": 2025,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5445051": {
+    "name": "Karen Prior",
+    "img": "/m0coa4SEbNf2RVyzdKDzKRDFTnq.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st241609",
+        "type": "show",
+        "title": "Sousedská tajemství",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5445073": {
+    "name": "Will River",
+    "img": "/xaZteeHq9cgGFdyvDhk0QOyZi8T.jpg",
+    "birthday": "2004-12-02",
+    "deathday": null,
+    "age": 21,
+    "works": [
+      {
+        "id": "st241609",
+        "type": "show",
+        "title": "Sousedská tajemství",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
         "roles": [
           "actor"
         ]
@@ -609697,20 +609759,31 @@
       }
     ]
   },
-  "p3038163": {
-    "name": "Choi Yu-ju",
-    "img": "/250k8ArRW9MeEM5tX5CnRxWEQ7N.jpg",
-    "birthday": "1997-03-05",
+  "p3103492": {
+    "name": "Im Ji-min",
+    "img": "/tncGjzPt2Lyr3qykMiMaUCVBFOa.jpg",
+    "birthday": "1987-06-09",
     "deathday": null,
-    "age": 29,
+    "age": 39,
     "works": [
       {
-        "id": "st291496",
+        "id": "st298610",
         "type": "show",
-        "title": "Karameláska",
+        "title": "오싹한 연애",
         "year": 2026,
         "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/ny8zYj40mWGTgKJi1a8hjNFUj9n.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/zyK5BHhUl9NtAUFaKOpgCQWW9My.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st122978",
+        "type": "show",
+        "title": "So I Married an Anti-Fan",
+        "year": 2021,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/wcRJ64E8xrO1GxuRIp2RXwE7sU6.jpg",
         "roles": [
           "actor"
         ]
