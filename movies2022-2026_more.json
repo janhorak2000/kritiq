@@ -741350,6 +741350,522 @@
     "reviews": []
   },
   {
+    "title": "Mayday",
+    "tmdb_id": 1137844,
+    "imdb_id": "tt28014327",
+    "year": 2026,
+    "date": "2026-09-03",
+    "score": 73,
+    "box": null,
+    "box_currency": null,
+    "country": "USA",
+    "genre": "Akční",
+    "runtime": 110,
+    "poster": "https://image.tmdb.org/t/p/w342/7tlkTHxcTSlrPYURo0VuglaLPXv.jpg",
+    "gallery": [
+      "https://image.tmdb.org/t/p/w500/7SD2DK6xR7ls0Vc44sHgcWh3pbN.jpg"
+    ],
+    "summary": "Pilot amerického námořnictva uvázne během přísně tajné mise v době studené války za nepřátelskou linií a jeho jedinou šancí na přežití je spojit síly s podivínským bývalým agentem KGB.",
+    "director": {
+      "id": 1236679,
+      "name": "Jonathan Goldstein",
+      "image": "https://image.tmdb.org/t/p/w300/5KVyvhBILaZsddFYSpruD0u5F3M.jpg"
+    },
+    "composer": {
+      "id": 1208823,
+      "name": "Colin Stetson",
+      "image": "https://image.tmdb.org/t/p/w300/9ri32xE54Tw3PDIyGhvYVShqnAZ.jpg"
+    },
+    "writer": {
+      "id": 52935,
+      "name": "John Francis Daley",
+      "image": "https://image.tmdb.org/t/p/w300/rKZL3e8gI2tQD6Kv0QojXK5sG4u.jpg"
+    },
+    "actors": [
+      {
+        "id": 10859,
+        "name": "Ryan Reynolds",
+        "birthday": "1976-10-23",
+        "deathday": null,
+        "age": 49,
+        "image": "https://image.tmdb.org/t/p/w300/trzgptffGvAlAT6MEu01fz47cLW.jpg"
+      },
+      {
+        "id": 11181,
+        "name": "Kenneth Branagh",
+        "birthday": "1960-12-10",
+        "deathday": null,
+        "age": 65,
+        "image": "https://image.tmdb.org/t/p/w300/AbCqqFxNi5w3nDUFdQt0DGMFh5H.jpg"
+      },
+      {
+        "id": 591295,
+        "name": "Marcin Dorociński",
+        "birthday": "1973-06-22",
+        "deathday": null,
+        "age": 53,
+        "image": "https://image.tmdb.org/t/p/w300/pyPUnMHxNPKKYxn8PehQJfSbZzO.jpg"
+      },
+      {
+        "id": 2408703,
+        "name": "Maria Bakalova",
+        "birthday": "1996-06-04",
+        "deathday": null,
+        "age": 30,
+        "image": "https://image.tmdb.org/t/p/w300/vCz0ycZr1PgJVOAeS29fIiZE8pN.jpg"
+      },
+      {
+        "id": 52,
+        "name": "David Morse",
+        "birthday": "1953-10-11",
+        "deathday": null,
+        "age": 72,
+        "image": "https://image.tmdb.org/t/p/w300/A6zGbkFjM3uajIakgsSeNTmSKqY.jpg"
+      },
+      {
+        "id": 47640,
+        "name": "Clark Johnson",
+        "birthday": "1954-09-10",
+        "deathday": null,
+        "age": 72,
+        "image": "https://image.tmdb.org/t/p/w300/k4EcCKRI7lqxrqYqVuffdSe9JBN.jpg"
+      },
+      {
+        "id": 19957,
+        "name": "Wendy Crewson",
+        "birthday": "1956-05-09",
+        "deathday": null,
+        "age": 70,
+        "image": "https://image.tmdb.org/t/p/w300/6hplkzK8KV5Cw8Z8SVKwlt3nU5I.jpg"
+      },
+      {
+        "id": 163731,
+        "name": "Louis Cancelmi",
+        "birthday": "1978-06-09",
+        "deathday": null,
+        "age": 48,
+        "image": "https://image.tmdb.org/t/p/w300/4MUGuoK0WbLsTt3sg2CD4OsLynZ.jpg"
+      },
+      {
+        "id": 52419,
+        "name": "Josh Hamilton",
+        "birthday": "1969-06-09",
+        "deathday": null,
+        "age": 57,
+        "image": "https://image.tmdb.org/t/p/w300/7nuAUPd7E8iOE5lhUcNpogS2akP.jpg"
+      },
+      {
+        "id": 1020687,
+        "name": "Alex Mallari Jr.",
+        "birthday": "1988-02-19",
+        "deathday": null,
+        "age": 38,
+        "image": "https://image.tmdb.org/t/p/w300/nhFJW8vwez6KzdYDgNu5B5L94lV.jpg"
+      },
+      {
+        "id": 1582530,
+        "name": "Alden Adair",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/tn1Lt2jxuuGOhcdygpcX2lmgmPL.jpg"
+      },
+      {
+        "id": 1927708,
+        "name": "Lovell Adams-Gray",
+        "birthday": "1992-02-03",
+        "deathday": null,
+        "age": 34,
+        "image": "https://image.tmdb.org/t/p/w300/5eysJfGCUOtKWi3ap53TCivqYVz.jpg"
+      },
+      {
+        "id": 52935,
+        "name": "John Francis Daley",
+        "birthday": "1985-07-20",
+        "deathday": null,
+        "age": 41,
+        "image": "https://image.tmdb.org/t/p/w300/rKZL3e8gI2tQD6Kv0QojXK5sG4u.jpg"
+      },
+      {
+        "id": 60906,
+        "name": "Robert Crooks",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/nrGJWpytpp8zZzjZM0KdrzgwnhP.jpg"
+      },
+      {
+        "id": 1461344,
+        "name": "Lorrie Odom",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/p3UKPBPPRkt5YWq3C5wsZF2gMEb.jpg"
+      },
+      {
+        "id": 2880116,
+        "name": "Jean Bernard",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 1461311,
+        "name": "Vadim Kroll",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/FzV0P1NAt64kqm76akUjl4AQA0.jpg"
+      },
+      {
+        "id": 1259944,
+        "name": "Andrei Kovski",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/psUNrDYvjbiidHe1FuEjYaOUSHJ.jpg"
+      },
+      {
+        "id": 2865285,
+        "name": "Alexander Drojjine",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 207818,
+        "name": "Patrick Kerton",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/jj9uVCBSSUFvOi663jMbs7YJ3G3.jpg"
+      },
+      {
+        "id": 115596,
+        "name": "Arthur Holden",
+        "birthday": "1959-08-28",
+        "deathday": null,
+        "age": 67,
+        "image": "https://image.tmdb.org/t/p/w300/c8FXyHhiVXCsjvwxXOzuVi28z3i.jpg"
+      },
+      {
+        "id": 1094772,
+        "name": "Alex Ozerov-Meyer",
+        "birthday": "1992-08-03",
+        "deathday": null,
+        "age": 34,
+        "image": "https://image.tmdb.org/t/p/w300/g0DtLoImOAVdEPm8QCtBHBJVZHK.jpg"
+      },
+      {
+        "id": 1611794,
+        "name": "David McKeown",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 6456585,
+        "name": "Alexandre Sazonov",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 3576151,
+        "name": "Elbina Oulmacheva",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 55434,
+        "name": "Leonid Citer",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/unXcr87OEHaQ4FPbrSiJzMOZWJw.jpg"
+      },
+      {
+        "id": 6372046,
+        "name": "Jacob Hanlon",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 131336,
+        "name": "Mark Antony Krupa",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/ek1qwhzkgj7ayCpEhdpt6fweRj.jpg"
+      },
+      {
+        "id": 1652142,
+        "name": "Niko Nikolov",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/lwFaAmH0E6htjdl8iVojFdx23ks.jpg"
+      },
+      {
+        "id": 1881964,
+        "name": "Raphael Kepinski",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/txUEtr2GUzuL1kG3gbrTzZwD4Xd.jpg"
+      },
+      {
+        "id": 2034431,
+        "name": "Aleksandra Kimaeva",
+        "birthday": "1990-03-13",
+        "deathday": null,
+        "age": 36,
+        "image": "https://image.tmdb.org/t/p/w300/47n9UpPBIxSxOiMeXYxf0woi7JH.jpg"
+      },
+      {
+        "id": 6456598,
+        "name": "Roksana Olsinskaya",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 6456599,
+        "name": "Nikita Olsinskiy",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 6372051,
+        "name": "Veronica Gorbov",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 2410068,
+        "name": "Chanel Mings",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/gpndHW9wp2mJTM80g8WIpJnbanp.jpg"
+      },
+      {
+        "id": 6456602,
+        "name": "Jurij Kekalo",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 2059373,
+        "name": "János Timkó",
+        "birthday": "1978-01-01",
+        "deathday": null,
+        "age": 48,
+        "image": "https://image.tmdb.org/t/p/w300/qHKNILSJE41Mtj2NUO6mdT29BeG.jpg"
+      },
+      {
+        "id": 5940768,
+        "name": "Attila Halász",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/pPW0jbMlE7qAelimXOZKclbyfod.jpg"
+      },
+      {
+        "id": 4303418,
+        "name": "Gábor Maday",
+        "birthday": "1971-11-25",
+        "deathday": null,
+        "age": 54,
+        "image": ""
+      },
+      {
+        "id": 5066421,
+        "name": "Roland Imre",
+        "birthday": "1992-03-15",
+        "deathday": null,
+        "age": 34,
+        "image": ""
+      },
+      {
+        "id": 2892344,
+        "name": "Elek Kőri",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 2714949,
+        "name": "Sándor Qpa Bencze",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 1177071,
+        "name": "János Füzi",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 1142344,
+        "name": "Péter Fancsikai",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/erxnoC5BhMqAFRQAbACDqWrq1sW.jpg"
+      },
+      {
+        "id": 1749659,
+        "name": "Erniel Baez",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 1882899,
+        "name": "Donald Sales",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/kVovZo0ApNC8SRGkbghGNMpWbys.jpg"
+      },
+      {
+        "id": 1646452,
+        "name": "Christian Jadah",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/mIyyQ8maFwGv4s4can7c0mwN9UX.jpg"
+      },
+      {
+        "id": 3579696,
+        "name": "Sophie-Thérèse Stone-Richards",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/inB8Wjr3tAKY7vyCYWaliMXEU9W.jpg"
+      },
+      {
+        "id": 3098901,
+        "name": "Joey Coleman",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/l8C9fLJ7Pu2wC7L4HsDxbat4lDE.jpg"
+      },
+      {
+        "id": 111511,
+        "name": "Jonathan Goldstein",
+        "birthday": "1964-12-04",
+        "deathday": null,
+        "age": 61,
+        "image": "https://image.tmdb.org/t/p/w300/uH4QejDcayoFYVVWkLddDCbP8xo.jpg"
+      },
+      {
+        "id": 1503929,
+        "name": "R.F. Daley",
+        "birthday": "1955-04-16",
+        "deathday": null,
+        "age": 71,
+        "image": "https://image.tmdb.org/t/p/w300/oWTyujL7Nazxb9ggJanPqjhrPyr.jpg"
+      },
+      {
+        "id": 6456605,
+        "name": "Brendan Gray",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5527857,
+        "name": "Charlie Ågadjanian",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 2942811,
+        "name": "Vassif Aliev",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5969919,
+        "name": "Valentyn Colton",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 6456608,
+        "name": "Luis Escobar",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5540307,
+        "name": "Nichita Ghidulean",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 1796434,
+        "name": "Alexander Peganov",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/saZB77Mx0gkc6EycEqQ1VGYRjSa.jpg"
+      },
+      {
+        "id": 6456609,
+        "name": "Jonathan Pariente",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5697805,
+        "name": "Rhys Alexander Phillips",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      }
+    ],
+    "reviews": []
+  },
+  {
     "title": "The Rivals of Amziah King",
     "tmdb_id": 1124142,
     "imdb_id": "tt27706593",
