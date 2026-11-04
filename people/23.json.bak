@@ -19249,6 +19249,17 @@
     "age": 75,
     "works": [
       {
+        "id": "st336240",
+        "type": "show",
+        "title": "Několik lží",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/4Z88NNfpPkG6ymd59G52v2ji6t7.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1124566",
         "type": "movie",
         "title": "Citová hodnota",
@@ -23148,158 +23159,6 @@
         "year": 2003,
         "score": 62,
         "poster": "https://image.tmdb.org/t/p/w342/zRgYzYpcXyXznlSc4swqNpXcnVs.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p131336": {
-    "name": "Mark Antony Krupa",
-    "img": "/ek1qwhzkgj7ayCpEhdpt6fweRj.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1137844",
-        "type": "movie",
-        "title": "Mayday",
-        "year": 2026,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/7tlkTHxcTSlrPYURo0VuglaLPXv.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1432706",
-        "type": "movie",
-        "title": "Bury the Devil",
-        "year": 2026,
-        "score": 42,
-        "poster": "https://image.tmdb.org/t/p/w342/yQ3GeVsebrhOPIBhIdoSslbndEv.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt605886",
-        "type": "movie",
-        "title": "Misantrop",
-        "year": 2023,
-        "score": 66,
-        "poster": "https://image.tmdb.org/t/p/w342/mFp3l4lZg1NSEsyxKrdi0rNK8r1.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt416226",
-        "type": "movie",
-        "title": "Minutes Past Midnight",
-        "year": 2016,
-        "score": 49,
-        "poster": "https://image.tmdb.org/t/p/w342/bcFERWl5cTbDcVtbwG8edNAqZTo.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt212748",
-        "type": "movie",
-        "title": "Rhymes for Young Ghouls",
-        "year": 2013,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/steITxOFJ4HnFRuxnYePDxDGK3r.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt117251",
-        "type": "movie",
-        "title": "Útok na Bílý dům",
-        "year": 2013,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/t3ztobIFzgU1IFbAmmuJVV4Dg8e.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt44680",
-        "type": "movie",
-        "title": "The Wild Hunt",
-        "year": 2009,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/6BS1fbMmYbNGgcZuCeT3OT0WVdi.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st31760",
-        "type": "show",
-        "title": "Poslední templář",
-        "year": 2009,
-        "score": 45,
-        "poster": "https://image.tmdb.org/t/p/w342/dy2e64SqBDrM5gsScN2D1By8KTn.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt30527",
-        "type": "movie",
-        "title": "Shake Hands with the Devil",
-        "year": 2007,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/5PUO6gBb2w1GIjEvX3nWnvhTXfJ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt18804",
-        "type": "movie",
-        "title": "Hlava v oblacích",
-        "year": 2004,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/7hife90EykgFaJ6KPY1DX8y7DVD.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt19180",
-        "type": "movie",
-        "title": "Kontrarozvědka",
-        "year": 2004,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/fbJwFcXT6tvIVHMzXmN7FnJgQxW.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt9839",
-        "type": "movie",
-        "title": "Hranice zlomu",
-        "year": 2003,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/j7Upm2AtGuTzCs2Asq0GyBIMAxX.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt17639",
-        "type": "movie",
-        "title": "Silent Night",
-        "year": 2002,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/exN9rOtB1JGBmT6d3R9aylwnHmY.jpg",
         "roles": [
           "actor"
         ]
@@ -83810,6 +83669,158 @@
       }
     ]
   },
+  "p131336": {
+    "name": "Mark Antony Krupa",
+    "img": "/ek1qwhzkgj7ayCpEhdpt6fweRj.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1137844",
+        "type": "movie",
+        "title": "Mayday",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/7tlkTHxcTSlrPYURo0VuglaLPXv.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1432706",
+        "type": "movie",
+        "title": "Bury the Devil",
+        "year": 2026,
+        "score": 42,
+        "poster": "https://image.tmdb.org/t/p/w342/yQ3GeVsebrhOPIBhIdoSslbndEv.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt605886",
+        "type": "movie",
+        "title": "Misantrop",
+        "year": 2023,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/mFp3l4lZg1NSEsyxKrdi0rNK8r1.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt416226",
+        "type": "movie",
+        "title": "Minutes Past Midnight",
+        "year": 2016,
+        "score": 49,
+        "poster": "https://image.tmdb.org/t/p/w342/bcFERWl5cTbDcVtbwG8edNAqZTo.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt212748",
+        "type": "movie",
+        "title": "Rhymes for Young Ghouls",
+        "year": 2013,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/steITxOFJ4HnFRuxnYePDxDGK3r.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt117251",
+        "type": "movie",
+        "title": "Útok na Bílý dům",
+        "year": 2013,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/t3ztobIFzgU1IFbAmmuJVV4Dg8e.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt44680",
+        "type": "movie",
+        "title": "The Wild Hunt",
+        "year": 2009,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/6BS1fbMmYbNGgcZuCeT3OT0WVdi.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st31760",
+        "type": "show",
+        "title": "Poslední templář",
+        "year": 2009,
+        "score": 45,
+        "poster": "https://image.tmdb.org/t/p/w342/dy2e64SqBDrM5gsScN2D1By8KTn.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt30527",
+        "type": "movie",
+        "title": "Shake Hands with the Devil",
+        "year": 2007,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/5PUO6gBb2w1GIjEvX3nWnvhTXfJ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt18804",
+        "type": "movie",
+        "title": "Hlava v oblacích",
+        "year": 2004,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/7hife90EykgFaJ6KPY1DX8y7DVD.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt19180",
+        "type": "movie",
+        "title": "Kontrarozvědka",
+        "year": 2004,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/fbJwFcXT6tvIVHMzXmN7FnJgQxW.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt9839",
+        "type": "movie",
+        "title": "Hranice zlomu",
+        "year": 2003,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/j7Upm2AtGuTzCs2Asq0GyBIMAxX.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt17639",
+        "type": "movie",
+        "title": "Silent Night",
+        "year": 2002,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/exN9rOtB1JGBmT6d3R9aylwnHmY.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p1423270": {
     "name": "Marie Tourell Søderberg",
     "img": "/wnT70xe07GNtfjvjWa7JDDvyISD.jpg",
@@ -90534,6 +90545,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "st336240",
+        "type": "show",
+        "title": "Několik lží",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/4Z88NNfpPkG6ymd59G52v2ji6t7.jpg",
+        "roles": [
+          "director"
+        ]
+      },
       {
         "id": "st221802",
         "type": "show",
@@ -163463,28 +163485,6 @@
         ]
       },
       {
-        "id": "st233742",
-        "type": "show",
-        "title": "Nyutopia",
-        "year": 2025,
-        "score": 66,
-        "poster": "https://image.tmdb.org/t/p/w342/ilBndopP8kfpmhmlWDoR6xs5fKa.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st239385",
-        "type": "show",
-        "title": "Manipulátor",
-        "year": 2025,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/j5E4RXqovOrV3CS1duTGxDfmlFt.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st209110",
         "type": "show",
         "title": "Cena přiznání",
@@ -163502,6 +163502,28 @@
         "year": 2025,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/3odibmWnSpFf0fwA1KT1SO3yVfX.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st233742",
+        "type": "show",
+        "title": "Nyutopia",
+        "year": 2025,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/ilBndopP8kfpmhmlWDoR6xs5fKa.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st239385",
+        "type": "show",
+        "title": "Manipulátor",
+        "year": 2025,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/j5E4RXqovOrV3CS1duTGxDfmlFt.jpg",
         "roles": [
           "actor"
         ]
@@ -318112,23 +318134,23 @@
     "age": 29,
     "works": [
       {
-        "id": "st291496",
-        "type": "show",
-        "title": "Karameláska",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/ny8zYj40mWGTgKJi1a8hjNFUj9n.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st305644",
         "type": "show",
         "title": "포핸즈",
         "year": 2026,
         "score": 87,
         "poster": "https://image.tmdb.org/t/p/w342/sdvxrJMzACBUG87YS1YYKmRzTN8.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st291496",
+        "type": "show",
+        "title": "Karameláska",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/ny8zYj40mWGTgKJi1a8hjNFUj9n.jpg",
         "roles": [
           "actor"
         ]
@@ -388770,17 +388792,6 @@
     "age": 54,
     "works": [
       {
-        "id": "st219246",
-        "type": "show",
-        "title": "Dobrá práce",
-        "year": 2025,
-        "score": 90,
-        "poster": "https://image.tmdb.org/t/p/w342/koMkV9qm0PEZHDmX5dRpBpMH1FY.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st209110",
         "type": "show",
         "title": "Cena přiznání",
@@ -388792,12 +388803,12 @@
         ]
       },
       {
-        "id": "st211261",
+        "id": "st219246",
         "type": "show",
-        "title": "Specialisté Prvního Zásahu",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
+        "title": "Dobrá práce",
+        "year": 2025,
+        "score": 90,
+        "poster": "https://image.tmdb.org/t/p/w342/koMkV9qm0PEZHDmX5dRpBpMH1FY.jpg",
         "roles": [
           "actor"
         ]
@@ -388809,6 +388820,17 @@
         "year": 2022,
         "score": 85,
         "poster": "https://image.tmdb.org/t/p/w342/yv57TccCkgdy3St7rspBPKROeRK.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st211261",
+        "type": "show",
+        "title": "Specialisté Prvního Zásahu",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
         "roles": [
           "actor"
         ]
@@ -395212,40 +395234,20 @@
       }
     ]
   },
-  "p1615220": {
-    "name": "Min Ji-eun",
-    "img": "/ohy73GtKlGXx8lKurObGc8G74r0.jpg",
+  "p2845394": {
+    "name": "Hisashi Yamauchi",
+    "img": null,
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "st211261",
+        "id": "st90296",
         "type": "show",
-        "title": "Specialisté Prvního Zásahu",
+        "title": "Tokyo Vice",
         "year": 2022,
         "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
-        "roles": [
-          "writer"
-        ]
-      }
-    ]
-  },
-  "p2626142": {
-    "name": "Jung Wook",
-    "img": "/VZNXB5ENQcxCJyEWnaFdkp2UIf.jpg",
-    "birthday": "1973-08-07",
-    "deathday": null,
-    "age": 53,
-    "works": [
-      {
-        "id": "st211261",
-        "type": "show",
-        "title": "Specialisté Prvního Zásahu",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
         "roles": [
           "actor"
         ]
@@ -400617,6 +400619,37 @@
       }
     ]
   },
+  "p2859870": {
+    "name": "Peter Bou-Ghannam",
+    "img": "/gRwIsx2Mskxox6TKDPsnMnz4Jdr.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st260458",
+        "type": "show",
+        "title": "Dospělost",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st103516",
+        "type": "show",
+        "title": "Star Trek: Podivné nové světy",
+        "year": 2022,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/jpH6gsOgatdiVKh4RTiy5ZJwqEL.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2309881": {
     "name": "Bali Padda",
     "img": null,
@@ -402339,37 +402372,6 @@
       }
     ]
   },
-  "p2859870": {
-    "name": "Peter Bou-Ghannam",
-    "img": "/gRwIsx2Mskxox6TKDPsnMnz4Jdr.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st260458",
-        "type": "show",
-        "title": "Dospělost",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st103516",
-        "type": "show",
-        "title": "Star Trek: Podivné nové světy",
-        "year": 2022,
-        "score": 82,
-        "poster": "https://image.tmdb.org/t/p/w342/jpH6gsOgatdiVKh4RTiy5ZJwqEL.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p2447051": {
     "name": "Saise Quinn",
     "img": "/vWGyJybwUq4PvHtXfvaVbKtL83S.jpg",
@@ -402430,6 +402432,46 @@
       }
     ]
   },
+  "p1615220": {
+    "name": "Min Ji-eun",
+    "img": "/ohy73GtKlGXx8lKurObGc8G74r0.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st211261",
+        "type": "show",
+        "title": "Specialisté Prvního Zásahu",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
+        "roles": [
+          "writer"
+        ]
+      }
+    ]
+  },
+  "p2626142": {
+    "name": "Jung Wook",
+    "img": "/VZNXB5ENQcxCJyEWnaFdkp2UIf.jpg",
+    "birthday": "1973-08-07",
+    "deathday": null,
+    "age": 53,
+    "works": [
+      {
+        "id": "st211261",
+        "type": "show",
+        "title": "Specialisté Prvního Zásahu",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p1508542": {
     "name": "Fred Davis",
     "img": "/rlDf5lwVjiCxcxVc9NmEk8CKXrU.jpg",
@@ -402464,26 +402506,6 @@
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2845394": {
-    "name": "Hisashi Yamauchi",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st90296",
-        "type": "show",
-        "title": "Tokyo Vice",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
         "roles": [
           "actor"
         ]

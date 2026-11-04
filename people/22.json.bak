@@ -15914,6 +15914,17 @@
     "age": 40,
     "works": [
       {
+        "id": "mt1381071",
+        "type": "movie",
+        "title": "Godzilla Minus Zero",
+        "year": 2026,
+        "score": 95,
+        "poster": "https://image.tmdb.org/t/p/w342/zpcoFlZwyLnBt7bb5wmvGDCdg06.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1050035",
         "type": "movie",
         "title": "Netvor",
@@ -27693,125 +27704,6 @@
         "year": 2008,
         "score": 75,
         "poster": "https://image.tmdb.org/t/p/w342/ecpdP3bFZmuePL2kwxYYvcNaLk1.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p207818": {
-    "name": "Patrick Kerton",
-    "img": "/jj9uVCBSSUFvOi663jMbs7YJ3G3.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1137844",
-        "type": "movie",
-        "title": "Mayday",
-        "year": 2026,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/7tlkTHxcTSlrPYURo0VuglaLPXv.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt973471",
-        "type": "movie",
-        "title": "Hra obětování",
-        "year": 2023,
-        "score": 54,
-        "poster": "https://image.tmdb.org/t/p/w342/6w9Wphe5O5zySyoGxlYJ5irwh4f.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt532710",
-        "type": "movie",
-        "title": "Žhářka",
-        "year": 2022,
-        "score": 46,
-        "poster": "https://image.tmdb.org/t/p/w342/Ak41o4H7dSaLNQsN1DrBucs91N1.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt338762",
-        "type": "movie",
-        "title": "Bloodshot",
-        "year": 2020,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/3GLOM5tQKh8228S20QNee72rY6D.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt459910",
-        "type": "movie",
-        "title": "Sněžná past",
-        "year": 2018,
-        "score": 59,
-        "poster": "https://image.tmdb.org/t/p/w342/253Bw5I3Zj3e2thCThjO7byEUCL.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt310135",
-        "type": "movie",
-        "title": "Turbo Kid",
-        "year": 2015,
-        "score": 67,
-        "poster": "https://image.tmdb.org/t/p/w342/ArUqADkwycYtNVuXSoSXVrdJ8iJ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt76649",
-        "type": "movie",
-        "title": "Pompeje",
-        "year": 2014,
-        "score": 55,
-        "poster": "https://image.tmdb.org/t/p/w342/dxxM3lLDjGRC50i5rhvfQziskAN.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt97614",
-        "type": "movie",
-        "title": "Chladnokrevný",
-        "year": 2012,
-        "score": 62,
-        "poster": "https://image.tmdb.org/t/p/w342/5ZM6uKhuEzWZD3xklmqKPuvq1Nj.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st40137",
-        "type": "show",
-        "title": "Assassin's Creed: Lineage",
-        "year": 2009,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/w5wmsgZ6SaAxMCwlYRfAbq5jzb2.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt11692",
-        "type": "movie",
-        "title": "Pluto Nash",
-        "year": 2002,
-        "score": 39,
-        "poster": "https://image.tmdb.org/t/p/w342/96vvhLWWDosS1zRrfQ6XEGAzByL.jpg",
         "roles": [
           "actor"
         ]
@@ -50708,6 +50600,125 @@
         "year": 2012,
         "score": 62,
         "poster": "https://image.tmdb.org/t/p/w342/qGWpEDW8kazTgdqLyaF7O4PdlQr.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p207818": {
+    "name": "Patrick Kerton",
+    "img": "/jj9uVCBSSUFvOi663jMbs7YJ3G3.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1137844",
+        "type": "movie",
+        "title": "Mayday",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/7tlkTHxcTSlrPYURo0VuglaLPXv.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt973471",
+        "type": "movie",
+        "title": "Hra obětování",
+        "year": 2023,
+        "score": 54,
+        "poster": "https://image.tmdb.org/t/p/w342/6w9Wphe5O5zySyoGxlYJ5irwh4f.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt532710",
+        "type": "movie",
+        "title": "Žhářka",
+        "year": 2022,
+        "score": 46,
+        "poster": "https://image.tmdb.org/t/p/w342/Ak41o4H7dSaLNQsN1DrBucs91N1.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt338762",
+        "type": "movie",
+        "title": "Bloodshot",
+        "year": 2020,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/3GLOM5tQKh8228S20QNee72rY6D.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt459910",
+        "type": "movie",
+        "title": "Sněžná past",
+        "year": 2018,
+        "score": 59,
+        "poster": "https://image.tmdb.org/t/p/w342/253Bw5I3Zj3e2thCThjO7byEUCL.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt310135",
+        "type": "movie",
+        "title": "Turbo Kid",
+        "year": 2015,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/ArUqADkwycYtNVuXSoSXVrdJ8iJ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt76649",
+        "type": "movie",
+        "title": "Pompeje",
+        "year": 2014,
+        "score": 55,
+        "poster": "https://image.tmdb.org/t/p/w342/dxxM3lLDjGRC50i5rhvfQziskAN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt97614",
+        "type": "movie",
+        "title": "Chladnokrevný",
+        "year": 2012,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/5ZM6uKhuEzWZD3xklmqKPuvq1Nj.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st40137",
+        "type": "show",
+        "title": "Assassin's Creed: Lineage",
+        "year": 2009,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/w5wmsgZ6SaAxMCwlYRfAbq5jzb2.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt11692",
+        "type": "movie",
+        "title": "Pluto Nash",
+        "year": 2002,
+        "score": 39,
+        "poster": "https://image.tmdb.org/t/p/w342/96vvhLWWDosS1zRrfQ6XEGAzByL.jpg",
         "roles": [
           "actor"
         ]
@@ -120608,23 +120619,23 @@
     "age": null,
     "works": [
       {
-        "id": "st255859",
-        "type": "show",
-        "title": "Nezvladatelní",
-        "year": 2025,
-        "score": 59,
-        "poster": "https://image.tmdb.org/t/p/w342/oE0JFrN5rimTi0smRgEDiJuUKsN.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st260458",
         "type": "show",
         "title": "Dospělost",
         "year": 2025,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st255859",
+        "type": "show",
+        "title": "Nezvladatelní",
+        "year": 2025,
+        "score": 59,
+        "poster": "https://image.tmdb.org/t/p/w342/oE0JFrN5rimTi0smRgEDiJuUKsN.jpg",
         "roles": [
           "actor"
         ]
@@ -215031,23 +215042,23 @@
         ]
       },
       {
-        "id": "st153496",
-        "type": "show",
-        "title": "Reborn Rich",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lRtxdLhnmaKYc65WfMHPrE4TuuI.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st135155",
         "type": "show",
         "title": "Prostě báječní",
         "year": 2022,
         "score": 64,
         "poster": "https://image.tmdb.org/t/p/w342/9ST1FIXudsnd0MfvJRG88iVCLrg.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st153496",
+        "type": "show",
+        "title": "Reborn Rich",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lRtxdLhnmaKYc65WfMHPrE4TuuI.jpg",
         "roles": [
           "actor"
         ]
@@ -362770,23 +362781,23 @@
     "age": null,
     "works": [
       {
-        "id": "st135155",
-        "type": "show",
-        "title": "Prostě báječní",
-        "year": 2022,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/9ST1FIXudsnd0MfvJRG88iVCLrg.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st136369",
         "type": "show",
         "title": "Zítra je taky den",
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st135155",
+        "type": "show",
+        "title": "Prostě báječní",
+        "year": 2022,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/9ST1FIXudsnd0MfvJRG88iVCLrg.jpg",
         "roles": [
           "actor"
         ]
@@ -376212,42 +376223,40 @@
       }
     ]
   },
-  "p3546082": {
-    "name": "Cha Yong-hak",
-    "img": "/msOffAa7cY05HJ6YdDaZSHSlPBR.jpg",
-    "birthday": "1982-11-15",
+  "p3703371": {
+    "name": "Rebecca Haden",
+    "img": "/jDHtEaSOrVdGjN0pZmiEIXgywIC.jpg",
+    "birthday": null,
     "deathday": null,
-    "age": 43,
+    "age": null,
     "works": [
       {
-        "id": "st222233",
+        "id": "st81723",
         "type": "show",
-        "title": "Doktoři na dně",
-        "year": 2024,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/6z9AXyb66MsMcUHbiQ3UQVr9MEB.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st211261",
-        "type": "show",
-        "title": "Specialisté Prvního Zásahu",
+        "title": "Pozlacený věk",
         "year": 2022,
         "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/msO0qHSe2yrpdkLLoeg0s1Wiiu9.jpg",
         "roles": [
           "actor"
         ]
-      },
+      }
+    ]
+  },
+  "p3090758": {
+    "name": "Dana Paulo",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
       {
-        "id": "st135157",
+        "id": "st119845",
         "type": "show",
-        "title": "Alchymie duše",
+        "title": "Power Book IV: Force",
         "year": 2022,
-        "score": 87,
-        "poster": "https://image.tmdb.org/t/p/w342/pGs6UA4rPUZEokDyTwAGdRvwrAD.jpg",
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/yzL4Tqbw2JA9MCsHJWFC4xV1IYU.jpg",
         "roles": [
           "actor"
         ]
@@ -379702,6 +379711,48 @@
       }
     ]
   },
+  "p3546082": {
+    "name": "Cha Yong-hak",
+    "img": "/msOffAa7cY05HJ6YdDaZSHSlPBR.jpg",
+    "birthday": "1982-11-15",
+    "deathday": null,
+    "age": 43,
+    "works": [
+      {
+        "id": "st222233",
+        "type": "show",
+        "title": "Doktoři na dně",
+        "year": 2024,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/6z9AXyb66MsMcUHbiQ3UQVr9MEB.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st135157",
+        "type": "show",
+        "title": "Alchymie duše",
+        "year": 2022,
+        "score": 87,
+        "poster": "https://image.tmdb.org/t/p/w342/pGs6UA4rPUZEokDyTwAGdRvwrAD.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st211261",
+        "type": "show",
+        "title": "Specialisté Prvního Zásahu",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2938992": {
     "name": "Yeo Woon-bok",
     "img": "/qNO9QpOjwj8gjmj4hGipHZPmmFz.jpg",
@@ -382726,46 +382777,6 @@
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3703371": {
-    "name": "Rebecca Haden",
-    "img": "/jDHtEaSOrVdGjN0pZmiEIXgywIC.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st81723",
-        "type": "show",
-        "title": "Pozlacený věk",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/msO0qHSe2yrpdkLLoeg0s1Wiiu9.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3090758": {
-    "name": "Dana Paulo",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st119845",
-        "type": "show",
-        "title": "Power Book IV: Force",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/yzL4Tqbw2JA9MCsHJWFC4xV1IYU.jpg",
         "roles": [
           "actor"
         ]
