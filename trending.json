@@ -1,6 +1,15 @@
 {
   "movies": [
     {
+      "title": "Godzilla Minus Zero",
+      "year": 2026,
+      "date": "2026-11-03",
+      "score": 95,
+      "poster": "https://image.tmdb.org/t/p/w342/zpcoFlZwyLnBt7bb5wmvGDCdg06.jpg",
+      "tmdb_id": 1381071,
+      "imdb_id": "tt34384661"
+    },
+    {
       "title": "Hypotéza lásky",
       "year": 2026,
       "date": "2026-09-23",
@@ -19,13 +28,13 @@
       "imdb_id": "tt36586020"
     },
     {
-      "title": "Runner",
+      "title": "Já, Rocky",
       "year": 2026,
-      "date": "2026-09-07",
-      "score": 84,
-      "poster": "https://image.tmdb.org/t/p/w342/yBKMAIj7clP42UkFejhGDBBoTpb.jpg",
-      "tmdb_id": 1377237,
-      "imdb_id": "tt31349844"
+      "date": "2026-11-06",
+      "score": 87,
+      "poster": "https://image.tmdb.org/t/p/w342/xE5tY3lppZUyG7WKKThsuYHuAHr.jpg",
+      "tmdb_id": 1286656,
+      "imdb_id": "tt11995650"
     },
     {
       "title": "Tenzing",
@@ -37,13 +46,13 @@
       "imdb_id": "tt6262770"
     },
     {
-      "title": "Divoký kůň Devítka",
+      "title": "One Last Shot",
       "year": 2026,
-      "date": "2026-10-30",
-      "score": 82,
-      "poster": "https://image.tmdb.org/t/p/w342/dNJFRtVg3xLQ7dbNIQ55cmmIniD.jpg",
-      "tmdb_id": 891621,
-      "imdb_id": "tt15799564"
+      "date": "2026-09-22",
+      "score": 83,
+      "poster": "https://image.tmdb.org/t/p/w342/niQ4NBh2jqAf1hDZP5m6ReWFAb7.jpg",
+      "tmdb_id": 1607127,
+      "imdb_id": "tt37971717"
     },
     {
       "title": "The Stunt Driver",
@@ -55,52 +64,34 @@
       "imdb_id": "tt34611096"
     },
     {
-      "title": "Velrybí pád",
+      "title": "V srdci divočiny",
       "year": 2026,
-      "date": "2026-10-14",
-      "score": 78,
-      "poster": "https://image.tmdb.org/t/p/w342/uSjnb0s4oNZFhO8PiYLxs2Qqw48.jpg",
-      "tmdb_id": 1255833,
-      "imdb_id": "tt28535715"
+      "date": "2026-09-19",
+      "score": 79,
+      "poster": "https://image.tmdb.org/t/p/w342/vIQY7fG0AzSCUhO8BIOusCdhjAz.jpg",
+      "tmdb_id": 1263337,
+      "imdb_id": "tt7526136"
     },
     {
-      "title": "Rozum a cit",
+      "title": "Primetime",
       "year": 2026,
       "date": "2026-09-23",
+      "score": 78,
+      "poster": "https://image.tmdb.org/t/p/w342/51VDtNQFuD2I86hrT4ekytg9Dq3.jpg",
+      "tmdb_id": 1375441,
+      "imdb_id": "tt34206385"
+    },
+    {
+      "title": "Model Citizen",
+      "year": 2026,
+      "date": "2026-11-03",
       "score": 77,
-      "poster": "https://image.tmdb.org/t/p/w342/tFZYaRLR1QwliMA3uoQ7qkyNjNI.jpg",
-      "tmdb_id": 1503762,
-      "imdb_id": "tt13609648"
-    },
-    {
-      "title": "Kojot vrací úder",
-      "year": 2026,
-      "date": "2026-08-20",
-      "score": 76,
-      "poster": "https://image.tmdb.org/t/p/w342/fFjf76Ngjf8BXCDsGPhIqpZUAkY.jpg",
-      "tmdb_id": 1204680,
-      "imdb_id": "tt1756855"
-    },
-    {
-      "title": "Zip Wire",
-      "year": 2026,
-      "date": "2026-08-31",
-      "score": 76,
-      "poster": "https://image.tmdb.org/t/p/w342/cO7J0XSVKPlAjUCMWC7DVBn1Py2.jpg",
-      "tmdb_id": 1482547,
-      "imdb_id": "tt36980377"
+      "poster": "https://image.tmdb.org/t/p/w342/7SE0LBwgqiqZzkm9gKVbBAbcNQL.jpg",
+      "tmdb_id": 1792170,
+      "imdb_id": "tt13884466"
     }
   ],
   "shows": [
-    {
-      "title": "The Blame",
-      "year": 2026,
-      "date": "2026-09-20",
-      "score": 87,
-      "poster": "https://image.tmdb.org/t/p/w342/5ZeHhMqi7tDTgKvfUdy9rs7VKUt.jpg",
-      "tmdb_id": 319851,
-      "imdb_id": "tt36857537"
-    },
     {
       "title": "Grand Tour",
       "year": 2026,
@@ -109,15 +100,6 @@
       "poster": "https://image.tmdb.org/t/p/w342/kq6XB6xmD86txW4UR32tT2JUiN9.jpg",
       "tmdb_id": 329471,
       "imdb_id": "tt44974627"
-    },
-    {
-      "title": "Lanterns",
-      "year": 2026,
-      "date": "2026-08-16",
-      "score": 78,
-      "poster": "https://image.tmdb.org/t/p/w342/gpC7h43xPMEV3goYMQShfJbTtLq.jpg",
-      "tmdb_id": 95350,
-      "imdb_id": "tt26545992"
     },
     {
       "title": "S&X",
@@ -129,22 +111,31 @@
       "imdb_id": "tt39365311"
     },
     {
-      "title": "Smrt pastorovy ženy",
+      "title": "Akademie Minerva",
       "year": 2026,
-      "date": "2026-08-26",
-      "score": 67,
-      "poster": "https://image.tmdb.org/t/p/w342/o8H6HmQNt2qx5bIfmvuI6VJn13A.jpg",
-      "tmdb_id": 331616,
-      "imdb_id": "tt44113382"
+      "date": "2026-09-22",
+      "score": 70,
+      "poster": "https://image.tmdb.org/t/p/w342/cTTXRklz5tJWX6wrN3XrjHo34H1.jpg",
+      "tmdb_id": 312557,
+      "imdb_id": "tt28765828"
     },
     {
-      "title": "A Tale of Two Cities",
+      "title": "Myšilov",
       "year": 2026,
-      "date": "2026-09-06",
-      "score": 67,
-      "poster": "https://image.tmdb.org/t/p/w342/ht3OVVRBTrTeVtUVQiKSekjIFVH.jpg",
-      "tmdb_id": 301626,
-      "imdb_id": "tt38128417"
+      "date": "2026-08-28",
+      "score": 70,
+      "poster": "https://image.tmdb.org/t/p/w342/z1xv9CKt7HmXgS6azNB563mU2FB.jpg",
+      "tmdb_id": 290193,
+      "imdb_id": "tt36996011"
+    },
+    {
+      "title": "Moje skvělá kariéra",
+      "year": 2026,
+      "date": "2026-08-13",
+      "score": 70,
+      "poster": "https://image.tmdb.org/t/p/w342/fhpa8B6USatHybK04XBbPAB6Mlz.jpg",
+      "tmdb_id": 309798,
+      "imdb_id": "tt37352716"
     },
     {
       "title": "Skandál",
@@ -156,13 +147,31 @@
       "imdb_id": "tt36347588"
     },
     {
-      "title": "Čističi",
+      "title": "Krvavá oběť",
       "year": 2026,
-      "date": "2026-09-17",
-      "score": 60,
-      "poster": "https://image.tmdb.org/t/p/w342/mZ0rPTMe9XfrWRUAeoJzr62cyIa.jpg",
-      "tmdb_id": 312663,
-      "imdb_id": "tt39495239"
+      "date": "2026-08-20",
+      "score": 63,
+      "poster": "https://image.tmdb.org/t/p/w342/8iFUWLKBAWDrJ9rOunscgIDrGQ1.jpg",
+      "tmdb_id": 303351,
+      "imdb_id": "tt38553367"
+    },
+    {
+      "title": "Filter",
+      "year": 2026,
+      "date": "2026-09-02",
+      "score": 63,
+      "poster": "https://image.tmdb.org/t/p/w342/3QFQKxdoCtZvtKAyuNg7o0XtbjZ.jpg",
+      "tmdb_id": 312978,
+      "imdb_id": "tt38267578"
+    },
+    {
+      "title": "Rozervaná láskou",
+      "year": 2026,
+      "date": "2026-09-02",
+      "score": 58,
+      "poster": "https://image.tmdb.org/t/p/w342/rGeWjJxZpFCftDDroRIa1BvYfqX.jpg",
+      "tmdb_id": 290234,
+      "imdb_id": "tt32909469"
     },
     {
       "title": "Veškerá pravda ukrytá v mých lžích",
@@ -172,14 +181,6 @@
       "poster": "https://image.tmdb.org/t/p/w342/A7YS8oPOpjLcCPntmOM3oqRJdbb.jpg",
       "tmdb_id": 292558,
       "imdb_id": "tt37053085"
-    },
-    {
-      "title": "Vraždy v dolinách",
-      "year": 2026,
-      "date": "2026-08-31",
-      "score": 40,
-      "poster": "https://image.tmdb.org/t/p/w342/xm12QUOdqm8hSKRh6ZxCzi1IYGZ.jpg",
-      "tmdb_id": 333454
     }
   ],
   "games": [
@@ -190,14 +191,6 @@
       "score": 87,
       "poster": "https://media.rawg.io/media/resize/640/-/games/d74/d744a3b0f6f0f0bc63f5ceb9b5e63230.jpeg",
       "rawg_id": 1010949
-    },
-    {
-      "title": "Onimusha: Way Of The Sword",
-      "year": 2026,
-      "date": "2026-09-04",
-      "score": 86,
-      "poster": "https://media.rawg.io/media/resize/640/-/games/48e/48ea2f7adb60615d658887899ffe4d1f.jpg",
-      "rawg_id": 994600
     },
     {
       "title": "Servant of the Lake",
@@ -230,6 +223,14 @@
       "score": 84,
       "poster": "https://media.rawg.io/media/resize/640/-/games/c86/c8696c763ec825c6e4d49efbf2635a26.jpg",
       "rawg_id": 1004515
+    },
+    {
+      "title": "The Blood Of Dawnwalker",
+      "year": 2026,
+      "date": "2026-09-03",
+      "score": 83,
+      "poster": "https://media.rawg.io/media/resize/640/-/games/319/319d18680fd0233e0ff724f234c97d17.jpg",
+      "rawg_id": 996046
     },
     {
       "title": "Resonance: A Plague Tale Legacy",
@@ -266,12 +267,11 @@
   ],
   "recentlyAdded": {
     "movie": {
-      "title": "Já, Rocky",
+      "title": "Poslední spojenec",
       "year": 2026,
-      "score": 87,
-      "backdrop": "https://image.tmdb.org/t/p/w500/1lnnjBCRLZzKRhQipK5zm61YkPe.jpg",
-      "tmdb_id": 1286656,
-      "imdb_id": "tt11995650"
+      "score": null,
+      "backdrop": "",
+      "tmdb_id": 1790191
     },
     "show": {
       "title": "Největší borec",
