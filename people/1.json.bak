@@ -703067,6 +703067,26 @@
       }
     ]
   },
+  "p2505966": {
+    "name": "Andreea Coff",
+    "img": "/iJk50gMzxto0s7kMsOZTCisuDYZ.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1403676",
+        "type": "movie",
+        "title": "April X",
+        "year": 2026,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/koNUflGEz6Fdy1GCqpvqBOcIaTP.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p5983583": {
     "name": "Ian Mitchell",
     "img": null,
@@ -736266,125 +736286,105 @@
       }
     ]
   },
-  "p2292291": {
-    "name": "Michal Čunderle",
+  "p3875785": {
+    "name": "Lucia Piussi",
     "img": null,
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "mt1408916",
+        "id": "mt1378595",
         "type": "movie",
-        "title": "Čarodějnická pohádka",
-        "year": 2024,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "writer"
-        ]
-      },
-      {
-        "id": "mt1222338",
-        "type": "movie",
-        "title": "Dvě Mařenky",
-        "year": 2023,
-        "score": 50,
-        "poster": "",
-        "roles": [
-          "writer"
-        ]
-      },
-      {
-        "id": "mt760533",
-        "type": "movie",
-        "title": "O vánoční hvězdě",
-        "year": 2020,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/k2ypVTgbeBzvEqm8VxtxphTXW3F.jpg",
-        "roles": [
-          "writer"
-        ]
-      },
-      {
-        "id": "mt149487",
-        "type": "movie",
-        "title": "O bílé paní",
-        "year": 2008,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/eoISTZWtLLR8lsWVIkIUkFwLwFl.jpg",
-        "roles": [
-          "writer"
-        ]
-      },
-      {
-        "id": "mt937734",
-        "type": "movie",
-        "title": "Škola ve mlejně",
-        "year": 2007,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/o1OUyClQlMsR6631BkXbvrO3go9.jpg",
-        "roles": [
-          "writer"
-        ]
-      }
-    ]
-  },
-  "p2484571": {
-    "name": "Monika Goldefusová",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1222338",
-        "type": "movie",
-        "title": "Dvě Mařenky",
-        "year": 2023,
-        "score": 50,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4447598": {
-    "name": "Bohumil Vojtek",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1567376",
-        "type": "movie",
-        "title": "Ke všem čertům",
+        "title": "Pachová stopa",
         "year": 2025,
-        "score": 40,
-        "poster": "https://image.tmdb.org/t/p/w342/zIdTzRngywAtW9zZ9blnQlj5hlL.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1408916",
-        "type": "movie",
-        "title": "Čarodějnická pohádka",
-        "year": 2024,
         "score": null,
-        "poster": "",
+        "poster": "https://image.tmdb.org/t/p/w342/w8xjCDUhQP31aEK5cDTyp7mtBJg.jpg",
         "roles": [
-          "actor"
+          "composer"
         ]
       },
       {
-        "id": "mt1222338",
+        "id": "mt1053136",
         "type": "movie",
-        "title": "Dvě Mařenky",
+        "title": "Zešílet",
         "year": 2023,
         "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
+        "roles": [
+          "composer"
+        ]
+      }
+    ]
+  },
+  "p1871585": {
+    "name": "Petra Fornayová",
+    "img": null,
+    "birthday": "1972-11-08",
+    "deathday": null,
+    "age": 53,
+    "works": [
+      {
+        "id": "mt1053136",
+        "type": "movie",
+        "title": "Zešílet",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt596638",
+        "type": "movie",
+        "title": "Žáby bez jazyka",
+        "year": 2020,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/iep02MwV52HZ9cFRCOsMxjvOxRG.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st83211",
+        "type": "show",
+        "title": "Sestričky",
+        "year": 2018,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/3jIxMy94I4scUGrEleIWQ0DEbZV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt471358",
+        "type": "movie",
+        "title": "Nina",
+        "year": 2017,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/rmoBBwVXSejWZBTfbNq6lVgqJ6o.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt394220",
+        "type": "movie",
+        "title": "Čistič",
+        "year": 2015,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/qq7cbnxn5e1Sz7tRuEmyQ04SMdr.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt728857",
+        "type": "movie",
+        "title": "Prvé hlásky lásky",
+        "year": 1988,
+        "score": null,
         "poster": "",
         "roles": [
           "actor"
@@ -736392,42 +736392,75 @@
       }
     ]
   },
-  "p2361041": {
-    "name": "Viliam Béreš",
-    "img": null,
-    "birthday": "1981-02-27",
+  "p3931511": {
+    "name": "Lukáš Jurko",
+    "img": "/hXDZFeN07HNRifvip9WPnaOKD5E.jpg",
+    "birthday": null,
     "deathday": null,
-    "age": 45,
+    "age": null,
     "works": [
       {
-        "id": "mt1078165",
+        "id": "mt1222638",
         "type": "movie",
-        "title": "Husa",
+        "title": "Jedeme na teambuilding",
         "year": 2023,
         "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/tKLtADLl0khA0b5YDVUx5xoQzFo.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/unUKbHpP6npzgzajv9FI4FxPs6D.jpg",
         "roles": [
-          "composer"
+          "actor"
         ]
       },
       {
-        "id": "st111362",
+        "id": "st217335",
         "type": "show",
-        "title": "sKORO NA mizině",
+        "title": "Iveta: Kráska z Trebišova",
+        "year": 2023,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/7jPqkVl1pooOLg7mk8PjvsH8i0K.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st220806",
+        "type": "show",
+        "title": "Einstein",
+        "year": 2023,
+        "score": 60,
+        "poster": "https://image.tmdb.org/t/p/w342/okIG456IjaiMPMXz5EKgOSVsfmo.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st218034",
+        "type": "show",
+        "title": "Vítěz",
+        "year": 2023,
+        "score": 40,
+        "poster": "https://image.tmdb.org/t/p/w342/lGNrygBSBzcghjjFUtenS6rrUD1.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st204818",
+        "type": "show",
+        "title": "Šťastná rybka",
+        "year": 2022,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/xHTLSHavJOjIzQqWGOUUHqQrjtJ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st99867",
+        "type": "show",
+        "title": "Pán profesor",
         "year": 2020,
         "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/cYJb1Nhsfiddzs3S96RrTQhzsjb.jpg",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
-        "id": "mt570684",
-        "type": "movie",
-        "title": "Hodina tance a lásky",
-        "year": 2003,
-        "score": null,
-        "poster": "",
+        "poster": "https://image.tmdb.org/t/p/w342/ndef9AXrpBbn32ScdgRhAj2mOzD.jpg",
         "roles": [
           "actor"
         ]
@@ -738421,26 +738454,6 @@
       }
     ]
   },
-  "p4366000": {
-    "name": "Margaréta Vyšná",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1190291",
-        "type": "movie",
-        "title": "Nejkrásnější kout na širém světě",
-        "year": 2024,
-        "score": 50,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p4988314": {
     "name": "Pavel Sýkora",
     "img": "/ox6WHOwMfyjzhJhFa1rG8L8yf8W.jpg",
@@ -738477,6 +738490,57 @@
         "poster": "https://image.tmdb.org/t/p/w342/aZz7dchPdyyyd1joUFXMQJecxxF.jpg",
         "roles": [
           "writer"
+        ]
+      }
+    ]
+  },
+  "p5106201": {
+    "name": "Patrik Puchner",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st333454",
+        "type": "show",
+        "title": "Vraždy v dolinách",
+        "year": 2026,
+        "score": 40,
+        "poster": "https://image.tmdb.org/t/p/w342/xm12QUOdqm8hSKRh6ZxCzi1IYGZ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1237772",
+        "type": "movie",
+        "title": "Fentasy",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/3m6UI9B8DAMEJpcIAvRbbZZs50U.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5106212": {
+    "name": "Martin Darnadi",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1237772",
+        "type": "movie",
+        "title": "Fentasy",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/3m6UI9B8DAMEJpcIAvRbbZZs50U.jpg",
+        "roles": [
+          "actor"
         ]
       }
     ]
@@ -739210,6 +739274,112 @@
         "poster": "https://image.tmdb.org/t/p/w342/ndszC0ccoFWFhkmLIR4Pqm2zH91.jpg",
         "roles": [
           "composer"
+        ]
+      }
+    ]
+  },
+  "p2292291": {
+    "name": "Michal Čunderle",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1408916",
+        "type": "movie",
+        "title": "Čarodějnická pohádka",
+        "year": 2024,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "mt1222338",
+        "type": "movie",
+        "title": "Dvě Mařenky",
+        "year": 2023,
+        "score": 50,
+        "poster": "",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "mt760533",
+        "type": "movie",
+        "title": "O vánoční hvězdě",
+        "year": 2020,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/k2ypVTgbeBzvEqm8VxtxphTXW3F.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "mt149487",
+        "type": "movie",
+        "title": "O bílé paní",
+        "year": 2008,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/eoISTZWtLLR8lsWVIkIUkFwLwFl.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "mt937734",
+        "type": "movie",
+        "title": "Škola ve mlejně",
+        "year": 2007,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/o1OUyClQlMsR6631BkXbvrO3go9.jpg",
+        "roles": [
+          "writer"
+        ]
+      }
+    ]
+  },
+  "p4447598": {
+    "name": "Bohumil Vojtek",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1567376",
+        "type": "movie",
+        "title": "Ke všem čertům",
+        "year": 2025,
+        "score": 40,
+        "poster": "https://image.tmdb.org/t/p/w342/zIdTzRngywAtW9zZ9blnQlj5hlL.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1408916",
+        "type": "movie",
+        "title": "Čarodějnická pohádka",
+        "year": 2024,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1222338",
+        "type": "movie",
+        "title": "Dvě Mařenky",
+        "year": 2023,
+        "score": 50,
+        "poster": "",
+        "roles": [
+          "actor"
         ]
       }
     ]
@@ -740688,37 +740858,6 @@
         "roles": [
           "director",
           "writer"
-        ]
-      }
-    ]
-  },
-  "p3875785": {
-    "name": "Lucia Piussi",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1378595",
-        "type": "movie",
-        "title": "Pachová stopa",
-        "year": 2025,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/w8xjCDUhQP31aEK5cDTyp7mtBJg.jpg",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
-        "id": "mt1053136",
-        "type": "movie",
-        "title": "Zešílet",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
-        "roles": [
-          "composer"
         ]
       }
     ]
@@ -774646,74 +774785,19 @@
       }
     ]
   },
-  "p1871585": {
-    "name": "Petra Fornayová",
+  "p2484571": {
+    "name": "Monika Goldefusová",
     "img": null,
-    "birthday": "1972-11-08",
+    "birthday": null,
     "deathday": null,
-    "age": 53,
+    "age": null,
     "works": [
       {
-        "id": "mt1053136",
+        "id": "mt1222338",
         "type": "movie",
-        "title": "Zešílet",
+        "title": "Dvě Mařenky",
         "year": 2023,
         "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt596638",
-        "type": "movie",
-        "title": "Žáby bez jazyka",
-        "year": 2020,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/iep02MwV52HZ9cFRCOsMxjvOxRG.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st83211",
-        "type": "show",
-        "title": "Sestričky",
-        "year": 2018,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/3jIxMy94I4scUGrEleIWQ0DEbZV.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt471358",
-        "type": "movie",
-        "title": "Nina",
-        "year": 2017,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/rmoBBwVXSejWZBTfbNq6lVgqJ6o.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt394220",
-        "type": "movie",
-        "title": "Čistič",
-        "year": 2015,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/qq7cbnxn5e1Sz7tRuEmyQ04SMdr.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt728857",
-        "type": "movie",
-        "title": "Prvé hlásky lásky",
-        "year": 1988,
-        "score": null,
         "poster": "",
         "roles": [
           "actor"
@@ -774721,75 +774805,42 @@
       }
     ]
   },
-  "p3931511": {
-    "name": "Lukáš Jurko",
-    "img": "/hXDZFeN07HNRifvip9WPnaOKD5E.jpg",
-    "birthday": null,
+  "p2361041": {
+    "name": "Viliam Béreš",
+    "img": null,
+    "birthday": "1981-02-27",
     "deathday": null,
-    "age": null,
+    "age": 45,
     "works": [
       {
-        "id": "mt1222638",
+        "id": "mt1078165",
         "type": "movie",
-        "title": "Jedeme na teambuilding",
+        "title": "Husa",
         "year": 2023,
         "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/unUKbHpP6npzgzajv9FI4FxPs6D.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/tKLtADLl0khA0b5YDVUx5xoQzFo.jpg",
         "roles": [
-          "actor"
+          "composer"
         ]
       },
       {
-        "id": "st217335",
+        "id": "st111362",
         "type": "show",
-        "title": "Iveta: Kráska z Trebišova",
-        "year": 2023,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/7jPqkVl1pooOLg7mk8PjvsH8i0K.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st220806",
-        "type": "show",
-        "title": "Einstein",
-        "year": 2023,
-        "score": 60,
-        "poster": "https://image.tmdb.org/t/p/w342/okIG456IjaiMPMXz5EKgOSVsfmo.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st218034",
-        "type": "show",
-        "title": "Vítěz",
-        "year": 2023,
-        "score": 40,
-        "poster": "https://image.tmdb.org/t/p/w342/lGNrygBSBzcghjjFUtenS6rrUD1.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st204818",
-        "type": "show",
-        "title": "Šťastná rybka",
-        "year": 2022,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/xHTLSHavJOjIzQqWGOUUHqQrjtJ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st99867",
-        "type": "show",
-        "title": "Pán profesor",
+        "title": "sKORO NA mizině",
         "year": 2020,
         "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/ndef9AXrpBbn32ScdgRhAj2mOzD.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/cYJb1Nhsfiddzs3S96RrTQhzsjb.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "mt570684",
+        "type": "movie",
+        "title": "Hodina tance a lásky",
+        "year": 2003,
+        "score": null,
+        "poster": "",
         "roles": [
           "actor"
         ]
@@ -775413,51 +775464,20 @@
       }
     ]
   },
-  "p5106201": {
-    "name": "Patrik Puchner",
+  "p4366000": {
+    "name": "Margaréta Vyšná",
     "img": null,
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "st333454",
-        "type": "show",
-        "title": "Vraždy v dolinách",
-        "year": 2026,
-        "score": 40,
-        "poster": "https://image.tmdb.org/t/p/w342/xm12QUOdqm8hSKRh6ZxCzi1IYGZ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1237772",
+        "id": "mt1190291",
         "type": "movie",
-        "title": "Fentasy",
+        "title": "Nejkrásnější kout na širém světě",
         "year": 2024,
         "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/3m6UI9B8DAMEJpcIAvRbbZZs50U.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5106212": {
-    "name": "Martin Darnadi",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1237772",
-        "type": "movie",
-        "title": "Fentasy",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/3m6UI9B8DAMEJpcIAvRbbZZs50U.jpg",
+        "poster": "",
         "roles": [
           "actor"
         ]

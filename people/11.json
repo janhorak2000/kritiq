@@ -189343,6 +189343,17 @@
         ]
       },
       {
+        "id": "st312006",
+        "type": "show",
+        "title": "Umrtvení",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/h11NvlBzbTF6P2boA65ITdFSSo4.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1468789",
         "type": "movie",
         "title": "Planeta nezadaných: Řecký příběh",
@@ -353893,6 +353904,17 @@
     "age": 49,
     "works": [
       {
+        "id": "st312006",
+        "type": "show",
+        "title": "Umrtvení",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/h11NvlBzbTF6P2boA65ITdFSSo4.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st253370",
         "type": "show",
         "title": "Východní křídlo",
@@ -394451,6 +394473,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "st293116",
+        "type": "show",
+        "title": "Tall Tales & Murder",
+        "year": 2026,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/1fgKe9YOxRIkAicES7RVAscmgus.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "st209922",
         "type": "show",
@@ -546996,23 +547029,23 @@
         ]
       },
       {
-        "id": "mt1104172",
-        "type": "movie",
-        "title": "O malých věcech",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/rpNy6ayzh5FIbY4kEVnn8U4cpDZ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt642725",
         "type": "movie",
         "title": "Perinbaba a dva světy",
         "year": 2023,
         "score": 36,
         "poster": "https://image.tmdb.org/t/p/w342/atQCr30e7hmyAcXKm5hld6PLmrE.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1104172",
+        "type": "movie",
+        "title": "O malých věcech",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/rpNy6ayzh5FIbY4kEVnn8U4cpDZ.jpg",
         "roles": [
           "actor"
         ]
@@ -547422,23 +547455,23 @@
         ]
       },
       {
-        "id": "mt1150639",
-        "type": "movie",
-        "title": "Tajný zákop",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/lKh7eybPjrwBqv2632et5k54UUN.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt768087",
         "type": "movie",
         "title": "Ostrov",
         "year": 2023,
         "score": 51,
         "poster": "https://image.tmdb.org/t/p/w342/hXjufuZbhr9fpTe3ZgovGkhF1Ug.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1150639",
+        "type": "movie",
+        "title": "Tajný zákop",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/lKh7eybPjrwBqv2632et5k54UUN.jpg",
         "roles": [
           "actor"
         ]
@@ -592961,20 +592994,20 @@
       }
     ]
   },
-  "p3875806": {
-    "name": "Karolína Poláková",
+  "p5066776": {
+    "name": "Lucia Nedelková",
     "img": null,
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "mt1053136",
+        "id": "mt1193181",
         "type": "movie",
-        "title": "Zešílet",
+        "title": "Dýchajúce obrazy",
         "year": 2023,
         "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
+        "poster": "",
         "roles": [
           "actor"
         ]
@@ -594695,6 +594728,26 @@
         "poster": "",
         "roles": [
           "actor"
+        ]
+      }
+    ]
+  },
+  "p4987818": {
+    "name": "Jiři Petr",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1367962",
+        "type": "movie",
+        "title": "Radost na dosah",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/v2UwelTFvELtfBUDp50AWDm9UsR.jpg",
+        "roles": [
+          "composer"
         ]
       }
     ]
@@ -627680,20 +627733,20 @@
       }
     ]
   },
-  "p5066776": {
-    "name": "Lucia Nedelková",
+  "p3875806": {
+    "name": "Karolína Poláková",
     "img": null,
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "mt1193181",
+        "id": "mt1053136",
         "type": "movie",
-        "title": "Dýchajúce obrazy",
+        "title": "Zešílet",
         "year": 2023,
         "score": 50,
-        "poster": "",
+        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
         "roles": [
           "actor"
         ]
@@ -628148,26 +628201,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/oUP6VfWQGVgXMj5dChfXoM2hc7O.jpg",
         "roles": [
           "actor"
-        ]
-      }
-    ]
-  },
-  "p4987818": {
-    "name": "Jiři Petr",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1367962",
-        "type": "movie",
-        "title": "Radost na dosah",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/v2UwelTFvELtfBUDp50AWDm9UsR.jpg",
-        "roles": [
-          "composer"
         ]
       }
     ]
@@ -660382,26 +660415,6 @@
         "year": 2026,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/xIQKtBSUJhlz2Jl9TsXEI0iZMgu.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6069646": {
-    "name": "Joe Accerelli",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st255661",
-        "type": "show",
-        "title": "Mladý Sherlock",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/7qHP3oZh9sZGM4bRw88iABg3SwN.jpg",
         "roles": [
           "actor"
         ]
@@ -695965,6 +695978,26 @@
       }
     ]
   },
+  "p6069646": {
+    "name": "Joe Accerelli",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st255661",
+        "type": "show",
+        "title": "Mladý Sherlock",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/7qHP3oZh9sZGM4bRw88iABg3SwN.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2060014": {
     "name": "Leem Chae-young",
     "img": "/wl9J2kcHo0QtjNNdl1kD27XyAaq.jpg",
@@ -697585,6 +697618,26 @@
         "poster": "https://image.tmdb.org/t/p/w342/odOJLtScJ7Wj4zFpZwAeThcUocR.jpg",
         "roles": [
           "composer"
+        ]
+      }
+    ]
+  },
+  "p2221989": {
+    "name": "Joanna Balasz",
+    "img": "/ef9Hf5TBMV0Lb0KMBzdtcpp96Yk.jpg",
+    "birthday": "1991-01-01",
+    "deathday": null,
+    "age": 35,
+    "works": [
+      {
+        "id": "st312006",
+        "type": "show",
+        "title": "Umrtvení",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/h11NvlBzbTF6P2boA65ITdFSSo4.jpg",
+        "roles": [
+          "actor"
         ]
       }
     ]

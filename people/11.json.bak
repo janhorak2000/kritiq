@@ -26052,6 +26052,17 @@
     "age": 59,
     "works": [
       {
+        "id": "mt1483525",
+        "type": "movie",
+        "title": "Případně láska",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st290193",
         "type": "show",
         "title": "Myšilov",
@@ -322317,6 +322328,17 @@
     "age": 52,
     "works": [
       {
+        "id": "mt1403676",
+        "type": "movie",
+        "title": "April X",
+        "year": 2026,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/koNUflGEz6Fdy1GCqpvqBOcIaTP.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt818397",
         "type": "movie",
         "title": "Memory",
@@ -367794,6 +367816,18 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "mt1483525",
+        "type": "movie",
+        "title": "Případně láska",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      },
       {
         "id": "mt491584",
         "type": "movie",
@@ -520859,6 +520893,46 @@
       }
     ]
   },
+  "p5994219": {
+    "name": "Ahn Do-kyung",
+    "img": "/qOK72J3E0HUbCNSed8rNX8WpPN4.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1483525",
+        "type": "movie",
+        "title": "Případně láska",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6591574": {
+    "name": "Lee Jin-guk",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1483525",
+        "type": "movie",
+        "title": "Případně láska",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p6166611": {
     "name": "Zach Kenney",
     "img": "/zN9dryizSVlUrwlQmjbyj1pDeRa.jpg",
@@ -546922,23 +546996,23 @@
         ]
       },
       {
-        "id": "mt642725",
-        "type": "movie",
-        "title": "Perinbaba a dva světy",
-        "year": 2023,
-        "score": 36,
-        "poster": "https://image.tmdb.org/t/p/w342/atQCr30e7hmyAcXKm5hld6PLmrE.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1104172",
         "type": "movie",
         "title": "O malých věcech",
         "year": 2023,
         "score": 50,
         "poster": "https://image.tmdb.org/t/p/w342/rpNy6ayzh5FIbY4kEVnn8U4cpDZ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt642725",
+        "type": "movie",
+        "title": "Perinbaba a dva světy",
+        "year": 2023,
+        "score": 36,
+        "poster": "https://image.tmdb.org/t/p/w342/atQCr30e7hmyAcXKm5hld6PLmrE.jpg",
         "roles": [
           "actor"
         ]
@@ -547348,23 +547422,23 @@
         ]
       },
       {
-        "id": "mt768087",
-        "type": "movie",
-        "title": "Ostrov",
-        "year": 2023,
-        "score": 51,
-        "poster": "https://image.tmdb.org/t/p/w342/hXjufuZbhr9fpTe3ZgovGkhF1Ug.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1150639",
         "type": "movie",
         "title": "Tajný zákop",
         "year": 2023,
         "score": 50,
         "poster": "https://image.tmdb.org/t/p/w342/lKh7eybPjrwBqv2632et5k54UUN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt768087",
+        "type": "movie",
+        "title": "Ostrov",
+        "year": 2023,
+        "score": 51,
+        "poster": "https://image.tmdb.org/t/p/w342/hXjufuZbhr9fpTe3ZgovGkhF1Ug.jpg",
         "roles": [
           "actor"
         ]
@@ -563770,23 +563844,23 @@
         ]
       },
       {
-        "id": "mt1104164",
-        "type": "movie",
-        "title": "Muž, který stál v cestě",
-        "year": 2023,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/v3sP0af3ijOvOu6Px7C7dchXM8L.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1074767",
         "type": "movie",
         "title": "Erhart",
         "year": 2023,
         "score": 50,
         "poster": "https://image.tmdb.org/t/p/w342/mbcYo543VAoASCSH0uoSfdYkYyJ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1104164",
+        "type": "movie",
+        "title": "Muž, který stál v cestě",
+        "year": 2023,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/v3sP0af3ijOvOu6Px7C7dchXM8L.jpg",
         "roles": [
           "actor"
         ]
@@ -592887,20 +592961,20 @@
       }
     ]
   },
-  "p5066776": {
-    "name": "Lucia Nedelková",
+  "p3875806": {
+    "name": "Karolína Poláková",
     "img": null,
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "mt1193181",
+        "id": "mt1053136",
         "type": "movie",
-        "title": "Dýchajúce obrazy",
+        "title": "Zešílet",
         "year": 2023,
         "score": 50,
-        "poster": "",
+        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
         "roles": [
           "actor"
         ]
@@ -594621,26 +594695,6 @@
         "poster": "",
         "roles": [
           "actor"
-        ]
-      }
-    ]
-  },
-  "p4987818": {
-    "name": "Jiři Petr",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1367962",
-        "type": "movie",
-        "title": "Radost na dosah",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/v2UwelTFvELtfBUDp50AWDm9UsR.jpg",
-        "roles": [
-          "composer"
         ]
       }
     ]
@@ -627626,20 +627680,20 @@
       }
     ]
   },
-  "p3875806": {
-    "name": "Karolína Poláková",
+  "p5066776": {
+    "name": "Lucia Nedelková",
     "img": null,
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "mt1053136",
+        "id": "mt1193181",
         "type": "movie",
-        "title": "Zešílet",
+        "title": "Dýchajúce obrazy",
         "year": 2023,
         "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
+        "poster": "",
         "roles": [
           "actor"
         ]
@@ -628094,6 +628148,26 @@
         "poster": "https://image.tmdb.org/t/p/w342/oUP6VfWQGVgXMj5dChfXoM2hc7O.jpg",
         "roles": [
           "actor"
+        ]
+      }
+    ]
+  },
+  "p4987818": {
+    "name": "Jiři Petr",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1367962",
+        "type": "movie",
+        "title": "Radost na dosah",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/v2UwelTFvELtfBUDp50AWDm9UsR.jpg",
+        "roles": [
+          "composer"
         ]
       }
     ]

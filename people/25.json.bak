@@ -66422,6 +66422,17 @@
     "age": 51,
     "works": [
       {
+        "id": "mt1403676",
+        "type": "movie",
+        "title": "April X",
+        "year": 2026,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/koNUflGEz6Fdy1GCqpvqBOcIaTP.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1021331",
         "type": "movie",
         "title": "Sázka na teambuilding",
@@ -345740,6 +345751,26 @@
       }
     ]
   },
+  "p4606573": {
+    "name": "Kim So-wan",
+    "img": "/yTyX7lzpWS5qgN5hWqQIKdvKQ5w.jpg",
+    "birthday": "2001-11-24",
+    "deathday": null,
+    "age": 24,
+    "works": [
+      {
+        "id": "mt1483525",
+        "type": "movie",
+        "title": "Případně láska",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2932076": {
     "name": "Anna Carini",
     "img": "/aP1vMEMlUjgV90fS60MMjiEfnHi.jpg",
@@ -382700,6 +382731,71 @@
       }
     ]
   },
+  "p232934": {
+    "name": "Jan Balej",
+    "img": "/zScw7nOAP07nx13pFb3gkM8AG8G.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt762901",
+        "type": "movie",
+        "title": "Barevný sen",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/bvzJWqSQbcaKTN2CMdUhXCO1bZY.jpg",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      },
+      {
+        "id": "mt371266",
+        "type": "movie",
+        "title": "Malá z rybárny",
+        "year": 2015,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/hTX9FWd9PMUroLFX79Gt8XLcFNf.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "st88606",
+        "type": "show",
+        "title": "Karlík, zlatá rybka",
+        "year": 2010,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "mt81537",
+        "type": "movie",
+        "title": "Jedné noci v jednom městě",
+        "year": 2007,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/8VEHgc6h5hwOUdWRL69fRGinPky.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "st91685",
+        "type": "show",
+        "title": "Jak to chodí u hrochů",
+        "year": 2000,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/b9HbOzVykoM1VZBRM9YnAGVEXoG.jpg",
+        "roles": [
+          "director"
+        ]
+      }
+    ]
+  },
   "p2717367": {
     "name": "Marie Turková",
     "img": null,
@@ -405084,71 +405180,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/tu1H4gT9DGV2Qv5bExkHYhEDImW.jpg",
         "roles": [
           "actor"
-        ]
-      }
-    ]
-  },
-  "p232934": {
-    "name": "Jan Balej",
-    "img": "/zScw7nOAP07nx13pFb3gkM8AG8G.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt762901",
-        "type": "movie",
-        "title": "Barevný sen",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/bvzJWqSQbcaKTN2CMdUhXCO1bZY.jpg",
-        "roles": [
-          "director",
-          "writer"
-        ]
-      },
-      {
-        "id": "mt371266",
-        "type": "movie",
-        "title": "Malá z rybárny",
-        "year": 2015,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/hTX9FWd9PMUroLFX79Gt8XLcFNf.jpg",
-        "roles": [
-          "director"
-        ]
-      },
-      {
-        "id": "st88606",
-        "type": "show",
-        "title": "Karlík, zlatá rybka",
-        "year": 2010,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "director"
-        ]
-      },
-      {
-        "id": "mt81537",
-        "type": "movie",
-        "title": "Jedné noci v jednom městě",
-        "year": 2007,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/8VEHgc6h5hwOUdWRL69fRGinPky.jpg",
-        "roles": [
-          "director"
-        ]
-      },
-      {
-        "id": "st91685",
-        "type": "show",
-        "title": "Jak to chodí u hrochů",
-        "year": 2000,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/b9HbOzVykoM1VZBRM9YnAGVEXoG.jpg",
-        "roles": [
-          "director"
         ]
       }
     ]

@@ -784846,24 +784846,77 @@
       }
     ]
   },
-  "p4312388": {
-    "name": "Marta Kovářová",
-    "img": null,
-    "birthday": "1983-02-21",
+  "p4447215": {
+    "name": "Eva Gribová",
+    "img": "/1LYBgtFsJ99jnxLbalJY9PX1TR8.jpg",
+    "birthday": null,
     "deathday": null,
-    "age": 43,
+    "age": null,
     "works": [
       {
-        "id": "mt1189094",
+        "id": "mt1588316",
         "type": "movie",
-        "title": "Jiříkovo vidění",
+        "title": "Štúr",
+        "year": 2026,
+        "score": 60,
+        "poster": "https://image.tmdb.org/t/p/w342/i4dgmanet1lOYDnt4k0omLZ1Iuy.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st240627",
+        "type": "show",
+        "title": "Příliš mnoho lásky",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/dRMV73nlCH47KBRKhMZR4u3hTJe.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1193181",
+        "type": "movie",
+        "title": "Dýchajúce obrazy",
         "year": 2023,
         "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/c8tU59nZpKjqhRTmuHzP3MQvZlD.jpg",
+        "poster": "",
         "roles": [
-          "actor",
-          "director",
-          "writer"
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1221631",
+        "type": "movie",
+        "title": "Tři zlaté dukáty",
+        "year": 2023,
+        "score": 59,
+        "poster": "https://image.tmdb.org/t/p/w342/m0dymi0rNgR2G7PUM2q8g9DOwjt.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st236960",
+        "type": "show",
+        "title": "Duch",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/qR99lvzNy9QQB4uNe8kRNTaQSrs.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st131975",
+        "type": "show",
+        "title": "Nemocnica",
+        "year": 2021,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/oaUsI8BBoLlSJnsOCzBwJOhz5R4.jpg",
+        "roles": [
+          "actor"
         ]
       }
     ]
@@ -787326,26 +787379,6 @@
       }
     ]
   },
-  "p4988327": {
-    "name": "Jakub Zajíc",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1367069",
-        "type": "movie",
-        "title": "Krajan",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/aZz7dchPdyyyd1joUFXMQJecxxF.jpg",
-        "roles": [
-          "composer"
-        ]
-      }
-    ]
-  },
   "p5106203": {
     "name": "Peter Lahuta",
     "img": null,
@@ -787360,6 +787393,46 @@
         "year": 2024,
         "score": 50,
         "poster": "https://image.tmdb.org/t/p/w342/3m6UI9B8DAMEJpcIAvRbbZZs50U.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3707718": {
+    "name": "Michal Vasiľ",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1190291",
+        "type": "movie",
+        "title": "Nejkrásnější kout na širém světě",
+        "year": 2024,
+        "score": 50,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4366002": {
+    "name": "Viktor Ori",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1190291",
+        "type": "movie",
+        "title": "Nejkrásnější kout na širém světě",
+        "year": 2024,
+        "score": 50,
+        "poster": "",
         "roles": [
           "actor"
         ]
@@ -836636,81 +836709,6 @@
       }
     ]
   },
-  "p4447215": {
-    "name": "Eva Gribová",
-    "img": "/1LYBgtFsJ99jnxLbalJY9PX1TR8.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1588316",
-        "type": "movie",
-        "title": "Štúr",
-        "year": 2026,
-        "score": 60,
-        "poster": "https://image.tmdb.org/t/p/w342/i4dgmanet1lOYDnt4k0omLZ1Iuy.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st240627",
-        "type": "show",
-        "title": "Příliš mnoho lásky",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/dRMV73nlCH47KBRKhMZR4u3hTJe.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1221631",
-        "type": "movie",
-        "title": "Tři zlaté dukáty",
-        "year": 2023,
-        "score": 59,
-        "poster": "https://image.tmdb.org/t/p/w342/m0dymi0rNgR2G7PUM2q8g9DOwjt.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1193181",
-        "type": "movie",
-        "title": "Dýchajúce obrazy",
-        "year": 2023,
-        "score": 50,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st236960",
-        "type": "show",
-        "title": "Duch",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/qR99lvzNy9QQB4uNe8kRNTaQSrs.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st131975",
-        "type": "show",
-        "title": "Nemocnica",
-        "year": 2021,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/oaUsI8BBoLlSJnsOCzBwJOhz5R4.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p2743326": {
     "name": "Lucia Kasova",
     "img": null,
@@ -836798,6 +836796,28 @@
         "poster": "https://image.tmdb.org/t/p/w342/dfS5qHWFuXyZQnwYREwb7N4qU5p.jpg",
         "roles": [
           "actor"
+        ]
+      }
+    ]
+  },
+  "p4312388": {
+    "name": "Marta Kovářová",
+    "img": null,
+    "birthday": "1983-02-21",
+    "deathday": null,
+    "age": 43,
+    "works": [
+      {
+        "id": "mt1189094",
+        "type": "movie",
+        "title": "Jiříkovo vidění",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/c8tU59nZpKjqhRTmuHzP3MQvZlD.jpg",
+        "roles": [
+          "actor",
+          "director",
+          "writer"
         ]
       }
     ]
@@ -837383,42 +837403,22 @@
       }
     ]
   },
-  "p3707718": {
-    "name": "Michal Vasiľ",
+  "p4988327": {
+    "name": "Jakub Zajíc",
     "img": null,
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "mt1190291",
+        "id": "mt1367069",
         "type": "movie",
-        "title": "Nejkrásnější kout na širém světě",
+        "title": "Krajan",
         "year": 2024,
         "score": 50,
-        "poster": "",
+        "poster": "https://image.tmdb.org/t/p/w342/aZz7dchPdyyyd1joUFXMQJecxxF.jpg",
         "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4366002": {
-    "name": "Viktor Ori",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1190291",
-        "type": "movie",
-        "title": "Nejkrásnější kout na širém světě",
-        "year": 2024,
-        "score": 50,
-        "poster": "",
-        "roles": [
-          "actor"
+          "composer"
         ]
       }
     ]
@@ -894090,139 +894090,6 @@
       }
     ]
   },
-  "p6059892": {
-    "name": "Purdy Hughes",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st255661",
-        "type": "show",
-        "title": "Mladý Sherlock",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/7qHP3oZh9sZGM4bRw88iABg3SwN.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1774633": {
-    "name": "Mark Hawkins",
-    "img": "/iGLgKVZM9031WqRDILrtDGqo6Cm.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st255661",
-        "type": "show",
-        "title": "Mladý Sherlock",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/7qHP3oZh9sZGM4bRw88iABg3SwN.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st214259",
-        "type": "show",
-        "title": "Joan",
-        "year": 2024,
-        "score": 67,
-        "poster": "https://image.tmdb.org/t/p/w342/x0l9OYTcwO2BvCZcFWEnAA8YEZ1.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4204665": {
-    "name": "Jessica Zhou",
-    "img": "/xTp8B2kPUXW4XUV2nulP8t39APV.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st255661",
-        "type": "show",
-        "title": "Mladý Sherlock",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/7qHP3oZh9sZGM4bRw88iABg3SwN.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1702803": {
-    "name": "Paul McNeilly",
-    "img": "/d5wzs4YijFRYWPEbyfmj4vjWnHe.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st255661",
-        "type": "show",
-        "title": "Mladý Sherlock",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/7qHP3oZh9sZGM4bRw88iABg3SwN.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st107484",
-        "type": "show",
-        "title": "Mandy",
-        "year": 2020,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/d8kM8CzRwrwkjqGGdKjSpgvxO8R.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st34435",
-        "type": "show",
-        "title": "Páteční večeře",
-        "year": 2011,
-        "score": 82,
-        "poster": "https://image.tmdb.org/t/p/w342/j4My4iWKhB8q1SgB8hfismiAp3V.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5425104": {
-    "name": "Eléa Ferrari",
-    "img": "/ks9tXDGXIs7Op5dUerNoXtKvbLl.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st255661",
-        "type": "show",
-        "title": "Mladý Sherlock",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/7qHP3oZh9sZGM4bRw88iABg3SwN.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p4373592": {
     "name": "Barbora Chorvátová",
     "img": null,
@@ -913498,6 +913365,48 @@
         "year": 2011,
         "score": 85,
         "poster": "https://image.tmdb.org/t/p/w342/tRLj19YXH9GPiaqlU7GwWyd6G5K.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1702803": {
+    "name": "Paul McNeilly",
+    "img": "/d5wzs4YijFRYWPEbyfmj4vjWnHe.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st255661",
+        "type": "show",
+        "title": "Mladý Sherlock",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/7qHP3oZh9sZGM4bRw88iABg3SwN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st107484",
+        "type": "show",
+        "title": "Mandy",
+        "year": 2020,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/d8kM8CzRwrwkjqGGdKjSpgvxO8R.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st34435",
+        "type": "show",
+        "title": "Páteční večeře",
+        "year": 2011,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/j4My4iWKhB8q1SgB8hfismiAp3V.jpg",
         "roles": [
           "actor"
         ]
@@ -951962,6 +951871,37 @@
       }
     ]
   },
+  "p1774633": {
+    "name": "Mark Hawkins",
+    "img": "/iGLgKVZM9031WqRDILrtDGqo6Cm.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st255661",
+        "type": "show",
+        "title": "Mladý Sherlock",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/7qHP3oZh9sZGM4bRw88iABg3SwN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st214259",
+        "type": "show",
+        "title": "Joan",
+        "year": 2024,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/x0l9OYTcwO2BvCZcFWEnAA8YEZ1.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p3546645": {
     "name": "Miguel Ángel Fajardo",
     "img": "/4shmEV6Nd2HrixgLTZChY0W5DO0.jpg",
@@ -956686,6 +956626,66 @@
         "roles": [
           "director",
           "writer"
+        ]
+      }
+    ]
+  },
+  "p6059892": {
+    "name": "Purdy Hughes",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st255661",
+        "type": "show",
+        "title": "Mladý Sherlock",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/7qHP3oZh9sZGM4bRw88iABg3SwN.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4204665": {
+    "name": "Jessica Zhou",
+    "img": "/xTp8B2kPUXW4XUV2nulP8t39APV.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st255661",
+        "type": "show",
+        "title": "Mladý Sherlock",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/7qHP3oZh9sZGM4bRw88iABg3SwN.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5425104": {
+    "name": "Eléa Ferrari",
+    "img": "/ks9tXDGXIs7Op5dUerNoXtKvbLl.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st255661",
+        "type": "show",
+        "title": "Mladý Sherlock",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/7qHP3oZh9sZGM4bRw88iABg3SwN.jpg",
+        "roles": [
+          "actor"
         ]
       }
     ]
