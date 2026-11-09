@@ -11402,6 +11402,17 @@
     "age": 51,
     "works": [
       {
+        "id": "mt1381221",
+        "type": "movie",
+        "title": "Misty Green",
+        "year": 2026,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/dUFtfnSfUK5IUfC5XMlMEY36EAp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1314481",
         "type": "movie",
         "title": "Ďábel nosí Pradu 2",
@@ -143742,6 +143753,17 @@
     "deathday": null,
     "age": 59,
     "works": [
+      {
+        "id": "mt1096228",
+        "type": "movie",
+        "title": "Musk",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/kTOeFV92c3QHJ3bEkT660P7BcWN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt392553",
         "type": "movie",
@@ -370264,6 +370286,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1381221",
+        "type": "movie",
+        "title": "Misty Green",
+        "year": 2026,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/dUFtfnSfUK5IUfC5XMlMEY36EAp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1601243",
         "type": "movie",
         "title": "Oscar Shaw",
@@ -541851,6 +541884,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1381221",
+        "type": "movie",
+        "title": "Misty Green",
+        "year": 2026,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/dUFtfnSfUK5IUfC5XMlMEY36EAp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st132016",
         "type": "show",
         "title": "Uzavřený kruh",
@@ -591116,6 +591160,26 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/brejQbMtyQbRhN4ym0YE6d9xDam.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3775066": {
+    "name": "Reid Hoffman",
+    "img": null,
+    "birthday": "1967-08-05",
+    "deathday": null,
+    "age": 59,
+    "works": [
+      {
+        "id": "mt1096228",
+        "type": "movie",
+        "title": "Musk",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/kTOeFV92c3QHJ3bEkT660P7BcWN.jpg",
         "roles": [
           "actor"
         ]

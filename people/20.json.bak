@@ -107048,6 +107048,17 @@
     "age": null,
     "works": [
       {
+        "id": "st312006",
+        "type": "show",
+        "title": "Umrtvení",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/h11NvlBzbTF6P2boA65ITdFSSo4.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st280872",
         "type": "show",
         "title": "V kotli",
@@ -178369,6 +178380,17 @@
         "year": 2026,
         "score": 59,
         "poster": "https://image.tmdb.org/t/p/w342/hPq7HS1y8EGzmTbpUa87M4esfyl.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st312006",
+        "type": "show",
+        "title": "Umrtvení",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/h11NvlBzbTF6P2boA65ITdFSSo4.jpg",
         "roles": [
           "actor"
         ]
@@ -282992,23 +283014,23 @@
         ]
       },
       {
-        "id": "mt823636",
-        "type": "movie",
-        "title": "BUĎ CHLAP!",
-        "year": 2023,
-        "score": 46,
-        "poster": "https://image.tmdb.org/t/p/w342/yc5rvJ7Y6qbq1ZJKXfCNsq9Sfo.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1222338",
         "type": "movie",
         "title": "Dvě Mařenky",
         "year": 2023,
         "score": 50,
         "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt823636",
+        "type": "movie",
+        "title": "BUĎ CHLAP!",
+        "year": 2023,
+        "score": 46,
+        "poster": "https://image.tmdb.org/t/p/w342/yc5rvJ7Y6qbq1ZJKXfCNsq9Sfo.jpg",
         "roles": [
           "actor"
         ]
@@ -313842,23 +313864,23 @@
         ]
       },
       {
-        "id": "mt1222638",
-        "type": "movie",
-        "title": "Jedeme na teambuilding",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/unUKbHpP6npzgzajv9FI4FxPs6D.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1139243",
         "type": "movie",
         "title": "Nikdy neříkej nikdy",
         "year": 2023,
         "score": 55,
         "poster": "https://image.tmdb.org/t/p/w342/AnimCqHeI9YhqdE3qV9boK8al89.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1222638",
+        "type": "movie",
+        "title": "Jedeme na teambuilding",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/unUKbHpP6npzgzajv9FI4FxPs6D.jpg",
         "roles": [
           "actor"
         ]
@@ -362959,26 +362981,6 @@
       }
     ]
   },
-  "p6071734": {
-    "name": "Neve Gordon",
-    "img": "/yknxvrrBg9pAT8YZ9Uw3S7aqY4a.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st255661",
-        "type": "show",
-        "title": "Mladý Sherlock",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/7qHP3oZh9sZGM4bRw88iABg3SwN.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p160285": {
     "name": "Granville Van Dusen",
     "img": "/j6vsh70I7VuHULC6RZ2tegwe9zn.jpg",
@@ -376695,6 +376697,26 @@
         "year": 1956,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/kG2UO5pT91NckAe3tS6WrgxOB3P.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6071734": {
+    "name": "Neve Gordon",
+    "img": "/yknxvrrBg9pAT8YZ9Uw3S7aqY4a.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st255661",
+        "type": "show",
+        "title": "Mladý Sherlock",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/7qHP3oZh9sZGM4bRw88iABg3SwN.jpg",
         "roles": [
           "actor"
         ]

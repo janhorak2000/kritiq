@@ -468610,17 +468610,6 @@
         ]
       },
       {
-        "id": "mt1099453",
-        "type": "movie",
-        "title": "Villa Lucia",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/3DoIC0wP8dCHkBvHjOGeZ0W54d2.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt743889",
         "type": "movie",
         "title": "Bastardi: Reparát",
@@ -468649,6 +468638,17 @@
         "year": 2023,
         "score": 72,
         "poster": "https://image.tmdb.org/t/p/w342/g5mKhJJGihhL0AzXxCnWdkJSItU.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1099453",
+        "type": "movie",
+        "title": "Villa Lucia",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/3DoIC0wP8dCHkBvHjOGeZ0W54d2.jpg",
         "roles": [
           "actor"
         ]
@@ -626500,6 +626500,17 @@
     "age": null,
     "works": [
       {
+        "id": "st312006",
+        "type": "show",
+        "title": "Umrtvení",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/h11NvlBzbTF6P2boA65ITdFSSo4.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt785398",
         "type": "movie",
         "title": "Íá",
@@ -705460,23 +705471,23 @@
     "age": 69,
     "works": [
       {
-        "id": "mt1053136",
-        "type": "movie",
-        "title": "Zešílet",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1221631",
         "type": "movie",
         "title": "Tři zlaté dukáty",
         "year": 2023,
         "score": 59,
         "poster": "https://image.tmdb.org/t/p/w342/m0dymi0rNgR2G7PUM2q8g9DOwjt.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1053136",
+        "type": "movie",
+        "title": "Zešílet",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
         "roles": [
           "actor"
         ]
@@ -708752,37 +708763,28 @@
       }
     ]
   },
-  "p2329712": {
-    "name": "Alex Coteț",
+  "p4447597": {
+    "name": "Alan Ptáček",
     "img": null,
-    "birthday": null,
+    "birthday": "1978-09-20",
     "deathday": null,
-    "age": null,
+    "age": 47,
     "works": [
       {
-        "id": "mt1222638",
+        "id": "mt1567376",
         "type": "movie",
-        "title": "Jedeme na teambuilding",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/unUKbHpP6npzgzajv9FI4FxPs6D.jpg",
+        "title": "Ke všem čertům",
+        "year": 2025,
+        "score": 40,
+        "poster": "https://image.tmdb.org/t/p/w342/zIdTzRngywAtW9zZ9blnQlj5hlL.jpg",
         "roles": [
-          "writer"
+          "actor"
         ]
-      }
-    ]
-  },
-  "p3415885": {
-    "name": "Marek Hamšík",
-    "img": "/s4f9MVtnWOXNjYg3qmrx02AIqaG.jpg",
-    "birthday": "1987-07-27",
-    "deathday": null,
-    "age": 39,
-    "works": [
+      },
       {
-        "id": "mt1298132",
+        "id": "mt1408916",
         "type": "movie",
-        "title": "Cesta na EURO",
+        "title": "Čarodějnická pohádka",
         "year": 2024,
         "score": null,
         "poster": "",
@@ -708791,23 +708793,87 @@
         ]
       },
       {
-        "id": "mt1222638",
+        "id": "mt1222338",
         "type": "movie",
-        "title": "Jedeme na teambuilding",
+        "title": "Dvě Mařenky",
         "year": 2023,
         "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/unUKbHpP6npzgzajv9FI4FxPs6D.jpg",
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2484570": {
+    "name": "Milan Fritz",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1567376",
+        "type": "movie",
+        "title": "Ke všem čertům",
+        "year": 2025,
+        "score": 40,
+        "poster": "https://image.tmdb.org/t/p/w342/zIdTzRngywAtW9zZ9blnQlj5hlL.jpg",
         "roles": [
           "actor"
         ]
       },
       {
-        "id": "mt935757",
+        "id": "mt1222338",
         "type": "movie",
-        "title": "Finále",
-        "year": 2016,
+        "title": "Dvě Mařenky",
+        "year": 2023,
+        "score": 50,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt922179",
+        "type": "movie",
+        "title": "O kouzelné rybí kostičce",
+        "year": 2021,
         "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/4Uo66KKLtw3KXtLGQZA1gePbflH.jpg",
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1224759",
+        "type": "movie",
+        "title": "Loupežnická balada",
+        "year": 2020,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt934793",
+        "type": "movie",
+        "title": "Vodníkova princezna",
+        "year": 2018,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt924083",
+        "type": "movie",
+        "title": "Nejkrásnější dar",
+        "year": 2017,
+        "score": null,
+        "poster": "",
         "roles": [
           "actor"
         ]
@@ -710679,6 +710745,37 @@
       }
     ]
   },
+  "p5007057": {
+    "name": "Adela Stroffekova",
+    "img": "/eFSJncoGputH0LCUS3RXrDgiw7A.jpg",
+    "birthday": "2002-08-26",
+    "deathday": null,
+    "age": 24,
+    "works": [
+      {
+        "id": "mt1372936",
+        "type": "movie",
+        "title": "Bez trenek",
+        "year": 2025,
+        "score": 60,
+        "poster": "https://image.tmdb.org/t/p/w342/m87ohYanQBzNHlMzIXw0Be7KGoJ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1367962",
+        "type": "movie",
+        "title": "Radost na dosah",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/v2UwelTFvELtfBUDp50AWDm9UsR.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p5106794": {
     "name": "Pavel Cibulka",
     "img": null,
@@ -711289,48 +711386,6 @@
         "year": 2012,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/mHuQi5xbYYToWscU7thWj6jkgzv.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4447597": {
-    "name": "Alan Ptáček",
-    "img": null,
-    "birthday": "1978-09-20",
-    "deathday": null,
-    "age": 47,
-    "works": [
-      {
-        "id": "mt1567376",
-        "type": "movie",
-        "title": "Ke všem čertům",
-        "year": 2025,
-        "score": 40,
-        "poster": "https://image.tmdb.org/t/p/w342/zIdTzRngywAtW9zZ9blnQlj5hlL.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1408916",
-        "type": "movie",
-        "title": "Čarodějnická pohádka",
-        "year": 2024,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1222338",
-        "type": "movie",
-        "title": "Dvě Mařenky",
-        "year": 2023,
-        "score": 50,
-        "poster": "",
         "roles": [
           "actor"
         ]
@@ -712246,6 +712301,48 @@
       }
     ]
   },
+  "p3415885": {
+    "name": "Marek Hamšík",
+    "img": "/s4f9MVtnWOXNjYg3qmrx02AIqaG.jpg",
+    "birthday": "1987-07-27",
+    "deathday": null,
+    "age": 39,
+    "works": [
+      {
+        "id": "mt1298132",
+        "type": "movie",
+        "title": "Cesta na EURO",
+        "year": 2024,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1222638",
+        "type": "movie",
+        "title": "Jedeme na teambuilding",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/unUKbHpP6npzgzajv9FI4FxPs6D.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt935757",
+        "type": "movie",
+        "title": "Finále",
+        "year": 2016,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/4Uo66KKLtw3KXtLGQZA1gePbflH.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p4034184": {
     "name": "Martin Kochan",
     "img": "/tVTalTmFVht0cTXzENPU7wKuHTI.jpg",
@@ -712620,81 +712717,6 @@
         "year": 2025,
         "score": 40,
         "poster": "https://image.tmdb.org/t/p/w342/zIdTzRngywAtW9zZ9blnQlj5hlL.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2484570": {
-    "name": "Milan Fritz",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1567376",
-        "type": "movie",
-        "title": "Ke všem čertům",
-        "year": 2025,
-        "score": 40,
-        "poster": "https://image.tmdb.org/t/p/w342/zIdTzRngywAtW9zZ9blnQlj5hlL.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1222338",
-        "type": "movie",
-        "title": "Dvě Mařenky",
-        "year": 2023,
-        "score": 50,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt922179",
-        "type": "movie",
-        "title": "O kouzelné rybí kostičce",
-        "year": 2021,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1224759",
-        "type": "movie",
-        "title": "Loupežnická balada",
-        "year": 2020,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt934793",
-        "type": "movie",
-        "title": "Vodníkova princezna",
-        "year": 2018,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt924083",
-        "type": "movie",
-        "title": "Nejkrásnější dar",
-        "year": 2017,
-        "score": null,
-        "poster": "",
         "roles": [
           "actor"
         ]
@@ -751699,6 +751721,26 @@
       }
     ]
   },
+  "p2329712": {
+    "name": "Alex Coteț",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1222638",
+        "type": "movie",
+        "title": "Jedeme na teambuilding",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/unUKbHpP6npzgzajv9FI4FxPs6D.jpg",
+        "roles": [
+          "writer"
+        ]
+      }
+    ]
+  },
   "p3316720": {
     "name": "Pavel Tomeš",
     "img": null,
@@ -752318,37 +752360,6 @@
         "year": 2015,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/vOqkkrn38VAg3eJQdqNSPckc2tX.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5007057": {
-    "name": "Adela Stroffekova",
-    "img": "/eFSJncoGputH0LCUS3RXrDgiw7A.jpg",
-    "birthday": "2002-08-26",
-    "deathday": null,
-    "age": 24,
-    "works": [
-      {
-        "id": "mt1372936",
-        "type": "movie",
-        "title": "Bez trenek",
-        "year": 2025,
-        "score": 60,
-        "poster": "https://image.tmdb.org/t/p/w342/m87ohYanQBzNHlMzIXw0Be7KGoJ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1367962",
-        "type": "movie",
-        "title": "Radost na dosah",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/v2UwelTFvELtfBUDp50AWDm9UsR.jpg",
         "roles": [
           "actor"
         ]
@@ -804090,6 +804101,48 @@
       }
     ]
   },
+  "p4918826": {
+    "name": "Fionn O'Loingsigh",
+    "img": "/69uxUBg3DcaPWu9S65DjqNAtNTS.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st293116",
+        "type": "show",
+        "title": "Tall Tales & Murder",
+        "year": 2026,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/1fgKe9YOxRIkAicES7RVAscmgus.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st274479",
+        "type": "show",
+        "title": "Lynley",
+        "year": 2025,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/nBwCKjg3CNonSWMmE7VghNc4qBm.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st245746",
+        "type": "show",
+        "title": "Ellis",
+        "year": 2024,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/oKw4upUkkkCTlpI5GaOteY7bHFD.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p4306687": {
     "name": "Roanne Bardsley",
     "img": null,
@@ -804128,46 +804181,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/g3DccaRLKOiNPHnH88sxGIL943B.jpg",
         "roles": [
           "writer"
-        ]
-      }
-    ]
-  },
-  "p2400574": {
-    "name": "Dale Rapley",
-    "img": "/hA2UdRi9sujdWZSuTRDpJy1fict.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st255661",
-        "type": "show",
-        "title": "Mladý Sherlock",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/7qHP3oZh9sZGM4bRw88iABg3SwN.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3946833": {
-    "name": "Annie Cordoni",
-    "img": "/d28F6SQd8q0a9v3eiKGmxagHdGX.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st255661",
-        "type": "show",
-        "title": "Mladý Sherlock",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/7qHP3oZh9sZGM4bRw88iABg3SwN.jpg",
-        "roles": [
-          "actor"
         ]
       }
     ]
@@ -842554,6 +842567,17 @@
     "age": null,
     "works": [
       {
+        "id": "st312006",
+        "type": "show",
+        "title": "Umrtvení",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/h11NvlBzbTF6P2boA65ITdFSSo4.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st122725",
         "type": "show",
         "title": "Odsouzená",
@@ -857817,37 +857841,6 @@
       }
     ]
   },
-  "p4918826": {
-    "name": "Fionn O'Loingsigh",
-    "img": "/69uxUBg3DcaPWu9S65DjqNAtNTS.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st274479",
-        "type": "show",
-        "title": "Lynley",
-        "year": 2025,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/nBwCKjg3CNonSWMmE7VghNc4qBm.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st245746",
-        "type": "show",
-        "title": "Ellis",
-        "year": 2024,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/oKw4upUkkkCTlpI5GaOteY7bHFD.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p2612258": {
     "name": "Nelson Lee",
     "img": null,
@@ -861518,6 +861511,17 @@
     "age": 31,
     "works": [
       {
+        "id": "st312006",
+        "type": "show",
+        "title": "Umrtvení",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/h11NvlBzbTF6P2boA65ITdFSSo4.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st253370",
         "type": "show",
         "title": "Východní křídlo",
@@ -863353,6 +863357,46 @@
         "year": 2025,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/lZQ5U0YzRn40ONiJMgcsygyXD7K.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2400574": {
+    "name": "Dale Rapley",
+    "img": "/hA2UdRi9sujdWZSuTRDpJy1fict.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st255661",
+        "type": "show",
+        "title": "Mladý Sherlock",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/7qHP3oZh9sZGM4bRw88iABg3SwN.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3946833": {
+    "name": "Annie Cordoni",
+    "img": "/d28F6SQd8q0a9v3eiKGmxagHdGX.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st255661",
+        "type": "show",
+        "title": "Mladý Sherlock",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/7qHP3oZh9sZGM4bRw88iABg3SwN.jpg",
         "roles": [
           "actor"
         ]

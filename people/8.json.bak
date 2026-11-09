@@ -467591,6 +467591,17 @@
     "age": 53,
     "works": [
       {
+        "id": "st312006",
+        "type": "show",
+        "title": "Umrtvení",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/h11NvlBzbTF6P2boA65ITdFSSo4.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1121956",
         "type": "movie",
         "title": "Hranice",
@@ -715394,222 +715405,6 @@
       }
     ]
   },
-  "p3875803": {
-    "name": "Róbert Zipser",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1053136",
-        "type": "movie",
-        "title": "Zešílet",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1352436": {
-    "name": "Ivan Ostrochovský",
-    "img": "/ufpYV3XtIIDG6w1DVXllYbl8iql.jpg",
-    "birthday": "1972-11-12",
-    "deathday": null,
-    "age": 53,
-    "works": [
-      {
-        "id": "mt1720270",
-        "type": "movie",
-        "title": "Neviditelný Jan Gogola",
-        "year": 2026,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/1KLgAPsDX82UrBr1FR4gtMyvSXc.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1713763",
-        "type": "movie",
-        "title": "Igor a potom",
-        "year": 2026,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/v10yd73yQZNmDw8SWbrsG3ljpUl.jpg",
-        "roles": [
-          "director"
-        ]
-      },
-      {
-        "id": "mt1397737",
-        "type": "movie",
-        "title": "Pramen",
-        "year": 2026,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/rr3ZBCy0eeCP7LB11OvEtq1C4bf.jpg",
-        "roles": [
-          "director"
-        ]
-      },
-      {
-        "id": "mt1053136",
-        "type": "movie",
-        "title": "Zešílet",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1157275",
-        "type": "movie",
-        "title": "Světloplachost",
-        "year": 2023,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/hbQSBtHWXlMb60qu16zSm5aNvOP.jpg",
-        "roles": [
-          "director"
-        ]
-      },
-      {
-        "id": "mt717154",
-        "type": "movie",
-        "title": "Muž se zaječíma ušima",
-        "year": 2021,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/cq8a5xodaXDzqM9L80vM6bahQ17.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1164131",
-        "type": "movie",
-        "title": "Poslední autoportrét",
-        "year": 2018,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt324733",
-        "type": "movie",
-        "title": "Koza",
-        "year": 2015,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/tDiXLwvIAv7TQ0I963WsxjQAY0p.jpg",
-        "roles": [
-          "director",
-          "writer"
-        ]
-      },
-      {
-        "id": "mt523005",
-        "type": "movie",
-        "title": "Garda",
-        "year": 2015,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "director",
-          "writer"
-        ]
-      },
-      {
-        "id": "st227838",
-        "type": "show",
-        "title": "Hudobníci",
-        "year": 2014,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "writer"
-        ]
-      },
-      {
-        "id": "mt286413",
-        "type": "movie",
-        "title": "Sametoví teroristé",
-        "year": 2013,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/sViCAqsE3D3ZXOpj8oIfmydRPvP.jpg",
-        "roles": [
-          "writer"
-        ]
-      },
-      {
-        "id": "mt1628917",
-        "type": "movie",
-        "title": "Ilja",
-        "year": 2009,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "director"
-        ]
-      }
-    ]
-  },
-  "p3644803": {
-    "name": "Ondřej Bábor",
-    "img": "/vS5OKkHUxYfBJ2FD5lp4i1uxQI7.jpg",
-    "birthday": "1990-11-28",
-    "deathday": null,
-    "age": 35,
-    "works": [
-      {
-        "id": "st309091",
-        "type": "show",
-        "title": "Inspekce",
-        "year": 2026,
-        "score": 40,
-        "poster": "https://image.tmdb.org/t/p/w342/wSM1WFvs2A5Chflp3X4oUfwSTwA.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1222638",
-        "type": "movie",
-        "title": "Jedeme na teambuilding",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/unUKbHpP6npzgzajv9FI4FxPs6D.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st153223",
-        "type": "show",
-        "title": "ZOO",
-        "year": 2022,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/6f1yWctHkluRiB6u9mYM0A0Tmg3.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt593809",
-        "type": "movie",
-        "title": "Teroristka",
-        "year": 2019,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/6tKtHlKjGbKIuibJWIEsP04ajro.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p2487339": {
     "name": "Michael Vykus",
     "img": "/w5RmxfS6FcDE6wED24IXVFx1yVg.jpg",
@@ -720984,6 +720779,149 @@
       }
     ]
   },
+  "p1352436": {
+    "name": "Ivan Ostrochovský",
+    "img": "/ufpYV3XtIIDG6w1DVXllYbl8iql.jpg",
+    "birthday": "1972-11-12",
+    "deathday": null,
+    "age": 53,
+    "works": [
+      {
+        "id": "mt1720270",
+        "type": "movie",
+        "title": "Neviditelný Jan Gogola",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/1KLgAPsDX82UrBr1FR4gtMyvSXc.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1713763",
+        "type": "movie",
+        "title": "Igor a potom",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/v10yd73yQZNmDw8SWbrsG3ljpUl.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "mt1397737",
+        "type": "movie",
+        "title": "Pramen",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/rr3ZBCy0eeCP7LB11OvEtq1C4bf.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "mt1157275",
+        "type": "movie",
+        "title": "Světloplachost",
+        "year": 2023,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/hbQSBtHWXlMb60qu16zSm5aNvOP.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "mt1053136",
+        "type": "movie",
+        "title": "Zešílet",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt717154",
+        "type": "movie",
+        "title": "Muž se zaječíma ušima",
+        "year": 2021,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/cq8a5xodaXDzqM9L80vM6bahQ17.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1164131",
+        "type": "movie",
+        "title": "Poslední autoportrét",
+        "year": 2018,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt324733",
+        "type": "movie",
+        "title": "Koza",
+        "year": 2015,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/tDiXLwvIAv7TQ0I963WsxjQAY0p.jpg",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      },
+      {
+        "id": "mt523005",
+        "type": "movie",
+        "title": "Garda",
+        "year": 2015,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      },
+      {
+        "id": "st227838",
+        "type": "show",
+        "title": "Hudobníci",
+        "year": 2014,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "mt286413",
+        "type": "movie",
+        "title": "Sametoví teroristé",
+        "year": 2013,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/sViCAqsE3D3ZXOpj8oIfmydRPvP.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "mt1628917",
+        "type": "movie",
+        "title": "Ilja",
+        "year": 2009,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "director"
+        ]
+      }
+    ]
+  },
   "p2922917": {
     "name": "Martina Jindrová",
     "img": "/41W95XSMJdV4sR43EKP0SyzP9C4.jpg",
@@ -724952,6 +724890,59 @@
         "year": 1989,
         "score": null,
         "poster": "",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3644803": {
+    "name": "Ondřej Bábor",
+    "img": "/vS5OKkHUxYfBJ2FD5lp4i1uxQI7.jpg",
+    "birthday": "1990-11-28",
+    "deathday": null,
+    "age": 35,
+    "works": [
+      {
+        "id": "st309091",
+        "type": "show",
+        "title": "Inspekce",
+        "year": 2026,
+        "score": 40,
+        "poster": "https://image.tmdb.org/t/p/w342/wSM1WFvs2A5Chflp3X4oUfwSTwA.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1222638",
+        "type": "movie",
+        "title": "Jedeme na teambuilding",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/unUKbHpP6npzgzajv9FI4FxPs6D.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st153223",
+        "type": "show",
+        "title": "ZOO",
+        "year": 2022,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/6f1yWctHkluRiB6u9mYM0A0Tmg3.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt593809",
+        "type": "movie",
+        "title": "Teroristka",
+        "year": 2019,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/6tKtHlKjGbKIuibJWIEsP04ajro.jpg",
         "roles": [
           "actor"
         ]
@@ -760997,6 +760988,26 @@
         "year": 2007,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/9yXrWkCEDjf3NjsDScvOzPmBzvi.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3875803": {
+    "name": "Róbert Zipser",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1053136",
+        "type": "movie",
+        "title": "Zešílet",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
         "roles": [
           "actor"
         ]
@@ -807705,20 +807716,20 @@
       }
     ]
   },
-  "p6069665": {
-    "name": "Daniel Laudermilk",
+  "p6541114": {
+    "name": "Ian Fitzgibbon",
     "img": null,
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "st255661",
+        "id": "st293116",
         "type": "show",
-        "title": "Mladý Sherlock",
+        "title": "Tall Tales & Murder",
         "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/7qHP3oZh9sZGM4bRw88iABg3SwN.jpg",
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/1fgKe9YOxRIkAicES7RVAscmgus.jpg",
         "roles": [
           "actor"
         ]
@@ -857853,6 +857864,26 @@
       }
     ]
   },
+  "p6069665": {
+    "name": "Daniel Laudermilk",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st255661",
+        "type": "show",
+        "title": "Mladý Sherlock",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/7qHP3oZh9sZGM4bRw88iABg3SwN.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p1391255": {
     "name": "Josh Megdell",
     "img": "/qLuOyXzgRTdu1NcZMXl4jyL7IFw.jpg",
@@ -859767,6 +859798,46 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/ThhNhFCIFsYrOtJ2jXkb1ulOd0.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4995713": {
+    "name": "Filip Kowalewicz",
+    "img": "/A4EQwN8gijMNV0CI1lKxTvpkjrs.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st312006",
+        "type": "show",
+        "title": "Umrtvení",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/h11NvlBzbTF6P2boA65ITdFSSo4.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3119938": {
+    "name": "Hugo Tarres",
+    "img": "/rmIhuOH6ciFnW3Tb7bZ4sJWdtUX.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st312006",
+        "type": "show",
+        "title": "Umrtvení",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/h11NvlBzbTF6P2boA65ITdFSSo4.jpg",
         "roles": [
           "actor"
         ]

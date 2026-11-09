@@ -43810,6 +43810,17 @@
     "age": 37,
     "works": [
       {
+        "id": "mt1381221",
+        "type": "movie",
+        "title": "Misty Green",
+        "year": 2026,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/dUFtfnSfUK5IUfC5XMlMEY36EAp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt569094",
         "type": "movie",
         "title": "Spider-Man: Napříč paralelními světy",
@@ -368438,6 +368449,26 @@
         "year": 2026,
         "score": 68,
         "poster": "https://image.tmdb.org/t/p/w342/e9RPXyIipob1l33g2aPVCQeloB.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1247162": {
+    "name": "Spliff Star",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1381221",
+        "type": "movie",
+        "title": "Misty Green",
+        "year": 2026,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/dUFtfnSfUK5IUfC5XMlMEY36EAp.jpg",
         "roles": [
           "actor"
         ]

@@ -379438,6 +379438,17 @@
     "age": 55,
     "works": [
       {
+        "id": "st312006",
+        "type": "show",
+        "title": "Umrtvení",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/h11NvlBzbTF6P2boA65ITdFSSo4.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt714675",
         "type": "movie",
         "title": "The American",
@@ -525595,23 +525606,23 @@
         ]
       },
       {
-        "id": "mt1367069",
-        "type": "movie",
-        "title": "Krajan",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/aZz7dchPdyyyd1joUFXMQJecxxF.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1598361",
         "type": "movie",
         "title": "Samhain",
         "year": 2024,
         "score": 57,
         "poster": "https://image.tmdb.org/t/p/w342/qaqyb0e39Ks7P10eyeG7MkibwW1.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1367069",
+        "type": "movie",
+        "title": "Krajan",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/aZz7dchPdyyyd1joUFXMQJecxxF.jpg",
         "roles": [
           "actor"
         ]
@@ -569459,42 +569470,40 @@
       }
     ]
   },
-  "p3965112": {
-    "name": "Barbora Kubátová",
+  "p3889047": {
+    "name": "Vojtěch Míka",
     "img": null,
-    "birthday": "1987-08-28",
+    "birthday": null,
     "deathday": null,
-    "age": 39,
+    "age": null,
     "works": [
       {
-        "id": "mt1104172",
+        "id": "mt1078165",
         "type": "movie",
-        "title": "O malých věcech",
+        "title": "Husa",
         "year": 2023,
         "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/rpNy6ayzh5FIbY4kEVnn8U4cpDZ.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/tKLtADLl0khA0b5YDVUx5xoQzFo.jpg",
         "roles": [
           "actor"
         ]
-      },
+      }
+    ]
+  },
+  "p4545373": {
+    "name": "Rudolf Sikora",
+    "img": null,
+    "birthday": "1946-04-17",
+    "deathday": null,
+    "age": 80,
+    "works": [
       {
-        "id": "mt1134950",
+        "id": "mt1247018",
         "type": "movie",
-        "title": "294 statečných",
+        "title": "15 x 15 x 5 (minisalon 1984)",
         "year": 2023,
-        "score": 65,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st216295",
-        "type": "show",
-        "title": "Dobré ráno, Brno!",
-        "year": 2023,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/9kpWS3rXwTqSd3eccBjgzuk5EQA.jpg",
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/ma7TiYA61KFVAkMlZNoYX3HeYu9.jpg",
         "roles": [
           "actor"
         ]
@@ -599503,6 +599512,48 @@
       }
     ]
   },
+  "p3965112": {
+    "name": "Barbora Kubátová",
+    "img": null,
+    "birthday": "1987-08-28",
+    "deathday": null,
+    "age": 39,
+    "works": [
+      {
+        "id": "mt1134950",
+        "type": "movie",
+        "title": "294 statečných",
+        "year": 2023,
+        "score": 65,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1104172",
+        "type": "movie",
+        "title": "O malých věcech",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/rpNy6ayzh5FIbY4kEVnn8U4cpDZ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st216295",
+        "type": "show",
+        "title": "Dobré ráno, Brno!",
+        "year": 2023,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/9kpWS3rXwTqSd3eccBjgzuk5EQA.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p4653041": {
     "name": "Vilém Richard Borovička",
     "img": null,
@@ -599773,46 +599824,6 @@
         "year": 2023,
         "score": 55,
         "poster": "https://image.tmdb.org/t/p/w342/koYPMaI9V1bv3VR3LtyRGvL2EHG.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3889047": {
-    "name": "Vojtěch Míka",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1078165",
-        "type": "movie",
-        "title": "Husa",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/tKLtADLl0khA0b5YDVUx5xoQzFo.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4545373": {
-    "name": "Rudolf Sikora",
-    "img": null,
-    "birthday": "1946-04-17",
-    "deathday": null,
-    "age": 80,
-    "works": [
-      {
-        "id": "mt1247018",
-        "type": "movie",
-        "title": "15 x 15 x 5 (minisalon 1984)",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/ma7TiYA61KFVAkMlZNoYX3HeYu9.jpg",
         "roles": [
           "actor"
         ]

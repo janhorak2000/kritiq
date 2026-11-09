@@ -16630,6 +16630,17 @@
     "age": 59,
     "works": [
       {
+        "id": "mt939541",
+        "type": "movie",
+        "title": "Christmas at the Kringles",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/oVxkhheRVWSacimUZBuMemQX85E.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt298618",
         "type": "movie",
         "title": "Flash",
@@ -99602,6 +99613,17 @@
     "age": 33,
     "works": [
       {
+        "id": "mt1381221",
+        "type": "movie",
+        "title": "Misty Green",
+        "year": 2026,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/dUFtfnSfUK5IUfC5XMlMEY36EAp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt177888",
         "type": "movie",
         "title": "Film mých snů",
@@ -117035,6 +117057,17 @@
     "deathday": null,
     "age": 55,
     "works": [
+      {
+        "id": "mt1096228",
+        "type": "movie",
+        "title": "Musk",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/kTOeFV92c3QHJ3bEkT660P7BcWN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt950445",
         "type": "movie",
@@ -672357,6 +672390,26 @@
         "year": 2026,
         "score": 68,
         "poster": "https://image.tmdb.org/t/p/w342/sMPIiaOoyTr5o6s602KIVMJX3P2.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3127014": {
+    "name": "Nayo Howard",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1381221",
+        "type": "movie",
+        "title": "Misty Green",
+        "year": 2026,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/dUFtfnSfUK5IUfC5XMlMEY36EAp.jpg",
         "roles": [
           "actor"
         ]

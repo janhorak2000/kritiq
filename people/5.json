@@ -26303,6 +26303,17 @@
     "age": 57,
     "works": [
       {
+        "id": "mt939541",
+        "type": "movie",
+        "title": "Christmas at the Kringles",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/oVxkhheRVWSacimUZBuMemQX85E.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1476682",
         "type": "movie",
         "title": "Gail Daughtry and the Celebrity Sex Pass",
@@ -129814,6 +129825,17 @@
     "deathday": null,
     "age": 45,
     "works": [
+      {
+        "id": "mt939541",
+        "type": "movie",
+        "title": "Christmas at the Kringles",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/oVxkhheRVWSacimUZBuMemQX85E.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "st295778",
         "type": "show",
@@ -340603,6 +340625,17 @@
     "age": 67,
     "works": [
       {
+        "id": "mt1381221",
+        "type": "movie",
+        "title": "Misty Green",
+        "year": 2026,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/dUFtfnSfUK5IUfC5XMlMEY36EAp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt6023",
         "type": "movie",
         "title": "P.S. Miluji Tě",
@@ -433043,6 +433076,17 @@
     "deathday": null,
     "age": 68,
     "works": [
+      {
+        "id": "mt1381221",
+        "type": "movie",
+        "title": "Misty Green",
+        "year": 2026,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/dUFtfnSfUK5IUfC5XMlMEY36EAp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt454458",
         "type": "movie",
@@ -569029,6 +569073,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "mt939541",
+        "type": "movie",
+        "title": "Christmas at the Kringles",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/oVxkhheRVWSacimUZBuMemQX85E.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt55547",
         "type": "movie",
@@ -745216,6 +745271,37 @@
       }
     ]
   },
+  "p2076068": {
+    "name": "Bailey Gavulic",
+    "img": "/1wBNrmEZ1nHzVsDElriAn8iVd7z.jpg",
+    "birthday": "1998-04-08",
+    "deathday": null,
+    "age": 28,
+    "works": [
+      {
+        "id": "mt1381221",
+        "type": "movie",
+        "title": "Misty Green",
+        "year": 2026,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/dUFtfnSfUK5IUfC5XMlMEY36EAp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st62286",
+        "type": "show",
+        "title": "Živí mrtví: Počátek konce",
+        "year": 2015,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/eKt4ELpQZUKGZCKIDobEbwHwk3I.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p6158553": {
     "name": "Sioux Carroll",
     "img": "/5k8boLGuGzclsLu6mp0tQAZbbTG.jpg",
@@ -898028,26 +898114,6 @@
         "year": 2015,
         "score": 69,
         "poster": "https://image.tmdb.org/t/p/w342/6pErBq8VTQsjEltRNRtCct3LEg8.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2076068": {
-    "name": "Bailey Gavulic",
-    "img": "/1wBNrmEZ1nHzVsDElriAn8iVd7z.jpg",
-    "birthday": "1998-04-08",
-    "deathday": null,
-    "age": 28,
-    "works": [
-      {
-        "id": "st62286",
-        "type": "show",
-        "title": "Živí mrtví: Počátek konce",
-        "year": 2015,
-        "score": 67,
-        "poster": "https://image.tmdb.org/t/p/w342/eKt4ELpQZUKGZCKIDobEbwHwk3I.jpg",
         "roles": [
           "actor"
         ]

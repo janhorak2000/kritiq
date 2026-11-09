@@ -1874,6 +1874,17 @@
     "age": 56,
     "works": [
       {
+        "id": "mt939541",
+        "type": "movie",
+        "title": "Christmas at the Kringles",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/oVxkhheRVWSacimUZBuMemQX85E.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1375161",
         "type": "movie",
         "title": "Don't Move",
@@ -137184,6 +137195,17 @@
     "deathday": null,
     "age": 55,
     "works": [
+      {
+        "id": "mt1381221",
+        "type": "movie",
+        "title": "Misty Green",
+        "year": 2026,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/dUFtfnSfUK5IUfC5XMlMEY36EAp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "st116450",
         "type": "show",
@@ -476672,6 +476694,17 @@
         ]
       },
       {
+        "id": "mt1096228",
+        "type": "movie",
+        "title": "Musk",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/kTOeFV92c3QHJ3bEkT660P7BcWN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt533533",
         "type": "movie",
         "title": "TRON: Ares",
@@ -480094,6 +480127,26 @@
         "year": 2026,
         "score": 69,
         "poster": "https://image.tmdb.org/t/p/w342/v8Bcs5kC5EtKmFMomBv5BAB5SRi.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6586505": {
+    "name": "Elliott Egler",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt939541",
+        "type": "movie",
+        "title": "Christmas at the Kringles",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/oVxkhheRVWSacimUZBuMemQX85E.jpg",
         "roles": [
           "actor"
         ]

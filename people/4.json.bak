@@ -41787,6 +41787,17 @@
     "age": 58,
     "works": [
       {
+        "id": "st293116",
+        "type": "show",
+        "title": "Tall Tales & Murder",
+        "year": 2026,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/1fgKe9YOxRIkAicES7RVAscmgus.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st255661",
         "type": "show",
         "title": "Mladý Sherlock",
@@ -203402,6 +203413,17 @@
     "deathday": null,
     "age": 72,
     "works": [
+      {
+        "id": "st293116",
+        "type": "show",
+        "title": "Tall Tales & Murder",
+        "year": 2026,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/1fgKe9YOxRIkAicES7RVAscmgus.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "st233079",
         "type": "show",
@@ -542432,6 +542454,17 @@
     "age": 33,
     "works": [
       {
+        "id": "st312006",
+        "type": "show",
+        "title": "Umrtvení",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/h11NvlBzbTF6P2boA65ITdFSSo4.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1107872",
         "type": "movie",
         "title": "Matka roku",
@@ -732316,23 +732349,23 @@
         ]
       },
       {
-        "id": "mt1222638",
-        "type": "movie",
-        "title": "Jedeme na teambuilding",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/unUKbHpP6npzgzajv9FI4FxPs6D.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt823636",
         "type": "movie",
         "title": "BUĎ CHLAP!",
         "year": 2023,
         "score": 46,
         "poster": "https://image.tmdb.org/t/p/w342/yc5rvJ7Y6qbq1ZJKXfCNsq9Sfo.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1222638",
+        "type": "movie",
+        "title": "Jedeme na teambuilding",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/unUKbHpP6npzgzajv9FI4FxPs6D.jpg",
         "roles": [
           "actor"
         ]
@@ -784035,86 +784068,44 @@
       }
     ]
   },
-  "p3387784": {
-    "name": "Branislav Matranovič",
-    "img": "/g7aYD1UG1SyiRXpwcnOJM6vRC1C.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st296181",
-        "type": "show",
-        "title": "Dvě princezny",
-        "year": 2025,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/gLUXWU66fLIN0ozBydbzGlXTz8I.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st297508",
-        "type": "show",
-        "title": "Neuer",
-        "year": 2025,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/lZQ5U0YzRn40ONiJMgcsygyXD7K.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1099453",
-        "type": "movie",
-        "title": "Villa Lucia",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/3DoIC0wP8dCHkBvHjOGeZ0W54d2.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st155847",
-        "type": "show",
-        "title": "Survivor Česko a Slovensko",
-        "year": 2022,
-        "score": 46,
-        "poster": "https://image.tmdb.org/t/p/w342/B7qnTrKQ4WbQZmMLnwSw3v9CL9.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st72696",
-        "type": "show",
-        "title": "Za sklem",
-        "year": 2016,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/u0K7ufhFfX1WMpEgYMTPo4oq2a8.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4365860": {
-    "name": "Jiří Svoboda",
+  "p4355058": {
+    "name": "Janek Růžička",
     "img": null,
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "mt1189094",
+        "id": "mt1247018",
         "type": "movie",
-        "title": "Jiříkovo vidění",
+        "title": "15 x 15 x 5 (minisalon 1984)",
         "year": 2023,
         "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/c8tU59nZpKjqhRTmuHzP3MQvZlD.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/ma7TiYA61KFVAkMlZNoYX3HeYu9.jpg",
         "roles": [
-          "actor"
+          "director",
+          "writer"
+        ]
+      }
+    ]
+  },
+  "p4327844": {
+    "name": "Radovan Hradil",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1193181",
+        "type": "movie",
+        "title": "Dýchajúce obrazy",
+        "year": 2023,
+        "score": 50,
+        "poster": "",
+        "roles": [
+          "director",
+          "writer"
         ]
       }
     ]
@@ -787225,257 +787216,6 @@
       }
     ]
   },
-  "p1386752": {
-    "name": "Marta Kubišová",
-    "img": "/j4WAbYpeh4qtRQ4o4qhWcopWczA.jpg",
-    "birthday": "1942-11-01",
-    "deathday": null,
-    "age": 83,
-    "works": [
-      {
-        "id": "mt1302879",
-        "type": "movie",
-        "title": "Janžurka",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/2jcX0ztCQl2NA9Y54nIhC5L9RAc.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st93691",
-        "type": "show",
-        "title": "Marta",
-        "year": 2019,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt304065",
-        "type": "movie",
-        "title": "Magický hlas rebelky",
-        "year": 2014,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/iN4eltLgKrPoIXCfPx9L5mkd5LW.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1087937",
-        "type": "movie",
-        "title": "Petra Janů 2012",
-        "year": 2012,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt513830",
-        "type": "movie",
-        "title": "Pátrání po Ester",
-        "year": 2005,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/hk4xtfsS1MFZo63mkyo2hAavCOB.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt153088",
-        "type": "movie",
-        "title": "Kameňák 2",
-        "year": 2004,
-        "score": 28,
-        "poster": "https://image.tmdb.org/t/p/w342/hsbADBjJhemabVHtikRXuUcv8Vn.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st104099",
-        "type": "show",
-        "title": "Kam zmizel ten starý song",
-        "year": 2004,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt590799",
-        "type": "movie",
-        "title": "Noční hovory s matkou",
-        "year": 2003,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/jdZH9dx9u9GTraYoINNfcgYuZPs.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1224705",
-        "type": "movie",
-        "title": "Vánoce s Hutkou",
-        "year": 2000,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st53411",
-        "type": "show",
-        "title": "Krásný ztráty",
-        "year": 2000,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/l0LooMApU3L78y601FGTPlpXft1.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1033904",
-        "type": "movie",
-        "title": "Vánoční koncert Karla Gotta",
-        "year": 1996,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st240481",
-        "type": "show",
-        "title": "Český slavík",
-        "year": 1996,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/vFxUeF4IU2LPdqFdSmTQxJHzR6Z.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st98223",
-        "type": "show",
-        "title": "GENUS",
-        "year": 1995,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st54645",
-        "type": "show",
-        "title": "Šaráda",
-        "year": 1990,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt987976",
-        "type": "movie",
-        "title": "Proudy lásku odnesou",
-        "year": 1969,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/3GSFiQSPLhlOc5IpwICQUkOSW3q.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt392937",
-        "type": "movie",
-        "title": "Bylo čtvrt a bude půl",
-        "year": 1968,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/lbRua3ygwN8IgCrh1k4E97xIfq.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt522519",
-        "type": "movie",
-        "title": "Jak se krade milión",
-        "year": 1967,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/rV2Lfwfr4kIt5zsBLq76KnONcuF.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1606930",
-        "type": "movie",
-        "title": "Zlatý slavík 1966",
-        "year": 1967,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/wckT0UUJCcOYLnwuzf8W8Fd5dGv.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt257049",
-        "type": "movie",
-        "title": "Mučedníci lásky",
-        "year": 1967,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/hBn8qwgMFrJzSrpHJQ66TV9lSHL.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st64312",
-        "type": "show",
-        "title": "Píseň pro Rudolfa III.",
-        "year": 1967,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/8NidPzwgxKtWkP2tvrYRiNPTk.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st202070",
-        "type": "show",
-        "title": "Zlatý slavík",
-        "year": 1967,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt972709",
-        "type": "movie",
-        "title": "Revue na scestí",
-        "year": 1966,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p3922868": {
     "name": "Michaela Mäsiarová",
     "img": "/h8pf2BEwWL86FjwuJuXWyJUEFMj.jpg",
@@ -787523,6 +787263,69 @@
         "year": 2022,
         "score": 65,
         "poster": "https://image.tmdb.org/t/p/w342/f1gA7cTm3V9Ebe76YMf4FA1P8Ur.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4317218": {
+    "name": "Robert Mihály",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1190291",
+        "type": "movie",
+        "title": "Nejkrásnější kout na širém světě",
+        "year": 2024,
+        "score": 50,
+        "poster": "",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      }
+    ]
+  },
+  "p3703836": {
+    "name": "Vladimír Strmeň",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1190291",
+        "type": "movie",
+        "title": "Nejkrásnější kout na širém světě",
+        "year": 2024,
+        "score": 50,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st230729",
+        "type": "show",
+        "title": "Tváre orchestra",
+        "year": 2023,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1025417",
+        "type": "movie",
+        "title": "Slovenské národné povstanie 1944",
+        "year": 2009,
+        "score": null,
+        "poster": "",
         "roles": [
           "actor"
         ]
@@ -832093,6 +831896,257 @@
       }
     ]
   },
+  "p1386752": {
+    "name": "Marta Kubišová",
+    "img": "/j4WAbYpeh4qtRQ4o4qhWcopWczA.jpg",
+    "birthday": "1942-11-01",
+    "deathday": null,
+    "age": 83,
+    "works": [
+      {
+        "id": "mt1302879",
+        "type": "movie",
+        "title": "Janžurka",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/2jcX0ztCQl2NA9Y54nIhC5L9RAc.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st93691",
+        "type": "show",
+        "title": "Marta",
+        "year": 2019,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt304065",
+        "type": "movie",
+        "title": "Magický hlas rebelky",
+        "year": 2014,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/iN4eltLgKrPoIXCfPx9L5mkd5LW.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1087937",
+        "type": "movie",
+        "title": "Petra Janů 2012",
+        "year": 2012,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt513830",
+        "type": "movie",
+        "title": "Pátrání po Ester",
+        "year": 2005,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/hk4xtfsS1MFZo63mkyo2hAavCOB.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt153088",
+        "type": "movie",
+        "title": "Kameňák 2",
+        "year": 2004,
+        "score": 28,
+        "poster": "https://image.tmdb.org/t/p/w342/hsbADBjJhemabVHtikRXuUcv8Vn.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st104099",
+        "type": "show",
+        "title": "Kam zmizel ten starý song",
+        "year": 2004,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt590799",
+        "type": "movie",
+        "title": "Noční hovory s matkou",
+        "year": 2003,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/jdZH9dx9u9GTraYoINNfcgYuZPs.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1224705",
+        "type": "movie",
+        "title": "Vánoce s Hutkou",
+        "year": 2000,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st53411",
+        "type": "show",
+        "title": "Krásný ztráty",
+        "year": 2000,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/l0LooMApU3L78y601FGTPlpXft1.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1033904",
+        "type": "movie",
+        "title": "Vánoční koncert Karla Gotta",
+        "year": 1996,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st240481",
+        "type": "show",
+        "title": "Český slavík",
+        "year": 1996,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/vFxUeF4IU2LPdqFdSmTQxJHzR6Z.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st98223",
+        "type": "show",
+        "title": "GENUS",
+        "year": 1995,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st54645",
+        "type": "show",
+        "title": "Šaráda",
+        "year": 1990,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt987976",
+        "type": "movie",
+        "title": "Proudy lásku odnesou",
+        "year": 1969,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/3GSFiQSPLhlOc5IpwICQUkOSW3q.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt392937",
+        "type": "movie",
+        "title": "Bylo čtvrt a bude půl",
+        "year": 1968,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/lbRua3ygwN8IgCrh1k4E97xIfq.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt522519",
+        "type": "movie",
+        "title": "Jak se krade milión",
+        "year": 1967,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/rV2Lfwfr4kIt5zsBLq76KnONcuF.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1606930",
+        "type": "movie",
+        "title": "Zlatý slavík 1966",
+        "year": 1967,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/wckT0UUJCcOYLnwuzf8W8Fd5dGv.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt257049",
+        "type": "movie",
+        "title": "Mučedníci lásky",
+        "year": 1967,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/hBn8qwgMFrJzSrpHJQ66TV9lSHL.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st64312",
+        "type": "show",
+        "title": "Píseň pro Rudolfa III.",
+        "year": 1967,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/8NidPzwgxKtWkP2tvrYRiNPTk.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st202070",
+        "type": "show",
+        "title": "Zlatý slavík",
+        "year": 1967,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt972709",
+        "type": "movie",
+        "title": "Revue na scestí",
+        "year": 1966,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p1688669": {
     "name": "Dušan Szabó",
     "img": "/d5PSmQJxz7adWHnP4Pk8t5AJw4Z.jpg",
@@ -833753,44 +833807,86 @@
       }
     ]
   },
-  "p4355058": {
-    "name": "Janek Růžička",
-    "img": null,
+  "p3387784": {
+    "name": "Branislav Matranovič",
+    "img": "/g7aYD1UG1SyiRXpwcnOJM6vRC1C.jpg",
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "mt1247018",
+        "id": "st296181",
+        "type": "show",
+        "title": "Dvě princezny",
+        "year": 2025,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/gLUXWU66fLIN0ozBydbzGlXTz8I.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st297508",
+        "type": "show",
+        "title": "Neuer",
+        "year": 2025,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/lZQ5U0YzRn40ONiJMgcsygyXD7K.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1099453",
         "type": "movie",
-        "title": "15 x 15 x 5 (minisalon 1984)",
+        "title": "Villa Lucia",
         "year": 2023,
         "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/ma7TiYA61KFVAkMlZNoYX3HeYu9.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/3DoIC0wP8dCHkBvHjOGeZ0W54d2.jpg",
         "roles": [
-          "director",
-          "writer"
+          "actor"
+        ]
+      },
+      {
+        "id": "st155847",
+        "type": "show",
+        "title": "Survivor Česko a Slovensko",
+        "year": 2022,
+        "score": 46,
+        "poster": "https://image.tmdb.org/t/p/w342/B7qnTrKQ4WbQZmMLnwSw3v9CL9.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st72696",
+        "type": "show",
+        "title": "Za sklem",
+        "year": 2016,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/u0K7ufhFfX1WMpEgYMTPo4oq2a8.jpg",
+        "roles": [
+          "actor"
         ]
       }
     ]
   },
-  "p4327844": {
-    "name": "Radovan Hradil",
+  "p4365860": {
+    "name": "Jiří Svoboda",
     "img": null,
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "mt1193181",
+        "id": "mt1189094",
         "type": "movie",
-        "title": "Dýchajúce obrazy",
+        "title": "Jiříkovo vidění",
         "year": 2023,
         "score": 50,
-        "poster": "",
+        "poster": "https://image.tmdb.org/t/p/w342/c8tU59nZpKjqhRTmuHzP3MQvZlD.jpg",
         "roles": [
-          "director",
-          "writer"
+          "actor"
         ]
       }
     ]
@@ -834265,69 +834361,6 @@
         "year": 2006,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/755hDTzHi6NceVksKdJENNcyNl1.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4317218": {
-    "name": "Robert Mihály",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1190291",
-        "type": "movie",
-        "title": "Nejkrásnější kout na širém světě",
-        "year": 2024,
-        "score": 50,
-        "poster": "",
-        "roles": [
-          "director",
-          "writer"
-        ]
-      }
-    ]
-  },
-  "p3703836": {
-    "name": "Vladimír Strmeň",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1190291",
-        "type": "movie",
-        "title": "Nejkrásnější kout na širém světě",
-        "year": 2024,
-        "score": 50,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st230729",
-        "type": "show",
-        "title": "Tváre orchestra",
-        "year": 2023,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1025417",
-        "type": "movie",
-        "title": "Slovenské národné povstanie 1944",
-        "year": 2009,
-        "score": null,
-        "poster": "",
         "roles": [
           "actor"
         ]

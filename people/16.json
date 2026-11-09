@@ -274314,6 +274314,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1381221",
+        "type": "movie",
+        "title": "Misty Green",
+        "year": 2026,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/dUFtfnSfUK5IUfC5XMlMEY36EAp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt768362",
         "type": "movie",
         "title": "Nezvěstná",
@@ -325855,6 +325866,17 @@
     "deathday": null,
     "age": 44,
     "works": [
+      {
+        "id": "mt1381221",
+        "type": "movie",
+        "title": "Misty Green",
+        "year": 2026,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/dUFtfnSfUK5IUfC5XMlMEY36EAp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "st289560",
         "type": "show",
@@ -379312,6 +379334,26 @@
         "year": 2026,
         "score": 61,
         "poster": "https://image.tmdb.org/t/p/w342/24Z0twB55D9IKAHxpRCZQ6w6dVz.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5178739": {
+    "name": "Lord KraVen",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1381221",
+        "type": "movie",
+        "title": "Misty Green",
+        "year": 2026,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/dUFtfnSfUK5IUfC5XMlMEY36EAp.jpg",
         "roles": [
           "actor"
         ]
