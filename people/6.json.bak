@@ -179057,6 +179057,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1381221",
+        "type": "movie",
+        "title": "Misty Green",
+        "year": 2026,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/dUFtfnSfUK5IUfC5XMlMEY36EAp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st93716",
         "type": "show",
         "title": "Pobřeží moskytů",
@@ -697550,6 +697561,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1381221",
+        "type": "movie",
+        "title": "Misty Green",
+        "year": 2026,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/dUFtfnSfUK5IUfC5XMlMEY36EAp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st245318",
         "type": "show",
         "title": "Margo má problém vyjít",
@@ -725689,6 +725711,26 @@
         "year": 2018,
         "score": 70,
         "poster": "https://image.tmdb.org/t/p/w342/A1WwpjcFynFe52KyD4sUb29KUrZ.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1325759": {
+    "name": "Don Worley",
+    "img": "/mFl4aI4vxOZWxZhzNi1UA3JW4SH.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt939541",
+        "type": "movie",
+        "title": "Christmas at the Kringles",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/oVxkhheRVWSacimUZBuMemQX85E.jpg",
         "roles": [
           "actor"
         ]

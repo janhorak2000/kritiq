@@ -174123,6 +174123,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1381221",
+        "type": "movie",
+        "title": "Misty Green",
+        "year": 2026,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/dUFtfnSfUK5IUfC5XMlMEY36EAp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st290856",
         "type": "show",
         "title": "Marshals: Příběh z Yellowstonu",
@@ -224265,6 +224276,17 @@
         "year": 2026,
         "score": 16,
         "poster": "https://image.tmdb.org/t/p/w342/ba6Silct0Y4pyvrSv0Tj0Urmx9f.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1096228",
+        "type": "movie",
+        "title": "Musk",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/kTOeFV92c3QHJ3bEkT660P7BcWN.jpg",
         "roles": [
           "actor"
         ]
@@ -739880,6 +739902,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt939541",
+        "type": "movie",
+        "title": "Christmas at the Kringles",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/oVxkhheRVWSacimUZBuMemQX85E.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1218493",
         "type": "movie",
         "title": "Ick",
@@ -743624,6 +743657,26 @@
         "year": 2026,
         "score": 69,
         "poster": "https://image.tmdb.org/t/p/w342/v8Bcs5kC5EtKmFMomBv5BAB5SRi.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4475881": {
+    "name": "Yevgeny Jack Berner",
+    "img": "/BSOteLwHzdWv95JUwkAXioULAl.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt939541",
+        "type": "movie",
+        "title": "Christmas at the Kringles",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/oVxkhheRVWSacimUZBuMemQX85E.jpg",
         "roles": [
           "actor"
         ]
@@ -749297,6 +749350,86 @@
         "poster": "https://image.tmdb.org/t/p/w342/brejQbMtyQbRhN4ym0YE6d9xDam.jpg",
         "roles": [
           "writer"
+        ]
+      }
+    ]
+  },
+  "p6444782": {
+    "name": "Ashley St. Clair",
+    "img": "/oyPA9Ppwe6M4uYhFM7VelqXt0iu.jpg",
+    "birthday": "1998-07-31",
+    "deathday": null,
+    "age": 28,
+    "works": [
+      {
+        "id": "mt1096228",
+        "type": "movie",
+        "title": "Musk",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/kTOeFV92c3QHJ3bEkT660P7BcWN.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2740554": {
+    "name": "Katie Drummond",
+    "img": null,
+    "birthday": "1985-01-01",
+    "deathday": null,
+    "age": 41,
+    "works": [
+      {
+        "id": "mt1096228",
+        "type": "movie",
+        "title": "Musk",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/kTOeFV92c3QHJ3bEkT660P7BcWN.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6009325": {
+    "name": "Greg Abbott",
+    "img": null,
+    "birthday": "1957-11-13",
+    "deathday": null,
+    "age": 68,
+    "works": [
+      {
+        "id": "mt1096228",
+        "type": "movie",
+        "title": "Musk",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/kTOeFV92c3QHJ3bEkT660P7BcWN.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p57566": {
+    "name": "Peter Thiel",
+    "img": null,
+    "birthday": "1967-10-11",
+    "deathday": null,
+    "age": 59,
+    "works": [
+      {
+        "id": "mt1096228",
+        "type": "movie",
+        "title": "Musk",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/kTOeFV92c3QHJ3bEkT660P7BcWN.jpg",
+        "roles": [
+          "actor"
         ]
       }
     ]

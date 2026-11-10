@@ -158346,6 +158346,17 @@
     "age": 47,
     "works": [
       {
+        "id": "mt939541",
+        "type": "movie",
+        "title": "Christmas at the Kringles",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/oVxkhheRVWSacimUZBuMemQX85E.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt746817",
         "type": "movie",
         "title": "The Call",
@@ -462104,6 +462115,26 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/7VjwmvDG5mksJBXMcmK6PudqH88.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1481406": {
+    "name": "Grimes",
+    "img": "/iBZMBEnvn2L5ojOyOZY8VCNV5VA.jpg",
+    "birthday": "1988-03-17",
+    "deathday": null,
+    "age": 38,
+    "works": [
+      {
+        "id": "mt1096228",
+        "type": "movie",
+        "title": "Musk",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/kTOeFV92c3QHJ3bEkT660P7BcWN.jpg",
         "roles": [
           "actor"
         ]

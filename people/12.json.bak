@@ -84472,6 +84472,17 @@
     "age": 56,
     "works": [
       {
+        "id": "mt1381221",
+        "type": "movie",
+        "title": "Misty Green",
+        "year": 2026,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/dUFtfnSfUK5IUfC5XMlMEY36EAp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st287527",
         "type": "show",
         "title": "Svědectví",
@@ -391768,6 +391779,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt939541",
+        "type": "movie",
+        "title": "Christmas at the Kringles",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/oVxkhheRVWSacimUZBuMemQX85E.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
         "id": "mt1146344",
         "type": "movie",
         "title": "Odvedení pozornosti",
@@ -524164,6 +524186,57 @@
       }
     ]
   },
+  "p5660007": {
+    "name": "Kimbal Musk",
+    "img": null,
+    "birthday": "1972-09-20",
+    "deathday": null,
+    "age": 54,
+    "works": [
+      {
+        "id": "mt1096228",
+        "type": "movie",
+        "title": "Musk",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/kTOeFV92c3QHJ3bEkT660P7BcWN.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2161105": {
+    "name": "Pete Hegseth",
+    "img": "/2o2SJdgzkrBNevb5UOzVgSXF5Qr.jpg",
+    "birthday": "1980-06-06",
+    "deathday": null,
+    "age": 46,
+    "works": [
+      {
+        "id": "mt1096228",
+        "type": "movie",
+        "title": "Musk",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/kTOeFV92c3QHJ3bEkT660P7BcWN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st7967",
+        "type": "show",
+        "title": "The Rachel Maddow Show",
+        "year": 2008,
+        "score": 60,
+        "poster": "https://image.tmdb.org/t/p/w342/7Jzrp2piY29h8UgA2hEXsxCskt1.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p139245": {
     "name": "Jan Prušinovský",
     "img": "/pHZPbRWq1OwcA6gDRev80YlDt30.jpg",
@@ -607389,26 +607462,6 @@
         "year": 2008,
         "score": 64,
         "poster": "https://image.tmdb.org/t/p/w342/1qfSlnVLvgWqV4XlFB8YNvtKTSy.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2161105": {
-    "name": "Pete Hegseth",
-    "img": "/2o2SJdgzkrBNevb5UOzVgSXF5Qr.jpg",
-    "birthday": "1980-06-06",
-    "deathday": null,
-    "age": 46,
-    "works": [
-      {
-        "id": "st7967",
-        "type": "show",
-        "title": "The Rachel Maddow Show",
-        "year": 2008,
-        "score": 60,
-        "poster": "https://image.tmdb.org/t/p/w342/7Jzrp2piY29h8UgA2hEXsxCskt1.jpg",
         "roles": [
           "actor"
         ]

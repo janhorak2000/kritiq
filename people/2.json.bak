@@ -137550,6 +137550,17 @@
     "age": 35,
     "works": [
       {
+        "id": "mt1381221",
+        "type": "movie",
+        "title": "Misty Green",
+        "year": 2026,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/dUFtfnSfUK5IUfC5XMlMEY36EAp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1450527",
         "type": "movie",
         "title": "Forbidden Fruits",
@@ -164111,6 +164122,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "mt1381221",
+        "type": "movie",
+        "title": "Misty Green",
+        "year": 2026,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/dUFtfnSfUK5IUfC5XMlMEY36EAp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "st85271",
         "type": "show",
@@ -421834,6 +421856,17 @@
     "age": 83,
     "works": [
       {
+        "id": "mt1096228",
+        "type": "movie",
+        "title": "Musk",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/kTOeFV92c3QHJ3bEkT660P7BcWN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt566228",
         "type": "movie",
         "title": "Vynálezkyně: Z kapky krve",
@@ -481401,6 +481434,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1381221",
+        "type": "movie",
+        "title": "Misty Green",
+        "year": 2026,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/dUFtfnSfUK5IUfC5XMlMEY36EAp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st226174",
         "type": "show",
         "title": "Matlock",
@@ -519926,6 +519970,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "mt939541",
+        "type": "movie",
+        "title": "Christmas at the Kringles",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/oVxkhheRVWSacimUZBuMemQX85E.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
       {
         "id": "mt643586",
         "type": "movie",
@@ -734646,6 +734701,46 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/brejQbMtyQbRhN4ym0YE6d9xDam.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6444781": {
+    "name": "Justine Musk",
+    "img": "/mJ6HpfyPu4Ll4S7PsWeWroPVfVI.jpg",
+    "birthday": "1972-09-02",
+    "deathday": null,
+    "age": 54,
+    "works": [
+      {
+        "id": "mt1096228",
+        "type": "movie",
+        "title": "Musk",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/kTOeFV92c3QHJ3bEkT660P7BcWN.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3552672": {
+    "name": "Charlie Kirk",
+    "img": "/gHYoIJz7hZaWOXEzjMYzJCV6EPd.jpg",
+    "birthday": "1993-10-14",
+    "deathday": "2025-09-10",
+    "age": 31,
+    "works": [
+      {
+        "id": "mt1096228",
+        "type": "movie",
+        "title": "Musk",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/kTOeFV92c3QHJ3bEkT660P7BcWN.jpg",
         "roles": [
           "actor"
         ]

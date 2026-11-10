@@ -50658,6 +50658,17 @@
     "age": 56,
     "works": [
       {
+        "id": "mt939541",
+        "type": "movie",
+        "title": "Christmas at the Kringles",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/oVxkhheRVWSacimUZBuMemQX85E.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1476682",
         "type": "movie",
         "title": "Gail Daughtry and the Celebrity Sex Pass",
@@ -90629,6 +90640,19 @@
     "deathday": null,
     "age": 72,
     "works": [
+      {
+        "id": "mt1096228",
+        "type": "movie",
+        "title": "Musk",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/kTOeFV92c3QHJ3bEkT660P7BcWN.jpg",
+        "roles": [
+          "actor",
+          "director",
+          "writer"
+        ]
+      },
       {
         "id": "mt566228",
         "type": "movie",
@@ -142110,6 +142134,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1381221",
+        "type": "movie",
+        "title": "Misty Green",
+        "year": 2026,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/dUFtfnSfUK5IUfC5XMlMEY36EAp.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
         "id": "mt1022964",
         "type": "movie",
         "title": "Vánoční ulička",
@@ -181957,6 +181992,17 @@
     "deathday": null,
     "age": 54,
     "works": [
+      {
+        "id": "mt1381221",
+        "type": "movie",
+        "title": "Misty Green",
+        "year": 2026,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/dUFtfnSfUK5IUfC5XMlMEY36EAp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt1035259",
         "type": "movie",
@@ -560751,6 +560797,81 @@
       }
     ]
   },
+  "p2065569": {
+    "name": "Kamala Harris",
+    "img": "/ynOF0ILhrMItLX0N8WJ4Tzk9a3x.jpg",
+    "birthday": "1964-10-20",
+    "deathday": null,
+    "age": 62,
+    "works": [
+      {
+        "id": "mt1096228",
+        "type": "movie",
+        "title": "Musk",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/kTOeFV92c3QHJ3bEkT660P7BcWN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st65592",
+        "type": "show",
+        "title": "Full Frontal with Samantha Bee",
+        "year": 2016,
+        "score": 60,
+        "poster": "https://image.tmdb.org/t/p/w342/Rr5QFKeao5G35dddh7iXpF2ePz.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st63770",
+        "type": "show",
+        "title": "The Late Show with Stephen Colbert",
+        "year": 2015,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/9jkThAGYj2yp8jsS6Nriy5mzKFT.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st61818",
+        "type": "show",
+        "title": "Late Night with Seth Meyers",
+        "year": 2014,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/u8VruEGv7mtyJihVn2CSA1u90pk.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st7967",
+        "type": "show",
+        "title": "The Rachel Maddow Show",
+        "year": 2008,
+        "score": 60,
+        "poster": "https://image.tmdb.org/t/p/w342/7Jzrp2piY29h8UgA2hEXsxCskt1.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st651",
+        "type": "show",
+        "title": "60 Minutes",
+        "year": 1968,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/vDlT8YU1pF8z37RfNaCOyJ5uO7l.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p83952": {
     "name": "Jan Hartl",
     "img": "/3Tt7DgBeXq3TWbtkaJMY1RTUx8n.jpg",
@@ -652838,70 +652959,6 @@
         "year": 2008,
         "score": 60,
         "poster": "https://image.tmdb.org/t/p/w342/7Jzrp2piY29h8UgA2hEXsxCskt1.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2065569": {
-    "name": "Kamala Harris",
-    "img": "/ynOF0ILhrMItLX0N8WJ4Tzk9a3x.jpg",
-    "birthday": "1964-10-20",
-    "deathday": null,
-    "age": 61,
-    "works": [
-      {
-        "id": "st65592",
-        "type": "show",
-        "title": "Full Frontal with Samantha Bee",
-        "year": 2016,
-        "score": 60,
-        "poster": "https://image.tmdb.org/t/p/w342/Rr5QFKeao5G35dddh7iXpF2ePz.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st63770",
-        "type": "show",
-        "title": "The Late Show with Stephen Colbert",
-        "year": 2015,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/9jkThAGYj2yp8jsS6Nriy5mzKFT.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st61818",
-        "type": "show",
-        "title": "Late Night with Seth Meyers",
-        "year": 2014,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/u8VruEGv7mtyJihVn2CSA1u90pk.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st7967",
-        "type": "show",
-        "title": "The Rachel Maddow Show",
-        "year": 2008,
-        "score": 60,
-        "poster": "https://image.tmdb.org/t/p/w342/7Jzrp2piY29h8UgA2hEXsxCskt1.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st651",
-        "type": "show",
-        "title": "60 Minutes",
-        "year": 1968,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/vDlT8YU1pF8z37RfNaCOyJ5uO7l.jpg",
         "roles": [
           "actor"
         ]
