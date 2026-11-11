@@ -2871,6 +2871,17 @@
     "age": 63,
     "works": [
       {
+        "id": "mt1567605",
+        "type": "movie",
+        "title": "Ebenezer: Vánoční koleda",
+        "year": 2026,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/wbTHJ5VzOjEq02PYHkLAL7yhhBn.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt921452",
         "type": "movie",
         "title": "Jeanne du Barry – Králova milenka",
@@ -100999,6 +101010,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "mt1669915",
+        "type": "movie",
+        "title": "Angel and the Badman",
+        "year": 2026,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/mJe53zlhGBdcjtN1GqncNZ5Unm0.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
       {
         "id": "mt86822",
         "type": "movie",
@@ -352747,6 +352769,17 @@
     "age": 53,
     "works": [
       {
+        "id": "mt1562642",
+        "type": "movie",
+        "title": "Ghost Soldier",
+        "year": 2026,
+        "score": 90,
+        "poster": "https://image.tmdb.org/t/p/w342/8Y4oJ5iUs3hgPcDB3SIEmsNYjZk.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt969492",
         "type": "movie",
         "title": "V nepřátelské zóně",
@@ -452437,6 +452470,59 @@
       }
     ]
   },
+  "p4213838": {
+    "name": "Dylan Corbett-Bader",
+    "img": "/e1poimMYJMDPScTXV6bTNOCyrRA.jpg",
+    "birthday": "1997-07-22",
+    "deathday": null,
+    "age": 29,
+    "works": [
+      {
+        "id": "mt1562642",
+        "type": "movie",
+        "title": "Ghost Soldier",
+        "year": 2026,
+        "score": 90,
+        "poster": "https://image.tmdb.org/t/p/w342/8Y4oJ5iUs3hgPcDB3SIEmsNYjZk.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st222405",
+        "type": "show",
+        "title": "Tatér z Osvětimi",
+        "year": 2024,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/itGPV92MDFVleR4BL18L7cbp4wZ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st200908",
+        "type": "show",
+        "title": "Měli jsme štěstí",
+        "year": 2024,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/iHvsIKCy4Lk3faZYOfyONOzuRFV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt945729",
+        "type": "movie",
+        "title": "Přízraky v Benátkách",
+        "year": 2023,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/uIScBFtEwuXDuFeZG0eWmYGyUWb.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p6475438": {
     "name": "Skye Kaden",
     "img": null,
@@ -452511,6 +452597,26 @@
         "year": 2026,
         "score": 78,
         "poster": "https://image.tmdb.org/t/p/w342/51VDtNQFuD2I86hrT4ekytg9Dq3.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6240995": {
+    "name": "Danielle Nicole Chambers",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1669915",
+        "type": "movie",
+        "title": "Angel and the Badman",
+        "year": 2026,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/mJe53zlhGBdcjtN1GqncNZ5Unm0.jpg",
         "roles": [
           "actor"
         ]
@@ -460054,48 +460160,6 @@
         "year": 2023,
         "score": 65,
         "poster": "https://image.tmdb.org/t/p/w342/hoBTLUzoz7cbz7YfBFB6e8FTc8V.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4213838": {
-    "name": "Dylan Corbett-Bader",
-    "img": "/e1poimMYJMDPScTXV6bTNOCyrRA.jpg",
-    "birthday": "1997-07-22",
-    "deathday": null,
-    "age": 29,
-    "works": [
-      {
-        "id": "st222405",
-        "type": "show",
-        "title": "Tatér z Osvětimi",
-        "year": 2024,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/itGPV92MDFVleR4BL18L7cbp4wZ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st200908",
-        "type": "show",
-        "title": "Měli jsme štěstí",
-        "year": 2024,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/iHvsIKCy4Lk3faZYOfyONOzuRFV.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt945729",
-        "type": "movie",
-        "title": "Přízraky v Benátkách",
-        "year": 2023,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/uIScBFtEwuXDuFeZG0eWmYGyUWb.jpg",
         "roles": [
           "actor"
         ]

@@ -46978,6 +46978,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1600653",
+        "type": "movie",
+        "title": "The 12 Dates of Christmas",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/w82vKEoYNZ9SxYxvccxO85CnZKE.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1175942",
         "type": "movie",
         "title": "Zlouni 2",
@@ -115422,6 +115433,17 @@
     "deathday": null,
     "age": 35,
     "works": [
+      {
+        "id": "mt1600653",
+        "type": "movie",
+        "title": "The 12 Dates of Christmas",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/w82vKEoYNZ9SxYxvccxO85CnZKE.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt820525",
         "type": "movie",
@@ -218270,6 +218292,17 @@
     "age": 37,
     "works": [
       {
+        "id": "mt1567605",
+        "type": "movie",
+        "title": "Ebenezer: Vánoční koleda",
+        "year": 2026,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/wbTHJ5VzOjEq02PYHkLAL7yhhBn.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt680493",
         "type": "movie",
         "title": "Silent Hill: Noční můry",
@@ -253577,6 +253610,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "mt1669915",
+        "type": "movie",
+        "title": "Angel and the Badman",
+        "year": 2026,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/mJe53zlhGBdcjtN1GqncNZ5Unm0.jpg",
+        "roles": [
+          "director"
+        ]
+      },
       {
         "id": "mt1079810",
         "type": "movie",
@@ -479534,6 +479578,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1669915",
+        "type": "movie",
+        "title": "Angel and the Badman",
+        "year": 2026,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/mJe53zlhGBdcjtN1GqncNZ5Unm0.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt506407",
         "type": "movie",
         "title": "Pařiči",
@@ -676810,86 +676865,6 @@
       }
     ]
   },
-  "p5478424": {
-    "name": "Mohammad Amireh",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1437396",
-        "type": "movie",
-        "title": "Your Mother Your Mother Your Mother",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1089413": {
-    "name": "Suroosh Alvi",
-    "img": "/1XhiMexYQ1Kwo29beC4WKnXZS1N.jpg",
-    "birthday": "1969-03-26",
-    "deathday": null,
-    "age": 57,
-    "works": [
-      {
-        "id": "mt1437396",
-        "type": "movie",
-        "title": "Your Mother Your Mother Your Mother",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6466411": {
-    "name": "Serenity Aldridge",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1437396",
-        "type": "movie",
-        "title": "Your Mother Your Mother Your Mother",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6509608": {
-    "name": "Nio Levon",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1437396",
-        "type": "movie",
-        "title": "Your Mother Your Mother Your Mother",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p5871135": {
     "name": "Priscilla Deleon",
     "img": null,
@@ -724816,6 +724791,86 @@
         "year": 2025,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/nO98bNcW5BLq7PGcUfJvCfViqqE.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5478424": {
+    "name": "Mohammad Amireh",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1437396",
+        "type": "movie",
+        "title": "Your Mother Your Mother Your Mother",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1089413": {
+    "name": "Suroosh Alvi",
+    "img": "/1XhiMexYQ1Kwo29beC4WKnXZS1N.jpg",
+    "birthday": "1969-03-26",
+    "deathday": null,
+    "age": 57,
+    "works": [
+      {
+        "id": "mt1437396",
+        "type": "movie",
+        "title": "Your Mother Your Mother Your Mother",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6466411": {
+    "name": "Serenity Aldridge",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1437396",
+        "type": "movie",
+        "title": "Your Mother Your Mother Your Mother",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6509608": {
+    "name": "Nio Levon",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1437396",
+        "type": "movie",
+        "title": "Your Mother Your Mother Your Mother",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
         "roles": [
           "actor"
         ]

@@ -109284,6 +109284,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1600653",
+        "type": "movie",
+        "title": "The 12 Dates of Christmas",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/w82vKEoYNZ9SxYxvccxO85CnZKE.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt939979",
         "type": "movie",
         "title": "Poslední cesta",
@@ -192817,6 +192828,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1562642",
+        "type": "movie",
+        "title": "Ghost Soldier",
+        "year": 2026,
+        "score": 90,
+        "poster": "https://image.tmdb.org/t/p/w342/8Y4oJ5iUs3hgPcDB3SIEmsNYjZk.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1386315",
         "type": "movie",
         "title": "Běžkyně",
@@ -248045,6 +248067,17 @@
     "age": 37,
     "works": [
       {
+        "id": "mt1600653",
+        "type": "movie",
+        "title": "The 12 Dates of Christmas",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/w82vKEoYNZ9SxYxvccxO85CnZKE.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt825672",
         "type": "movie",
         "title": "Asking For It",
@@ -287574,6 +287607,17 @@
         "year": 2026,
         "score": 60,
         "poster": "https://image.tmdb.org/t/p/w342/1etZaDkyHpaRz2cTvH2evgQm19J.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1600653",
+        "type": "movie",
+        "title": "The 12 Dates of Christmas",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/w82vKEoYNZ9SxYxvccxO85CnZKE.jpg",
         "roles": [
           "actor"
         ]
@@ -329949,6 +329993,17 @@
     "deathday": null,
     "age": 41,
     "works": [
+      {
+        "id": "mt1600653",
+        "type": "movie",
+        "title": "The 12 Dates of Christmas",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/w82vKEoYNZ9SxYxvccxO85CnZKE.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt1064178",
         "type": "movie",
@@ -385462,6 +385517,26 @@
       }
     ]
   },
+  "p6193818": {
+    "name": "Barrett Ellis Luca",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1669915",
+        "type": "movie",
+        "title": "Angel and the Badman",
+        "year": 2026,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/mJe53zlhGBdcjtN1GqncNZ5Unm0.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p5945230": {
     "name": "Raymond Ellis",
     "img": null,
@@ -385551,26 +385626,6 @@
         "year": 1994,
         "score": 82,
         "poster": "https://image.tmdb.org/t/p/w342/4mr2xRXoz8NoWu0oIUYXcnMgKLW.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6537360": {
-    "name": "Mimi Rios",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1236045",
-        "type": "movie",
-        "title": "Zvířata",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/ilG5SDwCpuncg9XF4MLVcjj9lkK.jpg",
         "roles": [
           "actor"
         ]
@@ -412752,6 +412807,26 @@
         "year": 2016,
         "score": 78,
         "poster": "https://image.tmdb.org/t/p/w342/u0K7ufhFfX1WMpEgYMTPo4oq2a8.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6537360": {
+    "name": "Mimi Rios",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1236045",
+        "type": "movie",
+        "title": "Zvířata",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/ilG5SDwCpuncg9XF4MLVcjj9lkK.jpg",
         "roles": [
           "actor"
         ]

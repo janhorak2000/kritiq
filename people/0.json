@@ -122832,6 +122832,17 @@
     "age": 38,
     "works": [
       {
+        "id": "mt1567605",
+        "type": "movie",
+        "title": "Ebenezer: Vánoční koleda",
+        "year": 2026,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/wbTHJ5VzOjEq02PYHkLAL7yhhBn.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st254701",
         "type": "show",
         "title": "Atomic",
@@ -623466,6 +623477,136 @@
       }
     ]
   },
+  "p2028037": {
+    "name": "Tramell Tillman",
+    "img": "/bEA15zMnkcXlRroYjKrFUWiiK7y.jpg",
+    "birthday": "1985-06-17",
+    "deathday": null,
+    "age": 41,
+    "works": [
+      {
+        "id": "mt1567605",
+        "type": "movie",
+        "title": "Ebenezer: Vánoční koleda",
+        "year": 2026,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/wbTHJ5VzOjEq02PYHkLAL7yhhBn.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt969681",
+        "type": "movie",
+        "title": "Spider-Man: Zbrusu nový den",
+        "year": 2026,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/27AISM4WhMtJO8jXm3DrzBvwzAd.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1437396",
+        "type": "movie",
+        "title": "Your Mother Your Mother Your Mother",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt575265",
+        "type": "movie",
+        "title": "Mission: Impossible – Poslední zúčtování",
+        "year": 2025,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/kbaIzwmL4L9U4B8DRUmA5wsL1Yh.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1128546",
+        "type": "movie",
+        "title": "Barron's Cove",
+        "year": 2025,
+        "score": 61,
+        "poster": "https://image.tmdb.org/t/p/w342/wo8qFjc2FLJdGg8FmnZeTxVBf7D.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt999890",
+        "type": "movie",
+        "title": "Zlatíčka",
+        "year": 2024,
+        "score": 55,
+        "poster": "https://image.tmdb.org/t/p/w342/890UDXYal6i8A9NbMV5TAxZpOzH.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st95396",
+        "type": "show",
+        "title": "Odloučení",
+        "year": 2022,
+        "score": 86,
+        "poster": "https://image.tmdb.org/t/p/w342/uAZukCD4dfCsZaQ1U6Ivj71g4zC.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st79622",
+        "type": "show",
+        "title": "Velký lov",
+        "year": 2020,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/czQlvjJaPOeQTwAdreiTS0gXzyg.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st79086",
+        "type": "show",
+        "title": "Godfather of Harlem",
+        "year": 2019,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/avhyzJycLNi3nXov2lREhDkP3ik.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st79005",
+        "type": "show",
+        "title": "Dietland",
+        "year": 2018,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/v5cfVvAe4IawRchyKDHSFgunL9F.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st63353",
+        "type": "show",
+        "title": "Difficult People",
+        "year": 2015,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/2ji3KnVj7ilpL67DtScIHzxxjHH.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p3796265": {
     "name": "Alice Brittain",
     "img": "/qOlSX2GtTU1Rhn5iYf4K0bqQJgu.jpg",
@@ -623666,125 +623807,6 @@
         "year": 2026,
         "score": 82,
         "poster": "https://image.tmdb.org/t/p/w342/jFiMdTG8Hw41A3VxrzLEWtMFIYX.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2028037": {
-    "name": "Tramell Tillman",
-    "img": "/bEA15zMnkcXlRroYjKrFUWiiK7y.jpg",
-    "birthday": "1985-06-17",
-    "deathday": null,
-    "age": 41,
-    "works": [
-      {
-        "id": "mt969681",
-        "type": "movie",
-        "title": "Spider-Man: Zbrusu nový den",
-        "year": 2026,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/27AISM4WhMtJO8jXm3DrzBvwzAd.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1437396",
-        "type": "movie",
-        "title": "Your Mother Your Mother Your Mother",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt575265",
-        "type": "movie",
-        "title": "Mission: Impossible – Poslední zúčtování",
-        "year": 2025,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/kbaIzwmL4L9U4B8DRUmA5wsL1Yh.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1128546",
-        "type": "movie",
-        "title": "Barron's Cove",
-        "year": 2025,
-        "score": 61,
-        "poster": "https://image.tmdb.org/t/p/w342/wo8qFjc2FLJdGg8FmnZeTxVBf7D.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt999890",
-        "type": "movie",
-        "title": "Zlatíčka",
-        "year": 2024,
-        "score": 55,
-        "poster": "https://image.tmdb.org/t/p/w342/890UDXYal6i8A9NbMV5TAxZpOzH.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st95396",
-        "type": "show",
-        "title": "Odloučení",
-        "year": 2022,
-        "score": 86,
-        "poster": "https://image.tmdb.org/t/p/w342/uAZukCD4dfCsZaQ1U6Ivj71g4zC.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st79622",
-        "type": "show",
-        "title": "Velký lov",
-        "year": 2020,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/czQlvjJaPOeQTwAdreiTS0gXzyg.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st79086",
-        "type": "show",
-        "title": "Godfather of Harlem",
-        "year": 2019,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/avhyzJycLNi3nXov2lREhDkP3ik.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st79005",
-        "type": "show",
-        "title": "Dietland",
-        "year": 2018,
-        "score": 67,
-        "poster": "https://image.tmdb.org/t/p/w342/v5cfVvAe4IawRchyKDHSFgunL9F.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st63353",
-        "type": "show",
-        "title": "Difficult People",
-        "year": 2015,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/2ji3KnVj7ilpL67DtScIHzxxjHH.jpg",
         "roles": [
           "actor"
         ]
@@ -624300,137 +624322,6 @@
         "year": 2026,
         "score": 74,
         "poster": "https://image.tmdb.org/t/p/w342/jtMuKwlOl4IzpB5fWn9RT9uyy6E.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3387593": {
-    "name": "Levi Gilbert",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1236045",
-        "type": "movie",
-        "title": "Zvířata",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/ilG5SDwCpuncg9XF4MLVcjj9lkK.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1029575",
-        "type": "movie",
-        "title": "Plán pro rodinu",
-        "year": 2023,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/2poaTJKOeppsTL64IXWBvbyWyjw.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6537355": {
-    "name": "Anoushah Rasta",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1236045",
-        "type": "movie",
-        "title": "Zvířata",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/ilG5SDwCpuncg9XF4MLVcjj9lkK.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6537366": {
-    "name": "Alex Ramirez",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1236045",
-        "type": "movie",
-        "title": "Zvířata",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/ilG5SDwCpuncg9XF4MLVcjj9lkK.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6466394": {
-    "name": "Aisha Azmat Ali",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1437396",
-        "type": "movie",
-        "title": "Your Mother Your Mother Your Mother",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6509602": {
-    "name": "Tajahniya Sapp",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1437396",
-        "type": "movie",
-        "title": "Your Mother Your Mother Your Mother",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6509613": {
-    "name": "Nina Moffitt",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1437396",
-        "type": "movie",
-        "title": "Your Mother Your Mother Your Mother",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
         "roles": [
           "actor"
         ]
@@ -642396,6 +642287,37 @@
         "year": 2025,
         "score": 47,
         "poster": "https://image.tmdb.org/t/p/w342/bQKRJmyNFyMkMMmgTjKD17qJwhp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1029575",
+        "type": "movie",
+        "title": "Plán pro rodinu",
+        "year": 2023,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/2poaTJKOeppsTL64IXWBvbyWyjw.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3387593": {
+    "name": "Levi Gilbert",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1236045",
+        "type": "movie",
+        "title": "Zvířata",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/ilG5SDwCpuncg9XF4MLVcjj9lkK.jpg",
         "roles": [
           "actor"
         ]
@@ -671649,6 +671571,106 @@
         "year": 2022,
         "score": 80,
         "poster": "",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6537355": {
+    "name": "Anoushah Rasta",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1236045",
+        "type": "movie",
+        "title": "Zvířata",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/ilG5SDwCpuncg9XF4MLVcjj9lkK.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6537366": {
+    "name": "Alex Ramirez",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1236045",
+        "type": "movie",
+        "title": "Zvířata",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/ilG5SDwCpuncg9XF4MLVcjj9lkK.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6466394": {
+    "name": "Aisha Azmat Ali",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1437396",
+        "type": "movie",
+        "title": "Your Mother Your Mother Your Mother",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6509602": {
+    "name": "Tajahniya Sapp",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1437396",
+        "type": "movie",
+        "title": "Your Mother Your Mother Your Mother",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6509613": {
+    "name": "Nina Moffitt",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1437396",
+        "type": "movie",
+        "title": "Your Mother Your Mother Your Mother",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
         "roles": [
           "actor"
         ]

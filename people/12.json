@@ -47558,6 +47558,17 @@
     "age": 44,
     "works": [
       {
+        "id": "mt1562642",
+        "type": "movie",
+        "title": "Ghost Soldier",
+        "year": 2026,
+        "score": 90,
+        "poster": "https://image.tmdb.org/t/p/w342/8Y4oJ5iUs3hgPcDB3SIEmsNYjZk.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st245703",
         "type": "show",
         "title": "Oddělení Q",
@@ -174344,6 +174355,17 @@
         "year": 2026,
         "score": 47,
         "poster": "https://image.tmdb.org/t/p/w342/tQti9QTf13MfzNpXguijgNh7ojE.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "mt1600653",
+        "type": "movie",
+        "title": "The 12 Dates of Christmas",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/w82vKEoYNZ9SxYxvccxO85CnZKE.jpg",
         "roles": [
           "composer"
         ]
@@ -490491,26 +490513,6 @@
       }
     ]
   },
-  "p6466406": {
-    "name": "Jaxon Hughes",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1437396",
-        "type": "movie",
-        "title": "Your Mother Your Mother Your Mother",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p2074106": {
     "name": "Benmio McCrea",
     "img": "/vQivcMpzTTMvDLmLAi98Xr88qz3.jpg",
@@ -519775,6 +519777,26 @@
         "year": 2025,
         "score": 63,
         "poster": "https://image.tmdb.org/t/p/w342/c6cjIj1DvJEaCUmCVEnP91dVP2R.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6466406": {
+    "name": "Jaxon Hughes",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1437396",
+        "type": "movie",
+        "title": "Your Mother Your Mother Your Mother",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
         "roles": [
           "actor"
         ]

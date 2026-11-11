@@ -390431,6 +390431,17 @@
     "age": 65,
     "works": [
       {
+        "id": "mt1562642",
+        "type": "movie",
+        "title": "Ghost Soldier",
+        "year": 2026,
+        "score": 90,
+        "poster": "https://image.tmdb.org/t/p/w342/8Y4oJ5iUs3hgPcDB3SIEmsNYjZk.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st226749",
         "type": "show",
         "title": "The Librarians: The Next Chapter",
@@ -650004,6 +650015,46 @@
       }
     ]
   },
+  "p1710710": {
+    "name": "Nathaniel Halpern",
+    "img": "/e1eygTOmsRZdxUnlDPaULC4gK0H.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1567605",
+        "type": "movie",
+        "title": "Ebenezer: Vánoční koleda",
+        "year": 2026,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/wbTHJ5VzOjEq02PYHkLAL7yhhBn.jpg",
+        "roles": [
+          "writer"
+        ]
+      }
+    ]
+  },
+  "p4840496": {
+    "name": "Tara Mohatta",
+    "img": "/llAG2yqEGDErM8Euo8pecb9ObiO.jpg",
+    "birthday": "2015-11-29",
+    "deathday": null,
+    "age": 10,
+    "works": [
+      {
+        "id": "mt1567605",
+        "type": "movie",
+        "title": "Ebenezer: Vánoční koleda",
+        "year": 2026,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/wbTHJ5VzOjEq02PYHkLAL7yhhBn.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p5922951": {
     "name": "Andreius 'Dreko Tha Prophet' Moore",
     "img": null,
@@ -650602,159 +650653,6 @@
         "year": 2026,
         "score": 74,
         "poster": "https://image.tmdb.org/t/p/w342/jtMuKwlOl4IzpB5fWn9RT9uyy6E.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6537356": {
-    "name": "Daniel Diaz",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1236045",
-        "type": "movie",
-        "title": "Zvířata",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/ilG5SDwCpuncg9XF4MLVcjj9lkK.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3555894": {
-    "name": "Ian Chang",
-    "img": "/mU50bXXsBNA59GsC1asJSMjG7e6.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1437396",
-        "type": "movie",
-        "title": "Your Mother Your Mother Your Mother",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
-        "roles": [
-          "composer"
-        ]
-      }
-    ]
-  },
-  "p3832049": {
-    "name": "Shawn Jain",
-    "img": "/r73OA6Snvcq9Znjab4NMrTzAf4O.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1437396",
-        "type": "movie",
-        "title": "Your Mother Your Mother Your Mother",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st270476",
-        "type": "show",
-        "title": "Widow's Bay",
-        "year": 2026,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/vKq8XEJKxQTHd2Bm5zZMFPUrke7.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3645984": {
-    "name": "Ali Alsaleh",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1437396",
-        "type": "movie",
-        "title": "Your Mother Your Mother Your Mother",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st92782",
-        "type": "show",
-        "title": "Ms. Marvel",
-        "year": 2022,
-        "score": 62,
-        "poster": "https://image.tmdb.org/t/p/w342/3HWWh92kZbD7odwJX7nKmXNZsYo.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st85077",
-        "type": "show",
-        "title": "Vyvolení",
-        "year": 2019,
-        "score": 91,
-        "poster": "https://image.tmdb.org/t/p/w342/dqVUFuNrMFWt7uGNWlpo91VKYOI.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6509603": {
-    "name": "Pierre Schadrack",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1437396",
-        "type": "movie",
-        "title": "Your Mother Your Mother Your Mother",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6509614": {
-    "name": "Jehbreal Muhammad Jackson",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1437396",
-        "type": "movie",
-        "title": "Your Mother Your Mother Your Mother",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
         "roles": [
           "actor"
         ]
@@ -701563,6 +701461,159 @@
         "poster": "https://image.tmdb.org/t/p/w342/75gzZd1VjaIShn2i7FpbesafU7i.jpg",
         "roles": [
           "director"
+        ]
+      }
+    ]
+  },
+  "p6537356": {
+    "name": "Daniel Diaz",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1236045",
+        "type": "movie",
+        "title": "Zvířata",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/ilG5SDwCpuncg9XF4MLVcjj9lkK.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3555894": {
+    "name": "Ian Chang",
+    "img": "/mU50bXXsBNA59GsC1asJSMjG7e6.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1437396",
+        "type": "movie",
+        "title": "Your Mother Your Mother Your Mother",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
+        "roles": [
+          "composer"
+        ]
+      }
+    ]
+  },
+  "p3832049": {
+    "name": "Shawn Jain",
+    "img": "/r73OA6Snvcq9Znjab4NMrTzAf4O.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1437396",
+        "type": "movie",
+        "title": "Your Mother Your Mother Your Mother",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st270476",
+        "type": "show",
+        "title": "Widow's Bay",
+        "year": 2026,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/vKq8XEJKxQTHd2Bm5zZMFPUrke7.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3645984": {
+    "name": "Ali Alsaleh",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1437396",
+        "type": "movie",
+        "title": "Your Mother Your Mother Your Mother",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st92782",
+        "type": "show",
+        "title": "Ms. Marvel",
+        "year": 2022,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/3HWWh92kZbD7odwJX7nKmXNZsYo.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st85077",
+        "type": "show",
+        "title": "Vyvolení",
+        "year": 2019,
+        "score": 91,
+        "poster": "https://image.tmdb.org/t/p/w342/dqVUFuNrMFWt7uGNWlpo91VKYOI.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6509603": {
+    "name": "Pierre Schadrack",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1437396",
+        "type": "movie",
+        "title": "Your Mother Your Mother Your Mother",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6509614": {
+    "name": "Jehbreal Muhammad Jackson",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1437396",
+        "type": "movie",
+        "title": "Your Mother Your Mother Your Mother",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
+        "roles": [
+          "actor"
         ]
       }
     ]

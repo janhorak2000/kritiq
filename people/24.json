@@ -102202,6 +102202,17 @@
     "age": 29,
     "works": [
       {
+        "id": "mt1567605",
+        "type": "movie",
+        "title": "Ebenezer: Vánoční koleda",
+        "year": 2026,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/wbTHJ5VzOjEq02PYHkLAL7yhhBn.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt975615",
         "type": "movie",
         "title": "Words of War",
@@ -337201,20 +337212,31 @@
       }
     ]
   },
-  "p3423390": {
-    "name": "Aaron Goodson",
-    "img": "/8kLwvH7uXoGcBqbw3oZt4HHqOSu.jpg",
+  "p4150709": {
+    "name": "Eric T. Esparza",
+    "img": null,
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "mt1437396",
+        "id": "mt1669915",
         "type": "movie",
-        "title": "Your Mother Your Mother Your Mother",
+        "title": "Angel and the Badman",
         "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/mJe53zlhGBdcjtN1GqncNZ5Unm0.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st200701",
+        "type": "show",
+        "title": "Waco: The Aftermath",
+        "year": 2023,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/7xaVVAAhMJhc5VIRpRa48DLsRru.jpg",
         "roles": [
           "actor"
         ]
@@ -356595,6 +356617,26 @@
         "year": 2025,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/28OvHIRxK5jve41mLRp7Sx5mITa.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3423390": {
+    "name": "Aaron Goodson",
+    "img": "/8kLwvH7uXoGcBqbw3oZt4HHqOSu.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1437396",
+        "type": "movie",
+        "title": "Your Mother Your Mother Your Mother",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
         "roles": [
           "actor"
         ]
@@ -432781,26 +432823,6 @@
         "year": 2017,
         "score": 82,
         "poster": "https://image.tmdb.org/t/p/w342/ePOD0ofGWFDTbZR84QhM7kpYMPX.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4150709": {
-    "name": "Eric T. Esparza",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st200701",
-        "type": "show",
-        "title": "Waco: The Aftermath",
-        "year": 2023,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/7xaVVAAhMJhc5VIRpRa48DLsRru.jpg",
         "roles": [
           "actor"
         ]

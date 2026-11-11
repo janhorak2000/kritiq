@@ -4406,6 +4406,17 @@
     "age": 46,
     "works": [
       {
+        "id": "mt1562642",
+        "type": "movie",
+        "title": "Ghost Soldier",
+        "year": 2026,
+        "score": 90,
+        "poster": "https://image.tmdb.org/t/p/w342/8Y4oJ5iUs3hgPcDB3SIEmsNYjZk.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1607127",
         "type": "movie",
         "title": "One Last Shot",
@@ -124261,6 +124272,17 @@
     "age": 38,
     "works": [
       {
+        "id": "mt1600653",
+        "type": "movie",
+        "title": "The 12 Dates of Christmas",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/w82vKEoYNZ9SxYxvccxO85CnZKE.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st202097",
         "type": "show",
         "title": "Obžalovaní",
@@ -156665,6 +156687,17 @@
         "year": 2026,
         "score": 40,
         "poster": "https://image.tmdb.org/t/p/w342/zk2saSFclmoJDxBovrOTp8W6NSz.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1600653",
+        "type": "movie",
+        "title": "The 12 Dates of Christmas",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/w82vKEoYNZ9SxYxvccxO85CnZKE.jpg",
         "roles": [
           "actor"
         ]
@@ -385847,6 +385880,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "mt1669915",
+        "type": "movie",
+        "title": "Angel and the Badman",
+        "year": 2026,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/mJe53zlhGBdcjtN1GqncNZ5Unm0.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt948549",
         "type": "movie",
@@ -661013,6 +661057,26 @@
       }
     ]
   },
+  "p5930965": {
+    "name": "Carlos Gómez",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1562642",
+        "type": "movie",
+        "title": "Ghost Soldier",
+        "year": 2026,
+        "score": 90,
+        "poster": "https://image.tmdb.org/t/p/w342/8Y4oJ5iUs3hgPcDB3SIEmsNYjZk.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p6342035": {
     "name": "Raimy Lang",
     "img": "/blAgz5a4IRmwycftKnrRMfWCYF3.jpg",
@@ -661393,6 +661457,26 @@
         "year": 2026,
         "score": 78,
         "poster": "https://image.tmdb.org/t/p/w342/51VDtNQFuD2I86hrT4ekytg9Dq3.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6541212": {
+    "name": "Nathan Kostenko",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1669915",
+        "type": "movie",
+        "title": "Angel and the Badman",
+        "year": 2026,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/mJe53zlhGBdcjtN1GqncNZ5Unm0.jpg",
         "roles": [
           "actor"
         ]
@@ -661825,26 +661909,6 @@
         "year": 2020,
         "score": 86,
         "poster": "https://image.tmdb.org/t/p/w342/jB2aWqbRWsA1bwIXTAupsOReOIM.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6466401": {
-    "name": "Hanunah Saboor",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1437396",
-        "type": "movie",
-        "title": "Your Mother Your Mother Your Mother",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
         "roles": [
           "actor"
         ]
@@ -708271,6 +708335,26 @@
         "year": 1966,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/dbbDtYNcLgarfAisSmXOImd4Ayl.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6466401": {
+    "name": "Hanunah Saboor",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1437396",
+        "type": "movie",
+        "title": "Your Mother Your Mother Your Mother",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
         "roles": [
           "actor"
         ]
