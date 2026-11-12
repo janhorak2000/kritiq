@@ -22507,28 +22507,6 @@
         ]
       },
       {
-        "id": "mt1165416",
-        "type": "movie",
-        "title": "Velký pán",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/pahss6UcHL1xsH6XN8KiiBIT0pf.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt762901",
-        "type": "movie",
-        "title": "Barevný sen",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/bvzJWqSQbcaKTN2CMdUhXCO1bZY.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1147401",
         "type": "movie",
         "title": "Amerikánka",
@@ -22546,6 +22524,28 @@
         "year": 2024,
         "score": 60,
         "poster": "https://image.tmdb.org/t/p/w342/qs03nSQLXylk1njRvXTJgac0Ppk.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1165416",
+        "type": "movie",
+        "title": "Velký pán",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/pahss6UcHL1xsH6XN8KiiBIT0pf.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt762901",
+        "type": "movie",
+        "title": "Barevný sen",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/bvzJWqSQbcaKTN2CMdUhXCO1bZY.jpg",
         "roles": [
           "actor"
         ]
@@ -354987,6 +354987,17 @@
     "age": 36,
     "works": [
       {
+        "id": "mt1437511",
+        "type": "movie",
+        "title": "Jak udělat banku",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/ifYDZkr2qkHFz87TNVvlxajOxl5.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1202479",
         "type": "movie",
         "title": "Opus",
@@ -361372,6 +361383,17 @@
     "age": 55,
     "works": [
       {
+        "id": "mt1302879",
+        "type": "movie",
+        "title": "Janžurka",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/2jcX0ztCQl2NA9Y54nIhC5L9RAc.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1257517",
         "type": "movie",
         "title": "Prodaná nevěsta",
@@ -361392,17 +361414,6 @@
         "roles": [
           "director",
           "writer"
-        ]
-      },
-      {
-        "id": "mt1302879",
-        "type": "movie",
-        "title": "Janžurka",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/2jcX0ztCQl2NA9Y54nIhC5L9RAc.jpg",
-        "roles": [
-          "actor"
         ]
       },
       {
@@ -374863,6 +374874,37 @@
       }
     ]
   },
+  "p3977482": {
+    "name": "Darek Král",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1213913",
+        "type": "movie",
+        "title": "Krvavý Johann",
+        "year": 2024,
+        "score": 60,
+        "poster": "https://image.tmdb.org/t/p/w342/fMzqc95x4oRyxhvJNLAEzGb6Qxo.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "mt1104172",
+        "type": "movie",
+        "title": "O malých věcech",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/rpNy6ayzh5FIbY4kEVnn8U4cpDZ.jpg",
+        "roles": [
+          "composer"
+        ]
+      }
+    ]
+  },
   "p2828323": {
     "name": "Sára Rychlíková",
     "img": "/yUxGUl9BlgCpRkgs78wIQ2W2rz6.jpg",
@@ -376169,6 +376211,103 @@
         "poster": "https://image.tmdb.org/t/p/w342/aREom59q6OMgwjQEuQhV1yHMmx2.jpg",
         "roles": [
           "actor"
+        ]
+      }
+    ]
+  },
+  "p1506970": {
+    "name": "Tadeáš Věrčák",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1302879",
+        "type": "movie",
+        "title": "Janžurka",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/2jcX0ztCQl2NA9Y54nIhC5L9RAc.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "mt378814",
+        "type": "movie",
+        "title": "Zkáza krásou",
+        "year": 2016,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/au7tF6O2UqnnLvHBkuYktAf68Md.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "st67795",
+        "type": "show",
+        "title": "Rapl",
+        "year": 2016,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/1MrA3PvyVzJZjJbS1vGx5OyGAMc.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "st69031",
+        "type": "show",
+        "title": "Cirkus Bukowsky",
+        "year": 2013,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/A51nBrVPgJAHGgatU46Ggj6rf5H.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "st94714",
+        "type": "show",
+        "title": "Doktoři z počátků",
+        "year": 2013,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/b6nVYOfM0itKpePIpd9zYKvKgd8.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "st103300",
+        "type": "show",
+        "title": "Jseš mrtvej, tak nebreč",
+        "year": 2011,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/gqgtVzoW5bWxEGTfBoC9zq1yF18.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "mt68294",
+        "type": "movie",
+        "title": "Katka",
+        "year": 2010,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/feq5ZrgyQKqTzxm36Lrj8bPV8iq.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "st91431",
+        "type": "show",
+        "title": "Černá sanitka",
+        "year": 2008,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/d4Bp7unRU2HopiFV3tj3c0DmG6y.jpg",
+        "roles": [
+          "composer"
         ]
       }
     ]
@@ -392254,37 +392393,6 @@
       }
     ]
   },
-  "p3977482": {
-    "name": "Darek Král",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1213913",
-        "type": "movie",
-        "title": "Krvavý Johann",
-        "year": 2024,
-        "score": 60,
-        "poster": "https://image.tmdb.org/t/p/w342/fMzqc95x4oRyxhvJNLAEzGb6Qxo.jpg",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
-        "id": "mt1104172",
-        "type": "movie",
-        "title": "O malých věcech",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/rpNy6ayzh5FIbY4kEVnn8U4cpDZ.jpg",
-        "roles": [
-          "composer"
-        ]
-      }
-    ]
-  },
   "p5090659": {
     "name": "Kristýna Mádlová",
     "img": null,
@@ -392374,103 +392482,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/9rSEFzZH1HhjSRPlf07nE3ckJsz.jpg",
         "roles": [
           "actor"
-        ]
-      }
-    ]
-  },
-  "p1506970": {
-    "name": "Tadeáš Věrčák",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1302879",
-        "type": "movie",
-        "title": "Janžurka",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/2jcX0ztCQl2NA9Y54nIhC5L9RAc.jpg",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
-        "id": "mt378814",
-        "type": "movie",
-        "title": "Zkáza krásou",
-        "year": 2016,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/au7tF6O2UqnnLvHBkuYktAf68Md.jpg",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
-        "id": "st67795",
-        "type": "show",
-        "title": "Rapl",
-        "year": 2016,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/1MrA3PvyVzJZjJbS1vGx5OyGAMc.jpg",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
-        "id": "st69031",
-        "type": "show",
-        "title": "Cirkus Bukowsky",
-        "year": 2013,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/A51nBrVPgJAHGgatU46Ggj6rf5H.jpg",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
-        "id": "st94714",
-        "type": "show",
-        "title": "Doktoři z počátků",
-        "year": 2013,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/b6nVYOfM0itKpePIpd9zYKvKgd8.jpg",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
-        "id": "st103300",
-        "type": "show",
-        "title": "Jseš mrtvej, tak nebreč",
-        "year": 2011,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/gqgtVzoW5bWxEGTfBoC9zq1yF18.jpg",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
-        "id": "mt68294",
-        "type": "movie",
-        "title": "Katka",
-        "year": 2010,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/feq5ZrgyQKqTzxm36Lrj8bPV8iq.jpg",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
-        "id": "st91431",
-        "type": "show",
-        "title": "Černá sanitka",
-        "year": 2008,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/d4Bp7unRU2HopiFV3tj3c0DmG6y.jpg",
-        "roles": [
-          "composer"
         ]
       }
     ]
@@ -436429,6 +436440,26 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/ThhNhFCIFsYrOtJ2jXkb1ulOd0.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6607241": {
+    "name": "María Paz",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st297491",
+        "type": "show",
+        "title": "Obléhání",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/ju6k9yjDo4kmGq2nylFtBCSmfML.jpg",
         "roles": [
           "actor"
         ]

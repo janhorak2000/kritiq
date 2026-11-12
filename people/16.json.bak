@@ -38195,6 +38195,17 @@
     "age": 57,
     "works": [
       {
+        "id": "mt1562642",
+        "type": "movie",
+        "title": "Ghost Soldier",
+        "year": 2026,
+        "score": 90,
+        "poster": "https://image.tmdb.org/t/p/w342/8Y4oJ5iUs3hgPcDB3SIEmsNYjZk.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt678512",
         "type": "movie",
         "title": "Zvuk svobody",
@@ -290348,6 +290359,17 @@
     "age": 34,
     "works": [
       {
+        "id": "mt1600653",
+        "type": "movie",
+        "title": "The 12 Dates of Christmas",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/w82vKEoYNZ9SxYxvccxO85CnZKE.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt906460",
         "type": "movie",
         "title": "Death Link",
@@ -361784,6 +361806,125 @@
       }
     ]
   },
+  "p3192942": {
+    "name": "Angel Rosario Jr.",
+    "img": "/tZulbvbOY5WMI5TZd4T2J6BwfAg.jpg",
+    "birthday": "1991-08-19",
+    "deathday": null,
+    "age": 35,
+    "works": [
+      {
+        "id": "mt1669915",
+        "type": "movie",
+        "title": "Angel and the Badman",
+        "year": 2026,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/mJe53zlhGBdcjtN1GqncNZ5Unm0.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1306368",
+        "type": "movie",
+        "title": "Rána",
+        "year": 2026,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/lwYHko9oSJlzhvs7tGlTMU61q6l.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt949838",
+        "type": "movie",
+        "title": "72 hodin",
+        "year": 2026,
+        "score": 54,
+        "poster": "https://image.tmdb.org/t/p/w342/9Bu1PW2R1XayqRqnl0aDOgMcrdS.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st247168",
+        "type": "show",
+        "title": "Chad Powers",
+        "year": 2025,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/aXetUcD4wfalCj90QmT6kSvwO6D.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st209876",
+        "type": "show",
+        "title": "Zlodějíčci",
+        "year": 2025,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/9e2KHC3pzXGoLWrwmGf8tGV7IJ5.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st226637",
+        "type": "show",
+        "title": "Velký potenciál",
+        "year": 2024,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/v9qdzEleY0lI1mbAckUVDYqIrOl.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st221486",
+        "type": "show",
+        "title": "Bookmaker",
+        "year": 2023,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/3dLlGgAXWWszwb56y607OgDnlQ0.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt436270",
+        "type": "movie",
+        "title": "Black Adam",
+        "year": 2022,
+        "score": 61,
+        "poster": "https://image.tmdb.org/t/p/w342/iqxXMDnc7jqU4IMB8wdEjI9Xhoy.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st153312",
+        "type": "show",
+        "title": "Král Tulsy",
+        "year": 2022,
+        "score": 79,
+        "poster": "https://image.tmdb.org/t/p/w342/rOYLWCdAifpUtPlTf1WHxyaxeMt.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st128113",
+        "type": "show",
+        "title": "Lovci duchů: Winchestrovi",
+        "year": 2022,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/oyleYabGfn6c50bIo4M3c7ogrfL.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p6364847": {
     "name": "Joel Alves",
     "img": null,
@@ -362910,114 +363051,6 @@
         "year": 2022,
         "score": 62,
         "poster": "https://image.tmdb.org/t/p/w342/zyMU0NJS2q2rTWFGG0LXVmTwZqI.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3192942": {
-    "name": "Angel Rosario Jr.",
-    "img": "/tZulbvbOY5WMI5TZd4T2J6BwfAg.jpg",
-    "birthday": "1991-08-19",
-    "deathday": null,
-    "age": 35,
-    "works": [
-      {
-        "id": "mt1306368",
-        "type": "movie",
-        "title": "Rána",
-        "year": 2026,
-        "score": 68,
-        "poster": "https://image.tmdb.org/t/p/w342/lwYHko9oSJlzhvs7tGlTMU61q6l.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt949838",
-        "type": "movie",
-        "title": "72 hodin",
-        "year": 2026,
-        "score": 54,
-        "poster": "https://image.tmdb.org/t/p/w342/9Bu1PW2R1XayqRqnl0aDOgMcrdS.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st247168",
-        "type": "show",
-        "title": "Chad Powers",
-        "year": 2025,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/aXetUcD4wfalCj90QmT6kSvwO6D.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st209876",
-        "type": "show",
-        "title": "Zlodějíčci",
-        "year": 2025,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/9e2KHC3pzXGoLWrwmGf8tGV7IJ5.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st226637",
-        "type": "show",
-        "title": "Velký potenciál",
-        "year": 2024,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/v9qdzEleY0lI1mbAckUVDYqIrOl.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st221486",
-        "type": "show",
-        "title": "Bookmaker",
-        "year": 2023,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/3dLlGgAXWWszwb56y607OgDnlQ0.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt436270",
-        "type": "movie",
-        "title": "Black Adam",
-        "year": 2022,
-        "score": 61,
-        "poster": "https://image.tmdb.org/t/p/w342/iqxXMDnc7jqU4IMB8wdEjI9Xhoy.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st153312",
-        "type": "show",
-        "title": "Král Tulsy",
-        "year": 2022,
-        "score": 79,
-        "poster": "https://image.tmdb.org/t/p/w342/rOYLWCdAifpUtPlTf1WHxyaxeMt.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st128113",
-        "type": "show",
-        "title": "Lovci duchů: Winchestrovi",
-        "year": 2022,
-        "score": 62,
-        "poster": "https://image.tmdb.org/t/p/w342/oyleYabGfn6c50bIo4M3c7ogrfL.jpg",
         "roles": [
           "actor"
         ]
@@ -381161,6 +381194,26 @@
         "year": 2019,
         "score": 63,
         "poster": "https://image.tmdb.org/t/p/w342/bgACgk9Ws4mB8IGTe9ryLIi1Fdo.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3032705": {
+    "name": "Ryan Raines",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1600653",
+        "type": "movie",
+        "title": "The 12 Dates of Christmas",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/w82vKEoYNZ9SxYxvccxO85CnZKE.jpg",
         "roles": [
           "actor"
         ]

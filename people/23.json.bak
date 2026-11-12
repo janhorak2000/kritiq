@@ -50346,6 +50346,17 @@
     "age": 87,
     "works": [
       {
+        "id": "mt1567605",
+        "type": "movie",
+        "title": "Ebenezer: Vánoční koleda",
+        "year": 2026,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/wbTHJ5VzOjEq02PYHkLAL7yhhBn.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1400357",
         "type": "movie",
         "title": "Christopherové",
@@ -56756,6 +56767,17 @@
     "deathday": null,
     "age": 46,
     "works": [
+      {
+        "id": "mt1562642",
+        "type": "movie",
+        "title": "Ghost Soldier",
+        "year": 2026,
+        "score": 90,
+        "poster": "https://image.tmdb.org/t/p/w342/8Y4oJ5iUs3hgPcDB3SIEmsNYjZk.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt969492",
         "type": "movie",
@@ -83021,6 +83043,19 @@
     "age": 52,
     "works": [
       {
+        "id": "mt1600653",
+        "type": "movie",
+        "title": "The 12 Dates of Christmas",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/w82vKEoYNZ9SxYxvccxO85CnZKE.jpg",
+        "roles": [
+          "actor",
+          "director",
+          "writer"
+        ]
+      },
+      {
         "id": "mt1371151",
         "type": "movie",
         "title": "Mimo systém",
@@ -84054,6 +84089,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "mt1669915",
+        "type": "movie",
+        "title": "Angel and the Badman",
+        "year": 2026,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/mJe53zlhGBdcjtN1GqncNZ5Unm0.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt227359",
         "type": "movie",
@@ -316511,48 +316557,6 @@
       }
     ]
   },
-  "p1758055": {
-    "name": "Ammar Nemo",
-    "img": "/dKifp1s6KW1qnMg9K3khnpxjYwf.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1437396",
-        "type": "movie",
-        "title": "Your Mother Your Mother Your Mother",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1001884",
-        "type": "movie",
-        "title": "Sláva, je tu sníh",
-        "year": 2023,
-        "score": 56,
-        "poster": "https://image.tmdb.org/t/p/w342/qby60hd1eEn8UMVysHYGfsO5yyp.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st101591",
-        "type": "show",
-        "title": "BMF",
-        "year": 2021,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/5gUlUufL3fom30qxKawwlWuD7kC.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p2514272": {
     "name": "Haidar Qaraeen",
     "img": null,
@@ -324514,6 +324518,48 @@
         "year": 2023,
         "score": 56,
         "poster": "https://image.tmdb.org/t/p/w342/lXoeOcWWhPpLH1wzTIhOx8jydBo.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1758055": {
+    "name": "Ammar Nemo",
+    "img": "/dKifp1s6KW1qnMg9K3khnpxjYwf.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1437396",
+        "type": "movie",
+        "title": "Your Mother Your Mother Your Mother",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1001884",
+        "type": "movie",
+        "title": "Sláva, je tu sníh",
+        "year": 2023,
+        "score": 56,
+        "poster": "https://image.tmdb.org/t/p/w342/qby60hd1eEn8UMVysHYGfsO5yyp.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st101591",
+        "type": "show",
+        "title": "BMF",
+        "year": 2021,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/5gUlUufL3fom30qxKawwlWuD7kC.jpg",
         "roles": [
           "actor"
         ]

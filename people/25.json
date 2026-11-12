@@ -59956,6 +59956,17 @@
         ]
       },
       {
+        "id": "st297826",
+        "type": "show",
+        "title": "도굴왕",
+        "year": 2026,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/1VYDx4K8TYoEaKiBA0FY6UameFx.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1311031",
         "type": "movie",
         "title": "Demon Slayer: Kimetsu no Yaiba – Infinity Castle",
@@ -362211,6 +362222,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1432306",
+        "type": "movie",
+        "title": "Sleepwalker",
+        "year": 2026,
+        "score": 38,
+        "poster": "https://image.tmdb.org/t/p/w342/760SP4VsZagpyB9WLfeZykE3DFg.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt5492",
         "type": "movie",
         "title": "Gunner",
@@ -382826,71 +382848,6 @@
       }
     ]
   },
-  "p232934": {
-    "name": "Jan Balej",
-    "img": "/zScw7nOAP07nx13pFb3gkM8AG8G.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt762901",
-        "type": "movie",
-        "title": "Barevný sen",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/bvzJWqSQbcaKTN2CMdUhXCO1bZY.jpg",
-        "roles": [
-          "director",
-          "writer"
-        ]
-      },
-      {
-        "id": "mt371266",
-        "type": "movie",
-        "title": "Malá z rybárny",
-        "year": 2015,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/hTX9FWd9PMUroLFX79Gt8XLcFNf.jpg",
-        "roles": [
-          "director"
-        ]
-      },
-      {
-        "id": "st88606",
-        "type": "show",
-        "title": "Karlík, zlatá rybka",
-        "year": 2010,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "director"
-        ]
-      },
-      {
-        "id": "mt81537",
-        "type": "movie",
-        "title": "Jedné noci v jednom městě",
-        "year": 2007,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/8VEHgc6h5hwOUdWRL69fRGinPky.jpg",
-        "roles": [
-          "director"
-        ]
-      },
-      {
-        "id": "st91685",
-        "type": "show",
-        "title": "Jak to chodí u hrochů",
-        "year": 2000,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/b9HbOzVykoM1VZBRM9YnAGVEXoG.jpg",
-        "roles": [
-          "director"
-        ]
-      }
-    ]
-  },
   "p2717367": {
     "name": "Marie Turková",
     "img": null,
@@ -385197,6 +385154,48 @@
         "year": 2024,
         "score": 60,
         "poster": "https://image.tmdb.org/t/p/w342/hkD4w1w1YFH44Xq4fsiOLNOHglv.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2725980": {
+    "name": "Roman Buťa",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1791735",
+        "type": "movie",
+        "title": "Ženy v lihu",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/cYZhpRNXrjGf9LTT9LdVl88MZvc.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt711633",
+        "type": "movie",
+        "title": "Runway 06-24",
+        "year": 2016,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/k0s31WiRUz9F2Z7GmLkwSknc9Cr.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "st195023",
+        "type": "show",
+        "title": "Těžká dřina",
+        "year": 2011,
+        "score": null,
+        "poster": "",
         "roles": [
           "actor"
         ]
@@ -405279,6 +405278,71 @@
       }
     ]
   },
+  "p232934": {
+    "name": "Jan Balej",
+    "img": "/zScw7nOAP07nx13pFb3gkM8AG8G.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt762901",
+        "type": "movie",
+        "title": "Barevný sen",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/bvzJWqSQbcaKTN2CMdUhXCO1bZY.jpg",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      },
+      {
+        "id": "mt371266",
+        "type": "movie",
+        "title": "Malá z rybárny",
+        "year": 2015,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/hTX9FWd9PMUroLFX79Gt8XLcFNf.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "st88606",
+        "type": "show",
+        "title": "Karlík, zlatá rybka",
+        "year": 2010,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "mt81537",
+        "type": "movie",
+        "title": "Jedné noci v jednom městě",
+        "year": 2007,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/8VEHgc6h5hwOUdWRL69fRGinPky.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "st91685",
+        "type": "show",
+        "title": "Jak to chodí u hrochů",
+        "year": 2000,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/b9HbOzVykoM1VZBRM9YnAGVEXoG.jpg",
+        "roles": [
+          "director"
+        ]
+      }
+    ]
+  },
   "p3737034": {
     "name": "Billy Dunmore",
     "img": "/dlyouFXYN18LmNCyKPkdm6BiGSs.jpg",
@@ -412620,37 +412684,6 @@
         "type": "movie",
         "title": "Uspávačka",
         "year": 2016,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2725980": {
-    "name": "Roman Buťa",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt711633",
-        "type": "movie",
-        "title": "Runway 06-24",
-        "year": 2016,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/k0s31WiRUz9F2Z7GmLkwSknc9Cr.jpg",
-        "roles": [
-          "director"
-        ]
-      },
-      {
-        "id": "st195023",
-        "type": "show",
-        "title": "Těžká dřina",
-        "year": 2011,
         "score": null,
         "poster": "",
         "roles": [
@@ -443515,6 +443548,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "st297491",
+        "type": "show",
+        "title": "Obléhání",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/ju6k9yjDo4kmGq2nylFtBCSmfML.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
       {
         "id": "st104555",
         "type": "show",

@@ -1336,6 +1336,17 @@
     "age": 61,
     "works": [
       {
+        "id": "mt1562642",
+        "type": "movie",
+        "title": "Ghost Soldier",
+        "year": 2026,
+        "score": 90,
+        "poster": "https://image.tmdb.org/t/p/w342/8Y4oJ5iUs3hgPcDB3SIEmsNYjZk.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st95350",
         "type": "show",
         "title": "Lanterns",
@@ -14235,6 +14246,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "mt1567605",
+        "type": "movie",
+        "title": "Ebenezer: Vánoční koleda",
+        "year": 2026,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/wbTHJ5VzOjEq02PYHkLAL7yhhBn.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
       {
         "id": "mt541671",
         "type": "movie",
@@ -314666,6 +314688,17 @@
     "age": 34,
     "works": [
       {
+        "id": "mt1567605",
+        "type": "movie",
+        "title": "Ebenezer: Vánoční koleda",
+        "year": 2026,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/wbTHJ5VzOjEq02PYHkLAL7yhhBn.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1198984",
         "type": "movie",
         "title": "We Bury the Dead",
@@ -501664,6 +501697,26 @@
       }
     ]
   },
+  "p3907879": {
+    "name": "Andrew Scott Dixon",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1669915",
+        "type": "movie",
+        "title": "Angel and the Badman",
+        "year": 2026,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/mJe53zlhGBdcjtN1GqncNZ5Unm0.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p5945222": {
     "name": "Ayush Joy",
     "img": null,
@@ -501968,46 +502021,6 @@
         "year": 2026,
         "score": 71,
         "poster": "https://image.tmdb.org/t/p/w342/6Lh4ZlsAISFQFVfLZ90sE9ycVnN.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6537363": {
-    "name": "Andrew Ortiz",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1236045",
-        "type": "movie",
-        "title": "Zvířata",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/ilG5SDwCpuncg9XF4MLVcjj9lkK.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6509621": {
-    "name": "Eddie Neam",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1437396",
-        "type": "movie",
-        "title": "Your Mother Your Mother Your Mother",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
         "roles": [
           "actor"
         ]
@@ -541720,6 +541733,46 @@
       }
     ]
   },
+  "p6537363": {
+    "name": "Andrew Ortiz",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1236045",
+        "type": "movie",
+        "title": "Zvířata",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/ilG5SDwCpuncg9XF4MLVcjj9lkK.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6509621": {
+    "name": "Eddie Neam",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1437396",
+        "type": "movie",
+        "title": "Your Mother Your Mother Your Mother",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p6408201": {
     "name": "Kily Payne",
     "img": null,
@@ -547828,6 +547881,26 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/eCUYoQP0tB5mfwVUT3NidnoQCI3.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6609226": {
+    "name": "Uriel Trinidad",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1600653",
+        "type": "movie",
+        "title": "The 12 Dates of Christmas",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/w82vKEoYNZ9SxYxvccxO85CnZKE.jpg",
         "roles": [
           "actor"
         ]

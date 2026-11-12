@@ -9100,6 +9100,17 @@
     "age": 38,
     "works": [
       {
+        "id": "mt1567605",
+        "type": "movie",
+        "title": "Ebenezer: Vánoční koleda",
+        "year": 2026,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/wbTHJ5VzOjEq02PYHkLAL7yhhBn.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt964849",
         "type": "movie",
         "title": "Zrozen z temnoty",
@@ -115988,6 +115999,17 @@
     "deathday": null,
     "age": 34,
     "works": [
+      {
+        "id": "mt1600653",
+        "type": "movie",
+        "title": "The 12 Dates of Christmas",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/w82vKEoYNZ9SxYxvccxO85CnZKE.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "st195241",
         "type": "show",
@@ -385646,6 +385668,17 @@
     "age": 28,
     "works": [
       {
+        "id": "mt1567605",
+        "type": "movie",
+        "title": "Ebenezer: Vánoční koleda",
+        "year": 2026,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/wbTHJ5VzOjEq02PYHkLAL7yhhBn.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1013154",
         "type": "movie",
         "title": "Hard Truths",
@@ -519466,6 +519499,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1567605",
+        "type": "movie",
+        "title": "Ebenezer: Vánoční koleda",
+        "year": 2026,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/wbTHJ5VzOjEq02PYHkLAL7yhhBn.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt858024",
         "type": "movie",
         "title": "Hamnet",
@@ -560877,6 +560921,37 @@
         "year": 1968,
         "score": 74,
         "poster": "https://image.tmdb.org/t/p/w342/vDlT8YU1pF8z37RfNaCOyJ5uO7l.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p98923": {
+    "name": "Susannah Devereux",
+    "img": "/w15COiQX4J2vSqeythgu0rsk8Pm.jpg",
+    "birthday": "1961-06-06",
+    "deathday": null,
+    "age": 65,
+    "works": [
+      {
+        "id": "mt1600653",
+        "type": "movie",
+        "title": "The 12 Dates of Christmas",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/w82vKEoYNZ9SxYxvccxO85CnZKE.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st86686",
+        "type": "show",
+        "title": "Creepshow",
+        "year": 2019,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/fassm77VqtSDHv9x17eJ3DkGVml.jpg",
         "roles": [
           "actor"
         ]
@@ -677068,26 +677143,6 @@
         "year": 2019,
         "score": 70,
         "poster": "https://image.tmdb.org/t/p/w342/d3TB2vq2Hwu2SpzdQuVuXeppWrX.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p98923": {
-    "name": "Susannah Devereux",
-    "img": "/w15COiQX4J2vSqeythgu0rsk8Pm.jpg",
-    "birthday": "1961-06-06",
-    "deathday": null,
-    "age": 65,
-    "works": [
-      {
-        "id": "st86686",
-        "type": "show",
-        "title": "Creepshow",
-        "year": 2019,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/fassm77VqtSDHv9x17eJ3DkGVml.jpg",
         "roles": [
           "actor"
         ]

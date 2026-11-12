@@ -48502,6 +48502,17 @@
     "age": 57,
     "works": [
       {
+        "id": "mt1567605",
+        "type": "movie",
+        "title": "Ebenezer: Vánoční koleda",
+        "year": 2026,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/wbTHJ5VzOjEq02PYHkLAL7yhhBn.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st96450",
         "type": "show",
         "title": "Slečna Scarletová a vévoda",
@@ -615979,37 +615990,6 @@
       }
     ]
   },
-  "p2473326": {
-    "name": "Shakirah DeMesier",
-    "img": "/biS0naDTsL5fyOjQsYHN58jC90.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1437396",
-        "type": "movie",
-        "title": "Your Mother Your Mother Your Mother",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st127390",
-        "type": "show",
-        "title": "Královny hip hopu",
-        "year": 2021,
-        "score": 66,
-        "poster": "https://image.tmdb.org/t/p/w342/x3yylKGhD02XlPq16ekGLRkOOMu.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p5047502": {
     "name": "Ahmad Rehyaneh",
     "img": null,
@@ -654082,6 +654062,37 @@
         "year": 2025,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/9iu54iBYguzaYQK0eYRVJTv8RHx.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2473326": {
+    "name": "Shakirah DeMesier",
+    "img": "/biS0naDTsL5fyOjQsYHN58jC90.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1437396",
+        "type": "movie",
+        "title": "Your Mother Your Mother Your Mother",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st127390",
+        "type": "show",
+        "title": "Královny hip hopu",
+        "year": 2021,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/x3yylKGhD02XlPq16ekGLRkOOMu.jpg",
         "roles": [
           "actor"
         ]

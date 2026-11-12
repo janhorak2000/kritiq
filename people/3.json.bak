@@ -26785,6 +26785,17 @@
     "age": 57,
     "works": [
       {
+        "id": "mt1562642",
+        "type": "movie",
+        "title": "Ghost Soldier",
+        "year": 2026,
+        "score": 90,
+        "poster": "https://image.tmdb.org/t/p/w342/8Y4oJ5iUs3hgPcDB3SIEmsNYjZk.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt911430",
         "type": "movie",
         "title": "F1",
@@ -509641,6 +509652,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1669915",
+        "type": "movie",
+        "title": "Angel and the Badman",
+        "year": 2026,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/mJe53zlhGBdcjtN1GqncNZ5Unm0.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt696822",
         "type": "movie",
         "title": "Bloody Hell",
@@ -690709,6 +690731,37 @@
       }
     ]
   },
+  "p4542288": {
+    "name": "Mélida Saviz",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1669915",
+        "type": "movie",
+        "title": "Angel and the Badman",
+        "year": 2026,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/mJe53zlhGBdcjtN1GqncNZ5Unm0.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt897087",
+        "type": "movie",
+        "title": "Bodyguard na volné noze",
+        "year": 2023,
+        "score": 56,
+        "poster": "https://image.tmdb.org/t/p/w342/nOCT5Qd1NPdj7Pv4qwX9m9l4G7A.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p3597784": {
     "name": "Mihails Samodahovs",
     "img": null,
@@ -691068,161 +691121,6 @@
         "year": 2026,
         "score": 75,
         "poster": "https://image.tmdb.org/t/p/w342/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6537358": {
-    "name": "Jesus Norianueva",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1236045",
-        "type": "movie",
-        "title": "Zvířata",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/ilG5SDwCpuncg9XF4MLVcjj9lkK.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6466397": {
-    "name": "Thabit Uqdah",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1437396",
-        "type": "movie",
-        "title": "Your Mother Your Mother Your Mother",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3035013": {
-    "name": "Muhammad Ali",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1437396",
-        "type": "movie",
-        "title": "Your Mother Your Mother Your Mother",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6509605": {
-    "name": "Brayla Cook",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1437396",
-        "type": "movie",
-        "title": "Your Mother Your Mother Your Mother",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1786304": {
-    "name": "Kiell Smith-Bynoe",
-    "img": "/6pVa2SEgMfR2u7E3xfIUGZSqinh.jpg",
-    "birthday": "1989-03-05",
-    "deathday": null,
-    "age": 37,
-    "works": [
-      {
-        "id": "mt1195803",
-        "type": "movie",
-        "title": "Wicker",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/6FcBZOKvyrLCKGCyBG0ySCR4okt.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st17174",
-        "type": "show",
-        "title": "Ghosts",
-        "year": 2019,
-        "score": 84,
-        "poster": "https://image.tmdb.org/t/p/w342/3Xz4JtqISyVCKct96O94k4Mz5sU.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st80459",
-        "type": "show",
-        "title": "Stath Lets Flats",
-        "year": 2018,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/6jsY1d4IfHa9ytsgWn1lxSMdMAb.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st86704",
-        "type": "show",
-        "title": "Mobeen, obyčejný chlap",
-        "year": 2017,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/eldYxHJQDGrOGi0NHoEURzAWcUS.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st63404",
-        "type": "show",
-        "title": "Taskmaster",
-        "year": 2015,
-        "score": 90,
-        "poster": "https://image.tmdb.org/t/p/w342/oHLZyN7G7EpXCHxYdpMcuUNCUgS.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st34435",
-        "type": "show",
-        "title": "Páteční večeře",
-        "year": 2011,
-        "score": 82,
-        "poster": "https://image.tmdb.org/t/p/w342/j4My4iWKhB8q1SgB8hfismiAp3V.jpg",
         "roles": [
           "actor"
         ]
@@ -713588,26 +713486,6 @@
         "year": 2023,
         "score": 56,
         "poster": "https://image.tmdb.org/t/p/w342/1fD4NS96lP1PIKTW858A6ARpp6y.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4542288": {
-    "name": "Mélida Saviz",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt897087",
-        "type": "movie",
-        "title": "Bodyguard na volné noze",
-        "year": 2023,
-        "score": 56,
-        "poster": "https://image.tmdb.org/t/p/w342/nOCT5Qd1NPdj7Pv4qwX9m9l4G7A.jpg",
         "roles": [
           "actor"
         ]
@@ -743078,6 +742956,161 @@
         "year": 2023,
         "score": 62,
         "poster": "https://image.tmdb.org/t/p/w342/c8SMPkLcGgmpCYl3o1w1no0h7ir.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6537358": {
+    "name": "Jesus Norianueva",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1236045",
+        "type": "movie",
+        "title": "Zvířata",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/ilG5SDwCpuncg9XF4MLVcjj9lkK.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6466397": {
+    "name": "Thabit Uqdah",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1437396",
+        "type": "movie",
+        "title": "Your Mother Your Mother Your Mother",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3035013": {
+    "name": "Muhammad Ali",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1437396",
+        "type": "movie",
+        "title": "Your Mother Your Mother Your Mother",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6509605": {
+    "name": "Brayla Cook",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1437396",
+        "type": "movie",
+        "title": "Your Mother Your Mother Your Mother",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1786304": {
+    "name": "Kiell Smith-Bynoe",
+    "img": "/6pVa2SEgMfR2u7E3xfIUGZSqinh.jpg",
+    "birthday": "1989-03-05",
+    "deathday": null,
+    "age": 37,
+    "works": [
+      {
+        "id": "mt1195803",
+        "type": "movie",
+        "title": "Wicker",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/6FcBZOKvyrLCKGCyBG0ySCR4okt.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st17174",
+        "type": "show",
+        "title": "Ghosts",
+        "year": 2019,
+        "score": 84,
+        "poster": "https://image.tmdb.org/t/p/w342/3Xz4JtqISyVCKct96O94k4Mz5sU.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st80459",
+        "type": "show",
+        "title": "Stath Lets Flats",
+        "year": 2018,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/6jsY1d4IfHa9ytsgWn1lxSMdMAb.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st86704",
+        "type": "show",
+        "title": "Mobeen, obyčejný chlap",
+        "year": 2017,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/eldYxHJQDGrOGi0NHoEURzAWcUS.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st63404",
+        "type": "show",
+        "title": "Taskmaster",
+        "year": 2015,
+        "score": 90,
+        "poster": "https://image.tmdb.org/t/p/w342/oHLZyN7G7EpXCHxYdpMcuUNCUgS.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st34435",
+        "type": "show",
+        "title": "Páteční večeře",
+        "year": 2011,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/j4My4iWKhB8q1SgB8hfismiAp3V.jpg",
         "roles": [
           "actor"
         ]

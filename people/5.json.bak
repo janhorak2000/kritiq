@@ -38488,6 +38488,17 @@
     "age": 39,
     "works": [
       {
+        "id": "mt1562642",
+        "type": "movie",
+        "title": "Ghost Soldier",
+        "year": 2026,
+        "score": 90,
+        "poster": "https://image.tmdb.org/t/p/w342/8Y4oJ5iUs3hgPcDB3SIEmsNYjZk.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st198178",
         "type": "show",
         "title": "Wonder Man",
@@ -112889,6 +112900,17 @@
         "year": 2026,
         "score": 82,
         "poster": "https://image.tmdb.org/t/p/w342/yopXjun3ICFfJci2ukcEzceZjUs.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1669915",
+        "type": "movie",
+        "title": "Angel and the Badman",
+        "year": 2026,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/mJe53zlhGBdcjtN1GqncNZ5Unm0.jpg",
         "roles": [
           "actor"
         ]
@@ -690473,6 +690495,37 @@
       }
     ]
   },
+  "p5577841": {
+    "name": "Tetiana Dar",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1562642",
+        "type": "movie",
+        "title": "Ghost Soldier",
+        "year": 2026,
+        "score": 90,
+        "poster": "https://image.tmdb.org/t/p/w342/8Y4oJ5iUs3hgPcDB3SIEmsNYjZk.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1213243",
+        "type": "movie",
+        "title": "Toxic",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/oiIPU4lvnI0Ag2K9cyAi44eCaoE.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p5259226": {
     "name": "Tommy Archer",
     "img": null,
@@ -690609,6 +690662,26 @@
         "year": 2026,
         "score": 83,
         "poster": "https://image.tmdb.org/t/p/w342/eI0QW02PYqhnmIvLRdn9vrfVVP7.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6532465": {
+    "name": "Alfie Buck",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1567605",
+        "type": "movie",
+        "title": "Ebenezer: Vánoční koleda",
+        "year": 2026,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/wbTHJ5VzOjEq02PYHkLAL7yhhBn.jpg",
         "roles": [
           "actor"
         ]
@@ -690913,6 +690986,26 @@
         "year": 2026,
         "score": 78,
         "poster": "https://image.tmdb.org/t/p/w342/51VDtNQFuD2I86hrT4ekytg9Dq3.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1286730": {
+    "name": "Peter Marmentini",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1669915",
+        "type": "movie",
+        "title": "Angel and the Badman",
+        "year": 2026,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/mJe53zlhGBdcjtN1GqncNZ5Unm0.jpg",
         "roles": [
           "actor"
         ]
@@ -691312,278 +691405,6 @@
         "year": 2013,
         "score": 55,
         "poster": "https://image.tmdb.org/t/p/w342/q6XsUrhscUlHt8ShApnE39XmxP6.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4147610": {
-    "name": "Jacob Estrada",
-    "img": "/eai64zk7gMEyqOnK28r7P26oO9d.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1236045",
-        "type": "movie",
-        "title": "Zvířata",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/ilG5SDwCpuncg9XF4MLVcjj9lkK.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3164078": {
-    "name": "Abubakr Ali",
-    "img": "/4IalGPv9GtTJJtNRP8L166nX2pT.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1437396",
-        "type": "movie",
-        "title": "Your Mother Your Mother Your Mother",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1290159",
-        "type": "movie",
-        "title": "Dům plný dynamitu",
-        "year": 2025,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/yxiFrPs7L01EhmMbjP0g6gK3ZEP.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt787787",
-        "type": "movie",
-        "title": "Co kdyby",
-        "year": 2022,
-        "score": 57,
-        "poster": "https://image.tmdb.org/t/p/w342/aLeswI1zxf2xN5iIdcJpqx9XEnX.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st106158",
-        "type": "show",
-        "title": "Law & Order: Organized Crime",
-        "year": 2021,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/4AvB6Dg8eAbfWv5WOqzCCv2zS90.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st97890",
-        "type": "show",
-        "title": "Power Book II: Ghost",
-        "year": 2020,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/8rbxvwGpPd9MWjdhAoSBj016cns.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st103783",
-        "type": "show",
-        "title": "Little Voice",
-        "year": 2020,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/vxzWAyNw7T7r7a6aQdPe2bahMPh.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st89517",
-        "type": "show",
-        "title": "Tommy",
-        "year": 2020,
-        "score": 66,
-        "poster": "https://image.tmdb.org/t/p/w342/pIM878oO00ZEiRBpYdy8x2qmZkD.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st87539",
-        "type": "show",
-        "title": "Katy Keene",
-        "year": 2020,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/bUTZY7EHg9mWrORKFY4piD0PehY.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st94305",
-        "type": "show",
-        "title": "Živí mrtví: Svět tam",
-        "year": 2020,
-        "score": 46,
-        "poster": "https://image.tmdb.org/t/p/w342/6HanIV2hTLE2w7A5bI1KJb3bTL7.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st62120",
-        "type": "show",
-        "title": "Ztracená archa",
-        "year": 2015,
-        "score": 68,
-        "poster": "https://image.tmdb.org/t/p/w342/uBv3pEpjgklfirbLhGS0GOJWHbe.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3295330": {
-    "name": "Adia",
-    "img": "/o1fYZTDzw4ZE5Vk5Ugmic6IT4Se.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1437396",
-        "type": "movie",
-        "title": "Your Mother Your Mother Your Mother",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st132016",
-        "type": "show",
-        "title": "Uzavřený kruh",
-        "year": 2023,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/mXjyayWXwALW9hRiJj4TLzlilaZ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st126254",
-        "type": "show",
-        "title": "Půlnoční klub",
-        "year": 2022,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/2Y4F9BHkacKIMnDBZI3GGKpG1If.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6466399": {
-    "name": "Bryan Kareem White",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1437396",
-        "type": "movie",
-        "title": "Your Mother Your Mother Your Mother",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6466410": {
-    "name": "Salifu Jatta",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1437396",
-        "type": "movie",
-        "title": "Your Mother Your Mother Your Mother",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6509618": {
-    "name": "Mahmoud Gol Mohammadi Nik Abadi",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1437396",
-        "type": "movie",
-        "title": "Your Mother Your Mother Your Mother",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3562157": {
-    "name": "Daniel Bellus",
-    "img": "/1TBxI9HaLUDoqVDMKKbJvvBMvul.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1195803",
-        "type": "movie",
-        "title": "Wicker",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/6FcBZOKvyrLCKGCyBG0ySCR4okt.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st212196",
-        "type": "show",
-        "title": "Bývalá manželka",
-        "year": 2022,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/vp5Vs17MUizJ7bQNMRsUcvDVquC.jpg",
         "roles": [
           "actor"
         ]
@@ -699508,6 +699329,125 @@
         "year": 2022,
         "score": 57,
         "poster": "https://image.tmdb.org/t/p/w342/oHhD5jD4S5ElPNNFCDKXJAzMZ5h.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3164078": {
+    "name": "Abubakr Ali",
+    "img": "/4IalGPv9GtTJJtNRP8L166nX2pT.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1437396",
+        "type": "movie",
+        "title": "Your Mother Your Mother Your Mother",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1290159",
+        "type": "movie",
+        "title": "Dům plný dynamitu",
+        "year": 2025,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/yxiFrPs7L01EhmMbjP0g6gK3ZEP.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt787787",
+        "type": "movie",
+        "title": "Co kdyby",
+        "year": 2022,
+        "score": 57,
+        "poster": "https://image.tmdb.org/t/p/w342/aLeswI1zxf2xN5iIdcJpqx9XEnX.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st106158",
+        "type": "show",
+        "title": "Law & Order: Organized Crime",
+        "year": 2021,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/4AvB6Dg8eAbfWv5WOqzCCv2zS90.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st97890",
+        "type": "show",
+        "title": "Power Book II: Ghost",
+        "year": 2020,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/8rbxvwGpPd9MWjdhAoSBj016cns.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st103783",
+        "type": "show",
+        "title": "Little Voice",
+        "year": 2020,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/vxzWAyNw7T7r7a6aQdPe2bahMPh.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st89517",
+        "type": "show",
+        "title": "Tommy",
+        "year": 2020,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/pIM878oO00ZEiRBpYdy8x2qmZkD.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st87539",
+        "type": "show",
+        "title": "Katy Keene",
+        "year": 2020,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/bUTZY7EHg9mWrORKFY4piD0PehY.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st94305",
+        "type": "show",
+        "title": "Živí mrtví: Svět tam",
+        "year": 2020,
+        "score": 46,
+        "poster": "https://image.tmdb.org/t/p/w342/6HanIV2hTLE2w7A5bI1KJb3bTL7.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st62120",
+        "type": "show",
+        "title": "Ztracená archa",
+        "year": 2015,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/uBv3pEpjgklfirbLhGS0GOJWHbe.jpg",
         "roles": [
           "actor"
         ]
@@ -744459,6 +744399,159 @@
       }
     ]
   },
+  "p4147610": {
+    "name": "Jacob Estrada",
+    "img": "/eai64zk7gMEyqOnK28r7P26oO9d.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1236045",
+        "type": "movie",
+        "title": "Zvířata",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/ilG5SDwCpuncg9XF4MLVcjj9lkK.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3295330": {
+    "name": "Adia",
+    "img": "/o1fYZTDzw4ZE5Vk5Ugmic6IT4Se.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1437396",
+        "type": "movie",
+        "title": "Your Mother Your Mother Your Mother",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st132016",
+        "type": "show",
+        "title": "Uzavřený kruh",
+        "year": 2023,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/mXjyayWXwALW9hRiJj4TLzlilaZ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st126254",
+        "type": "show",
+        "title": "Půlnoční klub",
+        "year": 2022,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/2Y4F9BHkacKIMnDBZI3GGKpG1If.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6466399": {
+    "name": "Bryan Kareem White",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1437396",
+        "type": "movie",
+        "title": "Your Mother Your Mother Your Mother",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6466410": {
+    "name": "Salifu Jatta",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1437396",
+        "type": "movie",
+        "title": "Your Mother Your Mother Your Mother",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6509618": {
+    "name": "Mahmoud Gol Mohammadi Nik Abadi",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1437396",
+        "type": "movie",
+        "title": "Your Mother Your Mother Your Mother",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3562157": {
+    "name": "Daniel Bellus",
+    "img": "/1TBxI9HaLUDoqVDMKKbJvvBMvul.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1195803",
+        "type": "movie",
+        "title": "Wicker",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/6FcBZOKvyrLCKGCyBG0ySCR4okt.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st212196",
+        "type": "show",
+        "title": "Bývalá manželka",
+        "year": 2022,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/vp5Vs17MUizJ7bQNMRsUcvDVquC.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2457306": {
     "name": "Sam Krochmal",
     "img": "/zu6SFZOfwvOBiNb6S73F4SG2Vmq.jpg",
@@ -749462,26 +749555,6 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/yRf0OrswYzoLnjXLpTLsmRUVtd.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5577841": {
-    "name": "Tetiana Dar",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1213243",
-        "type": "movie",
-        "title": "Toxic",
-        "year": 2026,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/oiIPU4lvnI0Ag2K9cyAi44eCaoE.jpg",
         "roles": [
           "actor"
         ]

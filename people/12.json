@@ -65573,6 +65573,17 @@
     "age": 40,
     "works": [
       {
+        "id": "mt1432306",
+        "type": "movie",
+        "title": "Sleepwalker",
+        "year": 2026,
+        "score": 38,
+        "poster": "https://image.tmdb.org/t/p/w342/760SP4VsZagpyB9WLfeZykE3DFg.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1310568",
         "type": "movie",
         "title": "Murder at the Embassy",
@@ -506488,6 +506499,17 @@
         ]
       },
       {
+        "id": "st297826",
+        "type": "show",
+        "title": "도굴왕",
+        "year": 2026,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/1VYDx4K8TYoEaKiBA0FY6UameFx.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st259710",
         "type": "show",
         "title": "Královna podvodnic",
@@ -520295,6 +520317,26 @@
       }
     ]
   },
+  "p6256515": {
+    "name": "Nicholas J. Verdi",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1437511",
+        "type": "movie",
+        "title": "Jak udělat banku",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/ifYDZkr2qkHFz87TNVvlxajOxl5.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p4691039": {
     "name": "Winnie Grober",
     "img": null,
@@ -522639,6 +522681,26 @@
       }
     ]
   },
+  "p4283049": {
+    "name": "Taylor Pezza",
+    "img": "/rBelZbtgHveNr4JbUqrsJg7nt7B.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1432306",
+        "type": "movie",
+        "title": "Sleepwalker",
+        "year": 2026,
+        "score": 38,
+        "poster": "https://image.tmdb.org/t/p/w342/760SP4VsZagpyB9WLfeZykE3DFg.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2485308": {
     "name": "Clinton Liberty",
     "img": "/aQVNOCTFpnTO2Cl9qlcm6RRcoVw.jpg",
@@ -524442,6 +524504,17 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/5QvuaNvdvHLb8Dg9EnHvby6rPMY.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1671314",
+        "type": "movie",
+        "title": "Dřevorubec",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/tU3fS3Ol8TKuHZGNSmsYPcYFTDn.jpg",
         "roles": [
           "actor"
         ]
@@ -560831,20 +560904,62 @@
       }
     ]
   },
-  "p4447609": {
-    "name": "Terezie Taberyová",
+  "p3875807": {
+    "name": "Erika Čisáriková",
     "img": null,
-    "birthday": "1992-03-04",
+    "birthday": null,
     "deathday": null,
-    "age": 34,
+    "age": null,
     "works": [
       {
-        "id": "mt1222338",
+        "id": "mt1053136",
         "type": "movie",
-        "title": "Dvě Mařenky",
+        "title": "Zešílet",
         "year": 2023,
         "score": 50,
-        "poster": "",
+        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2850937": {
+    "name": "Lenka Konvičková",
+    "img": "/ghglG4dZG9hu28GsHCP9YduWpAz.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1150639",
+        "type": "movie",
+        "title": "Tajný zákop",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/lKh7eybPjrwBqv2632et5k54UUN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt852052",
+        "type": "movie",
+        "title": "BANGER.",
+        "year": 2022,
+        "score": 67,
+        "poster": "https://image.tmdb.org/t/p/w342/yC2KRI4cWkcWwWIpXMZpyHAOyNz.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st99866",
+        "type": "show",
+        "title": "Einstein – Případy nesnesitelného génia",
+        "year": 2020,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/fqeTstM1Aw0VYN5OUjbVkbLhuxF.jpg",
         "roles": [
           "actor"
         ]
@@ -585807,48 +585922,6 @@
       }
     ]
   },
-  "p2850937": {
-    "name": "Lenka Konvičková",
-    "img": "/ghglG4dZG9hu28GsHCP9YduWpAz.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1150639",
-        "type": "movie",
-        "title": "Tajný zákop",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/lKh7eybPjrwBqv2632et5k54UUN.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt852052",
-        "type": "movie",
-        "title": "BANGER.",
-        "year": 2022,
-        "score": 67,
-        "poster": "https://image.tmdb.org/t/p/w342/yC2KRI4cWkcWwWIpXMZpyHAOyNz.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st99866",
-        "type": "show",
-        "title": "Einstein – Případy nesnesitelného génia",
-        "year": 2020,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/fqeTstM1Aw0VYN5OUjbVkbLhuxF.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1151789": {
     "name": "Ovidiu Crișan",
     "img": "/rKLTlulXA1UVP1eHTjuGBsgpemj.jpg",
@@ -586391,20 +586464,20 @@
       }
     ]
   },
-  "p3875807": {
-    "name": "Erika Čisáriková",
+  "p4447609": {
+    "name": "Terezie Taberyová",
     "img": null,
-    "birthday": null,
+    "birthday": "1992-03-04",
     "deathday": null,
-    "age": null,
+    "age": 34,
     "works": [
       {
-        "id": "mt1053136",
+        "id": "mt1222338",
         "type": "movie",
-        "title": "Zešílet",
+        "title": "Dvě Mařenky",
         "year": 2023,
         "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
+        "poster": "",
         "roles": [
           "actor"
         ]

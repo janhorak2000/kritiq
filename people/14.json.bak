@@ -13732,6 +13732,17 @@
     "age": 80,
     "works": [
       {
+        "id": "mt1669915",
+        "type": "movie",
+        "title": "Angel and the Badman",
+        "year": 2026,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/mJe53zlhGBdcjtN1GqncNZ5Unm0.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt763165",
         "type": "movie",
         "title": "Pohřeb",
@@ -33268,6 +33279,17 @@
     "deathday": null,
     "age": 40,
     "works": [
+      {
+        "id": "mt1567605",
+        "type": "movie",
+        "title": "Ebenezer: Vánoční koleda",
+        "year": 2026,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/wbTHJ5VzOjEq02PYHkLAL7yhhBn.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "st287231",
         "type": "show",
@@ -325172,6 +325194,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1669915",
+        "type": "movie",
+        "title": "Angel and the Badman",
+        "year": 2026,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/mJe53zlhGBdcjtN1GqncNZ5Unm0.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st247784",
         "type": "show",
         "title": "Puls",
@@ -337887,6 +337920,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "mt1669915",
+        "type": "movie",
+        "title": "Angel and the Badman",
+        "year": 2026,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/mJe53zlhGBdcjtN1GqncNZ5Unm0.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt1202479",
         "type": "movie",
@@ -436441,6 +436485,26 @@
       }
     ]
   },
+  "p3421817": {
+    "name": "Nick David",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1567605",
+        "type": "movie",
+        "title": "Ebenezer: Vánoční koleda",
+        "year": 2026,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/wbTHJ5VzOjEq02PYHkLAL7yhhBn.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p6080198": {
     "name": "Maya Eva Hosein",
     "img": "/lDHbsnyUoBzmtbMevNl4F2n8B8B.jpg",
@@ -462147,6 +462211,26 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/kTOeFV92c3QHJ3bEkT660P7BcWN.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6383336": {
+    "name": "Joanne Wilson",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1600653",
+        "type": "movie",
+        "title": "The 12 Dates of Christmas",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/w82vKEoYNZ9SxYxvccxO85CnZKE.jpg",
         "roles": [
           "actor"
         ]

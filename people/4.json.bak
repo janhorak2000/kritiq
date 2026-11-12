@@ -148539,6 +148539,17 @@
     "age": 39,
     "works": [
       {
+        "id": "mt1562642",
+        "type": "movie",
+        "title": "Ghost Soldier",
+        "year": 2026,
+        "score": 90,
+        "poster": "https://image.tmdb.org/t/p/w342/8Y4oJ5iUs3hgPcDB3SIEmsNYjZk.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st302074",
         "type": "show",
         "title": "RJ Decker",
@@ -386552,6 +386563,17 @@
     "deathday": null,
     "age": 83,
     "works": [
+      {
+        "id": "mt1567605",
+        "type": "movie",
+        "title": "Ebenezer: Vánoční koleda",
+        "year": 2026,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/wbTHJ5VzOjEq02PYHkLAL7yhhBn.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt7978",
         "type": "movie",
@@ -693620,6 +693642,37 @@
       }
     ]
   },
+  "p5640870": {
+    "name": "Freddie Lee-Grey",
+    "img": "/uslafC3yO8P2ZP1JUOZ6akdbbAc.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1567605",
+        "type": "movie",
+        "title": "Ebenezer: Vánoční koleda",
+        "year": 2026,
+        "score": 83,
+        "poster": "https://image.tmdb.org/t/p/w342/wbTHJ5VzOjEq02PYHkLAL7yhhBn.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st270572",
+        "type": "show",
+        "title": "Pán much",
+        "year": 2026,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/zD50ejpus5rNidj6CBr4Ml59KOL.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2096164": {
     "name": "James Ortiz",
     "img": "/unzBwVsoq8rAH8BAYlPR1zsWQ4E.jpg",
@@ -694261,174 +694314,6 @@
         "year": 2026,
         "score": 74,
         "poster": "https://image.tmdb.org/t/p/w342/dueFqKLvjftnELZaGYwY7xinfaI.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4039941": {
-    "name": "Christopher Woodley",
-    "img": "/7qIR7rpHoQDUjtW0PUxPAvD2znu.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1236045",
-        "type": "movie",
-        "title": "Zvířata",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/ilG5SDwCpuncg9XF4MLVcjj9lkK.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1397385",
-        "type": "movie",
-        "title": "Malý bratr",
-        "year": 2026,
-        "score": 55,
-        "poster": "https://image.tmdb.org/t/p/w342/agjSD0xJNg8AuLL4lsEhCHT0RAJ.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6537359": {
-    "name": "Deja Hunter",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1236045",
-        "type": "movie",
-        "title": "Zvířata",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/ilG5SDwCpuncg9XF4MLVcjj9lkK.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6466398": {
-    "name": "Muhammad Ameen Hawkins",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1437396",
-        "type": "movie",
-        "title": "Your Mother Your Mother Your Mother",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1870466": {
-    "name": "Emily Lloyd-Saini",
-    "img": "/tW4TD9PmBGutKVhvUNXSWxZjkVn.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1195803",
-        "type": "movie",
-        "title": "Wicker",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/6FcBZOKvyrLCKGCyBG0ySCR4okt.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st205072",
-        "type": "show",
-        "title": "Smrt v ráji: Návrat",
-        "year": 2023,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/1zyKeMDCLpn2UK6hxU2IrVLgot2.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt802372",
-        "type": "movie",
-        "title": "Lidi, které nesnášíme na svatbě",
-        "year": 2022,
-        "score": 58,
-        "poster": "https://image.tmdb.org/t/p/w342/kQZKw9jetOInPPdSZgbKFxJALHc.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st102272",
-        "type": "show",
-        "title": "Code 404",
-        "year": 2020,
-        "score": 64,
-        "poster": "https://image.tmdb.org/t/p/w342/4mxnGq5ysyqSDF1UyBj9wAI3TwF.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st66230",
-        "type": "show",
-        "title": "Flowers",
-        "year": 2016,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/7w6t1Rj49awAOfdepo1nkCw3xGC.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st62479",
-        "type": "show",
-        "title": "W1A",
-        "year": 2014,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/dHnXjiXL9YCxRFlgUCVADAKq8AM.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st32419",
-        "type": "show",
-        "title": "Horrible Histories",
-        "year": 2009,
-        "score": 87,
-        "poster": "https://image.tmdb.org/t/p/w342/fwj7zkWHtveXUaB9cwrQIMvmgeQ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st11089",
-        "type": "show",
-        "title": "Mock the Week",
-        "year": 2005,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/gewfnFndT4mgtgR3zPrGLsBTdZE.jpg",
         "roles": [
           "actor"
         ]
@@ -701777,6 +701662,103 @@
         "poster": "https://image.tmdb.org/t/p/w342/qk1ZERG6yhwAJqTobmDgw8jRL2C.jpg",
         "roles": [
           "director"
+        ]
+      }
+    ]
+  },
+  "p1870466": {
+    "name": "Emily Lloyd-Saini",
+    "img": "/tW4TD9PmBGutKVhvUNXSWxZjkVn.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1195803",
+        "type": "movie",
+        "title": "Wicker",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/6FcBZOKvyrLCKGCyBG0ySCR4okt.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st205072",
+        "type": "show",
+        "title": "Smrt v ráji: Návrat",
+        "year": 2023,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/1zyKeMDCLpn2UK6hxU2IrVLgot2.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt802372",
+        "type": "movie",
+        "title": "Lidi, které nesnášíme na svatbě",
+        "year": 2022,
+        "score": 58,
+        "poster": "https://image.tmdb.org/t/p/w342/kQZKw9jetOInPPdSZgbKFxJALHc.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st102272",
+        "type": "show",
+        "title": "Code 404",
+        "year": 2020,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/4mxnGq5ysyqSDF1UyBj9wAI3TwF.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st66230",
+        "type": "show",
+        "title": "Flowers",
+        "year": 2016,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/7w6t1Rj49awAOfdepo1nkCw3xGC.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st62479",
+        "type": "show",
+        "title": "W1A",
+        "year": 2014,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/dHnXjiXL9YCxRFlgUCVADAKq8AM.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st32419",
+        "type": "show",
+        "title": "Horrible Histories",
+        "year": 2009,
+        "score": 87,
+        "poster": "https://image.tmdb.org/t/p/w342/fwj7zkWHtveXUaB9cwrQIMvmgeQ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st11089",
+        "type": "show",
+        "title": "Mock the Week",
+        "year": 2005,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/gewfnFndT4mgtgR3zPrGLsBTdZE.jpg",
+        "roles": [
+          "actor"
         ]
       }
     ]
@@ -745049,6 +745031,77 @@
       }
     ]
   },
+  "p4039941": {
+    "name": "Christopher Woodley",
+    "img": "/7qIR7rpHoQDUjtW0PUxPAvD2znu.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1236045",
+        "type": "movie",
+        "title": "Zvířata",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/ilG5SDwCpuncg9XF4MLVcjj9lkK.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1397385",
+        "type": "movie",
+        "title": "Malý bratr",
+        "year": 2026,
+        "score": 55,
+        "poster": "https://image.tmdb.org/t/p/w342/agjSD0xJNg8AuLL4lsEhCHT0RAJ.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6537359": {
+    "name": "Deja Hunter",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1236045",
+        "type": "movie",
+        "title": "Zvířata",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/ilG5SDwCpuncg9XF4MLVcjj9lkK.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6466398": {
+    "name": "Muhammad Ameen Hawkins",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1437396",
+        "type": "movie",
+        "title": "Your Mother Your Mother Your Mother",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p3588820": {
     "name": "Elijah Carnazzo",
     "img": "/dYpeMlihEZVsZc31YXQqu8IJnxA.jpg",
@@ -750805,6 +750858,26 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/kTOeFV92c3QHJ3bEkT660P7BcWN.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4203258": {
+    "name": "Chelsea Kater",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1600653",
+        "type": "movie",
+        "title": "The 12 Dates of Christmas",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/w82vKEoYNZ9SxYxvccxO85CnZKE.jpg",
         "roles": [
           "actor"
         ]
@@ -950554,26 +950627,6 @@
         "year": 2026,
         "score": 66,
         "poster": "https://image.tmdb.org/t/p/w342/l6mtso50nTSvhYc3tc7xB7cYHmg.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5640870": {
-    "name": "Freddie Lee-Grey",
-    "img": "/uslafC3yO8P2ZP1JUOZ6akdbbAc.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st270572",
-        "type": "show",
-        "title": "Pán much",
-        "year": 2026,
-        "score": 66,
-        "poster": "https://image.tmdb.org/t/p/w342/zD50ejpus5rNidj6CBr4Ml59KOL.jpg",
         "roles": [
           "actor"
         ]

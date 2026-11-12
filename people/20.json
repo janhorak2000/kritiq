@@ -61581,6 +61581,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1437511",
+        "type": "movie",
+        "title": "Jak udělat banku",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/ifYDZkr2qkHFz87TNVvlxajOxl5.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
         "id": "mt1290417",
         "type": "movie",
         "title": "Žraločí smršť",
@@ -283025,23 +283036,23 @@
         ]
       },
       {
-        "id": "mt1222338",
-        "type": "movie",
-        "title": "Dvě Mařenky",
-        "year": 2023,
-        "score": 50,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt823636",
         "type": "movie",
         "title": "BUĎ CHLAP!",
         "year": 2023,
         "score": 46,
         "poster": "https://image.tmdb.org/t/p/w342/yc5rvJ7Y6qbq1ZJKXfCNsq9Sfo.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1222338",
+        "type": "movie",
+        "title": "Dvě Mařenky",
+        "year": 2023,
+        "score": 50,
+        "poster": "",
         "roles": [
           "actor"
         ]
@@ -313895,23 +313906,23 @@
         ]
       },
       {
-        "id": "mt1139243",
-        "type": "movie",
-        "title": "Nikdy neříkej nikdy",
-        "year": 2023,
-        "score": 55,
-        "poster": "https://image.tmdb.org/t/p/w342/AnimCqHeI9YhqdE3qV9boK8al89.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1222638",
         "type": "movie",
         "title": "Jedeme na teambuilding",
         "year": 2023,
         "score": 50,
         "poster": "https://image.tmdb.org/t/p/w342/unUKbHpP6npzgzajv9FI4FxPs6D.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1139243",
+        "type": "movie",
+        "title": "Nikdy neříkej nikdy",
+        "year": 2023,
+        "score": 55,
+        "poster": "https://image.tmdb.org/t/p/w342/AnimCqHeI9YhqdE3qV9boK8al89.jpg",
         "roles": [
           "actor"
         ]
@@ -365569,6 +365580,17 @@
     "age": 49,
     "works": [
       {
+        "id": "st297491",
+        "type": "show",
+        "title": "Obléhání",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/ju6k9yjDo4kmGq2nylFtBCSmfML.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st66398",
         "type": "show",
         "title": "Diomedes, el Cacique de La Junta",
@@ -377150,6 +377172,66 @@
         "year": 2020,
         "score": 80,
         "poster": "https://image.tmdb.org/t/p/w342/8K6gt1Eve7EHcwxG1h4bijntOUu.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2726261": {
+    "name": "Rafael Zea",
+    "img": "/eMCKn9S48ek08EsW32F2oLiB9a4.jpg",
+    "birthday": "1978-11-04",
+    "deathday": null,
+    "age": 48,
+    "works": [
+      {
+        "id": "st297491",
+        "type": "show",
+        "title": "Obléhání",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/ju6k9yjDo4kmGq2nylFtBCSmfML.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6095307": {
+    "name": "Irina Loaiza",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st297491",
+        "type": "show",
+        "title": "Obléhání",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/ju6k9yjDo4kmGq2nylFtBCSmfML.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6607193": {
+    "name": "Marcelo Castro",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st297491",
+        "type": "show",
+        "title": "Obléhání",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/ju6k9yjDo4kmGq2nylFtBCSmfML.jpg",
         "roles": [
           "actor"
         ]
