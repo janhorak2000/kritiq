@@ -381251,6 +381251,48 @@
       }
     ]
   },
+  "p130680": {
+    "name": "Sameer Kochhar",
+    "img": "/77iaZ0mxIMVWYlwSd9LhcJ5rVOx.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1389172",
+        "type": "movie",
+        "title": "Živě přímo z místa",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/72ETmrsQGk8guVo1GV8Sf7EygOe.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st91290",
+        "type": "show",
+        "title": "Psací stroj",
+        "year": 2019,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/yaIrhKAWnG445EVKvY8B4GmMqvF.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st79352",
+        "type": "show",
+        "title": "Posvátné hry",
+        "year": 2018,
+        "score": 85,
+        "poster": "https://image.tmdb.org/t/p/w342/v68l72g8ycIt4t2sAfoUEoyvjJr.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p1180657": {
     "name": "Andrej Dubravsky",
     "img": null,
@@ -454543,37 +454585,6 @@
         "year": 2019,
         "score": 65,
         "poster": "https://image.tmdb.org/t/p/w342/8Qmy3J38hf4vc9RpX08NCCCRmRh.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p130680": {
-    "name": "Sameer Kochhar",
-    "img": "/77iaZ0mxIMVWYlwSd9LhcJ5rVOx.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st91290",
-        "type": "show",
-        "title": "Psací stroj",
-        "year": 2019,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/yaIrhKAWnG445EVKvY8B4GmMqvF.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st79352",
-        "type": "show",
-        "title": "Posvátné hry",
-        "year": 2018,
-        "score": 85,
-        "poster": "https://image.tmdb.org/t/p/w342/v68l72g8ycIt4t2sAfoUEoyvjJr.jpg",
         "roles": [
           "actor"
         ]

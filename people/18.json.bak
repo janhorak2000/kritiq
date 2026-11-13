@@ -37280,6 +37280,17 @@
     "age": 57,
     "works": [
       {
+        "id": "mt1437511",
+        "type": "movie",
+        "title": "Jak udělat banku",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/ifYDZkr2qkHFz87TNVvlxajOxl5.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1160360",
         "type": "movie",
         "title": "Kdybych měla nohy, tak ti nakopu",
@@ -118960,6 +118971,18 @@
     "age": 31,
     "works": [
       {
+        "id": "st291507",
+        "type": "show",
+        "title": "Tělo",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/2TbRw0oUbhm4UjLFMNM2KcHk4rT.jpg",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      },
+      {
         "id": "st211358",
         "type": "show",
         "title": "Pod mostem",
@@ -122115,6 +122138,17 @@
         "year": 2026,
         "score": 67,
         "poster": "https://image.tmdb.org/t/p/w342/xh9hNzzadcT0vn9pJMUu5SA2w0c.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st297826",
+        "type": "show",
+        "title": "도굴왕",
+        "year": 2026,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/1VYDx4K8TYoEaKiBA0FY6UameFx.jpg",
         "roles": [
           "actor"
         ]
@@ -299399,6 +299433,17 @@
         ]
       },
       {
+        "id": "mt1150639",
+        "type": "movie",
+        "title": "Tajný zákop",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/lKh7eybPjrwBqv2632et5k54UUN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1174842",
         "type": "movie",
         "title": "Každý má svou pravdu",
@@ -299416,17 +299461,6 @@
         "year": 2023,
         "score": 62,
         "poster": "https://image.tmdb.org/t/p/w342/c8SMPkLcGgmpCYl3o1w1no0h7ir.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1150639",
-        "type": "movie",
-        "title": "Tajný zákop",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/lKh7eybPjrwBqv2632et5k54UUN.jpg",
         "roles": [
           "actor"
         ]
@@ -362219,6 +362253,26 @@
       }
     ]
   },
+  "p5671959": {
+    "name": "Lukáš Sigmund",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1099453",
+        "type": "movie",
+        "title": "Villa Lucia",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/3DoIC0wP8dCHkBvHjOGeZ0W54d2.jpg",
+        "roles": [
+          "writer"
+        ]
+      }
+    ]
+  },
   "p4493859": {
     "name": "Milan Gablas",
     "img": null,
@@ -376356,26 +376410,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/xkCUJdz5ZPWpBwTmheVrRPITEKe.jpg",
         "roles": [
           "actor"
-        ]
-      }
-    ]
-  },
-  "p5671959": {
-    "name": "Lukáš Sigmund",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1099453",
-        "type": "movie",
-        "title": "Villa Lucia",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/3DoIC0wP8dCHkBvHjOGeZ0W54d2.jpg",
-        "roles": [
-          "writer"
         ]
       }
     ]

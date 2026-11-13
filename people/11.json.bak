@@ -360702,6 +360702,17 @@
     "age": 50,
     "works": [
       {
+        "id": "st297491",
+        "type": "show",
+        "title": "Obléhání",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/ju6k9yjDo4kmGq2nylFtBCSmfML.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1288070",
         "type": "movie",
         "title": "The Luckiest Man in America",
@@ -547130,23 +547141,23 @@
         ]
       },
       {
-        "id": "mt642725",
-        "type": "movie",
-        "title": "Perinbaba a dva světy",
-        "year": 2023,
-        "score": 36,
-        "poster": "https://image.tmdb.org/t/p/w342/atQCr30e7hmyAcXKm5hld6PLmrE.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1104172",
         "type": "movie",
         "title": "O malých věcech",
         "year": 2023,
         "score": 50,
         "poster": "https://image.tmdb.org/t/p/w342/rpNy6ayzh5FIbY4kEVnn8U4cpDZ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt642725",
+        "type": "movie",
+        "title": "Perinbaba a dva světy",
+        "year": 2023,
+        "score": 36,
+        "poster": "https://image.tmdb.org/t/p/w342/atQCr30e7hmyAcXKm5hld6PLmrE.jpg",
         "roles": [
           "actor"
         ]
@@ -547556,23 +547567,23 @@
         ]
       },
       {
-        "id": "mt768087",
-        "type": "movie",
-        "title": "Ostrov",
-        "year": 2023,
-        "score": 51,
-        "poster": "https://image.tmdb.org/t/p/w342/hXjufuZbhr9fpTe3ZgovGkhF1Ug.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1150639",
         "type": "movie",
         "title": "Tajný zákop",
         "year": 2023,
         "score": 50,
         "poster": "https://image.tmdb.org/t/p/w342/lKh7eybPjrwBqv2632et5k54UUN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt768087",
+        "type": "movie",
+        "title": "Ostrov",
+        "year": 2023,
+        "score": 51,
+        "poster": "https://image.tmdb.org/t/p/w342/hXjufuZbhr9fpTe3ZgovGkhF1Ug.jpg",
         "roles": [
           "actor"
         ]
@@ -557769,6 +557780,26 @@
       }
     ]
   },
+  "p5313627": {
+    "name": "Ryan Beatrice",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1437511",
+        "type": "movie",
+        "title": "Jak udělat banku",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/ifYDZkr2qkHFz87TNVvlxajOxl5.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p6250112": {
     "name": "Matthew Patrick Savage",
     "img": null,
@@ -561954,23 +561985,23 @@
         ]
       },
       {
-        "id": "mt1165416",
-        "type": "movie",
-        "title": "Velký pán",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/pahss6UcHL1xsH6XN8KiiBIT0pf.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1247098",
         "type": "movie",
         "title": "Prázdniny s Broučkem",
         "year": 2024,
         "score": 55,
         "poster": "https://image.tmdb.org/t/p/w342/n3Tr1uDShVkPEOgN3iHJvVGWAXM.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1165416",
+        "type": "movie",
+        "title": "Velký pán",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/pahss6UcHL1xsH6XN8KiiBIT0pf.jpg",
         "roles": [
           "actor"
         ]
@@ -564084,23 +564115,23 @@
         ]
       },
       {
-        "id": "mt1074767",
-        "type": "movie",
-        "title": "Erhart",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/mbcYo543VAoASCSH0uoSfdYkYyJ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1104164",
         "type": "movie",
         "title": "Muž, který stál v cestě",
         "year": 2023,
         "score": 70,
         "poster": "https://image.tmdb.org/t/p/w342/v3sP0af3ijOvOu6Px7C7dchXM8L.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1074767",
+        "type": "movie",
+        "title": "Erhart",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/mbcYo543VAoASCSH0uoSfdYkYyJ.jpg",
         "roles": [
           "actor"
         ]
@@ -593215,6 +593246,26 @@
         "year": 2023,
         "score": 50,
         "poster": "",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3875806": {
+    "name": "Karolína Poláková",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1053136",
+        "type": "movie",
+        "title": "Zešílet",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
         "roles": [
           "actor"
         ]
@@ -627940,26 +627991,6 @@
       }
     ]
   },
-  "p3875806": {
-    "name": "Karolína Poláková",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1053136",
-        "type": "movie",
-        "title": "Zešílet",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p5170792": {
     "name": "Tomáš Kundrátek",
     "img": null,
@@ -658113,6 +658144,17 @@
     "deathday": null,
     "age": 46,
     "works": [
+      {
+        "id": "st297491",
+        "type": "show",
+        "title": "Obléhání",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/ju6k9yjDo4kmGq2nylFtBCSmfML.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "st219063",
         "type": "show",
@@ -697048,6 +697090,26 @@
         "poster": "https://image.tmdb.org/t/p/w342/3QFQKxdoCtZvtKAyuNg7o0XtbjZ.jpg",
         "roles": [
           "actor"
+        ]
+      }
+    ]
+  },
+  "p3199856": {
+    "name": "Woo Seung-wook",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st297826",
+        "type": "show",
+        "title": "도굴왕",
+        "year": 2026,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/1VYDx4K8TYoEaKiBA0FY6UameFx.jpg",
+        "roles": [
+          "director"
         ]
       }
     ]

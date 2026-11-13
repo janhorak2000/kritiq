@@ -77024,6 +77024,17 @@
     "age": 55,
     "works": [
       {
+        "id": "mt1389172",
+        "type": "movie",
+        "title": "Živě přímo z místa",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/72ETmrsQGk8guVo1GV8Sf7EygOe.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt82825",
         "type": "movie",
         "title": "कहानी",
@@ -473884,6 +473895,17 @@
         ]
       },
       {
+        "id": "st338562",
+        "type": "show",
+        "title": "Aliciin zákon",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/7o9nY3GO97jyeVWdtWr12nR0Qpt.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1359153",
         "type": "movie",
         "title": "Deník",
@@ -480244,6 +480266,46 @@
         "year": 2026,
         "score": 69,
         "poster": "https://image.tmdb.org/t/p/w342/oVxkhheRVWSacimUZBuMemQX85E.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2480832": {
+    "name": "M. N. Qomaruddin",
+    "img": "/9F7ZbMaHk51XtzuVfJZg8gsdfDL.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1616687",
+        "type": "movie",
+        "title": "Nikdy se nevzdávej",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/9wypfSz5OyWnew6mt5hviGw6WhM.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6583821": {
+    "name": "Knajla Rayvisha",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1616687",
+        "type": "movie",
+        "title": "Nikdy se nevzdávej",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/9wypfSz5OyWnew6mt5hviGw6WhM.jpg",
         "roles": [
           "actor"
         ]
@@ -570606,6 +570668,17 @@
     "deathday": null,
     "age": 40,
     "works": [
+      {
+        "id": "st338562",
+        "type": "show",
+        "title": "Aliciin zákon",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/7o9nY3GO97jyeVWdtWr12nR0Qpt.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "st71411",
         "type": "show",

@@ -416884,6 +416884,38 @@
       }
     ]
   },
+  "p2494826": {
+    "name": "Joff Bush",
+    "img": "/q3QeZGFbqjmglO0ceKOXH9oKA0q.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1518204",
+        "type": "movie",
+        "title": "Allen",
+        "year": 2026,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/alhhrpj1PSAn5bfz4Os1k7Bweoj.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "st82728",
+        "type": "show",
+        "title": "Blue",
+        "year": 2018,
+        "score": 92,
+        "poster": "https://image.tmdb.org/t/p/w342/9p4pNoGcuyCfHcGWKNrTopqMWtq.jpg",
+        "roles": [
+          "actor",
+          "composer"
+        ]
+      }
+    ]
+  },
   "p5377805": {
     "name": "Neels Junior Clasen",
     "img": null,
@@ -501770,27 +501802,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/5qqXN4XGwJXESUlRvqaYiy17rMy.jpg",
         "roles": [
           "actor"
-        ]
-      }
-    ]
-  },
-  "p2494826": {
-    "name": "Joff Bush",
-    "img": "/q3QeZGFbqjmglO0ceKOXH9oKA0q.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st82728",
-        "type": "show",
-        "title": "Blue",
-        "year": 2018,
-        "score": 92,
-        "poster": "https://image.tmdb.org/t/p/w342/9p4pNoGcuyCfHcGWKNrTopqMWtq.jpg",
-        "roles": [
-          "actor",
-          "composer"
         ]
       }
     ]

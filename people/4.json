@@ -382324,6 +382324,17 @@
     "age": 47,
     "works": [
       {
+        "id": "mt1757174",
+        "type": "movie",
+        "title": "Jen do Vánoc",
+        "year": 2026,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/k7h5uzeCFBNl802TW2WTvctGYHi.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt58384",
         "type": "movie",
         "title": "Duch jezera",
@@ -700047,6 +700058,18 @@
     "age": null,
     "works": [
       {
+        "id": "mt1518204",
+        "type": "movie",
+        "title": "Allen",
+        "year": 2026,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/alhhrpj1PSAn5bfz4Os1k7Bweoj.jpg",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      },
+      {
         "id": "mt616037",
         "type": "movie",
         "title": "Thor: Láska jako hrom",
@@ -745726,6 +745749,77 @@
         "year": 2026,
         "score": 69,
         "poster": "https://image.tmdb.org/t/p/w342/v8Bcs5kC5EtKmFMomBv5BAB5SRi.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1179545": {
+    "name": "Derby Romero",
+    "img": "/45F1pXWKSye5YzII0VqzgEGrQJG.jpg",
+    "birthday": "1990-06-08",
+    "deathday": null,
+    "age": 36,
+    "works": [
+      {
+        "id": "mt1616687",
+        "type": "movie",
+        "title": "Nikdy se nevzdávej",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/9wypfSz5OyWnew6mt5hviGw6WhM.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3022892": {
+    "name": "Laras Sardi",
+    "img": "/aOlQuPslY2mgBbfixUHkLqLfEJc.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1616687",
+        "type": "movie",
+        "title": "Nikdy se nevzdávej",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/9wypfSz5OyWnew6mt5hviGw6WhM.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1322116": {
+    "name": "Winky Wiryawan",
+    "img": "/m1hCxyJb7hJJ1Mua6OGLIiYDS2l.jpg",
+    "birthday": "1978-12-09",
+    "deathday": null,
+    "age": 47,
+    "works": [
+      {
+        "id": "mt1616687",
+        "type": "movie",
+        "title": "Nikdy se nevzdávej",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/9wypfSz5OyWnew6mt5hviGw6WhM.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st228957",
+        "type": "show",
+        "title": "Cigaretová holka",
+        "year": 2023,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/bGn7dGysvut3RzbwcTupisAYElN.jpg",
         "roles": [
           "actor"
         ]
@@ -882921,26 +883015,6 @@
         "year": 2023,
         "score": 82,
         "poster": "https://image.tmdb.org/t/p/w342/7sBx40gwTCSiZ9NI8WWARjQq1hm.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1322116": {
-    "name": "Winky Wiryawan",
-    "img": "/m1hCxyJb7hJJ1Mua6OGLIiYDS2l.jpg",
-    "birthday": "1978-12-09",
-    "deathday": null,
-    "age": 47,
-    "works": [
-      {
-        "id": "st228957",
-        "type": "show",
-        "title": "Cigaretová holka",
-        "year": 2023,
-        "score": 82,
-        "poster": "https://image.tmdb.org/t/p/w342/bGn7dGysvut3RzbwcTupisAYElN.jpg",
         "roles": [
           "actor"
         ]

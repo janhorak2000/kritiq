@@ -477091,6 +477091,17 @@
     "age": 47,
     "works": [
       {
+        "id": "mt1616687",
+        "type": "movie",
+        "title": "Nikdy se nevzdávej",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/9wypfSz5OyWnew6mt5hviGw6WhM.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt753453",
         "type": "movie",
         "title": "V/H/S/94",
@@ -726491,6 +726502,26 @@
         "year": 2026,
         "score": 66,
         "poster": "https://image.tmdb.org/t/p/w342/vjpaxe0KKTv9sfs5V4Uu2tAaDHm.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2187851": {
+    "name": "Celie Sparre",
+    "img": "/hWlwSfIKMEg7MStKtxW7DPlOidM.jpg",
+    "birthday": "1987-07-03",
+    "deathday": null,
+    "age": 39,
+    "works": [
+      {
+        "id": "mt1757174",
+        "type": "movie",
+        "title": "Jen do Vánoc",
+        "year": 2026,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/k7h5uzeCFBNl802TW2WTvctGYHi.jpg",
         "roles": [
           "actor"
         ]

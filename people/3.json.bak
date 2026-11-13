@@ -482140,6 +482140,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1437511",
+        "type": "movie",
+        "title": "Jak udělat banku",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/ifYDZkr2qkHFz87TNVvlxajOxl5.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1151334",
         "type": "movie",
         "title": "Eenie Meanie",
@@ -747888,6 +747899,46 @@
       }
     ]
   },
+  "p5924834": {
+    "name": "Shirvorne Bruder",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1432306",
+        "type": "movie",
+        "title": "Sleepwalker",
+        "year": 2026,
+        "score": 38,
+        "poster": "https://image.tmdb.org/t/p/w342/760SP4VsZagpyB9WLfeZykE3DFg.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3851400": {
+    "name": "Lisa Panagopoulos",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1432306",
+        "type": "movie",
+        "title": "Sleepwalker",
+        "year": 2026,
+        "score": 38,
+        "poster": "https://image.tmdb.org/t/p/w342/760SP4VsZagpyB9WLfeZykE3DFg.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p5394172": {
     "name": "Brian Clarke",
     "img": null,
@@ -785087,6 +785138,28 @@
       }
     ]
   },
+  "p4312388": {
+    "name": "Marta Kovářová",
+    "img": null,
+    "birthday": "1983-02-21",
+    "deathday": null,
+    "age": 43,
+    "works": [
+      {
+        "id": "mt1189094",
+        "type": "movie",
+        "title": "Jiříkovo vidění",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/c8tU59nZpKjqhRTmuHzP3MQvZlD.jpg",
+        "roles": [
+          "actor",
+          "director",
+          "writer"
+        ]
+      }
+    ]
+  },
   "p5096490": {
     "name": "Dominik Moore",
     "img": null,
@@ -787601,6 +787674,26 @@
         "poster": "",
         "roles": [
           "actor"
+        ]
+      }
+    ]
+  },
+  "p4988327": {
+    "name": "Jakub Zajíc",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1367069",
+        "type": "movie",
+        "title": "Krajan",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/aZz7dchPdyyyd1joUFXMQJecxxF.jpg",
+        "roles": [
+          "composer"
         ]
       }
     ]
@@ -792954,6 +793047,88 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/kHq1m5LRdnV1MuPYurcwjlzo6kO.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5005014": {
+    "name": "Vojtěch Bos",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1671314",
+        "type": "movie",
+        "title": "Dřevorubec",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/tU3fS3Ol8TKuHZGNSmsYPcYFTDn.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st273851",
+        "type": "show",
+        "title": "Kamarádi",
+        "year": 2024,
+        "score": 40,
+        "poster": "https://image.tmdb.org/t/p/w342/6v7ESWHnp8DVGrclk4jW9WMStGx.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4675542": {
+    "name": "Natálie Jirásková",
+    "img": "/8UB6uWpt2Z8h0kSXK7wGpfQF4Uf.jpg",
+    "birthday": "2004-11-01",
+    "deathday": null,
+    "age": 22,
+    "works": [
+      {
+        "id": "mt1791735",
+        "type": "movie",
+        "title": "Ženy v lihu",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/cYZhpRNXrjGf9LTT9LdVl88MZvc.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3325545": {
+    "name": "Erik Šaroun",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1791735",
+        "type": "movie",
+        "title": "Ženy v lihu",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/cYZhpRNXrjGf9LTT9LdVl88MZvc.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt742463",
+        "type": "movie",
+        "title": "Stáří není pro sraby",
+        "year": 2021,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/yjPUlKyW4hkeZqv1NzvEHGmAcmN.jpg",
         "roles": [
           "actor"
         ]
@@ -836966,28 +837141,6 @@
       }
     ]
   },
-  "p4312388": {
-    "name": "Marta Kovářová",
-    "img": null,
-    "birthday": "1983-02-21",
-    "deathday": null,
-    "age": 43,
-    "works": [
-      {
-        "id": "mt1189094",
-        "type": "movie",
-        "title": "Jiříkovo vidění",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/c8tU59nZpKjqhRTmuHzP3MQvZlD.jpg",
-        "roles": [
-          "actor",
-          "director",
-          "writer"
-        ]
-      }
-    ]
-  },
   "p5132394": {
     "name": "Abigail Metcalf",
     "img": null,
@@ -837565,26 +837718,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/za5Gy77ZOJHPZdCup9oDX9m3pB6.jpg",
         "roles": [
           "actor"
-        ]
-      }
-    ]
-  },
-  "p4988327": {
-    "name": "Jakub Zajíc",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1367069",
-        "type": "movie",
-        "title": "Krajan",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/aZz7dchPdyyyd1joUFXMQJecxxF.jpg",
-        "roles": [
-          "composer"
         ]
       }
     ]
@@ -843971,26 +844104,6 @@
         "year": 2011,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/fZLwHZRV0qEXhbVC9EO90HUGVb1.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3325545": {
-    "name": "Erik Šaroun",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt742463",
-        "type": "movie",
-        "title": "Stáří není pro sraby",
-        "year": 2021,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/yjPUlKyW4hkeZqv1NzvEHGmAcmN.jpg",
         "roles": [
           "actor"
         ]
@@ -953459,26 +953572,6 @@
       }
     ]
   },
-  "p5005014": {
-    "name": "Vojtěch Bos",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st273851",
-        "type": "show",
-        "title": "Kamarádi",
-        "year": 2024,
-        "score": 40,
-        "poster": "https://image.tmdb.org/t/p/w342/6v7ESWHnp8DVGrclk4jW9WMStGx.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p5004992": {
     "name": "Pavel Býček",
     "img": null,
@@ -958947,6 +959040,26 @@
         "roles": [
           "director",
           "writer"
+        ]
+      }
+    ]
+  },
+  "p5404457": {
+    "name": "Karen Novoa",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st297491",
+        "type": "show",
+        "title": "Obléhání",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/ju6k9yjDo4kmGq2nylFtBCSmfML.jpg",
+        "roles": [
+          "actor"
         ]
       }
     ]

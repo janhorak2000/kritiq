@@ -79190,6 +79190,17 @@
     "age": 60,
     "works": [
       {
+        "id": "st254630",
+        "type": "show",
+        "title": "12 12 12",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/bG4h6C6wRKmf3ryz8gdN6imXW4c.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1193115",
         "type": "movie",
         "title": "Mimo kontrolu",
@@ -476502,6 +476513,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1518204",
+        "type": "movie",
+        "title": "Allen",
+        "year": 2026,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/alhhrpj1PSAn5bfz4Os1k7Bweoj.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt508664",
         "type": "movie",
         "title": "Danger Close: The Battle of Long Tan",
@@ -709437,6 +709459,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1518204",
+        "type": "movie",
+        "title": "Allen",
+        "year": 2026,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/alhhrpj1PSAn5bfz4Os1k7Bweoj.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1127384",
         "type": "movie",
         "title": "Deep Water",
@@ -724207,6 +724240,17 @@
         ]
       },
       {
+        "id": "st338562",
+        "type": "show",
+        "title": "Aliciin zákon",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/7o9nY3GO97jyeVWdtWr12nR0Qpt.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1446943",
         "type": "movie",
         "title": "NEJLEPŠÍ NA SVĚTĚ",
@@ -729746,6 +729790,46 @@
       }
     ]
   },
+  "p2400763": {
+    "name": "Lydia Capolicchio",
+    "img": "/nibMUH6QlkIrezpSjfeGcmnvAqz.jpg",
+    "birthday": "1964-01-07",
+    "deathday": null,
+    "age": 62,
+    "works": [
+      {
+        "id": "mt1757174",
+        "type": "movie",
+        "title": "Jen do Vánoc",
+        "year": 2026,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/k7h5uzeCFBNl802TW2WTvctGYHi.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6643067": {
+    "name": "Natasha Träger",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1757174",
+        "type": "movie",
+        "title": "Jen do Vánoc",
+        "year": 2026,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/k7h5uzeCFBNl802TW2WTvctGYHi.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p3375693": {
     "name": "Bethany Milner",
     "img": null,
@@ -730099,6 +730183,57 @@
         "year": 2018,
         "score": 89,
         "poster": "https://image.tmdb.org/t/p/w342/i6QSKIP54bxHObRdXXbBZFv9UPv.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3352582": {
+    "name": "Edward A O'Sullivan",
+    "img": "/rGPpaqlcwkODYhO7C6thTr9a5Vm.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1518204",
+        "type": "movie",
+        "title": "Allen",
+        "year": 2026,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/alhhrpj1PSAn5bfz4Os1k7Bweoj.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2725219": {
+    "name": "Perry Mooney",
+    "img": "/ty0ZRbRAm7YAbr9om7tM42rMFxc.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1518204",
+        "type": "movie",
+        "title": "Allen",
+        "year": 2026,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/alhhrpj1PSAn5bfz4Os1k7Bweoj.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st130578",
+        "type": "show",
+        "title": "Dusno",
+        "year": 2022,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/oH4JPLdxSdz0xGKEQSuDHHUWFEq.jpg",
         "roles": [
           "actor"
         ]
@@ -913366,26 +913501,6 @@
         "year": 2022,
         "score": 75,
         "poster": "https://image.tmdb.org/t/p/w342/wVipX97HY7UYiWIR6BdmnQLKEXy.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2725219": {
-    "name": "Perry Mooney",
-    "img": "/ty0ZRbRAm7YAbr9om7tM42rMFxc.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st130578",
-        "type": "show",
-        "title": "Dusno",
-        "year": 2022,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/oH4JPLdxSdz0xGKEQSuDHHUWFEq.jpg",
         "roles": [
           "actor"
         ]

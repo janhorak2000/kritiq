@@ -438797,6 +438797,17 @@
     "age": 38,
     "works": [
       {
+        "id": "mt1757174",
+        "type": "movie",
+        "title": "Jen do Vánoc",
+        "year": 2026,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/k7h5uzeCFBNl802TW2WTvctGYHi.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
         "id": "mt1051486",
         "type": "movie",
         "title": "Stockholm Bloodbath",
@@ -441712,6 +441723,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "mt1616687",
+        "type": "movie",
+        "title": "Nikdy se nevzdávej",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/9wypfSz5OyWnew6mt5hviGw6WhM.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt683328",
         "type": "movie",
@@ -577201,6 +577223,17 @@
         "roles": [
           "actor"
         ]
+      },
+      {
+        "id": "mt1518204",
+        "type": "movie",
+        "title": "Allen",
+        "year": 2026,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/alhhrpj1PSAn5bfz4Os1k7Bweoj.jpg",
+        "roles": [
+          "actor"
+        ]
       }
     ]
   },
@@ -623775,6 +623808,26 @@
         "year": 2020,
         "score": 66,
         "poster": "https://image.tmdb.org/t/p/w342/lkT776mSvQ9wZ8wkYsnpQuogp10.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3842530": {
+    "name": "Lisa Hu Yu",
+    "img": "/e14ORZtfVbhHB2Ox7rAV50onBNc.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1757174",
+        "type": "movie",
+        "title": "Jen do Vánoc",
+        "year": 2026,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/k7h5uzeCFBNl802TW2WTvctGYHi.jpg",
         "roles": [
           "actor"
         ]

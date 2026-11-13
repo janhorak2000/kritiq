@@ -293284,6 +293284,17 @@
     "age": 38,
     "works": [
       {
+        "id": "st254630",
+        "type": "show",
+        "title": "12 12 12",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/bG4h6C6wRKmf3ryz8gdN6imXW4c.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1140056",
         "type": "movie",
         "title": "Zlatá cihla",
@@ -398367,6 +398378,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "mt1757174",
+        "type": "movie",
+        "title": "Jen do Vánoc",
+        "year": 2026,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/k7h5uzeCFBNl802TW2WTvctGYHi.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt1100962",
         "type": "movie",
