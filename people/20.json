@@ -82739,6 +82739,17 @@
     "age": 59,
     "works": [
       {
+        "id": "st309213",
+        "type": "show",
+        "title": "Sériový manžel",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/5SbJlZj8DUzQu7WA2Wqtzs7SzBY.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1604592",
         "type": "movie",
         "title": "První hlídka",
@@ -283091,23 +283102,23 @@
         ]
       },
       {
-        "id": "mt823636",
-        "type": "movie",
-        "title": "BUĎ CHLAP!",
-        "year": 2023,
-        "score": 46,
-        "poster": "https://image.tmdb.org/t/p/w342/yc5rvJ7Y6qbq1ZJKXfCNsq9Sfo.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1222338",
         "type": "movie",
         "title": "Dvě Mařenky",
         "year": 2023,
         "score": 50,
         "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt823636",
+        "type": "movie",
+        "title": "BUĎ CHLAP!",
+        "year": 2023,
+        "score": 46,
+        "poster": "https://image.tmdb.org/t/p/w342/yc5rvJ7Y6qbq1ZJKXfCNsq9Sfo.jpg",
         "roles": [
           "actor"
         ]
@@ -313961,23 +313972,23 @@
         ]
       },
       {
-        "id": "mt1222638",
-        "type": "movie",
-        "title": "Jedeme na teambuilding",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/unUKbHpP6npzgzajv9FI4FxPs6D.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1139243",
         "type": "movie",
         "title": "Nikdy neříkej nikdy",
         "year": 2023,
         "score": 55,
         "poster": "https://image.tmdb.org/t/p/w342/AnimCqHeI9YhqdE3qV9boK8al89.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1222638",
+        "type": "movie",
+        "title": "Jedeme na teambuilding",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/unUKbHpP6npzgzajv9FI4FxPs6D.jpg",
         "roles": [
           "actor"
         ]

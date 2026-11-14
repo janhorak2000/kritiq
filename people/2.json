@@ -172311,6 +172311,17 @@
     "age": 60,
     "works": [
       {
+        "id": "mt1543469",
+        "type": "movie",
+        "title": "Heartland",
+        "year": 2026,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/zhxlzxBlO1sWB1rPn7RmAoeQ2na.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st126301",
         "type": "show",
         "title": "Super Pumped: Válka o Uber",
@@ -436311,23 +436322,23 @@
         ]
       },
       {
-        "id": "mt1283665",
-        "type": "movie",
-        "title": "Konec svĕta",
-        "year": 2024,
-        "score": 60,
-        "poster": "https://image.tmdb.org/t/p/w342/dhIMJf7kkkcbPXxyrjzg5RPcnau.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1165416",
         "type": "movie",
         "title": "Velký pán",
         "year": 2024,
         "score": 50,
         "poster": "https://image.tmdb.org/t/p/w342/pahss6UcHL1xsH6XN8KiiBIT0pf.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1283665",
+        "type": "movie",
+        "title": "Konec svĕta",
+        "year": 2024,
+        "score": 60,
+        "poster": "https://image.tmdb.org/t/p/w342/dhIMJf7kkkcbPXxyrjzg5RPcnau.jpg",
         "roles": [
           "actor"
         ]
@@ -507550,6 +507561,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1644210",
+        "type": "movie",
+        "title": "Robotica",
+        "year": 2026,
+        "score": 32,
+        "poster": "https://image.tmdb.org/t/p/w342/fZD9b4RRmFWwYVn6MCcrHebTDDc.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt945657",
         "type": "movie",
         "title": "Titanic 666",
@@ -531791,6 +531813,17 @@
     "deathday": null,
     "age": 78,
     "works": [
+      {
+        "id": "mt1543469",
+        "type": "movie",
+        "title": "Heartland",
+        "year": 2026,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/zhxlzxBlO1sWB1rPn7RmAoeQ2na.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt36914",
         "type": "movie",
@@ -733407,6 +733440,26 @@
       }
     ]
   },
+  "p2873851": {
+    "name": "Lilly Bell",
+    "img": "/i0dxbQs9KkQsRGZOxH2GCWIBAMM.jpg",
+    "birthday": "1996-01-11",
+    "deathday": null,
+    "age": 30,
+    "works": [
+      {
+        "id": "mt1644210",
+        "type": "movie",
+        "title": "Robotica",
+        "year": 2026,
+        "score": 32,
+        "poster": "https://image.tmdb.org/t/p/w342/fZD9b4RRmFWwYVn6MCcrHebTDDc.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2831424": {
     "name": "Martin Richard Chappell",
     "img": null,
@@ -760961,216 +761014,6 @@
       }
     ]
   },
-  "p1124587": {
-    "name": "Zuzana Piussi",
-    "img": null,
-    "birthday": "1971-10-21",
-    "deathday": null,
-    "age": 54,
-    "works": [
-      {
-        "id": "mt1378595",
-        "type": "movie",
-        "title": "Pachová stopa",
-        "year": 2025,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/w8xjCDUhQP31aEK5cDTyp7mtBJg.jpg",
-        "roles": [
-          "director",
-          "writer"
-        ]
-      },
-      {
-        "id": "mt1492967",
-        "type": "movie",
-        "title": "Hlas lesa",
-        "year": 2025,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/ebm15nQzdsdXvpgB9eyBoTqo6v9.jpg",
-        "roles": [
-          "director"
-        ]
-      },
-      {
-        "id": "mt1053136",
-        "type": "movie",
-        "title": "Zešílet",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
-        "roles": [
-          "director"
-        ]
-      },
-      {
-        "id": "mt1216788",
-        "type": "movie",
-        "title": "Vyčichaná pravda české justice",
-        "year": 2023,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "director"
-        ]
-      },
-      {
-        "id": "mt888145",
-        "type": "movie",
-        "title": "Očista",
-        "year": 2021,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/xRAcK7icx04z4ieeQraVB3VMJKy.jpg",
-        "roles": [
-          "director"
-        ]
-      },
-      {
-        "id": "mt602693",
-        "type": "movie",
-        "title": "Univerzity a svoboda",
-        "year": 2019,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/cZjtsaxA6ZI2A9fQjOKdd0enxjh.jpg",
-        "roles": [
-          "director"
-        ]
-      },
-      {
-        "id": "mt602700",
-        "type": "movie",
-        "title": "Obléhání města",
-        "year": 2019,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/cje5yYx5FJeFFNrPPKEZCEwFx2X.jpg",
-        "roles": [
-          "director"
-        ]
-      },
-      {
-        "id": "mt604665",
-        "type": "movie",
-        "title": "Český Alláh",
-        "year": 2018,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/17A9hKOytIxB6JFDRwIfvrVnmdZ.jpg",
-        "roles": [
-          "director",
-          "writer"
-        ]
-      },
-      {
-        "id": "mt609680",
-        "type": "movie",
-        "title": "Těžká volba",
-        "year": 2018,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/bYn8AQw74ICs04MhwmbEGbl4vJW.jpg",
-        "roles": [
-          "director"
-        ]
-      },
-      {
-        "id": "mt1164131",
-        "type": "movie",
-        "title": "Poslední autoportrét",
-        "year": 2018,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt659386",
-        "type": "movie",
-        "title": "Křehká identita",
-        "year": 2013,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/5pdpAKC7xtpGyk1cClIjoKoFxxU.jpg",
-        "roles": [
-          "director",
-          "writer"
-        ]
-      },
-      {
-        "id": "mt146673",
-        "type": "movie",
-        "title": "Nemoc tretej moci",
-        "year": 2011,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "director"
-        ]
-      },
-      {
-        "id": "mt230931",
-        "type": "movie",
-        "title": "Koliba",
-        "year": 2009,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/e87JXT6UWCnIP9W2TgtnJsdoPQg.jpg",
-        "roles": [
-          "actor",
-          "director"
-        ]
-      },
-      {
-        "id": "mt1297208",
-        "type": "movie",
-        "title": "Anjeli plačú",
-        "year": 2005,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/6Q714azEd1YpwZyD5ROG98djmxh.jpg",
-        "roles": [
-          "director",
-          "writer"
-        ]
-      }
-    ]
-  },
-  "p6075093": {
-    "name": "Jan Hušek",
-    "img": null,
-    "birthday": "1988-08-01",
-    "deathday": null,
-    "age": 38,
-    "works": [
-      {
-        "id": "mt1598361",
-        "type": "movie",
-        "title": "Samhain",
-        "year": 2024,
-        "score": 57,
-        "poster": "https://image.tmdb.org/t/p/w342/qaqyb0e39Ks7P10eyeG7MkibwW1.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1104172",
-        "type": "movie",
-        "title": "O malých věcech",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/rpNy6ayzh5FIbY4kEVnn8U4cpDZ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1599733",
-        "type": "movie",
-        "title": "Z pekla do pekla",
-        "year": 2018,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/k5NBHGYAFA91jLVEWD4Bv345XYA.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p2510730": {
     "name": "Milan Cimerák",
     "img": null,
@@ -761249,6 +761092,89 @@
         "year": 1985,
         "score": null,
         "poster": "",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2927817": {
+    "name": "Jan Březina",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1074767",
+        "type": "movie",
+        "title": "Erhart",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/mbcYo543VAoASCSH0uoSfdYkYyJ.jpg",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      },
+      {
+        "id": "mt626394",
+        "type": "movie",
+        "title": "Karel, já a ty",
+        "year": 2019,
+        "score": 56,
+        "poster": "https://image.tmdb.org/t/p/w342/jbtVfAc6E60Q4Uf6RaJXgptAwSM.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4447599": {
+    "name": "Věra Sagulová",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1567376",
+        "type": "movie",
+        "title": "Ke všem čertům",
+        "year": 2025,
+        "score": 40,
+        "poster": "https://image.tmdb.org/t/p/w342/zIdTzRngywAtW9zZ9blnQlj5hlL.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1222338",
+        "type": "movie",
+        "title": "Dvě Mařenky",
+        "year": 2023,
+        "score": 50,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4545367": {
+    "name": "Michael Rittstein",
+    "img": null,
+    "birthday": "1949-09-17",
+    "deathday": null,
+    "age": 77,
+    "works": [
+      {
+        "id": "mt1247018",
+        "type": "movie",
+        "title": "15 x 15 x 5 (minisalon 1984)",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/ma7TiYA61KFVAkMlZNoYX3HeYu9.jpg",
         "roles": [
           "actor"
         ]
@@ -761781,6 +761707,174 @@
         "year": 2012,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/gEd1btXFbsIFVjEMMbWdd1oyFgA.jpg",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      }
+    ]
+  },
+  "p1124587": {
+    "name": "Zuzana Piussi",
+    "img": null,
+    "birthday": "1971-10-21",
+    "deathday": null,
+    "age": 54,
+    "works": [
+      {
+        "id": "mt1378595",
+        "type": "movie",
+        "title": "Pachová stopa",
+        "year": 2025,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/w8xjCDUhQP31aEK5cDTyp7mtBJg.jpg",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      },
+      {
+        "id": "mt1492967",
+        "type": "movie",
+        "title": "Hlas lesa",
+        "year": 2025,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/ebm15nQzdsdXvpgB9eyBoTqo6v9.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "mt1216788",
+        "type": "movie",
+        "title": "Vyčichaná pravda české justice",
+        "year": 2023,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "mt1053136",
+        "type": "movie",
+        "title": "Zešílet",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "mt888145",
+        "type": "movie",
+        "title": "Očista",
+        "year": 2021,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/xRAcK7icx04z4ieeQraVB3VMJKy.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "mt602693",
+        "type": "movie",
+        "title": "Univerzity a svoboda",
+        "year": 2019,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/cZjtsaxA6ZI2A9fQjOKdd0enxjh.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "mt602700",
+        "type": "movie",
+        "title": "Obléhání města",
+        "year": 2019,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/cje5yYx5FJeFFNrPPKEZCEwFx2X.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "mt604665",
+        "type": "movie",
+        "title": "Český Alláh",
+        "year": 2018,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/17A9hKOytIxB6JFDRwIfvrVnmdZ.jpg",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      },
+      {
+        "id": "mt609680",
+        "type": "movie",
+        "title": "Těžká volba",
+        "year": 2018,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/bYn8AQw74ICs04MhwmbEGbl4vJW.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "mt1164131",
+        "type": "movie",
+        "title": "Poslední autoportrét",
+        "year": 2018,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt659386",
+        "type": "movie",
+        "title": "Křehká identita",
+        "year": 2013,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/5pdpAKC7xtpGyk1cClIjoKoFxxU.jpg",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      },
+      {
+        "id": "mt146673",
+        "type": "movie",
+        "title": "Nemoc tretej moci",
+        "year": 2011,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "mt230931",
+        "type": "movie",
+        "title": "Koliba",
+        "year": 2009,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/e87JXT6UWCnIP9W2TgtnJsdoPQg.jpg",
+        "roles": [
+          "actor",
+          "director"
+        ]
+      },
+      {
+        "id": "mt1297208",
+        "type": "movie",
+        "title": "Anjeli plačú",
+        "year": 2005,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/6Q714azEd1YpwZyD5ROG98djmxh.jpg",
         "roles": [
           "director",
           "writer"
@@ -763380,26 +763474,6 @@
         "year": 2020,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/iep02MwV52HZ9cFRCOsMxjvOxRG.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4366001": {
-    "name": "Róbert Švec",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1190291",
-        "type": "movie",
-        "title": "Nejkrásnější kout na širém světě",
-        "year": 2024,
-        "score": 50,
-        "poster": "",
         "roles": [
           "actor"
         ]
@@ -765510,37 +765584,6 @@
       }
     ]
   },
-  "p4447599": {
-    "name": "Věra Sagulová",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1567376",
-        "type": "movie",
-        "title": "Ke všem čertům",
-        "year": 2025,
-        "score": 40,
-        "poster": "https://image.tmdb.org/t/p/w342/zIdTzRngywAtW9zZ9blnQlj5hlL.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1222338",
-        "type": "movie",
-        "title": "Dvě Mařenky",
-        "year": 2023,
-        "score": 50,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p3883288": {
     "name": "Daniel Možnar",
     "img": null,
@@ -765548,6 +765591,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "st309213",
+        "type": "show",
+        "title": "Sériový manžel",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/5SbJlZj8DUzQu7WA2Wqtzs7SzBY.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt1413229",
         "type": "movie",
@@ -770948,38 +771002,6 @@
         "year": 1989,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/aAcDpNSrHJMYd877p5y9IB1aWHC.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2927817": {
-    "name": "Jan Březina",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1074767",
-        "type": "movie",
-        "title": "Erhart",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/mbcYo543VAoASCSH0uoSfdYkYyJ.jpg",
-        "roles": [
-          "director",
-          "writer"
-        ]
-      },
-      {
-        "id": "mt626394",
-        "type": "movie",
-        "title": "Karel, já a ty",
-        "year": 2019,
-        "score": 56,
-        "poster": "https://image.tmdb.org/t/p/w342/jbtVfAc6E60Q4Uf6RaJXgptAwSM.jpg",
         "roles": [
           "actor"
         ]
@@ -810786,20 +810808,42 @@
       }
     ]
   },
-  "p4545367": {
-    "name": "Michael Rittstein",
+  "p6075093": {
+    "name": "Jan Hušek",
     "img": null,
-    "birthday": "1949-09-17",
+    "birthday": "1988-08-01",
     "deathday": null,
-    "age": 77,
+    "age": 38,
     "works": [
       {
-        "id": "mt1247018",
+        "id": "mt1598361",
         "type": "movie",
-        "title": "15 x 15 x 5 (minisalon 1984)",
+        "title": "Samhain",
+        "year": 2024,
+        "score": 57,
+        "poster": "https://image.tmdb.org/t/p/w342/qaqyb0e39Ks7P10eyeG7MkibwW1.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1104172",
+        "type": "movie",
+        "title": "O malých věcech",
         "year": 2023,
         "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/ma7TiYA61KFVAkMlZNoYX3HeYu9.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/rpNy6ayzh5FIbY4kEVnn8U4cpDZ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1599733",
+        "type": "movie",
+        "title": "Z pekla do pekla",
+        "year": 2018,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/k5NBHGYAFA91jLVEWD4Bv345XYA.jpg",
         "roles": [
           "actor"
         ]
@@ -811341,6 +811385,26 @@
         "year": 2024,
         "score": 55,
         "poster": "https://image.tmdb.org/t/p/w342/7WQ3oAU6M8mNhL1uDOA7CSq0Hz.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4366001": {
+    "name": "Róbert Švec",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1190291",
+        "type": "movie",
+        "title": "Nejkrásnější kout na širém světě",
+        "year": 2024,
+        "score": 50,
+        "poster": "",
         "roles": [
           "actor"
         ]
@@ -855128,6 +855192,17 @@
     "deathday": null,
     "age": 54,
     "works": [
+      {
+        "id": "st309213",
+        "type": "show",
+        "title": "Sériový manžel",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/5SbJlZj8DUzQu7WA2Wqtzs7SzBY.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "st274024",
         "type": "show",

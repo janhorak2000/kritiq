@@ -228270,6 +228270,17 @@
     "age": 17,
     "works": [
       {
+        "id": "st249565",
+        "type": "show",
+        "title": "The Good Daughter",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/qJPvyo9Pxz3MQndd3tKSocLz1Nt.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1097311",
         "type": "movie",
         "title": "Echo Valley",
@@ -315461,6 +315472,37 @@
       }
     ]
   },
+  "p1807135": {
+    "name": "Ully Triani",
+    "img": "/e2VjjKDXd09DYzipnibEdkzQRkc.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1616687",
+        "type": "movie",
+        "title": "Nikdy se nevzdávej",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/9wypfSz5OyWnew6mt5hviGw6WhM.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st228958",
+        "type": "show",
+        "title": "Joko Anwar: Noční můry a denní snění",
+        "year": 2024,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/lEn6tQQzUPzXw0Jn2foySOaBM6F.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p3818265": {
     "name": "Milana Wan",
     "img": null,
@@ -381567,26 +381609,6 @@
         "year": 2024,
         "score": 65,
         "poster": "https://image.tmdb.org/t/p/w342/7x3rqEpps3msoQhBUJyiaXotGBL.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1807135": {
-    "name": "Ully Triani",
-    "img": "/e2VjjKDXd09DYzipnibEdkzQRkc.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st228958",
-        "type": "show",
-        "title": "Joko Anwar: Noční můry a denní snění",
-        "year": 2024,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/lEn6tQQzUPzXw0Jn2foySOaBM6F.jpg",
         "roles": [
           "actor"
         ]

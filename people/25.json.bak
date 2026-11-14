@@ -63660,6 +63660,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1518204",
+        "type": "movie",
+        "title": "Allen",
+        "year": 2026,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/alhhrpj1PSAn5bfz4Os1k7Bweoj.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt785539",
         "type": "movie",
         "title": "Letovisko lásky",
@@ -117137,6 +117148,17 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/693nWyAysWVy6Wt8X2B4e8BrydZ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st338562",
+        "type": "show",
+        "title": "Aliciin zákon",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/7o9nY3GO97jyeVWdtWr12nR0Qpt.jpg",
         "roles": [
           "actor"
         ]
@@ -181744,6 +181766,17 @@
     "deathday": null,
     "age": 58,
     "works": [
+      {
+        "id": "st338562",
+        "type": "show",
+        "title": "Aliciin zákon",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/7o9nY3GO97jyeVWdtWr12nR0Qpt.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "st246027",
         "type": "show",

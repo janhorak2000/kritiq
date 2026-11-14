@@ -41024,6 +41024,17 @@
     "age": 62,
     "works": [
       {
+        "id": "mt1389172",
+        "type": "movie",
+        "title": "Živě přímo z místa",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/72ETmrsQGk8guVo1GV8Sf7EygOe.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt577328",
         "type": "movie",
         "title": "Kabir Singh",
@@ -328503,6 +328514,48 @@
       }
     ]
   },
+  "p2500180": {
+    "name": "Christian Fandango Sundgren",
+    "img": "/yFzKniD7f5eZWR5cbheKLsoPM9R.jpg",
+    "birthday": "1992-10-24",
+    "deathday": null,
+    "age": 34,
+    "works": [
+      {
+        "id": "mt1757174",
+        "type": "movie",
+        "title": "Jen do Vánoc",
+        "year": 2026,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/k7h5uzeCFBNl802TW2WTvctGYHi.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st235571",
+        "type": "show",
+        "title": "Skoro normální rodina",
+        "year": 2023,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/zRvD6BUjHSkV1Mqizvi8M5oyY1e.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st218131",
+        "type": "show",
+        "title": "Černá voda",
+        "year": 2023,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/4v1cRaGswBNgmqqHdimx6BkZCSg.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p3628373": {
     "name": "Alice Viskat",
     "img": "/4tu5zJb71CsY4j1kP9YKt38LOIf.jpg",
@@ -328548,6 +328601,26 @@
         "year": 2026,
         "score": 64,
         "poster": "https://image.tmdb.org/t/p/w342/fVnAfx3WB8OGlv3fi1qu9a9t1fr.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6608075": {
+    "name": "Steven Bonutto",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1518204",
+        "type": "movie",
+        "title": "Allen",
+        "year": 2026,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/alhhrpj1PSAn5bfz4Os1k7Bweoj.jpg",
         "roles": [
           "actor"
         ]
@@ -385605,37 +385678,6 @@
         "year": 2023,
         "score": 70,
         "poster": "https://image.tmdb.org/t/p/w342/wPXRHoafzOiqz3WqUYNu66awUvo.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2500180": {
-    "name": "Christian Fandango Sundgren",
-    "img": "/yFzKniD7f5eZWR5cbheKLsoPM9R.jpg",
-    "birthday": "1992-10-24",
-    "deathday": null,
-    "age": 33,
-    "works": [
-      {
-        "id": "st235571",
-        "type": "show",
-        "title": "Skoro normální rodina",
-        "year": 2023,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/zRvD6BUjHSkV1Mqizvi8M5oyY1e.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st218131",
-        "type": "show",
-        "title": "Černá voda",
-        "year": 2023,
-        "score": 69,
-        "poster": "https://image.tmdb.org/t/p/w342/4v1cRaGswBNgmqqHdimx6BkZCSg.jpg",
         "roles": [
           "actor"
         ]

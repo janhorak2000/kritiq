@@ -518682,48 +518682,6 @@
       }
     ]
   },
-  "p3875808": {
-    "name": "Ondrej Gubač",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1053136",
-        "type": "movie",
-        "title": "Zešílet",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st70340",
-        "type": "show",
-        "title": "1890",
-        "year": 2017,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/yqisgQudsbaSUMkTLf8kvShw5bR.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st271612",
-        "type": "show",
-        "title": "Kukučka",
-        "year": 2015,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/qWl38bHaZDo8BAeAXDHoVUBnvWt.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p5096489": {
     "name": "Elizabeth Kambou",
     "img": null,
@@ -539643,6 +539601,48 @@
         "year": 2015,
         "score": null,
         "poster": "",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3875808": {
+    "name": "Ondrej Gubač",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1053136",
+        "type": "movie",
+        "title": "Zešílet",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st70340",
+        "type": "show",
+        "title": "1890",
+        "year": 2017,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/yqisgQudsbaSUMkTLf8kvShw5bR.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st271612",
+        "type": "show",
+        "title": "Kukučka",
+        "year": 2015,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/qWl38bHaZDo8BAeAXDHoVUBnvWt.jpg",
         "roles": [
           "actor"
         ]
@@ -601373,6 +601373,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "gr1019418",
+        "type": "game",
+        "title": "Ghost of Yōtei: Echoes of Sekigahara",
+        "year": 2026,
+        "score": null,
+        "poster": "https://media.rawg.io/media/resize/640/-/screenshots/c36/c369c40764cab0de8491d414289cbf6c.jpg",
+        "roles": [
+          "developer"
+        ]
+      },
       {
         "id": "gr989329",
         "type": "game",

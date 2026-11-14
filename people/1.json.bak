@@ -136470,6 +136470,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1518204",
+        "type": "movie",
+        "title": "Allen",
+        "year": 2026,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/alhhrpj1PSAn5bfz4Os1k7Bweoj.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt830896",
         "type": "movie",
         "title": "Portál",
@@ -236520,6 +236531,17 @@
     "deathday": null,
     "age": 41,
     "works": [
+      {
+        "id": "mt1518204",
+        "type": "movie",
+        "title": "Allen",
+        "year": 2026,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/alhhrpj1PSAn5bfz4Os1k7Bweoj.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt522098",
         "type": "movie",
@@ -702443,6 +702465,57 @@
       }
     ]
   },
+  "p3216027": {
+    "name": "Christin Magdu",
+    "img": "/vc9W3L5Siv2o7P86h6mz7Y9D3Cs.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1757174",
+        "type": "movie",
+        "title": "Jen do Vánoc",
+        "year": 2026,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/k7h5uzeCFBNl802TW2WTvctGYHi.jpg",
+        "roles": [
+          "writer"
+        ]
+      }
+    ]
+  },
+  "p1017336": {
+    "name": "Bengt Braskered",
+    "img": "/dYNbesiCfIwuzXbxBlThl7cmOaP.jpg",
+    "birthday": "1967-03-15",
+    "deathday": null,
+    "age": 59,
+    "works": [
+      {
+        "id": "mt1757174",
+        "type": "movie",
+        "title": "Jen do Vánoc",
+        "year": 2026,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/k7h5uzeCFBNl802TW2WTvctGYHi.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st38148",
+        "type": "show",
+        "title": "Stíny nad Stockholmem",
+        "year": 1999,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/oOHVlOM3l0etyCVAWA3ity4EJqm.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p4555013": {
     "name": "Spencer Elcock",
     "img": "/qyZwjS5xygsixwaTvste3cD0vuu.jpg",
@@ -847014,26 +847087,6 @@
       }
     ]
   },
-  "p1017336": {
-    "name": "Bengt Braskered",
-    "img": "/dYNbesiCfIwuzXbxBlThl7cmOaP.jpg",
-    "birthday": "1967-03-15",
-    "deathday": null,
-    "age": 59,
-    "works": [
-      {
-        "id": "st38148",
-        "type": "show",
-        "title": "Stíny nad Stockholmem",
-        "year": 1999,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/oOHVlOM3l0etyCVAWA3ity4EJqm.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1232980": {
     "name": "Carl Goldstein",
     "img": null,
@@ -875830,6 +875883,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "st338562",
+        "type": "show",
+        "title": "Aliciin zákon",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/7o9nY3GO97jyeVWdtWr12nR0Qpt.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "st134949",
         "type": "show",

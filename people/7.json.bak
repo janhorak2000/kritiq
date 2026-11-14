@@ -377776,6 +377776,17 @@
     "age": 66,
     "works": [
       {
+        "id": "mt1757174",
+        "type": "movie",
+        "title": "Jen do Vánoc",
+        "year": 2026,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/k7h5uzeCFBNl802TW2WTvctGYHi.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st45016",
         "type": "show",
         "title": "Most",
@@ -504704,6 +504715,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "st338562",
+        "type": "show",
+        "title": "Aliciin zákon",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/7o9nY3GO97jyeVWdtWr12nR0Qpt.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt610461",
         "type": "movie",
@@ -676177,6 +676199,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1518204",
+        "type": "movie",
+        "title": "Allen",
+        "year": 2026,
+        "score": 64,
+        "poster": "https://image.tmdb.org/t/p/w342/alhhrpj1PSAn5bfz4Os1k7Bweoj.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt739986",
         "type": "movie",
         "title": "Dívka a moře",
@@ -709034,6 +709067,26 @@
         "year": 2026,
         "score": 60,
         "poster": "https://image.tmdb.org/t/p/w342/oeNdFmHmXnHhYZtscMUtKLWq1GQ.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4684137": {
+    "name": "Callista Arum",
+    "img": "/1GaAlD5Qeg1KkBND9kCKWtMEmZu.jpg",
+    "birthday": "2004-04-02",
+    "deathday": null,
+    "age": 22,
+    "works": [
+      {
+        "id": "mt1616687",
+        "type": "movie",
+        "title": "Nikdy se nevzdávej",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/9wypfSz5OyWnew6mt5hviGw6WhM.jpg",
         "roles": [
           "actor"
         ]

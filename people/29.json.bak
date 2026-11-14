@@ -158817,6 +158817,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1616687",
+        "type": "movie",
+        "title": "Nikdy se nevzdávej",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/9wypfSz5OyWnew6mt5hviGw6WhM.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt449992",
         "type": "movie",
         "title": "Jde si pro nás noc",
@@ -241198,6 +241209,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "st254630",
+        "type": "show",
+        "title": "12 12 12",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/bG4h6C6wRKmf3ryz8gdN6imXW4c.jpg",
+        "roles": [
+          "director"
+        ]
+      },
       {
         "id": "st118924",
         "type": "show",
@@ -542283,6 +542305,26 @@
       }
     ]
   },
+  "p2413870": {
+    "name": "Ismi Melinda",
+    "img": "/xNyLFkkbbEKzvFIwQ1AbZfL1vqo.jpg",
+    "birthday": "1993-09-09",
+    "deathday": null,
+    "age": 33,
+    "works": [
+      {
+        "id": "mt1616687",
+        "type": "movie",
+        "title": "Nikdy se nevzdávej",
+        "year": 2026,
+        "score": 69,
+        "poster": "https://image.tmdb.org/t/p/w342/9wypfSz5OyWnew6mt5hviGw6WhM.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p4898121": {
     "name": "Isaac Eiger",
     "img": null,
@@ -542650,6 +542692,26 @@
         "year": 2026,
         "score": 66,
         "poster": "https://image.tmdb.org/t/p/w342/vjpaxe0KKTv9sfs5V4Uu2tAaDHm.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3817910": {
+    "name": "Penny Parnevik Murray",
+    "img": "/zFFtf2yDnIx4H7vMBs61zIhAgZr.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1757174",
+        "type": "movie",
+        "title": "Jen do Vánoc",
+        "year": 2026,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/k7h5uzeCFBNl802TW2WTvctGYHi.jpg",
         "roles": [
           "actor"
         ]
@@ -547934,6 +547996,26 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/w82vKEoYNZ9SxYxvccxO85CnZKE.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1235143": {
+    "name": "Shekhar Suman",
+    "img": "/u6rcpRPOuqV4ONOMt6NGSgyR1w2.jpg",
+    "birthday": "1962-12-07",
+    "deathday": null,
+    "age": 63,
+    "works": [
+      {
+        "id": "mt1389172",
+        "type": "movie",
+        "title": "Živě přímo z místa",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/72ETmrsQGk8guVo1GV8Sf7EygOe.jpg",
         "roles": [
           "actor"
         ]

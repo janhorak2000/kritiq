@@ -40053,6 +40053,17 @@
     "age": 42,
     "works": [
       {
+        "id": "mt1543469",
+        "type": "movie",
+        "title": "Heartland",
+        "year": 2026,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/zhxlzxBlO1sWB1rPn7RmAoeQ2na.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1128546",
         "type": "movie",
         "title": "Barron's Cove",
@@ -92851,6 +92862,17 @@
     "deathday": null,
     "age": 51,
     "works": [
+      {
+        "id": "st309213",
+        "type": "show",
+        "title": "Sériový manžel",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/5SbJlZj8DUzQu7WA2Wqtzs7SzBY.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "st273970",
         "type": "show",
