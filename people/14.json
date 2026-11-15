@@ -137202,6 +137202,17 @@
     "age": 49,
     "works": [
       {
+        "id": "mt1050981",
+        "type": "movie",
+        "title": "Život a doba Judy Heumann",
+        "year": 2026,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/yAGihN7E5bfz0hvSSgt1CrWFuH2.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1315303",
         "type": "movie",
         "title": "Primát",
@@ -273996,6 +274007,17 @@
     "deathday": null,
     "age": 61,
     "works": [
+      {
+        "id": "mt1050981",
+        "type": "movie",
+        "title": "Život a doba Judy Heumann",
+        "year": 2026,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/yAGihN7E5bfz0hvSSgt1CrWFuH2.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt583095",
         "type": "movie",
@@ -437144,37 +437166,6 @@
       }
     ]
   },
-  "p5060575": {
-    "name": "Nation Sage Henrikson",
-    "img": "/7NMdeqOztpZ6vcDElCL4S2NCRqX.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1688652",
-        "type": "movie",
-        "title": "Gary",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/jtMuKwlOl4IzpB5fWn9RT9uyy6E.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st286801",
-        "type": "show",
-        "title": "Monstrum: Příběh Eda Geina",
-        "year": 2025,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/iDHzRALtZCzHVmx7uyjTTKvMAPB.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p5251601": {
     "name": "Devyck Bull",
     "img": null,
@@ -444589,6 +444580,17 @@
     "deathday": null,
     "age": 42,
     "works": [
+      {
+        "id": "mt1418709",
+        "type": "movie",
+        "title": "Bitkaři",
+        "year": 2026,
+        "score": 56,
+        "poster": "https://image.tmdb.org/t/p/w342/lQRKadGZSBUjkFfjF7kDV047MUN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt1034940",
         "type": "movie",
@@ -459686,6 +459688,37 @@
       }
     ]
   },
+  "p5060575": {
+    "name": "Nation Sage Henrikson",
+    "img": "/7NMdeqOztpZ6vcDElCL4S2NCRqX.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1688652",
+        "type": "movie",
+        "title": "Gary",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/jtMuKwlOl4IzpB5fWn9RT9uyy6E.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st286801",
+        "type": "show",
+        "title": "Monstrum: Příběh Eda Geina",
+        "year": 2025,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/iDHzRALtZCzHVmx7uyjTTKvMAPB.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p6181145": {
     "name": "Zemo Tatasciore",
     "img": null,
@@ -462354,23 +462387,23 @@
         ]
       },
       {
-        "id": "mt1598361",
-        "type": "movie",
-        "title": "Samhain",
-        "year": 2024,
-        "score": 57,
-        "poster": "https://image.tmdb.org/t/p/w342/qaqyb0e39Ks7P10eyeG7MkibwW1.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1237772",
         "type": "movie",
         "title": "Fentasy",
         "year": 2024,
         "score": 50,
         "poster": "https://image.tmdb.org/t/p/w342/3m6UI9B8DAMEJpcIAvRbbZZs50U.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1598361",
+        "type": "movie",
+        "title": "Samhain",
+        "year": 2024,
+        "score": 57,
+        "poster": "https://image.tmdb.org/t/p/w342/qaqyb0e39Ks7P10eyeG7MkibwW1.jpg",
         "roles": [
           "actor"
         ]
@@ -497730,97 +497763,31 @@
       }
     ]
   },
-  "p2143529": {
-    "name": "Jan Battěk",
-    "img": "/rJjeOdMuCYRhOT7AjZNfILaNL7y.jpg",
-    "birthday": "1992-02-10",
+  "p3875809": {
+    "name": "Zuzana Kovalčíková",
+    "img": null,
+    "birthday": null,
     "deathday": null,
-    "age": 34,
+    "age": null,
     "works": [
       {
-        "id": "mt1222338",
+        "id": "mt1053136",
         "type": "movie",
-        "title": "Dvě Mařenky",
+        "title": "Zešílet",
         "year": 2023,
         "score": 50,
-        "poster": "",
+        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
         "roles": [
           "actor"
         ]
       },
       {
-        "id": "mt1206630",
-        "type": "movie",
-        "title": "1989: Chceme dýchat",
-        "year": 2023,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/xvOmDCS4huTToCrtJEMgcWKSSPo.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st121325",
+        "id": "st70340",
         "type": "show",
-        "title": "Boží mlýny",
-        "year": 2021,
+        "title": "1890",
+        "year": 2017,
         "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/iEx5rkcNyBCORAVN5vPzivqaYbS.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st126781",
-        "type": "show",
-        "title": "Dvojka na zabití",
-        "year": 2021,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/6LBzaP2euLvEIgEs1KrOEwfYCO4.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st293395",
-        "type": "show",
-        "title": "Ať žijí rytíři!",
-        "year": 2014,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/6VWfO9YLi4qvTBmQbu4hnGXibgj.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st59149",
-        "type": "show",
-        "title": "Hořící keř",
-        "year": 2013,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/8zSUqSpQN8YSb0ZuPuZ3Q2IC3Aq.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st126126",
-        "type": "show",
-        "title": "Ať žijí rytíři!",
-        "year": 2010,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/v0pC0wTG6MUE8DjXEJIUNgKi6PG.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1597289",
-        "type": "movie",
-        "title": "Freddy a Zlatovláska",
-        "year": 2008,
-        "score": null,
-        "poster": "",
+        "poster": "https://image.tmdb.org/t/p/w342/yqisgQudsbaSUMkTLf8kvShw5bR.jpg",
         "roles": [
           "actor"
         ]
@@ -498071,6 +498038,103 @@
         "poster": "https://image.tmdb.org/t/p/w342/lnYKu0AeR48qxylA2i7ObrrC0DB.jpg",
         "roles": [
           "director"
+        ]
+      }
+    ]
+  },
+  "p2143529": {
+    "name": "Jan Battěk",
+    "img": "/rJjeOdMuCYRhOT7AjZNfILaNL7y.jpg",
+    "birthday": "1992-02-10",
+    "deathday": null,
+    "age": 34,
+    "works": [
+      {
+        "id": "mt1206630",
+        "type": "movie",
+        "title": "1989: Chceme dýchat",
+        "year": 2023,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/xvOmDCS4huTToCrtJEMgcWKSSPo.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1222338",
+        "type": "movie",
+        "title": "Dvě Mařenky",
+        "year": 2023,
+        "score": 50,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st121325",
+        "type": "show",
+        "title": "Boží mlýny",
+        "year": 2021,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/iEx5rkcNyBCORAVN5vPzivqaYbS.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st126781",
+        "type": "show",
+        "title": "Dvojka na zabití",
+        "year": 2021,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/6LBzaP2euLvEIgEs1KrOEwfYCO4.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st293395",
+        "type": "show",
+        "title": "Ať žijí rytíři!",
+        "year": 2014,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/6VWfO9YLi4qvTBmQbu4hnGXibgj.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st59149",
+        "type": "show",
+        "title": "Hořící keř",
+        "year": 2013,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/8zSUqSpQN8YSb0ZuPuZ3Q2IC3Aq.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st126126",
+        "type": "show",
+        "title": "Ať žijí rytíři!",
+        "year": 2010,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/v0pC0wTG6MUE8DjXEJIUNgKi6PG.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1597289",
+        "type": "movie",
+        "title": "Freddy a Zlatovláska",
+        "year": 2008,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
         ]
       }
     ]
@@ -498475,26 +498539,6 @@
         "year": 2023,
         "score": null,
         "poster": "",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5090198": {
-    "name": "Inked Dory",
-    "img": "/7poq6l8S4Clu6fgpkL84BbRJXjb.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1367962",
-        "type": "movie",
-        "title": "Radost na dosah",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/v2UwelTFvELtfBUDp50AWDm9UsR.jpg",
         "roles": [
           "actor"
         ]
@@ -499801,6 +499845,46 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/l60zgSTsSABnc2fxR27UZzKFfYw.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6661548": {
+    "name": "Johana Codlová",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1825833",
+        "type": "movie",
+        "title": "Změna je trvalý stav",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/w0nqi9AefXYKyfwRnxhUK8kJopD.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6661559": {
+    "name": "Jiří Vlach",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1825833",
+        "type": "movie",
+        "title": "Změna je trvalý stav",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/w0nqi9AefXYKyfwRnxhUK8kJopD.jpg",
         "roles": [
           "actor"
         ]
@@ -517406,37 +517490,6 @@
       }
     ]
   },
-  "p3875809": {
-    "name": "Zuzana Kovalčíková",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1053136",
-        "type": "movie",
-        "title": "Zešílet",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st70340",
-        "type": "show",
-        "title": "1890",
-        "year": 2017,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/yqisgQudsbaSUMkTLf8kvShw5bR.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p5170784": {
     "name": "Roman Červenka",
     "img": null,
@@ -518009,6 +518062,26 @@
         "year": 1968,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/Ag7uU7dfGXQSJk9tha2Fzgvauug.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5090198": {
+    "name": "Inked Dory",
+    "img": "/7poq6l8S4Clu6fgpkL84BbRJXjb.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1367962",
+        "type": "movie",
+        "title": "Radost na dosah",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/v2UwelTFvELtfBUDp50AWDm9UsR.jpg",
         "roles": [
           "actor"
         ]

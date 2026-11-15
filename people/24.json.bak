@@ -22507,28 +22507,6 @@
         ]
       },
       {
-        "id": "mt1147401",
-        "type": "movie",
-        "title": "Amerikánka",
-        "year": 2024,
-        "score": 61,
-        "poster": "https://image.tmdb.org/t/p/w342/5LPBAp0Lfl1hGkSM9YGL7iL6vel.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1183269",
-        "type": "movie",
-        "title": "Jmenuju se Edgar a mám krávu",
-        "year": 2024,
-        "score": 60,
-        "poster": "https://image.tmdb.org/t/p/w342/qs03nSQLXylk1njRvXTJgac0Ppk.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1165416",
         "type": "movie",
         "title": "Velký pán",
@@ -22546,6 +22524,28 @@
         "year": 2024,
         "score": 50,
         "poster": "https://image.tmdb.org/t/p/w342/bvzJWqSQbcaKTN2CMdUhXCO1bZY.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1147401",
+        "type": "movie",
+        "title": "Amerikánka",
+        "year": 2024,
+        "score": 61,
+        "poster": "https://image.tmdb.org/t/p/w342/5LPBAp0Lfl1hGkSM9YGL7iL6vel.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1183269",
+        "type": "movie",
+        "title": "Jmenuju se Edgar a mám krávu",
+        "year": 2024,
+        "score": 60,
+        "poster": "https://image.tmdb.org/t/p/w342/qs03nSQLXylk1njRvXTJgac0Ppk.jpg",
         "roles": [
           "actor"
         ]
@@ -374885,37 +374885,6 @@
       }
     ]
   },
-  "p3977482": {
-    "name": "Darek Král",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1213913",
-        "type": "movie",
-        "title": "Krvavý Johann",
-        "year": 2024,
-        "score": 60,
-        "poster": "https://image.tmdb.org/t/p/w342/fMzqc95x4oRyxhvJNLAEzGb6Qxo.jpg",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
-        "id": "mt1104172",
-        "type": "movie",
-        "title": "O malých věcech",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/rpNy6ayzh5FIbY4kEVnn8U4cpDZ.jpg",
-        "roles": [
-          "composer"
-        ]
-      }
-    ]
-  },
   "p2828323": {
     "name": "Sára Rychlíková",
     "img": "/yUxGUl9BlgCpRkgs78wIQ2W2rz6.jpg",
@@ -392400,6 +392369,37 @@
         "poster": "https://image.tmdb.org/t/p/w342/fH7PP2Rkdlo414IHvZABBHhtoqd.jpg",
         "roles": [
           "actor"
+        ]
+      }
+    ]
+  },
+  "p3977482": {
+    "name": "Darek Král",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1213913",
+        "type": "movie",
+        "title": "Krvavý Johann",
+        "year": 2024,
+        "score": 60,
+        "poster": "https://image.tmdb.org/t/p/w342/fMzqc95x4oRyxhvJNLAEzGb6Qxo.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "mt1104172",
+        "type": "movie",
+        "title": "O malých věcech",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/rpNy6ayzh5FIbY4kEVnn8U4cpDZ.jpg",
+        "roles": [
+          "composer"
         ]
       }
     ]

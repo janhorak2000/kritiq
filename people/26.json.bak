@@ -51107,6 +51107,17 @@
     "age": 41,
     "works": [
       {
+        "id": "mt1543469",
+        "type": "movie",
+        "title": "Heartland",
+        "year": 2026,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/zhxlzxBlO1sWB1rPn7RmAoeQ2na.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1371185",
         "type": "movie",
         "title": "Smutný song",
@@ -276110,6 +276121,17 @@
     "age": 49,
     "works": [
       {
+        "id": "mt1543469",
+        "type": "movie",
+        "title": "Heartland",
+        "year": 2026,
+        "score": 68,
+        "poster": "https://image.tmdb.org/t/p/w342/zhxlzxBlO1sWB1rPn7RmAoeQ2na.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st206586",
         "type": "show",
         "title": "The Walking Dead: The Ones Who Live",
@@ -415268,6 +415290,26 @@
       }
     ]
   },
+  "p5868186": {
+    "name": "J.P. Talbot",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1644210",
+        "type": "movie",
+        "title": "Robotica",
+        "year": 2026,
+        "score": 32,
+        "poster": "https://image.tmdb.org/t/p/w342/fZD9b4RRmFWwYVn6MCcrHebTDDc.jpg",
+        "roles": [
+          "writer"
+        ]
+      }
+    ]
+  },
   "p2408015": {
     "name": "Li Wenhan",
     "img": "/eUi1yeqa7YIl4LIwz1rDasteJ27.jpg",
@@ -431807,31 +431849,20 @@
       }
     ]
   },
-  "p3707995": {
-    "name": "Natálie Kočendová",
-    "img": "/zdQBdYAkozCfMzWBm4SUlKjirth.jpg",
-    "birthday": null,
+  "p4545370": {
+    "name": "Kurt Gebauer",
+    "img": null,
+    "birthday": "1941-08-18",
     "deathday": null,
-    "age": null,
+    "age": 85,
     "works": [
       {
-        "id": "mt1222638",
+        "id": "mt1247018",
         "type": "movie",
-        "title": "Jedeme na teambuilding",
+        "title": "15 x 15 x 5 (minisalon 1984)",
         "year": 2023,
         "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/unUKbHpP6npzgzajv9FI4FxPs6D.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st134156",
-        "type": "show",
-        "title": "Love Island",
-        "year": 2021,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/wUaTL1XL94sIyRef3loviWtT3tc.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/ma7TiYA61KFVAkMlZNoYX3HeYu9.jpg",
         "roles": [
           "actor"
         ]
@@ -434117,6 +434148,147 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/w5LS0O3J39m367qRvfJJeHZTVHc.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2552390": {
+    "name": "Marta Potančoková",
+    "img": "/y3rv88Mphz7yyXDkkYeP1yJ0SWM.jpg",
+    "birthday": "1975-09-12",
+    "deathday": null,
+    "age": 51,
+    "works": [
+      {
+        "id": "mt1825475",
+        "type": "movie",
+        "title": "Máj",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/AdGTHWuBEjsN69Dv75lJIwSwdJU.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st308374",
+        "type": "show",
+        "title": "Osud",
+        "year": 2026,
+        "score": 10,
+        "poster": "https://image.tmdb.org/t/p/w342/byg3XG7t1ByByZzhOaxTzzs4MIb.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st284020",
+        "type": "show",
+        "title": "Vina",
+        "year": 2025,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/lvMxN87oaCF59isMEoxV7uulpbe.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st280902",
+        "type": "show",
+        "title": "Dotyk života",
+        "year": 2025,
+        "score": 30,
+        "poster": "https://image.tmdb.org/t/p/w342/4T19lC74B7rgUvGCPnsMb1VXbUe.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st244014",
+        "type": "show",
+        "title": "Policie Hvar",
+        "year": 2024,
+        "score": 40,
+        "poster": "https://image.tmdb.org/t/p/w342/niZZE9JnkSXdnNayOc9CovN6sr7.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st233687",
+        "type": "show",
+        "title": "Prokurátorka",
+        "year": 2023,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/ehsCPSPLJkLsB7Wx3D5Dh8bnd7c.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st213183",
+        "type": "show",
+        "title": "Kriminálka Kraj",
+        "year": 2022,
+        "score": 60,
+        "poster": "https://image.tmdb.org/t/p/w342/jNeXWyfXsSM9OEAkFS68iHjl9mq.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st99868",
+        "type": "show",
+        "title": "Hrobári",
+        "year": 2019,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/uG7tqsUdJK3AUrf4z32cuZzEywA.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st83211",
+        "type": "show",
+        "title": "Sestričky",
+        "year": 2018,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/3jIxMy94I4scUGrEleIWQ0DEbZV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st132007",
+        "type": "show",
+        "title": "Vlci",
+        "year": 2018,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/qxzognN0p0zihP7GUWKro8IicX0.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st107253",
+        "type": "show",
+        "title": "Doktori",
+        "year": 2014,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/A6VgXDw75xHcRD3IBbFt8BUIGuh.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st289539",
+        "type": "show",
+        "title": "Dědictví",
+        "year": 2013,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/ckmuWuJGlttUOze8rj0evU4rjZb.jpg",
         "roles": [
           "actor"
         ]
@@ -453353,20 +453525,31 @@
       }
     ]
   },
-  "p4545370": {
-    "name": "Kurt Gebauer",
-    "img": null,
-    "birthday": "1941-08-18",
+  "p3707995": {
+    "name": "Natálie Kočendová",
+    "img": "/zdQBdYAkozCfMzWBm4SUlKjirth.jpg",
+    "birthday": null,
     "deathday": null,
-    "age": 85,
+    "age": null,
     "works": [
       {
-        "id": "mt1247018",
+        "id": "mt1222638",
         "type": "movie",
-        "title": "15 x 15 x 5 (minisalon 1984)",
+        "title": "Jedeme na teambuilding",
         "year": 2023,
         "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/ma7TiYA61KFVAkMlZNoYX3HeYu9.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/unUKbHpP6npzgzajv9FI4FxPs6D.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st134156",
+        "type": "show",
+        "title": "Love Island",
+        "year": 2021,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/wUaTL1XL94sIyRef3loviWtT3tc.jpg",
         "roles": [
           "actor"
         ]
@@ -483872,136 +484055,6 @@
         "year": 2013,
         "score": null,
         "poster": "",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2552390": {
-    "name": "Marta Potančoková",
-    "img": "/y3rv88Mphz7yyXDkkYeP1yJ0SWM.jpg",
-    "birthday": "1975-09-12",
-    "deathday": null,
-    "age": 51,
-    "works": [
-      {
-        "id": "st308374",
-        "type": "show",
-        "title": "Osud",
-        "year": 2026,
-        "score": 10,
-        "poster": "https://image.tmdb.org/t/p/w342/byg3XG7t1ByByZzhOaxTzzs4MIb.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st284020",
-        "type": "show",
-        "title": "Vina",
-        "year": 2025,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/lvMxN87oaCF59isMEoxV7uulpbe.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st280902",
-        "type": "show",
-        "title": "Dotyk života",
-        "year": 2025,
-        "score": 30,
-        "poster": "https://image.tmdb.org/t/p/w342/4T19lC74B7rgUvGCPnsMb1VXbUe.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st244014",
-        "type": "show",
-        "title": "Policie Hvar",
-        "year": 2024,
-        "score": 40,
-        "poster": "https://image.tmdb.org/t/p/w342/niZZE9JnkSXdnNayOc9CovN6sr7.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st233687",
-        "type": "show",
-        "title": "Prokurátorka",
-        "year": 2023,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/ehsCPSPLJkLsB7Wx3D5Dh8bnd7c.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st213183",
-        "type": "show",
-        "title": "Kriminálka Kraj",
-        "year": 2022,
-        "score": 60,
-        "poster": "https://image.tmdb.org/t/p/w342/jNeXWyfXsSM9OEAkFS68iHjl9mq.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st99868",
-        "type": "show",
-        "title": "Hrobári",
-        "year": 2019,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/uG7tqsUdJK3AUrf4z32cuZzEywA.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st83211",
-        "type": "show",
-        "title": "Sestričky",
-        "year": 2018,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/3jIxMy94I4scUGrEleIWQ0DEbZV.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st132007",
-        "type": "show",
-        "title": "Vlci",
-        "year": 2018,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/qxzognN0p0zihP7GUWKro8IicX0.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st107253",
-        "type": "show",
-        "title": "Doktori",
-        "year": 2014,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/A6VgXDw75xHcRD3IBbFt8BUIGuh.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st289539",
-        "type": "show",
-        "title": "Dědictví",
-        "year": 2013,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/ckmuWuJGlttUOze8rj0evU4rjZb.jpg",
         "roles": [
           "actor"
         ]

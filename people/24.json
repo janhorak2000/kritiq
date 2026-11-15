@@ -244500,6 +244500,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1050981",
+        "type": "movie",
+        "title": "Život a doba Judy Heumann",
+        "year": 2026,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/yAGihN7E5bfz0hvSSgt1CrWFuH2.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1010755",
         "type": "movie",
         "title": "The Strangers: Chapter 3",
@@ -374885,6 +374896,37 @@
       }
     ]
   },
+  "p3977482": {
+    "name": "Darek Král",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1213913",
+        "type": "movie",
+        "title": "Krvavý Johann",
+        "year": 2024,
+        "score": 60,
+        "poster": "https://image.tmdb.org/t/p/w342/fMzqc95x4oRyxhvJNLAEzGb6Qxo.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
+        "id": "mt1104172",
+        "type": "movie",
+        "title": "O malých věcech",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/rpNy6ayzh5FIbY4kEVnn8U4cpDZ.jpg",
+        "roles": [
+          "composer"
+        ]
+      }
+    ]
+  },
   "p2828323": {
     "name": "Sára Rychlíková",
     "img": "/yUxGUl9BlgCpRkgs78wIQ2W2rz6.jpg",
@@ -392369,37 +392411,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/fH7PP2Rkdlo414IHvZABBHhtoqd.jpg",
         "roles": [
           "actor"
-        ]
-      }
-    ]
-  },
-  "p3977482": {
-    "name": "Darek Král",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1213913",
-        "type": "movie",
-        "title": "Krvavý Johann",
-        "year": 2024,
-        "score": 60,
-        "poster": "https://image.tmdb.org/t/p/w342/fMzqc95x4oRyxhvJNLAEzGb6Qxo.jpg",
-        "roles": [
-          "composer"
-        ]
-      },
-      {
-        "id": "mt1104172",
-        "type": "movie",
-        "title": "O malých věcech",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/rpNy6ayzh5FIbY4kEVnn8U4cpDZ.jpg",
-        "roles": [
-          "composer"
         ]
       }
     ]

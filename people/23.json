@@ -104234,6 +104234,17 @@
     "age": 49,
     "works": [
       {
+        "id": "mt1050981",
+        "type": "movie",
+        "title": "Život a doba Judy Heumann",
+        "year": 2026,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/yAGihN7E5bfz0hvSSgt1CrWFuH2.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
         "id": "mt776503",
         "type": "movie",
         "title": "V rytmu srdce",
@@ -244398,6 +244409,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1418709",
+        "type": "movie",
+        "title": "Bitkaři",
+        "year": 2026,
+        "score": 56,
+        "poster": "https://image.tmdb.org/t/p/w342/lQRKadGZSBUjkFfjF7kDV047MUN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1108336",
         "type": "movie",
         "title": "Nebroušený diamant",
@@ -350119,37 +350141,6 @@
       }
     ]
   },
-  "p5090207": {
-    "name": "Aleš Karel",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1791735",
-        "type": "movie",
-        "title": "Ženy v lihu",
-        "year": 2026,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/cYZhpRNXrjGf9LTT9LdVl88MZvc.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1367962",
-        "type": "movie",
-        "title": "Radost na dosah",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/v2UwelTFvELtfBUDp50AWDm9UsR.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1715980": {
     "name": "Miroslav Mach",
     "img": null,
@@ -350814,6 +350805,37 @@
         "poster": "",
         "roles": [
           "director"
+        ]
+      }
+    ]
+  },
+  "p5090207": {
+    "name": "Aleš Karel",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1791735",
+        "type": "movie",
+        "title": "Ženy v lihu",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/cYZhpRNXrjGf9LTT9LdVl88MZvc.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1367962",
+        "type": "movie",
+        "title": "Radost na dosah",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/v2UwelTFvELtfBUDp50AWDm9UsR.jpg",
+        "roles": [
+          "actor"
         ]
       }
     ]
@@ -408482,6 +408504,26 @@
         "poster": "https://image.tmdb.org/t/p/w342/iTVhDUbzUFUJ18jrcYM4rw7qGk.jpg",
         "roles": [
           "actor"
+        ]
+      }
+    ]
+  },
+  "p2207394": {
+    "name": "Umberto Gnoli",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st336243",
+        "type": "show",
+        "title": "Šerosvit",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/m9eZy0jzWCHSUUzbzIpysOrLgFb.jpg",
+        "roles": [
+          "writer"
         ]
       }
     ]
