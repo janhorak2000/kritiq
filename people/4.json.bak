@@ -78985,6 +78985,17 @@
     "age": 44,
     "works": [
       {
+        "id": "mt1050981",
+        "type": "movie",
+        "title": "Život a doba Judy Heumann",
+        "year": 2026,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/yAGihN7E5bfz0hvSSgt1CrWFuH2.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st158051",
         "type": "show",
         "title": "The Lake",
@@ -88397,6 +88408,17 @@
         ]
       },
       {
+        "id": "mt1050981",
+        "type": "movie",
+        "title": "Život a doba Judy Heumann",
+        "year": 2026,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/yAGihN7E5bfz0hvSSgt1CrWFuH2.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt696506",
         "type": "movie",
         "title": "Mickey 17",
@@ -90813,6 +90835,17 @@
         "year": 2026,
         "score": 55,
         "poster": "https://image.tmdb.org/t/p/w342/3BsaBkOalMIRMwNE6OxFUGqrnEB.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st336243",
+        "type": "show",
+        "title": "Šerosvit",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/m9eZy0jzWCHSUUzbzIpysOrLgFb.jpg",
         "roles": [
           "actor"
         ]
@@ -732398,23 +732431,23 @@
         ]
       },
       {
-        "id": "mt823636",
-        "type": "movie",
-        "title": "BUĎ CHLAP!",
-        "year": 2023,
-        "score": 46,
-        "poster": "https://image.tmdb.org/t/p/w342/yc5rvJ7Y6qbq1ZJKXfCNsq9Sfo.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1222638",
         "type": "movie",
         "title": "Jedeme na teambuilding",
         "year": 2023,
         "score": 50,
         "poster": "https://image.tmdb.org/t/p/w342/unUKbHpP6npzgzajv9FI4FxPs6D.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt823636",
+        "type": "movie",
+        "title": "BUĎ CHLAP!",
+        "year": 2023,
+        "score": 46,
+        "poster": "https://image.tmdb.org/t/p/w342/yc5rvJ7Y6qbq1ZJKXfCNsq9Sfo.jpg",
         "roles": [
           "actor"
         ]
@@ -747259,6 +747292,101 @@
         "year": 2026,
         "score": 62,
         "poster": "https://image.tmdb.org/t/p/w342/koNUflGEz6Fdy1GCqpvqBOcIaTP.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2238878": {
+    "name": "Mark MacRae",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1050981",
+        "type": "movie",
+        "title": "Život a doba Judy Heumann",
+        "year": 2026,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/yAGihN7E5bfz0hvSSgt1CrWFuH2.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st286709",
+        "type": "show",
+        "title": "The Westies",
+        "year": 2026,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/6nNxw6SsbEtSpktVEGdoYDqPH7C.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st200875",
+        "type": "show",
+        "title": "TO: Vítejte v Derry",
+        "year": 2025,
+        "score": 79,
+        "poster": "https://image.tmdb.org/t/p/w342/wbhn67vGcB6i9AC7qtpprFiK6B3.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st284736",
+        "type": "show",
+        "title": "Boston Blue",
+        "year": 2025,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/81IhL3ckAgJ9J8vHazlUA5BNs8G.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st83659",
+        "type": "show",
+        "title": "Kabinet kuriozit Guillerma del Tora",
+        "year": 2022,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/wSWrQpHbEUtIgQwtHAhBtGwoKD7.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st61864",
+        "type": "show",
+        "title": "Dobrá čarodějka",
+        "year": 2015,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/c5B9CdRs9MY6Fgknv5uZQKWtl6F.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2497169": {
+    "name": "Steve Curto",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1050981",
+        "type": "movie",
+        "title": "Život a doba Judy Heumann",
+        "year": 2026,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/yAGihN7E5bfz0hvSSgt1CrWFuH2.jpg",
         "roles": [
           "actor"
         ]
@@ -784402,6 +784530,111 @@
       }
     ]
   },
+  "p4327844": {
+    "name": "Radovan Hradil",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1193181",
+        "type": "movie",
+        "title": "Dýchajúce obrazy",
+        "year": 2023,
+        "score": 50,
+        "poster": "",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      }
+    ]
+  },
+  "p3387784": {
+    "name": "Branislav Matranovič",
+    "img": "/g7aYD1UG1SyiRXpwcnOJM6vRC1C.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st296181",
+        "type": "show",
+        "title": "Dvě princezny",
+        "year": 2025,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/gLUXWU66fLIN0ozBydbzGlXTz8I.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st297508",
+        "type": "show",
+        "title": "Neuer",
+        "year": 2025,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/lZQ5U0YzRn40ONiJMgcsygyXD7K.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1099453",
+        "type": "movie",
+        "title": "Villa Lucia",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/3DoIC0wP8dCHkBvHjOGeZ0W54d2.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st155847",
+        "type": "show",
+        "title": "Survivor Česko a Slovensko",
+        "year": 2022,
+        "score": 46,
+        "poster": "https://image.tmdb.org/t/p/w342/B7qnTrKQ4WbQZmMLnwSw3v9CL9.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st72696",
+        "type": "show",
+        "title": "Za sklem",
+        "year": 2016,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/u0K7ufhFfX1WMpEgYMTPo4oq2a8.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4365860": {
+    "name": "Jiří Svoboda",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1189094",
+        "type": "movie",
+        "title": "Jiříkovo vidění",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/c8tU59nZpKjqhRTmuHzP3MQvZlD.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2036984": {
     "name": "Justína Drábková",
     "img": "/pOdramnC4i5YYUVGqkz5jOND82s.jpg",
@@ -787751,6 +787984,122 @@
         "type": "movie",
         "title": "Revue na scestí",
         "year": 1966,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3922868": {
+    "name": "Michaela Mäsiarová",
+    "img": "/h8pf2BEwWL86FjwuJuXWyJUEFMj.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1237772",
+        "type": "movie",
+        "title": "Fentasy",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/3m6UI9B8DAMEJpcIAvRbbZZs50U.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st231678",
+        "type": "show",
+        "title": "Lásky v Istanbule",
+        "year": 2024,
+        "score": 40,
+        "poster": "https://image.tmdb.org/t/p/w342/6mgnmn6TzlstuOj92XgAQCRg53Y.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st220333",
+        "type": "show",
+        "title": "Klamstvo",
+        "year": 2023,
+        "score": 60,
+        "poster": "https://image.tmdb.org/t/p/w342/rNaoYQeqBQoxu3CY61Oy5SruzMA.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st155377",
+        "type": "show",
+        "title": "Hranica",
+        "year": 2022,
+        "score": 65,
+        "poster": "https://image.tmdb.org/t/p/w342/f1gA7cTm3V9Ebe76YMf4FA1P8Ur.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4317218": {
+    "name": "Robert Mihály",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1190291",
+        "type": "movie",
+        "title": "Nejkrásnější kout na širém světě",
+        "year": 2024,
+        "score": 50,
+        "poster": "",
+        "roles": [
+          "director",
+          "writer"
+        ]
+      }
+    ]
+  },
+  "p3703836": {
+    "name": "Vladimír Strmeň",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1190291",
+        "type": "movie",
+        "title": "Nejkrásnější kout na širém světě",
+        "year": 2024,
+        "score": 50,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st230729",
+        "type": "show",
+        "title": "Tváre orchestra",
+        "year": 2023,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1025417",
+        "type": "movie",
+        "title": "Slovenské národné povstanie 1944",
+        "year": 2009,
         "score": null,
         "poster": "",
         "roles": [
@@ -834003,111 +834352,6 @@
       }
     ]
   },
-  "p4327844": {
-    "name": "Radovan Hradil",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1193181",
-        "type": "movie",
-        "title": "Dýchajúce obrazy",
-        "year": 2023,
-        "score": 50,
-        "poster": "",
-        "roles": [
-          "director",
-          "writer"
-        ]
-      }
-    ]
-  },
-  "p3387784": {
-    "name": "Branislav Matranovič",
-    "img": "/g7aYD1UG1SyiRXpwcnOJM6vRC1C.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st296181",
-        "type": "show",
-        "title": "Dvě princezny",
-        "year": 2025,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/gLUXWU66fLIN0ozBydbzGlXTz8I.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st297508",
-        "type": "show",
-        "title": "Neuer",
-        "year": 2025,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/lZQ5U0YzRn40ONiJMgcsygyXD7K.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1099453",
-        "type": "movie",
-        "title": "Villa Lucia",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/3DoIC0wP8dCHkBvHjOGeZ0W54d2.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st155847",
-        "type": "show",
-        "title": "Survivor Česko a Slovensko",
-        "year": 2022,
-        "score": 46,
-        "poster": "https://image.tmdb.org/t/p/w342/B7qnTrKQ4WbQZmMLnwSw3v9CL9.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st72696",
-        "type": "show",
-        "title": "Za sklem",
-        "year": 2016,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/u0K7ufhFfX1WMpEgYMTPo4oq2a8.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4365860": {
-    "name": "Jiří Svoboda",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1189094",
-        "type": "movie",
-        "title": "Jiříkovo vidění",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/c8tU59nZpKjqhRTmuHzP3MQvZlD.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p5421222": {
     "name": "Jitka Doležalová",
     "img": null,
@@ -834578,122 +834822,6 @@
         "year": 2006,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/755hDTzHi6NceVksKdJENNcyNl1.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3922868": {
-    "name": "Michaela Mäsiarová",
-    "img": "/h8pf2BEwWL86FjwuJuXWyJUEFMj.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1237772",
-        "type": "movie",
-        "title": "Fentasy",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/3m6UI9B8DAMEJpcIAvRbbZZs50U.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st231678",
-        "type": "show",
-        "title": "Lásky v Istanbule",
-        "year": 2024,
-        "score": 40,
-        "poster": "https://image.tmdb.org/t/p/w342/6mgnmn6TzlstuOj92XgAQCRg53Y.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st220333",
-        "type": "show",
-        "title": "Klamstvo",
-        "year": 2023,
-        "score": 60,
-        "poster": "https://image.tmdb.org/t/p/w342/rNaoYQeqBQoxu3CY61Oy5SruzMA.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st155377",
-        "type": "show",
-        "title": "Hranica",
-        "year": 2022,
-        "score": 65,
-        "poster": "https://image.tmdb.org/t/p/w342/f1gA7cTm3V9Ebe76YMf4FA1P8Ur.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4317218": {
-    "name": "Robert Mihály",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1190291",
-        "type": "movie",
-        "title": "Nejkrásnější kout na širém světě",
-        "year": 2024,
-        "score": 50,
-        "poster": "",
-        "roles": [
-          "director",
-          "writer"
-        ]
-      }
-    ]
-  },
-  "p3703836": {
-    "name": "Vladimír Strmeň",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1190291",
-        "type": "movie",
-        "title": "Nejkrásnější kout na širém světě",
-        "year": 2024,
-        "score": 50,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st230729",
-        "type": "show",
-        "title": "Tváre orchestra",
-        "year": 2023,
-        "score": null,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1025417",
-        "type": "movie",
-        "title": "Slovenské národné povstanie 1944",
-        "year": 2009,
-        "score": null,
-        "poster": "",
         "roles": [
           "actor"
         ]
@@ -887067,70 +887195,6 @@
       }
     ]
   },
-  "p2238878": {
-    "name": "Mark MacRae",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st286709",
-        "type": "show",
-        "title": "The Westies",
-        "year": 2026,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/6nNxw6SsbEtSpktVEGdoYDqPH7C.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st200875",
-        "type": "show",
-        "title": "TO: Vítejte v Derry",
-        "year": 2025,
-        "score": 79,
-        "poster": "https://image.tmdb.org/t/p/w342/wbhn67vGcB6i9AC7qtpprFiK6B3.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st284736",
-        "type": "show",
-        "title": "Boston Blue",
-        "year": 2025,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/81IhL3ckAgJ9J8vHazlUA5BNs8G.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st83659",
-        "type": "show",
-        "title": "Kabinet kuriozit Guillerma del Tora",
-        "year": 2022,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/wSWrQpHbEUtIgQwtHAhBtGwoKD7.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st61864",
-        "type": "show",
-        "title": "Dobrá čarodějka",
-        "year": 2015,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/c5B9CdRs9MY6Fgknv5uZQKWtl6F.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p5778359": {
     "name": "Daniel Onwugbonu",
     "img": null,
@@ -920226,6 +920290,17 @@
     "deathday": null,
     "age": 37,
     "works": [
+      {
+        "id": "st336243",
+        "type": "show",
+        "title": "Šerosvit",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/m9eZy0jzWCHSUUzbzIpysOrLgFb.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "st247662",
         "type": "show",

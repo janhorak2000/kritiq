@@ -840169,5 +840169,98 @@
       }
     ],
     "reviews": []
+  },
+  {
+    "title": "Insecta",
+    "tmdb_id": 1757324,
+    "imdb_id": "tt46024769",
+    "original_language": "en",
+    "year": 2026,
+    "date": "2026-08-18",
+    "score": null,
+    "box": null,
+    "box_currency": null,
+    "country": "",
+    "genre": "Horor",
+    "runtime": null,
+    "poster": "https://image.tmdb.org/t/p/w342/3FzjY7P79R5sb3hCQUWEy7MT6Fs.jpg",
+    "gallery": [
+      "https://image.tmdb.org/t/p/w500/9RrHsR3lIIdxN0GY0luzu3h3cRS.jpg"
+    ],
+    "summary": "",
+    "director": {
+      "id": 2146368,
+      "name": "Martín Florio",
+      "image": "https://image.tmdb.org/t/p/w300/hqYgQf7XrhuFloGJIw8t55trES.jpg"
+    },
+    "composer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "writer": {
+      "id": 2146368,
+      "name": "Martín Florio",
+      "image": "https://image.tmdb.org/t/p/w300/hqYgQf7XrhuFloGJIw8t55trES.jpg"
+    },
+    "actors": [
+      {
+        "id": 1526350,
+        "name": "Mayra Hermosillo",
+        "birthday": "1987-01-01",
+        "deathday": null,
+        "age": 39,
+        "image": "https://image.tmdb.org/t/p/w300/3EFBG83M8YOPUynZv6QDsJZPjdu.jpg"
+      },
+      {
+        "id": 2834132,
+        "name": "Rocío de la Mañana",
+        "birthday": "1996-12-25",
+        "deathday": null,
+        "age": 29,
+        "image": ""
+      },
+      {
+        "id": 112210,
+        "name": "Luis Felipe Tovar",
+        "birthday": "1961-12-31",
+        "deathday": null,
+        "age": 64,
+        "image": "https://image.tmdb.org/t/p/w300/sKwjgOOVfOUKlZ124P6OsmsxzFR.jpg"
+      },
+      {
+        "id": 238141,
+        "name": "Martha Claudia Moreno",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/eRRRgbYG6Wmnq3GTEfDBIbRbUmp.jpg"
+      },
+      {
+        "id": 1439163,
+        "name": "José Antonio Becerril",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/4Iamt2nl7W7wt3Vlrp7ycrvqGTW.jpg"
+      },
+      {
+        "id": 5285864,
+        "name": "Julián Ache",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/dD3m0sqEo4vP5kkxLkt2HfitTln.jpg"
+      },
+      {
+        "id": 6440298,
+        "name": "Antonia Drolas",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      }
+    ],
+    "reviews": []
   }
 ]

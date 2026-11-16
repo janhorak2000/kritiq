@@ -391101,6 +391101,17 @@
     "age": 58,
     "works": [
       {
+        "id": "mt1570467",
+        "type": "movie",
+        "title": "Frequency of Fear",
+        "year": 2026,
+        "score": 92,
+        "poster": "https://image.tmdb.org/t/p/w342/aUAHtBalyuiMMu8dz2iJN90kYm6.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt513413",
         "type": "movie",
         "title": "Pavouk v síti",
@@ -547207,23 +547218,23 @@
         ]
       },
       {
-        "id": "mt642725",
-        "type": "movie",
-        "title": "Perinbaba a dva světy",
-        "year": 2023,
-        "score": 36,
-        "poster": "https://image.tmdb.org/t/p/w342/atQCr30e7hmyAcXKm5hld6PLmrE.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1104172",
         "type": "movie",
         "title": "O malých věcech",
         "year": 2023,
         "score": 50,
         "poster": "https://image.tmdb.org/t/p/w342/rpNy6ayzh5FIbY4kEVnn8U4cpDZ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt642725",
+        "type": "movie",
+        "title": "Perinbaba a dva světy",
+        "year": 2023,
+        "score": 36,
+        "poster": "https://image.tmdb.org/t/p/w342/atQCr30e7hmyAcXKm5hld6PLmrE.jpg",
         "roles": [
           "actor"
         ]
@@ -547633,23 +547644,23 @@
         ]
       },
       {
-        "id": "mt1150639",
-        "type": "movie",
-        "title": "Tajný zákop",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/lKh7eybPjrwBqv2632et5k54UUN.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt768087",
         "type": "movie",
         "title": "Ostrov",
         "year": 2023,
         "score": 51,
         "poster": "https://image.tmdb.org/t/p/w342/hXjufuZbhr9fpTe3ZgovGkhF1Ug.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1150639",
+        "type": "movie",
+        "title": "Tajný zákop",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/lKh7eybPjrwBqv2632et5k54UUN.jpg",
         "roles": [
           "actor"
         ]
@@ -558622,6 +558633,26 @@
       }
     ]
   },
+  "p5347815": {
+    "name": "Ghiselle Camacho",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1050981",
+        "type": "movie",
+        "title": "Život a doba Judy Heumann",
+        "year": 2026,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/yAGihN7E5bfz0hvSSgt1CrWFuH2.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p6142653": {
     "name": "Aisha Laouini",
     "img": "/cKbSxVlNDLPsHJAWJmAZ8uD9hlk.jpg",
@@ -564201,23 +564232,23 @@
         ]
       },
       {
-        "id": "mt1074767",
-        "type": "movie",
-        "title": "Erhart",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/mbcYo543VAoASCSH0uoSfdYkYyJ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt1104164",
         "type": "movie",
         "title": "Muž, který stál v cestě",
         "year": 2023,
         "score": 70,
         "poster": "https://image.tmdb.org/t/p/w342/v3sP0af3ijOvOu6Px7C7dchXM8L.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1074767",
+        "type": "movie",
+        "title": "Erhart",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/mbcYo543VAoASCSH0uoSfdYkYyJ.jpg",
         "roles": [
           "actor"
         ]
@@ -593318,6 +593349,46 @@
       }
     ]
   },
+  "p5066776": {
+    "name": "Lucia Nedelková",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1193181",
+        "type": "movie",
+        "title": "Dýchajúce obrazy",
+        "year": 2023,
+        "score": 50,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3875806": {
+    "name": "Karolína Poláková",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1053136",
+        "type": "movie",
+        "title": "Zešílet",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p932850": {
     "name": "David Jařab",
     "img": null,
@@ -595032,26 +595103,6 @@
         "poster": "",
         "roles": [
           "actor"
-        ]
-      }
-    ]
-  },
-  "p4987818": {
-    "name": "Jiři Petr",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1367962",
-        "type": "movie",
-        "title": "Radost na dosah",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/v2UwelTFvELtfBUDp50AWDm9UsR.jpg",
-        "roles": [
-          "composer"
         ]
       }
     ]
@@ -596789,6 +596840,66 @@
         "year": 2005,
         "score": 21,
         "poster": "https://image.tmdb.org/t/p/w342/zBEHcmVe87YjfI8SmIYkiDtX35I.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6661523": {
+    "name": "Jan Táborský",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1825833",
+        "type": "movie",
+        "title": "Změna je trvalý stav",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/w0nqi9AefXYKyfwRnxhUK8kJopD.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6661545": {
+    "name": "Františka Hylasová",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1825833",
+        "type": "movie",
+        "title": "Změna je trvalý stav",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/w0nqi9AefXYKyfwRnxhUK8kJopD.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6661556": {
+    "name": "Laura Černíková",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1825833",
+        "type": "movie",
+        "title": "Změna je trvalý stav",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/w0nqi9AefXYKyfwRnxhUK8kJopD.jpg",
         "roles": [
           "actor"
         ]
@@ -628048,46 +628159,6 @@
       }
     ]
   },
-  "p5066776": {
-    "name": "Lucia Nedelková",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1193181",
-        "type": "movie",
-        "title": "Dýchajúce obrazy",
-        "year": 2023,
-        "score": 50,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3875806": {
-    "name": "Karolína Poláková",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1053136",
-        "type": "movie",
-        "title": "Zešílet",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/gns3ysLplPzSk8MwNGIw733B1Fe.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p5170792": {
     "name": "Tomáš Kundrátek",
     "img": null,
@@ -628536,6 +628607,26 @@
         "poster": "https://image.tmdb.org/t/p/w342/oUP6VfWQGVgXMj5dChfXoM2hc7O.jpg",
         "roles": [
           "actor"
+        ]
+      }
+    ]
+  },
+  "p4987818": {
+    "name": "Jiři Petr",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1367962",
+        "type": "movie",
+        "title": "Radost na dosah",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/v2UwelTFvELtfBUDp50AWDm9UsR.jpg",
+        "roles": [
+          "composer"
         ]
       }
     ]

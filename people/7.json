@@ -229276,6 +229276,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1757324",
+        "type": "movie",
+        "title": "Insecta",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/3FzjY7P79R5sb3hCQUWEy7MT6Fs.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt772515",
         "type": "movie",
         "title": "Huesera: Sběratelka kostí",
@@ -714296,6 +714307,26 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/brejQbMtyQbRhN4ym0YE6d9xDam.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6440298": {
+    "name": "Antonia Drolas",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1757324",
+        "type": "movie",
+        "title": "Insecta",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/3FzjY7P79R5sb3hCQUWEy7MT6Fs.jpg",
         "roles": [
           "actor"
         ]
