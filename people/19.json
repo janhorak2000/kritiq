@@ -315291,59 +315291,6 @@
       }
     ]
   },
-  "p3170417": {
-    "name": "Aroop Shergill",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1301421",
-        "type": "movie",
-        "title": "Béé team na stopě",
-        "year": 2026,
-        "score": 74,
-        "poster": "https://image.tmdb.org/t/p/w342/xVp94erqT2xq7KlNDv1LjXjfPvn.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st194567",
-        "type": "show",
-        "title": "Projekt Lazarus",
-        "year": 2022,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/xw7GkWtmPQDU8qzfKshFEN038sj.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st196586",
-        "type": "show",
-        "title": "DI Ray",
-        "year": 2022,
-        "score": 70,
-        "poster": "https://image.tmdb.org/t/p/w342/4vc1smKAqlaqwxfxjaTfsEcSGHU.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st97546",
-        "type": "show",
-        "title": "Ted Lasso",
-        "year": 2020,
-        "score": 87,
-        "poster": "https://image.tmdb.org/t/p/w342/uRHsiw1wLxPHFXkkv4Ix1s0O6f4.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p2050903": {
     "name": "Ariane Naziri",
     "img": "/jFct4q79Rg242btvof0042aUcDN.jpg",
@@ -327072,6 +327019,59 @@
         "roles": [
           "director",
           "writer"
+        ]
+      }
+    ]
+  },
+  "p3170417": {
+    "name": "Aroop Shergill",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1301421",
+        "type": "movie",
+        "title": "Béé team na stopě",
+        "year": 2026,
+        "score": 74,
+        "poster": "https://image.tmdb.org/t/p/w342/xVp94erqT2xq7KlNDv1LjXjfPvn.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st194567",
+        "type": "show",
+        "title": "Projekt Lazarus",
+        "year": 2022,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/xw7GkWtmPQDU8qzfKshFEN038sj.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st196586",
+        "type": "show",
+        "title": "DI Ray",
+        "year": 2022,
+        "score": 70,
+        "poster": "https://image.tmdb.org/t/p/w342/4vc1smKAqlaqwxfxjaTfsEcSGHU.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st97546",
+        "type": "show",
+        "title": "Ted Lasso",
+        "year": 2020,
+        "score": 87,
+        "poster": "https://image.tmdb.org/t/p/w342/uRHsiw1wLxPHFXkkv4Ix1s0O6f4.jpg",
+        "roles": [
+          "actor"
         ]
       }
     ]
