@@ -1,6 +1,15 @@
 {
   "movies": [
     {
+      "title": "Godzilla Minus Zero",
+      "year": 2026,
+      "date": "2026-11-03",
+      "score": 95,
+      "poster": "https://image.tmdb.org/t/p/w342/zpcoFlZwyLnBt7bb5wmvGDCdg06.jpg",
+      "tmdb_id": 1381071,
+      "imdb_id": "tt34384661"
+    },
+    {
       "title": "Hypotéza lásky",
       "year": 2026,
       "date": "2026-09-23",
@@ -10,22 +19,31 @@
       "imdb_id": "tt22526100"
     },
     {
-      "title": "Neskutečná máma",
-      "year": 2026,
-      "date": "2026-10-07",
-      "score": 91,
-      "poster": "https://image.tmdb.org/t/p/w342/wC63aSSosgURJpfDLadm4gbDpxd.jpg",
-      "tmdb_id": 1400837,
-      "imdb_id": "tt36586020"
-    },
-    {
-      "title": "Já, Rocky",
+      "title": "Ghost Soldier",
       "year": 2026,
       "date": "2026-11-06",
-      "score": 87,
-      "poster": "https://image.tmdb.org/t/p/w342/xE5tY3lppZUyG7WKKThsuYHuAHr.jpg",
-      "tmdb_id": 1286656,
-      "imdb_id": "tt11995650"
+      "score": 90,
+      "poster": "https://image.tmdb.org/t/p/w342/8Y4oJ5iUs3hgPcDB3SIEmsNYjZk.jpg",
+      "tmdb_id": 1562642,
+      "imdb_id": "tt38686316"
+    },
+    {
+      "title": "The Social Reckoning",
+      "year": 2026,
+      "date": "2026-10-07",
+      "score": 89,
+      "poster": "https://image.tmdb.org/t/p/w342/nZ8cQbjAQHRuSqwxvuYhOfxyhfW.jpg",
+      "tmdb_id": 1281331,
+      "imdb_id": "tt37510326"
+    },
+    {
+      "title": "Psí Vánoce",
+      "year": 2026,
+      "date": "2026-11-04",
+      "score": 84,
+      "poster": "https://image.tmdb.org/t/p/w342/wCBlcfbVPiK0mc13mgJDEoxRBHB.jpg",
+      "tmdb_id": 1570488,
+      "imdb_id": "tt38515310"
     },
     {
       "title": "Runner",
@@ -35,33 +53,6 @@
       "poster": "https://image.tmdb.org/t/p/w342/yBKMAIj7clP42UkFejhGDBBoTpb.jpg",
       "tmdb_id": 1377237,
       "imdb_id": "tt31349844"
-    },
-    {
-      "title": "Clayface",
-      "year": 2026,
-      "date": "2026-10-19",
-      "score": 80,
-      "poster": "https://image.tmdb.org/t/p/w342/5jCpQnWPikggmQZoDp1eAi6BI6w.jpg",
-      "tmdb_id": 1400940,
-      "imdb_id": "tt34890576"
-    },
-    {
-      "title": "V srdci divočiny",
-      "year": 2026,
-      "date": "2026-09-19",
-      "score": 79,
-      "poster": "https://image.tmdb.org/t/p/w342/vIQY7fG0AzSCUhO8BIOusCdhjAz.jpg",
-      "tmdb_id": 1263337,
-      "imdb_id": "tt7526136"
-    },
-    {
-      "title": "Digger",
-      "year": 2026,
-      "date": "2026-09-28",
-      "score": 79,
-      "poster": "https://image.tmdb.org/t/p/w342/qiXi6tAv8DoNfPf56G4yljjWhqG.jpg",
-      "tmdb_id": 1248832,
-      "imdb_id": "tt31450459"
     },
     {
       "title": "Šance závodit",
@@ -82,34 +73,25 @@
       "imdb_id": "tt28535715"
     },
     {
-      "title": "Pravda, nebo lež",
+      "title": "Hunger Games: Úsvit sklizně",
       "year": 2026,
-      "date": "2026-09-30",
-      "score": 77,
-      "poster": "https://image.tmdb.org/t/p/w342/dGSsPovyUW5XVekXcy7F2GyhTEh.jpg",
-      "tmdb_id": 1283515,
-      "imdb_id": "tt32261958"
+      "date": "2026-11-18",
+      "score": 78,
+      "poster": "https://image.tmdb.org/t/p/w342/roJBhqBnqe6iVW2VUAKau7BdkTP.jpg",
+      "tmdb_id": 1300968,
+      "imdb_id": "tt32558705"
+    },
+    {
+      "title": "Primetime",
+      "year": 2026,
+      "date": "2026-09-23",
+      "score": 78,
+      "poster": "https://image.tmdb.org/t/p/w342/51VDtNQFuD2I86hrT4ekytg9Dq3.jpg",
+      "tmdb_id": 1375441,
+      "imdb_id": "tt34206385"
     }
   ],
   "shows": [
-    {
-      "title": "포핸즈",
-      "year": 2026,
-      "date": "2026-08-29",
-      "score": 87,
-      "poster": "https://image.tmdb.org/t/p/w342/sdvxrJMzACBUG87YS1YYKmRzTN8.jpg",
-      "tmdb_id": 305644,
-      "imdb_id": "tt39368345"
-    },
-    {
-      "title": "The Blame",
-      "year": 2026,
-      "date": "2026-09-20",
-      "score": 87,
-      "poster": "https://image.tmdb.org/t/p/w342/5ZeHhMqi7tDTgKvfUdy9rs7VKUt.jpg",
-      "tmdb_id": 319851,
-      "imdb_id": "tt36857537"
-    },
     {
       "title": "Grand Tour",
       "year": 2026,
@@ -118,33 +100,6 @@
       "poster": "https://image.tmdb.org/t/p/w342/kq6XB6xmD86txW4UR32tT2JUiN9.jpg",
       "tmdb_id": 329471,
       "imdb_id": "tt44974627"
-    },
-    {
-      "title": "Myšilov",
-      "year": 2026,
-      "date": "2026-08-28",
-      "score": 70,
-      "poster": "https://image.tmdb.org/t/p/w342/z1xv9CKt7HmXgS6azNB563mU2FB.jpg",
-      "tmdb_id": 290193,
-      "imdb_id": "tt36996011"
-    },
-    {
-      "title": "Akademie Minerva",
-      "year": 2026,
-      "date": "2026-09-22",
-      "score": 70,
-      "poster": "https://image.tmdb.org/t/p/w342/cTTXRklz5tJWX6wrN3XrjHo34H1.jpg",
-      "tmdb_id": 312557,
-      "imdb_id": "tt28765828"
-    },
-    {
-      "title": "A Tale of Two Cities",
-      "year": 2026,
-      "date": "2026-09-06",
-      "score": 67,
-      "poster": "https://image.tmdb.org/t/p/w342/ht3OVVRBTrTeVtUVQiKSekjIFVH.jpg",
-      "tmdb_id": 301626,
-      "imdb_id": "tt38128417"
     },
     {
       "title": "Smrt pastorovy ženy",
@@ -156,6 +111,15 @@
       "imdb_id": "tt44113382"
     },
     {
+      "title": "A Tale of Two Cities",
+      "year": 2026,
+      "date": "2026-09-06",
+      "score": 67,
+      "poster": "https://image.tmdb.org/t/p/w342/ht3OVVRBTrTeVtUVQiKSekjIFVH.jpg",
+      "tmdb_id": 301626,
+      "imdb_id": "tt38128417"
+    },
+    {
       "title": "Skandál",
       "year": 2026,
       "date": "2026-09-18",
@@ -165,6 +129,33 @@
       "imdb_id": "tt36347588"
     },
     {
+      "title": "Krvavá oběť",
+      "year": 2026,
+      "date": "2026-08-20",
+      "score": 63,
+      "poster": "https://image.tmdb.org/t/p/w342/8iFUWLKBAWDrJ9rOunscgIDrGQ1.jpg",
+      "tmdb_id": 303351,
+      "imdb_id": "tt38553367"
+    },
+    {
+      "title": "Filter",
+      "year": 2026,
+      "date": "2026-09-02",
+      "score": 63,
+      "poster": "https://image.tmdb.org/t/p/w342/3QFQKxdoCtZvtKAyuNg7o0XtbjZ.jpg",
+      "tmdb_id": 312978,
+      "imdb_id": "tt38267578"
+    },
+    {
+      "title": "Poslední případ",
+      "year": 2026,
+      "date": "2026-09-25",
+      "score": 63,
+      "poster": "https://image.tmdb.org/t/p/w342/jVHx7Yxh41Xf1txD5AsX5MZ4E1e.jpg",
+      "tmdb_id": 290720,
+      "imdb_id": "tt36832679"
+    },
+    {
       "title": "Čističi",
       "year": 2026,
       "date": "2026-09-17",
@@ -172,6 +163,15 @@
       "poster": "https://image.tmdb.org/t/p/w342/mZ0rPTMe9XfrWRUAeoJzr62cyIa.jpg",
       "tmdb_id": 312663,
       "imdb_id": "tt39495239"
+    },
+    {
+      "title": "Veškerá pravda ukrytá v mých lžích",
+      "year": 2026,
+      "date": "2026-08-28",
+      "score": 56,
+      "poster": "https://image.tmdb.org/t/p/w342/A7YS8oPOpjLcCPntmOM3oqRJdbb.jpg",
+      "tmdb_id": 292558,
+      "imdb_id": "tt37053085"
     },
     {
       "title": "Vraždy v dolinách",
@@ -192,12 +192,12 @@
       "rawg_id": 1004298
     },
     {
-      "title": "Star Wars Zero Company",
+      "title": "Servant of the Lake",
       "year": 2026,
-      "date": "2026-08-27",
+      "date": "2026-08-13",
       "score": 86,
-      "poster": "https://media.rawg.io/media/resize/640/-/games/dae/dae6fd03dd5edbf15b193f20bec3cd58.jpg",
-      "rawg_id": 1002691
+      "poster": "https://media.rawg.io/media/resize/640/-/screenshots/169/16983887be1563167b019c82be65cebe.jpg",
+      "rawg_id": 1019497
     },
     {
       "title": "Onimusha: Way Of The Sword",
@@ -208,20 +208,12 @@
       "rawg_id": 994600
     },
     {
-      "title": "Servant of the Lake",
+      "title": "Star Wars Zero Company",
       "year": 2026,
-      "date": "2026-08-13",
+      "date": "2026-08-27",
       "score": 86,
-      "poster": "https://media.rawg.io/media/resize/640/-/screenshots/169/16983887be1563167b019c82be65cebe.jpg",
-      "rawg_id": 1019497
-    },
-    {
-      "title": "S.T.A.L.K.E.R. 2: Cost of Hope",
-      "year": 2026,
-      "date": "2026-08-20",
-      "score": 85,
-      "poster": "https://media.rawg.io/media/resize/640/-/screenshots/dfd/dfd84af21deeef2b53d2781023e484bc.jpg",
-      "rawg_id": 1018108
+      "poster": "https://media.rawg.io/media/resize/640/-/games/dae/dae6fd03dd5edbf15b193f20bec3cd58.jpg",
+      "rawg_id": 1002691
     },
     {
       "title": "Mortal Shell II",
@@ -262,23 +254,32 @@
       "score": 78,
       "poster": "https://media.rawg.io/media/resize/640/-/games/f58/f583b6126e57ac2cf9eeed6d526b9e6a.jpg",
       "rawg_id": 1001012
+    },
+    {
+      "title": "Enshrouded",
+      "year": 2026,
+      "date": "2026-10-15",
+      "score": 74,
+      "poster": "https://media.rawg.io/media/resize/640/-/games/23a/23a1c71366aea4341aec483c9dd08a59.jpg",
+      "rawg_id": 975605
     }
   ],
   "recentlyAdded": {
     "movie": {
-      "title": "Saul: TICHÉ VODY",
+      "title": "Hunger Games: Úsvit sklizně",
       "year": 2026,
-      "score": null,
-      "backdrop": "https://image.tmdb.org/t/p/w500/wmLpWwPsm0zj0UDLHZGHy8Kmkhq.jpg",
-      "tmdb_id": 1790950
+      "score": 78,
+      "backdrop": "https://image.tmdb.org/t/p/w500/aqFZcr2dxSZ2UwWSo1WC6C0rwDf.jpg",
+      "tmdb_id": 1300968,
+      "imdb_id": "tt32558705"
     },
     "show": {
-      "title": "Vražda v Galicii",
+      "title": "Honey",
       "year": 2026,
       "score": null,
-      "backdrop": "https://image.tmdb.org/t/p/w500/jM5dhDrpRiVxuzcvAEeHhcAKt50.jpg",
-      "tmdb_id": 303182,
-      "imdb_id": "tt38707741"
+      "backdrop": "https://image.tmdb.org/t/p/w500/5KqH0QG4X4UhcsGqKcbkhNCW5VE.jpg",
+      "tmdb_id": 287296,
+      "imdb_id": "tt36329495"
     },
     "game": {
       "title": "The Legend of Zelda: Ocarina of Time",

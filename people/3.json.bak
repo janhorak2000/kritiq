@@ -198930,6 +198930,17 @@
     "age": 46,
     "works": [
       {
+        "id": "st305245",
+        "type": "show",
+        "title": "Tichá noc",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/cJUMJm96OcnPoDqEtL0FfwZ05ZX.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt548944",
         "type": "movie",
         "title": "Zábava, zábava",
@@ -785245,81 +785256,6 @@
       }
     ]
   },
-  "p4447215": {
-    "name": "Eva Gribová",
-    "img": "/1LYBgtFsJ99jnxLbalJY9PX1TR8.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1588316",
-        "type": "movie",
-        "title": "Štúr",
-        "year": 2026,
-        "score": 60,
-        "poster": "https://image.tmdb.org/t/p/w342/i4dgmanet1lOYDnt4k0omLZ1Iuy.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st240627",
-        "type": "show",
-        "title": "Příliš mnoho lásky",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/dRMV73nlCH47KBRKhMZR4u3hTJe.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1193181",
-        "type": "movie",
-        "title": "Dýchajúce obrazy",
-        "year": 2023,
-        "score": 50,
-        "poster": "",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1221631",
-        "type": "movie",
-        "title": "Tři zlaté dukáty",
-        "year": 2023,
-        "score": 59,
-        "poster": "https://image.tmdb.org/t/p/w342/m0dymi0rNgR2G7PUM2q8g9DOwjt.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st236960",
-        "type": "show",
-        "title": "Duch",
-        "year": 2023,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/qR99lvzNy9QQB4uNe8kRNTaQSrs.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st131975",
-        "type": "show",
-        "title": "Nemocnica",
-        "year": 2021,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/oaUsI8BBoLlSJnsOCzBwJOhz5R4.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p4312388": {
     "name": "Marta Kovářová",
     "img": null,
@@ -787867,6 +787803,26 @@
         "poster": "",
         "roles": [
           "actor"
+        ]
+      }
+    ]
+  },
+  "p4988327": {
+    "name": "Jakub Zajíc",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1367069",
+        "type": "movie",
+        "title": "Krajan",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/aZz7dchPdyyyd1joUFXMQJecxxF.jpg",
+        "roles": [
+          "composer"
         ]
       }
     ]
@@ -793357,6 +793313,26 @@
         "poster": "https://image.tmdb.org/t/p/w342/bWpJATdsEjCnza0MpcnydZ0gAbe.jpg",
         "roles": [
           "actor"
+        ]
+      }
+    ]
+  },
+  "p5634489": {
+    "name": "Timotej Talapka",
+    "img": "/2esoLPRwNAp4ZAIVpf9SvgnuNiE.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1790950",
+        "type": "movie",
+        "title": "Saul: TICHÉ VODY",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/2H6yro9mKg19vrvRi2lWqggtXRc.jpg",
+        "roles": [
+          "director"
         ]
       }
     ]
@@ -837276,6 +837252,81 @@
       }
     ]
   },
+  "p4447215": {
+    "name": "Eva Gribová",
+    "img": "/1LYBgtFsJ99jnxLbalJY9PX1TR8.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1588316",
+        "type": "movie",
+        "title": "Štúr",
+        "year": 2026,
+        "score": 60,
+        "poster": "https://image.tmdb.org/t/p/w342/i4dgmanet1lOYDnt4k0omLZ1Iuy.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st240627",
+        "type": "show",
+        "title": "Příliš mnoho lásky",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/dRMV73nlCH47KBRKhMZR4u3hTJe.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1221631",
+        "type": "movie",
+        "title": "Tři zlaté dukáty",
+        "year": 2023,
+        "score": 59,
+        "poster": "https://image.tmdb.org/t/p/w342/m0dymi0rNgR2G7PUM2q8g9DOwjt.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1193181",
+        "type": "movie",
+        "title": "Dýchajúce obrazy",
+        "year": 2023,
+        "score": 50,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st236960",
+        "type": "show",
+        "title": "Duch",
+        "year": 2023,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/qR99lvzNy9QQB4uNe8kRNTaQSrs.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st131975",
+        "type": "show",
+        "title": "Nemocnica",
+        "year": 2021,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/oaUsI8BBoLlSJnsOCzBwJOhz5R4.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2743326": {
     "name": "Lucia Kasova",
     "img": null,
@@ -837944,26 +837995,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/za5Gy77ZOJHPZdCup9oDX9m3pB6.jpg",
         "roles": [
           "actor"
-        ]
-      }
-    ]
-  },
-  "p4988327": {
-    "name": "Jakub Zajíc",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1367069",
-        "type": "movie",
-        "title": "Krajan",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/aZz7dchPdyyyd1joUFXMQJecxxF.jpg",
-        "roles": [
-          "composer"
         ]
       }
     ]

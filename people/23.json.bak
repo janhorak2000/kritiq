@@ -45728,6 +45728,17 @@
         ]
       },
       {
+        "id": "st305245",
+        "type": "show",
+        "title": "Tichá noc",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/cJUMJm96OcnPoDqEtL0FfwZ05ZX.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1072699",
         "type": "movie",
         "title": "Zase Furioza",
@@ -315151,17 +315162,6 @@
         ]
       },
       {
-        "id": "mt1165416",
-        "type": "movie",
-        "title": "Velký pán",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/pahss6UcHL1xsH6XN8KiiBIT0pf.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "mt762901",
         "type": "movie",
         "title": "Barevný sen",
@@ -315179,6 +315179,17 @@
         "year": 2024,
         "score": 54,
         "poster": "https://image.tmdb.org/t/p/w342/jeLCPQHuF0vzOjsJMoZ6qg4Gp2Z.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1165416",
+        "type": "movie",
+        "title": "Velký pán",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/pahss6UcHL1xsH6XN8KiiBIT0pf.jpg",
         "roles": [
           "actor"
         ]
@@ -350141,6 +350152,37 @@
       }
     ]
   },
+  "p5090207": {
+    "name": "Aleš Karel",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1791735",
+        "type": "movie",
+        "title": "Ženy v lihu",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/cYZhpRNXrjGf9LTT9LdVl88MZvc.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1367962",
+        "type": "movie",
+        "title": "Radost na dosah",
+        "year": 2024,
+        "score": 50,
+        "poster": "https://image.tmdb.org/t/p/w342/v2UwelTFvELtfBUDp50AWDm9UsR.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p1715980": {
     "name": "Miroslav Mach",
     "img": null,
@@ -350805,37 +350847,6 @@
         "poster": "",
         "roles": [
           "director"
-        ]
-      }
-    ]
-  },
-  "p5090207": {
-    "name": "Aleš Karel",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1791735",
-        "type": "movie",
-        "title": "Ženy v lihu",
-        "year": 2026,
-        "score": null,
-        "poster": "https://image.tmdb.org/t/p/w342/cYZhpRNXrjGf9LTT9LdVl88MZvc.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt1367962",
-        "type": "movie",
-        "title": "Radost na dosah",
-        "year": 2024,
-        "score": 50,
-        "poster": "https://image.tmdb.org/t/p/w342/v2UwelTFvELtfBUDp50AWDm9UsR.jpg",
-        "roles": [
-          "actor"
         ]
       }
     ]
