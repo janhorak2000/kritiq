@@ -566436,5 +566436,96 @@
       }
     ],
     "reviews": []
+  },
+  {
+    "title": "Zákon bestií",
+    "country": "Polsko",
+    "tmdb_id": 332839,
+    "imdb_id": "tt44079238",
+    "year": 2026,
+    "date": "2026-11-18",
+    "score": null,
+    "genre": "Krimi",
+    "runtime_min": null,
+    "runtime_max": null,
+    "poster": "https://image.tmdb.org/t/p/w342/KnhUSXgKqiG96mf4GofisAhhS2.jpg",
+    "gallery": [
+      "https://image.tmdb.org/t/p/w500/iMvGSFcxzvwLWyHDOLqwDX9JQ27.jpg"
+    ],
+    "summary": "Blíží se propuštění vraha dětí a Polsko panikaří. Ožívá taky morální konflikt mezi hlavní vyšetřovatelkou a vrahovou psychiatričkou.",
+    "director": {
+      "id": 2167442,
+      "name": "Kasper Bajon",
+      "image": ""
+    },
+    "composer": {
+      "id": 3251312,
+      "name": "Piotr Waglewski",
+      "image": ""
+    },
+    "writer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "actors": [
+      {
+        "id": 105562,
+        "name": "Agnieszka Grochowska",
+        "birthday": "1979-12-31",
+        "deathday": null,
+        "age": 46,
+        "image": "https://image.tmdb.org/t/p/w300/9XBjnqR2PWw4KdcyTRaTZCFllxu.jpg"
+      },
+      {
+        "id": 1527552,
+        "name": "Agnieszka Żulewska",
+        "birthday": "1987-06-26",
+        "deathday": null,
+        "age": 39,
+        "image": "https://image.tmdb.org/t/p/w300/4rvcJMkl1Test5C6DFFpqJY2CrJ.jpg"
+      },
+      {
+        "id": 2458673,
+        "name": "Michał Pawlik",
+        "birthday": "1993-09-03",
+        "deathday": null,
+        "age": 33,
+        "image": "https://image.tmdb.org/t/p/w300/loDhKENuDQ6VCijcWVq9WUBvuX9.jpg"
+      },
+      {
+        "id": 82313,
+        "name": "Andrzej Chyra",
+        "birthday": "1964-08-27",
+        "deathday": null,
+        "age": 62,
+        "image": "https://image.tmdb.org/t/p/w300/md1w26RncjcM3KHTTDnYtgC1rme.jpg"
+      },
+      {
+        "id": 46244,
+        "name": "Kamilla Baar",
+        "birthday": "1979-10-06",
+        "deathday": null,
+        "age": 47,
+        "image": "https://image.tmdb.org/t/p/w300/eTQ5AazCtryaBYZBCIuaATRa9l4.jpg"
+      },
+      {
+        "id": 1650372,
+        "name": "Michalina Łabacz",
+        "birthday": "1992-01-01",
+        "deathday": null,
+        "age": 34,
+        "image": "https://image.tmdb.org/t/p/w300/960l2Fl6aH3KYOGAQN2ZgCVMz5m.jpg"
+      },
+      {
+        "id": 1573859,
+        "name": "Jacek Beler",
+        "birthday": "1983-01-01",
+        "deathday": null,
+        "age": 43,
+        "image": "https://image.tmdb.org/t/p/w300/rKGVdNT83XNUNg4r28AMFnk5H4k.jpg"
+      }
+    ],
+    "reviews": []
   }
 ]
