@@ -468432,6 +468432,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1559980",
+        "type": "movie",
+        "title": "Vánoční gospel",
+        "year": 2026,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/ihbN6lNDXKe6w9xE6IBFMVF2Rkr.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
         "id": "st241554",
         "type": "show",
         "title": "Z deníků Robokata",
@@ -715777,6 +715788,26 @@
         "year": 2026,
         "score": 66,
         "poster": "https://image.tmdb.org/t/p/w342/vjpaxe0KKTv9sfs5V4Uu2tAaDHm.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2671331": {
+    "name": "Twinkie Clark",
+    "img": "/rmMsLct8twc9iaqUqKNwElun1DV.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1559980",
+        "type": "movie",
+        "title": "Vánoční gospel",
+        "year": 2026,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/ihbN6lNDXKe6w9xE6IBFMVF2Rkr.jpg",
         "roles": [
           "actor"
         ]
