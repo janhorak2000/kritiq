@@ -346945,6 +346945,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1559980",
+        "type": "movie",
+        "title": "Vánoční gospel",
+        "year": 2026,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/ihbN6lNDXKe6w9xE6IBFMVF2Rkr.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st101591",
         "type": "show",
         "title": "BMF",
@@ -377570,6 +377581,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "mt1559980",
+        "type": "movie",
+        "title": "Vánoční gospel",
+        "year": 2026,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/ihbN6lNDXKe6w9xE6IBFMVF2Rkr.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt26594",
         "type": "movie",
@@ -522692,6 +522714,48 @@
       }
     ]
   },
+  "p1214155": {
+    "name": "CeCe Winans",
+    "img": "/jlpMs9ojyYftb2lWCPhK56p61mk.jpg",
+    "birthday": "1964-10-08",
+    "deathday": null,
+    "age": 62,
+    "works": [
+      {
+        "id": "mt1559980",
+        "type": "movie",
+        "title": "Vánoční gospel",
+        "year": 2026,
+        "score": 66,
+        "poster": "https://image.tmdb.org/t/p/w342/ihbN6lNDXKe6w9xE6IBFMVF2Rkr.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st721",
+        "type": "show",
+        "title": "Vítejte doma",
+        "year": 2003,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/b4W9qLuGKl1y9PbDgdPzyuwWeLx.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st4270",
+        "type": "show",
+        "title": "Living Single",
+        "year": 1993,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/mgttYgspalxaLVrjJ9rxzDG9owO.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p4899045": {
     "name": "Jasna Anderson",
     "img": null,
@@ -630212,37 +630276,6 @@
         "year": 1993,
         "score": 78,
         "poster": "https://image.tmdb.org/t/p/w342/c1b2UtrhbMOdHKISB2ZvINo9eyc.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1214155": {
-    "name": "CeCe Winans",
-    "img": "/jlpMs9ojyYftb2lWCPhK56p61mk.jpg",
-    "birthday": "1964-10-08",
-    "deathday": null,
-    "age": 61,
-    "works": [
-      {
-        "id": "st721",
-        "type": "show",
-        "title": "Vítejte doma",
-        "year": 2003,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/b4W9qLuGKl1y9PbDgdPzyuwWeLx.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st4270",
-        "type": "show",
-        "title": "Living Single",
-        "year": 1993,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/mgttYgspalxaLVrjJ9rxzDG9owO.jpg",
         "roles": [
           "actor"
         ]

@@ -82394,6 +82394,17 @@
     "age": 26,
     "works": [
       {
+        "id": "st243954",
+        "type": "show",
+        "title": "Motorheads",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/jglGmYMPEiHD7tVncvif7WtCOBJ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st255055",
         "type": "show",
         "title": "Doktorka",
@@ -82411,17 +82422,6 @@
         "year": 2025,
         "score": 59,
         "poster": "https://image.tmdb.org/t/p/w342/oE0JFrN5rimTi0smRgEDiJuUKsN.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st243954",
-        "type": "show",
-        "title": "Motorheads",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/jglGmYMPEiHD7tVncvif7WtCOBJ.jpg",
         "roles": [
           "actor"
         ]
@@ -104642,17 +104642,6 @@
         ]
       },
       {
-        "id": "st155537",
-        "type": "show",
-        "title": "Volavka",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/waW5NMQmpd3Pox7lHGjXZt14Xrp.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st197434",
         "type": "show",
         "title": "Přítel rodiny",
@@ -104670,6 +104659,17 @@
         "year": 2022,
         "score": 73,
         "poster": "https://image.tmdb.org/t/p/w342/vOos5pwq3tzPCwFohG80i2SXAgR.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st155537",
+        "type": "show",
+        "title": "Volavka",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/waW5NMQmpd3Pox7lHGjXZt14Xrp.jpg",
         "roles": [
           "actor"
         ]
@@ -203624,6 +203624,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1496696",
+        "type": "movie",
+        "title": "Breeder",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/alsb3UC17kxIcytLWvwkmL0STgU.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st273160",
         "type": "show",
         "title": "Krása",
@@ -239550,23 +239561,23 @@
     "age": 47,
     "works": [
       {
-        "id": "st259486",
-        "type": "show",
-        "title": "Gwi-gong",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/kjp97iwFZ2iAG2AVPsgQeVsUMHK.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st238084",
         "type": "show",
         "title": "Spoušť",
         "year": 2025,
         "score": 72,
         "poster": "https://image.tmdb.org/t/p/w342/6kk0yTA1m8Hxt9lctUT3ygmj6aa.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st259486",
+        "type": "show",
+        "title": "Gwi-gong",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/kjp97iwFZ2iAG2AVPsgQeVsUMHK.jpg",
         "roles": [
           "actor"
         ]
@@ -272210,26 +272221,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/zhV7B610l7hjlri4ywikJ18ONuq.jpg",
         "roles": [
           "writer"
-        ]
-      }
-    ]
-  },
-  "p4606573": {
-    "name": "Kim So-wan",
-    "img": "/yTyX7lzpWS5qgN5hWqQIKdvKQ5w.jpg",
-    "birthday": "2001-11-24",
-    "deathday": null,
-    "age": 24,
-    "works": [
-      {
-        "id": "mt1483525",
-        "type": "movie",
-        "title": "Případně láska",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
-        "roles": [
-          "actor"
         ]
       }
     ]
@@ -352714,6 +352705,26 @@
       }
     ]
   },
+  "p4606573": {
+    "name": "Kim So-wan",
+    "img": "/yTyX7lzpWS5qgN5hWqQIKdvKQ5w.jpg",
+    "birthday": "2001-11-24",
+    "deathday": null,
+    "age": 24,
+    "works": [
+      {
+        "id": "mt1483525",
+        "type": "movie",
+        "title": "Případně láska",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2932076": {
     "name": "Anna Carini",
     "img": "/aP1vMEMlUjgV90fS60MMjiEfnHi.jpg",
@@ -355148,6 +355159,26 @@
         "year": 2021,
         "score": 72,
         "poster": "https://image.tmdb.org/t/p/w342/tQhQPIO85lIEbodo9qkGrWVNg0r.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4757086": {
+    "name": "Euber Silva",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1307474",
+        "type": "movie",
+        "title": "Jménem mého syna",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/v6JBUlm6nIYx3ixF38I5ZVpQZgq.jpg",
         "roles": [
           "actor"
         ]
@@ -431786,46 +431817,6 @@
       }
     ]
   },
-  "p1504485": {
-    "name": "Bae Woo-hee",
-    "img": "/dbyf0RKl2LKGom0ZNHGtkeuEOkn.jpg",
-    "birthday": "1991-11-21",
-    "deathday": null,
-    "age": 34,
-    "works": [
-      {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1676283": {
-    "name": "Kim Kyu-jong",
-    "img": "/1AHoF2Kw8z9jJhUHIxPdrneYIFx.jpg",
-    "birthday": "1987-02-24",
-    "deathday": null,
-    "age": 39,
-    "works": [
-      {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p3615132": {
     "name": "George Nhat Hoang Pham",
     "img": null,
@@ -456694,6 +456685,46 @@
         "year": 2022,
         "score": 83,
         "poster": "https://image.tmdb.org/t/p/w342/2K42VY9KH6dmazbYSdtcnmj4JOx.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1504485": {
+    "name": "Bae Woo-hee",
+    "img": "/dbyf0RKl2LKGom0ZNHGtkeuEOkn.jpg",
+    "birthday": "1991-11-21",
+    "deathday": null,
+    "age": 34,
+    "works": [
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1676283": {
+    "name": "Kim Kyu-jong",
+    "img": "/1AHoF2Kw8z9jJhUHIxPdrneYIFx.jpg",
+    "birthday": "1987-02-24",
+    "deathday": null,
+    "age": 39,
+    "works": [
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
         "roles": [
           "actor"
         ]
