@@ -40485,6 +40485,17 @@
     "age": 80,
     "works": [
       {
+        "id": "mt1336166",
+        "type": "movie",
+        "title": "Rolling Loud: Bez zábran",
+        "year": 2026,
+        "score": 87,
+        "poster": "https://image.tmdb.org/t/p/w342/8NMYWNLrwLuiNgRKfuWNhzBH9pO.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1242332",
         "type": "movie",
         "title": "Normal",
@@ -94381,6 +94392,17 @@
         "year": 2026,
         "score": 35,
         "poster": "https://image.tmdb.org/t/p/w342/aqkkqR59aMJx0pjZ4ngUzkz3jlL.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st301435",
+        "type": "show",
+        "title": "Muži v letu",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/8hVx5yOqj1SvMnriwPJUvdLeRJO.jpg",
         "roles": [
           "actor"
         ]
@@ -287010,6 +287032,17 @@
     "age": 39,
     "works": [
       {
+        "id": "mt1615596",
+        "type": "movie",
+        "title": "Best Pancakes in the County",
+        "year": 2026,
+        "score": 60,
+        "poster": "https://image.tmdb.org/t/p/w342/wXVYDQl2ENk3NhT1ETS4C8cAEOC.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1387382",
         "type": "movie",
         "title": "Lovecká sezóna",
@@ -346501,23 +346534,23 @@
         ]
       },
       {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st135840",
         "type": "show",
         "title": "Ostrovní blues",
         "year": 2022,
         "score": 86,
         "poster": "https://image.tmdb.org/t/p/w342/1qbiyfmJe7tu4QpqCz5flW93mKj.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
         "roles": [
           "actor"
         ]
@@ -370202,6 +370235,37 @@
       }
     ]
   },
+  "p557401": {
+    "name": "Paul Elia",
+    "img": "/7n46rHHa9lTz70b55sVNXr7ZJ4Q.jpg",
+    "birthday": "1988-02-23",
+    "deathday": null,
+    "age": 38,
+    "works": [
+      {
+        "id": "mt1336166",
+        "type": "movie",
+        "title": "Rolling Loud: Bez zábran",
+        "year": 2026,
+        "score": 87,
+        "poster": "https://image.tmdb.org/t/p/w342/8NMYWNLrwLuiNgRKfuWNhzBH9pO.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st51402",
+        "type": "show",
+        "title": "Mixology",
+        "year": 2014,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/wqmf1BB7BiQKAr3WqYNEt9fEiWg.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2060710": {
     "name": "Greg Austin",
     "img": "/ugxmrZZy4SmD7t2VqdafW5Abqpk.jpg",
@@ -370535,6 +370599,28 @@
         "poster": "https://image.tmdb.org/t/p/w342/bRa83oPFFPqaAF3wrpVWPqqfFel.jpg",
         "roles": [
           "actor"
+        ]
+      }
+    ]
+  },
+  "p1250945": {
+    "name": "Özcan Deniz",
+    "img": "/1xugZDdp0vskwozHBSTCIFQPjCV.jpg",
+    "birthday": "1972-05-19",
+    "deathday": null,
+    "age": 54,
+    "works": [
+      {
+        "id": "mt1561834",
+        "type": "movie",
+        "title": "Poslední večeře",
+        "year": 2026,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/5VhfAWFs005xxN9akWJ2VIF5ozJ.jpg",
+        "roles": [
+          "actor",
+          "director",
+          "writer"
         ]
       }
     ]
@@ -370876,77 +370962,6 @@
         "year": 2026,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/gkcJYUSaJPYzAN7f5NsxcLmi95S.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6591555": {
-    "name": "Jung Seung-pil",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1483525",
-        "type": "movie",
-        "title": "Případně láska",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6443803": {
-    "name": "Lee Ha-rim",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1483525",
-        "type": "movie",
-        "title": "Případně láska",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5141799": {
-    "name": "Kim Tae-yoon",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1483525",
-        "type": "movie",
-        "title": "Případně láska",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "mt923344",
-        "type": "movie",
-        "title": "Další Sohi",
-        "year": 2022,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/rmWXGHKeKEhYncZdeRxRnGZlldM.jpg",
         "roles": [
           "actor"
         ]
@@ -424522,6 +424537,37 @@
       }
     ]
   },
+  "p5141799": {
+    "name": "Kim Tae-yoon",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1483525",
+        "type": "movie",
+        "title": "Případně láska",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt923344",
+        "type": "movie",
+        "title": "Další Sohi",
+        "year": 2022,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/rmWXGHKeKEhYncZdeRxRnGZlldM.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p3470701": {
     "name": "Nina Makarchuk",
     "img": null,
@@ -447229,6 +447275,46 @@
       }
     ]
   },
+  "p6591555": {
+    "name": "Jung Seung-pil",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1483525",
+        "type": "movie",
+        "title": "Případně láska",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6443803": {
+    "name": "Lee Ha-rim",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1483525",
+        "type": "movie",
+        "title": "Případně láska",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p6166625": {
     "name": "Christine Fekete",
     "img": null,
@@ -449939,6 +450025,86 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/w82vKEoYNZ9SxYxvccxO85CnZKE.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1380635": {
+    "name": "Rejane Faria",
+    "img": "/iie8IOxVZF6JXB416EanhE2bqkT.jpg",
+    "birthday": "1961-04-13",
+    "deathday": null,
+    "age": 65,
+    "works": [
+      {
+        "id": "mt1307474",
+        "type": "movie",
+        "title": "Jménem mého syna",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/v6JBUlm6nIYx3ixF38I5ZVpQZgq.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2252913": {
+    "name": "Giovanni Venturini",
+    "img": "/5a9aRC7a7J4qRlXebuT4Al1Rmax.jpg",
+    "birthday": "1991-10-31",
+    "deathday": null,
+    "age": 35,
+    "works": [
+      {
+        "id": "mt1307474",
+        "type": "movie",
+        "title": "Jménem mého syna",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/v6JBUlm6nIYx3ixF38I5ZVpQZgq.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3399608": {
+    "name": "Marisa Revert",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1307474",
+        "type": "movie",
+        "title": "Jménem mého syna",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/v6JBUlm6nIYx3ixF38I5ZVpQZgq.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1376719": {
+    "name": "Norberto Novais Oliveira",
+    "img": "/g7EOVSiDSElVu8p2PBIoe2MHkf9.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1307474",
+        "type": "movie",
+        "title": "Jménem mého syna",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/v6JBUlm6nIYx3ixF38I5ZVpQZgq.jpg",
         "roles": [
           "actor"
         ]
@@ -536804,26 +536970,6 @@
       }
     ]
   },
-  "p557401": {
-    "name": "Paul Elia",
-    "img": "/7n46rHHa9lTz70b55sVNXr7ZJ4Q.jpg",
-    "birthday": "1988-02-23",
-    "deathday": null,
-    "age": 38,
-    "works": [
-      {
-        "id": "st51402",
-        "type": "show",
-        "title": "Mixology",
-        "year": 2014,
-        "score": 72,
-        "poster": "https://image.tmdb.org/t/p/w342/wqmf1BB7BiQKAr3WqYNEt9fEiWg.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p2684949": {
     "name": "Charlie Reina",
     "img": "/ru7PqznigyhI9KHLQbBSJRd4L65.jpg",
@@ -538751,6 +538897,17 @@
     "age": 36,
     "works": [
       {
+        "id": "st209110",
+        "type": "show",
+        "title": "Cena přiznání",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/6R7UMF0aAOy9p4v8dlGtCIPhwcS.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st233742",
         "type": "show",
         "title": "Nyutopia",
@@ -538768,17 +538925,6 @@
         "year": 2025,
         "score": 64,
         "poster": "https://image.tmdb.org/t/p/w342/2veWG0YsXXfKdVlBTzkFduk2xfX.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st209110",
-        "type": "show",
-        "title": "Cena přiznání",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/6R7UMF0aAOy9p4v8dlGtCIPhwcS.jpg",
         "roles": [
           "actor"
         ]
@@ -539309,26 +539455,6 @@
       }
     ]
   },
-  "p4012858": {
-    "name": "Min Hyo-won",
-    "img": "/hPoex7FhP1fQ9fIqLVMqyGdRO8v.jpg",
-    "birthday": "1993-12-06",
-    "deathday": null,
-    "age": 32,
-    "works": [
-      {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p3026939": {
     "name": "Ayasa Goto",
     "img": "/kLfUvPkFmhWTPkUBruBEzIBDXNx.jpg",
@@ -539365,6 +539491,26 @@
         "year": 2018,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/cvYi7KYiCr7OCKoZlXaFShfH3vz.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4111836": {
+    "name": "Hannah Shealy",
+    "img": "/pgTL2f3L8kJzMhzx9IaiUAZ38pB.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st81723",
+        "type": "show",
+        "title": "Pozlacený věk",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/msO0qHSe2yrpdkLLoeg0s1Wiiu9.jpg",
         "roles": [
           "actor"
         ]
@@ -545764,66 +545910,6 @@
       }
     ]
   },
-  "p5275339": {
-    "name": "Ella Kennedy Davis",
-    "img": "/fWrgzw6fsBt3fAeQ9si7xZov810.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st241609",
-        "type": "show",
-        "title": "Sousedská tajemství",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5011108": {
-    "name": "Jordan Avery",
-    "img": "/1950vCPlFkuUB0u2TMVsZx3mCO5.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st241609",
-        "type": "show",
-        "title": "Sousedská tajemství",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3370623": {
-    "name": "Finn Egan-Liang",
-    "img": "/7oHMr3CkchPsoId5xvHrJgRNIEF.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st241609",
-        "type": "show",
-        "title": "Sousedská tajemství",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p3581625": {
     "name": "Brandon Finn",
     "img": "/vQPHRLGuZns4TZi8vRIXShFS1K9.jpg",
@@ -548467,6 +548553,26 @@
         "poster": "https://image.tmdb.org/t/p/w342/mryeyCsFApnwYDpDcy3I6fYx2Dd.jpg",
         "roles": [
           "director"
+        ]
+      }
+    ]
+  },
+  "p3693429": {
+    "name": "Eloïse Rey",
+    "img": "/xY9uPf0PGBAxgjXPObGLk6c5GIh.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st303044",
+        "type": "show",
+        "title": "Campus Drivers",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/oPltcyfWWfVmxB6lV8JZZJV3m7Q.jpg",
+        "roles": [
+          "actor"
         ]
       }
     ]
@@ -560713,26 +560819,6 @@
       }
     ]
   },
-  "p4111836": {
-    "name": "Hannah Shealy",
-    "img": "/pgTL2f3L8kJzMhzx9IaiUAZ38pB.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st81723",
-        "type": "show",
-        "title": "Pozlacený věk",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/msO0qHSe2yrpdkLLoeg0s1Wiiu9.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p4180311": {
     "name": "Kang Seo-ha",
     "img": "/1i7Xb2gbnzeq17d6qTaOOOWBost.jpg",
@@ -560787,6 +560873,26 @@
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/bh7OXB05LgElZDMOoxFNSJL9o4h.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4012858": {
+    "name": "Min Hyo-won",
+    "img": "/hPoex7FhP1fQ9fIqLVMqyGdRO8v.jpg",
+    "birthday": "1993-12-06",
+    "deathday": null,
+    "age": 32,
+    "works": [
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
         "roles": [
           "actor"
         ]
@@ -561618,6 +561724,66 @@
         "year": 2025,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/twlp0YMmuKmn4cKAInAL3zde59W.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5275339": {
+    "name": "Ella Kennedy Davis",
+    "img": "/fWrgzw6fsBt3fAeQ9si7xZov810.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st241609",
+        "type": "show",
+        "title": "Sousedská tajemství",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5011108": {
+    "name": "Jordan Avery",
+    "img": "/1950vCPlFkuUB0u2TMVsZx3mCO5.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st241609",
+        "type": "show",
+        "title": "Sousedská tajemství",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3370623": {
+    "name": "Finn Egan-Liang",
+    "img": "/7oHMr3CkchPsoId5xvHrJgRNIEF.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st241609",
+        "type": "show",
+        "title": "Sousedská tajemství",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
         "roles": [
           "actor"
         ]

@@ -192472,6 +192472,17 @@
         ]
       },
       {
+        "id": "st290826",
+        "type": "show",
+        "title": "DIG",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/eyW6V0R0SzG3BqtYKhlZKGBaUCn.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt986056",
         "type": "movie",
         "title": "Thunderbolts*",
@@ -193007,6 +193018,17 @@
     "deathday": null,
     "age": 39,
     "works": [
+      {
+        "id": "mt1400336",
+        "type": "movie",
+        "title": "Všichni fotři jsou lotři",
+        "year": 2026,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/bVfMLpetWRcCkH5rPkjSSZkI1WG.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "st253254",
         "type": "show",
@@ -237547,17 +237569,6 @@
         ]
       },
       {
-        "id": "st209110",
-        "type": "show",
-        "title": "Cena přiznání",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/6R7UMF0aAOy9p4v8dlGtCIPhwcS.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st233742",
         "type": "show",
         "title": "Nyutopia",
@@ -237575,6 +237586,17 @@
         "year": 2025,
         "score": 77,
         "poster": "https://image.tmdb.org/t/p/w342/j5E4RXqovOrV3CS1duTGxDfmlFt.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st209110",
+        "type": "show",
+        "title": "Cena přiznání",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/6R7UMF0aAOy9p4v8dlGtCIPhwcS.jpg",
         "roles": [
           "actor"
         ]
@@ -306475,23 +306497,23 @@
     "age": 29,
     "works": [
       {
-        "id": "st305644",
-        "type": "show",
-        "title": "포핸즈",
-        "year": 2026,
-        "score": 87,
-        "poster": "https://image.tmdb.org/t/p/w342/sdvxrJMzACBUG87YS1YYKmRzTN8.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st291496",
         "type": "show",
         "title": "Karameláska",
         "year": 2026,
         "score": 75,
         "poster": "https://image.tmdb.org/t/p/w342/ny8zYj40mWGTgKJi1a8hjNFUj9n.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st305644",
+        "type": "show",
+        "title": "포핸즈",
+        "year": 2026,
+        "score": 87,
+        "poster": "https://image.tmdb.org/t/p/w342/sdvxrJMzACBUG87YS1YYKmRzTN8.jpg",
         "roles": [
           "actor"
         ]
@@ -390716,84 +390738,82 @@
       }
     ]
   },
-  "p2968000": {
-    "name": "Misa Ishii",
-    "img": "/ht2WC37mCpbpRIfCrcBzODGP4Fs.jpg",
-    "birthday": "1991-01-28",
-    "deathday": null,
-    "age": 35,
+  "p1508542": {
+    "name": "Fred Davis",
+    "img": "/rlDf5lwVjiCxcxVc9NmEk8CKXrU.jpg",
+    "birthday": "1921-01-01",
+    "deathday": "1996-07-05",
+    "age": 75,
     "works": [
       {
-        "id": "st220542",
+        "id": "st155537",
         "type": "show",
-        "title": "Zápisky Lékárnice",
-        "year": 2023,
-        "score": 86,
-        "poster": "https://image.tmdb.org/t/p/w342/sUep3kEPjvXp3VKAfNikpzBZmzw.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st131041",
-        "type": "show",
-        "title": "Blue Lock",
+        "title": "Volavka",
         "year": 2022,
         "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st110070",
-        "type": "show",
-        "title": "Horimiya",
-        "year": 2021,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/2ZOfEetRHnqCBzvubdYU3ytwcq.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st121078",
-        "type": "show",
-        "title": "見える子ちゃん",
-        "year": 2021,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/oI3XhfpVoXRBdA7orxPsFkKcWKU.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st75208",
-        "type": "show",
-        "title": "Ďáblův chlapec",
-        "year": 2018,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/vFIk26CGrhDrWgYkTdVqp6dZc48.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/waW5NMQmpd3Pox7lHGjXZt14Xrp.jpg",
         "roles": [
           "actor"
         ]
       }
     ]
   },
-  "p2845394": {
-    "name": "Hisashi Yamauchi",
-    "img": null,
-    "birthday": null,
+  "p1834241": {
+    "name": "Kim Se-jeong",
+    "img": "/xGlsWq7iKB2DDNs04CaJEyQV3Vl.jpg",
+    "birthday": "1996-08-28",
     "deathday": null,
-    "age": null,
+    "age": 30,
     "works": [
       {
-        "id": "st90296",
+        "id": "st154825",
         "type": "show",
-        "title": "Tokyo Vice",
+        "title": "Obchodní návrh",
         "year": 2022,
         "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st113268",
+        "type": "show",
+        "title": "Záhadný lovec",
+        "year": 2020,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/xwXgYXqxLRAYfVGUaS1STEFnmzZ.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st72374",
+        "type": "show",
+        "title": "Škola 2017",
+        "year": 2017,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/1YgqoxZ2bCIHYXwudxNitYsbJXL.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3954271": {
+    "name": "Kim Min-seok",
+    "img": "/or71xiL6gCfx7EkBSC9nMvcfhRL.jpg",
+    "birthday": "1991-08-26",
+    "deathday": null,
+    "age": 35,
+    "works": [
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
         "roles": [
           "actor"
         ]
@@ -397061,70 +397081,6 @@
       }
     ]
   },
-  "p3009030": {
-    "name": "Yoo Byeong-hun",
-    "img": "/5E3tvk5Y1IBOV26SIE30s49pqlT.jpg",
-    "birthday": "1972-09-06",
-    "deathday": null,
-    "age": 54,
-    "works": [
-      {
-        "id": "st209110",
-        "type": "show",
-        "title": "Cena přiznání",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/6R7UMF0aAOy9p4v8dlGtCIPhwcS.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st219246",
-        "type": "show",
-        "title": "Dobrá práce",
-        "year": 2025,
-        "score": 90,
-        "poster": "https://image.tmdb.org/t/p/w342/koMkV9qm0PEZHDmX5dRpBpMH1FY.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st197067",
-        "type": "show",
-        "title": "Výjimečná právnička U Jong-u",
-        "year": 2022,
-        "score": 85,
-        "poster": "https://image.tmdb.org/t/p/w342/yv57TccCkgdy3St7rspBPKROeRK.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st211261",
-        "type": "show",
-        "title": "Specialisté Prvního Zásahu",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st116612",
-        "type": "show",
-        "title": "Beyond Evil",
-        "year": 2021,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/khgMdk2ctVdk5KWaSJjVHRa2Use.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p2309881": {
     "name": "Bali Padda",
     "img": null,
@@ -398723,6 +398679,48 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/oPltcyfWWfVmxB6lV8JZZJV3m7Q.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1887250": {
+    "name": "Brennan Lee Mulligan",
+    "img": "/shOiKpLXSNL4zNnojVJSBUtE7Ma.jpg",
+    "birthday": "1988-01-04",
+    "deathday": null,
+    "age": 38,
+    "works": [
+      {
+        "id": "st290826",
+        "type": "show",
+        "title": "DIG",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/eyW6V0R0SzG3BqtYKhlZKGBaUCn.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st201834",
+        "type": "show",
+        "title": "ted",
+        "year": 2024,
+        "score": 79,
+        "poster": "https://image.tmdb.org/t/p/w342/cPn71YFDENH0JkWUezlsLyWmLfN.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st129412",
+        "type": "show",
+        "title": "Game Changer",
+        "year": 2019,
+        "score": 92,
+        "poster": "https://image.tmdb.org/t/p/w342/6kel6DiavQEDOOMJQQoz21MrV5B.jpg",
         "roles": [
           "actor"
         ]
@@ -401722,37 +401720,6 @@
       }
     ]
   },
-  "p1887250": {
-    "name": "Brennan Lee Mulligan",
-    "img": "/shOiKpLXSNL4zNnojVJSBUtE7Ma.jpg",
-    "birthday": "1988-01-04",
-    "deathday": null,
-    "age": 38,
-    "works": [
-      {
-        "id": "st201834",
-        "type": "show",
-        "title": "ted",
-        "year": 2024,
-        "score": 79,
-        "poster": "https://image.tmdb.org/t/p/w342/cPn71YFDENH0JkWUezlsLyWmLfN.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st129412",
-        "type": "show",
-        "title": "Game Changer",
-        "year": 2019,
-        "score": 92,
-        "poster": "https://image.tmdb.org/t/p/w342/6kel6DiavQEDOOMJQQoz21MrV5B.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p111767": {
     "name": "Sarah Natochenny",
     "img": "/nSIs26SwgxGvhXSBDHKyXfzHmNm.jpg",
@@ -402341,48 +402308,6 @@
       }
     ]
   },
-  "p1834241": {
-    "name": "Kim Se-jeong",
-    "img": "/xGlsWq7iKB2DDNs04CaJEyQV3Vl.jpg",
-    "birthday": "1996-08-28",
-    "deathday": null,
-    "age": 30,
-    "works": [
-      {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st113268",
-        "type": "show",
-        "title": "Záhadný lovec",
-        "year": 2020,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/xwXgYXqxLRAYfVGUaS1STEFnmzZ.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st72374",
-        "type": "show",
-        "title": "Škola 2017",
-        "year": 2017,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/1YgqoxZ2bCIHYXwudxNitYsbJXL.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p2508299": {
     "name": "Giampaolo Nerini",
     "img": null,
@@ -402548,6 +402473,134 @@
         "year": 2021,
         "score": 82,
         "poster": "https://image.tmdb.org/t/p/w342/lPniIaLkepX4RKaUmvAJmoR1RCv.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3009030": {
+    "name": "Yoo Byeong-hun",
+    "img": "/5E3tvk5Y1IBOV26SIE30s49pqlT.jpg",
+    "birthday": "1972-09-06",
+    "deathday": null,
+    "age": 54,
+    "works": [
+      {
+        "id": "st219246",
+        "type": "show",
+        "title": "Dobrá práce",
+        "year": 2025,
+        "score": 90,
+        "poster": "https://image.tmdb.org/t/p/w342/koMkV9qm0PEZHDmX5dRpBpMH1FY.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st209110",
+        "type": "show",
+        "title": "Cena přiznání",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/6R7UMF0aAOy9p4v8dlGtCIPhwcS.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st197067",
+        "type": "show",
+        "title": "Výjimečná právnička U Jong-u",
+        "year": 2022,
+        "score": 85,
+        "poster": "https://image.tmdb.org/t/p/w342/yv57TccCkgdy3St7rspBPKROeRK.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st211261",
+        "type": "show",
+        "title": "Specialisté Prvního Zásahu",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st116612",
+        "type": "show",
+        "title": "Beyond Evil",
+        "year": 2021,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/khgMdk2ctVdk5KWaSJjVHRa2Use.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2968000": {
+    "name": "Misa Ishii",
+    "img": "/ht2WC37mCpbpRIfCrcBzODGP4Fs.jpg",
+    "birthday": "1991-01-28",
+    "deathday": null,
+    "age": 35,
+    "works": [
+      {
+        "id": "st220542",
+        "type": "show",
+        "title": "Zápisky Lékárnice",
+        "year": 2023,
+        "score": 86,
+        "poster": "https://image.tmdb.org/t/p/w342/sUep3kEPjvXp3VKAfNikpzBZmzw.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st131041",
+        "type": "show",
+        "title": "Blue Lock",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st110070",
+        "type": "show",
+        "title": "Horimiya",
+        "year": 2021,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/2ZOfEetRHnqCBzvubdYU3ytwcq.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st121078",
+        "type": "show",
+        "title": "見える子ちゃん",
+        "year": 2021,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/oI3XhfpVoXRBdA7orxPsFkKcWKU.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st75208",
+        "type": "show",
+        "title": "Ďáblův chlapec",
+        "year": 2018,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/vFIk26CGrhDrWgYkTdVqp6dZc48.jpg",
         "roles": [
           "actor"
         ]
@@ -408792,6 +408845,26 @@
       }
     ]
   },
+  "p2845394": {
+    "name": "Hisashi Yamauchi",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st90296",
+        "type": "show",
+        "title": "Tokyo Vice",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p1615220": {
     "name": "Min Ji-eun",
     "img": "/ohy73GtKlGXx8lKurObGc8G74r0.jpg",
@@ -408826,46 +408899,6 @@
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1508542": {
-    "name": "Fred Davis",
-    "img": "/rlDf5lwVjiCxcxVc9NmEk8CKXrU.jpg",
-    "birthday": "1921-01-01",
-    "deathday": "1996-07-05",
-    "age": 75,
-    "works": [
-      {
-        "id": "st155537",
-        "type": "show",
-        "title": "Volavka",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/waW5NMQmpd3Pox7lHGjXZt14Xrp.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3954271": {
-    "name": "Kim Min-seok",
-    "img": "/or71xiL6gCfx7EkBSC9nMvcfhRL.jpg",
-    "birthday": "1991-08-26",
-    "deathday": null,
-    "age": 35,
-    "works": [
-      {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
         "roles": [
           "actor"
         ]

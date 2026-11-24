@@ -71095,6 +71095,17 @@
     "age": 67,
     "works": [
       {
+        "id": "st290826",
+        "type": "show",
+        "title": "DIG",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/eyW6V0R0SzG3BqtYKhlZKGBaUCn.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st155421",
         "type": "show",
         "title": "Jsou světla, která nevidíme",
@@ -88820,6 +88831,17 @@
     "deathday": null,
     "age": 54,
     "works": [
+      {
+        "id": "mt1400336",
+        "type": "movie",
+        "title": "Všichni fotři jsou lotři",
+        "year": 2026,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/bVfMLpetWRcCkH5rPkjSSZkI1WG.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "st200701",
         "type": "show",
@@ -148964,17 +148986,6 @@
     "age": 44,
     "works": [
       {
-        "id": "st209110",
-        "type": "show",
-        "title": "Cena přiznání",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/6R7UMF0aAOy9p4v8dlGtCIPhwcS.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st285770",
         "type": "show",
         "title": "Těšilo mě, bohužel",
@@ -148992,6 +149003,17 @@
         "year": 2025,
         "score": 90,
         "poster": "https://image.tmdb.org/t/p/w342/koMkV9qm0PEZHDmX5dRpBpMH1FY.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st209110",
+        "type": "show",
+        "title": "Cena přiznání",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/6R7UMF0aAOy9p4v8dlGtCIPhwcS.jpg",
         "roles": [
           "actor"
         ]
@@ -263466,6 +263488,17 @@
         ]
       },
       {
+        "id": "st259486",
+        "type": "show",
+        "title": "Gwi-gong",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/kjp97iwFZ2iAG2AVPsgQeVsUMHK.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st258025",
         "type": "show",
         "title": "Až po uši",
@@ -263483,17 +263516,6 @@
         "year": 2025,
         "score": 72,
         "poster": "https://image.tmdb.org/t/p/w342/6kk0yTA1m8Hxt9lctUT3ygmj6aa.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st259486",
-        "type": "show",
-        "title": "Gwi-gong",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/kjp97iwFZ2iAG2AVPsgQeVsUMHK.jpg",
         "roles": [
           "actor"
         ]
@@ -404098,6 +404120,26 @@
       }
     ]
   },
+  "p6693944": {
+    "name": "Marlon Robins",
+    "img": "/3tRE0rCDu7NxZdcOJ7xu56rvgoc.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1611767",
+        "type": "movie",
+        "title": "Vánoce na sílu",
+        "year": 2026,
+        "score": 62,
+        "poster": "https://image.tmdb.org/t/p/w342/7hp2jiRgTDJFdASaZdFLKERbc7Z.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p6142646": {
     "name": "Robin Windvogel",
     "img": null,
@@ -482078,59 +482120,6 @@
       }
     ]
   },
-  "p3042989": {
-    "name": "Seon Ah Rin",
-    "img": "/xr5q1rkz5SP6pphzhwDFLBExbMl.jpg",
-    "birthday": "1992-01-18",
-    "deathday": null,
-    "age": 34,
-    "works": [
-      {
-        "id": "st136369",
-        "type": "show",
-        "title": "Zítra je taky den",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st209275",
-        "type": "show",
-        "title": "Mohu vám pomoci?",
-        "year": 2022,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/4WRmW8ATNfKbacwh9eeL8i4SpSl.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st117378",
-        "type": "show",
-        "title": "Mouse",
-        "year": 2021,
-        "score": 86,
-        "poster": "https://image.tmdb.org/t/p/w342/lrWHBK1h4rrEnx5Ml8iDR1SwNux.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st116386",
-        "type": "show",
-        "title": "Doom at Your Service",
-        "year": 2021,
-        "score": 78,
-        "poster": "https://image.tmdb.org/t/p/w342/9szerhScQy1QVNgkTmAwsF62nGo.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1381868": {
     "name": "Gracy Goldman",
     "img": null,
@@ -482840,6 +482829,59 @@
         "year": 2022,
         "score": 86,
         "poster": "https://image.tmdb.org/t/p/w342/1qbiyfmJe7tu4QpqCz5flW93mKj.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3042989": {
+    "name": "Seon Ah Rin",
+    "img": "/xr5q1rkz5SP6pphzhwDFLBExbMl.jpg",
+    "birthday": "1992-01-18",
+    "deathday": null,
+    "age": 34,
+    "works": [
+      {
+        "id": "st209275",
+        "type": "show",
+        "title": "Mohu vám pomoci?",
+        "year": 2022,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/4WRmW8ATNfKbacwh9eeL8i4SpSl.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st136369",
+        "type": "show",
+        "title": "Zítra je taky den",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st117378",
+        "type": "show",
+        "title": "Mouse",
+        "year": 2021,
+        "score": 86,
+        "poster": "https://image.tmdb.org/t/p/w342/lrWHBK1h4rrEnx5Ml8iDR1SwNux.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st116386",
+        "type": "show",
+        "title": "Doom at Your Service",
+        "year": 2021,
+        "score": 78,
+        "poster": "https://image.tmdb.org/t/p/w342/9szerhScQy1QVNgkTmAwsF62nGo.jpg",
         "roles": [
           "actor"
         ]
@@ -485119,23 +485161,23 @@
         ]
       },
       {
-        "id": "st209110",
-        "type": "show",
-        "title": "Cena přiznání",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/6R7UMF0aAOy9p4v8dlGtCIPhwcS.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st281006",
         "type": "show",
         "title": "City na jazyku",
         "year": 2025,
         "score": 73,
         "poster": "https://image.tmdb.org/t/p/w342/i4AkVeH64zvm2CL33FtYfzZqMup.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st209110",
+        "type": "show",
+        "title": "Cena přiznání",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/6R7UMF0aAOy9p4v8dlGtCIPhwcS.jpg",
         "roles": [
           "actor"
         ]
@@ -488508,6 +488550,26 @@
       }
     ]
   },
+  "p1846190": {
+    "name": "Geoffrey Murphy",
+    "img": "/oUpTzxjpUx4plloKTLz0jUQInjK.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st241609",
+        "type": "show",
+        "title": "Sousedská tajemství",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p3094227": {
     "name": "Paola Montes De Oca",
     "img": "/AnaNOPWsAZ2al0ivMYYbpqz6j49.jpg",
@@ -491371,6 +491433,46 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/oPltcyfWWfVmxB6lV8JZZJV3m7Q.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6460733": {
+    "name": "Akis Stavropoulos",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st290826",
+        "type": "show",
+        "title": "DIG",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/eyW6V0R0SzG3BqtYKhlZKGBaUCn.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2590658": {
+    "name": "Galini Tseva",
+    "img": "/dTcVxZSd4A18dnz4T4x9KYioGm6.jpg",
+    "birthday": "1967-03-20",
+    "deathday": null,
+    "age": 59,
+    "works": [
+      {
+        "id": "st290826",
+        "type": "show",
+        "title": "DIG",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/eyW6V0R0SzG3BqtYKhlZKGBaUCn.jpg",
         "roles": [
           "actor"
         ]
@@ -502729,26 +502831,6 @@
         "year": 2025,
         "score": 77,
         "poster": "https://image.tmdb.org/t/p/w342/bNPVb2Sv4N3CO7l6AdfjxNkMTfN.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1846190": {
-    "name": "Geoffrey Murphy",
-    "img": "/oUpTzxjpUx4plloKTLz0jUQInjK.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st241609",
-        "type": "show",
-        "title": "Sousedská tajemství",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
         "roles": [
           "actor"
         ]

@@ -5777,6 +5777,17 @@
     "age": 48,
     "works": [
       {
+        "id": "mt1615596",
+        "type": "movie",
+        "title": "Best Pancakes in the County",
+        "year": 2026,
+        "score": 60,
+        "poster": "https://image.tmdb.org/t/p/w342/wXVYDQl2ENk3NhT1ETS4C8cAEOC.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1323625",
         "type": "movie",
         "title": "Night Patrol",
@@ -297007,23 +297018,23 @@
     "age": null,
     "works": [
       {
-        "id": "st155537",
-        "type": "show",
-        "title": "Volavka",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/waW5NMQmpd3Pox7lHGjXZt14Xrp.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st128113",
         "type": "show",
         "title": "Lovci duchů: Winchestrovi",
         "year": 2022,
         "score": 62,
         "poster": "https://image.tmdb.org/t/p/w342/oyleYabGfn6c50bIo4M3c7ogrfL.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st155537",
+        "type": "show",
+        "title": "Volavka",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/waW5NMQmpd3Pox7lHGjXZt14Xrp.jpg",
         "roles": [
           "actor"
         ]
@@ -351066,6 +351077,77 @@
       }
     ]
   },
+  "p6677392": {
+    "name": "Geoffrey Wills",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1336166",
+        "type": "movie",
+        "title": "Rolling Loud: Bez zábran",
+        "year": 2026,
+        "score": 87,
+        "poster": "https://image.tmdb.org/t/p/w342/8NMYWNLrwLuiNgRKfuWNhzBH9pO.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5125050": {
+    "name": "Matt Zingler",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1336166",
+        "type": "movie",
+        "title": "Rolling Loud: Bez zábran",
+        "year": 2026,
+        "score": 87,
+        "poster": "https://image.tmdb.org/t/p/w342/8NMYWNLrwLuiNgRKfuWNhzBH9pO.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3602881": {
+    "name": "Jonathan M. Jones",
+    "img": "/71UY5t8FxinQnUJT1jWqPqBmkYr.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1336166",
+        "type": "movie",
+        "title": "Rolling Loud: Bez zábran",
+        "year": 2026,
+        "score": 87,
+        "poster": "https://image.tmdb.org/t/p/w342/8NMYWNLrwLuiNgRKfuWNhzBH9pO.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st87017",
+        "type": "show",
+        "title": "P-Valley",
+        "year": 2020,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/qAuKjGNbcwdhbpxSciak8BFjQ5F.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p6599380": {
     "name": "Abel Neudorf",
     "img": null,
@@ -351825,26 +351907,6 @@
         "poster": "https://image.tmdb.org/t/p/w342/riEur2nRDGtOCD4EoDnsPDCwpNa.jpg",
         "roles": [
           "director"
-        ]
-      }
-    ]
-  },
-  "p2772084": {
-    "name": "Lee Hye-rin",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1483525",
-        "type": "movie",
-        "title": "Případně láska",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
-        "roles": [
-          "actor"
         ]
       }
     ]
@@ -465272,6 +465334,17 @@
         ]
       },
       {
+        "id": "st303044",
+        "type": "show",
+        "title": "Campus Drivers",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/oPltcyfWWfVmxB6lV8JZZJV3m7Q.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1252377",
         "type": "movie",
         "title": "La Dolce Villa",
@@ -469129,6 +469202,26 @@
         "year": 1982,
         "score": null,
         "poster": "",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2772084": {
+    "name": "Lee Hye-rin",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1483525",
+        "type": "movie",
+        "title": "Případně láska",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
         "roles": [
           "actor"
         ]
@@ -473508,6 +473601,46 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/kTOeFV92c3QHJ3bEkT660P7BcWN.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1424078": {
+    "name": "Kelly Crifer",
+    "img": "/fODDJGqjx0isu5zQvSGsESdVA5o.jpg",
+    "birthday": "1982-01-11",
+    "deathday": null,
+    "age": 44,
+    "works": [
+      {
+        "id": "mt1307474",
+        "type": "movie",
+        "title": "Jménem mého syna",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/v6JBUlm6nIYx3ixF38I5ZVpQZgq.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2738974": {
+    "name": "Ândrea Rodrigues",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1307474",
+        "type": "movie",
+        "title": "Jménem mého syna",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/v6JBUlm6nIYx3ixF38I5ZVpQZgq.jpg",
         "roles": [
           "actor"
         ]
@@ -582527,79 +582660,6 @@
       }
     ]
   },
-  "p4648860": {
-    "name": "Avery Echelard",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st155537",
-        "type": "show",
-        "title": "Volavka",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/waW5NMQmpd3Pox7lHGjXZt14Xrp.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2145271": {
-    "name": "Park Seon-ho",
-    "img": "/asuUwah7AtgbCCpnhkeIvGUfgrF.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st293608",
-        "type": "show",
-        "title": "Slečna Hongová v utajení",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/nJ0gSaXfoiPFngy1ulCCuxsKt0q.jpg",
-        "roles": [
-          "director"
-        ]
-      },
-      {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
-        "roles": [
-          "director"
-        ]
-      },
-      {
-        "id": "st78797",
-        "type": "show",
-        "title": "Wok of Love",
-        "year": 2018,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/kKt9aYn2sZTPkkDx1T7JKV3wHwK.jpg",
-        "roles": [
-          "director"
-        ]
-      },
-      {
-        "id": "st71349",
-        "type": "show",
-        "title": "Suspicious Partner",
-        "year": 2017,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/4ljaX3WO4RO7uTnQ5fKbaWgm85O.jpg",
-        "roles": [
-          "director"
-        ]
-      }
-    ]
-  },
   "p1975222": {
     "name": "Emiri Suyama",
     "img": "/A4FwQoK3fHAwO2tlQQA9tQp3BIW.jpg",
@@ -582760,6 +582820,66 @@
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/9rXf2AsOoqN4NkQPVuzcZ3dX7Dj.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1745256": {
+    "name": "Katherine Romans",
+    "img": "/tq72lzwI6hTOW0Ejc2H1gmsJ4U5.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st81723",
+        "type": "show",
+        "title": "Pozlacený věk",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/msO0qHSe2yrpdkLLoeg0s1Wiiu9.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4418476": {
+    "name": "Michael Burrell",
+    "img": "/4sqwCUq1CAGhOLgbnUCavxqSIZm.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st81723",
+        "type": "show",
+        "title": "Pozlacený věk",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/msO0qHSe2yrpdkLLoeg0s1Wiiu9.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3421282": {
+    "name": "Desmond McIntyre",
+    "img": "/zxV4dI4cpvS5FXLbs5tIQGfIQCN.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st119845",
+        "type": "show",
+        "title": "Power Book IV: Force",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/yzL4Tqbw2JA9MCsHJWFC4xV1IYU.jpg",
         "roles": [
           "actor"
         ]
@@ -592577,26 +592697,6 @@
       }
     ]
   },
-  "p1996221": {
-    "name": "Grace Parry",
-    "img": "/uZhxZG4qWw2jSC6DWi67yJLLVAh.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st241259",
-        "type": "show",
-        "title": "Sobík",
-        "year": 2024,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/e0I3aUxQiDvjClyxa4ZfuhitbQp.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1862263": {
     "name": "Melissa Canciller",
     "img": null,
@@ -595741,40 +595841,20 @@
       }
     ]
   },
-  "p5445051": {
-    "name": "Karen Prior",
-    "img": "/m0coa4SEbNf2RVyzdKDzKRDFTnq.jpg",
+  "p5339561": {
+    "name": "Jack Alldridge",
+    "img": "/zz3IDRqx7wM26KTwptjDH63st5c.jpg",
     "birthday": null,
     "deathday": null,
     "age": null,
     "works": [
       {
-        "id": "st241609",
+        "id": "st245219",
         "type": "show",
-        "title": "Sousedská tajemství",
+        "title": "Rána bleskem",
         "year": 2025,
         "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5445073": {
-    "name": "Will River",
-    "img": "/xaZteeHq9cgGFdyvDhk0QOyZi8T.jpg",
-    "birthday": "2004-12-02",
-    "deathday": null,
-    "age": 21,
-    "works": [
-      {
-        "id": "st241609",
-        "type": "show",
-        "title": "Sousedská tajemství",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/KyUrz3GA1FML3XnKkY795XxDxN.jpg",
         "roles": [
           "actor"
         ]
@@ -597613,6 +597693,17 @@
     "age": 36,
     "works": [
       {
+        "id": "st303143",
+        "type": "show",
+        "title": "My Royal Nemesis",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/u2cX3CVzUZLIGVwd9HB7bUhE7OP.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st289763",
         "type": "show",
         "title": "Zítra zase do práce!",
@@ -597630,17 +597721,6 @@
         "year": 2026,
         "score": 78,
         "poster": "https://image.tmdb.org/t/p/w342/fEYOFHAXZLTv9WF7zjy6qVuDHop.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st303143",
-        "type": "show",
-        "title": "My Royal Nemesis",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/u2cX3CVzUZLIGVwd9HB7bUhE7OP.jpg",
         "roles": [
           "actor"
         ]
@@ -598257,22 +598337,55 @@
       }
     ]
   },
-  "p3038163": {
-    "name": "Choi Yu-ju",
-    "img": "/250k8ArRW9MeEM5tX5CnRxWEQ7N.jpg",
-    "birthday": "1997-03-05",
+  "p2145271": {
+    "name": "Park Seon-ho",
+    "img": "/asuUwah7AtgbCCpnhkeIvGUfgrF.jpg",
+    "birthday": null,
     "deathday": null,
-    "age": 29,
+    "age": null,
     "works": [
       {
-        "id": "st291496",
+        "id": "st293608",
         "type": "show",
-        "title": "Karameláska",
+        "title": "Slečna Hongová v utajení",
         "year": 2026,
         "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/ny8zYj40mWGTgKJi1a8hjNFUj9n.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/nJ0gSaXfoiPFngy1ulCCuxsKt0q.jpg",
         "roles": [
-          "actor"
+          "director"
+        ]
+      },
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "st78797",
+        "type": "show",
+        "title": "Wok of Love",
+        "year": 2018,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/kKt9aYn2sZTPkkDx1T7JKV3wHwK.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
+        "id": "st71349",
+        "type": "show",
+        "title": "Suspicious Partner",
+        "year": 2017,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/4ljaX3WO4RO7uTnQ5fKbaWgm85O.jpg",
+        "roles": [
+          "director"
         ]
       }
     ]
@@ -598386,6 +598499,26 @@
         "poster": "https://image.tmdb.org/t/p/w342/8CYg8RccDVpOUZAo8ka5ittWrR6.jpg",
         "roles": [
           "writer"
+        ]
+      }
+    ]
+  },
+  "p5616640": {
+    "name": "Heo Jin",
+    "img": "/AksEmOZVN8Bo1ycWVvLf6dz9eYJ.jpg",
+    "birthday": "1986-03-10",
+    "deathday": null,
+    "age": 40,
+    "works": [
+      {
+        "id": "st303143",
+        "type": "show",
+        "title": "My Royal Nemesis",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/u2cX3CVzUZLIGVwd9HB7bUhE7OP.jpg",
+        "roles": [
+          "actor"
         ]
       }
     ]
@@ -599561,6 +599694,26 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/zrrRRvavkLQupkC6aEkdA8sX4E8.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6605188": {
+    "name": "Lola Letarouilly",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st303044",
+        "type": "show",
+        "title": "Campus Drivers",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/oPltcyfWWfVmxB6lV8JZZJV3m7Q.jpg",
         "roles": [
           "actor"
         ]
@@ -616234,26 +616387,6 @@
       }
     ]
   },
-  "p3602881": {
-    "name": "Jonathan M. Jones",
-    "img": "/71UY5t8FxinQnUJT1jWqPqBmkYr.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st87017",
-        "type": "show",
-        "title": "P-Valley",
-        "year": 2020,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/qAuKjGNbcwdhbpxSciak8BFjQ5F.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p1965355": {
     "name": "DMs Boongaling",
     "img": "/lXiTmzFcRE38NJnWA131J0Kof0i.jpg",
@@ -621175,66 +621308,6 @@
       }
     ]
   },
-  "p1745256": {
-    "name": "Katherine Romans",
-    "img": "/tq72lzwI6hTOW0Ejc2H1gmsJ4U5.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st81723",
-        "type": "show",
-        "title": "Pozlacený věk",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/msO0qHSe2yrpdkLLoeg0s1Wiiu9.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p4418476": {
-    "name": "Michael Burrell",
-    "img": "/4sqwCUq1CAGhOLgbnUCavxqSIZm.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st81723",
-        "type": "show",
-        "title": "Pozlacený věk",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/msO0qHSe2yrpdkLLoeg0s1Wiiu9.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3421282": {
-    "name": "Desmond McIntyre",
-    "img": "/zxV4dI4cpvS5FXLbs5tIQGfIQCN.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st119845",
-        "type": "show",
-        "title": "Power Book IV: Force",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/yzL4Tqbw2JA9MCsHJWFC4xV1IYU.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p4200093": {
     "name": "Shim Ah-reum",
     "img": "/gWr5t9wKhUvaxHyJinilrfJI013.jpg",
@@ -621269,6 +621342,26 @@
         "year": 2022,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/xjFftT9cBkFQA9qA9eRbXb5tmUC.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4648860": {
+    "name": "Avery Echelard",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st155537",
+        "type": "show",
+        "title": "Volavka",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/waW5NMQmpd3Pox7lHGjXZt14Xrp.jpg",
         "roles": [
           "actor"
         ]
@@ -622095,6 +622188,26 @@
       }
     ]
   },
+  "p1996221": {
+    "name": "Grace Parry",
+    "img": "/uZhxZG4qWw2jSC6DWi67yJLLVAh.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st241259",
+        "type": "show",
+        "title": "Sobík",
+        "year": 2024,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/e0I3aUxQiDvjClyxa4ZfuhitbQp.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p4711890": {
     "name": "Kodai Inaoka",
     "img": "/apk2yhTXV76iOGDZuXhMm2jXnnx.jpg",
@@ -622486,26 +622599,6 @@
       }
     ]
   },
-  "p5339561": {
-    "name": "Jack Alldridge",
-    "img": "/zz3IDRqx7wM26KTwptjDH63st5c.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st245219",
-        "type": "show",
-        "title": "Rána bleskem",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/KyUrz3GA1FML3XnKkY795XxDxN.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p2865199": {
     "name": "Rico Tudico",
     "img": null,
@@ -622520,6 +622613,46 @@
         "year": 2025,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/vZ47HyTXazxFWZ77BK0C1g5cEZe.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5445051": {
+    "name": "Karen Prior",
+    "img": "/m0coa4SEbNf2RVyzdKDzKRDFTnq.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st241609",
+        "type": "show",
+        "title": "Sousedská tajemství",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5445073": {
+    "name": "Will River",
+    "img": "/xaZteeHq9cgGFdyvDhk0QOyZi8T.jpg",
+    "birthday": "2004-12-02",
+    "deathday": null,
+    "age": 21,
+    "works": [
+      {
+        "id": "st241609",
+        "type": "show",
+        "title": "Sousedská tajemství",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
         "roles": [
           "actor"
         ]
@@ -622866,20 +622999,20 @@
       }
     ]
   },
-  "p5616640": {
-    "name": "Heo Jin",
-    "img": "/AksEmOZVN8Bo1ycWVvLf6dz9eYJ.jpg",
-    "birthday": "1986-03-10",
+  "p3038163": {
+    "name": "Choi Yu-ju",
+    "img": "/250k8ArRW9MeEM5tX5CnRxWEQ7N.jpg",
+    "birthday": "1997-03-05",
     "deathday": null,
-    "age": 40,
+    "age": 29,
     "works": [
       {
-        "id": "st303143",
+        "id": "st291496",
         "type": "show",
-        "title": "My Royal Nemesis",
+        "title": "Karameláska",
         "year": 2026,
         "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/u2cX3CVzUZLIGVwd9HB7bUhE7OP.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/ny8zYj40mWGTgKJi1a8hjNFUj9n.jpg",
         "roles": [
           "actor"
         ]

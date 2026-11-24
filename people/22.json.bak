@@ -19841,23 +19841,23 @@
         ]
       },
       {
-        "id": "st241609",
-        "type": "show",
-        "title": "Sousedská tajemství",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st243881",
         "type": "show",
         "title": "Dům Davidův",
         "year": 2025,
         "score": 75,
         "poster": "https://image.tmdb.org/t/p/w342/cAhd5F9zO1MXkfcxE8HGIhqsnEG.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st241609",
+        "type": "show",
+        "title": "Sousedská tajemství",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
         "roles": [
           "actor"
         ]
@@ -99271,6 +99271,17 @@
     "age": 35,
     "works": [
       {
+        "id": "mt1496696",
+        "type": "movie",
+        "title": "Breeder",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/alsb3UC17kxIcytLWvwkmL0STgU.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1032892",
         "type": "movie",
         "title": "Mrknutím oka",
@@ -173461,6 +173472,17 @@
     "age": null,
     "works": [
       {
+        "id": "st303044",
+        "type": "show",
+        "title": "Campus Drivers",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/oPltcyfWWfVmxB6lV8JZZJV3m7Q.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1266816",
         "type": "movie",
         "title": "Gang Amazonek",
@@ -207707,6 +207729,17 @@
     "age": 60,
     "works": [
       {
+        "id": "mt1307474",
+        "type": "movie",
+        "title": "Jménem mého syna",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/v6JBUlm6nIYx3ixF38I5ZVpQZgq.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt856321",
         "type": "movie",
         "title": "Soukromá pustina",
@@ -215699,23 +215732,23 @@
         ]
       },
       {
-        "id": "st239385",
-        "type": "show",
-        "title": "Manipulátor",
-        "year": 2025,
-        "score": 77,
-        "poster": "https://image.tmdb.org/t/p/w342/j5E4RXqovOrV3CS1duTGxDfmlFt.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st233686",
         "type": "show",
         "title": "Karma",
         "year": 2025,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/kFx0FD0Cgns9OThcSkAmWYcnYzu.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st239385",
+        "type": "show",
+        "title": "Manipulátor",
+        "year": 2025,
+        "score": 77,
+        "poster": "https://image.tmdb.org/t/p/w342/j5E4RXqovOrV3CS1duTGxDfmlFt.jpg",
         "roles": [
           "actor"
         ]
@@ -372715,42 +372748,40 @@
       }
     ]
   },
-  "p2887281": {
-    "name": "Jang Soon-mi",
-    "img": "/xlTAr7o7CYSuuS6VK5KgjVIbRdk.jpg",
-    "birthday": "1978-04-09",
+  "p3703371": {
+    "name": "Rebecca Haden",
+    "img": "/jDHtEaSOrVdGjN0pZmiEIXgywIC.jpg",
+    "birthday": null,
     "deathday": null,
-    "age": 48,
+    "age": null,
     "works": [
       {
-        "id": "st219246",
+        "id": "st81723",
         "type": "show",
-        "title": "Dobrá práce",
-        "year": 2025,
-        "score": 90,
-        "poster": "https://image.tmdb.org/t/p/w342/koMkV9qm0PEZHDmX5dRpBpMH1FY.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st201019",
-        "type": "show",
-        "title": "Tale of the Nine-Tailed 1938",
-        "year": 2023,
-        "score": 88,
-        "poster": "https://image.tmdb.org/t/p/w342/gho6kNdp5C9yB40a05sKZ9fMNBz.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st154825",
-        "type": "show",
-        "title": "Obchodní návrh",
+        "title": "Pozlacený věk",
         "year": 2022,
         "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/msO0qHSe2yrpdkLLoeg0s1Wiiu9.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3090758": {
+    "name": "Dana Paulo",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st119845",
+        "type": "show",
+        "title": "Power Book IV: Force",
+        "year": 2022,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/yzL4Tqbw2JA9MCsHJWFC4xV1IYU.jpg",
         "roles": [
           "actor"
         ]
@@ -388670,40 +388701,42 @@
       }
     ]
   },
-  "p3703371": {
-    "name": "Rebecca Haden",
-    "img": "/jDHtEaSOrVdGjN0pZmiEIXgywIC.jpg",
-    "birthday": null,
+  "p2887281": {
+    "name": "Jang Soon-mi",
+    "img": "/xlTAr7o7CYSuuS6VK5KgjVIbRdk.jpg",
+    "birthday": "1978-04-09",
     "deathday": null,
-    "age": null,
+    "age": 48,
     "works": [
       {
-        "id": "st81723",
+        "id": "st219246",
         "type": "show",
-        "title": "Pozlacený věk",
-        "year": 2022,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/msO0qHSe2yrpdkLLoeg0s1Wiiu9.jpg",
+        "title": "Dobrá práce",
+        "year": 2025,
+        "score": 90,
+        "poster": "https://image.tmdb.org/t/p/w342/koMkV9qm0PEZHDmX5dRpBpMH1FY.jpg",
         "roles": [
           "actor"
         ]
-      }
-    ]
-  },
-  "p3090758": {
-    "name": "Dana Paulo",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
+      },
       {
-        "id": "st119845",
+        "id": "st201019",
         "type": "show",
-        "title": "Power Book IV: Force",
+        "title": "Tale of the Nine-Tailed 1938",
+        "year": 2023,
+        "score": 88,
+        "poster": "https://image.tmdb.org/t/p/w342/gho6kNdp5C9yB40a05sKZ9fMNBz.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st154825",
+        "type": "show",
+        "title": "Obchodní návrh",
         "year": 2022,
         "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/yzL4Tqbw2JA9MCsHJWFC4xV1IYU.jpg",
+        "poster": "https://image.tmdb.org/t/p/w342/lOa1IUp3AFVo6h9b17KA20r4E5s.jpg",
         "roles": [
           "actor"
         ]

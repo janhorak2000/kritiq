@@ -117005,6 +117005,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1336166",
+        "type": "movie",
+        "title": "Rolling Loud: Bez zábran",
+        "year": 2026,
+        "score": 87,
+        "poster": "https://image.tmdb.org/t/p/w342/8NMYWNLrwLuiNgRKfuWNhzBH9pO.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt845781",
         "type": "movie",
         "title": "Red One",
@@ -148953,6 +148964,17 @@
     "age": 44,
     "works": [
       {
+        "id": "st209110",
+        "type": "show",
+        "title": "Cena přiznání",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/6R7UMF0aAOy9p4v8dlGtCIPhwcS.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st285770",
         "type": "show",
         "title": "Těšilo mě, bohužel",
@@ -148970,17 +148992,6 @@
         "year": 2025,
         "score": 90,
         "poster": "https://image.tmdb.org/t/p/w342/koMkV9qm0PEZHDmX5dRpBpMH1FY.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st209110",
-        "type": "show",
-        "title": "Cena přiznání",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/6R7UMF0aAOy9p4v8dlGtCIPhwcS.jpg",
         "roles": [
           "actor"
         ]
@@ -263455,17 +263466,6 @@
         ]
       },
       {
-        "id": "st259486",
-        "type": "show",
-        "title": "Gwi-gong",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/kjp97iwFZ2iAG2AVPsgQeVsUMHK.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st258025",
         "type": "show",
         "title": "Až po uši",
@@ -263483,6 +263483,17 @@
         "year": 2025,
         "score": 72,
         "poster": "https://image.tmdb.org/t/p/w342/6kk0yTA1m8Hxt9lctUT3ygmj6aa.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st259486",
+        "type": "show",
+        "title": "Gwi-gong",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/kjp97iwFZ2iAG2AVPsgQeVsUMHK.jpg",
         "roles": [
           "actor"
         ]
@@ -283416,6 +283427,17 @@
     "deathday": null,
     "age": 32,
     "works": [
+      {
+        "id": "mt1496696",
+        "type": "movie",
+        "title": "Breeder",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/alsb3UC17kxIcytLWvwkmL0STgU.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "st247619",
         "type": "show",
@@ -331872,6 +331894,26 @@
       }
     ]
   },
+  "p5294810": {
+    "name": "The Rizzler",
+    "img": "/wbBZGxFhP51T7lKowlkIjiBp3qE.jpg",
+    "birthday": "2016-04-19",
+    "deathday": null,
+    "age": 10,
+    "works": [
+      {
+        "id": "mt1336166",
+        "type": "movie",
+        "title": "Rolling Loud: Bez zábran",
+        "year": 2026,
+        "score": 87,
+        "poster": "https://image.tmdb.org/t/p/w342/8NMYWNLrwLuiNgRKfuWNhzBH9pO.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p6352768": {
     "name": "Xavier Brown",
     "img": "/dyHpGVz9guWCpNNh5SSuIBPHhru.jpg",
@@ -332199,66 +332241,6 @@
         "year": 2026,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/ySVk3502Ob4mErOwz7ovdI46uL3.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5102508": {
-    "name": "Park Joon-sun",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1483525",
-        "type": "movie",
-        "title": "Případně láska",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6591556": {
-    "name": "Goo Tae-il",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1483525",
-        "type": "movie",
-        "title": "Případně láska",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6592414": {
-    "name": "Shin Dong-jun",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1483525",
-        "type": "movie",
-        "title": "Případně láska",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
         "roles": [
           "actor"
         ]
@@ -402990,6 +402972,66 @@
       }
     ]
   },
+  "p5102508": {
+    "name": "Park Joon-sun",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1483525",
+        "type": "movie",
+        "title": "Případně láska",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6591556": {
+    "name": "Goo Tae-il",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1483525",
+        "type": "movie",
+        "title": "Případně láska",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6592414": {
+    "name": "Shin Dong-jun",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1483525",
+        "type": "movie",
+        "title": "Případně láska",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p6166659": {
     "name": "Jack McSherry",
     "img": null,
@@ -406140,6 +406182,26 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/e4N7M52cBbyi24xLga8yI6yt1u1.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6691744": {
+    "name": "Eloáh Vitória Pouzas Alvarenga",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1307474",
+        "type": "movie",
+        "title": "Jménem mého syna",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/v6JBUlm6nIYx3ixF38I5ZVpQZgq.jpg",
         "roles": [
           "actor"
         ]
@@ -485057,23 +485119,23 @@
         ]
       },
       {
-        "id": "st281006",
-        "type": "show",
-        "title": "City na jazyku",
-        "year": 2025,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/i4AkVeH64zvm2CL33FtYfzZqMup.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
         "id": "st209110",
         "type": "show",
         "title": "Cena přiznání",
         "year": 2025,
         "score": 76,
         "poster": "https://image.tmdb.org/t/p/w342/6R7UMF0aAOy9p4v8dlGtCIPhwcS.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st281006",
+        "type": "show",
+        "title": "City na jazyku",
+        "year": 2025,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/i4AkVeH64zvm2CL33FtYfzZqMup.jpg",
         "roles": [
           "actor"
         ]
@@ -488446,26 +488508,6 @@
       }
     ]
   },
-  "p1846190": {
-    "name": "Geoffrey Murphy",
-    "img": "/oUpTzxjpUx4plloKTLz0jUQInjK.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st241609",
-        "type": "show",
-        "title": "Sousedská tajemství",
-        "year": 2025,
-        "score": 76,
-        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p3094227": {
     "name": "Paola Montes De Oca",
     "img": "/AnaNOPWsAZ2al0ivMYYbpqz6j49.jpg",
@@ -490089,6 +490131,37 @@
       }
     ]
   },
+  "p4480656": {
+    "name": "Ha Na-ri",
+    "img": "/6IMMiZbvNYCWAvmqUH67oBue5B4.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st303143",
+        "type": "show",
+        "title": "My Royal Nemesis",
+        "year": 2026,
+        "score": 75,
+        "poster": "https://image.tmdb.org/t/p/w342/u2cX3CVzUZLIGVwd9HB7bUhE7OP.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st154887",
+        "type": "show",
+        "title": "Moje poznámky z osvobození",
+        "year": 2022,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/mrOxruke1FI0Sx6v6BOdpu4yppZ.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p2180303": {
     "name": "Carol Tate",
     "img": null,
@@ -491278,6 +491351,26 @@
         "year": 2021,
         "score": 77,
         "poster": "https://image.tmdb.org/t/p/w342/xRnGrn7Z7SC0KIBodocoU1QgDZF.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1828370": {
+    "name": "Laetitia Rosier",
+    "img": "/vDv7Ct2hxiL9C8ZrbwDDpayYXs8.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st303044",
+        "type": "show",
+        "title": "Campus Drivers",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/oPltcyfWWfVmxB6lV8JZZJV3m7Q.jpg",
         "roles": [
           "actor"
         ]
@@ -501762,37 +501855,6 @@
       }
     ]
   },
-  "p4480656": {
-    "name": "Ha Na-ri",
-    "img": "/6IMMiZbvNYCWAvmqUH67oBue5B4.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st303143",
-        "type": "show",
-        "title": "My Royal Nemesis",
-        "year": 2026,
-        "score": 75,
-        "poster": "https://image.tmdb.org/t/p/w342/u2cX3CVzUZLIGVwd9HB7bUhE7OP.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st154887",
-        "type": "show",
-        "title": "Moje poznámky z osvobození",
-        "year": 2022,
-        "score": 82,
-        "poster": "https://image.tmdb.org/t/p/w342/mrOxruke1FI0Sx6v6BOdpu4yppZ.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
   "p3684806": {
     "name": "Ben Larrison",
     "img": "/ywlM1V3JLDa2rCzfuDlXjVknKNB.jpg",
@@ -502667,6 +502729,26 @@
         "year": 2025,
         "score": 77,
         "poster": "https://image.tmdb.org/t/p/w342/bNPVb2Sv4N3CO7l6AdfjxNkMTfN.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1846190": {
+    "name": "Geoffrey Murphy",
+    "img": "/oUpTzxjpUx4plloKTLz0jUQInjK.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "st241609",
+        "type": "show",
+        "title": "Sousedská tajemství",
+        "year": 2025,
+        "score": 76,
+        "poster": "https://image.tmdb.org/t/p/w342/93MNadrWFLXyNwRi8QOK4rSCxj1.jpg",
         "roles": [
           "actor"
         ]

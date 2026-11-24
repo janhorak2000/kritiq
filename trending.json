@@ -1,15 +1,6 @@
 {
   "movies": [
     {
-      "title": "Godzilla Minus Zero",
-      "year": 2026,
-      "date": "2026-11-03",
-      "score": 95,
-      "poster": "https://image.tmdb.org/t/p/w342/zpcoFlZwyLnBt7bb5wmvGDCdg06.jpg",
-      "tmdb_id": 1381071,
-      "imdb_id": "tt34384661"
-    },
-    {
       "title": "Hypotéza lásky",
       "year": 2026,
       "date": "2026-09-23",
@@ -19,22 +10,31 @@
       "imdb_id": "tt22526100"
     },
     {
-      "title": "Frequency of Fear",
+      "title": "Ghost Soldier",
       "year": 2026,
-      "date": "2026-11-05",
-      "score": 92,
-      "poster": "https://image.tmdb.org/t/p/w342/aUAHtBalyuiMMu8dz2iJN90kYm6.jpg",
-      "tmdb_id": 1570467,
-      "imdb_id": "tt38789002"
+      "date": "2026-11-06",
+      "score": 90,
+      "poster": "https://image.tmdb.org/t/p/w342/8Y4oJ5iUs3hgPcDB3SIEmsNYjZk.jpg",
+      "tmdb_id": 1562642,
+      "imdb_id": "tt38686316"
     },
     {
-      "title": "Rolling Loud: Bez zábran",
+      "title": "Já, Rocky",
       "year": 2026,
-      "date": "2026-10-02",
+      "date": "2026-11-06",
       "score": 87,
-      "poster": "https://image.tmdb.org/t/p/w342/8NMYWNLrwLuiNgRKfuWNhzBH9pO.jpg",
-      "tmdb_id": 1336166,
-      "imdb_id": "tt33184695"
+      "poster": "https://image.tmdb.org/t/p/w342/xE5tY3lppZUyG7WKKThsuYHuAHr.jpg",
+      "tmdb_id": 1286656,
+      "imdb_id": "tt11995650"
+    },
+    {
+      "title": "One Last Shot",
+      "year": 2026,
+      "date": "2026-09-22",
+      "score": 83,
+      "poster": "https://image.tmdb.org/t/p/w342/niQ4NBh2jqAf1hDZP5m6ReWFAb7.jpg",
+      "tmdb_id": 1607127,
+      "imdb_id": "tt37971717"
     },
     {
       "title": "Tenzing",
@@ -46,22 +46,13 @@
       "imdb_id": "tt6262770"
     },
     {
-      "title": "Ebenezer: Vánoční koleda",
+      "title": "The Stunt Driver",
       "year": 2026,
-      "date": "2026-11-11",
-      "score": 83,
-      "poster": "https://image.tmdb.org/t/p/w342/wbTHJ5VzOjEq02PYHkLAL7yhhBn.jpg",
-      "tmdb_id": 1567605,
-      "imdb_id": "tt38773219"
-    },
-    {
-      "title": "The Fix",
-      "year": 2026,
-      "date": "2026-09-10",
+      "date": "2026-09-25",
       "score": 82,
-      "poster": "https://image.tmdb.org/t/p/w342/yopXjun3ICFfJci2ukcEzceZjUs.jpg",
-      "tmdb_id": 1228834,
-      "imdb_id": "tt9601292"
+      "poster": "https://image.tmdb.org/t/p/w342/jFiMdTG8Hw41A3VxrzLEWtMFIYX.jpg",
+      "tmdb_id": 1562777,
+      "imdb_id": "tt34611096"
     },
     {
       "title": "Madden",
@@ -73,13 +64,13 @@
       "imdb_id": "tt24818230"
     },
     {
-      "title": "Poslední večeře",
+      "title": "Clayface",
       "year": 2026,
-      "date": "2026-11-18",
+      "date": "2026-10-19",
       "score": 80,
-      "poster": "https://image.tmdb.org/t/p/w342/5VhfAWFs005xxN9akWJ2VIF5ozJ.jpg",
-      "tmdb_id": 1561834,
-      "imdb_id": "tt50016818"
+      "poster": "https://image.tmdb.org/t/p/w342/5jCpQnWPikggmQZoDp1eAi6BI6w.jpg",
+      "tmdb_id": 1400940,
+      "imdb_id": "tt34890576"
     },
     {
       "title": "Šance závodit",
@@ -89,9 +80,27 @@
       "poster": "https://image.tmdb.org/t/p/w342/o1amTBOej7F2wdrTSKzGE6eG2CT.jpg",
       "tmdb_id": 1596275,
       "imdb_id": "tt37180686"
+    },
+    {
+      "title": "Digger",
+      "year": 2026,
+      "date": "2026-09-28",
+      "score": 79,
+      "poster": "https://image.tmdb.org/t/p/w342/qiXi6tAv8DoNfPf56G4yljjWhqG.jpg",
+      "tmdb_id": 1248832,
+      "imdb_id": "tt31450459"
     }
   ],
   "shows": [
+    {
+      "title": "The Blame",
+      "year": 2026,
+      "date": "2026-09-20",
+      "score": 87,
+      "poster": "https://image.tmdb.org/t/p/w342/5ZeHhMqi7tDTgKvfUdy9rs7VKUt.jpg",
+      "tmdb_id": 319851,
+      "imdb_id": "tt36857537"
+    },
     {
       "title": "Grand Tour",
       "year": 2026,
@@ -100,24 +109,6 @@
       "poster": "https://image.tmdb.org/t/p/w342/kq6XB6xmD86txW4UR32tT2JUiN9.jpg",
       "tmdb_id": 329471,
       "imdb_id": "tt44974627"
-    },
-    {
-      "title": "Tall Tales & Murder",
-      "year": 2026,
-      "date": "2026-09-27",
-      "score": 76,
-      "poster": "https://image.tmdb.org/t/p/w342/1fgKe9YOxRIkAicES7RVAscmgus.jpg",
-      "tmdb_id": 293116,
-      "imdb_id": "tt37187505"
-    },
-    {
-      "title": "Akademie Minerva",
-      "year": 2026,
-      "date": "2026-09-22",
-      "score": 70,
-      "poster": "https://image.tmdb.org/t/p/w342/cTTXRklz5tJWX6wrN3XrjHo34H1.jpg",
-      "tmdb_id": 312557,
-      "imdb_id": "tt28765828"
     },
     {
       "title": "Myšilov",
@@ -129,6 +120,33 @@
       "imdb_id": "tt36996011"
     },
     {
+      "title": "Akademie Minerva",
+      "year": 2026,
+      "date": "2026-09-22",
+      "score": 70,
+      "poster": "https://image.tmdb.org/t/p/w342/cTTXRklz5tJWX6wrN3XrjHo34H1.jpg",
+      "tmdb_id": 312557,
+      "imdb_id": "tt28765828"
+    },
+    {
+      "title": "A Tale of Two Cities",
+      "year": 2026,
+      "date": "2026-09-06",
+      "score": 67,
+      "poster": "https://image.tmdb.org/t/p/w342/ht3OVVRBTrTeVtUVQiKSekjIFVH.jpg",
+      "tmdb_id": 301626,
+      "imdb_id": "tt38128417"
+    },
+    {
+      "title": "Smrt pastorovy ženy",
+      "year": 2026,
+      "date": "2026-08-26",
+      "score": 67,
+      "poster": "https://image.tmdb.org/t/p/w342/o8H6HmQNt2qx5bIfmvuI6VJn13A.jpg",
+      "tmdb_id": 331616,
+      "imdb_id": "tt44113382"
+    },
+    {
       "title": "Skandál",
       "year": 2026,
       "date": "2026-09-18",
@@ -138,13 +156,13 @@
       "imdb_id": "tt36347588"
     },
     {
-      "title": "Filter",
+      "title": "Poslední případ",
       "year": 2026,
-      "date": "2026-09-02",
+      "date": "2026-09-25",
       "score": 63,
-      "poster": "https://image.tmdb.org/t/p/w342/3QFQKxdoCtZvtKAyuNg7o0XtbjZ.jpg",
-      "tmdb_id": 312978,
-      "imdb_id": "tt38267578"
+      "poster": "https://image.tmdb.org/t/p/w342/jVHx7Yxh41Xf1txD5AsX5MZ4E1e.jpg",
+      "tmdb_id": 290720,
+      "imdb_id": "tt36832679"
     },
     {
       "title": "Čističi",
@@ -154,24 +172,6 @@
       "poster": "https://image.tmdb.org/t/p/w342/mZ0rPTMe9XfrWRUAeoJzr62cyIa.jpg",
       "tmdb_id": 312663,
       "imdb_id": "tt39495239"
-    },
-    {
-      "title": "Rozervaná láskou",
-      "year": 2026,
-      "date": "2026-09-02",
-      "score": 58,
-      "poster": "https://image.tmdb.org/t/p/w342/rGeWjJxZpFCftDDroRIa1BvYfqX.jpg",
-      "tmdb_id": 290234,
-      "imdb_id": "tt32909469"
-    },
-    {
-      "title": "Veškerá pravda ukrytá v mých lžích",
-      "year": 2026,
-      "date": "2026-08-28",
-      "score": 56,
-      "poster": "https://image.tmdb.org/t/p/w342/A7YS8oPOpjLcCPntmOM3oqRJdbb.jpg",
-      "tmdb_id": 292558,
-      "imdb_id": "tt37053085"
     },
     {
       "title": "Vraždy v dolinách",
@@ -184,14 +184,6 @@
   ],
   "games": [
     {
-      "title": "007 First Light",
-      "year": 2026,
-      "date": "2026-05-27",
-      "score": 88,
-      "poster": "https://media.rawg.io/media/resize/640/-/games/86f/86f2dc1b9671f25a13ff92e069b51786.jpg",
-      "rawg_id": 1004298
-    },
-    {
       "title": "Onimusha: Way Of The Sword",
       "year": 2026,
       "date": "2026-09-04",
@@ -200,12 +192,12 @@
       "rawg_id": 994600
     },
     {
-      "title": "Servant of the Lake",
+      "title": "Star Wars Zero Company",
       "year": 2026,
-      "date": "2026-08-13",
+      "date": "2026-08-27",
       "score": 86,
-      "poster": "https://media.rawg.io/media/resize/640/-/screenshots/169/16983887be1563167b019c82be65cebe.jpg",
-      "rawg_id": 1019497
+      "poster": "https://media.rawg.io/media/resize/640/-/games/dae/dae6fd03dd5edbf15b193f20bec3cd58.jpg",
+      "rawg_id": 1002691
     },
     {
       "title": "S.T.A.L.K.E.R. 2: Cost of Hope",
@@ -256,6 +248,14 @@
       "rawg_id": 1001012
     },
     {
+      "title": "Grand Theft Auto VI",
+      "year": 2026,
+      "date": "2026-11-19",
+      "score": 77,
+      "poster": "https://media.rawg.io/media/resize/640/-/games/734/7342a1cd82c8997ec620084ae4c2e7e4.jpg",
+      "rawg_id": 972995
+    },
+    {
       "title": "Enshrouded",
       "year": 2026,
       "date": "2026-10-15",
@@ -266,12 +266,12 @@
   ],
   "recentlyAdded": {
     "movie": {
-      "title": "Dokonalí lháři",
+      "title": "Vánoce na sílu",
       "year": 2026,
-      "score": 69,
-      "backdrop": "https://image.tmdb.org/t/p/w500/OiXyM1w9NxdV450GpV92B0YPMj.jpg",
-      "tmdb_id": 1568060,
-      "imdb_id": "tt18351090"
+      "score": 62,
+      "backdrop": "https://image.tmdb.org/t/p/w500/x6kwEsxxqLIoqpIrZOXRV0LORqm.jpg",
+      "tmdb_id": 1611767,
+      "imdb_id": "tt39316936"
     },
     "show": {
       "title": "Muži v letu",
