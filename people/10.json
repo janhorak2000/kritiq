@@ -168729,6 +168729,17 @@
     "age": 44,
     "works": [
       {
+        "id": "mt1457866",
+        "type": "movie",
+        "title": "Další (ne)zdary Cliffa Boothe",
+        "year": 2026,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/thX8Rs7nfgmPHfCgjoFuRovy49l.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st277439",
         "type": "show",
         "title": "Mys hrůzy",
@@ -469433,6 +469444,46 @@
       }
     ]
   },
+  "p6699659": {
+    "name": "Eric Watson",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1457866",
+        "type": "movie",
+        "title": "Další (ne)zdary Cliffa Boothe",
+        "year": 2026,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/thX8Rs7nfgmPHfCgjoFuRovy49l.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4043951": {
+    "name": "Tunde Sho",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1457866",
+        "type": "movie",
+        "title": "Další (ne)zdary Cliffa Boothe",
+        "year": 2026,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/thX8Rs7nfgmPHfCgjoFuRovy49l.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p1352735": {
     "name": "Sylvia Shemmell",
     "img": null,
@@ -667372,6 +667423,17 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/rr3ZBCy0eeCP7LB11OvEtq1C4bf.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
+        "id": "mt1824388",
+        "type": "movie",
+        "title": "Anestéza",
+        "year": 2026,
+        "score": null,
+        "poster": "",
         "roles": [
           "writer"
         ]

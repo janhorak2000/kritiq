@@ -215127,6 +215127,17 @@
     "age": 30,
     "works": [
       {
+        "id": "mt1457866",
+        "type": "movie",
+        "title": "Další (ne)zdary Cliffa Boothe",
+        "year": 2026,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/thX8Rs7nfgmPHfCgjoFuRovy49l.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st298168",
         "type": "show",
         "title": "Střepy",
@@ -351406,6 +351417,46 @@
         "year": 2026,
         "score": 82,
         "poster": "https://image.tmdb.org/t/p/w342/yopXjun3ICFfJci2ukcEzceZjUs.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4911452": {
+    "name": "Acacia Fisher",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1457866",
+        "type": "movie",
+        "title": "Další (ne)zdary Cliffa Boothe",
+        "year": 2026,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/thX8Rs7nfgmPHfCgjoFuRovy49l.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p2952253": {
+    "name": "Jasmine Aivaliotis",
+    "img": "/hrNx82TWSoEmSjZiynWR3O1c14u.jpg",
+    "birthday": "1997-01-23",
+    "deathday": null,
+    "age": 29,
+    "works": [
+      {
+        "id": "mt1457866",
+        "type": "movie",
+        "title": "Další (ne)zdary Cliffa Boothe",
+        "year": 2026,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/thX8Rs7nfgmPHfCgjoFuRovy49l.jpg",
         "roles": [
           "actor"
         ]

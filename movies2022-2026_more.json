@@ -741350,6 +741350,258 @@
     "reviews": []
   },
   {
+    "title": "The President's Cake",
+    "tmdb_id": 1464883,
+    "imdb_id": "tt36580119",
+    "year": 2026,
+    "date": "2026-01-22",
+    "score": 75,
+    "box": 0,
+    "box_currency": "USD",
+    "country": "USA",
+    "genre": "Drama",
+    "runtime": 106,
+    "poster": "https://image.tmdb.org/t/p/w342/uSrozVUxIUaer6FIUHHFtOdbqj8.jpg",
+    "gallery": [
+      "https://image.tmdb.org/t/p/w500/vRdHKjKOpT1HoAp6JkfvdrnphH4.jpg"
+    ],
+    "summary": "V Iráku v 90. letech musí devítiletá Lamia upéct prezidentovi narozeninový dort. Snaží se sehnat suroviny na tento povinný úkol, přičemž v případě neúspěchu jí hrozí trest.",
+    "director": {
+      "id": 2834376,
+      "name": "Hasan Hadi",
+      "image": "https://image.tmdb.org/t/p/w300/vZFyRatxMY6R3KJpVC51Pj8DdFV.jpg"
+    },
+    "composer": {
+      "id": null,
+      "name": "",
+      "image": ""
+    },
+    "writer": {
+      "id": 2834376,
+      "name": "Hasan Hadi",
+      "image": "https://image.tmdb.org/t/p/w300/vZFyRatxMY6R3KJpVC51Pj8DdFV.jpg"
+    },
+    "actors": [
+      {
+        "id": 5403423,
+        "name": "Baneen Ahmed Nayyef",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": "https://image.tmdb.org/t/p/w300/db2ouYg8rZYr4vu406iGHkN0LsP.jpg"
+      },
+      {
+        "id": 5403424,
+        "name": "Sajad Mohamad Qasem",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5403425,
+        "name": "Waheed Thabet Khreibat",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5403427,
+        "name": "Rahim AlHaj",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5689670,
+        "name": "Muthanna Malaghi",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5689671,
+        "name": "Ahmad Qasem Saywan",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5689673,
+        "name": "Thaer Salem",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5689674,
+        "name": "Fatima Abouharoon",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5689675,
+        "name": "Mohammed Rheimeh",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5689677,
+        "name": "Rokia Alwadi",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5689678,
+        "name": "Abdelkarim Jasim",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5689672,
+        "name": "Maytham Mreidi",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5689679,
+        "name": "Nadia Rashak",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5883056,
+        "name": "Ali Khalaf",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5883058,
+        "name": "Mahmoud Mazen Lazen",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5883059,
+        "name": "Aqeel Wadi",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5883062,
+        "name": "Ali Saddam Najem",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5883065,
+        "name": "Mohammad Qasem",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5883066,
+        "name": "Raed Harbi Abdeljalil",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 2495472,
+        "name": "Elaf Mohamed",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5883074,
+        "name": "Ahmed Al-Hayali",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5883077,
+        "name": "Al-Hassan Adnan",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5883079,
+        "name": "Mohammed Ammar",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5883081,
+        "name": "Ahmad Hameed Ahmad",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5883083,
+        "name": "Haidar Jamal Jaber",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5883085,
+        "name": "Aqeel Al Shamri",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      },
+      {
+        "id": 5883087,
+        "name": "Tayseer Ibrahim Radi Butche",
+        "birthday": null,
+        "deathday": null,
+        "age": null,
+        "image": ""
+      }
+    ],
+    "reviews": []
+  },
+  {
     "title": "The Incomer",
     "tmdb_id": 1554956,
     "imdb_id": "tt36980182",
