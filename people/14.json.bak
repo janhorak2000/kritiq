@@ -181136,6 +181136,17 @@
     "age": 64,
     "works": [
       {
+        "id": "mt1457866",
+        "type": "movie",
+        "title": "Další (ne)zdary Cliffa Boothe",
+        "year": 2026,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/thX8Rs7nfgmPHfCgjoFuRovy49l.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
         "id": "mt800158",
         "type": "movie",
         "title": "Zabiják",
@@ -370585,6 +370596,48 @@
       }
     ]
   },
+  "p2565929": {
+    "name": "Andie Ju",
+    "img": "/seavjMHA2kjrD2mDsH8c9pGDKEn.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1457866",
+        "type": "movie",
+        "title": "Další (ne)zdary Cliffa Boothe",
+        "year": 2026,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/thX8Rs7nfgmPHfCgjoFuRovy49l.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1011082",
+        "type": "movie",
+        "title": "Největší hity",
+        "year": 2024,
+        "score": 63,
+        "poster": "https://image.tmdb.org/t/p/w342/nVyA8M4BjUYmoqHrAWGxUzaWKeA.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st154385",
+        "type": "show",
+        "title": "Ve při",
+        "year": 2023,
+        "score": 80,
+        "poster": "https://image.tmdb.org/t/p/w342/bGkyJ4vFtcR5uxBQnGSRFtRV2Hj.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p1352728": {
     "name": "Bill Baize",
     "img": null,
@@ -436653,37 +436706,6 @@
         "year": 2024,
         "score": 63,
         "poster": "https://image.tmdb.org/t/p/w342/gdzeN82Qg1jTPSFqNkWmQuZx703.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p2565929": {
-    "name": "Andie Ju",
-    "img": "/seavjMHA2kjrD2mDsH8c9pGDKEn.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "mt1011082",
-        "type": "movie",
-        "title": "Největší hity",
-        "year": 2024,
-        "score": 63,
-        "poster": "https://image.tmdb.org/t/p/w342/nVyA8M4BjUYmoqHrAWGxUzaWKeA.jpg",
-        "roles": [
-          "actor"
-        ]
-      },
-      {
-        "id": "st154385",
-        "type": "show",
-        "title": "Ve při",
-        "year": 2023,
-        "score": 80,
-        "poster": "https://image.tmdb.org/t/p/w342/bGkyJ4vFtcR5uxBQnGSRFtRV2Hj.jpg",
         "roles": [
           "actor"
         ]

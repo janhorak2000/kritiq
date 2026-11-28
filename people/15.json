@@ -271717,6 +271717,17 @@
     "age": 73,
     "works": [
       {
+        "id": "mt1643567",
+        "type": "movie",
+        "title": "Ghosts: The Possession of Button House",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/vdRbC8masrQDyhFHLOGECEMllPV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt525906",
         "type": "movie",
         "title": "Sežráni lvy",
@@ -406325,6 +406336,37 @@
       }
     ]
   },
+  "p3471406": {
+    "name": "Tanner Hagen",
+    "img": "/8rWlVnVE9kq5VO7lareI0dgTl5J.jpg",
+    "birthday": "2005-01-24",
+    "deathday": null,
+    "age": 21,
+    "works": [
+      {
+        "id": "mt1391021",
+        "type": "movie",
+        "title": "欢迎来龙餐馆",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/2OJX7udqqpk5c82pXXdL2hnny0D.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st157732",
+        "type": "show",
+        "title": "Strážci zákona: Bass Reeves",
+        "year": 2023,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/bJxTmOWpqi92Cmsks6vvRtq1YGn.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p143285": {
     "name": "Larisa Shepitko",
     "img": "/xIlTGpHdmkJZGfyoJd7yd2Hzj2o.jpg",
@@ -485559,26 +485601,6 @@
         "year": 2023,
         "score": 73,
         "poster": "https://image.tmdb.org/t/p/w342/urnfhsTOFtLuW61GFKS3OXCDMZl.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p3471406": {
-    "name": "Tanner Hagen",
-    "img": "/8rWlVnVE9kq5VO7lareI0dgTl5J.jpg",
-    "birthday": "2005-01-24",
-    "deathday": null,
-    "age": 21,
-    "works": [
-      {
-        "id": "st157732",
-        "type": "show",
-        "title": "Strážci zákona: Bass Reeves",
-        "year": 2023,
-        "score": 73,
-        "poster": "https://image.tmdb.org/t/p/w342/bJxTmOWpqi92Cmsks6vvRtq1YGn.jpg",
         "roles": [
           "actor"
         ]

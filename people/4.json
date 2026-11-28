@@ -462337,6 +462337,17 @@
     "age": 44,
     "works": [
       {
+        "id": "mt1643567",
+        "type": "movie",
+        "title": "Ghosts: The Possession of Button House",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/vdRbC8masrQDyhFHLOGECEMllPV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1102883",
         "type": "movie",
         "title": "Mother Mary",
@@ -673586,6 +673597,17 @@
         ]
       },
       {
+        "id": "mt1643567",
+        "type": "movie",
+        "title": "Ghosts: The Possession of Button House",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/vdRbC8masrQDyhFHLOGECEMllPV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st205072",
         "type": "show",
         "title": "Smrt v ráji: Návrat",
@@ -723863,6 +723885,26 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/v6JBUlm6nIYx3ixF38I5ZVpQZgq.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3071292": {
+    "name": "Yasmine Rahmy",
+    "img": "/dwCsAGyEhjWBvJTVHfqB9NdwJsj.jpg",
+    "birthday": "1994-09-12",
+    "deathday": null,
+    "age": 32,
+    "works": [
+      {
+        "id": "mt1391021",
+        "type": "movie",
+        "title": "欢迎来龙餐馆",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/2OJX7udqqpk5c82pXXdL2hnny0D.jpg",
         "roles": [
           "actor"
         ]

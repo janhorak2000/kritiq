@@ -238434,6 +238434,17 @@
     "age": 34,
     "works": [
       {
+        "id": "mt1480665",
+        "type": "movie",
+        "title": "Hrbáč, duch města Paříže",
+        "year": 2026,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/xWp7Mm5Nkiaa9nxqyqA0yL3Up9L.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1266798",
         "type": "movie",
         "title": "Chien 51",
@@ -240453,6 +240464,17 @@
         "year": 2026,
         "score": 73,
         "poster": "https://image.tmdb.org/t/p/w342/g3WFXH5ez5vFBG1pbr8Hgunjnpg.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1643567",
+        "type": "movie",
+        "title": "Ghosts: The Possession of Button House",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/vdRbC8masrQDyhFHLOGECEMllPV.jpg",
         "roles": [
           "actor"
         ]
@@ -469685,6 +469707,37 @@
       }
     ]
   },
+  "p1818307": {
+    "name": "Gurjeet Singh",
+    "img": "/55oc0B2P3h0NmpUrCGzEtS8QLRV.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1643567",
+        "type": "movie",
+        "title": "Ghosts: The Possession of Button House",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/vdRbC8masrQDyhFHLOGECEMllPV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st71754",
+        "type": "show",
+        "title": "Three Girls",
+        "year": 2017,
+        "score": 81,
+        "poster": "https://image.tmdb.org/t/p/w342/5qqXN4XGwJXESUlRvqaYiy17rMy.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p5137293": {
     "name": "Nissan Sakira",
     "img": "/hGr4YLXaNZ6nWOOQ9Wih6QNqOU.jpg",
@@ -606078,26 +606131,6 @@
         "year": 2017,
         "score": 81,
         "poster": "https://image.tmdb.org/t/p/w342/yiQcmPm6pTYyAAp3Q9Ge2xMkf8b.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p1818307": {
-    "name": "Gurjeet Singh",
-    "img": "/55oc0B2P3h0NmpUrCGzEtS8QLRV.jpg",
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st71754",
-        "type": "show",
-        "title": "Three Girls",
-        "year": 2017,
-        "score": 81,
-        "poster": "https://image.tmdb.org/t/p/w342/5qqXN4XGwJXESUlRvqaYiy17rMy.jpg",
         "roles": [
           "actor"
         ]

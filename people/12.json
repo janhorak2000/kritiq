@@ -130252,6 +130252,17 @@
     "age": 53,
     "works": [
       {
+        "id": "mt1643567",
+        "type": "movie",
+        "title": "Ghosts: The Possession of Button House",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/vdRbC8masrQDyhFHLOGECEMllPV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1140521",
         "type": "movie",
         "title": "Příběhy Kouzelného stromu",
@@ -171863,6 +171874,17 @@
     "deathday": null,
     "age": 39,
     "works": [
+      {
+        "id": "mt1391021",
+        "type": "movie",
+        "title": "欢迎来龙餐馆",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/2OJX7udqqpk5c82pXXdL2hnny0D.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt1116465",
         "type": "movie",
@@ -505407,6 +505429,57 @@
       }
     ]
   },
+  "p5371532": {
+    "name": "Eden Hollingsworth",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1643567",
+        "type": "movie",
+        "title": "Ghosts: The Possession of Button House",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/vdRbC8masrQDyhFHLOGECEMllPV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st262899",
+        "type": "show",
+        "title": "Já, Jack Wright",
+        "year": 2025,
+        "score": 71,
+        "poster": "https://image.tmdb.org/t/p/w342/yWo8QNGADcVRFiWFn0vDE8u9BQS.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6596899": {
+    "name": "Cleo Adams",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1643567",
+        "type": "movie",
+        "title": "Ghosts: The Possession of Button House",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/vdRbC8masrQDyhFHLOGECEMllPV.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
   "p6392574": {
     "name": "Ari Cohen Mann",
     "img": null,
@@ -626592,26 +626665,6 @@
         "year": 2025,
         "score": 71,
         "poster": "https://image.tmdb.org/t/p/w342/a0XF1aW4e3miyZIni0WnkgncryQ.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p5371532": {
-    "name": "Eden Hollingsworth",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st262899",
-        "type": "show",
-        "title": "Já, Jack Wright",
-        "year": 2025,
-        "score": 71,
-        "poster": "https://image.tmdb.org/t/p/w342/yWo8QNGADcVRFiWFn0vDE8u9BQS.jpg",
         "roles": [
           "actor"
         ]

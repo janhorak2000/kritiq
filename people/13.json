@@ -351916,6 +351916,17 @@
     "age": 47,
     "works": [
       {
+        "id": "mt1643567",
+        "type": "movie",
+        "title": "Ghosts: The Possession of Button House",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/vdRbC8masrQDyhFHLOGECEMllPV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st254897",
         "type": "show",
         "title": "Death Valley",
@@ -470899,6 +470910,26 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/v6JBUlm6nIYx3ixF38I5ZVpQZgq.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6397569": {
+    "name": "Nayra Akram",
+    "img": "/5TLstny2iZYTAMiw9Srcl6Euh8R.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1391021",
+        "type": "movie",
+        "title": "欢迎来龙餐馆",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/2OJX7udqqpk5c82pXXdL2hnny0D.jpg",
         "roles": [
           "actor"
         ]

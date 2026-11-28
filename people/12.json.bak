@@ -314593,6 +314593,17 @@
     "age": 61,
     "works": [
       {
+        "id": "mt1457866",
+        "type": "movie",
+        "title": "Další (ne)zdary Cliffa Boothe",
+        "year": 2026,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/thX8Rs7nfgmPHfCgjoFuRovy49l.jpg",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
         "id": "mt950396",
         "type": "movie",
         "title": "Roklina",
@@ -407851,6 +407862,57 @@
         "year": 2026,
         "score": 82,
         "poster": "https://image.tmdb.org/t/p/w342/yopXjun3ICFfJci2ukcEzceZjUs.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6346429": {
+    "name": "Camryn Bridges",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1457866",
+        "type": "movie",
+        "title": "Další (ne)zdary Cliffa Boothe",
+        "year": 2026,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/thX8Rs7nfgmPHfCgjoFuRovy49l.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "st40026",
+        "type": "show",
+        "title": "Dance Moms",
+        "year": 2011,
+        "score": 48,
+        "poster": "https://image.tmdb.org/t/p/w342/eLtHnDXNCdBeyC5h1987C2FR3kQ.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p1154847": {
+    "name": "Kati Schwartz",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1457866",
+        "type": "movie",
+        "title": "Další (ne)zdary Cliffa Boothe",
+        "year": 2026,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/thX8Rs7nfgmPHfCgjoFuRovy49l.jpg",
         "roles": [
           "actor"
         ]
@@ -604811,26 +604873,6 @@
   },
   "p6266635": {
     "name": "Kristie Ray",
-    "img": null,
-    "birthday": null,
-    "deathday": null,
-    "age": null,
-    "works": [
-      {
-        "id": "st40026",
-        "type": "show",
-        "title": "Dance Moms",
-        "year": 2011,
-        "score": 48,
-        "poster": "https://image.tmdb.org/t/p/w342/eLtHnDXNCdBeyC5h1987C2FR3kQ.jpg",
-        "roles": [
-          "actor"
-        ]
-      }
-    ]
-  },
-  "p6346429": {
-    "name": "Camryn Bridges",
     "img": null,
     "birthday": null,
     "deathday": null,

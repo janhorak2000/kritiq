@@ -255168,6 +255168,17 @@
     "age": 46,
     "works": [
       {
+        "id": "mt1643567",
+        "type": "movie",
+        "title": "Ghosts: The Possession of Button House",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/vdRbC8masrQDyhFHLOGECEMllPV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st228079",
         "type": "show",
         "title": "Klub vyšetřovatelek z Marlow",
@@ -264350,6 +264361,17 @@
     "deathday": null,
     "age": 78,
     "works": [
+      {
+        "id": "mt1391021",
+        "type": "movie",
+        "title": "欢迎来龙餐馆",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/2OJX7udqqpk5c82pXXdL2hnny0D.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt452557",
         "type": "movie",
@@ -347012,6 +347034,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "mt1643567",
+        "type": "movie",
+        "title": "Ghosts: The Possession of Button House",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/vdRbC8masrQDyhFHLOGECEMllPV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt575773",
         "type": "movie",
@@ -528406,6 +528439,26 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/72ETmrsQGk8guVo1GV8Sf7EygOe.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3863054": {
+    "name": "Jiang Qiming",
+    "img": "/6OWIhJwjwiMWKBHcUTn7pglXEFx.jpg",
+    "birthday": "1992-12-29",
+    "deathday": null,
+    "age": 33,
+    "works": [
+      {
+        "id": "mt1391021",
+        "type": "movie",
+        "title": "欢迎来龙餐馆",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/2OJX7udqqpk5c82pXXdL2hnny0D.jpg",
         "roles": [
           "actor"
         ]

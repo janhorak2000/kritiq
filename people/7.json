@@ -120737,6 +120737,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1480665",
+        "type": "movie",
+        "title": "Hrbáč, duch města Paříže",
+        "year": 2026,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/xWp7Mm5Nkiaa9nxqyqA0yL3Up9L.jpg",
+        "roles": [
+          "writer"
+        ]
+      },
+      {
         "id": "mt745611",
         "type": "movie",
         "title": "Delikatesa",
@@ -367595,6 +367606,17 @@
     "age": 51,
     "works": [
       {
+        "id": "mt1643567",
+        "type": "movie",
+        "title": "Ghosts: The Possession of Button House",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/vdRbC8masrQDyhFHLOGECEMllPV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1125899",
         "type": "movie",
         "title": "Vysoké nebezpečí",
@@ -532669,6 +532691,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1643567",
+        "type": "movie",
+        "title": "Ghosts: The Possession of Button House",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/vdRbC8masrQDyhFHLOGECEMllPV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1317149",
         "type": "movie",
         "title": "Přísahám, že za to nemůžu",
@@ -682796,6 +682829,26 @@
         "year": 2026,
         "score": 73,
         "poster": "https://image.tmdb.org/t/p/w342/v0XC0xsvCHsK2ln1iQ488hYwcxd.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6565874": {
+    "name": "Bryony Twydle",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1643567",
+        "type": "movie",
+        "title": "Ghosts: The Possession of Button House",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/vdRbC8masrQDyhFHLOGECEMllPV.jpg",
         "roles": [
           "actor"
         ]

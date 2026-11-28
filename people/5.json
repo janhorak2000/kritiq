@@ -532833,6 +532833,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1643567",
+        "type": "movie",
+        "title": "Ghosts: The Possession of Button House",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/vdRbC8masrQDyhFHLOGECEMllPV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1581",
         "type": "movie",
         "title": "Prázdniny",
@@ -726317,6 +726328,27 @@
         "poster": "https://image.tmdb.org/t/p/w342/p6oLmq5KmuWY6uRXBQBL2q30jia.jpg",
         "roles": [
           "actor"
+        ]
+      }
+    ]
+  },
+  "p1958907": {
+    "name": "Wen Muye",
+    "img": "/8iot35qIoFNZYwmCiQ0FZV178Zi.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1391021",
+        "type": "movie",
+        "title": "欢迎来龙餐馆",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/2OJX7udqqpk5c82pXXdL2hnny0D.jpg",
+        "roles": [
+          "director",
+          "writer"
         ]
       }
     ]

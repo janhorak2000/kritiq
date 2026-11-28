@@ -394039,6 +394039,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1457866",
+        "type": "movie",
+        "title": "Další (ne)zdary Cliffa Boothe",
+        "year": 2026,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/thX8Rs7nfgmPHfCgjoFuRovy49l.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt646389",
         "type": "movie",
         "title": "Mayday",
@@ -504084,6 +504095,26 @@
         "year": 2026,
         "score": 82,
         "poster": "https://image.tmdb.org/t/p/w342/jFiMdTG8Hw41A3VxrzLEWtMFIYX.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6699669": {
+    "name": "Ella Littas",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1457866",
+        "type": "movie",
+        "title": "Další (ne)zdary Cliffa Boothe",
+        "year": 2026,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/thX8Rs7nfgmPHfCgjoFuRovy49l.jpg",
         "roles": [
           "actor"
         ]
@@ -638415,6 +638446,17 @@
         ]
       },
       {
+        "id": "mt1824388",
+        "type": "movie",
+        "title": "Anestéza",
+        "year": 2026,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st240630",
         "type": "show",
         "title": "Ranč",
@@ -718167,6 +718209,17 @@
         "poster": "https://image.tmdb.org/t/p/w342/hSUvcY1mGKOeLhjknq083OtlsYG.jpg",
         "roles": [
           "actor"
+        ]
+      },
+      {
+        "id": "mt1824388",
+        "type": "movie",
+        "title": "Anestéza",
+        "year": 2026,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "director"
         ]
       },
       {

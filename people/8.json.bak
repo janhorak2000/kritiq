@@ -351852,6 +351852,17 @@
     "age": 36,
     "works": [
       {
+        "id": "mt1457866",
+        "type": "movie",
+        "title": "Další (ne)zdary Cliffa Boothe",
+        "year": 2026,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/thX8Rs7nfgmPHfCgjoFuRovy49l.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1195803",
         "type": "movie",
         "title": "Wicker",
@@ -406164,6 +406175,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1824388",
+        "type": "movie",
+        "title": "Anestéza",
+        "year": 2026,
+        "score": null,
+        "poster": "",
+        "roles": [
+          "composer"
+        ]
+      },
+      {
         "id": "mt524780",
         "type": "movie",
         "title": "Psi nenosí kalhoty",
@@ -432104,6 +432126,17 @@
     "deathday": null,
     "age": null,
     "works": [
+      {
+        "id": "mt1457866",
+        "type": "movie",
+        "title": "Další (ne)zdary Cliffa Boothe",
+        "year": 2026,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/thX8Rs7nfgmPHfCgjoFuRovy49l.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
       {
         "id": "mt980285",
         "type": "movie",
@@ -514676,6 +514709,26 @@
         "year": 2026,
         "score": 82,
         "poster": "https://image.tmdb.org/t/p/w342/yopXjun3ICFfJci2ukcEzceZjUs.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p6699657": {
+    "name": "Nina Cid",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1457866",
+        "type": "movie",
+        "title": "Další (ne)zdary Cliffa Boothe",
+        "year": 2026,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/thX8Rs7nfgmPHfCgjoFuRovy49l.jpg",
         "roles": [
           "actor"
         ]

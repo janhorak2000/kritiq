@@ -249512,6 +249512,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1457866",
+        "type": "movie",
+        "title": "Další (ne)zdary Cliffa Boothe",
+        "year": 2026,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/thX8Rs7nfgmPHfCgjoFuRovy49l.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt495764",
         "type": "movie",
         "title": "Birds of Prey (Podivuhodná proměna Harley Quinn)",
@@ -304402,6 +304413,17 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/A4PuRauX4hwYeTtq5MF2DFIBw41.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1824388",
+        "type": "movie",
+        "title": "Anestéza",
+        "year": 2026,
+        "score": null,
+        "poster": "",
         "roles": [
           "actor"
         ]

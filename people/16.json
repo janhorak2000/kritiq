@@ -275011,6 +275011,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1480665",
+        "type": "movie",
+        "title": "Hrbáč, duch města Paříže",
+        "year": 2026,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/xWp7Mm5Nkiaa9nxqyqA0yL3Up9L.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt911129",
         "type": "movie",
         "title": "Hluboce pod vlivem",
@@ -371788,6 +371799,26 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/v6JBUlm6nIYx3ixF38I5ZVpQZgq.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p3172812": {
+    "name": "Sherif Sobhy",
+    "img": "/v5wKJ0LOrYWE5PtyiSHoGwtvNYb.jpg",
+    "birthday": "1968-03-30",
+    "deathday": null,
+    "age": 58,
+    "works": [
+      {
+        "id": "mt1391021",
+        "type": "movie",
+        "title": "欢迎来龙餐馆",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/2OJX7udqqpk5c82pXXdL2hnny0D.jpg",
         "roles": [
           "actor"
         ]

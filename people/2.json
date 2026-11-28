@@ -88541,6 +88541,17 @@
     "age": 60,
     "works": [
       {
+        "id": "mt1480665",
+        "type": "movie",
+        "title": "Hrbáč, duch města Paříže",
+        "year": 2026,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/xWp7Mm5Nkiaa9nxqyqA0yL3Up9L.jpg",
+        "roles": [
+          "director"
+        ]
+      },
+      {
         "id": "mt1288445",
         "type": "movie",
         "title": "Vzpoura",
@@ -672216,6 +672227,17 @@
     "age": 14,
     "works": [
       {
+        "id": "mt1643567",
+        "type": "movie",
+        "title": "Ghosts: The Possession of Button House",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/vdRbC8masrQDyhFHLOGECEMllPV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1175842",
         "type": "movie",
         "title": "Dívka Momo a zloději času",
@@ -701430,6 +701452,26 @@
         "year": 2026,
         "score": 72,
         "poster": "https://image.tmdb.org/t/p/w342/39aMkR8Y5vhCG9dTkjiqRl8AVqp.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5799268": {
+    "name": "Loly Toublanc",
+    "img": "/dD6m8b3zEbGSSAFSdCpBgsceC1L.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1480665",
+        "type": "movie",
+        "title": "Hrbáč, duch města Paříže",
+        "year": 2026,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/xWp7Mm5Nkiaa9nxqyqA0yL3Up9L.jpg",
         "roles": [
           "actor"
         ]

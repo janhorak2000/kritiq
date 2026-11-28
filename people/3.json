@@ -422681,6 +422681,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1643567",
+        "type": "movie",
+        "title": "Ghosts: The Possession of Button House",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/vdRbC8masrQDyhFHLOGECEMllPV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt448119",
         "type": "movie",
         "title": "Dolittle",
@@ -714952,6 +714963,17 @@
         ]
       },
       {
+        "id": "mt1643567",
+        "type": "movie",
+        "title": "Ghosts: The Possession of Button House",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/vdRbC8masrQDyhFHLOGECEMllPV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st17174",
         "type": "show",
         "title": "Ghosts",
@@ -715208,6 +715230,26 @@
         "year": 2026,
         "score": 73,
         "poster": "https://image.tmdb.org/t/p/w342/7tlkTHxcTSlrPYURo0VuglaLPXv.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5838946": {
+    "name": "Hugo McGinn",
+    "img": null,
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1643567",
+        "type": "movie",
+        "title": "Ghosts: The Possession of Button House",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/vdRbC8masrQDyhFHLOGECEMllPV.jpg",
         "roles": [
           "actor"
         ]

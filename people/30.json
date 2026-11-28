@@ -47166,6 +47166,17 @@
     "age": 61,
     "works": [
       {
+        "id": "mt1480665",
+        "type": "movie",
+        "title": "Hrbáč, duch města Paříže",
+        "year": 2026,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/xWp7Mm5Nkiaa9nxqyqA0yL3Up9L.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1119537",
         "type": "movie",
         "title": "Svědectví lásky",
@@ -535425,6 +535436,17 @@
     "age": 37,
     "works": [
       {
+        "id": "mt1643567",
+        "type": "movie",
+        "title": "Ghosts: The Possession of Button House",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/vdRbC8masrQDyhFHLOGECEMllPV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "st262280",
         "type": "show",
         "title": "Utajené legendy",
@@ -566147,6 +566169,26 @@
         "year": 2023,
         "score": 68,
         "poster": "https://image.tmdb.org/t/p/w342/dQOwpTpBQEqRUcev4423LrU32G6.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p4812674": {
+    "name": "Alexis Rosenstiehl",
+    "img": "/lSa63zKMIJurglCQv7SASzZled4.jpg",
+    "birthday": null,
+    "deathday": null,
+    "age": null,
+    "works": [
+      {
+        "id": "mt1480665",
+        "type": "movie",
+        "title": "Hrbáč, duch města Paříže",
+        "year": 2026,
+        "score": 72,
+        "poster": "https://image.tmdb.org/t/p/w342/xWp7Mm5Nkiaa9nxqyqA0yL3Up9L.jpg",
         "roles": [
           "actor"
         ]

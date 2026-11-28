@@ -365302,6 +365302,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1643567",
+        "type": "movie",
+        "title": "Ghosts: The Possession of Button House",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/vdRbC8masrQDyhFHLOGECEMllPV.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1047431",
         "type": "movie",
         "title": "Prancer: A Christmas Tale",
@@ -389100,6 +389111,17 @@
     "age": null,
     "works": [
       {
+        "id": "mt1391021",
+        "type": "movie",
+        "title": "欢迎来龙餐馆",
+        "year": 2026,
+        "score": null,
+        "poster": "https://image.tmdb.org/t/p/w342/2OJX7udqqpk5c82pXXdL2hnny0D.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1304106",
         "type": "movie",
         "title": "Blood Star",
@@ -398481,6 +398503,26 @@
         "year": 2025,
         "score": 57,
         "poster": "https://image.tmdb.org/t/p/w342/nJXZbeHg9bcFhRS5i66EswAMj6U.jpg",
+        "roles": [
+          "actor"
+        ]
+      }
+    ]
+  },
+  "p5632181": {
+    "name": "Tamsyn Kelly",
+    "img": null,
+    "birthday": "1981-01-15",
+    "deathday": null,
+    "age": 45,
+    "works": [
+      {
+        "id": "mt1643567",
+        "type": "movie",
+        "title": "Ghosts: The Possession of Button House",
+        "year": 2026,
+        "score": 73,
+        "poster": "https://image.tmdb.org/t/p/w342/vdRbC8masrQDyhFHLOGECEMllPV.jpg",
         "roles": [
           "actor"
         ]

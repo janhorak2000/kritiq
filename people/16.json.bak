@@ -268921,6 +268921,17 @@
     "age": 57,
     "works": [
       {
+        "id": "mt1457866",
+        "type": "movie",
+        "title": "Další (ne)zdary Cliffa Boothe",
+        "year": 2026,
+        "score": 82,
+        "poster": "https://image.tmdb.org/t/p/w342/thX8Rs7nfgmPHfCgjoFuRovy49l.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
         "id": "mt1064213",
         "type": "movie",
         "title": "Anora",
@@ -308962,6 +308973,17 @@
         "year": 2026,
         "score": null,
         "poster": "https://image.tmdb.org/t/p/w342/A4PuRauX4hwYeTtq5MF2DFIBw41.jpg",
+        "roles": [
+          "actor"
+        ]
+      },
+      {
+        "id": "mt1824388",
+        "type": "movie",
+        "title": "Anestéza",
+        "year": 2026,
+        "score": null,
+        "poster": "",
         "roles": [
           "actor"
         ]
